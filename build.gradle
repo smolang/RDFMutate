@@ -1,0 +1,29 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.4.10'
+    id 'com.github.johnrengelman.shadow' version '5.2.0'
+}
+group = 'me.edkam'
+version = '0.1'
+
+repositories {
+    mavenCentral()
+}
+test {
+    useJUnitPlatform()
+}
+dependencies {
+    testImplementation("io.kotlintest:kotlintest-runner-junit5:3.4.0")
+    compileClasspath("io.kotlintest:kotlintest-runner-junit5:3.4.0")
+    testImplementation 'org.jetbrains.kotlin:kotlin-test-junit'
+    implementation("com.github.ajalt:clikt:2.3.0")
+    implementation 'org.apache.jena:apache-jena-libs:3.16.0'
+    implementation 'org.apache.jena:jena-core:3.16.0'
+    implementation("org.slf4j:slf4j-nop:2.0.0-alpha1")
+    implementation 'com.sksamuel.hoplite:hoplite-core:1.4.1'
+    implementation 'com.sksamuel.hoplite:hoplite-yaml:1.4.1'
+    implementation "org.logicng:logicng:2.2.0"
+}
+
+compileKotlin {
+    kotlinOptions.jvmTarget = '1.8'
+}
