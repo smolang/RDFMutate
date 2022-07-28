@@ -1,0 +1,4 @@
+package mutant
+
+class Mutator {
+}
