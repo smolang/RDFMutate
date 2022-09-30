@@ -24,9 +24,11 @@ class Main : CliktCommand() {
         val contractModel = RDFDataMgr.loadDataset(contract.absolutePath).defaultModel
 
         var n = 0
+        var onlyOneGeneration = true    // we only execute one run
         while(true) {
             println("\n generation ${n++}")
-            val m = Mutator(listOf(AddInstanceMutation::class, RemoveAxiomMutation::class), verbose)
+            //val m = Mutator(listOf(AddInstanceMutation::class, RemoveAxiomMutation::class), verbose)
+            val m = Mutator(listOf(RemoveSubclassMutation::class), verbose)
 
             //this is copying before mutating, so we must not copy one more time here
             val res = m.mutate(input, rounds)
@@ -36,6 +38,11 @@ class Main : CliktCommand() {
             println("result of validation: $valid")
             if(valid) {
                 if(verbose) res.write(System.out, "TTL")
+                break
+            }
+
+            if (!valid and onlyOneGeneration) {
+                if (verbose) res.write(System.out, "TTL")
                 break
             }
         }

@@ -14,7 +14,7 @@
 | any entity      | ERE      | remove entify (incl. all its axioms) |              |
 | any entity      | ERL      | remove entity label                  |              |
 | any entity      | ECL      | change label language                |              |
-| class           | CRS      | remove a single subclass axiom       |              |
+| class           | CRS      | remove a single subclass axiom       | yes          |
 | class           | CSC      | swap a class with its superclass     |              |
 | class           | CRD      | remove disjoint class declaration    |              |
 | class           | CRE      | remove equivalent class declaration  |              |

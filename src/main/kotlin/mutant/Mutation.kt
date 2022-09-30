@@ -1,9 +1,11 @@
 package mutant
 
+import org.apache.jena.ontology.OntProperty
 import org.apache.jena.query.QueryExecutionFactory
 import org.apache.jena.query.QueryFactory
 import org.apache.jena.rdf.model.Model
 import org.apache.jena.rdf.model.ModelFactory
+import org.apache.jena.rdf.model.Statement
 import org.apache.jena.rdf.model.StmtIterator
 import kotlin.random.Random
 
@@ -62,6 +64,37 @@ class AddInstanceMutation(model: Model, verbose : Boolean) : Mutation(model, ver
             getCandidates().random())
         if(verbose) println("adding: $s")
         m.add(s)
+        return m
+    }
+}
+
+//removes one (random) subclass axiom
+class RemoveSubclassMutation(model: Model, verbose : Boolean) : Mutation(model, verbose) {
+    private fun getCandidates(): List<Statement> {
+        val l = model.listStatements().toList();
+        val candidates = l.toMutableList()
+        for (s in l) {
+            // select statements that are not subClass relations
+            if (!s.predicate.toString().matches(".*#subClassOf$".toRegex())) {
+                candidates.remove(s)
+            }
+        }
+        return candidates
+    }
+
+    override fun isApplicable(): Boolean {
+        return getCandidates().isNotEmpty()
+    }
+
+    override fun applyCopy(): Model {
+        val m = ModelFactory.createDefaultModel()
+        val l = getCandidates().toList()
+        val s = l.random()
+        if(verbose) println("removing: "+ s)
+
+        // copy all statements that are not s
+        model.listStatements().forEach {
+            if (s != it) m.add(it)}
         return m
     }
 }
