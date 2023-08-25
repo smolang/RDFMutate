@@ -1,11 +1,10 @@
 package mutant
 
+import org.apache.jena.rdf.model.Resource
 import org.apache.jena.rdf.model.Statement
 
 
-abstract class MutationConfiguration {
-
-}
+abstract class MutationConfiguration
 
 class SingleStatementConfiguration(private val statement: Statement) : MutationConfiguration() {
 
@@ -13,3 +12,11 @@ class SingleStatementConfiguration(private val statement: Statement) : MutationC
         return statement
     }
 }
+
+open class SingleResourceConfiguration(private val resource: Resource) : MutationConfiguration() {
+
+    fun getResource() : Resource {
+        return resource
+    }
+}
+

@@ -43,10 +43,25 @@ class Main : CliktCommand() {
                 mf.createProperty("http://www.w3.org/2000/01/rdf-schema#subClassOf"),
                 mf.createResource("http://smolang.org#A")
             )
-
             val config = SingleStatementConfiguration(st)
 
-            ms.addWithConfig(RemoveAxiomMutation::class, config)
+            val r = mf.createResource("http://smolang.org#XYZ")
+            val config2 = SingleResourceConfiguration(r)
+
+            val st3 = mf.createStatement(
+                mf.createResource("http://smolang.org#B"),
+                mf.createProperty("http://www.w3.org/2000/01/rdf-schema#subClassOf"),
+                mf.createResource("http://smolang.org#XYZ")
+            )
+            val config3 = SingleStatementConfiguration(st3)
+
+            //ms.addWithConfig(RemoveAxiomMutation::class, config)
+            ms.addWithConfig(RemoveSubclassMutation::class, config)
+
+            ms.addWithConfig(AddAxiomMutation::class, config3)
+
+            //ms.addWithConfig(AddInstanceMutation::class, config2)
+            ms.addRandom(listOf(AddInstanceMutation::class))
 
             val m = Mutator(ms, verbose)
 

@@ -31,15 +31,7 @@ abstract class Mutation(val model: Model, val verbose : Boolean) {
         config = null
     }
 
-}
-
-open class RemoveAxiomMutation(model: Model, verbose : Boolean) : Mutation(model, verbose) {
-
-    open fun getCandidates(): List<Statement> {
-        return model.listStatements().toList()
-    }
-
-    private fun deleteAxiom(s : Statement) : Model {
+    fun deleteAxiom(s : Statement) : Model {
         val m = ModelFactory.createDefaultModel()
         if(verbose) println("removing: $s")
         // copy all statements that are not s
@@ -48,13 +40,30 @@ open class RemoveAxiomMutation(model: Model, verbose : Boolean) : Mutation(model
         return m
     }
 
+    fun addAxiom(s : Statement) : Model {
+        val m = ModelFactory.createDefaultModel()
+        // copy all statements
+        model.listStatements().forEach { m.add(it)}
+        if(verbose) println("adding: $s")
+        m.add(s)
+        return m
+    }
+
+}
+
+open class RemoveAxiomMutation(model: Model, verbose : Boolean) : Mutation(model, verbose) {
+
+    open fun getCandidates(): List<Statement> {
+        return model.listStatements().toList()
+    }
+
     override fun setConfiguration(_config: MutationConfiguration) {
         assert(_config is SingleStatementConfiguration)
         super.setConfiguration(_config)
     }
 
     override fun isApplicable(): Boolean {
-        return getCandidates().any()
+        return hasConfig || getCandidates().any()
     }
 
     override fun applyCopy(): Model {
@@ -86,6 +95,13 @@ class RemoveSubclassMutation(model: Model, verbose : Boolean) : RemoveAxiomMutat
         }
         return candidates
     }
+
+    override fun setConfiguration(_config: MutationConfiguration) {
+        assert(_config is SingleStatementConfiguration)
+        val c = _config as SingleStatementConfiguration
+        assert(c.getStatement().predicate.toString().matches(".*#subClassOf$".toRegex()))
+        super.setConfiguration(_config)
+    }
 }
 
 class AddInstanceMutation(model: Model, verbose : Boolean) : Mutation(model, verbose) {
@@ -106,18 +122,73 @@ class AddInstanceMutation(model: Model, verbose : Boolean) : Mutation(model, ver
     }
 
     override fun isApplicable(): Boolean {
-        return getCandidates().isNotEmpty()
+        return hasConfig || getCandidates().isNotEmpty()
+    }
+
+    override fun setConfiguration(_config: MutationConfiguration) {
+        assert(_config is SingleResourceConfiguration)
+        super.setConfiguration(_config)
     }
 
     override fun applyCopy(): Model {
         val m = ModelFactory.createDefaultModel()
-        model.listStatements().forEach { m.add(it) }
+        val OWLClass =
+            if (hasConfig){
+                assert(config is SingleResourceConfiguration)
+                val c = config as SingleResourceConfiguration
+                c.getResource().toString()
+            }
+            else
+                getCandidates().random()
+
+        // create new "type" relation for the individual and the selected class
         val s = m.createStatement(
             m.createResource("inner:asd"+Random.nextInt(0,Int.MAX_VALUE)),
             m.createProperty("http://www.w3.org/1999/02/22-rdf-syntax-ns#","type"),
-            getCandidates().random())
-        if(verbose) println("adding: $s")
-        m.add(s)
-        return m
+            OWLClass)
+
+        return addAxiom(s)
     }
+}
+
+class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model, verbose) {
+
+    private fun getCandidates() : List<String> {
+        val cand = ArrayList<String>()
+        val l = model.listStatements().toList()
+        for (s in l) {
+            // select statements that are not subClass relations
+            if (!cand.contains(s.predicate.toString())) {
+                cand.add(s.predicate.toString())
+            }
+        }
+        return cand
+    }
+    override fun isApplicable(): Boolean {
+        return getCandidates().any()
+    }
+
+    override fun applyCopy(): Model {
+        TODO("Not yet implemented")
+    }
+
+}
+
+class AddAxiomMutation(model: Model, verbose: Boolean) : Mutation(model, verbose) {
+    override fun isApplicable(): Boolean {
+        return hasConfig
+    }
+
+    override fun setConfiguration(_config: MutationConfiguration) {
+        assert(_config is SingleStatementConfiguration)
+        super.setConfiguration(_config)
+    }
+
+    override fun applyCopy(): Model {
+        assert(config != null)
+        val c = config as SingleStatementConfiguration
+        val s = c.getStatement()
+        return addAxiom(s)
+    }
+
 }
