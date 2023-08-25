@@ -45,7 +45,7 @@
 | any axiom       | ACSTA    | replace existential operator with universal operator        |              |
 | any axiom       | ACATS    | replace universal operator with existential operator in     |              |
 | any axiom       | AEDN     | add negation for AND, OR, existential or universal operator |              |
-|                 | AEUN     | remove one negation operator                                |              |
+| any axiom       | AEUN     | remove one negation operator                                |              |
 
 ## Own Operators
 

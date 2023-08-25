@@ -10,27 +10,81 @@ import org.apache.jena.rdf.model.StmtIterator
 import kotlin.random.Random
 
 abstract class Mutation(val model: Model, val verbose : Boolean) {
+    var hasConfig : Boolean = false
+    open var config : MutationConfiguration? = null
+
+    // constructor that creates mutation with configuration
+    constructor(model: Model, _config: MutationConfiguration, verbose : Boolean) : this(model, verbose) {
+        setConfiguration(_config)
+    }
+
     abstract fun isApplicable() : Boolean
     abstract fun applyCopy() : Model
+
+    open fun setConfiguration(_config : MutationConfiguration) {
+        hasConfig = true
+        config = _config
+    }
+
+    fun deleteConfiguration() {
+        hasConfig = false
+        config = null
+    }
+
 }
 
-class RemoveAxiomMutation(model: Model, verbose : Boolean) : Mutation(model, verbose) {
-    private fun getCandidates(): StmtIterator {
-        return model.listStatements()
+open class RemoveAxiomMutation(model: Model, verbose : Boolean) : Mutation(model, verbose) {
+
+    open fun getCandidates(): List<Statement> {
+        return model.listStatements().toList()
+    }
+
+    private fun deleteAxiom(s : Statement) : Model {
+        val m = ModelFactory.createDefaultModel()
+        if(verbose) println("removing: $s")
+        // copy all statements that are not s
+        model.listStatements().forEach {
+            if (s != it) m.add(it)}
+        return m
+    }
+
+    override fun setConfiguration(_config: MutationConfiguration) {
+        assert(_config is SingleStatementConfiguration)
+        super.setConfiguration(_config)
     }
 
     override fun isApplicable(): Boolean {
-        return getCandidates().hasNext()
+        return getCandidates().any()
     }
 
     override fun applyCopy(): Model {
-        val m = ModelFactory.createDefaultModel()
-        val l = getCandidates().toList()
-        val pos = Random.Default.nextLong(model.size()).toInt()
-        if(verbose) println("removing: "+ l[pos])
-        l.removeAt(pos)
-        l.forEach { m.add(it) }
-        return m
+        val s =
+            if (hasConfig) {
+                assert(config is SingleStatementConfiguration)
+                val c = config as SingleStatementConfiguration
+                c.getStatement()
+            }
+            else
+                getCandidates().random()
+        return deleteAxiom(s)
+    }
+}
+
+
+//removes one (random) subclass axiom       // val m = Mutator
+
+// only overrides the method to select the candidate axioms from super class
+class RemoveSubclassMutation(model: Model, verbose : Boolean) : RemoveAxiomMutation(model, verbose) {
+    override fun getCandidates(): List<Statement> {
+        val l = model.listStatements().toList()
+        val candidates = l.toMutableList()
+        for (s in l) {
+            // select statements that are not subClass relations
+            if (!s.predicate.toString().matches(".*#subClassOf$".toRegex())) {
+                candidates.remove(s)
+            }
+        }
+        return candidates
     }
 }
 
@@ -64,37 +118,6 @@ class AddInstanceMutation(model: Model, verbose : Boolean) : Mutation(model, ver
             getCandidates().random())
         if(verbose) println("adding: $s")
         m.add(s)
-        return m
-    }
-}
-
-//removes one (random) subclass axiom
-class RemoveSubclassMutation(model: Model, verbose : Boolean) : Mutation(model, verbose) {
-    private fun getCandidates(): List<Statement> {
-        val l = model.listStatements().toList();
-        val candidates = l.toMutableList()
-        for (s in l) {
-            // select statements that are not subClass relations
-            if (!s.predicate.toString().matches(".*#subClassOf$".toRegex())) {
-                candidates.remove(s)
-            }
-        }
-        return candidates
-    }
-
-    override fun isApplicable(): Boolean {
-        return getCandidates().isNotEmpty()
-    }
-
-    override fun applyCopy(): Model {
-        val m = ModelFactory.createDefaultModel()
-        val l = getCandidates().toList()
-        val s = l.random()
-        if(verbose) println("removing: "+ s)
-
-        // copy all statements that are not s
-        model.listStatements().forEach {
-            if (s != it) m.add(it)}
         return m
     }
 }

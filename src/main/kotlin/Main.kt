@@ -6,8 +6,10 @@ import com.github.ajalt.clikt.parameters.options.option
 import com.github.ajalt.clikt.parameters.types.file
 import com.github.ajalt.clikt.parameters.types.int
 import mutant.*
+import org.apache.jena.rdf.model.ModelFactory
 import org.apache.jena.riot.RDFDataMgr
 import org.apache.jena.riot.RDFLanguages
+import java.sql.Statement
 
 
 class Main : CliktCommand() {
@@ -23,17 +25,35 @@ class Main : CliktCommand() {
         if(!contract.exists()) throw Exception("Contract file $contract does not exist")
         val contractModel = RDFDataMgr.loadDataset(contract.absolutePath).defaultModel
 
+
+        // test configuration stuff
+
+        //
         var n = 0
-        var onlyOneGeneration = true    // we only execute one run
+        val onlyOneGeneration = true    // we only execute one run
         while(true) {
             println("\n generation ${n++}")
             //val m = Mutator(listOf(AddInstanceMutation::class, RemoveAxiomMutation::class), verbose)
-            val m = Mutator(listOf(RemoveSubclassMutation::class), verbose)
+            val ms = MutationSequence(verbose)
+            //ms.addRandom(listOf(RemoveSubclassMutation::class))
+
+            val mf = ModelFactory.createDefaultModel()
+            val st = mf.createStatement(
+                mf.createResource("http://smolang.org#B"),
+                mf.createProperty("http://www.w3.org/2000/01/rdf-schema#subClassOf"),
+                mf.createResource("http://smolang.org#A")
+            )
+
+            val config = SingleStatementConfiguration(st)
+
+            ms.addWithConfig(RemoveAxiomMutation::class, config)
+
+            val m = Mutator(ms, verbose)
 
             //this is copying before mutating, so we must not copy one more time here
-            val res = m.mutate(input, rounds)
+            val res = m.mutate(input)
 
-            //XXX: the following ignores blank nodes
+            //XXX: the following ignores blank nodesn
             val valid = m.validate(res, contractModel)
             println("result of validation: $valid")
             if(valid) {
@@ -41,11 +61,14 @@ class Main : CliktCommand() {
                 break
             }
 
-            if (!valid and onlyOneGeneration) {
+            if (onlyOneGeneration) {
                 if (verbose) res.write(System.out, "TTL")
                 break
             }
         }
+
+
+
     }
 }
 

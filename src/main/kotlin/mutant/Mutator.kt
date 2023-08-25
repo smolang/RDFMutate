@@ -6,13 +6,12 @@ import org.apache.jena.reasoner.ReasonerRegistry
 import kotlin.reflect.KClass
 import kotlin.reflect.full.primaryConstructor
 
-class Mutator(private val mutOps: List<KClass<out Mutation>>, private val verbose: Boolean) {
-    fun mutate(seed : Model, rounds : Int) : Model{
-        var i = 0
+
+class Mutator(private val mutSeq: MutationSequence, private val verbose: Boolean) {
+    fun mutate (seed : Model) : Model {
         var target = seed
-        while(i++ < rounds) {
-            val mutations = mutOps.map { it.primaryConstructor!!.call(target, verbose) }
-            val mutation = mutations.random()
+        for (i  in 0 until mutSeq.size()) {
+            val mutation = mutSeq[i].concreteMutation(target)
             if(mutation.isApplicable())  target = mutation.applyCopy()
         }
 
