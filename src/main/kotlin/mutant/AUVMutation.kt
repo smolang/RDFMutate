@@ -29,7 +29,7 @@ class AddPipeSegmentMutation(model: Model, verbose: Boolean) : AUVMutation(model
     }
 
     override fun applyCopy(): Model {
-        val m = ModelFactory.createDefaultModel()
+       /* val m = ModelFactory.createDefaultModel()
         val start =
             if (hasConfig){
                 assert(config is SingleResourceConfiguration)
@@ -43,9 +43,9 @@ class AddPipeSegmentMutation(model: Model, verbose: Boolean) : AUVMutation(model
         val s = m.createStatement(
             m.createResource(start),
             m.createProperty("http://www.ifi.uio.no/tobiajoh/miniPipes#nextTo"),
-            OWLClass)
+            TODO("not yet implemented"))
 
-        return addAxiom(s)
+        return addAxiom(s)*/
         TODO("Not yet implemented")
 
     }
