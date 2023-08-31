@@ -20,3 +20,11 @@ open class SingleResourceConfiguration(private val resource: Resource) : Mutatio
     }
 }
 
+class StringAndResourceConfiguration(private val string: String, private val r: Resource) : SingleResourceConfiguration(r){
+    fun getString() : String {
+        return string
+    }
+}
+
+class DoubleResourceConfiguration(private val resource1: Resource,
+                               private  val resource2: Resource) : MutationConfiguration()

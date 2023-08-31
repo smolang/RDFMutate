@@ -6,7 +6,10 @@ import org.apache.jena.rdf.model.Resource
 import kotlin.random.Random
 
 // all the domain-dependent mutation operators that are specific for the auv domain
-abstract class AUVMutation(model: Model, verbose: Boolean) : Mutation(model, verbose)
+abstract class AUVMutation(model: Model, verbose: Boolean) : Mutation(model, verbose) {
+    val auvURI = "http://www.ifi.uio.no/tobiajoh/miniPipes"
+    val delimiter = "#"
+}
 
 // the corresponding configurations for the mutations
 interface AUVConfiguration
@@ -26,10 +29,13 @@ class AddPipeSegmentMutation(model: Model, verbose: Boolean) : AUVMutation(model
     }
     override fun isApplicable(): Boolean {
         return hasConfig || getCandidates().any()
+        TODO("make this check more sophisticated in the case of hasConfig")
     }
 
     override fun applyCopy(): Model {
-       /* val m = ModelFactory.createDefaultModel()
+        val m = ModelFactory.createDefaultModel()
+
+        // select the start segment
         val start =
             if (hasConfig){
                 assert(config is SingleResourceConfiguration)
@@ -39,14 +45,28 @@ class AddPipeSegmentMutation(model: Model, verbose: Boolean) : AUVMutation(model
             else
                 getCandidates().random()
 
-        // create new "type" relation for the individual and the selected class
+        // create new individual of class "PipeSement" by usig the "AddInstance" mutation
+        val nameNewSegment = auvURI + delimiter + "newPipeSegment"+Random.nextInt(0,Int.MAX_VALUE)
+        val pipeClass = m.createResource(auvURI + delimiter + "PipeSegment")
+        val configAIM = StringAndResourceConfiguration(nameNewSegment, pipeClass)
+
+        val aim = AddInstanceMutation(model, verbose)
+        aim.setConfiguration(configAIM)
+        var tempModel = aim.applyCopy()
+
+        // create "nexto" relation between start and the new individual
+
         val s = m.createStatement(
             m.createResource(start),
-            m.createProperty("http://www.ifi.uio.no/tobiajoh/miniPipes#nextTo"),
-            TODO("not yet implemented"))
+            m.createProperty(auvURI + delimiter + "nextTo"),
+            m.createResource(nameNewSegment))
+        val configAAM = SingleStatementConfiguration(s)
+        val aam = AddAxiomMutation(model, verbose)
+        aam.setConfiguration(configAAM)
 
-        return addAxiom(s)*/
-        TODO("Not yet implemented")
+        tempModel = aam.applyCopy()
+
+        return tempModel
 
     }
 

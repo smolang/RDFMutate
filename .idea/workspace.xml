@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caab7f85-477f-496a-b8a7-b8805153034d" name="Changes" comment="restructure code">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mutant/AUVMutation.kt" afterDir="false" />
+    <list default="true" id="caab7f85-477f-496a-b8a7-b8805153034d" name="Changes" comment="minor">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/sut/MiniPipeInspection.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/miniPipes.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/examples/miniPipes.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/overview_mutations.md" beforeDir="false" afterPath="$PROJECT_DIR$/overview_mutations.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/AUVMutation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mutant/AUVMutation.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/Mutation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mutant/Mutation.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/MutationConfiguration.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mutant/MutationConfiguration.kt" afterDir="false" />
     </list>
@@ -75,7 +78,7 @@
     <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainKt" />
       <module name="OntoMutate.main" />
-      <option name="PROGRAM_PARAMETERS" value="examples/abc.ttl examples/contract.ttl -v -r 1" />
+      <option name="PROGRAM_PARAMETERS" value="examples/miniPipes.ttl examples/contract.ttl -v -r 1" />
       <shortenClasspath name="NONE" />
       <option name="VM_PARAMETERS" value="-ea" />
       <method v="2">
@@ -104,7 +107,21 @@
       <option name="project" value="LOCAL" />
       <updated>1692972214851</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="start with domain-dependent mutations">
+      <created>1692976699973</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1692976699973</updated>
+    </task>
+    <task id="LOCAL-00003" summary="minor">
+      <created>1692976770974</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1692976770974</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -121,6 +138,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="restructure code" />
-    <option name="LAST_COMMIT_MESSAGE" value="restructure code" />
+    <MESSAGE value="start with domain-dependent mutations" />
+    <MESSAGE value="minor" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor" />
   </component>
 </project>
