@@ -1,12 +1,10 @@
 package mutant
 
-import org.apache.jena.ontology.OntProperty
 import org.apache.jena.query.QueryExecutionFactory
 import org.apache.jena.query.QueryFactory
 import org.apache.jena.rdf.model.Model
 import org.apache.jena.rdf.model.ModelFactory
 import org.apache.jena.rdf.model.Statement
-import org.apache.jena.rdf.model.StmtIterator
 import kotlin.random.Random
 
 abstract class Mutation(val model: Model, val verbose : Boolean) {
@@ -140,12 +138,18 @@ class AddInstanceMutation(model: Model, verbose : Boolean) : Mutation(model, ver
             }
             else
                 getCandidates().random()
-
+        val instanceName =
+            if (hasConfig && config is StringAndResourceConfiguration) {
+                val c = config as StringAndResourceConfiguration
+                c.getString()
+            }
+            else
+                "inner:asd"+Random.nextInt(0,Int.MAX_VALUE)
         // create new "type" relation for the individual and the selected class
         val s = m.createStatement(
-            m.createResource("inner:asd"+Random.nextInt(0,Int.MAX_VALUE)),
+            m.createResource(instanceName),
             m.createProperty("http://www.w3.org/1999/02/22-rdf-syntax-ns#","type"),
-            OWLClass)
+            m.createResource(OWLClass))
 
         return addAxiom(s)
     }
@@ -153,14 +157,21 @@ class AddInstanceMutation(model: Model, verbose : Boolean) : Mutation(model, ver
 
 class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model, verbose) {
 
+
     private fun getCandidates() : List<String> {
         val cand = ArrayList<String>()
         val l = model.listStatements().toList()
+        val ignore = ArrayList<String>()
+        ignore.add("http://www.w3.org/1999/02/22-rdf-syntax-ns#type")
+        ignore.add("http://www.w3.org/2000/01/rdf-schema#subClassOf")
         for (s in l) {
-            // select statements that are not subClass relations
-            if (!cand.contains(s.predicate.toString())) {
-                cand.add(s.predicate.toString())
-            }
+            val p = s.predicate.toString()
+            // select relations that should not be ignored
+            TODO("this check needs to be improved to also include other critical URIs")
+            if (!ignore.contains(p) && !p.startsWith("http://www.w3.org/2002/07/owl"))
+                // check if relation is already in
+                if (!cand.contains(p))
+                    cand.add(p)
         }
         return cand
     }
@@ -169,7 +180,9 @@ class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model, ver
     }
 
     override fun applyCopy(): Model {
+        print("cand for predicates" + getCandidates().toString())
         TODO("Not yet implemented")
+        // should use AddAxiomMutation somehow...
     }
 
 }

@@ -8,8 +8,6 @@ import com.github.ajalt.clikt.parameters.types.int
 import mutant.*
 import org.apache.jena.rdf.model.ModelFactory
 import org.apache.jena.riot.RDFDataMgr
-import org.apache.jena.riot.RDFLanguages
-import java.sql.Statement
 
 
 class Main : CliktCommand() {
@@ -55,6 +53,13 @@ class Main : CliktCommand() {
             )
             val config3 = SingleStatementConfiguration(st3)
 
+            val config4 = StringAndResourceConfiguration("newIndividual", r)
+
+            val segment = mf.createResource("http://www.ifi.uio.no/tobiajoh/miniPipes#segment1")
+            val config5 = AddPipeSegmentConfiguration(segment)
+
+            ms.addWithConfig(AddPipeSegmentMutation::class, config5)
+
             //ms.addWithConfig(RemoveAxiomMutation::class, config)
             ms.addWithConfig(RemoveSubclassMutation::class, config)
 
@@ -62,6 +67,8 @@ class Main : CliktCommand() {
 
             //ms.addWithConfig(AddInstanceMutation::class, config2)
             ms.addRandom(listOf(AddInstanceMutation::class))
+
+            ms.addWithConfig(AddInstanceMutation::class, config4)
 
             val m = Mutator(ms, verbose)
 
