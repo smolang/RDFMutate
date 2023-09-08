@@ -8,6 +8,7 @@ import com.github.ajalt.clikt.parameters.types.int
 import mutant.*
 import org.apache.jena.rdf.model.ModelFactory
 import org.apache.jena.riot.RDFDataMgr
+import sut.MiniPipeInspection
 
 
 class Main : CliktCommand() {
@@ -16,7 +17,8 @@ class Main : CliktCommand() {
     private val verbose by option("--verbose","-v", help="Verbose output for debugging. Default = false.").flag()
     private val rounds by option("--rounds","-r", help="Number of mutations applied to input. Default = 1.").int().default(1)
 
-    override fun run() {
+    fun testMutations() {
+
 
         if(!source.exists()) throw Exception("Input file $source does not exist")
         val input = RDFDataMgr.loadDataset(source.absolutePath).defaultModel
@@ -92,6 +94,58 @@ class Main : CliktCommand() {
 
 
     }
+
+
+    fun testMiniPipes() {
+        if(!source.exists()) throw Exception("Input file $source does not exist")
+        val input = RDFDataMgr.loadDataset(source.absolutePath).defaultModel
+        val pi = MiniPipeInspection()
+        //pi.readOntology(source)
+
+        // run without mutations
+        pi.readOntology(input)
+        pi.doInspection()
+        println("everything inspected?: " + pi.allInfrastructureInspected())
+
+        // mutated ontology with "add pipe" at segment1
+        println("\nApply mutation to ontology")
+        val segment = input.createResource("http://www.ifi.uio.no/tobiajoh/miniPipes#segment1")
+        val configSegment = AddPipeSegmentConfiguration(segment)
+        val msSegment = MutationSequence(verbose)
+        msSegment.addWithConfig(AddPipeSegmentMutation::class, configSegment)
+        val mSegment = Mutator(msSegment, verbose)
+        val resSegment = mSegment.mutate(input)
+
+        pi.readOntology(resSegment)
+        pi.doInspection()
+        println("everything inspected?: " + pi.allInfrastructureInspected())
+
+
+
+
+
+        // mutated ontology with deletion of animal and infrastructure are disjoint
+        // some implementation work needed: remove axiom mutation + more sophisticated reasoning in algorithm to really
+        // use an ontological negation
+        val st = input.createStatement(
+            input.createResource("http://www.ifi.uio.no/tobiajoh/miniPipes#Animal"),
+            input.createProperty("http://www.w3.org/2002/07/owl#disjointWith"),
+            input.createResource("http://www.ifi.uio.no/tobiajoh/miniPipes#Infrastructure")
+        )
+        val configAnimal = SingleStatementConfiguration(st)
+
+
+
+
+
+
+
+    }
+    override fun run() {
+        //testMutations()
+        testMiniPipes()
+    }
+
 }
 
 
