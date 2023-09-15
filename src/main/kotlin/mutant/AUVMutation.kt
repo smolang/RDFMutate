@@ -9,6 +9,8 @@ import kotlin.random.Random
 abstract class AUVMutation(model: Model, verbose: Boolean) : Mutation(model, verbose) {
     val auvURI = "http://www.ifi.uio.no/tobiajoh/miniPipes"
     val delimiter = "#"
+    val pipeSegmentClass = model.createResource(auvURI + delimiter + "PipeSegment")
+
 }
 
 // the corresponding configurations for the mutations
@@ -24,23 +26,27 @@ class AddPipeSegmentMutation(model: Model, verbose: Boolean) : AUVMutation(model
         super.setConfiguration(_config)
     }
 
-    fun getCandidates() : List<String> {
-        TODO("not yet implemented")
+    private fun getCandidates() : List<Resource> {
+        var ret = listOf<Resource>()
+        for (axiom in model.listStatements())
+            if (axiom.`object`.equals(pipeSegmentClass) && axiom.predicate.equals(typeProp))
+                ret = ret + axiom.subject
+        return ret
+
     }
     override fun isApplicable(): Boolean {
         return hasConfig || getCandidates().any()
-        TODO("make this check more sophisticated in the case of hasConfig")
     }
 
     override fun applyCopy(): Model {
-        val m = ModelFactory.createDefaultModel()
+        //val m = ModelFactory.createDefaultModel()
 
         // select the start segment
         val start =
             if (hasConfig){
                 assert(config is SingleResourceConfiguration)
                 val c = config as SingleResourceConfiguration
-                c.getResource().toString()
+                c.getResource()
             }
             else
                 getCandidates().random()
@@ -48,8 +54,7 @@ class AddPipeSegmentMutation(model: Model, verbose: Boolean) : AUVMutation(model
         // create new individual of class "PipeSement" by usig the "AddInstance" mutation
         val nameNewSegment = auvURI + delimiter + "newPipeSegment"+Random.nextInt(0,Int.MAX_VALUE)
 
-        val pipeClass = m.createResource(auvURI + delimiter + "PipeSegment")
-        val configAIM = StringAndResourceConfiguration(nameNewSegment, pipeClass)
+        val configAIM = StringAndResourceConfiguration(nameNewSegment, pipeSegmentClass)
 
         val aim = AddInstanceMutation(model, verbose)
         aim.setConfiguration(configAIM)
@@ -57,10 +62,10 @@ class AddPipeSegmentMutation(model: Model, verbose: Boolean) : AUVMutation(model
 
         // create "nexto" relation between start and the new individual
 
-        val s = m.createStatement(
-            m.createResource(start),
-            m.createProperty(auvURI + delimiter + "nextTo"),
-            m.createResource(nameNewSegment))
+        val s = model.createStatement(
+            start,
+            model.createProperty(auvURI + delimiter + "nextTo"),
+            model.createResource(nameNewSegment))
         val configAAM = SingleStatementConfiguration(s)
         val aam = AddAxiomMutation(tempModel, verbose)
         aam.setConfiguration(configAAM)

@@ -12,6 +12,10 @@ class MutationSequence(private  val verbose: Boolean) {
         mutations.add(am)
     }
 
+    fun addRandom(mutOp: KClass<out Mutation>) {
+        addRandom(listOf(mutOp))
+    }
+
 
     fun addWithConfig(mutOp: KClass<out Mutation>, config: MutationConfiguration) {
         val am = AbstractMutation(mutOp, config, verbose)

@@ -4,17 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caab7f85-477f-496a-b8a7-b8805153034d" name="Changes" comment="finish first domain-specific mutation">
-      <change afterPath="$PROJECT_DIR$/.kotlintest/spec_failures" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mutant/MyReasoner.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/FirstTests.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/abc/abc.ttl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/abc/contract.ttl" afterDir="false" />
+    <list default="true" id="caab7f85-477f-496a-b8a7-b8805153034d" name="Changes" comment="finish first example&#10;mini example for pipeline inspection completed&#10;example shows that mutation can detect unwanted behavior">
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/PipeInspectionTests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/PipeInspection/miniPipes.ttl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.kotlintest/spec_failures" beforeDir="false" afterPath="$PROJECT_DIR$/.kotlintest/spec_failures" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/AUVMutation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mutant/AUVMutation.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/Mutation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mutant/Mutation.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/MutationSequence.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mutant/MutationSequence.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/sut/MiniPipeInspection.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/sut/MiniPipeInspection.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/FirstTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/FirstTests.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +32,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -80,7 +83,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "/home/tobias/Documents/teaching/MoC/2022/temp",
+    "last_opened_file_path": "/home/tobias/Documents/programming/ontologies/OntoMutate/src/test/resources/PipeInspection",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -88,6 +91,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources/PipeInspection" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
@@ -95,7 +101,7 @@
       <recent name="mutant" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.MainKt">
+  <component name="RunManager" selected="Gradle.PipeInspectionTests">
     <configuration name="FirstTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -119,6 +125,29 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="PipeInspectionTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;PipeInspectionTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainKt" />
       <module name="OntoMutate.main" />
@@ -131,6 +160,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.PipeInspectionTests" />
         <item itemvalue="Kotlin.MainKt" />
         <item itemvalue="Gradle.FirstTests" />
       </list>
@@ -173,7 +203,21 @@
       <option name="project" value="LOCAL" />
       <updated>1693495375945</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="finish first example&#10;mini example for pipeline inspection completed&#10;example shows that mutation can detect unwanted behavior">
+      <created>1694188014766</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1694188014766</updated>
+    </task>
+    <task id="LOCAL-00006" summary="finish first example&#10;mini example for pipeline inspection completed&#10;example shows that mutation can detect unwanted behavior">
+      <created>1694188063725</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1694188063725</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -193,6 +237,7 @@
     <MESSAGE value="start with domain-dependent mutations" />
     <MESSAGE value="minor" />
     <MESSAGE value="finish first domain-specific mutation" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish first domain-specific mutation" />
+    <MESSAGE value="finish first example&#10;mini example for pipeline inspection completed&#10;example shows that mutation can detect unwanted behavior" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish first example&#10;mini example for pipeline inspection completed&#10;example shows that mutation can detect unwanted behavior" />
   </component>
 </project>

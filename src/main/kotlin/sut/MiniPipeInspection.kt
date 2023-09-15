@@ -12,6 +12,9 @@ class MiniPipeInspection {
     var ontology : Model? = null
     val mf = ModelFactory.createDefaultModel()
 
+    val infraClass = mf.createResource("http://www.ifi.uio.no/tobiajoh/miniPipes#Infrastructure")
+
+
     fun move (thing: Resource, goal : Resource) {
         // "delete all old positions, set new position"
         val isAtProp = mf.createProperty("http://www.ifi.uio.no/tobiajoh/miniPipes#isAt")
@@ -90,20 +93,23 @@ class MiniPipeInspection {
 
         println(thing.localName + " gets inspected")
     }
-    fun animal(thing: Resource) : Boolean {
+    fun notAnimal(thing: Resource) : Boolean {
         val animalClass = mf.createResource("http://www.ifi.uio.no/tobiajoh/miniPipes#Animal")
         val r = MyReasoner(ontology as Model)
-        return r.allIndividuals(animalClass).contains(thing)
+        return !r.allIndividuals(animalClass).contains(thing)
     }
 
     fun infrastructure(thing: Resource) : Boolean {
-        val infraClass = mf.createResource("http://www.ifi.uio.no/tobiajoh/miniPipes#Infrastructure")
         val r = MyReasoner(ontology as Model)
         return r.allIndividuals(infraClass).contains(thing)
     }
 
+    fun allInfrastructure() : List<Resource> {
+        val r = MyReasoner(ontology as Model)
+        return r.allIndividuals(infraClass)
+    }
+
     fun allInfrastructureInspected() : Boolean {
-        val infraClass = mf.createResource("http://www.ifi.uio.no/tobiajoh/miniPipes#Infrastructure")
         val r = MyReasoner(ontology as Model)
         val I = r.allIndividuals(infraClass)
 
@@ -115,28 +121,8 @@ class MiniPipeInspection {
         return true
     }
 
-    fun readOntology(file : File, ) {
+    fun readOntology(file : File) {
         ontology = RDFDataMgr.loadDataset(file.absolutePath).defaultModel
-
-        /*
-        val r = MyReasoner(ontology as Model)
-
-        val animalClass = mf.createResource("http://www.ifi.uio.no/tobiajoh/miniPipes#Infrastructure")
-        val auv = mf.createResource("http://www.ifi.uio.no/tobiajoh/miniPipes#auv")
-        val segment2 = mf.createResource("http://www.ifi.uio.no/tobiajoh/miniPipes#segment2")
-        val segment1 = mf.createResource("http://www.ifi.uio.no/tobiajoh/miniPipes#segment1")
-
-
-        println(isAt(auv))
-        println(nextTo(segment1))
-        move(auv, segment2)
-        println(isAt(auv))
-        println(nextTo(segment1))
-*/
-
-        println("all inspected?: " + allInfrastructureInspected())
-
-
     }
 
     fun readOntology(ont : Model) {
@@ -156,17 +142,17 @@ class MiniPipeInspection {
         }
 
 
-
         inspect(position)
         var cand = nextTo(position).toMutableSet()
         while (cand.any())  {
-            val nextPosition = cand.random()
-            cand.remove(nextPosition)
-            if (!visited(nextPosition) && !animal(nextPosition)) {
-                println("AUV moves from "+ position.localName + " to " + nextPosition.localName)
-                move(auv, nextPosition)
-                inspect(nextPosition)
-                cand = nextTo(nextPosition).toMutableSet()
+            val newPosition = cand.random()
+            cand.remove(newPosition)
+            // only move to new position if it is not marked as visited and if it is not an animal
+            if (!visited(newPosition) && notAnimal(newPosition)) {
+                println("AUV moves from "+ position.localName + " to " + newPosition.localName)
+                move(auv, newPosition)
+                inspect(newPosition)
+                cand = nextTo(newPosition).toMutableSet()
             }
         }
 

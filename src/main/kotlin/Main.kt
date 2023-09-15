@@ -100,7 +100,6 @@ class Main : CliktCommand() {
         if(!source.exists()) throw Exception("Input file $source does not exist")
         val input = RDFDataMgr.loadDataset(source.absolutePath).defaultModel
         val pi = MiniPipeInspection()
-        //pi.readOntology(source)
 
         // run without mutations
         pi.readOntology(input)
@@ -133,9 +132,6 @@ class Main : CliktCommand() {
             input.createResource("http://www.ifi.uio.no/tobiajoh/miniPipes#Infrastructure")
         )
         val configAnimal = SingleStatementConfiguration(st)
-
-
-
 
 
 

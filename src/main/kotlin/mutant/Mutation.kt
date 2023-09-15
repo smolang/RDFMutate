@@ -11,6 +11,9 @@ abstract class Mutation(val model: Model, val verbose : Boolean) {
     var hasConfig : Boolean = false
     open var config : MutationConfiguration? = null
 
+    // define some properties that are use all the time
+    val typeProp = model.createResource("http://www.w3.org/1999/02/22-rdf-syntax-ns#type")
+
     // constructor that creates mutation with configuration
     constructor(model: Model, _config: MutationConfiguration, verbose : Boolean) : this(model, verbose) {
         setConfiguration(_config)
