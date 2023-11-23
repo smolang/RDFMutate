@@ -1,0 +1,30 @@
+## examples of commands to interact with docker image
+
+# start docker
+docker run -it --shm-size=512m -p 6901:6901 -e VNC_PW=password --security-opt seccomp=unconfined --name suaveContainer ghcr.io/kas-lab/suave:main 
+
+docker start suaveContainer
+
+# show ontology from docker
+docker exec --workdir /home/kasm-user/suave_ws/src/suave/suave_metacontrol/config suaveContainer cat suave.owl
+
+# copy ontology from docker to host
+docker cp suaveContainer:/home/kasm-user/suave_ws/src/suave/suave_metacontrol/config/suave.owl suave.owl
+
+# copy ontology from host to docker
+docker cp suave.owl suaveContainer:/home/kasm-user/suave_ws/src/suave/suave_metacontrol/config/suave.owl
+
+# start benchmarking (e.g. 4 runs)
+docker exec suaveContainer ./runner.sh false metacontrol time 4
+
+# get list of all the files in results folder
+docker exec --workdir /home/kasm-user/suave/results suaveContainer ls
+
+# copy results from docker to host
+docker cp suaveContainer:/home/kasm-user/suave/results/metacontrol_time_21_11_23_08_37_41.csv result.csv
+
+# stop container
+docker stop suaveContainer
+
+# remove container after usage
+docker remove suaveContainer
