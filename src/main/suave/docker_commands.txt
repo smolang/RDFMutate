@@ -23,6 +23,9 @@ docker exec --workdir /home/kasm-user/suave/results suaveContainer ls
 # copy results from docker to host
 docker cp suaveContainer:/home/kasm-user/suave/results/metacontrol_time_21_11_23_08_37_41.csv result.csv
 
+# find newes log folder
+docker exec --workdir /home/kasm-user/.ros/log  suaveContainer ls -Artp | grep /$ | tail -n 1
+
 # stop container
 docker stop suaveContainer
 

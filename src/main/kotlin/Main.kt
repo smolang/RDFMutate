@@ -7,8 +7,11 @@ import com.github.ajalt.clikt.parameters.types.file
 import com.github.ajalt.clikt.parameters.types.int
 import mutant.*
 import org.apache.jena.rdf.model.ModelFactory
+import org.apache.jena.riot.Lang
 import org.apache.jena.riot.RDFDataMgr
+import org.apache.jena.vocabulary.RDF
 import sut.MiniPipeInspection
+import java.io.File
 
 
 class Main : CliktCommand() {
@@ -137,9 +140,35 @@ class Main : CliktCommand() {
 
 
     }
+
+    fun testSuave() {
+        if(!source.exists()) throw Exception("Input file $source does not exist")
+        val input = RDFDataMgr.loadDataset(source.absolutePath).defaultModel
+
+        // mutated ontology with "add pipe" at segment1
+        println("\nApply mutation to ontology")
+        val ind = input.createResource("http://www.ifi.uio.no/tobiajoh/relations#B")
+        val configInd = SingleResourceConfiguration(ind)
+
+        val r = input.createResource("http://www.ifi.uio.no/tobiajoh/relations#r")
+        val configR = SingleResourceConfiguration(r)
+
+        val ms = MutationSequence(verbose)
+        //ms.addWithConfig(RemoveIndividual::class, configInd)
+        //ms.addRandom(RemoveIndividual::class)
+        ms.addWithConfig(AddObjectProperty::class, configR)
+
+        val m = Mutator(ms, verbose)
+        val output = m.mutate(input)
+        println(output.toString())
+
+        RDFDataMgr.write(File("examples/test.ttl").outputStream(), output, Lang.TTL)
+    }
+
     override fun run() {
         //testMutations()
-        testMiniPipes()
+        //testMiniPipes()
+        testSuave()
     }
 
 }
