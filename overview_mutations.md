@@ -57,6 +57,12 @@
 | any axiom       |          | add a SubClass relation               | no           |
 | individual      |          | add a type relation                   | no           |
 
+## Domain specific operators
+
+| effected entity | operator | effect                    | implemented? |
+|-----------------|----------|---------------------------|--------------|
+| pipe segment    |          | add new connected segment | yes          |
+
 
 
 
