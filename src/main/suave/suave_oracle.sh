@@ -1,4 +1,10 @@
+#!/bin/bash
+# author: Tobias John, University of Oslo
+# year: 2023
 
+# usage: ./suave_oracle.sh ONTOLOGY-FILE
+# results will be stored in "results_temp.csv"
+# result of oracle will be output on terminal (pass, fail, or undecided)
 
 CONTAINER_NAME=suaveContainer
 RUN_COUNT=3
@@ -7,7 +13,8 @@ LIMIT=1
 LOG_FILE=logs/oracle_$(date +'%Y_%m_%d_%H_%M_%S').log
 RESULTS=results_temp.csv
 
-TEST_ONTOLOGY=suave_original_with_imports.owl
+#TEST_ONTOLOGY=suave_original_with_imports.owl
+TEST_ONTOLOGY=$1
 
 echo_and_log() {
   echo $1 | tee -a $LOG_FILE
@@ -18,12 +25,12 @@ abort_oracle() {
   echo_and_log 'oracle: undecided'
   end_time=$(date +'%s')
   duration=$(($end_time - $start_time))
-  echo_and_log "stop script at $(date) after $duration s"
+  echo_and_log "stop oracle at $(date) after $duration s"
   exit 1
 }
 
 
-echo_and_log "start script at $(date)"
+echo_and_log "start oracle for onotology $TEST_ONTOLOGY at $(date)"
 start_time=$(date +'%s')
 
 
