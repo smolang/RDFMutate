@@ -68,8 +68,11 @@ echo_and_log 'run simulations in docker'
 # copy test ontology to docker
 docker cp $TEST_ONTOLOGY suaveContainer:/home/kasm-user/suave_ws/src/suave/suave_metacontrol/config/suave.owl >> $LOG_FILE
 
+# copy alternative script (because of lack of computing power)
+docker cp runner_slow.sh suaveContainer:/home/kasm-user/suave_ws/src/suave/runner/runner_slow.sh >> $LOG_FILE
+
 # run benchmarks
-docker exec suaveContainer ./runner.sh false metacontrol time $RUN_COUNT >> $LOG_FILE 2>&1
+docker exec suaveContainer ./runner_slow.sh false metacontrol time $RUN_COUNT >> $LOG_FILE 2>&1
 
 echo_and_log 'simulations are finished'
 
@@ -125,7 +128,7 @@ executed_runs=$(($good_runs + $bad_runs))
 if [[ $good_runs > $LIMIT  ]]; then
   echo_and_log 'oracle: passed'
 elif [[ $executed_runs != $RUN_COUNT ]]; then
-  echo_and_log 'oracle: undecided$(date +'%s')'
+  echo_and_log 'oracle: undecided'
 else
   echo_and_log 'oracle: failed'
 fi

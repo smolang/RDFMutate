@@ -11,6 +11,9 @@ docker exec --workdir /home/kasm-user/suave_ws/src/suave/suave_metacontrol/confi
 # copy ontology from docker to host
 docker cp suaveContainer:/home/kasm-user/suave_ws/src/suave/suave_metacontrol/config/suave.owl suave.owl
 
+# copy slow script from host to docker
+docker cp runner_slow.sh suaveContainer:/home/kasm-user/suave_ws/src/suave/runner/runner_slow.sh
+
 # copy ontology from host to docker
 docker cp suave.owl suaveContainer:/home/kasm-user/suave_ws/src/suave/suave_metacontrol/config/suave.owl
 
