@@ -19,7 +19,7 @@ class Mutator(private val mutSeq: MutationSequence, private val verbose: Boolean
             val mutation = mutSeq[i].concreteMutation(target)
             if(mutation.isApplicable()) {
                 target = mutation.applyCopy()
-                globalMutation!!.mimicMutation(mutation)
+                globalMutation?.mimicMutation(mutation)
             }
         }
         return target
@@ -29,12 +29,12 @@ class Mutator(private val mutSeq: MutationSequence, private val verbose: Boolean
         get() {
             val nodes: MutableSet<Resource> = mutableSetOf()
             // collect all nodes that are mentioned in the mutations
-            for (add in globalMutation!!.addSet) {
+            for (add in globalMutation?.addSet ?: mutableSetOf()) {
                 nodes.add(add.subject)
                 nodes.add(add.predicate.asResource())
                 nodes.add(add.`object`.asResource())
             }
-            for (add in globalMutation!!.deleteSet) {
+            for (add in globalMutation?.deleteSet ?: mutableSetOf()) {
                 nodes.add(add.subject)
                 nodes.add(add.predicate.asResource())
                 nodes.add(add.`object`.asResource())
@@ -44,7 +44,7 @@ class Mutator(private val mutSeq: MutationSequence, private val verbose: Boolean
         }
 
     val affectedSeedNodes : Set<Resource>
-        get() = affectedNodes.intersect(globalMutation!!.allNodes())
+        get() = affectedNodes.intersect((globalMutation?.allNodes() ?: mutableSetOf()).toSet())
 
     fun validate(model: Model, contract : Model) : Boolean{
         val reasoner = ReasonerRegistry.getOWLReasoner()

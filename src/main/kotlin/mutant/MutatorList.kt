@@ -9,7 +9,6 @@ import java.nio.file.Files
 import java.nio.file.Paths
 
 class MutatorList(private val verbose: Boolean) {
-    var seed : Model? = null
     val mutators : MutableList<Mutator> = mutableListOf()
     val mutants : MutableList<Model> = mutableListOf()
     val mutantFiles: MutableList<String> = mutableListOf()
@@ -48,8 +47,8 @@ class MutatorList(private val verbose: Boolean) {
             for (m in mutators) {
                 val id = 0
                 val mutantFile = mutantFiles[i]
-                val numDel = m.globalMutation!!.deleteSet.size
-                val numAdd = m.globalMutation!!.addSet.size
+                val numDel = m.globalMutation?.deleteSet?.size ?: -1
+                val numAdd = m.globalMutation?.addSet?.size ?: -1
                 val affectedSeedNodes = m.affectedSeedNodes.map { it.localName }.joinToString(" ", "[", "]")
                 writer.write("$id,$mutantFile,$numDel,$numAdd,$affectedSeedNodes")
                 i += 1
