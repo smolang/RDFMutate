@@ -4,11 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caab7f85-477f-496a-b8a7-b8805153034d" name="Changes" comment="refactor Mutation class">
+    <list default="true" id="caab7f85-477f-496a-b8a7-b8805153034d" name="Changes" comment="create class to organize generation of multiple mutants">
+      <change afterPath="$PROJECT_DIR$/.idea/csv-editor.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/omt-odt-plugin-settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/mutants/mutant0.ttl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/mutants/overview.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/test2.ttl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mutant/MutatorList.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/AUVMutation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mutant/AUVMutation.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/Mutation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mutant/Mutation.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/Mutator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mutant/Mutator.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/suave/results_temp.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/suave/results_temp.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/FirstTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/FirstTests.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/PipeInspectionTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/PipeInspectionTests.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,20 +82,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/tobias/Documents/programming/ontologies/OntoMutate/examples&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "/home/tobias/Documents/programming/ontologies/OntoMutate/examples",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/examples" />
@@ -98,7 +109,7 @@
       <recent name="mutant" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.FirstTests">
+  <component name="RunManager" selected="Kotlin.MainKt">
     <configuration name="FirstTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -162,9 +173,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.FirstTests" />
-        <item itemvalue="Gradle.PipeInspectionTests" />
         <item itemvalue="Kotlin.MainKt" />
+        <item itemvalue="Gradle.PipeInspectionTests" />
+        <item itemvalue="Gradle.FirstTests" />
       </list>
     </recent_temporary>
   </component>
@@ -233,7 +244,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701854579031</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="refactor Mutation class + more tests">
+      <created>1701856406411</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1701856406411</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -256,6 +274,8 @@
     <MESSAGE value="finish first example&#10;mini example for pipeline inspection completed&#10;example shows that mutation can detect unwanted behavior" />
     <MESSAGE value="add more test cases" />
     <MESSAGE value="refactor Mutation class" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor Mutation class" />
+    <MESSAGE value="refactor Mutation class + more tests" />
+    <MESSAGE value="create class to organize generation of multiple mutants" />
+    <option name="LAST_COMMIT_MESSAGE" value="create class to organize generation of multiple mutants" />
   </component>
 </project>

@@ -52,6 +52,9 @@ class FirstTests : StringSpec() {
 
             val m = Mutator(ms, verbose)
             m.mutate(input)
+
+            // at least the added property needs to be contained in the affected nodes
+            m.affectedNodes.contains(r) shouldBe true
         }
     }
 

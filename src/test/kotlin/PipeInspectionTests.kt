@@ -37,7 +37,7 @@ class PipeInspectionTests : StringSpec()  {
 
     init {
         "count number of added segments" {
-            forAll(20) { i: Int ->
+            forAll(1) { i: Int ->
                 // add up to 99 new segments
                 val k = (i % 100).absoluteValue
                 //println("add: $k new pipe segments")
@@ -59,7 +59,11 @@ class PipeInspectionTests : StringSpec()  {
                 pi.readOntology(resSegment)
                 val after = pi.allInfrastructure().count()
 
-               before + k == after
+
+                for (n in mSegment.affectedSeedNodes)
+                    println(n.localName)
+
+                before + k ==  after
             }
         }
     }

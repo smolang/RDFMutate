@@ -7,7 +7,7 @@ import org.apache.jena.reasoner.Reasoner
 import org.apache.jena.reasoner.ReasonerRegistry
 import kotlin.random.Random
 
-abstract class Mutation(var model: Model, val verbose : Boolean) {
+open class Mutation(var model: Model, val verbose : Boolean) {
     var hasConfig : Boolean = false
     open var config : MutationConfiguration? = null
     var createdMutation : Boolean = false
@@ -34,7 +34,9 @@ abstract class Mutation(var model: Model, val verbose : Boolean) {
         this.setConfiguration(_config)
     }
 
-    abstract fun isApplicable() : Boolean
+    open fun isApplicable() : Boolean {
+        return true
+    }
 
     // applies the mutation and creates a copy
     fun applyCopy() : Model {

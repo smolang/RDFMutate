@@ -51,7 +51,14 @@ class AddPipeSegmentMutation(model: Model, verbose: Boolean) : AUVMutation(model
                 getCandidates().random()
 
         // create new individual of class "PipeSement" by usig the "AddInstance" mutation
-        val nameNewSegment = auvURI + delimiter + "newPipeSegment"+Random.nextInt(0,Int.MAX_VALUE)
+        var i = 1
+        var tempNewSegmentName = auvURI + delimiter + "newPipeSegment" + i
+        val nodes = allNodes()
+        while (nodes.contains(model.createResource(tempNewSegmentName))) {
+            i += 1
+            tempNewSegmentName = auvURI + delimiter + "newPipeSegment" + i
+        }
+        val nameNewSegment = tempNewSegmentName
 
         val configAIM = StringAndResourceConfiguration(nameNewSegment, pipeSegmentClass)
 

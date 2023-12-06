@@ -162,8 +162,8 @@ class Main : CliktCommand() {
         val configRan = SingleResourceConfiguration(ran)
 
         val ms = MutationSequence(verbose)
-        //ms.addWithConfig(RemoveIndividual::class, configInd)
-        //ms.addRandom(RemoveIndividual::class)
+        //ms.addWithConfig(RemoveIndividualMutation::class, configInd)
+        ms.addRandom(RemoveIndividualMutation::class)
         ms.addWithConfig(AddObjectProperty::class, configR)
         ms.addWithConfig(AddRelationMutation::class, configT)
         ms.addWithConfig(AddRelationMutation::class, configSub)
@@ -171,10 +171,17 @@ class Main : CliktCommand() {
         ms.addWithConfig(AddRelationMutation::class, configRan)
 
         val m = Mutator(ms, verbose)
-        val output = m.mutate(input)
+        //val output = m.mutate(input)
         //println(output.toString())
 
-        //RDFDataMgr.write(File("examples/test.ttl").outputStream(), output, Lang.TTL)
+        val ml = MutatorList(verbose)
+        ml.addMutator(m)
+        ml.createMutants(input)
+        ml.saveMutants("examples/mutants", "mutant")
+        ml.writeToCSV("examples/mutants/overview.csv")
+
+        //val output = m.mutate(input)
+        //RDFDataMgr.write(File("examples/test2.ttl").outputStream(), output, Lang.TTL)
     }
 
     override fun run() {
