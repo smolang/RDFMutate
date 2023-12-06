@@ -2,6 +2,8 @@ import io.kotlintest.shouldBe
 import io.kotlintest.specs.StringSpec
 import mutant.*
 import org.apache.jena.riot.RDFDataMgr
+import java.lang.AssertionError
+import kotlin.test.assertFailsWith
 
 class FirstTests : StringSpec() {
     init {
@@ -48,6 +50,39 @@ class FirstTests : StringSpec() {
             ms.addWithConfig(AddRelationMutation::class, configDom)
             ms.addWithConfig(AddRelationMutation::class, configRan)
 
+            val m = Mutator(ms, verbose)
+            m.mutate(input)
+        }
+    }
+
+    init {
+        "deleting nodes / individuals from ontologies" {
+            val verbose = false
+            val input = RDFDataMgr.loadDataset("relations/relations.ttl").defaultModel
+            val ms = MutationSequence(verbose)
+            val msBad = MutationSequence(verbose)
+
+
+
+            // delete specific node (here: class B)
+            val B = input.createResource("http://www.ifi.uio.no/tobiajoh/relations#B")
+            val configB = SingleResourceConfiguration(B)
+            ms.addWithConfig(RemoveNodeMutation::class, configB)
+
+            // adding non-individual in individual mutation results in violated assertion
+            msBad.addWithConfig(RemoveIndividualMutation::class, configB)
+            val mBad = Mutator(msBad, verbose)
+            assertFailsWith<AssertionError> {
+                mBad.mutate(input)
+            }
+
+            // delete random node
+            ms.addRandom(RemoveNodeMutation::class)
+
+            // delete random individual
+            ms.addRandom(RemoveIndividualMutation::class)
+
+            // run the mutations
             val m = Mutator(ms, verbose)
             m.mutate(input)
         }

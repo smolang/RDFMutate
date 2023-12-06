@@ -50,6 +50,7 @@ abstract class Mutation(var model: Model, val verbose : Boolean) {
     }
 
     // extracts the changes from a given mutation to perform the same changes
+    // i.e. adds the changes to the existing changes
     fun mimicMutation(m : Mutation) {
         assert(m.createdMutation)
         m.addSet.forEach { addSet.add(it) }
@@ -83,7 +84,7 @@ abstract class Mutation(var model: Model, val verbose : Boolean) {
     }
 
 
-    fun allNodes() : List<Resource> {
+    fun allNodes() : Set<Resource> {
         val l = model.listStatements()
         val N : MutableSet<Resource> = hashSetOf()
         for (s in l) {
@@ -91,7 +92,7 @@ abstract class Mutation(var model: Model, val verbose : Boolean) {
             N.add(s.subject)
             N.add(s.`object`.asResource())
         }
-        return N.toList()
+        return N.toSet()
     }
     fun isOfType(i : Resource, t : Resource) : Boolean {
         val l = model.listStatements()
@@ -104,8 +105,8 @@ abstract class Mutation(var model: Model, val verbose : Boolean) {
         return false
     }
 
-    fun allOfType(t : Resource) : List<Resource> {
-        return model.listResourcesWithProperty(typeProp, t).toList()
+    fun allOfType(t : Resource) : Set<Resource> {
+        return model.listResourcesWithProperty(typeProp, t).toSet()
     }
 
     fun isOfInferredType(i : Resource, t : Resource) : Boolean {
@@ -119,9 +120,9 @@ abstract class Mutation(var model: Model, val verbose : Boolean) {
         return false
     }
 
-    fun allOfInferredType(t : Resource) : List<Resource> {
+    fun allOfInferredType(t : Resource) : Set<Resource> {
         val infModel = ModelFactory.createInfModel(reasoner, model)
-        return infModel.listResourcesWithProperty(typeProp, t).toList()
+        return infModel.listResourcesWithProperty(typeProp, t).toSet()
     }
 
 
@@ -283,7 +284,7 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
         val domainP : Set<Resource>
         val rangeP : Set<Resource>
 
-        val Ind = allOfType(namedInd).toSet()   // all individuals
+        val Ind = allOfType(namedInd)   // all individuals
 
         // is property an ObjectProperty?
         if (isOfType(p, objectProp)) {
@@ -293,14 +294,14 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
             val dom = model.getProperty(p, domainProp)
             domainP =
                 if(dom != null)
-                    allOfInferredType(dom.`object`.asResource()).toSet().intersect(Ind)
+                    allOfInferredType(dom.`object`.asResource()).intersect(Ind)
                 else
                     Ind
             // check if a range exits
             val ran = model.getProperty(p, rangeProp)
             rangeP =
                 if(ran != null)
-                    allOfInferredType(ran.`object`.asResource()).toSet().intersect(Ind)
+                    allOfInferredType(ran.`object`.asResource()).intersect(Ind)
                 else
                     Ind
 
@@ -309,20 +310,20 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
         else if (p == typeProp){
             // let's restrict ourselves to add type relations between individuals and classes
             domainP = Ind
-            rangeP = allOfType(owlClass).toSet()
+            rangeP = allOfType(owlClass)
         }
         else if (p == subClassProp){
-            domainP = allOfType(owlClass).toSet()
-            rangeP = allOfType(owlClass).toSet()
+            domainP = allOfType(owlClass)
+            rangeP = allOfType(owlClass)
         }
         else if (p == domainProp || p == rangeProp){
-            domainP = allOfType(objectProp).toSet()
-            rangeP = allOfType(owlClass).toSet()
+            domainP = allOfType(objectProp)
+            rangeP = allOfType(owlClass)
         }
         else {
             // other special cases are not considered yet --> add relation between any two nodes
-            domainP = allNodes().toSet()
-            rangeP = allNodes().toSet()
+            domainP = allNodes()
+            rangeP = allNodes()
         }
 
 
@@ -402,7 +403,7 @@ class AddAxiomMutation(model: Model, verbose: Boolean) : Mutation(model, verbose
     }
 }
 
-open class RemoveNode(model: Model, verbose : Boolean) : Mutation(model, verbose) {
+open class RemoveNodeMutation(model: Model, verbose : Boolean) : Mutation(model, verbose) {
 
     open fun getCandidates(): List<Resource> {
         val l = model.listStatements().toList().toMutableList()
@@ -451,7 +452,7 @@ open class RemoveNode(model: Model, verbose : Boolean) : Mutation(model, verbose
     }
 }
 
-class RemoveIndividual(model: Model, verbose : Boolean) : RemoveNode(model, verbose) {
+class RemoveIndividualMutation(model: Model, verbose : Boolean) : RemoveNodeMutation(model, verbose) {
     override fun getCandidates(): List<Resource> {
         val l = model.listStatements().toList().toMutableList()
         val candidates = ArrayList<Resource>()
@@ -463,5 +464,15 @@ class RemoveIndividual(model: Model, verbose : Boolean) : RemoveNode(model, verb
         }
         return candidates
     }
+
+    override fun setConfiguration(_config: MutationConfiguration) {
+        assert(_config is SingleResourceConfiguration)
+        // assert that the resource is really an individual
+        val ind = (_config as SingleResourceConfiguration).getResource()
+        assert(isOfType(ind, namedInd))
+        super.setConfiguration(_config)
+    }
+
+
 }
 
