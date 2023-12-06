@@ -150,19 +150,31 @@ class Main : CliktCommand() {
         val ind = input.createResource("http://www.ifi.uio.no/tobiajoh/relations#B")
         val configInd = SingleResourceConfiguration(ind)
 
-        val r = input.createResource("http://www.ifi.uio.no/tobiajoh/relations#r")
+        val r = input.createResource("http://www.ifi.uio.no/tobiajoh/relations#s")
+        val t = input.createResource("http://www.w3.org/1999/02/22-rdf-syntax-ns#type")
+        val sub = input.createResource("http://www.w3.org/2000/01/rdf-schema#subClassOf")
+        val dom = input.createResource("http://www.w3.org/2000/01/rdf-schema#domain")
+        val ran = input.createResource("http://www.w3.org/2000/01/rdf-schema#range")
         val configR = SingleResourceConfiguration(r)
+        val configT = SingleResourceConfiguration(t)
+        val configSub = SingleResourceConfiguration(sub)
+        val configDom = SingleResourceConfiguration(dom)
+        val configRan = SingleResourceConfiguration(ran)
 
         val ms = MutationSequence(verbose)
         //ms.addWithConfig(RemoveIndividual::class, configInd)
         //ms.addRandom(RemoveIndividual::class)
         ms.addWithConfig(AddObjectProperty::class, configR)
+        ms.addWithConfig(AddRelationMutation::class, configT)
+        ms.addWithConfig(AddRelationMutation::class, configSub)
+        ms.addWithConfig(AddRelationMutation::class, configDom)
+        ms.addWithConfig(AddRelationMutation::class, configRan)
 
         val m = Mutator(ms, verbose)
         val output = m.mutate(input)
-        println(output.toString())
+        //println(output.toString())
 
-        RDFDataMgr.write(File("examples/test.ttl").outputStream(), output, Lang.TTL)
+        //RDFDataMgr.write(File("examples/test.ttl").outputStream(), output, Lang.TTL)
     }
 
     override fun run() {

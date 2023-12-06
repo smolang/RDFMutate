@@ -1,10 +1,6 @@
 import io.kotlintest.shouldBe
 import io.kotlintest.specs.StringSpec
-import mutant.AddInstanceMutation
-import mutant.MutationSequence
-import mutant.Mutator
-import mutant.RemoveSubclassMutation
-import org.apache.jena.rdf.model.ModelFactory
+import mutant.*
 import org.apache.jena.riot.RDFDataMgr
 
 class FirstTests : StringSpec() {
@@ -15,8 +11,6 @@ class FirstTests : StringSpec() {
             val input = RDFDataMgr.loadDataset("abc/abc.ttl").defaultModel
             val contractModel = RDFDataMgr.loadDataset("abc/abc.ttl").defaultModel
 
-            val mf = ModelFactory.createDefaultModel()
-
             // add mutation to remove a random subclass axiom
             val ms = MutationSequence(verbose)
             ms.addRandom(listOf(RemoveSubclassMutation::class))
@@ -26,6 +20,36 @@ class FirstTests : StringSpec() {
             val valid = m.validate(res, contractModel)
 
             valid shouldBe false
+        }
+    }
+
+    init {
+        "adding relations to ontology should work" {
+
+            val verbose = false
+            val input = RDFDataMgr.loadDataset("relations/relations.ttl").defaultModel
+
+            // add mutation to remove a random subclass axiom
+            val r = input.createResource("http://www.ifi.uio.no/tobiajoh/relations#r")
+            val t = input.createResource("http://www.w3.org/1999/02/22-rdf-syntax-ns#type")
+            val sub = input.createResource("http://www.w3.org/2000/01/rdf-schema#subClassOf")
+            val dom = input.createResource("http://www.w3.org/2000/01/rdf-schema#domain")
+            val ran = input.createResource("http://www.w3.org/2000/01/rdf-schema#range")
+            val configR = SingleResourceConfiguration(r)
+            val configT = SingleResourceConfiguration(t)
+            val configSub = SingleResourceConfiguration(sub)
+            val configDom = SingleResourceConfiguration(dom)
+            val configRan = SingleResourceConfiguration(ran)
+
+            val ms = MutationSequence(verbose)
+            ms.addWithConfig(AddObjectProperty::class, configR)
+            ms.addWithConfig(AddRelationMutation::class, configT)
+            ms.addWithConfig(AddRelationMutation::class, configSub)
+            ms.addWithConfig(AddRelationMutation::class, configDom)
+            ms.addWithConfig(AddRelationMutation::class, configRan)
+
+            val m = Mutator(ms, verbose)
+            m.mutate(input)
         }
     }
 }

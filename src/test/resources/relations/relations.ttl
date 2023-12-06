@@ -22,6 +22,12 @@
    rdfs:range :D .
 
 
+###  http://www.ifi.uio.no/tobiajoh/relations#s
+:s rdf:type owl:ObjectProperty ,
+            owl:FunctionalProperty ;
+   rdfs:domain :D .
+
+
 #################################################################
 #    Classes
 #################################################################
@@ -58,7 +64,8 @@
 ###  http://www.ifi.uio.no/tobiajoh/relations#b
 :b rdf:type owl:NamedIndividual ,
             :B ;
-   :r :c .
+   :r :c ;
+   :s :a .
 
 
 ###  http://www.ifi.uio.no/tobiajoh/relations#c

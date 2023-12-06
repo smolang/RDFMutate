@@ -1,7 +1,6 @@
 package mutant
 
 import org.apache.jena.rdf.model.Model
-import org.apache.jena.rdf.model.ModelFactory
 import org.apache.jena.rdf.model.Resource
 import kotlin.random.Random
 
@@ -9,7 +8,7 @@ import kotlin.random.Random
 abstract class AUVMutation(model: Model, verbose: Boolean) : Mutation(model, verbose) {
     val auvURI = "http://www.ifi.uio.no/tobiajoh/miniPipes"
     val delimiter = "#"
-    val pipeSegmentClass = model.createResource(auvURI + delimiter + "PipeSegment")
+    val pipeSegmentClass: Resource = model.createResource(auvURI + delimiter + "PipeSegment")
 
 }
 
@@ -17,7 +16,7 @@ abstract class AUVMutation(model: Model, verbose: Boolean) : Mutation(model, ver
 interface AUVConfiguration
 
 // a single resource (the start segment) can be contained in the configuration
-class AddPipeSegmentConfiguration(private val start: Resource) : SingleResourceConfiguration(start), AUVConfiguration
+class AddPipeSegmentConfiguration(start: Resource) : SingleResourceConfiguration(start), AUVConfiguration
 
 
 class AddPipeSegmentMutation(model: Model, verbose: Boolean) : AUVMutation(model, verbose) {
@@ -38,7 +37,7 @@ class AddPipeSegmentMutation(model: Model, verbose: Boolean) : AUVMutation(model
         return hasConfig || getCandidates().any()
     }
 
-    override fun applyCopy(): Model {
+    override fun createMutation() {
         //val m = ModelFactory.createDefaultModel()
 
         // select the start segment
@@ -58,7 +57,10 @@ class AddPipeSegmentMutation(model: Model, verbose: Boolean) : AUVMutation(model
 
         val aim = AddInstanceMutation(model, verbose)
         aim.setConfiguration(configAIM)
-        var tempModel = aim.applyCopy()
+        val tempModel = aim.applyCopy()
+
+        // mimic performed mutation
+        mimicMutation(aim)
 
         // create "nexto" relation between start and the new individual
 
@@ -69,10 +71,13 @@ class AddPipeSegmentMutation(model: Model, verbose: Boolean) : AUVMutation(model
         val configAAM = SingleStatementConfiguration(s)
         val aam = AddAxiomMutation(tempModel, verbose)
         aam.setConfiguration(configAAM)
+        aam.applyCopy()
 
-        tempModel = aam.applyCopy()
+        // mimic the mutations that happend
+        mimicMutation(aim)
+        mimicMutation(aam)
 
-        return tempModel
+        super.createMutation()
 
     }
 

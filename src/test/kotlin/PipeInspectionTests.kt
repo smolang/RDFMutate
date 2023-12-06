@@ -1,4 +1,3 @@
-import io.kotlintest.properties.assertAll
 import io.kotlintest.properties.forAll
 import io.kotlintest.shouldBe
 import io.kotlintest.specs.StringSpec
@@ -39,9 +38,9 @@ class PipeInspectionTests : StringSpec()  {
     init {
         "count number of added segments" {
             forAll(20) { i: Int ->
-                var b = true
-                val k = (i % 1000).absoluteValue
-                println("k: "+ k)
+                // add up to 99 new segments
+                val k = (i % 100).absoluteValue
+                //println("add: $k new pipe segments")
                 // load ontology
                 val verbose = false
                 val input = RDFDataMgr.loadDataset("PipeInspection/miniPipes.ttl").defaultModel
