@@ -7,11 +7,8 @@ import com.github.ajalt.clikt.parameters.types.file
 import com.github.ajalt.clikt.parameters.types.int
 import mutant.*
 import org.apache.jena.rdf.model.ModelFactory
-import org.apache.jena.riot.Lang
 import org.apache.jena.riot.RDFDataMgr
-import org.apache.jena.vocabulary.RDF
 import sut.MiniPipeInspection
-import java.io.File
 
 
 class Main : CliktCommand() {
@@ -142,47 +139,25 @@ class Main : CliktCommand() {
     }
 
     fun testSuave() {
-        if(!source.exists()) throw Exception("Input file $source does not exist")
-        val input = RDFDataMgr.loadDataset(source.absolutePath).defaultModel
-
-        // mutated ontology with "add pipe" at segment1
-        println("\nApply mutation to ontology")
-        val ind = input.createResource("http://www.ifi.uio.no/tobiajoh/relations#B")
-        val configInd = SingleResourceConfiguration(ind)
-
-        val r = input.createResource("http://www.ifi.uio.no/tobiajoh/relations#s")
-        val t = input.createResource("http://www.w3.org/1999/02/22-rdf-syntax-ns#type")
-        val sub = input.createResource("http://www.w3.org/2000/01/rdf-schema#subClassOf")
-        val dom = input.createResource("http://www.w3.org/2000/01/rdf-schema#domain")
-        val ran = input.createResource("http://www.w3.org/2000/01/rdf-schema#range")
-        val configR = SingleResourceConfiguration(r)
-        val configT = SingleResourceConfiguration(t)
-        val configSub = SingleResourceConfiguration(sub)
-        val configDom = SingleResourceConfiguration(dom)
-        val configRan = SingleResourceConfiguration(ran)
+        val input = RDFDataMgr.loadDataset("src/main/suave/suave_ontologies/suave_original_with_imports.owl").defaultModel
 
         val ms = MutationSequence(verbose)
-        //ms.addWithConfig(RemoveIndividualMutation::class, configInd)
-        ms.addRandom(RemoveIndividualMutation::class)
-        ms.addWithConfig(AddObjectProperty::class, configR)
-        ms.addWithConfig(AddRelationMutation::class, configT)
-        ms.addWithConfig(AddRelationMutation::class, configSub)
-        ms.addWithConfig(AddRelationMutation::class, configDom)
-        ms.addWithConfig(AddRelationMutation::class, configRan)
+
+        for (i in 0..10) {
+            ms.addRandom(ChangeSolvesFunctionMutation::class)
+            ms.addRandom(AddQAEstimationMutation::class)
+            ms.addRandom(RemoveQAEstimationMutation::class)
+            ms.addRandom(ChangeQualityAttributTypeMutation::class)
+        }
+
 
         val m = Mutator(ms, verbose)
-        //val output = m.mutate(input)
-        //println(output.toString())
-
-        val ml = MutatorList(verbose)
-        ml.addMutator(m)
-        ml.createMutants(input)
-        ml.saveMutants("examples/mutants", "mutant")
-        ml.writeToCSV("examples/mutants/overview.csv")
+        val output = m.mutate(input)
 
         //val output = m.mutate(input)
         //RDFDataMgr.write(File("examples/test2.ttl").outputStream(), output, Lang.TTL)
     }
+
 
     override fun run() {
         //testMutations()

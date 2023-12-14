@@ -37,14 +37,18 @@ class FirstTests : StringSpec() {
             val sub = input.createResource("http://www.w3.org/2000/01/rdf-schema#subClassOf")
             val dom = input.createResource("http://www.w3.org/2000/01/rdf-schema#domain")
             val ran = input.createResource("http://www.w3.org/2000/01/rdf-schema#range")
+            val tProp = input.createResource("http://www.ifi.uio.no/tobiajoh/relations#t")
+
             val configR = SingleResourceConfiguration(r)
             val configT = SingleResourceConfiguration(t)
+            val configTProp = SingleResourceConfiguration(tProp)
             val configSub = SingleResourceConfiguration(sub)
             val configDom = SingleResourceConfiguration(dom)
             val configRan = SingleResourceConfiguration(ran)
 
             val ms = MutationSequence(verbose)
-            ms.addWithConfig(AddObjectProperty::class, configR)
+            ms.addWithConfig(AddObjectPropertyMutation::class, configR)
+            ms.addWithConfig(AddObjectPropertyMutation::class, configTProp)
             ms.addWithConfig(AddRelationMutation::class, configT)
             ms.addWithConfig(AddRelationMutation::class, configSub)
             ms.addWithConfig(AddRelationMutation::class, configDom)
@@ -55,6 +59,45 @@ class FirstTests : StringSpec() {
 
             // at least the added property needs to be contained in the affected nodes
             m.affectedNodes.contains(r) shouldBe true
+        }
+    }
+
+    init {
+        "removing relations to ontology should work" {
+
+            val verbose = false
+            val input = RDFDataMgr.loadDataset("relations/relations.ttl").defaultModel
+
+
+            val r = input.createResource("http://www.ifi.uio.no/tobiajoh/relations#r")
+            val s = input.createResource("http://www.ifi.uio.no/tobiajoh/relations#s")
+            val t = input.createResource("http://www.ifi.uio.no/tobiajoh/relations#t")
+
+            val configR = SingleResourceConfiguration(r)
+            val configS = SingleResourceConfiguration(s)
+            val configT = SingleResourceConfiguration(t)
+
+            val ms = MutationSequence(verbose)
+            //ms.addWithConfig(RemoveIndividualMutation::class, configInd)
+
+            for (i in 0..5) {
+                ms.addWithConfig(RemoveObjectPropertyMutation::class, configR)
+                ms.addWithConfig(RemoveObjectPropertyMutation::class, configS)
+                ms.addWithConfig(RemoveObjectPropertyMutation::class, configT)
+            }
+
+
+            val m = Mutator(ms, verbose)
+            val output = m.mutate(input)
+
+            // at least the added property needs to be contained in the affected nodes
+            m.affectedNodes.contains(r) shouldBe true
+            m.affectedNodes.contains(s) shouldBe true
+
+            // there is no relation labelled with "t" in the seed ontology
+            m.affectedNodes.contains(t) shouldBe false
+
+
         }
     }
 
@@ -86,6 +129,26 @@ class FirstTests : StringSpec() {
             ms.addRandom(RemoveIndividualMutation::class)
 
             // run the mutations
+            val m = Mutator(ms, verbose)
+            m.mutate(input)
+        }
+    }
+
+    init {
+        "domain specific operators for SUAVE" {
+            val verbose = false
+            val input = RDFDataMgr.loadDataset("src/main/suave/suave_ontologies/suave_original_with_imports.owl").defaultModel
+
+            val ms = MutationSequence(verbose)
+
+            for (i in 0..10) {
+                ms.addRandom(ChangeSolvesFunctionMutation::class)
+                ms.addRandom(AddQAEstimationMutation::class)
+                ms.addRandom(RemoveQAEstimationMutation::class)
+                ms.addRandom(ChangeQualityAttributTypeMutation::class)
+            }
+
+
             val m = Mutator(ms, verbose)
             m.mutate(input)
         }

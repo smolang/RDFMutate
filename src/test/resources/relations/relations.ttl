@@ -28,6 +28,12 @@
    rdfs:domain :D .
 
 
+###  http://www.ifi.uio.no/tobiajoh/relations#t
+:t rdf:type owl:ObjectProperty ;
+   rdfs:subPropertyOf :s ;
+   rdf:type owl:IrreflexiveProperty .
+
+
 #################################################################
 #    Classes
 #################################################################

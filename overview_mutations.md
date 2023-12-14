@@ -49,16 +49,17 @@
 
 ## Own Operators
 
-| effected entity | operator | effect                                              | implemented?  |
-|-----------------|----------|-----------------------------------------------------|---------------|
-| individual      |          | add instance of a node                              | yes           |
-| any axiom       |          | delete an axiom                                     | yes           |
-| any axiom       |          | add a relation                                      | working on it |
-| any axiom       |          | add an ObjectProperty                               | yes           |
-| any node        |          | delete node (and all the axioms it occurs in)       | yes           |
-| individual      |          | delete individual (and all the axioms it occurs in) | yes           |
-| any axiom       |          | add a SubClass relation                             | no            |
-| individual      |          | add a type relation                                 | no            |
+| effected entity          | operator | effect                                              | implemented?                  |
+|--------------------------|----------|-----------------------------------------------------|-------------------------------|
+| individual               |          | add instance of a node                              | yes                           |
+| any axiom                |          | delete an axiom                                     | yes                           |
+| any axiom                |          | add a relation                                      | mainly (not all corner cases) |
+| any axiom                |          | add an ObjectProperty relation                      | yes                           |
+| Object Property relation |          | remove an ObjectProperty relation                   | yes                           |
+| any node                 |          | delete node (and all the axioms it occurs in)       | yes                           |
+| individual               |          | delete individual (and all the axioms it occurs in) | yes                           |
+| any axiom                |          | add a SubClass relation                             | no                            |
+| individual               |          | add a type relation                                 | no                            |
 
 ## Domain specific operators
 
