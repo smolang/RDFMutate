@@ -144,11 +144,27 @@ class Main : CliktCommand() {
         val ms = MutationSequence(verbose)
 
         for (i in 0..10) {
-            ms.addRandom(ChangeSolvesFunctionMutation::class)
-            ms.addRandom(AddQAEstimationMutation::class)
-            ms.addRandom(RemoveQAEstimationMutation::class)
-            ms.addRandom(ChangeQualityAttributTypeMutation::class)
+            //ms.addRandom(ChangeSolvesFunctionMutation::class)
+            //ms.addRandom(AddQAEstimationMutation::class)
+            //ms.addRandom(RemoveQAEstimationMutation::class)
+            //ms.addRandom(ChangeQualityAttributTypeMutation::class)
         }
+
+        val qaCritical = input.createResource("http://metacontrol.org/tomasys#qa_critical")
+        val configQACritical = SingleResourceConfiguration(qaCritical)
+
+        val qaComparisonOperator  = input.createResource("http://metacontrol.org/tomasys#qa_comparison_operator")
+        val fgStatus = input.createResource("http://metacontrol.org/tomasys#c_status")
+
+        ms.addWithConfig(AddRelationMutation::class, configQACritical)
+        ms.addWithConfig(
+            AddRelationMutation::class,
+            SingleResourceConfiguration(qaComparisonOperator)
+        )
+        ms.addWithConfig(
+            AddRelationMutation::class,
+            SingleResourceConfiguration(fgStatus)
+        )
 
 
         val m = Mutator(ms, verbose)

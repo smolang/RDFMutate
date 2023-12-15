@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caab7f85-477f-496a-b8a7-b8805153034d" name="Changes" comment="minor">
-      <change afterPath="$PROJECT_DIR$/examples/test2.ttl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mutant/SuaveMutation.kt" afterDir="false" />
+    <list default="true" id="caab7f85-477f-496a-b8a7-b8805153034d" name="Changes" comment="continue implementing suave operators">
+      <change afterPath="$PROJECT_DIR$/src/main/suave/suave_ontologies/suave_original_with_imports.ttl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/relations.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/examples/relations.ttl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/overview_mutations.md" beforeDir="false" afterPath="$PROJECT_DIR$/overview_mutations.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/Mutation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mutant/Mutation.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/SuaveMutation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mutant/SuaveMutation.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/FirstTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/FirstTests.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/relations/relations.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/relations/relations.ttl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +66,9 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3
+}]]></component>
   <component name="ProjectId" id="2CZNclxHYEVCjpnp1PtNSusf7Wd" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -77,21 +77,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/tobias/Documents/programming/ontologies/OntoMutate/examples&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Gradle.Build OntoMutate.executor": "Run",
+    "Gradle.FirstTests.executor": "Run",
+    "Gradle.PipeInspectionTests.executor": "Run",
+    "Kotlin.MainKt.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/tobias/Documents/programming/ontologies/OntoMutate",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/examples" />
@@ -104,7 +110,7 @@
       <recent name="mutant" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.MainKt">
+  <component name="RunManager" selected="Gradle.FirstTests">
     <configuration name="FirstTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -126,6 +132,7 @@
       <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
     <configuration name="PipeInspectionTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -149,6 +156,7 @@
       <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
     <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
@@ -168,11 +176,18 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.MainKt" />
-        <item itemvalue="Gradle.PipeInspectionTests" />
         <item itemvalue="Gradle.FirstTests" />
+        <item itemvalue="Gradle.PipeInspectionTests" />
+        <item itemvalue="Kotlin.MainKt" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-11.0.21-corretto-11.0.21-8336523bb0d9-3a399477" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -260,8 +275,18 @@
       <option name="project" value="LOCAL" />
       <updated>1701876569076</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="continue implementing suave operators">
+      <created>1702568198808</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1702568198808</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.ttl" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -286,6 +311,7 @@
     <MESSAGE value="create class to organize generation of multiple mutants" />
     <MESSAGE value="new class &#10;helps to organize generation of multiple mutants" />
     <MESSAGE value="minor" />
-    <option name="LAST_COMMIT_MESSAGE" value="minor" />
+    <MESSAGE value="continue implementing suave operators" />
+    <option name="LAST_COMMIT_MESSAGE" value="continue implementing suave operators" />
   </component>
 </project>

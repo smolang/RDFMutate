@@ -135,6 +135,37 @@ class FirstTests : StringSpec() {
     }
 
     init {
+        "adding / changing data relations" {
+            val verbose = false
+            val input = RDFDataMgr.loadDataset("src/main/suave/suave_ontologies/suave_original_with_imports.owl").defaultModel
+
+            val qaCritical = input.createResource("http://metacontrol.org/tomasys#qa_critical")
+            val configQACritical = SingleResourceConfiguration(qaCritical)
+
+            val qaComparisonOperator  = input.createResource("http://metacontrol.org/tomasys#qa_comparison_operator")
+            val fgStatus = input.createResource("http://metacontrol.org/tomasys#c_status")
+
+
+            val ms = MutationSequence(verbose)
+
+            for (i in 0..10) {
+                ms.addWithConfig(ChangeRelationMutation::class, configQACritical)
+                ms.addWithConfig(
+                    AddRelationMutation::class,
+                    SingleResourceConfiguration(qaComparisonOperator)
+                )
+                ms.addWithConfig(
+                    AddRelationMutation::class,
+                    SingleResourceConfiguration(fgStatus)
+                )
+            }
+
+            val m = Mutator(ms, verbose)
+            m.mutate(input)
+        }
+    }
+
+    init {
         "domain specific operators for SUAVE" {
             val verbose = false
             val input = RDFDataMgr.loadDataset("src/main/suave/suave_ontologies/suave_original_with_imports.owl").defaultModel

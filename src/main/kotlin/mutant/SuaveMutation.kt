@@ -32,9 +32,7 @@ class RemoveQAEstimationMutation(model: Model, verbose: Boolean) : RemoveObjectP
 }
 
 
-// depends on the implementation of "AddObjectPropertyMutation":
-// assumes that existing relations are deleted, to keep functional property
-class ChangeSolvesFunctionMutation(model: Model, verbose: Boolean) : AddObjectPropertyMutation(model, verbose) {
+class ChangeSolvesFunctionMutation(model: Model, verbose: Boolean) : ChangeObjectPropertyMutation(model, verbose) {
     init {
         super.setConfiguration(
             SingleResourceConfiguration(
@@ -44,7 +42,7 @@ class ChangeSolvesFunctionMutation(model: Model, verbose: Boolean) : AddObjectPr
     }
 }
 
-class ChangeQualityAttributTypeMutation(model: Model, verbose: Boolean) : AddObjectPropertyMutation(model, verbose) {
+class ChangeQualityAttributTypeMutation(model: Model, verbose: Boolean) : ChangeObjectPropertyMutation(model, verbose) {
     init {
         super.setConfiguration(
             SingleResourceConfiguration(

@@ -33,9 +33,20 @@ open class Mutation(var model: Model, val verbose : Boolean) {
     val subPropertyProp : Property = model.createProperty("http://www.w3.org/2000/01/rdf-schema#subPropertyOf")
     val funcProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#FunctionalProperty")
     val irreflexivProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#IrreflexiveProperty")
+    val datatypeProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#DatatypeProperty")
+    val oneOfProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#oneOf")
     val namedInd : Resource = model.createResource("http://www.w3.org/2002/07/owl#NamedIndividual")
     val objectProp : Resource = model.createResource("http://www.w3.org/2002/07/owl#ObjectProperty")
     val owlClass : Resource = model.createResource("http://www.w3.org/2002/07/owl#Class")
+    val decimalClass : Resource = model.createResource("http://www.w3.org/2001/XMLSchema#decimal")
+    val booleanClass : Resource = model.createResource("http://www.w3.org/2001/XMLSchema#boolean")
+    val datatypeClass : Resource = model.createResource("http://www.w3.org/2000/01/rdf-schema#Datatype")
+
+    val rdfListClass : Resource = model.createResource("http://www.w3.org/1999/02/22-rdf-syntax-ns#List")
+    val rdfFirst : Property = model.createProperty("http://www.w3.org/1999/02/22-rdf-syntax-ns#first")
+    val rdfRest : Property = model.createProperty("http://www.w3.org/1999/02/22-rdf-syntax-ns#rest")
+    val rdfNil : Resource = model.createProperty("http://www.w3.org/1999/02/22-rdf-syntax-ns#nil")
+
 
     // empty Axiom
     val emptyProp : Property = model.createProperty("emptyAxiomProp")
@@ -123,10 +134,9 @@ open class Mutation(var model: Model, val verbose : Boolean) {
     }
 
     fun isOfType(i : Resource, t : Resource) : Boolean {
-        val l = model.listStatements()
+        val l = model.listStatements(SimpleSelector(i, typeProp, null as RDFNode?))
         for (s in l) {
-            // select statements that are not subClass relations
-            if (s.subject == i && s.predicate == typeProp && s.`object` == t) {
+            if (s.`object` == t) {
                 return true
             }
         }
@@ -138,10 +148,9 @@ open class Mutation(var model: Model, val verbose : Boolean) {
     }
 
     fun isOfInferredType(i : Resource, t : Resource) : Boolean {
-        val l = infModel.listStatements()
+        val l = infModel.listStatements(SimpleSelector(i, typeProp, null as RDFNode?))
         for (s in l) {
-            // select statements that are not subClass relations
-            if (s.subject == i && s.predicate == typeProp && s.`object` == t) {
+            if (s.`object` == t) {
                 return true
             }
         }
@@ -152,6 +161,46 @@ open class Mutation(var model: Model, val verbose : Boolean) {
         return infModel.listResourcesWithProperty(typeProp, t).toSet()
     }
 
+    // iterate through the axioms to add and remove existing relations with same subject and predicate
+    fun turnAdditionsToChanges() {
+        // find existing relations and remove them
+        for (axiom in addSet) {
+            for (existingAxiom in model.listStatements(
+                SimpleSelector(axiom.subject, axiom.predicate, null as RDFNode?)
+            ))
+                deleteSet.add(existingAxiom)
+        }
+    }
+
+    // returns all elements from the linked a list in the ontology that starts in "head"
+    fun allElementsInList(head: Resource) : List<RDFNode> {
+        // assure that element is really a list
+        if (!model.contains(model.createStatement(
+            head,
+            typeProp,
+            rdfListClass
+        )))
+            return listOf()
+        else {
+            var list : MutableList<RDFNode> = mutableListOf()
+            // add all (i.e. one) current element
+            for (element in model.listObjectsOfProperty(head, rdfFirst))
+                list.add(element)
+
+            // check if there is more list to come
+
+            val rest = model.listObjectsOfProperty(head, rdfRest).toSet()
+            if (rest.contains(rdfNil))
+                // base case
+                return list
+            else {
+                // recursive call
+                val rest = allElementsInList(rest.single().asResource())
+                list.addAll(rest)
+                return list
+            }
+        }
+    }
 
 }
 
@@ -300,11 +349,11 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
 
     private fun costlySearchForValidAxiom(p : Property,
                                           domainP : Set<Resource>,
-                                          rangeP : Set<Resource>) : Statement? {
+                                          rangeP : Set<RDFNode>) : Statement? {
         // generated axiom is part of ontology --> more effort on finding non-contained one
         // find all pairs of this relation that are already in ontology
-        val containedPairs : MutableSet<Pair<Resource, Resource>> = hashSetOf()
-        val candidatePairs : MutableSet<Pair<Resource, Resource>> = hashSetOf()
+        val containedPairs : MutableSet<Pair<Resource, RDFNode>> = hashSetOf()
+        val candidatePairs : MutableSet<Pair<Resource, RDFNode>> = hashSetOf()
 
         // iterate over statements in ontology with this property
         for (s in model.listStatements(SimpleSelector(null as Resource?, p, null as RDFNode?))) {
@@ -357,6 +406,97 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
         // TODO: similar check for asymmetric
     }
 
+    private fun computeDomsObjectProp(p : Property) : Pair<Set<Resource>, Set<RDFNode>> {
+        // only select individuals and according to range and domain
+        // note: this is very restrictive, as usually, one could infer the class from the relation
+        // our setting is more useful in a closed-world scenario
+
+        assert(isOfType(p, objectProp))
+        // compute domains
+
+        val Ind = allOfType(namedInd)   // all individuals
+
+        val domains = infModel.listStatements(SimpleSelector(p, domainProp, null as RDFNode?)).toSet()
+        var domainP : MutableSet<Resource> = Ind.toMutableSet()
+        domains.forEach {
+            domainP = domainP.intersect(allOfInferredType(it.`object`.asResource())).toMutableSet()
+        }
+
+        // compute range
+        val ranges = infModel.listStatements(SimpleSelector(p, rangeProp, null as RDFNode?)).toSet()
+        var rangeP : MutableSet<Resource> = Ind.toMutableSet()
+        ranges.forEach {
+            rangeP = rangeP.intersect(allOfInferredType(it.`object`.asResource())).toMutableSet()
+        }
+
+        return Pair(domainP, rangeP)
+    }
+
+    private fun computeDomsDataProp(p : Property) : Pair<Set<Resource>, Set<RDFNode>> {
+        // only select individuals and according to range and domain
+        // note: this is very restrictive, as usually, one could infer the class from the relation
+        // our setting is more useful in a closed-world scenario
+
+        assert(isOfType(p, datatypeProp))
+
+        // compute domains
+
+        val Ind = allOfType(namedInd)   // all individuals
+
+        val domains = infModel.listStatements(SimpleSelector(p, domainProp, null as RDFNode?)).toSet()
+        var domainP : MutableSet<Resource> = Ind.toMutableSet()
+        domains.forEach {
+            domainP = domainP.intersect(allOfInferredType(it.`object`.asResource())).toMutableSet()
+        }
+
+        val ranges = model.listObjectsOfProperty(p, rangeProp).toSet()
+
+        var rangeP : MutableSet<RDFNode> = hashSetOf()
+
+        if (ranges.size != 1) {
+            if (verbose)
+                println("can not add data relation. Property ${p.localName} has no or more than one range provided")
+        }
+        else {
+            val range = ranges.single()
+            // check different classes of data properties, for which we can determine the domain
+            if (range == booleanClass) {
+                val trueNode = model.createResource("true")
+                val falseNode = model.createResource("false")
+                rangeP = hashSetOf(trueNode, falseNode)
+            }
+            else if (isOfType(range.asResource(), datatypeClass)) {
+                // check if it is a list of statements
+                val oneOf = model.listObjectsOfProperty(
+                    range.asResource(),
+                    oneOfProp
+                ).toSet()
+                if (oneOf.size != 1){
+                    if (verbose)
+                        println("can not add data relation. Property ${p.localName} is marked as 'Datatype' but does" +
+                                " not provide one 'oneOf'-relation ")
+                }
+                else {
+                    val list = oneOf.single()
+                    if (!isOfType(list.asResource(), rdfListClass)){
+                        println("can not add data relation. Property ${p.localName} has not a list as 'oneOf'.")
+                    }
+                    else {
+                        // collect elements of list
+                        rangeP = allElementsInList(list.asResource()).toMutableSet()
+                    }
+                }
+
+            }
+            else {
+                if (verbose)
+                    println("the range of datatype property ${p.localName} is not implemented yet. No axiom is added")
+            }
+        }
+
+        return Pair(domainP, rangeP)
+    }
+
     override fun createMutation() {
         // select candidate
         val prop =
@@ -384,35 +524,21 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
 
         // build sets for the elements that are in the domain and range of the property
         val domainP : Set<Resource>
-        val rangeP : Set<Resource>
+        val rangeP : Set<RDFNode>
 
         val Ind = allOfType(namedInd)   // all individuals
 
         // is property an ObjectProperty?
         if (isOfType(p, objectProp)) {
-            // only select individuals and according to range and domain
-            // note: this is very restrictive, as usually, one could infer the class from the relation
-            // our setting is more useful in a closed-world scenario
-
-            // compute domains
-            val domains = infModel.listStatements(SimpleSelector(p, domainProp, null as RDFNode?)).toSet()
-            var allInDom : MutableSet<Resource> = Ind.toMutableSet()
-            domains.forEach {
-                allInDom = allInDom.intersect(allOfInferredType(it.`object`.asResource())).toMutableSet()
-            }
-            domainP = allInDom
-
-            // compute range
-            val ranges = infModel.listStatements(SimpleSelector(p, rangeProp, null as RDFNode?)).toSet()
-            var allInRange : MutableSet<Resource> = Ind.toMutableSet()
-            ranges.forEach {
-                allInRange = allInRange.intersect(allOfInferredType(it.`object`.asResource())).toMutableSet()
-            }
-            rangeP = allInRange
+            val (d, r) = computeDomsObjectProp(p)
+            domainP = d
+            rangeP = r
         }
-
-        // TODO: is property data property?
-
+        else if (isOfType(p, datatypeProp)) {
+            val (d, r) = computeDomsDataProp(p)
+            domainP = d
+            rangeP = r
+        }
         // is property type property?
         else if (p == typeProp){
             // let's restrict ourselves to add type relations between individuals and classes
@@ -433,35 +559,47 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
             rangeP = allNodes()
         }
 
+        // check, if there are candidates to add this relation
+        if (domainP.any() && rangeP.any()) {
+            var i = 0
+            var axiomCand = model.createStatement(domainP.random(), p, rangeP.random())
 
-        var i = 0
-        var axiomCand = model.createStatement(domainP.random(), p, rangeP.random())
+            // test if axiom exists
+            // try 10 times to find an axiom that does not exist, as this often works is is fast
+            while (!validAddition(axiomCand) && i < 10) {
+                // find new axiom
+                axiomCand = model.createStatement(domainP.random(), p, rangeP.random())
+                i += 1
+            }
 
-        // test if axiom exists
-        // try 10 times to find an axiom that does not exist, as this often works is is fast
-        while (!validAddition(axiomCand) && i < 10)
-        {
-            // find new axiom
-            axiomCand = model.createStatement(domainP.random(), p, rangeP.random())
-            i += 1
-        }
-
-        // test if a non-contained axiom was found
-        val axiom =
-            if (!validAddition(axiomCand))
-                costlySearchForValidAxiom(p, domainP, rangeP)
-            else
-                axiomCand
+            // test if a non-contained axiom was found
+            val axiom =
+                if (!validAddition(axiomCand))
+                    costlySearchForValidAxiom(p, domainP, rangeP)
+                else
+                    axiomCand
 
 
-        // if the selected axiom is not contained in ontology and the addition is valid --> we add it
-        // otherwise: we do not add or delete anything
-        if (axiom != null && validAddition(axiom)) {
-            addSet.add(axiom)
-            // add elements to repair set, s.t. obvious inconsistencies are circumvented
-            setRepairs(p, axiom)
+            // if the selected axiom is not contained in ontology and the addition is valid --> we add it
+            // otherwise: we do not add or delete anything
+            if (axiom != null && validAddition(axiom)) {
+                addSet.add(axiom)
+                // add elements to repair set, s.t. obvious inconsistencies are circumvented
+                setRepairs(p, axiom)
+            }
         }
         super.createMutation()
+    }
+}
+
+// similar to adding a relation, but all existing triples with this subject ond predicate are deleted
+open class ChangeRelationMutation(model: Model, verbose: Boolean) : AddRelationMutation(model, verbose) {
+    override fun createMutation() {
+        // create the mutation as usual (i.e. adding a new triple)
+        super.createMutation()
+
+        // find existing relations and remove them
+        turnAdditionsToChanges()
     }
 }
 
@@ -501,9 +639,11 @@ open class RemoveObjectPropertyMutation(model: Model, verbose : Boolean) : Remov
                 super.setConfiguration(_config)
             }
         }
-
     }
 }
+
+
+
 open class AddObjectPropertyMutation(model: Model, verbose: Boolean) : AddRelationMutation(model, verbose) {
     override fun getCandidates() : List<Resource> {
         val cand = ArrayList<Resource>()
@@ -530,14 +670,25 @@ open class AddObjectPropertyMutation(model: Model, verbose: Boolean) : AddRelati
             }
 
         // check that p is really an ObjectProperty
-        val l = model.listStatements().toList()
-        var found = false
-        for (s in l) {
-            if (s.subject == p && s.predicate == typeProp && s.`object` == objectProp)
-                found = true
-        }
-        assert(found)
+        //val l = model.listStatements().toList()
+        //var found = false
+        assert(isOfType(p.asResource(), objectProp))
+       // for (s in l) {
+       //     if (s.subject == p && s.predicate == typeProp && s.`object` == objectProp)
+       //         found = true
+       // }
+        //assert(found)
         super.setConfiguration(_config)
+    }
+}
+
+open class ChangeObjectPropertyMutation(model: Model, verbose: Boolean) : AddObjectPropertyMutation(model, verbose) {
+    override fun createMutation() {
+        // create the mutation as usual (i.e. adding a new triple)
+        super.createMutation()
+
+        // find existing relations and remove them
+        turnAdditionsToChanges()
     }
 }
 
