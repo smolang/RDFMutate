@@ -5,6 +5,7 @@ import org.apache.jena.query.QueryFactory
 import org.apache.jena.rdf.model.*
 import org.apache.jena.reasoner.Reasoner
 import org.apache.jena.reasoner.ReasonerRegistry
+import kotlin.math.exp
 import kotlin.random.Random
 
 open class Mutation(var model: Model, val verbose : Boolean) {
@@ -40,6 +41,7 @@ open class Mutation(var model: Model, val verbose : Boolean) {
     val owlClass : Resource = model.createResource("http://www.w3.org/2002/07/owl#Class")
     val decimalClass : Resource = model.createResource("http://www.w3.org/2001/XMLSchema#decimal")
     val booleanClass : Resource = model.createResource("http://www.w3.org/2001/XMLSchema#boolean")
+    val xsdDecimal : Resource = model.createResource("http://www.w3.org/2001/XMLSchema#decimal")
     val datatypeClass : Resource = model.createResource("http://www.w3.org/2000/01/rdf-schema#Datatype")
 
     val rdfListClass : Resource = model.createResource("http://www.w3.org/1999/02/22-rdf-syntax-ns#List")
@@ -128,7 +130,8 @@ open class Mutation(var model: Model, val verbose : Boolean) {
         for (s in l) {
             // select statements that are not subClass relations
             N.add(s.subject)
-            N.add(s.`object`.asResource())
+            if (s.`object`.isResource)
+                N.add(s.`object`.asResource())
         }
         return N.toSet()
     }
@@ -388,7 +391,7 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
     }
 
     // adds axioms to the delete set if necessary
-    // e.g. if p is functional or assymmetric
+    // e.g. if p is functional or asymmetric
     private fun setRepairs(p : Property, axiom : Statement) {
         if (isOfInferredType(p, funcProp)) {
             // delete outgoing relations, so that relation remains functional
@@ -465,6 +468,23 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
                 val falseNode = model.createResource("false")
                 rangeP = hashSetOf(trueNode, falseNode)
             }
+            else if (range == xsdDecimal) {
+                // compute a random decimal number
+
+                // 50% chance of having a negative number
+                val sign =
+                    if (Random.nextBoolean())
+                        "-"
+                    else
+                        ""
+
+                // the absolute value favours small numbers --> 1/x distribution
+                // e.g. probability of having 0 as leading number is 50%
+                val beforeKomma = ((1/(-Random.nextDouble(-1.0, 1.0) + 1.0))).toInt()
+                val data = "$sign$beforeKomma.${Random.nextInt(0,1000)}"
+                rangeP = hashSetOf(model.createTypedLiteral(data, xsdDecimal.toString()))
+
+            }
             else if (isOfType(range.asResource(), datatypeClass)) {
                 // check if it is a list of statements
                 val oneOf = model.listObjectsOfProperty(
@@ -497,31 +517,7 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
         return Pair(domainP, rangeP)
     }
 
-    override fun createMutation() {
-        // select candidate
-        val prop =
-            if (hasConfig) {
-                when (config) {
-                    is SingleResourceConfiguration -> {
-                        val c = config as SingleResourceConfiguration
-                        c.getResource()
-                    }
-
-                    is SingleStatementConfiguration -> {
-                        val c = config as SingleStatementConfiguration
-                        c.getStatement().predicate
-                    }
-
-                    else -> model.createResource()
-                }
-            }
-            else
-                getCandidates().random()
-
-        val p = model.getProperty(prop.toString())
-
-        // check for restrictions of adding
-
+    open fun computeDomsProp(p : Property) : Pair<Set<Resource>, Set<RDFNode>> {
         // build sets for the elements that are in the domain and range of the property
         val domainP : Set<Resource>
         val rangeP : Set<RDFNode>
@@ -559,13 +555,41 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
             rangeP = allNodes()
         }
 
+        return Pair(domainP, rangeP)
+    }
+
+    override fun createMutation() {
+        // select candidate
+        val prop =
+            if (hasConfig) {
+                when (config) {
+                    is SingleResourceConfiguration -> {
+                        val c = config as SingleResourceConfiguration
+                        c.getResource()
+                    }
+
+                    is SingleStatementConfiguration -> {
+                        val c = config as SingleStatementConfiguration
+                        c.getStatement().predicate
+                    }
+
+                    else -> model.createResource()
+                }
+            }
+            else
+                getCandidates().random()
+
+        val p = model.getProperty(prop.toString())
+
+        val (domainP, rangeP) = computeDomsProp(p)
+
         // check, if there are candidates to add this relation
         if (domainP.any() && rangeP.any()) {
-            var i = 0
             var axiomCand = model.createStatement(domainP.random(), p, rangeP.random())
 
             // test if axiom exists
-            // try 10 times to find an axiom that does not exist, as this often works is is fast
+            // try 10 times to find an axiom that does not exist, as this often works and it is fast
+            var i = 0
             while (!validAddition(axiomCand) && i < 10) {
                 // find new axiom
                 axiomCand = model.createStatement(domainP.random(), p, rangeP.random())
@@ -575,6 +599,7 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
             // test if a non-contained axiom was found
             val axiom =
                 if (!validAddition(axiomCand))
+                    // use expensive search for a valid axiom in case no valid one was found so far
                     costlySearchForValidAxiom(p, domainP, rangeP)
                 else
                     axiomCand
@@ -594,6 +619,15 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
 
 // similar to adding a relation, but all existing triples with this subject ond predicate are deleted
 open class ChangeRelationMutation(model: Model, verbose: Boolean) : AddRelationMutation(model, verbose) {
+
+    override fun computeDomsProp(p: Property): Pair<Set<Resource>, Set<RDFNode>> {
+        // use all individuals as domain that already have such an outgoing relation
+        val domainP = model.listResourcesWithProperty(p).toSet()
+        // use range from super method
+        val (_, rangeP) = super.computeDomsProp(p)
+        return Pair(domainP, rangeP)
+    }
+
     override fun createMutation() {
         // create the mutation as usual (i.e. adding a new triple)
         super.createMutation()

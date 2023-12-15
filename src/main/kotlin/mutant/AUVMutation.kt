@@ -66,10 +66,7 @@ class AddPipeSegmentMutation(model: Model, verbose: Boolean) : AUVMutation(model
         aim.setConfiguration(configAIM)
         val tempModel = aim.applyCopy()
 
-        // mimic performed mutation
-        mimicMutation(aim)
-
-        // create "nexto" relation between start and the new individual
+        // create "nextTo" relation between start and the new individual
 
         val s = model.createStatement(
             start,

@@ -88,7 +88,7 @@ class FirstTests : StringSpec() {
 
 
             val m = Mutator(ms, verbose)
-            val output = m.mutate(input)
+            m.mutate(input)
 
             // at least the added property needs to be contained in the affected nodes
             m.affectedNodes.contains(r) shouldBe true
@@ -144,6 +144,7 @@ class FirstTests : StringSpec() {
 
             val qaComparisonOperator  = input.createResource("http://metacontrol.org/tomasys#qa_comparison_operator")
             val fgStatus = input.createResource("http://metacontrol.org/tomasys#c_status")
+            val hasValue = input.createResource("http://metacontrol.org/tomasys#hasValue")
 
 
             val ms = MutationSequence(verbose)
@@ -157,6 +158,10 @@ class FirstTests : StringSpec() {
                 ms.addWithConfig(
                     AddRelationMutation::class,
                     SingleResourceConfiguration(fgStatus)
+                )
+                ms.addWithConfig(
+                    ChangeRelationMutation::class,
+                    SingleResourceConfiguration(hasValue)
                 )
             }
 
@@ -177,8 +182,10 @@ class FirstTests : StringSpec() {
                 ms.addRandom(AddQAEstimationMutation::class)
                 ms.addRandom(RemoveQAEstimationMutation::class)
                 ms.addRandom(ChangeQualityAttributTypeMutation::class)
+                ms.addRandom(ChangeHasValueMutation::class)
+                ms.addRandom(ChangeQAComparisonOperatorMutation::class)
+                ms.addRandom(AddNewThrusterMutation::class)
             }
-
 
             val m = Mutator(ms, verbose)
             m.mutate(input)

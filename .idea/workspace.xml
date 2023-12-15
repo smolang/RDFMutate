@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caab7f85-477f-496a-b8a7-b8805153034d" name="Changes" comment="continue implementing suave operators">
-      <change afterPath="$PROJECT_DIR$/src/main/suave/suave_ontologies/suave_original_with_imports.ttl" afterDir="false" />
+    <list default="true" id="caab7f85-477f-496a-b8a7-b8805153034d" name="Changes" comment="implementing mutation operators&#10;some refactoring&#10;implementation of relations with data properties">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/overview_mutations.md" beforeDir="false" afterPath="$PROJECT_DIR$/overview_mutations.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/AUVMutation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mutant/AUVMutation.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/Mutation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mutant/Mutation.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/SuaveMutation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mutant/SuaveMutation.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/FirstTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/FirstTests.kt" afterDir="false" />
@@ -177,8 +178,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.FirstTests" />
-        <item itemvalue="Gradle.PipeInspectionTests" />
         <item itemvalue="Kotlin.MainKt" />
+        <item itemvalue="Gradle.PipeInspectionTests" />
       </list>
     </recent_temporary>
   </component>
@@ -282,7 +283,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702568198808</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="implementing mutation operators&#10;some refactoring&#10;implementation of relations with data properties">
+      <option name="closed" value="true" />
+      <created>1702643271280</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1702643271280</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -312,6 +321,7 @@
     <MESSAGE value="new class &#10;helps to organize generation of multiple mutants" />
     <MESSAGE value="minor" />
     <MESSAGE value="continue implementing suave operators" />
-    <option name="LAST_COMMIT_MESSAGE" value="continue implementing suave operators" />
+    <MESSAGE value="implementing mutation operators&#10;some refactoring&#10;implementation of relations with data properties" />
+    <option name="LAST_COMMIT_MESSAGE" value="implementing mutation operators&#10;some refactoring&#10;implementation of relations with data properties" />
   </component>
 </project>
