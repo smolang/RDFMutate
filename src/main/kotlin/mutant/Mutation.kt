@@ -5,7 +5,6 @@ import org.apache.jena.query.QueryFactory
 import org.apache.jena.rdf.model.*
 import org.apache.jena.reasoner.Reasoner
 import org.apache.jena.reasoner.ReasonerRegistry
-import kotlin.math.exp
 import kotlin.random.Random
 
 open class Mutation(var model: Model, val verbose : Boolean) {
@@ -185,7 +184,7 @@ open class Mutation(var model: Model, val verbose : Boolean) {
         )))
             return listOf()
         else {
-            var list : MutableList<RDFNode> = mutableListOf()
+            val list : MutableList<RDFNode> = mutableListOf()
             // add all (i.e. one) current element
             for (element in model.listObjectsOfProperty(head, rdfFirst))
                 list.add(element)
@@ -198,8 +197,8 @@ open class Mutation(var model: Model, val verbose : Boolean) {
                 return list
             else {
                 // recursive call
-                val rest = allElementsInList(rest.single().asResource())
-                list.addAll(rest)
+                val restElements = allElementsInList(rest.single().asResource())
+                list.addAll(restElements)
                 return list
             }
         }

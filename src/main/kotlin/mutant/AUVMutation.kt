@@ -2,7 +2,6 @@ package mutant
 
 import org.apache.jena.rdf.model.Model
 import org.apache.jena.rdf.model.Resource
-import kotlin.random.Random
 
 // all the domain-dependent mutation operators that are specific for the auv domain
 abstract class AUVMutation(model: Model, verbose: Boolean) : Mutation(model, verbose) {
