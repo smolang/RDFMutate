@@ -11,7 +11,9 @@ class FirstTests : StringSpec() {
 
             val verbose = false
             val input = RDFDataMgr.loadDataset("abc/abc.ttl").defaultModel
-            val contractModel = RDFDataMgr.loadDataset("abc/abc.ttl").defaultModel
+            val contract = MutantContract(verbose)
+            contract.entailedModel = RDFDataMgr.loadDataset("abc/abc.ttl").defaultModel
+
 
             // add mutation to remove a random subclass axiom
             val ms = MutationSequence(verbose)
@@ -19,7 +21,7 @@ class FirstTests : StringSpec() {
 
             val m = Mutator(ms, verbose)
             val res = m.mutate(input)
-            val valid = m.validate(res, contractModel)
+            val valid = m.validate(res, contract)
 
             valid shouldBe false
         }

@@ -14,7 +14,7 @@ import kotlin.random.Random
 
 class Main : CliktCommand() {
     private val source by argument().file()
-    private val contract by argument().file()
+    private val contractFile by argument().file()
     private val verbose by option("--verbose","-v", help="Verbose output for debugging. Default = false.").flag()
     private val rounds by option("--rounds","-r", help="Number of mutations applied to input. Default = 1.").int().default(1)
 
@@ -23,9 +23,10 @@ class Main : CliktCommand() {
 
         if(!source.exists()) throw Exception("Input file $source does not exist")
         val input = RDFDataMgr.loadDataset(source.absolutePath).defaultModel
-        if(!contract.exists()) throw Exception("Contract file $contract does not exist")
-        val contractModel = RDFDataMgr.loadDataset(contract.absolutePath).defaultModel
+        if(!contractFile.exists()) throw Exception("Contract file $contractFile does not exist")
 
+        val contract = MutantContract(verbose)
+        contract.entailedModel = RDFDataMgr.loadDataset(contractFile.absolutePath).defaultModel
 
         // test configuration stuff
 
@@ -78,8 +79,8 @@ class Main : CliktCommand() {
             //this is copying before mutating, so we must not copy one more time here
             val res = m.mutate(input)
 
-            //XXX: the following ignores blank nodesn
-            val valid = m.validate(res, contractModel)
+            //XXX: the following ignores blank nodes
+            val valid = m.validate(res, contract)
             println("result of validation: $valid")
             if(valid) {
                 if(verbose) res.write(System.out, "TTL")
@@ -170,7 +171,14 @@ class Main : CliktCommand() {
     override fun run() {
         //testMutations()
         //testMiniPipes()
-        testSuave()
+        //testSuave()
+        val sg = SuaveGenerator(false)
+        sg.createSuaveMutants(2)
+
+
+
+
+
     }
 
 }

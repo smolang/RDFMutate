@@ -4,7 +4,7 @@ import kotlin.reflect.KClass
 
 
 class MutationSequence(private  val verbose: Boolean) {
-    private val mutations : ArrayList<AbstractMutation> = ArrayList()
+    private val mutations : MutableList<AbstractMutation> = mutableListOf()
 
     // adds a random mutation from the provided list of mutations
     fun addRandom(mutOps: List<KClass<out Mutation>>) {
@@ -15,7 +15,6 @@ class MutationSequence(private  val verbose: Boolean) {
     fun addRandom(mutOp: KClass<out Mutation>) {
         addRandom(listOf(mutOp))
     }
-
 
     fun addWithConfig(mutOp: KClass<out Mutation>, config: MutationConfiguration) {
         val am = AbstractMutation(mutOp, config, verbose)
@@ -28,5 +27,10 @@ class MutationSequence(private  val verbose: Boolean) {
 
     fun size() : Int {
         return mutations.size
+    }
+
+    // shuffles the element in the sequence
+    fun shuffle() {
+        mutations.shuffle()
     }
 }

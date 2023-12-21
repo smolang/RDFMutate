@@ -14,7 +14,7 @@ open class Mutation(var model: Model, val verbose : Boolean) {
 
     // set of axioms to add or delete in this mutation
     var addSet : MutableSet<Statement> = hashSetOf()
-    var deleteSet : MutableSet<Statement> = hashSetOf()
+    var removeSet : MutableSet<Statement> = hashSetOf()
 
     // some objects to work with the inferred model
     val reasoner: Reasoner = ReasonerRegistry.getOWLReasoner()
@@ -80,7 +80,7 @@ open class Mutation(var model: Model, val verbose : Boolean) {
     fun mimicMutation(m : Mutation) {
         assert(m.createdMutation)
         m.addSet.forEach { addSet.add(it) }
-        m.deleteSet.forEach { deleteSet.add(it) }
+        m.removeSet.forEach { removeSet.add(it) }
     }
 
     open fun setConfiguration(_config : MutationConfiguration) {
@@ -103,18 +103,18 @@ open class Mutation(var model: Model, val verbose : Boolean) {
             if (axiom.predicate == emptyProp)
                 addSet.remove(axiom)
         }
-        for (axiom in deleteSet) {
+        for (axiom in removeSet) {
             if (axiom.predicate == emptyProp)
-                deleteSet.remove(axiom)
+                removeSet.remove(axiom)
         }
 
-        if(verbose) println("removing: axioms $deleteSet")
+        if(verbose) println("removing: axioms $removeSet")
         if(verbose) println("adding: axioms $addSet")
 
 
         // copy all statements that are not deleteSet
         model.listStatements().forEach {
-            if (!deleteSet.contains(it)) m.add(it)}
+            if (!removeSet.contains(it)) m.add(it)}
 
         addSet.forEach {
             m.add(it)
@@ -170,7 +170,7 @@ open class Mutation(var model: Model, val verbose : Boolean) {
             for (existingAxiom in model.listStatements(
                 SimpleSelector(axiom.subject, axiom.predicate, null as RDFNode?)
             ))
-                deleteSet.add(existingAxiom)
+                removeSet.add(existingAxiom)
         }
     }
 
@@ -230,7 +230,7 @@ open class RemoveAxiomMutation(model: Model, verbose : Boolean) : Mutation(model
             }
             else
                 getCandidates().random()
-        deleteSet.add(s)
+        removeSet.add(s)
         super.createMutation()
     }
 }
@@ -401,7 +401,7 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
                 model.listStatements(
                     SimpleSelector(axiom.subject.asResource(), superProp, null as RDFNode?)
                 ).forEach {
-                    deleteSet.add(it)
+                    removeSet.add(it)
                 }
             }
         }
@@ -675,8 +675,6 @@ open class RemoveObjectPropertyMutation(model: Model, verbose : Boolean) : Remov
     }
 }
 
-
-
 open class AddObjectPropertyMutation(model: Model, verbose: Boolean) : AddRelationMutation(model, verbose) {
     override fun getCandidates() : List<Resource> {
         val cand = ArrayList<Resource>()
@@ -751,7 +749,8 @@ open class RemoveNodeMutation(model: Model, verbose : Boolean) : Mutation(model,
         val candidates : MutableSet<Resource> = hashSetOf()
         for (s in l) {
             candidates.add(s.subject)
-            candidates.add(s.`object`.asResource())
+            if (s.`object`.isResource)
+                candidates.add(s.`object`.asResource())
         }
         return candidates.toList()
     }
@@ -786,7 +785,7 @@ open class RemoveNodeMutation(model: Model, verbose : Boolean) : Mutation(model,
         }
 
         delete.forEach {
-            deleteSet.add(it)
+            removeSet.add(it)
         }
 
         super.createMutation()

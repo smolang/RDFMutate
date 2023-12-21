@@ -3,6 +3,7 @@ package mutant
 import org.apache.jena.rdf.model.Model
 import org.apache.jena.rdf.model.ModelFactory
 import org.apache.jena.rdf.model.Resource
+import org.apache.jena.rdf.model.Statement
 import org.apache.jena.reasoner.ReasonerRegistry
 
 
@@ -32,23 +33,38 @@ class Mutator(private val mutSeq: MutationSequence, private val verbose: Boolean
             for (add in globalMutation?.addSet ?: mutableSetOf()) {
                 nodes.add(add.subject)
                 nodes.add(add.predicate.asResource())
-                nodes.add(add.`object`.asResource())
+                if (add.`object`.isResource)
+                    nodes.add(add.`object`.asResource())
             }
-            for (add in globalMutation?.deleteSet ?: mutableSetOf()) {
+            for (add in globalMutation?.removeSet ?: mutableSetOf()) {
                 nodes.add(add.subject)
                 nodes.add(add.predicate.asResource())
-                nodes.add(add.`object`.asResource())
+                if (add.`object`.isResource)
+                    nodes.add(add.`object`.asResource())
             }
             // collect all nodes that are mentioned in the mutations
             return nodes.toSet()
         }
 
+    val addSet : Set<Statement>
+        get() {
+            return globalMutation?.addSet?.toSet() ?: setOf()
+        }
+
+    val removeSet : Set<Statement>
+        get() {
+            return globalMutation?.removeSet?.toSet() ?: setOf()
+        }
+
+    val numMutations : Int
+        get() {
+            return mutSeq.size()
+        }
+
     val affectedSeedNodes : Set<Resource>
         get() = affectedNodes.intersect((globalMutation?.allNodes() ?: mutableSetOf()).toSet())
 
-    fun validate(model: Model, contract : Model) : Boolean{
-        val reasoner = ReasonerRegistry.getOWLReasoner()
-        val inf = ModelFactory.createInfModel(reasoner, model)
-        return inf.containsAll(contract)
+    fun validate(model: Model, contract : MutantContract) : Boolean{
+        return contract.validate(model)
     }
 }
