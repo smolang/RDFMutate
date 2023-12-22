@@ -11,6 +11,7 @@ import org.apache.jena.riot.RDFDataMgr
 import sut.MiniPipeInspection
 import kotlin.random.Random
 
+val randomGenerator = Random(2)
 
 class Main : CliktCommand() {
     private val source by argument().file()
@@ -173,12 +174,7 @@ class Main : CliktCommand() {
         //testMiniPipes()
         //testSuave()
         val sg = SuaveGenerator(false)
-        sg.createSuaveMutants(2)
-
-
-
-
-
+        sg.createSuaveMutants(1000)
     }
 
 }

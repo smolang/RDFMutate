@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="caab7f85-477f-496a-b8a7-b8805153034d" name="Changes" comment="minor">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mutant/MutantContract.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mutant/MutatorGenerator.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mutant/SuaveGenerator.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/LNKD.tech Editor.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/suave/mutatedOnt/firstMutations0.ttl" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/suave/mutatedOnt/firstMutations1.ttl" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/suave/mutatedOnt/firstMutations10.ttl" afterDir="false" />
@@ -109,14 +107,17 @@
       <change afterPath="$PROJECT_DIR$/src/main/suave/mutatedOnt/firstMutations98.ttl" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/suave/mutatedOnt/firstMutations99.ttl" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/suave/mutatedOnt/overview.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/suave/suave_ontologies/suave_original_with_imports_modified.owl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/AUVMutation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mutant/AUVMutation.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/MutantContract.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mutant/MutantContract.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/Mutation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mutant/Mutation.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/MutationSequence.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mutant/MutationSequence.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/Mutator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mutant/Mutator.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/MutatorList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mutant/TestCaseGenerator.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/FirstTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/FirstTests.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/SuaveGenerator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mutant/SuaveGenerator.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/TestCaseGenerator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mutant/TestCaseGenerator.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -449,21 +450,10 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/mutant/TestCaseGenerator.kt</url>
-          <line>42</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/mutant/SuaveGenerator.kt</url>
-          <line>27</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/mutant/TestCaseGenerator.kt</url>
-          <line>39</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

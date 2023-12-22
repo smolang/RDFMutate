@@ -2,6 +2,7 @@ package mutant
 
 import org.apache.jena.rdf.model.ModelFactory
 import org.apache.jena.riot.RDFDataMgr
+import randomGenerator
 import kotlin.random.Random
 
 class SuaveGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) {
@@ -53,20 +54,20 @@ class SuaveMutatorGenerator(verbose: Boolean, val maxNumberMutations: Int) : Mut
         val ms = MutationSequence(verbose)
 
         // determine the number of the applied mutation operators
-        val domSpecMut = Random.nextInt(0, maxNumberMutations+1)
+        val domSpecMut = randomGenerator.nextInt(0, maxNumberMutations+1)
         val domIndMut =
             if (domSpecMut == 0 && maxNumberMutations != 0)
-                Random.nextInt(1, maxNumberMutations+1)
+                randomGenerator.nextInt(1, maxNumberMutations+1)
             else
-                Random.nextInt(0, maxNumberMutations-domSpecMut+1)
+                randomGenerator.nextInt(0, maxNumberMutations-domSpecMut+1)
 
         // add domain specific mutations
         for (j in 1..domSpecMut)
-            ms.addRandom(domainSpecificMutations.random())
+            ms.addRandom(domainSpecificMutations.random(randomGenerator))
 
         // add domain independent mutation operators
         for (j in 1..domIndMut)
-            ms.addRandom(domainIndependentMutations.random())
+            ms.addRandom(domainIndependentMutations.random(randomGenerator))
 
         // add mutations in random order to mutation sequence
         ms.shuffle()

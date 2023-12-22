@@ -2,6 +2,7 @@ package mutant
 
 import org.apache.jena.rdf.model.Model
 import org.apache.jena.rdf.model.Resource
+import randomGenerator
 
 // all the domain-dependent mutation operators that are specific for the auv domain
 abstract class AUVMutation(model: Model, verbose: Boolean) : Mutation(model, verbose) {
@@ -47,7 +48,7 @@ class AddPipeSegmentMutation(model: Model, verbose: Boolean) : AUVMutation(model
                 c.getResource()
             }
             else
-                getCandidates().random()
+                getCandidates().random(randomGenerator)
 
         // create new individual of class "PipeSement" by usig the "AddInstance" mutation
         var i = 1

@@ -18,6 +18,7 @@ class Mutator(private val mutSeq: MutationSequence, private val verbose: Boolean
         var target = seed
         for (i  in 0 until mutSeq.size()) {
             val mutation = mutSeq[i].concreteMutation(target)
+            //println("Mutation: $mutation")
             if(mutation.isApplicable()) {
                 target = mutation.applyCopy()
                 globalMutation?.mimicMutation(mutation)

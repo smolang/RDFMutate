@@ -5,7 +5,7 @@ import org.apache.jena.query.QueryFactory
 import org.apache.jena.rdf.model.*
 import org.apache.jena.reasoner.Reasoner
 import org.apache.jena.reasoner.ReasonerRegistry
-import kotlin.random.Random
+import randomGenerator
 
 open class Mutation(var model: Model, val verbose : Boolean) {
     var hasConfig : Boolean = false
@@ -208,8 +208,8 @@ open class Mutation(var model: Model, val verbose : Boolean) {
 
 open class RemoveAxiomMutation(model: Model, verbose : Boolean) : Mutation(model, verbose) {
 
-    open fun getCandidates(): Set<Statement> {
-        return model.listStatements().toSet()
+    open fun getCandidates(): List<Statement> {
+        return model.listStatements().toList().sortedBy { it.toString() }
     }
 
     override fun setConfiguration(_config: MutationConfiguration) {
@@ -229,7 +229,7 @@ open class RemoveAxiomMutation(model: Model, verbose : Boolean) : Mutation(model
                 c.getStatement()
             }
             else
-                getCandidates().random()
+                getCandidates().random(randomGenerator)
         removeSet.add(s)
         super.createMutation()
     }
@@ -239,7 +239,7 @@ open class RemoveAxiomMutation(model: Model, verbose : Boolean) : Mutation(model
 
 // only overrides the method to select the candidate axioms from super class
 class RemoveSubclassMutation(model: Model, verbose : Boolean) : RemoveAxiomMutation(model, verbose) {
-    override fun getCandidates(): Set<Statement> {
+    override fun getCandidates(): List<Statement> {
         val l = model.listStatements().toList()
         val candidates = l.toMutableSet()
         for (s in l) {
@@ -248,7 +248,7 @@ class RemoveSubclassMutation(model: Model, verbose : Boolean) : RemoveAxiomMutat
                 candidates.remove(s)
             }
         }
-        return candidates
+        return candidates.sortedBy { it.toString() }
     }
 
     override fun setConfiguration(_config: MutationConfiguration) {
@@ -273,7 +273,7 @@ class AddInstanceMutation(model: Model, verbose : Boolean) : Mutation(model, ver
                 continue
             ret = ret + candidate
         }
-        return ret
+        return ret.sorted()
     }
 
     override fun isApplicable(): Boolean {
@@ -294,14 +294,14 @@ class AddInstanceMutation(model: Model, verbose : Boolean) : Mutation(model, ver
                 c.getResource().toString()
             }
             else
-                getCandidates().random()
+                getCandidates().random(randomGenerator)
         val instanceName =
             if (hasConfig && config is StringAndResourceConfiguration) {
                 val c = config as StringAndResourceConfiguration
                 c.getString()
             }
             else
-                "inner:asd"+Random.nextInt(0,Int.MAX_VALUE)
+                "inner:asd"+randomGenerator.nextInt(0,Int.MAX_VALUE)
         // create new "type" relation for the individual and the selected class
         val s = m.createStatement(
             m.createResource(instanceName),
@@ -315,14 +315,14 @@ class AddInstanceMutation(model: Model, verbose : Boolean) : Mutation(model, ver
 
 open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model, verbose) {
     open fun getCandidates() : List<Resource> {
-        val cand = ArrayList<Resource>()
+        val cand : MutableList<Resource> = mutableListOf()
         val l = model.listStatements().toList()
         for (s in l) {
             val p = s.predicate
             if (!cand.contains(p))
                 cand.add(p)
         }
-        return cand
+        return cand.sortedBy { it.toString() }
     }
     override fun isApplicable(): Boolean {
         return getCandidates().any()
@@ -377,7 +377,7 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
             validAddition(model.createStatement(RDFsubject, p, RDFobject))
         }
 
-        val randomPair = filteredPairs.randomOrNull()
+        val randomPair = filteredPairs.randomOrNull(randomGenerator)
 
         if (randomPair != null) {
             val (randSubject, randObject) = randomPair
@@ -472,15 +472,15 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
 
                 // 50% chance of having a negative number
                 val sign =
-                    if (Random.nextBoolean())
+                    if (randomGenerator.nextBoolean())
                         "-"
                     else
                         ""
 
                 // the absolute value favours small numbers --> 1/x distribution
                 // e.g. probability of having 0 as leading number is 50%
-                val beforeKomma = ((1/(-Random.nextDouble(-1.0, 1.0) + 1.0))).toInt()
-                val data = "$sign$beforeKomma.${Random.nextInt(0,1000)}"
+                val beforeKomma = ((1/(-randomGenerator.nextDouble(-1.0, 1.0) + 1.0))).toInt()
+                val data = "$sign$beforeKomma.${randomGenerator.nextInt(0,1000)}"
                 rangeP = hashSetOf(model.createTypedLiteral(data, xsdDecimal.toString()))
 
             }
@@ -576,22 +576,21 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
                 }
             }
             else
-                getCandidates().random()
-
+                getCandidates().random(randomGenerator)
         val p = model.getProperty(prop.toString())
 
         val (domainP, rangeP) = computeDomsProp(p)
 
         // check, if there are candidates to add this relation
         if (domainP.any() && rangeP.any()) {
-            var axiomCand = model.createStatement(domainP.random(), p, rangeP.random())
+            var axiomCand = model.createStatement(domainP.random(randomGenerator), p, rangeP.random(randomGenerator))
 
             // test if axiom exists
             // try 10 times to find an axiom that does not exist, as this often works and it is fast
             var i = 0
             while (!validAddition(axiomCand) && i < 10) {
                 // find new axiom
-                axiomCand = model.createStatement(domainP.random(), p, rangeP.random())
+                axiomCand = model.createStatement(domainP.random(randomGenerator), p, rangeP.random(randomGenerator))
                 i += 1
             }
 
@@ -637,7 +636,7 @@ open class ChangeRelationMutation(model: Model, verbose: Boolean) : AddRelationM
 }
 
 open class RemoveObjectPropertyMutation(model: Model, verbose : Boolean) : RemoveAxiomMutation(model, verbose) {
-    override fun getCandidates(): Set<Statement> {
+    override fun getCandidates(): List<Statement> {
         val allProps = allOfType(objectProp)
         val candidates : MutableSet<Statement> = hashSetOf()
         allProps.forEach {
@@ -645,7 +644,7 @@ open class RemoveObjectPropertyMutation(model: Model, verbose : Boolean) : Remov
                 SimpleSelector(null as Resource?, model.getProperty(it.toString()), null as RDFNode?)
             ).toSet())
         }
-        return candidates.toSet()
+        return candidates.sortedBy { it.toString() }
     }
 
     override fun setConfiguration(_config: MutationConfiguration) {
@@ -658,7 +657,7 @@ open class RemoveObjectPropertyMutation(model: Model, verbose : Boolean) : Remov
 
                 val axiom =
                     if (cand.any())
-                        cand.random()
+                        cand.random(randomGenerator)
                     else {
                         if (verbose)
                             println("no relation with this property exists / can be deleted")
@@ -683,7 +682,7 @@ open class AddObjectPropertyMutation(model: Model, verbose: Boolean) : AddRelati
             if (s.predicate == typeProp && s.`object` == objectProp)
                 cand.add(s.subject)
         }
-        return cand
+        return cand.sortedBy { it.toString() }
     }
 
     override fun setConfiguration(_config: MutationConfiguration) {
@@ -752,7 +751,7 @@ open class RemoveNodeMutation(model: Model, verbose : Boolean) : Mutation(model,
             if (s.`object`.isResource)
                 candidates.add(s.`object`.asResource())
         }
-        return candidates.toList()
+        return candidates.toList().sortedBy { it.toString() }
     }
 
     override fun isApplicable(): Boolean {
@@ -773,7 +772,7 @@ open class RemoveNodeMutation(model: Model, verbose : Boolean) : Mutation(model,
                 c.getResource()
             }
             else
-                getCandidates().random()
+                getCandidates().random(randomGenerator)
 
         // select all axioms that contain the resource
         val l = model.listStatements().toList().toMutableList()
@@ -802,7 +801,7 @@ class RemoveIndividualMutation(model: Model, verbose : Boolean) : RemoveNodeMuta
                 candidates.add(s.subject)
             }
         }
-        return candidates
+        return candidates.sortedBy { it.toString() }
     }
 
     override fun setConfiguration(_config: MutationConfiguration) {

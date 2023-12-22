@@ -1,5 +1,6 @@
 package mutant
 
+import randomGenerator
 import kotlin.reflect.KClass
 
 
@@ -8,7 +9,7 @@ class MutationSequence(private  val verbose: Boolean) {
 
     // adds a random mutation from the provided list of mutations
     fun addRandom(mutOps: List<KClass<out Mutation>>) {
-        val am = AbstractMutation(mutOps.random(), verbose)
+        val am = AbstractMutation(mutOps.random(randomGenerator), verbose)
         mutations.add(am)
     }
 
@@ -31,6 +32,6 @@ class MutationSequence(private  val verbose: Boolean) {
 
     // shuffles the element in the sequence
     fun shuffle() {
-        mutations.shuffle()
+        mutations.shuffle(randomGenerator)
     }
 }

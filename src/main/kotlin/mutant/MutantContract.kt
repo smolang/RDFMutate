@@ -13,20 +13,30 @@ class MutantContract(val verbose: Boolean) {
     fun validate(model: Model) : Boolean {
         val reasoner = ReasonerRegistry.getOWLReasoner()
         val inf = ModelFactory.createInfModel(reasoner, model)
-        val validityReport = inf.validate()
-        println("consistency: " + validityReport.isValid)
-        if (validityReport.isValid()) {
-            println("OK")
-        } else {
-            println("Conflicts")
-            val i: Iterator<*> = validityReport.getReports()
-            while (i.hasNext()) {
-                println(" - " + i.next())
+
+        var consistent = true
+        try {
+            val validityReport = inf.validate()
+            if (!validityReport.isValid) {
+                for (reason in validityReport.reports) {
+                    // ignore errors from range check, they do not work correctly for data properties with explicit range
+                    // TODO: dive deeper into this problem and figure out how to solve it
+                    if (reason.type.toString() != "\"range check\"")
+                        consistent = false
+                }
             }
+        } catch (e : Exception) {
+            if (verbose)
+                println("Exception in validation: $e --> consider as inconsistent")
+            // validation failed --> play safe and assume ontology is inconsistent
+            consistent = false
         }
 
+        if (!consistent && verbose)
+            println("mutation is inconsistent")
 
-        return  model.containsAll(containedModel)
+        return  consistent
+                && model.containsAll(containedModel)
                 && inf.containsAll(entailedModel)
     }
 }
