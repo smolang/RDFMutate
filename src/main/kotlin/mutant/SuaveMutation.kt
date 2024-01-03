@@ -23,6 +23,11 @@ class AddQAEstimationMutation(model: Model, verbose: Boolean) : AddObjectPropert
             )
         )
     }
+
+    override fun toString(): String {
+        val className = javaClass.toString().removePrefix("class mutant.")
+        return "$className(random)"
+    }
 }
 
 class RemoveQAEstimationMutation(model: Model, verbose: Boolean) : RemoveObjectPropertyMutation(model, verbose) {
@@ -32,6 +37,11 @@ class RemoveQAEstimationMutation(model: Model, verbose: Boolean) : RemoveObjectP
                 model.createResource(qaeIRI)
             )
         )
+    }
+
+    override fun toString(): String {
+        val className = javaClass.toString().removePrefix("class mutant.")
+        return "$className(random)"
     }
 }
 
@@ -43,6 +53,11 @@ class ChangeSolvesFunctionMutation(model: Model, verbose: Boolean) : ChangeObjec
             )
         )
     }
+
+    override fun toString(): String {
+        val className = javaClass.toString().removePrefix("class mutant.")
+        return "$className(random)"
+    }
 }
 
 class ChangeQualityAttributTypeMutation(model: Model, verbose: Boolean) : ChangeObjectPropertyMutation(model, verbose) {
@@ -52,6 +67,10 @@ class ChangeQualityAttributTypeMutation(model: Model, verbose: Boolean) : Change
                 model.createResource(qaType)
             )
         )
+    }
+    override fun toString(): String {
+        val className = javaClass.toString().removePrefix("class mutant.")
+        return "$className(random)"
     }
 }
 
@@ -63,6 +82,10 @@ class ChangeHasValueMutation(model: Model, verbose: Boolean) : ChangeRelationMut
             )
         )
     }
+    override fun toString(): String {
+        val className = javaClass.toString().removePrefix("class mutant.")
+        return "$className(random)"
+    }
 }
 
 class ChangeQAComparisonOperatorMutation(model: Model, verbose: Boolean) : ChangeRelationMutation(model, verbose) {
@@ -72,6 +95,10 @@ class ChangeQAComparisonOperatorMutation(model: Model, verbose: Boolean) : Chang
                 model.createResource(qaComparisonOperator)
             )
         )
+    }
+    override fun toString(): String {
+        val className = javaClass.toString().removePrefix("class mutant.")
+        return "$className(random)"
     }
 }
 

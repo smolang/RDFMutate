@@ -48,7 +48,7 @@ open class TestCaseGenerator(private val verbose: Boolean) {
     fun writeToCSV(fileName : String) {
         FileOutputStream(fileName).use { fos ->
             val writer = fos.bufferedWriter()
-            writer.write("id;mutantFile;numMutations;numDel;numAdd;affectedSeedNodes;addedAxioms;removedAxioms")
+            writer.write("id;mutantFile;numMutations;numDel;numAdd;appliedMutations;affectedSeedNodes;addedAxioms;removedAxioms")
             writer.newLine()
             var id = 0
             for (m in mutators) {
@@ -56,6 +56,7 @@ open class TestCaseGenerator(private val verbose: Boolean) {
                 val numMut = m.numMutations
                 val numDel = m.globalMutation?.removeSet?.size ?: -1
                 val numAdd = m.globalMutation?.addSet?.size ?: -1
+                val appliedMutations = m.appliedMutations
                 val affectedSeedNodes = m.affectedSeedNodes.map {
                     if (it.localName != null)
                         it.localName
@@ -66,7 +67,7 @@ open class TestCaseGenerator(private val verbose: Boolean) {
                 val addedAxioms = m.addSet.joinToString( ",", "[", "]")
                 val removedAxioms = m.removeSet.joinToString( ",", "[", "]").replace("\n", ",")
 
-                writer.write("$id;$mutantFile;$numMut;$numDel;$numAdd;$affectedSeedNodes;$addedAxioms;$removedAxioms")
+                writer.write("$id;$mutantFile;$numMut;$numDel;$numAdd;$appliedMutations;$affectedSeedNodes;$addedAxioms;$removedAxioms")
                 writer.newLine()
                 id += 1
             }

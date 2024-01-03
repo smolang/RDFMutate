@@ -12,8 +12,12 @@ class Mutator(private val mutSeq: MutationSequence, private val verbose: Boolean
     var globalMutation : Mutation? = null
     var ran = false
 
+    // collects a string representation of all the applied mutations
+    var appliedMutations : MutableList<String> = mutableListOf()
+
     fun mutate (seed : Model) : Model {
         ran = true
+        appliedMutations = mutableListOf()
         globalMutation = Mutation(seed, verbose)
         var target = seed
         for (i  in 0 until mutSeq.size()) {
@@ -22,6 +26,7 @@ class Mutator(private val mutSeq: MutationSequence, private val verbose: Boolean
             if(mutation.isApplicable()) {
                 target = mutation.applyCopy()
                 globalMutation?.mimicMutation(mutation)
+                appliedMutations.add(mutation.toString())
             }
         }
         return target
@@ -46,6 +51,7 @@ class Mutator(private val mutSeq: MutationSequence, private val verbose: Boolean
             // collect all nodes that are mentioned in the mutations
             return nodes.toSet()
         }
+
 
     val addSet : Set<Statement>
         get() {

@@ -204,6 +204,15 @@ open class Mutation(var model: Model, val verbose : Boolean) {
         }
     }
 
+    override fun toString() : String {
+        val className = this.javaClass.toString().removePrefix("class mutant.")
+        if (!hasConfig)
+            return "$className(random)"
+        else {
+            val config = config.toString()
+            return "$className(config=$config)"
+        }
+    }
 }
 
 open class RemoveAxiomMutation(model: Model, verbose : Boolean) : Mutation(model, verbose) {

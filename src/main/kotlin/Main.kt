@@ -174,7 +174,7 @@ class Main : CliktCommand() {
         //testMiniPipes()
         //testSuave()
         val sg = SuaveGenerator(false)
-        sg.createSuaveMutants(1000)
+        sg.createSuaveMutants(10)
     }
 
 }

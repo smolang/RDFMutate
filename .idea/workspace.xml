@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caab7f85-477f-496a-b8a7-b8805153034d" name="Changes" comment="SUAVE ontologies generator&#10; ß make everzthing deterministic">
+    <list default="true" id="caab7f85-477f-496a-b8a7-b8805153034d" name="Changes" comment="add new test case &#10;check that contract finds inconsistent ontologies">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/relations.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/examples/relations.ttl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/MutantContract.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mutant/MutantContract.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/FirstTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/FirstTests.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/relations/relations.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/relations/relations.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/Mutation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mutant/Mutation.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/MutationConfiguration.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mutant/MutationConfiguration.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/Mutator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mutant/Mutator.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/SuaveMutation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mutant/SuaveMutation.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/TestCaseGenerator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mutant/TestCaseGenerator.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +111,7 @@
       <recent name="mutant" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.FirstTests">
+  <component name="RunManager" selected="Kotlin.MainKt">
     <configuration name="FirstTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -175,8 +177,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.FirstTests" />
         <item itemvalue="Kotlin.MainKt" />
+        <item itemvalue="Gradle.FirstTests" />
         <item itemvalue="Gradle.PipeInspectionTests" />
       </list>
     </recent_temporary>
@@ -313,7 +315,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703244088425</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="add new test case &#10;check that contract finds inconsistent ontologies">
+      <option name="closed" value="true" />
+      <created>1704299484305</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1704299484305</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -346,7 +356,8 @@
     <MESSAGE value="implementing mutation operators&#10;continue implementation of relations with data properties&#10;continue implementing domain specific operators for SUAVE&#10;some refactoring" />
     <MESSAGE value="minor" />
     <MESSAGE value="SUAVE ontologies generator&#10; ß make everzthing deterministic" />
-    <option name="LAST_COMMIT_MESSAGE" value="SUAVE ontologies generator&#10; ß make everzthing deterministic" />
+    <MESSAGE value="add new test case &#10;check that contract finds inconsistent ontologies" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new test case &#10;check that contract finds inconsistent ontologies" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
