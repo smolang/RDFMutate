@@ -21,8 +21,9 @@ class MutantContract(val verbose: Boolean) {
                 for (reason in validityReport.reports) {
                     // ignore errors from range check, they do not work correctly for data properties with explicit range
                     // TODO: dive deeper into this problem and figure out how to solve it
-                    if (reason.type.toString() != "\"range check\"")
+                    if (reason.type.toString() != "\"range check\"") {
                         consistent = false
+                    }
                 }
             }
         } catch (e : Exception) {

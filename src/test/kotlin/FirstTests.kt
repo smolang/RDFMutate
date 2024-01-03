@@ -1,6 +1,7 @@
 import io.kotlintest.shouldBe
 import io.kotlintest.specs.StringSpec
 import mutant.*
+import org.apache.jena.rdf.model.Property
 import org.apache.jena.riot.RDFDataMgr
 import java.lang.AssertionError
 import kotlin.test.assertFailsWith
@@ -98,8 +99,6 @@ class FirstTests : StringSpec() {
 
             // there is no relation labelled with "t" in the seed ontology
             m.affectedNodes.contains(t) shouldBe false
-
-
         }
     }
 
@@ -169,6 +168,35 @@ class FirstTests : StringSpec() {
 
             val m = Mutator(ms, verbose)
             m.mutate(input)
+        }
+    }
+
+    init {
+        "contract can detect inconsistent ontologies" {
+            val verbose = false
+            val input = RDFDataMgr.loadDataset("relations/relations.ttl").defaultModel
+            val ms = MutationSequence(verbose)
+
+            val B = input.createResource("http://www.ifi.uio.no/tobiajoh/relations#B")
+            val a = input.createResource("http://www.ifi.uio.no/tobiajoh/relations#a")
+            val typeProp : Property = input.createProperty("http://www.w3.org/1999/02/22-rdf-syntax-ns#type")
+
+            // add axiom "individual a is of type B"
+            ms.addWithConfig(AddAxiomMutation::class,
+                SingleStatementConfiguration(
+                    input.createStatement(a, typeProp, B)
+                )
+            )
+
+            // empty contract --> only check for consistency
+            val emptyContract = MutantContract(verbose)
+
+            val m = Mutator(ms, verbose)
+            val res = m.mutate(input)
+
+            emptyContract.validate(input) shouldBe true
+            emptyContract.validate(res) shouldBe false
+
         }
     }
 
