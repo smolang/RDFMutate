@@ -1,13 +1,12 @@
-package mutant
+package domainSpecific
 
-import org.apache.jena.rdf.model.ModelFactory
+import mutant.*
 import org.apache.jena.riot.RDFDataMgr
 import randomGenerator
-import kotlin.random.Random
 
-class SuaveGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) {
+class SuaveTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) {
 
-    fun createSuaveMutants(numberMutants : Int) {
+    fun generateSuaveMutants(numberMutants : Int) {
         val pathSeed = "src/main/suave/suave_ontologies/suave_original_with_imports.owl"
         val seed = RDFDataMgr.loadDataset(pathSeed).defaultModel
 
@@ -16,7 +15,7 @@ class SuaveGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) {
 
         // empty contract
         val contract = MutantContract(verbose)
-        val suaveGenerator = SuaveMutatorGenerator(verbose, maxMutation)
+        val suaveGenerator = SuaveMutatorFactory(verbose, maxMutation)
 
         // create as many mutants as specified
         super.generateMutants(
@@ -31,7 +30,7 @@ class SuaveGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) {
     }
 }
 
-class SuaveMutatorGenerator(verbose: Boolean, val maxNumberMutations: Int) : MutatorGenerator(verbose) {
+class SuaveMutatorFactory(verbose: Boolean, private val maxNumberMutations: Int) : MutatorFactory(verbose) {
     private val domainSpecificMutations = listOf(
         ChangeSolvesFunctionMutation::class,
         AddQAEstimationMutation::class,
@@ -49,7 +48,7 @@ class SuaveMutatorGenerator(verbose: Boolean, val maxNumberMutations: Int) : Mut
         RemoveAxiomMutation::class,
         RemoveNodeMutation::class
     )
-    override fun randomMutator() : Mutator{
+    override fun randomMutator() : Mutator {
 
         val ms = MutationSequence(verbose)
 

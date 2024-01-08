@@ -15,11 +15,11 @@ open class TestCaseGenerator(private val verbose: Boolean) {
 
     fun generateMutants(seed : Model,
                         contract: MutantContract,
-                        generator : MutatorGenerator,
+                        mutFactory : MutatorFactory,
                         countDesired : Int) {
         var countGenerated = 0
         while (countGenerated < countDesired) {
-            val m = generator.randomMutator()
+            val m = mutFactory.randomMutator()
             val mutant = m.mutate(seed)
             println(countGenerated)
             if (contract.validate(mutant)){

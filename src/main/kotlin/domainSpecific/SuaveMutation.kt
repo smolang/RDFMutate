@@ -1,5 +1,6 @@
-package mutant
+package domainSpecific
 
+import mutant.*
 import org.apache.jena.rdf.model.Model
 
 const val suaveIRI = "http://www.metacontrol.org/suave"

@@ -1,8 +1,8 @@
 import io.kotlintest.properties.forAll
 import io.kotlintest.shouldBe
 import io.kotlintest.specs.StringSpec
-import mutant.AddPipeSegmentConfiguration
-import mutant.AddPipeSegmentMutation
+import domainSpecific.AddPipeSegmentConfiguration
+import domainSpecific.AddPipeSegmentMutation
 import mutant.MutationSequence
 import mutant.Mutator
 import org.apache.jena.riot.RDFDataMgr

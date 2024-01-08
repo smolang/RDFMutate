@@ -1,3 +1,4 @@
+import domainSpecific.*
 import io.kotlintest.shouldBe
 import io.kotlintest.specs.StringSpec
 import mutant.*
@@ -175,6 +176,7 @@ class FirstTests : StringSpec() {
         "contract can detect inconsistent ontologies" {
             val verbose = false
             val input = RDFDataMgr.loadDataset("relations/relations.ttl").defaultModel
+            val input2 = RDFDataMgr.loadDataset("relations/allDisjoint.ttl").defaultModel
             val ms = MutationSequence(verbose)
 
             val B = input.createResource("http://www.ifi.uio.no/tobiajoh/relations#B")
@@ -195,6 +197,7 @@ class FirstTests : StringSpec() {
             val res = m.mutate(input)
 
             emptyContract.validate(input) shouldBe true
+            emptyContract.validate(input2) shouldBe false
             emptyContract.validate(res) shouldBe false
 
         }

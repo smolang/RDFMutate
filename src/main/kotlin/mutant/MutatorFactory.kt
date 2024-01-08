@@ -1,6 +1,6 @@
 package mutant
 
-open class MutatorGenerator(val verbose: Boolean) {
+open class MutatorFactory(val verbose: Boolean) {
 
     open fun randomMutator() : Mutator {
         return Mutator(MutationSequence(verbose), verbose)

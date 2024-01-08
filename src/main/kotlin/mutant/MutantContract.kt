@@ -1,43 +1,36 @@
 package mutant
 
+import mutant.reasoning.CustomReasoner
+import mutant.reasoning.CustomReasonerFactory
+import mutant.reasoning.ReasoningBackend
 import org.apache.jena.rdf.model.Model
 import org.apache.jena.rdf.model.ModelFactory
 import org.apache.jena.reasoner.ReasonerRegistry
+
 
 class MutantContract(val verbose: Boolean) {
     var entailedModel : Model = ModelFactory.createDefaultModel()
     var containedModel : Model = ModelFactory.createDefaultModel()
 
+    // default: use Openllet for reasoning
+    var reasoningBackend : ReasoningBackend = ReasoningBackend.OPENLLET
+
+
 
     // checks, if the provided model is valid w.r.t. the contract
     fun validate(model: Model) : Boolean {
-        val reasoner = ReasonerRegistry.getOWLReasoner()
-        val inf = ModelFactory.createInfModel(reasoner, model)
 
-        var consistent = true
-        try {
-            val validityReport = inf.validate()
-            if (!validityReport.isValid) {
-                for (reason in validityReport.reports) {
-                    // ignore errors from range check, they do not work correctly for data properties with explicit range
-                    // TODO: dive deeper into this problem and figure out how to solve it
-                    if (reason.type.toString() != "\"range check\"") {
-                        consistent = false
-                    }
-                }
-            }
-        } catch (e : Exception) {
-            if (verbose)
-                println("Exception in validation: $e --> consider as inconsistent")
-            // validation failed --> play safe and assume ontology is inconsistent
-            consistent = false
-        }
+        // create reasoner with the selected backend
+        val reasonerFactory = CustomReasonerFactory(verbose)
+        val reasoner = reasonerFactory.getReasoner(model, reasoningBackend)
 
-        if (!consistent && verbose)
-            println("mutation is inconsistent")
+        val consistent = reasoner.isConsistent()
+        // alsways use JENA-API for containment check
+        val containment = model.containsAll(containedModel)
+        val entailment = reasoner.entailsAll(entailedModel)
 
         return  consistent
-                && model.containsAll(containedModel)
-                && inf.containsAll(entailedModel)
+                && containment
+                && entailment
     }
 }

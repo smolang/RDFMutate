@@ -5,7 +5,11 @@ import com.github.ajalt.clikt.parameters.options.flag
 import com.github.ajalt.clikt.parameters.options.option
 import com.github.ajalt.clikt.parameters.types.file
 import com.github.ajalt.clikt.parameters.types.int
+import domainSpecific.*
 import mutant.*
+import mutant.reasoning.CustomReasoner
+import mutant.reasoning.CustomReasonerFactory
+import mutant.reasoning.ReasoningBackend
 import org.apache.jena.rdf.model.ModelFactory
 import org.apache.jena.riot.RDFDataMgr
 import sut.MiniPipeInspection
@@ -169,12 +173,18 @@ class Main : CliktCommand() {
     }
 
 
+
     override fun run() {
         //testMutations()
         //testMiniPipes()
         //testSuave()
-        val sg = SuaveGenerator(false)
-        sg.createSuaveMutants(10)
+
+        //testSuaveConsistency()
+
+        val sg = SuaveTestCaseGenerator(false)
+        sg.generateSuaveMutants(1)
+
+        //testAllDisjoint()
     }
 
 }

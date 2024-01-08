@@ -1,5 +1,6 @@
-package mutant
+package domainSpecific
 
+import mutant.*
 import org.apache.jena.rdf.model.Model
 import org.apache.jena.rdf.model.Resource
 import randomGenerator
