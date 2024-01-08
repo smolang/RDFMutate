@@ -7,9 +7,6 @@ import com.github.ajalt.clikt.parameters.types.file
 import com.github.ajalt.clikt.parameters.types.int
 import domainSpecific.*
 import mutant.*
-import mutant.reasoning.CustomReasoner
-import mutant.reasoning.CustomReasonerFactory
-import mutant.reasoning.ReasoningBackend
 import org.apache.jena.rdf.model.ModelFactory
 import org.apache.jena.riot.RDFDataMgr
 import sut.MiniPipeInspection

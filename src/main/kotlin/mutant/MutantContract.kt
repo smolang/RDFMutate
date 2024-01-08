@@ -1,11 +1,9 @@
 package mutant
 
-import mutant.reasoning.CustomReasoner
 import mutant.reasoning.CustomReasonerFactory
 import mutant.reasoning.ReasoningBackend
 import org.apache.jena.rdf.model.Model
 import org.apache.jena.rdf.model.ModelFactory
-import org.apache.jena.reasoner.ReasonerRegistry
 
 
 class MutantContract(val verbose: Boolean) {

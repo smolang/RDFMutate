@@ -19,7 +19,7 @@ class MiniPipeInspection {
         val isAtProp = mf.createProperty("http://www.ifi.uio.no/tobiajoh/miniPipes#isAt")
         val r = MyReasoner(ontology as Model)
 
-        var newOntology = ModelFactory.createDefaultModel()
+        val newOntology = ModelFactory.createDefaultModel()
         r.getInf().listStatements().forEach {
             if (!(it.subject.equals(thing) && it.predicate.equals(isAtProp)))
                 newOntology.add(it)
