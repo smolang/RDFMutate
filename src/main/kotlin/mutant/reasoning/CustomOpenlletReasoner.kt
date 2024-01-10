@@ -3,7 +3,6 @@ package mutant.reasoning
 import openllet.owlapi.OpenlletReasoner
 import openllet.owlapi.OpenlletReasonerFactory
 import org.apache.jena.rdf.model.Model
-import org.semanticweb.owlapi.reasoner.OWLReasoner
 
 class CustomOpenlletReasoner(jenaModel: Model,
                              verbose : Boolean) : OwlApiReasoner(jenaModel, verbose) {

@@ -7,7 +7,6 @@ import org.apache.jena.riot.RDFDataMgr
 import org.semanticweb.owlapi.apibinding.OWLManager
 import org.semanticweb.owlapi.model.OWLOntology
 import org.semanticweb.owlapi.model.OWLOntologyManager
-import org.semanticweb.owlapi.model.OWLRuntimeException
 import org.semanticweb.owlapi.reasoner.OWLReasoner
 import java.io.ByteArrayInputStream
 import java.io.ByteArrayOutputStream
