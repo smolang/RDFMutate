@@ -1,11 +1,13 @@
 package mutant.reasoning
 
+import openllet.atom.OpenError
 import org.apache.jena.rdf.model.Model
 import org.apache.jena.riot.Lang
 import org.apache.jena.riot.RDFDataMgr
 import org.semanticweb.owlapi.apibinding.OWLManager
 import org.semanticweb.owlapi.model.OWLOntology
 import org.semanticweb.owlapi.model.OWLOntologyManager
+import org.semanticweb.owlapi.model.OWLRuntimeException
 import org.semanticweb.owlapi.reasoner.OWLReasoner
 import java.io.ByteArrayInputStream
 import java.io.ByteArrayOutputStream
@@ -15,12 +17,18 @@ abstract class OwlApiReasoner(jenaModel : Model,
 
     private val manager: OWLOntologyManager = OWLManager.createOWLOntologyManager()
     val ontology = owlApiOnt(jenaModel)
-    val reasoner : OWLReasoner by lazy { initReasoner()}
+    val reasoner : OWLReasoner? by lazy { initReasoner()}
 
-    abstract fun initReasoner() : OWLReasoner
+    abstract fun initReasoner() : OWLReasoner?
 
     override fun isConsistent(): Boolean {
-        return reasoner.isConsistent
+        return try {
+            reasoner?.isConsistent ?: false
+        }
+        catch (e : OpenError) {
+            // treat ontologies that result in exception of reasoner as inconsistent
+            false
+        }
     }
 
     override fun entailsAll(jenaModel: Model): Boolean {
@@ -30,11 +38,14 @@ abstract class OwlApiReasoner(jenaModel : Model,
         }
 
         val entailedOntology = owlApiOnt(jenaModel)
-        return reasoner.isEntailed(entailedOntology.axioms)
+        if (entailedOntology != null) {
+            return reasoner?.isEntailed(entailedOntology.axioms) ?: false
+        }
+        return false
     }
 
     // converts Jena model into an OWL-API ontology
-    private fun owlApiOnt(jenaModel: Model) : OWLOntology {
+    private fun owlApiOnt(jenaModel: Model) : OWLOntology? {
 
         // TODO: get this direct conversion running, seems to be some problem with Maven dependencies...
         // use ONT-API to pass Jena model to OWL API
@@ -44,12 +55,20 @@ abstract class OwlApiReasoner(jenaModel : Model,
         // temporary solution: write ontology to stream using Jena API
         // and read from stream with OWL API
         // problem: probably rather slow...
-        val ontology: OWLOntology
+        val ontology: OWLOntology?
 
         ByteArrayOutputStream().use { outStream ->
             RDFDataMgr.write(outStream, jenaModel, Lang.RDFXML)
             ByteArrayInputStream(outStream.toByteArray()).use { inStream ->
-                ontology = manager.loadOntologyFromOntologyDocument(inStream)
+                ontology =
+                    try {
+                        manager.loadOntologyFromOntologyDocument(inStream)
+                    }
+                    catch (e : Exception){
+                        if (verbose)
+                            println("reasoner could not read ontolgy because of exception $e")
+                        null
+                    }
             }
         }
         return ontology

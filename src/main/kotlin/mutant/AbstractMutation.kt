@@ -20,12 +20,14 @@ class AbstractMutation(private val mutOp: KClass<out Mutation>,
 
     fun concreteMutation(model: Model) : Mutation {
         if (hasConfig) {
-            val m = mutOp.primaryConstructor!!.call(model, verbose)
+            val m = mutOp.primaryConstructor?.call(model, verbose) ?: Mutation(model, verbose)
             config?.let { m.setConfiguration(it) }
             return m
         }
-        else
-            return mutOp.primaryConstructor!!.call(model, verbose)
+        else {
+            return mutOp.primaryConstructor?.call(model, verbose) ?: Mutation(model, verbose)
+        }
+
     }
 
 }

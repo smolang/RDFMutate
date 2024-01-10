@@ -6,7 +6,7 @@ import org.semanticweb.owlapi.reasoner.OWLReasoner
 
 class CustomHermitReasoner(jenaModel: Model,
                            verbose :Boolean) : OwlApiReasoner(jenaModel, verbose) {
-    override fun initReasoner(): OWLReasoner {
-        return HermiTReasonerFactory().createReasoner(ontology)
+    override fun initReasoner(): OWLReasoner? {
+        return ontology?.let { HermiTReasonerFactory().createReasoner(it) }
     }
 }

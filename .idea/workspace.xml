@@ -4,29 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caab7f85-477f-496a-b8a7-b8805153034d" name="Changes" comment="modify output format&#10;more information about applied mutations in csv-file of TestCaseGenerator">
-      <change afterPath="$PROJECT_DIR$/examples/allDisjointTest.ttl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mutant/reasoning/CustomHermitReasoner.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mutant/reasoning/CustomJenaApiReasoner.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mutant/reasoning/CustomOpenlletReasoner.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mutant/reasoning/CustomReasoner.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mutant/reasoning/CustomReasonerFactory.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mutant/reasoning/OwlApiReasoner.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/relations/allDisjoint.ttl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+    <list default="true" id="caab7f85-477f-496a-b8a7-b8805153034d" name="Changes" comment="minor&#10;fixed some warnings">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/AUVMutation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/domainSpecific/AUVMutation.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/MutantContract.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mutant/MutantContract.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/MutatorGenerator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mutant/MutatorFactory.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/MyReasoner.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/sut/MyReasoner.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/SuaveGenerator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/domainSpecific/SuaveTestCaseGenerator.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/SuaveMutation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/domainSpecific/SuaveMutation.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domainSpecific/SuaveTestCaseGenerator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/domainSpecific/SuaveTestCaseGenerator.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/AbstractMutation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mutant/AbstractMutation.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/Mutation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mutant/Mutation.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/TestCaseGenerator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mutant/TestCaseGenerator.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/sut/MiniPipeInspection.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/sut/MiniPipeInspection.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/FirstTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/FirstTests.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/PipeInspectionTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/PipeInspectionTests.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/reasoning/CustomHermitReasoner.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mutant/reasoning/CustomHermitReasoner.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/reasoning/CustomOpenlletReasoner.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mutant/reasoning/CustomOpenlletReasoner.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/reasoning/OwlApiReasoner.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mutant/reasoning/OwlApiReasoner.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +87,7 @@
     "Gradle.Build OntoMutate.executor": "Run",
     "Gradle.FirstTests.executor": "Run",
     "Gradle.PipeInspectionTests.executor": "Run",
-    "Kotlin.MainKt.executor": "Run",
+    "Kotlin.MainKt.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -134,7 +122,7 @@
       <recent name="mutant" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.FirstTests">
+  <component name="RunManager" selected="Kotlin.MainKt">
     <configuration name="FirstTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -200,8 +188,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.FirstTests" />
         <item itemvalue="Kotlin.MainKt" />
+        <item itemvalue="Gradle.FirstTests" />
         <item itemvalue="Gradle.PipeInspectionTests" />
       </list>
     </recent_temporary>
@@ -354,7 +342,23 @@
       <option name="project" value="LOCAL" />
       <updated>1704301398387</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="add variable reasoner for contracts&#10;add custom reasoner that can be configured to use different reasoners in the backend, as different reasoner have different support / limitations">
+      <option name="closed" value="true" />
+      <created>1704726758644</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1704726758644</updated>
+    </task>
+    <task id="LOCAL-00020" summary="minor&#10;fixed some warnings">
+      <option name="closed" value="true" />
+      <created>1704726930412</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1704726930412</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -389,7 +393,9 @@
     <MESSAGE value="SUAVE ontologies generator&#10; ß make everzthing deterministic" />
     <MESSAGE value="add new test case &#10;check that contract finds inconsistent ontologies" />
     <MESSAGE value="modify output format&#10;more information about applied mutations in csv-file of TestCaseGenerator" />
-    <option name="LAST_COMMIT_MESSAGE" value="modify output format&#10;more information about applied mutations in csv-file of TestCaseGenerator" />
+    <MESSAGE value="add variable reasoner for contracts&#10;add custom reasoner that can be configured to use different reasoners in the backend, as different reasoner have different support / limitations" />
+    <MESSAGE value="minor&#10;fixed some warnings" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor&#10;fixed some warnings" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -398,6 +404,11 @@
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/mutant/Mutation.kt</url>
+          <line>745</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

@@ -158,10 +158,6 @@ class Main : CliktCommand() {
             ms.addRandom(AddNewThrusterMutation::class)
         }
 
-
-
-
-
         val m = Mutator(ms, verbose)
         val output = m.mutate(input)
 
@@ -179,7 +175,7 @@ class Main : CliktCommand() {
         //testSuaveConsistency()
 
         val sg = SuaveTestCaseGenerator(false)
-        sg.generateSuaveMutants(1)
+        sg.generateSuaveMutants(100)
 
         //testAllDisjoint()
     }

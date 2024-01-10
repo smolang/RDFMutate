@@ -108,6 +108,7 @@ open class Mutation(var model: Model, val verbose : Boolean) {
                 removeSet.remove(axiom)
         }
 
+        if(verbose) println("applying mutation ${toString()}")
         if(verbose) println("removing: axioms $removeSet")
         if(verbose) println("adding: axioms $addSet")
 
@@ -136,7 +137,7 @@ open class Mutation(var model: Model, val verbose : Boolean) {
     }
 
     fun isOfType(i : Resource, t : Resource) : Boolean {
-        val l = model.listStatements(SimpleSelector(i, typeProp, null as RDFNode?))
+        val l = model.listStatements(i, typeProp, null as RDFNode?)
         for (s in l) {
             if (s.`object` == t) {
                 return true
@@ -150,7 +151,7 @@ open class Mutation(var model: Model, val verbose : Boolean) {
     }
 
     fun isOfInferredType(i : Resource, t : Resource) : Boolean {
-        val l = infModel.listStatements(SimpleSelector(i, typeProp, null as RDFNode?))
+        val l = infModel.listStatements(i, typeProp, null as RDFNode?)
         for (s in l) {
             if (s.`object` == t) {
                 return true
@@ -168,7 +169,7 @@ open class Mutation(var model: Model, val verbose : Boolean) {
         // find existing relations and remove them
         for (axiom in addSet) {
             for (existingAxiom in model.listStatements(
-                SimpleSelector(axiom.subject, axiom.predicate, null as RDFNode?)
+                axiom.subject, axiom.predicate, null as RDFNode?
             ))
                 removeSet.add(existingAxiom)
         }
@@ -323,16 +324,42 @@ class AddInstanceMutation(model: Model, verbose : Boolean) : Mutation(model, ver
 }
 
 open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model, verbose) {
+   // relations that should not be randomly selected, as they will lead to problems in the schema
+    private val excludeP : List<Property> = listOf(
+       //typeProp,
+       model.createProperty("http://www.w3.org/1999/02/22-rdf-syntax-ns#first"),
+       model.createProperty("http://www.w3.org/1999/02/22-rdf-syntax-ns#rest")
+    )
+    //val exclude
+    private val excludePrefixe : List<String> = listOf(
+        "http://www.w3.org/2002/07/owl",
+        "http://www.w3.org/2003/11/swrl",
+        "http://www.w3.org/2003/11/swrlb#",
+        "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+    )
+
+    private  fun excludePrefix(r : Resource) : Boolean {
+        val stringName = r.toString()
+        for (prefix in excludePrefixe)
+            if (stringName.startsWith(prefix))
+                return true
+        return false
+    }
+    private fun excludeProperty(p : Property) : Boolean {
+        return excludeP.contains(p) || excludePrefix(p.asResource())
+    }
+
     open fun getCandidates() : List<Resource> {
         val cand : MutableList<Resource> = mutableListOf()
         val l = model.listStatements().toList()
         for (s in l) {
             val p = s.predicate
-            if (!cand.contains(p))
+            if (!cand.contains(p) && !excludeProperty(p))
                 cand.add(p)
         }
         return cand.sortedBy { it.toString() }
     }
+
     override fun isApplicable(): Boolean {
         return getCandidates().any()
     }
@@ -367,7 +394,7 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
         val candidatePairs : MutableSet<Pair<Resource, RDFNode>> = hashSetOf()
 
         // iterate over statements in ontology with this property
-        for (s in model.listStatements(SimpleSelector(null as Resource?, p, null as RDFNode?))) {
+        for (s in model.listStatements(null as Resource?, p, null as RDFNode?)) {
             containedPairs.add(Pair(s.subject, s.`object`.asResource()))
         }
 
@@ -405,10 +432,10 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
             // delete outgoing relations, so that relation remains functional
             // i.e. we are quite restrictive here, this makes only sense in the case of a unique name assumption
             // do this for all superProps of the property
-            for (superPropAxiom in infModel.listStatements(SimpleSelector(p, subPropertyProp, null as RDFNode?))) {
+            for (superPropAxiom in infModel.listStatements(p, subPropertyProp, null as RDFNode?)) {
                 val superProp = model.createProperty(superPropAxiom.`object`.toString())
                 model.listStatements(
-                    SimpleSelector(axiom.subject.asResource(), superProp, null as RDFNode?)
+                    axiom.subject.asResource(), superProp, null as RDFNode?
                 ).forEach {
                     removeSet.add(it)
                 }
@@ -427,19 +454,18 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
 
         val Ind = allOfType(namedInd)   // all individuals
 
-        val domains = infModel.listStatements(SimpleSelector(p, domainProp, null as RDFNode?)).toSet()
+        val domains = infModel.listStatements(p, domainProp, null as RDFNode?).toSet()
         var domainP : MutableSet<Resource> = Ind.toMutableSet()
         domains.forEach {
             domainP = domainP.intersect(allOfInferredType(it.`object`.asResource())).toMutableSet()
         }
 
         // compute range
-        val ranges = infModel.listStatements(SimpleSelector(p, rangeProp, null as RDFNode?)).toSet()
+        val ranges = infModel.listStatements(p, rangeProp, null as RDFNode?).toSet()
         var rangeP : MutableSet<Resource> = Ind.toMutableSet()
         ranges.forEach {
             rangeP = rangeP.intersect(allOfInferredType(it.`object`.asResource())).toMutableSet()
         }
-
         return Pair(domainP, rangeP)
     }
 
@@ -454,7 +480,7 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
 
         val Ind = allOfType(namedInd)   // all individuals
 
-        val domains = infModel.listStatements(SimpleSelector(p, domainProp, null as RDFNode?)).toSet()
+        val domains = infModel.listStatements(p, domainProp, null as RDFNode?).toSet()
         var domainP : MutableSet<Resource> = Ind.toMutableSet()
         domains.forEach {
             domainP = domainP.intersect(allOfInferredType(it.`object`.asResource())).toMutableSet()
@@ -586,9 +612,14 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
             }
             else
                 getCandidates().random(randomGenerator)
+
         val p = model.getProperty(prop.toString())
 
-        val (domainP, rangeP) = computeDomsProp(p)
+        val (domainPunsorted, rangePunsorted) = computeDomsProp(p)
+
+        val domainP = domainPunsorted.toList().sortedBy { it.toString() }
+        val rangeP = rangePunsorted.toList().sortedBy { it.toString() }
+
 
         // check, if there are candidates to add this relation
         if (domainP.any() && rangeP.any()) {
@@ -607,7 +638,7 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
             val axiom =
                 if (!validAddition(axiomCand))
                     // use expensive search for a valid axiom in case no valid one was found so far
-                    costlySearchForValidAxiom(p, domainP, rangeP)
+                    costlySearchForValidAxiom(p, domainP.toSet(), rangeP.toSet())
                 else
                     axiomCand
 
@@ -630,9 +661,9 @@ open class ChangeRelationMutation(model: Model, verbose: Boolean) : AddRelationM
     override fun computeDomsProp(p: Property): Pair<Set<Resource>, Set<RDFNode>> {
         // use all individuals as domain that already have such an outgoing relation
         val domainP = model.listResourcesWithProperty(p).toSet()
-        // use range from super method
-        val (_, rangeP) = super.computeDomsProp(p)
-        return Pair(domainP, rangeP)
+        // use (restrictions of ) domain and range from super method
+        val (domainRestricted, rangeP) = super.computeDomsProp(p)
+        return Pair(domainP.intersect(domainRestricted), rangeP)
     }
 
     override fun createMutation() {
@@ -650,7 +681,7 @@ open class RemoveObjectPropertyMutation(model: Model, verbose : Boolean) : Remov
         val candidates : MutableSet<Statement> = hashSetOf()
         allProps.forEach {
             candidates.addAll(model.listStatements(
-                SimpleSelector(null as Resource?, model.getProperty(it.toString()), null as RDFNode?)
+                null as Resource?, model.getProperty(it.toString()), null as RDFNode?
             ).toSet())
         }
         return candidates.sortedBy { it.toString() }
@@ -711,6 +742,8 @@ open class AddObjectPropertyMutation(model: Model, verbose: Boolean) : AddRelati
         // check that p is really an ObjectProperty
         //val l = model.listStatements().toList()
         //var found = false
+        if (!isOfType(p.asResource(), objectProp))
+            print("problem")
         assert(isOfType(p.asResource(), objectProp))
        // for (s in l) {
        //     if (s.subject == p && s.predicate == typeProp && s.`object` == objectProp)

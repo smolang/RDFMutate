@@ -21,7 +21,8 @@ open class TestCaseGenerator(private val verbose: Boolean) {
         while (countGenerated < countDesired) {
             val m = mutFactory.randomMutator()
             val mutant = m.mutate(seed)
-            println(countGenerated)
+            //if (verbose)
+                println("generated mutants: $countGenerated")
             if (contract.validate(mutant)){
                 countGenerated += 1
                 mutators.add(m)
