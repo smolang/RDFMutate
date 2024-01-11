@@ -175,7 +175,7 @@ class Main : CliktCommand() {
         //testSuaveConsistency()
 
         val sg = SuaveTestCaseGenerator(false)
-        sg.generateSuaveMutants(100)
+        sg.generateSuaveMutants(1000)
 
         //testAllDisjoint()
     }

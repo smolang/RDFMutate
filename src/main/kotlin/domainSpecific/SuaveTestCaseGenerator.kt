@@ -27,8 +27,8 @@ class SuaveTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) 
 
 
 
-        super.saveMutants("src/main/suave/mutatedOnt", "firstMutations")
-        super.writeToCSV("src/main/suave/mutatedOnt/overview.csv")
+        //super.saveMutants("src/main/suave/mutatedOnt", "firstMutations")
+        //super.writeToCSV("src/main/suave/mutatedOnt/overview.csv")
     }
 }
 

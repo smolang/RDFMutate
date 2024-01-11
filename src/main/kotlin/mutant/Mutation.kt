@@ -21,7 +21,7 @@ open class Mutation(var model: Model, val verbose : Boolean) {
 
     // using this infModel assumes that "model" never changed
     // i.e. it is the inferred model at the time of initialisation
-    val infModel = ModelFactory.createInfModel(reasoner, model)
+    val infModel: InfModel = ModelFactory.createInfModel(reasoner, model)
 
 
 
@@ -32,7 +32,7 @@ open class Mutation(var model: Model, val verbose : Boolean) {
     val subClassProp : Property = model.createProperty("http://www.w3.org/2000/01/rdf-schema#subClassOf")
     val subPropertyProp : Property = model.createProperty("http://www.w3.org/2000/01/rdf-schema#subPropertyOf")
     val funcProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#FunctionalProperty")
-    val irreflexivProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#IrreflexiveProperty")
+    val irreflexiveProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#IrreflexiveProperty")
     val datatypeProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#DatatypeProperty")
     val oneOfProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#oneOf")
     val namedInd : Resource = model.createResource("http://www.w3.org/2002/07/owl#NamedIndividual")
@@ -126,24 +126,18 @@ open class Mutation(var model: Model, val verbose : Boolean) {
 
     fun allNodes() : Set<Resource> {
         val l = model.listStatements()
-        val N : MutableSet<Resource> = hashSetOf()
+        val modes : MutableSet<Resource> = hashSetOf()
         for (s in l) {
             // select statements that are not subClass relations
-            N.add(s.subject)
+            modes.add(s.subject)
             if (s.`object`.isResource)
-                N.add(s.`object`.asResource())
+                modes.add(s.`object`.asResource())
         }
-        return N.toSet()
+        return modes.toSet()
     }
 
     fun isOfType(i : Resource, t : Resource) : Boolean {
-        val l = model.listStatements(i, typeProp, null as RDFNode?)
-        for (s in l) {
-            if (s.`object` == t) {
-                return true
-            }
-        }
-        return false
+        return model.listStatements(i, typeProp, t).hasNext()
     }
 
     fun allOfType(t : Resource) : Set<Resource> {
@@ -151,13 +145,7 @@ open class Mutation(var model: Model, val verbose : Boolean) {
     }
 
     fun isOfInferredType(i : Resource, t : Resource) : Boolean {
-        val l = infModel.listStatements(i, typeProp, null as RDFNode?)
-        for (s in l) {
-            if (s.`object` == t) {
-                return true
-            }
-        }
-        return false
+        return infModel.listStatements(i, typeProp, t).hasNext()
     }
 
     fun allOfInferredType(t : Resource) : Set<Resource> {
@@ -193,8 +181,8 @@ open class Mutation(var model: Model, val verbose : Boolean) {
             // check if there is more list to come
 
             val rest = model.listObjectsOfProperty(head, rdfRest).toSet()
-            if (rest.contains(rdfNil))
-                // base case
+            if (rest.contains(rdfNil) || rest.isEmpty())
+                // base case + if rest is empty --> error in schema as end is not correctly marked
                 return list
             else {
                 // recursive call
@@ -297,7 +285,7 @@ class AddInstanceMutation(model: Model, verbose : Boolean) : Mutation(model, ver
 
     override fun createMutation() {
         val m = ModelFactory.createDefaultModel()
-        val OWLClass =
+        val owlClass =
             if (hasConfig){
                 assert(config is SingleResourceConfiguration)
                 val c = config as SingleResourceConfiguration
@@ -316,7 +304,7 @@ class AddInstanceMutation(model: Model, verbose : Boolean) : Mutation(model, ver
         val s = m.createStatement(
             m.createResource(instanceName),
             m.createProperty("http://www.w3.org/1999/02/22-rdf-syntax-ns#","type"),
-            m.createResource(OWLClass))
+            m.createResource(owlClass))
 
         addSet.add(s)
         super.createMutation()
@@ -331,7 +319,7 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
        model.createProperty("http://www.w3.org/1999/02/22-rdf-syntax-ns#rest")
     )
     //val exclude
-    private val excludePrefixe : List<String> = listOf(
+    private val excludePrefixes : List<String> = listOf(
         "http://www.w3.org/2002/07/owl",
         "http://www.w3.org/2003/11/swrl",
         "http://www.w3.org/2003/11/swrlb#",
@@ -340,7 +328,7 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
 
     private  fun excludePrefix(r : Resource) : Boolean {
         val stringName = r.toString()
-        for (prefix in excludePrefixe)
+        for (prefix in excludePrefixes)
             if (stringName.startsWith(prefix))
                 return true
         return false
@@ -377,8 +365,8 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
         if (model.contains(axiom))
             return false
 
-        if (isOfType(p, irreflexivProp)) {
-            // check if the new axiom is not reflexiv
+        if (isOfType(p, irreflexiveProp)) {
+            // check if the new axiom is not reflexive
             if (axiom.subject == axiom.`object`.asResource())
                 return false
         }
@@ -399,9 +387,9 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
         }
 
         // iterate over candidate pairs of statements
-        domainP.forEach { RDFsubject ->
-            rangeP.forEach{ RDFobject ->
-                candidatePairs.add(Pair(RDFsubject, RDFobject))
+        domainP.forEach { rdfSubject ->
+            rangeP.forEach{ rdfObject ->
+                candidatePairs.add(Pair(rdfSubject, rdfObject))
             }
         }
 
@@ -409,8 +397,8 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
         candidatePairs.removeAll(containedPairs)
 
         // filter, to only have the pairs whose addition is valid
-        val filteredPairs = candidatePairs.filter { (RDFsubject, RDFobject) ->
-            validAddition(model.createStatement(RDFsubject, p, RDFobject))
+        val filteredPairs = candidatePairs.filter { (rdfSubject, rdfObject) ->
+            validAddition(model.createStatement(rdfSubject, p, rdfObject))
         }
 
         val randomPair = filteredPairs.randomOrNull(randomGenerator)
@@ -444,7 +432,7 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
         // TODO: similar check for asymmetric
     }
 
-    private fun computeDomsObjectProp(p : Property) : Pair<Set<Resource>, Set<RDFNode>> {
+    private fun computeDomainsObjectProp(p : Property) : Pair<Set<Resource>, Set<RDFNode>> {
         // only select individuals and according to range and domain
         // note: this is very restrictive, as usually, one could infer the class from the relation
         // our setting is more useful in a closed-world scenario
@@ -469,7 +457,7 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
         return Pair(domainP, rangeP)
     }
 
-    private fun computeDomsDataProp(p : Property) : Pair<Set<Resource>, Set<RDFNode>> {
+    private fun computeDomainsDataProp(p : Property) : Pair<Set<Resource>, Set<RDFNode>> {
         // only select individuals and according to range and domain
         // note: this is very restrictive, as usually, one could infer the class from the relation
         // our setting is more useful in a closed-world scenario
@@ -514,8 +502,8 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
 
                 // the absolute value favours small numbers --> 1/x distribution
                 // e.g. probability of having 0 as leading number is 50%
-                val beforeKomma = ((1/(-randomGenerator.nextDouble(-1.0, 1.0) + 1.0))).toInt()
-                val data = "$sign$beforeKomma.${randomGenerator.nextInt(0,1000)}"
+                val beforeComma = ((1/(-randomGenerator.nextDouble(-1.0, 1.0) + 1.0))).toInt()
+                val data = "$sign$beforeComma.${randomGenerator.nextInt(0,1000)}"
                 rangeP = hashSetOf(model.createTypedLiteral(data, xsdDecimal.toString()))
 
             }
@@ -551,7 +539,7 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
         return Pair(domainP, rangeP)
     }
 
-    open fun computeDomsProp(p : Property) : Pair<Set<Resource>, Set<RDFNode>> {
+    open fun computeDomainsProp(p : Property) : Pair<Set<Resource>, Set<RDFNode>> {
         // build sets for the elements that are in the domain and range of the property
         val domainP : Set<Resource>
         val rangeP : Set<RDFNode>
@@ -560,12 +548,12 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
 
         // is property an ObjectProperty?
         if (isOfType(p, objectProp)) {
-            val (d, r) = computeDomsObjectProp(p)
+            val (d, r) = computeDomainsObjectProp(p)
             domainP = d
             rangeP = r
         }
         else if (isOfType(p, datatypeProp)) {
-            val (d, r) = computeDomsDataProp(p)
+            val (d, r) = computeDomainsDataProp(p)
             domainP = d
             rangeP = r
         }
@@ -615,7 +603,7 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
 
         val p = model.getProperty(prop.toString())
 
-        val (domainPunsorted, rangePunsorted) = computeDomsProp(p)
+        val (domainPunsorted, rangePunsorted) = computeDomainsProp(p)
 
         val domainP = domainPunsorted.toList().sortedBy { it.toString() }
         val rangeP = rangePunsorted.toList().sortedBy { it.toString() }
@@ -658,11 +646,11 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
 // similar to adding a relation, but all existing triples with this subject ond predicate are deleted
 open class ChangeRelationMutation(model: Model, verbose: Boolean) : AddRelationMutation(model, verbose) {
 
-    override fun computeDomsProp(p: Property): Pair<Set<Resource>, Set<RDFNode>> {
+    override fun computeDomainsProp(p: Property): Pair<Set<Resource>, Set<RDFNode>> {
         // use all individuals as domain that already have such an outgoing relation
         val domainP = model.listResourcesWithProperty(p).toSet()
         // use (restrictions of ) domain and range from super method
-        val (domainRestricted, rangeP) = super.computeDomsProp(p)
+        val (domainRestricted, rangeP) = super.computeDomainsProp(p)
         return Pair(domainP.intersect(domainRestricted), rangeP)
     }
 
@@ -739,17 +727,10 @@ open class AddObjectPropertyMutation(model: Model, verbose: Boolean) : AddRelati
                 else -> model.createResource()
             }
 
-        // check that p is really an ObjectProperty
-        //val l = model.listStatements().toList()
-        //var found = false
-        if (!isOfType(p.asResource(), objectProp))
-            print("problem")
-        assert(isOfType(p.asResource(), objectProp))
-       // for (s in l) {
-       //     if (s.subject == p && s.predicate == typeProp && s.`object` == objectProp)
-       //         found = true
-       // }
-        //assert(found)
+        // check that p is really an ObjectProperty, if it exists in the model at all
+        if (model.listResourcesWithProperty(null ).toSet().contains(p.asResource()))
+            assert(isOfType(p.asResource(), objectProp))
+
         super.setConfiguration(_config)
     }
 }
