@@ -7,7 +7,7 @@ import randomGenerator
 class SuaveTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) {
 
     fun generateSuaveMutants(numberMutants : Int) {
-        val pathSeed = "src/main/suave/suave_ontologies/suave_original_with_imports.owl"
+        val pathSeed = "sut/suave/suave_ontologies/suave_original_with_imports.owl"
         val seed = RDFDataMgr.loadDataset(pathSeed).defaultModel
 
         // maximal number of mutations to generate a mutant
@@ -27,8 +27,8 @@ class SuaveTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) 
 
 
 
-        //super.saveMutants("src/main/suave/mutatedOnt", "firstMutations")
-        //super.writeToCSV("src/main/suave/mutatedOnt/overview.csv")
+        //super.saveMutants("sut/suave/mutatedOnt", "firstMutations")
+        //super.writeToCSV("sut/suave/mutatedOnt/overview.csv")
     }
 }
 
