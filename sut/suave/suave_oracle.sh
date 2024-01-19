@@ -1,17 +1,18 @@
 #!/bin/bash
 # author: Tobias John, University of Oslo
-# year: 2023
+# year: 2024
 
 # usage: ./suave_oracle.sh ONTOLOGY-FILE
-# results will be stored in "results_temp.csv"
 # result of oracle will be output on terminal (pass, fail, or undecided)
 
 CONTAINER_NAME=suaveContainer
-RUN_COUNT=3
-# there need to be more than "limit" many good runs to have a positive oracle
+
+# upper limit on the number of simulation runs
+RUN_COUNT=2
+# there need to be more than "limit" many good (bad) runs to have a positive (negative) oracle
 LIMIT=1
 LOG_FILE=logs/oracle_$(date +'%Y_%m_%d_%H_%M_%S').log
-RESULTS=results_temp.csv
+ROS_LOG=ros_log_temp.log
 
 #TEST_ONTOLOGY=suave_original_with_imports.owl
 TEST_ONTOLOGY=$1
@@ -61,76 +62,64 @@ if ! [[ -n "$result" ]]; then
   abort_oracle
 fi
 
-echo_and_log 'run simulations in docker'
 
-#### run simulations
+
+GOOD_RUNS=0
+BAD_RUNS=0
+TOTAL_RUNS=0
+
+echo_and_log 'run simulations in docker'
 
 # copy test ontology to docker
 docker cp $TEST_ONTOLOGY suaveContainer:/home/kasm-user/suave_ws/src/suave/suave_metacontrol/config/suave.owl >> $LOG_FILE
 
-# copy alternative script (because of lack of computing power)
-docker cp runner_slow.sh suaveContainer:/home/kasm-user/suave_ws/src/suave/runner/runner_slow.sh >> $LOG_FILE
 
-# run benchmarks
-docker exec suaveContainer ./runner_slow.sh false metacontrol time $RUN_COUNT >> $LOG_FILE 2>&1
+#### run simulations
+
+while [ $GOOD_RUNS -le $LIMIT ] && [ $BAD_RUNS -le $LIMIT ] && [ $TOTAL_RUNS -le $RUN_COUNT]; do
+
+  echo_and_log 'start new simulation run'
+  # run simulation
+  docker exec suaveContainer ./runner.sh false metacontrol time 1 >> $LOG_FILE 2>&1
+
+  # get log file
+  ./getROSlog.sh $ROS_LOG >> $LOG_FILE
+
+  # evaluate log file
+  ./log_analyzer.sh "$ROS_LOG" > $LOG_EVALUATION
+
+  if [[ $LOG_EVALUATION == "pass" ]]; then
+    GOOD_RUNS=$(($GOOD_RUNS + 1))
+    echo_and_log 'run evaluation: pass'
+  elif [[ $LOG_EVALUATION == "fail" ]]; then
+    BAD_RUNS=$(($BAD_RUNS + 1))
+    echo_and_log 'run evaluation: fail'
+  else
+    echo_and_log "run evaluation: $LOG_EVALUATION"
+  fi
+
+  RUN_COUNT=$(($RUN_COUNT + 1))
+
+done
 
 echo_and_log 'simulations are finished'
 
-# copy results from docker container
-
-# check, if a result was created
-if docker exec --workdir /home/kasm-user $CONTAINER_NAME test -d suave/results; then
-  # select results file
-  RESULTS_FILE=$(docker exec --workdir /home/kasm-user/suave/results suaveContainer ls -Art | tail -n 1)
-  RESULTS_FILE=/home/kasm-user/suave/results/$RESULTS_FILE
-  docker cp suaveContainer:$RESULTS_FILE $RESULTS>> $LOG_FILE
-else
-  # no results created
-  echo_and_log 'no simulation run was successful'
-  abort_oracle
-fi
 
 # stop container after usage
 echo_and_log 'container gets stopped'
 docker stop $CONTAINER_NAME >>$LOG_FILE
 
-# evaluate results
-read -r head < "$RESULTS"
-#echo $head
-# TODO: fix this test + the next stuff is very brittle
-#if [[ $head != 'mission_name,datetime,"initial pos (x,y)",time budget (s),time search (s),distance inspected (m)' ]]; then
-#  echo_and_log 'results file not as expected'
-#  abort_oracle
-#fi
 
-good_runs=0
-bad_runs=0
-
-while read line; do
-  distance=${line#*,*,*,*,*,*,}
-  # remove numbers after comma
-  distance=${distance%.*}
-  if [[ $distance > 30 ]]; then
-    good_runs=$(($good_runs + 1))
-  fi
-  if [[ $distance < 31 ]]; then
-    bad_runs=$(($bad_runs + 1))
-  fi
-done < <(tail -n +2 "$RESULTS")
-
-echo 'number of good runs is' $good_runs >> $LOG_FILE
 
 
 # evaluate result and return oracle
-executed_runs=$(($good_runs + $bad_runs))
 
-
-if [[ $good_runs > $LIMIT  ]]; then
+if [[ $GOOD_RUNS -ge $LIMIT  ]]; then
   echo_and_log 'oracle: passed'
-elif [[ $executed_runs != $RUN_COUNT ]]; then
-  echo_and_log 'oracle: undecided'
-else
+elif [[ $BAD_RUNS -ge $LIMIT ]]; then
   echo_and_log 'oracle: failed'
+else
+  echo_and_log 'oracle: undecided'
 fi
 
 end_time=$(date +'%s')
