@@ -8,9 +8,9 @@
 CONTAINER_NAME=suaveContainer
 
 # upper limit on the number of simulation runs
-RUN_COUNT=2
+RUN_COUNT=5
 # there need to be more than "limit" many good (bad) runs to have a positive (negative) oracle
-LIMIT=1
+LIMIT=2
 LOG_FILE=logs/oracle_$(date +'%Y_%m_%d_%H_%M_%S').log
 ROS_LOG=ros_log_temp.log
 
@@ -76,9 +76,11 @@ docker cp $TEST_ONTOLOGY suaveContainer:/home/kasm-user/suave_ws/src/suave/suave
 
 #### run simulations
 
-while [ $GOOD_RUNS -le $LIMIT ] && [ $BAD_RUNS -le $LIMIT ] && [ $TOTAL_RUNS -le $RUN_COUNT]; do
+while [ $GOOD_RUNS -lt $LIMIT ] && [ $BAD_RUNS -lt $LIMIT ] && [ $TOTAL_RUNS -lt $RUN_COUNT ] ; do
 
-  echo_and_log 'start new simulation run'
+  TOTAL_RUNS=$(($TOTAL_RUNS + 1))
+  echo_and_log "start new simulation run (number $TOTAL_RUNS)"
+
   # run simulation
   docker exec suaveContainer ./runner.sh false metacontrol time 1 >> $LOG_FILE 2>&1
 
@@ -86,7 +88,7 @@ while [ $GOOD_RUNS -le $LIMIT ] && [ $BAD_RUNS -le $LIMIT ] && [ $TOTAL_RUNS -le
   ./getROSlog.sh $ROS_LOG >> $LOG_FILE
 
   # evaluate log file
-  ./log_analyzer.sh "$ROS_LOG" > $LOG_EVALUATION
+  LOG_EVALUATION=$(./log_analyzer.sh "$ROS_LOG")
 
   if [[ $LOG_EVALUATION == "pass" ]]; then
     GOOD_RUNS=$(($GOOD_RUNS + 1))
@@ -97,8 +99,6 @@ while [ $GOOD_RUNS -le $LIMIT ] && [ $BAD_RUNS -le $LIMIT ] && [ $TOTAL_RUNS -le
   else
     echo_and_log "run evaluation: $LOG_EVALUATION"
   fi
-
-  RUN_COUNT=$(($RUN_COUNT + 1))
 
 done
 

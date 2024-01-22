@@ -9,12 +9,15 @@
 CONTAINER_NAME=suaveContainer
 RUN_COUNT=1
 # there need to be more than "limit" many good runs to have a positive oracle
-LIMIT=1
+LIMIT=0
+# create folder for logs if it does not exist yet
+mkdir -p "logs"
 LOG_FILE=logs/oracle_$(date +'%Y_%m_%d_%H_%M_%S').log
 RESULTS=results_temp.csv
 
 #TEST_ONTOLOGY=suave_original_with_imports.owl
 TEST_ONTOLOGY=$1
+
 
 echo_and_log() {
   echo $1 | tee -a $LOG_FILE
