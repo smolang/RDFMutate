@@ -13,6 +13,7 @@ RUN_COUNT=5
 LIMIT=2
 LOG_FILE=logs/oracle_$(date +'%Y_%m_%d_%H_%M_%S').log
 ROS_LOG=ros_log_temp.log
+RESULT_CSV=results_csv_temp.log
 
 #TEST_ONTOLOGY=suave_original_with_imports.owl
 TEST_ONTOLOGY=$1
@@ -87,8 +88,14 @@ while [ $GOOD_RUNS -lt $LIMIT ] && [ $BAD_RUNS -lt $LIMIT ] && [ $TOTAL_RUNS -lt
   # get log file
   ./getROSlog.sh $ROS_LOG >> $LOG_FILE
 
+  # get results file
+  ./getResultsTable.sh $RESULT_CSV >> $LOG_FILE
+
   # evaluate log file
-  LOG_EVALUATION=$(./log_analyzer.sh "$ROS_LOG")
+  # two options: use scv or use log-file
+  #LOG_EVALUATION=$(./log_analyzer.sh "$ROS_LOG")
+  LOG_EVALUATION=$(./csv_results_analyzer.sh "$RESULT_CSV")
+
 
   if [[ $LOG_EVALUATION == "pass" ]]; then
     GOOD_RUNS=$(($GOOD_RUNS + 1))
