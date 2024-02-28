@@ -165,7 +165,15 @@ class Main : CliktCommand() {
         //RDFDataMgr.write(File("examples/test2.ttl").outputStream(), output, Lang.TTL)
     }
 
+    fun evaluateGeneration() {
+        val sg = SuaveTestCaseGenerator(false)
+        for (i in 11..20) {
+            println("number of mutations: $i")
+            sg.maxMutation=i
+            sg.generateSuaveMutants(20)
+        }
 
+    }
 
     override fun run() {
         //testMutations()
@@ -174,9 +182,10 @@ class Main : CliktCommand() {
 
         //testSuaveConsistency()
 
-        val sg = SuaveTestCaseGenerator(false)
-        sg.generateSuaveMutants(1000)
+        //val sg = SuaveTestCaseGenerator(false)
+        //sg.generateSuaveMutants(20)
 
+        evaluateGeneration()
         //testAllDisjoint()
     }
 

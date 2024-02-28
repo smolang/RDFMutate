@@ -383,7 +383,8 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
 
         // iterate over statements in ontology with this property
         for (s in model.listStatements(null as Resource?, p, null as RDFNode?)) {
-            containedPairs.add(Pair(s.subject, s.`object`.asResource()))
+            if (s.`object`.isResource)
+                containedPairs.add(Pair(s.subject, s.`object`.asResource()))
         }
 
         // iterate over candidate pairs of statements
@@ -729,7 +730,9 @@ open class AddObjectPropertyMutation(model: Model, verbose: Boolean) : AddRelati
 
         // check that p is really an ObjectProperty, if it exists in the model at all
         if (model.listResourcesWithProperty(null ).toSet().contains(p.asResource()))
-            assert(isOfType(p.asResource(), objectProp))
+            if (!isOfType(p.asResource(), objectProp)) {
+                println("WARNING: resource $p is not an object property but is used as such in configuration.")
+            }
 
         super.setConfiguration(_config)
     }

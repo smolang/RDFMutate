@@ -24,9 +24,15 @@ abstract class OwlApiReasoner(jenaModel : Model,
         return try {
             reasoner?.isConsistent ?: false
         }
-        catch (e : OpenError) {
+        catch (e : Exception) {
             // treat ontologies that result in exception of reasoner as inconsistent
-            false
+            when ( e) {
+                is OpenError, is ClassCastException -> {
+                    //known exeptions
+                    false
+                }
+                else -> throw e
+            }
         }
     }
 

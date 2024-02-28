@@ -18,10 +18,12 @@ open class TestCaseGenerator(private val verbose: Boolean) {
                         mutFactory : MutatorFactory,
                         countDesired : Int) {
         var countGenerated = 0
+        var countTries = 0
         while (countGenerated < countDesired) {
             val m = mutFactory.randomMutator()
             val mutant = m.mutate(seed)
-            //if (verbose)
+            countTries += 1
+            if (verbose)
                 println("generated mutants: $countGenerated")
             if (contract.validate(mutant)){
                 countGenerated += 1
@@ -30,6 +32,8 @@ open class TestCaseGenerator(private val verbose: Boolean) {
                 mutantFiles.add("?")
             }
         }
+        println("generated: $countGenerated tries: $countTries")
+        println("ratio: " + countTries.toFloat()/countGenerated)
     }
 
 

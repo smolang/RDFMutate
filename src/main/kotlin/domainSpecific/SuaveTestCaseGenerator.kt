@@ -3,15 +3,17 @@ package domainSpecific
 import mutant.*
 import org.apache.jena.riot.RDFDataMgr
 import randomGenerator
+import kotlin.math.max
 
 class SuaveTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) {
+    // maximal number of mutations to generate a mutant
+    var maxMutation = 5
 
     fun generateSuaveMutants(numberMutants : Int) {
         val pathSeed = "sut/suave/suave_ontologies/suave_original_with_imports.owl"
         val seed = RDFDataMgr.loadDataset(pathSeed).defaultModel
 
-        // maximal number of mutations to generate a mutant
-        val maxMutation = 5
+
 
         // empty contract
         val contract = MutantContract(verbose)
@@ -33,6 +35,12 @@ class SuaveTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) 
 }
 
 class SuaveMutatorFactory(verbose: Boolean, private val maxNumberMutations: Int) : MutatorFactory(verbose) {
+    // defines, if all mutation sequences have the same (maximal) length
+    val constantNumberOfMutations = true
+
+
+    val ratioDomainDependent = 0.5
+
     private val domainSpecificMutations = listOf(
         ChangeSolvesFunctionMutation::class,
         AddQAEstimationMutation::class,
@@ -54,13 +62,22 @@ class SuaveMutatorFactory(verbose: Boolean, private val maxNumberMutations: Int)
 
         val ms = MutationSequence(verbose)
 
-        // determine the number of the applied mutation operators
-        val domSpecMut = randomGenerator.nextInt(0, maxNumberMutations+1)
-        val domIndMut =
-            if (domSpecMut == 0 && maxNumberMutations != 0)
-                randomGenerator.nextInt(1, maxNumberMutations+1)
+        val count =
+            if (constantNumberOfMutations)
+                maxNumberMutations
             else
-                randomGenerator.nextInt(0, maxNumberMutations-domSpecMut+1)
+                randomGenerator.nextInt(1, maxNumberMutations)
+
+        // determine the number of the applied mutation operators
+        val domSpecMut =
+            (count*ratioDomainDependent).toInt()
+
+        val domIndMut =
+            count - domSpecMut
+
+
+
+
 
         // add domain specific mutations
         for (j in 1..domSpecMut)

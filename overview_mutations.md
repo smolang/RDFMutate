@@ -69,6 +69,7 @@
 | effected entity | operator | effect                    | implemented? |
 |-----------------|----------|---------------------------|--------------|
 | pipe segment    |          | add new connected segment | yes          |
+
 ### SUAVE
 
 | effected entity                 | operator | effect                                                                                  | implemented? |
