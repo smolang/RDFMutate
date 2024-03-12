@@ -38,7 +38,7 @@ open class TestCaseGenerator(private val verbose: Boolean) {
 
 
 
-    fun saveMutants(folderName: String, filePrefix : String) {
+    open fun saveMutants(folderName: String, filePrefix : String) {
         var i = 0
         // create folder, if necessary
         Files.createDirectories(Paths.get(folderName))

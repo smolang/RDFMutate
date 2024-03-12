@@ -10,6 +10,10 @@ class MutantContract(val verbose: Boolean) {
     var entailedModel : Model = ModelFactory.createDefaultModel()
     var containedModel : Model = ModelFactory.createDefaultModel()
 
+    // additional axioms that are added to the ontology before reasoning, e.g. containing axioms not considered while
+    // creating the mutations
+    var additionalAxioms: Model = ModelFactory.createDefaultModel()
+
     // default: use Openllet for reasoning
     var reasoningBackend : ReasoningBackend = ReasoningBackend.OPENLLET
 
@@ -17,6 +21,10 @@ class MutantContract(val verbose: Boolean) {
 
     // checks, if the provided model is valid w.r.t. the contract
     fun validate(model: Model) : Boolean {
+
+        for (a in additionalAxioms.listStatements()) {
+            model.add(a)
+        }
 
         // create reasoner with the selected backend
         val reasonerFactory = CustomReasonerFactory(verbose)

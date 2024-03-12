@@ -2,7 +2,7 @@
 # author: Tobias John, University of Oslo
 # year: 2024
 
-# usage: ./suave_oracle.sh ONTOLOGY-FILE
+# usage: ./suave_oracle.sh ONTOLOGY-FILE [TOMASYS-FILE MROS-FILE]
 # result of oracle will be output on terminal (pass, fail, or undecided)
 
 CONTAINER_NAME=suaveContainer
@@ -17,6 +17,9 @@ RESULT_CSV=results_csv_temp.log
 
 #TEST_ONTOLOGY=suave_original_with_imports.owl
 TEST_ONTOLOGY=$1
+TOMASYS_ONTOLOGY=${2:-"suave_ontologies/tomasys.owl"}
+MROS_ONTOLOGY=${3:-"suave_ontologies/mros.owl"}
+
 
 echo_and_log() {
   echo $1 | tee -a $LOG_FILE
@@ -72,7 +75,17 @@ TOTAL_RUNS=0
 echo_and_log 'run simulations in docker'
 
 # copy test ontology to docker
-docker cp $TEST_ONTOLOGY suaveContainer:/home/kasm-user/suave_ws/src/suave/suave_metacontrol/config/suave.owl >> $LOG_FILE
+#docker cp $TEST_ONTOLOGY suaveContainer:/home/kasm-user/suave_ws/src/suave/suave_metacontrol/config/suave.owl >> $LOG_FILE
+docker cp $TEST_ONTOLOGY suaveContainer:/home/kasm-user/suave_ws/install/suave_metacontrol/share/suave_metacontrol/config/suave.owl >> $LOG_FILE
+docker cp $MROS_ONTOLOGY suaveContainer:/home/kasm-user/suave_ws/src/mros_ontology/owl/mros.owl >> $LOG_FILE
+docker cp $TOMASYS_ONTOLOGY suaveContainer:/home/kasm-user/suave_ws/src/mc_mdl_tomasys/owl/tomasys.owl >> $LOG_FILE
+
+echo_and_log "copy mros ontology $MROS_ONTOLOGY to container"
+echo_and_log "copy tomasys ontology $TOMASYS_ONTOLOGY to container"
+echo_and_log "copy suave ontology $TEST_ONTOLOGY to container"
+
+# replace ontologies by empty ones (all information is in the TEST_ONTOLOGY)
+
 
 
 #### run simulations
@@ -83,7 +96,7 @@ while [ $GOOD_RUNS -lt $LIMIT ] && [ $BAD_RUNS -lt $LIMIT ] && [ $TOTAL_RUNS -lt
   echo_and_log "start new simulation run (number $TOTAL_RUNS)"
 
   # run simulation
-  docker exec suaveContainer ./runner.sh false metacontrol time 1 >> $LOG_FILE 2>&1
+  #docker exec suaveContainer ./runner.sh false metacontrol time 1 >> $LOG_FILE 2>&1
 
   # get log file
   ./getROSlog.sh $ROS_LOG >> $LOG_FILE
@@ -114,7 +127,7 @@ echo_and_log 'simulations are finished'
 
 # stop container after usage
 echo_and_log 'container gets stopped'
-docker stop $CONTAINER_NAME >>$LOG_FILE
+#docker stop $CONTAINER_NAME >>$LOG_FILE
 
 
 

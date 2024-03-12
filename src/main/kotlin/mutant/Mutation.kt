@@ -23,6 +23,9 @@ open class Mutation(var model: Model, val verbose : Boolean) {
     // i.e. it is the inferred model at the time of initialisation
     val infModel: InfModel = ModelFactory.createInfModel(reasoner, model)
 
+    // prefixes that should be considered when selecting mutation
+    val relevantPrefixes: MutableSet<String> = hashSetOf()
+    private fun considerRelevantPrefixes() : Boolean {return !relevantPrefixes.isEmpty()}
 
 
     // define some properties / resources that are use all the time
@@ -202,12 +205,70 @@ open class Mutation(var model: Model, val verbose : Boolean) {
             return "$className(config=$config)"
         }
     }
+
+    // checks, if anything in the statement starts with the provided prefix
+    private  fun hasPrefix (stat: Statement, prefix : String) : Boolean {
+        if (hasPrefix(stat.subject, prefix))
+            return true
+        if (hasPrefix(stat.predicate, prefix))
+            return true
+        if (stat.`object`.isResource && hasPrefix(stat.`object`.asResource(), prefix))
+            return true
+
+        return false
+    }
+
+    private  fun hasPrefix (r: Resource, prefix : String) : Boolean {
+        return r.toString().startsWith(prefix)
+    }
+
+    fun addRelevantPrefix(prefix: String) {
+        relevantPrefixes.add(prefix)
+    }
+
+    fun filterRelevantPrefixes(l: List<Statement>): List<Statement> {
+        val lFiltered: MutableList<Statement> = mutableListOf()
+        for (s in l) {
+            if (!considerRelevantPrefixes())
+                lFiltered.add(s)
+            else for (p in relevantPrefixes)
+                if (hasPrefix(s, p))
+                    lFiltered.add(s)
+        }
+        return lFiltered
+    }
+
+    fun filterRelevantPrefixesResource(l: List<Resource>): List<Resource> {
+        val lFiltered: MutableList<Resource> = mutableListOf()
+        for (r in l) {
+            if (!considerRelevantPrefixes())
+                lFiltered.add(r)
+            else for (p in relevantPrefixes)
+                if (hasPrefix(r, p))
+                    lFiltered.add(r)
+        }
+        return lFiltered
+    }
+    fun filterRelevantPrefixesString(l: List<String>): List<String> {
+        val lFiltered: MutableList<String> = mutableListOf()
+        for (r in l) {
+            if (!considerRelevantPrefixes())
+                lFiltered.add(r)
+            else for (p in relevantPrefixes)
+                if (r.startsWith(p))
+                    lFiltered.add(r)
+        }
+        return lFiltered
+    }
+
 }
 
 open class RemoveAxiomMutation(model: Model, verbose : Boolean) : Mutation(model, verbose) {
 
     open fun getCandidates(): List<Statement> {
-        return model.listStatements().toList().sortedBy { it.toString() }
+        val list = model.listStatements().toList()
+        val f = filterRelevantPrefixes(list)
+        return f.sortedBy { it.toString() }
     }
 
     override fun setConfiguration(_config: MutationConfiguration) {
@@ -246,7 +307,7 @@ class RemoveSubclassMutation(model: Model, verbose : Boolean) : RemoveAxiomMutat
                 candidates.remove(s)
             }
         }
-        return candidates.sortedBy { it.toString() }
+        return filterRelevantPrefixes(candidates.toList()).sortedBy { it.toString() }
     }
 
     override fun setConfiguration(_config: MutationConfiguration) {
@@ -272,6 +333,8 @@ class AddInstanceMutation(model: Model, verbose : Boolean) : Mutation(model, ver
             ret = ret + candidate
         }
         return ret.sorted()
+        // we do not filter, when we add stuff, only when we remove
+        //return filterRelevantPrefixesString(ret.toList()).sorted()
     }
 
     override fun isApplicable(): Boolean {
@@ -346,6 +409,8 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
                 cand.add(p)
         }
         return cand.sortedBy { it.toString() }
+        // we do not filter, when we add stuff, only when we remove
+        //return filterRelevantPrefixesResource(cand.toList()).sortedBy { it.toString() }
     }
 
     override fun isApplicable(): Boolean {
@@ -673,7 +738,7 @@ open class RemoveObjectPropertyMutation(model: Model, verbose : Boolean) : Remov
                 null as Resource?, model.getProperty(it.toString()), null as RDFNode?
             ).toSet())
         }
-        return candidates.sortedBy { it.toString() }
+        return filterRelevantPrefixes(candidates.toList()).sortedBy { it.toString() }
     }
 
     override fun setConfiguration(_config: MutationConfiguration) {
@@ -712,6 +777,8 @@ open class AddObjectPropertyMutation(model: Model, verbose: Boolean) : AddRelati
                 cand.add(s.subject)
         }
         return cand.sortedBy { it.toString() }
+        // we do not filter, when we add stuff, only when we remove
+        //return filterRelevantPrefixesResource(cand.toList()).sortedBy { it.toString() }
     }
 
     override fun setConfiguration(_config: MutationConfiguration) {
@@ -777,7 +844,7 @@ open class RemoveNodeMutation(model: Model, verbose : Boolean) : Mutation(model,
             if (s.`object`.isResource)
                 candidates.add(s.`object`.asResource())
         }
-        return candidates.toList().sortedBy { it.toString() }
+        return filterRelevantPrefixesResource(candidates.toList()).toList().sortedBy { it.toString() }
     }
 
     override fun isApplicable(): Boolean {
@@ -827,7 +894,7 @@ class RemoveIndividualMutation(model: Model, verbose : Boolean) : RemoveNodeMuta
                 candidates.add(s.subject)
             }
         }
-        return candidates.sortedBy { it.toString() }
+        return filterRelevantPrefixesResource(candidates).sortedBy { it.toString() }
     }
 
     override fun setConfiguration(_config: MutationConfiguration) {

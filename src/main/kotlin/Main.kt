@@ -166,12 +166,12 @@ class Main : CliktCommand() {
     }
 
     fun evaluateGeneration() {
-        val sg = SuaveTestCaseGenerator(false)
-        for (i in 11..20) {
-            println("number of mutations: $i")
-            sg.maxMutation=i
-            sg.generateSuaveMutants(20)
-        }
+        val sg = SuaveTestCaseGenerator(true)
+        //for (i in 11..11) {
+            //println("number of mutations: $i")
+            sg.maxMutation=2
+            sg.generateSuaveMutants(1)
+       // }
 
     }
 

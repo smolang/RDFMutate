@@ -7,9 +7,16 @@ import kotlin.reflect.KClass
 class MutationSequence(private  val verbose: Boolean) {
     private val mutations : MutableList<AbstractMutation> = mutableListOf()
 
+    val relevantPrefixes: MutableSet<String> = hashSetOf()
+    fun addRelevantPrefix(prefix: String) {
+        relevantPrefixes.add(prefix)
+    }
+
     // adds a random mutation from the provided list of mutations
     fun addRandom(mutOps: List<KClass<out Mutation>>) {
         val am = AbstractMutation(mutOps.random(randomGenerator), verbose)
+        for (p in relevantPrefixes)
+            am.addRelevantPrefix(p)
         mutations.add(am)
     }
 
@@ -19,6 +26,8 @@ class MutationSequence(private  val verbose: Boolean) {
 
     fun addWithConfig(mutOp: KClass<out Mutation>, config: MutationConfiguration) {
         val am = AbstractMutation(mutOp, config, verbose)
+        for (p in relevantPrefixes)
+            am.addRelevantPrefix(p)
         mutations.add(am)
     }
 
