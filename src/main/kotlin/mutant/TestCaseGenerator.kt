@@ -53,10 +53,12 @@ open class TestCaseGenerator(private val verbose: Boolean) {
     fun writeToCSV(fileName : String) {
         FileOutputStream(fileName).use { fos ->
             val writer = fos.bufferedWriter()
-            writer.write("id;mutantFile;numMutations;numDel;numAdd;appliedMutations;affectedSeedNodes;addedAxioms;removedAxioms")
+            writer.write("id;folder;mutantFile;numMutations;numDel;numAdd;appliedMutations;affectedSeedNodes;addedAxioms;removedAxioms")
             writer.newLine()
             var id = 0
             for (m in mutators) {
+                val path = Paths.get("").toAbsolutePath().toString()
+                val folder = path
                 val mutantFile = mutantFiles[id]
                 val numMut = m.numMutations
                 val numDel = m.globalMutation?.removeSet?.size ?: -1
@@ -72,7 +74,7 @@ open class TestCaseGenerator(private val verbose: Boolean) {
                 val addedAxioms = m.addSet.joinToString( ",", "[", "]")
                 val removedAxioms = m.removeSet.joinToString( ",", "[", "]").replace("\n", ",")
 
-                writer.write("$id;$mutantFile;$numMut;$numDel;$numAdd;$appliedMutations;$affectedSeedNodes;$addedAxioms;$removedAxioms")
+                writer.write("$id;$path;$mutantFile;$numMut;$numDel;$numAdd;$appliedMutations;$affectedSeedNodes;$addedAxioms;$removedAxioms")
                 writer.newLine()
                 id += 1
             }

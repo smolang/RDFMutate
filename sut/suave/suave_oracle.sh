@@ -38,6 +38,7 @@ abort_oracle() {
 echo_and_log "start oracle for onotology $TEST_ONTOLOGY at $(date)"
 start_time=$(date +'%s')
 
+stop_container_later=1
 
 # check if docker image exists
 
@@ -45,8 +46,20 @@ result=$( docker ps -a -q -f name=$CONTAINER_NAME )
 
 if [[ -n "$result" ]]; then
   # Container image exists
-  echo_and_log 'container image found: starting container' 
-  docker start $CONTAINER_NAME >>$LOG_FILE
+
+  # check, if container is already running
+  result=$( docker ps -q -f name=$CONTAINER_NAME )
+
+  if ! [[ -n "$result" ]]; then
+    # container is not running
+    echo_and_log 'container image found: starting container' 
+    docker start $CONTAINER_NAME >>$LOG_FILE
+  else
+    echo_and_log 'container image found: container is already running' 
+    stop_container_later=0
+  fi
+
+  
 else
   # No such container image'
   echo_and_log 'create container image, this might take some time' 
@@ -77,12 +90,12 @@ echo_and_log 'run simulations in docker'
 # copy test ontology to docker
 #docker cp $TEST_ONTOLOGY suaveContainer:/home/kasm-user/suave_ws/src/suave/suave_metacontrol/config/suave.owl >> $LOG_FILE
 docker cp $TEST_ONTOLOGY suaveContainer:/home/kasm-user/suave_ws/install/suave_metacontrol/share/suave_metacontrol/config/suave.owl >> $LOG_FILE
-docker cp $MROS_ONTOLOGY suaveContainer:/home/kasm-user/suave_ws/src/mros_ontology/owl/mros.owl >> $LOG_FILE
-docker cp $TOMASYS_ONTOLOGY suaveContainer:/home/kasm-user/suave_ws/src/mc_mdl_tomasys/owl/tomasys.owl >> $LOG_FILE
+#docker cp $MROS_ONTOLOGY suaveContainer:/home/kasm-user/suave_ws/src/mros_ontology/owl/mros.owl >> $LOG_FILE
+#docker cp $TOMASYS_ONTOLOGY suaveContainer:/home/kasm-user/suave_ws/src/mc_mdl_tomasys/owl/tomasys.owl >> $LOG_FILE
 
-echo_and_log "copy mros ontology $MROS_ONTOLOGY to container"
-echo_and_log "copy tomasys ontology $TOMASYS_ONTOLOGY to container"
 echo_and_log "copy suave ontology $TEST_ONTOLOGY to container"
+#echo_and_log "copy mros ontology $MROS_ONTOLOGY to container"
+#echo_and_log "copy tomasys ontology $TOMASYS_ONTOLOGY to container"
 
 # replace ontologies by empty ones (all information is in the TEST_ONTOLOGY)
 
@@ -96,7 +109,7 @@ while [ $GOOD_RUNS -lt $LIMIT ] && [ $BAD_RUNS -lt $LIMIT ] && [ $TOTAL_RUNS -lt
   echo_and_log "start new simulation run (number $TOTAL_RUNS)"
 
   # run simulation
-  #docker exec suaveContainer ./runner.sh false metacontrol time 1 >> $LOG_FILE 2>&1
+  docker exec suaveContainer ./runner.sh false metacontrol time 1 >> $LOG_FILE 2>&1
 
   # get log file
   ./getROSlog.sh $ROS_LOG >> $LOG_FILE
@@ -125,9 +138,13 @@ done
 echo_and_log 'simulations are finished'
 
 
-# stop container after usage
-echo_and_log 'container gets stopped'
-#docker stop $CONTAINER_NAME >>$LOG_FILE
+# stop container if it was not running before this script was executed
+if [[ $stop_container_later == 1 ]] ; then
+  echo_and_log 'container gets stopped'
+  docker stop $CONTAINER_NAME >>$LOG_FILE
+fi
+
+
 
 
 

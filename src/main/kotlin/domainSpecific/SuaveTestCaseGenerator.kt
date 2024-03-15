@@ -23,6 +23,12 @@ class SuaveTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) 
     val tomasysRulesModel = RDFDataMgr.loadDataset(tomasysRulesPath).defaultModel
     val suaveRulesModel = RDFDataMgr.loadDataset(suaveRulesPath).defaultModel
 
+
+    val mrosPath = "sut/suave/suave_ontologies/mros.owl"
+    val tomasysPath = "sut/suave/suave_ontologies/tomasys.owl"
+    val mrosModel = RDFDataMgr.loadDataset(mrosPath).defaultModel
+    //val mrosModel = ModelFactory.createDefaultModel()
+    val tomasysModel = RDFDataMgr.loadDataset(tomasysPath).defaultModel
     fun generateSuaveMutants(numberMutants : Int) {
         // general approach:
         // (1) load ontology but without SWRL rules (we do not want to mutate them)
@@ -41,7 +47,6 @@ class SuaveTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) 
         val seed = RDFDataMgr.loadDataset(pathSeed).defaultModel
 
 
-
         // empty contract
         val contract = MutantContract(verbose)
         val additionalAxioms = ModelFactory.createDefaultModel()
@@ -54,20 +59,31 @@ class SuaveTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) 
 
 
 
-        val suaveGenerator = SuaveMutatorFactory(verbose, maxMutation)
+        //val suaveGenerator = SuaveMutatorFactory(verbose, maxMutation)
 
         // create as many mutants as specified
-        super.generateMutants(
+        /*super.generateMutants(
             seed,
             contract,
             suaveGenerator,
             numberMutants
         )
 
+         */
 
+        val mutationNumbers = listOf<Int>(1,2,5,10)
+        for (i in mutationNumbers) {
+            val suaveGenerator = SuaveMutatorFactory(verbose, i)
+            super.generateMutants(
+                seed,
+                contract,
+                suaveGenerator,
+                2
+            )
+        }
 
-        saveMutants("sut/suave/mutatedOnt", "firstMutations")
-        super.writeToCSV("sut/suave/mutatedOnt/overview.csv")
+        saveMutants("sut/suave/mutatedOnt", "firstBatchRun")
+        super.writeToCSV("sut/suave/mutatedOnt/firstBatch.csv")
     }
 
 
@@ -78,11 +94,11 @@ class SuaveTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) 
         // create folder, if necessary
         Files.createDirectories(Paths.get(folderName))
         for (mut in mutants) {
-                       // split the ontology into three parts, roughly based on the initial way:
+            // split the ontology into three parts, roughly based on the initial way:
             // if it contains suave prefix --> suave ontology
             // if it contains tomasys prefix --> tomasys ontology
             // else --> mros ontology
-            for (stat in mut.listStatements()){
+           /* for (stat in mut.listStatements()){
                 if (containsPrefix(stat, "http://www.metacontrol.org/suave"))
                     suaveRulesModel.add(stat)
                 else if (containsPrefix(stat, "http://ros/mros"))
@@ -91,20 +107,28 @@ class SuaveTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) 
                     tomasysRulesModel.add(stat)
             }
 
+            */
+
+            // find all elements in mutant that are not part of the original tomasys or mros ontology
+            // these will be added to the rules of the suave ontology and will be saved in the end
+            var stats = mut.listStatements().toSet()
+            stats = stats.subtract(mrosModel.listStatements().toSet())
+            stats = stats.subtract(tomasysModel.listStatements().toSet())
+
+            for (s in stats)
+                suaveRulesModel.add(s)
+
+
             // three files for the three models
-            val mrosPath = "$folderName/$filePrefix.$i.mros.owl"
-            val tomasysPath = "$folderName/$filePrefix.$i.tomasys.owl"
-            val suavePath = "$folderName/$filePrefix.$i.suave.owl"
+           // val mrosOutputPath = "$folderName/$filePrefix.$i.mros.owl"
+            //val tomasysOutputPath = "$folderName/$filePrefix.$i.tomasys.owl"
+            val suaveOutputPath = "$folderName/$filePrefix.$i.suave.owl"
 
-            RDFDataMgr.write(File(mrosPath).outputStream(), mrosRulesModel, Lang.RDFXML)
-            RDFDataMgr.write(File(tomasysPath).outputStream(), tomasysRulesModel, Lang.RDFXML)
-            RDFDataMgr.write(File(suavePath).outputStream(), suaveRulesModel, Lang.RDFXML)
+            //RDFDataMgr.write(File(mrosOutputPath).outputStream(), mrosRulesModel, Lang.RDFXML)
+            //RDFDataMgr.write(File(tomasysOutputPath).outputStream(), tomasysRulesModel, Lang.RDFXML)
+            RDFDataMgr.write(File(suaveOutputPath).outputStream(), suaveRulesModel, Lang.RDFXML)
 
-           // this.checkDifferences("/home/tobias/Documents/programming/ontologies/OntoMutate/sut/suave/suave_ontologies/mros.owl", mrosPath)
-
-            //this.checkDifferences(suavePath,"/home/tobias/Documents/programming/ontologies/OntoMutate/sut/suave/suave_ontologies/suave_original.owl")
-
-            mutantFiles[i] = suavePath   // save path of the mutation
+            mutantFiles[i] = suaveOutputPath   // save path of the mutation
             i += 1
         }
     }
@@ -166,9 +190,6 @@ class SuaveMutatorFactory(verbose: Boolean, private val maxNumberMutations: Int)
 
         val domIndMut =
             count - domSpecMut
-
-
-
 
 
         // add domain specific mutations

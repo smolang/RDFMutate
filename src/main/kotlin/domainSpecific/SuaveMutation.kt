@@ -26,7 +26,7 @@ class AddQAEstimationMutation(model: Model, verbose: Boolean) : AddObjectPropert
     }
 
     override fun toString(): String {
-        val className = javaClass.toString().removePrefix("class mutant.")
+        val className = javaClass.toString().removePrefix("class mutant.").removePrefix("class domainSpecific.")
         return "$className(random)"
     }
 }
@@ -41,7 +41,7 @@ class RemoveQAEstimationMutation(model: Model, verbose: Boolean) : RemoveObjectP
     }
 
     override fun toString(): String {
-        val className = javaClass.toString().removePrefix("class mutant.")
+        val className = javaClass.toString().removePrefix("class mutant.").removePrefix("class domainSpecific.")
         return "$className(random)"
     }
 }
@@ -56,7 +56,7 @@ class ChangeSolvesFunctionMutation(model: Model, verbose: Boolean) : ChangeObjec
     }
 
     override fun toString(): String {
-        val className = javaClass.toString().removePrefix("class mutant.")
+        val className = javaClass.toString().removePrefix("class mutant.").removePrefix("class domainSpecific.")
         return "$className(random)"
     }
 }
@@ -70,7 +70,7 @@ class ChangeQualityAttributTypeMutation(model: Model, verbose: Boolean) : Change
         )
     }
     override fun toString(): String {
-        val className = javaClass.toString().removePrefix("class mutant.")
+        val className = javaClass.toString().removePrefix("class mutant.").removePrefix("class domainSpecific.")
         return "$className(random)"
     }
 }
@@ -84,7 +84,7 @@ class ChangeHasValueMutation(model: Model, verbose: Boolean) : ChangeRelationMut
         )
     }
     override fun toString(): String {
-        val className = javaClass.toString().removePrefix("class mutant.")
+        val className = javaClass.toString().removePrefix("class mutant.").removePrefix("class domainSpecific.")
         return "$className(random)"
     }
 }
@@ -98,7 +98,7 @@ class ChangeQAComparisonOperatorMutation(model: Model, verbose: Boolean) : Chang
         )
     }
     override fun toString(): String {
-        val className = javaClass.toString().removePrefix("class mutant.")
+        val className = javaClass.toString().removePrefix("class mutant.").removePrefix("class domainSpecific.")
         return "$className(random)"
     }
 }

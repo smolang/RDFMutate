@@ -18,7 +18,9 @@ temp_oracle_output=oracle_output_temp.txt
 #directory="../benchmark_runs/${hostname}"
 # create folder if it does not exist yet
 #mkdir -p "$directory"
-name="oracle_${1%".csv"}_$(date +'%Y_%m_%d_%H_%M')"
+name=${1%".csv"}
+name=$(echo "$name" | tr / _)
+name="oracle_${name}_$(date +'%Y_%m_%d_%H_%M')"
 result="${name}.csv"
 
 
@@ -27,7 +29,7 @@ echo "start time: $(date +'%d.%m.%Y at %H:%M')"
 echo "result will be written to $result"
 
 read -r head < "$ontologies"
-if [[ $head != "id,folder,ontology" ]]; then
+if [[ $head != 'id;folder;mutantFile;'* ]]; then
     echo "ERROR: tests file needs the following header:"
     echo "id,folder,ontology"
     echo "terminating bechmark script"
@@ -36,7 +38,7 @@ fi
 
 echo "id,folder,ontology,oracle" > $result
 
-while IFS="," read -r id folder ontology
+while IFS=";" read -r id folder ontology rest
 do
   # call oracle
   echo "call oracle for ontology $folder/$ontology on $(date +'%d.%m.%Y at %H:%M')"

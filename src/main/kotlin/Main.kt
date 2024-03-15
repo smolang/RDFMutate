@@ -169,8 +169,8 @@ class Main : CliktCommand() {
         val sg = SuaveTestCaseGenerator(true)
         //for (i in 11..11) {
             //println("number of mutations: $i")
-            sg.maxMutation=2
-            sg.generateSuaveMutants(1)
+            sg.maxMutation=1
+            sg.generateSuaveMutants(2)
        // }
 
     }
@@ -182,10 +182,10 @@ class Main : CliktCommand() {
 
         //testSuaveConsistency()
 
-        //val sg = SuaveTestCaseGenerator(false)
-        //sg.generateSuaveMutants(20)
+        val sg = SuaveTestCaseGenerator(false)
+        sg.generateSuaveMutants(10)
 
-        evaluateGeneration()
+        //evaluateGeneration()
         //testAllDisjoint()
     }
 
