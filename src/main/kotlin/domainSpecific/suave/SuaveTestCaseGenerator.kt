@@ -1,4 +1,4 @@
-package domainSpecific
+package domainSpecific.suave
 
 import mutant.*
 import org.apache.jena.rdf.model.ModelFactory
@@ -71,19 +71,19 @@ class SuaveTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) 
 
          */
 
-        val mutationNumbers = listOf<Int>(1,2,5,10)
+        val mutationNumbers = listOf<Int>(1)//,5,10)
         for (i in mutationNumbers) {
             val suaveGenerator = SuaveMutatorFactory(verbose, i)
             super.generateMutants(
                 seed,
                 contract,
                 suaveGenerator,
-                2
+                10
             )
         }
 
-        saveMutants("sut/suave/mutatedOnt", "firstBatchRun")
-        super.writeToCSV("sut/suave/mutatedOnt/firstBatch.csv")
+        saveMutants("sut/suave/mutatedOnt", "onlySuave01")
+        super.writeToCSV("sut/suave/mutatedOnt/onlySuave01.csv")
     }
 
 
@@ -154,7 +154,7 @@ class SuaveMutatorFactory(verbose: Boolean, private val maxNumberMutations: Int)
     val constantNumberOfMutations = true
 
 
-    val ratioDomainDependent = 0.5
+    val ratioDomainDependent = 1.0
 
     private val domainSpecificMutations = listOf(
         ChangeSolvesFunctionMutation::class,

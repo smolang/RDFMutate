@@ -1,4 +1,4 @@
-package domainSpecific
+package domainSpecific.suave
 
 import mutant.*
 import org.apache.jena.rdf.model.Model

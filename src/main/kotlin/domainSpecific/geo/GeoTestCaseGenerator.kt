@@ -1,0 +1,4 @@
+package domainSpecific
+
+class GeoTestCaseGenerator {
+}
