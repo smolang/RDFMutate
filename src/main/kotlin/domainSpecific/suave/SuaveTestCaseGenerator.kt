@@ -29,6 +29,7 @@ class SuaveTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) 
     val mrosModel = RDFDataMgr.loadDataset(mrosPath).defaultModel
     //val mrosModel = ModelFactory.createDefaultModel()
     val tomasysModel = RDFDataMgr.loadDataset(tomasysPath).defaultModel
+
     fun generateSuaveMutants(numberMutants : Int) {
         // general approach:
         // (1) load ontology but without SWRL rules (we do not want to mutate them)
@@ -56,8 +57,8 @@ class SuaveTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) 
             additionalAxioms.add(s)
         for (s in suaveRulesModel.listStatements())
             additionalAxioms.add(s)
-
-
+        // contract with additional information to consider
+        contract.additionalAxioms = additionalAxioms
 
         //val suaveGenerator = SuaveMutatorFactory(verbose, maxMutation)
 
@@ -71,19 +72,19 @@ class SuaveTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) 
 
          */
 
-        val mutationNumbers = listOf<Int>(1)//,5,10)
+        val mutationNumbers = listOf<Int>(3,4)
         for (i in mutationNumbers) {
             val suaveGenerator = SuaveMutatorFactory(verbose, i)
             super.generateMutants(
                 seed,
                 contract,
                 suaveGenerator,
-                10
+                5
             )
         }
 
-        saveMutants("sut/suave/mutatedOnt", "onlySuave01")
-        super.writeToCSV("sut/suave/mutatedOnt/onlySuave01.csv")
+        saveMutants("sut/suave/mutatedOnt", "onlyGeneric02")
+        super.writeToCSV("sut/suave/mutatedOnt/onlyGeneric02.csv")
     }
 
 
@@ -154,7 +155,7 @@ class SuaveMutatorFactory(verbose: Boolean, private val maxNumberMutations: Int)
     val constantNumberOfMutations = true
 
 
-    val ratioDomainDependent = 1.0
+    private val ratioDomainDependent = 0.0
 
     private val domainSpecificMutations = listOf(
         ChangeSolvesFunctionMutation::class,
@@ -202,8 +203,6 @@ class SuaveMutatorFactory(verbose: Boolean, private val maxNumberMutations: Int)
 
         // add mutations in random order to mutation sequence
         ms.shuffle()
-
-
 
         return Mutator(ms, verbose)
     }

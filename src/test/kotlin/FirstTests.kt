@@ -1,4 +1,4 @@
-import domainSpecific.*
+import domainSpecific.suave.*
 import io.kotlintest.shouldBe
 import io.kotlintest.specs.StringSpec
 import mutant.*

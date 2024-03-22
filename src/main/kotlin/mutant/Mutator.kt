@@ -22,7 +22,8 @@ class Mutator(private val mutSeq: MutationSequence, private val verbose: Boolean
         var target = seed
         for (i  in 0 until mutSeq.size()) {
             val mutation = mutSeq[i].concreteMutation(target)
-            //println("Mutation: $mutation")
+            if (verbose)
+                println("Mutation: $mutation")
             if(mutation.isApplicable()) {
                 target = mutation.applyCopy()
                 globalMutation?.mimicMutation(mutation)
@@ -32,6 +33,7 @@ class Mutator(private val mutSeq: MutationSequence, private val verbose: Boolean
         return target
     }
 
+    // collect all nodes that are mentioned in the mutations
     val affectedNodes : Set<Resource>
         get() {
             val nodes: MutableSet<Resource> = mutableSetOf()

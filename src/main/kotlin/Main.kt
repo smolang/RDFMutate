@@ -5,7 +5,10 @@ import com.github.ajalt.clikt.parameters.options.flag
 import com.github.ajalt.clikt.parameters.options.option
 import com.github.ajalt.clikt.parameters.types.file
 import com.github.ajalt.clikt.parameters.types.int
-import domainSpecific.*
+import domainSpecific.auv.AddPipeSegmentConfiguration
+import domainSpecific.auv.AddPipeSegmentMutation
+import domainSpecific.geo.GeoTestCaseGenerator
+import domainSpecific.suave.*
 import mutant.*
 import org.apache.jena.rdf.model.ModelFactory
 import org.apache.jena.riot.RDFDataMgr
@@ -175,18 +178,25 @@ class Main : CliktCommand() {
 
     }
 
+    fun runSuaveGenerator() {
+        val sg = SuaveTestCaseGenerator(true)
+        sg.generateSuaveMutants(10)
+    }
+
+    fun runGeoGenerator() {
+        val gg = GeoTestCaseGenerator(true)
+        gg.generateGeoMutants()
+    }
+
     override fun run() {
         //testMutations()
         //testMiniPipes()
         //testSuave()
+        //runSuaveGenerator()
+        runGeoGenerator()
 
-        //testSuaveConsistency()
 
-        val sg = SuaveTestCaseGenerator(false)
-        sg.generateSuaveMutants(10)
 
-        //evaluateGeneration()
-        //testAllDisjoint()
     }
 
 }

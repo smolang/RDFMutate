@@ -118,9 +118,9 @@ while [ $GOOD_RUNS -lt $LIMIT ] && [ $BAD_RUNS -lt $LIMIT ] && [ $TOTAL_RUNS -lt
   ./getResultsTable.sh $RESULT_CSV >> $LOG_FILE
 
   # evaluate log file
-  # two options: use scv or use log-file
-  #LOG_EVALUATION=$(./log_analyzer.sh "$ROS_LOG")
-  LOG_EVALUATION=$(./csv_results_analyzer.sh "$RESULT_CSV")
+  # two options: use csv or use log-file
+  LOG_EVALUATION=$(./log_analyzer.sh "$ROS_LOG")
+  #LOG_EVALUATION=$(./csv_results_analyzer.sh "$RESULT_CSV")
 
 
   if [[ $LOG_EVALUATION == "pass" ]]; then

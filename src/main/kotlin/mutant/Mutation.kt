@@ -1,7 +1,5 @@
 package mutant
 
-import org.apache.jena.query.QueryExecutionFactory
-import org.apache.jena.query.QueryFactory
 import org.apache.jena.rdf.model.*
 import org.apache.jena.reasoner.Reasoner
 import org.apache.jena.reasoner.ReasonerRegistry
@@ -24,8 +22,9 @@ open class Mutation(var model: Model, val verbose : Boolean) {
     val infModel: InfModel = ModelFactory.createInfModel(reasoner, model)
 
     // prefixes that should be considered when selecting mutation
-    val relevantPrefixes: MutableSet<String> = hashSetOf()
-    private fun considerRelevantPrefixes() : Boolean {return !relevantPrefixes.isEmpty()}
+    private val relevantPrefixes: MutableSet<String> = hashSetOf()
+    private fun considerRelevantPrefixes() : Boolean {return relevantPrefixes.isNotEmpty()
+    }
 
 
     // define some properties / resources that are use all the time
@@ -38,6 +37,10 @@ open class Mutation(var model: Model, val verbose : Boolean) {
     val irreflexiveProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#IrreflexiveProperty")
     val datatypeProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#DatatypeProperty")
     val oneOfProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#oneOf")
+
+    val owlThing : Resource = model.createResource("http://www.w3.org/2002/07/owl#Thing")
+    val owlNothing : Resource = model.createResource("http://www.w3.org/2002/07/owl#Nothing")
+
     val namedInd : Resource = model.createResource("http://www.w3.org/2002/07/owl#NamedIndividual")
     val objectProp : Resource = model.createResource("http://www.w3.org/2002/07/owl#ObjectProperty")
     val owlClass : Resource = model.createResource("http://www.w3.org/2002/07/owl#Class")
@@ -290,86 +293,6 @@ open class RemoveAxiomMutation(model: Model, verbose : Boolean) : Mutation(model
             else
                 getCandidates().random(randomGenerator)
         removeSet.add(s)
-        super.createMutation()
-    }
-}
-
-//removes one (random) subclass axiom       // val m = Mutator
-
-// only overrides the method to select the candidate axioms from super class
-class RemoveSubclassMutation(model: Model, verbose : Boolean) : RemoveAxiomMutation(model, verbose) {
-    override fun getCandidates(): List<Statement> {
-        val l = model.listStatements().toList()
-        val candidates = l.toMutableSet()
-        for (s in l) {
-            // select statements that are not subClass relations
-            if (!s.predicate.toString().matches(".*#subClassOf$".toRegex())) {
-                candidates.remove(s)
-            }
-        }
-        return filterRelevantPrefixes(candidates.toList()).sortedBy { it.toString() }
-    }
-
-    override fun setConfiguration(_config: MutationConfiguration) {
-        assert(_config is SingleStatementConfiguration)
-        val c = _config as SingleStatementConfiguration
-        assert(c.getStatement().predicate.toString().matches(".*#subClassOf$".toRegex()))
-        super.setConfiguration(_config)
-    }
-}
-
-class AddInstanceMutation(model: Model, verbose : Boolean) : Mutation(model, verbose) {
-    private fun getCandidates(): List<String> {
-
-        val queryString = "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n SELECT * WHERE { ?x a owl:Class. }"
-        val query = QueryFactory.create(queryString)
-        val res = QueryExecutionFactory.create(query, model).execSelect()
-        var ret = listOf<String>()
-        for(r in res){
-            val candidate = r.get("?x").toString()
-            //first condition removes rdf: owl: and other standard prefixes, second condition matches on blank nodes
-            if(candidate.startsWith("http://www.w3.org") || candidate.matches("(\\d|\\w){8}-(\\d|\\w){4}-(\\d|\\w){4}-(\\d|\\w){4}-(\\d|\\w){12}".toRegex()))
-                continue
-            ret = ret + candidate
-        }
-        return ret.sorted()
-        // we do not filter, when we add stuff, only when we remove
-        //return filterRelevantPrefixesString(ret.toList()).sorted()
-    }
-
-    override fun isApplicable(): Boolean {
-        return hasConfig || getCandidates().isNotEmpty()
-    }
-
-    override fun setConfiguration(_config: MutationConfiguration) {
-        assert(_config is SingleResourceConfiguration)
-        super.setConfiguration(_config)
-    }
-
-    override fun createMutation() {
-        val m = ModelFactory.createDefaultModel()
-        val owlClass =
-            if (hasConfig){
-                assert(config is SingleResourceConfiguration)
-                val c = config as SingleResourceConfiguration
-                c.getResource().toString()
-            }
-            else
-                getCandidates().random(randomGenerator)
-        val instanceName =
-            if (hasConfig && config is StringAndResourceConfiguration) {
-                val c = config as StringAndResourceConfiguration
-                c.getString()
-            }
-            else
-                "inner:asd"+randomGenerator.nextInt(0,Int.MAX_VALUE)
-        // create new "type" relation for the individual and the selected class
-        val s = m.createStatement(
-            m.createResource(instanceName),
-            m.createProperty("http://www.w3.org/1999/02/22-rdf-syntax-ns#","type"),
-            m.createResource(owlClass))
-
-        addSet.add(s)
         super.createMutation()
     }
 }
@@ -729,92 +652,6 @@ open class ChangeRelationMutation(model: Model, verbose: Boolean) : AddRelationM
     }
 }
 
-open class RemoveObjectPropertyMutation(model: Model, verbose : Boolean) : RemoveAxiomMutation(model, verbose) {
-    override fun getCandidates(): List<Statement> {
-        val allProps = allOfType(objectProp)
-        val candidates : MutableSet<Statement> = hashSetOf()
-        allProps.forEach {
-            candidates.addAll(model.listStatements(
-                null as Resource?, model.getProperty(it.toString()), null as RDFNode?
-            ).toSet())
-        }
-        return filterRelevantPrefixes(candidates.toList()).sortedBy { it.toString() }
-    }
-
-    override fun setConfiguration(_config: MutationConfiguration) {
-        assert(_config is SingleResourceConfiguration)
-        when (_config) {
-            is SingleResourceConfiguration -> {
-                // select a random element to delete
-                val p = model.getProperty(_config.getResource().toString())
-                val cand = model.listStatements(null as Resource?, p, null as RDFNode?).toSet()
-
-                val axiom =
-                    if (cand.any())
-                        cand.random(randomGenerator)
-                    else {
-                        if (verbose)
-                            println("no relation with this property exists / can be deleted")
-                        emptyAxiom
-                    }
-                super.setConfiguration(
-                    SingleStatementConfiguration(axiom)
-                )
-            }
-            is SingleStatementConfiguration -> {
-                super.setConfiguration(_config)
-            }
-        }
-    }
-}
-
-open class AddObjectPropertyMutation(model: Model, verbose: Boolean) : AddRelationMutation(model, verbose) {
-    override fun getCandidates() : List<Resource> {
-        val cand = ArrayList<Resource>()
-        val l = model.listStatements().toList()
-        for (s in l) {
-            if (s.predicate == typeProp && s.`object` == objectProp)
-                cand.add(s.subject)
-        }
-        return cand.sortedBy { it.toString() }
-        // we do not filter, when we add stuff, only when we remove
-        //return filterRelevantPrefixesResource(cand.toList()).sortedBy { it.toString() }
-    }
-
-    override fun setConfiguration(_config: MutationConfiguration) {
-        val p =
-            when (_config) {
-                is SingleResourceConfiguration -> {
-                    _config.getResource()
-                }
-
-                is SingleStatementConfiguration -> {
-                    _config.getStatement().predicate
-                }
-
-                else -> model.createResource()
-            }
-
-        // check that p is really an ObjectProperty, if it exists in the model at all
-        if (model.listResourcesWithProperty(null ).toSet().contains(p.asResource()))
-            if (!isOfType(p.asResource(), objectProp)) {
-                println("WARNING: resource $p is not an object property but is used as such in configuration.")
-            }
-
-        super.setConfiguration(_config)
-    }
-}
-
-open class ChangeObjectPropertyMutation(model: Model, verbose: Boolean) : AddObjectPropertyMutation(model, verbose) {
-    override fun createMutation() {
-        // create the mutation as usual (i.e. adding a new triple)
-        super.createMutation()
-
-        // find existing relations and remove them
-        turnAdditionsToChanges()
-    }
-}
-
 class AddAxiomMutation(model: Model, verbose: Boolean) : Mutation(model, verbose) {
     override fun isApplicable(): Boolean {
         return hasConfig
@@ -884,27 +721,37 @@ open class RemoveNodeMutation(model: Model, verbose : Boolean) : Mutation(model,
     }
 }
 
-class RemoveIndividualMutation(model: Model, verbose : Boolean) : RemoveNodeMutation(model, verbose) {
-    override fun getCandidates(): List<Resource> {
-        val l = model.listStatements().toList().toMutableList()
-        val candidates = ArrayList<Resource>()
-        for (s in l) {
-            // select statements that are not subClass relations
-            if (s.predicate == typeProp && s.`object` == namedInd) {
-                candidates.add(s.subject)
-            }
-        }
-        return filterRelevantPrefixesResource(candidates).sortedBy { it.toString() }
+open class ReplaceNodeInAxiomMutation(model: Model, verbose: Boolean) : Mutation(model, verbose) {
+    override fun isApplicable(): Boolean {
+        return hasConfig
     }
 
     override fun setConfiguration(_config: MutationConfiguration) {
-        assert(_config is SingleResourceConfiguration)
-        // assert that the resource is really an individual
-        val ind = (_config as SingleResourceConfiguration).getResource()
-        assert(isOfType(ind, namedInd))
+        assert(_config is DoubleStringAndStatementConfiguration)
         super.setConfiguration(_config)
     }
 
+    override fun createMutation() {
+        assert(hasConfig)
+        assert(config is DoubleStringAndStatementConfiguration)
+        val c = config as DoubleStringAndStatementConfiguration
 
+        val oldAxiom = c.getStatement()
+        val newResource = model.createResource(c.getNewNode())
+        val newProperty = model.createProperty(c.getNewNode())
+
+        val newAxiom = when (c.getOldNode()) {
+            oldAxiom.subject.toString() ->
+                model.createStatement(newResource, oldAxiom.predicate, oldAxiom.`object`)
+            oldAxiom.predicate.toString() ->
+                model.createStatement(oldAxiom.subject, newProperty, oldAxiom.`object`)
+            oldAxiom.`object`.toString() ->
+                model.createStatement(oldAxiom.subject, oldAxiom.predicate, newResource)
+            else ->
+                oldAxiom    // if nothing matches: keep old axiom as nothing needs to be replaced
+        }
+        removeSet.add(oldAxiom)
+        addSet.add(newAxiom)
+        super.createMutation()
+    }
 }
-

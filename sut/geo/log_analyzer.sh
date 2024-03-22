@@ -3,16 +3,17 @@
 # year: 2024
 
 # usage: ./log_analyzer.sh LOG-FILE
-# analysis a ROS-log from SUAVE to decide, if the run was successfull, or not
+# analysis of output of geo-simulator
 # i.e. acts as an oracle to detect correct behaviour
 # result of analysis will be output on terminal (pass, fail, or exception)
 
 LOG=$1
 
 # extract different things from log
-distance=-1
-time=-1
-exceptions=0
+startMaturation=10
+endMaturation=10
+startTrap=10
+
 
 # test, if log file exists
 if ! [[ -f "$LOG" ]]; then
@@ -21,7 +22,30 @@ if ! [[ -f "$LOG" ]]; then
 fi
 
 
+
+timeFlag=0
+t="-200"
+
 while read line; do
+    if [[ $timeFlag == 1 ]]; then
+        t=$line
+        t=${t%.*}   # round to int
+        timeFlag=0
+    elif [[ $line == "\"t:\""* ]]; then
+        timeFlag=1
+    elif [[ $line == *"maturation on-going"* ]]; then
+        # update end time as long as there is maturation
+        endMaturation=$t
+        if [[ $startMaturation == 10 ]]; then
+            # first time that maturation occurs
+            startMaturation=$t
+        fi
+    elif [[ $line == *"trap"* ]]; then
+        if [[ $startTrap == 10 ]]; then
+            startTrap=$t
+        fi
+    fi
+
     if [[ $line == *"[mission_metrics]"* ]]; then
       #  echo "metrics"
         if [[ $line == *"Time elapsed to detect pipeline:"* ]]; then
@@ -42,10 +66,16 @@ while read line; do
     fi
 done < $LOG
 
-if [[ $exceptions > 0 ]]; then
-    echo "exception"
-elif [[ $distance > 20 ]]; then
-    echo "pass"
-else
+#echo $startMaturation
+#echo $endMaturation
+#echo $startTrap
+
+if [[ $startMaturation -ne -52 ]]; then
     echo "fail"
+elif [[ $endMaturation -ne -16 ]]; then
+    echo "fail"
+elif [[ $startTrap -ne -28 ]]; then
+    echo "fail"
+else
+    echo "pass"
 fi
