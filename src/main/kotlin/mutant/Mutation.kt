@@ -34,6 +34,7 @@ open class Mutation(var model: Model, val verbose : Boolean) {
     val subClassProp : Property = model.createProperty("http://www.w3.org/2000/01/rdf-schema#subClassOf")
     val subPropertyProp : Property = model.createProperty("http://www.w3.org/2000/01/rdf-schema#subPropertyOf")
     val funcProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#FunctionalProperty")
+    val dataProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#DatatypeProperty")
     val irreflexiveProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#IrreflexiveProperty")
     val datatypeProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#DatatypeProperty")
     val oneOfProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#oneOf")
@@ -47,7 +48,11 @@ open class Mutation(var model: Model, val verbose : Boolean) {
     val decimalClass : Resource = model.createResource("http://www.w3.org/2001/XMLSchema#decimal")
     val booleanClass : Resource = model.createResource("http://www.w3.org/2001/XMLSchema#boolean")
     val xsdDecimal : Resource = model.createResource("http://www.w3.org/2001/XMLSchema#decimal")
+    val xsdDouble : Resource = model.createResource("http://www.w3.org/2001/XMLSchema#double")
     val datatypeClass : Resource = model.createResource("http://www.w3.org/2000/01/rdf-schema#Datatype")
+
+    val intersectionProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#intersectionOf")
+    val unionProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#unionOf")
 
     val rdfListClass : Resource = model.createResource("http://www.w3.org/1999/02/22-rdf-syntax-ns#List")
     val rdfFirst : Property = model.createProperty("http://www.w3.org/1999/02/22-rdf-syntax-ns#first")
@@ -467,12 +472,22 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
 
         var rangeP : MutableSet<RDFNode> = hashSetOf()
 
-        if (ranges.size != 1) {
+        if (ranges.size > 1) {
             if (verbose)
-                println("can not add data relation. Property ${p.localName} has no or more than one range provided")
+                println("can not add data relation. Property ${p.localName} has more than one range provided")
         }
         else {
-            val range = ranges.single()
+            val range =
+                if (ranges.size == 1)
+                    ranges.single()
+                else {
+                    val r = HashSet<RDFNode>()
+                    r.add(booleanClass)
+                    r.add(xsdDouble)
+                    r.add(xsdDecimal)
+                    r.random(randomGenerator)
+                }
+
             // check different classes of data properties, for which we can determine the domain
             if (range == booleanClass) {
                 val trueNode = model.createResource("true")
@@ -494,6 +509,23 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
                 val beforeComma = ((1/(-randomGenerator.nextDouble(-1.0, 1.0) + 1.0))).toInt()
                 val data = "$sign$beforeComma.${randomGenerator.nextInt(0,1000)}"
                 rangeP = hashSetOf(model.createTypedLiteral(data, xsdDecimal.toString()))
+
+            }
+            else if (range == xsdDouble) {
+                // compute a random double  number
+
+                // 50% chance of having a negative number
+                val sign =
+                    if (randomGenerator.nextBoolean())
+                        "-"
+                    else
+                        ""
+
+                // the absolute value favours small numbers --> 1/x distribution
+                // e.g. probability of having 0 as leading number is 50%
+                val beforeComma = ((1/(-randomGenerator.nextDouble(-1.0, 1.0) + 1.0))).toInt()
+                val data = "$sign$beforeComma.${randomGenerator.nextInt(0,1000)}"
+                rangeP = hashSetOf(model.createTypedLiteral(data, xsdDouble.toString()))
 
             }
             else if (isOfType(range.asResource(), datatypeClass)) {
@@ -634,6 +666,11 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
 
 // similar to adding a relation, but all existing triples with this subject ond predicate are deleted
 open class ChangeRelationMutation(model: Model, verbose: Boolean) : AddRelationMutation(model, verbose) {
+
+    override fun getCandidates() : List<Resource> {
+        val cand =  super.getCandidates()
+        return filterRelevantPrefixesResource(cand.toList()).sortedBy { it.toString() }
+    }
 
     override fun computeDomainsProp(p: Property): Pair<Set<Resource>, Set<RDFNode>> {
         // use all individuals as domain that already have such an outgoing relation

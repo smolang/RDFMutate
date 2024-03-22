@@ -10,7 +10,7 @@
 ConfigFile=config.txt
 
 Ontology=$1
-simulationLog=temp_geosim.log
+simulationLog=temp/temp_geosim.log
 log_file=logs/oracle_$(date +'%Y_%m_%d_%H_%M_%S').log
 
 
@@ -58,9 +58,18 @@ start_time=$(date +'%s')
 ## run simulation with provided ontology
 echo_and_log "starting simulation"
 cd $Folder
-bash run_geosim.sh $currentFolder/$Ontology > $currentFolder/$simulationLog
-
+bash run_geosim.sh $Ontology > $currentFolder/$simulationLog
 
 # go back to current folder
 cd $currentFolder
+
+# evaluate log file and post result
+log_evaluation=$(./log_analyzer.sh "$simulationLog")
+echo_and_log "oracle: $log_evaluation"
+
+end_time=$(date +'%s')
+duration=$(($end_time - $start_time))
+
+echo_and_log "stop script at $(date) after $duration s"
+
 

@@ -12,8 +12,8 @@ class GeoTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) {
     val geoOntoPath = "sut/geo/total_mini.ttl"
     fun generateGeoMutants() {
         val seed = RDFDataMgr.loadDataset(geoOntoPath).defaultModel
-        for (s in seed.listStatements())
-            println(s)
+        //for (s in seed.listStatements())
+        //    println(s)
 
         val geoGenerator = GeoMutatorFactory(verbose, 1)
         val contract = MutantContract(verbose)
@@ -22,11 +22,11 @@ class GeoTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) {
             seed,
             contract,
             geoGenerator,
-            1
+            2
         )
 
-        saveMutants("sut/geo/mutatedOnt", "geoMutant1")
-
+        saveMutants("sut/geo/mutatedOnt", "firstTest")
+        super.writeToCSV("sut/geo/mutatedOnt/firstTest.csv")
     }
 }
 
@@ -35,12 +35,15 @@ class GeoMutatorFactory(verbose: Boolean, private val NumberMutations: Int): Mut
 
     private val domainIndependentMutations = listOf(
         CEUAMutation::class,
+        ChangeDataPropertyMutation::class,
+        ACATOMutation::class
     )
 
     override fun randomMutator(): Mutator {
         val ms = MutationSequence(verbose)
 
-        ms.addRandom(domainIndependentMutations.random(randomGenerator))
+        for (i in 1..NumberMutations)
+            ms.addRandom(domainIndependentMutations.random(randomGenerator))
 
         return Mutator(ms, verbose)
     }

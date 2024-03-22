@@ -38,10 +38,10 @@
 
 | effected entity | operator | effect                                                      | implemented? |
 |-----------------|----------|-------------------------------------------------------------|--------------|
-| any axiom       | CEUA     | removes one side of AND                                     |              |
-| any axiom       | CEUO     | removes one side of OR                                      |              |
-| any axiom       | ACOTA    | replace an AND with an OR                                   |              |
-| any axiom       | ACATO    | replace an AND with an OR                                   |              |
+| any axiom       | CEUA     | removes one side of AND                                     | yes          |
+| any axiom       | CEUO     | removes one side of OR                                      | yes          |
+| any axiom       | ACOTA    | replace an OR with an AND                                   | yes          |
+| any axiom       | ACATO    | replace an AND with an OR                                   | yes          |
 | any axiom       | ACSTA    | replace existential operator with universal operator        |              |
 | any axiom       | ACATS    | replace universal operator with existential operator in     |              |
 | any axiom       | AEDN     | add negation for AND, OR, existential or universal operator |              |

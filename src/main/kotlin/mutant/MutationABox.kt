@@ -3,6 +3,7 @@ package mutant
 import org.apache.jena.query.QueryExecutionFactory
 import org.apache.jena.query.QueryFactory
 import org.apache.jena.rdf.model.*
+import org.apache.jena.riot.RDFDataMgr
 import randomGenerator
 
 
@@ -139,6 +140,11 @@ open class AddObjectPropertyMutation(model: Model, verbose: Boolean) : AddRelati
 }
 
 open class ChangeObjectPropertyMutation(model: Model, verbose: Boolean) : AddObjectPropertyMutation(model, verbose) {
+    override fun getCandidates() : List<Resource> {
+        val cand =  super.getCandidates()
+        return filterRelevantPrefixesResource(cand.toList()).sortedBy { it.toString() }
+    }
+
     override fun createMutation() {
         // create the mutation as usual (i.e. adding a new triple)
         super.createMutation()
@@ -170,3 +176,12 @@ class RemoveIndividualMutation(model: Model, verbose : Boolean) : RemoveNodeMuta
     }
 }
 
+
+class ChangeDataPropertyMutation(model: Model, verbose: Boolean) : ChangeRelationMutation(model, verbose) {
+    override fun getCandidates() : List<Resource> {
+        val cand =  super.getCandidates()
+        // only select data properties
+        val newCand =  cand.filter { isOfInferredType(it, dataProp)}
+        return newCand
+    }
+}

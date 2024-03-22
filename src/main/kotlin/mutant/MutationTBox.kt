@@ -51,7 +51,7 @@ class CEUAMutation(model: Model, verbose: Boolean): ReplaceNodeInAxiomMutation(m
             val y = r.get("?y")
             val a = r.get("?a")
             val axiom = model.createStatement(a.asResource(),rdfFirst, y)
-            println("$a $y $axiom")
+            //println("$a $y $axiom")
             ret += Pair(y.toString(), axiom)
         }
         return ret.sortedBy { it.toString() }
@@ -83,23 +83,154 @@ class CEUAMutation(model: Model, verbose: Boolean): ReplaceNodeInAxiomMutation(m
 
 // removes one part of an "OR" in a logical axiom
 class CEUOMutation(model: Model, verbose: Boolean): Mutation(model, verbose)   {
+    override fun isApplicable(): Boolean {
+        return hasConfig || getCandidates().isNotEmpty()
+    }
 
     // selects names of nodes that should be removed / replaced by owl:Nothing
-    private fun getCandidates(): List<String> {
+    private fun getCandidates(): List<Pair<String, Statement>> {
         val queryString = "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n " +
                 "PREFIX rdfs: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
                 "SELECT * WHERE { " +
-                "?x owl:unionOf ?a1. " +
-                "?a1 (rdfs:rest)* / rdfs:first ?y. " +
+                "?x owl:unionOf ?b. " +
+                "?b (rdfs:rest)* ?a." +
+                "?a rdfs:first ?y. " +
                 "}"
         val query = QueryFactory.create(queryString)
         val res = QueryExecutionFactory.create(query, model).execSelect()
-        val ret = mutableListOf<String>()
+        val ret = mutableListOf<Pair<String, Statement>>()
         for(r in res){
-            val y = r.get("?y").toString()
-            println(y)
-            ret += y
+            val y = r.get("?y")
+            val a = r.get("?a")
+            val axiom = model.createStatement(a.asResource(),rdfFirst, y)
+            //println("$a $y $axiom")
+            ret += Pair(y.toString(), axiom)
         }
-        return ret.sorted()
+        return ret.sortedBy { it.toString() }
     }
+
+    override fun setConfiguration(_config: MutationConfiguration) {
+        assert(_config is SingleStatementConfiguration)
+        val con = _config as SingleStatementConfiguration
+        val c = DoubleStringAndStatementConfiguration(
+            con.getStatement().`object`.toString(),
+            owlNothing.toString(),
+            con.getStatement())
+
+        super.setConfiguration(_config)
+    }
+
+    override fun createMutation() {
+        if (!hasConfig) {
+            val (oldNode, axiom) = getCandidates().random(randomGenerator)
+            val c = DoubleStringAndStatementConfiguration(
+                oldNode,
+                owlNothing.toString(),
+                axiom)
+            super.setConfiguration(c)   // set configuration for upper class
+        }
+        super.createMutation()
+    }
+}
+
+// replace "AND" by "OR"
+class ACATOMutation(model: Model, verbose: Boolean): ReplaceNodeInAxiomMutation(model, verbose) {
+    override fun isApplicable(): Boolean {
+        return hasConfig || getCandidates().isNotEmpty()
+    }
+
+    // selects names of nodes that should be removed / replaced by owl:Thing
+    private fun getCandidates(): List<Pair<String, Statement>> {
+        val queryString = "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n " +
+                "PREFIX rdfs: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
+                "SELECT * WHERE { " +
+                "?x owl:intersectionOf ?y. " +
+                "}"
+        val query = QueryFactory.create(queryString)
+        val res = QueryExecutionFactory.create(query, model).execSelect()
+        val ret = mutableListOf<Pair<String, Statement>>()
+        for (r in res) {
+            val x = r.get("?x")
+            val y = r.get("?y")
+            val axiom = model.createStatement(x.asResource(), intersectionProp, y)
+            //println("$a $y $axiom")
+            ret += Pair(intersectionProp.toString(), axiom)
+        }
+        return ret.sortedBy { it.toString() }
+    }
+
+    override fun setConfiguration(_config: MutationConfiguration) {
+        assert(_config is SingleStatementConfiguration)
+        val con = _config as SingleStatementConfiguration
+        val c = DoubleStringAndStatementConfiguration(
+            intersectionProp.toString(),
+            unionProp.toString(),
+            con.getStatement())
+
+        super.setConfiguration(_config)
+    }
+
+    override fun createMutation() {
+        if (!hasConfig) {
+            val (oldNode, axiom) = getCandidates().random(randomGenerator)
+            val c = DoubleStringAndStatementConfiguration(
+                oldNode,
+                unionProp.toString(),
+                axiom)
+            super.setConfiguration(c)   // set configuration for upper class
+        }
+        super.createMutation()
+    }
+}
+
+
+// replace "Or" by "And"
+class ACOTAMutation(model: Model, verbose: Boolean): ReplaceNodeInAxiomMutation(model, verbose) {
+    override fun isApplicable(): Boolean {
+        return hasConfig || getCandidates().isNotEmpty()
+    }
+
+    // selects names of nodes that should be removed / replaced by owl:Thing
+    private fun getCandidates(): List<Pair<String, Statement>> {
+        val queryString = "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n " +
+                "PREFIX rdfs: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
+                "SELECT * WHERE { " +
+                "?x owl:unionOf ?y. " +
+                "}"
+        val query = QueryFactory.create(queryString)
+        val res = QueryExecutionFactory.create(query, model).execSelect()
+        val ret = mutableListOf<Pair<String, Statement>>()
+        for (r in res) {
+            val x = r.get("?x")
+            val y = r.get("?y")
+            val axiom = model.createStatement(x.asResource(), unionProp, y)
+            //println("$a $y $axiom")
+            ret += Pair(unionProp.toString(), axiom)
+        }
+        return ret.sortedBy { it.toString() }
+    }
+
+    override fun setConfiguration(_config: MutationConfiguration) {
+        assert(_config is SingleStatementConfiguration)
+        val con = _config as SingleStatementConfiguration
+        val c = DoubleStringAndStatementConfiguration(
+            unionProp.toString(),
+            intersectionProp.toString(),
+            con.getStatement())
+
+        super.setConfiguration(_config)
+    }
+
+    override fun createMutation() {
+        if (!hasConfig) {
+            val (oldNode, axiom) = getCandidates().random(randomGenerator)
+            val c = DoubleStringAndStatementConfiguration(
+                oldNode,
+                intersectionProp.toString(),
+                axiom)
+            super.setConfiguration(c)   // set configuration for upper class
+        }
+        super.createMutation()
+    }
+
 }

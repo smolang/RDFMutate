@@ -116,8 +116,9 @@ class SuaveTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) 
             stats = stats.subtract(mrosModel.listStatements().toSet())
             stats = stats.subtract(tomasysModel.listStatements().toSet())
 
+            val suaveRulesModelCopy = RDFDataMgr.loadDataset(suaveRulesPath).defaultModel
             for (s in stats)
-                suaveRulesModel.add(s)
+                suaveRulesModelCopy.add(s)
 
 
             // three files for the three models
@@ -127,7 +128,7 @@ class SuaveTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) 
 
             //RDFDataMgr.write(File(mrosOutputPath).outputStream(), mrosRulesModel, Lang.RDFXML)
             //RDFDataMgr.write(File(tomasysOutputPath).outputStream(), tomasysRulesModel, Lang.RDFXML)
-            RDFDataMgr.write(File(suaveOutputPath).outputStream(), suaveRulesModel, Lang.RDFXML)
+            RDFDataMgr.write(File(suaveOutputPath).outputStream(), suaveRulesModelCopy, Lang.RDFXML)
 
             mutantFiles[i] = suaveOutputPath   // save path of the mutation
             i += 1
