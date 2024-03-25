@@ -1,5 +1,6 @@
 package domainSpecific.geo
 
+import domainSpecific.suave.SuaveMutatorFactory
 import mutant.*
 import org.apache.jena.query.QueryExecutionFactory
 import org.apache.jena.query.QueryFactory
@@ -18,15 +19,19 @@ class GeoTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) {
         val geoGenerator = GeoMutatorFactory(verbose, 1)
         val contract = MutantContract(verbose)
 
-        super.generateMutants(
-            seed,
-            contract,
-            geoGenerator,
-            2
-        )
+        val mutationNumbers = listOf<Int>(1,2,3,4,5,6,7,8,9,10)
+        for (i in mutationNumbers) {
+            val geoMutator = GeoMutatorFactory(verbose, i)
+            super.generateMutants(
+                seed,
+                contract,
+                geoMutator,
+                10
+            )
+        }
 
-        saveMutants("sut/geo/mutatedOnt", "firstTest")
-        super.writeToCSV("sut/geo/mutatedOnt/firstTest.csv")
+        saveMutants("sut/geo/mutatedOnt", "secondTest")
+        super.writeToCSV("sut/geo/mutatedOnt/secondTest.csv")
     }
 }
 
@@ -36,7 +41,8 @@ class GeoMutatorFactory(verbose: Boolean, private val NumberMutations: Int): Mut
     private val domainIndependentMutations = listOf(
         CEUAMutation::class,
         ChangeDataPropertyMutation::class,
-        ACATOMutation::class
+        ACATOMutation::class,
+        ToSiblingClassMutation::class
     )
 
     override fun randomMutator(): Mutator {
@@ -48,3 +54,4 @@ class GeoMutatorFactory(verbose: Boolean, private val NumberMutations: Int): Mut
         return Mutator(ms, verbose)
     }
 }
+

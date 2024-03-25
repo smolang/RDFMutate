@@ -11,7 +11,7 @@
 
 | effected entity | operator | effect                               | implemented? |
 |-----------------|----------|--------------------------------------|--------------|
-| any entity      | ERE      | remove entify (incl. all its axioms) |              |
+| any entity      | ERE      | remove entity (incl. all its axioms) |              |
 | any entity      | ERL      | remove entity label                  |              |
 | any entity      | ECL      | change label language                |              |
 | class           | CRS      | remove a single subclass axiom       | yes          |
@@ -62,6 +62,7 @@
 | individual               |          | delete individual (and all the axioms it occurs in)                  | yes                           |
 | any axiom                |          | add a SubClass relation                                              | no                            |
 | individual               |          | add a type relation                                                  | no                            |
+| any logical axiom        |          | replace class with sibling class(in AND or OR)                       |                               |
 
 ## Domain specific operators
 ### small AUV example

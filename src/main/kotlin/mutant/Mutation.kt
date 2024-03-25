@@ -45,14 +45,14 @@ open class Mutation(var model: Model, val verbose : Boolean) {
     val namedInd : Resource = model.createResource("http://www.w3.org/2002/07/owl#NamedIndividual")
     val objectProp : Resource = model.createResource("http://www.w3.org/2002/07/owl#ObjectProperty")
     val owlClass : Resource = model.createResource("http://www.w3.org/2002/07/owl#Class")
-    val decimalClass : Resource = model.createResource("http://www.w3.org/2001/XMLSchema#decimal")
-    val booleanClass : Resource = model.createResource("http://www.w3.org/2001/XMLSchema#boolean")
+    val xsdBoolean : Resource = model.createResource("http://www.w3.org/2001/XMLSchema#boolean")
     val xsdDecimal : Resource = model.createResource("http://www.w3.org/2001/XMLSchema#decimal")
     val xsdDouble : Resource = model.createResource("http://www.w3.org/2001/XMLSchema#double")
     val datatypeClass : Resource = model.createResource("http://www.w3.org/2000/01/rdf-schema#Datatype")
 
     val intersectionProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#intersectionOf")
     val unionProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#unionOf")
+    val someValuesFromProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#someValuesFrom")
 
     val rdfListClass : Resource = model.createResource("http://www.w3.org/1999/02/22-rdf-syntax-ns#List")
     val rdfFirst : Property = model.createProperty("http://www.w3.org/1999/02/22-rdf-syntax-ns#first")
@@ -482,16 +482,16 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
                     ranges.single()
                 else {
                     val r = HashSet<RDFNode>()
-                    r.add(booleanClass)
+                    r.add(xsdBoolean)
                     r.add(xsdDouble)
                     r.add(xsdDecimal)
                     r.random(randomGenerator)
                 }
 
             // check different classes of data properties, for which we can determine the domain
-            if (range == booleanClass) {
-                val trueNode = model.createResource("true")
-                val falseNode = model.createResource("false")
+            if (range == xsdBoolean) {
+                val trueNode = model.createTypedLiteral("true", xsdBoolean.toString())
+                val falseNode = model.createTypedLiteral("false", xsdBoolean.toString())
                 rangeP = hashSetOf(trueNode, falseNode)
             }
             else if (range == xsdDecimal) {

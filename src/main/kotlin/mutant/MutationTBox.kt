@@ -38,11 +38,11 @@ class CEUAMutation(model: Model, verbose: Boolean): ReplaceNodeInAxiomMutation(m
     // selects names of nodes that should be removed / replaced by owl:Thing
     private fun getCandidates(): List<Pair<String, Statement>> {
         val queryString = "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n " +
-                "PREFIX rdfs: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
+                "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
                 "SELECT * WHERE { " +
                 "?x owl:intersectionOf ?b. " +
-                "?b (rdfs:rest)* ?a." +
-                "?a rdfs:first ?y. " +
+                "?b (rdf:rest)* ?a." +
+                "?a rdf:first ?y. " +
                 "}"
         val query = QueryFactory.create(queryString)
         val res = QueryExecutionFactory.create(query, model).execSelect()
@@ -90,11 +90,11 @@ class CEUOMutation(model: Model, verbose: Boolean): Mutation(model, verbose)   {
     // selects names of nodes that should be removed / replaced by owl:Nothing
     private fun getCandidates(): List<Pair<String, Statement>> {
         val queryString = "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n " +
-                "PREFIX rdfs: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
+                "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
                 "SELECT * WHERE { " +
                 "?x owl:unionOf ?b. " +
-                "?b (rdfs:rest)* ?a." +
-                "?a rdfs:first ?y. " +
+                "?b (rdf:rest)* ?a." +
+                "?a rdf:first ?y. " +
                 "}"
         val query = QueryFactory.create(queryString)
         val res = QueryExecutionFactory.create(query, model).execSelect()
@@ -142,7 +142,6 @@ class ACATOMutation(model: Model, verbose: Boolean): ReplaceNodeInAxiomMutation(
     // selects names of nodes that should be removed / replaced by owl:Thing
     private fun getCandidates(): List<Pair<String, Statement>> {
         val queryString = "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n " +
-                "PREFIX rdfs: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
                 "SELECT * WHERE { " +
                 "?x owl:intersectionOf ?y. " +
                 "}"
@@ -193,7 +192,6 @@ class ACOTAMutation(model: Model, verbose: Boolean): ReplaceNodeInAxiomMutation(
     // selects names of nodes that should be removed / replaced by owl:Thing
     private fun getCandidates(): List<Pair<String, Statement>> {
         val queryString = "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n " +
-                "PREFIX rdfs: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
                 "SELECT * WHERE { " +
                 "?x owl:unionOf ?y. " +
                 "}"
@@ -233,4 +231,82 @@ class ACOTAMutation(model: Model, verbose: Boolean): ReplaceNodeInAxiomMutation(
         super.createMutation()
     }
 
+}
+
+
+// replaces arguments in
+class ToSiblingClassMutation(model: Model, verbose: Boolean): ReplaceNodeInAxiomMutation(model, verbose) {
+    override fun isApplicable(): Boolean {
+        return hasConfig || getCandidates().isNotEmpty()
+    }
+
+    // selects names of classes
+    // TODO: also in other parts of logical axioms, e.g. after restrictions
+    private fun getCandidates(): List<Triple<String, String, Statement>> {
+        // withing union or intersection
+        val queryString = "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n " +
+                "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n" +
+                "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
+                "SELECT DISTINCT ?a ?c ?cSibling WHERE { " +
+                "?x (owl:unionOf | owl:intersectionOf) ?y. " +
+                "?b (rdf:rest)* ?a." +
+                "?a rdf:first ?c. " + // find class in union / intersection
+                "?c rdf:type owl:Class." +
+                "?c rdfs:subClassOf ?cSuper." +
+                "?cSibling rdfs:subClassOf ?cSuper." +
+                "}"
+
+        val query = QueryFactory.create(queryString)
+        val res = QueryExecutionFactory.create(query, model).execSelect()
+        val ret = mutableListOf<Triple<String, String, Statement>>()
+        for (r in res) {
+            val a = r.get("?a")
+            val c = r.get("?c")
+            val cSibling = r.get("?cSibling")
+            if (c.toString() != cSibling.toString()) { // check, if entities different
+                val axiom = model.createStatement(a.asResource(), rdfFirst, c)
+                //println("$c $cSibling $axiom")
+                ret += Triple(c.toString(), cSibling.toString(), axiom)
+            }
+        }
+
+        // after existential quantification
+        val queryString2 = "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n " +
+                "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n" +
+                "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
+                "SELECT DISTINCT ?r ?c ?cSibling WHERE { " +
+                "?r owl:someValuesFrom ?c. " + // find class after existential quantification
+                "?r rdf:type owl:Restriction. " +
+                "?c rdf:type owl:Class." +
+                "?c rdfs:subClassOf ?cSuper. " +
+                "?cSibling rdfs:subClassOf ?cSuper." +
+                "}"
+        val query2 = QueryFactory.create(queryString2)
+        val res2 = QueryExecutionFactory.create(query2, model).execSelect()
+        for (r in res2) {
+            val restriction = r.get("?r")
+            val c = r.get("?c")
+            val cSibling = r.get("?cSibling")
+            //println("$c $cSibling $restriction")
+            if (c.toString() != cSibling.toString()) { // check, if entities different
+                val axiom = model.createStatement(restriction.asResource(),someValuesFromProp, c)
+                //println("$c $cSibling $axiom")
+                ret += Triple(c.toString(), cSibling.toString(), axiom)
+            }
+        }
+
+        return ret.sortedBy { it.toString() }
+    }
+
+    override fun createMutation() {
+        if (!hasConfig) {
+            val (oldNode, newNode, axiom) = getCandidates().random(randomGenerator)
+            val c = DoubleStringAndStatementConfiguration(
+                oldNode,
+                newNode,
+                axiom)
+            super.setConfiguration(c)   // set configuration for upper class
+        }
+        super.createMutation()
+    }
 }

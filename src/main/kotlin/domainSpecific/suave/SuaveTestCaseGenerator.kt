@@ -74,11 +74,11 @@ class SuaveTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) 
 
         val mutationNumbers = listOf<Int>(3,4)
         for (i in mutationNumbers) {
-            val suaveGenerator = SuaveMutatorFactory(verbose, i)
+            val suaveMutator = SuaveMutatorFactory(verbose, i)
             super.generateMutants(
                 seed,
                 contract,
-                suaveGenerator,
+                suaveMutator,
                 5
             )
         }
