@@ -61,7 +61,19 @@ start_time=$(date +'%s')
 ## run simulation with provided ontology
 echo_and_log "starting simulation"
 cd $Folder
-bash run_geosim.sh $Ontology > $currentFolder/$simulationLog
+# check if file exists here, or in other folder, or not at all
+if [ -f $Ontology ]; then
+   bash run_geosim.sh $Ontology > $currentFolder/$simulationLog
+else if [ -f "$currentFolder/$Ontology" ]; then
+   bash run_geosim.sh $currentFolder/$Ontology > $currentFolder/$simulationLog
+  else
+    cd $currentFolder
+    echo_and_log "ERROR: neither $Folder/$Ontology nor $currentFolder/$Ontology does not exist."
+    echo_and_log "exit script"
+    abort_oracle
+  fi
+fi
+
 
 # go back to current folder
 cd $currentFolder
