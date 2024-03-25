@@ -13,6 +13,9 @@ Ontology=$1
 simulationLog=temp/temp_geosim.log
 log_file=logs/oracle_$(date +'%Y_%m_%d_%H_%M_%S').log
 
+# create folder if it does not exist yet
+mkdir -p "temp"
+mkdir -p "logs"
 
 currentFolder=$(pwd)
 
