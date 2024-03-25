@@ -14,13 +14,14 @@ ontologies=$1
 temp_oracle_output=temp/oracle_output_temp.txt
 
 
-#hostname=$(hostname)
-#directory="../benchmark_runs/${hostname}"
+hostname=$(hostname)
+directory="benchmark_runs/${hostname}"
 # create folder if it does not exist yet
-#mkdir -p "$directory"
+mkdir -p "$directory"
+
 name=${1%".csv"}
 name=$(echo "$name" | tr / _)
-name="oracle_${name}_$(date +'%Y_%m_%d_%H_%M')"
+name="${directory}/oracle_${name}_$(date +'%Y_%m_%d_%H_%M')"
 result="${name}.csv"
 
 
@@ -42,7 +43,7 @@ while IFS=";" read -r id folder ontology rest
 do
   # call oracle
   echo "call oracle for ontology $folder/$ontology on $(date +'%d.%m.%Y at %H:%M')"
-  ./geo_oracle.sh "$folder/$ontology" > $temp_oracle_output
+  #./geo_oracle.sh "$folder/$ontology" > $temp_oracle_output
 
   # extract result and write to oracle file
 
