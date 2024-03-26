@@ -68,7 +68,7 @@ else if [ -f "$currentFolder/$Ontology" ]; then
    bash run_geosim.sh $currentFolder/$Ontology > $currentFolder/$simulationLog
   else
     cd $currentFolder
-    echo_and_log "ERROR: neither $Folder/$Ontology nor $currentFolder/$Ontology does not exist."
+    echo_and_log "ERROR: neither $Ontology nor $currentFolder/$Ontology does not exist."
     echo_and_log "exit script"
     abort_oracle
   fi
