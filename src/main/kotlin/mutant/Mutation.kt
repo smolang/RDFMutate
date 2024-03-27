@@ -1,5 +1,7 @@
 package mutant
 
+import org.apache.jena.query.QueryExecutionFactory
+import org.apache.jena.query.QueryFactory
 import org.apache.jena.rdf.model.*
 import org.apache.jena.reasoner.Reasoner
 import org.apache.jena.reasoner.ReasonerRegistry
@@ -210,7 +212,7 @@ open class Mutation(var model: Model, val verbose : Boolean) {
             return "$className(random)"
         else {
             val config = config.toString()
-            return "$className(config=$config)"
+            return "$className(config=${config.toString()})"
         }
     }
 
@@ -760,7 +762,13 @@ open class RemoveNodeMutation(model: Model, verbose : Boolean) : Mutation(model,
 
 open class ReplaceNodeInAxiomMutation(model: Model, verbose: Boolean) : Mutation(model, verbose) {
     override fun isApplicable(): Boolean {
-        return hasConfig
+        return hasConfig || getCandidates().isNotEmpty()
+    }
+
+    // default: do not select any candidate
+    open fun getCandidates(): List<DoubleStringAndStatementConfiguration> {
+        val ret = mutableListOf<DoubleStringAndStatementConfiguration>()
+        return ret.sortedBy { it.toString() }
     }
 
     override fun setConfiguration(_config: MutationConfiguration) {
@@ -769,9 +777,13 @@ open class ReplaceNodeInAxiomMutation(model: Model, verbose: Boolean) : Mutation
     }
 
     override fun createMutation() {
-        assert(hasConfig)
-        assert(config is DoubleStringAndStatementConfiguration)
-        val c = config as DoubleStringAndStatementConfiguration
+        val c = if (hasConfig) {
+            assert(config is DoubleStringAndStatementConfiguration)
+            config as DoubleStringAndStatementConfiguration
+        }
+        else
+            getCandidates().random(randomGenerator)
+
 
         val oldAxiom = c.getStatement()
         val newResource = model.createResource(c.getNewNode())
@@ -791,4 +803,71 @@ open class ReplaceNodeInAxiomMutation(model: Model, verbose: Boolean) : Mutation
         addSet.add(newAxiom)
         super.createMutation()
     }
+
+    open fun createMutationDouble() {
+        val c = if (hasConfig) {
+            assert(config is DoubleStringAndStatementConfiguration)
+            config as DoubleStringAndStatementConfiguration
+        }
+        else
+            getCandidates().random(randomGenerator)
+
+
+        val oldAxiom = c.getStatement()
+        val newResource = model.createTypedLiteral(c.getNewNode(), xsdDouble.toString())
+
+        val newAxiom = when (c.getOldNode()) {
+            oldAxiom.`object`.toString() ->
+                model.createStatement(oldAxiom.subject, oldAxiom.predicate, newResource)
+            else ->
+                oldAxiom    // if nothing matches: keep old axiom as nothing needs to be replaced
+        }
+        removeSet.add(oldAxiom)
+        addSet.add(newAxiom)
+        super.createMutation()
+    }
+
+}
+
+open class ChangeDoubleMutation(model: Model, verbose: Boolean): ReplaceNodeInAxiomMutation(model, verbose) {
+    override fun getCandidates(): List<DoubleStringAndStatementConfiguration> {
+        val queryString = "PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n " +
+                "SELECT DISTINCT * WHERE { " +
+                "?x ?p ?d. " +
+                "FILTER(DATATYPE(?d) = xsd:double)." +
+                "}"
+        val query = QueryFactory.create(queryString)
+        val res = QueryExecutionFactory.create(query, model).execSelect()
+        val ret = mutableListOf<DoubleStringAndStatementConfiguration>()
+        for (r in res) {
+            val x = r.get("?x")
+            val p = r.get("?p")
+            val d = r.get("?d")
+            val prop = model.getProperty(p.toString())
+            val axiom = model.createStatement(x.asResource(), prop, d)
+            //println("$x $prop $d")
+
+            // compute new value by multiplying old one
+
+            // factor: values around 1 more likely than larger factors
+            var factor = (1.0/randomGenerator.nextDouble(0.0,2.0) + 0.5)    // factor between 1...inf
+            if(randomGenerator.nextBoolean()) // negative factor
+                factor = -factor
+            if (randomGenerator.nextBoolean()) // inverse
+                factor = 1.0/factor
+            val newDouble = d.toString().removeSuffix("^^http://www.w3.org/2001/XMLSchema#double").toDouble() * factor
+            //println(newDouble)
+            ret += DoubleStringAndStatementConfiguration(
+                d.toString(),
+                newDouble.toString(),
+                axiom)
+        }
+        return ret.sortedBy { it.toString() }
+    }
+
+    override fun createMutation() {
+        super.createMutationDouble()
+    }
+
+
 }

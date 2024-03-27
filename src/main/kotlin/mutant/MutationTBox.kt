@@ -32,11 +32,8 @@ class RemoveSubclassMutation(model: Model, verbose : Boolean) : RemoveAxiomMutat
 
 // removes one part of an "AND" in a logical axiom
 class CEUAMutation(model: Model, verbose: Boolean): ReplaceNodeInAxiomMutation(model, verbose)   {
-    override fun isApplicable(): Boolean {
-        return hasConfig || getCandidates().isNotEmpty()
-    }
     // selects names of nodes that should be removed / replaced by owl:Thing
-    private fun getCandidates(): List<Pair<String, Statement>> {
+    override fun getCandidates(): List<DoubleStringAndStatementConfiguration> {
         val queryString = "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n " +
                 "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
                 "SELECT * WHERE { " +
@@ -46,13 +43,16 @@ class CEUAMutation(model: Model, verbose: Boolean): ReplaceNodeInAxiomMutation(m
                 "}"
         val query = QueryFactory.create(queryString)
         val res = QueryExecutionFactory.create(query, model).execSelect()
-        val ret = mutableListOf<Pair<String, Statement>>()
+        val ret = mutableListOf<DoubleStringAndStatementConfiguration>()
         for(r in res){
             val y = r.get("?y")
             val a = r.get("?a")
             val axiom = model.createStatement(a.asResource(),rdfFirst, y)
             //println("$a $y $axiom")
-            ret += Pair(y.toString(), axiom)
+            ret += DoubleStringAndStatementConfiguration(
+                y.toString(),
+                owlThing.toString(),
+                axiom)
         }
         return ret.sortedBy { it.toString() }
     }
@@ -67,28 +67,13 @@ class CEUAMutation(model: Model, verbose: Boolean): ReplaceNodeInAxiomMutation(m
 
         super.setConfiguration(_config)
     }
-
-    override fun createMutation() {
-        if (!hasConfig) {
-            val (oldNode, axiom) = getCandidates().random(randomGenerator)
-            val c = DoubleStringAndStatementConfiguration(
-                oldNode,
-                owlThing.toString(),
-                axiom)
-            super.setConfiguration(c)   // set configuration for upper class
-        }
-        super.createMutation()
-    }
 }
 
 // removes one part of an "OR" in a logical axiom
-class CEUOMutation(model: Model, verbose: Boolean): Mutation(model, verbose)   {
-    override fun isApplicable(): Boolean {
-        return hasConfig || getCandidates().isNotEmpty()
-    }
+class CEUOMutation(model: Model, verbose: Boolean): ReplaceNodeInAxiomMutation(model, verbose)   {
 
     // selects names of nodes that should be removed / replaced by owl:Nothing
-    private fun getCandidates(): List<Pair<String, Statement>> {
+    override fun getCandidates(): List<DoubleStringAndStatementConfiguration> {
         val queryString = "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n " +
                 "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
                 "SELECT * WHERE { " +
@@ -98,13 +83,16 @@ class CEUOMutation(model: Model, verbose: Boolean): Mutation(model, verbose)   {
                 "}"
         val query = QueryFactory.create(queryString)
         val res = QueryExecutionFactory.create(query, model).execSelect()
-        val ret = mutableListOf<Pair<String, Statement>>()
+        val ret = mutableListOf<DoubleStringAndStatementConfiguration>()
         for(r in res){
             val y = r.get("?y")
             val a = r.get("?a")
             val axiom = model.createStatement(a.asResource(),rdfFirst, y)
             //println("$a $y $axiom")
-            ret += Pair(y.toString(), axiom)
+            ret += DoubleStringAndStatementConfiguration(
+                y.toString(),
+                owlNothing.toString(),
+                axiom)
         }
         return ret.sortedBy { it.toString() }
     }
@@ -120,40 +108,29 @@ class CEUOMutation(model: Model, verbose: Boolean): Mutation(model, verbose)   {
         super.setConfiguration(_config)
     }
 
-    override fun createMutation() {
-        if (!hasConfig) {
-            val (oldNode, axiom) = getCandidates().random(randomGenerator)
-            val c = DoubleStringAndStatementConfiguration(
-                oldNode,
-                owlNothing.toString(),
-                axiom)
-            super.setConfiguration(c)   // set configuration for upper class
-        }
-        super.createMutation()
-    }
 }
 
 // replace "AND" by "OR"
 class ACATOMutation(model: Model, verbose: Boolean): ReplaceNodeInAxiomMutation(model, verbose) {
-    override fun isApplicable(): Boolean {
-        return hasConfig || getCandidates().isNotEmpty()
-    }
 
     // selects names of nodes that should be removed / replaced by owl:Thing
-    private fun getCandidates(): List<Pair<String, Statement>> {
+    override fun getCandidates(): List<DoubleStringAndStatementConfiguration> {
         val queryString = "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n " +
                 "SELECT * WHERE { " +
                 "?x owl:intersectionOf ?y. " +
                 "}"
         val query = QueryFactory.create(queryString)
         val res = QueryExecutionFactory.create(query, model).execSelect()
-        val ret = mutableListOf<Pair<String, Statement>>()
+        val ret = mutableListOf<DoubleStringAndStatementConfiguration>()
         for (r in res) {
             val x = r.get("?x")
             val y = r.get("?y")
             val axiom = model.createStatement(x.asResource(), intersectionProp, y)
             //println("$a $y $axiom")
-            ret += Pair(intersectionProp.toString(), axiom)
+            ret += DoubleStringAndStatementConfiguration(
+                intersectionProp.toString(),
+                unionProp.toString(),
+                axiom)
         }
         return ret.sortedBy { it.toString() }
     }
@@ -167,43 +144,30 @@ class ACATOMutation(model: Model, verbose: Boolean): ReplaceNodeInAxiomMutation(
             con.getStatement())
 
         super.setConfiguration(_config)
-    }
-
-    override fun createMutation() {
-        if (!hasConfig) {
-            val (oldNode, axiom) = getCandidates().random(randomGenerator)
-            val c = DoubleStringAndStatementConfiguration(
-                oldNode,
-                unionProp.toString(),
-                axiom)
-            super.setConfiguration(c)   // set configuration for upper class
-        }
-        super.createMutation()
     }
 }
 
 
 // replace "Or" by "And"
 class ACOTAMutation(model: Model, verbose: Boolean): ReplaceNodeInAxiomMutation(model, verbose) {
-    override fun isApplicable(): Boolean {
-        return hasConfig || getCandidates().isNotEmpty()
-    }
-
     // selects names of nodes that should be removed / replaced by owl:Thing
-    private fun getCandidates(): List<Pair<String, Statement>> {
+    override fun getCandidates(): List<DoubleStringAndStatementConfiguration> {
         val queryString = "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n " +
                 "SELECT * WHERE { " +
                 "?x owl:unionOf ?y. " +
                 "}"
         val query = QueryFactory.create(queryString)
         val res = QueryExecutionFactory.create(query, model).execSelect()
-        val ret = mutableListOf<Pair<String, Statement>>()
+        val ret = mutableListOf<DoubleStringAndStatementConfiguration>()
         for (r in res) {
             val x = r.get("?x")
             val y = r.get("?y")
             val axiom = model.createStatement(x.asResource(), unionProp, y)
             //println("$a $y $axiom")
-            ret += Pair(unionProp.toString(), axiom)
+            ret += DoubleStringAndStatementConfiguration(
+                unionProp.toString(),
+                intersectionProp.toString(),
+                axiom)
         }
         return ret.sortedBy { it.toString() }
     }
@@ -215,20 +179,7 @@ class ACOTAMutation(model: Model, verbose: Boolean): ReplaceNodeInAxiomMutation(
             unionProp.toString(),
             intersectionProp.toString(),
             con.getStatement())
-
         super.setConfiguration(_config)
-    }
-
-    override fun createMutation() {
-        if (!hasConfig) {
-            val (oldNode, axiom) = getCandidates().random(randomGenerator)
-            val c = DoubleStringAndStatementConfiguration(
-                oldNode,
-                intersectionProp.toString(),
-                axiom)
-            super.setConfiguration(c)   // set configuration for upper class
-        }
-        super.createMutation()
     }
 
 }
@@ -236,13 +187,10 @@ class ACOTAMutation(model: Model, verbose: Boolean): ReplaceNodeInAxiomMutation(
 
 // replaces arguments in
 class ToSiblingClassMutation(model: Model, verbose: Boolean): ReplaceNodeInAxiomMutation(model, verbose) {
-    override fun isApplicable(): Boolean {
-        return hasConfig || getCandidates().isNotEmpty()
-    }
 
     // selects names of classes
     // TODO: also in other parts of logical axioms, e.g. after restrictions
-    private fun getCandidates(): List<Triple<String, String, Statement>> {
+    override fun getCandidates(): List<DoubleStringAndStatementConfiguration> {
         // withing union or intersection
         val queryString = "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n " +
                 "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n" +
@@ -258,7 +206,7 @@ class ToSiblingClassMutation(model: Model, verbose: Boolean): ReplaceNodeInAxiom
 
         val query = QueryFactory.create(queryString)
         val res = QueryExecutionFactory.create(query, model).execSelect()
-        val ret = mutableListOf<Triple<String, String, Statement>>()
+        val ret = mutableListOf<DoubleStringAndStatementConfiguration>()
         for (r in res) {
             val a = r.get("?a")
             val c = r.get("?c")
@@ -266,7 +214,10 @@ class ToSiblingClassMutation(model: Model, verbose: Boolean): ReplaceNodeInAxiom
             if (c.toString() != cSibling.toString()) { // check, if entities different
                 val axiom = model.createStatement(a.asResource(), rdfFirst, c)
                 //println("$c $cSibling $axiom")
-                ret += Triple(c.toString(), cSibling.toString(), axiom)
+                ret += DoubleStringAndStatementConfiguration(
+                    c.toString(),
+                    cSibling.toString(),
+                    axiom)
             }
         }
 
@@ -291,22 +242,14 @@ class ToSiblingClassMutation(model: Model, verbose: Boolean): ReplaceNodeInAxiom
             if (c.toString() != cSibling.toString()) { // check, if entities different
                 val axiom = model.createStatement(restriction.asResource(),someValuesFromProp, c)
                 //println("$c $cSibling $axiom")
-                ret += Triple(c.toString(), cSibling.toString(), axiom)
+                ret += DoubleStringAndStatementConfiguration(
+                    c.toString(),
+                    cSibling.toString(),
+                    axiom)
             }
         }
 
         return ret.sortedBy { it.toString() }
     }
 
-    override fun createMutation() {
-        if (!hasConfig) {
-            val (oldNode, newNode, axiom) = getCandidates().random(randomGenerator)
-            val c = DoubleStringAndStatementConfiguration(
-                oldNode,
-                newNode,
-                axiom)
-            super.setConfiguration(c)   // set configuration for upper class
-        }
-        super.createMutation()
-    }
 }

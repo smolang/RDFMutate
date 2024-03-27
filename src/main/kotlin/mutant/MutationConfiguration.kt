@@ -9,6 +9,16 @@ abstract class MutationConfiguration {
         val className = javaClass.toString().removePrefix("class mutant.")
         return className
     }
+
+    fun removePrefix(s : String): String {
+        val delimiters = setOf('#', '/')
+        val pos = s.indexOfLast { delimiters.contains(it) }
+        println("$s, $pos")
+        return if (pos >= 0)
+            s.removeRange(0, pos)
+        else
+            s
+    }
 }
 class SingleStatementConfiguration(private val statement: Statement) : MutationConfiguration() {
     override fun toString(): String {
@@ -25,7 +35,7 @@ open class SingleResourceConfiguration(private val resource: Resource) : Mutatio
 
     override fun toString(): String {
         val className = super.toString()
-        return "$className($resource)"
+        return "$className(${resource.localName})"
     }
 
     fun getResource() : Resource {
@@ -36,7 +46,7 @@ open class SingleResourceConfiguration(private val resource: Resource) : Mutatio
 class StringAndResourceConfiguration(private val string: String, r: Resource) : SingleResourceConfiguration(r){
     override fun toString(): String {
         val className = super.toString()
-        return "$className($string,${getResource()})"
+        return "$className($string,${getResource().localName})"
     }
 
     fun getString() : String {
@@ -49,7 +59,7 @@ class DoubleResourceConfiguration(private val resource1: Resource,
 
     override fun toString(): String {
         val className = super.toString()
-        return "$className($resource1,$resource2)"
+        return "$className(${resource1.localName},${resource2.localName})"
     }
     fun getResource1() : Resource {
        return resource1
@@ -65,7 +75,9 @@ class DoubleStringAndStatementConfiguration(private val nodeOld: String,
                                             private val r: Statement) : MutationConfiguration() {
     override fun toString(): String {
         val className = super.toString()
-        return "$className($nodeOld,$nodeNew,${r.toString()})"
+        return "$className(" +
+                "${removePrefix(nodeOld)}," +
+                "${removePrefix(nodeNew)},${r.toString()})"
     }
 
     fun getOldNode() : String {
