@@ -23,9 +23,9 @@ open class Mutation(var model: Model, val verbose : Boolean) {
     // i.e. it is the inferred model at the time of initialisation
     val infModel: InfModel = ModelFactory.createInfModel(reasoner, model)
 
-    // prefixes that should be considered when selecting mutation
-    private val relevantPrefixes: MutableSet<String> = hashSetOf()
-    private fun considerRelevantPrefixes() : Boolean {return relevantPrefixes.isNotEmpty()
+    // axioms that should be considered when selecting mutation
+    private val mutatableAxioms: MutableSet<Statement> = hashSetOf()
+    private fun considerMutatableAxioms() : Boolean {return mutatableAxioms.isNotEmpty()
     }
 
 
@@ -228,44 +228,43 @@ open class Mutation(var model: Model, val verbose : Boolean) {
         return false
     }
 
+    private  fun containsResource (stat: Statement, res: Resource) : Boolean {
+        if (stat.subject.asResource() == res)
+            return true
+        if (stat.predicate.asResource() == res)
+            return true
+        if (stat.`object`.isResource && stat.`object`.asResource() == res)
+            return true
+
+        return false
+    }
+
     private  fun hasPrefix (r: Resource, prefix : String) : Boolean {
         return r.toString().startsWith(prefix)
     }
 
-    fun addRelevantPrefix(prefix: String) {
-        relevantPrefixes.add(prefix)
+    fun addMutatableAximo(s: Statement) {
+        mutatableAxioms.add(s)
     }
 
-    fun filterRelevantPrefixes(l: List<Statement>): List<Statement> {
+    fun filterMutatableAxioms(l: List<Statement>): List<Statement> {
         val lFiltered: MutableList<Statement> = mutableListOf()
         for (s in l) {
-            if (!considerRelevantPrefixes())
+            if (!considerMutatableAxioms())
                 lFiltered.add(s)
-            else for (p in relevantPrefixes)
-                if (hasPrefix(s, p))
+            else if (mutatableAxioms.contains(s))
                     lFiltered.add(s)
         }
         return lFiltered
     }
 
-    fun filterRelevantPrefixesResource(l: List<Resource>): List<Resource> {
+    fun filterMutatableAxiomsResource(l: List<Resource>): List<Resource> {
         val lFiltered: MutableList<Resource> = mutableListOf()
         for (r in l) {
-            if (!considerRelevantPrefixes())
+            if (!considerMutatableAxioms())
                 lFiltered.add(r)
-            else for (p in relevantPrefixes)
-                if (hasPrefix(r, p))
-                    lFiltered.add(r)
-        }
-        return lFiltered
-    }
-    fun filterRelevantPrefixesString(l: List<String>): List<String> {
-        val lFiltered: MutableList<String> = mutableListOf()
-        for (r in l) {
-            if (!considerRelevantPrefixes())
-                lFiltered.add(r)
-            else for (p in relevantPrefixes)
-                if (r.startsWith(p))
+            else for (p in mutatableAxioms)
+                if (containsResource(p, r))
                     lFiltered.add(r)
         }
         return lFiltered
@@ -277,7 +276,7 @@ open class RemoveAxiomMutation(model: Model, verbose : Boolean) : Mutation(model
 
     open fun getCandidates(): List<Statement> {
         val list = model.listStatements().toList()
-        val f = filterRelevantPrefixes(list)
+        val f = filterMutatableAxioms(list)
         return f.sortedBy { it.toString() }
     }
 
@@ -671,7 +670,8 @@ open class ChangeRelationMutation(model: Model, verbose: Boolean) : AddRelationM
 
     override fun getCandidates() : List<Resource> {
         val cand =  super.getCandidates()
-        return filterRelevantPrefixesResource(cand.toList()).sortedBy { it.toString() }
+       // return cand
+        return filterMutatableAxiomsResource(cand.toList()).sortedBy { it.toString() }
     }
 
     override fun computeDomainsProp(p: Property): Pair<Set<Resource>, Set<RDFNode>> {
@@ -720,7 +720,7 @@ open class RemoveNodeMutation(model: Model, verbose : Boolean) : Mutation(model,
             if (s.`object`.isResource)
                 candidates.add(s.`object`.asResource())
         }
-        return filterRelevantPrefixesResource(candidates.toList()).toList().sortedBy { it.toString() }
+        return filterMutatableAxiomsResource(candidates.toList()).toList().sortedBy { it.toString() }
     }
 
     override fun isApplicable(): Boolean {
@@ -777,12 +777,11 @@ open class ReplaceNodeInAxiomMutation(model: Model, verbose: Boolean) : Mutation
     }
 
     override fun createMutation() {
-        val c = if (hasConfig) {
-            assert(config is DoubleStringAndStatementConfiguration)
-            config as DoubleStringAndStatementConfiguration
-        }
-        else
-            getCandidates().random(randomGenerator)
+        if (!hasConfig)
+            this.setConfiguration(getCandidates().random(randomGenerator))
+
+        assert(config is DoubleStringAndStatementConfiguration)
+        val c = config as DoubleStringAndStatementConfiguration
 
 
         val oldAxiom = c.getStatement()
@@ -805,13 +804,11 @@ open class ReplaceNodeInAxiomMutation(model: Model, verbose: Boolean) : Mutation
     }
 
     open fun createMutationDouble() {
-        val c = if (hasConfig) {
-            assert(config is DoubleStringAndStatementConfiguration)
-            config as DoubleStringAndStatementConfiguration
-        }
-        else
-            getCandidates().random(randomGenerator)
+        if (!hasConfig)
+            this.setConfiguration(getCandidates().random(randomGenerator))
 
+        assert(config is DoubleStringAndStatementConfiguration)
+        val c = config as DoubleStringAndStatementConfiguration
 
         val oldAxiom = c.getStatement()
         val newResource = model.createTypedLiteral(c.getNewNode(), xsdDouble.toString())

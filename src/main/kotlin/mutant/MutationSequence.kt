@@ -1,5 +1,6 @@
 package mutant
 
+import org.apache.jena.rdf.model.Statement
 import randomGenerator
 import kotlin.reflect.KClass
 
@@ -7,16 +8,20 @@ import kotlin.reflect.KClass
 class MutationSequence(private  val verbose: Boolean) {
     private val mutations : MutableList<AbstractMutation> = mutableListOf()
 
-    val relevantPrefixes: MutableSet<String> = hashSetOf()
-    fun addRelevantPrefix(prefix: String) {
-        relevantPrefixes.add(prefix)
+    val mutatableAxioms: MutableSet<Statement> = hashSetOf()
+    fun addMutatableAxiom(s: Statement) {
+        mutatableAxioms.add(s)
+    }
+
+    fun addMutatableAxioms(l: List<Statement>) {
+        mutatableAxioms.addAll(l)
     }
 
     // adds a random mutation from the provided list of mutations
     fun addRandom(mutOps: List<KClass<out Mutation>>) {
         val am = AbstractMutation(mutOps.random(randomGenerator), verbose)
-        for (p in relevantPrefixes)
-            am.addRelevantPrefix(p)
+        for (a in mutatableAxioms)
+            am.addMutatableAxiom(a)
         mutations.add(am)
     }
 
@@ -26,8 +31,8 @@ class MutationSequence(private  val verbose: Boolean) {
 
     fun addWithConfig(mutOp: KClass<out Mutation>, config: MutationConfiguration) {
         val am = AbstractMutation(mutOp, config, verbose)
-        for (p in relevantPrefixes)
-            am.addRelevantPrefix(p)
+        for (a in mutatableAxioms)
+            am.addMutatableAxiom(a)
         mutations.add(am)
     }
 

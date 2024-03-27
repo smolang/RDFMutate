@@ -13,9 +13,9 @@ abstract class MutationConfiguration {
     fun removePrefix(s : String): String {
         val delimiters = setOf('#', '/')
         val pos = s.indexOfLast { delimiters.contains(it) }
-        println("$s, $pos")
+        //println("$s, $pos")
         return if (pos >= 0)
-            s.removeRange(0, pos)
+            s.removeRange(0, pos+1)
         else
             s
     }
@@ -75,9 +75,10 @@ class DoubleStringAndStatementConfiguration(private val nodeOld: String,
                                             private val r: Statement) : MutationConfiguration() {
     override fun toString(): String {
         val className = super.toString()
-        return "$className(" +
+        return "(" +
                 "${removePrefix(nodeOld)}," +
-                "${removePrefix(nodeNew)},${r.toString()})"
+                "${removePrefix(nodeNew)}," +
+                "${r.toString()})"
     }
 
     fun getOldNode() : String {

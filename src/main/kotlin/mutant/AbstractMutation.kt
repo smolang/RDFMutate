@@ -1,6 +1,7 @@
 package mutant
 
 import org.apache.jena.rdf.model.Model
+import org.apache.jena.rdf.model.Statement
 import kotlin.reflect.KClass
 import kotlin.reflect.full.primaryConstructor
 
@@ -11,9 +12,9 @@ class AbstractMutation(private val mutOp: KClass<out Mutation>,
     var hasConfig : Boolean = false
     var config : MutationConfiguration? = null
 
-    val relevantPrefixes: MutableSet<String> = hashSetOf()
-    fun addRelevantPrefix(prefix: String) {
-        relevantPrefixes.add(prefix)
+    val mutatableAxioms: MutableSet<Statement> = hashSetOf()
+    fun addMutatableAxiom(s: Statement) {
+        mutatableAxioms.add(s)
     }
 
     constructor(mutation: KClass<out Mutation>,
@@ -26,15 +27,15 @@ class AbstractMutation(private val mutOp: KClass<out Mutation>,
     fun concreteMutation(model: Model) : Mutation {
         if (hasConfig) {
             val m = mutOp.primaryConstructor?.call(model, verbose) ?: Mutation(model, verbose)
-            for (p in relevantPrefixes)
-                m.addRelevantPrefix(p)
+            for (a in mutatableAxioms)
+                m.addMutatableAximo(a)
             config?.let { m.setConfiguration(it) }
             return m
         }
         else {
             val m= mutOp.primaryConstructor?.call(model, verbose) ?: Mutation(model, verbose)
-            for (p in relevantPrefixes)
-                m.addRelevantPrefix(p)
+            for (a in mutatableAxioms)
+                m.addMutatableAximo(a)
             return m
         }
 

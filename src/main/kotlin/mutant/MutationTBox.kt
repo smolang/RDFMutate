@@ -4,7 +4,6 @@ import org.apache.jena.query.QueryExecutionFactory
 import org.apache.jena.query.QueryFactory
 import org.apache.jena.rdf.model.Model
 import org.apache.jena.rdf.model.Statement
-import randomGenerator
 
 
 //removes one (random) subclass axiom       // val m = Mutator
@@ -19,7 +18,7 @@ class RemoveSubclassMutation(model: Model, verbose : Boolean) : RemoveAxiomMutat
                 candidates.remove(s)
             }
         }
-        return filterRelevantPrefixes(candidates.toList()).sortedBy { it.toString() }
+        return filterMutatableAxioms(candidates.toList()).sortedBy { it.toString() }
     }
 
     override fun setConfiguration(_config: MutationConfiguration) {
@@ -58,14 +57,19 @@ class CEUAMutation(model: Model, verbose: Boolean): ReplaceNodeInAxiomMutation(m
     }
 
     override fun setConfiguration(_config: MutationConfiguration) {
-        assert(_config is SingleStatementConfiguration)
-        val con = _config as SingleStatementConfiguration
-        val c = DoubleStringAndStatementConfiguration(
-            con.getStatement().`object`.toString(),
-            owlThing.toString(),
-            con.getStatement())
+        if (_config is DoubleStringAndStatementConfiguration)
+            super.setConfiguration(_config)
+        else {
+            assert(_config is SingleStatementConfiguration)
+            val con = _config as SingleStatementConfiguration
+            val c = DoubleStringAndStatementConfiguration(
+                con.getStatement().`object`.toString(),
+                owlThing.toString(),
+                con.getStatement()
+            )
 
-        super.setConfiguration(_config)
+            super.setConfiguration(_config)
+        }
     }
 }
 
@@ -98,14 +102,19 @@ class CEUOMutation(model: Model, verbose: Boolean): ReplaceNodeInAxiomMutation(m
     }
 
     override fun setConfiguration(_config: MutationConfiguration) {
-        assert(_config is SingleStatementConfiguration)
-        val con = _config as SingleStatementConfiguration
-        val c = DoubleStringAndStatementConfiguration(
-            con.getStatement().`object`.toString(),
-            owlNothing.toString(),
-            con.getStatement())
+        if (_config is DoubleStringAndStatementConfiguration)
+            super.setConfiguration(_config)
+        else {
+            assert(_config is SingleStatementConfiguration)
+            val con = _config as SingleStatementConfiguration
+            val c = DoubleStringAndStatementConfiguration(
+                con.getStatement().`object`.toString(),
+                owlNothing.toString(),
+                con.getStatement()
+            )
 
-        super.setConfiguration(_config)
+            super.setConfiguration(_config)
+        }
     }
 
 }
@@ -136,14 +145,19 @@ class ACATOMutation(model: Model, verbose: Boolean): ReplaceNodeInAxiomMutation(
     }
 
     override fun setConfiguration(_config: MutationConfiguration) {
-        assert(_config is SingleStatementConfiguration)
-        val con = _config as SingleStatementConfiguration
-        val c = DoubleStringAndStatementConfiguration(
-            intersectionProp.toString(),
-            unionProp.toString(),
-            con.getStatement())
+        if (_config is DoubleStringAndStatementConfiguration)
+            super.setConfiguration(_config)
+        else {
+            assert(_config is SingleStatementConfiguration)
+            val con = _config as SingleStatementConfiguration
+            val c = DoubleStringAndStatementConfiguration(
+                intersectionProp.toString(),
+                unionProp.toString(),
+                con.getStatement()
+            )
 
-        super.setConfiguration(_config)
+            super.setConfiguration(_config)
+        }
     }
 }
 
@@ -173,13 +187,18 @@ class ACOTAMutation(model: Model, verbose: Boolean): ReplaceNodeInAxiomMutation(
     }
 
     override fun setConfiguration(_config: MutationConfiguration) {
-        assert(_config is SingleStatementConfiguration)
-        val con = _config as SingleStatementConfiguration
-        val c = DoubleStringAndStatementConfiguration(
-            unionProp.toString(),
-            intersectionProp.toString(),
-            con.getStatement())
-        super.setConfiguration(_config)
+        if (_config is DoubleStringAndStatementConfiguration)
+            super.setConfiguration(_config)
+        else {
+            assert(_config is SingleStatementConfiguration)
+            val con = _config as SingleStatementConfiguration
+            val c = DoubleStringAndStatementConfiguration(
+                unionProp.toString(),
+                intersectionProp.toString(),
+                con.getStatement()
+            )
+            super.setConfiguration(_config)
+        }
     }
 
 }

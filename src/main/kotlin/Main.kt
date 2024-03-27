@@ -13,6 +13,7 @@ import mutant.*
 import org.apache.jena.rdf.model.ModelFactory
 import org.apache.jena.riot.RDFDataMgr
 import sut.MiniPipeInspection
+import java.nio.file.Paths
 import kotlin.random.Random
 
 val randomGenerator = Random(2)
@@ -188,13 +189,25 @@ class Main : CliktCommand() {
         gg.generateGeoMutants()
     }
 
+    fun evaluateSuaveContract(contractPath : String) {
+        // new contract
+        val contract = MutantContract(verbose)
+
+        contract.containedModel=RDFDataMgr.loadDataset(contractPath).defaultModel
+        contract.checkAgainstOntologies(
+            "sut/suave/oracle_mutatedOnt_onlySuave01_2024_03_18_10_43.csv",
+            true)
+    }
+
     override fun run() {
         //testMutations()
         //testMiniPipes()
         //testSuave()
-        //runSuaveGenerator()
-        runGeoGenerator()
+        runSuaveGenerator()
+        //runGeoGenerator()
 
+
+        //evaluateSuaveContract("sut/suave/contracts/contract1.owl")
 
 
     }

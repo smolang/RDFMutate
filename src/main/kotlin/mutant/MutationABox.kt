@@ -3,7 +3,6 @@ package mutant
 import org.apache.jena.query.QueryExecutionFactory
 import org.apache.jena.query.QueryFactory
 import org.apache.jena.rdf.model.*
-import org.apache.jena.riot.RDFDataMgr
 import randomGenerator
 
 
@@ -72,7 +71,7 @@ open class RemoveObjectPropertyMutation(model: Model, verbose : Boolean) : Remov
                 null as Resource?, model.getProperty(it.toString()), null as RDFNode?
             ).toSet())
         }
-        return filterRelevantPrefixes(candidates.toList()).sortedBy { it.toString() }
+        return filterMutatableAxioms(candidates.toList()).sortedBy { it.toString() }
     }
 
     override fun setConfiguration(_config: MutationConfiguration) {
@@ -142,7 +141,8 @@ open class AddObjectPropertyMutation(model: Model, verbose: Boolean) : AddRelati
 open class ChangeObjectPropertyMutation(model: Model, verbose: Boolean) : AddObjectPropertyMutation(model, verbose) {
     override fun getCandidates() : List<Resource> {
         val cand =  super.getCandidates()
-        return filterRelevantPrefixesResource(cand.toList()).sortedBy { it.toString() }
+        return cand
+        return filterMutatableAxiomsResource(cand.toList()).sortedBy { it.toString() }
     }
 
     override fun createMutation() {
@@ -164,7 +164,7 @@ class RemoveIndividualMutation(model: Model, verbose : Boolean) : RemoveNodeMuta
                 candidates.add(s.subject)
             }
         }
-        return filterRelevantPrefixesResource(candidates).sortedBy { it.toString() }
+        return filterMutatableAxiomsResource(candidates).sortedBy { it.toString() }
     }
 
     override fun setConfiguration(_config: MutationConfiguration) {
