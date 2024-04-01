@@ -37,6 +37,7 @@ class MutantContract(val verbose: Boolean) {
         // always use JENA-API for containment check
         val containment = model.containsAll(containedModel)
         val entailment = reasoner.entailsAll(entailedModel)
+        //println("$consistent, $containment,  $entailment")
 
         return  consistent
                 && containment
@@ -55,66 +56,73 @@ class MutantContract(val verbose: Boolean) {
     }
 
     // checks, if the predictions of the contract are in line with the predictions from the real oracle
-    fun checkAgainstOntologies(oracleFilePath: String, detailedEvaluation: Boolean) {
-        // iterate through oracle file
-        val file = File(oracleFilePath)
+    fun checkAgainstOntologies(oracleFiles: List<String>, detailedEvaluation: Boolean) {
+
 
         // sets to collect the ontologies for which the oracle is correct or wrong
         val correctOracle : MutableSet<String> = HashSet()
         val falsePass : MutableSet<String> = HashSet()
         val falseFail : MutableSet<String> = HashSet()
 
-        file.forEachLine { line ->
-            val tokens = line.split(",")
-            assert(tokens.size == 4)
-            val id = tokens[0]
-            val folder = tokens[1]
-            val ontologyPath = tokens[2]
-            val oracle = tokens[3]
-            if (id == "id"){
-                // are in first row
-                assert(folder == "folder") { "Header of CSV file maleformed. Should be \"id,folder,ontology,oracle\"" }
-                assert(ontologyPath == "ontology") { "Header of CSV file maleformed. Should be \"id,folder,ontology,oracle\"" }
-                assert(oracle == "oracle") { "Header of CSV file maleformed. Should be \"id,folder,ontology,oracle\"" }
-            }
-            else {
-                // data row
+        for (oracleFilePath in oracleFiles) {
+            // iterate through oracle file
+            val file = File(oracleFilePath)
+            file.forEachLine { line ->
+                val tokens = line.split(",")
+                assert(tokens.size == 4)
+                val id = tokens[0]
+                val folder = tokens[1]
+                val ontologyPath = tokens[2]
+                val oracle = tokens[3]
+                if (id == "id") {
+                    // are in first row
+                    assert(folder == "folder") { "Header of CSV file malformed. Should be \"id,folder,ontology,oracle\"" }
+                    assert(ontologyPath == "ontology") { "Header of CSV file malformed. Should be \"id,folder,ontology,oracle\"" }
+                    assert(oracle == "oracle") { "Header of CSV file malformed. Should be \"id,folder,ontology,oracle\"" }
+                } else {
+                    // data row
 
-                // call contract oracle
-                val contractOracle = this.contractOracle(ontologyPath)
+                    // call contract oracle
+                    val contractOracle = this.contractOracle(ontologyPath)
 
-                // check against real oracle
-                val realOracle = parseOutcome(oracle)
+                    // check against real oracle
+                    val realOracle = parseOutcome(oracle)
 
-                // collect deviations (wrong contract fail / pass)
-                if (realOracle != OracleOutcome.UNDECIDED) {// only consider cases where we have an oracle
-                    if (contractOracle == realOracle)
-                        correctOracle += ontologyPath
-                    else
-                        when (contractOracle) {
-                            OracleOutcome.FAIL -> falseFail += ontologyPath
-                            OracleOutcome.PASS -> falsePass += ontologyPath
-                            OracleOutcome.UNDECIDED -> Unit
-                        }
+                    // collect deviations (wrong contract fail / pass)
+                    if (realOracle != OracleOutcome.UNDECIDED) {// only consider cases where we have an oracle
+                        if (contractOracle == realOracle)
+                            correctOracle += ontologyPath
+                        else
+                            when (contractOracle) {
+                                OracleOutcome.FAIL -> falseFail += ontologyPath
+                                OracleOutcome.PASS -> falsePass += ontologyPath
+                                OracleOutcome.UNDECIDED -> Unit
+                            }
+                    }
                 }
-            }
 
+            }
         }
 
         // print details of evaluation, if desired
         if (detailedEvaluation) {
-            println()
-            println("false \"fail\" oracle from contract")
-            for (ontology in falseFail)
-                println(ontology)
+            if (falseFail.any()) {
+                println()
+                println("false \"fail\" oracle from contract")
+                for (ontology in falseFail)
+                    println(ontology)
+            }
 
-            println()
-            println("false \"pass\" oracle from contract")
-            for (ontology in falsePass.sorted())
-                println(ontology)
+            if (falsePass.any()) {
+                println()
+                println("false \"pass\" oracle from contract")
+                for (ontology in falsePass.sorted())
+                    println(ontology)
+            }
         }
 
         // output result: is contract too permissive or too strict?
+        println()
         println("———————————————————————————————————————")
         println("evaluation of contract:")
         println("correct: ${correctOracle.size}")

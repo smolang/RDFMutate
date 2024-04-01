@@ -36,15 +36,14 @@ class SuaveTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) 
     //val mrosModel = ModelFactory.createDefaultModel()
     val tomasysModel = RDFDataMgr.loadDataset(tomasysPath).defaultModel
 
-    fun generateSuaveMutants(numberMutants : Int) {
-
-
-
+    fun generateSuaveMutants(numberMutants : Int, contractFile : String) {
         val unmutatableStatements = unmutatableSuaveStatements.toMutableList()
 
 
         // empty contract
         val contract = MutantContract(verbose)
+        contract.containedModel = RDFDataMgr.loadDataset(contractFile).defaultModel
+
         val ruleAxioms = ModelFactory.createDefaultModel()
       /*  for (s in tomasysRulesModel.listStatements())
             ruleAxioms.add(s)
@@ -84,7 +83,7 @@ class SuaveTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) 
 
          */
 
-        val mutationNumbers = listOf<Int>(1)//3,4)
+        val mutationNumbers = listOf<Int>(2)//3,4)
         for (i in mutationNumbers) {
             val suaveMutator = SuaveMutatorFactory(verbose, mutatableStatements, i)
             super.generateMutants(
@@ -95,8 +94,8 @@ class SuaveTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) 
             )
         }
 
-        saveMutants("sut/suave/mutatedOnt", "temp")
-        super.writeToCSV("sut/suave/mutatedOnt/temp.csv")
+        saveMutants("sut/suave/mutatedOnt", "onlyGeneric03")
+        super.writeToCSV("sut/suave/mutatedOnt/onlyGeneric03.csv")
     }
 
 
@@ -184,14 +183,14 @@ class SuaveMutatorFactory(
         ChangeHasValueMutation::class,
         ChangeQAComparisonOperatorMutation::class,
         AddNewThrusterMutation::class
-        )
+    )
 
     private val domainIndependentMutations = listOf(
         AddRelationMutation::class,
-        //ChangeRelationMutation::class,
+        ChangeRelationMutation::class,
         AddInstanceMutation::class,
-        //RemoveAxiomMutation::class,
-        //RemoveNodeMutation::class
+        RemoveAxiomMutation::class,
+        RemoveNodeMutation::class
     )
     override fun randomMutator() : Mutator {
 

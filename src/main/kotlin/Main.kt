@@ -169,19 +169,11 @@ class Main : CliktCommand() {
         //RDFDataMgr.write(File("examples/test2.ttl").outputStream(), output, Lang.TTL)
     }
 
-    fun evaluateGeneration() {
-        val sg = SuaveTestCaseGenerator(true)
-        //for (i in 11..11) {
-            //println("number of mutations: $i")
-            sg.maxMutation=1
-            sg.generateSuaveMutants(2)
-       // }
 
-    }
 
-    fun runSuaveGenerator() {
+    fun runSuaveGenerator(contractPath: String) {
         val sg = SuaveTestCaseGenerator(true)
-        sg.generateSuaveMutants(10)
+        sg.generateSuaveMutants(10, contractPath)
     }
 
     fun runGeoGenerator() {
@@ -195,7 +187,11 @@ class Main : CliktCommand() {
 
         contract.containedModel=RDFDataMgr.loadDataset(contractPath).defaultModel
         contract.checkAgainstOntologies(
-            "sut/suave/oracle_mutatedOnt_onlySuave01_2024_03_18_10_43.csv",
+            listOf(
+                "sut/suave/oracle_mutatedOnt_onlySuave02_2024_03_27_11_52.csv",
+                "sut/suave/oracle_mutatedOnt_onlySuave03_2024_03_27_15_11.csv",
+                "sut/suave/oracle_mutatedOnt_onlySuave04_2024_03_29_14_15.csv"
+                ),
             true)
     }
 
@@ -203,11 +199,10 @@ class Main : CliktCommand() {
         //testMutations()
         //testMiniPipes()
         //testSuave()
-        runSuaveGenerator()
         //runGeoGenerator()
 
-
-        //evaluateSuaveContract("sut/suave/contracts/contract1.owl")
+        evaluateSuaveContract("sut/suave/contracts/contract2.owl")
+        runSuaveGenerator("sut/suave/contracts/contract2.owl")
 
 
     }
