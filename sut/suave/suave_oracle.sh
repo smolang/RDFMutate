@@ -127,7 +127,7 @@ while [ $GOOD_RUNS -lt $LIMIT ] && [ $BAD_RUNS -lt $LIMIT ] && [ $TOTAL_RUNS -lt
   echo_and_log "start new simulation run (number $TOTAL_RUNS)"
 
   # run simulation
-  #docker exec suaveContainer ./runner.sh false metacontrol time 1 >> $LOG_FILE 2>&1
+  docker exec suaveContainer ./runner.sh false metacontrol time 1 >> $LOG_FILE 2>&1
 
   # get log file
   ./getROSlog.sh $ROS_LOG >> $LOG_FILE
