@@ -177,7 +177,7 @@ class Main : CliktCommand() {
     }
 
     fun runGeoGenerator() {
-        val gg = GeoTestCaseGenerator(true)
+        val gg = GeoTestCaseGenerator(false)
         gg.generateGeoMutants()
     }
 
@@ -202,8 +202,8 @@ class Main : CliktCommand() {
         //testSuave()
         //runGeoGenerator()
 
-        evaluateSuaveContract("sut/suave/contracts/contract3.owl")
-        //runSuaveGenerator("sut/suave/contracts/contract2.owl")
+        //evaluateSuaveContract("sut/suave/contracts/contract3.owl")
+        runSuaveGenerator("sut/suave/contracts/contract3.owl")
 
 
     }

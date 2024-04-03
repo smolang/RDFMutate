@@ -90,12 +90,12 @@ class SuaveTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) 
                 seed,
                 contract,
                 suaveMutator,
-                10
+                40
             )
         }
 
-        saveMutants("sut/suave/mutatedOnt", "temp")
-        super.writeToCSV("sut/suave/mutatedOnt/temp.csv")
+        saveMutants("sut/suave/mutatedOnt", "onlySuave05")
+        super.writeToCSV("sut/suave/mutatedOnt/onlySuave05.csv")
     }
 
 
@@ -173,7 +173,7 @@ class SuaveMutatorFactory(
     val constantNumberOfMutations = true
 
 
-    private val ratioDomainDependent = 0.0
+    private val ratioDomainDependent = 1.0
 
     private val domainSpecificMutations = listOf(
         ChangeSolvesFunctionMutation::class,
