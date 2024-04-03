@@ -41,8 +41,8 @@ echo "id,folder,ontology,oracle" > $result
 while IFS=";" read -r id folder ontology rest
 do
   # call oracle
-  echo "call oracle for ontology $folder/$ontology on $(date +'%d.%m.%Y at %H:%M')"
-  ./suave_oracle.sh "$folder/$ontology" > $temp_oracle_output
+  echo "call oracle for ontology $ontology on $(date +'%d.%m.%Y at %H:%M')"
+  ./suave_oracle.sh "$ontology" > $temp_oracle_output
 
   # extract result and write to oracle file
 

@@ -190,7 +190,8 @@ class Main : CliktCommand() {
             listOf(
                 "sut/suave/oracle_mutatedOnt_onlySuave02_2024_03_27_11_52.csv",
                 "sut/suave/oracle_mutatedOnt_onlySuave03_2024_03_27_15_11.csv",
-                "sut/suave/oracle_mutatedOnt_onlySuave04_2024_03_29_14_15.csv"
+                "sut/suave/oracle_mutatedOnt_onlySuave04_2024_03_29_14_15.csv",
+                "sut/suave/oracle_mutatedOnt_onlyGeneric03_2024_04_01_11_04.csv"
                 ),
             true)
     }
@@ -201,8 +202,8 @@ class Main : CliktCommand() {
         //testSuave()
         //runGeoGenerator()
 
-        evaluateSuaveContract("sut/suave/contracts/contract2.owl")
-        runSuaveGenerator("sut/suave/contracts/contract2.owl")
+        evaluateSuaveContract("sut/suave/contracts/contract3.owl")
+        //runSuaveGenerator("sut/suave/contracts/contract2.owl")
 
 
     }

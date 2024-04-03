@@ -21,6 +21,11 @@ TOMASYS_ONTOLOGY=${2:-"suave_ontologies/tomasys.owl"}
 MROS_ONTOLOGY=${3:-"suave_ontologies/mros.owl"}
 
 
+# create folder if it does not exist yet
+mkdir -p "logs"
+
+currentFolder=$(pwd)
+
 echo_and_log() {
   echo $1 | tee -a $LOG_FILE
 }
@@ -87,6 +92,19 @@ TOTAL_RUNS=0
 
 echo_and_log 'run simulations in docker'
 
+
+# check if file exists here, or we need to extend path, or not at all
+if [ -f $TEST_ONTOLOGY ]; then
+   echo_and_log "found $TEST_ONTOLOGY"
+else if [ -f "../../$TEST_ONTOLOGY" ]; then
+   TEST_ONTOLOGY="../../$TEST_ONTOLOGY"
+   echo_and_log "change path to $TEST_ONTOLOGY"
+  else
+    echo_and_log "ERROR: neither $Ontology nor $currentFolder/$Ontology does not exist."
+    echo_and_log "exit script"
+    abort_oracle
+  fi
+fi
 # copy test ontology to docker
 #docker cp $TEST_ONTOLOGY suaveContainer:/home/kasm-user/suave_ws/src/suave/suave_metacontrol/config/suave.owl >> $LOG_FILE
 docker cp $TEST_ONTOLOGY suaveContainer:/home/kasm-user/suave_ws/install/suave_metacontrol/share/suave_metacontrol/config/suave.owl >> $LOG_FILE
@@ -109,7 +127,7 @@ while [ $GOOD_RUNS -lt $LIMIT ] && [ $BAD_RUNS -lt $LIMIT ] && [ $TOTAL_RUNS -lt
   echo_and_log "start new simulation run (number $TOTAL_RUNS)"
 
   # run simulation
-  docker exec suaveContainer ./runner.sh false metacontrol time 1 >> $LOG_FILE 2>&1
+  #docker exec suaveContainer ./runner.sh false metacontrol time 1 >> $LOG_FILE 2>&1
 
   # get log file
   ./getROSlog.sh $ROS_LOG >> $LOG_FILE

@@ -39,6 +39,10 @@ class MutantContract(val verbose: Boolean) {
         val entailment = reasoner.entailsAll(entailedModel)
         //println("$consistent, $containment,  $entailment")
 
+        //val m = containedModel.listStatements().toSet()
+        //m.removeAll(model.listStatements().toSet())
+        //println(m)
+
         return  consistent
                 && containment
                 && entailment
