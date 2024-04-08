@@ -43,7 +43,7 @@ open class TestCaseGenerator(private val verbose: Boolean) {
         // create folder, if necessary
         Files.createDirectories(Paths.get(folderName))
         for (mut in mutants) {
-            val path = "$folderName/$filePrefix.$i.owl"
+            val path = "$folderName/$filePrefix.$i.nt"
             RDFDataMgr.write(File(path).outputStream(), mut, Lang.NTRIPLES)
             mutantFiles[i] = path   // save path of the mutation
             i += 1

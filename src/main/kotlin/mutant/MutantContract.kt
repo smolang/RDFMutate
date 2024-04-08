@@ -13,6 +13,9 @@ class MutantContract(val verbose: Boolean) {
     var entailedModel : Model = ModelFactory.createDefaultModel()
     var containedModel : Model = ModelFactory.createDefaultModel()
 
+    // if set to true: will use "proper" OWL reasoner to check for containment
+    var useReasonerContainment = false
+
     // additional axioms that are added to the ontology before reasoning, e.g. containing axioms not considered while
     // creating the mutations
     var additionalAxioms: Model = ModelFactory.createDefaultModel()
@@ -35,7 +38,11 @@ class MutantContract(val verbose: Boolean) {
 
         val consistent = reasoner.isConsistent()
         // always use JENA-API for containment check
-        val containment = model.containsAll(containedModel)
+        val containment =
+            if (useReasonerContainment)
+                reasoner.containsAll(containedModel)
+            else
+                model.containsAll(containedModel)
         val entailment = reasoner.entailsAll(entailedModel)
         //println("$consistent, $containment,  $entailment")
 
@@ -87,6 +94,7 @@ class MutantContract(val verbose: Boolean) {
                     // data row
 
                     // call contract oracle
+                    println("test contract for $ontologyPath")
                     val contractOracle = this.contractOracle(ontologyPath)
 
                     // check against real oracle
@@ -145,7 +153,9 @@ class MutantContract(val verbose: Boolean) {
     fun parseOutcome(outcome: String) :OracleOutcome {
         return when (outcome) {
             "passed" -> OracleOutcome.PASS
+            "pass"   -> OracleOutcome.PASS
             "failed" -> OracleOutcome.FAIL
+            "fail"   -> OracleOutcome.FAIL
             "undecided" -> OracleOutcome.UNDECIDED
             else -> {
                 assert(false) {"Argument $outcome can not be parsed to OracleOutcome."}

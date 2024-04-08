@@ -49,6 +49,16 @@ abstract class OwlApiReasoner(jenaModel : Model,
         return false
     }
 
+    override  fun containsAll(jenaModel: Model): Boolean {
+        val containedOntology = owlApiOnt(jenaModel)
+        if (containedOntology != null) {
+            for (a in containedOntology.axioms)
+                if (ontology?.containsAxiom(a) != true)
+                    return false
+        }
+        return true
+    }
+
     // converts Jena model into an OWL-API ontology
     private fun owlApiOnt(jenaModel: Model) : OWLOntology? {
 
