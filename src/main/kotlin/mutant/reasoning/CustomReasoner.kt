@@ -14,6 +14,7 @@ abstract class CustomReasoner(private val jenaModel : Model,
 
     abstract fun entailsAll(jenaModel: Model) : Boolean
 
+    abstract fun containsAll(jenaModel: Model): Boolean
 
     fun entails(s : Statement) : Boolean {
         // treat statement as a model and check that for entailment

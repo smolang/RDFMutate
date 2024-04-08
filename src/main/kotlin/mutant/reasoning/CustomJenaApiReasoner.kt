@@ -6,8 +6,8 @@ import org.apache.jena.rdf.model.ModelFactory
 import org.apache.jena.reasoner.Reasoner
 import org.apache.jena.reasoner.ReasonerRegistry
 
-class CustomJenaApiReasoner(model: Model, verbose : Boolean) : CustomReasoner(model, verbose) {
-    val reasoner: Reasoner = ReasonerRegistry.getOWLReasoner()
+class CustomJenaApiReasoner(val model: Model, verbose : Boolean) : CustomReasoner(model, verbose) {
+    private val reasoner: Reasoner = ReasonerRegistry.getOWLReasoner()
     private val inf : InfModel = ModelFactory.createInfModel(reasoner, model)
 
     override fun isConsistent(): Boolean {
@@ -34,6 +34,10 @@ class CustomJenaApiReasoner(model: Model, verbose : Boolean) : CustomReasoner(mo
 
     override fun entailsAll(jenaModel: Model): Boolean {
         return inf.containsAll(jenaModel)
+    }
+
+    override fun containsAll(jenaModel: Model): Boolean {
+        return model.containsAll(jenaModel.listStatements())
     }
 
 
