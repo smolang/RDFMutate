@@ -45,25 +45,6 @@ while read line; do
             startTrap=$t
         fi
     fi
-
-    if [[ $line == *"[mission_metrics]"* ]]; then
-      #  echo "metrics"
-        if [[ $line == *"Time elapsed to detect pipeline:"* ]]; then
-            # extract distance and only consider full length in meters
-            time=${line#*Time elapsed to detect pipeline: }
-            time=${time% seconds}
-           # echo $time
-        fi 
-        if [[ $line == *"Distance inspected:"* ]]; then
-            # extract distance and only consider full length in meters
-            distance=${line#*Distance inspected: }
-            distance=${distance%.*}
-            #echo $distance
-        fi 
-    fi
-    if [[ $line == *"[adpatation_goal_bridge]: Exception:"* ]]; then
-        exceptions=$(($exceptions + 1))
-    fi
 done < $LOG
 
 #echo $startMaturation

@@ -94,8 +94,8 @@ class SuaveTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) 
             )
         }
 
-        saveMutants("sut/suave/mutatedOnt", "temp")
-        super.writeToCSV("sut/suave/mutatedOnt/temp.csv")
+        saveMutants("sut/suave/mutatedOnt", "onlySuave07")
+        super.writeToCSV("sut/suave/mutatedOnt/onlySuave07.csv")
     }
 
 

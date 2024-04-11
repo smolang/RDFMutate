@@ -7,6 +7,7 @@ import com.github.ajalt.clikt.parameters.types.file
 import com.github.ajalt.clikt.parameters.types.int
 import domainSpecific.auv.AddPipeSegmentConfiguration
 import domainSpecific.auv.AddPipeSegmentMutation
+import domainSpecific.geo.GeoScenarioGenerator
 import domainSpecific.geo.GeoTestCaseGenerator
 import domainSpecific.suave.*
 import mutant.*
@@ -192,7 +193,8 @@ class Main : CliktCommand() {
                 "sut/suave/oracle_mutatedOnt_onlySuave03_2024_03_27_15_11.csv",
                 "sut/suave/oracle_mutatedOnt_onlySuave04_2024_03_29_14_15.csv",
                 "sut/suave/oracle_mutatedOnt_onlyGeneric03_2024_04_01_11_04.csv",
-                "sut/suave/oracle_mutatedOnt_onlySuave05_2024_04_03_17_17.csv"
+                "sut/suave/oracle_mutatedOnt_onlySuave05_2024_04_03_17_17.csv",
+                "sut/suave/oracle_mutatedOnt_onlySuave06_2024_04_08_09_58.csv"
                 ),
             true)
     }
@@ -210,15 +212,22 @@ class Main : CliktCommand() {
             true)
     }
 
+    fun generateGeoScenarios() {
+        val geoGenerator = GeoScenarioGenerator()
+        geoGenerator.generateScenarios(10)
+    }
+
     override fun run() {
         //testMutations()
         //testMiniPipes()
         //testSuave()
 
-        runGeoGenerator("sut/geo/contracts/contract1.ttl")
-        //runSuaveGenerator("sut/suave/contracts/contract3.owl")
+        //generateGeoScenarios()
 
-        //evaluateSuaveContract("sut/suave/contracts/contract4.owl")
+        //runGeoGenerator("sut/geo/contracts/contract1.ttl")
+        runSuaveGenerator("sut/suave/contracts/contract5.owl")
+
+        //evaluateSuaveContract("sut/suave/contracts/contract5.owl")
         //
         //evaluateGeoContract("sut/geo/contracts/contract1.ttl")
 
