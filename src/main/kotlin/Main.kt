@@ -222,10 +222,10 @@ class Main : CliktCommand() {
         //testMiniPipes()
         //testSuave()
 
-        //generateGeoScenarios()
+        generateGeoScenarios()
 
         //runGeoGenerator("sut/geo/contracts/contract1.ttl")
-        runSuaveGenerator("sut/suave/contracts/contract5.owl")
+        //runSuaveGenerator("sut/suave/contracts/contract5.owl")
 
         //evaluateSuaveContract("sut/suave/contracts/contract5.owl")
         //
