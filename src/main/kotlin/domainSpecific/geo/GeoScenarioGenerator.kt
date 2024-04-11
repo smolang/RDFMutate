@@ -43,8 +43,7 @@ class GeoScenarioGenerator (){
                 scenario.createNewFile()
                 File(scenarioName).printWriter().use { out ->
                     File(header).forEachLine { out.println(it) }
-                    out.println("\n————————————————————————————————\n" +
-                            "the following part is the generated scenario")
+                    out.println("\n//the following part is the generated scenario")
                     outputFile.forEachLine {
                         out.println(it)
                         if (it.startsWith(" has_source:"))
@@ -87,7 +86,7 @@ class GeoScenarioGenerator (){
             writer.newLine()
             var id = 0
             for (f in files) {
-                writer.write("$id,${f.first},${f.second}")
+                writer.write("$id,scenarios/${f.first.name},${f.second}")
                 writer.newLine()
                 id += 1
             }
