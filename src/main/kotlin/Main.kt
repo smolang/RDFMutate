@@ -194,7 +194,8 @@ class Main : CliktCommand() {
                 "sut/suave/oracle_mutatedOnt_onlySuave04_2024_03_29_14_15.csv",
                 "sut/suave/oracle_mutatedOnt_onlyGeneric03_2024_04_01_11_04.csv",
                 "sut/suave/oracle_mutatedOnt_onlySuave05_2024_04_03_17_17.csv",
-                "sut/suave/oracle_mutatedOnt_onlySuave06_2024_04_08_09_58.csv"
+                "sut/suave/oracle_mutatedOnt_onlySuave06_2024_04_08_09_58.csv",
+                "sut/suave/oracle_mutatedOnt_onlySuave07_2024_04_11_08_40.csv"
                 ),
             true)
     }
@@ -222,12 +223,12 @@ class Main : CliktCommand() {
         //testMiniPipes()
         //testSuave()
 
-        generateGeoScenarios()
+        //generateGeoScenarios()
 
         //runGeoGenerator("sut/geo/contracts/contract1.ttl")
-        //runSuaveGenerator("sut/suave/contracts/contract5.owl")
+        runSuaveGenerator("sut/suave/contracts/contract6.owl")
 
-        //evaluateSuaveContract("sut/suave/contracts/contract5.owl")
+        //evaluateSuaveContract("sut/suave/contracts/contract6.owl")
         //
         //evaluateGeoContract("sut/geo/contracts/contract1.ttl")
 
