@@ -137,6 +137,7 @@ class MutantContract(val verbose: Boolean) {
         println()
         println("———————————————————————————————————————")
         println("evaluation of contract:")
+        println("total number of cases: ${correctOracle.size + falsePass.size + falseFail.size}")
         println("correct: ${correctOracle.size}")
         println("falsePass: ${falsePass.size}")
         println("falseFail: ${falseFail.size}")

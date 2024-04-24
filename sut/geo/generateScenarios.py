@@ -29,7 +29,7 @@ def generate():
     fill = [ [random.randint(50, 400), random.randint(20,50),0] for i in range(4)]
     for i in range(4):
         fill[i][2] = math.ceil(fill[i][0]/fill[i][1])
-        fill[i][0] = fill[i][0]*fill[i][2]
+        fill[i][0] = fill[i][1]*fill[i][2]
      
     fill_layers = ["\tSandstoneUnit fill"+str(i)+" = new SandstoneUnit(null, null, null, null, null, null, "+str(fill[i][1])+".0, 2, null);\n\tDepositionGenerator fillAb"+str(i)+" = new DepositionGenerator(fill"+str(i)+", 2.0, "+str(fill[i][2])+");\n\tdl = new List<DepositionGenerator>(fillAb"+str(i)+", dl);\n" for i in range(4)]
      

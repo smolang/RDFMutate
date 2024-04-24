@@ -256,20 +256,20 @@ main
 	ShaleUnit source = new ShaleUnit(null, null, null, null, null, null, 40.0, 1, 0.0, True, 0);
 	List<DepositionGenerator> dl = null;
 
-	SandstoneUnit fill0 = new SandstoneUnit(null, null, null, null, null, null, 45.0, 2, null);
-	DepositionGenerator fillAb0 = new DepositionGenerator(fill0, 2.0, 8);
+	SandstoneUnit fill0 = new SandstoneUnit(null, null, null, null, null, null, 40.0, 2, null);
+	DepositionGenerator fillAb0 = new DepositionGenerator(fill0, 2.0, 4);
 	dl = new List<DepositionGenerator>(fillAb0, dl);
 
 	SandstoneUnit fill1 = new SandstoneUnit(null, null, null, null, null, null, 44.0, 2, null);
-	DepositionGenerator fillAb1 = new DepositionGenerator(fill1, 2.0, 3);
+	DepositionGenerator fillAb1 = new DepositionGenerator(fill1, 2.0, 7);
 	dl = new List<DepositionGenerator>(fillAb1, dl);
 
-	SandstoneUnit fill2 = new SandstoneUnit(null, null, null, null, null, null, 22.0, 2, null);
-	DepositionGenerator fillAb2 = new DepositionGenerator(fill2, 2.0, 17);
+	SandstoneUnit fill2 = new SandstoneUnit(null, null, null, null, null, null, 29.0, 2, null);
+	DepositionGenerator fillAb2 = new DepositionGenerator(fill2, 2.0, 7);
 	dl = new List<DepositionGenerator>(fillAb2, dl);
 
-	SandstoneUnit fill3 = new SandstoneUnit(null, null, null, null, null, null, 45.0, 2, null);
-	DepositionGenerator fillAb3 = new DepositionGenerator(fill3, 2.0, 4);
+	SandstoneUnit fill3 = new SandstoneUnit(null, null, null, null, null, null, 48.0, 2, null);
+	DepositionGenerator fillAb3 = new DepositionGenerator(fill3, 2.0, 2);
 	dl = new List<DepositionGenerator>(fillAb3, dl);
 
 	ChalkUnit ekofisk = new ChalkUnit(null, null, null, null, null, null, 99.0, 2, null);
@@ -280,22 +280,22 @@ main
 	DepositionGenerator depCap = new DepositionGenerator(cap, 2.0, 1);
 	dl = new List<DepositionGenerator>(depCap, dl);
 
-	SandstoneUnit ab0 = new SandstoneUnit(null, null, null, null, null, null, 89.0, 2, null);
-	DepositionGenerator depAb0 = new DepositionGenerator(ab0, 2.0, 5);
+	SandstoneUnit ab0 = new SandstoneUnit(null, null, null, null, null, null, 63.0, 2, null);
+	DepositionGenerator depAb0 = new DepositionGenerator(ab0, 2.0, 6);
 	dl = new List<DepositionGenerator>(depAb0, dl);
 
-	SandstoneUnit ab1 = new SandstoneUnit(null, null, null, null, null, null, 57.0, 2, null);
+	SandstoneUnit ab1 = new SandstoneUnit(null, null, null, null, null, null, 71.0, 2, null);
 	DepositionGenerator depAb1 = new DepositionGenerator(ab1, 2.0, 6);
 	dl = new List<DepositionGenerator>(depAb1, dl);
 
 	dl = dl.reverse();
 	Driver driver = new Driver(null,null);
-	driver.sim(dl, 92.0, source, (-66.0));
+	driver.sim(dl, 70.0, source, (-66.0));
 
 
 /*
  has_source: True
 has_cap: True
-depth: 10747
+depth: 1740
 */
 end
