@@ -2,7 +2,7 @@
 # author: Tobias John, University of Oslo
 # year: 2023
 
-# usage: ./runTests.sh TESTS-FILE 
+# usage: ./runTests.sh TESTS-FILE [SCENARIO_NAME]
 # output will be put in file oracle_TEST-FILE_DATE.csv
 
 # TODO: add option to delete logs
@@ -11,6 +11,7 @@ TimeStart="$(date -u +%s)"
 
 
 ontologies=$1
+scenario=$2
 temp_oracle_output=temp/oracle_output_temp.txt
 
 
@@ -21,7 +22,7 @@ mkdir -p "$directory"
 
 name=${1%".csv"}
 name=$(echo "$name" | tr / _)
-name="${directory}/oracle_${name}_$(date +'%Y_%m_%d_%H_%M')"
+name="${directory}/oracle_$(date +'%Y_%m_%d_%H_%M')_${name}_${scenario}"
 result="${name}.csv"
 
 
