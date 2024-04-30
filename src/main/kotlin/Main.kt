@@ -13,8 +13,9 @@ import domainSpecific.suave.*
 import mutant.*
 import org.apache.jena.rdf.model.ModelFactory
 import org.apache.jena.riot.RDFDataMgr
+import org.apache.jena.shacl.Shapes
 import sut.MiniPipeInspection
-import java.nio.file.Paths
+import java.io.File
 import kotlin.random.Random
 
 val randomGenerator = Random(2)
@@ -22,6 +23,7 @@ val randomGenerator = Random(2)
 class Main : CliktCommand() {
     private val source by argument().file()
     private val contractFile by argument().file()
+    private val shaclContractFile by option("--shacl","-s", help="Gives a second contract, defined by a set of SHACL shapes").file()
     private val verbose by option("--verbose","-v", help="Verbose output for debugging. Default = false.").flag()
     private val rounds by option("--rounds","-r", help="Number of mutations applied to input. Default = 1.").int().default(1)
 
@@ -32,7 +34,12 @@ class Main : CliktCommand() {
         val input = RDFDataMgr.loadDataset(source.absolutePath).defaultModel
         if(!contractFile.exists()) throw Exception("Contract file $contractFile does not exist")
 
-        val contract = MutantContract(verbose)
+        val shapes: Shapes? = if(shaclContractFile != null){
+            val shapesGraph = RDFDataMgr.loadGraph(shaclContractFile!!.absolutePath)
+            Shapes.parse(shapesGraph)
+        } else null
+
+        val contract = MutantContract(verbose, shapes)
         contract.entailedModel = RDFDataMgr.loadDataset(contractFile.absolutePath).defaultModel
 
         // test configuration stuff
@@ -182,9 +189,9 @@ class Main : CliktCommand() {
         gg.generateGeoMutants(contractFile)
     }
 
-    fun evaluateSuaveContract(contractPath : String) {
+    fun evaluateSuaveContract(contractPath : String, shapes: Shapes?) {
         // new contract
-        val contract = MutantContract(verbose)
+        val contract = MutantContract(verbose, shapes)
 
         contract.containedModel=RDFDataMgr.loadDataset(contractPath).defaultModel
         contract.checkAgainstOntologies(
@@ -201,9 +208,9 @@ class Main : CliktCommand() {
             true)
     }
 
-    fun evaluateGeoContract(contractPath : String) {
+    fun evaluateGeoContract(contractPath : String,shapes: Shapes?) {
         // new contract
-        val contract = MutantContract(verbose)
+        val contract = MutantContract(verbose, shapes)
 
         contract.containedModel=RDFDataMgr.loadDataset(contractPath).defaultModel
         contract.useReasonerContainment=true
@@ -214,7 +221,7 @@ class Main : CliktCommand() {
             true)
     }
 
-    fun generateGeoScenarios() {
+    fun generateGeoScenarios(shapes: Shapes?) {
         val geoGenerator = GeoScenarioGenerator()
         geoGenerator.generateScenarios(10)
     }
@@ -223,15 +230,18 @@ class Main : CliktCommand() {
         //testMutations()
         //testMiniPipes()
         //testSuave()
+        val shapes: Shapes? = if(shaclContractFile != null){
+            val shapesGraph = RDFDataMgr.loadGraph(shaclContractFile!!.absolutePath)
+             Shapes.parse(shapesGraph)
+        } else null
+        generateGeoScenarios(shapes)
 
-        generateGeoScenarios()
+        //runGeoGenerator("sut/geo/contracts/contract1.ttl",shapes)
+        //runSuaveGenerator("sut/suave/contracts/contract7.owl",shapes)
 
-        //runGeoGenerator("sut/geo/contracts/contract1.ttl")
-        //runSuaveGenerator("sut/suave/contracts/contract7.owl")
-
-        //evaluateSuaveContract("sut/suave/contracts/contract7.owl")
+        //evaluateSuaveContract("sut/suave/contracts/contract7.owl",shapes)
         //
-        //evaluateGeoContract("sut/geo/contracts/contract1.ttl")
+        //evaluateGeoContract("sut/geo/contracts/contract1.ttl",shapes)
 
     }
 

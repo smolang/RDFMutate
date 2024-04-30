@@ -1,10 +1,15 @@
 
 plugins {
-    id 'org.jetbrains.kotlin.jvm' version '1.4.10'
-    id 'com.github.johnrengelman.shadow' version '5.2.0'
+    id("org.jetbrains.kotlin.jvm") version "1.9.0"
+    id 'org.springframework.boot' version '2.7.0'
+    id 'com.github.johnrengelman.shadow' version '7.0.0'
 }
 group = 'me.edkam'
 version = '0.1'
+
+wrapper {
+    gradleVersion = '7.6'
+}
 
 repositories {
     mavenCentral()
@@ -15,23 +20,15 @@ test {
 }
 dependencies {
     testImplementation("io.kotlintest:kotlintest-runner-junit5:3.4.0")
-    compileClasspath("io.kotlintest:kotlintest-runner-junit5:3.4.0")
+    implementation("io.kotlintest:kotlintest-runner-junit5:3.4.0")
     testImplementation 'org.jetbrains.kotlin:kotlin-test-junit'
-    implementation("com.github.ajalt:clikt:2.3.0")
-    //implementation 'org.apache.jena:apache-jena-libs:3.16.0'
-    //implementation 'org.apache.jena:jena-core:3.16.0'
+    implementation("com.github.ajalt.clikt:clikt:4.3.0")
     implementation 'org.apache.jena:apache-jena-libs:4.10.0'
     implementation 'org.apache.jena:jena-core:4.10.0'
     implementation("org.slf4j:slf4j-nop:2.0.0-alpha1")
-    implementation 'com.sksamuel.hoplite:hoplite-core:1.4.1'
-    implementation 'com.sksamuel.hoplite:hoplite-yaml:1.4.1'
-    implementation "org.logicng:logicng:2.2.0"
     implementation 'net.sourceforge.owlapi:owlapi-distribution:5.5.0'
     implementation 'net.sourceforge.owlapi:org.semanticweb.hermit:1.4.5.519'
     implementation 'com.github.galigator.openllet:openllet-owlapi:2.6.5'
-    //implementation 'com.github.owlcs:ontapi:3.0.1'
-    //implementation "org.jetbrains.kotlin:kotlin-reflect:1.8.0"
-    //implementation(platform("org.jetbrains.kotlin:kotlin-bom:1.8.0"))
 }
 
 compileKotlin {

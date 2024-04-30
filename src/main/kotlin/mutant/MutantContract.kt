@@ -6,10 +6,12 @@ import org.apache.jena.rdf.model.Model
 import org.apache.jena.rdf.model.ModelFactory
 import org.apache.jena.rdf.model.StmtIterator
 import org.apache.jena.riot.RDFDataMgr
+import org.apache.jena.shacl.ShaclValidator
+import org.apache.jena.shacl.Shapes
 import java.io.File
 
 
-class MutantContract(val verbose: Boolean) {
+class MutantContract(val verbose: Boolean, val shacl: Shapes?) {
     var entailedModel : Model = ModelFactory.createDefaultModel()
     var containedModel : Model = ModelFactory.createDefaultModel()
 
@@ -44,6 +46,7 @@ class MutantContract(val verbose: Boolean) {
             else
                 model.containsAll(containedModel)
         val entailment = reasoner.entailsAll(entailedModel)
+        val shapes = if (shacl != null) ShaclValidator.get().validate(shacl, model.graph) else true
         //println("$consistent, $containment,  $entailment")
 
         //val m = containedModel.listStatements().toSet()
