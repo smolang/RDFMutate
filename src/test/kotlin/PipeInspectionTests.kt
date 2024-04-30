@@ -3,8 +3,8 @@ import io.kotlintest.shouldBe
 import io.kotlintest.specs.StringSpec
 import org.smolang.robust.domainSpecific.auv.AddPipeSegmentConfiguration
 import org.smolang.robust.domainSpecific.auv.AddPipeSegmentMutation
-import mutant.MutationSequence
-import mutant.Mutator
+import org.smolang.robust.mutant.MutationSequence
+import org.smolang.robust.mutant.Mutator
 import org.apache.jena.riot.RDFDataMgr
 import org.smolang.robust.sut.MiniPipeInspection
 import kotlin.math.absoluteValue

@@ -1,7 +1,5 @@
 package org.smolang.robust.mutant
 
-import org.smolang.robust.mutant.reasoning.CustomReasonerFactory
-import org.smolang.robust.mutant.reasoning.ReasoningBackend
 import org.apache.jena.rdf.model.Model
 import org.apache.jena.rdf.model.ModelFactory
 import org.apache.jena.riot.RDFDataMgr
@@ -14,7 +12,7 @@ class MutantMask(val verbose: Boolean,
                  private val shacl: Shapes?,
                  private val containedModel: Model,
                  val useReasonerContainment : Boolean = false, // if set to true: will use "proper" OWL reasoner to check for containment
-                 private val reasoningBackend : ReasoningBackend = ReasoningBackend.OPENLLET) {
+     ) {
     //deactivated for now?
     private val entailedModel : Model = ModelFactory.createDefaultModel()
 
@@ -31,7 +29,7 @@ class MutantMask(val verbose: Boolean,
 
         // create reasoner with the selected backend
         val reasonerFactory = CustomReasonerFactory(verbose)
-        val reasoner = reasonerFactory.getReasoner(model, reasoningBackend)
+        val reasoner = reasonerFactory.getReasoner(model)
 
         val consistent = reasoner.isConsistent()
         if(!consistent) return false

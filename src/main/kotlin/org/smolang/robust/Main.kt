@@ -53,7 +53,7 @@ class Main : CliktCommand() {
     }
 
 
-
+    //TODO: add a way to add
     private fun testMutations() {
 
         val shapes: Shapes? = if(shaclContractFile != null && !shaclContractFile!!.exists()){
@@ -81,11 +81,6 @@ class Main : CliktCommand() {
 
         // test configuration stuff
 
-        //
-        var n = 0
-        val onlyOneGeneration = true    // we only execute one run
-        while(true) {
-            println("\n generation ${n++}")
             //val m = Mutator(listOf(AddInstanceMutation::class, RemoveAxiomMutation::class), verbose)
             val ms = MutationSequence(verbose)
             //ms.addRandom(listOf(RemoveSubclassMutation::class))
@@ -115,12 +110,10 @@ class Main : CliktCommand() {
 
             ms.addWithConfig(org.smolang.robust.domainSpecific.auv.AddPipeSegmentMutation::class, config5)
 
-            //ms.addWithConfig(RemoveAxiomMutation::class, config)
             ms.addWithConfig(RemoveSubclassMutation::class, config)
 
             ms.addWithConfig(AddAxiomMutation::class, config3)
 
-            //ms.addWithConfig(AddInstanceMutation::class, config2)
             ms.addRandom(listOf(AddInstanceMutation::class))
 
             ms.addWithConfig(AddInstanceMutation::class, config4)
@@ -133,19 +126,7 @@ class Main : CliktCommand() {
             //XXX: the following ignores blank nodes
             val valid = m.validate(res, contract)
             println("result of validation: $valid")
-            if(valid) {
-                if(verbose) res.write(System.out, "TTL")
-                break
-            }
-
-            if (onlyOneGeneration) {
-                if (verbose) res.write(System.out, "TTL")
-                break
-            }
-        }
-
-
-
+            if(verbose) res.write(System.out, "TTL")
     }
 
 

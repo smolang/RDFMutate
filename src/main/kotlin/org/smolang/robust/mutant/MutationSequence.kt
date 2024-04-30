@@ -9,9 +9,6 @@ class MutationSequence(private  val verbose: Boolean) {
     private val mutations : MutableList<AbstractMutation> = mutableListOf()
 
     private val mutatableAxioms: MutableSet<Statement> = hashSetOf()
-    fun addMutatableAxiom(s: Statement) {
-        mutatableAxioms.add(s)
-    }
 
     fun addMutatableAxioms(l: List<Statement>) {
         mutatableAxioms.addAll(l)

@@ -8,13 +8,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caab7f85-477f-496a-b8a7-b8805153034d" name="Changes" comment="Starting refactoring, making the linter happy">
+    <list default="true" id="caab7f85-477f-496a-b8a7-b8805153034d" name="Changes" comment="Some comments on the domain mutations">
+      <change afterPath="$PROJECT_DIR$/examples/test3.ttl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/ReasonerInterface.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/domainSpecific/geo/GeoScenarioGenerator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/domainSpecific/geo/GeoScenarioGenerator.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/domainSpecific/suave/SuaveMutation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/domainSpecific/suave/SuaveMutation.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/domainSpecific/suave/SuaveTestCaseGenerator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/domainSpecific/suave/SuaveTestCaseGenerator.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/sut/MiniPipeInspection.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/sut/MiniPipeInspection.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/sut/MyReasoner.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/sut/MyReasoner.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/AbstractMutation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/AbstractMutation.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/MutantMask.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/MutantMask.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/MutationConfiguration.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/MutationConfiguration.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/MutationSequence.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/MutationSequence.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/reasoning/CustomHermitReasoner.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/reasoning/CustomJenaApiReasoner.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/reasoning/CustomOpenlletReasoner.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/reasoning/CustomReasoner.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/reasoning/CustomReasonerFactory.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/reasoning/OwlApiReasoner.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/PipeInspectionTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/PipeInspectionTests.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sut/geo/scenarios/scenario0.smol" beforeDir="false" afterPath="$PROJECT_DIR$/sut/geo/scenarios/scenario0.smol" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sut/geo/scenarios/scenario1.smol" beforeDir="false" afterPath="$PROJECT_DIR$/sut/geo/scenarios/scenario1.smol" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sut/geo/scenarios/scenario2.smol" beforeDir="false" afterPath="$PROJECT_DIR$/sut/geo/scenarios/scenario2.smol" afterDir="false" />
@@ -143,11 +152,13 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant" />
       <recent name="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust" />
       <recent name="$PROJECT_DIR$/src/main/kotlin/mutant/reasoning" />
       <recent name="$PROJECT_DIR$/src/main/kotlin/domainSpecific" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="org.smolang.robust.mutant.reasoning" />
       <recent name="org.smolang.robust.mutant" />
       <recent name="sut" />
     </key>
@@ -477,7 +488,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714500895482</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Some comments on the domain mutations">
+      <option name="closed" value="true" />
+      <created>1714501484538</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1714501484538</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -518,7 +537,8 @@
     <MESSAGE value="Added SHACL contracts" />
     <MESSAGE value="Starting refactoring" />
     <MESSAGE value="Starting refactoring, making the linter happy" />
-    <option name="LAST_COMMIT_MESSAGE" value="Starting refactoring, making the linter happy" />
+    <MESSAGE value="Some comments on the domain mutations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some comments on the domain mutations" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
