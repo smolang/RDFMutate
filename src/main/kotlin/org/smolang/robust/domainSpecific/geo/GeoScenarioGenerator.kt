@@ -5,7 +5,10 @@ import java.io.FileOutputStream
 import java.util.concurrent.TimeUnit
 
 
-// generates several scenarios
+/**
+ * Generates several scenarios using an external tool, then creates a csv files with the test oracle.
+ * Note: the external tool does *not* modify the knowledge graph
+ */
 class GeoScenarioGenerator {
 
     // list of files + oracle (does maturation happen)
@@ -28,8 +31,8 @@ class GeoScenarioGenerator {
                 val scenario = File(scenarioName)
                 scenario.createNewFile()
 
-                var has_source = true
-                var has_cap = true
+                var hasSource = true
+                var hasCap = true
                 var depth = 0
 
                 println(scenario.absolutePath)
@@ -45,10 +48,10 @@ class GeoScenarioGenerator {
                     outputFile.forEachLine {
                         out.println(it)
                         if (it.startsWith(" has_source:"))
-                            has_source =
+                            hasSource =
                                 !it.endsWith("False")
                         if (it.startsWith("has_cap:"))
-                            has_cap =
+                            hasCap =
                                 !it.endsWith("False")
                         if (it.startsWith("depth:"))
                             depth = it.removePrefix("depth: ").toInt()
@@ -59,13 +62,14 @@ class GeoScenarioGenerator {
                 outputFile.delete()
 
                 // TODO: analyze if maturation happens and safe this accordingly
-                val maturation = (has_source && depth > 2000)
+                val maturation = (hasCap && hasSource && depth > 2000)
 
                 files.add(Pair(scenario, maturation))
                 i += 1
             }
         }
 
+        //TODO: I understand reading csv for oracles is nice, but I would like to run the geo case without this detour
         writeToCSV("${dir.absolutePath}/scenarios.csv")
     }
 

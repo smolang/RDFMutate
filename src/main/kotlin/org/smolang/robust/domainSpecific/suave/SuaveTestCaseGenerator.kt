@@ -12,7 +12,6 @@ import java.nio.file.Paths
 
 class SuaveTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) {
     // maximal number of mutations to generate a mutant
-    var maxMutation = 5
 
     private val mrosRulesPath = "org/smolang/robust/sut/suave/suave_ontologies/mros_rules.owl"
     private val tomasysRulesPath = "org/smolang/robust/sut/suave/suave_ontologies/tomasys_rules.owl"
@@ -36,6 +35,8 @@ class SuaveTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) 
     //val mrosModel = ModelFactory.createDefaultModel()
     private val tomasysModel = RDFDataMgr.loadDataset(tomasysPath).defaultModel!!
 
+
+    //TODO: this is not cleaned up, find out what the magic numbers mean first
     fun generateSuaveMutants(numberMutants : Int, contractFile : String) {
         val unmutatableStatements = unmutatableSuaveStatements.toMutableList()
 

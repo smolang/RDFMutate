@@ -1,37 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_INJECTED_CODE" value="false" />
+    <option name="SCOPE_TYPE" value="4" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caab7f85-477f-496a-b8a7-b8805153034d" name="Changes" comment="Added SHACL contracts">
+    <list default="true" id="caab7f85-477f-496a-b8a7-b8805153034d" name="Changes" comment="Starting refactoring, making the linter happy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domainSpecific/auv/AUVMutation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/domainSpecific/auv/AUVMutation.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domainSpecific/geo/GeoMutation.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domainSpecific/geo/GeoScenarioGenerator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/domainSpecific/geo/GeoScenarioGenerator.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domainSpecific/geo/GeoTestCaseGenerator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/domainSpecific/geo/GeoTestCaseGenerator.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domainSpecific/suave/SuaveMutation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/domainSpecific/suave/SuaveMutation.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domainSpecific/suave/SuaveTestCaseGenerator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/domainSpecific/suave/SuaveTestCaseGenerator.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/AbstractMutation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/AbstractMutation.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/MutantContract.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/MutantMask.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/Mutation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/Mutation.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/MutationABox.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/MutationABox.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/MutationConfiguration.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/MutationConfiguration.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/MutationSequence.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/MutationSequence.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/MutationTBox.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/MutationTBox.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/Mutator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/Mutator.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/MutatorFactory.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/TestCaseGenerator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/TestCaseGenerator.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/reasoning/CustomHermitReasoner.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/reasoning/CustomHermitReasoner.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/reasoning/CustomJenaApiReasoner.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/reasoning/CustomJenaApiReasoner.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/reasoning/CustomOpenlletReasoner.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/reasoning/CustomOpenlletReasoner.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/reasoning/CustomReasoner.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/reasoning/CustomReasoner.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/reasoning/CustomReasonerFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/reasoning/CustomReasonerFactory.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/reasoning/OwlApiReasoner.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/reasoning/OwlApiReasoner.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/sut/MiniPipeInspection.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/sut/MiniPipeInspection.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/sut/MyReasoner.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/sut/MyReasoner.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/PipeInspectionTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/PipeInspectionTests.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/domainSpecific/geo/GeoScenarioGenerator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/domainSpecific/geo/GeoScenarioGenerator.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/domainSpecific/suave/SuaveMutation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/domainSpecific/suave/SuaveMutation.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/domainSpecific/suave/SuaveTestCaseGenerator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/domainSpecific/suave/SuaveTestCaseGenerator.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/sut/MiniPipeInspection.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/sut/MiniPipeInspection.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/sut/MyReasoner.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/sut/MyReasoner.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sut/geo/scenarios/scenario0.smol" beforeDir="false" afterPath="$PROJECT_DIR$/sut/geo/scenarios/scenario0.smol" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sut/geo/scenarios/scenario1.smol" beforeDir="false" afterPath="$PROJECT_DIR$/sut/geo/scenarios/scenario1.smol" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sut/geo/scenarios/scenario2.smol" beforeDir="false" afterPath="$PROJECT_DIR$/sut/geo/scenarios/scenario2.smol" afterDir="false" />
@@ -141,6 +124,7 @@
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   },
   "keyToStringList": {
@@ -477,7 +461,23 @@
       <option name="project" value="LOCAL" />
       <updated>1714498222331</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Starting refactoring">
+      <option name="closed" value="true" />
+      <created>1714500653697</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1714500653697</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Starting refactoring, making the linter happy">
+      <option name="closed" value="true" />
+      <created>1714500895482</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1714500895482</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -516,7 +516,9 @@
     <MESSAGE value="fixed some exceptions" />
     <MESSAGE value="minor" />
     <MESSAGE value="Added SHACL contracts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added SHACL contracts" />
+    <MESSAGE value="Starting refactoring" />
+    <MESSAGE value="Starting refactoring, making the linter happy" />
+    <option name="LAST_COMMIT_MESSAGE" value="Starting refactoring, making the linter happy" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

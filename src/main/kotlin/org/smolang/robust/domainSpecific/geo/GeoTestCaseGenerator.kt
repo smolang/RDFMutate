@@ -16,8 +16,6 @@ class GeoTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) {
         // new contract
         val contract = MutantMask(verbose, shapes, RDFDataMgr.loadDataset(contractFile).defaultModel, useReasonerContainment=true)
 
-        val geoGenerator = GeoMutatorFactory(verbose, 1)
-
         val mutationNumbers = listOf(2)//,2,3,4,5,6,7,8,9,10)
         for (i in mutationNumbers) {
             val geoMutator = GeoMutatorFactory(verbose, i)

@@ -6,6 +6,9 @@ import org.apache.jena.rdf.model.Resource
 import org.apache.jena.riot.RDFDataMgr
 import java.io.File
 
+/**
+ * This is an implementation of the *program* in the running example in the paper
+ */
 class MiniPipeInspection {
 
     var ontology : Model? = null

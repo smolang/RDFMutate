@@ -5,7 +5,9 @@ import org.apache.jena.rdf.model.Model
 import org.apache.jena.rdf.model.Resource
 import org.smolang.robust.randomGenerator
 
-// all the domain-dependent mutation operators that are specific for the auv domain
+/**
+ * all the domain-dependent mutation operators that are specific for the auv domain
+ */
 abstract class AUVMutation(model: Model, verbose: Boolean) : Mutation(model, verbose) {
     val auvURI = "http://www.ifi.uio.no/tobiajoh/miniPipes"
     val delimiter = "#"
@@ -40,7 +42,6 @@ class AddPipeSegmentMutation(model: Model, verbose: Boolean) : AUVMutation(model
     }
 
     override fun createMutation() {
-        //val m = ModelFactory.createDefaultModel()
 
         // select the start segment
         val start =
@@ -69,7 +70,6 @@ class AddPipeSegmentMutation(model: Model, verbose: Boolean) : AUVMutation(model
         val tempModel = aim.applyCopy()
 
         // create "nextTo" relation between start and the new individual
-
         val s = model.createStatement(
             start,
             model.createProperty(auvURI + delimiter + "nextTo"),

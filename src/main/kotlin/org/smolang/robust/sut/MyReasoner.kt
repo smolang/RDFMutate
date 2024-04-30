@@ -6,6 +6,9 @@ import org.apache.jena.rdf.model.Resource
 import org.apache.jena.rdf.model.Statement
 import org.apache.jena.reasoner.ReasonerRegistry
 
+/**
+ * Helper to interact with the OWL reasoners
+ */
 class MyReasoner(model : Model) {
     private val reasoner = ReasonerRegistry.getOWLReasoner()!!
     private val inf = ModelFactory.createInfModel(reasoner, model)!!
