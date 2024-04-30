@@ -4,14 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caab7f85-477f-496a-b8a7-b8805153034d" name="Changes" comment="minor">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="caab7f85-477f-496a-b8a7-b8805153034d" name="Changes" comment="Added SHACL contracts">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/MutantContract.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mutant/MutantContract.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domainSpecific/auv/AUVMutation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/domainSpecific/auv/AUVMutation.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domainSpecific/geo/GeoMutation.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domainSpecific/geo/GeoScenarioGenerator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/domainSpecific/geo/GeoScenarioGenerator.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domainSpecific/geo/GeoTestCaseGenerator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/domainSpecific/geo/GeoTestCaseGenerator.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domainSpecific/suave/SuaveMutation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/domainSpecific/suave/SuaveMutation.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domainSpecific/suave/SuaveTestCaseGenerator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/domainSpecific/suave/SuaveTestCaseGenerator.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/AbstractMutation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/AbstractMutation.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/MutantContract.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/MutantMask.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/Mutation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/Mutation.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/MutationABox.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/MutationABox.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/MutationConfiguration.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/MutationConfiguration.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/MutationSequence.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/MutationSequence.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/MutationTBox.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/MutationTBox.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/Mutator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/Mutator.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/MutatorFactory.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/TestCaseGenerator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/TestCaseGenerator.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/reasoning/CustomHermitReasoner.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/reasoning/CustomHermitReasoner.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/reasoning/CustomJenaApiReasoner.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/reasoning/CustomJenaApiReasoner.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/reasoning/CustomOpenlletReasoner.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/reasoning/CustomOpenlletReasoner.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/reasoning/CustomReasoner.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/reasoning/CustomReasoner.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/reasoning/CustomReasonerFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/reasoning/CustomReasonerFactory.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/reasoning/OwlApiReasoner.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/reasoning/OwlApiReasoner.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/sut/MiniPipeInspection.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/sut/MiniPipeInspection.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/sut/MyReasoner.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/sut/MyReasoner.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/PipeInspectionTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/PipeInspectionTests.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sut/geo/scenarios/scenario0.smol" beforeDir="false" afterPath="$PROJECT_DIR$/sut/geo/scenarios/scenario0.smol" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sut/geo/scenarios/scenario1.smol" beforeDir="false" afterPath="$PROJECT_DIR$/sut/geo/scenarios/scenario1.smol" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sut/geo/scenarios/scenario2.smol" beforeDir="false" afterPath="$PROJECT_DIR$/sut/geo/scenarios/scenario2.smol" afterDir="false" />
@@ -139,10 +159,12 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust" />
       <recent name="$PROJECT_DIR$/src/main/kotlin/mutant/reasoning" />
       <recent name="$PROJECT_DIR$/src/main/kotlin/domainSpecific" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="org.smolang.robust.mutant" />
       <recent name="sut" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
@@ -248,7 +270,7 @@
       <method v="2" />
     </configuration>
     <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <option name="MAIN_CLASS_NAME" value="org.smolang.robust.MainKt" />
       <module name="OntoMutate.main" />
       <option name="PROGRAM_PARAMETERS" value="examples/relations.ttl examples/contract.ttl -v -r 1" />
       <shortenClasspath name="NONE" />
@@ -447,7 +469,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704907324178</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Added SHACL contracts">
+      <option name="closed" value="true" />
+      <created>1714498222331</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1714498222331</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -485,7 +515,8 @@
     <MESSAGE value="minor&#10;fixed some warnings" />
     <MESSAGE value="fixed some exceptions" />
     <MESSAGE value="minor" />
-    <option name="LAST_COMMIT_MESSAGE" value="minor" />
+    <MESSAGE value="Added SHACL contracts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added SHACL contracts" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
