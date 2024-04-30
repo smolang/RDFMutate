@@ -16,7 +16,7 @@ abstract class OwlApiReasoner(jenaModel : Model,
 
     private val manager: OWLOntologyManager = OWLManager.createOWLOntologyManager()
     val ontology = owlApiOnt(jenaModel)
-    val reasoner : OWLReasoner? by lazy { initReasoner()}
+    private val reasoner : OWLReasoner? by lazy { initReasoner()}
 
     abstract fun initReasoner() : OWLReasoner?
 

@@ -6,17 +6,17 @@ import java.util.concurrent.TimeUnit
 
 
 // generates several scenarios
-class GeoScenarioGenerator (){
+class GeoScenarioGenerator {
 
     // list of files + oracle (does maturation happen)
-    val files : MutableList<Pair<File,Boolean>> = mutableListOf()
+    private val files : MutableList<Pair<File,Boolean>> = mutableListOf()
     fun  generateScenarios(count : Int) {
         // generate scenario main blocks
         "python3 generateScenarios.py scenarios $count".runCommand(File("org/smolang/robust/sut/geo"))
 
         // iterate over scenarios
         val dir = File("org/smolang/robust/sut/geo/scenarios")
-        val pattern = Regex("sut/geo/scenarios/Output.*.txt");
+        val pattern = Regex("sut/geo/scenarios/Output.*.txt")
         val header = "org/smolang/robust/sut/geo/scenarios/header.smol"
 
         var i = 0
@@ -46,16 +46,10 @@ class GeoScenarioGenerator (){
                         out.println(it)
                         if (it.startsWith(" has_source:"))
                             has_source =
-                                if (it.endsWith("False"))
-                                    false
-                                else
-                                    true
+                                !it.endsWith("False")
                         if (it.startsWith("has_cap:"))
                             has_cap =
-                                if (it.endsWith("False"))
-                                    false
-                                else
-                                    true
+                                !it.endsWith("False")
                         if (it.startsWith("depth:"))
                             depth = it.removePrefix("depth: ").toInt()
                     }
@@ -77,7 +71,7 @@ class GeoScenarioGenerator (){
 
 
     // writes content from "files" list to csv
-    fun writeToCSV(fileName : String) {
+    private fun writeToCSV(fileName : String) {
         FileOutputStream(fileName).use { fos ->
             val writer = fos.bufferedWriter()
             writer.write("id,scenario,maturation")
@@ -93,7 +87,7 @@ class GeoScenarioGenerator (){
     }
 
         // from https://stackoverflow.com/questions/35421699/how-to-invoke-external-command-from-within-kotlin-code
-    fun String.runCommand(workingDir: File) {
+        private fun String.runCommand(workingDir: File) {
         ProcessBuilder(*split(" ").toTypedArray())
             .directory(workingDir)
             .redirectOutput(ProcessBuilder.Redirect.INHERIT)

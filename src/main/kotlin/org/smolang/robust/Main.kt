@@ -7,15 +7,13 @@ import com.github.ajalt.clikt.parameters.options.flag
 import com.github.ajalt.clikt.parameters.options.option
 import com.github.ajalt.clikt.parameters.options.switch
 import com.github.ajalt.clikt.parameters.types.file
-import com.github.ajalt.clikt.parameters.types.int
+import org.apache.jena.rdf.model.ModelFactory
+import org.apache.jena.riot.RDFDataMgr
+import org.apache.jena.shacl.Shapes
 import org.smolang.robust.domainSpecific.geo.GeoScenarioGenerator
 import org.smolang.robust.domainSpecific.geo.GeoTestCaseGenerator
 import org.smolang.robust.domainSpecific.suave.*
 import org.smolang.robust.mutant.*
-import org.apache.jena.rdf.model.ModelFactory
-import org.apache.jena.riot.RDFDataMgr
-import org.apache.jena.shacl.Shapes
-import org.smolang.robust.mutant.RemoveSubclassMutation
 import org.smolang.robust.sut.MiniPipeInspection
 import kotlin.random.Random
 import kotlin.system.exitProcess
@@ -27,7 +25,6 @@ class Main : CliktCommand() {
     private val contractFile by argument().file()
     private val shaclContractFile by option("--shacl","-s", help="Gives a second contract, defined by a set of SHACL shapes").file()
     private val verbose by option("--verbose","-v", help="Verbose output for debugging. Default = false.").flag()
-    private val rounds by option("--rounds","-r", help="Number of mutations applied to input. Default = 1.").int().default(1)
     private val mainMode by option().switch(
         "--scen_geo" to "geo", "-sg" to "geo",
         "--scen_suave" to "suave", "-sv" to "suave",
@@ -57,7 +54,7 @@ class Main : CliktCommand() {
 
 
 
-    fun testMutations() {
+    private fun testMutations() {
 
         val shapes: Shapes? = if(shaclContractFile != null && !shaclContractFile!!.exists()){
             println("File ${shaclContractFile!!.path} does not exist")
@@ -152,7 +149,7 @@ class Main : CliktCommand() {
     }
 
 
-    fun testMiniPipes() {
+    private fun testMiniPipes() {
         if(!source.exists()) throw Exception("Input file $source does not exist")
         val input = RDFDataMgr.loadDataset(source.absolutePath).defaultModel
         val pi = MiniPipeInspection()

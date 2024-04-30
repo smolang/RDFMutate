@@ -7,7 +7,7 @@ import org.apache.jena.rdf.model.Statement
 
 class Mutator(private val mutSeq: MutationSequence, private val verbose: Boolean) {
     var globalMutation : Mutation? = null
-    var ran = false
+    private var ran = false
 
     // collects a string representation of all the applied mutations
     var appliedMutations : MutableList<String> = mutableListOf()
@@ -31,7 +31,7 @@ class Mutator(private val mutSeq: MutationSequence, private val verbose: Boolean
     }
 
     // collect all nodes that are mentioned in the mutations
-    val affectedNodes : Set<Resource>
+    private val affectedNodes : Set<Resource>
         get() {
             val nodes: MutableSet<Resource> = mutableSetOf()
             // collect all nodes that are mentioned in the mutations

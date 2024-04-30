@@ -78,7 +78,7 @@ class DoubleStringAndStatementConfiguration(private val nodeOld: String,
         return "(" +
                 "${removePrefix(nodeOld)}," +
                 "${removePrefix(nodeNew)}," +
-                "${r.toString()})"
+                "$r)"
     }
 
     fun getOldNode() : String {

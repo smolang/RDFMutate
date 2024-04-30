@@ -14,27 +14,27 @@ class SuaveTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) 
     // maximal number of mutations to generate a mutant
     var maxMutation = 5
 
-    val mrosRulesPath = "org/smolang/robust/sut/suave/suave_ontologies/mros_rules.owl"
-    val tomasysRulesPath = "org/smolang/robust/sut/suave/suave_ontologies/tomasys_rules.owl"
+    private val mrosRulesPath = "org/smolang/robust/sut/suave/suave_ontologies/mros_rules.owl"
+    private val tomasysRulesPath = "org/smolang/robust/sut/suave/suave_ontologies/tomasys_rules.owl"
     //val suaveRulesPath = "sut/suave/suave_ontologies/suave_original_rules.owl"
     // start with loading the rules of the corresponding ontologies
-    val mrosRulesModel = RDFDataMgr.loadDataset(mrosRulesPath).defaultModel
+    val mrosRulesModel = RDFDataMgr.loadDataset(mrosRulesPath).defaultModel!!
     //val mrosModel = ModelFactory.createDefaultModel()
-    val tomasysRulesModel = RDFDataMgr.loadDataset(tomasysRulesPath).defaultModel
+    val tomasysRulesModel = RDFDataMgr.loadDataset(tomasysRulesPath).defaultModel!!
     //val suaveRulesModel = RDFDataMgr.loadDataset(suaveRulesPath).defaultModel
 
     // load ontology without rules, we do not want to mutate them
-    val mutatableSeedPath = "org/smolang/robust/sut/suave/suave_ontologies/suave_mutatable.owl"
-    val unmutatableSeedPath = "org/smolang/robust/sut/suave/suave_ontologies/suave_unmutatable.owl"
-    val mutatableStatements = RDFDataMgr.loadDataset(mutatableSeedPath).defaultModel.listStatements().toList()
-    val unmutatableSuaveStatements = RDFDataMgr.loadDataset(unmutatableSeedPath).defaultModel.listStatements().toList()
+    private val mutatableSeedPath = "org/smolang/robust/sut/suave/suave_ontologies/suave_mutatable.owl"
+    private val unmutatableSeedPath = "org/smolang/robust/sut/suave/suave_ontologies/suave_unmutatable.owl"
+    private val mutatableStatements = RDFDataMgr.loadDataset(mutatableSeedPath).defaultModel.listStatements().toList()!!
+    private val unmutatableSuaveStatements = RDFDataMgr.loadDataset(unmutatableSeedPath).defaultModel.listStatements().toList()!!
 
 
-    val mrosPath = "org/smolang/robust/sut/suave/suave_ontologies/mros_no_import.owl"
-    val tomasysPath = "org/smolang/robust/sut/suave/suave_ontologies/tomasys.owl"
-    val mrosModel = RDFDataMgr.loadDataset(mrosPath).defaultModel
+    private val mrosPath = "org/smolang/robust/sut/suave/suave_ontologies/mros_no_import.owl"
+    private val tomasysPath = "org/smolang/robust/sut/suave/suave_ontologies/tomasys.owl"
+    private val mrosModel = RDFDataMgr.loadDataset(mrosPath).defaultModel!!
     //val mrosModel = ModelFactory.createDefaultModel()
-    val tomasysModel = RDFDataMgr.loadDataset(tomasysPath).defaultModel
+    private val tomasysModel = RDFDataMgr.loadDataset(tomasysPath).defaultModel!!
 
     fun generateSuaveMutants(numberMutants : Int, contractFile : String) {
         val unmutatableStatements = unmutatableSuaveStatements.toMutableList()
@@ -82,7 +82,7 @@ class SuaveTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) 
 
          */
 
-        val mutationNumbers = listOf<Int>(2)//3,4)
+        val mutationNumbers = listOf(2)//3,4)
         for (i in mutationNumbers) {
             val suaveMutator = SuaveMutatorFactory(verbose, mutatableStatements, i)
             super.generateMutants(
@@ -169,7 +169,7 @@ class SuaveMutatorFactory(
     private val maxNumberMutations: Int) : MutatorFactory(verbose) {
 
     // defines, if all mutation sequences have the same (maximal) length
-    val constantNumberOfMutations = true
+    private val constantNumberOfMutations = true
 
 
     private val ratioDomainDependent = 1.0

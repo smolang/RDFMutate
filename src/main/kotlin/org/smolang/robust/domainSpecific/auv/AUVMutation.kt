@@ -18,12 +18,12 @@ interface AUVConfiguration
 
 // a single resource (the start segment) can be contained in the configuration
 class AddPipeSegmentConfiguration(start: Resource) : SingleResourceConfiguration(start),
-    org.smolang.robust.domainSpecific.auv.AUVConfiguration
+    AUVConfiguration
 
 
-class AddPipeSegmentMutation(model: Model, verbose: Boolean) : org.smolang.robust.domainSpecific.auv.AUVMutation(model, verbose) {
+class AddPipeSegmentMutation(model: Model, verbose: Boolean) : AUVMutation(model, verbose) {
     override fun setConfiguration(_config: MutationConfiguration) {
-        assert(_config is org.smolang.robust.domainSpecific.auv.AddPipeSegmentConfiguration)
+        assert(_config is AddPipeSegmentConfiguration)
         super.setConfiguration(_config)
     }
 

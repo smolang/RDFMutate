@@ -54,14 +54,14 @@ class MutantMask(val verbose: Boolean,
     }
 
     // makes a prediction based on the contract
-    fun contractOracle(ontologyPath: String): OracleOutcome {
+    private fun contractOracle(ontologyPath: String): OracleOutcome {
         // build model for ontology
         val model = RDFDataMgr.loadDataset(ontologyPath).defaultModel
 
-        if (this.validate(model))
-            return OracleOutcome.PASS
+        return if (this.validate(model))
+            OracleOutcome.PASS
         else
-            return OracleOutcome.FAIL
+            OracleOutcome.FAIL
     }
 
     // checks, if the predictions of the contract are in line with the predictions from the real oracle
@@ -148,7 +148,7 @@ class MutantMask(val verbose: Boolean,
 
     }
 
-    fun parseOutcome(outcome: String) :OracleOutcome {
+    private fun parseOutcome(outcome: String) :OracleOutcome {
         return when (outcome) {
             "passed" -> OracleOutcome.PASS
             "pass"   -> OracleOutcome.PASS

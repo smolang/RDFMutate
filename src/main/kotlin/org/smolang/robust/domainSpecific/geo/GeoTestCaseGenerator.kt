@@ -7,7 +7,7 @@ import org.smolang.robust.randomGenerator
 
 class GeoTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) {
 
-    val geoOntoPath = "org/smolang/robust/sut/geo/total_mini.ttl"
+    private val geoOntoPath = "org/smolang/robust/sut/geo/total_mini.ttl"
     fun generateGeoMutants(contractFile : String, shapes: Shapes?) {
         val seed = RDFDataMgr.loadDataset(geoOntoPath).defaultModel
         //for (s in seed.listStatements())
@@ -35,7 +35,6 @@ class GeoTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) {
 }
 
 class GeoMutatorFactory(verbose: Boolean, private val NumberMutations: Int): MutatorFactory(verbose) {
-    val ratioDomainDependent = 0.0
 
     private val domainIndependentMutations = listOf(
         CEUAMutation::class,

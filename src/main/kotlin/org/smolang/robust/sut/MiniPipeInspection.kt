@@ -9,12 +9,12 @@ import java.io.File
 class MiniPipeInspection {
 
     var ontology : Model? = null
-    val mf = ModelFactory.createDefaultModel()
+    private val mf = ModelFactory.createDefaultModel()!!
 
-    val infraClass = mf.createResource("http://www.ifi.uio.no/tobiajoh/miniPipes#Infrastructure")
+    private val infraClass = mf.createResource("http://www.ifi.uio.no/tobiajoh/miniPipes#Infrastructure")!!
 
 
-    fun move (thing: Resource, goal : Resource) {
+    private fun move (thing: Resource, goal : Resource) {
         // "delete all old positions, set new position"
         val isAtProp = mf.createProperty("http://www.ifi.uio.no/tobiajoh/miniPipes#isAt")
         val r = MyReasoner(ontology as Model)
@@ -35,7 +35,7 @@ class MiniPipeInspection {
         ontology = newOntology
     }
 
-    fun nextTo(thing: Resource) : Set<Resource> {
+    private fun nextTo(thing: Resource) : Set<Resource> {
 
         // "collect all things that are connected via 'nextTo' "
         var ret = setOf<Resource>()
@@ -48,7 +48,7 @@ class MiniPipeInspection {
         return ret
     }
 
-    fun isAt(thing: Resource) : Resource? {
+    private fun isAt(thing: Resource) : Resource? {
         // "returns the FIRST thing you find where the thing isAt"
         val isAtProp = mf.createResource("http://www.ifi.uio.no/tobiajoh/miniPipes#isAt")
         val r = MyReasoner(ontology as Model)
@@ -58,7 +58,7 @@ class MiniPipeInspection {
         return null
     }
 
-    fun visited(thing: Resource) : Boolean {
+    private fun visited(thing: Resource) : Boolean {
         val hasStatus = mf.createProperty("http://www.ifi.uio.no/tobiajoh/miniPipes#hasStatus")
         val visited = mf.createResource("http://www.ifi.uio.no/tobiajoh/miniPipes#visited")
         val r = MyReasoner(ontology as Model)
@@ -70,7 +70,7 @@ class MiniPipeInspection {
         return false
     }
 
-    fun visited(thing: Resource, r : MyReasoner) : Boolean {
+    private fun visited(thing: Resource, r : MyReasoner) : Boolean {
         val hasStatus = mf.createProperty("http://www.ifi.uio.no/tobiajoh/miniPipes#hasStatus")
         val visited = mf.createResource("http://www.ifi.uio.no/tobiajoh/miniPipes#visited")
 
@@ -81,7 +81,7 @@ class MiniPipeInspection {
         return false
     }
 
-    fun inspect(thing: Resource) {
+    private fun inspect(thing: Resource) {
         val hasStatus = mf.createProperty("http://www.ifi.uio.no/tobiajoh/miniPipes#hasStatus")
         val visited = mf.createResource("http://www.ifi.uio.no/tobiajoh/miniPipes#visited")
         ontology?.add( mf.createStatement(
@@ -92,7 +92,7 @@ class MiniPipeInspection {
 
         println(thing.localName + " gets inspected")
     }
-    fun notAnimal(thing: Resource) : Boolean {
+    private fun notAnimal(thing: Resource) : Boolean {
         val animalClass = mf.createResource("http://www.ifi.uio.no/tobiajoh/miniPipes#Animal")
         val r = MyReasoner(ontology as Model)
         return !r.allIndividuals(animalClass).contains(thing)

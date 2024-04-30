@@ -8,7 +8,7 @@ import kotlin.reflect.KClass
 class MutationSequence(private  val verbose: Boolean) {
     private val mutations : MutableList<AbstractMutation> = mutableListOf()
 
-    val mutatableAxioms: MutableSet<Statement> = hashSetOf()
+    private val mutatableAxioms: MutableSet<Statement> = hashSetOf()
     fun addMutatableAxiom(s: Statement) {
         mutatableAxioms.add(s)
     }
