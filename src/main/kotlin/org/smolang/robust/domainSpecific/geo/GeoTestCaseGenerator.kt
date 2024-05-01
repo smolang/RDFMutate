@@ -8,27 +8,29 @@ import org.smolang.robust.randomGenerator
 class GeoTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) {
 
     private val geoOntoPath = "org/smolang/robust/sut/geo/total_mini.ttl"
-    fun generateGeoMutants(contractFile : String, shapes: Shapes?) {
+    fun generateGeoMutants(numberMutants : Int,
+                           numberOfMutations : Int,
+                           contractFile : String,
+                           shapes: Shapes?,
+                           mutantsName: String) {
         val seed = RDFDataMgr.loadDataset(geoOntoPath).defaultModel
-        //for (s in seed.listStatements())
-        //    println(s)
 
         // new contract
         val contract = MutantMask(verbose, shapes, RDFDataMgr.loadDataset(contractFile).defaultModel, useReasonerContainment=true)
 
-        val mutationNumbers = listOf(2)//,2,3,4,5,6,7,8,9,10)
+        val mutationNumbers = listOf(numberOfMutations)
         for (i in mutationNumbers) {
             val geoMutator = GeoMutatorFactory(verbose, i)
             super.generateMutants(
                 seed,
                 contract,
                 geoMutator,
-                100 //10
+                numberMutants
             )
         }
 
-        saveMutants("org/smolang/robust/sut/geo/mutatedOnt", "thirdTest")
-        super.writeToCSV("org/smolang/robust/sut/geo/mutatedOnt/thirdTest.csv")
+        saveMutants("org/smolang/robust/sut/geo/mutatedOnt", mutantsName)
+        super.writeToCSV("org/smolang/robust/sut/geo/mutatedOnt/"+mutantsName +".csv")
     }
 }
 
@@ -36,9 +38,11 @@ class GeoMutatorFactory(verbose: Boolean, private val NumberMutations: Int): Mut
 
     private val domainIndependentMutations = listOf(
         CEUAMutation::class,
+        CEUOMutation::class,
         ChangeDataPropertyMutation::class,  // test also, if we could replace with other datatype
         ChangeDoubleMutation::class,        // also targets T-Box
         ACATOMutation::class,
+        ACOTAMutation::class,
         ToSiblingClassMutation::class,
     )
 

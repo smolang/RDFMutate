@@ -61,7 +61,7 @@ class GeoScenarioGenerator {
                 // delete file created by Python script
                 outputFile.delete()
 
-                // TODO: analyze if maturation happens and safe this accordingly
+                // analyze if maturation happens and safe this accordingly
                 val maturation = (hasCap && hasSource && depth > 2000)
 
                 files.add(Pair(scenario, maturation))

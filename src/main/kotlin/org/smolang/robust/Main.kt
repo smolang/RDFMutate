@@ -199,12 +199,29 @@ class Main : CliktCommand() {
 
     fun runSuaveGenerator(contractPath: String) {
         val sg = SuaveTestCaseGenerator(true)
-        sg.generateSuaveMutants(10, contractPath)
+        val numberOfMutants = 30
+        val numberOfMutations = 2
+        val ratioDomainDependent = 1.0
+        val nameOfMutants = "onlySuave10"
+        sg.generateSuaveMutants(
+            numberOfMutants,
+            numberOfMutations,
+            ratioDomainDependent,
+            contractPath,
+            nameOfMutants)
     }
 
     fun runGeoGenerator(contractFile: String, shapes: Shapes?) {
         val gg = GeoTestCaseGenerator(false)
-        gg.generateGeoMutants(contractFile, shapes)
+        val numberOfMutants = 100
+        val numberOfMutations = 2
+        val nameOfMutants = "fourthTest"
+        gg.generateGeoMutants(
+            numberOfMutants,
+            numberOfMutations,
+            contractFile,
+            shapes,
+            nameOfMutants)
     }
 
     fun evaluateSuaveContract(contractPath : String, shapes: Shapes?) {

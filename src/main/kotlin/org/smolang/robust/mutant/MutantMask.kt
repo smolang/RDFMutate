@@ -28,8 +28,8 @@ class MutantMask(val verbose: Boolean,
         model.add(additionalAxioms.listStatements())
 
         // create reasoner with the selected backend
-        val reasonerFactory = CustomReasonerFactory(verbose)
-        val reasoner = reasonerFactory.getReasoner(model, ReasoningBackend.OPENLLET)
+        val reasonerFactory = CustomReasonerFactory(verbose, ReasoningBackend.OPENLLET)
+        val reasoner = reasonerFactory.getReasoner(model)
 
         val consistent = reasoner.isConsistent()
         if(!consistent) return false

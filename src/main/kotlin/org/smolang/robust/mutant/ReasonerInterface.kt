@@ -23,12 +23,9 @@ enum class ReasoningBackend {
     HERMIT, OPENLLET, JENA
 }
 
-/**
- * Current stage only uses OPENLLET
- * TODO: add a parameter to choose
- */
-class CustomReasonerFactory(private val verbose: Boolean) {
-    fun getReasoner(model: Model, reasoningBackend: ReasoningBackend) : CustomReasoner =
+
+class CustomReasonerFactory(private val verbose: Boolean, private val reasoningBackend: ReasoningBackend) {
+    fun getReasoner(model: Model) : CustomReasoner =
         when(reasoningBackend) {
             ReasoningBackend.OPENLLET -> CustomOpenlletReasoner(model, verbose)
             ReasoningBackend.HERMIT -> CustomHermitReasoner(model, verbose)
