@@ -103,7 +103,7 @@ class Main : CliktCommand() {
             )
             val config3 = SingleStatementConfiguration(st3)
 
-            val config4 = StringAndResourceConfiguration("newIndividual", r)
+            val config4 = StringAndResourceConfiguration("http://smolang.org#newIndividual", r)
 
             val segment = mf.createResource("http://www.ifi.uio.no/tobiajoh/miniPipes#segment1")
             val config5 = org.smolang.robust.domainSpecific.auv.AddPipeSegmentConfiguration(segment)
