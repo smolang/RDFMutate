@@ -14,8 +14,8 @@ import java.nio.file.Paths
 class SuaveTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) {
     // maximal number of mutations to generate a mutant
 
-    private val mrosRulesPath = "org/smolang/robust/sut/suave/suave_ontologies/mros_rules.owl"
-    private val tomasysRulesPath = "org/smolang/robust/sut/suave/suave_ontologies/tomasys_rules.owl"
+    private val mrosRulesPath = "sut/suave/suave_ontologies/mros_rules.owl"
+    private val tomasysRulesPath = "sut/suave/suave_ontologies/tomasys_rules.owl"
     //val suaveRulesPath = "sut/suave/suave_ontologies/suave_original_rules.owl"
     // start with loading the rules of the corresponding ontologies
     val mrosRulesModel = RDFDataMgr.loadDataset(mrosRulesPath).defaultModel!!
@@ -24,14 +24,14 @@ class SuaveTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) 
     //val suaveRulesModel = RDFDataMgr.loadDataset(suaveRulesPath).defaultModel
 
     // load ontology without rules, we do not want to mutate them
-    private val mutatableSeedPath = "org/smolang/robust/sut/suave/suave_ontologies/suave_mutatable.owl"
-    private val unmutatableSeedPath = "org/smolang/robust/sut/suave/suave_ontologies/suave_unmutatable.owl"
+    private val mutatableSeedPath = "sut/suave/suave_ontologies/suave_mutatable.owl"
+    private val unmutatableSeedPath = "sut/suave/suave_ontologies/suave_unmutatable.owl"
     private val mutatableStatements = RDFDataMgr.loadDataset(mutatableSeedPath).defaultModel.listStatements().toList()!!
     private val unmutatableSuaveStatements = RDFDataMgr.loadDataset(unmutatableSeedPath).defaultModel.listStatements().toList()!!
 
 
-    private val mrosPath = "org/smolang/robust/sut/suave/suave_ontologies/mros_no_import.owl"
-    private val tomasysPath = "org/smolang/robust/sut/suave/suave_ontologies/tomasys.owl"
+    private val mrosPath = "sut/suave/suave_ontologies/mros_no_import.owl"
+    private val tomasysPath = "sut/suave/suave_ontologies/tomasys.owl"
     private val mrosModel = RDFDataMgr.loadDataset(mrosPath).defaultModel!!
     private val tomasysModel = RDFDataMgr.loadDataset(tomasysPath).defaultModel!!
 
@@ -141,7 +141,7 @@ class SuaveMutatorFactory(
         ChangeRelationMutation::class,
         AddInstanceMutation::class,
         RemoveAxiomMutation::class,
-        RemoveNodeMutation::class
+        RemoveNodeMutation::class,
     )
     override fun randomMutator() : Mutator {
 
