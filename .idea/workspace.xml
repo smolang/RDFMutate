@@ -1,14 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_INJECTED_CODE" value="false" />
+    <option name="SCOPE_TYPE" value="4" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caab7f85-477f-496a-b8a7-b8805153034d" name="Changes" comment="minor">
+    <list default="true" id="caab7f85-477f-496a-b8a7-b8805153034d" name="Changes" comment="Some comments on the domain mutations">
+      <change afterPath="$PROJECT_DIR$/examples/test3.ttl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/ReasonerInterface.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domainSpecific/SuaveTestCaseGenerator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/domainSpecific/SuaveTestCaseGenerator.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/mutant/Mutation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/mutant/Mutation.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/AbstractMutation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/AbstractMutation.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/MutantMask.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/MutantMask.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/MutationConfiguration.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/MutationConfiguration.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/MutationSequence.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/MutationSequence.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/reasoning/CustomHermitReasoner.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/reasoning/CustomJenaApiReasoner.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/reasoning/CustomOpenlletReasoner.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/reasoning/CustomReasoner.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/reasoning/CustomReasonerFactory.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/reasoning/OwlApiReasoner.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/PipeInspectionTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/PipeInspectionTests.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sut/geo/scenarios/scenario0.smol" beforeDir="false" afterPath="$PROJECT_DIR$/sut/geo/scenarios/scenario0.smol" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sut/geo/scenarios/scenario1.smol" beforeDir="false" afterPath="$PROJECT_DIR$/sut/geo/scenarios/scenario1.smol" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sut/geo/scenarios/scenario2.smol" beforeDir="false" afterPath="$PROJECT_DIR$/sut/geo/scenarios/scenario2.smol" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sut/geo/scenarios/scenario3.smol" beforeDir="false" afterPath="$PROJECT_DIR$/sut/geo/scenarios/scenario3.smol" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sut/geo/scenarios/scenario4.smol" beforeDir="false" afterPath="$PROJECT_DIR$/sut/geo/scenarios/scenario4.smol" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sut/geo/scenarios/scenario5.smol" beforeDir="false" afterPath="$PROJECT_DIR$/sut/geo/scenarios/scenario5.smol" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sut/geo/scenarios/scenario6.smol" beforeDir="false" afterPath="$PROJECT_DIR$/sut/geo/scenarios/scenario6.smol" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sut/geo/scenarios/scenario7.smol" beforeDir="false" afterPath="$PROJECT_DIR$/sut/geo/scenarios/scenario7.smol" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sut/geo/scenarios/scenario8.smol" beforeDir="false" afterPath="$PROJECT_DIR$/sut/geo/scenarios/scenario8.smol" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sut/geo/scenarios/scenario9.smol" beforeDir="false" afterPath="$PROJECT_DIR$/sut/geo/scenarios/scenario9.smol" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sut/geo/scenarios/scenarios.csv" beforeDir="false" afterPath="$PROJECT_DIR$/sut/geo/scenarios/scenarios.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +81,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Edkamb&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Edkamb/OntoMutate&quot;,
+    &quot;accountId&quot;: &quot;c2f5ac21-3b2f-4ead-b900-08b661203beb&quot;
+  }
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -78,6 +116,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Gradle./home/edkam/IdeaProjects/OntoMutate [--gradle-version 6.3].executor": "Run",
+    "Gradle./home/edkam/IdeaProjects/OntoMutate.executor": "Run",
     "Gradle.Build OntoMutate.executor": "Run",
     "Gradle.FirstTests.executor": "Run",
     "Gradle.PipeInspectionTests.executor": "Run",
@@ -93,7 +133,13 @@
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+  },
+  "keyToStringList": {
+    "kotlin-gradle-user-dirs": [
+      "/home/edkam/.gradle"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -106,15 +152,25 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant" />
+      <recent name="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust" />
       <recent name="$PROJECT_DIR$/src/main/kotlin/mutant/reasoning" />
       <recent name="$PROJECT_DIR$/src/main/kotlin/domainSpecific" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="org.smolang.robust.mutant.reasoning" />
+      <recent name="org.smolang.robust.mutant" />
       <recent name="sut" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="mutant" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="gradle --stacktrace" />
+      <command value="gradle --gradle-version 6.3" />
+    </option>
   </component>
   <component name="RunManager" selected="Kotlin.MainKt">
     <configuration name="FirstTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -165,10 +221,53 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="/home/edkam/IdeaProjects/OntoMutate [--gradle-version 6.3]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="--gradle-version" />
+            <option value="6.3" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="/home/edkam/IdeaProjects/OntoMutate" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--stacktrace" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <option name="MAIN_CLASS_NAME" value="org.smolang.robust.MainKt" />
       <module name="OntoMutate.main" />
-      <option name="PROGRAM_PARAMETERS" value="examples/relations.ttl examples/contract.ttl -v -r 1" />
+      <option name="PROGRAM_PARAMETERS" value="examples/relations.ttl examples/contract.ttl -v" />
       <shortenClasspath name="NONE" />
       <option name="VM_PARAMETERS" value="-ea" />
       <method v="2">
@@ -176,6 +275,8 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Gradle./home/edkam/IdeaProjects/OntoMutate" />
+      <item itemvalue="Gradle./home/edkam/IdeaProjects/OntoMutate [--gradle-version 6.3]" />
       <item itemvalue="Gradle.FirstTests" />
       <item itemvalue="Gradle.PipeInspectionTests" />
       <item itemvalue="Kotlin.MainKt" />
@@ -183,17 +284,12 @@
     <recent_temporary>
       <list>
         <item itemvalue="Kotlin.MainKt" />
+        <item itemvalue="Gradle./home/edkam/IdeaProjects/OntoMutate [--gradle-version 6.3]" />
+        <item itemvalue="Gradle./home/edkam/IdeaProjects/OntoMutate" />
         <item itemvalue="Gradle.FirstTests" />
         <item itemvalue="Gradle.PipeInspectionTests" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-11.0.21-corretto-11.0.21-f644763e9732-a9dfd5e7" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -368,7 +464,39 @@
       <option name="project" value="LOCAL" />
       <updated>1704907324178</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Added SHACL contracts">
+      <option name="closed" value="true" />
+      <created>1714498222331</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1714498222331</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Starting refactoring">
+      <option name="closed" value="true" />
+      <created>1714500653697</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1714500653697</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Starting refactoring, making the linter happy">
+      <option name="closed" value="true" />
+      <created>1714500895482</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1714500895482</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Some comments on the domain mutations">
+      <option name="closed" value="true" />
+      <created>1714501484538</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1714501484538</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -406,7 +534,11 @@
     <MESSAGE value="minor&#10;fixed some warnings" />
     <MESSAGE value="fixed some exceptions" />
     <MESSAGE value="minor" />
-    <option name="LAST_COMMIT_MESSAGE" value="minor" />
+    <MESSAGE value="Added SHACL contracts" />
+    <MESSAGE value="Starting refactoring" />
+    <MESSAGE value="Starting refactoring, making the linter happy" />
+    <MESSAGE value="Some comments on the domain mutations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some comments on the domain mutations" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

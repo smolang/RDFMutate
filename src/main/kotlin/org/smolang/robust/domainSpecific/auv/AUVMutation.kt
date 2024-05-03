@@ -1,11 +1,13 @@
-package domainSpecific.auv
+package org.smolang.robust.domainSpecific.auv
 
-import mutant.*
+import org.smolang.robust.mutant.*
 import org.apache.jena.rdf.model.Model
 import org.apache.jena.rdf.model.Resource
-import randomGenerator
+import org.smolang.robust.randomGenerator
 
-// all the domain-dependent mutation operators that are specific for the auv domain
+/**
+ * all the domain-dependent mutation operators that are specific for the auv domain
+ */
 abstract class AUVMutation(model: Model, verbose: Boolean) : Mutation(model, verbose) {
     val auvURI = "http://www.ifi.uio.no/tobiajoh/miniPipes"
     val delimiter = "#"
@@ -17,7 +19,8 @@ abstract class AUVMutation(model: Model, verbose: Boolean) : Mutation(model, ver
 interface AUVConfiguration
 
 // a single resource (the start segment) can be contained in the configuration
-class AddPipeSegmentConfiguration(start: Resource) : SingleResourceConfiguration(start), AUVConfiguration
+class AddPipeSegmentConfiguration(start: Resource) : SingleResourceConfiguration(start),
+    AUVConfiguration
 
 
 class AddPipeSegmentMutation(model: Model, verbose: Boolean) : AUVMutation(model, verbose) {
@@ -39,7 +42,6 @@ class AddPipeSegmentMutation(model: Model, verbose: Boolean) : AUVMutation(model
     }
 
     override fun createMutation() {
-        //val m = ModelFactory.createDefaultModel()
 
         // select the start segment
         val start =
@@ -68,7 +70,6 @@ class AddPipeSegmentMutation(model: Model, verbose: Boolean) : AUVMutation(model
         val tempModel = aim.applyCopy()
 
         // create "nextTo" relation between start and the new individual
-
         val s = model.createStatement(
             start,
             model.createProperty(auvURI + delimiter + "nextTo"),

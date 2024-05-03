@@ -1,4 +1,4 @@
-package mutant
+package org.smolang.robust.mutant
 
 import org.apache.jena.rdf.model.Model
 import org.apache.jena.rdf.model.Statement
@@ -9,10 +9,10 @@ import kotlin.reflect.full.primaryConstructor
 class AbstractMutation(private val mutOp: KClass<out Mutation>,
                        private val verbose: Boolean ) {
 
-    var hasConfig : Boolean = false
-    var config : MutationConfiguration? = null
+    private var hasConfig : Boolean = false
+    private var config : MutationConfiguration? = null
 
-    val mutatableAxioms: MutableSet<Statement> = hashSetOf()
+    private val mutatableAxioms: MutableSet<Statement> = hashSetOf()
     fun addMutatableAxiom(s: Statement) {
         mutatableAxioms.add(s)
     }

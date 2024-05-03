@@ -1,23 +1,23 @@
-package mutant
+package org.smolang.robust.mutant
 
 import org.apache.jena.query.QueryExecutionFactory
 import org.apache.jena.query.QueryFactory
 import org.apache.jena.rdf.model.*
 import org.apache.jena.reasoner.Reasoner
 import org.apache.jena.reasoner.ReasonerRegistry
-import randomGenerator
+import org.smolang.robust.randomGenerator
 
 open class Mutation(var model: Model, val verbose : Boolean) {
     var hasConfig : Boolean = false
     open var config : MutationConfiguration? = null
-    var createdMutation : Boolean = false
+    private var createdMutation : Boolean = false
 
     // set of axioms to add or delete in this mutation
     var addSet : MutableSet<Statement> = hashSetOf()
     var removeSet : MutableSet<Statement> = hashSetOf()
 
     // some objects to work with the inferred model
-    val reasoner: Reasoner = ReasonerRegistry.getOWLReasoner()
+    private val reasoner: Reasoner = ReasonerRegistry.getOWLReasoner()
 
     // using this infModel assumes that "model" never changed
     // i.e. it is the inferred model at the time of initialisation
@@ -58,12 +58,12 @@ open class Mutation(var model: Model, val verbose : Boolean) {
 
     val rdfListClass : Resource = model.createResource("http://www.w3.org/1999/02/22-rdf-syntax-ns#List")
     val rdfFirst : Property = model.createProperty("http://www.w3.org/1999/02/22-rdf-syntax-ns#first")
-    val rdfRest : Property = model.createProperty("http://www.w3.org/1999/02/22-rdf-syntax-ns#rest")
-    val rdfNil : Resource = model.createProperty("http://www.w3.org/1999/02/22-rdf-syntax-ns#nil")
+    private val rdfRest : Property = model.createProperty("http://www.w3.org/1999/02/22-rdf-syntax-ns#rest")
+    private val rdfNil : Resource = model.createProperty("http://www.w3.org/1999/02/22-rdf-syntax-ns#nil")
 
 
     // empty Axiom
-    val emptyProp : Property = model.createProperty("emptyAxiomProp")
+    private val emptyProp : Property = model.createProperty("emptyAxiomProp")
     val emptyAxiom : Statement = model.createStatement(model.createResource(), emptyProp, model.createResource())
 
     // constructor that creates mutation with configuration
@@ -212,7 +212,7 @@ open class Mutation(var model: Model, val verbose : Boolean) {
             return "$className(random)"
         else {
             val config = config.toString()
-            return "$className(config=${config.toString()})"
+            return "$className(config=${config})"
         }
     }
 
@@ -847,7 +847,7 @@ open class ChangeDoubleMutation(model: Model, verbose: Boolean): ReplaceNodeInAx
             // compute new value by multiplying old one
 
             // factor: values around 1 more likely than larger factors
-            var factor = (1.0/randomGenerator.nextDouble(0.0,2.0) + 0.5)    // factor between 1...inf
+            var factor = (1.0/ randomGenerator.nextDouble(0.0,2.0) + 0.5)    // factor between 1...inf
             if(randomGenerator.nextBoolean()) // negative factor
                 factor = -factor
             if (randomGenerator.nextBoolean()) // inverse

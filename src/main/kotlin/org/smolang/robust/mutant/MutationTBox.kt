@@ -1,4 +1,4 @@
-package mutant
+package org.smolang.robust.mutant
 
 import org.apache.jena.query.QueryExecutionFactory
 import org.apache.jena.query.QueryFactory

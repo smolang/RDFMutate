@@ -1,74 +1,69 @@
-package mutant
+package org.smolang.robust.mutant
 
-import mutant.reasoning.CustomReasonerFactory
-import mutant.reasoning.ReasoningBackend
 import org.apache.jena.rdf.model.Model
 import org.apache.jena.rdf.model.ModelFactory
-import org.apache.jena.rdf.model.StmtIterator
 import org.apache.jena.riot.RDFDataMgr
+import org.apache.jena.shacl.ShaclValidator
+import org.apache.jena.shacl.Shapes
 import java.io.File
 
 
-class MutantContract(val verbose: Boolean) {
-    var entailedModel : Model = ModelFactory.createDefaultModel()
-    var containedModel : Model = ModelFactory.createDefaultModel()
-
-    // if set to true: will use "proper" OWL reasoner to check for containment
-    var useReasonerContainment = false
+class MutantMask(val verbose: Boolean,
+                 private val shacl: Shapes?,
+                 private val containedModel: Model,
+                 val useReasonerContainment : Boolean = false, // if set to true: will use "proper" OWL reasoner to check for containment
+     ) {
+    //deactivated for now?
+    private val entailedModel : Model = ModelFactory.createDefaultModel()
 
     // additional axioms that are added to the ontology before reasoning, e.g. containing axioms not considered while
     // creating the mutations
-    var additionalAxioms: Model = ModelFactory.createDefaultModel()
-
-    // default: use Openllet for reasoning
-    var reasoningBackend : ReasoningBackend = ReasoningBackend.OPENLLET
+    private val additionalAxioms: Model = ModelFactory.createDefaultModel()
 
 
 
     // checks, if the provided model is valid w.r.t. the contract
     fun validate(model: Model) : Boolean {
 
-        for (a in additionalAxioms.listStatements()) {
-            model.add(a)
-        }
+        model.add(additionalAxioms.listStatements())
 
         // create reasoner with the selected backend
-        val reasonerFactory = CustomReasonerFactory(verbose)
-        val reasoner = reasonerFactory.getReasoner(model, reasoningBackend)
+        val reasonerFactory = CustomReasonerFactory(verbose, ReasoningBackend.OPENLLET)
+        val reasoner = reasonerFactory.getReasoner(model)
 
         val consistent = reasoner.isConsistent()
-        // always use JENA-API for containment check
+        if(!consistent) return false
+
         val containment =
             if (useReasonerContainment)
                 reasoner.containsAll(containedModel)
             else
                 model.containsAll(containedModel)
+        if(!containment) return false
+
         val entailment = reasoner.entailsAll(entailedModel)
-        //println("$consistent, $containment,  $entailment")
+        if(!entailment) return false
+
+        return if (shacl != null) ShaclValidator.get().validate(shacl, model.graph).conforms() else true
 
         //val m = containedModel.listStatements().toSet()
         //m.removeAll(model.listStatements().toSet())
         //println(m)
-
-        return  consistent
-                && containment
-                && entailment
     }
 
     // makes a prediction based on the contract
-    fun contractOracle(ontologyPath: String): OracleOutcome {
+    private fun contractOracle(ontologyPath: String): OracleOutcome {
         // build model for ontology
         val model = RDFDataMgr.loadDataset(ontologyPath).defaultModel
 
-        if (this.validate(model))
-            return OracleOutcome.PASS
+        return if (this.validate(model))
+            OracleOutcome.PASS
         else
-            return OracleOutcome.FAIL
+            OracleOutcome.FAIL
     }
 
     // checks, if the predictions of the contract are in line with the predictions from the real oracle
     fun checkAgainstOntologies(oracleFiles: List<String>, detailedEvaluation: Boolean) {
-
 
         // sets to collect the ontologies for which the oracle is correct or wrong
         val correctOracle : MutableSet<String> = HashSet()
@@ -151,7 +146,7 @@ class MutantContract(val verbose: Boolean) {
 
     }
 
-    fun parseOutcome(outcome: String) :OracleOutcome {
+    private fun parseOutcome(outcome: String) :OracleOutcome {
         return when (outcome) {
             "passed" -> OracleOutcome.PASS
             "pass"   -> OracleOutcome.PASS
@@ -168,8 +163,4 @@ class MutantContract(val verbose: Boolean) {
 
 enum class OracleOutcome {
     PASS, FAIL, UNDECIDED;
-
-
-
 }
-

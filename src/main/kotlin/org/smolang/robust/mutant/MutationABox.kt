@@ -1,9 +1,9 @@
-package mutant
+package org.smolang.robust.mutant
 
 import org.apache.jena.query.QueryExecutionFactory
 import org.apache.jena.query.QueryFactory
 import org.apache.jena.rdf.model.*
-import randomGenerator
+import org.smolang.robust.randomGenerator
 
 
 class AddInstanceMutation(model: Model, verbose : Boolean) : Mutation(model, verbose) {
@@ -50,7 +50,7 @@ class AddInstanceMutation(model: Model, verbose : Boolean) : Mutation(model, ver
                 c.getString()
             }
             else
-                "inner:asd"+randomGenerator.nextInt(0,Int.MAX_VALUE)
+                "inner:asd"+ randomGenerator.nextInt(0,Int.MAX_VALUE)
         // create new "type" relation for the individual and the selected class
         val s = m.createStatement(
             m.createResource(instanceName),

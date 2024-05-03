@@ -1,17 +1,14 @@
-package mutant
+package org.smolang.robust.mutant
 
 import org.apache.jena.rdf.model.Statement
-import randomGenerator
+import org.smolang.robust.randomGenerator
 import kotlin.reflect.KClass
 
 
 class MutationSequence(private  val verbose: Boolean) {
     private val mutations : MutableList<AbstractMutation> = mutableListOf()
 
-    val mutatableAxioms: MutableSet<Statement> = hashSetOf()
-    fun addMutatableAxiom(s: Statement) {
-        mutatableAxioms.add(s)
-    }
+    private val mutatableAxioms: MutableSet<Statement> = hashSetOf()
 
     fun addMutatableAxioms(l: List<Statement>) {
         mutatableAxioms.addAll(l)

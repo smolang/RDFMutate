@@ -1,20 +1,19 @@
-package domainSpecific.suave
+package org.smolang.robust.domainSpecific.suave
 
-import mutant.*
+import org.smolang.robust.mutant.*
 import org.apache.jena.rdf.model.Model
 
+/**
+ * This file contains the domain specific mutations for the SUAVE experiment
+ */
+
 const val suaveIRI = "http://www.metacontrol.org/suave"
-const val tomasysIRI = "http://metacontrol.org/tomasys"
 const val delimiter = "#"
 const val qaeIRI = "http://metacontrol.org/tomasys#hasQAestimation"
 const val solvesF = "http://metacontrol.org/tomasys#solvesF"
 const val qaType = "http://metacontrol.org/tomasys#isQAtype"
 const val qaComparisonOperator  = "http://metacontrol.org/tomasys#qa_comparison_operator"
 const val hasValueIRI = "http://metacontrol.org/tomasys#hasValue"
-
-
-
-
 
 class AddQAEstimationMutation(model: Model, verbose: Boolean) : AddObjectPropertyMutation(model, verbose) {
     init {

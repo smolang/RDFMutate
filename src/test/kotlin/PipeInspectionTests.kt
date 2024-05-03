@@ -1,12 +1,12 @@
 import io.kotlintest.properties.forAll
 import io.kotlintest.shouldBe
 import io.kotlintest.specs.StringSpec
-import domainSpecific.auv.AddPipeSegmentConfiguration
-import domainSpecific.auv.AddPipeSegmentMutation
-import mutant.MutationSequence
-import mutant.Mutator
+import org.smolang.robust.domainSpecific.auv.AddPipeSegmentConfiguration
+import org.smolang.robust.domainSpecific.auv.AddPipeSegmentMutation
+import org.smolang.robust.mutant.MutationSequence
+import org.smolang.robust.mutant.Mutator
 import org.apache.jena.riot.RDFDataMgr
-import sut.MiniPipeInspection
+import org.smolang.robust.sut.MiniPipeInspection
 import kotlin.math.absoluteValue
 
 
@@ -20,9 +20,9 @@ class PipeInspectionTests : StringSpec()  {
 
             // apply mutation
             val segment = input.createResource("http://www.ifi.uio.no/tobiajoh/miniPipes#segment1")
-            val configSegment = AddPipeSegmentConfiguration(segment)
+            val configSegment = org.smolang.robust.domainSpecific.auv.AddPipeSegmentConfiguration(segment)
             val msSegment = MutationSequence(verbose)
-            msSegment.addWithConfig(AddPipeSegmentMutation::class, configSegment)
+            msSegment.addWithConfig(org.smolang.robust.domainSpecific.auv.AddPipeSegmentMutation::class, configSegment)
             val mSegment = Mutator(msSegment, verbose)
             val resSegment = mSegment.mutate(input)
 
@@ -48,7 +48,7 @@ class PipeInspectionTests : StringSpec()  {
                 // apply mutation
                 val msSegment = MutationSequence(verbose)
                 for (j in 1..k)
-                    msSegment.addRandom(AddPipeSegmentMutation::class)
+                    msSegment.addRandom(org.smolang.robust.domainSpecific.auv.AddPipeSegmentMutation::class)
                 val mSegment = Mutator(msSegment, verbose)
                 val resSegment = mSegment.mutate(input)
 

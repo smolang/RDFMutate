@@ -1,49 +1,48 @@
-package domainSpecific.geo
+package org.smolang.robust.domainSpecific.geo
 
-import mutant.*
+import org.smolang.robust.mutant.*
 import org.apache.jena.riot.RDFDataMgr
-import randomGenerator
+import org.apache.jena.shacl.Shapes
+import org.smolang.robust.randomGenerator
 
 class GeoTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) {
 
-    val geoOntoPath = "sut/geo/total_mini.ttl"
-    fun generateGeoMutants(contractFile : String) {
+    private val geoOntoPath = "org/smolang/robust/sut/geo/total_mini.ttl"
+    fun generateGeoMutants(numberMutants : Int,
+                           numberOfMutations : Int,
+                           contractFile : String,
+                           shapes: Shapes?,
+                           mutantsName: String) {
         val seed = RDFDataMgr.loadDataset(geoOntoPath).defaultModel
-        //for (s in seed.listStatements())
-        //    println(s)
 
         // new contract
-        val contract = MutantContract(verbose)
+        val contract = MutantMask(verbose, shapes, RDFDataMgr.loadDataset(contractFile).defaultModel, useReasonerContainment=true)
 
-        contract.containedModel=RDFDataMgr.loadDataset(contractFile).defaultModel
-        contract.useReasonerContainment=true
-
-        val geoGenerator = GeoMutatorFactory(verbose, 1)
-
-        val mutationNumbers = listOf<Int>(2)//,2,3,4,5,6,7,8,9,10)
+        val mutationNumbers = listOf(numberOfMutations)
         for (i in mutationNumbers) {
             val geoMutator = GeoMutatorFactory(verbose, i)
             super.generateMutants(
                 seed,
                 contract,
                 geoMutator,
-                100 //10
+                numberMutants
             )
         }
 
-        saveMutants("sut/geo/mutatedOnt", "thirdTest")
-        super.writeToCSV("sut/geo/mutatedOnt/thirdTest.csv")
+        saveMutants("org/smolang/robust/sut/geo/mutatedOnt", mutantsName)
+        super.writeToCSV("org/smolang/robust/sut/geo/mutatedOnt/"+mutantsName +".csv")
     }
 }
 
 class GeoMutatorFactory(verbose: Boolean, private val NumberMutations: Int): MutatorFactory(verbose) {
-    val ratioDomainDependent = 0.0
 
     private val domainIndependentMutations = listOf(
         CEUAMutation::class,
+        CEUOMutation::class,
         ChangeDataPropertyMutation::class,  // test also, if we could replace with other datatype
         ChangeDoubleMutation::class,        // also targets T-Box
         ACATOMutation::class,
+        ACOTAMutation::class,
         ToSiblingClassMutation::class,
     )
 

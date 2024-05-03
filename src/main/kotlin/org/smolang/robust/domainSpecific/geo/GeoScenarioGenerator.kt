@@ -1,25 +1,26 @@
-package domainSpecific.geo
+package org.smolang.robust.domainSpecific.geo
 
-import org.apache.jena.rdf.model.Model
 import java.io.File
 import java.io.FileOutputStream
-import java.nio.file.Paths
 import java.util.concurrent.TimeUnit
 
 
-// generates several scenarios
-class GeoScenarioGenerator (){
+/**
+ * Generates several scenarios using an external tool, then creates a csv files with the test oracle.
+ * Note: the external tool does *not* modify the knowledge graph
+ */
+class GeoScenarioGenerator {
 
     // list of files + oracle (does maturation happen)
-    val files : MutableList<Pair<File,Boolean>> = mutableListOf()
+    private val files : MutableList<Pair<File,Boolean>> = mutableListOf()
     fun  generateScenarios(count : Int) {
         // generate scenario main blocks
-        "python3 generateScenarios.py scenarios $count".runCommand(File("sut/geo"))
+        "python3 generateScenarios.py scenarios $count".runCommand(File("org/smolang/robust/sut/geo"))
 
         // iterate over scenarios
-        val dir = File("sut/geo/scenarios")
-        val pattern = Regex("sut/geo/scenarios/Output.*.txt");
-        val header = "sut/geo/scenarios/header.smol"
+        val dir = File("org/smolang/robust/sut/geo/scenarios")
+        val pattern = Regex("sut/geo/scenarios/Output.*.txt")
+        val header = "org/smolang/robust/sut/geo/scenarios/header.smol"
 
         var i = 0
 
@@ -30,8 +31,8 @@ class GeoScenarioGenerator (){
                 val scenario = File(scenarioName)
                 scenario.createNewFile()
 
-                var has_source = true
-                var has_cap = true
+                var hasSource = true
+                var hasCap = true
                 var depth = 0
 
                 println(scenario.absolutePath)
@@ -47,17 +48,11 @@ class GeoScenarioGenerator (){
                     outputFile.forEachLine {
                         out.println(it)
                         if (it.startsWith(" has_source:"))
-                            has_source =
-                                if (it.endsWith("False"))
-                                    false
-                                else
-                                    true
+                            hasSource =
+                                !it.endsWith("False")
                         if (it.startsWith("has_cap:"))
-                            has_cap =
-                                if (it.endsWith("False"))
-                                    false
-                                else
-                                    true
+                            hasCap =
+                                !it.endsWith("False")
                         if (it.startsWith("depth:"))
                             depth = it.removePrefix("depth: ").toInt()
                     }
@@ -66,20 +61,21 @@ class GeoScenarioGenerator (){
                 // delete file created by Python script
                 outputFile.delete()
 
-                // TODO: analyze if maturation happens and safe this accordingly
-                val maturation = (has_source && depth > 2000)
+                // analyze if maturation happens and safe this accordingly
+                val maturation = (hasCap && hasSource && depth > 2000)
 
                 files.add(Pair(scenario, maturation))
                 i += 1
             }
         }
 
+        //TODO: I understand reading csv for oracles is nice, but I would like to run the geo case without this detour
         writeToCSV("${dir.absolutePath}/scenarios.csv")
     }
 
 
     // writes content from "files" list to csv
-    fun writeToCSV(fileName : String) {
+    private fun writeToCSV(fileName : String) {
         FileOutputStream(fileName).use { fos ->
             val writer = fos.bufferedWriter()
             writer.write("id,scenario,maturation")
@@ -95,7 +91,7 @@ class GeoScenarioGenerator (){
     }
 
         // from https://stackoverflow.com/questions/35421699/how-to-invoke-external-command-from-within-kotlin-code
-    fun String.runCommand(workingDir: File) {
+        private fun String.runCommand(workingDir: File) {
         ProcessBuilder(*split(" ").toTypedArray())
             .directory(workingDir)
             .redirectOutput(ProcessBuilder.Redirect.INHERIT)

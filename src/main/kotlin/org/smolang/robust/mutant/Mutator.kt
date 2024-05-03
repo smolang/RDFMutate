@@ -1,16 +1,13 @@
-package mutant
+package org.smolang.robust.mutant
 
 import org.apache.jena.rdf.model.Model
-import org.apache.jena.rdf.model.ModelFactory
 import org.apache.jena.rdf.model.Resource
 import org.apache.jena.rdf.model.Statement
-import org.apache.jena.reasoner.ReasonerRegistry
-
 
 
 class Mutator(private val mutSeq: MutationSequence, private val verbose: Boolean) {
     var globalMutation : Mutation? = null
-    var ran = false
+    private var ran = false
 
     // collects a string representation of all the applied mutations
     var appliedMutations : MutableList<String> = mutableListOf()
@@ -34,7 +31,7 @@ class Mutator(private val mutSeq: MutationSequence, private val verbose: Boolean
     }
 
     // collect all nodes that are mentioned in the mutations
-    val affectedNodes : Set<Resource>
+    private val affectedNodes : Set<Resource>
         get() {
             val nodes: MutableSet<Resource> = mutableSetOf()
             // collect all nodes that are mentioned in the mutations
@@ -73,7 +70,14 @@ class Mutator(private val mutSeq: MutationSequence, private val verbose: Boolean
     val affectedSeedNodes : Set<Resource>
         get() = affectedNodes.intersect((globalMutation?.allNodes() ?: mutableSetOf()).toSet())
 
-    fun validate(model: Model, contract : MutantContract) : Boolean{
+    fun validate(model: Model, contract : MutantMask) : Boolean{
         return contract.validate(model)
+    }
+}
+
+open class MutatorFactory(val verbose: Boolean) {
+
+    open fun randomMutator() : Mutator {
+        return Mutator(MutationSequence(verbose), verbose)
     }
 }

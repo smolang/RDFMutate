@@ -1,47 +1,86 @@
+package org.smolang.robust
+
 import com.github.ajalt.clikt.core.CliktCommand
 import com.github.ajalt.clikt.parameters.arguments.argument
 import com.github.ajalt.clikt.parameters.options.default
 import com.github.ajalt.clikt.parameters.options.flag
 import com.github.ajalt.clikt.parameters.options.option
+import com.github.ajalt.clikt.parameters.options.switch
 import com.github.ajalt.clikt.parameters.types.file
-import com.github.ajalt.clikt.parameters.types.int
-import domainSpecific.auv.AddPipeSegmentConfiguration
-import domainSpecific.auv.AddPipeSegmentMutation
-import domainSpecific.geo.GeoScenarioGenerator
-import domainSpecific.geo.GeoTestCaseGenerator
-import domainSpecific.suave.*
-import mutant.*
 import org.apache.jena.rdf.model.ModelFactory
 import org.apache.jena.riot.RDFDataMgr
-import sut.MiniPipeInspection
-import java.nio.file.Paths
+import org.apache.jena.shacl.Shapes
+import org.smolang.robust.domainSpecific.geo.GeoScenarioGenerator
+import org.smolang.robust.domainSpecific.geo.GeoTestCaseGenerator
+import org.smolang.robust.domainSpecific.suave.*
+import org.smolang.robust.mutant.*
+import org.smolang.robust.sut.MiniPipeInspection
 import kotlin.random.Random
+import kotlin.system.exitProcess
 
 val randomGenerator = Random(2)
 
 class Main : CliktCommand() {
     private val source by argument().file()
     private val contractFile by argument().file()
+    private val shaclContractFile by option("--shacl","-s", help="Gives a second contract, defined by a set of SHACL shapes").file()
     private val verbose by option("--verbose","-v", help="Verbose output for debugging. Default = false.").flag()
-    private val rounds by option("--rounds","-r", help="Number of mutations applied to input. Default = 1.").int().default(1)
+    private val mainMode by option().switch(
+        "--scen_geo" to "geo", "-sg" to "geo",
+        "--scen_suave" to "suave", "-sv" to "suave",
+        "--scen_test" to "test", "-st" to "test",
+        "--free" to "free",       "-f" to "free",
+    ).default("free")
 
-    fun testMutations() {
+
+    override fun run() {
+        when (mainMode){
+            "geo" -> {
+                //generateGeoScenarios(shapes)
+                //runGeoGenerator("sut/geo/contracts/contract1.ttl",shapes)
+                //evaluateGeoContract("sut/geo/contracts/contract1.ttl",shapes)
+            }
+            "suave" ->{
+                //testSuave()
+                //runSuaveGenerator("sut/suave/contracts/contract7.owl",shapes)
+                //evaluateSuaveContract("sut/suave/contracts/contract7.owl",shapes)
+            }
+            "test" -> testMiniPipes()
+            else -> testMutations()
+        }
 
 
-        if(!source.exists()) throw Exception("Input file $source does not exist")
+    }
+
+
+    //TODO: add a way to add
+    private fun testMutations() {
+
+        val shapes: Shapes? = if(shaclContractFile != null && !shaclContractFile!!.exists()){
+            println("File ${shaclContractFile!!.path} does not exist")
+            exitProcess(-1)
+        } else if(shaclContractFile != null) {
+            val shapesGraph = RDFDataMgr.loadGraph(shaclContractFile!!.absolutePath)
+            Shapes.parse(shapesGraph)
+        } else null
+
+        if(!source.exists()){
+            println("File ${source.path} does not exist")
+            exitProcess(-1)
+        }
+
         val input = RDFDataMgr.loadDataset(source.absolutePath).defaultModel
-        if(!contractFile.exists()) throw Exception("Contract file $contractFile does not exist")
 
-        val contract = MutantContract(verbose)
-        contract.entailedModel = RDFDataMgr.loadDataset(contractFile.absolutePath).defaultModel
+        if(!contractFile.exists()){
+            println("File ${contractFile.path} does not exist")
+            exitProcess(-1)
+        }
+        val contained = RDFDataMgr.loadDataset(contractFile.absolutePath).defaultModel
+
+        val contract = MutantMask(verbose, shapes, contained)
 
         // test configuration stuff
 
-        //
-        var n = 0
-        val onlyOneGeneration = true    // we only execute one run
-        while(true) {
-            println("\n generation ${n++}")
             //val m = Mutator(listOf(AddInstanceMutation::class, RemoveAxiomMutation::class), verbose)
             val ms = MutationSequence(verbose)
             //ms.addRandom(listOf(RemoveSubclassMutation::class))
@@ -64,19 +103,17 @@ class Main : CliktCommand() {
             )
             val config3 = SingleStatementConfiguration(st3)
 
-            val config4 = StringAndResourceConfiguration("newIndividual", r)
+            val config4 = StringAndResourceConfiguration("http://smolang.org#newIndividual", r)
 
             val segment = mf.createResource("http://www.ifi.uio.no/tobiajoh/miniPipes#segment1")
-            val config5 = AddPipeSegmentConfiguration(segment)
+            val config5 = org.smolang.robust.domainSpecific.auv.AddPipeSegmentConfiguration(segment)
 
-            ms.addWithConfig(AddPipeSegmentMutation::class, config5)
+            ms.addWithConfig(org.smolang.robust.domainSpecific.auv.AddPipeSegmentMutation::class, config5)
 
-            //ms.addWithConfig(RemoveAxiomMutation::class, config)
             ms.addWithConfig(RemoveSubclassMutation::class, config)
 
             ms.addWithConfig(AddAxiomMutation::class, config3)
 
-            //ms.addWithConfig(AddInstanceMutation::class, config2)
             ms.addRandom(listOf(AddInstanceMutation::class))
 
             ms.addWithConfig(AddInstanceMutation::class, config4)
@@ -89,23 +126,11 @@ class Main : CliktCommand() {
             //XXX: the following ignores blank nodes
             val valid = m.validate(res, contract)
             println("result of validation: $valid")
-            if(valid) {
-                if(verbose) res.write(System.out, "TTL")
-                break
-            }
-
-            if (onlyOneGeneration) {
-                if (verbose) res.write(System.out, "TTL")
-                break
-            }
-        }
-
-
-
+            if(verbose) res.write(System.out, "TTL")
     }
 
 
-    fun testMiniPipes() {
+    private fun testMiniPipes() {
         if(!source.exists()) throw Exception("Input file $source does not exist")
         val input = RDFDataMgr.loadDataset(source.absolutePath).defaultModel
         val pi = MiniPipeInspection()
@@ -118,9 +143,9 @@ class Main : CliktCommand() {
         // mutated ontology with "add pipe" at segment1
         println("\nApply mutation to ontology")
         val segment = input.createResource("http://www.ifi.uio.no/tobiajoh/miniPipes#segment1")
-        val configSegment = AddPipeSegmentConfiguration(segment)
+        val configSegment = org.smolang.robust.domainSpecific.auv.AddPipeSegmentConfiguration(segment)
         val msSegment = MutationSequence(verbose)
-        msSegment.addWithConfig(AddPipeSegmentMutation::class, configSegment)
+        msSegment.addWithConfig(org.smolang.robust.domainSpecific.auv.AddPipeSegmentMutation::class, configSegment)
         val mSegment = Mutator(msSegment, verbose)
         val resSegment = mSegment.mutate(input)
 
@@ -174,69 +199,67 @@ class Main : CliktCommand() {
 
     fun runSuaveGenerator(contractPath: String) {
         val sg = SuaveTestCaseGenerator(true)
-        sg.generateSuaveMutants(10, contractPath)
+        val numberOfMutants = 30
+        val numberOfMutations = 2
+        val ratioDomainDependent = 1.0
+        val nameOfMutants = "onlySuave10"
+        sg.generateSuaveMutants(
+            numberOfMutants,
+            numberOfMutations,
+            ratioDomainDependent,
+            contractPath,
+            nameOfMutants)
     }
 
-    fun runGeoGenerator(contractFile: String) {
+    fun runGeoGenerator(contractFile: String, shapes: Shapes?) {
         val gg = GeoTestCaseGenerator(false)
-        gg.generateGeoMutants(contractFile)
+        val numberOfMutants = 100
+        val numberOfMutations = 2
+        val nameOfMutants = "fourthTest"
+        gg.generateGeoMutants(
+            numberOfMutants,
+            numberOfMutations,
+            contractFile,
+            shapes,
+            nameOfMutants)
     }
 
-    fun evaluateSuaveContract(contractPath : String) {
+    fun evaluateSuaveContract(contractPath : String, shapes: Shapes?) {
         // new contract
-        val contract = MutantContract(verbose)
+        val contract = MutantMask(verbose, shapes, RDFDataMgr.loadDataset(contractPath).defaultModel)
 
-        contract.containedModel=RDFDataMgr.loadDataset(contractPath).defaultModel
         contract.checkAgainstOntologies(
             listOf(
-                "sut/suave/oracle_mutatedOnt_onlySuave02_2024_03_27_11_52.csv",
-                "sut/suave/oracle_mutatedOnt_onlySuave03_2024_03_27_15_11.csv",
-                "sut/suave/oracle_mutatedOnt_onlySuave04_2024_03_29_14_15.csv",
-                "sut/suave/oracle_mutatedOnt_onlyGeneric03_2024_04_01_11_04.csv",
-                "sut/suave/oracle_mutatedOnt_onlySuave05_2024_04_03_17_17.csv",
-                "sut/suave/oracle_mutatedOnt_onlySuave06_2024_04_08_09_58.csv",
-                "sut/suave/oracle_mutatedOnt_onlySuave07_2024_04_11_08_40.csv",
-                "sut/suave/oracle_mutatedOnt_onlySuave08_2024_04_15_08_39.csv"
+                "org/smolang/robust/sut/suave/oracle_mutatedOnt_onlySuave02_2024_03_27_11_52.csv",
+                "org/smolang/robust/sut/suave/oracle_mutatedOnt_onlySuave03_2024_03_27_15_11.csv",
+                "org/smolang/robust/sut/suave/oracle_mutatedOnt_onlySuave04_2024_03_29_14_15.csv",
+                "org/smolang/robust/sut/suave/oracle_mutatedOnt_onlyGeneric03_2024_04_01_11_04.csv",
+                "org/smolang/robust/sut/suave/oracle_mutatedOnt_onlySuave05_2024_04_03_17_17.csv",
+                "org/smolang/robust/sut/suave/oracle_mutatedOnt_onlySuave06_2024_04_08_09_58.csv",
+                "org/smolang/robust/sut/suave/oracle_mutatedOnt_onlySuave07_2024_04_11_08_40.csv",
+                "org/smolang/robust/sut/suave/oracle_mutatedOnt_onlySuave08_2024_04_15_08_39.csv"
                 ),
             true)
     }
 
-    fun evaluateGeoContract(contractPath : String) {
+    fun evaluateGeoContract(contractPath : String,shapes: Shapes?) {
         // new contract
-        val contract = MutantContract(verbose)
+        val contract = MutantMask(verbose, shapes,RDFDataMgr.loadDataset(contractPath).defaultModel, useReasonerContainment=true)
 
-        contract.containedModel=RDFDataMgr.loadDataset(contractPath).defaultModel
-        contract.useReasonerContainment=true
         contract.checkAgainstOntologies(
             listOf(
-                "sut/geo/benchmark_runs/mutations/oracle_mutatedOnt_secondTest_2024_03_26_09_24.csv"
+                "org/smolang/robust/sut/geo/benchmark_runs/mutations/oracle_mutatedOnt_secondTest_2024_03_26_09_24.csv"
             ),
             true)
     }
 
-    fun generateGeoScenarios() {
+    fun generateGeoScenarios(shapes: Shapes?) {
         val geoGenerator = GeoScenarioGenerator()
         geoGenerator.generateScenarios(10)
     }
 
-    override fun run() {
-        //testMutations()
-        //testMiniPipes()
-        //testSuave()
-
-        generateGeoScenarios()
-
-        //runGeoGenerator("sut/geo/contracts/contract1.ttl")
-        //runSuaveGenerator("sut/suave/contracts/contract7.owl")
-
-        //evaluateSuaveContract("sut/suave/contracts/contract7.owl")
-        //
-        //evaluateGeoContract("sut/geo/contracts/contract1.ttl")
-
-    }
 
 }
 
 
 fun main(args: Array<String>) = Main().main(args)
-

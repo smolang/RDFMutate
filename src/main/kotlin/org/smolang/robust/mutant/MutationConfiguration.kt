@@ -1,4 +1,4 @@
-package mutant
+package org.smolang.robust.mutant
 
 import org.apache.jena.rdf.model.Resource
 import org.apache.jena.rdf.model.Statement
@@ -73,13 +73,11 @@ class DoubleResourceConfiguration(private val resource1: Resource,
 class DoubleStringAndStatementConfiguration(private val nodeOld: String,
                                             private val nodeNew: String,
                                             private val r: Statement) : MutationConfiguration() {
-    override fun toString(): String {
-        val className = super.toString()
-        return "(" +
+    override fun toString(): String = "(" +
                 "${removePrefix(nodeOld)}," +
                 "${removePrefix(nodeNew)}," +
-                "${r.toString()})"
-    }
+                "$r)"
+
 
     fun getOldNode() : String {
         return nodeOld

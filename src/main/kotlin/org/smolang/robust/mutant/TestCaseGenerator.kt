@@ -1,4 +1,4 @@
-package mutant
+package org.smolang.robust.mutant
 
 import org.apache.jena.rdf.model.Model
 import org.apache.jena.riot.Lang
@@ -9,12 +9,12 @@ import java.nio.file.Files
 import java.nio.file.Paths
 
 open class TestCaseGenerator(private val verbose: Boolean) {
-    val mutators : MutableList<Mutator> = mutableListOf()
+    private val mutators : MutableList<Mutator> = mutableListOf()
     val mutants : MutableList<Model> = mutableListOf()
     val mutantFiles: MutableList<String> = mutableListOf()
 
     fun generateMutants(seed : Model,
-                        contract: MutantContract,
+                        contract: MutantMask,
                         mutFactory : MutatorFactory,
                         countDesired : Int) {
         var countGenerated = 0
@@ -64,12 +64,12 @@ open class TestCaseGenerator(private val verbose: Boolean) {
                 val numDel = m.globalMutation?.removeSet?.size ?: -1
                 val numAdd = m.globalMutation?.addSet?.size ?: -1
                 val appliedMutations = m.appliedMutations
-                val affectedSeedNodes = m.affectedSeedNodes.map {
+                val affectedSeedNodes = m.affectedSeedNodes.joinToString(",", "[", "]") {
                     if (it.localName != null)
                         it.localName
                     else
                         it.toString()
-                }.joinToString(",", "[", "]")
+                }
 
                 val addedAxioms = m.addSet.joinToString( ",", "[", "]")
                 val removedAxioms = m.removeSet.joinToString( ",", "[", "]").replace("\n", ",")
