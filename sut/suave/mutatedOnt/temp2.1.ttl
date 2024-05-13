@@ -1,0 +1,1965 @@
+@prefix : <http://www.metacontrol.org/suave#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix mros: <http://ros/mros#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrla: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix tomasys: <http://metacontrol.org/tomasys#> .
+@base <http://www.metacontrol.org/suave> .
+
+<http://www.metacontrol.org/suave> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://metacontrol.org/tomasys#solvesF
+tomasys:solvesF rdf:type owl:AnnotationProperty .
+
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://metacontrol.org/tomasys#binding_component
+tomasys:binding_component rdf:type owl:ObjectProperty .
+
+
+###  http://metacontrol.org/tomasys#binding_role
+tomasys:binding_role rdf:type owl:ObjectProperty .
+
+
+###  http://metacontrol.org/tomasys#fd_error_log
+tomasys:fd_error_log rdf:type owl:ObjectProperty .
+
+
+###  http://metacontrol.org/tomasys#hasBindings
+tomasys:hasBindings rdf:type owl:ObjectProperty .
+
+
+###  http://metacontrol.org/tomasys#hasNFR
+tomasys:hasNFR rdf:type owl:ObjectProperty .
+
+
+###  http://metacontrol.org/tomasys#hasQAvalue
+tomasys:hasQAvalue rdf:type owl:ObjectProperty .
+
+
+###  http://metacontrol.org/tomasys#requiresO
+tomasys:requiresO rdf:type owl:ObjectProperty .
+
+
+###  http://metacontrol.org/tomasys#roleDef
+tomasys:roleDef rdf:type owl:ObjectProperty .
+
+
+###  http://metacontrol.org/tomasys#roles
+tomasys:roles rdf:type owl:ObjectProperty .
+
+
+###  http://metacontrol.org/tomasys#solvesO
+tomasys:solvesO rdf:type owl:ObjectProperty .
+
+
+###  http://metacontrol.org/tomasys#typeC
+tomasys:typeC rdf:type owl:ObjectProperty .
+
+
+###  http://metacontrol.org/tomasys#typeFD
+tomasys:typeFD rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://metacontrol.org/tomasys#b_status
+tomasys:b_status rdf:type owl:DatatypeProperty .
+
+
+###  http://metacontrol.org/tomasys#c_status
+tomasys:c_status rdf:type owl:DatatypeProperty ;
+                 rdfs:range [ rdf:type rdfs:Datatype ;
+                              owl:oneOf [ rdf:type rdf:List ;
+                                          rdf:first "FALSE" ;
+                                          rdf:rest [ rdf:type rdf:List ;
+                                                     rdf:first "RECOVERED" ;
+                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                rdf:first "TRUE" ;
+                                                                rdf:rest rdf:nil
+                                                              ]
+                                                   ]
+                                        ]
+                            ] .
+
+
+###  http://metacontrol.org/tomasys#cc_availability
+tomasys:cc_availability rdf:type owl:DatatypeProperty ;
+                        rdfs:comment """there is engineering information about a Component Class that may dy-
+namically vary during system operation, and that is the availability [0, 1] of that type of component. For example, a sensor can be restarted/re-deployed to fix a wrong initial configuration of one of its parameters. However, no matter what reconfiguration we may carry, if there is only one physical sensor in the system, and it is broken, the component instance will not work: it is unavailable.""" .
+
+
+###  http://metacontrol.org/tomasys#cc_unique
+tomasys:cc_unique rdf:type owl:DatatypeProperty .
+
+
+###  http://metacontrol.org/tomasys#cspec_availability
+tomasys:cspec_availability rdf:type owl:DatatypeProperty ;
+                           rdfs:comment """A particular ComponentSpecification might not be available.
+However, this does not mean that other Configurations of that component are not available (i.e. the ComponentClass is unavailable)
+Example: the Yumi configuration with two arms might not be available, but it may be available single-arm""" .
+
+
+###  http://metacontrol.org/tomasys#fd_realisability
+tomasys:fd_realisability rdf:type owl:DatatypeProperty .
+
+
+###  http://metacontrol.org/tomasys#fg_status
+tomasys:fg_status rdf:type owl:DatatypeProperty ;
+                  rdfs:range [ rdf:type rdfs:Datatype ;
+                               owl:oneOf [ rdf:type rdf:List ;
+                                           rdf:first "IN_ERROR_COMPONENT" ;
+                                           rdf:rest [ rdf:type rdf:List ;
+                                                      rdf:first "IN_ERROR_FR" ;
+                                                      rdf:rest [ rdf:type rdf:List ;
+                                                                 rdf:first "IN_ERROR_NFR" ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ]
+                             ] .
+
+
+###  http://metacontrol.org/tomasys#o_status
+tomasys:o_status rdf:type owl:DatatypeProperty ;
+                 rdfs:range [ rdf:type rdfs:Datatype ;
+                              owl:oneOf [ rdf:type rdf:List ;
+                                          rdf:first "IN_ERROR_COMPONENT" ;
+                                          rdf:rest [ rdf:type rdf:List ;
+                                                     rdf:first "IN_ERROR_FR" ;
+                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                rdf:first "IN_ERROR_NFR" ;
+                                                                rdf:rest [ rdf:type rdf:List ;
+                                                                           rdf:first "IN_PROGRESS" ;
+                                                                           rdf:rest [ rdf:type rdf:List ;
+                                                                                      rdf:first "UNGROUNDED" ;
+                                                                                      rdf:rest [ rdf:type rdf:List ;
+                                                                                                 rdf:first "UNREACHABLE" ;
+                                                                                                 rdf:rest rdf:nil
+                                                                                               ]
+                                                                                    ]
+                                                                         ]
+                                                              ]
+                                                   ]
+                                        ]
+                            ] ,
+                            [ rdf:type rdfs:Datatype ;
+                              owl:oneOf [ rdf:type rdf:List ;
+                                          rdf:first "IN_ERROR_COMPONENT" ;
+                                          rdf:rest [ rdf:type rdf:List ;
+                                                     rdf:first "IN_ERROR_FR" ;
+                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                rdf:first "IN_ERROR_NFR" ;
+                                                                rdf:rest [ rdf:type rdf:List ;
+                                                                           rdf:first "IN_PROGRESS" ;
+                                                                           rdf:rest [ rdf:type rdf:List ;
+                                                                                      rdf:first "UNGROUNDED" ;
+                                                                                      rdf:rest [ rdf:type rdf:List ;
+                                                                                                 rdf:first "UNREACHABLE" ;
+                                                                                                 rdf:rest [ rdf:type rdf:List ;
+                                                                                                            rdf:first "UPDATABLE" ;
+                                                                                                            rdf:rest rdf:nil
+                                                                                                          ]
+                                                                                               ]
+                                                                                    ]
+                                                                         ]
+                                                              ]
+                                                   ]
+                                        ]
+                            ] .
+
+
+###  http://metacontrol.org/tomasys#o_updatable
+tomasys:o_updatable rdf:type owl:DatatypeProperty .
+
+
+###  http://metacontrol.org/tomasys#qa_comparison_operator
+tomasys:qa_comparison_operator rdf:type owl:DatatypeProperty ;
+                               rdfs:range [ rdf:type rdfs:Datatype ;
+                                            owl:oneOf [ rdf:type rdf:List ;
+                                                        rdf:first "<" ;
+                                                        rdf:rest [ rdf:type rdf:List ;
+                                                                   rdf:first "<=" ;
+                                                                   rdf:rest [ rdf:type rdf:List ;
+                                                                              rdf:first ">" ;
+                                                                              rdf:rest [ rdf:type rdf:List ;
+                                                                                         rdf:first ">=" ;
+                                                                                         rdf:rest rdf:nil
+                                                                                       ]
+                                                                            ]
+                                                                 ]
+                                                      ]
+                                          ] .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://metacontrol.org/tomasys#Binding
+tomasys:Binding rdf:type owl:Class .
+
+
+###  http://metacontrol.org/tomasys#Component
+tomasys:Component rdf:type owl:Class .
+
+
+###  http://metacontrol.org/tomasys#ComponentClass
+tomasys:ComponentClass rdf:type owl:Class .
+
+
+###  http://metacontrol.org/tomasys#ComponentSpecification
+tomasys:ComponentSpecification rdf:type owl:Class .
+
+
+###  http://metacontrol.org/tomasys#Function
+tomasys:Function rdf:type owl:Class .
+
+
+###  http://metacontrol.org/tomasys#FunctionDesign
+tomasys:FunctionDesign rdf:type owl:Class .
+
+
+###  http://metacontrol.org/tomasys#FunctionGrounding
+tomasys:FunctionGrounding rdf:type owl:Class .
+
+
+###  http://metacontrol.org/tomasys#Objective
+tomasys:Objective rdf:type owl:Class .
+
+
+###  http://metacontrol.org/tomasys#QAvalue
+tomasys:QAvalue rdf:type owl:Class .
+
+
+###  http://metacontrol.org/tomasys#QualityAttributeType
+tomasys:QualityAttributeType rdf:type owl:Class .
+
+
+###  http://metacontrol.org/tomasys#Role
+tomasys:Role rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://metacontrol.org/tomasys#b
+tomasys:b rdf:type owl:NamedIndividual .
+
+
+###  http://metacontrol.org/tomasys#c
+tomasys:c rdf:type owl:NamedIndividual .
+
+
+###  http://metacontrol.org/tomasys#cc
+tomasys:cc rdf:type owl:NamedIndividual .
+
+
+###  http://metacontrol.org/tomasys#cs
+tomasys:cs rdf:type owl:NamedIndividual .
+
+
+###  http://metacontrol.org/tomasys#fd
+tomasys:fd rdf:type owl:NamedIndividual .
+
+
+###  http://metacontrol.org/tomasys#fg
+tomasys:fg rdf:type owl:NamedIndividual .
+
+
+###  http://metacontrol.org/tomasys#o
+tomasys:o rdf:type owl:NamedIndividual .
+
+
+###  http://metacontrol.org/tomasys#r
+tomasys:r rdf:type owl:NamedIndividual .
+
+
+###  http://ros/mros#c
+mros:c rdf:type owl:NamedIndividual .
+
+
+###  http://ros/mros#energy
+mros:energy rdf:type owl:NamedIndividual .
+
+
+###  http://ros/mros#fd
+mros:fd rdf:type owl:NamedIndividual .
+
+
+###  http://ros/mros#fg
+mros:fg rdf:type owl:NamedIndividual .
+
+
+###  http://ros/mros#nfr
+mros:nfr rdf:type owl:NamedIndividual .
+
+
+###  http://ros/mros#o
+mros:o rdf:type owl:NamedIndividual .
+
+
+###  http://ros/mros#qa
+mros:qa rdf:type owl:NamedIndividual .
+
+
+###  http://ros/mros#safety
+mros:safety rdf:type owl:NamedIndividual .
+
+
+###  http://ros/navigation#b
+<http://ros/navigation#b> rdf:type owl:NamedIndividual .
+
+
+###  http://ros/navigation#c
+<http://ros/navigation#c> rdf:type owl:NamedIndividual .
+
+
+###  http://ros/navigation#cc
+<http://ros/navigation#cc> rdf:type owl:NamedIndividual .
+
+
+###  http://ros/navigation#cs
+<http://ros/navigation#cs> rdf:type owl:NamedIndividual .
+
+
+###  http://ros/navigation#fd
+<http://ros/navigation#fd> rdf:type owl:NamedIndividual .
+
+
+###  http://ros/navigation#fg
+<http://ros/navigation#fg> rdf:type owl:NamedIndividual .
+
+
+###  http://ros/navigation#o
+<http://ros/navigation#o> rdf:type owl:NamedIndividual .
+
+
+###  http://ros/navigation#r
+<http://ros/navigation#r> rdf:type owl:NamedIndividual .
+
+
+###  http://www.metacontrol.org/suave#c_thruster_1
+:c_thruster_1 rdf:type owl:NamedIndividual ,
+                       tomasys:Component ;
+              mros:requiredBy :fd_all_thrusters .
+
+
+###  http://www.metacontrol.org/suave#c_thruster_2
+:c_thruster_2 rdf:type owl:NamedIndividual ,
+                       tomasys:Component ;
+              mros:requiredBy :fd_all_thrusters .
+
+
+###  http://www.metacontrol.org/suave#c_thruster_3
+:c_thruster_3 rdf:type owl:NamedIndividual ,
+                       tomasys:Component ;
+              mros:requiredBy :fd_all_thrusters .
+
+
+###  http://www.metacontrol.org/suave#c_thruster_4
+:c_thruster_4 rdf:type owl:NamedIndividual ,
+                       tomasys:Component ;
+              mros:requiredBy :fd_all_thrusters .
+
+
+###  http://www.metacontrol.org/suave#c_thruster_5
+:c_thruster_5 rdf:type owl:NamedIndividual ,
+                       tomasys:Component ;
+              mros:requiredBy :fd_all_thrusters .
+
+
+###  http://www.metacontrol.org/suave#c_thruster_6
+:c_thruster_6 rdf:type owl:NamedIndividual ,
+                       tomasys:Component ;
+              mros:requiredBy :fd_all_thrusters .
+
+
+###  http://www.metacontrol.org/suave#f_follow_pipeline
+:f_follow_pipeline rdf:type owl:NamedIndividual ,
+                            tomasys:Function .
+
+
+###  http://www.metacontrol.org/suave#f_generate_search_path
+:f_generate_search_path rdf:type owl:NamedIndividual ,
+                                 tomasys:Function .
+
+
+###  http://www.metacontrol.org/suave#f_maintain_motion
+:f_maintain_motion rdf:type owl:NamedIndividual ,
+                            tomasys:Function .
+
+
+###  http://www.metacontrol.org/suave#fd_all_thrusters
+:fd_all_thrusters rdf:type owl:NamedIndividual ,
+                           tomasys:FunctionDesign ;
+                  tomasys:hasQAestimation :qa_motion_efficiency_normal ;
+                  tomasys:solvesF :f_maintain_motion .
+
+
+###  http://www.metacontrol.org/suave#fd_follow_pipeline
+:fd_follow_pipeline rdf:type owl:NamedIndividual ,
+                             tomasys:FunctionDesign ;
+                    tomasys:hasQAestimation :qa_inspect_efficiency_high ;
+                    tomasys:solvesF :f_follow_pipeline .
+
+
+###  http://www.metacontrol.org/suave#fd_recover_thrusters
+:fd_recover_thrusters rdf:type owl:NamedIndividual ,
+                               tomasys:FunctionDesign ;
+                      tomasys:hasQAestimation :qa_motion_efficiency_degraded ;
+                      tomasys:solvesF :f_maintain_motion .
+
+
+###  http://www.metacontrol.org/suave#fd_spiral_high
+:fd_spiral_high rdf:type owl:NamedIndividual ,
+                         tomasys:FunctionDesign ;
+                tomasys:hasQAestimation :qa_search_efficiency_high ,
+                                        :qa_water_visibility_high ;
+                tomasys:solvesF :f_maintain_motion .
+
+
+###  http://www.metacontrol.org/suave#fd_spiral_low
+:fd_spiral_low rdf:type owl:NamedIndividual ,
+                        tomasys:FunctionDesign ;
+               tomasys:hasQAestimation :qa_search_efficiency_low ,
+                                       :qa_water_visibility_low ;
+               tomasys:solvesF :f_generate_search_path .
+
+
+###  http://www.metacontrol.org/suave#fd_spiral_medium
+:fd_spiral_medium rdf:type owl:NamedIndividual ,
+                           tomasys:FunctionDesign ;
+                  tomasys:hasQAestimation :qa_search_efficiency_medium ,
+                                          :qa_water_visibility_medium ;
+                  tomasys:solvesF :f_generate_search_path .
+
+
+###  http://www.metacontrol.org/suave#obs_water_visibility
+:obs_water_visibility rdf:type owl:NamedIndividual ,
+                               tomasys:QAvalue ;
+                      tomasys:isQAtype :water_visibility .
+
+
+###  http://www.metacontrol.org/suave#qa_inspect_efficiency_high
+:qa_inspect_efficiency_high rdf:type owl:NamedIndividual ,
+                                     tomasys:QAvalue ;
+                            tomasys:hasValue 1.0 ;
+                            tomasys:isQAtype mros:performance .
+
+
+###  http://www.metacontrol.org/suave#qa_motion_efficiency_degraded
+:qa_motion_efficiency_degraded rdf:type owl:NamedIndividual ,
+                                        tomasys:QAvalue ;
+                               tomasys:hasValue 0.75 ;
+                               tomasys:isQAtype mros:performance .
+
+
+###  http://www.metacontrol.org/suave#qa_motion_efficiency_normal
+:qa_motion_efficiency_normal rdf:type owl:NamedIndividual ,
+                                      tomasys:QAvalue ;
+                             tomasys:hasValue 1.0 ;
+                             tomasys:isQAtype mros:performance .
+
+
+###  http://www.metacontrol.org/suave#qa_search_efficiency_high
+:qa_search_efficiency_high rdf:type owl:NamedIndividual ,
+                                    tomasys:QAvalue ;
+                           tomasys:hasValue 1.0 ;
+                           tomasys:isQAtype mros:performance .
+
+
+###  http://www.metacontrol.org/suave#qa_search_efficiency_low
+:qa_search_efficiency_low rdf:type owl:NamedIndividual ,
+                                   tomasys:QAvalue ;
+                          tomasys:hasValue 0.25 ;
+                          tomasys:isQAtype mros:performance .
+
+
+###  http://www.metacontrol.org/suave#qa_search_efficiency_medium
+:qa_search_efficiency_medium rdf:type owl:NamedIndividual ,
+                                      tomasys:QAvalue ;
+                             tomasys:hasValue 0.5 ;
+                             tomasys:isQAtype mros:performance .
+
+
+###  http://www.metacontrol.org/suave#qa_water_visibility_high
+:qa_water_visibility_high rdf:type owl:NamedIndividual ,
+                                   tomasys:QAvalue ;
+                          tomasys:hasValue 3.25 ;
+                          tomasys:isQAtype :water_visibility .
+
+
+###  http://www.metacontrol.org/suave#qa_water_visibility_low
+:qa_water_visibility_low rdf:type owl:NamedIndividual ,
+                                  tomasys:QAvalue ;
+                         tomasys:hasValue 1.25 ;
+                         tomasys:isQAtype :water_visibility .
+
+
+###  http://www.metacontrol.org/suave#qa_water_visibility_medium
+:qa_water_visibility_medium rdf:type owl:NamedIndividual ,
+                                     tomasys:QAvalue ;
+                            tomasys:hasValue 2.25 ;
+                            tomasys:isQAtype :water_visibility .
+
+
+###  http://www.metacontrol.org/suave#water_visibility
+:water_visibility rdf:type owl:NamedIndividual ,
+                           tomasys:QualityAttributeType ;
+                  tomasys:qa_comparison_operator "<" .
+
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean
+] .
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean
+ ] .
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean
+ ] .
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean
+ ] .
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean
+ ] .
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean
+ ] .
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean
+ ] .
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean
+ ] .
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean
+ ] .
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean
+ ] .
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean
+ ] .
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean
+ ] .
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean
+ ] .
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean
+ ] .
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean
+ ] .
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean
+ ] .
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean
+ ] .
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean
+ ] .
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean
+ ] .
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean
+ ] .
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean
+ ] .
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean
+ ] .
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean
+ ] .
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean
+ ] .
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean
+ ] .
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean
+ ] .
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean
+ ] .
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean
+ ] .
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean
+ ] .
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean
+ ] .
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean
+ ] .
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean
+ ] .
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean
+ ] .
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean
+ ] .
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+   owl:members ( tomasys:Binding
+                 tomasys:Component
+                 tomasys:ComponentClass
+                 tomasys:Function
+                 tomasys:FunctionDesign
+                 tomasys:FunctionGrounding
+                 tomasys:Objective
+                 tomasys:QAvalue
+                 tomasys:QualityAttributeType
+                 tomasys:Role
+               )
+ ] .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+:fg rdf:type swrl:Variable .
+
+:mqa rdf:type swrl:Variable .
+
+:fd rdf:type swrl:Variable .
+
+:eqa rdf:type swrl:Variable .
+
+:mqav rdf:type swrl:Variable .
+
+:eqav rdf:type swrl:Variable .
+
+mros:nfrv rdf:type swrl:Variable .
+
+mros:qav rdf:type swrl:Variable .
+
+[ rdfs:comment "Component in error in a binding -> Comp Spec associated through binding not available" ;
+   rdfs:label "S10" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate tomasys:binding_component ;
+                           swrl:argument1 <http://ros/navigation#b> ;
+                           swrl:argument2 <http://ros/navigation#c>
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                      swrl:propertyPredicate tomasys:binding_role ;
+                                      swrl:argument1 <http://ros/navigation#b> ;
+                                      swrl:argument2 <http://ros/navigation#r>
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                 swrl:propertyPredicate tomasys:roleDef ;
+                                                 swrl:argument1 <http://ros/navigation#r> ;
+                                                 swrl:argument2 <http://ros/navigation#cs>
+                                               ] ;
+                                     rdf:rest [ rdf:type swrl:AtomList ;
+                                                rdf:first [ rdf:type swrl:ClassAtom ;
+                                                            swrl:classPredicate tomasys:Binding ;
+                                                            swrl:argument1 <http://ros/navigation#b>
+                                                          ] ;
+                                                rdf:rest [ rdf:type swrl:AtomList ;
+                                                           rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                                                       swrl:propertyPredicate tomasys:c_status ;
+                                                                       swrl:argument1 <http://ros/navigation#c> ;
+                                                                       swrl:argument2 "false"^^xsd:boolean
+                                                                     ] ;
+                                                           rdf:rest rdf:nil
+                                                         ]
+                                              ]
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                           swrl:propertyPredicate tomasys:cspec_availability ;
+                           swrl:argument1 <http://ros/navigation#cs> ;
+                           swrl:argument2 "false"^^xsd:boolean
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ rdfs:comment "binding in ERROR/false in an fg -> fg in ERROR/false" ;
+   rdfs:label "S3" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate tomasys:Binding ;
+                           swrl:argument1 <http://ros/navigation#b>
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                      swrl:propertyPredicate tomasys:hasBindings ;
+                                      swrl:argument1 <http://ros/navigation#fg> ;
+                                      swrl:argument2 <http://ros/navigation#b>
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                                 swrl:propertyPredicate tomasys:b_status ;
+                                                 swrl:argument1 <http://ros/navigation#b> ;
+                                                 swrl:argument2 "false"^^xsd:boolean
+                                               ] ;
+                                     rdf:rest rdf:nil
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                           swrl:propertyPredicate tomasys:fg_status ;
+                           swrl:argument1 <http://ros/navigation#fg> ;
+                           swrl:argument2 "IN_ERROR_COMPONENT"
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ rdfs:comment "if a component of a unique ComponentClass is in ERROR, the class is unavailable" ;
+   rdfs:label "S4" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                           swrl:propertyPredicate tomasys:cc_unique ;
+                           swrl:argument1 tomasys:cc ;
+                           swrl:argument2 "true"^^xsd:boolean
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                      swrl:propertyPredicate tomasys:c_status ;
+                                      swrl:argument1 tomasys:c ;
+                                      swrl:argument2 "false"^^xsd:boolean
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:ClassAtom ;
+                                                 swrl:classPredicate tomasys:Component ;
+                                                 swrl:argument1 tomasys:c
+                                               ] ;
+                                     rdf:rest [ rdf:type swrl:AtomList ;
+                                                rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                            swrl:propertyPredicate tomasys:typeC ;
+                                                            swrl:argument1 tomasys:c ;
+                                                            swrl:argument2 tomasys:cc
+                                                          ] ;
+                                                rdf:rest rdf:nil
+                                              ]
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                           swrl:propertyPredicate tomasys:cc_availability ;
+                           swrl:argument1 tomasys:cc ;
+                           swrl:argument2 "false"^^xsd:boolean
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ rdfs:comment "if component recovery, objective updatable" ;
+   rdfs:label "compRecov" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate tomasys:Component ;
+                           swrl:argument1 mros:c
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                      swrl:propertyPredicate tomasys:c_status ;
+                                      swrl:argument1 mros:c ;
+                                      swrl:argument2 "RECOVERED"
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:ClassAtom ;
+                                                 swrl:classPredicate tomasys:Objective ;
+                                                 swrl:argument1 mros:o
+                                               ] ;
+                                     rdf:rest rdf:nil
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                           swrl:propertyPredicate tomasys:o_updatable ;
+                           swrl:argument1 mros:o ;
+                           swrl:argument2 "true"^^xsd:boolean
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ rdfs:comment "if component required for FD not working, FD not available" ;
+   rdfs:label "compError" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate tomasys:Component ;
+                           swrl:argument1 mros:c
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                      swrl:propertyPredicate mros:requiredBy ;
+                                      swrl:argument1 mros:c ;
+                                      swrl:argument2 mros:fg
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                                 swrl:propertyPredicate tomasys:c_status ;
+                                                 swrl:argument1 mros:c ;
+                                                 swrl:argument2 "FALSE"
+                                               ] ;
+                                     rdf:rest rdf:nil
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                           swrl:propertyPredicate tomasys:fd_realisability ;
+                           swrl:argument1 mros:fg ;
+                           swrl:argument2 "false"^^xsd:boolean
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ rdfs:comment "if component in error required by FG, FG in error" ;
+   rdfs:label "compErrFG" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate tomasys:typeFD ;
+                           swrl:argument1 <http://ros/navigation#fg> ;
+                           swrl:argument2 <http://ros/navigation#fd>
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:ClassAtom ;
+                                      swrl:classPredicate tomasys:Component ;
+                                      swrl:argument1 <http://ros/navigation#c>
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                 swrl:propertyPredicate mros:requiredBy ;
+                                                 swrl:argument1 <http://ros/navigation#c> ;
+                                                 swrl:argument2 <http://ros/navigation#fd>
+                                               ] ;
+                                     rdf:rest [ rdf:type swrl:AtomList ;
+                                                rdf:first [ rdf:type swrl:ClassAtom ;
+                                                            swrl:classPredicate tomasys:FunctionGrounding ;
+                                                            swrl:argument1 <http://ros/navigation#fg>
+                                                          ] ;
+                                                rdf:rest [ rdf:type swrl:AtomList ;
+                                                           rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                                                       swrl:propertyPredicate tomasys:c_status ;
+                                                                       swrl:argument1 <http://ros/navigation#c> ;
+                                                                       swrl:argument2 "FALSE"
+                                                                     ] ;
+                                                           rdf:rest rdf:nil
+                                                         ]
+                                              ]
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                           swrl:propertyPredicate tomasys:fg_status ;
+                           swrl:argument1 <http://ros/navigation#fg> ;
+                           swrl:argument2 "IN_ERROR_COMPONENT"
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ rdfs:comment "if a component of a unique ComponentClass is in ERROR, the class is unavailable" ;
+   rdfs:label "S4" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate tomasys:Component ;
+                           swrl:argument1 <http://ros/navigation#c>
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                      swrl:propertyPredicate tomasys:typeC ;
+                                      swrl:argument1 <http://ros/navigation#c> ;
+                                      swrl:argument2 <http://ros/navigation#cc>
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                                 swrl:propertyPredicate tomasys:cc_unique ;
+                                                 swrl:argument1 <http://ros/navigation#cc> ;
+                                                 swrl:argument2 "true"^^xsd:boolean
+                                               ] ;
+                                     rdf:rest [ rdf:type swrl:AtomList ;
+                                                rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                                            swrl:propertyPredicate tomasys:c_status ;
+                                                            swrl:argument1 <http://ros/navigation#c> ;
+                                                            swrl:argument2 "FALSE"
+                                                          ] ;
+                                                rdf:rest rdf:nil
+                                              ]
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                           swrl:propertyPredicate tomasys:cc_availability ;
+                           swrl:argument1 <http://ros/navigation#cc> ;
+                           swrl:argument2 "false"^^xsd:boolean
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ rdfs:comment "if class for a role unavailable -> fd unavailable" ;
+   rdfs:label "S5" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate tomasys:ComponentSpecification ;
+                           swrl:argument1 tomasys:cs
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:ClassAtom ;
+                                      swrl:classPredicate tomasys:ComponentClass ;
+                                      swrl:argument1 tomasys:cc
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                                 swrl:propertyPredicate tomasys:cc_availability ;
+                                                 swrl:argument1 tomasys:cc ;
+                                                 swrl:argument2 "false"^^xsd:boolean
+                                               ] ;
+                                     rdf:rest [ rdf:type swrl:AtomList ;
+                                                rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                            swrl:propertyPredicate tomasys:roleDef ;
+                                                            swrl:argument1 tomasys:r ;
+                                                            swrl:argument2 tomasys:cs
+                                                          ] ;
+                                                rdf:rest [ rdf:type swrl:AtomList ;
+                                                           rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                       swrl:propertyPredicate tomasys:typeC ;
+                                                                       swrl:argument1 tomasys:cs ;
+                                                                       swrl:argument2 tomasys:cc
+                                                                     ] ;
+                                                           rdf:rest [ rdf:type swrl:AtomList ;
+                                                                      rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                                  swrl:propertyPredicate tomasys:roles ;
+                                                                                  swrl:argument1 tomasys:fd ;
+                                                                                  swrl:argument2 tomasys:r
+                                                                                ] ;
+                                                                      rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                 rdf:first [ rdf:type swrl:ClassAtom ;
+                                                                                             swrl:classPredicate tomasys:Role ;
+                                                                                             swrl:argument1 tomasys:r
+                                                                                           ] ;
+                                                                                 rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                            rdf:first [ rdf:type swrl:ClassAtom ;
+                                                                                                        swrl:classPredicate tomasys:FunctionDesign ;
+                                                                                                        swrl:argument1 tomasys:fd
+                                                                                                      ] ;
+                                                                                            rdf:rest rdf:nil
+                                                                                          ]
+                                                                               ]
+                                                                    ]
+                                                         ]
+                                              ]
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                           swrl:propertyPredicate tomasys:fd_realisability ;
+                           swrl:argument1 tomasys:fd ;
+                           swrl:argument2 "false"^^xsd:boolean
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ rdfs:comment "CSpec not available -> FD with a role that is dfined by the CSpec not realisable" ;
+   rdfs:label "S11" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate tomasys:ComponentSpecification ;
+                           swrl:argument1 tomasys:cs
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                      swrl:propertyPredicate tomasys:roleDef ;
+                                      swrl:argument1 tomasys:r ;
+                                      swrl:argument2 tomasys:cs
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                 swrl:propertyPredicate tomasys:roles ;
+                                                 swrl:argument1 tomasys:fd ;
+                                                 swrl:argument2 tomasys:r
+                                               ] ;
+                                     rdf:rest [ rdf:type swrl:AtomList ;
+                                                rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                                            swrl:propertyPredicate tomasys:cspec_availability ;
+                                                            swrl:argument1 tomasys:cs ;
+                                                            swrl:argument2 "false"^^xsd:boolean
+                                                          ] ;
+                                                rdf:rest rdf:nil
+                                              ]
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                           swrl:propertyPredicate tomasys:fd_realisability ;
+                           swrl:argument1 tomasys:fd ;
+                           swrl:argument2 "false"^^xsd:boolean
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ rdfs:comment "water visibility rule" ;
+   rdfs:label "QAWaterVisibility" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate tomasys:FunctionGrounding ;
+                           swrl:argument1 :fg
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:ClassAtom ;
+                                      swrl:classPredicate tomasys:QAvalue ;
+                                      swrl:argument1 :mqa
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                 swrl:propertyPredicate tomasys:hasQAvalue ;
+                                                 swrl:argument1 :fg ;
+                                                 swrl:argument2 :mqa
+                                               ] ;
+                                     rdf:rest [ rdf:type swrl:AtomList ;
+                                                rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                            swrl:propertyPredicate tomasys:isQAtype ;
+                                                            swrl:argument1 :mqa ;
+                                                            swrl:argument2 :water_visibility
+                                                          ] ;
+                                                rdf:rest [ rdf:type swrl:AtomList ;
+                                                           rdf:first [ rdf:type swrl:ClassAtom ;
+                                                                       swrl:classPredicate tomasys:FunctionDesign ;
+                                                                       swrl:argument1 :fd
+                                                                     ] ;
+                                                           rdf:rest [ rdf:type swrl:AtomList ;
+                                                                      rdf:first [ rdf:type swrl:ClassAtom ;
+                                                                                  swrl:classPredicate tomasys:QAvalue ;
+                                                                                  swrl:argument1 :eqa
+                                                                                ] ;
+                                                                      rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                 rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                                             swrl:propertyPredicate tomasys:typeFD ;
+                                                                                             swrl:argument1 :fg ;
+                                                                                             swrl:argument2 :fd
+                                                                                           ] ;
+                                                                                 rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                            rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                                                        swrl:propertyPredicate tomasys:hasQAestimation ;
+                                                                                                        swrl:argument1 :fd ;
+                                                                                                        swrl:argument2 :eqa
+                                                                                                      ] ;
+                                                                                            rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                                       rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                                                                   swrl:propertyPredicate tomasys:isQAtype ;
+                                                                                                                   swrl:argument1 :eqa ;
+                                                                                                                   swrl:argument2 :water_visibility
+                                                                                                                 ] ;
+                                                                                                       rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                                                  rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                                                                                                              swrl:propertyPredicate tomasys:hasValue ;
+                                                                                                                              swrl:argument1 :mqa ;
+                                                                                                                              swrl:argument2 :mqav
+                                                                                                                            ] ;
+                                                                                                                  rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                                                             rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                                                                                                                         swrl:propertyPredicate tomasys:hasValue ;
+                                                                                                                                         swrl:argument1 :eqa ;
+                                                                                                                                         swrl:argument2 :eqav
+                                                                                                                                       ] ;
+                                                                                                                             rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                                                                        rdf:first [ rdf:type swrl:BuiltinAtom ;
+                                                                                                                                                    swrl:builtin swrlb:lessThan ;
+                                                                                                                                                    swrl:arguments ( :mqav
+                                                                                                                                                                     :eqav
+                                                                                                                                                                   )
+                                                                                                                                                  ] ;
+                                                                                                                                        rdf:rest rdf:nil
+                                                                                                                                      ]
+                                                                                                                           ]
+                                                                                                                ]
+                                                                                                     ]
+                                                                                          ]
+                                                                               ]
+                                                                    ]
+                                                         ]
+                                              ]
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                           swrl:propertyPredicate tomasys:fg_status ;
+                           swrl:argument1 :fg ;
+                           swrl:argument2 "IN_ERROR_NFR"
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ rdfs:comment "objective in error -> objective added to the fd_error_log of the FD" ;
+   rdfs:label "S9" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate tomasys:FunctionGrounding ;
+                           swrl:argument1 tomasys:fg
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                      swrl:propertyPredicate tomasys:solvesO ;
+                                      swrl:argument1 tomasys:fg ;
+                                      swrl:argument2 tomasys:o
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                 swrl:propertyPredicate tomasys:typeFD ;
+                                                 swrl:argument1 tomasys:fg ;
+                                                 swrl:argument2 tomasys:fd
+                                               ] ;
+                                     rdf:rest [ rdf:type swrl:AtomList ;
+                                                rdf:first [ rdf:type swrl:ClassAtom ;
+                                                            swrl:classPredicate tomasys:Objective ;
+                                                            swrl:argument1 tomasys:o
+                                                          ] ;
+                                                rdf:rest [ rdf:type swrl:AtomList ;
+                                                           rdf:first [ rdf:type swrl:ClassAtom ;
+                                                                       swrl:classPredicate tomasys:FunctionDesign ;
+                                                                       swrl:argument1 tomasys:fd
+                                                                     ] ;
+                                                           rdf:rest [ rdf:type swrl:AtomList ;
+                                                                      rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                                                                  swrl:propertyPredicate tomasys:o_status ;
+                                                                                  swrl:argument1 tomasys:o ;
+                                                                                  swrl:argument2 "INTERNAL_ERROR"
+                                                                                ] ;
+                                                                      rdf:rest rdf:nil
+                                                                    ]
+                                                         ]
+                                              ]
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate tomasys:fd_error_log ;
+                           swrl:argument1 tomasys:fd ;
+                           swrl:argument2 tomasys:o
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ rdfs:comment "objective in error NFR -> objective added to the fd_error_log of the FD" ;
+   rdfs:label "S9" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate tomasys:FunctionGrounding ;
+                           swrl:argument1 mros:fg
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                      swrl:propertyPredicate tomasys:solvesO ;
+                                      swrl:argument1 mros:fg ;
+                                      swrl:argument2 mros:o
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                 swrl:propertyPredicate tomasys:typeFD ;
+                                                 swrl:argument1 mros:fg ;
+                                                 swrl:argument2 mros:fd
+                                               ] ;
+                                     rdf:rest [ rdf:type swrl:AtomList ;
+                                                rdf:first [ rdf:type swrl:ClassAtom ;
+                                                            swrl:classPredicate tomasys:Objective ;
+                                                            swrl:argument1 mros:o
+                                                          ] ;
+                                                rdf:rest [ rdf:type swrl:AtomList ;
+                                                           rdf:first [ rdf:type swrl:ClassAtom ;
+                                                                       swrl:classPredicate tomasys:FunctionDesign ;
+                                                                       swrl:argument1 mros:fd
+                                                                     ] ;
+                                                           rdf:rest [ rdf:type swrl:AtomList ;
+                                                                      rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                                                                  swrl:propertyPredicate tomasys:o_status ;
+                                                                                  swrl:argument1 mros:o ;
+                                                                                  swrl:argument2 "IN_ERROR_FR"
+                                                                                ] ;
+                                                                      rdf:rest rdf:nil
+                                                                    ]
+                                                         ]
+                                              ]
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate tomasys:fd_error_log ;
+                           swrl:argument1 mros:fd ;
+                           swrl:argument2 mros:o
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ rdfs:comment "If a required objective by a FG is in ERROR -> fg in error" ;
+   rdfs:label "S6b" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate tomasys:requiresO ;
+                           swrl:argument1 tomasys:fg ;
+                           swrl:argument2 tomasys:o
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:ClassAtom ;
+                                      swrl:classPredicate tomasys:Objective ;
+                                      swrl:argument1 tomasys:o
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                                 swrl:propertyPredicate tomasys:o_status ;
+                                                 swrl:argument1 tomasys:o ;
+                                                 swrl:argument2 "EXTERNAL_ERROR"
+                                               ] ;
+                                     rdf:rest [ rdf:type swrl:AtomList ;
+                                                rdf:first [ rdf:type swrl:ClassAtom ;
+                                                            swrl:classPredicate tomasys:FunctionGrounding ;
+                                                            swrl:argument1 tomasys:fg
+                                                          ] ;
+                                                rdf:rest rdf:nil
+                                              ]
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                           swrl:propertyPredicate tomasys:fg_status ;
+                           swrl:argument1 tomasys:fg ;
+                           swrl:argument2 "EXTERNAL_ERROR"
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ rdfs:comment "If a required objective by a FG is in ERROR -> fg in error" ;
+   rdfs:label "S6a" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate tomasys:FunctionGrounding ;
+                           swrl:argument1 tomasys:fg
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                      swrl:propertyPredicate tomasys:requiresO ;
+                                      swrl:argument1 tomasys:fg ;
+                                      swrl:argument2 tomasys:o
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:ClassAtom ;
+                                                 swrl:classPredicate tomasys:Objective ;
+                                                 swrl:argument1 tomasys:o
+                                               ] ;
+                                     rdf:rest [ rdf:type swrl:AtomList ;
+                                                rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                                            swrl:propertyPredicate tomasys:o_status ;
+                                                            swrl:argument1 tomasys:o ;
+                                                            swrl:argument2 "INTERNAL_ERROR"
+                                                          ] ;
+                                                rdf:rest rdf:nil
+                                              ]
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                           swrl:propertyPredicate tomasys:fg_status ;
+                           swrl:argument1 tomasys:fg ;
+                           swrl:argument2 "EXTERNAL_ERROR"
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ rdfs:comment "fg in error/false -> objective in error/false" ;
+   rdfs:label "S1b" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate tomasys:Objective ;
+                           swrl:argument1 tomasys:o
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:ClassAtom ;
+                                      swrl:classPredicate tomasys:FunctionGrounding ;
+                                      swrl:argument1 tomasys:fg
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                                 swrl:propertyPredicate tomasys:fg_status ;
+                                                 swrl:argument1 tomasys:fg ;
+                                                 swrl:argument2 "EXTERNAL_ERROR"
+                                               ] ;
+                                     rdf:rest [ rdf:type swrl:AtomList ;
+                                                rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                            swrl:propertyPredicate tomasys:solvesO ;
+                                                            swrl:argument1 tomasys:fg ;
+                                                            swrl:argument2 tomasys:o
+                                                          ] ;
+                                                rdf:rest rdf:nil
+                                              ]
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                           swrl:propertyPredicate tomasys:o_status ;
+                           swrl:argument1 tomasys:o ;
+                           swrl:argument2 "EXTERNAL_ERROR"
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ rdfs:comment "fg in error/false -> objective in error/false" ;
+   rdfs:label "S1a" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate tomasys:Objective ;
+                           swrl:argument1 tomasys:o
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:ClassAtom ;
+                                      swrl:classPredicate tomasys:FunctionGrounding ;
+                                      swrl:argument1 tomasys:fg
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                 swrl:propertyPredicate tomasys:solvesO ;
+                                                 swrl:argument1 tomasys:fg ;
+                                                 swrl:argument2 tomasys:o
+                                               ] ;
+                                     rdf:rest [ rdf:type swrl:AtomList ;
+                                                rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                                            swrl:propertyPredicate tomasys:fg_status ;
+                                                            swrl:argument1 tomasys:fg ;
+                                                            swrl:argument2 "INTERNAL_ERROR"
+                                                          ] ;
+                                                rdf:rest rdf:nil
+                                              ]
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                           swrl:propertyPredicate tomasys:o_status ;
+                           swrl:argument1 tomasys:o ;
+                           swrl:argument2 "INTERNAL_ERROR"
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ rdfs:comment "if objective has FR energy and FG has QAvalue higher, objective in fr error" ;
+   rdfs:label "QAenergy" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate tomasys:Objective ;
+                           swrl:argument1 mros:o
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:ClassAtom ;
+                                      swrl:classPredicate tomasys:QAvalue ;
+                                      swrl:argument1 mros:nfr
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:ClassAtom ;
+                                                 swrl:classPredicate tomasys:QAvalue ;
+                                                 swrl:argument1 mros:qa
+                                               ] ;
+                                     rdf:rest [ rdf:type swrl:AtomList ;
+                                                rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                            swrl:propertyPredicate tomasys:hasNFR ;
+                                                            swrl:argument1 mros:o ;
+                                                            swrl:argument2 mros:nfr
+                                                          ] ;
+                                                rdf:rest [ rdf:type swrl:AtomList ;
+                                                           rdf:first [ rdf:type swrl:ClassAtom ;
+                                                                       swrl:classPredicate tomasys:FunctionGrounding ;
+                                                                       swrl:argument1 mros:fg
+                                                                     ] ;
+                                                           rdf:rest [ rdf:type swrl:AtomList ;
+                                                                      rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                                  swrl:propertyPredicate tomasys:solvesO ;
+                                                                                  swrl:argument1 mros:fg ;
+                                                                                  swrl:argument2 mros:o
+                                                                                ] ;
+                                                                      rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                 rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                                             swrl:propertyPredicate tomasys:hasQAvalue ;
+                                                                                             swrl:argument1 mros:fg ;
+                                                                                             swrl:argument2 mros:qa
+                                                                                           ] ;
+                                                                                 rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                            rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                                                        swrl:propertyPredicate tomasys:isQAtype ;
+                                                                                                        swrl:argument1 mros:qa ;
+                                                                                                        swrl:argument2 mros:energy
+                                                                                                      ] ;
+                                                                                            rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                                       rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                                                                   swrl:propertyPredicate tomasys:isQAtype ;
+                                                                                                                   swrl:argument1 mros:nfr ;
+                                                                                                                   swrl:argument2 mros:energy
+                                                                                                                 ] ;
+                                                                                                       rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                                                  rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                                                                                                              swrl:propertyPredicate tomasys:hasValue ;
+                                                                                                                              swrl:argument1 mros:nfr ;
+                                                                                                                              swrl:argument2 mros:nfrv
+                                                                                                                            ] ;
+                                                                                                                  rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                                                             rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                                                                                                                         swrl:propertyPredicate tomasys:hasValue ;
+                                                                                                                                         swrl:argument1 mros:qa ;
+                                                                                                                                         swrl:argument2 mros:qav
+                                                                                                                                       ] ;
+                                                                                                                             rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                                                                        rdf:first [ rdf:type swrl:BuiltinAtom ;
+                                                                                                                                                    swrl:builtin swrlb:greaterThan ;
+                                                                                                                                                    swrl:arguments ( mros:qav
+                                                                                                                                                                     mros:nfrv
+                                                                                                                                                                   )
+                                                                                                                                                  ] ;
+                                                                                                                                        rdf:rest rdf:nil
+                                                                                                                                      ]
+                                                                                                                           ]
+                                                                                                                ]
+                                                                                                     ]
+                                                                                          ]
+                                                                               ]
+                                                                    ]
+                                                         ]
+                                              ]
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                           swrl:propertyPredicate tomasys:o_status ;
+                           swrl:argument1 mros:o ;
+                           swrl:argument2 "IN_ERROR_FR"
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ rdfs:comment "if objective has FR safety and FG has QAvalue higher, objective in fr error" ;
+   rdfs:label "QAsafety" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate tomasys:Objective ;
+                           swrl:argument1 mros:o
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:ClassAtom ;
+                                      swrl:classPredicate tomasys:QAvalue ;
+                                      swrl:argument1 mros:nfr
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:ClassAtom ;
+                                                 swrl:classPredicate tomasys:QAvalue ;
+                                                 swrl:argument1 mros:qa
+                                               ] ;
+                                     rdf:rest [ rdf:type swrl:AtomList ;
+                                                rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                            swrl:propertyPredicate tomasys:hasNFR ;
+                                                            swrl:argument1 mros:o ;
+                                                            swrl:argument2 mros:nfr
+                                                          ] ;
+                                                rdf:rest [ rdf:type swrl:AtomList ;
+                                                           rdf:first [ rdf:type swrl:ClassAtom ;
+                                                                       swrl:classPredicate tomasys:FunctionGrounding ;
+                                                                       swrl:argument1 mros:fg
+                                                                     ] ;
+                                                           rdf:rest [ rdf:type swrl:AtomList ;
+                                                                      rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                                  swrl:propertyPredicate tomasys:solvesO ;
+                                                                                  swrl:argument1 mros:fg ;
+                                                                                  swrl:argument2 mros:o
+                                                                                ] ;
+                                                                      rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                 rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                                             swrl:propertyPredicate tomasys:hasQAvalue ;
+                                                                                             swrl:argument1 mros:fg ;
+                                                                                             swrl:argument2 mros:qa
+                                                                                           ] ;
+                                                                                 rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                            rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                                                        swrl:propertyPredicate tomasys:isQAtype ;
+                                                                                                        swrl:argument1 mros:qa ;
+                                                                                                        swrl:argument2 mros:safety
+                                                                                                      ] ;
+                                                                                            rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                                       rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                                                                   swrl:propertyPredicate tomasys:isQAtype ;
+                                                                                                                   swrl:argument1 mros:nfr ;
+                                                                                                                   swrl:argument2 mros:safety
+                                                                                                                 ] ;
+                                                                                                       rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                                                  rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                                                                                                              swrl:propertyPredicate tomasys:hasValue ;
+                                                                                                                              swrl:argument1 mros:nfr ;
+                                                                                                                              swrl:argument2 mros:nfrv
+                                                                                                                            ] ;
+                                                                                                                  rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                                                             rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                                                                                                                         swrl:propertyPredicate tomasys:hasValue ;
+                                                                                                                                         swrl:argument1 mros:qa ;
+                                                                                                                                         swrl:argument2 mros:qav
+                                                                                                                                       ] ;
+                                                                                                                             rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                                                                        rdf:first [ rdf:type swrl:BuiltinAtom ;
+                                                                                                                                                    swrl:builtin swrlb:greaterThan ;
+                                                                                                                                                    swrl:arguments ( mros:qav
+                                                                                                                                                                     mros:nfrv
+                                                                                                                                                                   )
+                                                                                                                                                  ] ;
+                                                                                                                                        rdf:rest rdf:nil
+                                                                                                                                      ]
+                                                                                                                           ]
+                                                                                                                ]
+                                                                                                     ]
+                                                                                          ]
+                                                                               ]
+                                                                    ]
+                                                         ]
+                                              ]
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                           swrl:propertyPredicate tomasys:o_status ;
+                           swrl:argument1 mros:o ;
+                           swrl:argument2 "IN_ERROR_FR"
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ rdfs:comment "If a required objective by a FG is in ERROR -> fg in error" ;
+   rdfs:label "S6c" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate tomasys:Objective ;
+                           swrl:argument1 mros:o
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                      swrl:propertyPredicate tomasys:requiresO ;
+                                      swrl:argument1 mros:fg ;
+                                      swrl:argument2 mros:o
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:ClassAtom ;
+                                                 swrl:classPredicate tomasys:FunctionGrounding ;
+                                                 swrl:argument1 mros:fg
+                                               ] ;
+                                     rdf:rest [ rdf:type swrl:AtomList ;
+                                                rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                                            swrl:propertyPredicate tomasys:o_status ;
+                                                            swrl:argument1 mros:o ;
+                                                            swrl:argument2 "IN_ERROR_FR"
+                                                          ] ;
+                                                rdf:rest rdf:nil
+                                              ]
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                           swrl:propertyPredicate tomasys:fg_status ;
+                           swrl:argument1 mros:fg ;
+                           swrl:argument2 "IN_ERROR_FR"
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ rdfs:comment "fg in error/false -> objective in error/false" ;
+   rdfs:label "S1c" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate tomasys:Objective ;
+                           swrl:argument1 mros:o
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                      swrl:propertyPredicate tomasys:fg_status ;
+                                      swrl:argument1 mros:fg ;
+                                      swrl:argument2 "IN_ERROR_FR"
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:ClassAtom ;
+                                                 swrl:classPredicate tomasys:FunctionGrounding ;
+                                                 swrl:argument1 mros:fg
+                                               ] ;
+                                     rdf:rest [ rdf:type swrl:AtomList ;
+                                                rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                            swrl:propertyPredicate tomasys:solvesO ;
+                                                            swrl:argument1 mros:fg ;
+                                                            swrl:argument2 mros:o
+                                                          ] ;
+                                                rdf:rest rdf:nil
+                                              ]
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                           swrl:propertyPredicate tomasys:o_status ;
+                           swrl:argument1 mros:o ;
+                           swrl:argument2 "IN_ERROR_FR"
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ rdfs:comment "If a required objective by a FG is in ERROR -> fg in error" ;
+   rdfs:label "S6b" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate tomasys:FunctionGrounding ;
+                           swrl:argument1 <http://ros/navigation#fg>
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                      swrl:propertyPredicate tomasys:o_status ;
+                                      swrl:argument1 <http://ros/navigation#o> ;
+                                      swrl:argument2 "IN_ERROR_COMPONENT"
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                 swrl:propertyPredicate tomasys:requiresO ;
+                                                 swrl:argument1 <http://ros/navigation#fg> ;
+                                                 swrl:argument2 <http://ros/navigation#o>
+                                               ] ;
+                                     rdf:rest [ rdf:type swrl:AtomList ;
+                                                rdf:first [ rdf:type swrl:ClassAtom ;
+                                                            swrl:classPredicate tomasys:Objective ;
+                                                            swrl:argument1 <http://ros/navigation#o>
+                                                          ] ;
+                                                rdf:rest rdf:nil
+                                              ]
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                           swrl:propertyPredicate tomasys:fg_status ;
+                           swrl:argument1 <http://ros/navigation#fg> ;
+                           swrl:argument2 "IN_ERROR_COMPONENT"
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ rdfs:comment "If a required objective by a FG is in ERROR -> fg in error" ;
+   rdfs:label "S6a" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                           swrl:propertyPredicate tomasys:o_status ;
+                           swrl:argument1 <http://ros/navigation#o> ;
+                           swrl:argument2 "IN_ERROR_NFR"
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:ClassAtom ;
+                                      swrl:classPredicate tomasys:FunctionGrounding ;
+                                      swrl:argument1 <http://ros/navigation#fg>
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                 swrl:propertyPredicate tomasys:requiresO ;
+                                                 swrl:argument1 <http://ros/navigation#fg> ;
+                                                 swrl:argument2 <http://ros/navigation#o>
+                                               ] ;
+                                     rdf:rest [ rdf:type swrl:AtomList ;
+                                                rdf:first [ rdf:type swrl:ClassAtom ;
+                                                            swrl:classPredicate tomasys:Objective ;
+                                                            swrl:argument1 <http://ros/navigation#o>
+                                                          ] ;
+                                                rdf:rest rdf:nil
+                                              ]
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                           swrl:propertyPredicate tomasys:fg_status ;
+                           swrl:argument1 <http://ros/navigation#fg> ;
+                           swrl:argument2 "IN_ERROR_NFR"
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ rdfs:comment "fg in error/false -> objective in error/false" ;
+   rdfs:label "S1a" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate tomasys:FunctionGrounding ;
+                           swrl:argument1 <http://ros/navigation#fg>
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                      swrl:propertyPredicate tomasys:solvesO ;
+                                      swrl:argument1 <http://ros/navigation#fg> ;
+                                      swrl:argument2 <http://ros/navigation#o>
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                                 swrl:propertyPredicate tomasys:fg_status ;
+                                                 swrl:argument1 <http://ros/navigation#fg> ;
+                                                 swrl:argument2 "IN_ERROR_COMPONENT"
+                                               ] ;
+                                     rdf:rest [ rdf:type swrl:AtomList ;
+                                                rdf:first [ rdf:type swrl:ClassAtom ;
+                                                            swrl:classPredicate tomasys:Objective ;
+                                                            swrl:argument1 <http://ros/navigation#o>
+                                                          ] ;
+                                                rdf:rest rdf:nil
+                                              ]
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                           swrl:propertyPredicate tomasys:o_status ;
+                           swrl:argument1 <http://ros/navigation#o> ;
+                           swrl:argument2 "IN_ERROR_COMPONENT"
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ rdfs:comment "fg in error/false -> objective in error/false" ;
+   rdfs:label "S1b" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate tomasys:FunctionGrounding ;
+                           swrl:argument1 <http://ros/navigation#fg>
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                      swrl:propertyPredicate tomasys:solvesO ;
+                                      swrl:argument1 <http://ros/navigation#fg> ;
+                                      swrl:argument2 <http://ros/navigation#o>
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                                 swrl:propertyPredicate tomasys:fg_status ;
+                                                 swrl:argument1 <http://ros/navigation#fg> ;
+                                                 swrl:argument2 "IN_ERROR_NFR"
+                                               ] ;
+                                     rdf:rest [ rdf:type swrl:AtomList ;
+                                                rdf:first [ rdf:type swrl:ClassAtom ;
+                                                            swrl:classPredicate tomasys:Objective ;
+                                                            swrl:argument1 <http://ros/navigation#o>
+                                                          ] ;
+                                                rdf:rest rdf:nil
+                                              ]
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                           swrl:propertyPredicate tomasys:o_status ;
+                           swrl:argument1 <http://ros/navigation#o> ;
+                           swrl:argument2 "IN_ERROR_NFR"
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ rdfs:comment "Component in error in a binding -> Comp Spec associated through binding not available" ;
+   rdfs:label "S10" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate tomasys:binding_component ;
+                           swrl:argument1 tomasys:b ;
+                           swrl:argument2 tomasys:c
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                      swrl:propertyPredicate tomasys:c_status ;
+                                      swrl:argument1 tomasys:c ;
+                                      swrl:argument2 "false"^^xsd:boolean
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                 swrl:propertyPredicate tomasys:roleDef ;
+                                                 swrl:argument1 tomasys:r ;
+                                                 swrl:argument2 tomasys:cs
+                                               ] ;
+                                     rdf:rest [ rdf:type swrl:AtomList ;
+                                                rdf:first [ rdf:type swrl:ClassAtom ;
+                                                            swrl:classPredicate tomasys:Binding ;
+                                                            swrl:argument1 tomasys:b
+                                                          ] ;
+                                                rdf:rest [ rdf:type swrl:AtomList ;
+                                                           rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                       swrl:propertyPredicate tomasys:binding_role ;
+                                                                       swrl:argument1 tomasys:b ;
+                                                                       swrl:argument2 tomasys:r
+                                                                     ] ;
+                                                           rdf:rest rdf:nil
+                                                         ]
+                                              ]
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                           swrl:propertyPredicate tomasys:cspec_availability ;
+                           swrl:argument1 tomasys:cs ;
+                           swrl:argument2 "false"^^xsd:boolean
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ rdfs:comment "Component in a binding in ERROR/false -> binding in ERROR/false" ;
+   rdfs:label "S2" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate tomasys:binding_component ;
+                           swrl:argument1 tomasys:b ;
+                           swrl:argument2 tomasys:c
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                      swrl:propertyPredicate tomasys:c_status ;
+                                      swrl:argument1 tomasys:c ;
+                                      swrl:argument2 "false"^^xsd:boolean
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:ClassAtom ;
+                                                 swrl:classPredicate tomasys:Binding ;
+                                                 swrl:argument1 tomasys:b
+                                               ] ;
+                                     rdf:rest rdf:nil
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                           swrl:propertyPredicate tomasys:b_status ;
+                           swrl:argument1 tomasys:b ;
+                           swrl:argument2 "false"^^xsd:boolean
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ rdfs:comment "binding in ERROR/false in an fg -> fg in ERROR/false" ;
+   rdfs:label "S3" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate tomasys:Binding ;
+                           swrl:argument1 tomasys:b
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                      swrl:propertyPredicate tomasys:hasBindings ;
+                                      swrl:argument1 tomasys:fg ;
+                                      swrl:argument2 tomasys:b
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                                 swrl:propertyPredicate tomasys:b_status ;
+                                                 swrl:argument1 tomasys:b ;
+                                                 swrl:argument2 "false"^^xsd:boolean
+                                               ] ;
+                                     rdf:rest rdf:nil
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                           swrl:propertyPredicate tomasys:fg_status ;
+                           swrl:argument1 tomasys:fg ;
+                           swrl:argument2 "INTERNAL_ERROR"
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

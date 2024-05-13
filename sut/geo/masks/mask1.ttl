@@ -1,0 +1,297 @@
+@prefix obo:     <http://purl.obolibrary.org/obo/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix sh:      <http://www.w3.org/ns/shacl#> .
+@prefix suave:   <http://www.metacontrol.org/suave#> .
+@prefix tomasys: <http://metacontrol.org/tomasys#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+schema:shape13  rdf:type  sh:NodeShape;
+        sh:property    <propNode13>;
+        sh:targetNode  _:b0 .
+
+schema:shape5  rdf:type  sh:NodeShape;
+        sh:property    <propNode5>;
+        sh:targetNode  _:b1 .
+
+<propNode22>  sh:hasValue  xsd:double;
+        sh:minCount  1;
+        sh:path      owl:onDatatype .
+
+schema:shape19  rdf:type  sh:NodeShape;
+        sh:property    <propNode19>;
+        sh:targetNode  _:b2 .
+
+<propNode28>  sh:hasValue  owl:Restriction;
+        sh:minCount  1;
+        sh:path      rdf:type .
+
+schema:shape34  rdf:type  sh:NodeShape;
+        sh:property    <propNode34>;
+        sh:targetNode  _:b3 .
+
+<propNode15>  sh:hasValue  <http://purl.obolibrary.org/obo/bfo.owl#UFRGS:GeoReservoirOntology_sedimentary_geological_object>;
+        sh:minCount  1;
+        sh:path      rdf:first .
+
+schema:shape21  rdf:type  sh:NodeShape;
+        sh:property    <propNode21>;
+        sh:targetNode  _:b2 .
+
+<propNode30>  sh:hasValue  _:b4;
+        sh:minCount  1;
+        sh:path      owl:intersectionOf .
+
+schema:shape0  rdf:type  sh:NodeShape;
+        sh:property    <propNode0>;
+        sh:targetNode  _:b5 .
+
+schema:shape27  rdf:type  sh:NodeShape;
+        sh:property    <propNode27>;
+        sh:targetNode  _:b6 .
+
+<propNode5>  sh:hasValue  _:b7;
+        sh:minCount  1;
+        sh:path      rdf:rest .
+
+schema:shape14  rdf:type  sh:NodeShape;
+        sh:property    <propNode14>;
+        sh:targetNode  _:b8 .
+
+schema:shape6  rdf:type  sh:NodeShape;
+        sh:property    <propNode6>;
+        sh:targetNode  _:b1 .
+
+<propNode23>  sh:hasValue  rdfs:Datatype;
+        sh:minCount  1;
+        sh:path      rdf:type .
+
+<propNode10>  sh:hasValue  _:b9;
+        sh:minCount  1;
+        sh:path      owl:someValuesFrom .
+
+<propNode29>  sh:hasValue  _:b10;
+        sh:minCount  1;
+        sh:path      owl:someValuesFrom .
+
+schema:shape35  rdf:type  sh:NodeShape;
+        sh:property    <propNode35>;
+        sh:targetNode  _:b3 .
+
+<propNode16>  sh:hasValue  ();
+        sh:minCount  1;
+        sh:path      rdf:rest .
+
+schema:shape22  rdf:type  sh:NodeShape;
+        sh:property    <propNode22>;
+        sh:targetNode  _:b10 .
+
+<propNode0>  sh:hasValue  _:b8;
+        sh:minCount  1;
+        sh:path      owl:intersectionOf .
+
+<propNode31>  sh:hasValue  owl:Class;
+        sh:minCount  1;
+        sh:path      rdf:type .
+
+schema:shape1  rdf:type  sh:NodeShape;
+        sh:property    <propNode1>;
+        sh:targetNode  _:b5 .
+
+schema:shape28  rdf:type  sh:NodeShape;
+        sh:property    <propNode28>;
+        sh:targetNode  _:b6 .
+
+<propNode6>  sh:hasValue  _:b11;
+        sh:minCount  1;
+        sh:path      rdf:first .
+
+schema:shape15  rdf:type  sh:NodeShape;
+        sh:property    <propNode15>;
+        sh:targetNode  _:b8 .
+
+schema:shape7  rdf:type  sh:NodeShape;
+        sh:property    <propNode7>;
+        sh:targetNode  _:b11 .
+
+<propNode24>  sh:hasValue  _:b1;
+        sh:minCount  1;
+        sh:path      owl:withRestrictions .
+
+schema:shape30  rdf:type  sh:NodeShape;
+        sh:property    <propNode30>;
+        sh:targetNode  _:b9 .
+
+<propNode11>  sh:hasValue  obo:RO_0001015;
+        sh:minCount  1;
+        sh:path      owl:onProperty .
+
+<propNode17>  sh:hasValue  _:b12;
+        sh:minCount  1;
+        sh:path      rdf:first .
+
+schema:shape23  rdf:type  sh:NodeShape;
+        sh:property    <propNode23>;
+        sh:targetNode  _:b10 .
+
+<propNode1>  sh:hasValue  _:b2;
+        sh:minCount  1;
+        sh:path      rdfs:subClassOf .
+
+<propNode32>  sh:hasValue  _:b3;
+        sh:minCount  1;
+        sh:path      rdf:rest .
+
+schema:shape10  rdf:type  sh:NodeShape;
+        sh:property    <propNode10>;
+        sh:targetNode  _:b13 .
+
+schema:shape2  rdf:type  sh:NodeShape;
+        sh:property    <propNode2>;
+        sh:targetNode  _:b5 .
+
+schema:shape29  rdf:type  sh:NodeShape;
+        sh:property    <propNode29>;
+        sh:targetNode  _:b6 .
+
+<propNode7>  sh:hasValue  "60.0"^^xsd:double;
+        sh:minCount  1;
+        sh:path      xsd:minInclusive .
+
+schema:shape16  rdf:type  sh:NodeShape;
+        sh:property    <propNode16>;
+        sh:targetNode  _:b7 .
+
+schema:shape8  rdf:type  sh:NodeShape;
+        sh:property    <propNode8>;
+        sh:targetNode  _:b13 .
+
+<propNode25>  sh:hasValue  ();
+        sh:minCount  1;
+        sh:path      rdf:rest .
+
+schema:shape31  rdf:type  sh:NodeShape;
+        sh:property    <propNode31>;
+        sh:targetNode  _:b9 .
+
+<propNode12>  sh:hasValue  owl:Restriction;
+        sh:minCount  1;
+        sh:path      rdf:type .
+
+<propNode18>  sh:hasValue  "120.0"^^xsd:double;
+        sh:minCount  1;
+        sh:path      xsd:maxInclusive .
+
+schema:shape24  rdf:type  sh:NodeShape;
+        sh:property    <propNode24>;
+        sh:targetNode  _:b10 .
+
+<propNode2>  sh:hasValue  owl:Class;
+        sh:minCount  1;
+        sh:path      rdf:type .
+
+<propNode33>  sh:hasValue  <http://www.semanticweb.org/quy/ontologies/2023/2/untitled-ontology-38#temperature>;
+        sh:minCount  1;
+        sh:path      rdf:first .
+
+schema:shape11  rdf:type  sh:NodeShape;
+        sh:property    <propNode11>;
+        sh:targetNode  _:b0 .
+
+schema:shape3  rdf:type  sh:NodeShape;
+        sh:property    <propNode3>;
+        sh:targetNode  _:b14 .
+
+<propNode20>  sh:hasValue  owl:Restriction;
+        sh:minCount  1;
+        sh:path      rdf:type .
+
+<propNode8>  sh:hasValue  obo:RO_0000086;
+        sh:minCount  1;
+        sh:path      owl:onProperty .
+
+schema:shape17  rdf:type  sh:NodeShape;
+        sh:property    <propNode17>;
+        sh:targetNode  _:b7 .
+
+schema:shape9  rdf:type  sh:NodeShape;
+        sh:property    <propNode9>;
+        sh:targetNode  _:b13 .
+
+<propNode26>  sh:hasValue  _:b0;
+        sh:minCount  1;
+        sh:path      rdf:first .
+
+schema:shape32  rdf:type  sh:NodeShape;
+        sh:property    <propNode32>;
+        sh:targetNode  _:b4 .
+
+<propNode13>  sh:hasValue  <http://www.semanticweb.org/quy/ontologies/2023/2/untitled-ontology-38#amount_of_organic_matter>;
+        sh:minCount  1;
+        sh:path      owl:someValuesFrom .
+
+<propNode19>  sh:hasValue  obo:RO_0000056;
+        sh:minCount  1;
+        sh:path      owl:onProperty .
+
+schema:shape25  rdf:type  sh:NodeShape;
+        sh:property    <propNode25>;
+        sh:targetNode  _:b15 .
+
+<propNode3>  sh:hasValue  _:b15;
+        sh:minCount  1;
+        sh:path      rdf:rest .
+
+<propNode34>  sh:hasValue  ();
+        sh:minCount  1;
+        sh:path      rdf:rest .
+
+schema:shape12  rdf:type  sh:NodeShape;
+        sh:property    <propNode12>;
+        sh:targetNode  _:b0 .
+
+schema:shape4  rdf:type  sh:NodeShape;
+        sh:property    <propNode4>;
+        sh:targetNode  _:b14 .
+
+<propNode21>  sh:hasValue  <http://www.semanticweb.org/quy/ontologies/2023/2/untitled-ontology-38#oil_window_maturation_trigger>;
+        sh:minCount  1;
+        sh:path      owl:someValuesFrom .
+
+<propNode9>  sh:hasValue  owl:Restriction;
+        sh:minCount  1;
+        sh:path      rdf:type .
+
+schema:shape18  rdf:type  sh:NodeShape;
+        sh:property    <propNode18>;
+        sh:targetNode  _:b12 .
+
+<propNode27>  sh:hasValue  <http://www.semanticweb.org/quy/ontologies/2023/2/untitled-ontology-38#datavalue>;
+        sh:minCount  1;
+        sh:path      owl:onProperty .
+
+schema:shape33  rdf:type  sh:NodeShape;
+        sh:property    <propNode33>;
+        sh:targetNode  _:b4 .
+
+<propNode14>  sh:hasValue  _:b14;
+        sh:minCount  1;
+        sh:path      rdf:rest .
+
+schema:shape20  rdf:type  sh:NodeShape;
+        sh:property    <propNode20>;
+        sh:targetNode  _:b2 .
+
+schema:shape26  rdf:type  sh:NodeShape;
+        sh:property    <propNode26>;
+        sh:targetNode  _:b15 .
+
+<propNode4>  sh:hasValue  _:b13;
+        sh:minCount  1;
+        sh:path      rdf:first .
+
+<propNode35>  sh:hasValue  _:b6;
+        sh:minCount  1;
+        sh:path      rdf:first .

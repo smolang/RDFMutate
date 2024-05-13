@@ -1,0 +1,185 @@
+@prefix obo:     <http://purl.obolibrary.org/obo/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix sh:      <http://www.w3.org/ns/shacl#> .
+@prefix suave:   <http://www.metacontrol.org/suave#> .
+@prefix tomasys: <http://metacontrol.org/tomasys#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+schema:shape13  rdf:type  sh:NodeShape;
+        sh:property    <propNode13>;
+        sh:targetNode  suave:fd_spiral_medium .
+
+schema:shape5  rdf:type  sh:NodeShape;
+        sh:property    <propNode5>;
+        sh:targetNode  suave:qa_search_efficiency_medium .
+
+schema:shape19  rdf:type  sh:NodeShape;
+        sh:property    <propNode19>;
+        sh:targetNode  <http://www.metacontrol.org/suave> .
+
+<propNode15>  sh:hasValue  owl:NamedIndividual;
+        sh:minCount  1;
+        sh:path      rdf:type .
+
+schema:shape21  rdf:type  sh:NodeShape;
+        sh:property    <propNode21>;
+        sh:targetNode  suave:qa_motion_efficiency_normal .
+
+schema:shape0  rdf:type  sh:NodeShape;
+        sh:property    <propNode0>;
+        sh:targetNode  suave:qa_inspect_efficiency_high .
+
+<propNode5>  sh:hasValue  <http://ros/mros#performance>;
+        sh:minCount  1;
+        sh:path      tomasys:isQAtype .
+
+schema:shape14  rdf:type  sh:NodeShape;
+        sh:property    <propNode14>;
+        sh:targetNode  suave:fd_spiral_medium .
+
+schema:shape6  rdf:type  sh:NodeShape;
+        sh:property    <propNode6>;
+        sh:targetNode  suave:qa_motion_efficiency_degraded .
+
+<propNode10>  sh:hasValue  tomasys:FunctionDesign;
+        sh:minCount  1;
+        sh:path      rdf:type .
+
+<propNode16>  sh:hasValue  suave:f_follow_pipeline;
+        sh:minCount  1;
+        sh:path      tomasys:solvesF .
+
+<propNode0>  sh:hasValue  owl:NamedIndividual;
+        sh:minCount  1;
+        sh:path      rdf:type .
+
+schema:shape1  rdf:type  sh:NodeShape;
+        sh:property    <propNode1>;
+        sh:targetNode  suave:qa_inspect_efficiency_high .
+
+<propNode6>  sh:hasValue  owl:NamedIndividual;
+        sh:minCount  1;
+        sh:path      rdf:type .
+
+schema:shape15  rdf:type  sh:NodeShape;
+        sh:property    <propNode15>;
+        sh:targetNode  suave:fd_follow_pipeline .
+
+schema:shape7  rdf:type  sh:NodeShape;
+        sh:property    <propNode7>;
+        sh:targetNode  suave:qa_motion_efficiency_degraded .
+
+<propNode11>  sh:hasValue  owl:NamedIndividual;
+        sh:minCount  1;
+        sh:path      rdf:type .
+
+<propNode17>  sh:hasValue  owl:NamedIndividual;
+        sh:minCount  1;
+        sh:path      rdf:type .
+
+<propNode1>  sh:hasValue  1.0;
+        sh:minCount  1;
+        sh:path      tomasys:hasValue .
+
+schema:shape10  rdf:type  sh:NodeShape;
+        sh:property    <propNode10>;
+        sh:targetNode  suave:fd_spiral_high .
+
+schema:shape2  rdf:type  sh:NodeShape;
+        sh:property    <propNode2>;
+        sh:targetNode  suave:fd_all_thrusters .
+
+<propNode7>  sh:hasValue  0.75;
+        sh:minCount  1;
+        sh:path      tomasys:hasValue .
+
+schema:shape16  rdf:type  sh:NodeShape;
+        sh:property    <propNode16>;
+        sh:targetNode  suave:fd_follow_pipeline .
+
+schema:shape8  rdf:type  sh:NodeShape;
+        sh:property    <propNode8>;
+        sh:targetNode  suave:fd_spiral_high .
+
+<propNode12>  sh:hasValue  0.25;
+        sh:minCount  1;
+        sh:path      tomasys:hasValue .
+
+<propNode18>  sh:hasValue  suave:water_visibility;
+        sh:minCount  1;
+        sh:path      tomasys:isQAtype .
+
+<propNode2>  sh:hasValue  owl:NamedIndividual;
+        sh:minCount  1;
+        sh:path      rdf:type .
+
+schema:shape11  rdf:type  sh:NodeShape;
+        sh:property    <propNode11>;
+        sh:targetNode  suave:qa_search_efficiency_low .
+
+schema:shape3  rdf:type  sh:NodeShape;
+        sh:property    <propNode3>;
+        sh:targetNode  suave:fd_all_thrusters .
+
+<propNode20>  sh:hasValue  owl:NamedIndividual;
+        sh:minCount  1;
+        sh:path      rdf:type .
+
+<propNode8>  sh:hasValue  suave:qa_search_efficiency_high;
+        sh:minCount  1;
+        sh:path      tomasys:hasQAestimation .
+
+schema:shape17  rdf:type  sh:NodeShape;
+        sh:property    <propNode17>;
+        sh:targetNode  suave:obs_water_visibility .
+
+schema:shape9  rdf:type  sh:NodeShape;
+        sh:property    <propNode9>;
+        sh:targetNode  suave:fd_spiral_high .
+
+<propNode13>  sh:hasValue  owl:NamedIndividual;
+        sh:minCount  1;
+        sh:path      rdf:type .
+
+<propNode19>  sh:hasValue  owl:Ontology;
+        sh:minCount  1;
+        sh:path      rdf:type .
+
+<propNode3>  sh:hasValue  suave:f_maintain_motion;
+        sh:minCount  1;
+        sh:path      tomasys:solvesF .
+
+schema:shape12  rdf:type  sh:NodeShape;
+        sh:property    <propNode12>;
+        sh:targetNode  suave:qa_search_efficiency_low .
+
+schema:shape4  rdf:type  sh:NodeShape;
+        sh:property    <propNode4>;
+        sh:targetNode  suave:qa_search_efficiency_medium .
+
+<propNode21>  sh:hasValue  1.0;
+        sh:minCount  1;
+        sh:path      tomasys:hasValue .
+
+<propNode9>  sh:hasValue  owl:NamedIndividual;
+        sh:minCount  1;
+        sh:path      rdf:type .
+
+schema:shape18  rdf:type  sh:NodeShape;
+        sh:property    <propNode18>;
+        sh:targetNode  suave:obs_water_visibility .
+
+<propNode14>  sh:hasValue  suave:f_generate_search_path;
+        sh:minCount  1;
+        sh:path      tomasys:solvesF .
+
+schema:shape20  rdf:type  sh:NodeShape;
+        sh:property    <propNode20>;
+        sh:targetNode  suave:qa_motion_efficiency_normal .
+
+<propNode4>  sh:hasValue  owl:NamedIndividual;
+        sh:minCount  1;
+        sh:path      rdf:type .
