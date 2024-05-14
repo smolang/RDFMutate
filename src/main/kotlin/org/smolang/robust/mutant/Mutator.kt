@@ -70,7 +70,7 @@ class Mutator(private val mutSeq: MutationSequence, private val verbose: Boolean
     val affectedSeedNodes : Set<Resource>
         get() = affectedNodes.intersect((globalMutation?.allNodes() ?: mutableSetOf()).toSet())
 
-    fun validate(model: Model, contract : MutantMask) : Boolean{
+    fun validate(model: Model, contract : RobustnessMask) : Boolean{
         return contract.validate(model)
     }
 }

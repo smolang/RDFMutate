@@ -1,0 +1,67 @@
+% plot of times
+\documentclass{standalone}
+
+\usepackage{xcolor}
+\usepackage{pgfplots}
+
+\definecolor{AUVpurple}{HTML}{d726fa}
+\definecolor{PipeBrown}{HTML}{935e21}
+
+\begin{document}
+	\begin{tikzpicture}
+		\begin{axis}[
+			width=\columnwidth,
+			height=0.6\columnwidth,
+			title={},
+			xlabel={iteration of mask},
+			ylabel={avg. \#attempts},
+			xmin=-0.5, xmax=7.5,
+			ymin=0, ymax=4,
+			xtick={0,1,2,3,4,5,6,7},
+			ytick={0, 1, 2, 3, 4},
+			legend pos=north west,
+			ymajorgrids=true,
+			grid style=dashed,
+			%ybar=0pt
+			]
+			
+			
+			\addplot[
+			%ybar,
+			color=PipeBrown,
+			%fill=PipeBrown!20,
+			line width=1pt,
+			%bar shift=-4pt,
+			%bar width=5,
+			mark=+
+			] 
+			table [
+			x=contract, 
+			y=ratioDI, 
+			col sep=comma
+			] {attemptsPerMask.csv};
+			
+			
+			\addplot[
+			%ybar,
+			color=AUVpurple,
+			%fill=AUVpurple,
+			line width=1pt,
+			%bar shift=4pt,
+			%bar width=5,
+			mark=*
+			] 
+			table [
+			x=contract, 
+			y=ratioDS, 
+			col sep=comma
+			] {attemptsPerMask.csv};
+			
+			
+			
+			\legend{domain-independent, domain-specific}
+			
+		\end{axis}
+	\end{tikzpicture}
+	
+\end{document}

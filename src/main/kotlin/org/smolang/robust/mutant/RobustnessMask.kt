@@ -8,10 +8,10 @@ import org.apache.jena.shacl.Shapes
 import java.io.File
 
 
-class MutantMask(val verbose: Boolean,
-                 private val shacl: Shapes?,
-                 private val containedModel: Model,
-                 val useReasonerContainment : Boolean = false, // if set to true: will use "proper" OWL reasoner to check for containment
+class RobustnessMask(val verbose: Boolean,
+                     private val shacl: Shapes?,
+                     private val containedModel: Model,
+                     val useReasonerContainment : Boolean = false, // if set to true: will use "proper" OWL reasoner to check for containment
      ) {
     //deactivated for now?
     private val entailedModel : Model = ModelFactory.createDefaultModel()

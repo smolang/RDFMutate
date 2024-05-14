@@ -15,6 +15,8 @@ import org.smolang.robust.domainSpecific.geo.GeoTestCaseGenerator
 import org.smolang.robust.domainSpecific.suave.*
 import org.smolang.robust.mutant.*
 import org.smolang.robust.sut.MiniPipeInspection
+import java.io.File
+import java.io.FileOutputStream
 import kotlin.random.Random
 import kotlin.system.exitProcess
 
@@ -77,7 +79,7 @@ class Main : CliktCommand() {
         }
         val contained = RDFDataMgr.loadDataset(contractFile.absolutePath).defaultModel
 
-        val contract = MutantMask(verbose, shapes, contained)
+        val contract = RobustnessMask(verbose, shapes, contained)
 
         // test configuration stuff
 
@@ -197,25 +199,28 @@ class Main : CliktCommand() {
 
 
 
-    fun runSuaveGenerator(contractPath: String) {
+    fun runSuaveGenerator(maskPath: String) {
         val sg = SuaveTestCaseGenerator(true)
+        val mask = RobustnessMask(verbose, null, RDFDataMgr.loadDataset(maskPath).defaultModel)
         val numberOfMutants = 30
         val numberOfMutations = 2
-        val ratioDomainDependent = 1.0
-        val nameOfMutants = "onlySuave10"
+        val ratioDomainDependent = 0.0
+        val nameOfMutants = "temp"
+        val saveMutants = true
         sg.generateSuaveMutants(
             numberOfMutants,
             numberOfMutations,
             ratioDomainDependent,
-            contractPath,
-            nameOfMutants)
+            mask,
+            nameOfMutants,
+            saveMutants)
     }
 
     fun runGeoGenerator(contractFile: String, shapes: Shapes?) {
         val gg = GeoTestCaseGenerator(false)
         val numberOfMutants = 100
         val numberOfMutations = 2
-        val nameOfMutants = "fourthTest"
+        val nameOfMutants = "temp"
         gg.generateGeoMutants(
             numberOfMutants,
             numberOfMutations,
@@ -226,29 +231,29 @@ class Main : CliktCommand() {
 
     fun evaluateSuaveContract(contractPath : String, shapes: Shapes?) {
         // new contract
-        val contract = MutantMask(verbose, shapes, RDFDataMgr.loadDataset(contractPath).defaultModel)
+        val mask = RobustnessMask(verbose, shapes, RDFDataMgr.loadDataset(contractPath).defaultModel)
 
-        contract.checkAgainstOntologies(
+        mask.checkAgainstOntologies(
             listOf(
-                "org/smolang/robust/sut/suave/oracle_mutatedOnt_onlySuave02_2024_03_27_11_52.csv",
-                "org/smolang/robust/sut/suave/oracle_mutatedOnt_onlySuave03_2024_03_27_15_11.csv",
-                "org/smolang/robust/sut/suave/oracle_mutatedOnt_onlySuave04_2024_03_29_14_15.csv",
-                "org/smolang/robust/sut/suave/oracle_mutatedOnt_onlyGeneric03_2024_04_01_11_04.csv",
-                "org/smolang/robust/sut/suave/oracle_mutatedOnt_onlySuave05_2024_04_03_17_17.csv",
-                "org/smolang/robust/sut/suave/oracle_mutatedOnt_onlySuave06_2024_04_08_09_58.csv",
-                "org/smolang/robust/sut/suave/oracle_mutatedOnt_onlySuave07_2024_04_11_08_40.csv",
-                "org/smolang/robust/sut/suave/oracle_mutatedOnt_onlySuave08_2024_04_15_08_39.csv"
+                "sut/suave/oracle_mutatedOnt_onlySuave02_2024_03_27_11_52.csv",
+                "sut/suave/oracle_mutatedOnt_onlySuave03_2024_03_27_15_11.csv",
+                "sut/suave/oracle_mutatedOnt_onlySuave04_2024_03_29_14_15.csv",
+                "sut/suave/oracle_mutatedOnt_onlyGeneric03_2024_04_01_11_04.csv",
+                "sut/suave/oracle_mutatedOnt_onlySuave05_2024_04_03_17_17.csv",
+                "sut/suave/oracle_mutatedOnt_onlySuave06_2024_04_08_09_58.csv",
+                "sut/suave/oracle_mutatedOnt_onlySuave07_2024_04_11_08_40.csv",
+                "sut/suave/oracle_mutatedOnt_onlySuave08_2024_04_15_08_39.csv"
                 ),
             true)
     }
 
     fun evaluateGeoContract(contractPath : String,shapes: Shapes?) {
         // new contract
-        val contract = MutantMask(verbose, shapes,RDFDataMgr.loadDataset(contractPath).defaultModel, useReasonerContainment=true)
+        val contract = RobustnessMask(verbose, shapes,RDFDataMgr.loadDataset(contractPath).defaultModel, useReasonerContainment=true)
 
         contract.checkAgainstOntologies(
             listOf(
-                "org/smolang/robust/sut/geo/benchmark_runs/mutations/oracle_mutatedOnt_secondTest_2024_03_26_09_24.csv"
+                "sut/geo/benchmark_runs/mutations/oracle_mutatedOnt_secondTest_2024_03_26_09_24.csv"
             ),
             true)
     }
@@ -256,6 +261,86 @@ class Main : CliktCommand() {
     fun generateGeoScenarios(shapes: Shapes?) {
         val geoGenerator = GeoScenarioGenerator()
         geoGenerator.generateScenarios(10)
+    }
+
+    fun turnContractIntoSHACLShape() {
+        val ids = listOf(0,1,2,3,4,5,6,7)
+        for (i in ids ) {
+            val sg = ShapeGenerator()
+            sg.turnAxiomsToShapes("sut/suave/contracts/contract$i.owl")
+            sg.saveShapes("sut/suave/masks", "mask$i")
+        }
+
+        val sg = ShapeGenerator()
+
+        sg.turnAxiomsToShapes("sut/geo/contracts/contract1.ttl")
+        sg.saveShapes("sut/geo/masks", "mask1")
+    }
+
+    fun generateIssreGraph() {
+        val numberOfMutants = 100
+        val numberOfMutations = 2
+        val nameOfMutants = "temp"
+        val saveMutants = false
+        val ratioDomainDependent1 = 1.0
+        val ratioDomainDependent2 = 0.0
+
+        val outputFile = File("sut/suave/evaluation/attemptsPerMask.csv")
+
+        // lists to collect number of attempts for domain-independent and -specific operators
+        val listAttemptsDI : MutableList<Int> = mutableListOf()
+        val listAttemptsDS : MutableList<Int> = mutableListOf()
+        val ids = listOf(0,1,2,3,4,5,6,7)
+        for (id in ids) {
+            println("create mutants for mask with id $id")
+            val maskFile = File("sut/suave/masks/mask$id.ttl")
+            val shapesGraph = RDFDataMgr.loadGraph(maskFile!!.absolutePath)
+
+            val mask = RobustnessMask(verbose, Shapes.parse(shapesGraph), ModelFactory.createDefaultModel())
+
+
+            // generate domain-independent mutants
+            val sg = SuaveTestCaseGenerator(false)
+            val attemptsDI = sg.generateSuaveMutants(
+                numberOfMutants,
+                numberOfMutations,
+                ratioDomainDependent1,
+                mask,
+                nameOfMutants,
+                saveMutants
+            )
+            listAttemptsDI.add(attemptsDI)
+
+            // generate domain-specific mutants
+            val attemptsDS = sg.generateSuaveMutants(
+                numberOfMutants,
+                numberOfMutations,
+                ratioDomainDependent2,
+                mask,
+                nameOfMutants,
+                saveMutants
+            )
+            listAttemptsDS.add(attemptsDS)
+
+        }
+
+        // output results to csv file
+        FileOutputStream(outputFile).use { fos ->
+            val writer = fos.bufferedWriter()
+            writer.write("contract,number mutants,attemptsDI,ratioDI,attemptsDS,ratioDS")
+            writer.newLine()
+            for (id in ids) {
+                val attemptsDI = listAttemptsDI[id]
+                val ratioDI = attemptsDI.toFloat() / numberOfMutants
+                val attemptsDS = listAttemptsDS[id]
+                val ratioDS = attemptsDS.toFloat() / numberOfMutants
+                writer.write("$id,$numberOfMutants,$attemptsDS,$ratioDS,$attemptsDI,$ratioDI")
+                writer.newLine()
+            }
+            writer.close()
+            println("writetoFile $outputFile")
+        }
+
     }
 
 

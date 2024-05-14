@@ -6,7 +6,6 @@ import org.apache.jena.rdf.model.Statement
 import org.apache.jena.riot.Lang
 import org.apache.jena.riot.RDFDataMgr
 import org.smolang.robust.randomGenerator
-import rationals.Rational
 import java.io.File
 import java.nio.file.Files
 import java.nio.file.Paths
@@ -37,15 +36,16 @@ class SuaveTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) 
 
 
     //TODO: this is not cleaned up, find out what the magic numbers mean first
+
+    // returns the number of tries to generate the mutant
     fun generateSuaveMutants(numberMutants : Int,
                              numberOfMutations : Int,
                              ratioDomainDependent: Double,
-                             contractFile : String,
-                             mutantsName : String) {
+                             mask : RobustnessMask,
+                             mutantsName : String,
+                             saveMutants : Boolean) : Int {
         val unmutatableStatements = unmutatableSuaveStatements.toMutableList()
 
-        // empty contract
-        val contract = MutantMask(verbose, null, RDFDataMgr.loadDataset(contractFile).defaultModel)
 
         // add more statements to unmutatable part
         for (s in tomasysModel.listStatements())
@@ -61,19 +61,26 @@ class SuaveTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) 
             seed.add(s)
 
         val mutationNumbers = listOf(numberOfMutations)
+        var tries = 0
         for (i in mutationNumbers) {
             val suaveMutator = SuaveMutatorFactory(verbose, mutatableStatements, i, ratioDomainDependent)
-            super.generateMutants(
+            val triesMutant = super.generateMutants(
                 seed,
-                contract,
+                mask,
                 suaveMutator,
                 numberMutants
             )
+            tries += triesMutant
         }
 
-        saveMutants("org/smolang/robust/sut/suave/mutatedOnt", mutantsName)
-        super.writeToCSV("org/smolang/robust/sut/suave/mutatedOnt/"+mutantsName + ".csv")
+        if (saveMutants) {
+            saveMutants("sut/suave/mutatedOnt", mutantsName)
+            super.writeToCSV("sut/suave/mutatedOnt/" + mutantsName + ".csv")
+        }
+        return tries
     }
+
+
 
 
      override fun saveMutants(folderName: String, filePrefix : String) {

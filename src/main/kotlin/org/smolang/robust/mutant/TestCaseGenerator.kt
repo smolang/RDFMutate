@@ -8,15 +8,17 @@ import java.io.FileOutputStream
 import java.nio.file.Files
 import java.nio.file.Paths
 
+
 open class TestCaseGenerator(private val verbose: Boolean) {
     private val mutators : MutableList<Mutator> = mutableListOf()
     val mutants : MutableList<Model> = mutableListOf()
     val mutantFiles: MutableList<String> = mutableListOf()
 
+    // returns the number of tries to generate the desired number of mutants
     fun generateMutants(seed : Model,
-                        contract: MutantMask,
+                        contract: RobustnessMask,
                         mutFactory : MutatorFactory,
-                        countDesired : Int) {
+                        countDesired : Int) : Int {
         var countGenerated = 0
         var countTries = 0
         while (countGenerated < countDesired) {
@@ -32,8 +34,11 @@ open class TestCaseGenerator(private val verbose: Boolean) {
                 mutantFiles.add("?")
             }
         }
-        println("generated: $countGenerated tries: $countTries")
-        println("ratio: " + countTries.toFloat()/countGenerated)
+        if (verbose) {
+            println("generated: $countGenerated tries: $countTries")
+            println("ratio: " + countTries.toFloat() / countGenerated)
+        }
+        return countTries
     }
 
 
