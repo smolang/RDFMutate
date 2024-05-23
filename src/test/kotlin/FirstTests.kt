@@ -1,7 +1,8 @@
-import domainSpecific.suave.*
+import org.smolang.robust.domainSpecific.suave.*
 import io.kotlintest.shouldBe
 import io.kotlintest.specs.StringSpec
-import mutant.*
+import org.apache.jena.rdf.model.ModelFactory
+import org.smolang.robust.mutant.*
 import org.apache.jena.rdf.model.Property
 import org.apache.jena.riot.RDFDataMgr
 import java.lang.AssertionError
@@ -13,7 +14,7 @@ class FirstTests : StringSpec() {
 
             val verbose = false
             val input = RDFDataMgr.loadDataset("abc/abc.ttl").defaultModel
-            val contract = MutantContract(verbose)
+            val contract = RobustnessMask(verbose, null, ModelFactory.createDefaultModel())
             contract.entailedModel = RDFDataMgr.loadDataset("abc/abc.ttl").defaultModel
 
 
@@ -139,7 +140,7 @@ class FirstTests : StringSpec() {
     init {
         "adding / changing data relations" {
             val verbose = false
-            val input = RDFDataMgr.loadDataset("src/main/suave/suave_ontologies/suave_original_with_imports.owl").defaultModel
+            val input = RDFDataMgr.loadDataset("src/test/resources/suave/suave_original_with_imports.owl").defaultModel
 
             val qaCritical = input.createResource("http://metacontrol.org/tomasys#qa_critical")
             val configQACritical = SingleResourceConfiguration(qaCritical)
@@ -191,7 +192,7 @@ class FirstTests : StringSpec() {
             )
 
             // empty contract --> only check for consistency
-            val emptyContract = MutantContract(verbose)
+            val emptyContract = RobustnessMask(verbose, null, ModelFactory.createDefaultModel())
 
             val m = Mutator(ms, verbose)
             val res = m.mutate(input)
@@ -206,7 +207,7 @@ class FirstTests : StringSpec() {
     init {
         "domain specific operators for SUAVE" {
             val verbose = false
-            val input = RDFDataMgr.loadDataset("src/main/suave/suave_ontologies/suave_original_with_imports.owl").defaultModel
+            val input = RDFDataMgr.loadDataset("src/test/resources/suave/suave_original_with_imports.owl").defaultModel
 
             val ms = MutationSequence(verbose)
 
@@ -225,17 +226,4 @@ class FirstTests : StringSpec() {
         }
     }
 }
-
-
-
-// possible tests:
-// use abc:
-//  -  apply mutations that add axioms + individuals: contract should still be valid
-// use miniPipes:
-//  - add segments: number of animals and robots should remain the same
-// in general for ontologies:
-//  - add individuals: new count of individuals should reflect this accordingly
-//  - remove axioms: should no longer be contained
-//  - add axioms: should contain more axioms than before
-
 

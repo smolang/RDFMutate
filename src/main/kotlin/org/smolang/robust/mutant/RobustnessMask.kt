@@ -14,7 +14,7 @@ class RobustnessMask(val verbose: Boolean,
                      val useReasonerContainment : Boolean = false, // if set to true: will use "proper" OWL reasoner to check for containment
      ) {
     //deactivated for now?
-    private val entailedModel : Model = ModelFactory.createDefaultModel()
+    var entailedModel : Model = ModelFactory.createDefaultModel()
 
     // additional axioms that are added to the ontology before reasoning, e.g. containing axioms not considered while
     // creating the mutations

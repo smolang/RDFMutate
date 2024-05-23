@@ -31,7 +31,7 @@ class Mutator(private val mutSeq: MutationSequence, private val verbose: Boolean
     }
 
     // collect all nodes that are mentioned in the mutations
-    private val affectedNodes : Set<Resource>
+    val affectedNodes : Set<Resource>
         get() {
             val nodes: MutableSet<Resource> = mutableSetOf()
             // collect all nodes that are mentioned in the mutations

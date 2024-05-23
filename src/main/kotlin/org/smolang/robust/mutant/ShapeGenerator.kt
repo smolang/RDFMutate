@@ -71,7 +71,7 @@ class ShapeGenerator() {
         val triples = RDFDataMgr.loadDataset(maskFile).defaultModel
         var id = 0
         for (axiom in triples.listStatements()) {
-            println(axiom)
+            //println(axiom)
             val shape = AxiomToShape(axiom, id)
             shape.forEach {shapes.add(it) }
             id += 1
