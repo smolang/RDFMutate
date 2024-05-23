@@ -25,12 +25,13 @@ val randomGenerator = Random(2)
 class Main : CliktCommand() {
     private val source by argument().file()
     private val contractFile by argument().file()
-    private val shaclContractFile by option("--shacl","-s", help="Gives a second contract, defined by a set of SHACL shapes").file()
+    private val shaclMaskFile by option("--shacl","-s", help="Gives a second contract, defined by a set of SHACL shapes").file()
     private val verbose by option("--verbose","-v", help="Verbose output for debugging. Default = false.").flag()
     private val mainMode by option().switch(
         "--scen_geo" to "geo", "-sg" to "geo",
         "--scen_suave" to "suave", "-sv" to "suave",
         "--scen_test" to "test", "-st" to "test",
+        "--issre_graph" to "issre", "-ig" to "issre",
         "--free" to "free",       "-f" to "free",
     ).default("free")
 
@@ -47,6 +48,7 @@ class Main : CliktCommand() {
                 //runSuaveGenerator("sut/suave/contracts/contract7.owl",shapes)
                 //evaluateSuaveContract("sut/suave/contracts/contract7.owl",shapes)
             }
+            "issre" -> generateIssreGraph()
             "test" -> testMiniPipes()
             else -> testMutations()
         }
@@ -55,14 +57,27 @@ class Main : CliktCommand() {
     }
 
 
+    private fun parseShapes(shapeFile : File) : Shapes?{
+        val shapes: Shapes? = if(shapeFile != null && !shapeFile!!.exists()){
+            println("File ${shapeFile!!.path} does not exist")
+            exitProcess(-1)
+        } else if(shapeFile != null) {
+            val shapesGraph = RDFDataMgr.loadGraph(shapeFile!!.absolutePath)
+            Shapes.parse(shapesGraph)
+        } else null
+
+        return shapes
+    }
+
+
     //TODO: add a way to add
     private fun testMutations() {
 
-        val shapes: Shapes? = if(shaclContractFile != null && !shaclContractFile!!.exists()){
-            println("File ${shaclContractFile!!.path} does not exist")
+        val shapes: Shapes? = if(shaclMaskFile != null && !shaclMaskFile!!.exists()){
+            println("File ${shaclMaskFile!!.path} does not exist")
             exitProcess(-1)
-        } else if(shaclContractFile != null) {
-            val shapesGraph = RDFDataMgr.loadGraph(shaclContractFile!!.absolutePath)
+        } else if(shaclMaskFile != null) {
+            val shapesGraph = RDFDataMgr.loadGraph(shaclMaskFile!!.absolutePath)
             Shapes.parse(shapesGraph)
         } else null
 
@@ -249,9 +264,11 @@ class Main : CliktCommand() {
 
     fun evaluateGeoContract(contractPath : String,shapes: Shapes?) {
         // new contract
-        val contract = RobustnessMask(verbose, shapes,RDFDataMgr.loadDataset(contractPath).defaultModel, useReasonerContainment=true)
+        //val mask = RobustnessMask(verbose, shapes,RDFDataMgr.loadDataset(contractPath).defaultModel, useReasonerContainment=true)
 
-        contract.checkAgainstOntologies(
+        val mask = RobustnessMask(verbose, shapes,RDFDataMgr.loadDataset(contractPath).defaultModel)
+
+        mask.checkAgainstOntologies(
             listOf(
                 "sut/geo/benchmark_runs/mutations/oracle_mutatedOnt_secondTest_2024_03_26_09_24.csv"
             ),
@@ -264,6 +281,7 @@ class Main : CliktCommand() {
     }
 
     fun turnContractIntoSHACLShape() {
+
         val ids = listOf(0,1,2,3,4,5,6,7)
         for (i in ids ) {
             val sg = ShapeGenerator()

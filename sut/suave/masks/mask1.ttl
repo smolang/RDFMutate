@@ -1,3 +1,6 @@
+@prefix UFRGS:   <http://purl.obolibrary.org/obo/bfo.owl#UFRGS:> .
+@prefix geo:     <http://www.semanticweb.org/quy/ontologies/2023/2/untitled-ontology-38#> .
+@prefix mask:    <https://www.ifi.uio.no/tobiajoh/mask#> .
 @prefix obo:     <http://purl.obolibrary.org/obo/> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,74 +11,65 @@
 @prefix tomasys: <http://metacontrol.org/tomasys#> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<propNode6>  sh:hasValue  owl:NamedIndividual;
-        sh:minCount  1;
-        sh:path      rdf:type .
+mask:shape3  rdf:type  sh:NodeShape;
+        sh:property    [ sh:hasValue  <http://ros/mros#performance>;
+                         sh:minCount  1;
+                         sh:path      tomasys:isQAtype
+                       ];
+        sh:targetNode  suave:qa_search_efficiency_medium .
 
-<propNode0>  sh:hasValue  owl:NamedIndividual;
-        sh:minCount  1;
-        sh:path      rdf:type .
-
-schema:shape5  rdf:type  sh:NodeShape;
-        sh:property    <propNode5>;
+mask:shape4  rdf:type  sh:NodeShape;
+        sh:property    [ sh:hasValue  owl:NamedIndividual;
+                         sh:minCount  1;
+                         sh:path      rdf:type
+                       ];
         sh:targetNode  suave:qa_motion_efficiency_degraded .
 
-schema:shape6  rdf:type  sh:NodeShape;
-        sh:property    <propNode6>;
+mask:shape5  rdf:type  sh:NodeShape;
+        sh:property    [ sh:hasValue  0.75;
+                         sh:minCount  1;
+                         sh:path      tomasys:hasValue
+                       ];
+        sh:targetNode  suave:qa_motion_efficiency_degraded .
+
+mask:shape6  rdf:type  sh:NodeShape;
+        sh:property    [ sh:hasValue  owl:NamedIndividual;
+                         sh:minCount  1;
+                         sh:path      rdf:type
+                       ];
         sh:targetNode  suave:qa_search_efficiency_low .
 
-<propNode1>  sh:hasValue  1.0;
-        sh:minCount  1;
-        sh:path      tomasys:hasValue .
-
-schema:shape0  rdf:type  sh:NodeShape;
-        sh:property    <propNode0>;
+mask:shape0  rdf:type  sh:NodeShape;
+        sh:property    [ sh:hasValue  owl:NamedIndividual;
+                         sh:minCount  1;
+                         sh:path      rdf:type
+                       ];
         sh:targetNode  suave:qa_inspect_efficiency_high .
 
-<propNode7>  sh:hasValue  0.25;
-        sh:minCount  1;
-        sh:path      tomasys:hasValue .
-
-<propNode8>  sh:hasValue  owl:Ontology;
-        sh:minCount  1;
-        sh:path      rdf:type .
-
-schema:shape1  rdf:type  sh:NodeShape;
-        sh:property    <propNode1>;
-        sh:targetNode  suave:qa_inspect_efficiency_high .
-
-schema:shape7  rdf:type  sh:NodeShape;
-        sh:property    <propNode7>;
+mask:shape7  rdf:type  sh:NodeShape;
+        sh:property    [ sh:hasValue  0.25;
+                         sh:minCount  1;
+                         sh:path      tomasys:hasValue
+                       ];
         sh:targetNode  suave:qa_search_efficiency_low .
 
-<propNode2>  sh:hasValue  owl:NamedIndividual;
-        sh:minCount  1;
-        sh:path      rdf:type .
+mask:shape1  rdf:type  sh:NodeShape;
+        sh:property    [ sh:hasValue  1.0;
+                         sh:minCount  1;
+                         sh:path      tomasys:hasValue
+                       ];
+        sh:targetNode  suave:qa_inspect_efficiency_high .
 
-schema:shape8  rdf:type  sh:NodeShape;
-        sh:property    <propNode8>;
+mask:shape8  rdf:type  sh:NodeShape;
+        sh:property    [ sh:hasValue  owl:Ontology;
+                         sh:minCount  1;
+                         sh:path      rdf:type
+                       ];
         sh:targetNode  <http://www.metacontrol.org/suave> .
 
-<propNode3>  sh:hasValue  <http://ros/mros#performance>;
-        sh:minCount  1;
-        sh:path      tomasys:isQAtype .
-
-schema:shape2  rdf:type  sh:NodeShape;
-        sh:property    <propNode2>;
+mask:shape2  rdf:type  sh:NodeShape;
+        sh:property    [ sh:hasValue  owl:NamedIndividual;
+                         sh:minCount  1;
+                         sh:path      rdf:type
+                       ];
         sh:targetNode  suave:qa_search_efficiency_medium .
-
-schema:shape3  rdf:type  sh:NodeShape;
-        sh:property    <propNode3>;
-        sh:targetNode  suave:qa_search_efficiency_medium .
-
-<propNode4>  sh:hasValue  owl:NamedIndividual;
-        sh:minCount  1;
-        sh:path      rdf:type .
-
-<propNode5>  sh:hasValue  0.75;
-        sh:minCount  1;
-        sh:path      tomasys:hasValue .
-
-schema:shape4  rdf:type  sh:NodeShape;
-        sh:property    <propNode4>;
-        sh:targetNode  suave:qa_motion_efficiency_degraded .
