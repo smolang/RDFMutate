@@ -10,27 +10,25 @@ class GeoTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) {
     private val geoOntoPath = "org/smolang/robust/sut/geo/total_mini.ttl"
     fun generateGeoMutants(numberMutants : Int,
                            numberOfMutations : Int,
-                           contractFile : String,
-                           shapes: Shapes?,
-                           mutantsName: String) {
+                           mask: RobustnessMask,
+                           mutantsName: String,
+                           saveMutants : Boolean) {
         val seed = RDFDataMgr.loadDataset(geoOntoPath).defaultModel
-
-        // new contract
-        val contract = RobustnessMask(verbose, shapes, RDFDataMgr.loadDataset(contractFile).defaultModel, useReasonerContainment=true)
 
         val mutationNumbers = listOf(numberOfMutations)
         for (i in mutationNumbers) {
             val geoMutator = GeoMutatorFactory(verbose, i)
             super.generateMutants(
                 seed,
-                contract,
+                mask,
                 geoMutator,
                 numberMutants
             )
         }
-
-        saveMutants("org/smolang/robust/sut/geo/mutatedOnt", mutantsName)
-        super.writeToCSV("org/smolang/robust/sut/geo/mutatedOnt/"+mutantsName +".csv")
+        if (saveMutants) {
+            saveMutants("org/smolang/robust/sut/geo/mutatedOnt", mutantsName)
+            super.writeToCSV("org/smolang/robust/sut/geo/mutatedOnt/" + mutantsName + ".csv")
+        }
     }
 }
 

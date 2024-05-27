@@ -24,7 +24,6 @@ val randomGenerator = Random(2)
 
 class Main : CliktCommand() {
     private val source by argument().file()
-    private val contractFile by argument().file()
     private val shaclMaskFile by option("--shacl","-s", help="Gives a second contract, defined by a set of SHACL shapes").file()
     private val verbose by option("--verbose","-v", help="Verbose output for debugging. Default = false.").flag()
     private val mainMode by option().switch(
@@ -37,16 +36,18 @@ class Main : CliktCommand() {
 
 
     override fun run() {
+
         when (mainMode){
             "geo" -> {
-                //generateGeoScenarios(shapes)
-                //runGeoGenerator("sut/geo/contracts/contract1.ttl",shapes)
-                //evaluateGeoContract("sut/geo/contracts/contract1.ttl",shapes)
+                val shapes = parseShapes(shaclMaskFile)
+                generateGeoScenarios()
+                runGeoGenerator(shapes)
+                //evaluateGeoContract(shapes)
             }
             "suave" ->{
-                //testSuave()
-                //runSuaveGenerator("sut/suave/contracts/contract7.owl",shapes)
-                //evaluateSuaveContract("sut/suave/contracts/contract7.owl",shapes)
+                val shapes = parseShapes(shaclMaskFile)
+                //runSuaveGenerator(shapes)
+                evaluateSuaveContract(shapes)
             }
             "issre" -> generateIssreGraph()
             "test" -> testMiniPipes()
@@ -57,15 +58,15 @@ class Main : CliktCommand() {
     }
 
 
-    private fun parseShapes(shapeFile : File) : Shapes?{
-        val shapes: Shapes? = if(shapeFile != null && !shapeFile!!.exists()){
-            println("File ${shapeFile!!.path} does not exist")
-            exitProcess(-1)
-        } else if(shapeFile != null) {
-            val shapesGraph = RDFDataMgr.loadGraph(shapeFile!!.absolutePath)
-            Shapes.parse(shapesGraph)
-        } else null
-
+    private fun parseShapes(shapeFile : File?) : Shapes?{
+        val shapes: Shapes? =
+            if(shapeFile != null && !shapeFile!!.exists()){
+                println("File ${shapeFile!!.path} does not exist")
+                exitProcess(-1)
+            } else if(shapeFile != null) {
+                val shapesGraph = RDFDataMgr.loadGraph(shapeFile!!.absolutePath)
+                Shapes.parse(shapesGraph)
+            } else null
         return shapes
     }
 
@@ -88,13 +89,7 @@ class Main : CliktCommand() {
 
         val input = RDFDataMgr.loadDataset(source.absolutePath).defaultModel
 
-        if(!contractFile.exists()){
-            println("File ${contractFile.path} does not exist")
-            exitProcess(-1)
-        }
-        val contained = RDFDataMgr.loadDataset(contractFile.absolutePath).defaultModel
-
-        val contract = RobustnessMask(verbose, shapes, contained)
+        val contract = RobustnessMask(verbose, shapes)
 
         // test configuration stuff
 
@@ -189,37 +184,13 @@ class Main : CliktCommand() {
 
     }
 
-    fun testSuave() {
-        val input = RDFDataMgr.loadDataset("src/main/suave/suave_ontologies/suave_original_with_imports.owl").defaultModel
 
-        val ms = MutationSequence(verbose)
-
-
-        for (i in 0..10) {
-            ms.addRandom(ChangeSolvesFunctionMutation::class)
-            ms.addRandom(AddQAEstimationMutation::class)
-            ms.addRandom(RemoveQAEstimationMutation::class)
-            ms.addRandom(ChangeQualityAttributTypeMutation::class)
-            ms.addRandom(ChangeHasValueMutation::class)
-            ms.addRandom(ChangeQAComparisonOperatorMutation::class)
-            ms.addRandom(AddNewThrusterMutation::class)
-        }
-
-        val m = Mutator(ms, verbose)
-        val output = m.mutate(input)
-
-        //val output = m.mutate(input)
-        //RDFDataMgr.write(File("examples/test2.ttl").outputStream(), output, Lang.TTL)
-    }
-
-
-
-    fun runSuaveGenerator(maskPath: String) {
+    fun runSuaveGenerator(shapes: Shapes?) {
         val sg = SuaveTestCaseGenerator(true)
-        val mask = RobustnessMask(verbose, null, RDFDataMgr.loadDataset(maskPath).defaultModel)
         val numberOfMutants = 30
         val numberOfMutations = 2
         val ratioDomainDependent = 0.0
+        val mask = RobustnessMask(verbose, shapes)
         val nameOfMutants = "temp"
         val saveMutants = true
         sg.generateSuaveMutants(
@@ -231,22 +202,25 @@ class Main : CliktCommand() {
             saveMutants)
     }
 
-    fun runGeoGenerator(contractFile: String, shapes: Shapes?) {
+    fun runGeoGenerator(shapes: Shapes?) {
         val gg = GeoTestCaseGenerator(false)
         val numberOfMutants = 100
         val numberOfMutations = 2
+        val mask = RobustnessMask(verbose, shapes)
         val nameOfMutants = "temp"
+        val saveMutants = true
         gg.generateGeoMutants(
             numberOfMutants,
             numberOfMutations,
-            contractFile,
-            shapes,
-            nameOfMutants)
+            mask,
+            nameOfMutants,
+            saveMutants)
     }
 
-    fun evaluateSuaveContract(contractPath : String, shapes: Shapes?) {
+    // evaluates provided shapes agains the suave test runs
+    fun evaluateSuaveContract(shapes: Shapes?) {
         // new contract
-        val mask = RobustnessMask(verbose, shapes, RDFDataMgr.loadDataset(contractPath).defaultModel)
+        val mask = RobustnessMask(verbose, shapes)
 
         mask.checkAgainstOntologies(
             listOf(
@@ -262,11 +236,12 @@ class Main : CliktCommand() {
             true)
     }
 
-    fun evaluateGeoContract(contractPath : String,shapes: Shapes?) {
+    // evaluates provided shapes agains the geo test runs
+    fun evaluateGeoContract(shapes: Shapes?) {
         // new contract
         //val mask = RobustnessMask(verbose, shapes,RDFDataMgr.loadDataset(contractPath).defaultModel, useReasonerContainment=true)
 
-        val mask = RobustnessMask(verbose, shapes,RDFDataMgr.loadDataset(contractPath).defaultModel)
+        val mask = RobustnessMask(verbose, shapes)
 
         mask.checkAgainstOntologies(
             listOf(
@@ -275,11 +250,13 @@ class Main : CliktCommand() {
             true)
     }
 
-    fun generateGeoScenarios(shapes: Shapes?) {
+    // creates scenarios, i.e. different layerings, for the geo simulator
+    fun generateGeoScenarios() {
         val geoGenerator = GeoScenarioGenerator()
         geoGenerator.generateScenarios(10)
     }
 
+    // takes ontologies, i.e. files with axioms and turns them into SHACL shapes
     fun turnContractIntoSHACLShape() {
 
         val ids = listOf(0,1,2,3,4,5,6,7)
@@ -293,8 +270,14 @@ class Main : CliktCommand() {
 
         sg.turnAxiomsToShapes("sut/geo/contracts/contract1.ttl")
         sg.saveShapes("sut/geo/masks", "mask1")
+
+        val sgExample = ShapeGenerator()
+
+        sgExample.turnAxiomsToShapes("examples/contract.ttl")
+        sgExample.saveShapes("examples", "mask")
     }
 
+    // generates graph for ISSRE paper
     fun generateIssreGraph() {
         val numberOfMutants = 100
         val numberOfMutations = 2
@@ -314,7 +297,7 @@ class Main : CliktCommand() {
             val maskFile = File("sut/suave/masks/mask$id.ttl")
             val shapesGraph = RDFDataMgr.loadGraph(maskFile!!.absolutePath)
 
-            val mask = RobustnessMask(verbose, Shapes.parse(shapesGraph), ModelFactory.createDefaultModel())
+            val mask = RobustnessMask(verbose, Shapes.parse(shapesGraph))
 
 
             // generate domain-independent mutants

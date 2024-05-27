@@ -1,7 +1,6 @@
 package org.smolang.robust.mutant
 
 import org.apache.jena.rdf.model.Model
-import org.apache.jena.rdf.model.ModelFactory
 import org.apache.jena.riot.RDFDataMgr
 import org.apache.jena.shacl.ShaclValidator
 import org.apache.jena.shacl.Shapes
@@ -9,23 +8,11 @@ import java.io.File
 
 
 class RobustnessMask(val verbose: Boolean,
-                     private val shacl: Shapes?,
-                     private val containedModel: Model,
-                     val useReasonerContainment : Boolean = false, // if set to true: will use "proper" OWL reasoner to check for containment
-     ) {
-    //deactivated for now?
-    var entailedModel : Model = ModelFactory.createDefaultModel()
+                     private val shacl: Shapes?
+    ) {
 
-    // additional axioms that are added to the ontology before reasoning, e.g. containing axioms not considered while
-    // creating the mutations
-    private val additionalAxioms: Model = ModelFactory.createDefaultModel()
-
-
-
-    // checks, if the provided model is valid w.r.t. the contract
+    // checks, if the provided model is valid w.r.t. the shacl shapes
     fun validate(model: Model) : Boolean {
-
-        model.add(additionalAxioms.listStatements())
 
         // create reasoner with the selected backend
         val reasonerFactory = CustomReasonerFactory(verbose, ReasoningBackend.OPENLLET)
@@ -34,25 +21,11 @@ class RobustnessMask(val verbose: Boolean,
         val consistent = reasoner.isConsistent()
         if(!consistent) return false
 
-        val containment =
-            if (useReasonerContainment)
-                reasoner.containsAll(containedModel)
-            else
-                model.containsAll(containedModel)
-        if(!containment) return false
-
-        val entailment = reasoner.entailsAll(entailedModel)
-        if(!entailment) return false
-
         return if (shacl != null) ShaclValidator.get().validate(shacl, model.graph).conforms() else true
-
-        //val m = containedModel.listStatements().toSet()
-        //m.removeAll(model.listStatements().toSet())
-        //println(m)
     }
 
-    // makes a prediction based on the contract
-    private fun contractOracle(ontologyPath: String): OracleOutcome {
+    // makes a prediction based on the mask
+    private fun maskOracle(ontologyPath: String): OracleOutcome {
         // build model for ontology
         val model = RDFDataMgr.loadDataset(ontologyPath).defaultModel
 
@@ -62,7 +35,7 @@ class RobustnessMask(val verbose: Boolean,
             OracleOutcome.FAIL
     }
 
-    // checks, if the predictions of the contract are in line with the predictions from the real oracle
+    // checks, if the predictions of the mask are in line with the predictions from the real oracle
     fun checkAgainstOntologies(oracleFiles: List<String>, detailedEvaluation: Boolean) {
 
         // sets to collect the ontologies for which the oracle is correct or wrong
@@ -88,19 +61,19 @@ class RobustnessMask(val verbose: Boolean,
                 } else {
                     // data row
 
-                    // call contract oracle
-                    println("test contract for $ontologyPath")
-                    val contractOracle = this.contractOracle(ontologyPath)
+                    // call mask oracle
+                    println("test mask for $ontologyPath")
+                    val maskOracle = this.maskOracle(ontologyPath)
 
                     // check against real oracle
                     val realOracle = parseOutcome(oracle)
 
-                    // collect deviations (wrong contract fail / pass)
+                    // collect deviations (wrong mask fail / pass)
                     if (realOracle != OracleOutcome.UNDECIDED) {// only consider cases where we have an oracle
-                        if (contractOracle == realOracle)
+                        if (maskOracle == realOracle)
                             correctOracle += ontologyPath
                         else
-                            when (contractOracle) {
+                            when (maskOracle) {
                                 OracleOutcome.FAIL -> falseFail += ontologyPath
                                 OracleOutcome.PASS -> falsePass += ontologyPath
                                 OracleOutcome.UNDECIDED -> Unit
@@ -115,33 +88,33 @@ class RobustnessMask(val verbose: Boolean,
         if (detailedEvaluation) {
             if (falseFail.any()) {
                 println()
-                println("false \"fail\" oracle from contract")
+                println("false \"fail\" oracle from mask")
                 for (ontology in falseFail)
                     println(ontology)
             }
 
             if (falsePass.any()) {
                 println()
-                println("false \"pass\" oracle from contract")
+                println("false \"pass\" oracle from mask")
                 for (ontology in falsePass.sorted())
                     println(ontology)
             }
         }
 
-        // output result: is contract too permissive or too strict?
+        // output result: is mask too permissive or too strict?
         println()
         println("———————————————————————————————————————")
-        println("evaluation of contract:")
+        println("evaluation of mask:")
         println("total number of cases: ${correctOracle.size + falsePass.size + falseFail.size}")
         println("correct: ${correctOracle.size}")
         println("falsePass: ${falsePass.size}")
         println("falseFail: ${falseFail.size}")
         if ( falsePass.size == 0 && falseFail.size >0 )
-            println("The contract is too strict.")
+            println("The mask is too strict.")
         if ( falsePass.size > 0 && falseFail.size == 0 )
-            println("The contract is too permissive.")
+            println("The mask is too permissive.")
         if ( falsePass.size == 0 && falseFail.size == 0 )
-            println("The contract correct w.r.t. the test cases.")
+            println("The mask correct w.r.t. the test cases.")
 
 
     }

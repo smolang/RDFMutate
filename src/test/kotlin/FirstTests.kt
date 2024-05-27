@@ -5,6 +5,7 @@ import org.apache.jena.rdf.model.ModelFactory
 import org.smolang.robust.mutant.*
 import org.apache.jena.rdf.model.Property
 import org.apache.jena.riot.RDFDataMgr
+import org.apache.jena.shacl.Shapes
 import java.lang.AssertionError
 import kotlin.test.assertFailsWith
 
@@ -14,9 +15,8 @@ class FirstTests : StringSpec() {
 
             val verbose = false
             val input = RDFDataMgr.loadDataset("abc/abc.ttl").defaultModel
-            val contract = RobustnessMask(verbose, null, ModelFactory.createDefaultModel())
-            contract.entailedModel = RDFDataMgr.loadDataset("abc/abc.ttl").defaultModel
-
+            val shapes = Shapes.parse(RDFDataMgr.loadGraph("abc/mask.ttl"))
+            val contract = RobustnessMask(verbose, shapes)
 
             // add mutation to remove a random subclass axiom
             val ms = MutationSequence(verbose)
@@ -192,7 +192,7 @@ class FirstTests : StringSpec() {
             )
 
             // empty contract --> only check for consistency
-            val emptyContract = RobustnessMask(verbose, null, ModelFactory.createDefaultModel())
+            val emptyContract = RobustnessMask(verbose, null)
 
             val m = Mutator(ms, verbose)
             val res = m.mutate(input)

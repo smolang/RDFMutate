@@ -18,7 +18,7 @@ class MaskGenerationTests : StringSpec() {
             // read the generated shapes and turn them into maks
             val shapesGraph = RDFDataMgr.loadGraph("src/test/resources/suave/generatedMask.ttl")
             val shapes = Shapes.parse(shapesGraph)
-            val mask = RobustnessMask(false, shapes, ModelFactory.createDefaultModel())
+            val mask = RobustnessMask(false, shapes)
 
             val suavePath = "src/test/resources/suave/suave_original_with_imports.owl"
             val badMutantPath = "src/test/resources/suave/suave_bad.owl"
@@ -40,7 +40,7 @@ class MaskGenerationTests : StringSpec() {
             // read the generated shapes and turn them into maks
             val shapesGraph = RDFDataMgr.loadGraph("src/test/resources/geo/generatedMask.ttl")
             val shapes = Shapes.parse(shapesGraph)
-            val mask = RobustnessMask(false, shapes, ModelFactory.createDefaultModel())
+            val mask = RobustnessMask(false, shapes)
 
             val originalPath = "src/test/resources/geo/geo_original.ttl"
             val badMutantPath = "src/test/resources/geo/geo_bad.nt"
