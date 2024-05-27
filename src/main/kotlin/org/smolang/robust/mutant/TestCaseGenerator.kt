@@ -16,7 +16,7 @@ open class TestCaseGenerator(private val verbose: Boolean) {
 
     // returns the number of tries to generate the desired number of mutants
     fun generateMutants(seed : Model,
-                        contract: RobustnessMask,
+                        mask: RobustnessMask,
                         mutFactory : MutatorFactory,
                         countDesired : Int) : Int {
         var countGenerated = 0
@@ -27,7 +27,7 @@ open class TestCaseGenerator(private val verbose: Boolean) {
             countTries += 1
             if (verbose)
                 println("generated mutants: $countGenerated")
-            if (contract.validate(mutant)){
+            if (mask.validate(mutant)){
                 countGenerated += 1
                 mutators.add(m)
                 mutants.add(mutant)

@@ -24,7 +24,7 @@ val randomGenerator = Random(2)
 
 class Main : CliktCommand() {
     private val source by argument().file()
-    private val shaclMaskFile by option("--shacl","-s", help="Gives a second contract, defined by a set of SHACL shapes").file()
+    private val shaclMaskFile by option("--shacl","-s", help="Gives a mask, defined by a set of SHACL shapes").file()
     private val verbose by option("--verbose","-v", help="Verbose output for debugging. Default = false.").flag()
     private val mainMode by option().switch(
         "--scen_geo" to "geo", "-sg" to "geo",
@@ -40,14 +40,14 @@ class Main : CliktCommand() {
         when (mainMode){
             "geo" -> {
                 val shapes = parseShapes(shaclMaskFile)
-                generateGeoScenarios()
-                runGeoGenerator(shapes)
-                //evaluateGeoContract(shapes)
+                //generateGeoScenarios()
+                //runGeoGenerator(shapes)
+                evaluateGeoMask(shapes)
             }
             "suave" ->{
                 val shapes = parseShapes(shaclMaskFile)
                 //runSuaveGenerator(shapes)
-                evaluateSuaveContract(shapes)
+                evaluateSuaveMask(shapes)
             }
             "issre" -> generateIssreGraph()
             "test" -> testMiniPipes()
@@ -89,7 +89,7 @@ class Main : CliktCommand() {
 
         val input = RDFDataMgr.loadDataset(source.absolutePath).defaultModel
 
-        val contract = RobustnessMask(verbose, shapes)
+        val mask = RobustnessMask(verbose, shapes)
 
         // test configuration stuff
 
@@ -136,7 +136,7 @@ class Main : CliktCommand() {
             val res = m.mutate(input)
 
             //XXX: the following ignores blank nodes
-            val valid = m.validate(res, contract)
+            val valid = m.validate(res, mask)
             println("result of validation: $valid")
             if(verbose) res.write(System.out, "TTL")
     }
@@ -218,8 +218,8 @@ class Main : CliktCommand() {
     }
 
     // evaluates provided shapes agains the suave test runs
-    fun evaluateSuaveContract(shapes: Shapes?) {
-        // new contract
+    fun evaluateSuaveMask(shapes: Shapes?) {
+        // new mask
         val mask = RobustnessMask(verbose, shapes)
 
         mask.checkAgainstOntologies(
@@ -237,11 +237,8 @@ class Main : CliktCommand() {
     }
 
     // evaluates provided shapes agains the geo test runs
-    fun evaluateGeoContract(shapes: Shapes?) {
-        // new contract
-        //val mask = RobustnessMask(verbose, shapes,RDFDataMgr.loadDataset(contractPath).defaultModel, useReasonerContainment=true)
-
-        val mask = RobustnessMask(verbose, shapes)
+    fun evaluateGeoMask(shapes: Shapes?) {
+          val mask = RobustnessMask(verbose, shapes)
 
         mask.checkAgainstOntologies(
             listOf(
