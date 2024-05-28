@@ -9,6 +9,13 @@ A prototype for mutation of OWL ontology with respect to entailment constraints
  - add to groups, e.g. following [this website](https://docs.docker.com/engine/install/linux-postinstall/)
 
 ### Geo Simulator
-- get fork of simulator from [github](https://github.com/tobiaswjohn/SemanticObjects/tree/geosim) and clone it in some `FOLEDER`
+- install Java, e.g. using
+
+ `sudo apt install default-jre`
+
+ `sudo apt install default-jdk`
+- get branch `geosim` from fork of simulator from [github](https://github.com/tobiaswjohn/SemanticObjects) and clone it in some `FOLDER`. I.e. use
+  
+  `git clone -b geosim https://github.com/tobiaswjohn/SemanticObjects`
 - insert the path of the cloned repository, i.e. `FOLDER/SemanticObjects`,  in the [config file](sut/geo/config.txt). (can be relative or absolute path)
 - call `build_geo.sh`
