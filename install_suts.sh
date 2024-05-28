@@ -58,9 +58,9 @@ sudo newgrp docker << FOO
 # get suave docker image
 
 CONTAINER_NAME=suaveContainer
-
-docker run -it -d --shm-size=512m -p 6901:6901 -e VNC_PW=password --security-opt seccomp=unconfined --name $CONTAINER_NAME ghcr.io/kas-lab/suave:main 
-docker stop $CONTAINER_NAME
+echo "create container \$CONTAINER_NAME"
+docker run -it -d --shm-size=512m -p 6901:6901 -e VNC_PW=password --security-opt seccomp=unconfined --name \$CONTAINER_NAME ghcr.io/kas-lab/suave:main 
+docker stop \$CONTAINER_NAME
 
 FOO
 
