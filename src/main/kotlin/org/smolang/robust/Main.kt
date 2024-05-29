@@ -16,7 +16,6 @@ import org.smolang.robust.domainSpecific.suave.*
 import org.smolang.robust.mutant.*
 import org.smolang.robust.sut.MiniPipeInspection
 import java.io.File
-import java.io.FileOutputStream
 import kotlin.random.Random
 import kotlin.system.exitProcess
 
@@ -44,13 +43,16 @@ class Main : CliktCommand() {
                 //runGeoGenerator(shapes)
                 evaluateGeoMask(shapes)
             }
-            "suave" ->{
+            "suave" -> {
                 val shapes = parseShapes(shaclMaskFile)
                 //runSuaveGenerator(shapes)
                 evaluateSuaveMask(shapes)
             }
             "issre" -> generateIssreGraph()
-            "test" -> testMiniPipes()
+            "test" -> {
+                // test installation
+                testMiniPipes()
+            }
             else -> testMutations()
         }
 
@@ -145,12 +147,12 @@ class Main : CliktCommand() {
     private fun testMiniPipes() {
         if(!source.exists()) throw Exception("Input file $source does not exist")
         val input = RDFDataMgr.loadDataset(source.absolutePath).defaultModel
-        val pi = MiniPipeInspection()
+        val pi1 = MiniPipeInspection()
 
         // run without mutations
-        pi.readOntology(input)
-        pi.doInspection()
-        println("everything inspected?: " + pi.allInfrastructureInspected())
+        pi1.readOntology(input)
+        pi1.doInspection()
+        println("everything inspected?: " + pi1.allInfrastructureInspected())
 
         // mutated ontology with "add pipe" at segment1
         println("\nApply mutation to ontology")
@@ -161,27 +163,13 @@ class Main : CliktCommand() {
         val mSegment = Mutator(msSegment, verbose)
         val resSegment = mSegment.mutate(input)
 
-        pi.readOntology(resSegment)
-        pi.doInspection()
-        println("everything inspected?: " + pi.allInfrastructureInspected())
+        val pi2 = MiniPipeInspection()
+        pi2.readOntology(resSegment)
+        pi2.doInspection()
+        println("everything inspected?: " + pi2.allInfrastructureInspected())
 
-
-
-
-
-        // mutated ontology with deletion of animal and infrastructure are disjoint
-        // some implementation work needed: remove axiom mutation + more sophisticated reasoning in algorithm to really
-        // use an ontological negation
-        val st = input.createStatement(
-            input.createResource("http://www.ifi.uio.no/tobiajoh/miniPipes#Animal"),
-            input.createProperty("http://www.w3.org/2002/07/owl#disjointWith"),
-            input.createResource("http://www.ifi.uio.no/tobiajoh/miniPipes#Infrastructure")
-        )
-        val configAnimal = SingleStatementConfiguration(st)
-
-
-
-
+        if(!pi1.allInfrastructureInspected() || pi2.allInfrastructureInspected())
+            throw Exception("Mutation Generator does not work as expected")
     }
 
 
@@ -222,29 +210,35 @@ class Main : CliktCommand() {
         // new mask
         val mask = RobustnessMask(verbose, shapes)
 
+        val relevantSutRuns =  listOf(
+            "sut/suave/oracle_mutatedOnt_onlySuave02_2024_03_27_11_52.csv",
+            "sut/suave/oracle_mutatedOnt_onlySuave03_2024_03_27_15_11.csv",
+            "sut/suave/oracle_mutatedOnt_onlySuave04_2024_03_29_14_15.csv",
+            "sut/suave/oracle_mutatedOnt_onlyGeneric03_2024_04_01_11_04.csv",
+            "sut/suave/oracle_mutatedOnt_onlySuave05_2024_04_03_17_17.csv",
+            "sut/suave/oracle_mutatedOnt_onlySuave06_2024_04_08_09_58.csv",
+            "sut/suave/oracle_mutatedOnt_onlySuave07_2024_04_11_08_40.csv",
+            "sut/suave/oracle_mutatedOnt_onlySuave08_2024_04_15_08_39.csv"
+        )
+        val detailedEvaluationOutput = true
+
         mask.checkAgainstOntologies(
-            listOf(
-                "sut/suave/oracle_mutatedOnt_onlySuave02_2024_03_27_11_52.csv",
-                "sut/suave/oracle_mutatedOnt_onlySuave03_2024_03_27_15_11.csv",
-                "sut/suave/oracle_mutatedOnt_onlySuave04_2024_03_29_14_15.csv",
-                "sut/suave/oracle_mutatedOnt_onlyGeneric03_2024_04_01_11_04.csv",
-                "sut/suave/oracle_mutatedOnt_onlySuave05_2024_04_03_17_17.csv",
-                "sut/suave/oracle_mutatedOnt_onlySuave06_2024_04_08_09_58.csv",
-                "sut/suave/oracle_mutatedOnt_onlySuave07_2024_04_11_08_40.csv",
-                "sut/suave/oracle_mutatedOnt_onlySuave08_2024_04_15_08_39.csv"
-                ),
-            true)
+           relevantSutRuns,
+            detailedEvaluationOutput)
     }
 
     // evaluates provided shapes agains the geo test runs
     fun evaluateGeoMask(shapes: Shapes?) {
-          val mask = RobustnessMask(verbose, shapes)
+        val mask = RobustnessMask(verbose, shapes)
+
+        val relevantSutRuns = listOf(
+            "sut/geo/benchmark_runs/mutations/oracle_mutatedOnt_secondTest_2024_03_26_09_24.csv"
+        )
+        val detailedEvaluationOutput = true
 
         mask.checkAgainstOntologies(
-            listOf(
-                "sut/geo/benchmark_runs/mutations/oracle_mutatedOnt_secondTest_2024_03_26_09_24.csv"
-            ),
-            true)
+            relevantSutRuns,
+            detailedEvaluationOutput)
     }
 
     // creates scenarios, i.e. different layerings, for the geo simulator
@@ -255,7 +249,6 @@ class Main : CliktCommand() {
 
     // takes ontologies, i.e. files with axioms and turns them into SHACL shapes
     fun turnContractIntoSHACLShape() {
-
         val ids = listOf(0,1,2,3,4,5,6,7)
         for (i in ids ) {
             val sg = ShapeGenerator()
@@ -277,71 +270,9 @@ class Main : CliktCommand() {
     // generates graph for ISSRE paper
     fun generateIssreGraph() {
         val numberOfMutants = 100
-        val numberOfMutations = 2
-        val nameOfMutants = "temp"
-        val saveMutants = false
-        val ratioDomainDependent1 = 1.0
-        val ratioDomainDependent2 = 0.0
-
         val outputFile = File("sut/suave/evaluation/attemptsPerMask.csv")
-
-        // lists to collect number of attempts for domain-independent and -specific operators
-        val listAttemptsDI : MutableList<Int> = mutableListOf()
-        val listAttemptsDS : MutableList<Int> = mutableListOf()
-        val ids = listOf(0,1,2,3,4,5,6,7)
-        for (id in ids) {
-            println("create mutants for mask with id $id")
-            val maskFile = File("sut/suave/masks/mask$id.ttl")
-            val shapesGraph = RDFDataMgr.loadGraph(maskFile!!.absolutePath)
-
-            val mask = RobustnessMask(verbose, Shapes.parse(shapesGraph))
-
-
-            // generate domain-independent mutants
-            val sg = SuaveTestCaseGenerator(false)
-            val attemptsDI = sg.generateSuaveMutants(
-                numberOfMutants,
-                numberOfMutations,
-                ratioDomainDependent1,
-                mask,
-                nameOfMutants,
-                saveMutants
-            )
-            listAttemptsDI.add(attemptsDI)
-
-            // generate domain-specific mutants
-            val attemptsDS = sg.generateSuaveMutants(
-                numberOfMutants,
-                numberOfMutations,
-                ratioDomainDependent2,
-                mask,
-                nameOfMutants,
-                saveMutants
-            )
-            listAttemptsDS.add(attemptsDS)
-
-        }
-
-        // output results to csv file
-        FileOutputStream(outputFile).use { fos ->
-            val writer = fos.bufferedWriter()
-            writer.write("contract,number mutants,attemptsDI,ratioDI,attemptsDS,ratioDS")
-            writer.newLine()
-            for (id in ids) {
-                val attemptsDI = listAttemptsDI[id]
-                val ratioDI = attemptsDI.toFloat() / numberOfMutants
-                val attemptsDS = listAttemptsDS[id]
-                val ratioDS = attemptsDS.toFloat() / numberOfMutants
-                writer.write("$id,$numberOfMutants,$attemptsDS,$ratioDS,$attemptsDI,$ratioDI")
-                writer.newLine()
-            }
-            writer.close()
-            println("writetoFile $outputFile")
-        }
-
+        SuaveEvaluationGraphGenerator(false).generateGraph(numberOfMutants, outputFile)
     }
-
-
 }
 
 
