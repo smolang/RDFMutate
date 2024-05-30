@@ -8,11 +8,21 @@ currentFolder=$(pwd)
 ##########################################################
 # install java JRE and jave JDK
 
+echo "install Java JRE and JDK"
+
+sudo apt updates
+
 sudo apt install -y default-jre
 sudo apt install -y default-jdk
 
 ##########################################################
 # install geo-sim
+echo "install git"
+
+sudo apt install -y git
+
+echo "install geo simulator"
+
 
 # put repository next to root folder of this one
 cd ..
