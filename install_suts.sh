@@ -10,7 +10,7 @@ currentFolder=$(pwd)
 
 echo "install Java JRE and JDK"
 
-sudo apt updates
+sudo apt update
 
 sudo apt install -y default-jre
 sudo apt install -y default-jdk
