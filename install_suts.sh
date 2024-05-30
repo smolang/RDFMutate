@@ -2,6 +2,11 @@
 
 # installs dependencies, e.g. to set up a VM that can run everything
 
+# check if script is running as root
+if [[ $(/usr/bin/id -u) -ne 0 ]]; then
+    echo "Not running as root. Try to run script with 'sudo'."
+    exit
+fi
 
 currentFolder=$(pwd)
 
