@@ -17,6 +17,7 @@ A prototype for mutation of OWL ontology with respect to entailment constraints
  `sudo apt install default-jre`
 
  `sudo apt install default-jdk`
+- install [gradle](https://gradle.org/install/)
 - get branch `geosim` from fork of simulator from [github](https://github.com/tobiaswjohn/SemanticObjects) and clone it in some `FOLDER`. I.e. use
   
   `git clone -b geosim https://github.com/tobiaswjohn/SemanticObjects`
