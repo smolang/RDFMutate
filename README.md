@@ -24,7 +24,7 @@ The mutants, masks and results of test runs can be found in the following folder
 
 The easiest way to replicate our results is to use the following [VM](add link!) where all SUTs are already implemented. If you want to install everything yourself, you can find instructions on how to do so in the next subsection.
 
- - `generate_graph.sh` generates the graph from the paper. The PDF output is put into this directory. (This script requires a LaTex installation to produce the PDF.) The run time of the script is a few minutes.
+ - `generate_graph.sh` generates the graph from the paper. The PDF output is put into a folder `Results`. (This script requires a LaTex installation to produce the PDF.) The run time of the script is a few minutes.
  - `replicate_geo.sh` generates the mutants for the geo system and executes the test runs for all of them. The mutants are saved in folder [sut/geo/mutatedOnt](sut/geo/mutatedOnt) and the results of the test runs in [sut/geo/testResults](sut/geo/testResults). On our machine (Intel Core i7-1165G7) this took about 100 hours.
  - `replicate_suave.sh` generates the mutants for the suave system and executes the test runs for all of them. On our machine (Intel Core i7-1165G7) this took about 60 hours.
 
