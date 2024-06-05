@@ -3,10 +3,10 @@
 # installs dependencies, e.g. to set up a VM that can run everything
 
 # check if script is running as root
-if [[ $(/usr/bin/id -u) -ne 0 ]]; then
-    echo "Not running as root. Try to run script with 'sudo'."
-    exit
-fi
+#if [[ $(/usr/bin/id -u) -ne 0 ]]; then
+#    echo "Not running as root. Try to run script with 'sudo'."
+#    exit
+#fi
 
 currentFolder=$(pwd)
 
@@ -21,6 +21,20 @@ sudo apt install -y default-jre
 sudo apt install -y default-jdk
 
 ##########################################################
+# install gradle
+
+echo "install gradle"
+
+# install SDKMAN
+curl -s "https://get.sdkman.io" | bash
+
+source ~/.bashrc
+
+# install gradle
+sdk install gradle
+
+
+##########################################################
 # install geo-sim
 echo "install git"
 
@@ -33,6 +47,8 @@ echo "install geo simulator"
 cd ..
 git clone -b geosim https://github.com/tobiaswjohn/SemanticObjects
 
+# give access rights to all users
+#sudo chmod a+rwx SemanticObjects
 
 # go back to this folder to adjust config file
 cd $currentFolder

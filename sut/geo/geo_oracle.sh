@@ -10,7 +10,7 @@
 ConfigFile=config.txt
 
 Ontology=$1
-Scenario="total_mini.ttl"
+Scenario=""
 MaturationOracle=1
 simulationLog=temp/temp_geosim.log
 log_file=logs/oracle_$(date +'%Y_%m_%d_%H_%M_%S')_$Scenario.log
@@ -53,6 +53,7 @@ while read line; do
   # check, if a scenario is specified
   if [[ "$line" == scenario=* ]]; then
 		Scenario=${line#*=} # remove everything left of and including "="
+    Scenario=$currentFolder/$Scenario # current folder as reference for path
 	fi
 
   # check, if maturation oracle is specified
@@ -78,12 +79,15 @@ start_time=$(date +'%s')
 echo_and_log "starting simulation using scenario $Scenario with maturation oracle $MaturationOracle"
 
 cd $Folder
+
+
+
 # check if file exists here, or in other folder, or not at all
 if [ -f $Ontology ]; then
-  bash run_geosim.sh $Ontology $currentFolder/$Scenario> $currentFolder/$simulationLog
+  bash run_geosim.sh $Ontology $Scenario> $currentFolder/$simulationLog
 else if [ -f "$currentFolder/$Ontology" ]; then
   #echo "run_geosim.sh $currentFolder/$Ontology $currentFolder/$Scenario"
-  bash run_geosim.sh $currentFolder/$Ontology $currentFolder/$Scenario> $currentFolder/$simulationLog
+  bash run_geosim.sh $currentFolder/$Ontology $Scenario> $currentFolder/$simulationLog
   else
     cd $currentFolder
     echo_and_log "ERROR: neither $Ontology nor $currentFolder/$Ontology does not exist."
