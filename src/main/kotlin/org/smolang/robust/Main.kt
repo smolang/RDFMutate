@@ -1,13 +1,13 @@
 package org.smolang.robust
 
 import com.github.ajalt.clikt.core.CliktCommand
-import com.github.ajalt.clikt.parameters.arguments.argument
 import com.github.ajalt.clikt.parameters.options.default
 import com.github.ajalt.clikt.parameters.options.flag
 import com.github.ajalt.clikt.parameters.options.option
 import com.github.ajalt.clikt.parameters.options.switch
 import com.github.ajalt.clikt.parameters.types.file
-import org.apache.jena.rdf.model.ModelFactory
+import com.github.ajalt.clikt.parameters.types.int
+import org.apache.jena.riot.Lang
 import org.apache.jena.riot.RDFDataMgr
 import org.apache.jena.shacl.Shapes
 import org.smolang.robust.domainSpecific.geo.GeoScenarioGenerator
@@ -22,10 +22,13 @@ import kotlin.system.exitProcess
 val randomGenerator = Random(2)
 
 class Main : CliktCommand() {
-    private val source by argument().file()
+    private val seed by option("--seed", "--kg","-g", help="Gives a KG, defined by an RDF file").file()
     private val shaclMaskFile by option("--shacl","-s", help="Gives a mask, defined by a set of SHACL shapes").file()
     private val verbose by option("--verbose","-v", help="Verbose output for debugging. Default = false.").flag()
+    private val numberMutations by option("--num_mut", "-nm", help="Number of mutation operators to apply").int()
+    private val outputFile by option("--out", "-o", help="Give name for mutated KG.").file()
     private val mainMode by option().switch(
+        "--mutate" to "mutate", "-m" to "mutate",
         "--scen_geo" to "geo", "-sg" to "geo",
         "--scen_suave" to "suave", "-sv" to "suave",
         "--scen_test" to "test", "-st" to "test",
@@ -37,6 +40,9 @@ class Main : CliktCommand() {
     override fun run() {
 
         when (mainMode){
+            "mutate" -> {
+                singleMutation()
+            }
             "geo" -> {
                 val shapes = parseShapes(shaclMaskFile)
                 //generateGeoScenarios()
@@ -53,7 +59,7 @@ class Main : CliktCommand() {
                 // test installation
                 testMiniPipes()
             }
-            else -> testMutations()
+            else -> testMiniPipes()
         }
 
 
@@ -62,19 +68,28 @@ class Main : CliktCommand() {
 
     private fun parseShapes(shapeFile : File?) : Shapes?{
         val shapes: Shapes? =
-            if(shapeFile != null && !shapeFile!!.exists()){
-                println("File ${shapeFile!!.path} does not exist")
+            if(shapeFile != null && !shapeFile.exists()){
+                println("File ${shapeFile.path} does not exist")
                 exitProcess(-1)
             } else if(shapeFile != null) {
-                val shapesGraph = RDFDataMgr.loadGraph(shapeFile!!.absolutePath)
+                val shapesGraph = RDFDataMgr.loadGraph(shapeFile.absolutePath)
                 Shapes.parse(shapesGraph)
             } else null
         return shapes
     }
 
 
-    //TODO: add a way to add
-    private fun testMutations() {
+    // apply one mutation to the input KG
+    private fun singleMutation() {
+        // get seed, mask and output files
+        if (seed == null){
+            println("You need to provide a seed knowledge graph")
+            exitProcess(-1)
+        } else if(!seed!!.exists()){
+            println("File ${seed!!.path} does not exist")
+            exitProcess(-1)
+        }
+        val seedKG = RDFDataMgr.loadDataset(seed!!.absolutePath).defaultModel
 
         val shapes: Shapes? = if(shaclMaskFile != null && !shaclMaskFile!!.exists()){
             println("File ${shaclMaskFile!!.path} does not exist")
@@ -84,69 +99,45 @@ class Main : CliktCommand() {
             Shapes.parse(shapesGraph)
         } else null
 
-        if(!source.exists()){
-            println("File ${source.path} does not exist")
+        val outputPath: File? = if(outputFile != null && outputFile!!.exists()){
+            println("Output file ${outputFile!!.path} does already exist. Please choose a different name.")
             exitProcess(-1)
-        }
-
-        val input = RDFDataMgr.loadDataset(source.absolutePath).defaultModel
+        } else if(outputFile == null) {
+            println("Please provide an output file to save the mutated KG to.")
+            exitProcess(-1)
+        } else outputFile
 
         val mask = RobustnessMask(verbose, shapes)
 
-        // test configuration stuff
+        // create selection of mutations that can be applied
+        val candidateMutations = listOf(
+            AddRelationMutation::class,
+            ChangeRelationMutation::class,
+            AddInstanceMutation::class,
+            RemoveAxiomMutation::class,
+            RemoveNodeMutation::class,
+        )
 
-            //val m = Mutator(listOf(AddInstanceMutation::class, RemoveAxiomMutation::class), verbose)
-            val ms = MutationSequence(verbose)
-            //ms.addRandom(listOf(RemoveSubclassMutation::class))
+        val ms = MutationSequence(verbose)
+        // add domain independent mutation operators
+        // if no number of mutations is provided --> apply one
+        for (j in 1..(numberMutations ?: 1))
+            ms.addRandom(candidateMutations.random(randomGenerator))
 
-            val mf = ModelFactory.createDefaultModel()
-            val st = mf.createStatement(
-                mf.createResource("http://smolang.org#B"),
-                mf.createProperty("http://www.w3.org/2000/01/rdf-schema#subClassOf"),
-                mf.createResource("http://smolang.org#A")
-            )
-            val config = SingleStatementConfiguration(st)
+        // create mutator and apply mutation
+        val m = Mutator(ms, verbose)
+        val res = m.mutate(seedKG)
 
-            val r = mf.createResource("http://smolang.org#XYZ")
-            val config2 = SingleResourceConfiguration(r)
-
-            val st3 = mf.createStatement(
-                mf.createResource("http://smolang.org#B"),
-                mf.createProperty("http://www.w3.org/2000/01/rdf-schema#subClassOf"),
-                mf.createResource("http://smolang.org#XYZ")
-            )
-            val config3 = SingleStatementConfiguration(st3)
-
-            val config4 = StringAndResourceConfiguration("http://smolang.org#newIndividual", r)
-
-            val segment = mf.createResource("http://www.ifi.uio.no/tobiajoh/miniPipes#segment1")
-            val config5 = org.smolang.robust.domainSpecific.auv.AddPipeSegmentConfiguration(segment)
-
-            ms.addWithConfig(org.smolang.robust.domainSpecific.auv.AddPipeSegmentMutation::class, config5)
-
-            ms.addWithConfig(RemoveSubclassMutation::class, config)
-
-            ms.addWithConfig(AddAxiomMutation::class, config3)
-
-            ms.addRandom(listOf(AddInstanceMutation::class))
-
-            ms.addWithConfig(AddInstanceMutation::class, config4)
-
-            val m = Mutator(ms, verbose)
-
-            //this is copying before mutating, so we must not copy one more time here
-            val res = m.mutate(input)
-
-            //XXX: the following ignores blank nodes
-            val valid = m.validate(res, mask)
-            println("result of validation: $valid")
-            if(verbose) res.write(System.out, "TTL")
+        // safe result
+        RDFDataMgr.write(outputPath!!.outputStream(), res, Lang.TTL)
     }
 
 
     private fun testMiniPipes() {
-        if(!source.exists()) throw Exception("Input file $source does not exist")
-        val input = RDFDataMgr.loadDataset(source.absolutePath).defaultModel
+        //if(!seed.exists()) throw Exception("Input file $seed does not exist")
+        //val input = RDFDataMgr.loadDataset(seed.absolutePath).defaultModel
+
+        val input = RDFDataMgr.loadDataset("examples/miniPipes.ttl").defaultModel
         val pi1 = MiniPipeInspection()
 
         // run without mutations
@@ -170,8 +161,9 @@ class Main : CliktCommand() {
 
         if(!pi1.allInfrastructureInspected() || pi2.allInfrastructureInspected())
             throw Exception("Mutation Generator does not work as expected")
+        else
+            println("Mutation Generator works as expected.")
     }
-
 
     fun runSuaveGenerator(shapes: Shapes?) {
         val sg = SuaveTestCaseGenerator(true)
