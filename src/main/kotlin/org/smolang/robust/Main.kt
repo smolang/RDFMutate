@@ -44,15 +44,10 @@ class Main : CliktCommand() {
                 singleMutation()
             }
             "geo" -> {
-                val shapes = parseShapes(shaclMaskFile)
-                //generateGeoScenarios()
-                //runGeoGenerator(shapes)
-                evaluateGeoMask(shapes)
+                runGeoGenerator()
             }
             "suave" -> {
-                val shapes = parseShapes(shaclMaskFile)
-                //runSuaveGenerator(shapes)
-                evaluateSuaveMask(shapes)
+                runSuaveGenerator()
             }
             "issre" -> generateIssreGraph()
             "test" -> {
@@ -165,7 +160,8 @@ class Main : CliktCommand() {
             println("Mutation Generator works as expected.")
     }
 
-    fun runSuaveGenerator(shapes: Shapes?) {
+    private fun runSuaveGenerator() {
+        val shapes = parseShapes(shaclMaskFile)
         val sg = SuaveTestCaseGenerator(true)
         val numberOfMutants = 30
         val numberOfMutations = 2
@@ -182,19 +178,34 @@ class Main : CliktCommand() {
             saveMutants)
     }
 
-    fun runGeoGenerator(shapes: Shapes?) {
-        val gg = GeoTestCaseGenerator(false)
-        val numberOfMutants = 100
-        val numberOfMutations = 2
-        val mask = RobustnessMask(verbose, shapes)
-        val nameOfMutants = "temp"
-        val saveMutants = true
-        gg.generateGeoMutants(
-            numberOfMutants,
-            numberOfMutations,
-            mask,
-            nameOfMutants,
-            saveMutants)
+    private fun runGeoGenerator() {
+
+        val maskFiles = listOf(
+            "sut/geo/masks/mask0.ttl",
+            "sut/geo/masks/mask1.ttl"
+        )
+
+        var id = 0
+        for (maskFile in maskFiles) {
+            val gg = GeoTestCaseGenerator(false)
+            val numberOfMutants = 100
+            val numberOfMutations = 2
+
+            val shapes = parseShapes(File(maskFile))
+            val mask = RobustnessMask(verbose, shapes)
+
+            val nameOfMutants = "geoMutant$id"
+            val saveMutants = true
+            gg.generateGeoMutants(
+                numberOfMutants,
+                numberOfMutations,
+                mask,
+                nameOfMutants,
+                saveMutants
+            )
+
+            id += 1
+        }
     }
 
     // evaluates provided shapes agains the suave test runs

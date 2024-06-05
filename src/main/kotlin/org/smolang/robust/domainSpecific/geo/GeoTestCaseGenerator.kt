@@ -7,7 +7,7 @@ import org.smolang.robust.randomGenerator
 
 class GeoTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) {
 
-    private val geoOntoPath = "org/smolang/robust/sut/geo/total_mini.ttl"
+    private val geoOntoPath = "sut/geo/total_mini.ttl"
     fun generateGeoMutants(numberMutants : Int,
                            numberOfMutations : Int,
                            mask: RobustnessMask,
@@ -26,8 +26,8 @@ class GeoTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) {
             )
         }
         if (saveMutants) {
-            saveMutants("org/smolang/robust/sut/geo/mutatedOnt", mutantsName)
-            super.writeToCSV("org/smolang/robust/sut/geo/mutatedOnt/" + mutantsName + ".csv")
+            saveMutants("sut/geo/mutatedOnt", mutantsName)
+            super.writeToCSV("sut/geo/mutatedOnt/" + mutantsName + ".csv")
         }
     }
 }

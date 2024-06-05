@@ -16,7 +16,7 @@ temp_oracle_output=temp/oracle_output_temp.txt
 
 
 hostname=$(hostname)
-directory="benchmark_runs/${hostname}"
+directory="testResults"
 # create folder if it does not exist yet
 mkdir -p "$directory"
 
