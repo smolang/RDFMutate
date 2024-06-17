@@ -18,7 +18,7 @@ The mutants, masks and results of test runs can be found in the following folder
 | SUT | masks | mutants | test results |
 | ----|-------|---------|----------------|
 | geo | [sut/geo/masks](sut/geo/masks) | [sut/geo/mutatedOnt/ISSRE](sut/geo/mutatedOnt/ISSRE) | [sut/geo/testResults/ISSRE](sut/geo/testResults/ISSRE) |
-| suave | | | | |
+| suave | [sut/suave/masks](sut/suave/masks) | [sut/suave/mutatedOnt/ISSRE](sut/suave/mutatedOnt/ISSRE) | [sut/suave/testResults/ISSRE](sut/suave/testResults/ISSRE) |
 
 ## Replication of Evaluation for ISSRE Publication
 
