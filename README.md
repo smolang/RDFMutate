@@ -20,6 +20,8 @@ The mutants, masks and results of test runs can be found in the following folder
 | geo | [sut/geo/masks](sut/geo/masks) | [sut/geo/mutatedOnt/ISSRE](sut/geo/mutatedOnt/ISSRE) | [sut/geo/testResults/ISSRE](sut/geo/testResults/ISSRE) |
 | suave | [sut/suave/masks](sut/suave/masks) | [sut/suave/mutatedOnt/ISSRE](sut/suave/mutatedOnt/ISSRE) | [sut/suave/testResults/ISSRE](sut/suave/testResults/ISSRE) |
 
+Each folder for the masks contains a file `mask_development.txt` that explains, how the masks where developed over time and which test cases used which masks.
+
 ## Replication of Evaluation for ISSRE Publication
 
 The easiest way to replicate our results is to use the following [VM](add link!) where all SUTs are already implemented. If you want to install everything yourself, you can find instructions on how to do so in the next subsection.
