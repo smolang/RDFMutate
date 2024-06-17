@@ -15,6 +15,7 @@ class SuaveEvaluationGraphGenerator(val verbose: Boolean) {
         val saveMutants = false
         val ratioDomainDependent1 = 1.0
         val ratioDomainDependent2 = 0.0
+        val useAddQAMutation = false
 
 
         // lists to collect number of attempts for domain-independent and -specific operators
@@ -35,6 +36,7 @@ class SuaveEvaluationGraphGenerator(val verbose: Boolean) {
                 numberOfMutants,
                 numberOfMutations,
                 ratioDomainDependent1,
+                useAddQAMutation,
                 mask,
                 nameOfMutants,
                 saveMutants
@@ -46,6 +48,7 @@ class SuaveEvaluationGraphGenerator(val verbose: Boolean) {
                 numberOfMutants,
                 numberOfMutations,
                 ratioDomainDependent2,
+                useAddQAMutation,
                 mask,
                 nameOfMutants,
                 saveMutants

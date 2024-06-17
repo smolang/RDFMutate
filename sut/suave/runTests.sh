@@ -21,7 +21,7 @@ temp_oracle_output=oracle_output_temp.txt
 name=${1%".csv"}
 name=$(echo "$name" | tr / _)
 name="oracle_${name}_$(date +'%Y_%m_%d_%H_%M')"
-result="${name}.csv"
+result="testResults/${name}.csv"
 
 
 echo "run tests from file $ontologies"

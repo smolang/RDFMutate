@@ -22,18 +22,17 @@ import kotlin.system.exitProcess
 val randomGenerator = Random(2)
 
 class Main : CliktCommand() {
-    private val seed by option("--seed", "--kg","-g", help="Gives a KG, defined by an RDF file").file()
+    private val seed by option("--seedKG" ,"-g", help="KG to mutate, defined by an RDF file").file()
     private val shaclMaskFile by option("--shacl","-s", help="Gives a mask, defined by a set of SHACL shapes").file()
     private val verbose by option("--verbose","-v", help="Verbose output for debugging. Default = false.").flag()
-    private val numberMutations by option("--num_mut", "-nm", help="Number of mutation operators to apply").int()
+    private val numberMutations by option("--num_mut", "-nm", help="Number of mutation operators to apply. Default = 1").int()
     private val outputFile by option("--out", "-o", help="Give name for mutated KG.").file()
-    private val mainMode by option().switch(
+    private val mainMode by option(help="Options to run specialized modes of this program.").switch(
         "--mutate" to "mutate", "-m" to "mutate",
         "--scen_geo" to "geo", "-sg" to "geo",
         "--scen_suave" to "suave", "-sv" to "suave",
         "--scen_test" to "test", "-st" to "test",
-        "--issre_graph" to "issre", "-ig" to "issre",
-        "--free" to "free",       "-f" to "free",
+        "--issre_graph" to "issre", "-ig" to "issre"
     ).default("free")
 
 
@@ -161,21 +160,67 @@ class Main : CliktCommand() {
     }
 
     private fun runSuaveGenerator() {
-        val shapes = parseShapes(shaclMaskFile)
-        val sg = SuaveTestCaseGenerator(true)
-        val numberOfMutants = 30
-        val numberOfMutations = 2
-        val ratioDomainDependent = 0.0
-        val mask = RobustnessMask(verbose, shapes)
-        val nameOfMutants = "temp"
-        val saveMutants = true
-        sg.generateSuaveMutants(
-            numberOfMutants,
-            numberOfMutations,
-            ratioDomainDependent,
-            mask,
-            nameOfMutants,
-            saveMutants)
+        val maskFiles = listOf(
+            "sut/suave/masks/mask0.ttl",
+            "sut/suave/masks/mask1.ttl",
+            "sut/suave/masks/mask2.ttl",
+            "sut/suave/masks/mask3.ttl",
+            "sut/suave/masks/mask4.ttl",
+            "sut/suave/masks/mask5.ttl",
+            "sut/suave/masks/mask6.ttl",
+            "sut/suave/masks/mask7.ttl",
+        )
+
+
+
+        assert(maskFiles.size == 8)
+
+        for(i in 0..7){
+            val shapes = parseShapes(File(maskFiles[i]))
+            val sg = SuaveTestCaseGenerator(verbose)
+
+            // number of mutants differs for each generation
+            val numberOfMutants =
+                when (i) {
+                    0, 1, 3 -> 10
+                    2 -> 20
+                    4 -> 40
+                    5, 6, 7 -> 30
+                    else -> 0
+                }
+            val numberOfMutations = 2
+
+            // select domain specific / independent based on generation
+            val ratioDomainSpecific =
+                if (i == 3)
+                    0.0
+                else
+                    1.0
+
+            // use this specific mutation only for first four generations
+            val useAddQAMutation = (i <= 4)
+
+            val mask = RobustnessMask(verbose, shapes)
+
+            // select name based on which mutations are used
+            val nameOfMutants =
+                when (i) {
+                    3 -> "generation${i}_domain_independent"
+                    else -> "generation${i}_domain_specific"
+                }
+
+            val saveMutants = true
+
+            sg.generateSuaveMutants(
+                numberOfMutants,
+                numberOfMutations,
+                ratioDomainSpecific,
+                useAddQAMutation,
+                mask,
+                nameOfMutants,
+                saveMutants)
+        }
+
     }
 
     private fun runGeoGenerator() {
@@ -187,7 +232,7 @@ class Main : CliktCommand() {
 
         var id = 0
         for (maskFile in maskFiles) {
-            val gg = GeoTestCaseGenerator(false)
+            val gg = GeoTestCaseGenerator(verbose)
             val numberOfMutants = 100
             val numberOfMutations = 2
 
@@ -208,7 +253,7 @@ class Main : CliktCommand() {
         }
     }
 
-    // evaluates provided shapes agains the suave test runs
+    // evaluates provided shapes against the suave test runs
     fun evaluateSuaveMask(shapes: Shapes?) {
         // new mask
         val mask = RobustnessMask(verbose, shapes)
@@ -230,7 +275,7 @@ class Main : CliktCommand() {
             detailedEvaluationOutput)
     }
 
-    // evaluates provided shapes agains the geo test runs
+    // evaluates provided shapes against the geo test runs
     fun evaluateGeoMask(shapes: Shapes?) {
         val mask = RobustnessMask(verbose, shapes)
 
@@ -244,7 +289,7 @@ class Main : CliktCommand() {
             detailedEvaluationOutput)
     }
 
-    // creates scenarios, i.e. different layerings, for the geo simulator
+    // creates scenarios, i.e. different layers, for the geo simulator
     fun generateGeoScenarios() {
         val geoGenerator = GeoScenarioGenerator()
         geoGenerator.generateScenarios(10)

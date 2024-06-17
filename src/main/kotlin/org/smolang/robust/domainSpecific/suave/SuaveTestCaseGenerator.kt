@@ -40,7 +40,8 @@ class SuaveTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) 
     // returns the number of tries to generate the mutant
     fun generateSuaveMutants(numberMutants : Int,
                              numberOfMutations : Int,
-                             ratioDomainDependent: Double,
+                             ratioDomainSpecific: Double,
+                             useAddQAMutation: Boolean,
                              mask : RobustnessMask,
                              mutantsName : String,
                              saveMutants : Boolean) : Int {
@@ -63,7 +64,13 @@ class SuaveTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) 
         val mutationNumbers = listOf(numberOfMutations)
         var tries = 0
         for (i in mutationNumbers) {
-            val suaveMutator = SuaveMutatorFactory(verbose, mutatableStatements, i, ratioDomainDependent)
+            val suaveMutator = SuaveMutatorFactory(
+                verbose,
+                mutatableStatements,
+                i,
+                ratioDomainSpecific,
+                useAddQAMutation
+            )
             val triesMutant = super.generateMutants(
                 seed,
                 mask,
@@ -131,17 +138,32 @@ class SuaveMutatorFactory(
     verbose: Boolean,
     private val mutatableStatements: List<Statement>,
     private val maxNumberMutations: Int,
-    private val ratioDomainDependent: Double) : MutatorFactory(verbose) {
+    private val ratioDomainSpecific: Double,
+    useAddQAMutation: Boolean) : MutatorFactory(verbose) {
 
-    private val domainSpecificMutations = listOf(
-        ChangeSolvesFunctionMutation::class,
-        //AddQAEstimationMutation::class,
-        RemoveQAEstimationMutation::class,
-        ChangeQualityAttributTypeMutation::class,
-        ChangeHasValueMutation::class,
-        ChangeQAComparisonOperatorMutation::class,
-        AddNewThrusterMutation::class
-    )
+    // boolean determines, if "AddQAEstimationMutation" is used
+    private val domainSpecificMutations =
+        if (useAddQAMutation)
+            listOf(
+                ChangeSolvesFunctionMutation::class,
+                AddQAEstimationMutation::class,
+                RemoveQAEstimationMutation::class,
+                ChangeQualityAttributTypeMutation::class,
+                ChangeHasValueMutation::class,
+                ChangeQAComparisonOperatorMutation::class,
+                AddNewThrusterMutation::class
+            )
+    else
+            listOf(
+                ChangeSolvesFunctionMutation::class,
+                //AddQAEstimationMutation::class,
+                RemoveQAEstimationMutation::class,
+                ChangeQualityAttributTypeMutation::class,
+                ChangeHasValueMutation::class,
+                ChangeQAComparisonOperatorMutation::class,
+                AddNewThrusterMutation::class
+            )
+
 
     private val domainIndependentMutations = listOf(
         AddRelationMutation::class,
@@ -157,7 +179,7 @@ class SuaveMutatorFactory(
 
         // determine the number of the applied mutation operators
         val domSpecMut =
-            (maxNumberMutations*ratioDomainDependent).toInt()
+            (maxNumberMutations*ratioDomainSpecific).toInt()
 
         val domIndMut =
             maxNumberMutations - domSpecMut

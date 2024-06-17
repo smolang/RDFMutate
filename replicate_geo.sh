@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# applies one mutation
+# reporduces geo evaluation from ISSRE paper
 
 logFile=geoReplication.log
 
@@ -17,7 +17,7 @@ java -jar build/libs/OntoMutate-0.1.jar --scen_geo
 
 
 echo "start test runs of system"
-echo "WARNING: this might take up a severe amout of time. On our machine (Intel Core i7-1165G7) it took about 100 hours."
+echo "WARNING: this might take a severe amout of time. On our machine (Intel Core i7-1165G7) it took about 100 hours."
 
 
 

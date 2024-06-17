@@ -1,15 +1,15 @@
 start with mask0.ttl
---> create onlySuave02
+--> create onlySuave02 (generation 0)
 use test cases onlySuave02 to develop mask1
---> create onlySuave03 --> all passed
---> create onlySuave04
+--> create onlySuave03 (generation 1) --> all passed
+--> create onlySuave04 (generation 2)
 use test cases to develop mask2 (not fully correct, as not possible)
---> create onlyGeneric03 
+--> create onlyGeneric03 (generation 3)
 use test cases to develop mask3
---> create onlySuave05
+--> create onlySuave05 (generation 4)
 use test cases to develop mask4 + forbid "AddQAEstimationMutation", as this leads to problems (in some cases)
---> create onlySuave06
+--> create onlySuave06 (generation 5)
 use test cases to develop mask5
---> create onlySuave07
+--> create onlySuave07 (generation 6)
 use test cases to develop mask6 (already quite some over-approximation, but unavoidable...)
---> create onlySuave08
+--> create onlySuave08 (generation 7)
