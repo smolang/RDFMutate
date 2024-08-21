@@ -39,11 +39,10 @@ class KgPddlMap {
     fun putIfAbsent(r : RDFNode) {
         if (!kgToPddl.containsKey(r)) {
             val name: String = if (r.isResource)
-                r.asResource().localName
+                r.asResource().localName.lowercase()
             else if (r.isLiteral)
-                r.asLiteral().string.toString()
+                r.asLiteral().string.toString().lowercase()
             else "_"    // we assign just a number for the resource
-
 
             var i = 0
             var value = name

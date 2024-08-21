@@ -1,17 +1,19 @@
-(define (domain kgDomain)
+(define (domain tempDomain)
   (:requirements :strips :typing :derived-predicates)
+
   (:predicates
-    (isat ?x1 ?x2 )
+    (isAt ?x ?y )
   )
+
 
   (:action action0
     :parameters (?y ?x)
     :precondition (and 
-        (isat ?x ?y)
+        (isAt ?x ?y)
     )
     :effect (and 
-        (isat ?y ?x)
-        (isat newobject ?y)
+        (isAt ?y ?x)
+        (isAt newObject ?y)
     )
   )
 

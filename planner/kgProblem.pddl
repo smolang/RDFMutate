@@ -1,66 +1,64 @@
 (define (problem kgProblem)
   (:domain kgDomain)
   (:objects
-    ?x - object
-    ?y - object
-    Animal - object
-    Class - object
-    Infrastructure - object
-    InspectionStatus - object
-    NamedIndividual - object
-    ObjectProperty - object
-    Ontology - object
-    PipeSegment - object
-    Robot - object
-    SymmetricProperty - object
-    Whale - object
+    animal - object
     auv - object
-    hasStatus - object
-    isAt - object
-    miniPipes - object
-    mobyDick - object
-    newObject - object
-    nextTo - object
+    class - object
+    hasstatus - object
+    infrastructure - object
+    inspectionstatus - object
+    isat - object
+    minipipes - object
+    mobydick - object
+    namedindividual - object
+    newobject - object
+    nextto - object
+    objectproperty - object
+    ontology - object
+    pipesegment - object
+    robot - object
     segment1 - object
     segment2 - object
+    symmetricproperty - object
     visited - object
+    whale - object
   )
 
   (:init
-    (disjointWith Animal Infrastructure)
-    (disjointWith Animal InspectionStatus)
-    (disjointWith Infrastructure InspectionStatus)
-    (disjointWith InspectionStatus Robot)
-    (domain hasStatus InspectionStatus)
-    (isAt auv segment1)
-    (nextTo mobyDick segment1)
-    (nextTo segment1 segment2)
-    (subClassOf PipeSegment Infrastructure)
-    (subClassOf Whale Animal)
-    (type Animal Class)
-    (type Infrastructure Class)
-    (type InspectionStatus Class)
-    (type PipeSegment Class)
-    (type Robot Class)
-    (type Whale Class)
-    (type auv NamedIndividual)
-    (type auv Robot)
-    (type hasStatus ObjectProperty)
-    (type isAt ObjectProperty)
-    (type miniPipes Ontology)
-    (type mobyDick NamedIndividual)
-    (type mobyDick Whale)
-    (type nextTo ObjectProperty)
-    (type nextTo SymmetricProperty)
-    (type segment1 NamedIndividual)
-    (type segment1 PipeSegment)
-    (type segment2 NamedIndividual)
-    (type segment2 PipeSegment)
-    (type visited InspectionStatus)
-    (type visited NamedIndividual)
+    (disjointwith animal infrastructure)
+    (disjointwith animal inspectionstatus)
+    (disjointwith infrastructure inspectionstatus)
+    (disjointwith inspectionstatus robot)
+    (domain hasstatus inspectionstatus)
+    (isat auv segment1)
+    (nextto mobydick segment1)
+    (nextto segment1 segment2)
+    (subclassof pipesegment infrastructure)
+    (subclassof whale animal)
+    (type animal class)
+    (type auv namedindividual)
+    (type auv robot)
+    (type hasstatus objectproperty)
+    (type infrastructure class)
+    (type inspectionstatus class)
+    (type isat objectproperty)
+    (type minipipes ontology)
+    (type mobydick namedindividual)
+    (type mobydick whale)
+    (type nextto objectproperty)
+    (type nextto symmetricproperty)
+    (type pipesegment class)
+    (type robot class)
+    (type segment1 namedindividual)
+    (type segment1 pipesegment)
+    (type segment2 namedindividual)
+    (type segment2 pipesegment)
+    (type visited inspectionstatus)
+    (type visited namedindividual)
+    (type whale class)
   )
 
   (:goal (and
-    (isAt newObject segment1)
+    (isat newobject segment1)
   ))
 )

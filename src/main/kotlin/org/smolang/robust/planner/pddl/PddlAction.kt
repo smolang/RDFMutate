@@ -8,7 +8,10 @@ class PddlAction(
 ) {
 
     val usedObjects : Set<String> get() {
-        return preconditions.flatMap { it.arguments }.plus(effects.flatMap { it.arguments }).toSet()
+        return preconditions.flatMap { it.arguments }
+            .plus(effects.flatMap { it.arguments })
+            .filter { !it.startsWith("?") }     // exclude variables
+            .toSet()
     }
 
     val usedPredicates : Set<String> get() = run {

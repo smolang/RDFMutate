@@ -59,11 +59,11 @@ class PlanerBasedTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(ver
         // build planning domain
         val domain = PddlDomain()
 
+        //map from pddl action names to configs
         val actionsToConfigs : MutableMap<String, ActionMutationConfiguration> = mutableMapOf()
         // add actions from mutations
         var i = 0
         for (c in mutationConfigs) {
-            // TODO: create map from pddl action names to configs
             val tempAction = c.asPddlAction("action$i")
             actionsToConfigs["action$i"] = c
             i += 1
@@ -93,6 +93,7 @@ class PlanerBasedTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(ver
 
 
         // call planner
+        if (verbose) println("Calling  external planner")
         val plan = PlannerInterface(verbose).getPlan(domain, problem)
 
         val ms = plan.toMutationSequence(actionsToConfigs, mapToPddl)
@@ -104,7 +105,7 @@ class PlanerBasedTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(ver
 
         if (mask.validate(mutant)) {
             // valid mutant found
-            println("found valid mutant")
+            if (verbose)  println("found valid mutant")
             mutators.add(mutator)
             mutants.add(mutant)
             mutantFiles.add("?")
