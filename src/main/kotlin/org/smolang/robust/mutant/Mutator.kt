@@ -74,10 +74,3 @@ class Mutator(private val mutSeq: MutationSequence, private val verbose: Boolean
         return contract.validate(model)
     }
 }
-
-open class MutatorFactory(val verbose: Boolean) {
-
-    open fun randomMutator() : Mutator {
-        return Mutator(MutationSequence(verbose), verbose)
-    }
-}

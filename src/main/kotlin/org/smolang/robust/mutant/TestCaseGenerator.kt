@@ -10,12 +10,12 @@ import java.nio.file.Paths
 
 
 open class TestCaseGenerator(private val verbose: Boolean) {
-    private val mutators : MutableList<Mutator> = mutableListOf()
+    open val mutators : MutableList<Mutator> = mutableListOf()
     val mutants : MutableList<Model> = mutableListOf()
     val mutantFiles: MutableList<String> = mutableListOf()
 
     // returns the number of tries to generate the desired number of mutants
-    fun generateMutants(seed : Model,
+    open fun generateMutants(seed : Model,
                         mask: RobustnessMask,
                         mutFactory : MutatorFactory,
                         countDesired : Int) : Int {
@@ -43,13 +43,19 @@ open class TestCaseGenerator(private val verbose: Boolean) {
 
 
 
-    open fun saveMutants(folderName: String, filePrefix : String) {
+    open fun saveMutants(folderName: String, filePrefix : String, fileFomat : Lang = Lang.NTRIPLES) {
         var i = 0
         // create folder, if necessary
         Files.createDirectories(Paths.get(folderName))
         for (mut in mutants) {
-            val path = "$folderName/$filePrefix.$i.nt"
-            RDFDataMgr.write(File(path).outputStream(), mut, Lang.NTRIPLES)
+            val ending = when (fileFomat) {
+                Lang.TURTLE -> "ttl"
+                Lang.TTL -> "ttl"
+                Lang.NTRIPLES -> "nt"
+                else  -> "owl"
+            }
+            val path = "$folderName/$filePrefix.$i.$ending"
+            RDFDataMgr.write(File(path).outputStream(), mut, fileFomat)
             mutantFiles[i] = path   // save path of the mutation
             i += 1
         }

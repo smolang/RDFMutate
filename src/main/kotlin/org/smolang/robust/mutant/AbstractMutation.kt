@@ -6,7 +6,7 @@ import kotlin.reflect.KClass
 import kotlin.reflect.full.primaryConstructor
 
 // stores the information for one mutation but the information about the model is lacking
-class AbstractMutation(private val mutOp: KClass<out Mutation>,
+open class AbstractMutation(private val mutOp: KClass<out Mutation>,
                        private val verbose: Boolean ) {
 
     private var hasConfig : Boolean = false

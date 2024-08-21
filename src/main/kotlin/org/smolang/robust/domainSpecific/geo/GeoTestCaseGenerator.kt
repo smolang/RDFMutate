@@ -8,6 +8,7 @@ import org.smolang.robust.randomGenerator
 class GeoTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) {
 
     private val geoOntoPath = "sut/geo/total_mini.ttl"
+
     fun generateGeoMutants(numberMutants : Int,
                            numberOfMutations : Int,
                            mask: RobustnessMask,

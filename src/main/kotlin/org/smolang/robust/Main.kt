@@ -7,6 +7,7 @@ import com.github.ajalt.clikt.parameters.options.option
 import com.github.ajalt.clikt.parameters.options.switch
 import com.github.ajalt.clikt.parameters.types.file
 import com.github.ajalt.clikt.parameters.types.int
+import io.kotlintest.matchers.types.shouldBeSameInstanceAs
 import org.apache.jena.riot.Lang
 import org.apache.jena.riot.RDFDataMgr
 import org.apache.jena.shacl.Shapes
@@ -14,6 +15,7 @@ import org.smolang.robust.domainSpecific.geo.GeoScenarioGenerator
 import org.smolang.robust.domainSpecific.geo.GeoTestCaseGenerator
 import org.smolang.robust.domainSpecific.suave.*
 import org.smolang.robust.mutant.*
+import org.smolang.robust.planner.PlanerBasedTestCaseGenerator
 import org.smolang.robust.sut.MiniPipeInspection
 import java.io.File
 import kotlin.random.Random
@@ -32,7 +34,8 @@ class Main : CliktCommand() {
         "--scen_geo" to "geo", "-sg" to "geo",
         "--scen_suave" to "suave", "-sv" to "suave",
         "--scen_test" to "test", "-st" to "test",
-        "--issre_graph" to "issre", "-ig" to "issre"
+        "--issre_graph" to "issre", "-ig" to "issre",
+        "--planner_test" to "planner"
     ).default("free")
 
 
@@ -52,6 +55,9 @@ class Main : CliktCommand() {
             "test" -> {
                 // test installation
                 testMiniPipes()
+            }
+            "planner" -> {
+                plannerMutation()
             }
             else -> testMiniPipes()
         }
@@ -157,6 +163,27 @@ class Main : CliktCommand() {
             throw Exception("Mutation Generator does not work as expected")
         else
             println("Mutation Generator works as expected.")
+    }
+
+    private fun plannerMutation() {
+        val seed = RDFDataMgr.loadDataset("examples/plannerExample/miniPipes.ttl").defaultModel
+
+
+        val mask = RobustnessMask(
+            verbose,
+            parseShapes(File("examples/plannerExample/emptyMask.ttl"))
+        )
+
+        val tcg = PlanerBasedTestCaseGenerator(verbose)
+
+        tcg.generateMutants(
+            seed,
+            mask,
+            1
+        )
+
+        tcg.saveMutants("examples/plannerExample/out", "mutant", Lang.TURTLE)
+
     }
 
     private fun runSuaveGenerator() {

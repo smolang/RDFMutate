@@ -9,32 +9,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="caab7f85-477f-496a-b8a7-b8805153034d" name="Changes" comment="Some comments on the domain mutations">
-      <change afterPath="$PROJECT_DIR$/examples/test3.ttl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/ReasonerInterface.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/LNKD.tech Editor.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/plannerExample/emptyMask.ttl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/plannerExample/miniPipes.ttl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/planner/kgDomain.pddl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/planner/kgPlan.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/planner/kgProblem.pddl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/planner/test/auvDomain.pddl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/planner/test/auvProblem.pddl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/MutatorFactory.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/planner/ActionMutation.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/planner/ActionMutationConfiguration.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/planner/KgPddlMap.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/planner/PlanerBasedTestCaseGenerator.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/planner/PlannerInterface.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/planner/pddl/PddlAction.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/planner/pddl/PddlAssertion.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/planner/pddl/PddlDomain.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/planner/pddl/PddlPlan.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/planner/pddl/PddlProblem.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/domainSpecific/geo/GeoTestCaseGenerator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/domainSpecific/geo/GeoTestCaseGenerator.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/domainSpecific/suave/SuaveTestCaseGenerator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/domainSpecific/suave/SuaveTestCaseGenerator.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/AbstractMutation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/AbstractMutation.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/MutantMask.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/MutantMask.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/MutationConfiguration.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/MutationConfiguration.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/MutationSequence.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/MutationSequence.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/reasoning/CustomHermitReasoner.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/reasoning/CustomJenaApiReasoner.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/reasoning/CustomOpenlletReasoner.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/reasoning/CustomReasoner.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/reasoning/CustomReasonerFactory.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/reasoning/OwlApiReasoner.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/PipeInspectionTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/PipeInspectionTests.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sut/geo/scenarios/scenario0.smol" beforeDir="false" afterPath="$PROJECT_DIR$/sut/geo/scenarios/scenario0.smol" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sut/geo/scenarios/scenario1.smol" beforeDir="false" afterPath="$PROJECT_DIR$/sut/geo/scenarios/scenario1.smol" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sut/geo/scenarios/scenario2.smol" beforeDir="false" afterPath="$PROJECT_DIR$/sut/geo/scenarios/scenario2.smol" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sut/geo/scenarios/scenario3.smol" beforeDir="false" afterPath="$PROJECT_DIR$/sut/geo/scenarios/scenario3.smol" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sut/geo/scenarios/scenario4.smol" beforeDir="false" afterPath="$PROJECT_DIR$/sut/geo/scenarios/scenario4.smol" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sut/geo/scenarios/scenario5.smol" beforeDir="false" afterPath="$PROJECT_DIR$/sut/geo/scenarios/scenario5.smol" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sut/geo/scenarios/scenario6.smol" beforeDir="false" afterPath="$PROJECT_DIR$/sut/geo/scenarios/scenario6.smol" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sut/geo/scenarios/scenario7.smol" beforeDir="false" afterPath="$PROJECT_DIR$/sut/geo/scenarios/scenario7.smol" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sut/geo/scenarios/scenario8.smol" beforeDir="false" afterPath="$PROJECT_DIR$/sut/geo/scenarios/scenario8.smol" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sut/geo/scenarios/scenario9.smol" beforeDir="false" afterPath="$PROJECT_DIR$/sut/geo/scenarios/scenario9.smol" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sut/geo/scenarios/scenarios.csv" beforeDir="false" afterPath="$PROJECT_DIR$/sut/geo/scenarios/scenarios.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/Mutator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/Mutator.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/TestCaseGenerator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/smolang/robust/mutant/TestCaseGenerator.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sut/geo/config.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sut/geo/config.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sut/suave/suave_ontologies/catalog-v001.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sut/suave/suave_ontologies/catalog-v001.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +83,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="issre" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -120,30 +129,29 @@
     "Gradle./home/edkam/IdeaProjects/OntoMutate.executor": "Run",
     "Gradle.Build OntoMutate.executor": "Run",
     "Gradle.FirstTests.executor": "Run",
+    "Gradle.MaskGenerationTests.executor": "Run",
     "Gradle.PipeInspectionTests.executor": "Run",
     "Kotlin.MainKt.executor": "Run",
+    "Kotlin.planner based.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "planningBased",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/tobias/Documents/programming/ontologies/OntoMutate/src/test/resources/relations",
+    "last_opened_file_path": "/home/tobias/Documents/temp/OntoMutate-BE4B",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
     "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
-  },
-  "keyToStringList": {
-    "kotlin-gradle-user-dirs": [
-      "/home/edkam/.gradle"
-    ]
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sut/geo/masks" />
+      <recent name="$PROJECT_DIR$/src/test/resources/abc" />
       <recent name="$PROJECT_DIR$/src/test/resources/relations" />
       <recent name="$PROJECT_DIR$/examples" />
       <recent name="$PROJECT_DIR$/src/test/resources/PipeInspection" />
@@ -158,6 +166,7 @@
       <recent name="$PROJECT_DIR$/src/main/kotlin/domainSpecific" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="org.smolang.robust.planner.pddl" />
       <recent name="org.smolang.robust.mutant.reasoning" />
       <recent name="org.smolang.robust.mutant" />
       <recent name="sut" />
@@ -172,7 +181,7 @@
       <command value="gradle --gradle-version 6.3" />
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin.MainKt">
+  <component name="RunManager" selected="Kotlin.planner based">
     <configuration name="FirstTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -187,6 +196,30 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;FirstTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="MaskGenerationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;MaskGenerationTests&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -244,30 +277,20 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="/home/edkam/IdeaProjects/OntoMutate" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--stacktrace" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list />
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
     <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.smolang.robust.MainKt" />
       <module name="OntoMutate.main" />
-      <option name="PROGRAM_PARAMETERS" value="examples/relations.ttl examples/contract.ttl -v" />
+      <option name="PROGRAM_PARAMETERS" value="--scen_geo" />
+      <shortenClasspath name="NONE" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="planner based" type="JetRunConfigurationType">
+      <option name="MAIN_CLASS_NAME" value="org.smolang.robust.MainKt" />
+      <module name="OntoMutate.main" />
+      <option name="PROGRAM_PARAMETERS" value="--planner_test" />
       <shortenClasspath name="NONE" />
       <option name="VM_PARAMETERS" value="-ea" />
       <method v="2">
@@ -275,19 +298,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle./home/edkam/IdeaProjects/OntoMutate" />
+      <item itemvalue="Gradle.MaskGenerationTests" />
       <item itemvalue="Gradle./home/edkam/IdeaProjects/OntoMutate [--gradle-version 6.3]" />
       <item itemvalue="Gradle.FirstTests" />
       <item itemvalue="Gradle.PipeInspectionTests" />
+      <item itemvalue="Kotlin.planner based" />
       <item itemvalue="Kotlin.MainKt" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Kotlin.MainKt" />
-        <item itemvalue="Gradle./home/edkam/IdeaProjects/OntoMutate [--gradle-version 6.3]" />
-        <item itemvalue="Gradle./home/edkam/IdeaProjects/OntoMutate" />
         <item itemvalue="Gradle.FirstTests" />
+        <item itemvalue="Gradle.MaskGenerationTests" />
         <item itemvalue="Gradle.PipeInspectionTests" />
+        <item itemvalue="Gradle./home/edkam/IdeaProjects/OntoMutate [--gradle-version 6.3]" />
       </list>
     </recent_temporary>
   </component>
@@ -501,6 +525,16 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.ttl" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

@@ -90,7 +90,7 @@ class SuaveTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) 
 
 
 
-     override fun saveMutants(folderName: String, filePrefix : String) {
+     override fun saveMutants(folderName: String, filePrefix : String, fileFomat : Lang) {
         var i = 0
 
         // create folder, if necessary
