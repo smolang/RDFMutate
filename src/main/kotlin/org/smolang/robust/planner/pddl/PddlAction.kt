@@ -16,14 +16,7 @@ class PddlAction(
 
     val usedPredicates : Set<String> get() = run {
         val relations = preconditions.map { it.relation }.plus(effects.map { it.relation })
-        relations.map { relationToPred(it, 2) }.toSet()
-    }
-
-    private fun relationToPred(relation: String, arity : Int) : String {
-        var arguments = ""
-        for (i in 1..arity)
-            arguments += "?x$i "
-        return "($relation $arguments)"
+        relations.map { PddlConstructor.relationToPredDeclaration(it, 2) }.toSet()
     }
 
     override fun toString() : String {

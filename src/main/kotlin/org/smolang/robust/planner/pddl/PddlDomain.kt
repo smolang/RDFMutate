@@ -18,11 +18,8 @@ class PddlDomain {
         predicates.add(predicate)
     }
 
-    fun addAction(
-        action: PddlAction
-    ) {
+    fun addAction(action: PddlAction) {
         actions.add(action)
-        action.usedPredicates.forEach { addPredicate(it) }
     }
 
 
@@ -40,7 +37,7 @@ class PddlDomain {
 
         if (predicates.isNotEmpty()) {
             sb.appendLine("  (:predicates")
-            predicates.forEach { sb.appendLine("    $it") }
+            predicates.sorted().forEach { sb.appendLine("    $it") }
             sb.appendLine("  )\n")
         }
 

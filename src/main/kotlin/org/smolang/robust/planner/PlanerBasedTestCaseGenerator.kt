@@ -6,6 +6,7 @@ import org.smolang.robust.mutant.Mutator
 import org.smolang.robust.mutant.RobustnessMask
 import org.smolang.robust.mutant.TestCaseGenerator
 import org.smolang.robust.planner.pddl.PddlAssertion
+import org.smolang.robust.planner.pddl.PddlConstructor
 import org.smolang.robust.planner.pddl.PddlDomain
 import org.smolang.robust.planner.pddl.PddlProblem
 
@@ -58,7 +59,7 @@ class PlanerBasedTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(ver
         }
 
         // build planning domain and map from pddl action names to configs
-        val (domain, actionsToConfigs) = buildDomain(mutationConfigs)
+        val (domain, actionsToConfigs) = buildDomain(seed, mutationConfigs)
 
         // define goal
         val goal = listOf(
@@ -73,7 +74,6 @@ class PlanerBasedTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(ver
 
         // build problem file
         val problem = buildProblem(domain, seed, goal)
-
 
         // call planner
         if (verbose) println("Calling  external planner")
@@ -98,9 +98,18 @@ class PlanerBasedTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(ver
 
     // returns a domain and a map that maps pddl action names to the providedconfigurations
     private fun buildDomain(
+        seed: Model,
         configs : List<ActionMutationConfiguration>
     ) : Pair<PddlDomain, MutableMap<String, ActionMutationConfiguration>> {
         val domain = PddlDomain()
+
+        // extract predicate declarations from seed and map to pddl names
+        val pddlRelations = seed.listStatements().toList().mapNotNull { mapToPddl.toPddl(it.predicate) }.toSet()
+        // add declarations for extracted relations to domain
+        for (r in pddlRelations)
+            domain.addPredicate(PddlConstructor.relationToPredDeclaration(r, 2))
+
+
         //map from pddl action names to configs
         val actionsToConfigs : MutableMap<String, ActionMutationConfiguration> = mutableMapOf()
         // add actions from mutation configurations

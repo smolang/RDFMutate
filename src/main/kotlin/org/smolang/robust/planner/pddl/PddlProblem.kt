@@ -5,6 +5,19 @@ class PddlProblem() {
     private val initialState = mutableListOf<PddlAssertion>()
     private val goalState = mutableListOf<PddlAssertion>()
 
+    // all assertions occuring in problem file
+    private val allAssertions : List<PddlAssertion> get() {
+        return  initialState.plus(goalState)
+    }
+
+    // all predicates occuring in the problem file
+    val usedPredicates : Set<String> get() = run {
+        allAssertions.map {
+            PddlConstructor.relationToPredDeclaration(it.relation, it.arguments.size)
+        }.toSet()
+    }
+
+
     fun addObject(name: String, type: String) {
         objects.add("$name - $type")
     }
