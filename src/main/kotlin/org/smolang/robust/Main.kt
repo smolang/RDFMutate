@@ -29,6 +29,8 @@ class Main : CliktCommand() {
     private val verbose by option("--verbose","-v", help="Verbose output for debugging. Default = false.").flag()
     private val numberMutations by option("--num_mut", "-nm", help="Number of mutation operators to apply. Default = 1").int()
     private val outputFile by option("--out", "-o", help="Give name for mutated KG.").file()
+    private val plannerFolder by option("--planner-directory",
+        help = "directory where to find the bash script \"runPlanner.sh\".")
     private val mainMode by option(help="Options to run specialized modes of this program.").switch(
         "--mutate" to "mutate", "-m" to "mutate",
         "--scen_geo" to "geo", "-sg" to "geo",
@@ -174,7 +176,7 @@ class Main : CliktCommand() {
             parseShapes(File("examples/plannerExample/emptyMask.ttl"))
         )
 
-        val tcg = PlanerBasedTestCaseGenerator(verbose)
+        val tcg = plannerFolder?.let { PlanerBasedTestCaseGenerator(verbose, it) } ?: PlanerBasedTestCaseGenerator(verbose)
 
         tcg.generateMutants(
             seed,

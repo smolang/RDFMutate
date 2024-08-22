@@ -10,36 +10,42 @@ import java.util.concurrent.TimeUnit
 
 
 // interface to external planner
-class PlannerInterface(val verbose: Boolean) {
+// folder: directory where to find "./runPlanner.sh"
+class PlannerInterface(
+    val verbose: Boolean,
+    private val folder : String = "planner",) {
 
-    val planner = "python3 ../../planningTools/symk-master/fast-downward.py"
+    private val domainName = "kgDomain"
+    private val problemName = "kgProblem"
+    private val plan = "kgPlan"
 
-    val folder = "planner"
-    val domainName = "kgDomain"
-    val problemName = "kgProblem"
-    val plan = "kgPlan"
-
-    val plannerLog = "planerLog"
+    private val plannerLog = "planerLog"
 
     // refer to files with relative paths
-    val domainFile = File("$folder/$domainName.pddl")
-    val problemFile = File("$folder/$problemName.pddl")
-    val planFile = File("$folder/$plan.txt")
+    private val plannerFile = File("$folder/runPlanner.sh")
+    private val domainFile = File("$folder/$domainName.pddl")
+    private val problemFile = File("$folder/$problemName.pddl")
+    private val planFile = File("$folder/$plan.txt")
 
-    val logFile = File("$folder/$plannerLog.log")
+    private val logFile = File("$folder/$plannerLog.log")
 
 
     // name of domain and problem; timeout in s
     // default timeout: infinite --> no timeout
-    fun getPlan (domain: PddlDomain, problem: PddlProblem, timeout : Long = Long.MAX_VALUE) : PddlPlan {
+    fun getPlan (domain: PddlDomain, problem: PddlProblem, timeout : Long = Long.MAX_VALUE) : PddlPlan? {
+
+        if (!plannerFile.exists()) {
+            println("ERROR: can not find planner ${plannerFile.absolutePath}.")
+            return null
+        }
+
         // TODO: more safe guards, e.g. check if files already exists
         domainFile.writeText(domain.generate(domainName))
         problemFile.writeText(problem.generate(domainName, problemName))
 
 
-
         //val command = "$planner --plan-file $folder/$plan $folder/$domainName.pddl $folder/$problemName.pddl --search sym-bd()"
-        val command = "bash $folder/runPlanner.sh ${domainFile.absolutePath} ${problemFile.absolutePath} ${planFile.absolutePath}"
+        val command = "bash ${plannerFile.absolutePath} ${domainFile.absolutePath} ${problemFile.absolutePath} ${planFile.absolutePath}"
 
         val plannerProcess = Runtime.getRuntime().exec(command)
 
@@ -50,16 +56,26 @@ class PlannerInterface(val verbose: Boolean) {
             )
         )
 
-
-        //println(command)
-
         // if the timeout is infinite --> run with no timeout
         if (timeout == Long.MAX_VALUE)
             plannerProcess.waitFor()
-        else
-            plannerProcess.waitFor(timeout, TimeUnit.SECONDS)
+        else {
+            val finished = plannerProcess.waitFor(timeout, TimeUnit.SECONDS)
+            if (!finished) {
+                if (verbose) println("Planner has run out of time --> no plan generated.")
+                writeplannerOutputToFile(plannerOutput)
+                return null
+            }
+        }
 
+        writeplannerOutputToFile(plannerOutput)
 
+        // import plan
+        val actions =  planFile.readLines().toList().filterNot { it.startsWith(";") }
+        return PddlPlan(actions, verbose)
+    }
+
+    fun writeplannerOutputToFile(plannerOutput : BufferedReader) {
         // build string with all planner output
         val sb: StringBuilder = StringBuilder()
         var s: String?
@@ -69,9 +85,5 @@ class PlannerInterface(val verbose: Boolean) {
 
         // save output of planner to file
         logFile.writeText(sb.toString())
-
-        // import plan
-        val actions =  planFile.readLines().toList().filterNot { it.startsWith(";") }
-        return PddlPlan(actions, verbose)
     }
 }

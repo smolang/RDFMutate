@@ -4,6 +4,8 @@
 
 # usage: ./runPlanner.sh DOMAIN PROBLEM PLAN
 
+# preferred: absolute paths for the files!
+
 domain=$1
 problem=$2
 plan=$3

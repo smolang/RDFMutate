@@ -2,6 +2,7 @@ package org.smolang.robust.planner
 
 import org.apache.jena.rdf.model.Model
 import org.apache.jena.rdf.model.ModelFactory
+import org.smolang.robust.mutant.MutationSequence
 import org.smolang.robust.mutant.Mutator
 import org.smolang.robust.mutant.RobustnessMask
 import org.smolang.robust.mutant.TestCaseGenerator
@@ -10,7 +11,10 @@ import org.smolang.robust.planner.pddl.PddlConstructor
 import org.smolang.robust.planner.pddl.PddlDomain
 import org.smolang.robust.planner.pddl.PddlProblem
 
-class PlanerBasedTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) {
+class PlanerBasedTestCaseGenerator(
+    val verbose: Boolean,
+    val plannerFolder : String = "planner"
+) : TestCaseGenerator(verbose) {
     private val mapToPddl = KgPddlMap()
 
     private val mf = ModelFactory.createDefaultModel()!!
@@ -77,9 +81,12 @@ class PlanerBasedTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(ver
 
         // call planner
         if (verbose) println("Calling  external planner")
-        val plan = PlannerInterface(verbose).getPlan(domain, problem, plannerTimeout)
+        val plan = PlannerInterface(verbose, plannerFolder).getPlan(domain, problem, plannerTimeout)
 
-        val ms = plan.toMutationSequence(actionsToConfigs, mapToPddl)
+        // extract mutation sequence from plan, or default to empty mutation sequence
+        if (plan == null)
+            if (verbose) println("WARNING: no plan generated --> do not mutate seed KG")
+        val ms = plan?.toMutationSequence(actionsToConfigs, mapToPddl) ?: MutationSequence(verbose)
 
         // do mutation according to the plan
         val mutator = Mutator(ms, verbose)
