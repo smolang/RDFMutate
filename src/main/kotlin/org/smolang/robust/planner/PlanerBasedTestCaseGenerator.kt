@@ -5,11 +5,12 @@ import org.apache.jena.rdf.model.ModelFactory
 import org.smolang.robust.mutant.Mutator
 import org.smolang.robust.mutant.RobustnessMask
 import org.smolang.robust.mutant.TestCaseGenerator
+import org.smolang.robust.planner.pddl.PddlAssertion
 import org.smolang.robust.planner.pddl.PddlDomain
 import org.smolang.robust.planner.pddl.PddlProblem
 
 class PlanerBasedTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) {
-    val mapToPddl = KgPddlMap()
+    private val mapToPddl = KgPddlMap()
 
     private val mf = ModelFactory.createDefaultModel()!!
 
@@ -48,57 +49,39 @@ class PlanerBasedTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(ver
     fun generateMutants(
         seed: Model,
         mask: RobustnessMask,
-        countDesired: Int
+        countDesired: Int,
+        plannerTimeout : Long = Long.MAX_VALUE // timeout to run planer in s; default: no timeout
     ): Int {
         // build map from kg to pddl
         for (s in seed.listStatements()) {
             mapToPddl.putAllElmentsIfAbsent(s)
-
         }
 
-        // build planning domain
-        val domain = PddlDomain()
+        // build planning domain and map from pddl action names to configs
+        val (domain, actionsToConfigs) = buildDomain(mutationConfigs)
 
-        //map from pddl action names to configs
-        val actionsToConfigs : MutableMap<String, ActionMutationConfiguration> = mutableMapOf()
-        // add actions from mutations
-        var i = 0
-        for (c in mutationConfigs) {
-            val tempAction = c.asPddlAction("action$i")
-            actionsToConfigs["action$i"] = c
-            i += 1
-            domain.addAction(tempAction)
-        }
-
-        val problem = PddlProblem()
-        // import objects, i.e. constants from domain
-        domain.usedObjects.forEach { problem.addObject(it, "object") }
-
-        for (s in seed.listStatements()) {
-            val initAssertion = mapToPddl.toPddl(s)
-            if (initAssertion != null)
-                problem.addToInitialState(initAssertion)
-        }
+        // define goal
+        val goal = listOf(
+            mapToPddl.toPddl(mf.createStatement(
+            mf.createResource("http://www.ifi.uio.no/tobiajoh/miniPipes#newObject"),
+            mf.createProperty("http://www.ifi.uio.no/tobiajoh/miniPipes#isAt"),
+            mf.createResource("http://www.ifi.uio.no/tobiajoh/miniPipes#segment1")
+        ))
+        )
 
         // TODO: transform mask to goal + derived predicates for domain
 
-        val goal = mapToPddl.toPddl(mf.createStatement(
-                mf.createResource("http://www.ifi.uio.no/tobiajoh/miniPipes#newObject"),
-                mf.createProperty("http://www.ifi.uio.no/tobiajoh/miniPipes#isAt"),
-                mf.createResource("http://www.ifi.uio.no/tobiajoh/miniPipes#segment1")
-            ))
-
-        if (goal != null)
-            problem.addToGoalState(goal)
+        // build problem file
+        val problem = buildProblem(domain, seed, goal)
 
 
         // call planner
         if (verbose) println("Calling  external planner")
-        val plan = PlannerInterface(verbose).getPlan(domain, problem)
+        val plan = PlannerInterface(verbose).getPlan(domain, problem, plannerTimeout)
 
         val ms = plan.toMutationSequence(actionsToConfigs, mapToPddl)
 
-
+        // do mutation according to the plan
         val mutator = Mutator(ms, verbose)
         val mutant = mutator.mutate(seed)
 
@@ -111,5 +94,45 @@ class PlanerBasedTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(ver
             mutantFiles.add("?")
         }
         return 0
+    }
+
+    // returns a domain and a map that maps pddl action names to the providedconfigurations
+    private fun buildDomain(
+        configs : List<ActionMutationConfiguration>
+    ) : Pair<PddlDomain, MutableMap<String, ActionMutationConfiguration>> {
+        val domain = PddlDomain()
+        //map from pddl action names to configs
+        val actionsToConfigs : MutableMap<String, ActionMutationConfiguration> = mutableMapOf()
+        // add actions from mutation configurations
+        var i = 0
+        for (c in configs) {
+            val tempAction = c.asPddlAction("action$i")
+            actionsToConfigs["action$i"] = c
+            i += 1
+            domain.addAction(tempAction)
+        }
+
+        return Pair(domain, actionsToConfigs)
+    }
+
+    private fun buildProblem(
+        domain: PddlDomain,
+        seed: Model,
+        goal: List<PddlAssertion?>) : PddlProblem {
+        val problem = PddlProblem()
+        // import objects, i.e. constants from domain
+        domain.usedObjects.forEach { problem.addObject(it, "object") }
+
+        for (s in seed.listStatements()) {
+            val initAssertion = mapToPddl.toPddl(s)
+            if (initAssertion != null)
+                problem.addToInitialState(initAssertion)
+        }
+
+        for (g in goal)
+            if (g != null)
+                problem.addToGoalState(g)
+
+        return problem
     }
 }
