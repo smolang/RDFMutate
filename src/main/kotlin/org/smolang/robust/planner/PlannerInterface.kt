@@ -75,7 +75,7 @@ class PlannerInterface(
         return PddlPlan(actions, verbose)
     }
 
-    fun writeplannerOutputToFile(plannerOutput : BufferedReader) {
+    private fun writeplannerOutputToFile(plannerOutput : BufferedReader) {
         // build string with all planner output
         val sb: StringBuilder = StringBuilder()
         var s: String?
