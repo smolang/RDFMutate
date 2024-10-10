@@ -14,4 +14,5 @@ A prototype for mutation of OWL ontology with respect to entailment constraints
 Per default, five domain-independent mutation oprators are used. To add more (existing) mutation operators, their classes need to be added to the list in lines 108–112 in file [Main.kt](src/main/kotlin/org/smolang/robust/Main.kt). To define new mutation operators, one can define them as sub-classes of the class [Mutation](src/main/kotlin/org/smolang/robust/mutant/Mutation.kt) (see e.g. mutation operators targeting the ABox in [MutationAbox](src/main/kotlin/org/smolang/robust/mutant/MutationABox.kt)).
 
 ## Evaluation for ISSRE 2024 Publication
- - Consult the branch [issre](https://github.com/Edkamb/OntoMutate/tree/issre) to find the data used for the evaluation and detailed explanations how to reproduce our results.
+ - The reviewed artifact is available on [Zenodo](https://doi.org/10.5281/zenodo.13325715)
+ - You can also consult the branch [issre](https://github.com/Edkamb/OntoMutate/tree/issre) to find the data used for the evaluation and detailed explanations how to reproduce our results.
