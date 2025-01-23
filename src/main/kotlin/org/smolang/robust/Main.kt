@@ -7,17 +7,30 @@ import com.github.ajalt.clikt.parameters.options.option
 import com.github.ajalt.clikt.parameters.options.switch
 import com.github.ajalt.clikt.parameters.types.file
 import com.github.ajalt.clikt.parameters.types.int
+import com.github.owlcs.ontapi.OntManagers
+import com.github.owlcs.ontapi.Ontology
+import com.github.owlcs.ontapi.internal.AxiomTranslator
+import org.apache.jena.ontapi.OntModelFactory
+import org.apache.jena.rdf.model.Model
 import org.apache.jena.riot.Lang
 import org.apache.jena.riot.RDFDataMgr
 import org.apache.jena.shacl.Shapes
+import org.semanticweb.owlapi.formats.FunctionalSyntaxDocumentFormat
+import org.semanticweb.owlapi.model.AxiomType
+import org.semanticweb.owlapi.model.IRI
+import org.semanticweb.owlapi.model.OWLAxiom
 import org.smolang.robust.domainSpecific.geo.GeoScenarioGenerator
 import org.smolang.robust.domainSpecific.geo.GeoTestCaseGenerator
-import org.smolang.robust.domainSpecific.suave.*
+import org.smolang.robust.domainSpecific.suave.SuaveEvaluationGraphGenerator
+import org.smolang.robust.domainSpecific.suave.SuaveTestCaseGenerator
 import org.smolang.robust.mutant.*
 import org.smolang.robust.sut.MiniPipeInspection
 import java.io.File
+import java.nio.file.Files
 import kotlin.random.Random
+import kotlin.reflect.KClass
 import kotlin.system.exitProcess
+
 
 val randomGenerator = Random(2)
 
@@ -26,10 +39,14 @@ class Main : CliktCommand() {
     private val shaclMaskFile by option("--shacl","-s", help="Gives a mask, defined by a set of SHACL shapes").file()
     private val verbose by option("--verbose","-v", help="Verbose output for debugging. Default = false.").flag()
     private val numberMutations by option("--num_mut", "-nm", help="Number of mutation operators to apply. Default = 1").int()
+    private val selectionSeed by option("--selection_seed", help="seed for random selector of which mutation to apply. Default = 2").int()
+    private val owlDocument by option("--owl", help="Set to true, if input is OWL ontology (e.g. in functional syntax). Default = false").flag()
     private val outputFile by option("--out", "-o", help="Give name for mutated KG.").file()
+    private val overwriteOutput by option("--overwrite", help="Indicates if output ontology should be replaced, if it already exists. Default = false").flag()
     private val mainMode by option(help="Options to run specialized modes of this program.").switch(
         "--mutate" to "mutate", "-m" to "mutate",
         "--scen_geo" to "geo", "-sg" to "geo",
+        "--el-mutate" to "elReasoner", "-se" to "elReasoner",
         "--scen_suave" to "suave", "-sv" to "suave",
         "--scen_test" to "test", "-st" to "test",
         "--issre_graph" to "issre", "-ig" to "issre"
@@ -40,13 +57,16 @@ class Main : CliktCommand() {
 
         when (mainMode){
             "mutate" -> {
-                singleMutation()
+                defaultMutation()
             }
             "geo" -> {
                 runGeoGenerator()
             }
             "suave" -> {
                 runSuaveGenerator()
+            }
+            "elReasoner" -> {
+                elMutation()
             }
             "issre" -> generateIssreGraph()
             "test" -> {
@@ -72,37 +92,7 @@ class Main : CliktCommand() {
         return shapes
     }
 
-
-    // apply one mutation to the input KG
-    private fun singleMutation() {
-        // get seed, mask and output files
-        if (seed == null){
-            println("You need to provide a seed knowledge graph")
-            exitProcess(-1)
-        } else if(!seed!!.exists()){
-            println("File ${seed!!.path} does not exist")
-            exitProcess(-1)
-        }
-        val seedKG = RDFDataMgr.loadDataset(seed!!.absolutePath).defaultModel
-
-        val shapes: Shapes? = if(shaclMaskFile != null && !shaclMaskFile!!.exists()){
-            println("File ${shaclMaskFile!!.path} does not exist")
-            exitProcess(-1)
-        } else if(shaclMaskFile != null) {
-            val shapesGraph = RDFDataMgr.loadGraph(shaclMaskFile!!.absolutePath)
-            Shapes.parse(shapesGraph)
-        } else null
-
-        val outputPath: File? = if(outputFile != null && outputFile!!.exists()){
-            println("Output file ${outputFile!!.path} does already exist. Please choose a different name.")
-            exitProcess(-1)
-        } else if(outputFile == null) {
-            println("Please provide an output file to save the mutated KG to.")
-            exitProcess(-1)
-        } else outputFile
-
-        val mask = RobustnessMask(verbose, shapes)
-
+    private fun defaultMutation() {
         // create selection of mutations that can be applied
         val candidateMutations = listOf(
             AddRelationMutation::class,
@@ -112,18 +102,87 @@ class Main : CliktCommand() {
             RemoveNodeMutation::class,
         )
 
+        singleMutation(candidateMutations)
+    }
+
+    // mutates a seed KG with the mutation operators suitable for EL ontologies
+    private fun elMutation() {
+        // create selection of mutations that can be applied
+        val candidateMutations = listOf(
+            // TBox + Abox
+            RemoveAxiomMutation::class,
+
+            // TBox
+            CEUAMutation::class,
+
+            // Abox
+            AddObjectPropertyRelationMutation::class,
+        )
+
+        singleMutation(candidateMutations)
+    }
+
+
+    // apply one mutation to the input KG
+    // argument: candidateMutations to apply
+    private fun singleMutation(candidateMutations: List<KClass<out Mutation>>) {
+        // get seed, mask and output files
+        if (seed == null){
+            println("You need to provide a seed knowledge graph")
+            exitProcess(-1)
+        } else if(!seed!!.exists()){
+            println("File ${seed!!.path} does not exist")
+            exitProcess(-1)
+        }
+        val seedKG =
+            if (owlDocument)
+                loadOwlDocument(seed!!)
+            else
+                RDFDataMgr.loadDataset(seed!!.absolutePath).defaultModel
+
+        val shapes: Shapes? = if(shaclMaskFile != null && !shaclMaskFile!!.exists()){
+            println("File ${shaclMaskFile!!.path} does not exist")
+            exitProcess(-1)
+        } else if(shaclMaskFile != null) {
+            val shapesGraph = RDFDataMgr.loadGraph(shaclMaskFile!!.absolutePath)
+            Shapes.parse(shapesGraph)
+        } else null
+
+        val outputPath: File? = if(outputFile != null && outputFile!!.exists() && !overwriteOutput){
+            println("Output file ${outputFile!!.path} does already exist. Please choose a different name or set \"--overwrite\" flag.")
+            exitProcess(-1)
+        } else if(outputFile == null) {
+            println("Please provide an output file to save the mutated KG to.")
+            exitProcess(-1)
+        } else outputFile
+
+        val mask = RobustnessMask(verbose, shapes)
+
         val ms = MutationSequence(verbose)
-        // add domain independent mutation operators
+        // use random selection of a mutation. Select mutation operator based on seed for random selector, if provided
+        // (use default generator otherwise)
+        val generator = selectionSeed?.let { Random(it) } ?: randomGenerator
+
+        // add mutation operators
         // if no number of mutations is provided --> apply one
-        for (j in 1..(numberMutations ?: 1))
-            ms.addRandom(candidateMutations.random(randomGenerator))
+        for (j in 1..(numberMutations ?: 1)) {
+            val mutation = candidateMutations.random(generator)
+            ms.addRandom(mutation)
+        }
 
         // create mutator and apply mutation
         val m = Mutator(ms, verbose)
         val res = m.mutate(seedKG)
 
+
+        // check if output directory exists and create it, if necessary
+        Files.createDirectories(outputPath!!.parentFile.toPath())
         // safe result
-        RDFDataMgr.write(outputPath!!.outputStream(), res, Lang.TTL)
+        if (owlDocument)
+            saveOwlDocument(res)
+        else
+            RDFDataMgr.write(outputPath.outputStream(), res, Lang.TTL)
+
     }
 
 
@@ -316,10 +375,37 @@ class Main : CliktCommand() {
     }
 
     // generates graph for ISSRE paper
-    fun generateIssreGraph() {
+    private fun generateIssreGraph() {
         val numberOfMutants = 100
         val outputFile = File("sut/suave/evaluation/attemptsPerMask.csv")
         SuaveEvaluationGraphGenerator(false).generateGraph(numberOfMutants, outputFile)
+    }
+
+    // uses ont-api to load ontologies, e.g. in functional syntax and serialize them as RDF
+    private fun loadOwlDocument(file: File) : Model {
+        val manager = OntManagers.createManager()
+        val ontology: Ontology = manager.loadOntologyFromOntologyDocument(file)
+        return ontology.asGraphModel()
+    }
+
+    // uses ont-api to save only those parts of the model that represent valid DL axioms
+    private fun saveOwlDocument(model: Model) {
+        val manager = OntManagers.createManager()
+        val axioms: MutableSet<OWLAxiom> = mutableSetOf()
+
+        // add all OWLAxioms from Jena Model:
+        // obtaines from https://github.com/owlcs/ont-api/wiki/Examples#-2-ont-api-rdf-model-interface
+        AxiomType.AXIOM_TYPES.stream()
+            .map { type -> AxiomTranslator.get(type) }
+            .forEach { t ->
+                t.axioms(OntModelFactory.createModel(model.graph))
+                    .forEach { axiom -> axioms.add(axiom.owlObject)}
+            }
+
+        // collect axioms and save to file (functional syntax)
+        val ontology = manager.createOntology(axioms)
+        manager.saveOntology(ontology, FunctionalSyntaxDocumentFormat(),  IRI.create(outputFile!!.toURI()))
+
     }
 }
 

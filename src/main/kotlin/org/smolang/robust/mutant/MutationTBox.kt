@@ -3,6 +3,7 @@ package org.smolang.robust.mutant
 import org.apache.jena.query.QueryExecutionFactory
 import org.apache.jena.query.QueryFactory
 import org.apache.jena.rdf.model.Model
+import org.apache.jena.rdf.model.Resource
 import org.apache.jena.rdf.model.Statement
 
 
@@ -272,3 +273,48 @@ class ToSiblingClassMutation(model: Model, verbose: Boolean): ReplaceNodeInAxiom
     }
 
 }
+
+class RemoveClassMutation(model: Model, verbose : Boolean) : RemoveNodeMutation(model, verbose) {
+    override fun getCandidates(): List<Resource> {
+        val l = model.listStatements().toList().toMutableList()
+        val candidates = ArrayList<Resource>()
+        for (s in l) {
+            // check, if statement is class declaration
+            if (s.predicate == typeProp && s.`object` == owlClass) {
+                candidates.add(s.subject)
+            }
+        }
+        return filterMutatableAxiomsResource(candidates).sortedBy { it.toString() }
+    }
+
+    override fun setConfiguration(_config: MutationConfiguration) {
+        assert(_config is SingleResourceConfiguration)
+        // assert that the resource is really an individual
+        val ind = (_config as SingleResourceConfiguration).getResource()
+        assert(isOfType(ind, owlClass))
+        super.setConfiguration(_config)
+    }
+}
+
+class RemoveObjectPropertyMutation(model: Model, verbose : Boolean) : RemoveNodeMutation(model, verbose) {
+    override fun getCandidates(): List<Resource> {
+        val l = model.listStatements().toList().toMutableList()
+        val candidates = ArrayList<Resource>()
+        for (s in l) {
+            // check, if statement is object property declaration
+            if (s.predicate == typeProp && s.`object` == objectProp) {
+                candidates.add(s.subject)
+            }
+        }
+        return filterMutatableAxiomsResource(candidates).sortedBy { it.toString() }
+    }
+
+    override fun setConfiguration(_config: MutationConfiguration) {
+        assert(_config is SingleResourceConfiguration)
+        // assert that the resource is really an individual
+        val ind = (_config as SingleResourceConfiguration).getResource()
+        assert(isOfType(ind, owlClass))
+        super.setConfiguration(_config)
+    }
+}
+

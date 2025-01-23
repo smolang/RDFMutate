@@ -133,6 +133,8 @@ open class Mutation(var model: Model, val verbose : Boolean) {
         addSet.forEach {
             m.add(it)
         }
+        // register prefixes from old model into new one
+        m.setNsPrefixes(model.nsPrefixMap)
         return m
     }
 
@@ -569,6 +571,7 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
         val Ind = allOfType(namedInd)   // all individuals
 
         // is property an ObjectProperty?
+        /*
         if (isOfType(p, objectProp)) {
             val (d, r) = computeDomainsObjectProp(p)
             domainP = d
@@ -580,7 +583,8 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
             rangeP = r
         }
         // is property type property?
-        else if (p == typeProp){
+        else */
+        if (p == typeProp){
             // let's restrict ourselves to add type relations between individuals and classes
             domainP = Ind
             rangeP = allOfType(owlClass)
@@ -823,48 +827,4 @@ open class ReplaceNodeInAxiomMutation(model: Model, verbose: Boolean) : Mutation
         addSet.add(newAxiom)
         super.createMutation()
     }
-
-}
-
-open class ChangeDoubleMutation(model: Model, verbose: Boolean): ReplaceNodeInAxiomMutation(model, verbose) {
-    override fun getCandidates(): List<DoubleStringAndStatementConfiguration> {
-        val queryString = "PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n " +
-                "SELECT DISTINCT * WHERE { " +
-                "?x ?p ?d. " +
-                "FILTER(DATATYPE(?d) = xsd:double)." +
-                "}"
-        val query = QueryFactory.create(queryString)
-        val res = QueryExecutionFactory.create(query, model).execSelect()
-        val ret = mutableListOf<DoubleStringAndStatementConfiguration>()
-        for (r in res) {
-            val x = r.get("?x")
-            val p = r.get("?p")
-            val d = r.get("?d")
-            val prop = model.getProperty(p.toString())
-            val axiom = model.createStatement(x.asResource(), prop, d)
-            //println("$x $prop $d")
-
-            // compute new value by multiplying old one
-
-            // factor: values around 1 more likely than larger factors
-            var factor = (1.0/ randomGenerator.nextDouble(0.0,2.0) + 0.5)    // factor between 1...inf
-            if(randomGenerator.nextBoolean()) // negative factor
-                factor = -factor
-            if (randomGenerator.nextBoolean()) // inverse
-                factor = 1.0/factor
-            val newDouble = d.toString().removeSuffix("^^http://www.w3.org/2001/XMLSchema#double").toDouble() * factor
-            //println(newDouble)
-            ret += DoubleStringAndStatementConfiguration(
-                d.toString(),
-                newDouble.toString(),
-                axiom)
-        }
-        return ret.sortedBy { it.toString() }
-    }
-
-    override fun createMutation() {
-        super.createMutationDouble()
-    }
-
-
 }

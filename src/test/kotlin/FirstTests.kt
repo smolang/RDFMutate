@@ -1,7 +1,6 @@
 import org.smolang.robust.domainSpecific.suave.*
 import io.kotlintest.shouldBe
 import io.kotlintest.specs.StringSpec
-import org.apache.jena.rdf.model.ModelFactory
 import org.smolang.robust.mutant.*
 import org.apache.jena.rdf.model.Property
 import org.apache.jena.riot.RDFDataMgr
@@ -52,8 +51,8 @@ class FirstTests : StringSpec() {
             val configRan = SingleResourceConfiguration(ran)
 
             val ms = MutationSequence(verbose)
-            ms.addWithConfig(AddObjectPropertyMutation::class, configR)
-            ms.addWithConfig(AddObjectPropertyMutation::class, configTProp)
+            ms.addWithConfig(AddObjectPropertyRelationMutation::class, configR)
+            ms.addWithConfig(AddObjectPropertyRelationMutation::class, configTProp)
             ms.addWithConfig(AddRelationMutation::class, configT)
             ms.addWithConfig(AddRelationMutation::class, configSub)
             ms.addWithConfig(AddRelationMutation::class, configDom)
@@ -86,9 +85,9 @@ class FirstTests : StringSpec() {
             //ms.addWithConfig(RemoveIndividualMutation::class, configInd)
 
             for (i in 0..5) {
-                ms.addWithConfig(RemoveObjectPropertyMutation::class, configR)
-                ms.addWithConfig(RemoveObjectPropertyMutation::class, configS)
-                ms.addWithConfig(RemoveObjectPropertyMutation::class, configT)
+                ms.addWithConfig(RemoveObjectPropertyRelationMutation::class, configR)
+                ms.addWithConfig(RemoveObjectPropertyRelationMutation::class, configS)
+                ms.addWithConfig(RemoveObjectPropertyRelationMutation::class, configT)
             }
 
 

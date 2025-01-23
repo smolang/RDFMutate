@@ -7,6 +7,7 @@ import org.smolang.robust.randomGenerator
 
 
 class AddInstanceMutation(model: Model, verbose : Boolean) : Mutation(model, verbose) {
+    // returns all classes
     private fun getCandidates(): List<String> {
 
         val queryString = "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n SELECT * WHERE { ?x a owl:Class. }"
@@ -62,7 +63,7 @@ class AddInstanceMutation(model: Model, verbose : Boolean) : Mutation(model, ver
     }
 }
 
-open class RemoveObjectPropertyMutation(model: Model, verbose : Boolean) : RemoveAxiomMutation(model, verbose) {
+open class RemoveObjectPropertyRelationMutation(model: Model, verbose : Boolean) : RemoveAxiomMutation(model, verbose) {
     override fun getCandidates(): List<Statement> {
         val allProps = allOfType(objectProp)
         val candidates : MutableSet<Statement> = hashSetOf()
@@ -101,7 +102,7 @@ open class RemoveObjectPropertyMutation(model: Model, verbose : Boolean) : Remov
     }
 }
 
-open class AddObjectPropertyMutation(model: Model, verbose: Boolean) : AddRelationMutation(model, verbose) {
+open class AddObjectPropertyRelationMutation(model: Model, verbose: Boolean) : AddRelationMutation(model, verbose) {
     override fun getCandidates() : List<Resource> {
         val cand = ArrayList<Resource>()
         val l = model.listStatements().toList()
@@ -138,7 +139,7 @@ open class AddObjectPropertyMutation(model: Model, verbose: Boolean) : AddRelati
     }
 }
 
-open class ChangeObjectPropertyMutation(model: Model, verbose: Boolean) : AddObjectPropertyMutation(model, verbose) {
+open class ChangeObjectPropertyRelationMutation(model: Model, verbose: Boolean) : AddObjectPropertyRelationMutation(model, verbose) {
     override fun getCandidates() : List<Resource> {
         val cand =  super.getCandidates()
         return cand
@@ -183,5 +184,47 @@ class ChangeDataPropertyMutation(model: Model, verbose: Boolean) : ChangeRelatio
         // only select data properties
         val newCand =  cand.filter { isOfInferredType(it, dataProp)}
         return newCand
+    }
+}
+
+
+open class ChangeDoubleMutation(model: Model, verbose: Boolean): ReplaceNodeInAxiomMutation(model, verbose) {
+    override fun getCandidates(): List<DoubleStringAndStatementConfiguration> {
+        val queryString = "PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n " +
+                "SELECT DISTINCT * WHERE { " +
+                "?x ?p ?d. " +
+                "FILTER(DATATYPE(?d) = xsd:double)." +
+                "}"
+        val query = QueryFactory.create(queryString)
+        val res = QueryExecutionFactory.create(query, model).execSelect()
+        val ret = mutableListOf<DoubleStringAndStatementConfiguration>()
+        for (r in res) {
+            val x = r.get("?x")
+            val p = r.get("?p")
+            val d = r.get("?d")
+            val prop = model.getProperty(p.toString())
+            val axiom = model.createStatement(x.asResource(), prop, d)
+            //println("$x $prop $d")
+
+            // compute new value by multiplying old one
+
+            // factor: values around 1 more likely than larger factors
+            var factor = (1.0/ randomGenerator.nextDouble(0.0,2.0) + 0.5)    // factor between 1...inf
+            if(randomGenerator.nextBoolean()) // negative factor
+                factor = -factor
+            if (randomGenerator.nextBoolean()) // inverse
+                factor = 1.0/factor
+            val newDouble = d.toString().removeSuffix("^^http://www.w3.org/2001/XMLSchema#double").toDouble() * factor
+            //println(newDouble)
+            ret += DoubleStringAndStatementConfiguration(
+                d.toString(),
+                newDouble.toString(),
+                axiom)
+        }
+        return ret.sortedBy { it.toString() }
+    }
+
+    override fun createMutation() {
+        super.createMutationDouble()
     }
 }

@@ -15,7 +15,7 @@ const val qaType = "http://metacontrol.org/tomasys#isQAtype"
 const val qaComparisonOperator  = "http://metacontrol.org/tomasys#qa_comparison_operator"
 const val hasValueIRI = "http://metacontrol.org/tomasys#hasValue"
 
-class AddQAEstimationMutation(model: Model, verbose: Boolean) : AddObjectPropertyMutation(model, verbose) {
+class AddQAEstimationMutation(model: Model, verbose: Boolean) : AddObjectPropertyRelationMutation(model, verbose) {
     init {
         super.setConfiguration(
             SingleResourceConfiguration(
@@ -30,7 +30,7 @@ class AddQAEstimationMutation(model: Model, verbose: Boolean) : AddObjectPropert
     }
 }
 
-class RemoveQAEstimationMutation(model: Model, verbose: Boolean) : RemoveObjectPropertyMutation(model, verbose) {
+class RemoveQAEstimationMutation(model: Model, verbose: Boolean) : RemoveObjectPropertyRelationMutation(model, verbose) {
     init {
         super.setConfiguration(
             SingleResourceConfiguration(
@@ -45,7 +45,7 @@ class RemoveQAEstimationMutation(model: Model, verbose: Boolean) : RemoveObjectP
     }
 }
 
-class ChangeSolvesFunctionMutation(model: Model, verbose: Boolean) : ChangeObjectPropertyMutation(model, verbose) {
+class ChangeSolvesFunctionMutation(model: Model, verbose: Boolean) : ChangeObjectPropertyRelationMutation(model, verbose) {
     init {
         super.setConfiguration(
             SingleResourceConfiguration(
@@ -60,7 +60,7 @@ class ChangeSolvesFunctionMutation(model: Model, verbose: Boolean) : ChangeObjec
     }
 }
 
-class ChangeQualityAttributTypeMutation(model: Model, verbose: Boolean) : ChangeObjectPropertyMutation(model, verbose) {
+class ChangeQualityAttributTypeMutation(model: Model, verbose: Boolean) : ChangeObjectPropertyRelationMutation(model, verbose) {
     init {
         super.setConfiguration(
             SingleResourceConfiguration(

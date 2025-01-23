@@ -6,7 +6,7 @@
 
 ontologyFile=$1
 
-ontologyFileContainer=testOnt2.owl
+ontologyFileContainer=testOnt.owl
 
 CONTAINER_NAME=reasonerContainer
 

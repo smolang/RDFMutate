@@ -1,0 +1,3096 @@
+time limit: 3600 seconds
+expected end time: Thu Jan 23 12:04:22 PM CET 2025
+build source code
+mutate KG (ontology) ontologies_ore/ore_ont_10004.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_10056.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_10088.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_10133.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_10134.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_10146.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Exception in thread "main" java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:108)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65)
+Caused by: org.apache.jena.reasoner.ReasonerException: Illegal list structure in owl:intersectionOf
+	at org.apache.jena.reasoner.rulesys.impl.OWLRuleTranslationHook.translateIntersectionList(OWLRuleTranslationHook.java:106)
+	at org.apache.jena.reasoner.rulesys.impl.OWLRuleTranslationHook.run(OWLRuleTranslationHook.java:66)
+	at org.apache.jena.reasoner.rulesys.FBRuleInfGraph.prepare(FBRuleInfGraph.java:453)
+	at org.apache.jena.reasoner.BaseInfGraph.requirePrepared(BaseInfGraph.java:507)
+	at org.apache.jena.reasoner.rulesys.FBRuleInfGraph.findWithContinuation(FBRuleInfGraph.java:557)
+	at org.apache.jena.reasoner.rulesys.FBRuleInfGraph.graphBaseFind(FBRuleInfGraph.java:587)
+	at org.apache.jena.graph.impl.GraphBase.find(GraphBase.java:229)
+	at org.apache.jena.rdf.model.impl.ModelCom.listStatements(ModelCom.java:365)
+	at org.apache.jena.rdf.model.impl.ModelCom.listStatements(ModelCom.java:370)
+	at org.smolang.robust.mutant.Mutation.isOfInferredType(Mutation.kt:163)
+	at org.smolang.robust.mutant.AddRelationMutation.setRepairs(Mutation.kt:416)
+	at org.smolang.robust.mutant.AddRelationMutation.createMutation(Mutation.kt:665)
+	at org.smolang.robust.mutant.Mutation.applyCopy(Mutation.kt:80)
+	at org.smolang.robust.mutant.Mutator.mutate(Mutator.kt:25)
+	at org.smolang.robust.Main.singleMutation(Main.kt:175)
+	at org.smolang.robust.Main.elMutation(Main.kt:122)
+	at org.smolang.robust.Main.run(Main.kt:69)
+	at com.github.ajalt.clikt.parsers.Parser.finalizeAndRun(Parser.kt:348)
+	at com.github.ajalt.clikt.parsers.Parser.parse(Parser.kt:218)
+	at com.github.ajalt.clikt.parsers.Parser.parse(Parser.kt:42)
+	at com.github.ajalt.clikt.core.CliktCommand.parse(CliktCommand.kt:457)
+	at com.github.ajalt.clikt.core.CliktCommand.parse$default(CliktCommand.kt:454)
+	at com.github.ajalt.clikt.core.CliktCommand.main(CliktCommand.kt:474)
+	at com.github.ajalt.clikt.core.CliktCommand.main(CliktCommand.kt:481)
+	at org.smolang.robust.MainKt.main(Main.kt:413)
+	... 8 more
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_10160.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_10174.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_10176.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_10199.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_10264.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_10283.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_10309.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_10314.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_10340.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_1034.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_10413.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_10431.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_10516.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_10536.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_10742.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_10752.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_10769.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_10805.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_10823.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_10833.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_10968.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_11009.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Exception in thread "main" java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:108)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65)
+Caused by: org.apache.jena.reasoner.ReasonerException: Illegal list structure in owl:intersectionOf
+	at org.apache.jena.reasoner.rulesys.impl.OWLRuleTranslationHook.translateIntersectionList(OWLRuleTranslationHook.java:106)
+	at org.apache.jena.reasoner.rulesys.impl.OWLRuleTranslationHook.run(OWLRuleTranslationHook.java:66)
+	at org.apache.jena.reasoner.rulesys.FBRuleInfGraph.prepare(FBRuleInfGraph.java:453)
+	at org.apache.jena.reasoner.BaseInfGraph.requirePrepared(BaseInfGraph.java:507)
+	at org.apache.jena.reasoner.rulesys.FBRuleInfGraph.findWithContinuation(FBRuleInfGraph.java:557)
+	at org.apache.jena.reasoner.rulesys.FBRuleInfGraph.graphBaseFind(FBRuleInfGraph.java:587)
+	at org.apache.jena.graph.impl.GraphBase.find(GraphBase.java:229)
+	at org.apache.jena.rdf.model.impl.ModelCom.listStatements(ModelCom.java:365)
+	at org.apache.jena.rdf.model.impl.ModelCom.listStatements(ModelCom.java:370)
+	at org.smolang.robust.mutant.Mutation.isOfInferredType(Mutation.kt:163)
+	at org.smolang.robust.mutant.AddRelationMutation.setRepairs(Mutation.kt:416)
+	at org.smolang.robust.mutant.AddRelationMutation.createMutation(Mutation.kt:665)
+	at org.smolang.robust.mutant.Mutation.applyCopy(Mutation.kt:80)
+	at org.smolang.robust.mutant.Mutator.mutate(Mutator.kt:25)
+	at org.smolang.robust.Main.singleMutation(Main.kt:175)
+	at org.smolang.robust.Main.elMutation(Main.kt:122)
+	at org.smolang.robust.Main.run(Main.kt:69)
+	at com.github.ajalt.clikt.parsers.Parser.finalizeAndRun(Parser.kt:348)
+	at com.github.ajalt.clikt.parsers.Parser.parse(Parser.kt:218)
+	at com.github.ajalt.clikt.parsers.Parser.parse(Parser.kt:42)
+	at com.github.ajalt.clikt.core.CliktCommand.parse(CliktCommand.kt:457)
+	at com.github.ajalt.clikt.core.CliktCommand.parse$default(CliktCommand.kt:454)
+	at com.github.ajalt.clikt.core.CliktCommand.main(CliktCommand.kt:474)
+	at com.github.ajalt.clikt.core.CliktCommand.main(CliktCommand.kt:481)
+	at org.smolang.robust.MainKt.main(Main.kt:413)
+	... 8 more
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_11010.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_11014.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_11115.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_11274.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_11298.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_11392.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_11497.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_11504.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_11522.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_11526.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_11572.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_11577.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_11619.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_11639.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_11676.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_11694.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_11719.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_1172.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_11866.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_11889.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_11978.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_12009.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_12061.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_12118.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_12150.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_12281.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_12379.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_12397.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_12415.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_12584.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_12635.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_12721.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_12831.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_12892.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_12914.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_12931.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_12932.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_12987.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_13035.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_13053.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_13066.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_13100.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_13112.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_13204.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_13234.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_1325.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_13298.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_13301.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_13392.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_13429.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_13530.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_13578.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_13643.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_13657.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_13772.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_13872.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Exception in thread "main" java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:108)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65)
+Caused by: java.util.NoSuchElementException: No element found: [_:c73bc9e6-bec7-4ad1-b542-03f616339d75 rdf:first http://www.absoluteiri.edu/RELAPPROXI-49]
+	at org.apache.jena.ontapi.impl.objects.OntListImpl$RDFListIterator.next(OntListImpl.java:755)
+	at org.apache.jena.ontapi.impl.objects.OntListImpl$RDFListIterator.next(OntListImpl.java:725)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at org.apache.jena.util.iterator.WrappedIterator.forEachRemaining(WrappedIterator.java:113)
+	at org.apache.jena.util.iterator.Map1Iterator.forEachRemaining(Map1Iterator.java:54)
+	at org.apache.jena.util.iterator.WrappedIterator.forEachRemaining(WrappedIterator.java:113)
+	at org.apache.jena.util.iterator.FilterIterator.forEachRemaining(FilterIterator.java:97)
+	at org.apache.jena.util.iterator.Map1Iterator.forEachRemaining(Map1Iterator.java:54)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at com.github.owlcs.ontapi.internal.axioms.AbstractTwoWayNaryTranslator.makeAxiom(AbstractTwoWayNaryTranslator.java:122)
+	at com.github.owlcs.ontapi.internal.axioms.DifferentIndividualsTranslator.toAxiomWrap(DifferentIndividualsTranslator.java:113)
+	at com.github.owlcs.ontapi.internal.BaseSearcher.toAxiom(BaseSearcher.java:89)
+	at com.github.owlcs.ontapi.internal.BaseSearcher.lambda$translate$1(BaseSearcher.java:70)
+	at org.apache.jena.util.iterator.Map1Iterator.lambda$forEachRemaining$0(Map1Iterator.java:55)
+	at org.apache.jena.util.iterator.Map1Iterator.lambda$forEachRemaining$0(Map1Iterator.java:55)
+	at org.apache.jena.util.iterator.Map1Iterator.lambda$forEachRemaining$0(Map1Iterator.java:55)
+	at org.apache.jena.util.iterator.FilterIterator.lambda$forEachRemaining$0(FilterIterator.java:99)
+	at org.apache.jena.util.iterator.Map1Iterator.lambda$forEachRemaining$0(Map1Iterator.java:55)
+	at org.apache.jena.util.iterator.FilterIterator.lambda$forEachRemaining$0(FilterIterator.java:99)
+	at org.apache.jena.mem.ArrayBunch$2.forEachRemaining(ArrayBunch.java:129)
+	at org.apache.jena.util.iterator.WrappedIterator.forEachRemaining(WrappedIterator.java:113)
+	at org.apache.jena.util.iterator.FilterIterator.forEachRemaining(FilterIterator.java:97)
+	at org.apache.jena.util.iterator.WrappedIterator.forEachRemaining(WrappedIterator.java:113)
+	at org.apache.jena.mem.TrackingTripleIterator.forEachRemaining(TrackingTripleIterator.java:58)
+	at org.apache.jena.util.iterator.WrappedIterator.forEachRemaining(WrappedIterator.java:113)
+	at org.apache.jena.mem.TrackingTripleIterator.forEachRemaining(TrackingTripleIterator.java:58)
+	at org.apache.jena.util.iterator.Map1Iterator.forEachRemaining(Map1Iterator.java:54)
+	at org.apache.jena.util.iterator.WrappedIterator.forEachRemaining(WrappedIterator.java:113)
+	at org.apache.jena.util.iterator.FilterIterator.forEachRemaining(FilterIterator.java:97)
+	at org.apache.jena.util.iterator.Map1Iterator.forEachRemaining(Map1Iterator.java:54)
+	at org.apache.jena.util.iterator.Map1Iterator.forEachRemaining(Map1Iterator.java:54)
+	at org.apache.jena.util.iterator.NiceIterator$1.forEachRemaining(NiceIterator.java:142)
+	at org.apache.jena.util.iterator.Map1Iterator.forEachRemaining(Map1Iterator.java:54)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at org.smolang.robust.Main$saveOwlDocument$2.invoke(Main.kt:402)
+	at org.smolang.robust.Main$saveOwlDocument$2.invoke(Main.kt:400)
+	at org.smolang.robust.Main.saveOwlDocument$lambda$2(Main.kt:400)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.HashMap$KeySpliterator.forEachRemaining(HashMap.java:1707)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.smolang.robust.Main.saveOwlDocument(Main.kt:400)
+	at org.smolang.robust.Main.singleMutation(Main.kt:182)
+	at org.smolang.robust.Main.elMutation(Main.kt:122)
+	at org.smolang.robust.Main.run(Main.kt:69)
+	at com.github.ajalt.clikt.parsers.Parser.finalizeAndRun(Parser.kt:348)
+	at com.github.ajalt.clikt.parsers.Parser.parse(Parser.kt:218)
+	at com.github.ajalt.clikt.parsers.Parser.parse(Parser.kt:42)
+	at com.github.ajalt.clikt.core.CliktCommand.parse(CliktCommand.kt:457)
+	at com.github.ajalt.clikt.core.CliktCommand.parse$default(CliktCommand.kt:454)
+	at com.github.ajalt.clikt.core.CliktCommand.main(CliktCommand.kt:474)
+	at com.github.ajalt.clikt.core.CliktCommand.main(CliktCommand.kt:481)
+	at org.smolang.robust.MainKt.main(Main.kt:413)
+	... 8 more
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_13887.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_13897.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Exception in thread "main" java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:108)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65)
+Caused by: org.apache.jena.reasoner.ReasonerException: Illegal list structure in owl:intersectionOf
+	at org.apache.jena.reasoner.rulesys.impl.OWLRuleTranslationHook.translateIntersectionList(OWLRuleTranslationHook.java:106)
+	at org.apache.jena.reasoner.rulesys.impl.OWLRuleTranslationHook.translateIntersectionList(OWLRuleTranslationHook.java:140)
+	at org.apache.jena.reasoner.rulesys.impl.OWLRuleTranslationHook.run(OWLRuleTranslationHook.java:66)
+	at org.apache.jena.reasoner.rulesys.FBRuleInfGraph.prepare(FBRuleInfGraph.java:453)
+	at org.apache.jena.reasoner.BaseInfGraph.requirePrepared(BaseInfGraph.java:507)
+	at org.apache.jena.reasoner.rulesys.FBRuleInfGraph.findWithContinuation(FBRuleInfGraph.java:557)
+	at org.apache.jena.reasoner.rulesys.FBRuleInfGraph.graphBaseFind(FBRuleInfGraph.java:587)
+	at org.apache.jena.graph.impl.GraphBase.find(GraphBase.java:229)
+	at org.apache.jena.rdf.model.impl.ModelCom.listStatements(ModelCom.java:365)
+	at org.apache.jena.rdf.model.impl.ModelCom.listStatements(ModelCom.java:370)
+	at org.smolang.robust.mutant.Mutation.isOfInferredType(Mutation.kt:163)
+	at org.smolang.robust.mutant.AddRelationMutation.setRepairs(Mutation.kt:416)
+	at org.smolang.robust.mutant.AddRelationMutation.createMutation(Mutation.kt:665)
+	at org.smolang.robust.mutant.Mutation.applyCopy(Mutation.kt:80)
+	at org.smolang.robust.mutant.Mutator.mutate(Mutator.kt:25)
+	at org.smolang.robust.Main.singleMutation(Main.kt:175)
+	at org.smolang.robust.Main.elMutation(Main.kt:122)
+	at org.smolang.robust.Main.run(Main.kt:69)
+	at com.github.ajalt.clikt.parsers.Parser.finalizeAndRun(Parser.kt:348)
+	at com.github.ajalt.clikt.parsers.Parser.parse(Parser.kt:218)
+	at com.github.ajalt.clikt.parsers.Parser.parse(Parser.kt:42)
+	at com.github.ajalt.clikt.core.CliktCommand.parse(CliktCommand.kt:457)
+	at com.github.ajalt.clikt.core.CliktCommand.parse$default(CliktCommand.kt:454)
+	at com.github.ajalt.clikt.core.CliktCommand.main(CliktCommand.kt:474)
+	at com.github.ajalt.clikt.core.CliktCommand.main(CliktCommand.kt:481)
+	at org.smolang.robust.MainKt.main(Main.kt:413)
+	... 8 more
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_14031.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_1406.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_14128.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_14175.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_14185.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_1420.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_14273.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_14328.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_14353.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_14396.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_14517.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_14518.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_1473.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_14816.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_1481.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_14901.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_15068.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_15145.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_15160.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_15222.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_15292.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+found anomaly. Saved to test_ontologies/temp/ont_107.owl.
+mutate KG (ontology) ontologies_ore/ore_ont_15318.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_15397.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_15407.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_15576.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_155.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_15685.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_15737.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_15800.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_15933.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Exception in thread "main" java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:108)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65)
+Caused by: org.apache.jena.ontapi.OntJenaException$IllegalState: Can't find []-list triple with predicate http://www.w3.org/1999/02/22-rdf-syntax-ns#first in a batch [_:84a72d40-3192-4f45-8327-d37d804acb2c rdf:rest _:76325251-d196-479f-a9ae-211e7ae59f5b]
+	at org.apache.jena.ontapi.impl.objects.OntListImpl.createListStatement(OntListImpl.java:352)
+	at org.apache.jena.ontapi.impl.objects.OntListImpl.createListStatement(OntListImpl.java:338)
+	at org.apache.jena.ontapi.impl.objects.OntListImpl.createRDFFirst(OntListImpl.java:314)
+	at org.apache.jena.ontapi.impl.objects.OntListImpl.lambda$listMembers$6(OntListImpl.java:437)
+	at org.apache.jena.util.iterator.Map1Iterator.lambda$forEachRemaining$0(Map1Iterator.java:55)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at org.apache.jena.util.iterator.WrappedIterator.forEachRemaining(WrappedIterator.java:113)
+	at org.apache.jena.util.iterator.Map1Iterator.forEachRemaining(Map1Iterator.java:54)
+	at org.apache.jena.util.iterator.WrappedIterator.forEachRemaining(WrappedIterator.java:113)
+	at org.apache.jena.util.iterator.FilterIterator.forEachRemaining(FilterIterator.java:97)
+	at org.apache.jena.util.iterator.Map1Iterator.forEachRemaining(Map1Iterator.java:54)
+	at org.apache.jena.util.iterator.Map1Iterator.forEachRemaining(Map1Iterator.java:54)
+	at org.apache.jena.util.iterator.NiceIterator.asSet(NiceIterator.java:230)
+	at org.apache.jena.util.iterator.NiceIterator.toSet(NiceIterator.java:221)
+	at com.github.owlcs.ontapi.internal.ReadHelper.calcClassExpression(ReadHelper.java:422)
+	at com.github.owlcs.ontapi.internal.SimpleObjectFactory.getClass(SimpleObjectFactory.java:77)
+	at com.github.owlcs.ontapi.internal.axioms.EquivalentClassesTranslator.toAxiomWrap(EquivalentClassesTranslator.java:87)
+	at com.github.owlcs.ontapi.internal.BaseSearcher.toAxiom(BaseSearcher.java:89)
+	at com.github.owlcs.ontapi.internal.BaseSearcher.lambda$translate$1(BaseSearcher.java:70)
+	at org.apache.jena.util.iterator.Map1Iterator.lambda$forEachRemaining$0(Map1Iterator.java:55)
+	at org.apache.jena.util.iterator.FilterIterator.lambda$forEachRemaining$0(FilterIterator.java:99)
+	at org.apache.jena.util.iterator.Map1Iterator.lambda$forEachRemaining$0(Map1Iterator.java:55)
+	at org.apache.jena.mem.HashCommon$BasicKeyIterator.forEachRemaining(HashCommon.java:388)
+	at org.apache.jena.util.iterator.NiceIterator$1.forEachRemaining(NiceIterator.java:138)
+	at org.apache.jena.util.iterator.WrappedIterator.forEachRemaining(WrappedIterator.java:113)
+	at org.apache.jena.mem.TrackingTripleIterator.forEachRemaining(TrackingTripleIterator.java:58)
+	at org.apache.jena.util.iterator.Map1Iterator.forEachRemaining(Map1Iterator.java:54)
+	at org.apache.jena.util.iterator.WrappedIterator.forEachRemaining(WrappedIterator.java:113)
+	at org.apache.jena.util.iterator.FilterIterator.forEachRemaining(FilterIterator.java:97)
+	at org.apache.jena.util.iterator.Map1Iterator.forEachRemaining(Map1Iterator.java:54)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at org.smolang.robust.Main$saveOwlDocument$2.invoke(Main.kt:402)
+	at org.smolang.robust.Main$saveOwlDocument$2.invoke(Main.kt:400)
+	at org.smolang.robust.Main.saveOwlDocument$lambda$2(Main.kt:400)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.HashMap$KeySpliterator.forEachRemaining(HashMap.java:1707)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.smolang.robust.Main.saveOwlDocument(Main.kt:400)
+	at org.smolang.robust.Main.singleMutation(Main.kt:182)
+	at org.smolang.robust.Main.elMutation(Main.kt:122)
+	at org.smolang.robust.Main.run(Main.kt:69)
+	at com.github.ajalt.clikt.parsers.Parser.finalizeAndRun(Parser.kt:348)
+	at com.github.ajalt.clikt.parsers.Parser.parse(Parser.kt:218)
+	at com.github.ajalt.clikt.parsers.Parser.parse(Parser.kt:42)
+	at com.github.ajalt.clikt.core.CliktCommand.parse(CliktCommand.kt:457)
+	at com.github.ajalt.clikt.core.CliktCommand.parse$default(CliktCommand.kt:454)
+	at com.github.ajalt.clikt.core.CliktCommand.main(CliktCommand.kt:474)
+	at com.github.ajalt.clikt.core.CliktCommand.main(CliktCommand.kt:481)
+	at org.smolang.robust.MainKt.main(Main.kt:413)
+	... 8 more
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_15950.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_15985.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_16010.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_16033.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_16039.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_16076.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_16115.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_16157.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_16166.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_16188.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_16267.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_16268.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Exception in thread "main" java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:108)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65)
+Caused by: org.apache.jena.reasoner.ReasonerException: Illegal list structure in owl:intersectionOf
+	at org.apache.jena.reasoner.rulesys.impl.OWLRuleTranslationHook.translateIntersectionList(OWLRuleTranslationHook.java:106)
+	at org.apache.jena.reasoner.rulesys.impl.OWLRuleTranslationHook.run(OWLRuleTranslationHook.java:66)
+	at org.apache.jena.reasoner.rulesys.FBRuleInfGraph.prepare(FBRuleInfGraph.java:453)
+	at org.apache.jena.reasoner.BaseInfGraph.requirePrepared(BaseInfGraph.java:507)
+	at org.apache.jena.reasoner.rulesys.FBRuleInfGraph.findWithContinuation(FBRuleInfGraph.java:557)
+	at org.apache.jena.reasoner.rulesys.FBRuleInfGraph.graphBaseFind(FBRuleInfGraph.java:587)
+	at org.apache.jena.graph.impl.GraphBase.find(GraphBase.java:229)
+	at org.apache.jena.rdf.model.impl.ModelCom.listStatements(ModelCom.java:365)
+	at org.apache.jena.rdf.model.impl.ModelCom.listStatements(ModelCom.java:370)
+	at org.smolang.robust.mutant.Mutation.isOfInferredType(Mutation.kt:163)
+	at org.smolang.robust.mutant.AddRelationMutation.setRepairs(Mutation.kt:416)
+	at org.smolang.robust.mutant.AddRelationMutation.createMutation(Mutation.kt:665)
+	at org.smolang.robust.mutant.Mutation.applyCopy(Mutation.kt:80)
+	at org.smolang.robust.mutant.Mutator.mutate(Mutator.kt:25)
+	at org.smolang.robust.Main.singleMutation(Main.kt:175)
+	at org.smolang.robust.Main.elMutation(Main.kt:122)
+	at org.smolang.robust.Main.run(Main.kt:69)
+	at com.github.ajalt.clikt.parsers.Parser.finalizeAndRun(Parser.kt:348)
+	at com.github.ajalt.clikt.parsers.Parser.parse(Parser.kt:218)
+	at com.github.ajalt.clikt.parsers.Parser.parse(Parser.kt:42)
+	at com.github.ajalt.clikt.core.CliktCommand.parse(CliktCommand.kt:457)
+	at com.github.ajalt.clikt.core.CliktCommand.parse$default(CliktCommand.kt:454)
+	at com.github.ajalt.clikt.core.CliktCommand.main(CliktCommand.kt:474)
+	at com.github.ajalt.clikt.core.CliktCommand.main(CliktCommand.kt:481)
+	at org.smolang.robust.MainKt.main(Main.kt:413)
+	... 8 more
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_16312.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_16351.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_16626.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_1662.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_16730.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_16777.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_16806.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_16821.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_16827.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_1728.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_1756.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_1793.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_1967.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_2036.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_2063.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_2066.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_2195.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_2228.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_2229.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_2237.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_2377.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_2378.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_2440.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_2453.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_2488.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_2496.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_2556.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_2557.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_2608.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Exception in thread "main" java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:108)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65)
+Caused by: org.apache.jena.reasoner.ReasonerException: Illegal list structure in owl:intersectionOf
+	at org.apache.jena.reasoner.rulesys.impl.OWLRuleTranslationHook.translateIntersectionList(OWLRuleTranslationHook.java:106)
+	at org.apache.jena.reasoner.rulesys.impl.OWLRuleTranslationHook.translateIntersectionList(OWLRuleTranslationHook.java:140)
+	at org.apache.jena.reasoner.rulesys.impl.OWLRuleTranslationHook.run(OWLRuleTranslationHook.java:66)
+	at org.apache.jena.reasoner.rulesys.FBRuleInfGraph.prepare(FBRuleInfGraph.java:453)
+	at org.apache.jena.reasoner.BaseInfGraph.requirePrepared(BaseInfGraph.java:507)
+	at org.apache.jena.reasoner.rulesys.FBRuleInfGraph.findWithContinuation(FBRuleInfGraph.java:557)
+	at org.apache.jena.reasoner.rulesys.FBRuleInfGraph.graphBaseFind(FBRuleInfGraph.java:587)
+	at org.apache.jena.graph.impl.GraphBase.find(GraphBase.java:229)
+	at org.apache.jena.rdf.model.impl.ModelCom.listStatements(ModelCom.java:365)
+	at org.apache.jena.rdf.model.impl.ModelCom.listStatements(ModelCom.java:370)
+	at org.smolang.robust.mutant.Mutation.isOfInferredType(Mutation.kt:163)
+	at org.smolang.robust.mutant.AddRelationMutation.setRepairs(Mutation.kt:416)
+	at org.smolang.robust.mutant.AddRelationMutation.createMutation(Mutation.kt:665)
+	at org.smolang.robust.mutant.Mutation.applyCopy(Mutation.kt:80)
+	at org.smolang.robust.mutant.Mutator.mutate(Mutator.kt:25)
+	at org.smolang.robust.Main.singleMutation(Main.kt:175)
+	at org.smolang.robust.Main.elMutation(Main.kt:122)
+	at org.smolang.robust.Main.run(Main.kt:69)
+	at com.github.ajalt.clikt.parsers.Parser.finalizeAndRun(Parser.kt:348)
+	at com.github.ajalt.clikt.parsers.Parser.parse(Parser.kt:218)
+	at com.github.ajalt.clikt.parsers.Parser.parse(Parser.kt:42)
+	at com.github.ajalt.clikt.core.CliktCommand.parse(CliktCommand.kt:457)
+	at com.github.ajalt.clikt.core.CliktCommand.parse$default(CliktCommand.kt:454)
+	at com.github.ajalt.clikt.core.CliktCommand.main(CliktCommand.kt:474)
+	at com.github.ajalt.clikt.core.CliktCommand.main(CliktCommand.kt:481)
+	at org.smolang.robust.MainKt.main(Main.kt:413)
+	... 8 more
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_2612.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_2646.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_2697.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_2713.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_2720.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_2753.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_2876.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_304.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_3082.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_3102.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_3128.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_316.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_3259.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_3263.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_3292.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_3313.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_3349.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_3352.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_338.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_3418.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_3463.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_3484.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_3515.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_3550.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_3635.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_3770.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_3780.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_380.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_3835.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Exception in thread "main" java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:108)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65)
+Caused by: java.util.NoSuchElementException: No element found: [_:811f510a-6bec-4443-9239-4400ca2c75c1 rdf:first http://www.absoluteiri.edu/RELAPPROXC1341]
+	at org.apache.jena.ontapi.impl.objects.OntListImpl$RDFListIterator.next(OntListImpl.java:755)
+	at org.apache.jena.ontapi.impl.objects.OntListImpl$RDFListIterator.next(OntListImpl.java:725)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at org.apache.jena.util.iterator.WrappedIterator.forEachRemaining(WrappedIterator.java:113)
+	at org.apache.jena.util.iterator.Map1Iterator.forEachRemaining(Map1Iterator.java:54)
+	at org.apache.jena.util.iterator.WrappedIterator.forEachRemaining(WrappedIterator.java:113)
+	at org.apache.jena.util.iterator.FilterIterator.forEachRemaining(FilterIterator.java:97)
+	at org.apache.jena.util.iterator.Map1Iterator.forEachRemaining(Map1Iterator.java:54)
+	at org.apache.jena.util.iterator.Map1Iterator.forEachRemaining(Map1Iterator.java:54)
+	at org.apache.jena.util.iterator.NiceIterator.asSet(NiceIterator.java:230)
+	at org.apache.jena.util.iterator.NiceIterator.toSet(NiceIterator.java:221)
+	at com.github.owlcs.ontapi.internal.ReadHelper.calcClassExpression(ReadHelper.java:422)
+	at com.github.owlcs.ontapi.internal.SimpleObjectFactory.getClass(SimpleObjectFactory.java:77)
+	at com.github.owlcs.ontapi.internal.axioms.SubClassOfTranslator.toAxiomWrap(SubClassOfTranslator.java:100)
+	at com.github.owlcs.ontapi.internal.BaseSearcher.toAxiom(BaseSearcher.java:89)
+	at com.github.owlcs.ontapi.internal.BaseSearcher.lambda$translate$1(BaseSearcher.java:70)
+	at org.apache.jena.util.iterator.Map1Iterator.lambda$forEachRemaining$0(Map1Iterator.java:55)
+	at org.apache.jena.util.iterator.FilterIterator.lambda$forEachRemaining$0(FilterIterator.java:99)
+	at org.apache.jena.util.iterator.Map1Iterator.lambda$forEachRemaining$0(Map1Iterator.java:55)
+	at org.apache.jena.mem.HashCommon$BasicKeyIterator.forEachRemaining(HashCommon.java:388)
+	at org.apache.jena.util.iterator.NiceIterator$1.forEachRemaining(NiceIterator.java:138)
+	at org.apache.jena.util.iterator.WrappedIterator.forEachRemaining(WrappedIterator.java:113)
+	at org.apache.jena.mem.TrackingTripleIterator.forEachRemaining(TrackingTripleIterator.java:58)
+	at org.apache.jena.util.iterator.Map1Iterator.forEachRemaining(Map1Iterator.java:54)
+	at org.apache.jena.util.iterator.WrappedIterator.forEachRemaining(WrappedIterator.java:113)
+	at org.apache.jena.util.iterator.FilterIterator.forEachRemaining(FilterIterator.java:97)
+	at org.apache.jena.util.iterator.Map1Iterator.forEachRemaining(Map1Iterator.java:54)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at org.smolang.robust.Main$saveOwlDocument$2.invoke(Main.kt:402)
+	at org.smolang.robust.Main$saveOwlDocument$2.invoke(Main.kt:400)
+	at org.smolang.robust.Main.saveOwlDocument$lambda$2(Main.kt:400)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.HashMap$KeySpliterator.forEachRemaining(HashMap.java:1707)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.smolang.robust.Main.saveOwlDocument(Main.kt:400)
+	at org.smolang.robust.Main.singleMutation(Main.kt:182)
+	at org.smolang.robust.Main.elMutation(Main.kt:122)
+	at org.smolang.robust.Main.run(Main.kt:69)
+	at com.github.ajalt.clikt.parsers.Parser.finalizeAndRun(Parser.kt:348)
+	at com.github.ajalt.clikt.parsers.Parser.parse(Parser.kt:218)
+	at com.github.ajalt.clikt.parsers.Parser.parse(Parser.kt:42)
+	at com.github.ajalt.clikt.core.CliktCommand.parse(CliktCommand.kt:457)
+	at com.github.ajalt.clikt.core.CliktCommand.parse$default(CliktCommand.kt:454)
+	at com.github.ajalt.clikt.core.CliktCommand.main(CliktCommand.kt:474)
+	at com.github.ajalt.clikt.core.CliktCommand.main(CliktCommand.kt:481)
+	at org.smolang.robust.MainKt.main(Main.kt:413)
+	... 8 more
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_3842.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_3909.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_3910.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_3936.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_3968.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_4074.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_412.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_4261.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Exception in thread "main" java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:108)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65)
+Caused by: java.util.NoSuchElementException: No element found: [_:e1d97374-f8ed-4a86-8fb5-58d57d9b730d rdf:first http://purl.obolibrary.org/obo/NBO_0000608]
+	at org.apache.jena.ontapi.impl.objects.OntListImpl$RDFListIterator.next(OntListImpl.java:755)
+	at org.apache.jena.ontapi.impl.objects.OntListImpl$RDFListIterator.next(OntListImpl.java:725)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at org.apache.jena.util.iterator.WrappedIterator.forEachRemaining(WrappedIterator.java:113)
+	at org.apache.jena.util.iterator.Map1Iterator.forEachRemaining(Map1Iterator.java:54)
+	at org.apache.jena.util.iterator.WrappedIterator.forEachRemaining(WrappedIterator.java:113)
+	at org.apache.jena.util.iterator.FilterIterator.forEachRemaining(FilterIterator.java:97)
+	at org.apache.jena.util.iterator.Map1Iterator.forEachRemaining(Map1Iterator.java:54)
+	at org.apache.jena.util.iterator.Map1Iterator.forEachRemaining(Map1Iterator.java:54)
+	at org.apache.jena.util.iterator.NiceIterator.asSet(NiceIterator.java:230)
+	at org.apache.jena.util.iterator.NiceIterator.toSet(NiceIterator.java:221)
+	at com.github.owlcs.ontapi.internal.ReadHelper.calcClassExpression(ReadHelper.java:422)
+	at com.github.owlcs.ontapi.internal.SimpleObjectFactory.getClass(SimpleObjectFactory.java:77)
+	at com.github.owlcs.ontapi.internal.axioms.EquivalentClassesTranslator.toAxiomWrap(EquivalentClassesTranslator.java:87)
+	at com.github.owlcs.ontapi.internal.BaseSearcher.toAxiom(BaseSearcher.java:89)
+	at com.github.owlcs.ontapi.internal.BaseSearcher.lambda$translate$1(BaseSearcher.java:70)
+	at org.apache.jena.util.iterator.Map1Iterator.lambda$forEachRemaining$0(Map1Iterator.java:55)
+	at org.apache.jena.util.iterator.FilterIterator.lambda$forEachRemaining$0(FilterIterator.java:99)
+	at org.apache.jena.util.iterator.Map1Iterator.lambda$forEachRemaining$0(Map1Iterator.java:55)
+	at org.apache.jena.mem.HashCommon$BasicKeyIterator.forEachRemaining(HashCommon.java:388)
+	at org.apache.jena.util.iterator.NiceIterator$1.forEachRemaining(NiceIterator.java:138)
+	at org.apache.jena.util.iterator.WrappedIterator.forEachRemaining(WrappedIterator.java:113)
+	at org.apache.jena.mem.TrackingTripleIterator.forEachRemaining(TrackingTripleIterator.java:58)
+	at org.apache.jena.util.iterator.Map1Iterator.forEachRemaining(Map1Iterator.java:54)
+	at org.apache.jena.util.iterator.WrappedIterator.forEachRemaining(WrappedIterator.java:113)
+	at org.apache.jena.util.iterator.FilterIterator.forEachRemaining(FilterIterator.java:97)
+	at org.apache.jena.util.iterator.Map1Iterator.forEachRemaining(Map1Iterator.java:54)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at org.smolang.robust.Main$saveOwlDocument$2.invoke(Main.kt:402)
+	at org.smolang.robust.Main$saveOwlDocument$2.invoke(Main.kt:400)
+	at org.smolang.robust.Main.saveOwlDocument$lambda$2(Main.kt:400)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.HashMap$KeySpliterator.forEachRemaining(HashMap.java:1707)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.smolang.robust.Main.saveOwlDocument(Main.kt:400)
+	at org.smolang.robust.Main.singleMutation(Main.kt:182)
+	at org.smolang.robust.Main.elMutation(Main.kt:122)
+	at org.smolang.robust.Main.run(Main.kt:69)
+	at com.github.ajalt.clikt.parsers.Parser.finalizeAndRun(Parser.kt:348)
+	at com.github.ajalt.clikt.parsers.Parser.parse(Parser.kt:218)
+	at com.github.ajalt.clikt.parsers.Parser.parse(Parser.kt:42)
+	at com.github.ajalt.clikt.core.CliktCommand.parse(CliktCommand.kt:457)
+	at com.github.ajalt.clikt.core.CliktCommand.parse$default(CliktCommand.kt:454)
+	at com.github.ajalt.clikt.core.CliktCommand.main(CliktCommand.kt:474)
+	at com.github.ajalt.clikt.core.CliktCommand.main(CliktCommand.kt:481)
+	at org.smolang.robust.MainKt.main(Main.kt:413)
+	... 8 more
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_4279.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_430.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_4313.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_4315.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_4382.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_4383.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Exception in thread "main" java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:108)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65)
+Caused by: org.apache.jena.ontapi.OntJenaException$IllegalState: Can't find []-list triple with predicate http://www.w3.org/1999/02/22-rdf-syntax-ns#first in a batch [_:09032ba2-1ae7-4ed0-8305-e2e0aea69967 rdf:rest _:0e0dee38-f056-42e8-aafe-12e7e0ca5df7]
+	at org.apache.jena.ontapi.impl.objects.OntListImpl.createListStatement(OntListImpl.java:352)
+	at org.apache.jena.ontapi.impl.objects.OntListImpl.createListStatement(OntListImpl.java:338)
+	at org.apache.jena.ontapi.impl.objects.OntListImpl.createRDFFirst(OntListImpl.java:314)
+	at org.apache.jena.ontapi.impl.objects.OntListImpl.lambda$listMembers$6(OntListImpl.java:437)
+	at org.apache.jena.util.iterator.Map1Iterator.lambda$forEachRemaining$0(Map1Iterator.java:55)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at org.apache.jena.util.iterator.WrappedIterator.forEachRemaining(WrappedIterator.java:113)
+	at org.apache.jena.util.iterator.Map1Iterator.forEachRemaining(Map1Iterator.java:54)
+	at org.apache.jena.util.iterator.WrappedIterator.forEachRemaining(WrappedIterator.java:113)
+	at org.apache.jena.util.iterator.FilterIterator.forEachRemaining(FilterIterator.java:97)
+	at org.apache.jena.util.iterator.Map1Iterator.forEachRemaining(Map1Iterator.java:54)
+	at org.apache.jena.util.iterator.Map1Iterator.forEachRemaining(Map1Iterator.java:54)
+	at org.apache.jena.util.iterator.NiceIterator.asSet(NiceIterator.java:230)
+	at org.apache.jena.util.iterator.NiceIterator.toSet(NiceIterator.java:221)
+	at com.github.owlcs.ontapi.internal.ReadHelper.calcClassExpression(ReadHelper.java:422)
+	at com.github.owlcs.ontapi.internal.SimpleObjectFactory.getClass(SimpleObjectFactory.java:77)
+	at com.github.owlcs.ontapi.internal.axioms.EquivalentClassesTranslator.toAxiomWrap(EquivalentClassesTranslator.java:87)
+	at com.github.owlcs.ontapi.internal.BaseSearcher.toAxiom(BaseSearcher.java:89)
+	at com.github.owlcs.ontapi.internal.BaseSearcher.lambda$translate$1(BaseSearcher.java:70)
+	at org.apache.jena.util.iterator.Map1Iterator.lambda$forEachRemaining$0(Map1Iterator.java:55)
+	at org.apache.jena.util.iterator.FilterIterator.lambda$forEachRemaining$0(FilterIterator.java:99)
+	at org.apache.jena.util.iterator.Map1Iterator.lambda$forEachRemaining$0(Map1Iterator.java:55)
+	at org.apache.jena.mem.HashCommon$BasicKeyIterator.forEachRemaining(HashCommon.java:388)
+	at org.apache.jena.util.iterator.NiceIterator$1.forEachRemaining(NiceIterator.java:138)
+	at org.apache.jena.util.iterator.WrappedIterator.forEachRemaining(WrappedIterator.java:113)
+	at org.apache.jena.mem.TrackingTripleIterator.forEachRemaining(TrackingTripleIterator.java:58)
+	at org.apache.jena.util.iterator.Map1Iterator.forEachRemaining(Map1Iterator.java:54)
+	at org.apache.jena.util.iterator.WrappedIterator.forEachRemaining(WrappedIterator.java:113)
+	at org.apache.jena.util.iterator.FilterIterator.forEachRemaining(FilterIterator.java:97)
+	at org.apache.jena.util.iterator.Map1Iterator.forEachRemaining(Map1Iterator.java:54)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at org.smolang.robust.Main$saveOwlDocument$2.invoke(Main.kt:402)
+	at org.smolang.robust.Main$saveOwlDocument$2.invoke(Main.kt:400)
+	at org.smolang.robust.Main.saveOwlDocument$lambda$2(Main.kt:400)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.HashMap$KeySpliterator.forEachRemaining(HashMap.java:1707)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.smolang.robust.Main.saveOwlDocument(Main.kt:400)
+	at org.smolang.robust.Main.singleMutation(Main.kt:182)
+	at org.smolang.robust.Main.elMutation(Main.kt:122)
+	at org.smolang.robust.Main.run(Main.kt:69)
+	at com.github.ajalt.clikt.parsers.Parser.finalizeAndRun(Parser.kt:348)
+	at com.github.ajalt.clikt.parsers.Parser.parse(Parser.kt:218)
+	at com.github.ajalt.clikt.parsers.Parser.parse(Parser.kt:42)
+	at com.github.ajalt.clikt.core.CliktCommand.parse(CliktCommand.kt:457)
+	at com.github.ajalt.clikt.core.CliktCommand.parse$default(CliktCommand.kt:454)
+	at com.github.ajalt.clikt.core.CliktCommand.main(CliktCommand.kt:474)
+	at com.github.ajalt.clikt.core.CliktCommand.main(CliktCommand.kt:481)
+	at org.smolang.robust.MainKt.main(Main.kt:413)
+	... 8 more
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_4388.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_4400.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_457.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_4671.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_4724.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_4767.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_4798.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_480.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_4855.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_5080.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_5089.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_508.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_5090.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_5149.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_5164.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_5205.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_5213.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_5258.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Exception in thread "main" java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:108)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65)
+Caused by: java.util.NoSuchElementException: No element found: [_:dbaa227d-b39c-4a7c-9f94-c8d6bd63be00 rdf:first http://purl.obolibrary.org/obo/IAO_0000229]
+	at org.apache.jena.ontapi.impl.objects.OntListImpl$RDFListIterator.next(OntListImpl.java:755)
+	at org.apache.jena.ontapi.impl.objects.OntListImpl$RDFListIterator.next(OntListImpl.java:725)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at org.apache.jena.util.iterator.WrappedIterator.forEachRemaining(WrappedIterator.java:113)
+	at org.apache.jena.util.iterator.Map1Iterator.forEachRemaining(Map1Iterator.java:54)
+	at org.apache.jena.util.iterator.WrappedIterator.forEachRemaining(WrappedIterator.java:113)
+	at org.apache.jena.util.iterator.FilterIterator.forEachRemaining(FilterIterator.java:97)
+	at org.apache.jena.util.iterator.Map1Iterator.forEachRemaining(Map1Iterator.java:54)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at com.github.owlcs.ontapi.internal.axioms.AbstractTwoWayNaryTranslator.makeAxiom(AbstractTwoWayNaryTranslator.java:122)
+	at com.github.owlcs.ontapi.internal.axioms.DifferentIndividualsTranslator.toAxiomWrap(DifferentIndividualsTranslator.java:113)
+	at com.github.owlcs.ontapi.internal.BaseSearcher.toAxiom(BaseSearcher.java:89)
+	at com.github.owlcs.ontapi.internal.BaseSearcher.lambda$translate$1(BaseSearcher.java:70)
+	at org.apache.jena.util.iterator.Map1Iterator.lambda$forEachRemaining$0(Map1Iterator.java:55)
+	at org.apache.jena.util.iterator.Map1Iterator.lambda$forEachRemaining$0(Map1Iterator.java:55)
+	at org.apache.jena.util.iterator.Map1Iterator.lambda$forEachRemaining$0(Map1Iterator.java:55)
+	at org.apache.jena.util.iterator.FilterIterator.lambda$forEachRemaining$0(FilterIterator.java:99)
+	at org.apache.jena.util.iterator.Map1Iterator.lambda$forEachRemaining$0(Map1Iterator.java:55)
+	at org.apache.jena.util.iterator.FilterIterator.lambda$forEachRemaining$0(FilterIterator.java:99)
+	at org.apache.jena.mem.ArrayBunch$2.forEachRemaining(ArrayBunch.java:129)
+	at org.apache.jena.util.iterator.WrappedIterator.forEachRemaining(WrappedIterator.java:113)
+	at org.apache.jena.util.iterator.FilterIterator.forEachRemaining(FilterIterator.java:97)
+	at org.apache.jena.util.iterator.WrappedIterator.forEachRemaining(WrappedIterator.java:113)
+	at org.apache.jena.mem.TrackingTripleIterator.forEachRemaining(TrackingTripleIterator.java:58)
+	at org.apache.jena.util.iterator.WrappedIterator.forEachRemaining(WrappedIterator.java:113)
+	at org.apache.jena.mem.TrackingTripleIterator.forEachRemaining(TrackingTripleIterator.java:58)
+	at org.apache.jena.util.iterator.Map1Iterator.forEachRemaining(Map1Iterator.java:54)
+	at org.apache.jena.util.iterator.WrappedIterator.forEachRemaining(WrappedIterator.java:113)
+	at org.apache.jena.util.iterator.FilterIterator.forEachRemaining(FilterIterator.java:97)
+	at org.apache.jena.util.iterator.Map1Iterator.forEachRemaining(Map1Iterator.java:54)
+	at org.apache.jena.util.iterator.Map1Iterator.forEachRemaining(Map1Iterator.java:54)
+	at org.apache.jena.util.iterator.NiceIterator$1.forEachRemaining(NiceIterator.java:142)
+	at org.apache.jena.util.iterator.Map1Iterator.forEachRemaining(Map1Iterator.java:54)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at org.smolang.robust.Main$saveOwlDocument$2.invoke(Main.kt:402)
+	at org.smolang.robust.Main$saveOwlDocument$2.invoke(Main.kt:400)
+	at org.smolang.robust.Main.saveOwlDocument$lambda$2(Main.kt:400)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.HashMap$KeySpliterator.forEachRemaining(HashMap.java:1707)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.smolang.robust.Main.saveOwlDocument(Main.kt:400)
+	at org.smolang.robust.Main.singleMutation(Main.kt:182)
+	at org.smolang.robust.Main.elMutation(Main.kt:122)
+	at org.smolang.robust.Main.run(Main.kt:69)
+	at com.github.ajalt.clikt.parsers.Parser.finalizeAndRun(Parser.kt:348)
+	at com.github.ajalt.clikt.parsers.Parser.parse(Parser.kt:218)
+	at com.github.ajalt.clikt.parsers.Parser.parse(Parser.kt:42)
+	at com.github.ajalt.clikt.core.CliktCommand.parse(CliktCommand.kt:457)
+	at com.github.ajalt.clikt.core.CliktCommand.parse$default(CliktCommand.kt:454)
+	at com.github.ajalt.clikt.core.CliktCommand.main(CliktCommand.kt:474)
+	at com.github.ajalt.clikt.core.CliktCommand.main(CliktCommand.kt:481)
+	at org.smolang.robust.MainKt.main(Main.kt:413)
+	... 8 more
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_5263.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_5266.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Exception in thread "main" java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:108)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65)
+Caused by: org.apache.jena.reasoner.ReasonerException: Illegal list structure in owl:intersectionOf
+	at org.apache.jena.reasoner.rulesys.impl.OWLRuleTranslationHook.translateIntersectionList(OWLRuleTranslationHook.java:106)
+	at org.apache.jena.reasoner.rulesys.impl.OWLRuleTranslationHook.translateIntersectionList(OWLRuleTranslationHook.java:140)
+	at org.apache.jena.reasoner.rulesys.impl.OWLRuleTranslationHook.run(OWLRuleTranslationHook.java:66)
+	at org.apache.jena.reasoner.rulesys.FBRuleInfGraph.prepare(FBRuleInfGraph.java:453)
+	at org.apache.jena.reasoner.BaseInfGraph.requirePrepared(BaseInfGraph.java:507)
+	at org.apache.jena.reasoner.rulesys.FBRuleInfGraph.findWithContinuation(FBRuleInfGraph.java:557)
+	at org.apache.jena.reasoner.rulesys.FBRuleInfGraph.graphBaseFind(FBRuleInfGraph.java:587)
+	at org.apache.jena.graph.impl.GraphBase.find(GraphBase.java:229)
+	at org.apache.jena.rdf.model.impl.ModelCom.listStatements(ModelCom.java:365)
+	at org.apache.jena.rdf.model.impl.ModelCom.listStatements(ModelCom.java:370)
+	at org.smolang.robust.mutant.Mutation.isOfInferredType(Mutation.kt:163)
+	at org.smolang.robust.mutant.AddRelationMutation.setRepairs(Mutation.kt:416)
+	at org.smolang.robust.mutant.AddRelationMutation.createMutation(Mutation.kt:665)
+	at org.smolang.robust.mutant.Mutation.applyCopy(Mutation.kt:80)
+	at org.smolang.robust.mutant.Mutator.mutate(Mutator.kt:25)
+	at org.smolang.robust.Main.singleMutation(Main.kt:175)
+	at org.smolang.robust.Main.elMutation(Main.kt:122)
+	at org.smolang.robust.Main.run(Main.kt:69)
+	at com.github.ajalt.clikt.parsers.Parser.finalizeAndRun(Parser.kt:348)
+	at com.github.ajalt.clikt.parsers.Parser.parse(Parser.kt:218)
+	at com.github.ajalt.clikt.parsers.Parser.parse(Parser.kt:42)
+	at com.github.ajalt.clikt.core.CliktCommand.parse(CliktCommand.kt:457)
+	at com.github.ajalt.clikt.core.CliktCommand.parse$default(CliktCommand.kt:454)
+	at com.github.ajalt.clikt.core.CliktCommand.main(CliktCommand.kt:474)
+	at com.github.ajalt.clikt.core.CliktCommand.main(CliktCommand.kt:481)
+	at org.smolang.robust.MainKt.main(Main.kt:413)
+	... 8 more
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_5376.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_544.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_5485.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_5509.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_566.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_5679.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_568.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_5696.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_5742.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_5852.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_5966.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_5983.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_6024.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_6207.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_6226.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_6338.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_6378.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_637.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_6401.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_6409.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_6542.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_6566.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_670.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_6720.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_6735.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_6796.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_6812.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_6889.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_7003.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_7073.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_7120.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_7220.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_725.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_7270.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_7364.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_7373.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_7394.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_7418.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_7483.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_7576.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_766.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_7680.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_7776.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_7800.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_7938.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_7969.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_7995.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_8090.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_8135.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_8169.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_8187.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_8226.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_8290.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_8298.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_8327.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_8355.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_8396.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_8462.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_8502.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_8730.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_8806.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_8916.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_8937.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_8949.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_894.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_8974.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_9031.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_9154.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_9204.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_9251.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_9435.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_9462.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_9509.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_9598.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_9617.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_9646.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_9673.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_9690.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_9695.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_9736.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_9805.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_9854.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_9857.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Exception in thread "main" java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:108)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65)
+Caused by: org.apache.jena.ontapi.OntJenaException$IllegalState: Can't find []-list triple with predicate http://www.w3.org/1999/02/22-rdf-syntax-ns#first in a batch [_:9ad1e0ed-3c54-4e84-bdc0-0469810137c9 rdf:rest rdf:nil]
+	at org.apache.jena.ontapi.impl.objects.OntListImpl.createListStatement(OntListImpl.java:352)
+	at org.apache.jena.ontapi.impl.objects.OntListImpl.createListStatement(OntListImpl.java:338)
+	at org.apache.jena.ontapi.impl.objects.OntListImpl.createRDFFirst(OntListImpl.java:314)
+	at org.apache.jena.ontapi.impl.objects.OntListImpl.lambda$listMembers$6(OntListImpl.java:437)
+	at org.apache.jena.util.iterator.Map1Iterator.lambda$forEachRemaining$0(Map1Iterator.java:55)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at org.apache.jena.util.iterator.WrappedIterator.forEachRemaining(WrappedIterator.java:113)
+	at org.apache.jena.util.iterator.Map1Iterator.forEachRemaining(Map1Iterator.java:54)
+	at org.apache.jena.util.iterator.WrappedIterator.forEachRemaining(WrappedIterator.java:113)
+	at org.apache.jena.util.iterator.FilterIterator.forEachRemaining(FilterIterator.java:97)
+	at org.apache.jena.util.iterator.Map1Iterator.forEachRemaining(Map1Iterator.java:54)
+	at org.apache.jena.util.iterator.Map1Iterator.forEachRemaining(Map1Iterator.java:54)
+	at org.apache.jena.util.iterator.NiceIterator.asSet(NiceIterator.java:230)
+	at org.apache.jena.util.iterator.NiceIterator.toSet(NiceIterator.java:221)
+	at com.github.owlcs.ontapi.internal.ReadHelper.calcClassExpression(ReadHelper.java:422)
+	at com.github.owlcs.ontapi.internal.SimpleObjectFactory.getClass(SimpleObjectFactory.java:77)
+	at com.github.owlcs.ontapi.internal.axioms.EquivalentClassesTranslator.toAxiomWrap(EquivalentClassesTranslator.java:87)
+	at com.github.owlcs.ontapi.internal.BaseSearcher.toAxiom(BaseSearcher.java:89)
+	at com.github.owlcs.ontapi.internal.BaseSearcher.lambda$translate$1(BaseSearcher.java:70)
+	at org.apache.jena.util.iterator.Map1Iterator.lambda$forEachRemaining$0(Map1Iterator.java:55)
+	at org.apache.jena.util.iterator.FilterIterator.lambda$forEachRemaining$0(FilterIterator.java:99)
+	at org.apache.jena.util.iterator.Map1Iterator.lambda$forEachRemaining$0(Map1Iterator.java:55)
+	at org.apache.jena.mem.HashCommon$BasicKeyIterator.forEachRemaining(HashCommon.java:388)
+	at org.apache.jena.util.iterator.NiceIterator$1.forEachRemaining(NiceIterator.java:138)
+	at org.apache.jena.util.iterator.WrappedIterator.forEachRemaining(WrappedIterator.java:113)
+	at org.apache.jena.mem.TrackingTripleIterator.forEachRemaining(TrackingTripleIterator.java:58)
+	at org.apache.jena.util.iterator.Map1Iterator.forEachRemaining(Map1Iterator.java:54)
+	at org.apache.jena.util.iterator.WrappedIterator.forEachRemaining(WrappedIterator.java:113)
+	at org.apache.jena.util.iterator.FilterIterator.forEachRemaining(FilterIterator.java:97)
+	at org.apache.jena.util.iterator.Map1Iterator.forEachRemaining(Map1Iterator.java:54)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at org.smolang.robust.Main$saveOwlDocument$2.invoke(Main.kt:402)
+	at org.smolang.robust.Main$saveOwlDocument$2.invoke(Main.kt:400)
+	at org.smolang.robust.Main.saveOwlDocument$lambda$2(Main.kt:400)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.HashMap$KeySpliterator.forEachRemaining(HashMap.java:1707)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.smolang.robust.Main.saveOwlDocument(Main.kt:400)
+	at org.smolang.robust.Main.singleMutation(Main.kt:182)
+	at org.smolang.robust.Main.elMutation(Main.kt:122)
+	at org.smolang.robust.Main.run(Main.kt:69)
+	at com.github.ajalt.clikt.parsers.Parser.finalizeAndRun(Parser.kt:348)
+	at com.github.ajalt.clikt.parsers.Parser.parse(Parser.kt:218)
+	at com.github.ajalt.clikt.parsers.Parser.parse(Parser.kt:42)
+	at com.github.ajalt.clikt.core.CliktCommand.parse(CliktCommand.kt:457)
+	at com.github.ajalt.clikt.core.CliktCommand.parse$default(CliktCommand.kt:454)
+	at com.github.ajalt.clikt.core.CliktCommand.main(CliktCommand.kt:474)
+	at com.github.ajalt.clikt.core.CliktCommand.main(CliktCommand.kt:481)
+	at org.smolang.robust.MainKt.main(Main.kt:413)
+	... 8 more
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_9867.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_9943.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_9947.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_9998.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Exception in thread "main" java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:108)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65)
+Caused by: java.util.NoSuchElementException: No element found: [_:d4c3f03c-e48a-4500-b13c-2bcfe0c2c138 rdf:first _:9df11477-99e9-4353-b321-861940a84694]
+	at org.apache.jena.ontapi.impl.objects.OntListImpl$RDFListIterator.next(OntListImpl.java:755)
+	at org.apache.jena.ontapi.impl.objects.OntListImpl$RDFListIterator.next(OntListImpl.java:725)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at org.apache.jena.util.iterator.WrappedIterator.forEachRemaining(WrappedIterator.java:113)
+	at org.apache.jena.util.iterator.Map1Iterator.forEachRemaining(Map1Iterator.java:54)
+	at org.apache.jena.util.iterator.WrappedIterator.forEachRemaining(WrappedIterator.java:113)
+	at org.apache.jena.util.iterator.FilterIterator.forEachRemaining(FilterIterator.java:97)
+	at org.apache.jena.util.iterator.Map1Iterator.forEachRemaining(Map1Iterator.java:54)
+	at org.apache.jena.util.iterator.Map1Iterator.forEachRemaining(Map1Iterator.java:54)
+	at org.apache.jena.util.iterator.NiceIterator.asSet(NiceIterator.java:230)
+	at org.apache.jena.util.iterator.NiceIterator.toSet(NiceIterator.java:221)
+	at com.github.owlcs.ontapi.internal.ReadHelper.calcClassExpression(ReadHelper.java:422)
+	at com.github.owlcs.ontapi.internal.SimpleObjectFactory.getClass(SimpleObjectFactory.java:77)
+	at com.github.owlcs.ontapi.internal.axioms.EquivalentClassesTranslator.toAxiomWrap(EquivalentClassesTranslator.java:87)
+	at com.github.owlcs.ontapi.internal.BaseSearcher.toAxiom(BaseSearcher.java:89)
+	at com.github.owlcs.ontapi.internal.BaseSearcher.lambda$translate$1(BaseSearcher.java:70)
+	at org.apache.jena.util.iterator.Map1Iterator.lambda$forEachRemaining$0(Map1Iterator.java:55)
+	at org.apache.jena.util.iterator.FilterIterator.lambda$forEachRemaining$0(FilterIterator.java:99)
+	at org.apache.jena.util.iterator.Map1Iterator.lambda$forEachRemaining$0(Map1Iterator.java:55)
+	at org.apache.jena.mem.HashCommon$BasicKeyIterator.forEachRemaining(HashCommon.java:388)
+	at org.apache.jena.util.iterator.NiceIterator$1.forEachRemaining(NiceIterator.java:138)
+	at org.apache.jena.util.iterator.WrappedIterator.forEachRemaining(WrappedIterator.java:113)
+	at org.apache.jena.mem.TrackingTripleIterator.forEachRemaining(TrackingTripleIterator.java:58)
+	at org.apache.jena.util.iterator.Map1Iterator.forEachRemaining(Map1Iterator.java:54)
+	at org.apache.jena.util.iterator.WrappedIterator.forEachRemaining(WrappedIterator.java:113)
+	at org.apache.jena.util.iterator.FilterIterator.forEachRemaining(FilterIterator.java:97)
+	at org.apache.jena.util.iterator.Map1Iterator.forEachRemaining(Map1Iterator.java:54)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at org.smolang.robust.Main$saveOwlDocument$2.invoke(Main.kt:402)
+	at org.smolang.robust.Main$saveOwlDocument$2.invoke(Main.kt:400)
+	at org.smolang.robust.Main.saveOwlDocument$lambda$2(Main.kt:400)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.HashMap$KeySpliterator.forEachRemaining(HashMap.java:1707)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.smolang.robust.Main.saveOwlDocument(Main.kt:400)
+	at org.smolang.robust.Main.singleMutation(Main.kt:182)
+	at org.smolang.robust.Main.elMutation(Main.kt:122)
+	at org.smolang.robust.Main.run(Main.kt:69)
+	at com.github.ajalt.clikt.parsers.Parser.finalizeAndRun(Parser.kt:348)
+	at com.github.ajalt.clikt.parsers.Parser.parse(Parser.kt:218)
+	at com.github.ajalt.clikt.parsers.Parser.parse(Parser.kt:42)
+	at com.github.ajalt.clikt.core.CliktCommand.parse(CliktCommand.kt:457)
+	at com.github.ajalt.clikt.core.CliktCommand.parse$default(CliktCommand.kt:454)
+	at com.github.ajalt.clikt.core.CliktCommand.main(CliktCommand.kt:474)
+	at com.github.ajalt.clikt.core.CliktCommand.main(CliktCommand.kt:481)
+	at org.smolang.robust.MainKt.main(Main.kt:413)
+	... 8 more
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_10004.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_10056.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_10088.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_10133.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_10134.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_10146.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Exception in thread "main" java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:108)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65)
+Caused by: org.apache.jena.reasoner.ReasonerException: Illegal list structure in owl:intersectionOf
+	at org.apache.jena.reasoner.rulesys.impl.OWLRuleTranslationHook.translateIntersectionList(OWLRuleTranslationHook.java:106)
+	at org.apache.jena.reasoner.rulesys.impl.OWLRuleTranslationHook.run(OWLRuleTranslationHook.java:66)
+	at org.apache.jena.reasoner.rulesys.FBRuleInfGraph.prepare(FBRuleInfGraph.java:453)
+	at org.apache.jena.reasoner.BaseInfGraph.requirePrepared(BaseInfGraph.java:507)
+	at org.apache.jena.reasoner.rulesys.FBRuleInfGraph.findWithContinuation(FBRuleInfGraph.java:557)
+	at org.apache.jena.reasoner.rulesys.FBRuleInfGraph.graphBaseFind(FBRuleInfGraph.java:587)
+	at org.apache.jena.graph.impl.GraphBase.find(GraphBase.java:229)
+	at org.apache.jena.rdf.model.impl.ModelCom.listStatements(ModelCom.java:365)
+	at org.apache.jena.rdf.model.impl.ModelCom.listStatements(ModelCom.java:370)
+	at org.smolang.robust.mutant.Mutation.isOfInferredType(Mutation.kt:163)
+	at org.smolang.robust.mutant.AddRelationMutation.setRepairs(Mutation.kt:416)
+	at org.smolang.robust.mutant.AddRelationMutation.createMutation(Mutation.kt:665)
+	at org.smolang.robust.mutant.Mutation.applyCopy(Mutation.kt:80)
+	at org.smolang.robust.mutant.Mutator.mutate(Mutator.kt:25)
+	at org.smolang.robust.Main.singleMutation(Main.kt:175)
+	at org.smolang.robust.Main.elMutation(Main.kt:122)
+	at org.smolang.robust.Main.run(Main.kt:69)
+	at com.github.ajalt.clikt.parsers.Parser.finalizeAndRun(Parser.kt:348)
+	at com.github.ajalt.clikt.parsers.Parser.parse(Parser.kt:218)
+	at com.github.ajalt.clikt.parsers.Parser.parse(Parser.kt:42)
+	at com.github.ajalt.clikt.core.CliktCommand.parse(CliktCommand.kt:457)
+	at com.github.ajalt.clikt.core.CliktCommand.parse$default(CliktCommand.kt:454)
+	at com.github.ajalt.clikt.core.CliktCommand.main(CliktCommand.kt:474)
+	at com.github.ajalt.clikt.core.CliktCommand.main(CliktCommand.kt:481)
+	at org.smolang.robust.MainKt.main(Main.kt:413)
+	... 8 more
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_10160.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_10174.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_10176.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_10199.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_10264.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_10283.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_10309.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_10314.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_10340.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_1034.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_10413.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_10431.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_10516.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_10536.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_10742.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_10752.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_10769.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_10805.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_10823.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_10833.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_10968.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_11009.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_11010.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_11014.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_11115.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_11274.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_11298.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_11392.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_11497.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_11504.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_11522.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_11526.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_11572.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_11577.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_11619.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_11639.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_11676.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_11694.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Exception in thread "main" java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:108)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65)
+Caused by: java.util.NoSuchElementException: No element found: [_:71da1862-fe2a-4db0-a043-e9b3dfa15850 rdf:first http://www.absoluteiri.edu/RELAPPROXI606]
+	at org.apache.jena.ontapi.impl.objects.OntListImpl$RDFListIterator.next(OntListImpl.java:755)
+	at org.apache.jena.ontapi.impl.objects.OntListImpl$RDFListIterator.next(OntListImpl.java:725)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at org.apache.jena.util.iterator.WrappedIterator.forEachRemaining(WrappedIterator.java:113)
+	at org.apache.jena.util.iterator.Map1Iterator.forEachRemaining(Map1Iterator.java:54)
+	at org.apache.jena.util.iterator.WrappedIterator.forEachRemaining(WrappedIterator.java:113)
+	at org.apache.jena.util.iterator.FilterIterator.forEachRemaining(FilterIterator.java:97)
+	at org.apache.jena.util.iterator.Map1Iterator.forEachRemaining(Map1Iterator.java:54)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at com.github.owlcs.ontapi.internal.axioms.AbstractTwoWayNaryTranslator.makeAxiom(AbstractTwoWayNaryTranslator.java:122)
+	at com.github.owlcs.ontapi.internal.axioms.DifferentIndividualsTranslator.toAxiomWrap(DifferentIndividualsTranslator.java:113)
+	at com.github.owlcs.ontapi.internal.BaseSearcher.toAxiom(BaseSearcher.java:89)
+	at com.github.owlcs.ontapi.internal.BaseSearcher.lambda$translate$1(BaseSearcher.java:70)
+	at org.apache.jena.util.iterator.Map1Iterator.lambda$forEachRemaining$0(Map1Iterator.java:55)
+	at org.apache.jena.util.iterator.Map1Iterator.lambda$forEachRemaining$0(Map1Iterator.java:55)
+	at org.apache.jena.util.iterator.Map1Iterator.lambda$forEachRemaining$0(Map1Iterator.java:55)
+	at org.apache.jena.util.iterator.FilterIterator.lambda$forEachRemaining$0(FilterIterator.java:99)
+	at org.apache.jena.util.iterator.Map1Iterator.lambda$forEachRemaining$0(Map1Iterator.java:55)
+	at org.apache.jena.util.iterator.FilterIterator.lambda$forEachRemaining$0(FilterIterator.java:99)
+	at org.apache.jena.mem.ArrayBunch$2.forEachRemaining(ArrayBunch.java:129)
+	at org.apache.jena.util.iterator.WrappedIterator.forEachRemaining(WrappedIterator.java:113)
+	at org.apache.jena.util.iterator.FilterIterator.forEachRemaining(FilterIterator.java:97)
+	at org.apache.jena.util.iterator.WrappedIterator.forEachRemaining(WrappedIterator.java:113)
+	at org.apache.jena.mem.TrackingTripleIterator.forEachRemaining(TrackingTripleIterator.java:58)
+	at org.apache.jena.util.iterator.WrappedIterator.forEachRemaining(WrappedIterator.java:113)
+	at org.apache.jena.mem.TrackingTripleIterator.forEachRemaining(TrackingTripleIterator.java:58)
+	at org.apache.jena.util.iterator.Map1Iterator.forEachRemaining(Map1Iterator.java:54)
+	at org.apache.jena.util.iterator.WrappedIterator.forEachRemaining(WrappedIterator.java:113)
+	at org.apache.jena.util.iterator.FilterIterator.forEachRemaining(FilterIterator.java:97)
+	at org.apache.jena.util.iterator.Map1Iterator.forEachRemaining(Map1Iterator.java:54)
+	at org.apache.jena.util.iterator.Map1Iterator.forEachRemaining(Map1Iterator.java:54)
+	at org.apache.jena.util.iterator.NiceIterator$1.forEachRemaining(NiceIterator.java:142)
+	at org.apache.jena.util.iterator.Map1Iterator.forEachRemaining(Map1Iterator.java:54)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at org.smolang.robust.Main$saveOwlDocument$2.invoke(Main.kt:402)
+	at org.smolang.robust.Main$saveOwlDocument$2.invoke(Main.kt:400)
+	at org.smolang.robust.Main.saveOwlDocument$lambda$2(Main.kt:400)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.HashMap$KeySpliterator.forEachRemaining(HashMap.java:1707)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.smolang.robust.Main.saveOwlDocument(Main.kt:400)
+	at org.smolang.robust.Main.singleMutation(Main.kt:182)
+	at org.smolang.robust.Main.elMutation(Main.kt:122)
+	at org.smolang.robust.Main.run(Main.kt:69)
+	at com.github.ajalt.clikt.parsers.Parser.finalizeAndRun(Parser.kt:348)
+	at com.github.ajalt.clikt.parsers.Parser.parse(Parser.kt:218)
+	at com.github.ajalt.clikt.parsers.Parser.parse(Parser.kt:42)
+	at com.github.ajalt.clikt.core.CliktCommand.parse(CliktCommand.kt:457)
+	at com.github.ajalt.clikt.core.CliktCommand.parse$default(CliktCommand.kt:454)
+	at com.github.ajalt.clikt.core.CliktCommand.main(CliktCommand.kt:474)
+	at com.github.ajalt.clikt.core.CliktCommand.main(CliktCommand.kt:481)
+	at org.smolang.robust.MainKt.main(Main.kt:413)
+	... 8 more
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_11719.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_1172.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_11866.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_11889.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_11978.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_12009.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_12061.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_12118.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_12150.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_12281.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_12379.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_12397.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_12415.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_12584.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_12635.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_12721.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_12831.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_12892.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+no anomaly found
+mutate KG (ontology) ontologies_ore/ore_ont_12914.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+call reasoner oracle
+Found anomalies in 1 cases out of 371 test runs within 3600 seconds.
