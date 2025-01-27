@@ -40,6 +40,7 @@ class Main : CliktCommand() {
     private val verbose by option("--verbose","-v", help="Verbose output for debugging. Default = false.").flag()
     private val numberMutations by option("--num_mut", "-nm", help="Number of mutation operators to apply. Default = 1").int()
     private val selectionSeed by option("--selection_seed", help="seed for random selector of which mutation to apply. Default = 2").int()
+    private val printMutationSummary by option("--print-summary", help="Prints a string summary of the applied mutation. Default = false").flag()
     private val owlDocument by option("--owl", help="Set to true, if input is OWL ontology (e.g. in functional syntax). Default = false").flag()
     private val outputFile by option("--out", "-o", help="Give name for mutated KG.").file()
     private val overwriteOutput by option("--overwrite", help="Indicates if output ontology should be replaced, if it already exists. Default = false").flag()
@@ -174,7 +175,6 @@ class Main : CliktCommand() {
         val m = Mutator(ms, verbose)
         val res = m.mutate(seedKG)
 
-
         // check if output directory exists and create it, if necessary
         Files.createDirectories(outputPath!!.parentFile.toPath())
         // safe result
@@ -182,6 +182,10 @@ class Main : CliktCommand() {
             saveOwlDocument(res)
         else
             RDFDataMgr.write(outputPath.outputStream(), res, Lang.TTL)
+
+        // print summary, if required
+        if (printMutationSummary)
+            println("mutation summary:\n" + m.getStringSummary())
 
     }
 

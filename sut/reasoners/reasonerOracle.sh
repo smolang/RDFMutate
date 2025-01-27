@@ -1,5 +1,5 @@
 # tests, if the EL reasoners agree on the ontology
-# usage: ./suave_oracle.sh ONTOLOGY-FILE
+# usage: ./reasonerOracle.sh ONTOLOGY-FILE
 # result of oracle will be output on terminal (pass, fail)
 # pass: reasoners agree with each other
 # fail: reasoners do not agree with each other
@@ -9,6 +9,8 @@ ontologyFile=$1
 ontologyFileContainer=testOnt.owl
 
 CONTAINER_NAME=reasonerContainer
+
+timeLimit=600   # time limit = 10min
 
 
 running=1
@@ -26,7 +28,7 @@ sleep 1
 
 docker cp $ontologyFile $CONTAINER_NAME:/$ontologyFileContainer
 
-docker exec $CONTAINER_NAME ./reasonerOracle.sh ../$ontologyFileContainer
+docker exec $CONTAINER_NAME ./reasonerOracle.sh ../$ontologyFileContainer $timeLimit
 
 
 # stop container if it was not running before this script was executed

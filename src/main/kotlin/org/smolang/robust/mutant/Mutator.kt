@@ -3,6 +3,7 @@ package org.smolang.robust.mutant
 import org.apache.jena.rdf.model.Model
 import org.apache.jena.rdf.model.Resource
 import org.apache.jena.rdf.model.Statement
+import java.nio.file.Paths
 
 
 class Mutator(private val mutSeq: MutationSequence, private val verbose: Boolean) {
@@ -72,6 +73,27 @@ class Mutator(private val mutSeq: MutationSequence, private val verbose: Boolean
 
     fun validate(model: Model, contract : RobustnessMask) : Boolean{
         return contract.validate(model)
+    }
+
+    fun getStringSummary() : String {
+        val numMut = numMutations
+        val numDel = globalMutation?.removeSet?.size ?: -1
+        val numAdd = globalMutation?.addSet?.size ?: -1
+        val appliedMutations = appliedMutations
+        val affectedSeedNodes = affectedSeedNodes.joinToString(",", "[", "]") {
+            if (it.localName != null)
+                it.localName
+            else
+                it.toString()
+        }
+
+        val addedAxioms = addSet.joinToString( ",", "[", "]")
+        val removedAxioms = removeSet.joinToString( ",", "[", "]").replace("\n", ",")
+
+        // first line: explanation; second line: values
+        val result = "numMutations;numDel;numAdd;appliedMutations;affectedSeedNodes;addedAxioms;removedAxioms\n" +
+                "$numMut;$numDel;$numAdd;$appliedMutations;$affectedSeedNodes;$addedAxioms;$removedAxioms"
+        return result
     }
 }
 

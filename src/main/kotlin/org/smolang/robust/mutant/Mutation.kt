@@ -209,7 +209,7 @@ open class Mutation(var model: Model, val verbose : Boolean) {
     }
 
     override fun toString() : String {
-        val className = this.javaClass.toString().removePrefix("class mutant.")
+        val className = this.javaClass.toString().removePrefix("class mutant.").removePrefix("class org.smolang.robust.mutant.")
         if (!hasConfig)
             return "$className(random)"
         else {
