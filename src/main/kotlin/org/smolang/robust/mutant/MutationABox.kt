@@ -30,9 +30,9 @@ class AddInstanceMutation(model: Model, verbose : Boolean) : Mutation(model, ver
         return hasConfig || getCandidates().isNotEmpty()
     }
 
-    override fun setConfiguration(_config: MutationConfiguration) {
-        assert(_config is SingleResourceConfiguration)
-        super.setConfiguration(_config)
+    override fun setConfiguration(config: MutationConfiguration) {
+        assert(config is SingleResourceConfiguration)
+        super.setConfiguration(config)
     }
 
     override fun createMutation() {
@@ -63,7 +63,7 @@ class AddInstanceMutation(model: Model, verbose : Boolean) : Mutation(model, ver
     }
 }
 
-open class RemoveObjectPropertyRelationMutation(model: Model, verbose : Boolean) : RemoveAxiomMutation(model, verbose) {
+open class RemoveObjectPropertyRelationMutation(model: Model, verbose : Boolean) : RemoveStatementMutation(model, verbose) {
     override fun getCandidates(): List<Statement> {
         val allProps = allOfType(objectProp)
         val candidates : MutableSet<Statement> = hashSetOf()
@@ -75,12 +75,12 @@ open class RemoveObjectPropertyRelationMutation(model: Model, verbose : Boolean)
         return filterMutatableAxioms(candidates.toList()).sortedBy { it.toString() }
     }
 
-    override fun setConfiguration(_config: MutationConfiguration) {
-        assert(_config is SingleResourceConfiguration)
-        when (_config) {
+    override fun setConfiguration(config: MutationConfiguration) {
+        assert(config is SingleResourceConfiguration)
+        when (config) {
             is SingleResourceConfiguration -> {
                 // select a random element to delete
-                val p = model.getProperty(_config.getResource().toString())
+                val p = model.getProperty(config.getResource().toString())
                 val cand = model.listStatements(null as Resource?, p, null as RDFNode?).toSet()
 
                 val axiom =
@@ -96,7 +96,7 @@ open class RemoveObjectPropertyRelationMutation(model: Model, verbose : Boolean)
                 )
             }
             is SingleStatementConfiguration -> {
-                super.setConfiguration(_config)
+                super.setConfiguration(config)
             }
         }
     }
@@ -115,15 +115,15 @@ open class AddObjectPropertyRelationMutation(model: Model, verbose: Boolean) : A
         //return filterRelevantPrefixesResource(cand.toList()).sortedBy { it.toString() }
     }
 
-    override fun setConfiguration(_config: MutationConfiguration) {
+    override fun setConfiguration(config: MutationConfiguration) {
         val p =
-            when (_config) {
+            when (config) {
                 is SingleResourceConfiguration -> {
-                    _config.getResource()
+                    config.getResource()
                 }
 
                 is SingleStatementConfiguration -> {
-                    _config.getStatement().predicate
+                    config.getStatement().predicate
                 }
 
                 else -> model.createResource()
@@ -135,7 +135,7 @@ open class AddObjectPropertyRelationMutation(model: Model, verbose: Boolean) : A
                 println("WARNING: resource $p is not an object property but is used as such in configuration.")
             }
 
-        super.setConfiguration(_config)
+        super.setConfiguration(config)
     }
 }
 
@@ -143,7 +143,7 @@ open class ChangeObjectPropertyRelationMutation(model: Model, verbose: Boolean) 
     override fun getCandidates() : List<Resource> {
         val cand =  super.getCandidates()
         return cand
-        return filterMutatableAxiomsResource(cand.toList()).sortedBy { it.toString() }
+        //return filterMutatableAxiomsResource(cand.toList()).sortedBy { it.toString() }
     }
 
     override fun createMutation() {
@@ -152,6 +152,20 @@ open class ChangeObjectPropertyRelationMutation(model: Model, verbose: Boolean) 
 
         // find existing relations and remove them
         turnAdditionsToChanges()
+    }
+}
+
+// adds new individual to the ontology
+class AddIndividualMutation(model: Model, verbose: Boolean) : AddStatementMutation(model, verbose) {
+    init {
+        val individualName = "newIndividual:number"+ randomGenerator.nextInt(0,Int.MAX_VALUE)
+        // create new "type" relation for the individual and the selected class
+        val s = model.createStatement(
+            model.createResource(individualName),
+            model.createProperty("http://www.w3.org/1999/02/22-rdf-syntax-ns#","type"),
+            namedInd)
+        val config = SingleStatementConfiguration(s);
+        super.setConfiguration(config)
     }
 }
 
@@ -168,15 +182,14 @@ class RemoveIndividualMutation(model: Model, verbose : Boolean) : RemoveNodeMuta
         return filterMutatableAxiomsResource(candidates).sortedBy { it.toString() }
     }
 
-    override fun setConfiguration(_config: MutationConfiguration) {
-        assert(_config is SingleResourceConfiguration)
+    override fun setConfiguration(config: MutationConfiguration) {
+        assert(config is SingleResourceConfiguration)
         // assert that the resource is really an individual
-        val ind = (_config as SingleResourceConfiguration).getResource()
+        val ind = (config as SingleResourceConfiguration).getResource()
         assert(isOfType(ind, namedInd))
-        super.setConfiguration(_config)
+        super.setConfiguration(config)
     }
 }
-
 
 class ChangeDataPropertyMutation(model: Model, verbose: Boolean) : ChangeRelationMutation(model, verbose) {
     override fun getCandidates() : List<Resource> {
@@ -187,8 +200,54 @@ class ChangeDataPropertyMutation(model: Model, verbose: Boolean) : ChangeRelatio
     }
 }
 
+class AddClassAssertionMutation (model: Model, verbose: Boolean) : AddStatementMutation(model, verbose) {
+    init {
+        // collect all OWL classes and individuals
+        val classes = allOfType(owlClass)
+        val individuals = allOfType(namedInd)
 
-open class ChangeDoubleMutation(model: Model, verbose: Boolean): ReplaceNodeInAxiomMutation(model, verbose) {
+        val s = model.createStatement(
+            individuals.random(randomGenerator),
+            typeProp,
+            classes.random(randomGenerator)
+        )
+
+        super.setConfiguration(SingleStatementConfiguration(s))
+
+    }
+}
+
+class RemoveClassAssertionMutation(model: Model, verbose: Boolean) : RemoveStatementMutation(model, verbose) {
+    override fun getCandidates(): List<Statement> {
+        val candidates : MutableList<Statement> = mutableListOf();
+
+        val queryString = "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n " +
+                "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
+                "SELECT * WHERE { " +
+                "?x rdf:type ?C. " +
+                "?C rdf:type owl:Class ." +
+                "}"
+        val query = QueryFactory.create(queryString)
+        val res = QueryExecutionFactory.create(query, model).execSelect()
+        for(r in res){
+            val x = r.get("?x")
+            val C = r.get("?C")
+            val statement = model.createStatement(x.asResource(),typeProp, C)
+            candidates.add(statement)
+        }
+
+        return filterMutatableAxioms(candidates.toList()).sortedBy { it.toString() }
+    }
+
+    override fun setConfiguration(config: MutationConfiguration) {
+        assert(config is SingleStatementConfiguration)
+        val c = config as SingleStatementConfiguration
+        assert(c.getStatement().predicate == typeProp)
+        super.setConfiguration(config)
+    }
+}
+
+open class ChangeDoubleMutation(model: Model, verbose: Boolean): ReplaceNodeInStatementMutation(model, verbose) {
     override fun getCandidates(): List<DoubleStringAndStatementConfiguration> {
         val queryString = "PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n " +
                 "SELECT DISTINCT * WHERE { " +

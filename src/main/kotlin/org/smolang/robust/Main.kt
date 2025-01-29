@@ -99,7 +99,7 @@ class Main : CliktCommand() {
             AddRelationMutation::class,
             ChangeRelationMutation::class,
             AddInstanceMutation::class,
-            RemoveAxiomMutation::class,
+            RemoveStatementMutation::class,
             RemoveNodeMutation::class,
         )
 
@@ -111,13 +111,22 @@ class Main : CliktCommand() {
         // create selection of mutations that can be applied
         val candidateMutations = listOf(
             // TBox + Abox
-            RemoveAxiomMutation::class,
+            RemoveStatementMutation::class,
 
             // TBox
             CEUAMutation::class,
+            RemoveSubclassMutation::class,
+            ReplaceClassWithTopMutation::class,
+            ReplaceClassWithBottomMutation::class,
+            ReplaceClassWithSiblingMutation::class,
 
             // Abox
+            AddIndividualMutation::class,   // adds owl named individual
+            RemoveIndividualMutation::class,
+            AddClassAssertionMutation::class,
+            RemoveClassAssertionMutation::class,
             AddObjectPropertyRelationMutation::class,
+            RemoveObjectPropertyMutation::class,
         )
 
         singleMutation(candidateMutations)

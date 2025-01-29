@@ -184,7 +184,7 @@ class FirstTests : StringSpec() {
             val typeProp : Property = input.createProperty("http://www.w3.org/1999/02/22-rdf-syntax-ns#type")
 
             // add axiom "individual a is of type B"
-            ms.addWithConfig(AddAxiomMutation::class,
+            ms.addWithConfig(AddStatementMutation::class,
                 SingleStatementConfiguration(
                     input.createStatement(a, typeProp, B)
                 )

@@ -103,13 +103,13 @@ do
             if [[ $pass == 1 ]]; then
                 echo no anomaly found >> $log
                 # delete ontology --> safe disk space
-                rm $mutantOntology
+                rm -f $mutantOntology
             fi
 
             if [[ $undecided == 1 ]]; then
                 echo "no anomaly found (undecided)" >> $log
                 # delete ontology --> safe disk space
-                rm $mutantOntology
+                rm -f $mutantOntology
             fi
 
         fi 

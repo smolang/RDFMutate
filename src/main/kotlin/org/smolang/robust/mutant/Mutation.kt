@@ -1,7 +1,5 @@
 package org.smolang.robust.mutant
 
-import org.apache.jena.query.QueryExecutionFactory
-import org.apache.jena.query.QueryFactory
 import org.apache.jena.rdf.model.*
 import org.apache.jena.reasoner.Reasoner
 import org.apache.jena.reasoner.ReasonerRegistry
@@ -96,9 +94,9 @@ open class Mutation(var model: Model, val verbose : Boolean) {
         m.removeSet.forEach { removeSet.add(it) }
     }
 
-    open fun setConfiguration(_config : MutationConfiguration) {
+    open fun setConfiguration(config : MutationConfiguration) {
         hasConfig = true
-        config = _config
+        this.config = config
     }
 
     fun deleteConfiguration() {
@@ -274,7 +272,7 @@ open class Mutation(var model: Model, val verbose : Boolean) {
 
 }
 
-open class RemoveAxiomMutation(model: Model, verbose : Boolean) : Mutation(model, verbose) {
+open class RemoveStatementMutation(model: Model, verbose : Boolean) : Mutation(model, verbose) {
 
     open fun getCandidates(): List<Statement> {
         val list = model.listStatements().toList()
@@ -282,9 +280,9 @@ open class RemoveAxiomMutation(model: Model, verbose : Boolean) : Mutation(model
         return f.sortedBy { it.toString() }
     }
 
-    override fun setConfiguration(_config: MutationConfiguration) {
-        assert(_config is SingleStatementConfiguration)
-        super.setConfiguration(_config)
+    override fun setConfiguration(config: MutationConfiguration) {
+        assert(config is SingleStatementConfiguration)
+        super.setConfiguration(config)
     }
 
     override fun isApplicable(): Boolean {
@@ -348,9 +346,9 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
         return getCandidates().any()
     }
 
-    override fun setConfiguration(_config: MutationConfiguration) {
-        assert(_config is SingleResourceConfiguration || _config is SingleStatementConfiguration)
-        super.setConfiguration(_config)
+    override fun setConfiguration(config: MutationConfiguration) {
+        assert(config is SingleResourceConfiguration || config is SingleStatementConfiguration)
+        super.setConfiguration(config)
     }
 
     // checks if the addition of the axiom is valid,
@@ -695,14 +693,14 @@ open class ChangeRelationMutation(model: Model, verbose: Boolean) : AddRelationM
     }
 }
 
-class AddAxiomMutation(model: Model, verbose: Boolean) : Mutation(model, verbose) {
+open class AddStatementMutation(model: Model, verbose: Boolean) : Mutation(model, verbose) {
     override fun isApplicable(): Boolean {
         return hasConfig
     }
 
-    override fun setConfiguration(_config: MutationConfiguration) {
-        assert(_config is SingleStatementConfiguration)
-        super.setConfiguration(_config)
+    override fun setConfiguration(config: MutationConfiguration) {
+        assert(config is SingleStatementConfiguration)
+        super.setConfiguration(config)
     }
 
     override fun createMutation() {
@@ -731,9 +729,9 @@ open class RemoveNodeMutation(model: Model, verbose : Boolean) : Mutation(model,
         return hasConfig || getCandidates().any()
     }
 
-    override fun setConfiguration(_config: MutationConfiguration) {
-        assert(_config is SingleResourceConfiguration)
-        super.setConfiguration(_config)
+    override fun setConfiguration(config: MutationConfiguration) {
+        assert(config is SingleResourceConfiguration)
+        super.setConfiguration(config)
     }
 
     override fun createMutation() {
@@ -749,22 +747,17 @@ open class RemoveNodeMutation(model: Model, verbose : Boolean) : Mutation(model,
 
         // select all axioms that contain the resource
         val l = model.listStatements().toList().toMutableList()
-        val delete = ArrayList<Statement>()
         for (s in l) {
             if (s.subject == res || s.predicate == res || s.`object` == res) {
-                delete.add(s)
+                removeSet.add(s)
             }
-        }
-
-        delete.forEach {
-            removeSet.add(it)
         }
 
         super.createMutation()
     }
 }
 
-open class ReplaceNodeInAxiomMutation(model: Model, verbose: Boolean) : Mutation(model, verbose) {
+open class ReplaceNodeInStatementMutation(model: Model, verbose: Boolean) : Mutation(model, verbose) {
     override fun isApplicable(): Boolean {
         return hasConfig || getCandidates().isNotEmpty()
     }
@@ -775,9 +768,9 @@ open class ReplaceNodeInAxiomMutation(model: Model, verbose: Boolean) : Mutation
         return ret.sortedBy { it.toString() }
     }
 
-    override fun setConfiguration(_config: MutationConfiguration) {
-        assert(_config is DoubleStringAndStatementConfiguration)
-        super.setConfiguration(_config)
+    override fun setConfiguration(config: MutationConfiguration) {
+        assert(config is DoubleStringAndStatementConfiguration)
+        super.setConfiguration(config)
     }
 
     override fun createMutation() {
@@ -828,3 +821,45 @@ open class ReplaceNodeInAxiomMutation(model: Model, verbose: Boolean) : Mutation
         super.createMutation()
     }
 }
+
+abstract class ReplaceNodeWithNode(model: Model, verbose: Boolean) : Mutation(model, verbose) {
+
+    // default values: anonymous resources
+    var oldNode: Resource = model.createResource()
+    var newNode: Resource = model.createResource()
+
+    override fun createMutation() {
+        for (s in model.listStatements()) {
+            // try to replace nodes
+            val newSubject = tryReplace(s.subject)
+            val newPredicate = tryReplace(s.predicate.asResource())
+            val newObject =
+                if (s.`object`.isResource)
+                    tryReplace(s.`object`.asResource())
+                else
+                    s.`object`
+
+            // test, if something was replaced; if yes --> add to sets accordingly
+            if (s.subject != newSubject || s.predicate.asResource() != newPredicate || s.`object` != newObject) {
+                removeSet.add(s)
+
+                addSet.add(model.createStatement(
+                    newSubject,
+                    model.createProperty(newPredicate.uri),
+                    newObject
+                ))
+            }
+        }
+        super.createMutation()
+    }
+
+    // replaces the resource if possible
+    // returns argument otherwise
+    private fun tryReplace(r: Resource) : Resource {
+        return if (r == oldNode) newNode else r
+    }
+}
+
+
+
+

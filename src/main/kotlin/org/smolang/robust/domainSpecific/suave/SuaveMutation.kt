@@ -130,7 +130,7 @@ class AddNewThrusterMutation(model: Model, verbose: Boolean) : Mutation(model, v
             model.createProperty("http://ros/mros#requiredBy"),
             model.createResource("http://www.metacontrol.org/suave#fd_all_thrusters")
         )
-        val aam = AddAxiomMutation(tempModel, verbose)
+        val aam = AddStatementMutation(tempModel, verbose)
         aam.setConfiguration(
             SingleStatementConfiguration(requiredAxiom)
         )

@@ -24,9 +24,9 @@ class AddPipeSegmentConfiguration(start: Resource) : SingleResourceConfiguration
 
 
 class AddPipeSegmentMutation(model: Model, verbose: Boolean) : AUVMutation(model, verbose) {
-    override fun setConfiguration(_config: MutationConfiguration) {
-        assert(_config is AddPipeSegmentConfiguration)
-        super.setConfiguration(_config)
+    override fun setConfiguration(config: MutationConfiguration) {
+        assert(config is AddPipeSegmentConfiguration)
+        super.setConfiguration(config)
     }
 
     private fun getCandidates() : List<Resource> {
@@ -75,7 +75,7 @@ class AddPipeSegmentMutation(model: Model, verbose: Boolean) : AUVMutation(model
             model.createProperty(auvURI + delimiter + "nextTo"),
             model.createResource(nameNewSegment))
         val configAAM = SingleStatementConfiguration(s)
-        val aam = AddAxiomMutation(tempModel, verbose)
+        val aam = AddStatementMutation(tempModel, verbose)
         aam.setConfiguration(configAAM)
         aam.applyCopy()
 

@@ -5,11 +5,12 @@ import org.apache.jena.query.QueryFactory
 import org.apache.jena.rdf.model.Model
 import org.apache.jena.rdf.model.Resource
 import org.apache.jena.rdf.model.Statement
+import org.smolang.robust.randomGenerator
 
 
 //removes one (random) subclass axiom       // val m = Mutator
 // only overrides the method to select the candidate axioms from super class
-class RemoveSubclassMutation(model: Model, verbose : Boolean) : RemoveAxiomMutation(model, verbose) {
+class RemoveSubclassMutation(model: Model, verbose : Boolean) : RemoveStatementMutation(model, verbose) {
     override fun getCandidates(): List<Statement> {
         val l = model.listStatements().toList()
         val candidates = l.toMutableSet()
@@ -22,16 +23,16 @@ class RemoveSubclassMutation(model: Model, verbose : Boolean) : RemoveAxiomMutat
         return filterMutatableAxioms(candidates.toList()).sortedBy { it.toString() }
     }
 
-    override fun setConfiguration(_config: MutationConfiguration) {
-        assert(_config is SingleStatementConfiguration)
-        val c = _config as SingleStatementConfiguration
+    override fun setConfiguration(config: MutationConfiguration) {
+        assert(config is SingleStatementConfiguration)
+        val c = config as SingleStatementConfiguration
         assert(c.getStatement().predicate.toString().matches(".*#subClassOf$".toRegex()))
-        super.setConfiguration(_config)
+        super.setConfiguration(config)
     }
 }
 
 // removes one part of an "AND" in a logical axiom
-class CEUAMutation(model: Model, verbose: Boolean): ReplaceNodeInAxiomMutation(model, verbose)   {
+class CEUAMutation(model: Model, verbose: Boolean): ReplaceNodeInStatementMutation(model, verbose)   {
     // selects names of nodes that should be removed / replaced by owl:Thing
     override fun getCandidates(): List<DoubleStringAndStatementConfiguration> {
         val queryString = "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n " +
@@ -57,25 +58,25 @@ class CEUAMutation(model: Model, verbose: Boolean): ReplaceNodeInAxiomMutation(m
         return ret.sortedBy { it.toString() }
     }
 
-    override fun setConfiguration(_config: MutationConfiguration) {
-        if (_config is DoubleStringAndStatementConfiguration)
-            super.setConfiguration(_config)
+    override fun setConfiguration(config: MutationConfiguration) {
+        if (config is DoubleStringAndStatementConfiguration)
+            super.setConfiguration(config)
         else {
-            assert(_config is SingleStatementConfiguration)
-            val con = _config as SingleStatementConfiguration
+            assert(config is SingleStatementConfiguration)
+            val con = config as SingleStatementConfiguration
             val c = DoubleStringAndStatementConfiguration(
                 con.getStatement().`object`.toString(),
                 owlThing.toString(),
                 con.getStatement()
             )
 
-            super.setConfiguration(_config)
+            super.setConfiguration(config)
         }
     }
 }
 
 // removes one part of an "OR" in a logical axiom
-class CEUOMutation(model: Model, verbose: Boolean): ReplaceNodeInAxiomMutation(model, verbose)   {
+class CEUOMutation(model: Model, verbose: Boolean): ReplaceNodeInStatementMutation(model, verbose)   {
 
     // selects names of nodes that should be removed / replaced by owl:Nothing
     override fun getCandidates(): List<DoubleStringAndStatementConfiguration> {
@@ -102,26 +103,26 @@ class CEUOMutation(model: Model, verbose: Boolean): ReplaceNodeInAxiomMutation(m
         return ret.sortedBy { it.toString() }
     }
 
-    override fun setConfiguration(_config: MutationConfiguration) {
-        if (_config is DoubleStringAndStatementConfiguration)
-            super.setConfiguration(_config)
+    override fun setConfiguration(config: MutationConfiguration) {
+        if (config is DoubleStringAndStatementConfiguration)
+            super.setConfiguration(config)
         else {
-            assert(_config is SingleStatementConfiguration)
-            val con = _config as SingleStatementConfiguration
+            assert(config is SingleStatementConfiguration)
+            val con = config as SingleStatementConfiguration
             val c = DoubleStringAndStatementConfiguration(
                 con.getStatement().`object`.toString(),
                 owlNothing.toString(),
                 con.getStatement()
             )
 
-            super.setConfiguration(_config)
+            super.setConfiguration(config)
         }
     }
 
 }
 
 // replace "AND" by "OR"
-class ACATOMutation(model: Model, verbose: Boolean): ReplaceNodeInAxiomMutation(model, verbose) {
+class ACATOMutation(model: Model, verbose: Boolean): ReplaceNodeInStatementMutation(model, verbose) {
 
     // selects names of nodes that should be removed / replaced by owl:Thing
     override fun getCandidates(): List<DoubleStringAndStatementConfiguration> {
@@ -145,26 +146,26 @@ class ACATOMutation(model: Model, verbose: Boolean): ReplaceNodeInAxiomMutation(
         return ret.sortedBy { it.toString() }
     }
 
-    override fun setConfiguration(_config: MutationConfiguration) {
-        if (_config is DoubleStringAndStatementConfiguration)
-            super.setConfiguration(_config)
+    override fun setConfiguration(config: MutationConfiguration) {
+        if (config is DoubleStringAndStatementConfiguration)
+            super.setConfiguration(config)
         else {
-            assert(_config is SingleStatementConfiguration)
-            val con = _config as SingleStatementConfiguration
+            assert(config is SingleStatementConfiguration)
+            val con = config as SingleStatementConfiguration
             val c = DoubleStringAndStatementConfiguration(
                 intersectionProp.toString(),
                 unionProp.toString(),
                 con.getStatement()
             )
 
-            super.setConfiguration(_config)
+            super.setConfiguration(config)
         }
     }
 }
 
 
 // replace "Or" by "And"
-class ACOTAMutation(model: Model, verbose: Boolean): ReplaceNodeInAxiomMutation(model, verbose) {
+class ACOTAMutation(model: Model, verbose: Boolean): ReplaceNodeInStatementMutation(model, verbose) {
     // selects names of nodes that should be removed / replaced by owl:Thing
     override fun getCandidates(): List<DoubleStringAndStatementConfiguration> {
         val queryString = "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n " +
@@ -187,18 +188,18 @@ class ACOTAMutation(model: Model, verbose: Boolean): ReplaceNodeInAxiomMutation(
         return ret.sortedBy { it.toString() }
     }
 
-    override fun setConfiguration(_config: MutationConfiguration) {
-        if (_config is DoubleStringAndStatementConfiguration)
-            super.setConfiguration(_config)
+    override fun setConfiguration(config: MutationConfiguration) {
+        if (config is DoubleStringAndStatementConfiguration)
+            super.setConfiguration(config)
         else {
-            assert(_config is SingleStatementConfiguration)
-            val con = _config as SingleStatementConfiguration
+            assert(config is SingleStatementConfiguration)
+            val con = config as SingleStatementConfiguration
             val c = DoubleStringAndStatementConfiguration(
                 unionProp.toString(),
                 intersectionProp.toString(),
                 con.getStatement()
             )
-            super.setConfiguration(_config)
+            super.setConfiguration(config)
         }
     }
 
@@ -206,7 +207,7 @@ class ACOTAMutation(model: Model, verbose: Boolean): ReplaceNodeInAxiomMutation(
 
 
 // replaces arguments in
-class ToSiblingClassMutation(model: Model, verbose: Boolean): ReplaceNodeInAxiomMutation(model, verbose) {
+class ToSiblingClassMutation(model: Model, verbose: Boolean): ReplaceNodeInStatementMutation(model, verbose) {
 
     // selects names of classes
     // TODO: also in other parts of logical axioms, e.g. after restrictions
@@ -287,12 +288,12 @@ class RemoveClassMutation(model: Model, verbose : Boolean) : RemoveNodeMutation(
         return filterMutatableAxiomsResource(candidates).sortedBy { it.toString() }
     }
 
-    override fun setConfiguration(_config: MutationConfiguration) {
-        assert(_config is SingleResourceConfiguration)
+    override fun setConfiguration(config: MutationConfiguration) {
+        assert(config is SingleResourceConfiguration)
         // assert that the resource is really an individual
-        val ind = (_config as SingleResourceConfiguration).getResource()
+        val ind = (config as SingleResourceConfiguration).getResource()
         assert(isOfType(ind, owlClass))
-        super.setConfiguration(_config)
+        super.setConfiguration(config)
     }
 }
 
@@ -309,12 +310,76 @@ class RemoveObjectPropertyMutation(model: Model, verbose : Boolean) : RemoveNode
         return filterMutatableAxiomsResource(candidates).sortedBy { it.toString() }
     }
 
-    override fun setConfiguration(_config: MutationConfiguration) {
-        assert(_config is SingleResourceConfiguration)
+    override fun setConfiguration(config: MutationConfiguration) {
+        assert(config is SingleResourceConfiguration)
         // assert that the resource is really an individual
-        val ind = (_config as SingleResourceConfiguration).getResource()
+        val ind = (config as SingleResourceConfiguration).getResource()
         assert(isOfType(ind, owlClass))
-        super.setConfiguration(_config)
+        super.setConfiguration(config)
     }
 }
 
+class ReplaceClassWithTopMutation(model: Model, verbose: Boolean) : ReplaceNodeWithNode(model, verbose) {
+    override fun createMutation() {
+        // select a random class to be replaced
+        val classes = allOfType(owlClass)
+        // only replace, if at least one class is defined
+        if (classes.any())
+            oldNode = classes.random(randomGenerator)
+        newNode = owlThing
+        super.createMutation()
+        // do not add statement that owl:Thing is an owl class
+        addSet.remove(
+            model.createStatement(owlThing, typeProp, owlClass)
+        )
+    }
+}
+
+class ReplaceClassWithBottomMutation(model: Model, verbose: Boolean) : ReplaceNodeWithNode(model, verbose) {
+    override fun createMutation() {
+        // select a random class to be replaced
+        val classes = allOfType(owlClass)
+        // only replace, if at least one class is defined
+        if (classes.any())
+            oldNode = classes.random(randomGenerator)
+
+        newNode = owlNothing
+        super.createMutation()
+
+        // do not add statement that owl:Nothing is an owl class
+        addSet.remove(
+            model.createStatement(owlNothing, typeProp, owlClass)
+        )
+    }
+}
+
+class ReplaceClassWithSiblingMutation(model: Model, verbose: Boolean): ReplaceNodeWithNode(model, verbose) {
+    override fun createMutation() {
+        val queryString = "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n " +
+                "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
+                "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n" +
+                "SELECT ?s1 ?s2 WHERE { " +
+                "?s1 rdf:type owl:Class ." +
+                "?s2 rdf:type owl:Class ." +
+                "?parent rdf:type owl:Class ." +
+                "?s1 rdfs:subClassOf ?parent . " +
+                "?s2 rdfs:subClassOf ?parent ." +
+                "}"
+        val query = QueryFactory.create(queryString)
+        val res = QueryExecutionFactory.create(query, model).execSelect()
+        val pairs = mutableListOf<Pair<Resource, Resource>>()
+        for(r in res){
+            val s1 = r.get("?s1")
+            val s2 = r.get("?s2")
+            if (s1 != s2)
+                pairs.add(Pair(s1.asResource(), s2.asResource()))
+        }
+        // only do replacement if there is at least one candidate pair
+        if (pairs.size > 0) {
+            val pair = pairs.random(randomGenerator)
+            oldNode = pair.first
+            newNode = pair.second
+        }
+        super.createMutation()
+    }
+}
