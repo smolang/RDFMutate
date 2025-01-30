@@ -15,7 +15,7 @@ class ReasonerMutationTests : StringSpec() {
             ms.addRandom(RemoveClassAssertionMutation::class)
 
             val m = Mutator(ms, verbose)
-            val res = m.mutate(input)
+            m.mutate(input)
 
             // check, that correct statement got removed
             val statementString = "[http://www.ifi.uio.no/tobiajoh/assertion#a, " +
@@ -105,7 +105,6 @@ class ReasonerMutationTests : StringSpec() {
             // check number of named individuals
             val rdfType = input.createResource("http://www.w3.org/1999/02/22-rdf-syntax-ns#type")
             val owlClass = input.createResource("http://www.w3.org/2002/07/owl#Class")
-            val owlOntology = input.createResource("http://www.w3.org/2002/07/owl#Ontology")
 
 
 
@@ -140,9 +139,7 @@ class ReasonerMutationTests : StringSpec() {
 
             // check number of named individuals
             val rdfType = input.createResource("http://www.w3.org/1999/02/22-rdf-syntax-ns#type")
-            val owlInd = input.createResource("http://www.w3.org/2002/07/owl#NamedIndividual")
             val owlClass = input.createResource("http://www.w3.org/2002/07/owl#Class")
-            val owlOntology = input.createResource("http://www.w3.org/2002/07/owl#Ontology")
 
 
 
