@@ -61,8 +61,9 @@ do
             echo "start new test ($count) at $(date) "
             echo "start new test ($count) at $(date) " >> $log
 
+            mutantOntologyName=ont_$count.owl
 
-            mutantOntology=$outputDirectory/ont_$count.owl
+            mutantOntology=$outputDirectory/$mutantOntologyName
             #echo "mutate KG (ontology) $ontology"
             echo "mutate KG (ontology) $ontology" >> $log
             #echo "mutant is saved as $mutantOntology"
@@ -98,6 +99,8 @@ do
                 echo ANOMALY detected. Saved to $mutantOntology.
                 echo found anomaly. Saved to $mutantOntology. >> $log
                 anomalyCount=$(( anomalyCount + 1 ))
+                # copy anomaly report to the folder with the mutant ontology
+                bash getLatestAnomaly.sh $mutantOntologyName $outputDirectory
             fi
 
             if [[ $pass == 1 ]]; then
