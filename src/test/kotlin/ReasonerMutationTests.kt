@@ -28,8 +28,6 @@ class ReasonerMutationTests : StringSpec() {
             removeSet.size shouldBe 1
 
             removeSet.single().toString() shouldBe statementString
-
-
         }
     }
 
