@@ -1,0 +1,1705 @@
+Found anomalies while testing file ../testOnt.owl
+
+Anomaly 1: helper anomaly; reasoner for HERMIT could not be created
+
+Anomaly 2: Anomaly with following exception thrown by HERMIT:
+java.lang.NullPointerException: operands cannot be null or empty
+
+
+––––––––––––––––––––––––––––––––––––––––––––
+–––––––––––    Ontology File    ––––––––––––
+––––––––––––––––––––––––––––––––––––––––––––
+
+Prefix(:=<urn:unnamed:ontology#ont528053124768236>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:unnamed:ontology#ont528053124768236>
+
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#ProofScript>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC301>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC300>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC387>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC386>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC296>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#TstpProblem>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC297>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC329>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#ConstructiveNDCalculus>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC343>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC342>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#ModGenResult>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC328>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC171>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#Output>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC109>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#FoXmlAtpResult>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#BfFPResolutionCalculus>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#DecProcResult>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC330>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC159>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#FOProvingProblem>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#TstpCNFProblem>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC336>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC61>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC371>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC372>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC335>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC133>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC23>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#FOProblemFeature>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#ModalLogic>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC319>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC377>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC378>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC359>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC163>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#LambdaCalculus>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#TstpFOFProblem>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#OmdocFOProvingProblem>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#FOLogic>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#UndecidableTheory>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#FOOmdocProvingProblem>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC265>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC266>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#XTstpCnfBrFPRefutation>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#FOTheory>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC327>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC326>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC363>))
+Declaration(Class(<http://www.mathweb.org/owl/status.owl#DecProcStatus>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC125>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#FOProblemFormat>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#FOProblemClass>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#PostProvingProblem>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC59>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC368>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC369>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC39>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC294>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC295>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#DecisionProblem>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC81>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC308>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC309>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#SetTheory>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC396>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC395>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#NDProof>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC334>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC333>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC316>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC315>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#TimeResource>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC352>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC370>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC351>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC286>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC285>))
+Declaration(Class(<http://www.mathweb.org/owl/status.owl#FoUnsolvedStatus>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC317>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC318>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC375>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC358>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC376>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC357>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC161>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC143>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#FOXmlAtpResult>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#Logic>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#ComputationProblem>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC167>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#ResolutionCalculus>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC324>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC51>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC360>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC361>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC325>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#FORefutation>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC31>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC367>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC366>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC348>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC349>))
+Declaration(Class(<http://www.mathweb.org/owl/status.owl#FoPreservingStatus>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#TwegaNDProof>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#FormalLanguage>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#PropLogic>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#NDCalculus>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC293>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC275>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC274>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#ProvingProblemFeature>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#Problem>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#NDProverResult>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC307>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC306>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC292>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC298>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC299>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#TstpCNFTheory>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC85>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC393>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC394>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#ProverResult>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#FOScriptResult>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC139>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC155>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#FormalProof>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC331>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC332>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC313>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#InformalProof>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC314>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC350>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC283>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC284>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC71>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#TableauCalculus>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC356>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC355>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#Resource>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#SequentCalculus>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC289>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#FOXmlBrFPResult>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#SolvingProblem>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC77>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#TableauProof>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC384>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC385>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC339>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC147>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#CoqProofScript>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC322>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC323>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC304>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC340>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC305>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC341>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC11>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#ProblemFeature>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#FoAtpResult>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC364>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC347>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC346>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC365>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#ProvingProblemClass>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC175>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#Annotation>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC291>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC290>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC272>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC273>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC278>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC65>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC392>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC391>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#HOLogic>))
+Declaration(Class(<http://www.mathweb.org/owl/status.owl#FoSolvedStatus>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC312>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#OmdocNDProof>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC397>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC311>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC281>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC264>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC263>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#Theory>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC354>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC353>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC287>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC288>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC383>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC382>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC145>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC321>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC320>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#TstpFOFTheory>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC388>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC389>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC302>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC303>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC345>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC344>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#ResolutionProof>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC270>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#TstpCnfBrFPRefutation>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC271>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#Assurance>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#Failure>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#SmtProblem>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC276>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC277>))
+Declaration(Class(<http://www.mathweb.org/owl/status.owl#FoAtpStatus>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#Result>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#Calculus>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC63>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC374>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC390>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC337>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC373>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#XTstpCNFRefutation>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC338>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#DecidableTheory>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#SmtTheory>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#FOBrFPResult>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC310>))
+Declaration(Class(<http://www.mathweb.org/owl/status.owl#FoDeductiveStatus>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC379>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC119>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC49>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC280>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC261>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC262>))
+Declaration(Class(<http://www.mathweb.org/owl/status.owl#SystemStatus>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#TstpCnfLcRefutation>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#ClassicalNDCalculus>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC268>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC267>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#DeltaRelation>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#Proof>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#ProvingProblem>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC73>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC55>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC380>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC381>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC127>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#ProblemClass>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#OmdocProvingProblem>))
+Declaration(Class(<http://www.mathweb.org/owl/mathserve.owl#TstpCNFRefutation>))
+Declaration(ObjectProperty(<http://www.mathweb.org/owl/mathserve.owl#saturation>))
+Declaration(ObjectProperty(<http://www.mathweb.org/owl/mathserve.owl#inTheory>))
+Declaration(ObjectProperty(<http://www.mathweb.org/owl/status.owl#specialises>))
+Declaration(ObjectProperty(<http://www.mathweb.org/owl/mathserve.owl#message>))
+Declaration(ObjectProperty(<http://www.mathweb.org/owl/mathserve.owl#proofOf>))
+Declaration(ObjectProperty(<http://www.mathweb.org/owl/mathserve.owl#description>))
+Declaration(ObjectProperty(<http://www.mathweb.org/owl/mathserve.owl#system>))
+Declaration(ObjectProperty(<http://www.mathweb.org/owl/status.owl#example>))
+Declaration(ObjectProperty(<http://www.mathweb.org/owl/mathserve.owl#resultFor>))
+Declaration(ObjectProperty(<http://www.mathweb.org/owl/mathserve.owl#timeRes>))
+Declaration(ObjectProperty(<http://www.mathweb.org/owl/mathserve.owl#relation>))
+Declaration(ObjectProperty(<http://www.mathweb.org/owl/mathserve.owl#format>))
+Declaration(ObjectProperty(<http://www.mathweb.org/owl/mathserve.owl#language>))
+Declaration(ObjectProperty(<http://www.mathweb.org/owl/status.owl#code>))
+Declaration(ObjectProperty(<http://www.mathweb.org/owl/mathserve.owl#features>))
+Declaration(ObjectProperty(<http://www.mathweb.org/owl/status.owl#shows>))
+Declaration(ObjectProperty(<http://www.mathweb.org/owl/mathserve.owl#axioms>))
+Declaration(ObjectProperty(<http://www.mathweb.org/owl/status.owl#expectedOutput>))
+Declaration(ObjectProperty(<http://www.mathweb.org/owl/mathserve.owl#fofProblem>))
+Declaration(ObjectProperty(<http://www.mathweb.org/owl/mathserve.owl#twelfDocument>))
+Declaration(ObjectProperty(<http://www.mathweb.org/owl/mathserve.owl#proof>))
+Declaration(ObjectProperty(<http://www.mathweb.org/owl/mathserve.owl#formalDescription>))
+Declaration(ObjectProperty(<http://www.mathweb.org/owl/mathserve.owl#status>))
+Declaration(ObjectProperty(<http://www.mathweb.org/owl/mathserve.owl#output>))
+Declaration(ObjectProperty(<http://www.mathweb.org/owl/mathserve.owl#problemClass>))
+Declaration(ObjectProperty(<http://www.mathweb.org/owl/mathserve.owl#relatesCNF>))
+Declaration(ObjectProperty(<http://www.mathweb.org/owl/mathserve.owl#proofLanguage>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR41>))
+Declaration(ObjectProperty(<http://www.mathweb.org/owl/mathserve.owl#cpuTime>))
+Declaration(ObjectProperty(<http://www.mathweb.org/owl/mathserve.owl#code>))
+Declaration(ObjectProperty(<http://www.mathweb.org/owl/mathserve.owl#formalProof>))
+Declaration(ObjectProperty(<http://www.mathweb.org/owl/mathserve.owl#calculus>))
+Declaration(ObjectProperty(<http://www.mathweb.org/owl/mathserve.owl#toFOF>))
+Declaration(ObjectProperty(<http://www.mathweb.org/owl/mathserve.owl#proofLogic>))
+Declaration(ObjectProperty(<http://www.mathweb.org/owl/mathserve.owl#name>))
+Declaration(ObjectProperty(<http://www.mathweb.org/owl/mathserve.owl#probName>))
+Declaration(ObjectProperty(<http://www.mathweb.org/owl/status.owl#description>))
+Declaration(ObjectProperty(<http://www.mathweb.org/owl/mathserve.owl#time>))
+Declaration(ObjectProperty(<http://www.mathweb.org/owl/mathserve.owl#inLogic>))
+Declaration(ObjectProperty(<http://www.mathweb.org/owl/mathserve.owl#cnfFor>))
+Declaration(ObjectProperty(<http://www.mathweb.org/owl/mathserve.owl#alternativeProof>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-100>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-147>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#QF_UF>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/status.owl#UnsatisfiableConclusion>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-142>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-170>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#CNF_NKS_RFO_NEQ_NHN>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-85>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-67>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-223>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-205>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#CNF_NKS_RFO_SEQ_HRN>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/status.owl#Timeout>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-247>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-56>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/status.owl#InputError>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-241>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-184>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-114>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#CNF_NKS_RFO_PEQ_NUE>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-97>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#CNF>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#AprosNDCalculus>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#FOF_NKS_NUN_RFO_NEQ>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#test_time_resource>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-230>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#OMDoc>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/status.owl#Unsatisfiable>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#QF_RDL>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#QF_IDL>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/status.owl#NoConsequence>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/status.owl#CounterEquivalent>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#test_fo_res_proof>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#ZF>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-271>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/status.owl#Assumed>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-145>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-128>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-197>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-157>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#ep_res_calc>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-23>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-7>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#SimplyTypedLambdaCalc>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#zenon_calc>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#fo_notHorn>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-140>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-83>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-65>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-203>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#fo_fofForm>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#fo_nonUnitPureEquality>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-12>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/status.owl#Tautology>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#fo_horn>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-245>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-110>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#FOF_CSA_EPR>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#fo_theorem>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-54>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#standard_res>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#FOF_NKC_RFO_EQU>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#FOF_NKS_NUN_EPR>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-182>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-78>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-216>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#fo_equality>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/status.owl#Satisfiable>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-239>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-102>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-252>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-20>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#CNF_SAT_EPR>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-228>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-5>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#CNF_NKS_EPR>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-80>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#FOF_SAT_RFO>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#CNF_NKS_RFO_PEQ_UEQ>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#POST>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-265>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#fo_essentiallyProp>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-52>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-33>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-151>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-132>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#otter_calc>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-214>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#Twega>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#FOF_NKS_NUN_RFO_EQU>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#spass_res_calc>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#QF_UFLIA>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#FOF_NKC_RFO_NEQ>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#FOF_CSA_RFO>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#test_fof_problem>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#FOF_SAT_EPR>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-279>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-193>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-174>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#CNF_SAT_RFO_EQU_NUE>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#fo_noEquality>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#CNF_SAT_RFO_PEQ_UEQ>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-123>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#QF_UFIDL>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-89>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-3>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#NBG>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-226>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#CNF_NKS_RFO_NEQ_HRN>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/status.owl#CounterTheorem>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#FOF>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#fo_sat>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-18>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#OmegaNDCalculus>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#fo_pureEquality>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-61>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/status.owl#Theorem>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#HOL>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-262>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#QF_LRA>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#test_fo_atp_result>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/status.owl#Equivalent>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/status.owl#Unknown>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-137>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-119>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-187>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#fol_plus_equ>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-91>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-73>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-212>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-107>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/status.owl#MemoryOut>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#FOF_NKC_EPR>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-235>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-149>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-178>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-45>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-26>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/status.owl#GaveUp>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#CNF_NKS_RFO_SEQ_NHN>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-172>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#CNF_SAT_RFO_NEQ>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#S5>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#TPTP>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/status.owl#TautologousConclusion>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-260>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#OpenMath>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-243>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-117>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#fo_someEquality>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-30>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#SMT>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#fo_unitPureEquality>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#TSTP>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#QF_LIA>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/status.owl#ResourceOut>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/mathserve.owl#test_proving_problem>))
+Declaration(NamedIndividual(<http://www.mathweb.org/owl/status.owl#CounterSatisfiable>))
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR41> (<http://www.absoluteiri.edu/RELAPPROXR41>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR41> <http://www.mathweb.org/owl/mathserve.owl#cnfFor>)
+
+# Object Property: <http://www.mathweb.org/owl/mathserve.owl#cnfFor> (<http://www.mathweb.org/owl/mathserve.owl#cnfFor>)
+
+SubObjectPropertyOf(<http://www.mathweb.org/owl/mathserve.owl#cnfFor> <http://www.absoluteiri.edu/RELAPPROXR41>)
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC262> (<http://www.absoluteiri.edu/RELAPPROXC262>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC262> ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#proof> <http://www.absoluteiri.edu/RELAPPROXC31>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC263> (<http://www.absoluteiri.edu/RELAPPROXC263>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC263> <http://www.absoluteiri.edu/RELAPPROXC395>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC263> <http://www.absoluteiri.edu/RELAPPROXC397>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC266> (<http://www.absoluteiri.edu/RELAPPROXC266>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC266> <http://www.absoluteiri.edu/RELAPPROXC109>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC266> <http://www.absoluteiri.edu/RELAPPROXC133>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC266> <http://www.absoluteiri.edu/RELAPPROXC147>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC266> <http://www.absoluteiri.edu/RELAPPROXC167>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC268> (<http://www.absoluteiri.edu/RELAPPROXC268>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC268> <http://www.absoluteiri.edu/RELAPPROXC109>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC268> <http://www.absoluteiri.edu/RELAPPROXC133>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC272> (<http://www.absoluteiri.edu/RELAPPROXC272>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC272> <http://www.absoluteiri.edu/RELAPPROXC372>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC274> (<http://www.absoluteiri.edu/RELAPPROXC274>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC274> <http://www.absoluteiri.edu/RELAPPROXC109>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC274> <http://www.absoluteiri.edu/RELAPPROXC133>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC274> <http://www.absoluteiri.edu/RELAPPROXC155>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC275> (<http://www.absoluteiri.edu/RELAPPROXC275>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC275> <http://www.absoluteiri.edu/RELAPPROXC381>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC276> (<http://www.absoluteiri.edu/RELAPPROXC276>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC276> <http://www.absoluteiri.edu/RELAPPROXC393>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC278> (<http://www.absoluteiri.edu/RELAPPROXC278>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC278> ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#calculus> <http://www.absoluteiri.edu/RELAPPROXC65>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC281> (<http://www.absoluteiri.edu/RELAPPROXC281>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC281> <http://www.absoluteiri.edu/RELAPPROXC369>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC285> (<http://www.absoluteiri.edu/RELAPPROXC285>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC285> ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#inTheory> <http://www.absoluteiri.edu/RELAPPROXC39>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC287> (<http://www.absoluteiri.edu/RELAPPROXC287>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC287> ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#features> <http://www.absoluteiri.edu/RELAPPROXC63>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC291> (<http://www.absoluteiri.edu/RELAPPROXC291>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC291> ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#proof> <http://www.absoluteiri.edu/RELAPPROXC81>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC293> (<http://www.absoluteiri.edu/RELAPPROXC293>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC293> ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#inTheory> <http://www.absoluteiri.edu/RELAPPROXC155>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC295> (<http://www.absoluteiri.edu/RELAPPROXC295>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC295> ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#inLogic> <http://www.absoluteiri.edu/RELAPPROXC119>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC301> (<http://www.absoluteiri.edu/RELAPPROXC301>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC301> ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#proof> <http://www.absoluteiri.edu/RELAPPROXC175>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC307> (<http://www.absoluteiri.edu/RELAPPROXC307>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC307> ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#status> <http://www.absoluteiri.edu/RELAPPROXC125>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC309> (<http://www.absoluteiri.edu/RELAPPROXC309>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC309> ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#proof> <http://www.absoluteiri.edu/RELAPPROXC77>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC313> (<http://www.absoluteiri.edu/RELAPPROXC313>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC313> <http://www.absoluteiri.edu/RELAPPROXC161>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC313> <http://www.absoluteiri.edu/RELAPPROXC167>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC315> (<http://www.absoluteiri.edu/RELAPPROXC315>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC315> ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#calculus> <http://www.absoluteiri.edu/RELAPPROXC61>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC317> (<http://www.absoluteiri.edu/RELAPPROXC317>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC317> <http://www.absoluteiri.edu/RELAPPROXC109>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC317> <http://www.absoluteiri.edu/RELAPPROXC133>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC317> <http://www.absoluteiri.edu/RELAPPROXC23>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC321> (<http://www.absoluteiri.edu/RELAPPROXC321>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC321> <http://www.absoluteiri.edu/RELAPPROXC139>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC321> <http://www.absoluteiri.edu/RELAPPROXC155>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC323> (<http://www.absoluteiri.edu/RELAPPROXC323>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC323> ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#calculus> <http://www.absoluteiri.edu/RELAPPROXC171>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC327> (<http://www.absoluteiri.edu/RELAPPROXC327>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC327> <http://www.absoluteiri.edu/RELAPPROXC133>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC327> <http://www.absoluteiri.edu/RELAPPROXC49>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC329> (<http://www.absoluteiri.edu/RELAPPROXC329>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC329> ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#problemClass> <http://www.absoluteiri.edu/RELAPPROXC55>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC331> (<http://www.absoluteiri.edu/RELAPPROXC331>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC331> ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#proof> <http://www.absoluteiri.edu/RELAPPROXC11>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC332> (<http://www.absoluteiri.edu/RELAPPROXC332>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC332> <http://www.absoluteiri.edu/RELAPPROXC358>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC334> (<http://www.absoluteiri.edu/RELAPPROXC334>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC334> <http://www.absoluteiri.edu/RELAPPROXC159>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC334> <http://www.absoluteiri.edu/RELAPPROXC73>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC334> <http://www.absoluteiri.edu/RELAPPROXC85>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC336> (<http://www.absoluteiri.edu/RELAPPROXC336>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC336> ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#proofLogic> <http://www.absoluteiri.edu/RELAPPROXC119>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC339> (<http://www.absoluteiri.edu/RELAPPROXC339>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC339> <http://www.absoluteiri.edu/RELAPPROXC378>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC343> (<http://www.absoluteiri.edu/RELAPPROXC343>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC343> ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#problemClass> <http://www.absoluteiri.edu/RELAPPROXC59>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC345> (<http://www.absoluteiri.edu/RELAPPROXC345>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC345> ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#features> <http://www.absoluteiri.edu/RELAPPROXC145>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC346> (<http://www.absoluteiri.edu/RELAPPROXC346>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC346> <http://www.absoluteiri.edu/RELAPPROXC390>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC348> (<http://www.absoluteiri.edu/RELAPPROXC348>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC348> ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#status> <http://www.absoluteiri.edu/RELAPPROXC143>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC349> (<http://www.absoluteiri.edu/RELAPPROXC349>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC349> <http://www.absoluteiri.edu/RELAPPROXC375>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC353> (<http://www.absoluteiri.edu/RELAPPROXC353>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC353> ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#proof> <http://www.absoluteiri.edu/RELAPPROXC163>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC355> (<http://www.absoluteiri.edu/RELAPPROXC355>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC355> <http://www.absoluteiri.edu/RELAPPROXC51>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC355> <http://www.absoluteiri.edu/RELAPPROXC71>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC357> (<http://www.absoluteiri.edu/RELAPPROXC357>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC357> ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#inLogic> <http://www.absoluteiri.edu/RELAPPROXC358>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC358> (<http://www.absoluteiri.edu/RELAPPROXC358>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC358> <http://www.absoluteiri.edu/RELAPPROXC332>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC360> (<http://www.absoluteiri.edu/RELAPPROXC360>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC360> ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#inLogic> owl:Nothing))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC361> (<http://www.absoluteiri.edu/RELAPPROXC361>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC361> owl:Nothing)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC364> (<http://www.absoluteiri.edu/RELAPPROXC364>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC364> ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#timeRes> <http://www.absoluteiri.edu/RELAPPROXC366>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC365> (<http://www.absoluteiri.edu/RELAPPROXC365>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC365> <http://www.absoluteiri.edu/RELAPPROXC366>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC366> (<http://www.absoluteiri.edu/RELAPPROXC366>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC366> <http://www.absoluteiri.edu/RELAPPROXC365>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC368> (<http://www.absoluteiri.edu/RELAPPROXC368>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC368> ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#language> <http://www.absoluteiri.edu/RELAPPROXC369>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC369> (<http://www.absoluteiri.edu/RELAPPROXC369>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC369> <http://www.absoluteiri.edu/RELAPPROXC281>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC371> (<http://www.absoluteiri.edu/RELAPPROXC371>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC371> ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#language> <http://www.absoluteiri.edu/RELAPPROXC372>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC372> (<http://www.absoluteiri.edu/RELAPPROXC372>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC372> <http://www.absoluteiri.edu/RELAPPROXC272>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC374> (<http://www.absoluteiri.edu/RELAPPROXC374>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC374> ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#language> <http://www.absoluteiri.edu/RELAPPROXC375>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC375> (<http://www.absoluteiri.edu/RELAPPROXC375>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC375> <http://www.absoluteiri.edu/RELAPPROXC349>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC377> (<http://www.absoluteiri.edu/RELAPPROXC377>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC377> ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#language> <http://www.absoluteiri.edu/RELAPPROXC378>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC378> (<http://www.absoluteiri.edu/RELAPPROXC378>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC378> <http://www.absoluteiri.edu/RELAPPROXC339>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC380> (<http://www.absoluteiri.edu/RELAPPROXC380>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC380> ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#language> <http://www.absoluteiri.edu/RELAPPROXC381>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC381> (<http://www.absoluteiri.edu/RELAPPROXC381>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC381> <http://www.absoluteiri.edu/RELAPPROXC275>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC383> (<http://www.absoluteiri.edu/RELAPPROXC383>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC383> ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#resultFor> <http://www.absoluteiri.edu/RELAPPROXC385>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC384> (<http://www.absoluteiri.edu/RELAPPROXC384>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC384> <http://www.absoluteiri.edu/RELAPPROXC385>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC385> (<http://www.absoluteiri.edu/RELAPPROXC385>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC385> <http://www.absoluteiri.edu/RELAPPROXC384>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC387> (<http://www.absoluteiri.edu/RELAPPROXC387>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC387> ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#proofLogic> owl:Nothing))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC389> (<http://www.absoluteiri.edu/RELAPPROXC389>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC389> ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#format> <http://www.absoluteiri.edu/RELAPPROXC390>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC390> (<http://www.absoluteiri.edu/RELAPPROXC390>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC390> <http://www.absoluteiri.edu/RELAPPROXC346>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC392> (<http://www.absoluteiri.edu/RELAPPROXC392>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC392> ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#format> <http://www.absoluteiri.edu/RELAPPROXC393>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC393> (<http://www.absoluteiri.edu/RELAPPROXC393>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC393> <http://www.absoluteiri.edu/RELAPPROXC276>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC394> (<http://www.absoluteiri.edu/RELAPPROXC394>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC394> <http://www.absoluteiri.edu/RELAPPROXC264>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC396> (<http://www.absoluteiri.edu/RELAPPROXC396>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC396> <http://www.absoluteiri.edu/RELAPPROXC264>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#Assurance> (<http://www.mathweb.org/owl/mathserve.owl#Assurance>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#Assurance> <http://www.mathweb.org/owl/mathserve.owl#Output>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#BfFPResolutionCalculus> (<http://www.mathweb.org/owl/mathserve.owl#BfFPResolutionCalculus>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#BfFPResolutionCalculus> <http://www.mathweb.org/owl/mathserve.owl#ResolutionCalculus>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#Calculus> (<http://www.mathweb.org/owl/mathserve.owl#Calculus>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#Calculus> <http://www.absoluteiri.edu/RELAPPROXC333>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#ClassicalNDCalculus> (<http://www.mathweb.org/owl/mathserve.owl#ClassicalNDCalculus>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#ClassicalNDCalculus> <http://www.mathweb.org/owl/mathserve.owl#NDCalculus>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#ComputationProblem> (<http://www.mathweb.org/owl/mathserve.owl#ComputationProblem>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#ComputationProblem> <http://www.mathweb.org/owl/mathserve.owl#Problem>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#ConstructiveNDCalculus> (<http://www.mathweb.org/owl/mathserve.owl#ConstructiveNDCalculus>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#ConstructiveNDCalculus> <http://www.mathweb.org/owl/mathserve.owl#NDCalculus>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#CoqProofScript> (<http://www.mathweb.org/owl/mathserve.owl#CoqProofScript>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#CoqProofScript> <http://www.mathweb.org/owl/mathserve.owl#ProofScript>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#DecProcResult> (<http://www.mathweb.org/owl/mathserve.owl#DecProcResult>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#DecProcResult> <http://www.absoluteiri.edu/RELAPPROXC312>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#DecProcResult> <http://www.absoluteiri.edu/RELAPPROXC347>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#DecProcResult> <http://www.mathweb.org/owl/mathserve.owl#Result>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#DecidableTheory> (<http://www.mathweb.org/owl/mathserve.owl#DecidableTheory>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#DecidableTheory> <http://www.mathweb.org/owl/mathserve.owl#FOTheory>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#DecisionProblem> (<http://www.mathweb.org/owl/mathserve.owl#DecisionProblem>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#DecisionProblem> <http://www.absoluteiri.edu/RELAPPROXC265>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#DecisionProblem> <http://www.absoluteiri.edu/RELAPPROXC267>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#DecisionProblem> <http://www.absoluteiri.edu/RELAPPROXC273>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#DecisionProblem> <http://www.absoluteiri.edu/RELAPPROXC284>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#DecisionProblem> <http://www.absoluteiri.edu/RELAPPROXC316>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#DecisionProblem> <http://www.mathweb.org/owl/mathserve.owl#Problem>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#DeltaRelation> (<http://www.mathweb.org/owl/mathserve.owl#DeltaRelation>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#DeltaRelation> <http://www.mathweb.org/owl/mathserve.owl#Annotation>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#FOBrFPResult> (<http://www.mathweb.org/owl/mathserve.owl#FOBrFPResult>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#FOBrFPResult> <http://www.absoluteiri.edu/RELAPPROXC261>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#FOBrFPResult> <http://www.mathweb.org/owl/mathserve.owl#FoAtpResult>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#FOLogic> (<http://www.mathweb.org/owl/mathserve.owl#FOLogic>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#FOLogic> <http://www.mathweb.org/owl/mathserve.owl#Logic>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#FOOmdocProvingProblem> (<http://www.mathweb.org/owl/mathserve.owl#FOOmdocProvingProblem>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#FOOmdocProvingProblem> <http://www.absoluteiri.edu/RELAPPROXC367>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#FOOmdocProvingProblem> <http://www.mathweb.org/owl/mathserve.owl#FOProvingProblem>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#FOOmdocProvingProblem> <http://www.mathweb.org/owl/mathserve.owl#OmdocFOProvingProblem>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#FOOmdocProvingProblem> ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#language> ObjectOneOf(<http://www.mathweb.org/owl/mathserve.owl#OMDoc>)))
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#FOProblemClass> (<http://www.mathweb.org/owl/mathserve.owl#FOProblemClass>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#FOProblemClass> <http://www.absoluteiri.edu/RELAPPROXC286>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#FOProblemClass> <http://www.mathweb.org/owl/mathserve.owl#ProvingProblemClass>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#FOProblemFeature> (<http://www.mathweb.org/owl/mathserve.owl#FOProblemFeature>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#FOProblemFeature> <http://www.absoluteiri.edu/RELAPPROXC333>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#FOProblemFeature> <http://www.mathweb.org/owl/mathserve.owl#ProvingProblemFeature>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#FOProvingProblem> (<http://www.mathweb.org/owl/mathserve.owl#FOProvingProblem>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#FOProvingProblem> <http://www.absoluteiri.edu/RELAPPROXC292>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#FOProvingProblem> <http://www.absoluteiri.edu/RELAPPROXC294>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#FOProvingProblem> <http://www.absoluteiri.edu/RELAPPROXC328>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#FOProvingProblem> <http://www.mathweb.org/owl/mathserve.owl#ProvingProblem>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#FORefutation> (<http://www.mathweb.org/owl/mathserve.owl#FORefutation>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#FORefutation> <http://www.mathweb.org/owl/mathserve.owl#Output>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#FOScriptResult> (<http://www.mathweb.org/owl/mathserve.owl#FOScriptResult>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#FOScriptResult> <http://www.absoluteiri.edu/RELAPPROXC330>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#FOScriptResult> <http://www.mathweb.org/owl/mathserve.owl#ProverResult>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#FOTheory> (<http://www.mathweb.org/owl/mathserve.owl#FOTheory>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#FOTheory> <http://www.absoluteiri.edu/RELAPPROXC273>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#FOTheory> <http://www.absoluteiri.edu/RELAPPROXC294>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#FOTheory> <http://www.absoluteiri.edu/RELAPPROXC320>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#FOTheory> <http://www.mathweb.org/owl/mathserve.owl#Theory>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#FOXmlBrFPResult> (<http://www.mathweb.org/owl/mathserve.owl#FOXmlBrFPResult>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#FOXmlBrFPResult> <http://www.absoluteiri.edu/RELAPPROXC290>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#FOXmlBrFPResult> <http://www.mathweb.org/owl/mathserve.owl#FOXmlAtpResult>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#Failure> (<http://www.mathweb.org/owl/mathserve.owl#Failure>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#Failure> <http://www.absoluteiri.edu/RELAPPROXC265>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#Failure> <http://www.mathweb.org/owl/mathserve.owl#Result>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#FoAtpResult> (<http://www.mathweb.org/owl/mathserve.owl#FoAtpResult>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#FoAtpResult> <http://www.absoluteiri.edu/RELAPPROXC300>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#FoAtpResult> <http://www.absoluteiri.edu/RELAPPROXC306>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#FoAtpResult> <http://www.mathweb.org/owl/mathserve.owl#ProverResult>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#FoXmlAtpResult> (<http://www.mathweb.org/owl/mathserve.owl#FoXmlAtpResult>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#FoXmlAtpResult> <http://www.absoluteiri.edu/RELAPPROXC308>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#FoXmlAtpResult> <http://www.mathweb.org/owl/mathserve.owl#ProverResult>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#FormalLanguage> (<http://www.mathweb.org/owl/mathserve.owl#FormalLanguage>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#FormalLanguage> <http://www.absoluteiri.edu/RELAPPROXC333>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#FormalProof> (<http://www.mathweb.org/owl/mathserve.owl#FormalProof>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#FormalProof> <http://www.absoluteiri.edu/RELAPPROXC316>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#FormalProof> <http://www.mathweb.org/owl/mathserve.owl#Proof>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#HOLogic> (<http://www.mathweb.org/owl/mathserve.owl#HOLogic>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#HOLogic> <http://www.mathweb.org/owl/mathserve.owl#Logic>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#InformalProof> (<http://www.mathweb.org/owl/mathserve.owl#InformalProof>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#InformalProof> <http://www.mathweb.org/owl/mathserve.owl#Proof>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#LambdaCalculus> (<http://www.mathweb.org/owl/mathserve.owl#LambdaCalculus>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#LambdaCalculus> <http://www.mathweb.org/owl/mathserve.owl#Logic>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#Logic> (<http://www.mathweb.org/owl/mathserve.owl#Logic>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#Logic> <http://www.absoluteiri.edu/RELAPPROXC333>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#ModGenResult> (<http://www.mathweb.org/owl/mathserve.owl#ModGenResult>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#ModGenResult> <http://www.mathweb.org/owl/mathserve.owl#Result>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#ModalLogic> (<http://www.mathweb.org/owl/mathserve.owl#ModalLogic>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#ModalLogic> <http://www.mathweb.org/owl/mathserve.owl#Logic>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#NDCalculus> (<http://www.mathweb.org/owl/mathserve.owl#NDCalculus>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#NDCalculus> <http://www.mathweb.org/owl/mathserve.owl#Calculus>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#NDProof> (<http://www.mathweb.org/owl/mathserve.owl#NDProof>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#NDProof> <http://www.absoluteiri.edu/RELAPPROXC314>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#NDProof> <http://www.mathweb.org/owl/mathserve.owl#FormalProof>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#NDProverResult> (<http://www.mathweb.org/owl/mathserve.owl#NDProverResult>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#NDProverResult> <http://www.absoluteiri.edu/RELAPPROXC352>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#NDProverResult> <http://www.mathweb.org/owl/mathserve.owl#ProverResult>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#OmdocFOProvingProblem> (<http://www.mathweb.org/owl/mathserve.owl#OmdocFOProvingProblem>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#OmdocFOProvingProblem> <http://www.absoluteiri.edu/RELAPPROXC294>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#OmdocFOProvingProblem> <http://www.mathweb.org/owl/mathserve.owl#FOOmdocProvingProblem>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#OmdocFOProvingProblem> <http://www.mathweb.org/owl/mathserve.owl#OmdocProvingProblem>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#OmdocNDProof> (<http://www.mathweb.org/owl/mathserve.owl#OmdocNDProof>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#OmdocNDProof> <http://www.absoluteiri.edu/RELAPPROXC367>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#OmdocNDProof> <http://www.mathweb.org/owl/mathserve.owl#NDProof>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#OmdocNDProof> ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#language> ObjectOneOf(<http://www.mathweb.org/owl/mathserve.owl#OMDoc>)))
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#OmdocProvingProblem> (<http://www.mathweb.org/owl/mathserve.owl#OmdocProvingProblem>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#OmdocProvingProblem> <http://www.absoluteiri.edu/RELAPPROXC367>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#OmdocProvingProblem> <http://www.mathweb.org/owl/mathserve.owl#ProvingProblem>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#OmdocProvingProblem> ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#language> ObjectOneOf(<http://www.mathweb.org/owl/mathserve.owl#OMDoc>)))
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#PostProvingProblem> (<http://www.mathweb.org/owl/mathserve.owl#PostProvingProblem>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#PostProvingProblem> <http://www.absoluteiri.edu/RELAPPROXC356>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#PostProvingProblem> <http://www.absoluteiri.edu/RELAPPROXC370>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#PostProvingProblem> <http://www.mathweb.org/owl/mathserve.owl#ProvingProblem>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#PostProvingProblem> ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#inLogic> ObjectOneOf(<http://www.mathweb.org/owl/mathserve.owl#SimplyTypedLambdaCalc>)))
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#PostProvingProblem> ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#language> ObjectOneOf(<http://www.mathweb.org/owl/mathserve.owl#POST>)))
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#Proof> (<http://www.mathweb.org/owl/mathserve.owl#Proof>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#Proof> <http://www.absoluteiri.edu/RELAPPROXC354>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#ProofScript> (<http://www.mathweb.org/owl/mathserve.owl#ProofScript>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#ProofScript> <http://www.mathweb.org/owl/mathserve.owl#FormalProof>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#PropLogic> (<http://www.mathweb.org/owl/mathserve.owl#PropLogic>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#PropLogic> <http://www.mathweb.org/owl/mathserve.owl#Logic>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#ProverResult> (<http://www.mathweb.org/owl/mathserve.owl#ProverResult>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#ProverResult> <http://www.absoluteiri.edu/RELAPPROXC265>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#ProverResult> <http://www.absoluteiri.edu/RELAPPROXC312>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#ProverResult> <http://www.mathweb.org/owl/mathserve.owl#Result>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#ProvingProblem> (<http://www.mathweb.org/owl/mathserve.owl#ProvingProblem>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#ProvingProblem> <http://www.absoluteiri.edu/RELAPPROXC265>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#ProvingProblem> <http://www.absoluteiri.edu/RELAPPROXC267>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#ProvingProblem> <http://www.absoluteiri.edu/RELAPPROXC273>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#ProvingProblem> <http://www.absoluteiri.edu/RELAPPROXC316>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#ProvingProblem> <http://www.absoluteiri.edu/RELAPPROXC326>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#ProvingProblem> <http://www.absoluteiri.edu/RELAPPROXC342>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#ProvingProblem> <http://www.mathweb.org/owl/mathserve.owl#Problem>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#ProvingProblemClass> (<http://www.mathweb.org/owl/mathserve.owl#ProvingProblemClass>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#ProvingProblemClass> <http://www.absoluteiri.edu/RELAPPROXC344>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#ProvingProblemClass> <http://www.mathweb.org/owl/mathserve.owl#ProblemClass>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#ProvingProblemFeature> (<http://www.mathweb.org/owl/mathserve.owl#ProvingProblemFeature>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#ProvingProblemFeature> <http://www.mathweb.org/owl/mathserve.owl#ProblemFeature>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#ResolutionCalculus> (<http://www.mathweb.org/owl/mathserve.owl#ResolutionCalculus>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#ResolutionCalculus> <http://www.mathweb.org/owl/mathserve.owl#Calculus>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#ResolutionProof> (<http://www.mathweb.org/owl/mathserve.owl#ResolutionProof>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#ResolutionProof> <http://www.absoluteiri.edu/RELAPPROXC322>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#ResolutionProof> <http://www.mathweb.org/owl/mathserve.owl#FormalProof>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#Result> (<http://www.mathweb.org/owl/mathserve.owl#Result>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#Result> <http://www.absoluteiri.edu/RELAPPROXC354>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#SequentCalculus> (<http://www.mathweb.org/owl/mathserve.owl#SequentCalculus>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#SequentCalculus> <http://www.mathweb.org/owl/mathserve.owl#Calculus>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#SetTheory> (<http://www.mathweb.org/owl/mathserve.owl#SetTheory>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#SetTheory> <http://www.mathweb.org/owl/mathserve.owl#Logic>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#SmtProblem> (<http://www.mathweb.org/owl/mathserve.owl#SmtProblem>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#SmtProblem> <http://www.absoluteiri.edu/RELAPPROXC373>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#SmtProblem> <http://www.mathweb.org/owl/mathserve.owl#DecisionProblem>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#SmtProblem> ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#language> ObjectOneOf(<http://www.mathweb.org/owl/mathserve.owl#SMT>)))
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#SmtTheory> (<http://www.mathweb.org/owl/mathserve.owl#SmtTheory>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#SmtTheory> <http://www.mathweb.org/owl/mathserve.owl#DecidableTheory>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#SolvingProblem> (<http://www.mathweb.org/owl/mathserve.owl#SolvingProblem>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#SolvingProblem> <http://www.mathweb.org/owl/mathserve.owl#Problem>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#TableauCalculus> (<http://www.mathweb.org/owl/mathserve.owl#TableauCalculus>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#TableauCalculus> <http://www.mathweb.org/owl/mathserve.owl#Calculus>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#TableauProof> (<http://www.mathweb.org/owl/mathserve.owl#TableauProof>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#TableauProof> <http://www.absoluteiri.edu/RELAPPROXC277>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#TableauProof> <http://www.mathweb.org/owl/mathserve.owl#FormalProof>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#Theory> (<http://www.mathweb.org/owl/mathserve.owl#Theory>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#Theory> <http://www.absoluteiri.edu/RELAPPROXC326>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#TimeResource> (<http://www.mathweb.org/owl/mathserve.owl#TimeResource>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#TimeResource> <http://www.mathweb.org/owl/mathserve.owl#Resource>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#TstpCNFProblem> (<http://www.mathweb.org/owl/mathserve.owl#TstpCNFProblem>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#TstpCNFProblem> <http://www.absoluteiri.edu/RELAPPROXC388>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#TstpCNFProblem> <http://www.mathweb.org/owl/mathserve.owl#TstpProblem>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#TstpCNFProblem> ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#format> ObjectOneOf(<http://www.mathweb.org/owl/mathserve.owl#CNF>)))
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#TstpCNFRefutation> (<http://www.mathweb.org/owl/mathserve.owl#TstpCNFRefutation>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#TstpCNFRefutation> <http://www.absoluteiri.edu/RELAPPROXC335>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#TstpCNFRefutation> <http://www.mathweb.org/owl/mathserve.owl#ResolutionProof>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#TstpCNFTheory> (<http://www.mathweb.org/owl/mathserve.owl#TstpCNFTheory>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#TstpCNFTheory> <http://www.absoluteiri.edu/RELAPPROXC388>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#TstpCNFTheory> <http://www.mathweb.org/owl/mathserve.owl#UndecidableTheory>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#TstpCNFTheory> ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#format> ObjectOneOf(<http://www.mathweb.org/owl/mathserve.owl#CNF>)))
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#TstpCnfBrFPRefutation> (<http://www.mathweb.org/owl/mathserve.owl#TstpCnfBrFPRefutation>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#TstpCnfBrFPRefutation> <http://www.mathweb.org/owl/mathserve.owl#TstpCnfLcRefutation>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#TstpCnfLcRefutation> (<http://www.mathweb.org/owl/mathserve.owl#TstpCnfLcRefutation>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#TstpCnfLcRefutation> <http://www.mathweb.org/owl/mathserve.owl#TstpCNFRefutation>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#TstpFOFProblem> (<http://www.mathweb.org/owl/mathserve.owl#TstpFOFProblem>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#TstpFOFProblem> <http://www.absoluteiri.edu/RELAPPROXC391>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#TstpFOFProblem> <http://www.mathweb.org/owl/mathserve.owl#TstpProblem>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#TstpFOFProblem> ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#format> ObjectOneOf(<http://www.mathweb.org/owl/mathserve.owl#FOF>)))
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#TstpFOFTheory> (<http://www.mathweb.org/owl/mathserve.owl#TstpFOFTheory>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#TstpFOFTheory> <http://www.absoluteiri.edu/RELAPPROXC391>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#TstpFOFTheory> <http://www.mathweb.org/owl/mathserve.owl#UndecidableTheory>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#TstpFOFTheory> ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#format> ObjectOneOf(<http://www.mathweb.org/owl/mathserve.owl#FOF>)))
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#TstpProblem> (<http://www.mathweb.org/owl/mathserve.owl#TstpProblem>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#TstpProblem> <http://www.absoluteiri.edu/RELAPPROXC320>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#TstpProblem> <http://www.absoluteiri.edu/RELAPPROXC379>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#TstpProblem> <http://www.mathweb.org/owl/mathserve.owl#FOProvingProblem>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#TstpProblem> ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#language> ObjectOneOf(<http://www.mathweb.org/owl/mathserve.owl#TSTP>)))
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#TwegaNDProof> (<http://www.mathweb.org/owl/mathserve.owl#TwegaNDProof>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#TwegaNDProof> <http://www.absoluteiri.edu/RELAPPROXC376>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#TwegaNDProof> <http://www.mathweb.org/owl/mathserve.owl#NDProof>)
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#TwegaNDProof> ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#language> ObjectOneOf(<http://www.mathweb.org/owl/mathserve.owl#Twega>)))
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#UndecidableTheory> (<http://www.mathweb.org/owl/mathserve.owl#UndecidableTheory>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#UndecidableTheory> <http://www.mathweb.org/owl/mathserve.owl#FOTheory>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#XTstpCNFRefutation> (<http://www.mathweb.org/owl/mathserve.owl#XTstpCNFRefutation>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#XTstpCNFRefutation> <http://www.mathweb.org/owl/mathserve.owl#ResolutionProof>)
+
+# Class: <http://www.mathweb.org/owl/mathserve.owl#XTstpCnfBrFPRefutation> (<http://www.mathweb.org/owl/mathserve.owl#XTstpCnfBrFPRefutation>)
+
+SubClassOf(<http://www.mathweb.org/owl/mathserve.owl#XTstpCnfBrFPRefutation> <http://www.mathweb.org/owl/mathserve.owl#TstpCnfLcRefutation>)
+
+# Class: <http://www.mathweb.org/owl/status.owl#DecProcStatus> (<http://www.mathweb.org/owl/status.owl#DecProcStatus>)
+
+SubClassOf(<http://www.mathweb.org/owl/status.owl#DecProcStatus> <http://www.mathweb.org/owl/status.owl#SystemStatus>)
+
+# Class: <http://www.mathweb.org/owl/status.owl#FoAtpStatus> (<http://www.mathweb.org/owl/status.owl#FoAtpStatus>)
+
+SubClassOf(<http://www.mathweb.org/owl/status.owl#FoAtpStatus> <http://www.mathweb.org/owl/status.owl#SystemStatus>)
+
+# Class: <http://www.mathweb.org/owl/status.owl#FoDeductiveStatus> (<http://www.mathweb.org/owl/status.owl#FoDeductiveStatus>)
+
+SubClassOf(<http://www.mathweb.org/owl/status.owl#FoDeductiveStatus> <http://www.mathweb.org/owl/status.owl#FoSolvedStatus>)
+
+# Class: <http://www.mathweb.org/owl/status.owl#FoPreservingStatus> (<http://www.mathweb.org/owl/status.owl#FoPreservingStatus>)
+
+SubClassOf(<http://www.mathweb.org/owl/status.owl#FoPreservingStatus> <http://www.mathweb.org/owl/status.owl#FoSolvedStatus>)
+
+# Class: <http://www.mathweb.org/owl/status.owl#FoSolvedStatus> (<http://www.mathweb.org/owl/status.owl#FoSolvedStatus>)
+
+SubClassOf(<http://www.mathweb.org/owl/status.owl#FoSolvedStatus> <http://www.mathweb.org/owl/status.owl#FoAtpStatus>)
+
+# Class: <http://www.mathweb.org/owl/status.owl#FoUnsolvedStatus> (<http://www.mathweb.org/owl/status.owl#FoUnsolvedStatus>)
+
+SubClassOf(<http://www.mathweb.org/owl/status.owl#FoUnsolvedStatus> <http://www.mathweb.org/owl/status.owl#FoAtpStatus>)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing <http://www.absoluteiri.edu/RELAPPROXC361>)
+
+# Class: owl:Thing (owl:Thing)
+
+SubClassOf(owl:Thing <http://www.absoluteiri.edu/RELAPPROXC270>)
+SubClassOf(owl:Thing <http://www.absoluteiri.edu/RELAPPROXC288>)
+SubClassOf(owl:Thing <http://www.absoluteiri.edu/RELAPPROXC296>)
+SubClassOf(owl:Thing <http://www.absoluteiri.edu/RELAPPROXC298>)
+SubClassOf(owl:Thing <http://www.absoluteiri.edu/RELAPPROXC302>)
+SubClassOf(owl:Thing <http://www.absoluteiri.edu/RELAPPROXC304>)
+SubClassOf(owl:Thing <http://www.absoluteiri.edu/RELAPPROXC310>)
+SubClassOf(owl:Thing <http://www.absoluteiri.edu/RELAPPROXC318>)
+SubClassOf(owl:Thing <http://www.absoluteiri.edu/RELAPPROXC324>)
+SubClassOf(owl:Thing <http://www.absoluteiri.edu/RELAPPROXC337>)
+SubClassOf(owl:Thing <http://www.absoluteiri.edu/RELAPPROXC340>)
+SubClassOf(owl:Thing <http://www.absoluteiri.edu/RELAPPROXC350>)
+SubClassOf(owl:Thing owl:Nothing)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#AprosNDCalculus> (<http://www.mathweb.org/owl/mathserve.owl#AprosNDCalculus>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#ClassicalNDCalculus> <http://www.mathweb.org/owl/mathserve.owl#AprosNDCalculus>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#CNF> (<http://www.mathweb.org/owl/mathserve.owl#CNF>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#FOProblemFormat> <http://www.mathweb.org/owl/mathserve.owl#CNF>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#CNF_NKS_EPR> (<http://www.mathweb.org/owl/mathserve.owl#CNF_NKS_EPR>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#FOProblemClass> <http://www.mathweb.org/owl/mathserve.owl#CNF_NKS_EPR>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#CNF_NKS_RFO_NEQ_HRN> (<http://www.mathweb.org/owl/mathserve.owl#CNF_NKS_RFO_NEQ_HRN>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#FOProblemClass> <http://www.mathweb.org/owl/mathserve.owl#CNF_NKS_RFO_NEQ_HRN>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#CNF_NKS_RFO_NEQ_NHN> (<http://www.mathweb.org/owl/mathserve.owl#CNF_NKS_RFO_NEQ_NHN>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#FOProblemClass> <http://www.mathweb.org/owl/mathserve.owl#CNF_NKS_RFO_NEQ_NHN>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#CNF_NKS_RFO_PEQ_NUE> (<http://www.mathweb.org/owl/mathserve.owl#CNF_NKS_RFO_PEQ_NUE>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#FOProblemClass> <http://www.mathweb.org/owl/mathserve.owl#CNF_NKS_RFO_PEQ_NUE>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#CNF_NKS_RFO_PEQ_UEQ> (<http://www.mathweb.org/owl/mathserve.owl#CNF_NKS_RFO_PEQ_UEQ>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#FOProblemClass> <http://www.mathweb.org/owl/mathserve.owl#CNF_NKS_RFO_PEQ_UEQ>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#CNF_NKS_RFO_SEQ_HRN> (<http://www.mathweb.org/owl/mathserve.owl#CNF_NKS_RFO_SEQ_HRN>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#FOProblemClass> <http://www.mathweb.org/owl/mathserve.owl#CNF_NKS_RFO_SEQ_HRN>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#CNF_NKS_RFO_SEQ_NHN> (<http://www.mathweb.org/owl/mathserve.owl#CNF_NKS_RFO_SEQ_NHN>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#FOProblemClass> <http://www.mathweb.org/owl/mathserve.owl#CNF_NKS_RFO_SEQ_NHN>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#CNF_SAT_EPR> (<http://www.mathweb.org/owl/mathserve.owl#CNF_SAT_EPR>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#FOProblemClass> <http://www.mathweb.org/owl/mathserve.owl#CNF_SAT_EPR>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#CNF_SAT_RFO_EQU_NUE> (<http://www.mathweb.org/owl/mathserve.owl#CNF_SAT_RFO_EQU_NUE>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#FOProblemClass> <http://www.mathweb.org/owl/mathserve.owl#CNF_SAT_RFO_EQU_NUE>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#CNF_SAT_RFO_NEQ> (<http://www.mathweb.org/owl/mathserve.owl#CNF_SAT_RFO_NEQ>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#FOProblemClass> <http://www.mathweb.org/owl/mathserve.owl#CNF_SAT_RFO_NEQ>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#CNF_SAT_RFO_PEQ_UEQ> (<http://www.mathweb.org/owl/mathserve.owl#CNF_SAT_RFO_PEQ_UEQ>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#FOProblemClass> <http://www.mathweb.org/owl/mathserve.owl#CNF_SAT_RFO_PEQ_UEQ>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#FOF> (<http://www.mathweb.org/owl/mathserve.owl#FOF>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#FOProblemFormat> <http://www.mathweb.org/owl/mathserve.owl#FOF>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#FOF_CSA_EPR> (<http://www.mathweb.org/owl/mathserve.owl#FOF_CSA_EPR>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#FOProblemClass> <http://www.mathweb.org/owl/mathserve.owl#FOF_CSA_EPR>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#FOF_CSA_RFO> (<http://www.mathweb.org/owl/mathserve.owl#FOF_CSA_RFO>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#FOProblemClass> <http://www.mathweb.org/owl/mathserve.owl#FOF_CSA_RFO>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#FOF_NKC_EPR> (<http://www.mathweb.org/owl/mathserve.owl#FOF_NKC_EPR>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#FOProblemClass> <http://www.mathweb.org/owl/mathserve.owl#FOF_NKC_EPR>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#FOF_NKC_RFO_EQU> (<http://www.mathweb.org/owl/mathserve.owl#FOF_NKC_RFO_EQU>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#FOProblemClass> <http://www.mathweb.org/owl/mathserve.owl#FOF_NKC_RFO_EQU>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#FOF_NKC_RFO_NEQ> (<http://www.mathweb.org/owl/mathserve.owl#FOF_NKC_RFO_NEQ>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#FOProblemClass> <http://www.mathweb.org/owl/mathserve.owl#FOF_NKC_RFO_NEQ>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#FOF_NKS_NUN_EPR> (<http://www.mathweb.org/owl/mathserve.owl#FOF_NKS_NUN_EPR>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#FOProblemClass> <http://www.mathweb.org/owl/mathserve.owl#FOF_NKS_NUN_EPR>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#FOF_NKS_NUN_RFO_EQU> (<http://www.mathweb.org/owl/mathserve.owl#FOF_NKS_NUN_RFO_EQU>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#FOProblemClass> <http://www.mathweb.org/owl/mathserve.owl#FOF_NKS_NUN_RFO_EQU>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#FOF_NKS_NUN_RFO_NEQ> (<http://www.mathweb.org/owl/mathserve.owl#FOF_NKS_NUN_RFO_NEQ>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#FOProblemClass> <http://www.mathweb.org/owl/mathserve.owl#FOF_NKS_NUN_RFO_NEQ>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#FOF_SAT_EPR> (<http://www.mathweb.org/owl/mathserve.owl#FOF_SAT_EPR>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#FOProblemClass> <http://www.mathweb.org/owl/mathserve.owl#FOF_SAT_EPR>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#FOF_SAT_RFO> (<http://www.mathweb.org/owl/mathserve.owl#FOF_SAT_RFO>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#FOProblemClass> <http://www.mathweb.org/owl/mathserve.owl#FOF_SAT_RFO>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#HOL> (<http://www.mathweb.org/owl/mathserve.owl#HOL>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#HOLogic> <http://www.mathweb.org/owl/mathserve.owl#HOL>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#NBG> (<http://www.mathweb.org/owl/mathserve.owl#NBG>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#SetTheory> <http://www.mathweb.org/owl/mathserve.owl#NBG>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#OMDoc> (<http://www.mathweb.org/owl/mathserve.owl#OMDoc>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#FormalLanguage> <http://www.mathweb.org/owl/mathserve.owl#OMDoc>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#OmegaNDCalculus> (<http://www.mathweb.org/owl/mathserve.owl#OmegaNDCalculus>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#ClassicalNDCalculus> <http://www.mathweb.org/owl/mathserve.owl#OmegaNDCalculus>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#OpenMath> (<http://www.mathweb.org/owl/mathserve.owl#OpenMath>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#FormalLanguage> <http://www.mathweb.org/owl/mathserve.owl#OpenMath>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#POST> (<http://www.mathweb.org/owl/mathserve.owl#POST>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#FormalLanguage> <http://www.mathweb.org/owl/mathserve.owl#POST>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#QF_IDL> (<http://www.mathweb.org/owl/mathserve.owl#QF_IDL>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#SmtTheory> <http://www.mathweb.org/owl/mathserve.owl#QF_IDL>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#QF_LIA> (<http://www.mathweb.org/owl/mathserve.owl#QF_LIA>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#SmtTheory> <http://www.mathweb.org/owl/mathserve.owl#QF_LIA>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#QF_LRA> (<http://www.mathweb.org/owl/mathserve.owl#QF_LRA>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#SmtTheory> <http://www.mathweb.org/owl/mathserve.owl#QF_LRA>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#QF_RDL> (<http://www.mathweb.org/owl/mathserve.owl#QF_RDL>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#SmtTheory> <http://www.mathweb.org/owl/mathserve.owl#QF_RDL>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#QF_UF> (<http://www.mathweb.org/owl/mathserve.owl#QF_UF>)
+
+ClassAssertion(<http://www.absoluteiri.edu/RELAPPROXC359> <http://www.mathweb.org/owl/mathserve.owl#QF_UF>)
+ClassAssertion(<http://www.absoluteiri.edu/RELAPPROXC391> <http://www.mathweb.org/owl/mathserve.owl#QF_UF>)
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#SmtTheory> <http://www.mathweb.org/owl/mathserve.owl#QF_UF>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/mathserve.owl#format> <http://www.mathweb.org/owl/mathserve.owl#QF_UF> <http://www.mathweb.org/owl/mathserve.owl#FOF>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/mathserve.owl#inLogic> <http://www.mathweb.org/owl/mathserve.owl#QF_UF> <http://www.mathweb.org/owl/mathserve.owl#fol_plus_equ>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#QF_UFIDL> (<http://www.mathweb.org/owl/mathserve.owl#QF_UFIDL>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#SmtTheory> <http://www.mathweb.org/owl/mathserve.owl#QF_UFIDL>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#QF_UFLIA> (<http://www.mathweb.org/owl/mathserve.owl#QF_UFLIA>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#SmtTheory> <http://www.mathweb.org/owl/mathserve.owl#QF_UFLIA>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#S5> (<http://www.mathweb.org/owl/mathserve.owl#S5>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#ModalLogic> <http://www.mathweb.org/owl/mathserve.owl#S5>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#SMT> (<http://www.mathweb.org/owl/mathserve.owl#SMT>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#FormalLanguage> <http://www.mathweb.org/owl/mathserve.owl#SMT>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#SimplyTypedLambdaCalc> (<http://www.mathweb.org/owl/mathserve.owl#SimplyTypedLambdaCalc>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#LambdaCalculus> <http://www.mathweb.org/owl/mathserve.owl#SimplyTypedLambdaCalc>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#TPTP> (<http://www.mathweb.org/owl/mathserve.owl#TPTP>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#FormalLanguage> <http://www.mathweb.org/owl/mathserve.owl#TPTP>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#TSTP> (<http://www.mathweb.org/owl/mathserve.owl#TSTP>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#FormalLanguage> <http://www.mathweb.org/owl/mathserve.owl#TSTP>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#Twega> (<http://www.mathweb.org/owl/mathserve.owl#Twega>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#FormalLanguage> <http://www.mathweb.org/owl/mathserve.owl#Twega>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#ZF> (<http://www.mathweb.org/owl/mathserve.owl#ZF>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#SetTheory> <http://www.mathweb.org/owl/mathserve.owl#ZF>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#ep_res_calc> (<http://www.mathweb.org/owl/mathserve.owl#ep_res_calc>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#ResolutionCalculus> <http://www.mathweb.org/owl/mathserve.owl#ep_res_calc>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#fo_equality> (<http://www.mathweb.org/owl/mathserve.owl#fo_equality>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#FOProblemFeature> <http://www.mathweb.org/owl/mathserve.owl#fo_equality>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/mathserve.owl#code> <http://www.mathweb.org/owl/mathserve.owl#fo_equality> <http://www.absoluteiri.edu/RELAPPROXI-78>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/mathserve.owl#name> <http://www.mathweb.org/owl/mathserve.owl#fo_equality> <http://www.absoluteiri.edu/RELAPPROXI-223>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#fo_essentiallyProp> (<http://www.mathweb.org/owl/mathserve.owl#fo_essentiallyProp>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#FOProblemFeature> <http://www.mathweb.org/owl/mathserve.owl#fo_essentiallyProp>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/mathserve.owl#code> <http://www.mathweb.org/owl/mathserve.owl#fo_essentiallyProp> <http://www.absoluteiri.edu/RELAPPROXI-65>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/mathserve.owl#name> <http://www.mathweb.org/owl/mathserve.owl#fo_essentiallyProp> <http://www.absoluteiri.edu/RELAPPROXI-147>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#fo_fofForm> (<http://www.mathweb.org/owl/mathserve.owl#fo_fofForm>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#FOProblemFeature> <http://www.mathweb.org/owl/mathserve.owl#fo_fofForm>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/mathserve.owl#code> <http://www.mathweb.org/owl/mathserve.owl#fo_fofForm> <http://www.absoluteiri.edu/RELAPPROXI-97>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/mathserve.owl#name> <http://www.mathweb.org/owl/mathserve.owl#fo_fofForm> <http://www.absoluteiri.edu/RELAPPROXI-89>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#fo_horn> (<http://www.mathweb.org/owl/mathserve.owl#fo_horn>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#FOProblemFeature> <http://www.mathweb.org/owl/mathserve.owl#fo_horn>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/mathserve.owl#code> <http://www.mathweb.org/owl/mathserve.owl#fo_horn> <http://www.absoluteiri.edu/RELAPPROXI-128>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/mathserve.owl#name> <http://www.mathweb.org/owl/mathserve.owl#fo_horn> <http://www.absoluteiri.edu/RELAPPROXI-132>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#fo_noEquality> (<http://www.mathweb.org/owl/mathserve.owl#fo_noEquality>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#FOProblemFeature> <http://www.mathweb.org/owl/mathserve.owl#fo_noEquality>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/mathserve.owl#code> <http://www.mathweb.org/owl/mathserve.owl#fo_noEquality> <http://www.absoluteiri.edu/RELAPPROXI-172>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/mathserve.owl#name> <http://www.mathweb.org/owl/mathserve.owl#fo_noEquality> <http://www.absoluteiri.edu/RELAPPROXI-245>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#fo_nonUnitPureEquality> (<http://www.mathweb.org/owl/mathserve.owl#fo_nonUnitPureEquality>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#FOProblemFeature> <http://www.mathweb.org/owl/mathserve.owl#fo_nonUnitPureEquality>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/mathserve.owl#code> <http://www.mathweb.org/owl/mathserve.owl#fo_nonUnitPureEquality> <http://www.absoluteiri.edu/RELAPPROXI-12>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/mathserve.owl#name> <http://www.mathweb.org/owl/mathserve.owl#fo_nonUnitPureEquality> <http://www.absoluteiri.edu/RELAPPROXI-271>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#fo_notHorn> (<http://www.mathweb.org/owl/mathserve.owl#fo_notHorn>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#FOProblemFeature> <http://www.mathweb.org/owl/mathserve.owl#fo_notHorn>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/mathserve.owl#code> <http://www.mathweb.org/owl/mathserve.owl#fo_notHorn> <http://www.absoluteiri.edu/RELAPPROXI-119>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/mathserve.owl#name> <http://www.mathweb.org/owl/mathserve.owl#fo_notHorn> <http://www.absoluteiri.edu/RELAPPROXI-73>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#fo_pureEquality> (<http://www.mathweb.org/owl/mathserve.owl#fo_pureEquality>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#FOProblemFeature> <http://www.mathweb.org/owl/mathserve.owl#fo_pureEquality>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/mathserve.owl#code> <http://www.mathweb.org/owl/mathserve.owl#fo_pureEquality> <http://www.absoluteiri.edu/RELAPPROXI-117>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/mathserve.owl#name> <http://www.mathweb.org/owl/mathserve.owl#fo_pureEquality> <http://www.absoluteiri.edu/RELAPPROXI-91>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#fo_sat> (<http://www.mathweb.org/owl/mathserve.owl#fo_sat>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#FOProblemFeature> <http://www.mathweb.org/owl/mathserve.owl#fo_sat>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/mathserve.owl#code> <http://www.mathweb.org/owl/mathserve.owl#fo_sat> <http://www.absoluteiri.edu/RELAPPROXI-142>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/mathserve.owl#name> <http://www.mathweb.org/owl/mathserve.owl#fo_sat> <http://www.absoluteiri.edu/RELAPPROXI-262>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#fo_someEquality> (<http://www.mathweb.org/owl/mathserve.owl#fo_someEquality>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#FOProblemFeature> <http://www.mathweb.org/owl/mathserve.owl#fo_someEquality>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/mathserve.owl#code> <http://www.mathweb.org/owl/mathserve.owl#fo_someEquality> <http://www.absoluteiri.edu/RELAPPROXI-67>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/mathserve.owl#name> <http://www.mathweb.org/owl/mathserve.owl#fo_someEquality> <http://www.absoluteiri.edu/RELAPPROXI-184>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#fo_theorem> (<http://www.mathweb.org/owl/mathserve.owl#fo_theorem>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#FOProblemFeature> <http://www.mathweb.org/owl/mathserve.owl#fo_theorem>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/mathserve.owl#code> <http://www.mathweb.org/owl/mathserve.owl#fo_theorem> <http://www.absoluteiri.edu/RELAPPROXI-205>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/mathserve.owl#name> <http://www.mathweb.org/owl/mathserve.owl#fo_theorem> <http://www.absoluteiri.edu/RELAPPROXI-197>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#fo_unitPureEquality> (<http://www.mathweb.org/owl/mathserve.owl#fo_unitPureEquality>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#FOProblemFeature> <http://www.mathweb.org/owl/mathserve.owl#fo_unitPureEquality>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/mathserve.owl#code> <http://www.mathweb.org/owl/mathserve.owl#fo_unitPureEquality> <http://www.absoluteiri.edu/RELAPPROXI-226>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/mathserve.owl#name> <http://www.mathweb.org/owl/mathserve.owl#fo_unitPureEquality> <http://www.absoluteiri.edu/RELAPPROXI-260>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#fol_plus_equ> (<http://www.mathweb.org/owl/mathserve.owl#fol_plus_equ>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#FOLogic> <http://www.mathweb.org/owl/mathserve.owl#fol_plus_equ>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#otter_calc> (<http://www.mathweb.org/owl/mathserve.owl#otter_calc>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#BfFPResolutionCalculus> <http://www.mathweb.org/owl/mathserve.owl#otter_calc>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#spass_res_calc> (<http://www.mathweb.org/owl/mathserve.owl#spass_res_calc>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#ResolutionCalculus> <http://www.mathweb.org/owl/mathserve.owl#spass_res_calc>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#standard_res> (<http://www.mathweb.org/owl/mathserve.owl#standard_res>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#ResolutionCalculus> <http://www.mathweb.org/owl/mathserve.owl#standard_res>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#test_fo_atp_result> (<http://www.mathweb.org/owl/mathserve.owl#test_fo_atp_result>)
+
+ClassAssertion(<http://www.absoluteiri.edu/RELAPPROXC382> <http://www.mathweb.org/owl/mathserve.owl#test_fo_atp_result>)
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#FoAtpResult> <http://www.mathweb.org/owl/mathserve.owl#test_fo_atp_result>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/mathserve.owl#resultFor> <http://www.mathweb.org/owl/mathserve.owl#test_fo_atp_result> <http://www.mathweb.org/owl/mathserve.owl#test_proving_problem>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#test_fo_res_proof> (<http://www.mathweb.org/owl/mathserve.owl#test_fo_res_proof>)
+
+ClassAssertion(<http://www.absoluteiri.edu/RELAPPROXC386> <http://www.mathweb.org/owl/mathserve.owl#test_fo_res_proof>)
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#TstpCNFRefutation> <http://www.mathweb.org/owl/mathserve.owl#test_fo_res_proof>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#test_fof_problem> (<http://www.mathweb.org/owl/mathserve.owl#test_fof_problem>)
+
+ClassAssertion(<http://www.absoluteiri.edu/RELAPPROXC359> <http://www.mathweb.org/owl/mathserve.owl#test_fof_problem>)
+ClassAssertion(<http://www.absoluteiri.edu/RELAPPROXC363> <http://www.mathweb.org/owl/mathserve.owl#test_fof_problem>)
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#TstpFOFProblem> <http://www.mathweb.org/owl/mathserve.owl#test_fof_problem>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/mathserve.owl#formalDescription> <http://www.mathweb.org/owl/mathserve.owl#test_fof_problem> <http://www.absoluteiri.edu/RELAPPROXI-203>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/mathserve.owl#inLogic> <http://www.mathweb.org/owl/mathserve.owl#test_fof_problem> <http://www.mathweb.org/owl/mathserve.owl#fol_plus_equ>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/mathserve.owl#probName> <http://www.mathweb.org/owl/mathserve.owl#test_fof_problem> <http://www.absoluteiri.edu/RELAPPROXI-235>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/mathserve.owl#timeRes> <http://www.mathweb.org/owl/mathserve.owl#test_fof_problem> <http://www.mathweb.org/owl/mathserve.owl#test_time_resource>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#test_proving_problem> (<http://www.mathweb.org/owl/mathserve.owl#test_proving_problem>)
+
+ClassAssertion(<http://www.absoluteiri.edu/RELAPPROXC359> <http://www.mathweb.org/owl/mathserve.owl#test_proving_problem>)
+ClassAssertion(<http://www.absoluteiri.edu/RELAPPROXC367> <http://www.mathweb.org/owl/mathserve.owl#test_proving_problem>)
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#ProvingProblem> <http://www.mathweb.org/owl/mathserve.owl#test_proving_problem>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/mathserve.owl#formalDescription> <http://www.mathweb.org/owl/mathserve.owl#test_proving_problem> <http://www.absoluteiri.edu/RELAPPROXI-85>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/mathserve.owl#inLogic> <http://www.mathweb.org/owl/mathserve.owl#test_proving_problem> <http://www.mathweb.org/owl/mathserve.owl#fol_plus_equ>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/mathserve.owl#language> <http://www.mathweb.org/owl/mathserve.owl#test_proving_problem> <http://www.mathweb.org/owl/mathserve.owl#OMDoc>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#test_time_resource> (<http://www.mathweb.org/owl/mathserve.owl#test_time_resource>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#TimeResource> <http://www.mathweb.org/owl/mathserve.owl#test_time_resource>)
+
+# Individual: <http://www.mathweb.org/owl/mathserve.owl#zenon_calc> (<http://www.mathweb.org/owl/mathserve.owl#zenon_calc>)
+
+ClassAssertion(<http://www.mathweb.org/owl/mathserve.owl#TableauCalculus> <http://www.mathweb.org/owl/mathserve.owl#zenon_calc>)
+
+# Individual: <http://www.mathweb.org/owl/status.owl#Assumed> (<http://www.mathweb.org/owl/status.owl#Assumed>)
+
+ClassAssertion(<http://www.mathweb.org/owl/status.owl#FoUnsolvedStatus> <http://www.mathweb.org/owl/status.owl#Assumed>)
+
+# Individual: <http://www.mathweb.org/owl/status.owl#CounterEquivalent> (<http://www.mathweb.org/owl/status.owl#CounterEquivalent>)
+
+ClassAssertion(<http://www.mathweb.org/owl/status.owl#FoDeductiveStatus> <http://www.mathweb.org/owl/status.owl#CounterEquivalent>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#code> <http://www.mathweb.org/owl/status.owl#CounterEquivalent> <http://www.absoluteiri.edu/RELAPPROXI-149>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#description> <http://www.mathweb.org/owl/status.owl#CounterEquivalent> <http://www.absoluteiri.edu/RELAPPROXI-137>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#shows> <http://www.mathweb.org/owl/status.owl#CounterEquivalent> <http://www.absoluteiri.edu/RELAPPROXI-241>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#shows> <http://www.mathweb.org/owl/status.owl#CounterEquivalent> <http://www.absoluteiri.edu/RELAPPROXI-33>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#shows> <http://www.mathweb.org/owl/status.owl#CounterEquivalent> <http://www.absoluteiri.edu/RELAPPROXI-54>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#specialises> <http://www.mathweb.org/owl/status.owl#CounterEquivalent> <http://www.mathweb.org/owl/status.owl#CounterTheorem>)
+
+# Individual: <http://www.mathweb.org/owl/status.owl#CounterSatisfiable> (<http://www.mathweb.org/owl/status.owl#CounterSatisfiable>)
+
+ClassAssertion(<http://www.mathweb.org/owl/status.owl#FoDeductiveStatus> <http://www.mathweb.org/owl/status.owl#CounterSatisfiable>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#code> <http://www.mathweb.org/owl/status.owl#CounterSatisfiable> <http://www.absoluteiri.edu/RELAPPROXI-214>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#description> <http://www.mathweb.org/owl/status.owl#CounterSatisfiable> <http://www.absoluteiri.edu/RELAPPROXI-247>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#shows> <http://www.mathweb.org/owl/status.owl#CounterSatisfiable> <http://www.absoluteiri.edu/RELAPPROXI-114>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#shows> <http://www.mathweb.org/owl/status.owl#CounterSatisfiable> <http://www.absoluteiri.edu/RELAPPROXI-45>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#shows> <http://www.mathweb.org/owl/status.owl#CounterSatisfiable> <http://www.absoluteiri.edu/RELAPPROXI-54>)
+
+# Individual: <http://www.mathweb.org/owl/status.owl#CounterTheorem> (<http://www.mathweb.org/owl/status.owl#CounterTheorem>)
+
+ClassAssertion(<http://www.mathweb.org/owl/status.owl#FoDeductiveStatus> <http://www.mathweb.org/owl/status.owl#CounterTheorem>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#code> <http://www.mathweb.org/owl/status.owl#CounterTheorem> <http://www.absoluteiri.edu/RELAPPROXI-145>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#description> <http://www.mathweb.org/owl/status.owl#CounterTheorem> <http://www.absoluteiri.edu/RELAPPROXI-56>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#shows> <http://www.mathweb.org/owl/status.owl#CounterTheorem> <http://www.absoluteiri.edu/RELAPPROXI-102>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#shows> <http://www.mathweb.org/owl/status.owl#CounterTheorem> <http://www.absoluteiri.edu/RELAPPROXI-123>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#shows> <http://www.mathweb.org/owl/status.owl#CounterTheorem> <http://www.absoluteiri.edu/RELAPPROXI-151>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#shows> <http://www.mathweb.org/owl/status.owl#CounterTheorem> <http://www.absoluteiri.edu/RELAPPROXI-33>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#specialises> <http://www.mathweb.org/owl/status.owl#CounterTheorem> <http://www.mathweb.org/owl/status.owl#CounterSatisfiable>)
+
+# Individual: <http://www.mathweb.org/owl/status.owl#Equivalent> (<http://www.mathweb.org/owl/status.owl#Equivalent>)
+
+ClassAssertion(<http://www.mathweb.org/owl/status.owl#FoDeductiveStatus> <http://www.mathweb.org/owl/status.owl#Equivalent>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#code> <http://www.mathweb.org/owl/status.owl#Equivalent> <http://www.absoluteiri.edu/RELAPPROXI-265>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#description> <http://www.mathweb.org/owl/status.owl#Equivalent> <http://www.absoluteiri.edu/RELAPPROXI-243>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#shows> <http://www.mathweb.org/owl/status.owl#Equivalent> <http://www.absoluteiri.edu/RELAPPROXI-100>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#shows> <http://www.mathweb.org/owl/status.owl#Equivalent> <http://www.absoluteiri.edu/RELAPPROXI-61>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#specialises> <http://www.mathweb.org/owl/status.owl#Equivalent> <http://www.mathweb.org/owl/status.owl#Theorem>)
+
+# Individual: <http://www.mathweb.org/owl/status.owl#GaveUp> (<http://www.mathweb.org/owl/status.owl#GaveUp>)
+
+ClassAssertion(<http://www.mathweb.org/owl/status.owl#FoUnsolvedStatus> <http://www.mathweb.org/owl/status.owl#GaveUp>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#description> <http://www.mathweb.org/owl/status.owl#GaveUp> <http://www.absoluteiri.edu/RELAPPROXI-5>)
+
+# Individual: <http://www.mathweb.org/owl/status.owl#InputError> (<http://www.mathweb.org/owl/status.owl#InputError>)
+
+ClassAssertion(<http://www.mathweb.org/owl/status.owl#FoUnsolvedStatus> <http://www.mathweb.org/owl/status.owl#InputError>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#description> <http://www.mathweb.org/owl/status.owl#InputError> <http://www.absoluteiri.edu/RELAPPROXI-230>)
+
+# Individual: <http://www.mathweb.org/owl/status.owl#MemoryOut> (<http://www.mathweb.org/owl/status.owl#MemoryOut>)
+
+ClassAssertion(<http://www.mathweb.org/owl/status.owl#FoUnsolvedStatus> <http://www.mathweb.org/owl/status.owl#MemoryOut>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#description> <http://www.mathweb.org/owl/status.owl#MemoryOut> <http://www.absoluteiri.edu/RELAPPROXI-30>)
+
+# Individual: <http://www.mathweb.org/owl/status.owl#NoConsequence> (<http://www.mathweb.org/owl/status.owl#NoConsequence>)
+
+ClassAssertion(<http://www.mathweb.org/owl/status.owl#FoDeductiveStatus> <http://www.mathweb.org/owl/status.owl#NoConsequence>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#code> <http://www.mathweb.org/owl/status.owl#NoConsequence> <http://www.absoluteiri.edu/RELAPPROXI-83>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#description> <http://www.mathweb.org/owl/status.owl#NoConsequence> <http://www.absoluteiri.edu/RELAPPROXI-182>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#shows> <http://www.mathweb.org/owl/status.owl#NoConsequence> <http://www.absoluteiri.edu/RELAPPROXI-114>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#shows> <http://www.mathweb.org/owl/status.owl#NoConsequence> <http://www.absoluteiri.edu/RELAPPROXI-170>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#shows> <http://www.mathweb.org/owl/status.owl#NoConsequence> <http://www.absoluteiri.edu/RELAPPROXI-174>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#shows> <http://www.mathweb.org/owl/status.owl#NoConsequence> <http://www.absoluteiri.edu/RELAPPROXI-45>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#shows> <http://www.mathweb.org/owl/status.owl#NoConsequence> <http://www.absoluteiri.edu/RELAPPROXI-54>)
+
+# Individual: <http://www.mathweb.org/owl/status.owl#ResourceOut> (<http://www.mathweb.org/owl/status.owl#ResourceOut>)
+
+ClassAssertion(<http://www.mathweb.org/owl/status.owl#FoUnsolvedStatus> <http://www.mathweb.org/owl/status.owl#ResourceOut>)
+
+# Individual: <http://www.mathweb.org/owl/status.owl#Satisfiable> (<http://www.mathweb.org/owl/status.owl#Satisfiable>)
+
+ClassAssertion(<http://www.mathweb.org/owl/status.owl#DecProcStatus> <http://www.mathweb.org/owl/status.owl#Satisfiable>)
+ClassAssertion(<http://www.mathweb.org/owl/status.owl#FoDeductiveStatus> <http://www.mathweb.org/owl/status.owl#Satisfiable>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#code> <http://www.mathweb.org/owl/status.owl#Satisfiable> <http://www.absoluteiri.edu/RELAPPROXI-142>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#description> <http://www.mathweb.org/owl/status.owl#Satisfiable> <http://www.absoluteiri.edu/RELAPPROXI-212>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#description> <http://www.mathweb.org/owl/status.owl#Satisfiable> <http://www.absoluteiri.edu/RELAPPROXI-7>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#shows> <http://www.mathweb.org/owl/status.owl#Satisfiable> <http://www.absoluteiri.edu/RELAPPROXI-114>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#shows> <http://www.mathweb.org/owl/status.owl#Satisfiable> <http://www.absoluteiri.edu/RELAPPROXI-170>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#shows> <http://www.mathweb.org/owl/status.owl#Satisfiable> <http://www.absoluteiri.edu/RELAPPROXI-26>)
+
+# Individual: <http://www.mathweb.org/owl/status.owl#TautologousConclusion> (<http://www.mathweb.org/owl/status.owl#TautologousConclusion>)
+
+ClassAssertion(<http://www.mathweb.org/owl/status.owl#FoDeductiveStatus> <http://www.mathweb.org/owl/status.owl#TautologousConclusion>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#code> <http://www.mathweb.org/owl/status.owl#TautologousConclusion> <http://www.absoluteiri.edu/RELAPPROXI-187>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#description> <http://www.mathweb.org/owl/status.owl#TautologousConclusion> <http://www.absoluteiri.edu/RELAPPROXI-20>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#shows> <http://www.mathweb.org/owl/status.owl#TautologousConclusion> <http://www.absoluteiri.edu/RELAPPROXI-100>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#shows> <http://www.mathweb.org/owl/status.owl#TautologousConclusion> <http://www.absoluteiri.edu/RELAPPROXI-52>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#specialises> <http://www.mathweb.org/owl/status.owl#TautologousConclusion> <http://www.mathweb.org/owl/status.owl#Theorem>)
+
+# Individual: <http://www.mathweb.org/owl/status.owl#Tautology> (<http://www.mathweb.org/owl/status.owl#Tautology>)
+
+ClassAssertion(<http://www.mathweb.org/owl/status.owl#FoDeductiveStatus> <http://www.mathweb.org/owl/status.owl#Tautology>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#code> <http://www.mathweb.org/owl/status.owl#Tautology> <http://www.absoluteiri.edu/RELAPPROXI-23>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#shows> <http://www.mathweb.org/owl/status.owl#Tautology> <http://www.absoluteiri.edu/RELAPPROXI-100>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#shows> <http://www.mathweb.org/owl/status.owl#Tautology> <http://www.absoluteiri.edu/RELAPPROXI-140>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#shows> <http://www.mathweb.org/owl/status.owl#Tautology> <http://www.absoluteiri.edu/RELAPPROXI-52>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#specialises> <http://www.mathweb.org/owl/status.owl#Tautology> <http://www.mathweb.org/owl/status.owl#Equivalent>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#specialises> <http://www.mathweb.org/owl/status.owl#Tautology> <http://www.mathweb.org/owl/status.owl#TautologousConclusion>)
+
+# Individual: <http://www.mathweb.org/owl/status.owl#Theorem> (<http://www.mathweb.org/owl/status.owl#Theorem>)
+
+ClassAssertion(<http://www.mathweb.org/owl/status.owl#FoDeductiveStatus> <http://www.mathweb.org/owl/status.owl#Theorem>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#code> <http://www.mathweb.org/owl/status.owl#Theorem> <http://www.absoluteiri.edu/RELAPPROXI-205>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#description> <http://www.mathweb.org/owl/status.owl#Theorem> <http://www.absoluteiri.edu/RELAPPROXI-18>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#shows> <http://www.mathweb.org/owl/status.owl#Theorem> <http://www.absoluteiri.edu/RELAPPROXI-100>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#shows> <http://www.mathweb.org/owl/status.owl#Theorem> <http://www.absoluteiri.edu/RELAPPROXI-279>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#specialises> <http://www.mathweb.org/owl/status.owl#Theorem> <http://www.mathweb.org/owl/status.owl#Satisfiable>)
+
+# Individual: <http://www.mathweb.org/owl/status.owl#Timeout> (<http://www.mathweb.org/owl/status.owl#Timeout>)
+
+ClassAssertion(<http://www.mathweb.org/owl/status.owl#FoUnsolvedStatus> <http://www.mathweb.org/owl/status.owl#Timeout>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#description> <http://www.mathweb.org/owl/status.owl#Timeout> <http://www.absoluteiri.edu/RELAPPROXI-228>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#specialises> <http://www.mathweb.org/owl/status.owl#Timeout> <http://www.mathweb.org/owl/status.owl#ResourceOut>)
+
+# Individual: <http://www.mathweb.org/owl/status.owl#Unknown> (<http://www.mathweb.org/owl/status.owl#Unknown>)
+
+ClassAssertion(<http://www.mathweb.org/owl/status.owl#FoUnsolvedStatus> <http://www.mathweb.org/owl/status.owl#Unknown>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#description> <http://www.mathweb.org/owl/status.owl#Unknown> <http://www.absoluteiri.edu/RELAPPROXI-3>)
+
+# Individual: <http://www.mathweb.org/owl/status.owl#Unsatisfiable> (<http://www.mathweb.org/owl/status.owl#Unsatisfiable>)
+
+ClassAssertion(<http://www.mathweb.org/owl/status.owl#DecProcStatus> <http://www.mathweb.org/owl/status.owl#Unsatisfiable>)
+ClassAssertion(<http://www.mathweb.org/owl/status.owl#FoDeductiveStatus> <http://www.mathweb.org/owl/status.owl#Unsatisfiable>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#code> <http://www.mathweb.org/owl/status.owl#Unsatisfiable> <http://www.absoluteiri.edu/RELAPPROXI-193>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#description> <http://www.mathweb.org/owl/status.owl#Unsatisfiable> <http://www.absoluteiri.edu/RELAPPROXI-157>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#description> <http://www.mathweb.org/owl/status.owl#Unsatisfiable> <http://www.absoluteiri.edu/RELAPPROXI-252>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#shows> <http://www.mathweb.org/owl/status.owl#Unsatisfiable> <http://www.absoluteiri.edu/RELAPPROXI-178>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#shows> <http://www.mathweb.org/owl/status.owl#Unsatisfiable> <http://www.absoluteiri.edu/RELAPPROXI-239>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#shows> <http://www.mathweb.org/owl/status.owl#Unsatisfiable> <http://www.absoluteiri.edu/RELAPPROXI-80>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#specialises> <http://www.mathweb.org/owl/status.owl#Unsatisfiable> <http://www.mathweb.org/owl/status.owl#CounterEquivalent>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#specialises> <http://www.mathweb.org/owl/status.owl#Unsatisfiable> <http://www.mathweb.org/owl/status.owl#UnsatisfiableConclusion>)
+
+# Individual: <http://www.mathweb.org/owl/status.owl#UnsatisfiableConclusion> (<http://www.mathweb.org/owl/status.owl#UnsatisfiableConclusion>)
+
+ClassAssertion(<http://www.mathweb.org/owl/status.owl#FoDeductiveStatus> <http://www.mathweb.org/owl/status.owl#UnsatisfiableConclusion>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#code> <http://www.mathweb.org/owl/status.owl#UnsatisfiableConclusion> <http://www.absoluteiri.edu/RELAPPROXI-216>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#description> <http://www.mathweb.org/owl/status.owl#UnsatisfiableConclusion> <http://www.absoluteiri.edu/RELAPPROXI-110>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#shows> <http://www.mathweb.org/owl/status.owl#UnsatisfiableConclusion> <http://www.absoluteiri.edu/RELAPPROXI-107>)
+ObjectPropertyAssertion(<http://www.mathweb.org/owl/status.owl#specialises> <http://www.mathweb.org/owl/status.owl#UnsatisfiableConclusion> <http://www.mathweb.org/owl/status.owl#CounterTheorem>)
+
+
+SubClassOf(ObjectIntersectionOf(<http://www.absoluteiri.edu/RELAPPROXC109> <http://www.absoluteiri.edu/RELAPPROXC133>) <http://www.absoluteiri.edu/RELAPPROXC268>)
+SubClassOf(ObjectIntersectionOf(<http://www.absoluteiri.edu/RELAPPROXC109> <http://www.absoluteiri.edu/RELAPPROXC133> <http://www.absoluteiri.edu/RELAPPROXC147> <http://www.absoluteiri.edu/RELAPPROXC167>) <http://www.absoluteiri.edu/RELAPPROXC266>)
+SubClassOf(ObjectIntersectionOf(<http://www.absoluteiri.edu/RELAPPROXC109> <http://www.absoluteiri.edu/RELAPPROXC133> <http://www.absoluteiri.edu/RELAPPROXC155>) <http://www.absoluteiri.edu/RELAPPROXC274>)
+SubClassOf(ObjectIntersectionOf(<http://www.absoluteiri.edu/RELAPPROXC109> <http://www.absoluteiri.edu/RELAPPROXC133> <http://www.absoluteiri.edu/RELAPPROXC23>) <http://www.absoluteiri.edu/RELAPPROXC317>)
+SubClassOf(ObjectIntersectionOf(<http://www.absoluteiri.edu/RELAPPROXC127> <http://www.absoluteiri.edu/RELAPPROXC159> <http://www.absoluteiri.edu/RELAPPROXC73> <http://www.absoluteiri.edu/RELAPPROXC85>) <http://www.absoluteiri.edu/RELAPPROXC334>)
+SubClassOf(ObjectIntersectionOf(<http://www.absoluteiri.edu/RELAPPROXC133> <http://www.absoluteiri.edu/RELAPPROXC49>) <http://www.absoluteiri.edu/RELAPPROXC327>)
+SubClassOf(ObjectIntersectionOf(<http://www.absoluteiri.edu/RELAPPROXC139> <http://www.absoluteiri.edu/RELAPPROXC155>) <http://www.absoluteiri.edu/RELAPPROXC321>)
+SubClassOf(ObjectIntersectionOf(<http://www.absoluteiri.edu/RELAPPROXC161> <http://www.absoluteiri.edu/RELAPPROXC167>) <http://www.absoluteiri.edu/RELAPPROXC313>)
+SubClassOf(ObjectIntersectionOf(<http://www.absoluteiri.edu/RELAPPROXC51> <http://www.absoluteiri.edu/RELAPPROXC71>) <http://www.absoluteiri.edu/RELAPPROXC355>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#alternativeProof> owl:Thing) <http://www.mathweb.org/owl/mathserve.owl#Proof>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#axioms> <http://www.absoluteiri.edu/RELAPPROXC264>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#axioms> owl:Thing) <http://www.mathweb.org/owl/mathserve.owl#ProverResult>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#calculus> <http://www.absoluteiri.edu/RELAPPROXC171>) <http://www.absoluteiri.edu/RELAPPROXC323>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#calculus> <http://www.absoluteiri.edu/RELAPPROXC61>) <http://www.absoluteiri.edu/RELAPPROXC315>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#calculus> <http://www.absoluteiri.edu/RELAPPROXC65>) <http://www.absoluteiri.edu/RELAPPROXC278>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#calculus> owl:Thing) <http://www.mathweb.org/owl/mathserve.owl#Proof>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#cnfFor> owl:Thing) <http://www.mathweb.org/owl/mathserve.owl#ProvingProblem>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#code> <http://www.absoluteiri.edu/RELAPPROXC264>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#code> owl:Thing) <http://www.mathweb.org/owl/mathserve.owl#FOProblemFeature>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#cpuTime> <http://www.absoluteiri.edu/RELAPPROXC283>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#cpuTime> owl:Thing) <http://www.mathweb.org/owl/mathserve.owl#TimeResource>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#description> <http://www.absoluteiri.edu/RELAPPROXC264>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#features> <http://www.absoluteiri.edu/RELAPPROXC145>) <http://www.absoluteiri.edu/RELAPPROXC345>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#features> <http://www.absoluteiri.edu/RELAPPROXC63>) <http://www.absoluteiri.edu/RELAPPROXC287>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#features> owl:Thing) <http://www.mathweb.org/owl/mathserve.owl#ProblemClass>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#formalDescription> <http://www.absoluteiri.edu/RELAPPROXC264>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#formalDescription> owl:Thing) <http://www.absoluteiri.edu/RELAPPROXC273>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#formalProof> <http://www.absoluteiri.edu/RELAPPROXC264>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#formalProof> owl:Thing) <http://www.mathweb.org/owl/mathserve.owl#Proof>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#format> <http://www.absoluteiri.edu/RELAPPROXC390>) <http://www.absoluteiri.edu/RELAPPROXC389>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#format> <http://www.absoluteiri.edu/RELAPPROXC393>) <http://www.absoluteiri.edu/RELAPPROXC392>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#format> owl:Thing) <http://www.absoluteiri.edu/RELAPPROXC320>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#inLogic> <http://www.absoluteiri.edu/RELAPPROXC119>) <http://www.absoluteiri.edu/RELAPPROXC295>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#inLogic> <http://www.absoluteiri.edu/RELAPPROXC358>) <http://www.absoluteiri.edu/RELAPPROXC357>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#inLogic> owl:Nothing) <http://www.absoluteiri.edu/RELAPPROXC360>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#inLogic> owl:Thing) <http://www.absoluteiri.edu/RELAPPROXC326>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#inTheory> <http://www.absoluteiri.edu/RELAPPROXC155>) <http://www.absoluteiri.edu/RELAPPROXC293>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#inTheory> <http://www.absoluteiri.edu/RELAPPROXC39>) <http://www.absoluteiri.edu/RELAPPROXC285>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#inTheory> owl:Thing) <http://www.absoluteiri.edu/RELAPPROXC267>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#language> <http://www.absoluteiri.edu/RELAPPROXC369>) <http://www.absoluteiri.edu/RELAPPROXC368>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#language> <http://www.absoluteiri.edu/RELAPPROXC372>) <http://www.absoluteiri.edu/RELAPPROXC371>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#language> <http://www.absoluteiri.edu/RELAPPROXC375>) <http://www.absoluteiri.edu/RELAPPROXC374>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#language> <http://www.absoluteiri.edu/RELAPPROXC378>) <http://www.absoluteiri.edu/RELAPPROXC377>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#language> <http://www.absoluteiri.edu/RELAPPROXC381>) <http://www.absoluteiri.edu/RELAPPROXC380>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#language> owl:Thing) <http://www.absoluteiri.edu/RELAPPROXC316>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#message> <http://www.absoluteiri.edu/RELAPPROXC264>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#message> owl:Thing) <http://www.mathweb.org/owl/mathserve.owl#Failure>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#name> <http://www.absoluteiri.edu/RELAPPROXC264>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#name> owl:Thing) <http://www.absoluteiri.edu/RELAPPROXC333>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#output> <http://www.absoluteiri.edu/RELAPPROXC264>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#output> owl:Thing) <http://www.mathweb.org/owl/mathserve.owl#ProverResult>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#probName> <http://www.absoluteiri.edu/RELAPPROXC264>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#probName> owl:Thing) <http://www.mathweb.org/owl/mathserve.owl#ProvingProblem>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#problemClass> <http://www.absoluteiri.edu/RELAPPROXC55>) <http://www.absoluteiri.edu/RELAPPROXC329>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#problemClass> <http://www.absoluteiri.edu/RELAPPROXC59>) <http://www.absoluteiri.edu/RELAPPROXC343>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#problemClass> owl:Thing) <http://www.mathweb.org/owl/mathserve.owl#Problem>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#proof> <http://www.absoluteiri.edu/RELAPPROXC11>) <http://www.absoluteiri.edu/RELAPPROXC331>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#proof> <http://www.absoluteiri.edu/RELAPPROXC163>) <http://www.absoluteiri.edu/RELAPPROXC353>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#proof> <http://www.absoluteiri.edu/RELAPPROXC175>) <http://www.absoluteiri.edu/RELAPPROXC301>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#proof> <http://www.absoluteiri.edu/RELAPPROXC31>) <http://www.absoluteiri.edu/RELAPPROXC262>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#proof> <http://www.absoluteiri.edu/RELAPPROXC77>) <http://www.absoluteiri.edu/RELAPPROXC309>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#proof> <http://www.absoluteiri.edu/RELAPPROXC81>) <http://www.absoluteiri.edu/RELAPPROXC291>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#proof> owl:Thing) <http://www.mathweb.org/owl/mathserve.owl#ProverResult>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#proofLogic> <http://www.absoluteiri.edu/RELAPPROXC119>) <http://www.absoluteiri.edu/RELAPPROXC336>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#proofLogic> owl:Nothing) <http://www.absoluteiri.edu/RELAPPROXC387>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#proofLogic> owl:Thing) <http://www.mathweb.org/owl/mathserve.owl#Proof>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#proofOf> owl:Thing) <http://www.mathweb.org/owl/mathserve.owl#Proof>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#relatesCNF> owl:Thing) <http://www.mathweb.org/owl/mathserve.owl#DeltaRelation>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#relation> <http://www.absoluteiri.edu/RELAPPROXC264>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#relation> owl:Thing) <http://www.mathweb.org/owl/mathserve.owl#DeltaRelation>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#resultFor> <http://www.absoluteiri.edu/RELAPPROXC385>) <http://www.absoluteiri.edu/RELAPPROXC383>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#resultFor> owl:Thing) <http://www.mathweb.org/owl/mathserve.owl#ProverResult>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#saturation> <http://www.absoluteiri.edu/RELAPPROXC264>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#saturation> owl:Thing) <http://www.mathweb.org/owl/mathserve.owl#ProverResult>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#status> <http://www.absoluteiri.edu/RELAPPROXC125>) <http://www.absoluteiri.edu/RELAPPROXC307>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#status> <http://www.absoluteiri.edu/RELAPPROXC143>) <http://www.absoluteiri.edu/RELAPPROXC348>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#status> owl:Thing) <http://www.absoluteiri.edu/RELAPPROXC312>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#system> <http://www.absoluteiri.edu/RELAPPROXC264>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#system> owl:Thing) <http://www.mathweb.org/owl/mathserve.owl#Result>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#time> owl:Thing) <http://www.absoluteiri.edu/RELAPPROXC354>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#timeRes> <http://www.absoluteiri.edu/RELAPPROXC366>) <http://www.absoluteiri.edu/RELAPPROXC364>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#timeRes> owl:Thing) <http://www.absoluteiri.edu/RELAPPROXC265>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#toFOF> owl:Thing) <http://www.mathweb.org/owl/mathserve.owl#DeltaRelation>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#twelfDocument> <http://www.absoluteiri.edu/RELAPPROXC264>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/mathserve.owl#twelfDocument> owl:Thing) <http://www.mathweb.org/owl/mathserve.owl#Logic>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/status.owl#code> <http://www.absoluteiri.edu/RELAPPROXC264>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/status.owl#code> owl:Thing) <http://www.mathweb.org/owl/status.owl#SystemStatus>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/status.owl#description> <http://www.absoluteiri.edu/RELAPPROXC264>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/status.owl#description> owl:Thing) <http://www.mathweb.org/owl/status.owl#SystemStatus>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/status.owl#example> <http://www.absoluteiri.edu/RELAPPROXC264>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/status.owl#example> owl:Thing) <http://www.mathweb.org/owl/status.owl#SystemStatus>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/status.owl#expectedOutput> <http://www.absoluteiri.edu/RELAPPROXC264>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/status.owl#expectedOutput> owl:Thing) <http://www.mathweb.org/owl/status.owl#SystemStatus>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/status.owl#shows> <http://www.absoluteiri.edu/RELAPPROXC264>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/status.owl#shows> owl:Thing) <http://www.mathweb.org/owl/status.owl#FoAtpStatus>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.mathweb.org/owl/status.owl#specialises> owl:Thing) <http://www.mathweb.org/owl/status.owl#FoAtpStatus>)
+)
