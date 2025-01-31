@@ -20,6 +20,7 @@ log=$outputDirectory/fuzzingCampaign.log
 
 # compute time limit
 echo "time limit: ${timeLimit} seconds" >> $log
+echo "expected end time: ${endTime}"
 echo "expected end time: ${endTime}" >> $log
 
 
