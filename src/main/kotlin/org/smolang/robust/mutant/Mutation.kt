@@ -29,22 +29,22 @@ open class Mutation(var model: Model, val verbose : Boolean) {
 
     // define some properties / resources that are use all the time
     val typeProp : Property = model.createProperty("http://www.w3.org/1999/02/22-rdf-syntax-ns#type")
-    val domainProp : Property = model.createProperty("http://www.w3.org/2000/01/rdf-schema#domain")
-    val rangeProp : Property = model.createProperty("http://www.w3.org/2000/01/rdf-schema#range")
     val subClassProp : Property = model.createProperty("http://www.w3.org/2000/01/rdf-schema#subClassOf")
     val subPropertyProp : Property = model.createProperty("http://www.w3.org/2000/01/rdf-schema#subPropertyOf")
+    val domainProp : Property = model.createProperty("http://www.w3.org/2000/01/rdf-schema#domain")
+    val rangeProp : Property = model.createProperty("http://www.w3.org/2000/01/rdf-schema#range")
     val funcProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#FunctionalProperty")
-    val dataProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#DatatypeProperty")
     val irreflexiveProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#IrreflexiveProperty")
-    val datatypeProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#DatatypeProperty")
     val oneOfProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#oneOf")
 
     val owlThing : Resource = model.createResource("http://www.w3.org/2002/07/owl#Thing")
     val owlNothing : Resource = model.createResource("http://www.w3.org/2002/07/owl#Nothing")
 
+    val owlClass : Resource = model.createResource("http://www.w3.org/2002/07/owl#Class")
     val namedInd : Resource = model.createResource("http://www.w3.org/2002/07/owl#NamedIndividual")
     val objectProp : Resource = model.createResource("http://www.w3.org/2002/07/owl#ObjectProperty")
-    val owlClass : Resource = model.createResource("http://www.w3.org/2002/07/owl#Class")
+    val datatypeProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#DatatypeProperty")
+
     val xsdBoolean : Resource = model.createResource("http://www.w3.org/2001/XMLSchema#boolean")
     val xsdDecimal : Resource = model.createResource("http://www.w3.org/2001/XMLSchema#decimal")
     val xsdDouble : Resource = model.createResource("http://www.w3.org/2001/XMLSchema#double")
@@ -65,8 +65,8 @@ open class Mutation(var model: Model, val verbose : Boolean) {
     val emptyAxiom : Statement = model.createStatement(model.createResource(), emptyProp, model.createResource())
 
     // constructor that creates mutation with configuration
-    constructor(model: Model, _config: MutationConfiguration, verbose : Boolean) : this(model, verbose) {
-        this.setConfiguration(_config)
+    constructor(model: Model, config: MutationConfiguration, verbose : Boolean) : this(model, verbose) {
+        this.setConfiguration(config)
     }
 
     open fun isApplicable() : Boolean {

@@ -1,11 +1,11 @@
 import io.kotlintest.properties.forAll
 import io.kotlintest.shouldBe
 import io.kotlintest.specs.StringSpec
-import org.smolang.robust.domainSpecific.auv.AddPipeSegmentConfiguration
-import org.smolang.robust.domainSpecific.auv.AddPipeSegmentMutation
 import org.smolang.robust.mutant.MutationSequence
 import org.smolang.robust.mutant.Mutator
 import org.apache.jena.riot.RDFDataMgr
+import org.smolang.robust.domainSpecific.auv.AddPipeSegmentConfiguration
+import org.smolang.robust.domainSpecific.auv.AddPipeSegmentMutation
 import org.smolang.robust.sut.MiniPipeInspection
 import kotlin.math.absoluteValue
 
@@ -20,9 +20,9 @@ class PipeInspectionTests : StringSpec()  {
 
             // apply mutation
             val segment = input.createResource("http://www.ifi.uio.no/tobiajoh/miniPipes#segment1")
-            val configSegment = org.smolang.robust.domainSpecific.auv.AddPipeSegmentConfiguration(segment)
+            val configSegment = AddPipeSegmentConfiguration(segment)
             val msSegment = MutationSequence(verbose)
-            msSegment.addWithConfig(org.smolang.robust.domainSpecific.auv.AddPipeSegmentMutation::class, configSegment)
+            msSegment.addWithConfig(AddPipeSegmentMutation::class, configSegment)
             val mSegment = Mutator(msSegment, verbose)
             val resSegment = mSegment.mutate(input)
 
@@ -48,7 +48,7 @@ class PipeInspectionTests : StringSpec()  {
                 // apply mutation
                 val msSegment = MutationSequence(verbose)
                 for (j in 1..k)
-                    msSegment.addRandom(org.smolang.robust.domainSpecific.auv.AddPipeSegmentMutation::class)
+                    msSegment.addRandom(AddPipeSegmentMutation::class)
                 val mSegment = Mutator(msSegment, verbose)
                 val resSegment = mSegment.mutate(input)
 
@@ -60,8 +60,8 @@ class PipeInspectionTests : StringSpec()  {
                 val after = pi.allInfrastructure().count()
 
 
-                for (n in mSegment.affectedSeedNodes)
-                    println(n.localName)
+                //for (n in mSegment.affectedSeedNodes)
+                //    println(n.localName)
 
                 before + k ==  after
             }

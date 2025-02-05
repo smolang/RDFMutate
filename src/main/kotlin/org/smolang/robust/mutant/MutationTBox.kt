@@ -70,7 +70,7 @@ class CEUAMutation(model: Model, verbose: Boolean): ReplaceNodeInStatementMutati
                 con.getStatement()
             )
 
-            super.setConfiguration(config)
+            super.setConfiguration(c)
         }
     }
 }
@@ -115,7 +115,7 @@ class CEUOMutation(model: Model, verbose: Boolean): ReplaceNodeInStatementMutati
                 con.getStatement()
             )
 
-            super.setConfiguration(config)
+            super.setConfiguration(c)
         }
     }
 
@@ -158,7 +158,7 @@ class ACATOMutation(model: Model, verbose: Boolean): ReplaceNodeInStatementMutat
                 con.getStatement()
             )
 
-            super.setConfiguration(config)
+            super.setConfiguration(c)
         }
     }
 }
@@ -199,7 +199,7 @@ class ACOTAMutation(model: Model, verbose: Boolean): ReplaceNodeInStatementMutat
                 intersectionProp.toString(),
                 con.getStatement()
             )
-            super.setConfiguration(config)
+            super.setConfiguration(c)
         }
     }
 
@@ -322,11 +322,14 @@ class RemoveObjectPropertyMutation(model: Model, verbose : Boolean) : RemoveNode
 class ReplaceClassWithTopMutation(model: Model, verbose: Boolean) : ReplaceNodeWithNode(model, verbose) {
     override fun createMutation() {
         // select a random class to be replaced
-        val classes = allOfType(owlClass)
+        // ignore classes that share their name with properties
+        val classes = allOfType(owlClass).minus(allOfType(objectProp)).minus(allOfType(datatypeProp))
+
         // only replace, if at least one class is defined
         if (classes.any())
             oldNode = classes.random(randomGenerator)
         newNode = owlThing
+
         super.createMutation()
         // do not add statement that owl:Thing is an owl class
         addSet.remove(
@@ -338,7 +341,8 @@ class ReplaceClassWithTopMutation(model: Model, verbose: Boolean) : ReplaceNodeW
 class ReplaceClassWithBottomMutation(model: Model, verbose: Boolean) : ReplaceNodeWithNode(model, verbose) {
     override fun createMutation() {
         // select a random class to be replaced
-        val classes = allOfType(owlClass)
+        // ignore classes that share their name with properties
+        val classes = allOfType(owlClass).minus(allOfType(objectProp)).minus(allOfType(datatypeProp))
         // only replace, if at least one class is defined
         if (classes.any())
             oldNode = classes.random(randomGenerator)
@@ -355,15 +359,23 @@ class ReplaceClassWithBottomMutation(model: Model, verbose: Boolean) : ReplaceNo
 
 class ReplaceClassWithSiblingMutation(model: Model, verbose: Boolean): ReplaceNodeWithNode(model, verbose) {
     override fun createMutation() {
+        // select sibling classes
+        // filter: old class should not also be property (safeguard because replacement might not be careful enough)
         val queryString = "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n " +
                 "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
                 "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n" +
                 "SELECT ?s1 ?s2 WHERE { " +
-                "?s1 rdf:type owl:Class ." +
-                "?s2 rdf:type owl:Class ." +
-                "?parent rdf:type owl:Class ." +
-                "?s1 rdfs:subClassOf ?parent . " +
-                "?s2 rdfs:subClassOf ?parent ." +
+                    "?s1 rdf:type owl:Class ." +
+                    "?s2 rdf:type owl:Class ." +
+                    "?parent rdf:type owl:Class ." +
+                    "?s1 rdfs:subClassOf ?parent . " +
+                    "?s2 rdfs:subClassOf ?parent ." +
+                    "FILTER NOT EXISTS {" +
+                        "?s1 rdf:type owl:ObjectProperty ." +
+                    "}" +
+                    "FILTER NOT EXISTS {" +
+                        "?s1 rdf:type owl:DatatypeProperty ." +
+                    "}" +
                 "}"
         val query = QueryFactory.create(queryString)
         val res = QueryExecutionFactory.create(query, model).execSelect()

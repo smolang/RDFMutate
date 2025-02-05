@@ -151,7 +151,6 @@ class ReasonerMutationTests : StringSpec() {
                     classes.add(s.subject)
             }
             for (s in res.listStatements()) {
-                println(s)
                 if (s.predicate == rdfType && classes.contains(s.`object`))
                     assertedClasses.add(s.`object`.asResource())
             }

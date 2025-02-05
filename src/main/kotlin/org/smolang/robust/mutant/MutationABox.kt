@@ -172,7 +172,7 @@ class AddIndividualMutation(model: Model, verbose: Boolean) : AddStatementMutati
             model.createResource(individualName),
             model.createProperty("http://www.w3.org/1999/02/22-rdf-syntax-ns#","type"),
             namedInd)
-        val config = SingleStatementConfiguration(s);
+        val config = SingleStatementConfiguration(s)
         super.setConfiguration(config)
     }
 }
@@ -203,7 +203,7 @@ class ChangeDataPropertyMutation(model: Model, verbose: Boolean) : ChangeRelatio
     override fun getCandidates() : List<Resource> {
         val cand =  super.getCandidates()
         // only select data properties
-        val newCand =  cand.filter { isOfInferredType(it, dataProp)}
+        val newCand =  cand.filter { isOfInferredType(it, datatypeProp)}
         return newCand
     }
 }
@@ -232,7 +232,7 @@ class AddClassAssertionMutation (model: Model, verbose: Boolean) : AddStatementM
 
 class RemoveClassAssertionMutation(model: Model, verbose: Boolean) : RemoveStatementMutation(model, verbose) {
     override fun getCandidates(): List<Statement> {
-        val candidates : MutableList<Statement> = mutableListOf();
+        val candidates : MutableList<Statement> = mutableListOf()
 
         val queryString = "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n " +
                 "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
