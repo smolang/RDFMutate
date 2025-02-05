@@ -297,8 +297,11 @@ open class RemoveStatementMutation(model: Model, verbose : Boolean) : Mutation(m
                 c.getStatement()
             }
             else
-                getCandidates().random(randomGenerator)
-        removeSet.add(s)
+                getCandidates().randomOrNull(randomGenerator)
+
+        if (s != null)
+            removeSet.add(s)
+
         super.createMutation()
     }
 }
@@ -743,13 +746,15 @@ open class RemoveNodeMutation(model: Model, verbose : Boolean) : Mutation(model,
                 c.getResource()
             }
             else
-                getCandidates().random(randomGenerator)
+                getCandidates().randomOrNull(randomGenerator)
 
-        // select all axioms that contain the resource
-        val l = model.listStatements().toList().toMutableList()
-        for (s in l) {
-            if (s.subject == res || s.predicate == res || s.`object` == res) {
-                removeSet.add(s)
+        if (res != null) {
+            // select all axioms that contain the resource
+            val l = model.listStatements().toList().toMutableList()
+            for (s in l) {
+                if (s.subject == res || s.predicate == res || s.`object` == res) {
+                    removeSet.add(s)
+                }
             }
         }
 
