@@ -34,7 +34,7 @@ cd sut/reasoners
 
 
 # start with actual mutation
-numberMutations=15   # number of mutation operators that get applied
+numberMutations=30   # number of mutation operators that get applied
 
 temp_oracle_output=$outputDirectory/oracle_output_temp.txt
 
