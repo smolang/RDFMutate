@@ -43,8 +43,16 @@ class AddInstanceMutation(model: Model, verbose : Boolean) : Mutation(model, ver
                 val c = config as SingleResourceConfiguration
                 c.getResource().toString()
             }
-            else
-                getCandidates().random(randomGenerator)
+            else {
+                val cand = getCandidates()
+
+                if (cand.isNotEmpty())
+                    cand.random(randomGenerator)
+                else    // create class name if there is no class in KG
+                    "arbitraryClass:" + randomGenerator.nextInt(0,Int.MAX_VALUE)
+            }
+
+
         val instanceName =
             if (hasConfig && config is StringAndResourceConfiguration) {
                 val c = config as StringAndResourceConfiguration
@@ -206,11 +214,16 @@ class AddClassAssertionMutation (model: Model, verbose: Boolean) : AddStatementM
         val classes = allOfType(owlClass)
         val individuals = allOfType(namedInd)
 
-        val s = model.createStatement(
-            individuals.random(randomGenerator),
-            typeProp,
-            classes.random(randomGenerator)
-        )
+        val s =
+            if (individuals.isEmpty() || classes.isEmpty())
+                emptyAxiom
+            else {
+                model.createStatement(
+                    individuals.random(randomGenerator),
+                    typeProp,
+                    classes.random(randomGenerator)
+                )
+            }
 
         super.setConfiguration(SingleStatementConfiguration(s))
 
