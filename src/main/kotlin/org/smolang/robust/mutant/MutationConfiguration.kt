@@ -6,7 +6,7 @@ import org.apache.jena.rdf.model.Statement
 
 abstract class MutationConfiguration {
     override fun toString(): String {
-        val className = javaClass.toString().removePrefix("class mutant.")
+        val className = javaClass.toString().removePrefix("class org.smolang.robust.mutant.")
         return className
     }
 
