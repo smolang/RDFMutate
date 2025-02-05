@@ -1,0 +1,583 @@
+Found anomalies while testing file ../testOnt.owl
+
+Anomaly 1: Anomaly: not in EL
+ Use of reserved vocabulary for object property IRI: owl:Thing [SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToPlanet> owl:Thing) in OntologyID(OntologyIRI(<urn:unnamed:ontology#ont1022037335201108>) VersionIRI(<null>))]
+
+
+
+––––––––––––––––––––––––––––––––––––––––––––
+–––––––––––    Ontology File    ––––––––––––
+––––––––––––––––––––––––––––––––––––––––––––
+
+Prefix(:=<urn:unnamed:ontology#ont1022037335201108>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:unnamed:ontology#ont1022037335201108>
+
+Declaration(Class(<http://dbpedia.org/ontology/BritishRoyalty>))
+Declaration(Class(<http://dbpedia.org/ontology/Beverage>))
+Declaration(Class(<http://dbpedia.org/ontology/Legislature>))
+Declaration(Class(<http://dbpedia.org/ontology/MusicalArtist>))
+Declaration(Class(<http://dbpedia.org/ontology/EthnicGroup>))
+Declaration(Class(<http://dbpedia.org/ontology/City>))
+Declaration(Class(<http://dbpedia.org/ontology/Colour>))
+Declaration(Class(<http://dbpedia.org/ontology/Park>))
+Declaration(Class(<http://dbpedia.org/ontology/TelevisionShow>))
+Declaration(Class(<http://dbpedia.org/ontology/Bone>))
+Declaration(Class(<http://dbpedia.org/ontology/RadioStation>))
+Declaration(Class(<http://dbpedia.org/ontology/Protein>))
+Declaration(Class(<http://dbpedia.org/ontology/Language>))
+Declaration(Class(<http://dbpedia.org/ontology/Bacteria>))
+Declaration(Class(<http://dbpedia.org/ontology/WineRegion>))
+Declaration(Class(<http://dbpedia.org/ontology/Mountain>))
+Declaration(Class(<http://dbpedia.org/ontology/WorldHeritageSite>))
+Declaration(Class(<http://dbpedia.org/ontology/Saint>))
+Declaration(Class(<http://dbpedia.org/ontology/ProtectedArea>))
+Declaration(Class(<http://dbpedia.org/ontology/HistoricPlace>))
+Declaration(Class(<http://dbpedia.org/ontology/Brain>))
+Declaration(Class(<http://dbpedia.org/ontology/River>))
+Declaration(Class(<http://dbpedia.org/ontology/Mammal>))
+Declaration(Class(<http://dbpedia.org/ontology/Moss>))
+Declaration(Class(<http://dbpedia.org/ontology/Lake>))
+Declaration(Class(<http://dbpedia.org/ontology/Country>))
+Declaration(Class(<http://dbpedia.org/ontology/Mollusca>))
+Declaration(Class(<http://dbpedia.org/ontology/Amphibian>))
+Declaration(Class(<http://dbpedia.org/ontology/Writer>))
+Declaration(Class(<http://dbpedia.org/ontology/Scientist>))
+Declaration(Class(<http://dbpedia.org/ontology/Fern>))
+Declaration(Class(<http://dbpedia.org/ontology/SoccerPlayer>))
+Declaration(Class(<http://dbpedia.org/ontology/Nerve>))
+Declaration(Class(<http://dbpedia.org/ontology/Drug>))
+Declaration(Class(<http://dbpedia.org/ontology/Monarch>))
+Declaration(Class(<http://dbpedia.org/ontology/Arachnid>))
+Declaration(Class(<http://dbpedia.org/ontology/Disease>))
+Declaration(Class(<http://dbpedia.org/ontology/BaseballPlayer>))
+Declaration(Class(<http://dbpedia.org/ontology/Embryology>))
+Declaration(Class(<http://dbpedia.org/ontology/Fungus>))
+Declaration(Class(<http://dbpedia.org/ontology/University>))
+Declaration(Class(<http://dbpedia.org/ontology/MountainRange>))
+Declaration(Class(<http://dbpedia.org/ontology/Conifer>))
+Declaration(Class(<http://dbpedia.org/ontology/Island>))
+Declaration(Class(<http://dbpedia.org/ontology/MilitaryConflict>))
+Declaration(Class(<http://dbpedia.org/ontology/PrimeMinister>))
+Declaration(Class(<http://dbpedia.org/ontology/CollegeCoach>))
+Declaration(Class(<http://dbpedia.org/ontology/OfficeHolder>))
+Declaration(Class(<http://dbpedia.org/ontology/Philosopher>))
+Declaration(Class(<http://dbpedia.org/ontology/Film>))
+Declaration(Class(<http://dbpedia.org/ontology/Newspaper>))
+Declaration(Class(<http://dbpedia.org/ontology/Museum>))
+Declaration(Class(<http://dbpedia.org/ontology/Ship>))
+Declaration(Class(<http://dbpedia.org/ontology/Bird>))
+Declaration(Class(<http://dbpedia.org/ontology/GreenAlga>))
+Declaration(Class(<http://dbpedia.org/ontology/Pope>))
+Declaration(Class(<http://dbpedia.org/ontology/Town>))
+Declaration(Class(<http://dbpedia.org/ontology/Fish>))
+Declaration(Class(<http://dbpedia.org/ontology/Book>))
+Declaration(Class(<http://dbpedia.org/ontology/ChemicalCompound>))
+Declaration(Class(<http://dbpedia.org/ontology/Company>))
+Declaration(Class(<http://dbpedia.org/ontology/Award>))
+Declaration(Class(<http://dbpedia.org/ontology/FloweringPlant>))
+Declaration(Class(<http://dbpedia.org/ontology/Village>))
+Declaration(Class(<http://dbpedia.org/ontology/Insect>))
+Declaration(Class(<http://dbpedia.org/ontology/Crustacean>))
+Declaration(Class(<http://dbpedia.org/ontology/Continent>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToEmbryology>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToRiver>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToCompany>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToMountainRange>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToMilitaryConflict>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToVillage>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToPlanet>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Event>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToAmphibian>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Protein>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToMusicalArtist>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Award>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToColour>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToOfficeHolder>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToConifer>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Drug>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Organisation>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Work>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToSaint>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToBeverage>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToProtein>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToMountain>))
+Declaration(ObjectProperty(owl:Thing))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToSoccerPlayer>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Language>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToMollusca>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToPrimeMinister>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToDisease>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToContinent>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToFish>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToBook>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToWorldHeritageSite>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToProtectedArea>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToBritishRoyalty>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToFilm>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToInsect>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToRadioStation>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToAdministrativeRegion>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToWineRegion>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToMammal>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToAward>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToIsland>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToGreenAlga>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToHistoricPlace>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToDrug>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToWriter>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Species>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToShip>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToLanguage>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToFloweringPlant>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToBone>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToArachnid>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToChemicalCompound>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToMoss>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToPhilosopher>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToTelevisionShow>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Person>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/AnatomicalStructure>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/MeanOfTransportation>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToEthnicGroup>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Disease>))
+Declaration(ObjectProperty(<http://www.w3.org/2004/02/skos/core#relatedMatch>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Place>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/EthnicGroup>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToCountry>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToUniversity>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToBrain>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/ChemicalCompound>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToMuseum>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToNerve>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToPope>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Beverage>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToLegislature>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToTown>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToCrustacean>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Colour>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToBaseballPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToNewspaper>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToCollegeCoach>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToMonarch>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToFern>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToBird>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToLake>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToBacteria>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToCity>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToPark>))
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToAdministrativeRegion> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToAdministrativeRegion>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToAdministrativeRegion> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToAdministrativeRegion> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToAdministrativeRegion> owl:Thing)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToAmphibian> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToAmphibian>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToAmphibian> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToAmphibian> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToAmphibian> <http://dbpedia.org/ontology/Amphibian>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToArachnid> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToArachnid>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToArachnid> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToArachnid> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToArachnid> <http://dbpedia.org/ontology/Arachnid>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToAward> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToAward>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToAward> <http://dbpedia.org/ontology/Award>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToAward> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToAward> <http://dbpedia.org/ontology/Award>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToBacteria> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToBacteria>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToBacteria> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToBacteria> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToBacteria> <http://dbpedia.org/ontology/Bacteria>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToBaseballPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToBaseballPlayer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToBaseballPlayer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToBaseballPlayer> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToBaseballPlayer> <http://dbpedia.org/ontology/BaseballPlayer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToBeverage> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToBeverage>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToBeverage> <http://dbpedia.org/ontology/Beverage>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToBeverage> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToBeverage> <http://dbpedia.org/ontology/Beverage>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToBird> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToBird>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToBird> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToBird> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToBird> <http://dbpedia.org/ontology/Bird>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToBone> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToBone>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToBone> <http://dbpedia.org/ontology/AnatomicalStructure>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToBone> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToBone> <http://dbpedia.org/ontology/Bone>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToBook> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToBook>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToBook> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToBook> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToBook> <http://dbpedia.org/ontology/Book>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToBrain> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToBrain>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToBrain> <http://dbpedia.org/ontology/AnatomicalStructure>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToBrain> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToBrain> <http://dbpedia.org/ontology/Brain>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToBritishRoyalty> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToBritishRoyalty>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToBritishRoyalty> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToBritishRoyalty> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToBritishRoyalty> <http://dbpedia.org/ontology/BritishRoyalty>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToChemicalCompound> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToChemicalCompound>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToChemicalCompound> <http://dbpedia.org/ontology/ChemicalCompound>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToChemicalCompound> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToChemicalCompound> <http://dbpedia.org/ontology/ChemicalCompound>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToCity> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToCity>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToCity> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToCity> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToCity> <http://dbpedia.org/ontology/City>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToCollegeCoach> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToCollegeCoach>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToCollegeCoach> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToCollegeCoach> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToCollegeCoach> <http://dbpedia.org/ontology/CollegeCoach>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToColour> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToColour>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToColour> <http://dbpedia.org/ontology/Colour>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToColour> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToColour> <http://dbpedia.org/ontology/Colour>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToCompany> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToCompany>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToCompany> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToCompany> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToCompany> <http://dbpedia.org/ontology/Company>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToConifer> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToConifer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToConifer> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToConifer> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToConifer> <http://dbpedia.org/ontology/Conifer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToContinent> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToContinent>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToContinent> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToContinent> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToContinent> <http://dbpedia.org/ontology/Continent>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToCountry> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToCountry>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToCountry> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToCountry> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToCountry> <http://dbpedia.org/ontology/Country>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToCrustacean> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToCrustacean>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToCrustacean> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToCrustacean> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToCrustacean> <http://dbpedia.org/ontology/Crustacean>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToDisease> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToDisease>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToDisease> <http://dbpedia.org/ontology/Disease>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToDisease> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToDisease> <http://dbpedia.org/ontology/Disease>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToDrug> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToDrug>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToDrug> <http://dbpedia.org/ontology/Drug>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToDrug> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToDrug> <http://dbpedia.org/ontology/Drug>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToEmbryology> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToEmbryology>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToEmbryology> <http://dbpedia.org/ontology/AnatomicalStructure>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToEmbryology> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToEmbryology> <http://dbpedia.org/ontology/Embryology>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToEthnicGroup> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToEthnicGroup>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToEthnicGroup> <http://dbpedia.org/ontology/EthnicGroup>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToEthnicGroup> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToEthnicGroup> <http://dbpedia.org/ontology/EthnicGroup>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToFern> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToFern>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToFern> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToFern> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToFern> <http://dbpedia.org/ontology/Fern>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToFilm> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToFilm>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToFilm> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToFilm> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToFilm> <http://dbpedia.org/ontology/Film>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToFish> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToFish>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToFish> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToFish> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToFish> <http://dbpedia.org/ontology/Fish>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToFloweringPlant> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToFloweringPlant>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToFloweringPlant> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToFloweringPlant> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToFloweringPlant> <http://dbpedia.org/ontology/FloweringPlant>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToGreenAlga> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToGreenAlga>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToGreenAlga> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToGreenAlga> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToGreenAlga> <http://dbpedia.org/ontology/GreenAlga>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToHistoricPlace> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToHistoricPlace>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToHistoricPlace> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToHistoricPlace> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToHistoricPlace> <http://dbpedia.org/ontology/HistoricPlace>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToInsect> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToInsect>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToInsect> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToInsect> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToInsect> <http://dbpedia.org/ontology/Insect>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToIsland> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToIsland>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToIsland> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToIsland> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToIsland> <http://dbpedia.org/ontology/Island>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToLake> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToLake>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToLake> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToLake> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToLake> <http://dbpedia.org/ontology/Lake>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToLanguage> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToLanguage>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToLanguage> <http://dbpedia.org/ontology/Language>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToLanguage> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToLanguage> <http://dbpedia.org/ontology/Language>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToLegislature> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToLegislature>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToLegislature> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToLegislature> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToLegislature> <http://dbpedia.org/ontology/Legislature>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToMammal> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToMammal>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToMammal> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToMammal> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToMammal> <http://dbpedia.org/ontology/Mammal>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToMilitaryConflict> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToMilitaryConflict>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToMilitaryConflict> <http://dbpedia.org/ontology/Event>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToMilitaryConflict> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToMilitaryConflict> <http://dbpedia.org/ontology/MilitaryConflict>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToMollusca> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToMollusca>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToMollusca> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToMollusca> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToMollusca> <http://dbpedia.org/ontology/Mollusca>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToMonarch> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToMonarch>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToMonarch> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToMonarch> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToMonarch> <http://dbpedia.org/ontology/Monarch>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToMoss> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToMoss>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToMoss> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToMoss> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToMoss> <http://dbpedia.org/ontology/Moss>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToMountain> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToMountain>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToMountain> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToMountain> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToMountain> <http://dbpedia.org/ontology/Mountain>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToMountainRange> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToMountainRange>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToMountainRange> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToMountainRange> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToMountainRange> <http://dbpedia.org/ontology/MountainRange>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToMuseum> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToMuseum>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToMuseum> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToMuseum> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToMuseum> <http://dbpedia.org/ontology/Museum>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToMusicalArtist> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToMusicalArtist>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToMusicalArtist> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToMusicalArtist> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToMusicalArtist> <http://dbpedia.org/ontology/MusicalArtist>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToNerve> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToNerve>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToNerve> <http://dbpedia.org/ontology/AnatomicalStructure>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToNerve> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToNerve> <http://dbpedia.org/ontology/Nerve>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToNewspaper> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToNewspaper>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToNewspaper> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToNewspaper> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToNewspaper> <http://dbpedia.org/ontology/Newspaper>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToOfficeHolder> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToOfficeHolder>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToOfficeHolder> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToOfficeHolder> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToOfficeHolder> <http://dbpedia.org/ontology/OfficeHolder>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToPark> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToPark>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToPark> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToPark> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToPark> <http://dbpedia.org/ontology/Park>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToPhilosopher> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToPhilosopher>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToPhilosopher> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToPhilosopher> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToPhilosopher> <http://dbpedia.org/ontology/Philosopher>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToPlanet> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToPlanet>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToPlanet> owl:Thing)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToPlanet> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToPlanet> owl:Thing)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToPope> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToPope>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToPope> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToPope> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToPope> <http://dbpedia.org/ontology/Pope>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToPrimeMinister> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToPrimeMinister>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToPrimeMinister> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToPrimeMinister> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToPrimeMinister> <http://dbpedia.org/ontology/PrimeMinister>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToProtectedArea> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToProtectedArea>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToProtectedArea> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToProtectedArea> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToProtectedArea> <http://dbpedia.org/ontology/ProtectedArea>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToProtein> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToProtein>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToProtein> <http://dbpedia.org/ontology/Protein>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToProtein> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToProtein> <http://dbpedia.org/ontology/Protein>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToRadioStation> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToRadioStation>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToRadioStation> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToRadioStation> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToRadioStation> <http://dbpedia.org/ontology/RadioStation>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToRiver> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToRiver>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToRiver> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToRiver> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToRiver> <http://dbpedia.org/ontology/River>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToSaint> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToSaint>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToSaint> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToSaint> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToSaint> <http://dbpedia.org/ontology/Saint>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToShip> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToShip>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToShip> <http://dbpedia.org/ontology/MeanOfTransportation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToShip> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToShip> <http://dbpedia.org/ontology/Ship>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToSoccerPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToSoccerPlayer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToSoccerPlayer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToSoccerPlayer> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToSoccerPlayer> <http://dbpedia.org/ontology/SoccerPlayer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToTelevisionShow> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToTelevisionShow>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToTelevisionShow> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToTelevisionShow> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToTelevisionShow> <http://dbpedia.org/ontology/TelevisionShow>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToTown> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToTown>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToTown> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToTown> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToTown> <http://dbpedia.org/ontology/Town>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToUniversity> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToUniversity>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToUniversity> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToUniversity> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToUniversity> <http://dbpedia.org/ontology/University>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToVillage> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToVillage>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToVillage> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToVillage> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToVillage> <http://dbpedia.org/ontology/Village>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToWineRegion> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToWineRegion>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToWineRegion> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToWineRegion> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToWineRegion> <http://dbpedia.org/ontology/WineRegion>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToWorldHeritageSite> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToWorldHeritageSite>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToWorldHeritageSite> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToWorldHeritageSite> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToWorldHeritageSite> <http://dbpedia.org/ontology/WorldHeritageSite>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToWriter> (<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToWriter>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToWriter> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToWriter> <http://dbpedia.org/ontology/Fungus>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Fungus.owl#linksToWriter> <http://dbpedia.org/ontology/Writer>)
+
+
+
+)

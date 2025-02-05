@@ -1,0 +1,640 @@
+Found anomalies while testing file ../testOnt.owl
+
+Anomaly 1: helper anomaly; reasoner for HERMIT could not be created
+
+Anomaly 2: Anomaly with following exception thrown by HERMIT:
+java.lang.NullPointerException: operands cannot be null or empty
+
+
+––––––––––––––––––––––––––––––––––––––––––––
+–––––––––––    Ontology File    ––––––––––––
+––––––––––––––––––––––––––––––––––––––––––––
+
+Prefix(:=<urn:unnamed:ontology#ont1022055191488357>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:unnamed:ontology#ont1022055191488357>
+
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC199>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC196>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC195>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMuseum>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToHotel>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToOlympics>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMountain>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToRugbyPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToSoccerClub>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToAircraft>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToSchool>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToBird>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Event>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToBone>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToDisease>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToSiteOfSpecialScientificInterest>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToTennisPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMusicalArtist>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToSport>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToBasketballPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToPresident>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMilitaryUnit>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToScientist>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Award>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToPlant>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToComedian>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToActor>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMemberOfParliament>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMotorcycleRacingLeague>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToShip>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToWebsite>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Organisation>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMammal>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMountainRange>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Work>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToSingle>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMilitaryPerson>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToTown>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToVideoGame>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToCurrency>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Language>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToStadium>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Activity>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Website>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToComicsCharacter>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMagazine>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToIceHockeyPlayer>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Device>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToBeverage>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToElection>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToLake>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToIsland>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToJournalist>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToProtectedArea>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToWriter>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToHistoricPlace>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToBoxer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToCyclist>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToGolfPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToPhilosopher>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Species>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToAstronaut>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToLanguage>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToSoccerManager>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Currency>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToAlbum>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToEthnicGroup>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToBroadcast>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToModel>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToSkiArea>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToComicsCreator>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToCanal>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToBook>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToOfficeHolder>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Person>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/AnatomicalStructure>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/MeanOfTransportation>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToBand>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Disease>))
+Declaration(ObjectProperty(<http://www.w3.org/2004/02/skos/core#relatedMatch>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Place>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToChemicalCompound>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToGridironFootballPlayer>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/EthnicGroup>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToPrimeMinister>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToTelevisionShow>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToAutomobileEngine>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/ChemicalCompound>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToLegislature>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToBritishRoyalty>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Beverage>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToAirport>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToAirline>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToSoccerPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToNon-ProfitOrganisation>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToWeapon>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToNewspaper>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToHospital>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToContinent>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToPark>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToFilm>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToCricketer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMilitaryConflict>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToPlayboyPlaymate>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToRadioStation>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToRace>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToWrestler>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToCriminal>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToVillage>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMonarch>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToAward>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/before>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/title>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToCyclist>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToOfficeHolder>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToSoccerPlayer>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToAward>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/after>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToSoccerManager>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToBritishRoyalty>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/successor>))
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToActor> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToActor>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToActor> <http://dbpedia.org/ontology/Person>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToAircraft> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToAircraft>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToAircraft> <http://dbpedia.org/ontology/MeanOfTransportation>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToAirline> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToAirline>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToAirline> <http://dbpedia.org/ontology/Organisation>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToAirport> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToAirport>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToAirport> <http://dbpedia.org/ontology/Place>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToAlbum> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToAlbum>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToAlbum> <http://dbpedia.org/ontology/Work>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToAstronaut> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToAstronaut>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToAstronaut> <http://dbpedia.org/ontology/Person>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToAutomobileEngine> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToAutomobileEngine>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToAutomobileEngine> <http://dbpedia.org/ontology/Device>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToAward> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToAward>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToAward> <http://dbpedia.org/ontology/Award>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToBand> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToBand>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToBand> <http://dbpedia.org/ontology/Organisation>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToBasketballPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToBasketballPlayer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToBasketballPlayer> <http://dbpedia.org/ontology/Person>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToBeverage> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToBeverage>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToBeverage> <http://dbpedia.org/ontology/Beverage>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToBird> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToBird>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToBird> <http://dbpedia.org/ontology/Species>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToBone> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToBone>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToBone> <http://dbpedia.org/ontology/AnatomicalStructure>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToBook> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToBook>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToBook> <http://dbpedia.org/ontology/Work>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToBritishRoyalty> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToBritishRoyalty>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToBritishRoyalty> <http://dbpedia.org/ontology/Person>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToBroadcast> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToBroadcast>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToBroadcast> <http://dbpedia.org/ontology/Organisation>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToCanal> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToCanal>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToCanal> <http://dbpedia.org/ontology/Place>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToChemicalCompound> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToChemicalCompound>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToChemicalCompound> <http://dbpedia.org/ontology/ChemicalCompound>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToComedian> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToComedian>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToComedian> <http://dbpedia.org/ontology/Person>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToComicsCharacter> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToComicsCharacter>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToComicsCharacter> <http://dbpedia.org/ontology/Person>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToComicsCreator> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToComicsCreator>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToComicsCreator> <http://dbpedia.org/ontology/Person>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToContinent> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToContinent>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToContinent> <http://dbpedia.org/ontology/Place>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToCricketer> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToCricketer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToCricketer> <http://dbpedia.org/ontology/Person>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToCriminal> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToCriminal>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToCriminal> <http://dbpedia.org/ontology/Person>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToCurrency> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToCurrency>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToCurrency> <http://dbpedia.org/ontology/Currency>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToCyclist> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToCyclist>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToCyclist> <http://dbpedia.org/ontology/Person>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToDisease> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToDisease>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToDisease> <http://dbpedia.org/ontology/Disease>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToElection> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToElection>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToElection> <http://dbpedia.org/ontology/Event>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToEthnicGroup> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToEthnicGroup>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToEthnicGroup> <http://dbpedia.org/ontology/EthnicGroup>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToFilm> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToFilm>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToFilm> <http://dbpedia.org/ontology/Work>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToGolfPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToGolfPlayer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToGolfPlayer> <http://dbpedia.org/ontology/Person>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToGridironFootballPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToGridironFootballPlayer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToGridironFootballPlayer> <http://dbpedia.org/ontology/Person>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToHistoricPlace> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToHistoricPlace>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToHistoricPlace> <http://dbpedia.org/ontology/Place>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToHospital> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToHospital>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToHospital> <http://dbpedia.org/ontology/Place>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToHotel> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToHotel>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToHotel> <http://dbpedia.org/ontology/Place>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToIceHockeyPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToIceHockeyPlayer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToIceHockeyPlayer> <http://dbpedia.org/ontology/Person>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToIsland> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToIsland>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToIsland> <http://dbpedia.org/ontology/Place>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToJournalist> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToJournalist>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToJournalist> <http://dbpedia.org/ontology/Person>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToLake> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToLake>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToLake> <http://dbpedia.org/ontology/Place>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToLanguage> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToLanguage>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToLanguage> <http://dbpedia.org/ontology/Language>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToLegislature> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToLegislature>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToLegislature> <http://dbpedia.org/ontology/Organisation>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMagazine> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMagazine>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMagazine> <http://dbpedia.org/ontology/Work>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMammal> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMammal>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMammal> <http://dbpedia.org/ontology/Species>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMemberOfParliament> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMemberOfParliament>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMemberOfParliament> <http://dbpedia.org/ontology/Person>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMilitaryConflict> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMilitaryConflict>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMilitaryConflict> <http://dbpedia.org/ontology/Event>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMilitaryPerson> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMilitaryPerson>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMilitaryPerson> <http://dbpedia.org/ontology/Person>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMilitaryUnit> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMilitaryUnit>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMilitaryUnit> <http://dbpedia.org/ontology/Organisation>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToModel> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToModel>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToModel> <http://dbpedia.org/ontology/Person>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMonarch> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMonarch>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMonarch> <http://dbpedia.org/ontology/Person>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMotorcycleRacingLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMotorcycleRacingLeague>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMotorcycleRacingLeague> <http://dbpedia.org/ontology/Organisation>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMountain> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMountain>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMountain> <http://dbpedia.org/ontology/Place>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMountainRange> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMountainRange>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMountainRange> <http://dbpedia.org/ontology/Place>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMuseum> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMuseum>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMuseum> <http://dbpedia.org/ontology/Place>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMusicalArtist> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMusicalArtist>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMusicalArtist> <http://dbpedia.org/ontology/Person>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToNewspaper> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToNewspaper>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToNewspaper> <http://dbpedia.org/ontology/Work>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToNon-ProfitOrganisation> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToNon-ProfitOrganisation>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToNon-ProfitOrganisation> <http://dbpedia.org/ontology/Organisation>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToOfficeHolder> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToOfficeHolder>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToOfficeHolder> <http://dbpedia.org/ontology/Person>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToOlympics> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToOlympics>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToOlympics> <http://dbpedia.org/ontology/Event>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToPark> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToPark>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToPark> <http://dbpedia.org/ontology/Place>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToPhilosopher> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToPhilosopher>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToPhilosopher> <http://dbpedia.org/ontology/Person>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToPlant> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToPlant>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToPlant> <http://dbpedia.org/ontology/Species>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToPlayboyPlaymate> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToPlayboyPlaymate>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToPlayboyPlaymate> <http://dbpedia.org/ontology/Person>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToPresident> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToPresident>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToPresident> <http://dbpedia.org/ontology/Person>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToPrimeMinister> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToPrimeMinister>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToPrimeMinister> <http://dbpedia.org/ontology/Person>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToProtectedArea> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToProtectedArea>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToProtectedArea> <http://dbpedia.org/ontology/Place>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToRace> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToRace>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToRace> <http://dbpedia.org/ontology/Event>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToRadioStation> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToRadioStation>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToRadioStation> <http://dbpedia.org/ontology/Organisation>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToRugbyPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToRugbyPlayer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToRugbyPlayer> <http://dbpedia.org/ontology/Person>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToSchool> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToSchool>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToSchool> <http://dbpedia.org/ontology/Organisation>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToScientist> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToScientist>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToScientist> <http://dbpedia.org/ontology/Person>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToShip> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToShip>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToShip> <http://dbpedia.org/ontology/MeanOfTransportation>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToSingle> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToSingle>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToSingle> <http://dbpedia.org/ontology/Work>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToSiteOfSpecialScientificInterest> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToSiteOfSpecialScientificInterest>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToSiteOfSpecialScientificInterest> <http://dbpedia.org/ontology/Place>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToSkiArea> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToSkiArea>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToSkiArea> <http://dbpedia.org/ontology/Place>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToSoccerClub> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToSoccerClub>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToSoccerClub> <http://dbpedia.org/ontology/Organisation>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToSoccerManager> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToSoccerManager>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToSoccerManager> <http://dbpedia.org/ontology/Person>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToSoccerPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToSoccerPlayer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToSoccerPlayer> <http://dbpedia.org/ontology/Person>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToSport> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToSport>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToSport> <http://dbpedia.org/ontology/Activity>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToStadium> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToStadium>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToStadium> <http://dbpedia.org/ontology/Place>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToTelevisionShow> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToTelevisionShow>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToTelevisionShow> <http://dbpedia.org/ontology/Work>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToTennisPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToTennisPlayer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToTennisPlayer> <http://dbpedia.org/ontology/Person>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToTown> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToTown>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToTown> <http://dbpedia.org/ontology/Place>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToVideoGame> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToVideoGame>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToVideoGame> <http://dbpedia.org/ontology/Work>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToVillage> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToVillage>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToVillage> <http://dbpedia.org/ontology/Place>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToWeapon> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToWeapon>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToWeapon> <http://dbpedia.org/ontology/Device>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToWebsite> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToWebsite>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToWebsite> <http://dbpedia.org/ontology/Website>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToWrestler> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToWrestler>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToWrestler> <http://dbpedia.org/ontology/Person>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToWriter> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToWriter>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToWriter> <http://dbpedia.org/ontology/Person>)
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC196> (<http://www.absoluteiri.edu/RELAPPROXC196>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC196> <http://www.absoluteiri.edu/RELAPPROXC195>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC196> <http://www.absoluteiri.edu/RELAPPROXC199>)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing owl:Nothing)
+
+# Class: owl:Thing (owl:Thing)
+
+SubClassOf(owl:Thing owl:Nothing)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://dbpedia.org/property/before> (<http://dbpedia.org/property/before>)
+
+ClassAssertion(<http://www.absoluteiri.edu/RELAPPROXC195> <http://dbpedia.org/property/before>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToAward> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToAward>)
+
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToAward> <http://dbpedia.org/property/title>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToBritishRoyalty> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToBritishRoyalty>)
+
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToBritishRoyalty> <http://dbpedia.org/property/before>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToCyclist> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToCyclist>)
+
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToCyclist> <http://dbpedia.org/property/after>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToCyclist> <http://dbpedia.org/property/before>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToOfficeHolder> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToOfficeHolder>)
+
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToOfficeHolder> <http://dbpedia.org/property/successor>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToSoccerManager> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToSoccerManager>)
+
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToSoccerManager> <http://dbpedia.org/property/before>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToSoccerPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToSoccerPlayer>)
+
+ClassAssertion(<http://www.absoluteiri.edu/RELAPPROXC199> <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToSoccerPlayer>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToSoccerPlayer> <http://dbpedia.org/property/after>)
+
+
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToActor> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToAircraft> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToAirline> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToAirport> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToAlbum> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToAstronaut> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToAutomobileEngine> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToAward> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToBand> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToBasketballPlayer> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToBeverage> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToBird> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToBone> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToBook> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToBoxer> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToBritishRoyalty> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToBroadcast> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToCanal> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToChemicalCompound> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToComedian> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToComicsCharacter> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToComicsCreator> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToContinent> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToCricketer> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToCriminal> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToCyclist> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToDisease> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToElection> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToEthnicGroup> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToFilm> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToGolfPlayer> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToGridironFootballPlayer> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToHistoricPlace> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToHospital> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToHotel> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToIceHockeyPlayer> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToIsland> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToJournalist> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToLake> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToLanguage> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToLegislature> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMagazine> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMammal> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMemberOfParliament> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMilitaryConflict> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMilitaryPerson> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMilitaryUnit> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToModel> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMonarch> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMotorcycleRacingLeague> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMountain> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMountainRange> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMuseum> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToMusicalArtist> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToNewspaper> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToNon-ProfitOrganisation> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToOfficeHolder> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToOlympics> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToPark> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToPhilosopher> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToPlant> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToPresident> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToPrimeMinister> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToProtectedArea> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToRace> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToRadioStation> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToRugbyPlayer> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToSchool> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToScientist> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToShip> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToSingle> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToSiteOfSpecialScientificInterest> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToSkiArea> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToSoccerClub> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToSoccerPlayer> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToSport> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToStadium> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToTelevisionShow> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToTennisPlayer> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToTown> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToVideoGame> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToVillage> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToWeapon> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToWebsite> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToWrestler> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/FormulaOneRacer.owl#linksToWriter> owl:Thing) owl:Nothing)
+)
