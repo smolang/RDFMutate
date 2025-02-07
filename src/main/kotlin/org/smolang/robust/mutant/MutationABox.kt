@@ -5,7 +5,6 @@ import org.apache.jena.query.QueryFactory
 import org.apache.jena.rdf.model.*
 import org.smolang.robust.randomGenerator
 
-
 class AddInstanceMutation(model: Model, verbose : Boolean) : Mutation(model, verbose) {
     // returns all classes
     private fun getCandidates(): List<String> {
@@ -73,7 +72,7 @@ class AddInstanceMutation(model: Model, verbose : Boolean) : Mutation(model, ver
 
 open class RemoveObjectPropertyRelationMutation(model: Model, verbose : Boolean) : RemoveStatementMutation(model, verbose) {
     override fun getCandidates(): List<Statement> {
-        val allProps = allOfType(objectProp)
+        val allProps = allOfType(objectPropClass)
         val candidates : MutableSet<Statement> = hashSetOf()
         allProps.forEach {
             candidates.addAll(model.listStatements(
@@ -112,7 +111,7 @@ open class RemoveObjectPropertyRelationMutation(model: Model, verbose : Boolean)
 
 open class AddObjectPropertyRelationMutation(model: Model, verbose: Boolean) : AddRelationMutation(model, verbose) {
     override fun getCandidates() : List<Resource> {
-        val cand = allOfType(objectProp)
+        val cand = allOfType(objectPropClass)
         return cand.sortedBy { it.toString() }
         // we do not filter, when we add stuff, only when we remove
         //return filterRelevantPrefixesResource(cand.toList()).sortedBy { it.toString() }
@@ -140,7 +139,7 @@ open class AddObjectPropertyRelationMutation(model: Model, verbose: Boolean) : A
 
         // check that p is really an ObjectProperty, if it exists in the model at all
         if (model.listResourcesWithProperty(null ).toSet().contains(p.asResource()))
-            if (!isOfType(p.asResource(), objectProp)) {
+            if (!isOfType(p.asResource(), objectPropClass)) {
                 println("WARNING: resource $p is not an object property but is used as such in configuration.")
             }
 
@@ -151,7 +150,9 @@ open class AddObjectPropertyRelationMutation(model: Model, verbose: Boolean) : A
 abstract class AddNegativePropertyRelationMutation(model: Model, verbose: Boolean) : Mutation(model, verbose) {
     abstract val typeOfProperty :Resource
     abstract val domain : Set<Resource>
-    abstract val range : Set<Resource>
+    abstract val range : Set<RDFNode>
+    abstract val relationToTarget : Property    // relation to target node
+
     val properties : Set<Resource>
         get() =allOfType(typeOfProperty)
 
@@ -170,7 +171,7 @@ abstract class AddNegativePropertyRelationMutation(model: Model, verbose: Boolea
             val typeAxiom = model.createStatement(axiomNode, rdfTypeProp, negPropAssertion)
             val sourceAxiom = model.createStatement(axiomNode, sourceIndProp, source)
             val propAxiom = model.createStatement(axiomNode, assertionPropProp, property)
-            val targetAxiom = model.createStatement(axiomNode, targetIndProp, target)
+            val targetAxiom = model.createStatement(axiomNode, relationToTarget, target)
 
             addSet.add(typeAxiom)
             addSet.add(sourceAxiom)
@@ -183,12 +184,13 @@ abstract class AddNegativePropertyRelationMutation(model: Model, verbose: Boolea
 }
 
 class AddNegativeObjectPropertyRelationMutation(model: Model, verbose: Boolean) : AddNegativePropertyRelationMutation(model, verbose) {
-    override val typeOfProperty = objectProp
+    override val typeOfProperty = objectPropClass
     override val domain = allOfType(namedInd)
     override val range = allOfType(namedInd)
+    override val relationToTarget = targetIndProp
 }
 
-class RemoveNegativeObjectPropertyRelationMutation(model: Model, verbose: Boolean) : RemoveNodeMutation(model, verbose) {
+class RemoveNegativePropertyAssertionMutation(model: Model, verbose: Boolean) : RemoveNodeMutation(model, verbose) {
     override fun getCandidates(): List<Resource> {
         return allOfType(negPropAssertion).toList()
     }
@@ -208,6 +210,57 @@ open class ChangeObjectPropertyRelationMutation(model: Model, verbose: Boolean) 
         // find existing relations and remove them
         turnAdditionsToChanges()
     }
+}
+
+// adds data property relation
+// does not care about declared ranges or domains of relation
+class BasicAddDataPropertyRelationMutation(model: Model, verbose: Boolean) : AddRelationMutation(model, verbose) {
+    override fun getCandidates() : List<Resource> {
+        val cand = allOfType(dataPropClass)
+        return cand.sortedBy { it.toString() }
+    }
+
+    override fun computeDomainsProp(p : Property) : Pair<Set<Resource>, Set<RDFNode>> {
+        val domain = allOfType(namedInd)
+        // different options for values
+        val range = exampleDataValues
+
+        return Pair(domain, range)
+    }
+
+    override fun setConfiguration(config: MutationConfiguration) {
+        val p =
+            when (config) {
+                is SingleResourceConfiguration -> {
+                    config.getResource()
+                }
+
+                is SingleStatementConfiguration -> {
+                    config.getStatement().predicate
+                }
+
+                else -> model.createResource("newObjectProp" + randomGenerator.nextInt())
+            }
+
+        // check that p is really an ObjectProperty, if it exists in the model at all
+        if (model.listResourcesWithProperty(null ).toSet().contains(p.asResource()))
+            if (!isOfType(p.asResource(), dataPropClass)) {
+                println("WARNING: resource $p is not a data property but is used as such in configuration.")
+            }
+
+        super.setConfiguration(config)
+    }
+}
+
+class RemoveDataPropertyRelationMutation(model: Model, verbose : Boolean) : RemoveStatementByTypeOfRelationMutation(model, verbose) {
+    override val targetType = dataPropClass
+}
+
+class AddNegativeDataPropertyRelationMutation(model: Model, verbose: Boolean) : AddNegativePropertyRelationMutation(model, verbose) {
+    override val typeOfProperty = dataPropClass
+    override val domain = allOfType(namedInd)
+    override val range = exampleDataValues
+    override val relationToTarget = targetValue
 }
 
 // adds new individual to the ontology
@@ -250,7 +303,7 @@ class ChangeDataPropertyMutation(model: Model, verbose: Boolean) : ChangeRelatio
     override fun getCandidates() : List<Resource> {
         val cand =  super.getCandidates()
         // only select data properties
-        val newCand =  cand.filter { isOfInferredType(it, datatypeProp)}
+        val newCand =  cand.filter { isOfInferredType(it, dataPropClass)}
         return newCand
     }
 }

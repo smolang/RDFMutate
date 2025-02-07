@@ -1,8 +1,12 @@
 import io.kotlintest.shouldBe
 import io.kotlintest.specs.StringSpec
+import org.apache.jena.rdf.model.Property
 import org.apache.jena.rdf.model.Resource
+import org.apache.jena.riot.Lang
 import org.apache.jena.riot.RDFDataMgr
 import org.smolang.robust.mutant.*
+import java.io.File
+import java.nio.file.Files
 
 class ReasonerMutationTests : StringSpec() {
 
@@ -248,7 +252,7 @@ class ReasonerMutationTests : StringSpec() {
 
             // remove negative assertion
             val ms2 = MutationSequence(verbose)
-            ms2.addRandom(RemoveNegativeObjectPropertyRelationMutation::class)
+            ms2.addRandom(RemoveNegativePropertyAssertionMutation::class)
 
             val m2 = Mutator(ms2, verbose)
             val res2 = m2.mutate(res1)
@@ -256,6 +260,65 @@ class ReasonerMutationTests : StringSpec() {
             (input.listStatements().toSet().size) shouldBe res2.listStatements().toSet().size
 
 
+        }
+    }
+
+    init {
+        "adding new class, object property and data property" {
+            val verbose = false
+            val input = RDFDataMgr.loadDataset("abc/abc.ttl").defaultModel
+
+            val ms = MutationSequence(verbose)
+            ms.addRandom(DeclareClassMutation::class)
+            ms.addRandom(DeclareObjectPropMutation::class)
+            ms.addRandom(DeclareObjectPropMutation::class)
+            ms.addRandom(DeclareDataPropMutation::class)
+            ms.addRandom(AddIndividualMutation::class)
+            ms.addRandom(AddDataPropRangeMutation::class)
+            ms.addRandom(AddDataPropDomainMutation::class)
+            ms.addRandom(BasicAddDataPropertyRelationMutation::class)
+            ms.addRandom(BasicAddDataPropertyRelationMutation::class)
+            ms.addRandom(BasicAddDataPropertyRelationMutation::class)
+            ms.addRandom(RemoveDataPropertyRelationMutation::class)
+            ms.addRandom(AddNegativeDataPropertyRelationMutation::class)
+            ms.addRandom(AddPropertyChainMutation::class)
+            ms.addRandom(AddDatatypeDefinition::class)
+
+            val m = Mutator(ms, verbose)
+            val res = m.mutate(input)
+
+            // check number of named individuals
+            val rdfTypeProp : Property = res.createProperty("http://www.w3.org/1999/02/22-rdf-syntax-ns#type")
+            val owlClass : Resource = res.createResource("http://www.w3.org/2002/07/owl#Class")
+            val objectPropClass : Resource = res.createResource("http://www.w3.org/2002/07/owl#ObjectProperty")
+            val dataPropClass : Resource = res.createResource("http://www.w3.org/2002/07/owl#DatatypeProperty")
+
+            // count number of entities
+            var countClass = 0
+            var countOP = 0
+            var countDP = 0
+
+            for (s in res.listStatements()) {
+                if (s.predicate == rdfTypeProp && s.`object` == owlClass)
+                    countClass += 1
+                if (s.predicate == rdfTypeProp && s.`object` == objectPropClass)
+                    countOP += 1
+                if (s.predicate == rdfTypeProp && s.`object` == dataPropClass)
+                    countDP += 1
+            }
+
+            for (s in res.listStatements())
+                println(s)
+
+            countClass shouldBe 4
+            countDP shouldBe 1
+            countOP shouldBe 2
+
+
+            val outputPath = File("src/test/resources/abc/temp.ttl")
+            // check if output directory exists and create it, if necessary
+            //Files.createDirectories(outputPath!!.parentFile.toPath())
+            RDFDataMgr.write(outputPath.outputStream(), res, Lang.TTL)
         }
     }
 

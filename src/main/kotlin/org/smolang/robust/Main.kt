@@ -110,54 +110,69 @@ class Main : CliktCommand() {
     private fun elMutation() {
         // create selection of mutations that can be applied
         val candidateMutations = listOf(
-            // TBox
-            CEUAMutation::class,
+            // -------------Tbox-----------------------
+            // declarations
+            DeclareClassMutation::class,
+            DeclareObjectPropMutation::class,
+            DeclareDataPropMutation::class,
+            // sub-class axioms
             AddSubclassRelationMutation::class,
             RemoveSubclassRelationMutation::class,
-
+            // equivalent-class axioms
             AddEquivalentClassRelationMutation::class,
             RemoveEquivClassRelationMutation::class,
-
+            // disjoint-class axioms
             AddDisjointClassRelationMutation::class,
             RemoveDisjointClassRelationMutation::class,
-
+            // replace class
             ReplaceClassWithTopMutation::class,
             ReplaceClassWithBottomMutation::class,
             ReplaceClassWithSiblingMutation::class,
-
+            // add properties of object properties
             AddReflexiveObjectPropertyRelationMutation::class,
             AddTransitiveObjectPropertyRelationMutation::class,
+            // domains and ranges of properties
             AddObjectPropDomainMutation::class,
+            AddDataPropDomainMutation::class,
             RemoveDomainRelationMutation::class,
             AddObjectPropRangeMutation::class,
+            AddDataPropRangeMutation::class,
             RemoveRangeRelationMutation::class,
+            // property hierarchy
+            AddSubObjectPropMutation::class,
+            AddSubDataPropMutation::class,
+            RemoveSubPropMutation::class,
+            AddEquivObjectPropMutation::class,
+            AddEquivDataPropMutation::class,
+            RemoveEquivPropMutation::class,
+            AddPropertyChainMutation::class,
+            // misc
+            CEUAMutation::class,
+            AddDatatypeDefinition::class,
 
-            // Abox
+            // -------------Abox-----------------------
+            // individuals
             AddIndividualMutation::class,   // adds owl named individual
             RemoveIndividualMutation::class,
             AddClassAssertionMutation::class,
             RemoveClassAssertionMutation::class,
-
+            // relations between individuals
             AddObjectPropertyRelationMutation::class,
             RemoveObjectPropertyRelationMutation::class,
             AddNegativeObjectPropertyRelationMutation::class,
-            RemoveNegativeObjectPropertyRelationMutation::class,
-
+            RemoveNegativePropertyAssertionMutation::class,     // also applies to data properties
+            // equivalence of individuals
             AddSameIndividualAssertionMutation::class,
             RemoveSameIndividualAssertionMutation::class,
             AddDifferentIndividualAssertionMutation::class,
-            RemoveDifferentIndividualAssertionMutation::class
+            RemoveDifferentIndividualAssertionMutation::class,
+            // data properties
+            BasicAddDataPropertyRelationMutation::class,
+            RemoveDataPropertyRelationMutation::class,
+            AddNegativeDataPropertyRelationMutation::class
         )
 
-        // TODO: remove later
-        val tempMutations = listOf(
-            AddObjectPropDomainMutation::class,
-            AddObjectPropRangeMutation::class,
-        )
-
-        //singleMutation(candidateMutations)
-        singleMutation(tempMutations)
-
+        singleMutation(candidateMutations)
     }
 
 
@@ -215,9 +230,9 @@ class Main : CliktCommand() {
         // check if output directory exists and create it, if necessary
         Files.createDirectories(outputPath!!.parentFile.toPath())
         // safe result
-        //if (owlDocument)
-        //    saveOwlDocument(res)
-        //else
+        if (owlDocument)
+            saveOwlDocument(res)
+        else
             RDFDataMgr.write(outputPath.outputStream(), res, Lang.TTL)
 
         // print summary, if required

@@ -32,7 +32,7 @@ class AddPipeSegmentMutation(model: Model, verbose: Boolean) : AUVMutation(model
     private fun getCandidates() : List<Resource> {
         var ret = listOf<Resource>()
         for (axiom in model.listStatements())
-            if (axiom.`object`.equals(pipeSegmentClass) && axiom.predicate.equals(typeProp))
+            if (axiom.`object`.equals(pipeSegmentClass) && axiom.predicate.equals(rdfTypeProp))
                 ret = ret + axiom.subject
         return ret
 
