@@ -28,13 +28,18 @@ open class Mutation(var model: Model, val verbose : Boolean) {
 
 
     // define some properties / resources that are use all the time
-    val typeProp : Property = model.createProperty("http://www.w3.org/1999/02/22-rdf-syntax-ns#type")
+    val rdfTypeProp : Property = model.createProperty("http://www.w3.org/1999/02/22-rdf-syntax-ns#type")
     val subClassProp : Property = model.createProperty("http://www.w3.org/2000/01/rdf-schema#subClassOf")
+    val equivClassProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#equivalentClass")
+    val disjointClassProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#disjointWith")
+
     val subPropertyProp : Property = model.createProperty("http://www.w3.org/2000/01/rdf-schema#subPropertyOf")
     val domainProp : Property = model.createProperty("http://www.w3.org/2000/01/rdf-schema#domain")
     val rangeProp : Property = model.createProperty("http://www.w3.org/2000/01/rdf-schema#range")
     val funcProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#FunctionalProperty")
+    val reflexiveProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#ReflexiveProperty")
     val irreflexiveProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#IrreflexiveProperty")
+    val transitiveProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#TransitiveProperty")
     val oneOfProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#oneOf")
 
     val owlThing : Resource = model.createResource("http://www.w3.org/2002/07/owl#Thing")
@@ -44,6 +49,16 @@ open class Mutation(var model: Model, val verbose : Boolean) {
     val namedInd : Resource = model.createResource("http://www.w3.org/2002/07/owl#NamedIndividual")
     val objectProp : Resource = model.createResource("http://www.w3.org/2002/07/owl#ObjectProperty")
     val datatypeProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#DatatypeProperty")
+
+    val negPropAssertion : Resource = model.createResource("http://www.w3.org/2002/07/owl#NegativePropertyAssertion")
+    val sourceIndProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#sourceIndividual")
+    val assertionPropProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#assertionProperty")
+    val targetIndProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#targetIndividual")
+
+    val differentFromProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#differentFrom")
+    val sameAsProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#sameAs")
+
+
 
     val xsdBoolean : Resource = model.createResource("http://www.w3.org/2001/XMLSchema#boolean")
     val xsdDecimal : Resource = model.createResource("http://www.w3.org/2001/XMLSchema#decimal")
@@ -150,19 +165,19 @@ open class Mutation(var model: Model, val verbose : Boolean) {
     }
 
     fun isOfType(i : Resource, t : Resource) : Boolean {
-        return model.listStatements(i, typeProp, t).hasNext()
+        return model.listStatements(i, rdfTypeProp, t).hasNext()
     }
 
     fun allOfType(t : Resource) : Set<Resource> {
-        return model.listResourcesWithProperty(typeProp, t).toSet()
+        return model.listResourcesWithProperty(rdfTypeProp, t).toSet()
     }
 
     fun isOfInferredType(i : Resource, t : Resource) : Boolean {
-        return infModel.listStatements(i, typeProp, t).hasNext()
+        return infModel.listStatements(i, rdfTypeProp, t).hasNext()
     }
 
     fun allOfInferredType(t : Resource) : Set<Resource> {
-        return infModel.listResourcesWithProperty(typeProp, t).toSet()
+        return infModel.listResourcesWithProperty(rdfTypeProp, t).toSet()
     }
 
     // iterate through the axioms to add and remove existing relations with same subject and predicate
@@ -181,7 +196,7 @@ open class Mutation(var model: Model, val verbose : Boolean) {
         // assure that element is really a list
         if (!model.contains(model.createStatement(
             head,
-            typeProp,
+            rdfTypeProp,
             rdfListClass
         )))
             return listOf()
@@ -572,12 +587,12 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
         val Ind = allOfType(namedInd)   // all individuals
 
         // is property an ObjectProperty?
-        /*
+
         if (isOfType(p, objectProp)) {
-            val (d, r) = computeDomainsObjectProp(p)
-            domainP = d
-            rangeP = r
+            domainP = allOfType(namedInd)
+            rangeP = allOfType(namedInd)
         }
+        /*
         else if (isOfType(p, datatypeProp)) {
             val (d, r) = computeDomainsDataProp(p)
             domainP = d
@@ -585,7 +600,7 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
         }
         // is property type property?
         else */
-        if (p == typeProp){
+        else if (p == rdfTypeProp){
             // let's restrict ourselves to add type relations between individuals and classes
             domainP = Ind
             rangeP = allOfType(owlClass)
@@ -622,7 +637,7 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
                         c.getStatement().predicate
                     }
 
-                    else -> model.createResource()
+                    else -> model.createResource("newPredicate:" + randomGenerator.nextInt())
                 }
             }
             else
@@ -670,6 +685,30 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
     }
 }
 
+
+// removes a statement, that uses the defined predicate
+abstract class RemoveStatementByRelationMutation(model: Model, verbose : Boolean) : RemoveStatementMutation(model, verbose) {
+    abstract val targetPredicate : Resource
+
+    override fun getCandidates(): List<Statement> {
+        val l = model.listStatements().toList()
+        val candidates  = mutableSetOf<Statement>()
+        for (s in l) {
+            // select statements that are not subClass relations
+            if (s.predicate == targetPredicate) {
+                candidates.add(s)
+            }
+        }
+        return filterMutatableAxioms(candidates.toList()).sortedBy { it.toString() }
+    }
+
+    override fun setConfiguration(config: MutationConfiguration) {
+        assert(config is SingleStatementConfiguration)
+        val c = config as SingleStatementConfiguration
+        assert(c.getStatement().predicate == targetPredicate)
+        super.setConfiguration(config)
+    }
+}
 // similar to adding a relation, but all existing triples with this subject ond predicate are deleted
 open class ChangeRelationMutation(model: Model, verbose: Boolean) : AddRelationMutation(model, verbose) {
 
@@ -698,7 +737,7 @@ open class ChangeRelationMutation(model: Model, verbose: Boolean) : AddRelationM
 
 open class AddStatementMutation(model: Model, verbose: Boolean) : Mutation(model, verbose) {
     override fun isApplicable(): Boolean {
-        return hasConfig
+        return true
     }
 
     override fun setConfiguration(config: MutationConfiguration) {
@@ -707,10 +746,11 @@ open class AddStatementMutation(model: Model, verbose: Boolean) : Mutation(model
     }
 
     override fun createMutation() {
-        assert(config != null)
-        val c = config as SingleStatementConfiguration
-        val s = c.getStatement()
-        addSet.add(s)
+        if (config != null) {
+            val c = config as SingleStatementConfiguration
+            val s = c.getStatement()
+            addSet.add(s)
+        }
         super.createMutation()
     }
 }

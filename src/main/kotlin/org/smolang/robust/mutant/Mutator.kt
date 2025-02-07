@@ -87,12 +87,12 @@ class Mutator(private val mutSeq: MutationSequence, private val verbose: Boolean
                 it.toString()
         }
 
-        val addedAxioms = addSet.joinToString( ",", "[", "]")
-        val removedAxioms = removeSet.joinToString( ",", "[", "]").replace("\n", ",")
+        //val addedAxioms = addSet.joinToString( ",", "[", "]")
+        //val removedAxioms = removeSet.joinToString( ",", "[", "]").replace("\n", ",")
 
         // first line: explanation; second line: values
-        val result = "numMutations;numDel;numAdd;appliedMutations;affectedSeedNodes;addedAxioms;removedAxioms\n" +
-                "$numMut;$numDel;$numAdd;$appliedMutations;$affectedSeedNodes;$addedAxioms;$removedAxioms"
+        val result = "numMutations;numDel;numAdd;appliedMutations;affectedSeedNodes\n" +
+                "$numMut;$numDel;$numAdd;$appliedMutations;$affectedSeedNodes"
         return result
     }
 }

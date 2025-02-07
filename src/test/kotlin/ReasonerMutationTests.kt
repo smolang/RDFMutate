@@ -162,5 +162,102 @@ class ReasonerMutationTests : StringSpec() {
         }
     }
 
+    init {
+        "adding subclass relation" {
+            val verbose = false
+            val input = RDFDataMgr.loadDataset("reasoners/assertion.ttl").defaultModel
+
+            val ms = MutationSequence(verbose)
+            ms.addRandom(AddSubclassRelationMutation::class)
+
+            val m = Mutator(ms, verbose)
+            val res = m.mutate(input)
+
+            // check number of named individuals
+            val subClassOf = input.createProperty("http://www.w3.org/2000/01/rdf-schema#subClassOf")
+
+            val a = res.createResource("http://www.ifi.uio.no/tobiajoh/assertion#A")
+            val b = res.createResource("http://www.ifi.uio.no/tobiajoh/assertion#B")
+
+            val AsubB = res.createStatement(a, subClassOf, b)
+            val BsubA = res.createStatement(b, subClassOf, a)
+
+            var count = 0
+            var found = false
+
+            // check, that there is exactly one subclass axiom
+            for (s in res.listStatements()) {
+                if (s == AsubB || s == BsubA)
+                    found = true
+                if (s.predicate == subClassOf)
+                    count += 1
+            }
+
+            found shouldBe true
+            count shouldBe 1
+        }
+    }
+
+    init {
+        "make property transitive and reflexive" {
+            val verbose = false
+            val input = RDFDataMgr.loadDataset("relations/relations.ttl").defaultModel
+
+            val ms = MutationSequence(verbose)
+            ms.addRandom(AddReflexiveObjectPropertyRelationMutation::class)
+            ms.addRandom(AddTransitiveObjectPropertyRelationMutation::class)
+
+            val m = Mutator(ms, verbose)
+            val res = m.mutate(input)
+
+            // check number of named individuals
+            val rdfType = input.createResource("http://www.w3.org/1999/02/22-rdf-syntax-ns#type")
+
+            val trans = res.createResource("http://www.w3.org/2002/07/owl#TransitiveProperty")
+            val reflex = res.createResource("http://www.w3.org/2002/07/owl#ReflexiveProperty")
+
+            var countT = 0
+            var countR = 0
+
+            // check, that there is exactly one subclass axiom
+            for (s in res.listStatements()) {
+                if (s.predicate == rdfType && s.`object` == trans)
+                    countT += 1
+                if (s.predicate == rdfType && s.`object` == reflex)
+                    countR += 1
+            }
+
+            countT shouldBe 1
+            countR shouldBe 1
+        }
+    }
+
+    init {
+        "adding and removal of negative property assertion" {
+            val verbose = false
+            val input = RDFDataMgr.loadDataset("relations/relations.ttl").defaultModel
+
+            // add negative property assertion
+            val ms1 = MutationSequence(verbose)
+            ms1.addRandom(AddNegativeObjectPropertyRelationMutation::class)
+
+            val m1 = Mutator(ms1, verbose)
+            val res1 = m1.mutate(input)
+
+            (input.listStatements().toSet().size + 4) shouldBe res1.listStatements().toSet().size
+
+            // remove negative assertion
+            val ms2 = MutationSequence(verbose)
+            ms2.addRandom(RemoveNegativeObjectPropertyRelationMutation::class)
+
+            val m2 = Mutator(ms2, verbose)
+            val res2 = m2.mutate(res1)
+
+            (input.listStatements().toSet().size) shouldBe res2.listStatements().toSet().size
+
+
+        }
+    }
+
 
 }

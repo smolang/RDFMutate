@@ -3,33 +3,128 @@ package org.smolang.robust.mutant
 import org.apache.jena.query.QueryExecutionFactory
 import org.apache.jena.query.QueryFactory
 import org.apache.jena.rdf.model.Model
+import org.apache.jena.rdf.model.Property
 import org.apache.jena.rdf.model.Resource
-import org.apache.jena.rdf.model.Statement
 import org.smolang.robust.randomGenerator
 
+// adds the specified relation between two properties
+abstract class AddRelationByTypesMutation(model: Model, verbose: Boolean) : AddStatementMutation(model, verbose) {
+    abstract val addedRelation : Property
+    abstract val sourceType : Resource  // type of potential sources
+    abstract val targetType : Resource  // type of potential targets
 
-//removes one (random) subclass axiom       // val m = Mutator
-// only overrides the method to select the candidate axioms from super class
-class RemoveSubclassMutation(model: Model, verbose : Boolean) : RemoveStatementMutation(model, verbose) {
-    override fun getCandidates(): List<Statement> {
-        val l = model.listStatements().toList()
-        val candidates = l.toMutableSet()
-        for (s in l) {
-            // select statements that are not subClass relations
-            if (!s.predicate.toString().matches(".*#subClassOf$".toRegex())) {
-                candidates.remove(s)
-            }
+    override fun createMutation() {
+        val sources = allOfType(sourceType)
+        val targets = allOfType(targetType)
+
+        if (sources.isNotEmpty() && targets.isNotEmpty()) {
+            val source = sources.random(randomGenerator)
+            val target = targets.random(randomGenerator)
+
+            val s = model.createStatement(
+                source,
+                addedRelation,
+                target
+            )
+            val config = SingleStatementConfiguration(s)
+            super.setConfiguration(config)
         }
-        return filterMutatableAxioms(candidates.toList()).sortedBy { it.toString() }
-    }
 
-    override fun setConfiguration(config: MutationConfiguration) {
-        assert(config is SingleStatementConfiguration)
-        val c = config as SingleStatementConfiguration
-        assert(c.getStatement().predicate.toString().matches(".*#subClassOf$".toRegex()))
-        super.setConfiguration(config)
+        super.createMutation()
     }
 }
+
+// adds the specified relation between two classes
+abstract class AddClassRelationMutation(model: Model, verbose: Boolean) : AddRelationByTypesMutation(model, verbose) {
+    override val sourceType = owlClass
+    override val targetType = owlClass
+}
+
+// adds relation between property and class
+abstract class AddPropClassRelationMutation(model: Model, verbose: Boolean) : AddRelationByTypesMutation(model, verbose) {
+    override val sourceType = objectProp
+    override val targetType = owlClass
+}
+
+
+
+// adds the specified property (e.g. transitive) for property
+abstract class AddTypeInformationMutation(model: Model, verbose: Boolean) : AddStatementMutation(model, verbose) {
+    abstract val targetObjects : Resource   // types of objects to target, i.e. add the information to
+    abstract val additionalType : Resource
+
+    override fun createMutation() {
+        val owlProperties = allOfType(targetObjects)
+
+        if (owlProperties.isNotEmpty()) {
+            val prop = owlProperties.random(randomGenerator)
+
+            val s = model.createStatement(
+                prop,
+                rdfTypeProp,
+                additionalType
+            )
+            val config = SingleStatementConfiguration(s)
+            super.setConfiguration(config)
+        }
+
+        super.createMutation()
+    }
+}
+
+//removes one (random) subclass axiom       // val m = Mutator
+class RemoveSubclassRelationMutation(model: Model, verbose : Boolean) : RemoveStatementByRelationMutation(model, verbose) {
+    override val targetPredicate = subClassProp
+}
+
+class AddSubclassRelationMutation(model: Model, verbose: Boolean) : AddClassRelationMutation(model, verbose) {
+    override val addedRelation = subClassProp
+}
+
+class AddEquivalentClassRelationMutation(model: Model, verbose: Boolean) : AddClassRelationMutation(model, verbose) {
+    override val addedRelation = equivClassProp
+}
+
+//removes one (random) equivClass axiom       // val m = Mutator
+class RemoveEquivClassRelationMutation(model: Model, verbose : Boolean) : RemoveStatementByRelationMutation(model, verbose) {
+    override val targetPredicate = equivClassProp
+}
+
+class AddDisjointClassRelationMutation(model: Model, verbose: Boolean) : AddClassRelationMutation(model, verbose) {
+    override val addedRelation = disjointClassProp
+}
+
+class RemoveDisjointClassRelationMutation(model: Model, verbose : Boolean) : RemoveStatementByRelationMutation(model, verbose) {
+    override val targetPredicate = disjointClassProp
+}
+
+class AddReflexiveObjectPropertyRelationMutation(model: Model, verbose: Boolean) : AddTypeInformationMutation(model, verbose) {
+    override val additionalType = reflexiveProp
+    override val targetObjects = objectProp
+}
+
+class AddTransitiveObjectPropertyRelationMutation(model: Model, verbose: Boolean) : AddTypeInformationMutation(model, verbose) {
+    override val additionalType = transitiveProp
+    override val targetObjects = objectProp
+}
+
+class AddObjectPropDomainMutation(model: Model, verbose: Boolean) : AddPropClassRelationMutation(model, verbose) {
+    override val addedRelation = domainProp
+}
+
+class RemoveDomainRelationMutation(model: Model, verbose : Boolean) : RemoveStatementByRelationMutation(model, verbose) {
+    override val targetPredicate = domainProp
+}
+
+class AddObjectPropRangeMutation(model: Model, verbose: Boolean) : AddPropClassRelationMutation(model, verbose) {
+    override val addedRelation = rangeProp
+}
+
+class RemoveRangeRelationMutation(model: Model, verbose : Boolean) : RemoveStatementByRelationMutation(model, verbose) {
+    override val targetPredicate = rangeProp
+}
+
+
 
 // removes one part of an "AND" in a logical axiom
 class CEUAMutation(model: Model, verbose: Boolean): ReplaceNodeInStatementMutation(model, verbose)   {
@@ -281,7 +376,7 @@ class RemoveClassMutation(model: Model, verbose : Boolean) : RemoveNodeMutation(
         val candidates = ArrayList<Resource>()
         for (s in l) {
             // check, if statement is class declaration
-            if (s.predicate == typeProp && s.`object` == owlClass) {
+            if (s.predicate == rdfTypeProp && s.`object` == owlClass) {
                 candidates.add(s.subject)
             }
         }
@@ -303,7 +398,7 @@ class RemoveObjectPropertyMutation(model: Model, verbose : Boolean) : RemoveNode
         val candidates = ArrayList<Resource>()
         for (s in l) {
             // check, if statement is object property declaration
-            if (s.predicate == typeProp && s.`object` == objectProp) {
+            if (s.predicate == rdfTypeProp && s.`object` == objectProp) {
                 candidates.add(s.subject)
             }
         }
@@ -333,7 +428,7 @@ class ReplaceClassWithTopMutation(model: Model, verbose: Boolean) : ReplaceNodeW
         super.createMutation()
         // do not add statement that owl:Thing is an owl class
         addSet.remove(
-            model.createStatement(owlThing, typeProp, owlClass)
+            model.createStatement(owlThing, rdfTypeProp, owlClass)
         )
     }
 }
@@ -352,7 +447,7 @@ class ReplaceClassWithBottomMutation(model: Model, verbose: Boolean) : ReplaceNo
 
         // do not add statement that owl:Nothing is an owl class
         addSet.remove(
-            model.createStatement(owlNothing, typeProp, owlClass)
+            model.createStatement(owlNothing, rdfTypeProp, owlClass)
         )
     }
 }

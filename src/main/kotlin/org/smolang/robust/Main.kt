@@ -110,26 +110,54 @@ class Main : CliktCommand() {
     private fun elMutation() {
         // create selection of mutations that can be applied
         val candidateMutations = listOf(
-            // TBox + Abox
-            RemoveStatementMutation::class,
-
             // TBox
             CEUAMutation::class,
-            RemoveSubclassMutation::class,
+            AddSubclassRelationMutation::class,
+            RemoveSubclassRelationMutation::class,
+
+            AddEquivalentClassRelationMutation::class,
+            RemoveEquivClassRelationMutation::class,
+
+            AddDisjointClassRelationMutation::class,
+            RemoveDisjointClassRelationMutation::class,
+
             ReplaceClassWithTopMutation::class,
             ReplaceClassWithBottomMutation::class,
             ReplaceClassWithSiblingMutation::class,
+
+            AddReflexiveObjectPropertyRelationMutation::class,
+            AddTransitiveObjectPropertyRelationMutation::class,
+            AddObjectPropDomainMutation::class,
+            RemoveDomainRelationMutation::class,
+            AddObjectPropRangeMutation::class,
+            RemoveRangeRelationMutation::class,
 
             // Abox
             AddIndividualMutation::class,   // adds owl named individual
             RemoveIndividualMutation::class,
             AddClassAssertionMutation::class,
             RemoveClassAssertionMutation::class,
+
             AddObjectPropertyRelationMutation::class,
-            RemoveObjectPropertyMutation::class,
+            RemoveObjectPropertyRelationMutation::class,
+            AddNegativeObjectPropertyRelationMutation::class,
+            RemoveNegativeObjectPropertyRelationMutation::class,
+
+            AddSameIndividualAssertionMutation::class,
+            RemoveSameIndividualAssertionMutation::class,
+            AddDifferentIndividualAssertionMutation::class,
+            RemoveDifferentIndividualAssertionMutation::class
         )
 
-        singleMutation(candidateMutations)
+        // TODO: remove later
+        val tempMutations = listOf(
+            AddObjectPropDomainMutation::class,
+            AddObjectPropRangeMutation::class,
+        )
+
+        //singleMutation(candidateMutations)
+        singleMutation(tempMutations)
+
     }
 
 
@@ -187,9 +215,9 @@ class Main : CliktCommand() {
         // check if output directory exists and create it, if necessary
         Files.createDirectories(outputPath!!.parentFile.toPath())
         // safe result
-        if (owlDocument)
-            saveOwlDocument(res)
-        else
+        //if (owlDocument)
+        //    saveOwlDocument(res)
+        //else
             RDFDataMgr.write(outputPath.outputStream(), res, Lang.TTL)
 
         // print summary, if required

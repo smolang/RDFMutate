@@ -19,7 +19,7 @@ class FirstTests : StringSpec() {
 
             // add mutation to remove a random subclass axiom
             val ms = MutationSequence(verbose)
-            ms.addRandom(listOf(RemoveSubclassMutation::class))
+            ms.addRandom(listOf(RemoveSubclassRelationMutation::class))
 
             val m = Mutator(ms, verbose)
             val res = m.mutate(input)
