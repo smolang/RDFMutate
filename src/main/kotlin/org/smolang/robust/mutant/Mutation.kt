@@ -19,7 +19,7 @@ open class Mutation(var model: Model, val verbose : Boolean) {
 
     // using this infModel assumes that "model" never changed
     // i.e. it is the inferred model at the time of initialisation
-    val infModel: InfModel = ModelFactory.createInfModel(reasoner, model)
+    val infModel: InfModel get() = ModelFactory.createInfModel(reasoner, model)
 
     // axioms that should be considered when selecting mutation
     private val mutatableAxioms: MutableSet<Statement> = hashSetOf()

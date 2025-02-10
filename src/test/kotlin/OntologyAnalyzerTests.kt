@@ -1,7 +1,7 @@
 import io.kotlintest.shouldBe
 import io.kotlintest.specs.StringSpec
 import org.apache.jena.riot.RDFDataMgr
-import org.smolang.robust.mutant.OntologyAnalyzer
+import org.smolang.robust.domainSpecific.reasoner.OntologyAnalyzer
 
 class OntologyAnalyzerTests : StringSpec() {
 

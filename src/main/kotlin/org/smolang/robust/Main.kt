@@ -21,6 +21,8 @@ import org.semanticweb.owlapi.model.IRI
 import org.semanticweb.owlapi.model.OWLAxiom
 import org.smolang.robust.domainSpecific.geo.GeoScenarioGenerator
 import org.smolang.robust.domainSpecific.geo.GeoTestCaseGenerator
+import org.smolang.robust.domainSpecific.reasoner.OwlEvaluationGraphGenerator
+import org.smolang.robust.domainSpecific.reasoner.OwlFileHandler
 import org.smolang.robust.domainSpecific.suave.SuaveEvaluationGraphGenerator
 import org.smolang.robust.domainSpecific.suave.SuaveTestCaseGenerator
 import org.smolang.robust.mutant.*
@@ -50,8 +52,83 @@ class Main : CliktCommand() {
         "--el-mutate" to "elReasoner", "-se" to "elReasoner",
         "--scen_suave" to "suave", "-sv" to "suave",
         "--scen_test" to "test", "-st" to "test",
-        "--issre_graph" to "issre", "-ig" to "issre"
+        "--issre_graph" to "issre", "-ig" to "issre",
+        "--el-graph" to "elGraph",
     ).default("free")
+
+    private val elReasonerMutations = listOf(
+        // -------------Tbox-----------------------
+        // declarations
+        DeclareClassMutation::class,
+        DeclareObjectPropMutation::class,
+        DeclareDataPropMutation::class,
+        // sub-class axioms
+        AddSubclassRelationMutation::class,
+        RemoveSubclassRelationMutation::class,
+        // equivalent-class axioms
+        AddEquivalentClassRelationMutation::class,
+        RemoveEquivClassRelationMutation::class,
+        // disjoint-class axioms
+        AddDisjointClassRelationMutation::class,
+        RemoveDisjointClassRelationMutation::class,
+        // replace class
+        ReplaceClassWithTopMutation::class,
+        ReplaceClassWithBottomMutation::class,
+        ReplaceClassWithSiblingMutation::class,
+        // add properties of object properties
+        AddReflexiveObjectPropertyRelationMutation::class,
+        AddTransitiveObjectPropertyRelationMutation::class,
+        // domains and ranges of properties
+        AddObjectPropDomainMutation::class,
+        AddDataPropDomainMutation::class,
+        RemoveDomainRelationMutation::class,
+        AddObjectPropRangeMutation::class,
+        AddDataPropRangeMutation::class,
+        RemoveRangeRelationMutation::class,
+        // property hierarchy
+        AddSubObjectPropMutation::class,
+        AddSubDataPropMutation::class,
+        RemoveSubPropMutation::class,
+        AddEquivObjectPropMutation::class,
+        AddEquivDataPropMutation::class,
+        RemoveEquivPropMutation::class,
+        AddPropertyChainMutation::class,
+        // complex class expressions
+        AddObjectIntersectionOfMutation::class,
+        AddELObjectOneOfMutation::class,
+        AddObjectSomeValuesFromMutation::class,
+        AddObjectHasValueMutation::class,
+        AddDataHasValueMutation::class,
+        AddObjectHasSelfMutation::class,
+        AddELDataIntersectionOfMutation::class,
+        AddELDataOneOfMutation::class,
+        AddELSimpleDataSomeValuesFromMutation::class,
+        // misc
+        CEUAMutation::class,
+        AddDatatypeDefinition::class,
+        AddHasKeyMutation::class,
+
+        // -------------Abox-----------------------
+        // individuals
+        AddIndividualMutation::class,   // adds owl named individual
+        RemoveIndividualMutation::class,
+        AddClassAssertionMutation::class,
+        RemoveClassAssertionMutation::class,
+        // relations between individuals
+        AddObjectPropertyRelationMutation::class,
+        RemoveObjectPropertyRelationMutation::class,
+        AddNegativeObjectPropertyRelationMutation::class,
+        RemoveNegativePropertyAssertionMutation::class,     // also applies to data properties
+        // equivalence of individuals
+        AddSameIndividualAssertionMutation::class,
+        RemoveSameIndividualAssertionMutation::class,
+        AddDifferentIndividualAssertionMutation::class,
+        RemoveDifferentIndividualAssertionMutation::class,
+        // data properties
+        BasicAddDataPropertyRelationMutation::class,
+        RemoveDataPropertyRelationMutation::class,
+        AddNegativeDataPropertyRelationMutation::class
+    )
 
 
     override fun run() {
@@ -70,6 +147,7 @@ class Main : CliktCommand() {
                 elMutation()
             }
             "issre" -> generateIssreGraph()
+            "elGraph" -> generateElReasonerGraph()
             "test" -> {
                 // test installation
                 testMiniPipes()
@@ -109,81 +187,7 @@ class Main : CliktCommand() {
     // mutates a seed KG with the mutation operators suitable for EL ontologies
     private fun elMutation() {
         // create selection of mutations that can be applied
-        val candidateMutations = listOf(
-            // -------------Tbox-----------------------
-            // declarations
-            DeclareClassMutation::class,
-            DeclareObjectPropMutation::class,
-            DeclareDataPropMutation::class,
-            // sub-class axioms
-            AddSubclassRelationMutation::class,
-            RemoveSubclassRelationMutation::class,
-            // equivalent-class axioms
-            AddEquivalentClassRelationMutation::class,
-            RemoveEquivClassRelationMutation::class,
-            // disjoint-class axioms
-            AddDisjointClassRelationMutation::class,
-            RemoveDisjointClassRelationMutation::class,
-            // replace class
-            ReplaceClassWithTopMutation::class,
-            ReplaceClassWithBottomMutation::class,
-            ReplaceClassWithSiblingMutation::class,
-            // add properties of object properties
-            AddReflexiveObjectPropertyRelationMutation::class,
-            AddTransitiveObjectPropertyRelationMutation::class,
-            // domains and ranges of properties
-            AddObjectPropDomainMutation::class,
-            AddDataPropDomainMutation::class,
-            RemoveDomainRelationMutation::class,
-            AddObjectPropRangeMutation::class,
-            AddDataPropRangeMutation::class,
-            RemoveRangeRelationMutation::class,
-            // property hierarchy
-            AddSubObjectPropMutation::class,
-            AddSubDataPropMutation::class,
-            RemoveSubPropMutation::class,
-            AddEquivObjectPropMutation::class,
-            AddEquivDataPropMutation::class,
-            RemoveEquivPropMutation::class,
-            AddPropertyChainMutation::class,
-            // complex class expressions
-            AddObjectIntersectionOfMutation::class,
-            AddELObjectOneOfMutation::class,
-            AddObjectSomeValuesFromMutation::class,
-            AddObjectHasValueMutation::class,
-            AddDataHasValueMutation::class,
-            AddObjectHasSelfMutation::class,
-            AddELDataIntersectionOfMutation::class,
-            AddELDataOneOfMutation::class,
-            AddELSimpleDataSomeValuesFromMutation::class,
-            // misc
-            CEUAMutation::class,
-            AddDatatypeDefinition::class,
-            AddHasKeyMutation::class,
-
-            // -------------Abox-----------------------
-            // individuals
-            AddIndividualMutation::class,   // adds owl named individual
-            RemoveIndividualMutation::class,
-            AddClassAssertionMutation::class,
-            RemoveClassAssertionMutation::class,
-            // relations between individuals
-            AddObjectPropertyRelationMutation::class,
-            RemoveObjectPropertyRelationMutation::class,
-            AddNegativeObjectPropertyRelationMutation::class,
-            RemoveNegativePropertyAssertionMutation::class,     // also applies to data properties
-            // equivalence of individuals
-            AddSameIndividualAssertionMutation::class,
-            RemoveSameIndividualAssertionMutation::class,
-            AddDifferentIndividualAssertionMutation::class,
-            RemoveDifferentIndividualAssertionMutation::class,
-            // data properties
-            BasicAddDataPropertyRelationMutation::class,
-            RemoveDataPropertyRelationMutation::class,
-            AddNegativeDataPropertyRelationMutation::class
-        )
-
-        singleMutation(candidateMutations)
+        singleMutation(elReasonerMutations)
     }
 
 
@@ -200,7 +204,7 @@ class Main : CliktCommand() {
         }
         val seedKG =
             if (owlDocument)
-                loadOwlDocument(seed!!)
+                OwlFileHandler().loadOwlDocument(seed!!)
             else
                 RDFDataMgr.loadDataset(seed!!.absolutePath).defaultModel
 
@@ -242,7 +246,7 @@ class Main : CliktCommand() {
         Files.createDirectories(outputPath!!.parentFile.toPath())
         // safe result
         if (owlDocument)
-            saveOwlDocument(res)
+            OwlFileHandler().saveOwlDocument(res, outputFile!!)
         else
             RDFDataMgr.write(outputPath.outputStream(), res, Lang.TTL)
 
@@ -448,32 +452,14 @@ class Main : CliktCommand() {
         SuaveEvaluationGraphGenerator(false).generateGraph(numberOfMutants, outputFile)
     }
 
-    // uses ont-api to load ontologies, e.g. in functional syntax and serialize them as RDF
-    private fun loadOwlDocument(file: File) : Model {
-        val manager = OntManagers.createManager()
-        val ontology: Ontology = manager.loadOntologyFromOntologyDocument(file)
-        return ontology.asGraphModel()
+    // generates graph for journal extension
+    private fun generateElReasonerGraph() {
+        val inputDirectory = File("sut/reasoners/ontologies_ore")
+        val outputFile = File("sut/reasoners/inputCoverage.csv")
+        OwlEvaluationGraphGenerator().analyzeElInputCoverage(inputDirectory, elReasonerMutations, outputFile)
     }
 
-    // uses ont-api to save only those parts of the model that represent valid DL axioms
-    private fun saveOwlDocument(model: Model) {
-        val manager = OntManagers.createManager()
-        val axioms: MutableSet<OWLAxiom> = mutableSetOf()
 
-        // add all OWLAxioms from Jena Model:
-        // obtaines from https://github.com/owlcs/ont-api/wiki/Examples#-2-ont-api-rdf-model-interface
-        AxiomType.AXIOM_TYPES.stream()
-            .map { type -> AxiomTranslator.get(type) }
-            .forEach { t ->
-                t.axioms(OntModelFactory.createModel(model.graph))
-                    .forEach { axiom -> axioms.add(axiom.owlObject)}
-            }
-
-        // collect axioms and save to file (functional syntax)
-        val ontology = manager.createOntology(axioms)
-        manager.saveOntology(ontology, FunctionalSyntaxDocumentFormat(),  IRI.create(outputFile!!.toURI()))
-
-    }
 }
 
 
