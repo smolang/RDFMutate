@@ -18,8 +18,8 @@ class OwlEvaluationGraphGenerator() {
 
     val verbose = false
     // maps numbers of mutation operators to rest
-    val mutationNumbers = listOf(0,1,2,3,4,5,6,7,8,9,10,20,30,40,50)
-    val sampleSize = 40 // number of ontologies that are considered (might be more than in folder)
+    val mutationNumbers = listOf(0,1,2,3,4,5,6,7,8,9,10,20,30,40,50,75,100)
+    val sampleSize = 100 // number of ontologies that are considered (might be more than in folder)
 
     private fun allOwlFiles(directory: File) : List<File> {
         // filter for files that end with ".owl"
@@ -113,7 +113,7 @@ class OwlEvaluationGraphGenerator() {
                 writer.newLine()
             }
             writer.close()
-            println("writetoFile $outputFile")
+            println("write to File $outputFile")
         }
     }
 
@@ -127,7 +127,7 @@ class OwlEvaluationGraphGenerator() {
             resultsCumulated[mutCount] = mutableListOf()
             // we use as many samples as for the other line
             for (i in 1..sampleSize) {
-                val sample = randElements(results[mutCount]!!.toList(), 10)
+                val sample = randElements(results[mutCount]!!.toList(), countCombine)
                 val set = sample.flatten().toSet()
                 resultsCumulated[mutCount]!!.add(set)
             }

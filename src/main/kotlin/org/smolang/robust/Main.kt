@@ -455,7 +455,7 @@ class Main : CliktCommand() {
     // generates graph for journal extension
     private fun generateElReasonerGraph() {
         val inputDirectory = File("sut/reasoners/ontologies_ore")
-        val outputFile = File("sut/reasoners/inputCoverage.csv")
+        val outputFile = File("sut/reasoners/evaluation/inputCoverage.csv")
         OwlEvaluationGraphGenerator().analyzeElInputCoverage(inputDirectory, elReasonerMutations, outputFile)
     }
 
