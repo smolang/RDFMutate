@@ -31,6 +31,7 @@ class ComplexStatementBuilder(val model: Model) {
     val namedInd : Resource = model.createResource("http://www.w3.org/2002/07/owl#NamedIndividual")
     val objectPropClass : Resource = model.createResource("http://www.w3.org/2002/07/owl#ObjectProperty")
     val dataPropClass : Resource = model.createResource("http://www.w3.org/2002/07/owl#DatatypeProperty")
+    val restrictionClass : Resource = model.createResource("http://www.w3.org/2002/07/owl#Restriction")
 
     val negPropAssertion : Resource = model.createResource("http://www.w3.org/2002/07/owl#NegativePropertyAssertion")
     val sourceIndProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#sourceIndividual")
@@ -53,6 +54,9 @@ class ComplexStatementBuilder(val model: Model) {
     val intersectionProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#intersectionOf")
     val unionProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#unionOf")
     val someValuesFromProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#someValuesFrom")
+    val hasValueProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#hasValue")
+    val hasSelfProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#hasSelf")
+    val onPropertyProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#onProperty")
 
     val rdfListClass : Resource = model.createResource("http://www.w3.org/1999/02/22-rdf-syntax-ns#List")
     val rdfFirst : Property = model.createProperty("http://www.w3.org/1999/02/22-rdf-syntax-ns#first")
@@ -62,7 +66,7 @@ class ComplexStatementBuilder(val model: Model) {
     private val languageTags = listOf("en", "zh", "hi", "es",  "fr", "de")
 
 
-    fun propertyChain(link1: Resource, link2: Resource, superProp : Resource) : List<Statement> {
+    fun propertyChain(links: List<Resource>, superProp : Resource) : List<Statement> {
 
         val result = mutableListOf<Statement>()
         val axiomNode = model.createResource()
@@ -70,7 +74,7 @@ class ComplexStatementBuilder(val model: Model) {
 
         // from: https://www.w3.org/TR/2012/REC-owl2-mapping-to-rdf-20121211/
         result.add(model.createStatement(superProp, propChainProp, axiomNode))
-        result.addAll(sequenceOf(axiomNode, listOf(link1, link2)))
+        result.addAll(sequenceOf(axiomNode, links))
 
         return result
     }
@@ -86,6 +90,104 @@ class ComplexStatementBuilder(val model: Model) {
 
         return result
     }
+
+    // creates triples for "objectIntersectionOf" construct
+    fun objectIntersectionOf(head: Resource, classes : List<Resource>) : List<Statement> {
+        val result = mutableListOf<Statement>()
+
+        result.add(model.createStatement(head, rdfTypeProp, owlClass))
+
+        val listHead = model.createResource()
+        result.add(model.createStatement(head, intersectionProp, listHead))
+        result.addAll(sequenceOf(listHead, classes))
+
+        return result
+    }
+
+    // creates triples for "objectOneOf" construct
+    fun objectOneOf(head: Resource, elements: List<Resource>) : List<Statement> {
+        val result = mutableListOf<Statement>()
+
+        result.add(model.createStatement(head, rdfTypeProp, owlClass))
+
+        val listHead = model.createResource()
+        result.add(model.createStatement(head, oneOfProp, listHead))
+        result.addAll(sequenceOf(listHead, elements))
+
+        return result
+    }
+
+    // creates triples for "objectsSomeValuesFrom" construct
+    fun someValuesFrom(head: Resource, targetProperty: Resource, targetClass: Resource) : List<Statement> {
+        val result = mutableListOf<Statement>()
+
+        result.add(model.createStatement(head, rdfTypeProp, restrictionClass))
+        result.add(model.createStatement(head, onPropertyProp, targetProperty))
+        result.add(model.createStatement(head, someValuesFromProp, targetClass))
+
+        return result
+    }
+
+    // creates triples for "objectHasValue" construct
+    fun objectHasValue(head: Resource, targetProperty: Resource, individual: Resource) : List<Statement> {
+        val result = mutableListOf<Statement>()
+
+        result.add(model.createStatement(head, rdfTypeProp, restrictionClass))
+        result.add(model.createStatement(head, onPropertyProp, targetProperty))
+        result.add(model.createStatement(head, hasValueProp, individual))
+
+        return result
+    }
+
+    // creates triples for "objectHasSelf" construct
+    fun objectHasSelf(head: Resource, targetProperty: Resource) : List<Statement> {
+        val result = mutableListOf<Statement>()
+        val trueLiteral = model.createTypedLiteral("true", xsdBoolean.toString())
+
+        result.add(model.createStatement(head, rdfTypeProp, restrictionClass))
+        result.add(model.createStatement(head, onPropertyProp, targetProperty))
+        result.add(model.createStatement(head, hasSelfProp, trueLiteral))
+
+        return result
+    }
+
+    // creates triples for "dataIntersectionOf" construct
+    fun dataIntersectionOf(head: Resource, dataRanges : List<Resource>) : List<Statement> {
+        val result = mutableListOf<Statement>()
+
+        result.add(model.createStatement(head, rdfTypeProp, datatypeClass))
+
+        val listHead = model.createResource()
+        result.add(model.createStatement(head, intersectionProp, listHead))
+        result.addAll(sequenceOf(listHead, dataRanges))
+
+        return result
+    }
+
+    // creates triples for "dataOneOf" construct
+    fun dataOneOf(head: Resource, literals : List<RDFNode>) : List<Statement> {
+        val result = mutableListOf<Statement>()
+
+        result.add(model.createStatement(head, rdfTypeProp, datatypeClass))
+
+        val listHead = model.createResource()
+        result.add(model.createStatement(head, oneOfProp, listHead))
+        result.addAll(sequenceOf(listHead, literals))
+
+        return result
+    }
+
+    // creates triples for "dataHasValue" construct
+    fun objectHasValue(head: Resource, targetProperty: Resource, literal: RDFNode) : List<Statement> {
+        val result = mutableListOf<Statement>()
+
+        result.add(model.createStatement(head, rdfTypeProp, restrictionClass))
+        result.add(model.createStatement(head, onPropertyProp, targetProperty))
+        result.add(model.createStatement(head, hasValueProp, literal))
+
+        return result
+    }
+
 
     private fun sequenceOf(head: Resource, data : List<RDFNode> ) : List<Statement> {
         val result = mutableListOf<Statement>()

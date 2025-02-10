@@ -5,6 +5,7 @@ import org.apache.jena.query.QueryFactory
 import org.apache.jena.rdf.model.Model
 import org.apache.jena.rdf.model.Property
 import org.apache.jena.rdf.model.Resource
+import org.apache.jena.rdf.model.Statement
 import org.smolang.robust.randomGenerator
 
 // adds the specified relation between two properties
@@ -107,6 +108,34 @@ abstract class DeclareObjectOfTypeMutation(model: Model, verbose: Boolean) : Add
         super.createMutation()
     }
 }
+
+// add as subclass axiom where one side of axiom is a complex class expression
+abstract class AddComplexSubClassAxiomMutation(model: Model, verbose: Boolean) : Mutation(model, verbose) {
+    // returns statements representing the complex class expression
+    abstract fun getComplexClassExpression(head : Resource) : List<Statement>?
+
+    override fun createMutation() {
+        // select class
+        val classes = allOfType(owlClass)
+        val class1 = classes.randomOrNull(randomGenerator)
+
+        // crate complex class expression
+        val class2 = model.createResource()
+        val classExpression= getComplexClassExpression(class2)
+
+        if (class1 != null && classExpression != null) {
+            // select randomly, which class is subclass
+            if (randomGenerator.nextBoolean())
+                addSet.add(model.createStatement(class1, subClassProp, class2))
+            else
+                addSet.add(model.createStatement(class2, subClassProp, class1))
+
+            addSet.addAll(classExpression)
+        }
+        super.createMutation()
+    }
+}
+
 
 class DeclareClassMutation(model: Model, verbose: Boolean) : DeclareObjectOfTypeMutation(model, verbose) {
     override val targetType = owlClass
@@ -243,7 +272,7 @@ class AddPropertyChainMutation(model: Model, verbose: Boolean) : Mutation(model,
             val link1 = properties.random(randomGenerator)
             val link2 = properties.random(randomGenerator)
 
-            val result = ComplexStatementBuilder(model).propertyChain(link1, link2, superProp)
+            val result = ComplexStatementBuilder(model).propertyChain(listOf(link1, link2), superProp)
             for (s in result)
                 addSet.add(s)
 
@@ -617,6 +646,163 @@ class ReplaceClassWithSiblingMutation(model: Model, verbose: Boolean): ReplaceNo
     }
 }
 
+/// mutations to add complex class axioms
+/// adds subclass axiom with "objectIntersectionOf" expression
+class AddObjectIntersectionOfMutation(model: Model, verbose: Boolean) : AddComplexSubClassAxiomMutation(model, verbose) {
+    override fun getComplexClassExpression(head: Resource): List<Statement>? {
+        val classes = allOfType(owlClass)
+        if (classes.isNotEmpty()) {
+            // randomly: 2–5 classes in intersection
+            val numberOfClasses = randomGenerator.nextInt(2,5)
+            val intersectionClasses = mutableListOf<Resource>()
+            for (i in 1..numberOfClasses)
+                intersectionClasses.add(classes.random(randomGenerator))
+
+            return statementBuilder.objectIntersectionOf(head, intersectionClasses)
+        }
+        // can not create --> emp
+        return null
+    }
+}
+
+/// adds subclass axiom with "objectOneOf" expression; according to EL profile
+class AddELObjectOneOfMutation(model: Model, verbose: Boolean) : AddComplexSubClassAxiomMutation(model, verbose) {
+    override fun getComplexClassExpression(head: Resource): List<Statement>? {
+        val individuals = allOfType(namedInd)
+        if (individuals.isNotEmpty()) {
+            return statementBuilder.objectOneOf(head, listOf(individuals.random(randomGenerator)))
+        }
+        // can not create --> emp
+        return null
+    }
+}
+
+/// adds subclass axiom with "objectSomeValuesFrom" expression; according to EL profile
+class AddObjectSomeValuesFromMutation(model: Model, verbose: Boolean) : AddComplexSubClassAxiomMutation(model, verbose) {
+    override fun getComplexClassExpression(head: Resource): List<Statement>? {
+        val classes = allOfType(owlClass)
+        val properties = allOfType(objectPropClass)
+        if (classes.isNotEmpty() && properties.isNotEmpty()) {
+            return statementBuilder.someValuesFrom(
+                head,
+                properties.random(randomGenerator),
+                classes.random(randomGenerator)
+            )
+        }
+        // can not create --> return null
+        return null
+    }
+}
+
+/// adds subclass axiom with "dataIntersectionOf" expression; tailored towards EL profile
+class AddELDataIntersectionOfMutation(model: Model, verbose: Boolean) : AddComplexSubClassAxiomMutation(model, verbose) {
+    override fun getComplexClassExpression(head: Resource): List<Statement>? {
+        val result = mutableListOf<Statement>()
+        val dataProperties = allOfType(dataPropClass)
+        if (dataProperties.isNotEmpty()) {
+            val dataProperty = dataProperties.random(randomGenerator)
+
+            // randomly: 2–5 classes in intersection
+            val numberOfRanges = randomGenerator.nextInt(2,3)
+            val intersectionRanges = mutableListOf<Resource>()
+            for (i in 1..numberOfRanges)
+                intersectionRanges.add(exampleElDataTypes.random(randomGenerator))
+
+            // create data intersection
+            val intersectionHead = model.createResource()
+            result.addAll(statementBuilder.dataIntersectionOf(intersectionHead, intersectionRanges))
+
+            // encapsulated in "someValuesFrom" construct
+            result.addAll(statementBuilder.someValuesFrom(
+                head,
+                dataProperty,
+                intersectionHead
+                ))
+            return result
+        }
+        // can not create --> emp
+        return null
+    }
+}
+
+/// adds subclass axiom with "dataOneOf" expression; tailored towards EL profile
+class AddELDataOneOfMutation(model: Model, verbose: Boolean) : AddComplexSubClassAxiomMutation(model, verbose) {
+    override fun getComplexClassExpression(head: Resource): List<Statement>? {
+        val result = mutableListOf<Statement>()
+        val dataProperties = allOfType(dataPropClass)
+        if (dataProperties.isNotEmpty()) {
+            val dataProperty = dataProperties.random(randomGenerator)
+
+            // create data one of (only one element, as we are in EL profile)
+            val oneOfHead = model.createResource()
+            result.addAll(statementBuilder.dataOneOf(oneOfHead, listOf(exampleElDataValues.random(randomGenerator))))
+
+            // encapsulated in "someValuesFrom" construct
+            result.addAll(statementBuilder.someValuesFrom(
+                head,
+                dataProperty,
+                oneOfHead
+            ))
+            return result
+        }
+        // can not create --> emp
+        return null
+    }
+}
+
+/// adds subclass axiom with "DataSomeValuesFrom" expression with simple data range; tailored towards EL profile
+class AddELSimpleDataSomeValuesFromMutation(model: Model, verbose: Boolean) : AddComplexSubClassAxiomMutation(model, verbose) {
+    override fun getComplexClassExpression(head: Resource): List<Statement>? {
+        val result = mutableListOf<Statement>()
+        val dataProperties = allOfType(dataPropClass)
+        if (dataProperties.isNotEmpty()) {
+            val dataProperty = dataProperties.random(randomGenerator)
+
+            // encapsulated in "someValuesFrom" construct
+            result.addAll(statementBuilder.someValuesFrom(
+                head,
+                dataProperty,
+                exampleElDataTypes.random(randomGenerator)
+            ))
+            return result
+        }
+        // can not create --> emp
+        return null
+    }
+}
+
+/// adds subclass axiom with "objectHasValue" expression; according to EL profile
+class AddObjectHasValueMutation(model: Model, verbose: Boolean) : AddComplexSubClassAxiomMutation(model, verbose) {
+    override fun getComplexClassExpression(head: Resource): List<Statement>? {
+        val individuals = allOfType(namedInd)
+        val properties = allOfType(objectPropClass)
+        if (individuals.isNotEmpty() && properties.isNotEmpty()) {
+            return statementBuilder.objectHasValue(
+                head,
+                properties.random(randomGenerator),
+                individuals.random(randomGenerator)
+            )
+        }
+        // can not create --> return null
+        return null
+    }
+}
+
+/// adds subclass axiom with "objectHasSelf" expression; according to EL profile
+class AddObjectHasSelfMutation(model: Model, verbose: Boolean) : AddComplexSubClassAxiomMutation(model, verbose) {
+    override fun getComplexClassExpression(head: Resource): List<Statement>? {
+        val properties = allOfType(objectPropClass)
+        if (properties.isNotEmpty()) {
+            return statementBuilder.objectHasSelf(
+                head,
+                properties.random(randomGenerator)
+            )
+        }
+        // can not create --> return null
+        return null
+    }
+}
+
 // adds datatype definition
 // note: only considers "dataOneOf" with one element --> only one special case
 class AddDatatypeDefinition(model: Model, verbose: Boolean) : Mutation(model, verbose) {
@@ -627,7 +813,7 @@ class AddDatatypeDefinition(model: Model, verbose: Boolean) : Mutation(model, ve
         addSet.add(model.createStatement(newDatatype, equivClassProp, definitionHead))
         addSet.addAll(statementBuilder.dataOneOf(
             definitionHead,
-            exampleDataValues.random(randomGenerator)
+            exampleElDataValues.random(randomGenerator)
         ))
         super.createMutation()
     }

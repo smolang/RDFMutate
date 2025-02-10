@@ -1,8 +1,11 @@
 package org.smolang.robust.mutant
 
+import openllet.owlapi.XSD
+import org.apache.jena.datatypes.RDFDatatype
 import org.apache.jena.rdf.model.*
 import org.apache.jena.reasoner.Reasoner
 import org.apache.jena.reasoner.ReasonerRegistry
+import org.apache.jena.riot.RDFDataMgr
 import org.smolang.robust.randomGenerator
 
 open class Mutation(var model: Model, val verbose : Boolean) {
@@ -67,7 +70,10 @@ open class Mutation(var model: Model, val verbose : Boolean) {
     val xsdBoolean : Resource = model.createResource("http://www.w3.org/2001/XMLSchema#boolean")
     val xsdDecimal : Resource = model.createResource("http://www.w3.org/2001/XMLSchema#decimal")
     val xsdDouble : Resource = model.createResource("http://www.w3.org/2001/XMLSchema#double")
+    val xsdString : Resource = model.createResource("http://www.w3.org/2001/XMLSchema#string")
     val rdfsLiteral : Resource = model.createResource("http://www.w3.org/2000/01/rdf-schema#Literal")
+    val rdfPlainLiteral : Property = model.createProperty("http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral")
+
 
     val datatypeClass : Resource = model.createResource("http://www.w3.org/2000/01/rdf-schema#Datatype")
 
@@ -83,23 +89,24 @@ open class Mutation(var model: Model, val verbose : Boolean) {
     private val languageTags = listOf("en", "zh", "hi", "es",  "fr", "de")
 
     // some example data values, used when adding data relation; all in EL profile
-    val exampleDataValues get() =
+    val exampleElDataValues get() =
         run {
-            val num1 = "${randomGenerator.nextInt(0,1000)}.${randomGenerator.nextInt(0,1000)}"
-            val num2 = "-${randomGenerator.nextInt(0,1000)}.${randomGenerator.nextInt(0,1000)}"
-            val literal = "someText${randomGenerator.nextInt(0,1000)}"
+            val num1 = "${randomGenerator.nextInt(0,100)}.${randomGenerator.nextInt(0,100)}"
+            val num2 = "-${randomGenerator.nextInt(0,100)}.${randomGenerator.nextInt(0,100)}"
+            val literal = "someText${randomGenerator.nextInt(0,10)}"
             setOf(
-                // boolean
-                model.createTypedLiteral("true", xsdBoolean.toString()),
-                model.createTypedLiteral("false", xsdBoolean.toString()),
                 // decimals
                 model.createTypedLiteral(num1, xsdDecimal.toString()),
                 model.createTypedLiteral(num2, xsdDecimal.toString()),
                 // literals (might have language tag)
                 model.createLiteral(literal),
                 model.createLiteral(literal, languageTags.random(randomGenerator)),
+                // strings
+                model.createTypedLiteral(literal, xsdString.toString())
             )
         }
+    val exampleElDataTypes get() =
+        listOf(xsdDecimal, rdfsLiteral, rdfPlainLiteral, xsdString)
 
 
     // empty Axiom

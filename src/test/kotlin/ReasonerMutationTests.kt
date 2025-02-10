@@ -322,5 +322,38 @@ class ReasonerMutationTests : StringSpec() {
         }
     }
 
+    init {
+        "adding complex class expressions" {
+            val verbose = false
+            val input = RDFDataMgr.loadDataset("abc/abc.ttl").defaultModel
+
+            val ms = MutationSequence(verbose)
+            ms.addRandom(DeclareClassMutation::class)
+            ms.addRandom(DeclareObjectPropMutation::class)
+            ms.addRandom(DeclareObjectPropMutation::class)
+            ms.addRandom(DeclareDataPropMutation::class)
+            ms.addRandom(AddIndividualMutation::class)
+            ms.addRandom(AddIndividualMutation::class)
+            // todo: add the following to main
+            ms.addRandom(AddObjectIntersectionOfMutation::class)
+            ms.addRandom(AddELObjectOneOfMutation::class)
+            ms.addRandom(AddObjectSomeValuesFromMutation::class)
+            ms.addRandom(AddObjectHasValueMutation::class)
+            ms.addRandom(AddObjectHasSelfMutation::class)
+            ms.addRandom(AddELDataIntersectionOfMutation::class)
+            ms.addRandom(AddELDataOneOfMutation::class)
+            ms.addRandom(AddELSimpleDataSomeValuesFromMutation::class)
+
+            val m = Mutator(ms, verbose)
+            val res = m.mutate(input)
+
+
+            val outputPath = File("src/test/resources/abc/temp_classes.ttl")
+            // check if output directory exists and create it, if necessary
+            //Files.createDirectories(outputPath!!.parentFile.toPath())
+            RDFDataMgr.write(outputPath.outputStream(), res, Lang.TTL)
+        }
+    }
+
 
 }

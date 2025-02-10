@@ -146,6 +146,15 @@ class Main : CliktCommand() {
             AddEquivDataPropMutation::class,
             RemoveEquivPropMutation::class,
             AddPropertyChainMutation::class,
+            // complex class expressions
+            AddObjectIntersectionOfMutation::class,
+            AddELObjectOneOfMutation::class,
+            AddObjectSomeValuesFromMutation::class,
+            AddObjectHasValueMutation::class,
+            AddObjectHasSelfMutation::class,
+            AddELDataIntersectionOfMutation::class,
+            AddELDataOneOfMutation::class,
+            AddELSimpleDataSomeValuesFromMutation::class,
             // misc
             CEUAMutation::class,
             AddDatatypeDefinition::class,

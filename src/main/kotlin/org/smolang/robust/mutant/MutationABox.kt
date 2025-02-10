@@ -223,7 +223,7 @@ class BasicAddDataPropertyRelationMutation(model: Model, verbose: Boolean) : Add
     override fun computeDomainsProp(p : Property) : Pair<Set<Resource>, Set<RDFNode>> {
         val domain = allOfType(namedInd)
         // different options for values
-        val range = exampleDataValues
+        val range = exampleElDataValues
 
         return Pair(domain, range)
     }
@@ -259,7 +259,7 @@ class RemoveDataPropertyRelationMutation(model: Model, verbose : Boolean) : Remo
 class AddNegativeDataPropertyRelationMutation(model: Model, verbose: Boolean) : AddNegativePropertyRelationMutation(model, verbose) {
     override val typeOfProperty = dataPropClass
     override val domain = allOfType(namedInd)
-    override val range = exampleDataValues
+    override val range = exampleElDataValues
     override val relationToTarget = targetValue
 }
 
