@@ -211,7 +211,7 @@ class AddObjectPropRangeMutation(model: Model, verbose: Boolean) : AddObjectProp
 class AddDataPropRangeMutation(model: Model, verbose: Boolean) : AddStatementMutation(model, verbose) {
     override fun createMutation() {
         val sources = allOfType(dataPropClass)
-        val targets = setOf(xsdBoolean, xsdDecimal, rdfsLiteral)
+        val targets = allElDataTypes
 
         if (sources.isNotEmpty()) {
             val source = sources.random(randomGenerator)
@@ -706,7 +706,7 @@ class AddELDataIntersectionOfMutation(model: Model, verbose: Boolean) : AddCompl
             val numberOfRanges = randomGenerator.nextInt(2,3)
             val intersectionRanges = mutableListOf<Resource>()
             for (i in 1..numberOfRanges)
-                intersectionRanges.add(exampleElDataTypes.random(randomGenerator))
+                intersectionRanges.add(allElDataTypes.random(randomGenerator))
 
             // create data intersection
             val intersectionHead = model.createResource()
@@ -762,7 +762,7 @@ class AddELSimpleDataSomeValuesFromMutation(model: Model, verbose: Boolean) : Ad
             result.addAll(statementBuilder.someValuesFrom(
                 head,
                 dataProperty,
-                exampleElDataTypes.random(randomGenerator)
+                allElDataTypes.random(randomGenerator)
             ))
             return result
         }
@@ -781,6 +781,22 @@ class AddObjectHasValueMutation(model: Model, verbose: Boolean) : AddComplexSubC
                 head,
                 properties.random(randomGenerator),
                 individuals.random(randomGenerator)
+            )
+        }
+        // can not create --> return null
+        return null
+    }
+}
+
+/// adds subclass axiom with "objectHasValue" expression; according to EL profile
+class AddDataHasValueMutation(model: Model, verbose: Boolean) : AddComplexSubClassAxiomMutation(model, verbose) {
+    override fun getComplexClassExpression(head: Resource): List<Statement>? {
+        val properties = allOfType(dataPropClass)
+        if (properties.isNotEmpty()) {
+            return statementBuilder.dataHasValue(
+                head,
+                properties.random(randomGenerator),
+                exampleElDataValues.random(randomGenerator)
             )
         }
         // can not create --> return null
@@ -817,5 +833,25 @@ class AddDatatypeDefinition(model: Model, verbose: Boolean) : Mutation(model, ve
         ))
         super.createMutation()
     }
+}
 
+// adds "hasKey" axiom
+// simplification: only with object properties
+class AddHasKeyMutation(model: Model, verbose: Boolean) : Mutation(model, verbose) {
+    override fun createMutation() {
+        val targetClass = allOfType(owlClass).randomOrNull(randomGenerator)
+        val objectProps = allOfType(objectPropClass)
+        if (targetClass != null && objectProps.isNotEmpty()){
+            val numberOfProps = randomGenerator.nextInt(1,5)
+            val propList = mutableListOf<Resource>()
+            for (i in 1..numberOfProps)
+                propList.add(objectProps.random(randomGenerator))
+
+            val listHead = model.createResource()
+            addSet.add(model.createStatement(targetClass, hasKey, listHead))
+            addSet.addAll(statementBuilder.sequenceOf(listHead, propList))
+        }
+
+        super.createMutation()
+    }
 }

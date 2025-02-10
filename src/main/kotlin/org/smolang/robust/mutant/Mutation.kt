@@ -1,11 +1,8 @@
 package org.smolang.robust.mutant
 
-import openllet.owlapi.XSD
-import org.apache.jena.datatypes.RDFDatatype
 import org.apache.jena.rdf.model.*
 import org.apache.jena.reasoner.Reasoner
 import org.apache.jena.reasoner.ReasonerRegistry
-import org.apache.jena.riot.RDFDataMgr
 import org.smolang.robust.randomGenerator
 
 open class Mutation(var model: Model, val verbose : Boolean) {
@@ -62,6 +59,7 @@ open class Mutation(var model: Model, val verbose : Boolean) {
     val targetIndProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#targetIndividual")
     val targetValue : Property = model.createProperty("http://www.w3.org/2002/07/owl#targetValue")
 
+    val hasKey : Property = model.createProperty("http://www.w3.org/2002/07/owl#hasKey")
 
     val differentFromProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#differentFrom")
     val sameAsProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#sameAs")
@@ -105,8 +103,28 @@ open class Mutation(var model: Model, val verbose : Boolean) {
                 model.createTypedLiteral(literal, xsdString.toString())
             )
         }
-    val exampleElDataTypes get() =
-        listOf(xsdDecimal, rdfsLiteral, rdfPlainLiteral, xsdString)
+    val allElDataTypes get() =
+        listOf(
+            rdfPlainLiteral,
+            model.createResource("http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"),
+            rdfsLiteral,
+            model.createResource("http://www.w3.org/2002/07/owl#real"),
+            model.createResource("http://www.w3.org/2002/07/owl#rational"),
+            xsdDecimal,
+            model.createResource("http://www.w3.org/2001/XMLSchema#integer"),
+            model.createResource("http://www.w3.org/2001/XMLSchema#nonNegativeInteger"),
+            xsdString,
+            model.createResource("http://www.w3.org/2001/XMLSchema#normalizedString"),
+            model.createResource("http://www.w3.org/2001/XMLSchema#token"),
+            model.createResource("http://www.w3.org/2001/XMLSchema#Name"),
+            model.createResource("http://www.w3.org/2001/XMLSchema#NCName"),
+            model.createResource("http://www.w3.org/2001/XMLSchema#NMTOKEN"),
+            model.createResource("http://www.w3.org/2001/XMLSchema#hexBinary"),
+            model.createResource("http://www.w3.org/2001/XMLSchema#base64Binary"),
+            model.createResource("http://www.w3.org/2001/XMLSchema#anyURI"),
+            model.createResource("http://www.w3.org/2001/XMLSchema#dateTime"),
+            model.createResource("http://www.w3.org/2001/XMLSchema#dateTimeStamp"),
+            )
 
 
     // empty Axiom

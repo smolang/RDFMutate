@@ -151,6 +151,7 @@ class Main : CliktCommand() {
             AddELObjectOneOfMutation::class,
             AddObjectSomeValuesFromMutation::class,
             AddObjectHasValueMutation::class,
+            AddDataHasValueMutation::class,
             AddObjectHasSelfMutation::class,
             AddELDataIntersectionOfMutation::class,
             AddELDataOneOfMutation::class,
@@ -158,6 +159,7 @@ class Main : CliktCommand() {
             // misc
             CEUAMutation::class,
             AddDatatypeDefinition::class,
+            AddHasKeyMutation::class,
 
             // -------------Abox-----------------------
             // individuals

@@ -178,7 +178,7 @@ class ComplexStatementBuilder(val model: Model) {
     }
 
     // creates triples for "dataHasValue" construct
-    fun objectHasValue(head: Resource, targetProperty: Resource, literal: RDFNode) : List<Statement> {
+    fun dataHasValue(head: Resource, targetProperty: Resource, literal: RDFNode) : List<Statement> {
         val result = mutableListOf<Statement>()
 
         result.add(model.createStatement(head, rdfTypeProp, restrictionClass))
@@ -189,7 +189,7 @@ class ComplexStatementBuilder(val model: Model) {
     }
 
 
-    private fun sequenceOf(head: Resource, data : List<RDFNode> ) : List<Statement> {
+    fun sequenceOf(head: Resource, data : List<RDFNode> ) : List<Statement> {
         val result = mutableListOf<Statement>()
         var current = head
         for (d in data) {
