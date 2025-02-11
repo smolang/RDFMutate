@@ -1,0 +1,626 @@
+Prefix(:=<urn:unnamed:ontology#ont288040029707799>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:unnamed:ontology#ont288040029707799>
+
+Declaration(Class(<http://dbpedia.org/ontology/Model>))
+Declaration(Class(<http://dbpedia.org/ontology/TelevisionEpisode>))
+Declaration(Class(<http://dbpedia.org/ontology/FilmFestival>))
+Declaration(Class(<http://dbpedia.org/ontology/AdultActor>))
+Declaration(Class(<http://dbpedia.org/ontology/Beverage>))
+Declaration(Class(<http://dbpedia.org/ontology/Convention>))
+Declaration(Class(<http://dbpedia.org/ontology/BritishRoyalty>))
+Declaration(Class(<http://dbpedia.org/ontology/Single>))
+Declaration(Class(<http://dbpedia.org/ontology/MusicGenre>))
+Declaration(Class(<http://dbpedia.org/ontology/Legislature>))
+Declaration(Class(<http://dbpedia.org/ontology/FormulaOneRacer>))
+Declaration(Class(<http://dbpedia.org/ontology/Magazine>))
+Declaration(Class(<http://dbpedia.org/ontology/EthnicGroup>))
+Declaration(Class(<http://dbpedia.org/ontology/Stadium>))
+Declaration(Class(<http://dbpedia.org/ontology/Hotel>))
+Declaration(Class(<http://dbpedia.org/ontology/VideogamesLeague>))
+Declaration(Class(<http://dbpedia.org/ontology/Olympics>))
+Declaration(Class(<http://dbpedia.org/ontology/MilitaryUnit>))
+Declaration(Class(<http://dbpedia.org/ontology/Boxer>))
+Declaration(Class(<http://dbpedia.org/ontology/Language>))
+Declaration(Class(<http://dbpedia.org/ontology/WorldHeritageSite>))
+Declaration(Class(<http://dbpedia.org/ontology/ShoppingMall>))
+Declaration(Class(<http://dbpedia.org/ontology/HistoricPlace>))
+Declaration(Class(<http://dbpedia.org/ontology/River>))
+Declaration(Class(<http://dbpedia.org/ontology/Mammal>))
+Declaration(Class(<http://dbpedia.org/ontology/Journalist>))
+Declaration(Class(<http://dbpedia.org/ontology/Website>))
+Declaration(Class(<http://dbpedia.org/ontology/VideoGame>))
+Declaration(Class(<http://dbpedia.org/ontology/Scientist>))
+Declaration(Class(<http://dbpedia.org/ontology/SoccerManager>))
+Declaration(Class(<http://dbpedia.org/ontology/MilitaryPerson>))
+Declaration(Class(<http://dbpedia.org/ontology/Hospital>))
+Declaration(Class(<http://dbpedia.org/ontology/BaseballPlayer>))
+Declaration(Class(<http://dbpedia.org/ontology/Broadcast>))
+Declaration(Class(<http://dbpedia.org/ontology/SoccerPlayer>))
+Declaration(Class(<http://dbpedia.org/ontology/Disease>))
+Declaration(Class(<http://dbpedia.org/ontology/Sport>))
+Declaration(Class(<http://dbpedia.org/ontology/Comedian>))
+Declaration(Class(<http://dbpedia.org/ontology/Island>))
+Declaration(Class(<http://dbpedia.org/ontology/Planet>))
+Declaration(Class(<http://dbpedia.org/ontology/OfficeHolder>))
+Declaration(Class(<http://dbpedia.org/ontology/Architect>))
+Declaration(Class(<http://dbpedia.org/ontology/Newspaper>))
+Declaration(Class(<http://dbpedia.org/ontology/ComicsCharacter>))
+Declaration(Class(<http://dbpedia.org/ontology/Museum>))
+Declaration(Class(<http://dbpedia.org/ontology/College>))
+Declaration(Class(<http://dbpedia.org/ontology/Song>))
+Declaration(Class(<http://dbpedia.org/ontology/FigureSkater>))
+Declaration(Class(<http://dbpedia.org/ontology/Bird>))
+Declaration(Class(<http://dbpedia.org/ontology/Album>))
+Declaration(Class(<http://dbpedia.org/ontology/AmericanFootballPlayer>))
+Declaration(Class(<http://dbpedia.org/ontology/Game>))
+Declaration(Class(<http://dbpedia.org/ontology/TennisPlayer>))
+Declaration(Class(<http://dbpedia.org/ontology/Town>))
+Declaration(Class(<http://dbpedia.org/ontology/Road>))
+Declaration(Class(<http://dbpedia.org/ontology/Fish>))
+Declaration(Class(<http://dbpedia.org/ontology/ChemicalCompound>))
+Declaration(Class(<http://dbpedia.org/ontology/MemberOfParliament>))
+Declaration(Class(<http://dbpedia.org/ontology/Astronaut>))
+Declaration(Class(<http://dbpedia.org/ontology/Non-ProfitOrganisation>))
+Declaration(Class(<http://dbpedia.org/ontology/Airport>))
+Declaration(Class(<http://dbpedia.org/ontology/IceHockeyPlayer>))
+Declaration(Class(<http://dbpedia.org/ontology/RugbyPlayer>))
+Declaration(Class(<http://dbpedia.org/ontology/Award>))
+Declaration(Class(<http://dbpedia.org/ontology/Village>))
+Declaration(Class(<http://dbpedia.org/ontology/Insect>))
+Declaration(Class(<http://dbpedia.org/ontology/School>))
+Declaration(Class(<http://dbpedia.org/ontology/BasketballPlayer>))
+Declaration(Class(<http://dbpedia.org/ontology/Continent>))
+Declaration(Class(<http://dbpedia.org/ontology/Congressman>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToDisease>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToNon-ProfitOrganisation>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToBasketballPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToFigureSkater>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToScientist>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToAirport>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToShoppingMall>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToMuseum>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToFilmFestival>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToContinent>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Planet>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToBeverage>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/MusicGenre>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Event>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToStadium>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToGame>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToHospital>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToFormulaOneRacer>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Award>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToSchool>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToChemicalCompound>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToFish>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToMilitaryPerson>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToLanguage>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToVillage>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToVideoGame>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToWorldHeritageSite>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Organisation>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToRugbyPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToSkyscraper>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Work>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Language>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToSingle>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToAward>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Activity>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToAlbum>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Website>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToPlanet>))
+Declaration(ObjectProperty(<newObjectProp:-1303358951>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToTown>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToBoxer>))
+Declaration(ObjectProperty(<newObjectProp:234522730>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToBaseballPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToIsland>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToMilitaryUnit>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToWrestler>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Infrastructure>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Species>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToAstronaut>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToOlympics>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToMemberOfParliament>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToWebsite>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToMammal>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToRiver>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToNewspaper>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToRoad>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToBritishRoyalty>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToBroadcast>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToHistoricPlace>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToArchitect>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToInsect>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Person>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToComicsCharacter>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToOfficeHolder>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Disease>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Place>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToHotel>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToSong>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/EthnicGroup>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToBook>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToMusicGenre>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToAdultActor>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToComedian>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToIceHockeyPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToLegislature>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToSoccerPlayer>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/ChemicalCompound>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToBird>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Beverage>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToSoccerManager>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToTelevisionEpisode>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToMagazine>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToVideogamesLeague>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToJournalist>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToTennisPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToSport>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToAmericanFootballPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToModel>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToCollege>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToCongressman>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToEthnicGroup>))
+Declaration(NamedIndividual(<newIndividual:number1162487018>))
+Declaration(NamedIndividual(<newIndividual:number216577367>))
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToAdultActor> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToAdultActor>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToAdultActor> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToAdultActor> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToAdultActor> <http://dbpedia.org/ontology/AdultActor>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToAirport> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToAirport>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToAirport> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToAirport> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToAirport> <http://dbpedia.org/ontology/Airport>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToAlbum> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToAlbum>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToAlbum> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToAlbum> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToAlbum> <http://dbpedia.org/ontology/Album>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToAmericanFootballPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToAmericanFootballPlayer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToAmericanFootballPlayer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToAmericanFootballPlayer> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToAmericanFootballPlayer> <http://dbpedia.org/ontology/AmericanFootballPlayer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToArchitect> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToArchitect>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToArchitect> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToArchitect> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToArchitect> <http://dbpedia.org/ontology/Architect>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToAstronaut> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToAstronaut>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToAstronaut> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToAstronaut> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToAstronaut> <http://dbpedia.org/ontology/Astronaut>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToAward> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToAward>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToAward> <http://dbpedia.org/ontology/Award>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToAward> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToAward> <http://dbpedia.org/ontology/Award>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToBaseballPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToBaseballPlayer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToBaseballPlayer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToBaseballPlayer> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToBaseballPlayer> <http://dbpedia.org/ontology/BaseballPlayer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToBasketballPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToBasketballPlayer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToBasketballPlayer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToBasketballPlayer> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToBasketballPlayer> <http://dbpedia.org/ontology/BasketballPlayer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToBeverage> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToBeverage>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToBeverage> <http://dbpedia.org/ontology/Beverage>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToBeverage> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToBeverage> <http://dbpedia.org/ontology/Beverage>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToBird> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToBird>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToBird> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToBird> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToBird> <http://dbpedia.org/ontology/Bird>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToBook> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToBook>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToBook> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToBook> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToBook> owl:Thing)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToBoxer> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToBoxer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToBoxer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToBoxer> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToBoxer> <http://dbpedia.org/ontology/Boxer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToBritishRoyalty> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToBritishRoyalty>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToBritishRoyalty> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToBritishRoyalty> <http://dbpedia.org/ontology/Convention>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToBroadcast> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToBroadcast>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToBroadcast> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToBroadcast> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToBroadcast> <http://dbpedia.org/ontology/Broadcast>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToChemicalCompound> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToChemicalCompound>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToChemicalCompound> <http://dbpedia.org/ontology/ChemicalCompound>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToChemicalCompound> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToChemicalCompound> <http://dbpedia.org/ontology/ChemicalCompound>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToCollege> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToCollege>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToCollege> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToCollege> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToCollege> <http://dbpedia.org/ontology/College>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToComedian> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToComedian>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToComedian> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToComedian> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToComedian> <http://dbpedia.org/ontology/Comedian>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToComicsCharacter> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToComicsCharacter>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToComicsCharacter> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToComicsCharacter> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToComicsCharacter> <http://dbpedia.org/ontology/ComicsCharacter>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToCongressman> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToCongressman>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToCongressman> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToCongressman> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToCongressman> <http://dbpedia.org/ontology/Congressman>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToContinent> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToContinent>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToContinent> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToContinent> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToContinent> <http://dbpedia.org/ontology/Continent>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToDisease> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToDisease>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToDisease> <http://dbpedia.org/ontology/Disease>)
+TransitiveObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToDisease>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToDisease> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToDisease> <http://dbpedia.org/ontology/Disease>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToEthnicGroup> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToEthnicGroup>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToEthnicGroup> <http://dbpedia.org/ontology/EthnicGroup>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToEthnicGroup> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToEthnicGroup> <http://dbpedia.org/ontology/EthnicGroup>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToFigureSkater> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToFigureSkater>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToFigureSkater> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToFigureSkater> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToFigureSkater> <http://dbpedia.org/ontology/FigureSkater>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToFilmFestival> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToFilmFestival>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToFilmFestival> <http://dbpedia.org/ontology/Event>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToFilmFestival> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToFilmFestival> <http://dbpedia.org/ontology/FilmFestival>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToFish> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToFish>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToFish> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToFish> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToFish> <http://dbpedia.org/ontology/Fish>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToFormulaOneRacer> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToFormulaOneRacer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToFormulaOneRacer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToFormulaOneRacer> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToFormulaOneRacer> <http://dbpedia.org/ontology/FormulaOneRacer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToGame> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToGame>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToGame> <http://dbpedia.org/ontology/Activity>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToGame> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToGame> <http://dbpedia.org/ontology/Game>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToHistoricPlace> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToHistoricPlace>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToHistoricPlace> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToHistoricPlace> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToHistoricPlace> <http://dbpedia.org/ontology/HistoricPlace>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToHospital> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToHospital>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToHospital> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToHospital> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToHospital> <http://dbpedia.org/ontology/Hospital>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToHotel> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToHotel>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToHotel> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToHotel> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToHotel> <http://dbpedia.org/ontology/Town>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToHotel> <http://dbpedia.org/ontology/Hotel>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToIceHockeyPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToIceHockeyPlayer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToIceHockeyPlayer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToIceHockeyPlayer> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToIceHockeyPlayer> <http://dbpedia.org/ontology/IceHockeyPlayer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToInsect> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToInsect>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToInsect> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToInsect> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToInsect> <http://dbpedia.org/ontology/Insect>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToIsland> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToIsland>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToIsland> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToIsland> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToIsland> <http://dbpedia.org/ontology/Island>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToJournalist> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToJournalist>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToJournalist> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToJournalist> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToJournalist> <http://dbpedia.org/ontology/Journalist>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToLanguage> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToLanguage>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToLanguage> <http://dbpedia.org/ontology/Language>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToLanguage> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToLanguage> <http://dbpedia.org/ontology/Language>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToLegislature> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToLegislature>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToLegislature> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToLegislature> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToLegislature> <http://dbpedia.org/ontology/Legislature>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToMagazine> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToMagazine>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToMagazine> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToMagazine> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToMagazine> <http://dbpedia.org/ontology/Magazine>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToMammal> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToMammal>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToMammal> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToMammal> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToMammal> <http://dbpedia.org/ontology/Mammal>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToMemberOfParliament> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToMemberOfParliament>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToMemberOfParliament> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToMemberOfParliament> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToMemberOfParliament> <http://dbpedia.org/ontology/MemberOfParliament>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToMilitaryPerson> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToMilitaryPerson>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToMilitaryPerson> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToMilitaryPerson> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToMilitaryPerson> <http://dbpedia.org/ontology/MilitaryPerson>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToMilitaryUnit> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToMilitaryUnit>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToMilitaryUnit> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToMilitaryUnit> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToMilitaryUnit> <http://dbpedia.org/ontology/MilitaryUnit>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToModel> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToModel>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToModel> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToModel> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToModel> <http://dbpedia.org/ontology/Model>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToMuseum> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToMuseum>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToMuseum> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToMuseum> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToMuseum> <http://dbpedia.org/ontology/Museum>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToMusicGenre> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToMusicGenre>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToMusicGenre> <http://dbpedia.org/ontology/MusicGenre>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToMusicGenre> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToMusicGenre> <http://dbpedia.org/ontology/MusicGenre>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToNewspaper> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToNewspaper>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToNewspaper> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToNewspaper> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToNewspaper> <http://dbpedia.org/ontology/Newspaper>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToNon-ProfitOrganisation> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToNon-ProfitOrganisation>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToNon-ProfitOrganisation> <http://dbpedia.org/ontology/Organisation>)
+ReflexiveObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToNon-ProfitOrganisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToNon-ProfitOrganisation> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToNon-ProfitOrganisation> <http://dbpedia.org/ontology/Non-ProfitOrganisation>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToOfficeHolder> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToOfficeHolder>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToOfficeHolder> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToOfficeHolder> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToOfficeHolder> <http://dbpedia.org/ontology/OfficeHolder>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToOlympics> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToOlympics>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToOlympics> <http://dbpedia.org/ontology/Event>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToOlympics> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToOlympics> <http://dbpedia.org/ontology/Olympics>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToPlanet> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToPlanet>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToPlanet> <http://dbpedia.org/ontology/Planet>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToPlanet> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToPlanet> <http://dbpedia.org/ontology/Planet>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToRiver> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToRiver>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToRiver> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToRiver> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToRiver> <http://dbpedia.org/ontology/River>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToRoad> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToRoad>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToRoad> <http://dbpedia.org/ontology/Infrastructure>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToRoad> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToRoad> <http://dbpedia.org/ontology/Road>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToRugbyPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToRugbyPlayer>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToRugbyPlayer> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToRugbyPlayer> <http://dbpedia.org/ontology/RugbyPlayer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToSchool> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToSchool>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToSchool> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToSchool> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToSchool> <http://dbpedia.org/ontology/School>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToScientist> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToScientist>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToScientist> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToScientist> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToScientist> <http://dbpedia.org/ontology/Scientist>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToShoppingMall> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToShoppingMall>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToShoppingMall> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToShoppingMall> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToShoppingMall> <http://dbpedia.org/ontology/ShoppingMall>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToSingle> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToSingle>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToSingle> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToSingle> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToSingle> <http://dbpedia.org/ontology/Single>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToSkyscraper> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToSkyscraper>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToSkyscraper> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToSkyscraper> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToSkyscraper> owl:Nothing)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToSoccerManager> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToSoccerManager>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToSoccerManager> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToSoccerManager> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToSoccerManager> <http://dbpedia.org/ontology/SoccerManager>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToSoccerPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToSoccerPlayer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToSoccerPlayer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToSoccerPlayer> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToSoccerPlayer> <http://dbpedia.org/ontology/SoccerPlayer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToSong> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToSong>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToSong> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToSong> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToSong> <http://dbpedia.org/ontology/Song>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToSport> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToSport>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToSport> <http://dbpedia.org/ontology/Activity>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToSport> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToSport> <http://dbpedia.org/ontology/Sport>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToStadium> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToStadium>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToStadium> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToStadium> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToStadium> <http://dbpedia.org/ontology/Stadium>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToTelevisionEpisode> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToTelevisionEpisode>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToTelevisionEpisode> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToTelevisionEpisode> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToTelevisionEpisode> <http://dbpedia.org/ontology/TelevisionEpisode>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToTennisPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToTennisPlayer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToTennisPlayer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToTennisPlayer> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToTennisPlayer> <http://dbpedia.org/ontology/TennisPlayer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToTown> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToTown>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToTown> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToTown> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToTown> <http://dbpedia.org/ontology/Town>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToVideoGame> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToVideoGame>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToVideoGame> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToVideoGame> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToVideoGame> <http://dbpedia.org/ontology/VideoGame>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToVideogamesLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToVideogamesLeague>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToVideogamesLeague> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToVideogamesLeague> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToVideogamesLeague> <http://dbpedia.org/ontology/VideogamesLeague>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToVillage> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToVillage>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToVillage> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToVillage> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToVillage> <http://dbpedia.org/ontology/Village>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToWebsite> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToWebsite>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToWebsite> <http://dbpedia.org/ontology/Website>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToWebsite> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToWebsite> <http://dbpedia.org/ontology/Website>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToWorldHeritageSite> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToWorldHeritageSite>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToWorldHeritageSite> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToWorldHeritageSite> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToWorldHeritageSite> <http://dbpedia.org/ontology/WorldHeritageSite>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToWrestler> (<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToWrestler>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToWrestler> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToWrestler> <http://dbpedia.org/ontology/Convention>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Convention.owl#linksToWrestler> owl:Nothing)
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://dbpedia.org/ontology/Beverage> (<http://dbpedia.org/ontology/Beverage>)
+
+EquivalentClasses(<http://dbpedia.org/ontology/Beverage> <http://dbpedia.org/ontology/Website>)
+
+# Class: <http://dbpedia.org/ontology/HistoricPlace> (<http://dbpedia.org/ontology/HistoricPlace>)
+
+EquivalentClasses(<http://dbpedia.org/ontology/HistoricPlace> <http://dbpedia.org/ontology/Single>)
+
+
+
+)

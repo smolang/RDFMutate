@@ -1,0 +1,9 @@
+Found anomalies while testing file ../testOnt.owl
+
+Anomaly 1: Class hierarchy differentiation between HERMIT and ELK:
+	additional axioms HERMIT: [EquivalentClasses(<http://purl.org/linguistics/gold/PossessivePronoun> <http://purl.org/linguistics/gold/RelativePastTense> owl:Nothing), SubClassOf(<http://purl.org/linguistics/gold/PossessivePronoun> owl:Nothing), SubClassOf(<http://purl.org/linguistics/gold/RelativePastTense> owl:Nothing)]
+	additional axioms ELK: [SubClassOf(<http://purl.org/linguistics/gold/PossessivePronoun> <http://purl.org/linguistics/gold/Pronominal>), SubClassOf(<http://purl.org/linguistics/gold/RelativePastTense> <http://purl.org/linguistics/gold/TenseProperty>)]
+
+Anomaly 2: Class hierarchy differentiation between ELK and OPENLLET:
+	additional axioms ELK: [SubClassOf(<http://purl.org/linguistics/gold/PossessivePronoun> <http://purl.org/linguistics/gold/Pronominal>), SubClassOf(<http://purl.org/linguistics/gold/RelativePastTense> <http://purl.org/linguistics/gold/TenseProperty>)]
+	additional axioms OPENLLET: [EquivalentClasses(<http://purl.org/linguistics/gold/PossessivePronoun> <http://purl.org/linguistics/gold/RelativePastTense> owl:Nothing), SubClassOf(<http://purl.org/linguistics/gold/PossessivePronoun> owl:Nothing), SubClassOf(<http://purl.org/linguistics/gold/RelativePastTense> owl:Nothing)]

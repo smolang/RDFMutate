@@ -1,0 +1,9 @@
+Found anomalies while testing file ../testOnt.owl
+
+Anomaly 1: Class hierarchy differentiation between HERMIT and ELK:
+	additional axioms HERMIT: [EquivalentClasses(<http://www.cidoc-crm.org/cidoc-crm/E86_Leaving> owl:Nothing), SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E86_Leaving> owl:Nothing)]
+	additional axioms ELK: [SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E86_Leaving> <http://www.cidoc-crm.org/cidoc-crm/E7_Activity>)]
+
+Anomaly 2: Class hierarchy differentiation between ELK and OPENLLET:
+	additional axioms ELK: [SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E86_Leaving> <http://www.cidoc-crm.org/cidoc-crm/E7_Activity>)]
+	additional axioms OPENLLET: [EquivalentClasses(<http://www.cidoc-crm.org/cidoc-crm/E86_Leaving> owl:Nothing), SubClassOf(<http://www.cidoc-crm.org/cidoc-crm/E86_Leaving> owl:Nothing)]

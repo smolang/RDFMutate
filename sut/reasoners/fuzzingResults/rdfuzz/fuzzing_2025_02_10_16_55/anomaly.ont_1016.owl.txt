@@ -1,0 +1,9 @@
+Found anomalies while testing file ../testOnt.owl
+
+Anomaly 1: Class hierarchy differentiation between HERMIT and ELK:
+	additional axioms HERMIT: [SubClassOf(<http://dbpedia.org/ontology/Congressman> <http://dbpedia.org/ontology/MusicalArtist>)]
+	additional axioms ELK: [SubClassOf(<http://dbpedia.org/ontology/Congressman> owl:Thing)]
+
+Anomaly 2: Class hierarchy differentiation between ELK and OPENLLET:
+	additional axioms ELK: [SubClassOf(<http://dbpedia.org/ontology/Congressman> owl:Thing)]
+	additional axioms OPENLLET: [SubClassOf(<http://dbpedia.org/ontology/Congressman> <http://dbpedia.org/ontology/MusicalArtist>)]

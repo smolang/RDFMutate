@@ -1,0 +1,1659 @@
+Prefix(:=<urn:unnamed:ontology#ont287936164347693>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:unnamed:ontology#ont287936164347693>
+
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC55>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Institution>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Modality>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#EEG>))
+Declaration(Class(<http://purl.org/net/nknouf/ns/bibtex#Incollection>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC340>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC341>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC359>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Gender>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#BehaviorDomain>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC346>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Task>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Mismatch_Match>))
+Declaration(Class(<http://purl.org/net/nknouf/ns/bibtex#Misc>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC347>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#PET>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Orthography>))
+Declaration(Class(<http://purl.org/net/nknouf/ns/bibtex#Manual>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Language>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#DelayedMatchToSample>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Experiment>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC45>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Lowpass>))
+Declaration(Class(<http://purl.org/net/nknouf/ns/bibtex#Inproceedings>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Pattern>))
+Declaration(Class(<http://purl.org/net/nknouf/ns/bibtex#Unpublished>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#SampleRate>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Handedness>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#MEG>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Group>))
+Declaration(Class(<http://purl.org/net/nknouf/ns/bibtex#Techreport>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Highpass>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Cognition>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Semantics>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC354>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC353>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Old_New>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#RecordingReference>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Unrelated_Related>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#OrothographicDiscrimination>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC125>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Latency>))
+Declaration(Class(<http://purl.org/net/nknouf/ns/bibtex#Booklet>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC352>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode>))
+Declaration(Class(<http://purl.org/net/nknouf/ns/bibtex#Proceedings>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Subject>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Magnitude>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Person>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC357>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC358>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC344>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC345>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Optical>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#PhonologicalDiscrimination>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#FactorAnalysis>))
+Declaration(Class(<http://purl.org/net/nknouf/ns/bibtex#Inbook>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Rolloff>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#ScalpRegion>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Session>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Response>))
+Declaration(Class(<http://purl.org/net/nknouf/ns/bibtex#Article>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#ParadigmClass>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Measurement>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#SemanticDiscrimination>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Memory>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Intensity>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Condition>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Stimulus>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Gain>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC49>))
+Declaration(Class(<http://purl.org/net/nknouf/ns/bibtex#Phdthesis>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC348>))
+Declaration(Class(<http://purl.org/net/nknouf/ns/bibtex#Mastersthesis>))
+Declaration(Class(<http://purl.org/net/nknouf/ns/bibtex#Entry>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Amplifier>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC338>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#fMRI>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#HumanSubject>))
+Declaration(Class(<newOwlClass:-1588391364>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Laboratory>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#PseudoWord_Word>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Type>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Phonology>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC350>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#ERP>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Episodic>))
+Declaration(Class(<http://purl.org/net/nknouf/ns/bibtex#Book>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#ComponentAnalysis>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC355>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC356>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#AcquisitionSystem>))
+Declaration(Class(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#SpokenLanguage>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC67>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC343>))
+Declaration(ObjectProperty(<http://purl.org/net/nknouf/ns/bibtex#hasISBN>))
+Declaration(ObjectProperty(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasMedianL1>))
+Declaration(ObjectProperty(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasPublication>))
+Declaration(ObjectProperty(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#hasMaxIntensity>))
+Declaration(ObjectProperty(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#hasMagnitude>))
+Declaration(ObjectProperty(<http://purl.org/net/nknouf/ns/bibtex#hasBooktitle>))
+Declaration(ObjectProperty(<http://purl.org/net/nknouf/ns/bibtex#hasSeries>))
+Declaration(ObjectProperty(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#hasIntensity>))
+Declaration(ObjectProperty(<http://purl.org/net/nknouf/ns/bibtex#hasPrice>))
+Declaration(ObjectProperty(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasGroupCount>))
+Declaration(ObjectProperty(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#hasCalibrationSetting>))
+Declaration(ObjectProperty(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasConditionModality>))
+Declaration(ObjectProperty(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasParagdigm>))
+Declaration(ObjectProperty(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#hasNumericValue>))
+Declaration(ObjectProperty(<http://purl.org/net/nknouf/ns/bibtex#hasMonth>))
+Declaration(ObjectProperty(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasMaleCount>))
+Declaration(ObjectProperty(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#endTime>))
+Declaration(ObjectProperty(<http://purl.org/net/nknouf/ns/bibtex#hasVolume>))
+Declaration(ObjectProperty(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasSubjectCount>))
+Declaration(ObjectProperty(<http://purl.org/net/nknouf/ns/bibtex#hasURL>))
+Declaration(ObjectProperty(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#locatedIn>))
+Declaration(ObjectProperty(<http://purl.org/net/nknouf/ns/bibtex#hasNote>))
+Declaration(ObjectProperty(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#hasUnits>))
+Declaration(ObjectProperty(<http://purl.org/net/nknouf/ns/bibtex#hasAnnotation>))
+Declaration(ObjectProperty(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#participantOf>))
+Declaration(ObjectProperty(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#partOf>))
+Declaration(ObjectProperty(<http://www.w3.org/2004/02/skos/core#example>))
+Declaration(ObjectProperty(<http://purl.org/net/nknouf/ns/bibtex#hasPages>))
+Declaration(ObjectProperty(<http://purl.org/net/nknouf/ns/bibtex#hasOrganization>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR94>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR93>))
+Declaration(ObjectProperty(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#hasLatency>))
+Declaration(ObjectProperty(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasConditionCount>))
+Declaration(ObjectProperty(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#hasMinIntensity>))
+Declaration(ObjectProperty(<http://purl.org/net/nknouf/ns/bibtex#hasInstitution>))
+Declaration(ObjectProperty(<http://purl.org/net/nknouf/ns/bibtex#pageChapterData>))
+Declaration(ObjectProperty(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#ROI>))
+Declaration(ObjectProperty(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasLaboratory>))
+Declaration(ObjectProperty(<http://purl.org/net/nknouf/ns/bibtex#hasAuthor>))
+Declaration(ObjectProperty(<http://purl.org/net/nknouf/ns/bibtex#hasCrossref>))
+Declaration(ObjectProperty(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#startTime>))
+Declaration(ObjectProperty(<newObjectProp:1632074011>))
+Declaration(ObjectProperty(<http://purl.org/net/nknouf/ns/bibtex#hasChapter>))
+Declaration(ObjectProperty(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasInstructions>))
+Declaration(ObjectProperty(<http://purl.org/net/nknouf/ns/bibtex#hasYear>))
+Declaration(ObjectProperty(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasPrincipalInvestigator>))
+Declaration(ObjectProperty(<http://purl.org/net/nknouf/ns/bibtex#hasKeywords>))
+Declaration(ObjectProperty(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasCharacteristic>))
+Declaration(ObjectProperty(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#speaks>))
+Declaration(ObjectProperty(<http://purl.org/net/nknouf/ns/bibtex#hasAbstract>))
+Declaration(ObjectProperty(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#nativeLanguage>))
+Declaration(ObjectProperty(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#hasMeanIntensity>))
+Declaration(ObjectProperty(<http://purl.org/net/nknouf/ns/bibtex#hasType>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR95>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR96>))
+Declaration(ObjectProperty(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#hasCorrelation>))
+Declaration(ObjectProperty(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasConditionType>))
+Declaration(ObjectProperty(<http://purl.org/net/nknouf/ns/bibtex#hasISSN>))
+Declaration(ObjectProperty(<http://purl.org/net/nknouf/ns/bibtex#hasLanguage>))
+Declaration(ObjectProperty(<http://purl.org/net/nknouf/ns/bibtex#hasAddress>))
+Declaration(ObjectProperty(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#hasMake>))
+Declaration(ObjectProperty(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#age>))
+Declaration(ObjectProperty(<http://purl.org/net/nknouf/ns/bibtex#hasAffiliation>))
+Declaration(ObjectProperty(<http://purl.org/net/nknouf/ns/bibtex#hasSchool>))
+Declaration(ObjectProperty(<http://purl.org/net/nknouf/ns/bibtex#hasContents>))
+Declaration(ObjectProperty(<http://purl.org/net/nknouf/ns/bibtex#hasLCCN>))
+Declaration(ObjectProperty(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasTask>))
+Declaration(ObjectProperty(<http://purl.org/net/nknouf/ns/bibtex#hasEdition>))
+Declaration(ObjectProperty(<http://purl.org/net/nknouf/ns/bibtex#humanCreator>))
+Declaration(ObjectProperty(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasGender>))
+Declaration(ObjectProperty(<http://purl.org/net/nknouf/ns/bibtex#hasMrnumber>))
+Declaration(ObjectProperty(<http://purl.org/net/nknouf/ns/bibtex#hasEditor>))
+Declaration(ObjectProperty(<http://purl.org/net/nknouf/ns/bibtex#hasJournal>))
+Declaration(ObjectProperty(<http://purl.org/net/nknouf/ns/bibtex#hasTitle>))
+Declaration(ObjectProperty(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasMember>))
+Declaration(ObjectProperty(<http://purl.org/net/nknouf/ns/bibtex#hasSize>))
+Declaration(ObjectProperty(<http://purl.org/net/nknouf/ns/bibtex#hasKey>))
+Declaration(ObjectProperty(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasContrastCount>))
+Declaration(ObjectProperty(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#hasLatencyAtMinIntensity>))
+Declaration(ObjectProperty(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Citation.owl#hasDesign>))
+Declaration(ObjectProperty(<http://purl.org/net/nknouf/ns/bibtex#hasCopyright>))
+Declaration(ObjectProperty(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#hasModel>))
+Declaration(ObjectProperty(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasFemaleCount>))
+Declaration(ObjectProperty(<http://purl.org/net/nknouf/ns/bibtex#howPublished>))
+Declaration(ObjectProperty(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#memberOf>))
+Declaration(ObjectProperty(<http://purl.org/net/nknouf/ns/bibtex#hasLocation>))
+Declaration(ObjectProperty(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasParticipant>))
+Declaration(ObjectProperty(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasAverageAge>))
+Declaration(ObjectProperty(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasHandedness>))
+Declaration(ObjectProperty(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasName>))
+Declaration(ObjectProperty(<http://purl.org/net/nknouf/ns/bibtex#hasNumber>))
+Declaration(ObjectProperty(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#hasLatencyAtMaxIntensity>))
+Declaration(ObjectProperty(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasRHNCount>))
+Declaration(ObjectProperty(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasDescription>))
+Declaration(ObjectProperty(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasLHNCount>))
+Declaration(ObjectProperty(<http://purl.org/net/nknouf/ns/bibtex#hasPublisher>))
+Declaration(ObjectProperty(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Citation.owl#hasResultsSynopsis>))
+Declaration(ObjectProperty(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasBehaviorDomain>))
+Declaration(DataProperty(<newDataProp:292894035>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#ICA>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_082>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_083>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#EGI_GSN_128_v2.1>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Male>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_012>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#FRONT>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_011>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#ORB>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_110>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_111>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_054>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_053>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_035>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_036>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_109>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_096>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_095>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_078>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_077>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Russian>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-55>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_100>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GFP>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_025>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_024>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_128>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_006>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_007>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_124>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_123>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_066>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_067>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_048>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_049>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#LeftHanded>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#N100>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_019>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_081>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_080>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Visual>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Person>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#ATEM>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Spanish>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_119>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_118>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_010>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Left_Mastoid>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_051>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_052>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_034>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_033>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-12>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#VerbalResponse>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#SpokenLanguage>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_108>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_107>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Condition>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_093>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_094>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_076>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_075>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#tPCA>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-36>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_023>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_022>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_005>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_004>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-113>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#English>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GFD>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_122>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_121>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_065>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_064>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_047>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_046>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Subject>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_088>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_089>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Instructions>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#ButtonPress>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_018>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_017>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_117>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_116>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_059>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_050>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_032>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_031>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#MFN>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#time_instant>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Swahili>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#PhysicalStimulus>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_105>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_106>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_092>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_091>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_074>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_073>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-52>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_021>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_002>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_003>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#ParadigmClass>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_020>))
+Declaration(NamedIndividual(owl:Thing))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#PAR>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_120>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_062>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_063>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_045>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_044>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#P300>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_087>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_086>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_016>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_015>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-174>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-88>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Female>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_114>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#French>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#NetAmps_v1.0>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_115>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_058>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_057>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_039>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#N3>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#N2>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Right>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_030>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_099>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#PTEM>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_103>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_104>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_028>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_029>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_090>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_072>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_071>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Japanese>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_128>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_127>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#N400>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_001>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-91>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Left>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-108>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_061>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_060>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_042>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_043>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_084>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_085>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_013>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_014>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasCharacteristic>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_112>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Context>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_113>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_055>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_056>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_038>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_037>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Chinese>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#RightHanded>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_097>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_098>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#P1r>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#MSA>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_079>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_101>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_102>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_026>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_027>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_008>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_009>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_070>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#OCC>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_125>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_126>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Farsi>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_068>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_069>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#P100>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Medial>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-106>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_040>))
+Declaration(NamedIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_041>))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasCharacteristic> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasCharacteristic>)
+
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasCharacteristic> <http://www.absoluteiri.edu/RELAPPROXI-108>)
+
+# Object Property: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasMember> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasMember>)
+
+SubObjectPropertyOf(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasMember> <http://www.absoluteiri.edu/RELAPPROXR95>)
+
+# Object Property: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasParticipant> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasParticipant>)
+
+SubObjectPropertyOf(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasParticipant> <http://www.absoluteiri.edu/RELAPPROXR94>)
+
+# Object Property: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#memberOf> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#memberOf>)
+
+SubObjectPropertyOf(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#memberOf> <http://www.absoluteiri.edu/RELAPPROXR96>)
+
+# Object Property: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#nativeLanguage> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#nativeLanguage>)
+
+SubObjectPropertyOf(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#nativeLanguage> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#speaks>)
+
+# Object Property: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#participantOf> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#participantOf>)
+
+SubObjectPropertyOf(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#participantOf> <http://www.absoluteiri.edu/RELAPPROXR93>)
+
+# Object Property: <http://purl.org/net/nknouf/ns/bibtex#hasAuthor> (<http://purl.org/net/nknouf/ns/bibtex#hasAuthor>)
+
+SubObjectPropertyOf(<http://purl.org/net/nknouf/ns/bibtex#hasAuthor> <http://purl.org/net/nknouf/ns/bibtex#humanCreator>)
+
+# Object Property: <http://purl.org/net/nknouf/ns/bibtex#hasChapter> (<http://purl.org/net/nknouf/ns/bibtex#hasChapter>)
+
+SubObjectPropertyOf(<http://purl.org/net/nknouf/ns/bibtex#hasChapter> <http://purl.org/net/nknouf/ns/bibtex#pageChapterData>)
+
+# Object Property: <http://purl.org/net/nknouf/ns/bibtex#hasEditor> (<http://purl.org/net/nknouf/ns/bibtex#hasEditor>)
+
+SubObjectPropertyOf(<http://purl.org/net/nknouf/ns/bibtex#hasEditor> <http://purl.org/net/nknouf/ns/bibtex#humanCreator>)
+
+# Object Property: <http://purl.org/net/nknouf/ns/bibtex#hasISBN> (<http://purl.org/net/nknouf/ns/bibtex#hasISBN>)
+
+TransitiveObjectProperty(<http://purl.org/net/nknouf/ns/bibtex#hasISBN>)
+
+# Object Property: <http://purl.org/net/nknouf/ns/bibtex#hasKey> (<http://purl.org/net/nknouf/ns/bibtex#hasKey>)
+
+SubObjectPropertyOf(<http://purl.org/net/nknouf/ns/bibtex#hasKey> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#hasIntensity>)
+
+# Object Property: <http://purl.org/net/nknouf/ns/bibtex#hasPages> (<http://purl.org/net/nknouf/ns/bibtex#hasPages>)
+
+SubObjectPropertyOf(<http://purl.org/net/nknouf/ns/bibtex#hasPages> <http://purl.org/net/nknouf/ns/bibtex#pageChapterData>)
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR93> (<http://www.absoluteiri.edu/RELAPPROXR93>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR93> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#participantOf>)
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR94> (<http://www.absoluteiri.edu/RELAPPROXR94>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR94> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasParticipant>)
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR95> (<http://www.absoluteiri.edu/RELAPPROXR95>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR95> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasMember>)
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR96> (<http://www.absoluteiri.edu/RELAPPROXR96>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR96> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#memberOf>)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#EEG> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#EEG>)
+
+SubClassOf(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#EEG> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#AcquisitionSystem>)
+
+# Class: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Gain> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Gain>)
+
+SubClassOf(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Gain> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Measurement>)
+
+# Class: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Highpass> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Highpass>)
+
+SubClassOf(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Highpass> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Measurement>)
+
+# Class: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Latency> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Latency>)
+
+SubClassOf(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Latency> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Measurement>)
+
+# Class: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Lowpass> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Lowpass>)
+
+SubClassOf(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Lowpass> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Measurement>)
+
+# Class: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#MEG> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#MEG>)
+
+SubClassOf(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#MEG> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#AcquisitionSystem>)
+
+# Class: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Magnitude> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Magnitude>)
+
+SubClassOf(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Magnitude> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Measurement>)
+
+# Class: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Optical> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Optical>)
+
+SubClassOf(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Optical> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#AcquisitionSystem>)
+
+# Class: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#PET> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#PET>)
+
+SubClassOf(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#PET> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#AcquisitionSystem>)
+
+# Class: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Rolloff> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Rolloff>)
+
+SubClassOf(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Rolloff> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Measurement>)
+
+# Class: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#SampleRate> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#SampleRate>)
+
+SubClassOf(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#SampleRate> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Measurement>)
+
+# Class: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#fMRI> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#fMRI>)
+
+SubClassOf(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#fMRI> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#AcquisitionSystem>)
+
+# Class: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#BehaviorDomain> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#BehaviorDomain>)
+
+SubClassOf(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#BehaviorDomain> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Condition>)
+
+# Class: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Cognition> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Cognition>)
+
+SubClassOf(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Cognition> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#BehaviorDomain>)
+
+# Class: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Condition> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Condition>)
+
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Condition> <http://www.absoluteiri.edu/RELAPPROXI-91>)
+
+# Class: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#DelayedMatchToSample> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#DelayedMatchToSample>)
+
+SubClassOf(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#DelayedMatchToSample> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#ParadigmClass>)
+
+# Class: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Episodic> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Episodic>)
+
+SubClassOf(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Episodic> owl:Thing)
+
+# Class: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Group> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Group>)
+
+SubClassOf(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Group> <http://www.absoluteiri.edu/RELAPPROXC353>)
+SubClassOf(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Group> <http://www.absoluteiri.edu/RELAPPROXC355>)
+
+# Class: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#HumanSubject> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#HumanSubject>)
+
+SubClassOf(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#HumanSubject> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Person>)
+SubClassOf(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#HumanSubject> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Subject>)
+
+# Class: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Laboratory> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Laboratory>)
+
+SubClassOf(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Laboratory> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Institution>)
+
+# Class: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Language> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Language>)
+
+SubClassOf(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Language> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Cognition>)
+
+# Class: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Memory> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Memory>)
+
+SubClassOf(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Memory> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Cognition>)
+
+# Class: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Mismatch_Match> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Mismatch_Match>)
+
+SubClassOf(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Mismatch_Match> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Orthography>)
+SubClassOf(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Mismatch_Match> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Phonology>)
+SubClassOf(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Mismatch_Match> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Semantics>)
+
+# Class: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Modality> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Modality>)
+
+SubClassOf(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Modality> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Condition>)
+
+# Class: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Old_New> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Old_New>)
+
+SubClassOf(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Old_New> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Episodic>)
+
+# Class: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#OrothographicDiscrimination> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#OrothographicDiscrimination>)
+
+SubClassOf(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#OrothographicDiscrimination> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#ParadigmClass>)
+
+# Class: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Orthography> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Orthography>)
+
+SubClassOf(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Orthography> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Language>)
+SubClassOf(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Orthography> owl:Thing)
+
+# Class: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#ParadigmClass> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#ParadigmClass>)
+
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#ParadigmClass> <http://www.absoluteiri.edu/RELAPPROXI-174>)
+
+# Class: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Person> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Person>)
+
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Person> <http://www.absoluteiri.edu/RELAPPROXI-36>)
+SubClassOf(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Person> <http://www.absoluteiri.edu/RELAPPROXC353>)
+
+# Class: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#PhonologicalDiscrimination> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#PhonologicalDiscrimination>)
+
+SubClassOf(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#PhonologicalDiscrimination> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#ParadigmClass>)
+
+# Class: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Phonology> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Phonology>)
+
+SubClassOf(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Phonology> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Language>)
+SubClassOf(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Phonology> owl:Thing)
+
+# Class: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#PseudoWord_Word> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#PseudoWord_Word>)
+
+SubClassOf(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#PseudoWord_Word> owl:Thing)
+
+# Class: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Response> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Response>)
+
+SubClassOf(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Response> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Condition>)
+SubClassOf(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Response> <http://www.absoluteiri.edu/RELAPPROXC343>)
+
+# Class: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#SemanticDiscrimination> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#SemanticDiscrimination>)
+
+SubClassOf(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#SemanticDiscrimination> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#ParadigmClass>)
+
+# Class: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Semantics> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Semantics>)
+
+SubClassOf(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Semantics> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Language>)
+SubClassOf(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Semantics> owl:Thing)
+
+# Class: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#SpokenLanguage> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#SpokenLanguage>)
+
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#SpokenLanguage> <http://www.absoluteiri.edu/RELAPPROXI-88>)
+
+# Class: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Stimulus> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Stimulus>)
+
+SubClassOf(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Stimulus> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Condition>)
+SubClassOf(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Stimulus> <http://www.absoluteiri.edu/RELAPPROXC343>)
+
+# Class: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Subject> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Subject>)
+
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Subject> <http://www.absoluteiri.edu/RELAPPROXI-12>)
+SubClassOf(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Subject> <http://www.absoluteiri.edu/RELAPPROXC355>)
+
+# Class: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Task> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Task>)
+
+SubClassOf(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Task> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Condition>)
+
+# Class: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Type> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Type>)
+
+SubClassOf(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Type> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Condition>)
+
+# Class: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Unrelated_Related> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Unrelated_Related>)
+
+SubClassOf(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Unrelated_Related> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Semantics>)
+
+# Class: <http://purl.org/net/nknouf/ns/bibtex#Article> (<http://purl.org/net/nknouf/ns/bibtex#Article>)
+
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Article> <http://purl.org/net/nknouf/ns/bibtex#Entry>)
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Article> ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasAuthor> <http://www.absoluteiri.edu/RELAPPROXC338>))
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Article> ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasJournal> <http://www.absoluteiri.edu/RELAPPROXC338>))
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Article> ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasTitle> <http://www.absoluteiri.edu/RELAPPROXC338>))
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Article> ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasYear> <http://www.absoluteiri.edu/RELAPPROXC338>))
+
+# Class: <http://purl.org/net/nknouf/ns/bibtex#Book> (<http://purl.org/net/nknouf/ns/bibtex#Book>)
+
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Book> <http://purl.org/net/nknouf/ns/bibtex#Entry>)
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Book> ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasPublisher> <http://www.absoluteiri.edu/RELAPPROXC338>))
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Book> ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasTitle> <http://www.absoluteiri.edu/RELAPPROXC338>))
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Book> ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasYear> <http://www.absoluteiri.edu/RELAPPROXC338>))
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Book> ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#humanCreator> <http://www.absoluteiri.edu/RELAPPROXC338>))
+
+# Class: <http://purl.org/net/nknouf/ns/bibtex#Booklet> (<http://purl.org/net/nknouf/ns/bibtex#Booklet>)
+
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Booklet> <http://purl.org/net/nknouf/ns/bibtex#Entry>)
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Booklet> ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasTitle> <http://www.absoluteiri.edu/RELAPPROXC338>))
+
+# Class: <http://purl.org/net/nknouf/ns/bibtex#Inbook> (<http://purl.org/net/nknouf/ns/bibtex#Inbook>)
+
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Inbook> <http://purl.org/net/nknouf/ns/bibtex#Entry>)
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Inbook> ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasPublisher> <http://www.absoluteiri.edu/RELAPPROXC338>))
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Inbook> ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasTitle> <http://www.absoluteiri.edu/RELAPPROXC338>))
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Inbook> ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasYear> <http://www.absoluteiri.edu/RELAPPROXC338>))
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Inbook> ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#humanCreator> <http://www.absoluteiri.edu/RELAPPROXC338>))
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Inbook> ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#pageChapterData> <http://www.absoluteiri.edu/RELAPPROXC338>))
+
+# Class: <http://purl.org/net/nknouf/ns/bibtex#Incollection> (<http://purl.org/net/nknouf/ns/bibtex#Incollection>)
+
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Incollection> <http://purl.org/net/nknouf/ns/bibtex#Entry>)
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Incollection> ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasAuthor> <http://www.absoluteiri.edu/RELAPPROXC338>))
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Incollection> ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasBooktitle> <http://www.absoluteiri.edu/RELAPPROXC338>))
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Incollection> ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasPublisher> <http://www.absoluteiri.edu/RELAPPROXC338>))
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Incollection> ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasTitle> <http://www.absoluteiri.edu/RELAPPROXC338>))
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Incollection> ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasYear> <http://www.absoluteiri.edu/RELAPPROXC338>))
+
+# Class: <http://purl.org/net/nknouf/ns/bibtex#Inproceedings> (<http://purl.org/net/nknouf/ns/bibtex#Inproceedings>)
+
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Inproceedings> <http://purl.org/net/nknouf/ns/bibtex#Entry>)
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Inproceedings> <http://purl.org/net/nknouf/ns/bibtex#Mastersthesis>)
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Inproceedings> ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasAuthor> <http://www.absoluteiri.edu/RELAPPROXC338>))
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Inproceedings> ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasBooktitle> <http://www.absoluteiri.edu/RELAPPROXC338>))
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Inproceedings> ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasTitle> <http://www.absoluteiri.edu/RELAPPROXC338>))
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Inproceedings> ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasYear> <http://www.absoluteiri.edu/RELAPPROXC338>))
+
+# Class: <http://purl.org/net/nknouf/ns/bibtex#Manual> (<http://purl.org/net/nknouf/ns/bibtex#Manual>)
+
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Manual> <http://purl.org/net/nknouf/ns/bibtex#Entry>)
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Manual> ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasTitle> <http://www.absoluteiri.edu/RELAPPROXC338>))
+
+# Class: <http://purl.org/net/nknouf/ns/bibtex#Mastersthesis> (<http://purl.org/net/nknouf/ns/bibtex#Mastersthesis>)
+
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Mastersthesis> <http://purl.org/net/nknouf/ns/bibtex#Entry>)
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Mastersthesis> <http://purl.org/net/nknouf/ns/bibtex#Inproceedings>)
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Mastersthesis> ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasAuthor> <http://www.absoluteiri.edu/RELAPPROXC338>))
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Mastersthesis> ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasSchool> <http://www.absoluteiri.edu/RELAPPROXC338>))
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Mastersthesis> ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasTitle> <http://www.absoluteiri.edu/RELAPPROXC338>))
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Mastersthesis> ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasYear> <http://www.absoluteiri.edu/RELAPPROXC338>))
+
+# Class: <http://purl.org/net/nknouf/ns/bibtex#Misc> (<http://purl.org/net/nknouf/ns/bibtex#Misc>)
+
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Misc> <http://purl.org/net/nknouf/ns/bibtex#Entry>)
+
+# Class: <http://purl.org/net/nknouf/ns/bibtex#Phdthesis> (<http://purl.org/net/nknouf/ns/bibtex#Phdthesis>)
+
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Phdthesis> <http://purl.org/net/nknouf/ns/bibtex#Entry>)
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Phdthesis> ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasAuthor> <http://www.absoluteiri.edu/RELAPPROXC338>))
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Phdthesis> ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasSchool> <http://www.absoluteiri.edu/RELAPPROXC338>))
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Phdthesis> ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasTitle> <http://www.absoluteiri.edu/RELAPPROXC338>))
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Phdthesis> ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasYear> <http://www.absoluteiri.edu/RELAPPROXC338>))
+
+# Class: <http://purl.org/net/nknouf/ns/bibtex#Proceedings> (<http://purl.org/net/nknouf/ns/bibtex#Proceedings>)
+
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Proceedings> <http://purl.org/net/nknouf/ns/bibtex#Entry>)
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Proceedings> ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasTitle> <http://www.absoluteiri.edu/RELAPPROXC338>))
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Proceedings> ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasYear> <http://www.absoluteiri.edu/RELAPPROXC338>))
+
+# Class: <http://purl.org/net/nknouf/ns/bibtex#Techreport> (<http://purl.org/net/nknouf/ns/bibtex#Techreport>)
+
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Techreport> <http://purl.org/net/nknouf/ns/bibtex#Entry>)
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Techreport> ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasAuthor> <http://www.absoluteiri.edu/RELAPPROXC338>))
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Techreport> ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasInstitution> <http://www.absoluteiri.edu/RELAPPROXC338>))
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Techreport> ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasTitle> <http://www.absoluteiri.edu/RELAPPROXC338>))
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Techreport> ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasYear> <http://www.absoluteiri.edu/RELAPPROXC338>))
+
+# Class: <http://purl.org/net/nknouf/ns/bibtex#Unpublished> (<http://purl.org/net/nknouf/ns/bibtex#Unpublished>)
+
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Unpublished> <http://purl.org/net/nknouf/ns/bibtex#Entry>)
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Unpublished> ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasAuthor> <http://www.absoluteiri.edu/RELAPPROXC338>))
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Unpublished> ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasNote> <http://www.absoluteiri.edu/RELAPPROXC338>))
+SubClassOf(<http://purl.org/net/nknouf/ns/bibtex#Unpublished> ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasTitle> <http://www.absoluteiri.edu/RELAPPROXC338>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC340> (<http://www.absoluteiri.edu/RELAPPROXC340>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC340> <http://www.absoluteiri.edu/RELAPPROXC346>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC340> owl:Thing)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC344> (<http://www.absoluteiri.edu/RELAPPROXC344>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC344> <http://www.absoluteiri.edu/RELAPPROXC125>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC344> <http://www.absoluteiri.edu/RELAPPROXC49>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC345> (<http://www.absoluteiri.edu/RELAPPROXC345>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC345> <http://www.absoluteiri.edu/RELAPPROXC341>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC347> (<http://www.absoluteiri.edu/RELAPPROXC347>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC347> <http://www.absoluteiri.edu/RELAPPROXC356>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC354> (<http://www.absoluteiri.edu/RELAPPROXC354>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC354> <http://www.absoluteiri.edu/RELAPPROXC55>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC354> <http://www.absoluteiri.edu/RELAPPROXC67>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC356> (<http://www.absoluteiri.edu/RELAPPROXC356>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC356> <http://www.absoluteiri.edu/RELAPPROXC45>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC356> <http://www.absoluteiri.edu/RELAPPROXC55>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC359> (<http://www.absoluteiri.edu/RELAPPROXC359>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC359> <http://www.absoluteiri.edu/RELAPPROXC341>)
+
+# Class: owl:Thing (owl:Thing)
+
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> owl:Thing <http://www.absoluteiri.edu/RELAPPROXI-106>)
+SubClassOf(owl:Thing <http://www.absoluteiri.edu/RELAPPROXC347>)
+SubClassOf(owl:Thing <http://www.absoluteiri.edu/RELAPPROXC357>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#ATEM> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#ATEM>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#ScalpRegion> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#ATEM>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#EGI_GSN_128_v2.1> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#EGI_GSN_128_v2.1>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#EEG> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#EGI_GSN_128_v2.1>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#FRONT> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#FRONT>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#ScalpRegion> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#FRONT>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GFD> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GFD>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#FactorAnalysis> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GFD>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GFP> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GFP>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#FactorAnalysis> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GFP>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_128> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_128>)
+
+ClassAssertion(owl:Thing <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_128>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_001> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_001>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_001>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_002> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_002>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_002>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_003> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_003>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_003>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_004> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_004>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_004>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_005> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_005>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_005>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_006> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_006>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_006>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_007> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_007>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_007>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_008> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_008>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_008>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_009> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_009>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_009>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_010> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_010>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_010>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_011> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_011>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_011>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_012> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_012>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_012>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_013> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_013>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_013>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_014> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_014>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_014>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_015> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_015>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_015>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_016> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_016>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_016>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_017> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_017>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_017>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_018> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_018>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_018>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_019> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_019>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_019>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_020> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_020>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_020>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_021> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_021>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_021>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_022> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_022>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_022>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_023> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_023>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_023>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_024> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_024>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_024>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_025> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_025>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_025>)
+SameIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_025> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_109>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_026> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_026>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_026>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_027> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_027>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_027>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_028> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_028>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_028>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_029> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_029>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_029>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_030> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_030>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_030>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_031> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_031>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_031>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_032> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_032>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_032>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_033> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_033>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_033>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_034> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_034>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_034>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_035> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_035>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_035>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_036> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_036>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_036>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_037> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_037>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_037>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_038> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_038>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_038>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_039> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_039>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_039>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_040> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_040>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_040>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_041> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_041>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_041>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_042> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_042>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_042>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_043> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_043>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_043>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_044> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_044>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_044>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_045> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_045>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_045>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_046> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_046>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_046>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_047> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_047>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_047>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_048> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_048>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_048>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_049> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_049>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_049>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_050> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_050>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_050>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_051> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_051>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_051>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_052> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_052>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_052>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_053> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_053>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_053>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_054> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_054>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_054>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_055> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_055>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_055>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_056> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_056>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_056>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_057> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_057>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_057>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_058> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_058>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_058>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_059> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_059>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_059>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_060> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_060>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_060>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_061> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_061>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_061>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_062> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_062>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_062>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_063> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_063>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_063>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_064> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_064>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_064>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_065> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_065>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_065>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_066> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_066>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_066>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_067> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_067>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_067>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_068> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_068>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_068>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_069> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_069>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_069>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_070> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_070>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_070>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_071> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_071>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_071>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_072> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_072>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_072>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_073> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_073>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_073>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_074> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_074>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_074>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_075> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_075>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_075>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_076> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_076>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_076>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_077> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_077>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_077>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_078> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_078>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_078>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_079> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_079>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_079>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_080> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_080>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_080>)
+SameIndividual(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_080> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#PAR>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_081> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_081>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_081>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_082> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_082>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_082>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_083> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_083>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_083>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_084> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_084>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_084>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_085> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_085>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_085>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_086> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_086>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_086>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_087> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_087>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_087>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_088> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_088>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_088>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_089> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_089>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_089>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_090> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_090>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_090>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_091> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_091>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_091>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_092> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_092>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_092>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_093> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_093>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_093>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_094> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_094>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_094>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_095> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_095>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_095>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_096> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_096>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_096>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_097> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_097>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_097>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_098> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_098>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_098>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_099> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_099>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_099>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_100> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_100>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_100>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_101> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_101>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_101>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_102> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_102>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_102>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_103> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_103>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_103>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_104> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_104>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_104>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_105> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_105>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_105>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_106> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_106>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_106>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_107> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_107>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_107>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_108> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_108>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_108>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_109> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_109>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_109>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_110> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_110>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_110>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_111> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_111>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_111>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_112> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_112>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_112>)
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Task> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_112>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_113> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_113>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_113>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_114> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_114>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_114>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_115> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_115>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_115>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_116> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_116>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_116>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_117> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_117>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_117>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_118> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_118>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_118>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_119> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_119>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_119>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_120> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_120>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_120>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_121> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_121>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_121>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_122> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_122>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_122>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_123> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_123>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_123>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_124> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_124>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_124>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_125> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_125>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_125>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_126> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_126>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_126>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_127> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_127>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_127>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_128> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_128>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_128>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#ICA> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#ICA>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#FactorAnalysis> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#ICA>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Left> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Left>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#ScalpRegion> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Left>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Left_Mastoid> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Left_Mastoid>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#RecordingReference> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Left_Mastoid>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#MFN> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#MFN>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Pattern> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#MFN>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#MSA> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#MSA>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#FactorAnalysis> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#MSA>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Medial> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Medial>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#ScalpRegion> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Medial>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#N100> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#N100>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Pattern> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#N100>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#N2> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#N2>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Pattern> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#N2>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#N3> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#N3>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Pattern> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#N3>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#N400> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#N400>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Pattern> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#N400>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#NetAmps_v1.0> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#NetAmps_v1.0>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Amplifier> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#NetAmps_v1.0>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#OCC> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#OCC>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#ScalpRegion> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#OCC>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#ORB> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#ORB>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#ScalpRegion> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#ORB>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#P100> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#P100>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Pattern> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#P100>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#P1r> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#P1r>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Pattern> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#P1r>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#P300> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#P300>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Pattern> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#P300>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#PAR> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#PAR>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#ScalpRegion> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#PAR>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#PTEM> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#PTEM>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#ScalpRegion> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#PTEM>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Right> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Right>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#ScalpRegion> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Right>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#tPCA> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#tPCA>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#ComponentAnalysis> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#tPCA>)
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#FactorAnalysis> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#tPCA>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#ButtonPress> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#ButtonPress>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Type> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#ButtonPress>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Chinese> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Chinese>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#SpokenLanguage> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Chinese>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Condition> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Condition>)
+
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Condition> <http://www.absoluteiri.edu/RELAPPROXI-91>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Context> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Context>)
+
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Context> <http://www.absoluteiri.edu/RELAPPROXI-113>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Context> <http://www.absoluteiri.edu/RELAPPROXI-113>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#English> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#English>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#SpokenLanguage> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#English>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Farsi> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Farsi>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#SpokenLanguage> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Farsi>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Female> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Female>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Gender> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Female>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#French> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#French>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#SpokenLanguage> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#French>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Japanese> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Japanese>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#SpokenLanguage> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Japanese>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#LeftHanded> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#LeftHanded>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Handedness> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#LeftHanded>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Male> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Male>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Gender> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Male>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#ParadigmClass> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#ParadigmClass>)
+
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#ParadigmClass> <http://www.absoluteiri.edu/RELAPPROXI-174>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Person> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Person>)
+
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Person> <http://www.absoluteiri.edu/RELAPPROXI-36>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#PhysicalStimulus> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#PhysicalStimulus>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Modality> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#PhysicalStimulus>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#RightHanded> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#RightHanded>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Handedness> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#RightHanded>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Russian> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Russian>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#SpokenLanguage> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Russian>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Spanish> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Spanish>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#SpokenLanguage> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Spanish>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#SpokenLanguage> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#SpokenLanguage>)
+
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#SpokenLanguage> <http://www.absoluteiri.edu/RELAPPROXI-88>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Subject> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Subject>)
+
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Subject> <http://www.absoluteiri.edu/RELAPPROXI-12>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Swahili> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Swahili>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#SpokenLanguage> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Swahili>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#VerbalResponse> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#VerbalResponse>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Type> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#VerbalResponse>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Visual> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Visual>)
+
+ClassAssertion(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Modality> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Visual>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasCharacteristic> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasCharacteristic>)
+
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasCharacteristic> <http://www.absoluteiri.edu/RELAPPROXI-108>)
+
+# Individual: <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#time_instant> (<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#time_instant>)
+
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#time_instant> <http://www.absoluteiri.edu/RELAPPROXI-55>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#example> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#time_instant> <http://www.absoluteiri.edu/RELAPPROXI-55>)
+
+# Individual: owl:Thing (owl:Thing)
+
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#example> owl:Thing <http://www.absoluteiri.edu/RELAPPROXI-106>)
+
+
+SubClassOf(ObjectIntersectionOf(<http://www.absoluteiri.edu/RELAPPROXC125> owl:Thing) <http://www.absoluteiri.edu/RELAPPROXC344>)
+SubClassOf(ObjectIntersectionOf(<http://www.absoluteiri.edu/RELAPPROXC45> <http://www.absoluteiri.edu/RELAPPROXC55>) <http://www.absoluteiri.edu/RELAPPROXC356>)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Citation.owl#hasDesign> <http://www.absoluteiri.edu/RELAPPROXC341>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Citation.owl#hasResultsSynopsis> <http://www.absoluteiri.edu/RELAPPROXC341>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#ROI> owl:Thing) <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Pattern>)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#hasCalibrationSetting> owl:Thing) <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#AcquisitionSystem>)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#hasCorrelation> <http://www.absoluteiri.edu/RELAPPROXC350>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#hasCorrelation> owl:Thing) <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#ERP>)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#hasIntensity> owl:Thing) <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#ERP>)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#hasLatency> owl:Thing) <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Intensity>)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#hasLatencyAtMaxIntensity> owl:Thing) <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#ERP>)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#hasLatencyAtMinIntensity> owl:Thing) <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#ERP>)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#hasMagnitude> owl:Thing) <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Intensity>)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#hasMake> <http://www.absoluteiri.edu/RELAPPROXC341>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#hasMake> owl:Thing) <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#AcquisitionSystem>)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#hasMaxIntensity> owl:Thing) <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#ERP>)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#hasMeanIntensity> owl:Thing) <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#ERP>)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#hasMinIntensity> owl:Thing) <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#ERP>)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#hasModel> <http://www.absoluteiri.edu/RELAPPROXC341>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#hasModel> owl:Thing) <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#AcquisitionSystem>)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#hasNumericValue> <http://www.absoluteiri.edu/RELAPPROXC350>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#hasNumericValue> owl:Thing) <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Measurement>)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#hasUnits> <http://www.absoluteiri.edu/RELAPPROXC341>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#hasUnits> owl:Thing) <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Measurement>)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#locatedIn> owl:Thing) <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#Electrode>)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#partOf> owl:Thing) <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#ERP>)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#age> <http://www.absoluteiri.edu/RELAPPROXC346>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#age> owl:Thing) <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Person>)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#endTime> owl:Thing) <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Session>)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasAverageAge> <http://www.absoluteiri.edu/RELAPPROXC346>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasAverageAge> owl:Thing) <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Group>)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasBehaviorDomain> owl:Thing) <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Experiment>)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasCharacteristic> owl:Thing) <http://www.absoluteiri.edu/RELAPPROXC353>)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasConditionCount> <http://www.absoluteiri.edu/RELAPPROXC346>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasConditionCount> owl:Thing) <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Condition>)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasConditionModality> owl:Thing) <http://www.absoluteiri.edu/RELAPPROXC343>)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasConditionType> owl:Thing) <http://www.absoluteiri.edu/RELAPPROXC343>)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasContrastCount> <http://www.absoluteiri.edu/RELAPPROXC346>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasContrastCount> owl:Thing) <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Experiment>)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasDescription> <http://www.absoluteiri.edu/RELAPPROXC341>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasDescription> owl:Thing) <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Condition>)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasDescription> owl:Thing) <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Group>)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasFemaleCount> <http://www.absoluteiri.edu/RELAPPROXC346>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasFemaleCount> owl:Thing) <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Group>)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasGender> owl:Thing) <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Person>)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasGroupCount> <http://www.absoluteiri.edu/RELAPPROXC346>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasGroupCount> owl:Thing) <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Experiment>)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasHandedness> owl:Thing) <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Person>)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasInstructions> owl:Thing) <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Experiment>)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasLHNCount> <http://www.absoluteiri.edu/RELAPPROXC346>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasLHNCount> owl:Thing) <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Group>)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasLaboratory> owl:Thing) <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Experiment>)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasMaleCount> <http://www.absoluteiri.edu/RELAPPROXC346>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasMaleCount> owl:Thing) <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Group>)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasMedianL1> owl:Thing) <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Group>)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasMember> owl:Thing) <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Group>)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasName> <http://www.absoluteiri.edu/RELAPPROXC341>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasName> owl:Thing) <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Condition>)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasName> owl:Thing) <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Group>)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasParagdigm> owl:Thing) <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Condition>)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasParticipant> owl:Thing) <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Experiment>)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasPrincipalInvestigator> owl:Thing) <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Experiment>)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasPublication> owl:Thing) <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Experiment>)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasRHNCount> <http://www.absoluteiri.edu/RELAPPROXC346>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasRHNCount> owl:Thing) <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Group>)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasSubjectCount> <http://www.absoluteiri.edu/RELAPPROXC346>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasSubjectCount> owl:Thing) <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Group>)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#hasTask> owl:Thing) <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Experiment>)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#memberOf> owl:Thing) <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Subject>)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#nativeLanguage> owl:Thing) <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Person>)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#participantOf> owl:Thing) <http://www.absoluteiri.edu/RELAPPROXC355>)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#speaks> owl:Thing) <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Person>)
+SubClassOf(ObjectSomeValuesFrom(<http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#startTime> owl:Thing) <http://aimlab.cs.uoregon.edu/NEMO/NEMO_Functional.owl#Session>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasAbstract> <http://www.absoluteiri.edu/RELAPPROXC341>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasAbstract> owl:Thing) <http://purl.org/net/nknouf/ns/bibtex#Entry>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasAddress> <http://www.absoluteiri.edu/RELAPPROXC341>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasAddress> owl:Thing) <http://purl.org/net/nknouf/ns/bibtex#Entry>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasAffiliation> <http://www.absoluteiri.edu/RELAPPROXC341>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasAffiliation> owl:Thing) <http://purl.org/net/nknouf/ns/bibtex#Entry>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasAnnotation> <http://www.absoluteiri.edu/RELAPPROXC341>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasAnnotation> owl:Thing) <http://purl.org/net/nknouf/ns/bibtex#Entry>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasAuthor> <http://www.absoluteiri.edu/RELAPPROXC341>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasAuthor> owl:Thing) <http://purl.org/net/nknouf/ns/bibtex#Entry>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasBooktitle> <http://www.absoluteiri.edu/RELAPPROXC341>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasBooktitle> owl:Thing) <http://purl.org/net/nknouf/ns/bibtex#Entry>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasChapter> <http://www.absoluteiri.edu/RELAPPROXC352>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasChapter> owl:Thing) <http://purl.org/net/nknouf/ns/bibtex#Entry>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasContents> <http://www.absoluteiri.edu/RELAPPROXC341>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasContents> owl:Thing) <http://purl.org/net/nknouf/ns/bibtex#Entry>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasCopyright> <http://www.absoluteiri.edu/RELAPPROXC341>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasCopyright> owl:Thing) <http://purl.org/net/nknouf/ns/bibtex#Entry>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasCrossref> <http://www.absoluteiri.edu/RELAPPROXC341>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasCrossref> owl:Thing) <http://purl.org/net/nknouf/ns/bibtex#Entry>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasEdition> <http://www.absoluteiri.edu/RELAPPROXC341>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasEdition> owl:Thing) <http://purl.org/net/nknouf/ns/bibtex#Entry>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasEditor> <http://www.absoluteiri.edu/RELAPPROXC341>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasEditor> owl:Thing) <http://purl.org/net/nknouf/ns/bibtex#Entry>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasISBN> <http://www.absoluteiri.edu/RELAPPROXC341>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasISBN> owl:Thing) <http://purl.org/net/nknouf/ns/bibtex#Entry>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasISSN> <http://www.absoluteiri.edu/RELAPPROXC341>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasISSN> owl:Thing) <http://purl.org/net/nknouf/ns/bibtex#Entry>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasInstitution> <http://www.absoluteiri.edu/RELAPPROXC341>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasInstitution> owl:Thing) <http://purl.org/net/nknouf/ns/bibtex#Entry>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasJournal> <http://www.absoluteiri.edu/RELAPPROXC341>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasJournal> owl:Thing) <http://purl.org/net/nknouf/ns/bibtex#Entry>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasKey> <http://www.absoluteiri.edu/RELAPPROXC341>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasKey> owl:Thing) <http://purl.org/net/nknouf/ns/bibtex#Entry>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasKeywords> <http://www.absoluteiri.edu/RELAPPROXC341>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasKeywords> owl:Thing) <http://purl.org/net/nknouf/ns/bibtex#Entry>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasLCCN> <http://www.absoluteiri.edu/RELAPPROXC341>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasLCCN> owl:Thing) <http://purl.org/net/nknouf/ns/bibtex#Entry>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasLanguage> <http://www.absoluteiri.edu/RELAPPROXC341>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasLanguage> owl:Thing) <http://purl.org/net/nknouf/ns/bibtex#Entry>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasLocation> <http://www.absoluteiri.edu/RELAPPROXC341>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasLocation> owl:Thing) <http://purl.org/net/nknouf/ns/bibtex#Entry>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasMonth> <http://www.absoluteiri.edu/RELAPPROXC341>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasMonth> owl:Thing) <http://purl.org/net/nknouf/ns/bibtex#Entry>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasMrnumber> <http://www.absoluteiri.edu/RELAPPROXC341>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasMrnumber> owl:Thing) <http://purl.org/net/nknouf/ns/bibtex#Entry>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasNote> <http://www.absoluteiri.edu/RELAPPROXC341>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasNote> owl:Thing) <http://purl.org/net/nknouf/ns/bibtex#Entry>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasNumber> <http://www.absoluteiri.edu/RELAPPROXC341>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasNumber> owl:Thing) <http://purl.org/net/nknouf/ns/bibtex#Entry>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasOrganization> <http://www.absoluteiri.edu/RELAPPROXC341>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasOrganization> owl:Thing) <http://purl.org/net/nknouf/ns/bibtex#Entry>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasPages> <http://www.absoluteiri.edu/RELAPPROXC341>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasPages> owl:Thing) <http://purl.org/net/nknouf/ns/bibtex#Entry>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasPrice> <http://www.absoluteiri.edu/RELAPPROXC341>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasPrice> owl:Thing) <http://purl.org/net/nknouf/ns/bibtex#Entry>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasPublisher> <http://www.absoluteiri.edu/RELAPPROXC341>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasPublisher> owl:Thing) <http://purl.org/net/nknouf/ns/bibtex#Entry>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasSchool> <http://www.absoluteiri.edu/RELAPPROXC341>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasSchool> owl:Thing) <http://purl.org/net/nknouf/ns/bibtex#Entry>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasSeries> <http://www.absoluteiri.edu/RELAPPROXC341>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasSeries> owl:Thing) <http://purl.org/net/nknouf/ns/bibtex#Entry>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasSize> <http://www.absoluteiri.edu/RELAPPROXC341>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasSize> owl:Thing) <http://purl.org/net/nknouf/ns/bibtex#Entry>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasTitle> <http://www.absoluteiri.edu/RELAPPROXC341>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasTitle> owl:Thing) <http://purl.org/net/nknouf/ns/bibtex#Entry>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasType> <http://www.absoluteiri.edu/RELAPPROXC341>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasType> owl:Thing) <http://purl.org/net/nknouf/ns/bibtex#Entry>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasURL> <http://www.absoluteiri.edu/RELAPPROXC341>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasURL> owl:Thing) <http://purl.org/net/nknouf/ns/bibtex#Entry>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasVolume> <http://www.absoluteiri.edu/RELAPPROXC352>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasVolume> owl:Thing) <http://purl.org/net/nknouf/ns/bibtex#Entry>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasYear> <http://www.absoluteiri.edu/RELAPPROXC352>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#hasYear> owl:Thing) <http://purl.org/net/nknouf/ns/bibtex#Entry>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#howPublished> <http://www.absoluteiri.edu/RELAPPROXC341>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#howPublished> owl:Thing) <http://purl.org/net/nknouf/ns/bibtex#Entry>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#humanCreator> <http://www.absoluteiri.edu/RELAPPROXC341>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#humanCreator> owl:Thing) <http://purl.org/net/nknouf/ns/bibtex#Entry>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/net/nknouf/ns/bibtex#pageChapterData> owl:Thing) <http://purl.org/net/nknouf/ns/bibtex#Entry>)
+SubClassOf(ObjectHasValue(<http://purl.org/net/nknouf/ns/bibtex#hasSeries> <http://aimlab.cs.uoregon.edu/NEMO/NEMO_ERP.owl#GSN_2.1_129_Channel_073>) <http://www.absoluteiri.edu/RELAPPROXC49>)
+)

@@ -1,0 +1,13 @@
+Found anomalies while testing file ../testOnt.owl
+
+Anomaly 1: Class hierarchy differentiation between HERMIT and OPENLLET:
+	additional axioms HERMIT: []
+	additional axioms OPENLLET: [SubClassOf(<http://rhizomik.net/ontologies/2006/01/NewsCodes-SubjectsOnto.owl#15032004> <http://rhizomik.net/ontologies/2006/01/NewsCodes-SubjectsOnto.owl#14000000>)]
+
+Anomaly 2: Class hierarchy differentiation between HERMIT and ELK:
+	additional axioms HERMIT: [SubClassOf(<http://rhizomik.net/ontologies/2006/01/NewsCodes-SubjectsOnto.owl#15032004> <http://rhizomik.net/ontologies/2006/01/NewsCodes-SubjectsOnto.owl#14025003>)]
+	additional axioms ELK: [SubClassOf(<http://rhizomik.net/ontologies/2006/01/NewsCodes-SubjectsOnto.owl#15032004> <http://rhizomik.net/ontologies/2006/01/NewsCodes-SubjectsOnto.owl#SubjectDetail>)]
+
+Anomaly 3: Class hierarchy differentiation between ELK and OPENLLET:
+	additional axioms ELK: [SubClassOf(<http://rhizomik.net/ontologies/2006/01/NewsCodes-SubjectsOnto.owl#15032004> <http://rhizomik.net/ontologies/2006/01/NewsCodes-SubjectsOnto.owl#SubjectDetail>)]
+	additional axioms OPENLLET: [SubClassOf(<http://rhizomik.net/ontologies/2006/01/NewsCodes-SubjectsOnto.owl#15032004> <http://rhizomik.net/ontologies/2006/01/NewsCodes-SubjectsOnto.owl#14000000>), SubClassOf(<http://rhizomik.net/ontologies/2006/01/NewsCodes-SubjectsOnto.owl#15032004> <http://rhizomik.net/ontologies/2006/01/NewsCodes-SubjectsOnto.owl#14025003>)]

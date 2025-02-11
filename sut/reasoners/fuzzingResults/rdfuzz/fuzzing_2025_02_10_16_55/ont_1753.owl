@@ -1,0 +1,857 @@
+Prefix(:=<urn:unnamed:ontology#ont290720066401928>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:unnamed:ontology#ont290720066401928>
+
+Declaration(Class(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.RelativeValue>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC127>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC126>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC179>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC23>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC167>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC166>))
+Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#SynonymType>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC191>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC192>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC203>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC204>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000078>))
+Declaration(Class(<newOwlClass:1350900458>))
+Declaration(Class(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.MaterialProcesing>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC150>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC17>))
+Declaration(Class(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.IntegerValue>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC115>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC116>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC47>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC190>))
+Declaration(Class(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.BinaryScaleWithNamedValues>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC71>))
+Declaration(Class(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.OrdinalScaleWithNamedRanks>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC156>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC155>))
+Declaration(Class(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.InformatonEntity>))
+Declaration(Class(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.RelativeValueMapping>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC133>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC134>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC89>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC196>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC195>))
+Declaration(Class(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.IntegerScale>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC77>))
+Declaration(Class(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.OrdinalValue>))
+Declaration(Class(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.DecimalScale>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC182>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC183>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC154>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC153>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC33>))
+Declaration(Class(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.CompositeScale>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC132>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC140>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC141>))
+Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#DbXref>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC188>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC131>))
+Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#Definition>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC189>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC171>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC159>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC172>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC95>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC39>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC9>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000030>))
+Declaration(Class(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.OrdinalScaleWithMaxRank>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC146>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC138>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC137>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC147>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC177>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC178>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC53>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC186>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC187>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000102>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC83>))
+Declaration(Class(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.DecimalValue>))
+Declaration(Class(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.OoevvEntity>))
+Declaration(Class(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.HierarchicalScale>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC201>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC202>))
+Declaration(Class(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.MaterialEntity>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC27>))
+Declaration(Class(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.OoevvProcess>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC175>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC176>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC162>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC163>))
+Declaration(Class(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.OrdinalScale>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC128>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC129>))
+Declaration(Class(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.NominalScaleWithAllowedTerms>))
+Declaration(Class(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.OoevvElementSet>))
+Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#Synonym>))
+Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#Subset>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC168>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC169>))
+Declaration(Class(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.ExperimentalVariable>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC13>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC194>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC193>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC205>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000027>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC180>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC43>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC181>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC152>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC151>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC31>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC199>))
+Declaration(Class(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.MeasurementScale>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC130>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC117>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC118>))
+Declaration(Class(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.HierarchicalValue>))
+Declaration(Class(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.NominalValue>))
+Declaration(Class(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.TimestampScale>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC170>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC157>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC158>))
+Declaration(Class(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.RelativeTermScale>))
+Declaration(Class(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.NumericScale>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC136>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC144>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC63>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC145>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC198>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC197>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC135>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC123>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC122>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC51>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC184>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC185>))
+Declaration(Class(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.Assay>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC200>))
+Declaration(Class(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.DataTransformation>))
+Declaration(Class(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.MeasurementValue>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000409>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC121>))
+Declaration(Class(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.BinaryScale>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC174>))
+Declaration(Class(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.NumericValue>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC120>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC173>))
+Declaration(Class(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.BinaryValue>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC139>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC148>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC160>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC161>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC149>))
+Declaration(ObjectProperty(<http://bmkeg.isi.edu/ooevv/hierarchicalValues>))
+Declaration(ObjectProperty(<http://bmkeg.isi.edu/ooevv/parent>))
+Declaration(ObjectProperty(<http://bmkeg.isi.edu/ooevv/maximumRank>))
+Declaration(ObjectProperty(<http://bmkeg.isi.edu/ooevv/oScales>))
+Declaration(ObjectProperty(<http://bmkeg.isi.edu/ooevv/scale>))
+Declaration(ObjectProperty(<http://bmkeg.isi.edu/ooevv/format>))
+Declaration(ObjectProperty(<newObjectProp:1679049089>))
+Declaration(ObjectProperty(<http://bmkeg.isi.edu/ooevv/valueMappings>))
+Declaration(ObjectProperty(<http://bmkeg.isi.edu/ooevv/equalsAreEqual>))
+Declaration(ObjectProperty(<http://bmkeg.isi.edu/ooevv/allowedRelations>))
+Declaration(ObjectProperty(<http://bmkeg.isi.edu/ooevv/trueValue>))
+Declaration(ObjectProperty(<http://bmkeg.isi.edu/ooevv/nominalValues>))
+Declaration(ObjectProperty(<http://bmkeg.isi.edu/ooevv/rank>))
+Declaration(ObjectProperty(<http://bmkeg.isi.edu/ooevv/sets>))
+Declaration(ObjectProperty(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.HierarchicalScale.bmkegId>))
+Declaration(ObjectProperty(<http://bmkeg.isi.edu/ooevv/binaryValue>))
+Declaration(ObjectProperty(<http://bmkeg.isi.edu/ooevv/hierarchyRelation>))
+Declaration(ObjectProperty(<http://bmkeg.isi.edu/ooevv/hScales>))
+Declaration(ObjectProperty(<http://bmkeg.isi.edu/ooevv/falseValue>))
+Declaration(ObjectProperty(<http://bmkeg.isi.edu/ooevv/units>))
+Declaration(ObjectProperty(<http://bmkeg.isi.edu/ooevv/maximumIsInclusive>))
+Declaration(ObjectProperty(<http://bmkeg.isi.edu/ooevv/processes>))
+Declaration(ObjectProperty(<http://bmkeg.isi.edu/ooevv/relationTerm>))
+Declaration(ObjectProperty(<http://bmkeg.isi.edu/ooevv/processType>))
+Declaration(ObjectProperty(<http://bmkeg.isi.edu/ooevv/partOf>))
+Declaration(ObjectProperty(<http://bmkeg.isi.edu/ooevv/classType>))
+Declaration(ObjectProperty(<http://bmkeg.isi.edu/ooevv/nScales>))
+Declaration(ObjectProperty(<http://bmkeg.isi.edu/ooevv/relativeTermType>))
+Declaration(ObjectProperty(<http://bmkeg.isi.edu/ooevv/minimumIntegerValue>))
+Declaration(ObjectProperty(<http://bmkeg.isi.edu/ooevv/minimumDoubleValue>))
+Declaration(ObjectProperty(<http://bmkeg.isi.edu/ooevv/hasMinimum>))
+Declaration(ObjectProperty(<http://bmkeg.isi.edu/ooevv/bmkegId>))
+Declaration(ObjectProperty(<http://bmkeg.isi.edu/ooevv/hasMaximum>))
+Declaration(ObjectProperty(<http://bmkeg.isi.edu/ooevv/maximumIntegerValue>))
+Declaration(ObjectProperty(<http://bmkeg.isi.edu/ooevv/circular>))
+Declaration(ObjectProperty(<http://bmkeg.isi.edu/ooevv/targetValue>))
+Declaration(ObjectProperty(<http://bmkeg.isi.edu/ooevv/children>))
+Declaration(ObjectProperty(<http://bmkeg.isi.edu/ooevv/integerValue>))
+Declaration(ObjectProperty(<http://bmkeg.isi.edu/ooevv/maximumDoubleValue>))
+Declaration(ObjectProperty(<http://bmkeg.isi.edu/ooevv/obiTerm>))
+Declaration(ObjectProperty(<http://bmkeg.isi.edu/ooevv/variables>))
+Declaration(ObjectProperty(<http://bmkeg.isi.edu/ooevv/doubleValue>))
+Declaration(ObjectProperty(<http://bmkeg.isi.edu/ooevv/hasParts>))
+Declaration(ObjectProperty(<http://bmkeg.isi.edu/ooevv/valueScale>))
+Declaration(ObjectProperty(<http://bmkeg.isi.edu/ooevv/minimumIsInclusive>))
+Declaration(ObjectProperty(<newObjectProp:-73335375>))
+Declaration(ObjectProperty(<http://bmkeg.isi.edu/ooevv/entityType>))
+Declaration(ObjectProperty(<http://bmkeg.isi.edu/ooevv/ordinalValues>))
+Declaration(ObjectProperty(<http://bmkeg.isi.edu/ooevv/measures>))
+Declaration(ObjectProperty(<http://bmkeg.isi.edu/ooevv/entities>))
+Declaration(ObjectProperty(<http://bmkeg.isi.edu/ooevv/uid>))
+Declaration(ObjectProperty(<http://bmkeg.isi.edu/ooevv/exptVbs>))
+Declaration(DataProperty(<newDataProp:553428332>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000120>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000423>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000227>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000226>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000125>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000230>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000121>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000122>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000228>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000229>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000002>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000421>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000428>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000224>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000410>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000103>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000124>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000123>))
+Declaration(NamedIndividual(<newIndividual:number379948168>))
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://bmkeg.isi.edu/ooevv/falseValue> (<http://bmkeg.isi.edu/ooevv/falseValue>)
+
+ObjectPropertyDomain(<http://bmkeg.isi.edu/ooevv/falseValue> <http://www.absoluteiri.edu/RELAPPROXC162>)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: <newDataProp:553428332> (<newDataProp:553428332>)
+
+DataPropertyDomain(<newDataProp:553428332> <http://www.absoluteiri.edu/RELAPPROXC203>)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.DataTransformation> (<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.DataTransformation>)
+
+SubClassOf(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.DataTransformation> <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.OoevvProcess>)
+
+# Class: <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.ExperimentalVariable> (<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.ExperimentalVariable>)
+
+SubClassOf(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.ExperimentalVariable> <http://www.absoluteiri.edu/RELAPPROXC117>)
+SubClassOf(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.ExperimentalVariable> <http://www.absoluteiri.edu/RELAPPROXC154>)
+SubClassOf(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.ExperimentalVariable> <http://www.absoluteiri.edu/RELAPPROXC194>)
+
+# Class: <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.InformatonEntity> (<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.InformatonEntity>)
+
+SubClassOf(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.InformatonEntity> <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.OoevvEntity>)
+
+# Class: <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.MaterialEntity> (<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.MaterialEntity>)
+
+SubClassOf(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.MaterialEntity> <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.OoevvEntity>)
+
+# Class: <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.MaterialProcesing> (<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.MaterialProcesing>)
+
+SubClassOf(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.MaterialProcesing> <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.OoevvProcess>)
+
+# Class: <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.OoevvElementSet> (<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.OoevvElementSet>)
+
+SubClassOf(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.OoevvElementSet> <http://www.absoluteiri.edu/RELAPPROXC148>)
+
+# Class: <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.OoevvEntity> (<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.OoevvEntity>)
+
+SubClassOf(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.OoevvEntity> <http://www.absoluteiri.edu/RELAPPROXC117>)
+SubClassOf(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.OoevvEntity> <http://www.absoluteiri.edu/RELAPPROXC150>)
+
+# Class: <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.OoevvProcess> (<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.OoevvProcess>)
+
+SubClassOf(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.OoevvProcess> <http://www.absoluteiri.edu/RELAPPROXC117>)
+SubClassOf(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.OoevvProcess> <http://www.absoluteiri.edu/RELAPPROXC150>)
+
+# Class: <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.BinaryScale> (<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.BinaryScale>)
+
+SubClassOf(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.BinaryScale> <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.MeasurementScale>)
+
+# Class: <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.BinaryScaleWithNamedValues> (<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.BinaryScaleWithNamedValues>)
+
+SubClassOf(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.BinaryScaleWithNamedValues> <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.BinaryScale>)
+SubClassOf(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.BinaryScaleWithNamedValues> <http://www.absoluteiri.edu/RELAPPROXC156>)
+
+# Class: <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.CompositeScale> (<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.CompositeScale>)
+
+SubClassOf(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.CompositeScale> <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.MeasurementScale>)
+SubClassOf(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.CompositeScale> <http://www.absoluteiri.edu/RELAPPROXC158>)
+
+# Class: <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.DecimalScale> (<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.DecimalScale>)
+
+SubClassOf(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.DecimalScale> <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.NumericScale>)
+
+# Class: <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.HierarchicalScale> (<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.HierarchicalScale>)
+
+SubClassOf(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.HierarchicalScale> <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.MeasurementScale>)
+SubClassOf(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.HierarchicalScale> <http://www.absoluteiri.edu/RELAPPROXC196>)
+
+# Class: <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.IntegerScale> (<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.IntegerScale>)
+
+SubClassOf(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.IntegerScale> <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.NumericScale>)
+
+# Class: <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.MeasurementScale> (<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.MeasurementScale>)
+
+SubClassOf(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.MeasurementScale> <http://www.absoluteiri.edu/RELAPPROXC152>)
+
+# Class: <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.NominalScaleWithAllowedTerms> (<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.NominalScaleWithAllowedTerms>)
+
+SubClassOf(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.NominalScaleWithAllowedTerms> <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.BinaryScale>)
+SubClassOf(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.NominalScaleWithAllowedTerms> <http://www.absoluteiri.edu/RELAPPROXC122>)
+
+# Class: <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.NumericScale> (<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.NumericScale>)
+
+SubClassOf(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.NumericScale> <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.MeasurementScale>)
+SubClassOf(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.NumericScale> <http://www.absoluteiri.edu/RELAPPROXC198>)
+
+# Class: <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.OrdinalScale> (<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.OrdinalScale>)
+
+SubClassOf(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.OrdinalScale> <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.MeasurementScale>)
+
+# Class: <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.OrdinalScaleWithMaxRank> (<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.OrdinalScaleWithMaxRank>)
+
+SubClassOf(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.OrdinalScaleWithMaxRank> <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.OrdinalScale>)
+
+# Class: <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.OrdinalScaleWithNamedRanks> (<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.OrdinalScaleWithNamedRanks>)
+
+SubClassOf(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.OrdinalScaleWithNamedRanks> <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.OrdinalScaleWithMaxRank>)
+SubClassOf(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.OrdinalScaleWithNamedRanks> <http://www.absoluteiri.edu/RELAPPROXC162>)
+
+# Class: <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.RelativeTermScale> (<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.RelativeTermScale>)
+
+SubClassOf(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.RelativeTermScale> <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.MeasurementScale>)
+SubClassOf(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.RelativeTermScale> <http://www.absoluteiri.edu/RELAPPROXC144>)
+
+# Class: <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.TimestampScale> (<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.TimestampScale>)
+
+SubClassOf(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.TimestampScale> <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.NumericScale>)
+
+# Class: <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.BinaryValue> (<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.BinaryValue>)
+
+SubClassOf(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.BinaryValue> <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.MeasurementValue>)
+
+# Class: <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.DecimalValue> (<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.DecimalValue>)
+
+SubClassOf(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.DecimalValue> <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.NumericValue>)
+
+# Class: <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.HierarchicalValue> (<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.HierarchicalValue>)
+
+SubClassOf(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.HierarchicalValue> <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.MeasurementValue>)
+SubClassOf(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.HierarchicalValue> <http://www.absoluteiri.edu/RELAPPROXC146>)
+
+# Class: <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.IntegerValue> (<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.IntegerValue>)
+
+SubClassOf(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.IntegerValue> <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.NumericValue>)
+
+# Class: <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.MeasurementValue> (<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.MeasurementValue>)
+
+SubClassOf(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.MeasurementValue> <http://www.absoluteiri.edu/RELAPPROXC194>)
+
+# Class: <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.NominalValue> (<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.NominalValue>)
+
+SubClassOf(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.NominalValue> <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.MeasurementValue>)
+SubClassOf(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.NominalValue> <http://www.absoluteiri.edu/RELAPPROXC160>)
+
+# Class: <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.NumericValue> (<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.NumericValue>)
+
+SubClassOf(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.NumericValue> <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.MeasurementValue>)
+
+# Class: <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.OrdinalValue> (<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.OrdinalValue>)
+
+SubClassOf(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.OrdinalValue> <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.MeasurementValue>)
+SubClassOf(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.OrdinalValue> <http://www.absoluteiri.edu/RELAPPROXC202>)
+
+# Class: <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.RelativeValue> (<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.RelativeValue>)
+
+SubClassOf(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.RelativeValue> <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.MeasurementValue>)
+SubClassOf(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.RelativeValue> <http://www.absoluteiri.edu/RELAPPROXC200>)
+
+# Class: <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.RelativeValueMapping> (<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.RelativeValueMapping>)
+
+SubClassOf(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.RelativeValueMapping> <http://www.absoluteiri.edu/RELAPPROXC140>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000027> (<http://purl.obolibrary.org/obo/IAO_0000027>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000027> <http://purl.obolibrary.org/obo/IAO_0000030>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000030> (<http://purl.obolibrary.org/obo/IAO_0000030>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000030> <http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000078> (<http://purl.obolibrary.org/obo/IAO_0000078>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000078> <http://purl.obolibrary.org/obo/IAO_0000102>)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000078> <http://www.absoluteiri.edu/RELAPPROXC126>)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000078> <http://www.absoluteiri.edu/RELAPPROXC174>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000102> (<http://purl.obolibrary.org/obo/IAO_0000102>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000102> <http://purl.obolibrary.org/obo/IAO_0000027>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000409> (<http://purl.obolibrary.org/obo/IAO_0000409>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000409> <http://purl.obolibrary.org/obo/IAO_0000102>)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000409> <http://www.absoluteiri.edu/RELAPPROXC166>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC115> (<http://www.absoluteiri.edu/RELAPPROXC115>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC115> <http://www.absoluteiri.edu/RELAPPROXC121>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC118> (<http://www.absoluteiri.edu/RELAPPROXC118>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC118> <http://www.absoluteiri.edu/RELAPPROXC17>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC118> <http://www.absoluteiri.edu/RELAPPROXC23>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC118> <http://www.absoluteiri.edu/RELAPPROXC31>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC120> (<http://www.absoluteiri.edu/RELAPPROXC120>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC120> <http://www.absoluteiri.edu/RELAPPROXC116>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC120> <http://www.absoluteiri.edu/RELAPPROXC205>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC123> (<http://www.absoluteiri.edu/RELAPPROXC123>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC123> <http://www.absoluteiri.edu/RELAPPROXC33>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC126> (<http://www.absoluteiri.edu/RELAPPROXC126>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC126> <http://purl.obolibrary.org/obo/IAO_0000078>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC127> (<http://www.absoluteiri.edu/RELAPPROXC127>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC127> <http://www.absoluteiri.edu/RELAPPROXC128>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC127> <http://www.absoluteiri.edu/RELAPPROXC129>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC127> <http://www.absoluteiri.edu/RELAPPROXC130>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC127> <http://www.absoluteiri.edu/RELAPPROXC131>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC127> <http://www.absoluteiri.edu/RELAPPROXC132>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC127> <http://www.absoluteiri.edu/RELAPPROXC133>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC128> (<http://www.absoluteiri.edu/RELAPPROXC128>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC128> <http://www.absoluteiri.edu/RELAPPROXC137>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC129> (<http://www.absoluteiri.edu/RELAPPROXC129>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC129> <http://www.absoluteiri.edu/RELAPPROXC136>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC130> (<http://www.absoluteiri.edu/RELAPPROXC130>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC130> <http://www.absoluteiri.edu/RELAPPROXC135>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC131> (<http://www.absoluteiri.edu/RELAPPROXC131>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC131> <http://www.absoluteiri.edu/RELAPPROXC134>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC132> (<http://www.absoluteiri.edu/RELAPPROXC132>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC132> <http://www.absoluteiri.edu/RELAPPROXC138>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC133> (<http://www.absoluteiri.edu/RELAPPROXC133>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC133> <http://www.absoluteiri.edu/RELAPPROXC139>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC140> (<http://www.absoluteiri.edu/RELAPPROXC140>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC140> ObjectHasValue(<http://bmkeg.isi.edu/ooevv/relationTerm> <http://purl.obolibrary.org/obo/IAO_0000103>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC141> (<http://www.absoluteiri.edu/RELAPPROXC141>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC141> <http://www.absoluteiri.edu/RELAPPROXC43>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC145> (<http://www.absoluteiri.edu/RELAPPROXC145>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC145> <http://www.absoluteiri.edu/RELAPPROXC39>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC147> (<http://www.absoluteiri.edu/RELAPPROXC147>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC147> <http://www.absoluteiri.edu/RELAPPROXC71>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC149> (<http://www.absoluteiri.edu/RELAPPROXC149>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC149> <http://www.absoluteiri.edu/RELAPPROXC89>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC151> (<http://www.absoluteiri.edu/RELAPPROXC151>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC151> <http://www.absoluteiri.edu/RELAPPROXC17>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC151> <http://www.absoluteiri.edu/RELAPPROXC31>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC153> (<http://www.absoluteiri.edu/RELAPPROXC153>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC153> <http://www.absoluteiri.edu/RELAPPROXC27>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC155> (<http://www.absoluteiri.edu/RELAPPROXC155>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC155> <http://www.absoluteiri.edu/RELAPPROXC23>)
+DisjointClasses(<http://www.absoluteiri.edu/RELAPPROXC155> <http://www.absoluteiri.edu/RELAPPROXC166>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC157> (<http://www.absoluteiri.edu/RELAPPROXC157>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC157> <http://www.absoluteiri.edu/RELAPPROXC47>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC159> (<http://www.absoluteiri.edu/RELAPPROXC159>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC159> <http://www.absoluteiri.edu/RELAPPROXC63>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC161> (<http://www.absoluteiri.edu/RELAPPROXC161>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC161> <http://www.absoluteiri.edu/RELAPPROXC13>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC163> (<http://www.absoluteiri.edu/RELAPPROXC163>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC163> <http://www.absoluteiri.edu/RELAPPROXC83>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC166> (<http://www.absoluteiri.edu/RELAPPROXC166>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC166> <http://purl.obolibrary.org/obo/IAO_0000409>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC167> (<http://www.absoluteiri.edu/RELAPPROXC167>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC167> <http://www.absoluteiri.edu/RELAPPROXC168>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC167> <http://www.absoluteiri.edu/RELAPPROXC169>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC167> <http://www.absoluteiri.edu/RELAPPROXC170>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC168> (<http://www.absoluteiri.edu/RELAPPROXC168>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC168> <http://www.absoluteiri.edu/RELAPPROXC171>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC169> (<http://www.absoluteiri.edu/RELAPPROXC169>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC169> <http://www.absoluteiri.edu/RELAPPROXC172>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC169> ObjectIntersectionOf(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.OrdinalScale> owl:Thing))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC17> (<http://www.absoluteiri.edu/RELAPPROXC17>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC17> ObjectOneOf(<http://purl.obolibrary.org/obo/IAO_0000122>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC170> (<http://www.absoluteiri.edu/RELAPPROXC170>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC170> <http://www.absoluteiri.edu/RELAPPROXC173>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC174> (<http://www.absoluteiri.edu/RELAPPROXC174>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC174> <http://purl.obolibrary.org/obo/IAO_0000078>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC175> (<http://www.absoluteiri.edu/RELAPPROXC175>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC175> <http://www.absoluteiri.edu/RELAPPROXC131>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC175> <http://www.absoluteiri.edu/RELAPPROXC176>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC175> <http://www.absoluteiri.edu/RELAPPROXC177>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC175> <http://www.absoluteiri.edu/RELAPPROXC178>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC175> <http://www.absoluteiri.edu/RELAPPROXC179>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC175> <http://www.absoluteiri.edu/RELAPPROXC180>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC175> <http://www.absoluteiri.edu/RELAPPROXC181>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC175> <http://www.absoluteiri.edu/RELAPPROXC182>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC175> <http://www.absoluteiri.edu/RELAPPROXC183>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC175> <http://www.absoluteiri.edu/RELAPPROXC184>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC176> (<http://www.absoluteiri.edu/RELAPPROXC176>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC176> <http://www.absoluteiri.edu/RELAPPROXC185>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC177> (<http://www.absoluteiri.edu/RELAPPROXC177>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC177> <http://www.absoluteiri.edu/RELAPPROXC186>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC178> (<http://www.absoluteiri.edu/RELAPPROXC178>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC178> <http://www.absoluteiri.edu/RELAPPROXC187>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC179> (<http://www.absoluteiri.edu/RELAPPROXC179>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC179> <http://www.absoluteiri.edu/RELAPPROXC191>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC180> (<http://www.absoluteiri.edu/RELAPPROXC180>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC180> <http://www.absoluteiri.edu/RELAPPROXC190>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC181> (<http://www.absoluteiri.edu/RELAPPROXC181>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC181> <http://www.absoluteiri.edu/RELAPPROXC189>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC182> (<http://www.absoluteiri.edu/RELAPPROXC182>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC182> <http://www.absoluteiri.edu/RELAPPROXC188>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC183> (<http://www.absoluteiri.edu/RELAPPROXC183>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC183> <http://www.absoluteiri.edu/RELAPPROXC193>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC184> (<http://www.absoluteiri.edu/RELAPPROXC184>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC184> <http://www.absoluteiri.edu/RELAPPROXC192>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC195> (<http://www.absoluteiri.edu/RELAPPROXC195>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC195> <http://www.absoluteiri.edu/RELAPPROXC23>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC195> <http://www.absoluteiri.edu/RELAPPROXC77>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC197> (<http://www.absoluteiri.edu/RELAPPROXC197>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC197> <http://www.absoluteiri.edu/RELAPPROXC53>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC199> (<http://www.absoluteiri.edu/RELAPPROXC199>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC199> <http://www.absoluteiri.edu/RELAPPROXC95>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC201> (<http://www.absoluteiri.edu/RELAPPROXC201>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC201> <http://www.absoluteiri.edu/RELAPPROXC9>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC203> (<http://www.absoluteiri.edu/RELAPPROXC203>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC203> <http://www.absoluteiri.edu/RELAPPROXC51>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC204> (<http://www.absoluteiri.edu/RELAPPROXC204>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC204> <http://www.absoluteiri.edu/RELAPPROXC121>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC47> (<http://www.absoluteiri.edu/RELAPPROXC47>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC47> DataSomeValuesFrom(<newDataProp:553428332> DataOneOf("9.88"^^xsd:decimal)))
+
+# Class: <http://www.geneontology.org/formats/oboInOwl#DbXref> (<http://www.geneontology.org/formats/oboInOwl#DbXref>)
+
+SubClassOf(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://purl.obolibrary.org/obo/IAO_0000102>)
+
+# Class: <http://www.geneontology.org/formats/oboInOwl#Definition> (<http://www.geneontology.org/formats/oboInOwl#Definition>)
+
+SubClassOf(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://purl.obolibrary.org/obo/IAO_0000102>)
+
+# Class: <http://www.geneontology.org/formats/oboInOwl#Subset> (<http://www.geneontology.org/formats/oboInOwl#Subset>)
+
+SubClassOf(<http://www.geneontology.org/formats/oboInOwl#Subset> <http://purl.obolibrary.org/obo/IAO_0000102>)
+
+# Class: <http://www.geneontology.org/formats/oboInOwl#Synonym> (<http://www.geneontology.org/formats/oboInOwl#Synonym>)
+
+SubClassOf(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://purl.obolibrary.org/obo/IAO_0000102>)
+
+# Class: <http://www.geneontology.org/formats/oboInOwl#SynonymType> (<http://www.geneontology.org/formats/oboInOwl#SynonymType>)
+
+SubClassOf(<http://www.geneontology.org/formats/oboInOwl#SynonymType> <http://purl.obolibrary.org/obo/IAO_0000102>)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing <http://www.absoluteiri.edu/RELAPPROXC122>)
+SubClassOf(owl:Nothing <http://www.absoluteiri.edu/RELAPPROXC140>)
+SubClassOf(owl:Nothing <http://www.absoluteiri.edu/RELAPPROXC144>)
+SubClassOf(owl:Nothing <http://www.absoluteiri.edu/RELAPPROXC146>)
+SubClassOf(owl:Nothing <http://www.absoluteiri.edu/RELAPPROXC148>)
+SubClassOf(owl:Nothing <http://www.absoluteiri.edu/RELAPPROXC152>)
+SubClassOf(owl:Nothing <http://www.absoluteiri.edu/RELAPPROXC154>)
+SubClassOf(owl:Nothing <http://www.absoluteiri.edu/RELAPPROXC156>)
+SubClassOf(owl:Nothing <http://www.absoluteiri.edu/RELAPPROXC158>)
+SubClassOf(owl:Nothing <http://www.absoluteiri.edu/RELAPPROXC160>)
+SubClassOf(owl:Nothing <http://www.absoluteiri.edu/RELAPPROXC162>)
+SubClassOf(owl:Nothing <http://www.absoluteiri.edu/RELAPPROXC196>)
+SubClassOf(owl:Nothing <http://www.absoluteiri.edu/RELAPPROXC198>)
+SubClassOf(owl:Nothing <http://www.absoluteiri.edu/RELAPPROXC200>)
+SubClassOf(owl:Nothing <http://www.absoluteiri.edu/RELAPPROXC202>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://purl.obolibrary.org/obo/IAO_0000002> (<http://purl.obolibrary.org/obo/IAO_0000002>)
+
+ClassAssertion(<http://purl.obolibrary.org/obo/IAO_0000078> <http://purl.obolibrary.org/obo/IAO_0000002>)
+ClassAssertion(<http://www.absoluteiri.edu/RELAPPROXC174> <http://purl.obolibrary.org/obo/IAO_0000002>)
+
+# Individual: <http://purl.obolibrary.org/obo/IAO_0000103> (<http://purl.obolibrary.org/obo/IAO_0000103>)
+
+ClassAssertion(<http://purl.obolibrary.org/obo/IAO_0000078> <http://purl.obolibrary.org/obo/IAO_0000103>)
+ClassAssertion(<http://www.absoluteiri.edu/RELAPPROXC126> <http://purl.obolibrary.org/obo/IAO_0000103>)
+
+# Individual: <http://purl.obolibrary.org/obo/IAO_0000120> (<http://purl.obolibrary.org/obo/IAO_0000120>)
+
+ClassAssertion(<http://purl.obolibrary.org/obo/IAO_0000078> <http://purl.obolibrary.org/obo/IAO_0000120>)
+ClassAssertion(<http://www.absoluteiri.edu/RELAPPROXC174> <http://purl.obolibrary.org/obo/IAO_0000120>)
+
+# Individual: <http://purl.obolibrary.org/obo/IAO_0000121> (<http://purl.obolibrary.org/obo/IAO_0000121>)
+
+ClassAssertion(<http://purl.obolibrary.org/obo/IAO_0000078> <http://purl.obolibrary.org/obo/IAO_0000121>)
+SameIndividual(<http://purl.obolibrary.org/obo/IAO_0000121> <http://purl.obolibrary.org/obo/IAO_0000228>)
+
+# Individual: <http://purl.obolibrary.org/obo/IAO_0000122> (<http://purl.obolibrary.org/obo/IAO_0000122>)
+
+ClassAssertion(<http://purl.obolibrary.org/obo/IAO_0000078> <http://purl.obolibrary.org/obo/IAO_0000122>)
+ClassAssertion(<http://www.absoluteiri.edu/RELAPPROXC174> <http://purl.obolibrary.org/obo/IAO_0000122>)
+
+# Individual: <http://purl.obolibrary.org/obo/IAO_0000123> (<http://purl.obolibrary.org/obo/IAO_0000123>)
+
+ClassAssertion(<http://purl.obolibrary.org/obo/IAO_0000078> <http://purl.obolibrary.org/obo/IAO_0000123>)
+ClassAssertion(<http://www.absoluteiri.edu/RELAPPROXC174> <http://purl.obolibrary.org/obo/IAO_0000123>)
+
+# Individual: <http://purl.obolibrary.org/obo/IAO_0000124> (<http://purl.obolibrary.org/obo/IAO_0000124>)
+
+ClassAssertion(<http://purl.obolibrary.org/obo/IAO_0000078> <http://purl.obolibrary.org/obo/IAO_0000124>)
+ClassAssertion(<http://www.absoluteiri.edu/RELAPPROXC174> <http://purl.obolibrary.org/obo/IAO_0000124>)
+
+# Individual: <http://purl.obolibrary.org/obo/IAO_0000125> (<http://purl.obolibrary.org/obo/IAO_0000125>)
+
+ClassAssertion(<http://purl.obolibrary.org/obo/IAO_0000078> <http://purl.obolibrary.org/obo/IAO_0000125>)
+ClassAssertion(<http://www.absoluteiri.edu/RELAPPROXC174> <http://purl.obolibrary.org/obo/IAO_0000125>)
+ClassAssertion(<http://www.absoluteiri.edu/RELAPPROXC175> <http://purl.obolibrary.org/obo/IAO_0000125>)
+
+# Individual: <http://purl.obolibrary.org/obo/IAO_0000224> (<http://purl.obolibrary.org/obo/IAO_0000224>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Subset> <http://purl.obolibrary.org/obo/IAO_0000224>)
+
+# Individual: <http://purl.obolibrary.org/obo/IAO_0000226> (<http://purl.obolibrary.org/obo/IAO_0000226>)
+
+ClassAssertion(<http://purl.obolibrary.org/obo/IAO_0000078> <http://purl.obolibrary.org/obo/IAO_0000226>)
+ClassAssertion(<http://www.absoluteiri.edu/RELAPPROXC126> <http://purl.obolibrary.org/obo/IAO_0000226>)
+
+# Individual: <http://purl.obolibrary.org/obo/IAO_0000227> (<http://purl.obolibrary.org/obo/IAO_0000227>)
+
+ClassAssertion(<http://purl.obolibrary.org/obo/IAO_0000078> <http://purl.obolibrary.org/obo/IAO_0000227>)
+ClassAssertion(<http://www.absoluteiri.edu/RELAPPROXC126> <http://purl.obolibrary.org/obo/IAO_0000227>)
+
+# Individual: <http://purl.obolibrary.org/obo/IAO_0000228> (<http://purl.obolibrary.org/obo/IAO_0000228>)
+
+ClassAssertion(<http://purl.obolibrary.org/obo/IAO_0000078> <http://purl.obolibrary.org/obo/IAO_0000228>)
+ClassAssertion(<http://www.absoluteiri.edu/RELAPPROXC126> <http://purl.obolibrary.org/obo/IAO_0000228>)
+
+# Individual: <http://purl.obolibrary.org/obo/IAO_0000229> (<http://purl.obolibrary.org/obo/IAO_0000229>)
+
+ClassAssertion(<http://purl.obolibrary.org/obo/IAO_0000078> <http://purl.obolibrary.org/obo/IAO_0000229>)
+ClassAssertion(<http://www.absoluteiri.edu/RELAPPROXC126> <http://purl.obolibrary.org/obo/IAO_0000229>)
+
+# Individual: <http://purl.obolibrary.org/obo/IAO_0000230> (<http://purl.obolibrary.org/obo/IAO_0000230>)
+
+ClassAssertion(<http://purl.obolibrary.org/obo/IAO_0000078> <http://purl.obolibrary.org/obo/IAO_0000230>)
+ClassAssertion(<http://www.absoluteiri.edu/RELAPPROXC126> <http://purl.obolibrary.org/obo/IAO_0000230>)
+
+# Individual: <http://purl.obolibrary.org/obo/IAO_0000410> (<http://purl.obolibrary.org/obo/IAO_0000410>)
+
+ClassAssertion(<http://purl.obolibrary.org/obo/IAO_0000409> <http://purl.obolibrary.org/obo/IAO_0000410>)
+ClassAssertion(<http://www.absoluteiri.edu/RELAPPROXC166> <http://purl.obolibrary.org/obo/IAO_0000410>)
+
+# Individual: <http://purl.obolibrary.org/obo/IAO_0000421> (<http://purl.obolibrary.org/obo/IAO_0000421>)
+
+ClassAssertion(<http://purl.obolibrary.org/obo/IAO_0000409> <http://purl.obolibrary.org/obo/IAO_0000421>)
+ClassAssertion(<http://www.absoluteiri.edu/RELAPPROXC166> <http://purl.obolibrary.org/obo/IAO_0000421>)
+
+# Individual: <http://purl.obolibrary.org/obo/IAO_0000423> (<http://purl.obolibrary.org/obo/IAO_0000423>)
+
+ClassAssertion(<http://purl.obolibrary.org/obo/IAO_0000078> <http://purl.obolibrary.org/obo/IAO_0000423>)
+ClassAssertion(<http://www.absoluteiri.edu/RELAPPROXC174> <http://purl.obolibrary.org/obo/IAO_0000423>)
+
+# Individual: <http://purl.obolibrary.org/obo/IAO_0000428> (<http://purl.obolibrary.org/obo/IAO_0000428>)
+
+ClassAssertion(<http://purl.obolibrary.org/obo/IAO_0000078> <http://purl.obolibrary.org/obo/IAO_0000428>)
+ClassAssertion(<http://www.absoluteiri.edu/RELAPPROXC174> <http://purl.obolibrary.org/obo/IAO_0000428>)
+
+
+SubClassOf(ObjectOneOf(<http://purl.obolibrary.org/obo/IAO_0000423>) <http://www.geneontology.org/formats/oboInOwl#Subset>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/allowedRelations> owl:Thing) <http://www.absoluteiri.edu/RELAPPROXC144>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/binaryValue> owl:Thing) <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.BinaryValue>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/bmkegId> owl:Thing) <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.HierarchicalScale>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/children> owl:Thing) <http://www.absoluteiri.edu/RELAPPROXC146>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/circular> owl:Thing) <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.NumericScale>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/classType> owl:Thing) <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.MeasurementScale>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/doubleValue> owl:Thing) <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.DecimalValue>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.HierarchicalScale.bmkegId> owl:Thing) <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.Assay>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.HierarchicalScale.bmkegId> owl:Thing) <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.DataTransformation>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.HierarchicalScale.bmkegId> owl:Thing) <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.ExperimentalVariable>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.HierarchicalScale.bmkegId> owl:Thing) <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.InformatonEntity>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.HierarchicalScale.bmkegId> owl:Thing) <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.MaterialEntity>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.HierarchicalScale.bmkegId> owl:Thing) <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.MaterialProcesing>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.HierarchicalScale.bmkegId> owl:Thing) <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.OoevvElementSet>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.HierarchicalScale.bmkegId> owl:Thing) <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.OoevvEntity>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.HierarchicalScale.bmkegId> owl:Thing) <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.OoevvProcess>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.HierarchicalScale.bmkegId> owl:Thing) <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.BinaryScale>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.HierarchicalScale.bmkegId> owl:Thing) <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.BinaryScaleWithNamedValues>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.HierarchicalScale.bmkegId> owl:Thing) <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.CompositeScale>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.HierarchicalScale.bmkegId> owl:Thing) <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.DecimalScale>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.HierarchicalScale.bmkegId> owl:Thing) <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.IntegerScale>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.HierarchicalScale.bmkegId> owl:Thing) <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.MeasurementScale>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.HierarchicalScale.bmkegId> owl:Thing) <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.NominalScaleWithAllowedTerms>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.HierarchicalScale.bmkegId> owl:Thing) <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.NumericScale>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.HierarchicalScale.bmkegId> owl:Thing) <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.OrdinalScale>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.HierarchicalScale.bmkegId> owl:Thing) <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.OrdinalScaleWithMaxRank>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.HierarchicalScale.bmkegId> owl:Thing) <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.OrdinalScaleWithNamedRanks>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.HierarchicalScale.bmkegId> owl:Thing) <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.RelativeTermScale>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.HierarchicalScale.bmkegId> owl:Thing) <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.TimestampScale>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.HierarchicalScale.bmkegId> owl:Thing) <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.BinaryValue>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.HierarchicalScale.bmkegId> owl:Thing) <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.DecimalValue>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.HierarchicalScale.bmkegId> owl:Thing) <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.HierarchicalValue>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.HierarchicalScale.bmkegId> owl:Thing) <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.IntegerValue>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.HierarchicalScale.bmkegId> owl:Thing) <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.MeasurementValue>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.HierarchicalScale.bmkegId> owl:Thing) <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.NominalValue>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.HierarchicalScale.bmkegId> owl:Thing) <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.NumericValue>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.HierarchicalScale.bmkegId> owl:Thing) <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.OrdinalValue>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.HierarchicalScale.bmkegId> owl:Thing) <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.RelativeValue>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.HierarchicalScale.bmkegId> owl:Thing) <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.RelativeValueMapping>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/entities> owl:Thing) <http://www.absoluteiri.edu/RELAPPROXC148>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/entityType> owl:Thing) <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.OoevvEntity>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/equalsAreEqual> owl:Thing) <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.OrdinalScale>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/exptVbs> owl:Thing) <http://www.absoluteiri.edu/RELAPPROXC148>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/falseValue> owl:Thing) <http://www.absoluteiri.edu/RELAPPROXC156>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/format> owl:Thing) <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.TimestampScale>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/hScales> owl:Thing) <http://www.absoluteiri.edu/RELAPPROXC146>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/hasMaximum> owl:Thing) <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.NumericScale>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/hasMinimum> owl:Thing) <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.NumericScale>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/hasParts> owl:Thing) <http://www.absoluteiri.edu/RELAPPROXC158>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/hierarchicalValues> owl:Thing) <http://www.absoluteiri.edu/RELAPPROXC196>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/hierarchyRelation> owl:Thing) <http://www.absoluteiri.edu/RELAPPROXC146>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/integerValue> owl:Thing) <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.IntegerValue>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/maximumDoubleValue> owl:Thing) <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.DecimalScale>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/maximumIntegerValue> owl:Thing) <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.IntegerScale>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/maximumIsInclusive> owl:Thing) <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.NumericScale>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/maximumRank> owl:Thing) <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.OrdinalScaleWithMaxRank>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/measures> owl:Thing) <http://www.absoluteiri.edu/RELAPPROXC154>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/minimumDoubleValue> owl:Thing) <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.DecimalScale>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/minimumIntegerValue> owl:Thing) <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.IntegerScale>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/minimumIsInclusive> owl:Thing) <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.scale.NumericScale>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/nScales> owl:Thing) <http://www.absoluteiri.edu/RELAPPROXC160>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/nominalValues> owl:Thing) <http://www.absoluteiri.edu/RELAPPROXC122>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/oScales> owl:Thing) <http://www.absoluteiri.edu/RELAPPROXC202>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/obiTerm> owl:Thing) <http://www.absoluteiri.edu/RELAPPROXC150>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/ordinalValues> owl:Thing) <http://www.absoluteiri.edu/RELAPPROXC162>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/parent> owl:Thing) <http://www.absoluteiri.edu/RELAPPROXC146>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/partOf> owl:Thing) <http://www.absoluteiri.edu/RELAPPROXC154>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/processType> owl:Thing) <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.OoevvProcess>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/processes> owl:Thing) <http://www.absoluteiri.edu/RELAPPROXC148>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/rank> owl:Thing) <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.value.OrdinalValue>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/relationTerm> owl:Thing) <http://www.absoluteiri.edu/RELAPPROXC140>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/relativeTermType> owl:Thing) <http://www.absoluteiri.edu/RELAPPROXC144>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/scale> owl:Thing) <http://www.absoluteiri.edu/RELAPPROXC194>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/sets> owl:Thing) <http://www.absoluteiri.edu/RELAPPROXC117>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/targetValue> owl:Thing) <http://www.absoluteiri.edu/RELAPPROXC140>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/trueValue> owl:Thing) <http://www.absoluteiri.edu/RELAPPROXC156>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/uid> owl:Thing) <http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.OoevvElementSet>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/units> owl:Thing) <http://www.absoluteiri.edu/RELAPPROXC198>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/valueMappings> owl:Thing) <http://www.absoluteiri.edu/RELAPPROXC200>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/valueScale> owl:Thing) <http://www.absoluteiri.edu/RELAPPROXC144>)
+SubClassOf(ObjectSomeValuesFrom(<http://bmkeg.isi.edu/ooevv/variables> owl:Thing) <http://www.absoluteiri.edu/RELAPPROXC152>)
+SubClassOf(ObjectHasSelf(<http://bmkeg.isi.edu/ooevv/variables>) <http://www.geneontology.org/formats/oboInOwl#Synonym>)
+SubClassOf(DataSomeValuesFrom(<newDataProp:553428332> DataOneOf("-25.65"^^xsd:decimal)) <http://purl.obolibrary.org/obo/IAO_0000030>)
+SubClassOf(DataHasValue(<newDataProp:553428332> "someText1"@es) <http://www.absoluteiri.edu/RELAPPROXC139>)
+SubClassOf(DataHasValue(<newDataProp:553428332> "someText1") <http://www.absoluteiri.edu/RELAPPROXC194>)
+DifferentIndividuals(<http://purl.obolibrary.org/obo/IAO_0000120> <http://purl.obolibrary.org/obo/IAO_0000121> <http://purl.obolibrary.org/obo/IAO_0000122> <http://purl.obolibrary.org/obo/IAO_0000123> <http://purl.obolibrary.org/obo/IAO_0000124> <http://purl.obolibrary.org/obo/IAO_0000125> <http://purl.obolibrary.org/obo/IAO_0000423> <http://purl.obolibrary.org/obo/IAO_0000428>)
+DifferentIndividuals(<http://purl.obolibrary.org/obo/IAO_0000226> <http://purl.obolibrary.org/obo/IAO_0000227> <http://purl.obolibrary.org/obo/IAO_0000228> <http://purl.obolibrary.org/obo/IAO_0000229> <http://purl.obolibrary.org/obo/IAO_0000230>)
+HasKey(<http://bmkeg.isi.edu/ooevv/edu.isi.bmkeg.ooevv.model.Assay> (<http://bmkeg.isi.edu/ooevv/allowedRelations> <http://bmkeg.isi.edu/ooevv/oScales> <http://bmkeg.isi.edu/ooevv/obiTerm>) ())
+)

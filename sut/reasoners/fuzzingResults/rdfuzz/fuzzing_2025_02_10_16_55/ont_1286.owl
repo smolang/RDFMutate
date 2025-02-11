@@ -1,0 +1,712 @@
+Prefix(:=<urn:unnamed:ontology#ont279603788402487>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:unnamed:ontology#ont279603788402487>
+
+Declaration(Class(<http://dbpedia.org/ontology/Beverage>))
+Declaration(Class(<http://dbpedia.org/ontology/MusicGenre>))
+Declaration(Class(<http://dbpedia.org/ontology/BasketballTeam>))
+Declaration(Class(<http://dbpedia.org/ontology/Software>))
+Declaration(Class(<http://dbpedia.org/ontology/FormulaOneRacer>))
+Declaration(Class(<http://dbpedia.org/ontology/TradeUnion>))
+Declaration(Class(<http://dbpedia.org/ontology/Judge>))
+Declaration(Class(<http://dbpedia.org/ontology/MusicalArtist>))
+Declaration(Class(<http://dbpedia.org/ontology/Magazine>))
+Declaration(Class(<http://dbpedia.org/ontology/EthnicGroup>))
+Declaration(Class(<http://dbpedia.org/ontology/Colour>))
+Declaration(Class(<http://dbpedia.org/ontology/TelevisionShow>))
+Declaration(Class(<http://dbpedia.org/ontology/Olympics>))
+Declaration(Class(<http://dbpedia.org/ontology/Aircraft>))
+Declaration(Class(<http://dbpedia.org/ontology/MilitaryUnit>))
+Declaration(Class(<http://dbpedia.org/ontology/Bone>))
+Declaration(Class(<http://dbpedia.org/ontology/RadioStation>))
+Declaration(Class(<http://dbpedia.org/ontology/SoccerClub>))
+Declaration(Class(<http://dbpedia.org/ontology/HockeyTeam>))
+Declaration(Class(<http://dbpedia.org/ontology/Language>))
+Declaration(Class(<http://dbpedia.org/ontology/WorldHeritageSite>))
+Declaration(Class(<http://dbpedia.org/ontology/Senator>))
+Declaration(Class(<http://dbpedia.org/ontology/ProtectedArea>))
+Declaration(Class(<http://dbpedia.org/ontology/HistoricPlace>))
+Declaration(Class(<http://dbpedia.org/ontology/Journalist>))
+Declaration(Class(<http://dbpedia.org/ontology/River>))
+Declaration(Class(<http://dbpedia.org/ontology/Mayor>))
+Declaration(Class(<http://dbpedia.org/ontology/Lake>))
+Declaration(Class(<http://dbpedia.org/ontology/Mammal>))
+Declaration(Class(<http://dbpedia.org/ontology/Writer>))
+Declaration(Class(<http://dbpedia.org/ontology/Currency>))
+Declaration(Class(<http://dbpedia.org/ontology/Cricketer>))
+Declaration(Class(<http://dbpedia.org/ontology/Scientist>))
+Declaration(Class(<http://dbpedia.org/ontology/MilitaryPerson>))
+Declaration(Class(<http://dbpedia.org/ontology/BaseballPlayer>))
+Declaration(Class(<http://dbpedia.org/ontology/Broadcast>))
+Declaration(Class(<http://dbpedia.org/ontology/Disease>))
+Declaration(Class(<http://dbpedia.org/ontology/SoccerPlayer>))
+Declaration(Class(<http://dbpedia.org/ontology/University>))
+Declaration(Class(<http://dbpedia.org/ontology/MountainRange>))
+Declaration(Class(<http://dbpedia.org/ontology/Comedian>))
+Declaration(Class(<http://dbpedia.org/ontology/Island>))
+Declaration(Class(<http://dbpedia.org/ontology/Band>))
+Declaration(Class(<http://dbpedia.org/ontology/MilitaryConflict>))
+Declaration(Class(<http://dbpedia.org/ontology/PrimeMinister>))
+Declaration(Class(<http://dbpedia.org/ontology/CollegeCoach>))
+Declaration(Class(<http://dbpedia.org/ontology/OfficeHolder>))
+Declaration(Class(<http://dbpedia.org/ontology/NationalCollegiateAthleticAssociationAthlete>))
+Declaration(Class(<http://dbpedia.org/ontology/Film>))
+Declaration(Class(<http://dbpedia.org/ontology/Newspaper>))
+Declaration(Class(<http://dbpedia.org/ontology/Museum>))
+Declaration(Class(<http://dbpedia.org/ontology/Song>))
+Declaration(Class(<http://dbpedia.org/ontology/Album>))
+Declaration(Class(<http://dbpedia.org/ontology/AmericanFootballTeam>))
+Declaration(Class(<http://dbpedia.org/ontology/IceHockeyLeague>))
+Declaration(Class(<http://dbpedia.org/ontology/BaseballLeague>))
+Declaration(Class(<http://dbpedia.org/ontology/AmericanFootballPlayer>))
+Declaration(Class(<http://dbpedia.org/ontology/Pope>))
+Declaration(Class(<http://dbpedia.org/ontology/Game>))
+Declaration(Class(<http://dbpedia.org/ontology/Airline>))
+Declaration(Class(<http://dbpedia.org/ontology/Town>))
+Declaration(Class(<http://dbpedia.org/ontology/Road>))
+Declaration(Class(<http://dbpedia.org/ontology/Non-ProfitOrganisation>))
+Declaration(Class(<http://dbpedia.org/ontology/Actor>))
+Declaration(Class(<http://dbpedia.org/ontology/SoccerLeague>))
+Declaration(Class(<http://dbpedia.org/ontology/AmericanFootballLeague>))
+Declaration(Class(<http://dbpedia.org/ontology/IceHockeyPlayer>))
+Declaration(Class(<http://dbpedia.org/ontology/RugbyPlayer>))
+Declaration(Class(<http://dbpedia.org/ontology/Award>))
+Declaration(Class(<http://dbpedia.org/ontology/School>))
+Declaration(Class(<http://dbpedia.org/ontology/President>))
+Declaration(Class(<http://dbpedia.org/ontology/ComicsCreator>))
+Declaration(Class(<http://dbpedia.org/ontology/Plant>))
+Declaration(Class(<http://dbpedia.org/ontology/NascarDriver>))
+Declaration(Class(<http://dbpedia.org/ontology/Continent>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToRugbyPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToRoad>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToBaseballPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToHockeyTeam>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToEthnicGroup>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMuseum>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToCollegeCoach>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToTelevisionShow>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToBroadcast>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMusicalArtist>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToActor>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/MusicGenre>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Event>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToWriter>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToGame>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToSong>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Award>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToNascarDriver>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToSenator>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Organisation>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToAmericanFootballPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToNationalCollegiateAthleticAssociationAthlete>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Work>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToUniversity>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToSchool>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToBaseballLeague>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMountainRange>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToSoccerPlayer>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Language>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToAmericanFootballLeague>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToPlant>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToFilm>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToProtectedArea>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Activity>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToComicsCreator>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToJournalist>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToTradeUnion>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToLegislature>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMayor>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToOlympics>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Infrastructure>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToCurrency>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Species>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToSoftware>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToLake>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToAirline>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToNon-ProfitOrganisation>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMammal>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToHistoricPlace>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToBone>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToSoccerClub>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Currency>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToIceHockeyPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToIceHockeyLeague>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Person>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/AnatomicalStructure>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToLanguage>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/MeanOfTransportation>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Disease>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMilitaryPerson>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Place>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToAircraft>))
+Declaration(ObjectProperty(<http://www.w3.org/2004/02/skos/core#relatedMatch>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/EthnicGroup>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMilitaryUnit>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMilitaryConflict>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToComedian>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToNewspaper>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToColour>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMagazine>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToCricketer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToFormulaOneRacer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToPrimeMinister>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToAmericanFootballTeam>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToBand>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Beverage>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToBeverage>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToContinent>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToJudge>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToWorldHeritageSite>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Colour>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToRiver>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToSoccerLeague>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToRadioStation>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToPresident>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToScientist>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToAward>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToDisease>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToIsland>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToPope>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToOfficeHolder>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToAlbum>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMusicGenre>))
+Declaration(DataProperty(<newDataProp:298062593>))
+Declaration(DataProperty(<newDataProp:-1183207901>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/colors>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToColour>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/owner>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/arena>))
+Declaration(NamedIndividual(<newIndividual:number675450229>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToSchool>))
+Declaration(NamedIndividual(<newIndividual:number891251458>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/location>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMusicalArtist>))
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://dbpedia.org/ontology/MusicGenre> (<http://dbpedia.org/ontology/MusicGenre>)
+
+ObjectPropertyDomain(<http://dbpedia.org/ontology/MusicGenre> <http://dbpedia.org/ontology/Film>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToActor> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToActor>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToActor> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToActor> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToActor> <http://dbpedia.org/ontology/Actor>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToAircraft> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToAircraft>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToAircraft> <http://dbpedia.org/ontology/MeanOfTransportation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToAircraft> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToAircraft> <http://dbpedia.org/ontology/Aircraft>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToAirline> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToAirline>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToAirline> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToAirline> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToAirline> <http://dbpedia.org/ontology/Airline>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToAlbum> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToAlbum>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToAlbum> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToAlbum> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToAlbum> <http://dbpedia.org/ontology/Album>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToAmericanFootballLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToAmericanFootballLeague>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToAmericanFootballLeague> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToAmericanFootballLeague> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToAmericanFootballLeague> <http://dbpedia.org/ontology/AmericanFootballLeague>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToAmericanFootballPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToAmericanFootballPlayer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToAmericanFootballPlayer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToAmericanFootballPlayer> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToAmericanFootballPlayer> <http://dbpedia.org/ontology/AmericanFootballPlayer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToAmericanFootballTeam> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToAmericanFootballTeam>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToAmericanFootballTeam> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToAmericanFootballTeam> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToAmericanFootballTeam> <http://dbpedia.org/ontology/AmericanFootballTeam>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToAward> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToAward>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToAward> <http://dbpedia.org/ontology/Award>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToAward> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToAward> <http://dbpedia.org/ontology/Award>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToBand> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToBand>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToBand> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToBand> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToBand> <http://dbpedia.org/ontology/Band>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToBaseballLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToBaseballLeague>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToBaseballLeague> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToBaseballLeague> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToBaseballLeague> <http://dbpedia.org/ontology/BaseballLeague>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToBaseballPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToBaseballPlayer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToBaseballPlayer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToBaseballPlayer> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToBaseballPlayer> <http://dbpedia.org/ontology/BaseballPlayer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToBeverage> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToBeverage>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToBeverage> <http://dbpedia.org/ontology/Beverage>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToBeverage> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToBeverage> <http://dbpedia.org/ontology/Beverage>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToBone> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToBone>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToBone> <http://dbpedia.org/ontology/AnatomicalStructure>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToBone> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToBone> <http://dbpedia.org/ontology/Bone>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToBroadcast> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToBroadcast>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToBroadcast> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToBroadcast> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToBroadcast> <http://dbpedia.org/ontology/Broadcast>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToCollegeCoach> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToCollegeCoach>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToCollegeCoach> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToCollegeCoach> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToCollegeCoach> <http://dbpedia.org/ontology/CollegeCoach>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToColour> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToColour>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToColour> <http://dbpedia.org/ontology/Colour>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToColour> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToColour> <http://dbpedia.org/ontology/Colour>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToComedian> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToComedian>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToComedian> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToComedian> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToComedian> <http://dbpedia.org/ontology/Comedian>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToComicsCreator> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToComicsCreator>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToComicsCreator> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToComicsCreator> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToComicsCreator> <http://dbpedia.org/ontology/ComicsCreator>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToContinent> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToContinent>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToContinent> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToContinent> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToContinent> <http://dbpedia.org/ontology/Continent>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToCricketer> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToCricketer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToCricketer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToCricketer> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToCricketer> <http://dbpedia.org/ontology/Cricketer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToCurrency> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToCurrency>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToCurrency> <http://dbpedia.org/ontology/Currency>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToCurrency> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToCurrency> <http://dbpedia.org/ontology/Currency>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToDisease> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToDisease>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToDisease> <http://dbpedia.org/ontology/Disease>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToDisease> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToDisease> <http://dbpedia.org/ontology/Disease>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToEthnicGroup> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToEthnicGroup>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToEthnicGroup> <http://dbpedia.org/ontology/EthnicGroup>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToEthnicGroup> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToEthnicGroup> <http://dbpedia.org/ontology/EthnicGroup>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToFilm> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToFilm>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToFilm> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToFilm> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToFilm> <http://dbpedia.org/ontology/Film>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToFormulaOneRacer> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToFormulaOneRacer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToFormulaOneRacer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToFormulaOneRacer> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToFormulaOneRacer> <http://dbpedia.org/ontology/Judge>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToFormulaOneRacer> <http://dbpedia.org/ontology/FormulaOneRacer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToGame> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToGame>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToGame> <http://dbpedia.org/ontology/Activity>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToGame> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToGame> <http://dbpedia.org/ontology/Game>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToHistoricPlace> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToHistoricPlace>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToHistoricPlace> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToHistoricPlace> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToHistoricPlace> <http://dbpedia.org/ontology/HistoricPlace>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToHockeyTeam> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToHockeyTeam>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToHockeyTeam> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToHockeyTeam> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToHockeyTeam> <http://dbpedia.org/ontology/HockeyTeam>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToIceHockeyLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToIceHockeyLeague>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToIceHockeyLeague> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToIceHockeyLeague> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToIceHockeyLeague> <http://dbpedia.org/ontology/IceHockeyLeague>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToIceHockeyPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToIceHockeyPlayer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToIceHockeyPlayer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToIceHockeyPlayer> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToIceHockeyPlayer> <http://dbpedia.org/ontology/IceHockeyPlayer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToIsland> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToIsland>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToIsland> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToIsland> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToIsland> <http://dbpedia.org/ontology/Island>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToJournalist> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToJournalist>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToJournalist> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToJournalist> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToJournalist> <http://dbpedia.org/ontology/Journalist>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToJudge> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToJudge>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToJudge> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToJudge> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToJudge> <http://dbpedia.org/ontology/Judge>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToLake> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToLake>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToLake> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToLake> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToLake> <http://dbpedia.org/ontology/Lake>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToLanguage> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToLanguage>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToLanguage> <http://dbpedia.org/ontology/Language>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToLanguage> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToLanguage> <http://dbpedia.org/ontology/Language>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToLegislature> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToLegislature>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToLegislature> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToLegislature> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToLegislature> owl:Nothing)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMagazine> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMagazine>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMagazine> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMagazine> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMagazine> <http://dbpedia.org/ontology/Magazine>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMammal> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMammal>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMammal> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMammal> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMammal> <http://dbpedia.org/ontology/Mammal>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMayor> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMayor>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMayor> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMayor> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMayor> <http://dbpedia.org/ontology/Mayor>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMilitaryConflict> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMilitaryConflict>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMilitaryConflict> <http://dbpedia.org/ontology/Event>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMilitaryConflict> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMilitaryConflict> <http://dbpedia.org/ontology/MilitaryConflict>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMilitaryPerson> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMilitaryPerson>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMilitaryPerson> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMilitaryPerson> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMilitaryPerson> <http://dbpedia.org/ontology/MilitaryPerson>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMilitaryUnit> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMilitaryUnit>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMilitaryUnit> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMilitaryUnit> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMilitaryUnit> <http://dbpedia.org/ontology/MilitaryUnit>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMountainRange> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMountainRange>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMountainRange> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMountainRange> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMountainRange> <http://dbpedia.org/ontology/MountainRange>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMuseum> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMuseum>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMuseum> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMuseum> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMuseum> <http://dbpedia.org/ontology/Museum>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMusicGenre> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMusicGenre>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMusicGenre> <http://dbpedia.org/ontology/MusicGenre>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMusicGenre> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMusicGenre> <http://dbpedia.org/ontology/MusicGenre>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMusicalArtist> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMusicalArtist>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMusicalArtist> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMusicalArtist> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMusicalArtist> <http://dbpedia.org/ontology/MusicalArtist>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToNascarDriver> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToNascarDriver>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToNascarDriver> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToNascarDriver> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToNascarDriver> <http://dbpedia.org/ontology/NascarDriver>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToNationalCollegiateAthleticAssociationAthlete> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToNationalCollegiateAthleticAssociationAthlete>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToNationalCollegiateAthleticAssociationAthlete> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToNationalCollegiateAthleticAssociationAthlete> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToNationalCollegiateAthleticAssociationAthlete> <http://dbpedia.org/ontology/NationalCollegiateAthleticAssociationAthlete>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToNewspaper> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToNewspaper>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToNewspaper> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToNewspaper> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToNewspaper> <http://dbpedia.org/ontology/Newspaper>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToNon-ProfitOrganisation> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToNon-ProfitOrganisation>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToNon-ProfitOrganisation> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToNon-ProfitOrganisation> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToNon-ProfitOrganisation> <http://dbpedia.org/ontology/Non-ProfitOrganisation>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToOfficeHolder> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToOfficeHolder>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToOfficeHolder> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToOfficeHolder> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToOfficeHolder> <http://dbpedia.org/ontology/OfficeHolder>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToOlympics> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToOlympics>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToOlympics> <http://dbpedia.org/ontology/Event>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToOlympics> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToOlympics> <http://dbpedia.org/ontology/Olympics>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToPlant> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToPlant>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToPlant> <http://dbpedia.org/ontology/Species>)
+ReflexiveObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToPlant>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToPlant> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToPlant> <http://dbpedia.org/ontology/Plant>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToPope> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToPope>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToPope> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToPope> <http://dbpedia.org/ontology/Pope>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToPresident> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToPresident>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToPresident> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToPresident> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToPresident> <http://dbpedia.org/ontology/President>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToPrimeMinister> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToPrimeMinister>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToPrimeMinister> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToPrimeMinister> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToPrimeMinister> <http://dbpedia.org/ontology/PrimeMinister>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToProtectedArea> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToProtectedArea>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToProtectedArea> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToProtectedArea> <http://dbpedia.org/ontology/ProtectedArea>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToRadioStation> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToRadioStation>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToRadioStation> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToRadioStation> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToRadioStation> <http://dbpedia.org/ontology/RadioStation>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToRiver> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToRiver>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToRiver> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToRiver> <http://dbpedia.org/ontology/River>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToRoad> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToRoad>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToRoad> <http://dbpedia.org/ontology/Infrastructure>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToRoad> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToRoad> <http://dbpedia.org/ontology/Road>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToRugbyPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToRugbyPlayer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToRugbyPlayer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToRugbyPlayer> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToRugbyPlayer> <http://dbpedia.org/ontology/RugbyPlayer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToSchool> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToSchool>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToSchool> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToSchool> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToSchool> <http://dbpedia.org/ontology/School>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToScientist> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToScientist>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToScientist> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToScientist> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToScientist> <http://dbpedia.org/ontology/Scientist>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToSenator> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToSenator>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToSenator> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToSenator> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToSenator> <http://dbpedia.org/ontology/Senator>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToSoccerClub> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToSoccerClub>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToSoccerClub> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToSoccerClub> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToSoccerClub> <http://dbpedia.org/ontology/SoccerClub>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToSoccerLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToSoccerLeague>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToSoccerLeague> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToSoccerLeague> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToSoccerLeague> <http://dbpedia.org/ontology/SoccerLeague>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToSoccerPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToSoccerPlayer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToSoccerPlayer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToSoccerPlayer> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToSoccerPlayer> <http://dbpedia.org/ontology/SoccerPlayer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToSoftware> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToSoftware>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToSoftware> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToSoftware> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToSoftware> <http://dbpedia.org/ontology/Software>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToSong> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToSong>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToSong> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToSong> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToSong> <http://dbpedia.org/ontology/Song>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToTelevisionShow> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToTelevisionShow>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToTelevisionShow> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToTelevisionShow> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToTelevisionShow> <http://dbpedia.org/ontology/TelevisionShow>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToTradeUnion> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToTradeUnion>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToTradeUnion> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToTradeUnion> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToTradeUnion> <http://dbpedia.org/ontology/TradeUnion>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToUniversity> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToUniversity>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToUniversity> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToUniversity> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToUniversity> <http://dbpedia.org/ontology/University>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToWorldHeritageSite> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToWorldHeritageSite>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToWorldHeritageSite> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToWorldHeritageSite> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToWorldHeritageSite> <http://dbpedia.org/ontology/WorldHeritageSite>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToWriter> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToWriter>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToWriter> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToWriter> <http://dbpedia.org/ontology/BasketballTeam>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToWriter> <http://dbpedia.org/ontology/Writer>)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: <newDataProp:-1183207901> (<newDataProp:-1183207901>)
+
+DataPropertyRange(<newDataProp:-1183207901> xsd:token)
+
+# Data Property: <newDataProp:298062593> (<newDataProp:298062593>)
+
+DataPropertyRange(<newDataProp:298062593> xsd:nonNegativeInteger)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://dbpedia.org/ontology/Colour> (<http://dbpedia.org/ontology/Colour>)
+
+SubClassOf(<http://dbpedia.org/ontology/Colour> DataSomeValuesFrom(<newDataProp:-1183207901> DataOneOf("someText8"@es)))
+
+# Class: <http://dbpedia.org/ontology/Currency> (<http://dbpedia.org/ontology/Currency>)
+
+DisjointClasses(<http://dbpedia.org/ontology/Currency> <http://dbpedia.org/ontology/OfficeHolder>)
+
+# Class: <http://dbpedia.org/ontology/Mayor> (<http://dbpedia.org/ontology/Mayor>)
+
+DisjointClasses(<http://dbpedia.org/ontology/Mayor> <http://dbpedia.org/ontology/University>)
+
+# Class: <http://dbpedia.org/ontology/Road> (<http://dbpedia.org/ontology/Road>)
+
+SubClassOf(<http://dbpedia.org/ontology/Road> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToBaseballPlayer> <http://dbpedia.org/ontology/CollegeCoach>))
+
+# Class: <http://dbpedia.org/ontology/Software> (<http://dbpedia.org/ontology/Software>)
+
+SubClassOf(<http://dbpedia.org/ontology/Software> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToComedian> <http://dbpedia.org/ontology/Album>))
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://dbpedia.org/property/colors> (<http://dbpedia.org/property/colors>)
+
+ClassAssertion(<http://dbpedia.org/ontology/Non-ProfitOrganisation> <http://dbpedia.org/property/colors>)
+
+# Individual: <http://dbpedia.org/property/owner> (<http://dbpedia.org/property/owner>)
+
+NegativeObjectPropertyAssertion(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToAward> <http://dbpedia.org/property/owner> <http://dbpedia.org/property/owner>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToColour> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToColour>)
+
+ClassAssertion(<http://dbpedia.org/ontology/Island> <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToColour>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMusicalArtist> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMusicalArtist>)
+
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToMusicalArtist> <http://dbpedia.org/property/owner>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToSchool> (<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToSchool>)
+
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToSchool> <http://dbpedia.org/property/arena>)
+
+# Individual: <newIndividual:number891251458> (<newIndividual:number891251458>)
+
+
+
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToJudge> <http://dbpedia.org/ontology/Continent>) <http://dbpedia.org/ontology/MilitaryPerson>)
+SubClassOf(DataSomeValuesFrom(<newDataProp:-1183207901> DataIntersectionOf(xsd:dateTimeStamp xsd:nonNegativeInteger)) <http://dbpedia.org/ontology/President>)
+DifferentIndividuals(<http://www.ontologydesignpatterns.org/ekp/owl/BasketballTeam.owl#linksToSchool> <newIndividual:number891251458>)
+)

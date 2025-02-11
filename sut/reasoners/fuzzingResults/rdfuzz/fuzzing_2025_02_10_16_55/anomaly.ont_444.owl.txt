@@ -1,0 +1,9 @@
+Found anomalies while testing file ../testOnt.owl
+
+Anomaly 1: Class hierarchy differentiation between HERMIT and OPENLLET:
+	additional axioms HERMIT: [SubClassOf(<http://tap.stanford.edu/data/Tool> <http://tap.stanford.edu/data/Intangible>), SubClassOf(<http://tap.stanford.edu/data/Tool> <http://tap.stanford.edu/data/Node>), SubClassOf(<http://tap.stanford.edu/data/Tool> owl:Thing)]
+	additional axioms OPENLLET: [EquivalentClasses(<http://tap.stanford.edu/data/Tool> owl:Nothing), SubClassOf(<http://tap.stanford.edu/data/Tool> owl:Nothing)]
+
+Anomaly 2: Class hierarchy differentiation between ELK and OPENLLET:
+	additional axioms ELK: [SubClassOf(<http://tap.stanford.edu/data/Tool> <http://tap.stanford.edu/data/Intangible>), SubClassOf(<http://tap.stanford.edu/data/Tool> <http://tap.stanford.edu/data/Node>), SubClassOf(<http://tap.stanford.edu/data/Tool> owl:Thing)]
+	additional axioms OPENLLET: [EquivalentClasses(<http://tap.stanford.edu/data/Tool> owl:Nothing), SubClassOf(<http://tap.stanford.edu/data/Tool> owl:Nothing)]

@@ -1,0 +1,9 @@
+Found anomalies while testing file ../testOnt.owl
+
+Anomaly 1: Class hierarchy differentiation between HERMIT and ELK:
+	additional axioms HERMIT: [EquivalentClasses(<http://ccdb.ucsd.edu/NIF/NIF-Subcellular2.owl#sao445019788> owl:Nothing), SubClassOf(<http://ccdb.ucsd.edu/NIF/NIF-Subcellular2.owl#sao445019788> owl:Nothing)]
+	additional axioms ELK: [SubClassOf(<http://ccdb.ucsd.edu/NIF/NIF-Subcellular2.owl#sao445019788> <http://ccdb.ucsd.edu/NIF/NIF-Subcellular2.owl#sao991156472>), SubClassOf(<http://ccdb.ucsd.edu/NIF/NIF-Subcellular2.owl#sao445019788> <http://www.absoluteiri.edu/RELAPPROXC269>), SubClassOf(<http://ccdb.ucsd.edu/NIF/NIF-Subcellular2.owl#sao445019788> <http://www.absoluteiri.edu/RELAPPROXC359>)]
+
+Anomaly 2: Class hierarchy differentiation between ELK and OPENLLET:
+	additional axioms ELK: [SubClassOf(<http://ccdb.ucsd.edu/NIF/NIF-Subcellular2.owl#sao445019788> <http://ccdb.ucsd.edu/NIF/NIF-Subcellular2.owl#sao991156472>), SubClassOf(<http://ccdb.ucsd.edu/NIF/NIF-Subcellular2.owl#sao445019788> <http://www.absoluteiri.edu/RELAPPROXC269>), SubClassOf(<http://ccdb.ucsd.edu/NIF/NIF-Subcellular2.owl#sao445019788> <http://www.absoluteiri.edu/RELAPPROXC359>)]
+	additional axioms OPENLLET: [EquivalentClasses(<http://ccdb.ucsd.edu/NIF/NIF-Subcellular2.owl#sao445019788> owl:Nothing), SubClassOf(<http://ccdb.ucsd.edu/NIF/NIF-Subcellular2.owl#sao445019788> owl:Nothing)]

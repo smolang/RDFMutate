@@ -1,0 +1,9 @@
+Found anomalies while testing file ../testOnt.owl
+
+Anomaly 1: Class hierarchy differentiation between HERMIT and ELK:
+	additional axioms HERMIT: [SubClassOf(<http://dbpedia.org/ontology/Bridge> <http://dbpedia.org/ontology/Pope>)]
+	additional axioms ELK: [SubClassOf(<http://dbpedia.org/ontology/Bridge> <http://dbpedia.org/ontology/Stadium>), SubClassOf(<http://dbpedia.org/ontology/Bridge> <http://dbpedia.org/ontology/VolleyballLeague>), SubClassOf(<http://dbpedia.org/ontology/Bridge> owl:Thing)]
+
+Anomaly 2: Class hierarchy differentiation between ELK and OPENLLET:
+	additional axioms ELK: [SubClassOf(<http://dbpedia.org/ontology/Bridge> <http://dbpedia.org/ontology/Stadium>), SubClassOf(<http://dbpedia.org/ontology/Bridge> <http://dbpedia.org/ontology/VolleyballLeague>), SubClassOf(<http://dbpedia.org/ontology/Bridge> owl:Thing)]
+	additional axioms OPENLLET: [SubClassOf(<http://dbpedia.org/ontology/Bridge> <http://dbpedia.org/ontology/Pope>)]

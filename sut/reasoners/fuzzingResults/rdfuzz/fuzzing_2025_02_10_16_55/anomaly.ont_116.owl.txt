@@ -1,0 +1,9 @@
+Found anomalies while testing file ../testOnt.owl
+
+Anomaly 1: Class hierarchy differentiation between HERMIT and ELK:
+	additional axioms HERMIT: [EquivalentClasses(<http://purl.org/obo/owl/GO#GO_0001780> <http://purl.org/obo/owl/GO#GO_0007310> owl:Nothing), SubClassOf(<http://purl.org/obo/owl/GO#GO_0001780> owl:Nothing)]
+	additional axioms ELK: [EquivalentClasses(<http://purl.org/obo/owl/GO#GO_0007310> owl:Nothing), SubClassOf(<http://purl.org/obo/owl/GO#GO_0001780> <http://purl.org/obo/owl/GO#GO_0048872>)]
+
+Anomaly 2: Class hierarchy differentiation between ELK and OPENLLET:
+	additional axioms ELK: [EquivalentClasses(<http://purl.org/obo/owl/GO#GO_0007310> owl:Nothing), SubClassOf(<http://purl.org/obo/owl/GO#GO_0001780> <http://purl.org/obo/owl/GO#GO_0048872>)]
+	additional axioms OPENLLET: [EquivalentClasses(<http://purl.org/obo/owl/GO#GO_0001780> <http://purl.org/obo/owl/GO#GO_0007310> owl:Nothing), SubClassOf(<http://purl.org/obo/owl/GO#GO_0001780> owl:Nothing)]

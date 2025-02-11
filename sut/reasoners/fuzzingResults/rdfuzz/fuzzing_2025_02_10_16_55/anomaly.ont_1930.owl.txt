@@ -1,0 +1,9 @@
+Found anomalies while testing file ../testOnt.owl
+
+Anomaly 1: Class hierarchy differentiation between HERMIT and ELK:
+	additional axioms HERMIT: [EquivalentClasses(<http://purl.obolibrary.org/obo/MI_0419> <http://purl.obolibrary.org/obo/MI_0879> <http://purl.obolibrary.org/obo/MI_0880> owl:Nothing), SubClassOf(<http://purl.obolibrary.org/obo/MI_0419> owl:Nothing), SubClassOf(<http://purl.obolibrary.org/obo/MI_0879> owl:Nothing), SubClassOf(<http://purl.obolibrary.org/obo/MI_0880> owl:Nothing)]
+	additional axioms ELK: [SubClassOf(<http://purl.obolibrary.org/obo/MI_0419> <http://purl.obolibrary.org/obo/MI_0879>), SubClassOf(<http://purl.obolibrary.org/obo/MI_0879> <http://purl.obolibrary.org/obo/MI_0434>), SubClassOf(<http://purl.obolibrary.org/obo/MI_0880> <http://purl.obolibrary.org/obo/MI_0879>)]
+
+Anomaly 2: Class hierarchy differentiation between ELK and OPENLLET:
+	additional axioms ELK: [SubClassOf(<http://purl.obolibrary.org/obo/MI_0419> <http://purl.obolibrary.org/obo/MI_0879>), SubClassOf(<http://purl.obolibrary.org/obo/MI_0879> <http://purl.obolibrary.org/obo/MI_0434>), SubClassOf(<http://purl.obolibrary.org/obo/MI_0880> <http://purl.obolibrary.org/obo/MI_0879>)]
+	additional axioms OPENLLET: [EquivalentClasses(<http://purl.obolibrary.org/obo/MI_0419> <http://purl.obolibrary.org/obo/MI_0879> <http://purl.obolibrary.org/obo/MI_0880> owl:Nothing), SubClassOf(<http://purl.obolibrary.org/obo/MI_0419> owl:Nothing), SubClassOf(<http://purl.obolibrary.org/obo/MI_0879> owl:Nothing), SubClassOf(<http://purl.obolibrary.org/obo/MI_0880> owl:Nothing)]

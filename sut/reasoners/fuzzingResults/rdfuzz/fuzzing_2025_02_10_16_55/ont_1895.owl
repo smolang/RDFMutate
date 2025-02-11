@@ -1,0 +1,1392 @@
+Prefix(:=<urn:unnamed:ontology#ont293479568098127>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:unnamed:ontology#ont293479568098127>
+
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_information_retrieval>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_business_rules>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_ontology_learning>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_ontology_evaluation>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_semantic_wikis>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_resource_description_framework>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_logics>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_applications>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_fuzzy_reasoning>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_query_languages>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_query_languages>))
+Declaration(Class(<http://semantic-mediawiki.org/swivt/1.0#Type>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_ontology_engineering>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_knowledge_management>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC372>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC371>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_ontology_matching>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_web_security>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_top-2Dlevel_ontologies>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_datalog>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_negations>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_theorem_prover>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_scalability>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_ontology_repositories>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_web_service_composition>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_XML>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_elearning>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_ontology_merging>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_benchmarking>))
+Declaration(Class(<newOwlClass:292894035>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_ontology_versioning>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_enterprise_information_integration>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_prolog>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_outreach_to_industry>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_logic_programming>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_knowledge_representation_and_reasoning>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_natural_language_processing>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_egovernment>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_ontology_evolution>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_ontology_composition>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_rule_markup>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_information_access>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_ontology_mapping>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_ontology_modularization>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_peer-2Dto-2Dpeer_and_Semantic_Web>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_human_resources>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_agents_and_Semantic_Web>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_hilog>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC369>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_ontology_engineering_tools>))
+Declaration(Class(<http://semantic-mediawiki.org/swivt/1.0#UnitType>))
+Declaration(Class(<http://semantic-mediawiki.org/swivt/1.0#ConversionFactor>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_f-2Dlogic>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_ontology_interoperability>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_ontology_validation>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_ontology_population>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_predicate_logic>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_legacy_ontology_languages>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_temporal_logic>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_OWL>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_services>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_reasoning>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC370>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_bioinformatics>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_ontology_alignment>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_reasoning_engines>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ASemantic_Web_topic>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_rule_visualization>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_semantic_desktop>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_browsing>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_event_queries>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_query_optimization>))
+Declaration(Class(<http://semantic-mediawiki.org/swivt/1.0#CustomType>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_rules>))
+Declaration(Class(<http://semantic-mediawiki.org/swivt/1.0#NAryType>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_first-2Dorder_logic>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_ontology_maintenance>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_web_data_extraction>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_web_data_integration>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_digital_libraries>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_social_networks_and_the_Semantic_Web>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_Semantic_Grid>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_web_information_technology>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_data_integration>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_model_logics>))
+Declaration(Class(<http://semantic-mediawiki.org/swivt/1.0#Container>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_visual_querying>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_browsing>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_information_access>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_upper-2Dlevel_ontologies>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_description_logics>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_ontologies>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_horn_logic>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_rule_languages>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_rules>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_web_services>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC373>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC374>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_information_extraction>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_ontology_construction>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_agents>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_ontology_visualization>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_distributed_rule_processing>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_reactive_rules>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_annotation>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_ontology_integration>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_ontology_engineering_methodology>))
+Declaration(Class(<http://semantic-mediawiki.org/swivt/1.0#BuiltinType>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_blogs>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_deductive_rules>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_fuzzy_logics>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_web_service_discovery>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_machine_learning>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_ehealth>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_integration_of_rules_and_ontologies>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_navigational_access>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_ebusiness>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_web_personalization_techniques>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_Semantic_Web>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_ontology_instances>))
+Declaration(Class(<http://semantic-mediawiki.org/swivt/1.0#Subject>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_domain_ontologies>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_ontology_translation>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_query_algebra>))
+Declaration(Class(<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_reasoning>))
+Declaration(ObjectProperty(<http://semantic-mediawiki.org/swivt/1.0#object>))
+Declaration(ObjectProperty(<http://semantic-mediawiki.org/swivt/1.0#value1>))
+Declaration(ObjectProperty(<http://semantic-mediawiki.org/swivt/1.0#value2>))
+Declaration(ObjectProperty(<http://semantic-mediawiki.org/swivt/1.0#value7>))
+Declaration(ObjectProperty(<http://semantic-mediawiki.org/swivt/1.0#value8>))
+Declaration(ObjectProperty(<http://semanticweb.org/id/Property-3AModification_date-23aux>))
+Declaration(ObjectProperty(<http://semantic-mediawiki.org/swivt/1.0#mainUnit>))
+Declaration(ObjectProperty(<http://semantic-mediawiki.org/swivt/1.0#object7>))
+Declaration(ObjectProperty(<http://semantic-mediawiki.org/swivt/1.0#object8>))
+Declaration(ObjectProperty(<http://semantic-mediawiki.org/swivt/1.0#factor>))
+Declaration(ObjectProperty(<http://semantic-mediawiki.org/swivt/1.0#object4>))
+Declaration(ObjectProperty(<http://semantic-mediawiki.org/swivt/1.0#object3>))
+Declaration(ObjectProperty(<http://semantic-mediawiki.org/swivt/1.0#wikiPageSortKey>))
+Declaration(ObjectProperty(<http://semantic-mediawiki.org/swivt/1.0#value4>))
+Declaration(ObjectProperty(<http://semantic-mediawiki.org/swivt/1.0#unit>))
+Declaration(ObjectProperty(<http://semantic-mediawiki.org/swivt/1.0#value3>))
+Declaration(ObjectProperty(<http://semantic-mediawiki.org/swivt/1.0#value9>))
+Declaration(ObjectProperty(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace>))
+Declaration(ObjectProperty(<http://semantic-mediawiki.org/swivt/1.0#value>))
+Declaration(ObjectProperty(<http://semantic-mediawiki.org/swivt/1.0#object9>))
+Declaration(ObjectProperty(<http://semantic-mediawiki.org/swivt/1.0#value6>))
+Declaration(ObjectProperty(<http://semantic-mediawiki.org/swivt/1.0#object5>))
+Declaration(ObjectProperty(<http://semantic-mediawiki.org/swivt/1.0#value5>))
+Declaration(ObjectProperty(<http://semantic-mediawiki.org/swivt/1.0#object6>))
+Declaration(ObjectProperty(<http://semantic-mediawiki.org/swivt/1.0#conversionFactor>))
+Declaration(ObjectProperty(<http://semantic-mediawiki.org/swivt/1.0#object2>))
+Declaration(ObjectProperty(<http://semantic-mediawiki.org/swivt/1.0#object1>))
+Declaration(ObjectProperty(<http://semantic-mediawiki.org/swivt/1.0#wikiPageModificationDate>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_knowledge_management>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_web_service_composition>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_knowledge_representation_and_reasoning>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_web_service_discovery>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_ontologies>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_legacy_ontology_languages>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_web_information_technology>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_integration_of_rules_and_ontologies>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Semantic_Web_Topic_Hierarchy>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_event_queries>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_peer-2Dto-2Dpeer_and_Semantic_Web>))
+Declaration(NamedIndividual(<newIndividual:number633775466>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_description_logics>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Property-3ASubcategory_of>))
+Declaration(NamedIndividual(<http://semantic-mediawiki.org/swivt/1.0#PageType>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-24>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_predicate_logic>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_applications>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_distributed_rule_processing>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_prolog>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Property-3A>))
+Declaration(NamedIndividual(<http://semantic-mediawiki.org/swivt/1.0#TextType>))
+Declaration(NamedIndividual(<http://semantic-mediawiki.org/swivt/1.0#URIType>))
+Declaration(NamedIndividual(<http://semantic-mediawiki.org/swivt/1.0#EmailType>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_scalability>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_top-2Dlevel_ontologies>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_ontology_modularization>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_ontology_repositories>))
+Declaration(NamedIndividual(owl:Nothing))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_fuzzy_logics>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_theorem_prover>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_services>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_ontology_translation>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_ontology_integration>))
+Declaration(NamedIndividual(<http://semantic-mediawiki.org/swivt/1.0#StringType>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_datalog>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_business_rules>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_ontology_composition>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_hilog>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_benchmarking>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_ontology_learning>))
+Declaration(NamedIndividual(<newIndividual:number1870339265>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_ontology_evolution>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_ontology_matching>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_ontology_validation>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_ontology_mapping>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_ontology_alignment>))
+Declaration(NamedIndividual(<http://semantic-mediawiki.org/swivt/1.0#NumberType>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_data_integration>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_browsing>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_ontology_interoperability>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-14>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_ontology_construction>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_information_extraction>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_ontology_population>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_ehealth>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_first-2Dorder_logic>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_machine_learning>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_human_resources>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_reasoning>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_reactive_rules>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_agents>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_deductive_rules>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_ontology_engineering_methodology>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_fuzzy_reasoning>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_upper-2Dlevel_ontologies>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_enterprise_information_integration>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_ontology_engineering_tools>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_bioinformatics>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_egovernment>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_ontology_instances>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/QuASAR_(verification_tool)>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_digital_libraries>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_web_security>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_ebusiness>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_natural_language_processing>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_web_personalization_techniques>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ASemantic_Web_topic>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_web_services>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_social_networks_and_the_Semantic_Web>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_information_access>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_information_retrieval>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_resource_description_framework>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-2>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_browsing>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_ontology_evaluation>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_reasoning_engines>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_ontology_engineering>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-26>))
+Declaration(NamedIndividual(<http://semantic-mediawiki.org/swivt/1.0#TimeType>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_ontology_maintenance>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_query_optimization>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_semantic_wikis>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_model_logics>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_rules>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_blogs>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_domain_ontologies>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_elearning>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_rule_markup>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_negations>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_rule_languages>))
+Declaration(NamedIndividual(<http://semantic-mediawiki.org/swivt/1.0#GeoType>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_semantic_desktop>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-6>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_rules>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_ontology_visualization>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_navigational_access>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_query_languages>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_logic_programming>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_horn_logic>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI-11>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_logics>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_outreach_to_industry>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_Semantic_Web>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_OWL>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_Semantic_Grid>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_information_access>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_temporal_logic>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_reasoning>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_annotation>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_query_languages>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_web_data_integration>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_ontology_merging>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_f-2Dlogic>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_agents_and_Semantic_Web>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_rule_visualization>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_query_algebra>))
+Declaration(NamedIndividual(<http://semantic-mediawiki.org/swivt/1.0#TemperatureType>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_web_data_extraction>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_ontology_versioning>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_visual_querying>))
+Declaration(NamedIndividual(<http://semanticweb.org/id/Category-3ATopic_XML>))
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://semantic-mediawiki.org/swivt/1.0#mainUnit> (<http://semantic-mediawiki.org/swivt/1.0#mainUnit>)
+
+SubObjectPropertyOf(<http://semantic-mediawiki.org/swivt/1.0#mainUnit> <http://semantic-mediawiki.org/swivt/1.0#unit>)
+
+# Object Property: <http://semantic-mediawiki.org/swivt/1.0#object> (<http://semantic-mediawiki.org/swivt/1.0#object>)
+
+ReflexiveObjectProperty(<http://semantic-mediawiki.org/swivt/1.0#object>)
+
+# Object Property: <http://semantic-mediawiki.org/swivt/1.0#object1> (<http://semantic-mediawiki.org/swivt/1.0#object1>)
+
+SubObjectPropertyOf(<http://semantic-mediawiki.org/swivt/1.0#object1> <http://semantic-mediawiki.org/swivt/1.0#object>)
+
+# Object Property: <http://semantic-mediawiki.org/swivt/1.0#object2> (<http://semantic-mediawiki.org/swivt/1.0#object2>)
+
+SubObjectPropertyOf(<http://semantic-mediawiki.org/swivt/1.0#object2> <http://semantic-mediawiki.org/swivt/1.0#object>)
+
+# Object Property: <http://semantic-mediawiki.org/swivt/1.0#object3> (<http://semantic-mediawiki.org/swivt/1.0#object3>)
+
+SubObjectPropertyOf(<http://semantic-mediawiki.org/swivt/1.0#object3> <http://semantic-mediawiki.org/swivt/1.0#object>)
+
+# Object Property: <http://semantic-mediawiki.org/swivt/1.0#object4> (<http://semantic-mediawiki.org/swivt/1.0#object4>)
+
+SubObjectPropertyOf(<http://semantic-mediawiki.org/swivt/1.0#object4> <http://semantic-mediawiki.org/swivt/1.0#object>)
+
+# Object Property: <http://semantic-mediawiki.org/swivt/1.0#object5> (<http://semantic-mediawiki.org/swivt/1.0#object5>)
+
+SubObjectPropertyOf(<http://semantic-mediawiki.org/swivt/1.0#object5> <http://semantic-mediawiki.org/swivt/1.0#object>)
+
+# Object Property: <http://semantic-mediawiki.org/swivt/1.0#object7> (<http://semantic-mediawiki.org/swivt/1.0#object7>)
+
+SubObjectPropertyOf(<http://semantic-mediawiki.org/swivt/1.0#object7> <http://semantic-mediawiki.org/swivt/1.0#object>)
+
+# Object Property: <http://semantic-mediawiki.org/swivt/1.0#object8> (<http://semantic-mediawiki.org/swivt/1.0#object8>)
+
+SubObjectPropertyOf(<http://semantic-mediawiki.org/swivt/1.0#object8> <http://semantic-mediawiki.org/swivt/1.0#object>)
+
+# Object Property: <http://semantic-mediawiki.org/swivt/1.0#object9> (<http://semantic-mediawiki.org/swivt/1.0#object9>)
+
+SubObjectPropertyOf(<http://semantic-mediawiki.org/swivt/1.0#object9> <http://semantic-mediawiki.org/swivt/1.0#object>)
+
+# Object Property: <http://semantic-mediawiki.org/swivt/1.0#value1> (<http://semantic-mediawiki.org/swivt/1.0#value1>)
+
+SubObjectPropertyOf(<http://semantic-mediawiki.org/swivt/1.0#value1> <http://semantic-mediawiki.org/swivt/1.0#value>)
+
+# Object Property: <http://semantic-mediawiki.org/swivt/1.0#value2> (<http://semantic-mediawiki.org/swivt/1.0#value2>)
+
+SubObjectPropertyOf(<http://semantic-mediawiki.org/swivt/1.0#value2> <http://semantic-mediawiki.org/swivt/1.0#value>)
+
+# Object Property: <http://semantic-mediawiki.org/swivt/1.0#value3> (<http://semantic-mediawiki.org/swivt/1.0#value3>)
+
+SubObjectPropertyOf(<http://semantic-mediawiki.org/swivt/1.0#value3> <http://semantic-mediawiki.org/swivt/1.0#value>)
+
+# Object Property: <http://semantic-mediawiki.org/swivt/1.0#value4> (<http://semantic-mediawiki.org/swivt/1.0#value4>)
+
+SubObjectPropertyOf(<http://semantic-mediawiki.org/swivt/1.0#value4> <http://semantic-mediawiki.org/swivt/1.0#value>)
+
+# Object Property: <http://semantic-mediawiki.org/swivt/1.0#value5> (<http://semantic-mediawiki.org/swivt/1.0#value5>)
+
+SubObjectPropertyOf(<http://semantic-mediawiki.org/swivt/1.0#value5> <http://semantic-mediawiki.org/swivt/1.0#value>)
+
+# Object Property: <http://semantic-mediawiki.org/swivt/1.0#value6> (<http://semantic-mediawiki.org/swivt/1.0#value6>)
+
+SubObjectPropertyOf(<http://semantic-mediawiki.org/swivt/1.0#value6> <http://semantic-mediawiki.org/swivt/1.0#value>)
+
+# Object Property: <http://semantic-mediawiki.org/swivt/1.0#value7> (<http://semantic-mediawiki.org/swivt/1.0#value7>)
+
+SubObjectPropertyOf(<http://semantic-mediawiki.org/swivt/1.0#value7> <http://semantic-mediawiki.org/swivt/1.0#value>)
+
+# Object Property: <http://semantic-mediawiki.org/swivt/1.0#value8> (<http://semantic-mediawiki.org/swivt/1.0#value8>)
+
+SubObjectPropertyOf(<http://semantic-mediawiki.org/swivt/1.0#value8> <http://semantic-mediawiki.org/swivt/1.0#value>)
+
+# Object Property: <http://semantic-mediawiki.org/swivt/1.0#value9> (<http://semantic-mediawiki.org/swivt/1.0#value9>)
+
+SubObjectPropertyOf(<http://semantic-mediawiki.org/swivt/1.0#value9> <http://semantic-mediawiki.org/swivt/1.0#value>)
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://semantic-mediawiki.org/swivt/1.0#BuiltinType> (<http://semantic-mediawiki.org/swivt/1.0#BuiltinType>)
+
+SubClassOf(<http://semantic-mediawiki.org/swivt/1.0#BuiltinType> <http://semantic-mediawiki.org/swivt/1.0#Type>)
+
+# Class: <http://semantic-mediawiki.org/swivt/1.0#CustomType> (<http://semantic-mediawiki.org/swivt/1.0#CustomType>)
+
+SubClassOf(<http://semantic-mediawiki.org/swivt/1.0#CustomType> <http://semantic-mediawiki.org/swivt/1.0#Type>)
+
+# Class: <http://semantic-mediawiki.org/swivt/1.0#NAryType> (<http://semantic-mediawiki.org/swivt/1.0#NAryType>)
+
+SubClassOf(<http://semantic-mediawiki.org/swivt/1.0#NAryType> <http://semantic-mediawiki.org/swivt/1.0#CustomType>)
+
+# Class: <http://semantic-mediawiki.org/swivt/1.0#UnitType> (<http://semantic-mediawiki.org/swivt/1.0#UnitType>)
+
+SubClassOf(<http://semantic-mediawiki.org/swivt/1.0#UnitType> <http://semantic-mediawiki.org/swivt/1.0#CustomType>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_OWL> (<http://semanticweb.org/id/Category-3ATopic_OWL>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_OWL> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_Semantic_Grid> (<http://semanticweb.org/id/Category-3ATopic_Semantic_Grid>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_Semantic_Grid> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_Semantic_Web> (<http://semanticweb.org/id/Category-3ATopic_Semantic_Web>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_Semantic_Web> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_Semantic_Web_applications> (<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_applications>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_applications> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_Semantic_Web_benchmarking> (<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_benchmarking>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_benchmarking> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_Semantic_Web_browsing> (<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_browsing>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_browsing> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_Semantic_Web_information_access> (<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_information_access>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_information_access> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_Semantic_Web_ontologies> (<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_ontologies>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_ontologies> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_Semantic_Web_outreach_to_industry> (<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_outreach_to_industry>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_outreach_to_industry> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_Semantic_Web_query_languages> (<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_query_languages>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_query_languages> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_Semantic_Web_reasoning> (<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_reasoning>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_reasoning> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_Semantic_Web_rule_languages> (<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_rule_languages>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_rule_languages> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_Semantic_Web_rule_markup> (<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_rule_markup>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_rule_markup> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_Semantic_Web_rules> (<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_rules>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_rules> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_Semantic_Web_scalability> (<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_scalability>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_scalability> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_Semantic_Web_services> (<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_services>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_services> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_XML> (<http://semanticweb.org/id/Category-3ATopic_XML>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_XML> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_agents> (<http://semanticweb.org/id/Category-3ATopic_agents>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_agents> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_agents_and_Semantic_Web> (<http://semanticweb.org/id/Category-3ATopic_agents_and_Semantic_Web>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_agents_and_Semantic_Web> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_annotation> (<http://semanticweb.org/id/Category-3ATopic_annotation>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_annotation> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_bioinformatics> (<http://semanticweb.org/id/Category-3ATopic_bioinformatics>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_bioinformatics> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_blogs> (<http://semanticweb.org/id/Category-3ATopic_blogs>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_blogs> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_browsing> (<http://semanticweb.org/id/Category-3ATopic_browsing>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_browsing> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_business_rules> (<http://semanticweb.org/id/Category-3ATopic_business_rules>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_business_rules> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_data_integration> (<http://semanticweb.org/id/Category-3ATopic_data_integration>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_data_integration> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_datalog> (<http://semanticweb.org/id/Category-3ATopic_datalog>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_datalog> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_deductive_rules> (<http://semanticweb.org/id/Category-3ATopic_deductive_rules>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_deductive_rules> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_description_logics> (<http://semanticweb.org/id/Category-3ATopic_description_logics>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_description_logics> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_digital_libraries> (<http://semanticweb.org/id/Category-3ATopic_digital_libraries>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_digital_libraries> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_distributed_rule_processing> (<http://semanticweb.org/id/Category-3ATopic_distributed_rule_processing>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_distributed_rule_processing> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_domain_ontologies> (<http://semanticweb.org/id/Category-3ATopic_domain_ontologies>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_domain_ontologies> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_ebusiness> (<http://semanticweb.org/id/Category-3ATopic_ebusiness>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_ebusiness> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_egovernment> (<http://semanticweb.org/id/Category-3ATopic_egovernment>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_egovernment> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_ehealth> (<http://semanticweb.org/id/Category-3ATopic_ehealth>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_ehealth> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_elearning> (<http://semanticweb.org/id/Category-3ATopic_elearning>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_elearning> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_enterprise_information_integration> (<http://semanticweb.org/id/Category-3ATopic_enterprise_information_integration>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_enterprise_information_integration> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_event_queries> (<http://semanticweb.org/id/Category-3ATopic_event_queries>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_event_queries> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_f-2Dlogic> (<http://semanticweb.org/id/Category-3ATopic_f-2Dlogic>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_f-2Dlogic> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_first-2Dorder_logic> (<http://semanticweb.org/id/Category-3ATopic_first-2Dorder_logic>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_first-2Dorder_logic> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_fuzzy_logics> (<http://semanticweb.org/id/Category-3ATopic_fuzzy_logics>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_fuzzy_logics> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_fuzzy_reasoning> (<http://semanticweb.org/id/Category-3ATopic_fuzzy_reasoning>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_fuzzy_reasoning> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_hilog> (<http://semanticweb.org/id/Category-3ATopic_hilog>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_hilog> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_horn_logic> (<http://semanticweb.org/id/Category-3ATopic_horn_logic>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_horn_logic> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_human_resources> (<http://semanticweb.org/id/Category-3ATopic_human_resources>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_human_resources> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_information_access> (<http://semanticweb.org/id/Category-3ATopic_information_access>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_information_access> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_information_extraction> (<http://semanticweb.org/id/Category-3ATopic_information_extraction>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_information_extraction> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_information_retrieval> (<http://semanticweb.org/id/Category-3ATopic_information_retrieval>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_information_retrieval> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_integration_of_rules_and_ontologies> (<http://semanticweb.org/id/Category-3ATopic_integration_of_rules_and_ontologies>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_integration_of_rules_and_ontologies> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_knowledge_management> (<http://semanticweb.org/id/Category-3ATopic_knowledge_management>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_knowledge_management> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_knowledge_representation_and_reasoning> (<http://semanticweb.org/id/Category-3ATopic_knowledge_representation_and_reasoning>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_knowledge_representation_and_reasoning> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_legacy_ontology_languages> (<http://semanticweb.org/id/Category-3ATopic_legacy_ontology_languages>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_legacy_ontology_languages> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_logic_programming> (<http://semanticweb.org/id/Category-3ATopic_logic_programming>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_logic_programming> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_logics> (<http://semanticweb.org/id/Category-3ATopic_logics>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_logics> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_machine_learning> (<http://semanticweb.org/id/Category-3ATopic_machine_learning>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_machine_learning> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_model_logics> (<http://semanticweb.org/id/Category-3ATopic_model_logics>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_model_logics> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_natural_language_processing> (<http://semanticweb.org/id/Category-3ATopic_natural_language_processing>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_natural_language_processing> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_navigational_access> (<http://semanticweb.org/id/Category-3ATopic_navigational_access>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_navigational_access> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_negations> (<http://semanticweb.org/id/Category-3ATopic_negations>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_negations> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_ontology_alignment> (<http://semanticweb.org/id/Category-3ATopic_ontology_alignment>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_ontology_alignment> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_ontology_composition> (<http://semanticweb.org/id/Category-3ATopic_ontology_composition>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_ontology_composition> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_ontology_construction> (<http://semanticweb.org/id/Category-3ATopic_ontology_construction>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_ontology_construction> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_ontology_engineering> (<http://semanticweb.org/id/Category-3ATopic_ontology_engineering>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_ontology_engineering> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_ontology_engineering_methodology> (<http://semanticweb.org/id/Category-3ATopic_ontology_engineering_methodology>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_ontology_engineering_methodology> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_ontology_engineering_tools> (<http://semanticweb.org/id/Category-3ATopic_ontology_engineering_tools>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_ontology_engineering_tools> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_ontology_evaluation> (<http://semanticweb.org/id/Category-3ATopic_ontology_evaluation>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_ontology_evaluation> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_ontology_evolution> (<http://semanticweb.org/id/Category-3ATopic_ontology_evolution>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_ontology_evolution> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_ontology_instances> (<http://semanticweb.org/id/Category-3ATopic_ontology_instances>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_ontology_instances> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_ontology_instances> ObjectIntersectionOf(<http://semanticweb.org/id/Category-3ATopic_f-2Dlogic> <http://semanticweb.org/id/Category-3ATopic_human_resources>))
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_ontology_integration> (<http://semanticweb.org/id/Category-3ATopic_ontology_integration>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_ontology_integration> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_ontology_interoperability> (<http://semanticweb.org/id/Category-3ATopic_ontology_interoperability>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_ontology_interoperability> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_ontology_learning> (<http://semanticweb.org/id/Category-3ATopic_ontology_learning>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_ontology_learning> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_ontology_maintenance> (<http://semanticweb.org/id/Category-3ATopic_ontology_maintenance>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_ontology_maintenance> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_ontology_mapping> (<http://semanticweb.org/id/Category-3ATopic_ontology_mapping>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_ontology_mapping> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_ontology_matching> (<http://semanticweb.org/id/Category-3ATopic_ontology_matching>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_ontology_matching> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_ontology_merging> (<http://semanticweb.org/id/Category-3ATopic_ontology_merging>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_ontology_merging> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_ontology_modularization> (<http://semanticweb.org/id/Category-3ATopic_ontology_modularization>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_ontology_modularization> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_ontology_population> (<http://semanticweb.org/id/Category-3ATopic_ontology_population>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_ontology_population> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_ontology_repositories> (<http://semanticweb.org/id/Category-3ATopic_ontology_repositories>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_ontology_repositories> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_ontology_translation> (<http://semanticweb.org/id/Category-3ATopic_ontology_translation>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_ontology_translation> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_ontology_validation> (<http://semanticweb.org/id/Category-3ATopic_ontology_validation>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_ontology_validation> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_ontology_versioning> (<http://semanticweb.org/id/Category-3ATopic_ontology_versioning>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_ontology_versioning> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_ontology_visualization> (<http://semanticweb.org/id/Category-3ATopic_ontology_visualization>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_ontology_visualization> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_peer-2Dto-2Dpeer_and_Semantic_Web> (<http://semanticweb.org/id/Category-3ATopic_peer-2Dto-2Dpeer_and_Semantic_Web>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_peer-2Dto-2Dpeer_and_Semantic_Web> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_predicate_logic> (<http://semanticweb.org/id/Category-3ATopic_predicate_logic>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_predicate_logic> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_prolog> (<http://semanticweb.org/id/Category-3ATopic_prolog>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_prolog> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_query_algebra> (<http://semanticweb.org/id/Category-3ATopic_query_algebra>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_query_algebra> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_query_languages> (<http://semanticweb.org/id/Category-3ATopic_query_languages>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_query_languages> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_query_optimization> (<http://semanticweb.org/id/Category-3ATopic_query_optimization>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_query_optimization> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_reactive_rules> (<http://semanticweb.org/id/Category-3ATopic_reactive_rules>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_reactive_rules> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_reasoning> (<http://semanticweb.org/id/Category-3ATopic_reasoning>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_reasoning> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_reasoning_engines> (<http://semanticweb.org/id/Category-3ATopic_reasoning_engines>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_reasoning_engines> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_resource_description_framework> (<http://semanticweb.org/id/Category-3ATopic_resource_description_framework>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_resource_description_framework> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_rule_visualization> (<http://semanticweb.org/id/Category-3ATopic_rule_visualization>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_rule_visualization> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_rules> (<http://semanticweb.org/id/Category-3ATopic_rules>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_rules> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_semantic_desktop> (<http://semanticweb.org/id/Category-3ATopic_semantic_desktop>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_semantic_desktop> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_semantic_wikis> (<http://semanticweb.org/id/Category-3ATopic_semantic_wikis>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_semantic_wikis> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_social_networks_and_the_Semantic_Web> (<http://semanticweb.org/id/Category-3ATopic_social_networks_and_the_Semantic_Web>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_social_networks_and_the_Semantic_Web> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_temporal_logic> (<http://semanticweb.org/id/Category-3ATopic_temporal_logic>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_temporal_logic> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_theorem_prover> (<http://semanticweb.org/id/Category-3ATopic_theorem_prover>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_theorem_prover> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_top-2Dlevel_ontologies> (<http://semanticweb.org/id/Category-3ATopic_top-2Dlevel_ontologies>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_top-2Dlevel_ontologies> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_upper-2Dlevel_ontologies> (<http://semanticweb.org/id/Category-3ATopic_upper-2Dlevel_ontologies>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_upper-2Dlevel_ontologies> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_visual_querying> (<http://semanticweb.org/id/Category-3ATopic_visual_querying>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_visual_querying> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_web_data_extraction> (<http://semanticweb.org/id/Category-3ATopic_web_data_extraction>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_web_data_extraction> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_web_data_integration> (<http://semanticweb.org/id/Category-3ATopic_web_data_integration>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_web_data_integration> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_web_information_technology> (<http://semanticweb.org/id/Category-3ATopic_web_information_technology>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_web_information_technology> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_web_personalization_techniques> (<http://semanticweb.org/id/Category-3ATopic_web_personalization_techniques>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_web_personalization_techniques> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_web_security> (<http://semanticweb.org/id/Category-3ATopic_web_security>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_web_security> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_web_service_composition> (<http://semanticweb.org/id/Category-3ATopic_web_service_composition>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_web_service_composition> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_web_service_discovery> (<http://semanticweb.org/id/Category-3ATopic_web_service_discovery>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_web_service_discovery> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://semanticweb.org/id/Category-3ATopic_web_services> (<http://semanticweb.org/id/Category-3ATopic_web_services>)
+
+SubClassOf(<http://semanticweb.org/id/Category-3ATopic_web_services> <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC369> (<http://www.absoluteiri.edu/RELAPPROXC369>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC369> <http://www.absoluteiri.edu/RELAPPROXC372>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC369> <http://www.absoluteiri.edu/RELAPPROXC374>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC371> (<http://www.absoluteiri.edu/RELAPPROXC371>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC371> <http://www.absoluteiri.edu/RELAPPROXC370>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC373> (<http://www.absoluteiri.edu/RELAPPROXC373>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC373> <http://www.absoluteiri.edu/RELAPPROXC370>)
+
+# Class: owl:Nothing (owl:Nothing)
+
+SubClassOf(owl:Nothing <http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://semantic-mediawiki.org/swivt/1.0#EmailType> (<http://semantic-mediawiki.org/swivt/1.0#EmailType>)
+
+ClassAssertion(<http://semantic-mediawiki.org/swivt/1.0#BuiltinType> <http://semantic-mediawiki.org/swivt/1.0#EmailType>)
+
+# Individual: <http://semantic-mediawiki.org/swivt/1.0#GeoType> (<http://semantic-mediawiki.org/swivt/1.0#GeoType>)
+
+ClassAssertion(<http://semantic-mediawiki.org/swivt/1.0#BuiltinType> <http://semantic-mediawiki.org/swivt/1.0#GeoType>)
+
+# Individual: <http://semantic-mediawiki.org/swivt/1.0#NumberType> (<http://semantic-mediawiki.org/swivt/1.0#NumberType>)
+
+ClassAssertion(<http://semantic-mediawiki.org/swivt/1.0#BuiltinType> <http://semantic-mediawiki.org/swivt/1.0#NumberType>)
+
+# Individual: <http://semantic-mediawiki.org/swivt/1.0#PageType> (<http://semantic-mediawiki.org/swivt/1.0#PageType>)
+
+ClassAssertion(<http://semantic-mediawiki.org/swivt/1.0#BuiltinType> <http://semantic-mediawiki.org/swivt/1.0#PageType>)
+
+# Individual: <http://semantic-mediawiki.org/swivt/1.0#StringType> (<http://semantic-mediawiki.org/swivt/1.0#StringType>)
+
+ClassAssertion(<http://semantic-mediawiki.org/swivt/1.0#BuiltinType> <http://semantic-mediawiki.org/swivt/1.0#StringType>)
+
+# Individual: <http://semantic-mediawiki.org/swivt/1.0#TemperatureType> (<http://semantic-mediawiki.org/swivt/1.0#TemperatureType>)
+
+ClassAssertion(<http://semantic-mediawiki.org/swivt/1.0#BuiltinType> <http://semantic-mediawiki.org/swivt/1.0#TemperatureType>)
+
+# Individual: <http://semantic-mediawiki.org/swivt/1.0#TextType> (<http://semantic-mediawiki.org/swivt/1.0#TextType>)
+
+ClassAssertion(<http://semantic-mediawiki.org/swivt/1.0#BuiltinType> <http://semantic-mediawiki.org/swivt/1.0#TextType>)
+
+# Individual: <http://semantic-mediawiki.org/swivt/1.0#TimeType> (<http://semantic-mediawiki.org/swivt/1.0#TimeType>)
+
+ClassAssertion(<http://semantic-mediawiki.org/swivt/1.0#BuiltinType> <http://semantic-mediawiki.org/swivt/1.0#TimeType>)
+
+# Individual: <http://semantic-mediawiki.org/swivt/1.0#URIType> (<http://semantic-mediawiki.org/swivt/1.0#URIType>)
+
+ClassAssertion(<http://semantic-mediawiki.org/swivt/1.0#BuiltinType> <http://semantic-mediawiki.org/swivt/1.0#URIType>)
+
+# Individual: <http://semanticweb.org/id/Category-3ASemantic_Web_topic> (<http://semanticweb.org/id/Category-3ASemantic_Web_topic>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ASemantic_Web_topic> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiPageModificationDate> <http://semanticweb.org/id/Category-3ASemantic_Web_topic> <http://www.absoluteiri.edu/RELAPPROXI-11>)
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiPageSortKey> <http://semanticweb.org/id/Category-3ASemantic_Web_topic> <http://www.absoluteiri.edu/RELAPPROXI-24>)
+ObjectPropertyAssertion(<http://semanticweb.org/id/Property-3AModification_date-23aux> <http://semanticweb.org/id/Category-3ASemantic_Web_topic> <http://www.absoluteiri.edu/RELAPPROXI-26>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_OWL> (<http://semanticweb.org/id/Category-3ATopic_OWL>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_OWL> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_Semantic_Grid> (<http://semanticweb.org/id/Category-3ATopic_Semantic_Grid>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_Semantic_Grid> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_Semantic_Web> (<http://semanticweb.org/id/Category-3ATopic_Semantic_Web>)
+
+SameIndividual(<http://semanticweb.org/id/Category-3ATopic_Semantic_Web> <http://semanticweb.org/id/Category-3ATopic_Semantic_Web_browsing>)
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_Semantic_Web> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_Semantic_Web_applications> (<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_applications>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_Semantic_Web_applications> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_Semantic_Web_benchmarking> (<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_benchmarking>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_Semantic_Web_benchmarking> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_Semantic_Web_browsing> (<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_browsing>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_Semantic_Web_browsing> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_Semantic_Web_information_access> (<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_information_access>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_Semantic_Web_information_access> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_Semantic_Web_ontologies> (<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_ontologies>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_Semantic_Web_ontologies> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_Semantic_Web_outreach_to_industry> (<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_outreach_to_industry>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_Semantic_Web_outreach_to_industry> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_Semantic_Web_query_languages> (<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_query_languages>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_Semantic_Web_query_languages> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_Semantic_Web_reasoning> (<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_reasoning>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_Semantic_Web_reasoning> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_Semantic_Web_rule_languages> (<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_rule_languages>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_Semantic_Web_rule_languages> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_Semantic_Web_rule_markup> (<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_rule_markup>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_Semantic_Web_rule_markup> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_Semantic_Web_rules> (<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_rules>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_Semantic_Web_rules> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_Semantic_Web_scalability> (<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_scalability>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_Semantic_Web_scalability> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_Semantic_Web_services> (<http://semanticweb.org/id/Category-3ATopic_Semantic_Web_services>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_Semantic_Web_services> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_XML> (<http://semanticweb.org/id/Category-3ATopic_XML>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_XML> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_agents> (<http://semanticweb.org/id/Category-3ATopic_agents>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_agents> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_agents_and_Semantic_Web> (<http://semanticweb.org/id/Category-3ATopic_agents_and_Semantic_Web>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_agents_and_Semantic_Web> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_annotation> (<http://semanticweb.org/id/Category-3ATopic_annotation>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_annotation> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_bioinformatics> (<http://semanticweb.org/id/Category-3ATopic_bioinformatics>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_bioinformatics> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_blogs> (<http://semanticweb.org/id/Category-3ATopic_blogs>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_blogs> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_browsing> (<http://semanticweb.org/id/Category-3ATopic_browsing>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_browsing> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_business_rules> (<http://semanticweb.org/id/Category-3ATopic_business_rules>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_business_rules> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_data_integration> (<http://semanticweb.org/id/Category-3ATopic_data_integration>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_data_integration> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_datalog> (<http://semanticweb.org/id/Category-3ATopic_datalog>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_datalog> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_deductive_rules> (<http://semanticweb.org/id/Category-3ATopic_deductive_rules>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_deductive_rules> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_description_logics> (<http://semanticweb.org/id/Category-3ATopic_description_logics>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_description_logics> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_digital_libraries> (<http://semanticweb.org/id/Category-3ATopic_digital_libraries>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_digital_libraries> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_distributed_rule_processing> (<http://semanticweb.org/id/Category-3ATopic_distributed_rule_processing>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_distributed_rule_processing> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_domain_ontologies> (<http://semanticweb.org/id/Category-3ATopic_domain_ontologies>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_domain_ontologies> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_ebusiness> (<http://semanticweb.org/id/Category-3ATopic_ebusiness>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_ebusiness> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_egovernment> (<http://semanticweb.org/id/Category-3ATopic_egovernment>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_egovernment> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_ehealth> (<http://semanticweb.org/id/Category-3ATopic_ehealth>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_ehealth> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_elearning> (<http://semanticweb.org/id/Category-3ATopic_elearning>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_elearning> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_enterprise_information_integration> (<http://semanticweb.org/id/Category-3ATopic_enterprise_information_integration>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_enterprise_information_integration> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_event_queries> (<http://semanticweb.org/id/Category-3ATopic_event_queries>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_event_queries> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_f-2Dlogic> (<http://semanticweb.org/id/Category-3ATopic_f-2Dlogic>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_f-2Dlogic> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_first-2Dorder_logic> (<http://semanticweb.org/id/Category-3ATopic_first-2Dorder_logic>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_first-2Dorder_logic> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_fuzzy_logics> (<http://semanticweb.org/id/Category-3ATopic_fuzzy_logics>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_fuzzy_logics> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_fuzzy_reasoning> (<http://semanticweb.org/id/Category-3ATopic_fuzzy_reasoning>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_fuzzy_reasoning> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_hilog> (<http://semanticweb.org/id/Category-3ATopic_hilog>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_hilog> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_horn_logic> (<http://semanticweb.org/id/Category-3ATopic_horn_logic>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_horn_logic> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_human_resources> (<http://semanticweb.org/id/Category-3ATopic_human_resources>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_human_resources> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_information_access> (<http://semanticweb.org/id/Category-3ATopic_information_access>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_information_access> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_information_extraction> (<http://semanticweb.org/id/Category-3ATopic_information_extraction>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_information_extraction> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_information_retrieval> (<http://semanticweb.org/id/Category-3ATopic_information_retrieval>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_information_retrieval> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_integration_of_rules_and_ontologies> (<http://semanticweb.org/id/Category-3ATopic_integration_of_rules_and_ontologies>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_integration_of_rules_and_ontologies> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_knowledge_management> (<http://semanticweb.org/id/Category-3ATopic_knowledge_management>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_knowledge_management> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_knowledge_representation_and_reasoning> (<http://semanticweb.org/id/Category-3ATopic_knowledge_representation_and_reasoning>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_knowledge_representation_and_reasoning> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_legacy_ontology_languages> (<http://semanticweb.org/id/Category-3ATopic_legacy_ontology_languages>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_legacy_ontology_languages> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_logic_programming> (<http://semanticweb.org/id/Category-3ATopic_logic_programming>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_logic_programming> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_logics> (<http://semanticweb.org/id/Category-3ATopic_logics>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_logics> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_machine_learning> (<http://semanticweb.org/id/Category-3ATopic_machine_learning>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_machine_learning> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_model_logics> (<http://semanticweb.org/id/Category-3ATopic_model_logics>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_model_logics> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_natural_language_processing> (<http://semanticweb.org/id/Category-3ATopic_natural_language_processing>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_natural_language_processing> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_navigational_access> (<http://semanticweb.org/id/Category-3ATopic_navigational_access>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_navigational_access> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_negations> (<http://semanticweb.org/id/Category-3ATopic_negations>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_negations> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_ontology_alignment> (<http://semanticweb.org/id/Category-3ATopic_ontology_alignment>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_ontology_alignment> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_ontology_composition> (<http://semanticweb.org/id/Category-3ATopic_ontology_composition>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_ontology_composition> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_ontology_construction> (<http://semanticweb.org/id/Category-3ATopic_ontology_construction>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_ontology_construction> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_ontology_engineering> (<http://semanticweb.org/id/Category-3ATopic_ontology_engineering>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_ontology_engineering> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_ontology_engineering_methodology> (<http://semanticweb.org/id/Category-3ATopic_ontology_engineering_methodology>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_ontology_engineering_methodology> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_ontology_engineering_tools> (<http://semanticweb.org/id/Category-3ATopic_ontology_engineering_tools>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_ontology_engineering_tools> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_ontology_evaluation> (<http://semanticweb.org/id/Category-3ATopic_ontology_evaluation>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_ontology_evaluation> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_ontology_evolution> (<http://semanticweb.org/id/Category-3ATopic_ontology_evolution>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_ontology_evolution> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_ontology_instances> (<http://semanticweb.org/id/Category-3ATopic_ontology_instances>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_ontology_instances> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_ontology_integration> (<http://semanticweb.org/id/Category-3ATopic_ontology_integration>)
+
+ClassAssertion(<http://semanticweb.org/id/Category-3ATopic_blogs> <http://semanticweb.org/id/Category-3ATopic_ontology_integration>)
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_ontology_integration> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_ontology_interoperability> (<http://semanticweb.org/id/Category-3ATopic_ontology_interoperability>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_ontology_interoperability> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_ontology_learning> (<http://semanticweb.org/id/Category-3ATopic_ontology_learning>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_ontology_learning> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_ontology_maintenance> (<http://semanticweb.org/id/Category-3ATopic_ontology_maintenance>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_ontology_maintenance> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_ontology_mapping> (<http://semanticweb.org/id/Category-3ATopic_ontology_mapping>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_ontology_mapping> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_ontology_matching> (<http://semanticweb.org/id/Category-3ATopic_ontology_matching>)
+
+ClassAssertion(<http://semanticweb.org/id/Category-3ATopic_theorem_prover> <http://semanticweb.org/id/Category-3ATopic_ontology_matching>)
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_ontology_matching> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_ontology_merging> (<http://semanticweb.org/id/Category-3ATopic_ontology_merging>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_ontology_merging> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_ontology_modularization> (<http://semanticweb.org/id/Category-3ATopic_ontology_modularization>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_ontology_modularization> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_ontology_population> (<http://semanticweb.org/id/Category-3ATopic_ontology_population>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_ontology_population> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_ontology_repositories> (<http://semanticweb.org/id/Category-3ATopic_ontology_repositories>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_ontology_repositories> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_ontology_translation> (<http://semanticweb.org/id/Category-3ATopic_ontology_translation>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_ontology_translation> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_ontology_validation> (<http://semanticweb.org/id/Category-3ATopic_ontology_validation>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_ontology_validation> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_ontology_versioning> (<http://semanticweb.org/id/Category-3ATopic_ontology_versioning>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_ontology_versioning> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_ontology_visualization> (<http://semanticweb.org/id/Category-3ATopic_ontology_visualization>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_ontology_visualization> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_peer-2Dto-2Dpeer_and_Semantic_Web> (<http://semanticweb.org/id/Category-3ATopic_peer-2Dto-2Dpeer_and_Semantic_Web>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_peer-2Dto-2Dpeer_and_Semantic_Web> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_predicate_logic> (<http://semanticweb.org/id/Category-3ATopic_predicate_logic>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_predicate_logic> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_prolog> (<http://semanticweb.org/id/Category-3ATopic_prolog>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_prolog> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_query_algebra> (<http://semanticweb.org/id/Category-3ATopic_query_algebra>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_query_algebra> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_query_languages> (<http://semanticweb.org/id/Category-3ATopic_query_languages>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_query_languages> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_query_optimization> (<http://semanticweb.org/id/Category-3ATopic_query_optimization>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_query_optimization> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_reactive_rules> (<http://semanticweb.org/id/Category-3ATopic_reactive_rules>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_reactive_rules> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_reasoning> (<http://semanticweb.org/id/Category-3ATopic_reasoning>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_reasoning> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_reasoning_engines> (<http://semanticweb.org/id/Category-3ATopic_reasoning_engines>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_reasoning_engines> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_resource_description_framework> (<http://semanticweb.org/id/Category-3ATopic_resource_description_framework>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_resource_description_framework> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_rule_visualization> (<http://semanticweb.org/id/Category-3ATopic_rule_visualization>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_rule_visualization> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_rules> (<http://semanticweb.org/id/Category-3ATopic_rules>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_rules> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_semantic_desktop> (<http://semanticweb.org/id/Category-3ATopic_semantic_desktop>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_semantic_desktop> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_semantic_wikis> (<http://semanticweb.org/id/Category-3ATopic_semantic_wikis>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_semantic_wikis> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_social_networks_and_the_Semantic_Web> (<http://semanticweb.org/id/Category-3ATopic_social_networks_and_the_Semantic_Web>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_social_networks_and_the_Semantic_Web> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_temporal_logic> (<http://semanticweb.org/id/Category-3ATopic_temporal_logic>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_temporal_logic> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_theorem_prover> (<http://semanticweb.org/id/Category-3ATopic_theorem_prover>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_theorem_prover> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_top-2Dlevel_ontologies> (<http://semanticweb.org/id/Category-3ATopic_top-2Dlevel_ontologies>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_top-2Dlevel_ontologies> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_upper-2Dlevel_ontologies> (<http://semanticweb.org/id/Category-3ATopic_upper-2Dlevel_ontologies>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_upper-2Dlevel_ontologies> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_visual_querying> (<http://semanticweb.org/id/Category-3ATopic_visual_querying>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_visual_querying> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_web_data_extraction> (<http://semanticweb.org/id/Category-3ATopic_web_data_extraction>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_web_data_extraction> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_web_data_integration> (<http://semanticweb.org/id/Category-3ATopic_web_data_integration>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_web_data_integration> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_web_information_technology> (<http://semanticweb.org/id/Category-3ATopic_web_information_technology>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_web_information_technology> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_web_personalization_techniques> (<http://semanticweb.org/id/Category-3ATopic_web_personalization_techniques>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_web_personalization_techniques> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_web_security> (<http://semanticweb.org/id/Category-3ATopic_web_security>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_web_security> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_web_service_composition> (<http://semanticweb.org/id/Category-3ATopic_web_service_composition>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_web_service_composition> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_web_service_discovery> (<http://semanticweb.org/id/Category-3ATopic_web_service_discovery>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_web_service_discovery> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Category-3ATopic_web_services> (<http://semanticweb.org/id/Category-3ATopic_web_services>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_web_services> <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+# Individual: <http://semanticweb.org/id/Property-3A> (<http://semanticweb.org/id/Property-3A>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Property-3A> <http://www.absoluteiri.edu/RELAPPROXI-6>)
+
+# Individual: <http://semanticweb.org/id/Property-3ASubcategory_of> (<http://semanticweb.org/id/Property-3ASubcategory_of>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Property-3ASubcategory_of> <http://www.absoluteiri.edu/RELAPPROXI-6>)
+
+# Individual: <http://semanticweb.org/id/Semantic_Web_Topic_Hierarchy> (<http://semanticweb.org/id/Semantic_Web_Topic_Hierarchy>)
+
+ClassAssertion(<http://semantic-mediawiki.org/swivt/1.0#Subject> <http://semanticweb.org/id/Semantic_Web_Topic_Hierarchy>)
+ClassAssertion(<http://semanticweb.org/id/Category-3ASemantic_Web_topic> <http://semanticweb.org/id/Semantic_Web_Topic_Hierarchy>)
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Semantic_Web_Topic_Hierarchy> <http://www.absoluteiri.edu/RELAPPROXI-14>)
+
+# Individual: <http://semanticweb.org/id/QuASAR_(verification_tool)> (<http://semanticweb.org/id/QuASAR_(verification_tool)>)
+
+ClassAssertion(<http://semantic-mediawiki.org/swivt/1.0#Subject> <http://semanticweb.org/id/QuASAR_(verification_tool)>)
+ClassAssertion(<http://semanticweb.org/id/Category-3ASemantic_Web_topic> <http://semanticweb.org/id/QuASAR_(verification_tool)>)
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/QuASAR_(verification_tool)> <http://www.absoluteiri.edu/RELAPPROXI-14>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI-24> (<http://www.absoluteiri.edu/RELAPPROXI-24>)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#unit> <http://www.absoluteiri.edu/RELAPPROXI-24> <http://semanticweb.org/id/Category-3ATopic_web_security>)
+
+# Individual: owl:Nothing (owl:Nothing)
+
+ObjectPropertyAssertion(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> owl:Nothing <http://www.absoluteiri.edu/RELAPPROXI-2>)
+
+
+SubClassOf(ObjectIntersectionOf(<http://semanticweb.org/id/Category-3ATopic_logic_programming> <http://semanticweb.org/id/Category-3ATopic_query_optimization>) <http://semanticweb.org/id/Category-3ATopic_human_resources>)
+SubClassOf(ObjectSomeValuesFrom(<http://semantic-mediawiki.org/swivt/1.0#conversionFactor> owl:Thing) <http://semantic-mediawiki.org/swivt/1.0#UnitType>)
+SubClassOf(ObjectSomeValuesFrom(<http://semantic-mediawiki.org/swivt/1.0#factor> owl:Thing) <http://semantic-mediawiki.org/swivt/1.0#ConversionFactor>)
+SubClassOf(ObjectSomeValuesFrom(<http://semantic-mediawiki.org/swivt/1.0#object1> owl:Thing) <http://semantic-mediawiki.org/swivt/1.0#Container>)
+SubClassOf(ObjectSomeValuesFrom(<http://semantic-mediawiki.org/swivt/1.0#object2> owl:Thing) <http://semantic-mediawiki.org/swivt/1.0#Container>)
+SubClassOf(ObjectSomeValuesFrom(<http://semantic-mediawiki.org/swivt/1.0#object3> owl:Thing) <http://semantic-mediawiki.org/swivt/1.0#Container>)
+SubClassOf(ObjectSomeValuesFrom(<http://semantic-mediawiki.org/swivt/1.0#object4> owl:Thing) <http://semantic-mediawiki.org/swivt/1.0#Container>)
+SubClassOf(ObjectSomeValuesFrom(<http://semantic-mediawiki.org/swivt/1.0#object5> owl:Thing) <http://semantic-mediawiki.org/swivt/1.0#Container>)
+SubClassOf(ObjectSomeValuesFrom(<http://semantic-mediawiki.org/swivt/1.0#object6> owl:Thing) <http://semantic-mediawiki.org/swivt/1.0#Container>)
+SubClassOf(ObjectSomeValuesFrom(<http://semantic-mediawiki.org/swivt/1.0#object7> owl:Thing) <http://semantic-mediawiki.org/swivt/1.0#Container>)
+SubClassOf(ObjectSomeValuesFrom(<http://semantic-mediawiki.org/swivt/1.0#object8> owl:Thing) <http://semantic-mediawiki.org/swivt/1.0#Container>)
+SubClassOf(ObjectSomeValuesFrom(<http://semantic-mediawiki.org/swivt/1.0#object9> owl:Thing) <http://semantic-mediawiki.org/swivt/1.0#Container>)
+SubClassOf(ObjectSomeValuesFrom(<http://semantic-mediawiki.org/swivt/1.0#unit> owl:Thing) <http://semantic-mediawiki.org/swivt/1.0#ConversionFactor>)
+SubClassOf(ObjectSomeValuesFrom(<http://semantic-mediawiki.org/swivt/1.0#value1> owl:Thing) <http://semantic-mediawiki.org/swivt/1.0#Container>)
+SubClassOf(ObjectSomeValuesFrom(<http://semantic-mediawiki.org/swivt/1.0#value2> owl:Thing) <http://semantic-mediawiki.org/swivt/1.0#Container>)
+SubClassOf(ObjectSomeValuesFrom(<http://semantic-mediawiki.org/swivt/1.0#value3> owl:Thing) <http://semantic-mediawiki.org/swivt/1.0#Container>)
+SubClassOf(ObjectSomeValuesFrom(<http://semantic-mediawiki.org/swivt/1.0#value4> owl:Thing) <http://semantic-mediawiki.org/swivt/1.0#Container>)
+SubClassOf(ObjectSomeValuesFrom(<http://semantic-mediawiki.org/swivt/1.0#value5> owl:Thing) <http://semantic-mediawiki.org/swivt/1.0#Container>)
+SubClassOf(ObjectSomeValuesFrom(<http://semantic-mediawiki.org/swivt/1.0#value6> owl:Thing) <http://semantic-mediawiki.org/swivt/1.0#Container>)
+SubClassOf(ObjectSomeValuesFrom(<http://semantic-mediawiki.org/swivt/1.0#value7> owl:Thing) <http://semantic-mediawiki.org/swivt/1.0#Container>)
+SubClassOf(ObjectSomeValuesFrom(<http://semantic-mediawiki.org/swivt/1.0#value8> owl:Thing) <http://semantic-mediawiki.org/swivt/1.0#Container>)
+SubClassOf(ObjectSomeValuesFrom(<http://semantic-mediawiki.org/swivt/1.0#value9> owl:Thing) <http://semantic-mediawiki.org/swivt/1.0#Container>)
+SubClassOf(ObjectSomeValuesFrom(<http://semantic-mediawiki.org/swivt/1.0#wikiNamespace> <http://semanticweb.org/id/Category-3ATopic_ontology_composition>) <http://semanticweb.org/id/Category-3ATopic_ontology_evaluation>)
+SubClassOf(ObjectHasSelf(<http://semantic-mediawiki.org/swivt/1.0#object3>) <http://semanticweb.org/id/Category-3ATopic_web_data_integration>)
+SubClassOf(ObjectHasSelf(<http://semantic-mediawiki.org/swivt/1.0#value7>) <http://semantic-mediawiki.org/swivt/1.0#NAryType>)
+)

@@ -1,0 +1,9 @@
+Found anomalies while testing file ../testOnt.owl
+
+Anomaly 1: Class hierarchy differentiation between HERMIT and ELK:
+	additional axioms HERMIT: [EquivalentClasses(<http://www.semanticweb.org/ontologies/2009/3/EpilepsyOntology.owl#Limbic_Status_Epilepticus_(psychomotor_status)> owl:Nothing), SubClassOf(<http://www.semanticweb.org/ontologies/2009/3/EpilepsyOntology.owl#Limbic_Status_Epilepticus_(psychomotor_status)> owl:Nothing)]
+	additional axioms ELK: [SubClassOf(<http://www.semanticweb.org/ontologies/2009/3/EpilepsyOntology.owl#Limbic_Status_Epilepticus_(psychomotor_status)> <http://www.semanticweb.org/ontologies/2009/3/EpilepsyOntology.owl#Focal_Status_Epilepticus>)]
+
+Anomaly 2: Class hierarchy differentiation between ELK and OPENLLET:
+	additional axioms ELK: [SubClassOf(<http://www.semanticweb.org/ontologies/2009/3/EpilepsyOntology.owl#Limbic_Status_Epilepticus_(psychomotor_status)> <http://www.semanticweb.org/ontologies/2009/3/EpilepsyOntology.owl#Focal_Status_Epilepticus>)]
+	additional axioms OPENLLET: [EquivalentClasses(<http://www.semanticweb.org/ontologies/2009/3/EpilepsyOntology.owl#Limbic_Status_Epilepticus_(psychomotor_status)> owl:Nothing), SubClassOf(<http://www.semanticweb.org/ontologies/2009/3/EpilepsyOntology.owl#Limbic_Status_Epilepticus_(psychomotor_status)> owl:Nothing)]

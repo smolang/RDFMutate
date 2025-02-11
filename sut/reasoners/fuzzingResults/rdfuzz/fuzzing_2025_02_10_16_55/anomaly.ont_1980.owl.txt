@@ -1,0 +1,8 @@
+Found anomalies while testing file ../testOnt.owl
+
+Anomaly 1: Anomaly: not in EL
+ Use of non-simple property in ObjectHasSelf restriction: ObjectHasSelf(<http://purl.obolibrary.org/obo/0cd0b9d7-4b0b-443f-9139-2dc69088938a_pathway.obo#part_of>) [SubClassOf(ObjectHasSelf(<http://purl.obolibrary.org/obo/0cd0b9d7-4b0b-443f-9139-2dc69088938a_pathway.obo#part_of>) <http://purl.obolibrary.org/obo/PW_0000604>) in OntologyID(OntologyIRI(<urn:unnamed:ontology#ont294709182345340>) VersionIRI(<null>))]
+ Use of non-simple property in ObjectHasSelf restriction: ObjectHasSelf(<http://purl.obolibrary.org/obo/0cd0b9d7-4b0b-443f-9139-2dc69088938a_pathway.obo#part_of>) [SubClassOf(<http://purl.obolibrary.org/obo/PW_0000263> ObjectHasSelf(<http://purl.obolibrary.org/obo/0cd0b9d7-4b0b-443f-9139-2dc69088938a_pathway.obo#part_of>)) in OntologyID(OntologyIRI(<urn:unnamed:ontology#ont294709182345340>) VersionIRI(<null>))]
+ Use of non-simple property in ObjectHasSelf restriction: ObjectHasSelf(<http://purl.obolibrary.org/obo/0cd0b9d7-4b0b-443f-9139-2dc69088938a_pathway.obo#part_of>) [SubClassOf(ObjectHasSelf(<http://purl.obolibrary.org/obo/0cd0b9d7-4b0b-443f-9139-2dc69088938a_pathway.obo#part_of>) <http://purl.obolibrary.org/obo/PW_0000018>) in OntologyID(OntologyIRI(<urn:unnamed:ontology#ont294709182345340>) VersionIRI(<null>))]
+ Use of data range not in profile: http://www.w3.org/1999/02/22-rdf-syntax-ns#langString [SubClassOf(DataHasValue(<newDataProp:647298883> "someText4"@es) <http://purl.obolibrary.org/obo/PW_0000445>) in OntologyID(OntologyIRI(<urn:unnamed:ontology#ont294709182345340>) VersionIRI(<null>))]
+

@@ -1,0 +1,9 @@
+Found anomalies while testing file ../testOnt.owl
+
+Anomaly 1: Class hierarchy differentiation between HERMIT and OPENLLET:
+	additional axioms HERMIT: [EquivalentClasses(<http://www.absoluteiri.edu/RELAPPROXC151> owl:Nothing), SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC151> owl:Nothing)]
+	additional axioms OPENLLET: [SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC151> owl:Thing)]
+
+Anomaly 2: Class hierarchy differentiation between ELK and OPENLLET:
+	additional axioms ELK: [EquivalentClasses(<http://www.absoluteiri.edu/RELAPPROXC151> owl:Nothing), SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC151> owl:Nothing)]
+	additional axioms OPENLLET: [SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC151> owl:Thing)]

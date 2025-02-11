@@ -1,0 +1,9 @@
+Found anomalies while testing file ../testOnt.owl
+
+Anomaly 1: Class hierarchy differentiation between HERMIT and ELK:
+	additional axioms HERMIT: [SubClassOf(<http://purl.obolibrary.org/obo/FYPO_0001017> <http://purl.obolibrary.org/obo/GO_0012505>), SubClassOf(<http://purl.obolibrary.org/obo/GO_0006412> <http://purl.obolibrary.org/obo/GO_0012505>)]
+	additional axioms ELK: [SubClassOf(<http://purl.obolibrary.org/obo/GO_0006412> <http://purl.obolibrary.org/obo/FYPO_0000001>), SubClassOf(<http://purl.obolibrary.org/obo/GO_0006412> <http://purl.obolibrary.org/obo/FYPO_0000002>), SubClassOf(<http://purl.obolibrary.org/obo/GO_0006412> <http://purl.obolibrary.org/obo/FYPO_0000136>), SubClassOf(<http://purl.obolibrary.org/obo/GO_0006412> <http://purl.obolibrary.org/obo/FYPO_0000455>), SubClassOf(<http://purl.obolibrary.org/obo/GO_0006412> owl:Thing)]
+
+Anomaly 2: Class hierarchy differentiation between ELK and OPENLLET:
+	additional axioms ELK: [SubClassOf(<http://purl.obolibrary.org/obo/GO_0006412> <http://purl.obolibrary.org/obo/FYPO_0000001>), SubClassOf(<http://purl.obolibrary.org/obo/GO_0006412> <http://purl.obolibrary.org/obo/FYPO_0000002>), SubClassOf(<http://purl.obolibrary.org/obo/GO_0006412> <http://purl.obolibrary.org/obo/FYPO_0000136>), SubClassOf(<http://purl.obolibrary.org/obo/GO_0006412> <http://purl.obolibrary.org/obo/FYPO_0000455>), SubClassOf(<http://purl.obolibrary.org/obo/GO_0006412> owl:Thing)]
+	additional axioms OPENLLET: [SubClassOf(<http://purl.obolibrary.org/obo/FYPO_0001017> <http://purl.obolibrary.org/obo/GO_0012505>), SubClassOf(<http://purl.obolibrary.org/obo/GO_0006412> <http://purl.obolibrary.org/obo/GO_0012505>)]

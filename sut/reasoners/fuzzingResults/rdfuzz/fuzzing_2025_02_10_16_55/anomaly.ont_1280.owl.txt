@@ -1,0 +1,9 @@
+Found anomalies while testing file ../testOnt.owl
+
+Anomaly 1: Class hierarchy differentiation between HERMIT and ELK:
+	additional axioms HERMIT: [SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC195> <http://dbpedia.org/ontology/NascarDriver>)]
+	additional axioms ELK: [SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC192> <http://dbpedia.org/ontology/NascarDriver>), SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC195> <http://www.absoluteiri.edu/RELAPPROXC193>), SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC195> <http://www.absoluteiri.edu/RELAPPROXC197>), SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC195> owl:Thing)]
+
+Anomaly 2: Class hierarchy differentiation between ELK and OPENLLET:
+	additional axioms ELK: [SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC192> <http://dbpedia.org/ontology/NascarDriver>), SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC195> <http://www.absoluteiri.edu/RELAPPROXC193>), SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC195> <http://www.absoluteiri.edu/RELAPPROXC197>), SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC195> owl:Thing)]
+	additional axioms OPENLLET: [SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC195> <http://dbpedia.org/ontology/NascarDriver>)]

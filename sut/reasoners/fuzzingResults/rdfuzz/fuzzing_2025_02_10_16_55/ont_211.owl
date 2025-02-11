@@ -1,0 +1,778 @@
+Prefix(:=<urn:unnamed:ontology#ont262233294619053>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:unnamed:ontology#ont262233294619053>
+
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC126>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC127>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC108>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC109>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC55>))
+Declaration(Class(<http://www.sensocomune.org/ontologies/SensoComune.owl#Collection>))
+Declaration(Class(<http://www.sensocomune.org/ontologies/SensoComune.owl#Color>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC85>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC110>))
+Declaration(Class(<http://www.sensocomune.org/ontologies/SensoComune.owl#Group>))
+Declaration(Class(<http://www.sensocomune.org/ontologies/SensoComune.owl#Function>))
+Declaration(Class(<http://www.sensocomune.org/ontologies/SensoComune.owl#Agent>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC17>))
+Declaration(Class(<http://www.sensocomune.org/ontologies/SensoComune.owl#NaturalEntity>))
+Declaration(Class(<http://www.sensocomune.org/ontologies/SensoComune.owl#Entity>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC115>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC116>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC47>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC71>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC103>))
+Declaration(Class(<http://www.sensocomune.org/ontologies/SensoComune.owl#SocialGroup>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC134>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC133>))
+Declaration(Class(<http://www.sensocomune.org/ontologies/SensoComune.owl#Human>))
+Declaration(Class(<http://www.sensocomune.org/ontologies/SensoComune.owl#Animate>))
+Declaration(Class(<http://www.sensocomune.org/ontologies/SensoComune.owl#Object>))
+Declaration(Class(<http://www.sensocomune.org/ontologies/SensoComune.owl#SocialRole>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC77>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC45>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC132>))
+Declaration(Class(<http://www.sensocomune.org/ontologies/SensoComune.owl#ConcreteEntity>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC131>))
+Declaration(Class(<http://www.sensocomune.org/ontologies/SensoComune.owl#Relation>))
+Declaration(Class(<http://www.sensocomune.org/ontologies/SensoComune.owl#SocialInstitution>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC106>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC95>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC9>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC137>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC138>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC65>))
+Declaration(Class(<http://www.sensocomune.org/ontologies/SensoComune.owl#MentalProcess>))
+Declaration(Class(<http://www.sensocomune.org/ontologies/SensoComune.owl#MentalState>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC124>))
+Declaration(Class(<http://www.sensocomune.org/ontologies/SensoComune.owl#Substance>))
+Declaration(Class(<http://www.sensocomune.org/ontologies/SensoComune.owl#Artifact>))
+Declaration(Class(<http://www.sensocomune.org/ontologies/SensoComune.owl#Region>))
+Declaration(Class(<http://www.sensocomune.org/ontologies/SensoComune.owl#SpatialRegion>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC21>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC125>))
+Declaration(Class(<http://www.sensocomune.org/ontologies/SensoComune.owl#TemporalRegionRELAPPROXQ2>))
+Declaration(Class(<http://www.sensocomune.org/ontologies/SensoComune.owl#Continuant>))
+Declaration(Class(<http://www.sensocomune.org/ontologies/SensoComune.owl#TheoreticEntity>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC27>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC99>))
+Declaration(Class(<http://www.sensocomune.org/ontologies/SensoComune.owl#Set>))
+Declaration(Class(<http://www.sensocomune.org/ontologies/SensoComune.owl#Feature>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC114>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC113>))
+Declaration(Class(<http://www.sensocomune.org/ontologies/SensoComune.owl#Occurrent>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC81>))
+Declaration(Class(<http://www.sensocomune.org/ontologies/SensoComune.owl#Automata>))
+Declaration(Class(<http://www.sensocomune.org/ontologies/SensoComune.owl#BodyState>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC129>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC101>))
+Declaration(Class(<http://www.sensocomune.org/ontologies/SensoComune.owl#Quale>))
+Declaration(Class(<http://www.sensocomune.org/ontologies/SensoComune.owl#InformationObject>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC57>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC100>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC128>))
+Declaration(Class(<http://www.sensocomune.org/ontologies/SensoComune.owl#Phase>))
+Declaration(Class(<http://www.sensocomune.org/ontologies/SensoComune.owl#TemporalQuality>))
+Declaration(Class(<http://www.sensocomune.org/ontologies/SensoComune.owl#SpatialRegionRELAPPROXQ2>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC87>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC13>))
+Declaration(Class(<http://www.sensocomune.org/ontologies/SensoComune.owl#Quality>))
+Declaration(Class(<http://www.sensocomune.org/ontologies/SensoComune.owl#Animal>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC31>))
+Declaration(Class(<http://www.sensocomune.org/ontologies/SensoComune.owl#String>))
+Declaration(Class(<http://www.sensocomune.org/ontologies/SensoComune.owl#Action>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC130>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC118>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC117>))
+Declaration(Class(<http://www.sensocomune.org/ontologies/SensoComune.owl#Number>))
+Declaration(Class(<http://www.sensocomune.org/ontologies/SensoComune.owl#AbstractEntity>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC104>))
+Declaration(Class(<http://www.sensocomune.org/ontologies/SensoComune.owl#Process>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC105>))
+Declaration(Class(<http://www.sensocomune.org/ontologies/SensoComune.owl#SymbolicRegion>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC135>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC136>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC63>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC122>))
+Declaration(Class(<http://www.sensocomune.org/ontologies/SensoComune.owl#Motion>))
+Declaration(Class(<http://www.sensocomune.org/ontologies/SensoComune.owl#Location>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC51>))
+Declaration(Class(<http://www.sensocomune.org/ontologies/SensoComune.owl#NaturalProcess>))
+Declaration(Class(<http://www.sensocomune.org/ontologies/SensoComune.owl#TemporalRegion>))
+Declaration(Class(<http://www.sensocomune.org/ontologies/SensoComune.owl#SocialEntity>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC119>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC91>))
+Declaration(Class(<http://www.sensocomune.org/ontologies/SensoComune.owl#Characterization>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC25>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC120>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC121>))
+Declaration(Class(<http://www.sensocomune.org/ontologies/SensoComune.owl#State>))
+Declaration(Class(<http://www.sensocomune.org/ontologies/SensoComune.owl#PhysicalState>))
+Declaration(Class(<http://www.sensocomune.org/ontologies/SensoComune.owl#HumanGroup>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC111>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC112>))
+Declaration(ObjectProperty(<http://www.sensocomune.org/ontologies/SensoComune.owl#agentOf>))
+Declaration(ObjectProperty(<http://www.sensocomune.org/ontologies/SensoComune.owl#related>))
+Declaration(ObjectProperty(<http://www.sensocomune.org/ontologies/SensoComune.owl#abstractPart>))
+Declaration(ObjectProperty(<http://www.sensocomune.org/ontologies/SensoComune.owl#phaseOf>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR35>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR36>))
+Declaration(ObjectProperty(<http://www.sensocomune.org/ontologies/SensoComune.owl#agent>))
+Declaration(ObjectProperty(<http://www.sensocomune.org/ontologies/SensoComune.owl#characterizes>))
+Declaration(ObjectProperty(<http://www.sensocomune.org/ontologies/SensoComune.owl#entails>))
+Declaration(ObjectProperty(<http://www.sensocomune.org/ontologies/SensoComune.owl#dependentOn>))
+Declaration(ObjectProperty(<http://www.sensocomune.org/ontologies/SensoComune.owl#partOf>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR29>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR43>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR42>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR30>))
+Declaration(ObjectProperty(<http://www.sensocomune.org/ontologies/SensoComune.owl#concretePart>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR48>))
+Declaration(ObjectProperty(<http://www.sensocomune.org/ontologies/SensoComune.owl#constituent>))
+Declaration(ObjectProperty(<http://www.sensocomune.org/ontologies/SensoComune.owl#part>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR46>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR47>))
+Declaration(ObjectProperty(<http://www.sensocomune.org/ontologies/SensoComune.owl#classMapping>))
+Declaration(ObjectProperty(<http://www.sensocomune.org/ontologies/SensoComune.owl#concretePartOf>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR34>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR33>))
+Declaration(ObjectProperty(<http://www.sensocomune.org/ontologies/SensoComune.owl#expressionMapping>))
+Declaration(ObjectProperty(<http://www.sensocomune.org/ontologies/SensoComune.owl#memberOf>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR39>))
+Declaration(ObjectProperty(<http://www.sensocomune.org/ontologies/SensoComune.owl#constituentOf>))
+Declaration(ObjectProperty(<http://www.sensocomune.org/ontologies/SensoComune.owl#involves>))
+Declaration(ObjectProperty(<http://www.sensocomune.org/ontologies/SensoComune.owl#involvedIn>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR40>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR41>))
+Declaration(ObjectProperty(<http://www.sensocomune.org/ontologies/SensoComune.owl#abstractPartOf>))
+Declaration(ObjectProperty(<http://www.sensocomune.org/ontologies/SensoComune.owl#dependent>))
+Declaration(ObjectProperty(<http://www.sensocomune.org/ontologies/SensoComune.owl#operationMapping>))
+Declaration(ObjectProperty(<http://www.sensocomune.org/ontologies/SensoComune.owl#characterizedBy>))
+Declaration(ObjectProperty(<http://www.sensocomune.org/ontologies/SensoComune.owl#inherentIn>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR44>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR45>))
+Declaration(ObjectProperty(<http://www.sensocomune.org/ontologies/SensoComune.owl#dataMapping>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR32>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR31>))
+Declaration(ObjectProperty(<http://www.sensocomune.org/ontologies/SensoComune.owl#phase>))
+Declaration(ObjectProperty(<http://www.sensocomune.org/ontologies/SensoComune.owl#member>))
+Declaration(ObjectProperty(<http://www.sensocomune.org/ontologies/SensoComune.owl#location>))
+Declaration(ObjectProperty(<http://www.sensocomune.org/ontologies/SensoComune.owl#uriMapping>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR37>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR38>))
+Declaration(DataProperty(<newDataProp:-1580666106>))
+Declaration(DataProperty(<newDataProp:-1852100598>))
+Declaration(NamedIndividual(<newIndividual:number1461273742>))
+Declaration(NamedIndividual(<newIndividual:number57904299>))
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR29> (<http://www.absoluteiri.edu/RELAPPROXR29>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR29> <http://www.sensocomune.org/ontologies/SensoComune.owl#partOf>)
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR30> (<http://www.absoluteiri.edu/RELAPPROXR30>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR30> <http://www.sensocomune.org/ontologies/SensoComune.owl#part>)
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR31> (<http://www.absoluteiri.edu/RELAPPROXR31>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR31> <http://www.sensocomune.org/ontologies/SensoComune.owl#agent>)
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR32> (<http://www.absoluteiri.edu/RELAPPROXR32>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR32> <http://www.sensocomune.org/ontologies/SensoComune.owl#agentOf>)
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR33> (<http://www.absoluteiri.edu/RELAPPROXR33>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR33> <http://www.sensocomune.org/ontologies/SensoComune.owl#phase>)
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR34> (<http://www.absoluteiri.edu/RELAPPROXR34>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR34> <http://www.sensocomune.org/ontologies/SensoComune.owl#member>)
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR35> (<http://www.absoluteiri.edu/RELAPPROXR35>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR35> <http://www.sensocomune.org/ontologies/SensoComune.owl#memberOf>)
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR36> (<http://www.absoluteiri.edu/RELAPPROXR36>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR36> <http://www.sensocomune.org/ontologies/SensoComune.owl#concretePartOf>)
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR37> (<http://www.absoluteiri.edu/RELAPPROXR37>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR37> <http://www.sensocomune.org/ontologies/SensoComune.owl#concretePart>)
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR38> (<http://www.absoluteiri.edu/RELAPPROXR38>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR38> <http://www.sensocomune.org/ontologies/SensoComune.owl#phaseOf>)
+ObjectPropertyRange(<http://www.absoluteiri.edu/RELAPPROXR38> <http://www.absoluteiri.edu/RELAPPROXC108>)
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR39> (<http://www.absoluteiri.edu/RELAPPROXR39>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR39> <http://www.sensocomune.org/ontologies/SensoComune.owl#characterizes>)
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR40> (<http://www.absoluteiri.edu/RELAPPROXR40>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR40> <http://www.sensocomune.org/ontologies/SensoComune.owl#characterizedBy>)
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR41> (<http://www.absoluteiri.edu/RELAPPROXR41>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR41> <http://www.sensocomune.org/ontologies/SensoComune.owl#dependentOn>)
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR42> (<http://www.absoluteiri.edu/RELAPPROXR42>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR42> <http://www.sensocomune.org/ontologies/SensoComune.owl#dependent>)
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR43> (<http://www.absoluteiri.edu/RELAPPROXR43>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR43> <http://www.sensocomune.org/ontologies/SensoComune.owl#abstractPartOf>)
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR44> (<http://www.absoluteiri.edu/RELAPPROXR44>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR44> <http://www.sensocomune.org/ontologies/SensoComune.owl#abstractPart>)
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR45> (<http://www.absoluteiri.edu/RELAPPROXR45>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR45> <http://www.sensocomune.org/ontologies/SensoComune.owl#involves>)
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR46> (<http://www.absoluteiri.edu/RELAPPROXR46>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR46> <http://www.sensocomune.org/ontologies/SensoComune.owl#involvedIn>)
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR47> (<http://www.absoluteiri.edu/RELAPPROXR47>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR47> <http://www.sensocomune.org/ontologies/SensoComune.owl#constituent>)
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR48> (<http://www.absoluteiri.edu/RELAPPROXR48>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR48> <http://www.sensocomune.org/ontologies/SensoComune.owl#constituentOf>)
+
+# Object Property: <http://www.sensocomune.org/ontologies/SensoComune.owl#abstractPart> (<http://www.sensocomune.org/ontologies/SensoComune.owl#abstractPart>)
+
+SubObjectPropertyOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#abstractPart> <http://www.absoluteiri.edu/RELAPPROXR44>)
+SubObjectPropertyOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#abstractPart> <http://www.sensocomune.org/ontologies/SensoComune.owl#part>)
+
+# Object Property: <http://www.sensocomune.org/ontologies/SensoComune.owl#abstractPartOf> (<http://www.sensocomune.org/ontologies/SensoComune.owl#abstractPartOf>)
+
+SubObjectPropertyOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#abstractPartOf> <http://www.absoluteiri.edu/RELAPPROXR43>)
+SubObjectPropertyOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#abstractPartOf> <http://www.sensocomune.org/ontologies/SensoComune.owl#partOf>)
+
+# Object Property: <http://www.sensocomune.org/ontologies/SensoComune.owl#agent> (<http://www.sensocomune.org/ontologies/SensoComune.owl#agent>)
+
+SubObjectPropertyOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#agent> <http://www.absoluteiri.edu/RELAPPROXR31>)
+SubObjectPropertyOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#agent> <http://www.sensocomune.org/ontologies/SensoComune.owl#dependentOn>)
+
+# Object Property: <http://www.sensocomune.org/ontologies/SensoComune.owl#agentOf> (<http://www.sensocomune.org/ontologies/SensoComune.owl#agentOf>)
+
+SubObjectPropertyOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#agentOf> <http://www.absoluteiri.edu/RELAPPROXR32>)
+SubObjectPropertyOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#agentOf> <http://www.sensocomune.org/ontologies/SensoComune.owl#dependent>)
+ReflexiveObjectProperty(<http://www.sensocomune.org/ontologies/SensoComune.owl#agentOf>)
+
+# Object Property: <http://www.sensocomune.org/ontologies/SensoComune.owl#characterizedBy> (<http://www.sensocomune.org/ontologies/SensoComune.owl#characterizedBy>)
+
+SubObjectPropertyOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#characterizedBy> <http://www.absoluteiri.edu/RELAPPROXR40>)
+SubObjectPropertyOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#characterizedBy> <http://www.sensocomune.org/ontologies/SensoComune.owl#related>)
+
+# Object Property: <http://www.sensocomune.org/ontologies/SensoComune.owl#characterizes> (<http://www.sensocomune.org/ontologies/SensoComune.owl#characterizes>)
+
+SubObjectPropertyOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#characterizes> <http://www.absoluteiri.edu/RELAPPROXR39>)
+SubObjectPropertyOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#characterizes> <http://www.sensocomune.org/ontologies/SensoComune.owl#related>)
+
+# Object Property: <http://www.sensocomune.org/ontologies/SensoComune.owl#classMapping> (<http://www.sensocomune.org/ontologies/SensoComune.owl#classMapping>)
+
+SubObjectPropertyOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#classMapping> <http://www.sensocomune.org/ontologies/SensoComune.owl#uriMapping>)
+
+# Object Property: <http://www.sensocomune.org/ontologies/SensoComune.owl#concretePart> (<http://www.sensocomune.org/ontologies/SensoComune.owl#concretePart>)
+
+SubObjectPropertyOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#concretePart> <http://www.absoluteiri.edu/RELAPPROXR37>)
+SubObjectPropertyOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#concretePart> <http://www.sensocomune.org/ontologies/SensoComune.owl#part>)
+
+# Object Property: <http://www.sensocomune.org/ontologies/SensoComune.owl#concretePartOf> (<http://www.sensocomune.org/ontologies/SensoComune.owl#concretePartOf>)
+
+SubObjectPropertyOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#concretePartOf> <http://www.absoluteiri.edu/RELAPPROXR36>)
+SubObjectPropertyOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#concretePartOf> <http://www.sensocomune.org/ontologies/SensoComune.owl#partOf>)
+
+# Object Property: <http://www.sensocomune.org/ontologies/SensoComune.owl#constituent> (<http://www.sensocomune.org/ontologies/SensoComune.owl#constituent>)
+
+SubObjectPropertyOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#constituent> <http://www.absoluteiri.edu/RELAPPROXR47>)
+SubObjectPropertyOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#constituent> <http://www.sensocomune.org/ontologies/SensoComune.owl#concretePart>)
+
+# Object Property: <http://www.sensocomune.org/ontologies/SensoComune.owl#constituentOf> (<http://www.sensocomune.org/ontologies/SensoComune.owl#constituentOf>)
+
+SubObjectPropertyOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#constituentOf> <http://www.absoluteiri.edu/RELAPPROXR48>)
+SubObjectPropertyOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#constituentOf> <http://www.sensocomune.org/ontologies/SensoComune.owl#concretePartOf>)
+
+# Object Property: <http://www.sensocomune.org/ontologies/SensoComune.owl#dependent> (<http://www.sensocomune.org/ontologies/SensoComune.owl#dependent>)
+
+SubObjectPropertyOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#dependent> <http://www.absoluteiri.edu/RELAPPROXR42>)
+
+# Object Property: <http://www.sensocomune.org/ontologies/SensoComune.owl#dependentOn> (<http://www.sensocomune.org/ontologies/SensoComune.owl#dependentOn>)
+
+SubObjectPropertyOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#dependentOn> <http://www.absoluteiri.edu/RELAPPROXR41>)
+
+# Object Property: <http://www.sensocomune.org/ontologies/SensoComune.owl#entails> (<http://www.sensocomune.org/ontologies/SensoComune.owl#entails>)
+
+SubObjectPropertyOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#entails> <http://www.sensocomune.org/ontologies/SensoComune.owl#related>)
+
+# Object Property: <http://www.sensocomune.org/ontologies/SensoComune.owl#expressionMapping> (<http://www.sensocomune.org/ontologies/SensoComune.owl#expressionMapping>)
+
+SubObjectPropertyOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#expressionMapping> <http://www.sensocomune.org/ontologies/SensoComune.owl#dataMapping>)
+
+# Object Property: <http://www.sensocomune.org/ontologies/SensoComune.owl#inherentIn> (<http://www.sensocomune.org/ontologies/SensoComune.owl#inherentIn>)
+
+SubObjectPropertyOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#inherentIn> <http://www.sensocomune.org/ontologies/SensoComune.owl#dependentOn>)
+
+# Object Property: <http://www.sensocomune.org/ontologies/SensoComune.owl#involvedIn> (<http://www.sensocomune.org/ontologies/SensoComune.owl#involvedIn>)
+
+SubObjectPropertyOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#involvedIn> <http://www.absoluteiri.edu/RELAPPROXR46>)
+SubObjectPropertyOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#involvedIn> <http://www.sensocomune.org/ontologies/SensoComune.owl#related>)
+
+# Object Property: <http://www.sensocomune.org/ontologies/SensoComune.owl#involves> (<http://www.sensocomune.org/ontologies/SensoComune.owl#involves>)
+
+SubObjectPropertyOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#involves> <http://www.absoluteiri.edu/RELAPPROXR45>)
+SubObjectPropertyOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#involves> <http://www.sensocomune.org/ontologies/SensoComune.owl#related>)
+
+# Object Property: <http://www.sensocomune.org/ontologies/SensoComune.owl#location> (<http://www.sensocomune.org/ontologies/SensoComune.owl#location>)
+
+SubObjectPropertyOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#location> <http://www.sensocomune.org/ontologies/SensoComune.owl#dependentOn>)
+
+# Object Property: <http://www.sensocomune.org/ontologies/SensoComune.owl#member> (<http://www.sensocomune.org/ontologies/SensoComune.owl#member>)
+
+SubObjectPropertyOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#member> <http://www.absoluteiri.edu/RELAPPROXR34>)
+SubObjectPropertyOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#member> <http://www.sensocomune.org/ontologies/SensoComune.owl#part>)
+
+# Object Property: <http://www.sensocomune.org/ontologies/SensoComune.owl#memberOf> (<http://www.sensocomune.org/ontologies/SensoComune.owl#memberOf>)
+
+SubObjectPropertyOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#memberOf> <http://www.absoluteiri.edu/RELAPPROXR35>)
+SubObjectPropertyOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#memberOf> <http://www.sensocomune.org/ontologies/SensoComune.owl#partOf>)
+
+# Object Property: <http://www.sensocomune.org/ontologies/SensoComune.owl#operationMapping> (<http://www.sensocomune.org/ontologies/SensoComune.owl#operationMapping>)
+
+SubObjectPropertyOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#operationMapping> <http://www.sensocomune.org/ontologies/SensoComune.owl#uriMapping>)
+
+# Object Property: <http://www.sensocomune.org/ontologies/SensoComune.owl#part> (<http://www.sensocomune.org/ontologies/SensoComune.owl#part>)
+
+SubObjectPropertyOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#part> <http://www.absoluteiri.edu/RELAPPROXR30>)
+
+# Object Property: <http://www.sensocomune.org/ontologies/SensoComune.owl#partOf> (<http://www.sensocomune.org/ontologies/SensoComune.owl#partOf>)
+
+SubObjectPropertyOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#partOf> <http://www.absoluteiri.edu/RELAPPROXR29>)
+
+# Object Property: <http://www.sensocomune.org/ontologies/SensoComune.owl#phase> (<http://www.sensocomune.org/ontologies/SensoComune.owl#phase>)
+
+SubObjectPropertyOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#phase> <http://www.absoluteiri.edu/RELAPPROXR33>)
+SubObjectPropertyOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#phase> <http://www.sensocomune.org/ontologies/SensoComune.owl#concretePart>)
+
+# Object Property: <http://www.sensocomune.org/ontologies/SensoComune.owl#phaseOf> (<http://www.sensocomune.org/ontologies/SensoComune.owl#phaseOf>)
+
+SubObjectPropertyOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#phaseOf> <http://www.absoluteiri.edu/RELAPPROXR38>)
+SubObjectPropertyOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#phaseOf> <http://www.sensocomune.org/ontologies/SensoComune.owl#concretePartOf>)
+
+# Object Property: <http://www.sensocomune.org/ontologies/SensoComune.owl#related> (<http://www.sensocomune.org/ontologies/SensoComune.owl#related>)
+
+ReflexiveObjectProperty(<http://www.sensocomune.org/ontologies/SensoComune.owl#related>)
+
+# Object Property: <http://www.sensocomune.org/ontologies/SensoComune.owl#uriMapping> (<http://www.sensocomune.org/ontologies/SensoComune.owl#uriMapping>)
+
+SubObjectPropertyOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#uriMapping> <http://www.sensocomune.org/ontologies/SensoComune.owl#dataMapping>)
+
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC101> (<http://www.absoluteiri.edu/RELAPPROXC101>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC101> ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#location> <http://www.sensocomune.org/ontologies/SensoComune.owl#TemporalRegionRELAPPROXQ2>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC104> (<http://www.absoluteiri.edu/RELAPPROXC104>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC104> ObjectSomeValuesFrom(<http://www.absoluteiri.edu/RELAPPROXR33> <http://www.absoluteiri.edu/RELAPPROXC87>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC106> (<http://www.absoluteiri.edu/RELAPPROXC106>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC106> ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#location> <http://www.sensocomune.org/ontologies/SensoComune.owl#SpatialRegionRELAPPROXQ2>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC109> (<http://www.absoluteiri.edu/RELAPPROXC109>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC109> ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#member> <http://www.absoluteiri.edu/RELAPPROXC77>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC111> (<http://www.absoluteiri.edu/RELAPPROXC111>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC111> ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#involves> <http://www.absoluteiri.edu/RELAPPROXC17>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC113> (<http://www.absoluteiri.edu/RELAPPROXC113>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC113> ObjectSomeValuesFrom(<http://www.absoluteiri.edu/RELAPPROXR31> <http://www.absoluteiri.edu/RELAPPROXC91>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC115> (<http://www.absoluteiri.edu/RELAPPROXC115>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC115> ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#characterizes> <http://www.absoluteiri.edu/RELAPPROXC77>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC118> (<http://www.absoluteiri.edu/RELAPPROXC118>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC118> ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#inherentIn> <http://www.absoluteiri.edu/RELAPPROXC47>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC120> (<http://www.absoluteiri.edu/RELAPPROXC120>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC120> ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#member> <http://www.absoluteiri.edu/RELAPPROXC9>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC122> (<http://www.absoluteiri.edu/RELAPPROXC122>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC122> ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#characterizes> <http://www.absoluteiri.edu/RELAPPROXC71>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC126> (<http://www.absoluteiri.edu/RELAPPROXC126>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC126> ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#characterizes> <http://www.absoluteiri.edu/RELAPPROXC99>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC128> (<http://www.absoluteiri.edu/RELAPPROXC128>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC128> ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#member> <http://www.absoluteiri.edu/RELAPPROXC21>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC130> (<http://www.absoluteiri.edu/RELAPPROXC130>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC130> ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#member> <http://www.absoluteiri.edu/RELAPPROXC47>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC132> (<http://www.absoluteiri.edu/RELAPPROXC132>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC132> ObjectSomeValuesFrom(<http://www.absoluteiri.edu/RELAPPROXR32> <http://www.absoluteiri.edu/RELAPPROXC57>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC133> (<http://www.absoluteiri.edu/RELAPPROXC133>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC133> <http://www.absoluteiri.edu/RELAPPROXC136>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC135> (<http://www.absoluteiri.edu/RELAPPROXC135>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC135> <http://www.absoluteiri.edu/RELAPPROXC134>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC135> <http://www.absoluteiri.edu/RELAPPROXC138>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC137> (<http://www.absoluteiri.edu/RELAPPROXC137>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC137> <http://www.absoluteiri.edu/RELAPPROXC136>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC47> (<http://www.absoluteiri.edu/RELAPPROXC47>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC47> DataSomeValuesFrom(<newDataProp:-1852100598> DataIntersectionOf(rdf:PlainLiteral xsd:decimal)))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC87> (<http://www.absoluteiri.edu/RELAPPROXC87>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC87> <http://www.sensocomune.org/ontologies/SensoComune.owl#Continuant>)
+
+# Class: <http://www.sensocomune.org/ontologies/SensoComune.owl#AbstractEntity> (<http://www.sensocomune.org/ontologies/SensoComune.owl#AbstractEntity>)
+
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#AbstractEntity> <http://www.absoluteiri.edu/RELAPPROXC95>)
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#AbstractEntity> <http://www.sensocomune.org/ontologies/SensoComune.owl#Entity>)
+
+# Class: <http://www.sensocomune.org/ontologies/SensoComune.owl#Action> (<http://www.sensocomune.org/ontologies/SensoComune.owl#Action>)
+
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Action> <http://www.sensocomune.org/ontologies/SensoComune.owl#Process>)
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Action> ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#agent> <http://www.sensocomune.org/ontologies/SensoComune.owl#Continuant>))
+
+# Class: <http://www.sensocomune.org/ontologies/SensoComune.owl#Agent> (<http://www.sensocomune.org/ontologies/SensoComune.owl#Agent>)
+
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Agent> <http://www.sensocomune.org/ontologies/SensoComune.owl#Continuant>)
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Agent> ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#agentOf> <http://www.sensocomune.org/ontologies/SensoComune.owl#Process>))
+
+# Class: <http://www.sensocomune.org/ontologies/SensoComune.owl#Animal> (<http://www.sensocomune.org/ontologies/SensoComune.owl#Animal>)
+
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Animal> <http://www.sensocomune.org/ontologies/SensoComune.owl#Animate>)
+
+# Class: <http://www.sensocomune.org/ontologies/SensoComune.owl#Animate> (<http://www.sensocomune.org/ontologies/SensoComune.owl#Animate>)
+
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Animate> <http://www.sensocomune.org/ontologies/SensoComune.owl#NaturalEntity>)
+
+# Class: <http://www.sensocomune.org/ontologies/SensoComune.owl#Artifact> (<http://www.sensocomune.org/ontologies/SensoComune.owl#Artifact>)
+
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Artifact> <http://www.absoluteiri.edu/RELAPPROXC55>)
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Artifact> <http://www.sensocomune.org/ontologies/SensoComune.owl#Object>)
+
+# Class: <http://www.sensocomune.org/ontologies/SensoComune.owl#Automata> (<http://www.sensocomune.org/ontologies/SensoComune.owl#Automata>)
+
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Automata> <http://www.sensocomune.org/ontologies/SensoComune.owl#Artifact>)
+
+# Class: <http://www.sensocomune.org/ontologies/SensoComune.owl#BodyState> (<http://www.sensocomune.org/ontologies/SensoComune.owl#BodyState>)
+
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#BodyState> <http://www.sensocomune.org/ontologies/SensoComune.owl#State>)
+
+# Class: <http://www.sensocomune.org/ontologies/SensoComune.owl#Characterization> (<http://www.sensocomune.org/ontologies/SensoComune.owl#Characterization>)
+
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Characterization> <http://www.sensocomune.org/ontologies/SensoComune.owl#AbstractEntity>)
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Characterization> ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#characterizes> <http://www.sensocomune.org/ontologies/SensoComune.owl#Entity>))
+
+# Class: <http://www.sensocomune.org/ontologies/SensoComune.owl#Collection> (<http://www.sensocomune.org/ontologies/SensoComune.owl#Collection>)
+
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Collection> <http://www.sensocomune.org/ontologies/SensoComune.owl#Entity>)
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Collection> ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#member> <http://www.sensocomune.org/ontologies/SensoComune.owl#Entity>))
+
+# Class: <http://www.sensocomune.org/ontologies/SensoComune.owl#Color> (<http://www.sensocomune.org/ontologies/SensoComune.owl#Color>)
+
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Color> <http://www.sensocomune.org/ontologies/SensoComune.owl#Quale>)
+
+# Class: <http://www.sensocomune.org/ontologies/SensoComune.owl#ConcreteEntity> (<http://www.sensocomune.org/ontologies/SensoComune.owl#ConcreteEntity>)
+
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#ConcreteEntity> <http://www.absoluteiri.edu/RELAPPROXC21>)
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#ConcreteEntity> <http://www.sensocomune.org/ontologies/SensoComune.owl#Entity>)
+
+# Class: <http://www.sensocomune.org/ontologies/SensoComune.owl#Continuant> (<http://www.sensocomune.org/ontologies/SensoComune.owl#Continuant>)
+
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Continuant> <http://www.absoluteiri.edu/RELAPPROXC131>)
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Continuant> <http://www.absoluteiri.edu/RELAPPROXC85>)
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Continuant> <http://www.sensocomune.org/ontologies/SensoComune.owl#ConcreteEntity>)
+
+# Class: <http://www.sensocomune.org/ontologies/SensoComune.owl#Feature> (<http://www.sensocomune.org/ontologies/SensoComune.owl#Feature>)
+
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Feature> <http://www.absoluteiri.edu/RELAPPROXC117>)
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Feature> <http://www.sensocomune.org/ontologies/SensoComune.owl#Quale>)
+
+# Class: <http://www.sensocomune.org/ontologies/SensoComune.owl#Function> (<http://www.sensocomune.org/ontologies/SensoComune.owl#Function>)
+
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Function> <http://www.sensocomune.org/ontologies/SensoComune.owl#Action>)
+
+# Class: <http://www.sensocomune.org/ontologies/SensoComune.owl#Group> (<http://www.sensocomune.org/ontologies/SensoComune.owl#Group>)
+
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Group> <http://www.absoluteiri.edu/RELAPPROXC129>)
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Group> <http://www.sensocomune.org/ontologies/SensoComune.owl#Collection>)
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Group> <http://www.sensocomune.org/ontologies/SensoComune.owl#Continuant>)
+
+# Class: <http://www.sensocomune.org/ontologies/SensoComune.owl#Human> (<http://www.sensocomune.org/ontologies/SensoComune.owl#Human>)
+
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Human> <http://www.sensocomune.org/ontologies/SensoComune.owl#Animate>)
+
+# Class: <http://www.sensocomune.org/ontologies/SensoComune.owl#HumanGroup> (<http://www.sensocomune.org/ontologies/SensoComune.owl#HumanGroup>)
+
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#HumanGroup> <http://www.absoluteiri.edu/RELAPPROXC108>)
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#HumanGroup> <http://www.sensocomune.org/ontologies/SensoComune.owl#Group>)
+
+# Class: <http://www.sensocomune.org/ontologies/SensoComune.owl#InformationObject> (<http://www.sensocomune.org/ontologies/SensoComune.owl#InformationObject>)
+
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#InformationObject> <http://www.sensocomune.org/ontologies/SensoComune.owl#SocialEntity>)
+
+# Class: <http://www.sensocomune.org/ontologies/SensoComune.owl#Location> (<http://www.sensocomune.org/ontologies/SensoComune.owl#Location>)
+
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Location> <http://www.absoluteiri.edu/RELAPPROXC105>)
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Location> <http://www.sensocomune.org/ontologies/SensoComune.owl#PhysicalState>)
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Location> ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#location> <http://www.sensocomune.org/ontologies/SensoComune.owl#SpatialRegion>))
+
+# Class: <http://www.sensocomune.org/ontologies/SensoComune.owl#MentalProcess> (<http://www.sensocomune.org/ontologies/SensoComune.owl#MentalProcess>)
+
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#MentalProcess> <http://www.absoluteiri.edu/RELAPPROXC110>)
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#MentalProcess> <http://www.absoluteiri.edu/RELAPPROXC31>)
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#MentalProcess> <http://www.sensocomune.org/ontologies/SensoComune.owl#Process>)
+
+# Class: <http://www.sensocomune.org/ontologies/SensoComune.owl#MentalState> (<http://www.sensocomune.org/ontologies/SensoComune.owl#MentalState>)
+
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#MentalState> <http://www.absoluteiri.edu/RELAPPROXC13>)
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#MentalState> <http://www.sensocomune.org/ontologies/SensoComune.owl#State>)
+
+# Class: <http://www.sensocomune.org/ontologies/SensoComune.owl#Motion> (<http://www.sensocomune.org/ontologies/SensoComune.owl#Motion>)
+
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Motion> <http://www.sensocomune.org/ontologies/SensoComune.owl#Action>)
+
+# Class: <http://www.sensocomune.org/ontologies/SensoComune.owl#NaturalEntity> (<http://www.sensocomune.org/ontologies/SensoComune.owl#NaturalEntity>)
+
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#NaturalEntity> <http://www.absoluteiri.edu/RELAPPROXC27>)
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#NaturalEntity> <http://www.sensocomune.org/ontologies/SensoComune.owl#Object>)
+
+# Class: <http://www.sensocomune.org/ontologies/SensoComune.owl#NaturalProcess> (<http://www.sensocomune.org/ontologies/SensoComune.owl#NaturalProcess>)
+
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#NaturalProcess> <http://www.absoluteiri.edu/RELAPPROXC65>)
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#NaturalProcess> <http://www.sensocomune.org/ontologies/SensoComune.owl#Process>)
+
+# Class: <http://www.sensocomune.org/ontologies/SensoComune.owl#Number> (<http://www.sensocomune.org/ontologies/SensoComune.owl#Number>)
+
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Number> <http://www.sensocomune.org/ontologies/SensoComune.owl#SymbolicRegion>)
+
+# Class: <http://www.sensocomune.org/ontologies/SensoComune.owl#Object> (<http://www.sensocomune.org/ontologies/SensoComune.owl#Object>)
+
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Object> <http://www.absoluteiri.edu/RELAPPROXC45>)
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Object> <http://www.absoluteiri.edu/RELAPPROXC71>)
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Object> <http://www.sensocomune.org/ontologies/SensoComune.owl#Continuant>)
+
+# Class: <http://www.sensocomune.org/ontologies/SensoComune.owl#Occurrent> (<http://www.sensocomune.org/ontologies/SensoComune.owl#Occurrent>)
+
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Occurrent> <http://www.absoluteiri.edu/RELAPPROXC100>)
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Occurrent> <http://www.absoluteiri.edu/RELAPPROXC103>)
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Occurrent> <http://www.absoluteiri.edu/RELAPPROXC47>)
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Occurrent> <http://www.sensocomune.org/ontologies/SensoComune.owl#ConcreteEntity>)
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Occurrent> ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#involves> <http://www.sensocomune.org/ontologies/SensoComune.owl#Continuant>))
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Occurrent> ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#location> <http://www.sensocomune.org/ontologies/SensoComune.owl#TemporalRegion>))
+
+# Class: <http://www.sensocomune.org/ontologies/SensoComune.owl#Phase> (<http://www.sensocomune.org/ontologies/SensoComune.owl#Phase>)
+
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Phase> <http://www.sensocomune.org/ontologies/SensoComune.owl#Occurrent>)
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Phase> ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#phaseOf> <http://www.sensocomune.org/ontologies/SensoComune.owl#Occurrent>))
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Phase> ObjectHasValue(<http://www.sensocomune.org/ontologies/SensoComune.owl#involvedIn> <newIndividual:number57904299>))
+
+# Class: <http://www.sensocomune.org/ontologies/SensoComune.owl#PhysicalState> (<http://www.sensocomune.org/ontologies/SensoComune.owl#PhysicalState>)
+
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#PhysicalState> <http://www.absoluteiri.edu/RELAPPROXC51>)
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#PhysicalState> <http://www.sensocomune.org/ontologies/SensoComune.owl#State>)
+
+# Class: <http://www.sensocomune.org/ontologies/SensoComune.owl#Process> (<http://www.sensocomune.org/ontologies/SensoComune.owl#Process>)
+
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Process> <http://www.absoluteiri.edu/RELAPPROXC112>)
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Process> <http://www.absoluteiri.edu/RELAPPROXC81>)
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Process> <http://www.sensocomune.org/ontologies/SensoComune.owl#Occurrent>)
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Process> ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#phase> <http://www.sensocomune.org/ontologies/SensoComune.owl#Occurrent>))
+
+# Class: <http://www.sensocomune.org/ontologies/SensoComune.owl#Quale> (<http://www.sensocomune.org/ontologies/SensoComune.owl#Quale>)
+
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Quale> <http://www.absoluteiri.edu/RELAPPROXC45>)
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Quale> <http://www.absoluteiri.edu/RELAPPROXC63>)
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Quale> <http://www.sensocomune.org/ontologies/SensoComune.owl#Continuant>)
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Quale> ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#inherentIn> <http://www.sensocomune.org/ontologies/SensoComune.owl#ConcreteEntity>))
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Quale> ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#location> <http://www.sensocomune.org/ontologies/SensoComune.owl#SymbolicRegion>))
+
+# Class: <http://www.sensocomune.org/ontologies/SensoComune.owl#Quality> (<http://www.sensocomune.org/ontologies/SensoComune.owl#Quality>)
+
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Quality> <http://www.absoluteiri.edu/RELAPPROXC121>)
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Quality> <http://www.sensocomune.org/ontologies/SensoComune.owl#Characterization>)
+
+# Class: <http://www.sensocomune.org/ontologies/SensoComune.owl#Region> (<http://www.sensocomune.org/ontologies/SensoComune.owl#Region>)
+
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Region> <http://www.absoluteiri.edu/RELAPPROXC119>)
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Region> <http://www.sensocomune.org/ontologies/SensoComune.owl#Set>)
+
+# Class: <http://www.sensocomune.org/ontologies/SensoComune.owl#Relation> (<http://www.sensocomune.org/ontologies/SensoComune.owl#Relation>)
+
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Relation> <http://www.absoluteiri.edu/RELAPPROXC125>)
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Relation> <http://www.sensocomune.org/ontologies/SensoComune.owl#Characterization>)
+
+# Class: <http://www.sensocomune.org/ontologies/SensoComune.owl#Set> (<http://www.sensocomune.org/ontologies/SensoComune.owl#Set>)
+
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Set> <http://www.absoluteiri.edu/RELAPPROXC127>)
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Set> <http://www.sensocomune.org/ontologies/SensoComune.owl#AbstractEntity>)
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Set> <http://www.sensocomune.org/ontologies/SensoComune.owl#Collection>)
+
+# Class: <http://www.sensocomune.org/ontologies/SensoComune.owl#SocialEntity> (<http://www.sensocomune.org/ontologies/SensoComune.owl#SocialEntity>)
+
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#SocialEntity> <http://www.sensocomune.org/ontologies/SensoComune.owl#AbstractEntity>)
+
+# Class: <http://www.sensocomune.org/ontologies/SensoComune.owl#SocialGroup> (<http://www.sensocomune.org/ontologies/SensoComune.owl#SocialGroup>)
+
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#SocialGroup> <http://www.sensocomune.org/ontologies/SensoComune.owl#HumanGroup>)
+
+# Class: <http://www.sensocomune.org/ontologies/SensoComune.owl#SocialInstitution> (<http://www.sensocomune.org/ontologies/SensoComune.owl#SocialInstitution>)
+
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#SocialInstitution> <http://www.sensocomune.org/ontologies/SensoComune.owl#SocialEntity>)
+
+# Class: <http://www.sensocomune.org/ontologies/SensoComune.owl#SocialRole> (<http://www.sensocomune.org/ontologies/SensoComune.owl#SocialRole>)
+
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#SocialRole> <http://www.absoluteiri.edu/RELAPPROXC114>)
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#SocialRole> <http://www.sensocomune.org/ontologies/SensoComune.owl#Characterization>)
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#SocialRole> <http://www.sensocomune.org/ontologies/SensoComune.owl#SocialEntity>)
+
+# Class: <http://www.sensocomune.org/ontologies/SensoComune.owl#SpatialRegion> (<http://www.sensocomune.org/ontologies/SensoComune.owl#SpatialRegion>)
+
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#SpatialRegion> <http://www.sensocomune.org/ontologies/SensoComune.owl#Region>)
+
+# Class: <http://www.sensocomune.org/ontologies/SensoComune.owl#SpatialRegionRELAPPROXQ2> (<http://www.sensocomune.org/ontologies/SensoComune.owl#SpatialRegionRELAPPROXQ2>)
+
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#SpatialRegionRELAPPROXQ2> <http://www.sensocomune.org/ontologies/SensoComune.owl#SpatialRegion>)
+
+# Class: <http://www.sensocomune.org/ontologies/SensoComune.owl#State> (<http://www.sensocomune.org/ontologies/SensoComune.owl#State>)
+
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#State> <http://www.absoluteiri.edu/RELAPPROXC25>)
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#State> <http://www.sensocomune.org/ontologies/SensoComune.owl#Occurrent>)
+
+# Class: <http://www.sensocomune.org/ontologies/SensoComune.owl#String> (<http://www.sensocomune.org/ontologies/SensoComune.owl#String>)
+
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#String> <http://www.sensocomune.org/ontologies/SensoComune.owl#SymbolicRegion>)
+
+# Class: <http://www.sensocomune.org/ontologies/SensoComune.owl#Substance> (<http://www.sensocomune.org/ontologies/SensoComune.owl#Substance>)
+
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Substance> <http://www.absoluteiri.edu/RELAPPROXC63>)
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Substance> <http://www.absoluteiri.edu/RELAPPROXC71>)
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#Substance> <http://www.sensocomune.org/ontologies/SensoComune.owl#Continuant>)
+
+# Class: <http://www.sensocomune.org/ontologies/SensoComune.owl#SymbolicRegion> (<http://www.sensocomune.org/ontologies/SensoComune.owl#SymbolicRegion>)
+
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#SymbolicRegion> <http://www.sensocomune.org/ontologies/SensoComune.owl#Region>)
+
+# Class: <http://www.sensocomune.org/ontologies/SensoComune.owl#TemporalQuality> (<http://www.sensocomune.org/ontologies/SensoComune.owl#TemporalQuality>)
+
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#TemporalQuality> <http://www.sensocomune.org/ontologies/SensoComune.owl#Quality>)
+
+# Class: <http://www.sensocomune.org/ontologies/SensoComune.owl#TemporalRegion> (<http://www.sensocomune.org/ontologies/SensoComune.owl#TemporalRegion>)
+
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#TemporalRegion> <http://www.sensocomune.org/ontologies/SensoComune.owl#Region>)
+
+# Class: <http://www.sensocomune.org/ontologies/SensoComune.owl#TemporalRegionRELAPPROXQ2> (<http://www.sensocomune.org/ontologies/SensoComune.owl#TemporalRegionRELAPPROXQ2>)
+
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#TemporalRegionRELAPPROXQ2> <http://www.sensocomune.org/ontologies/SensoComune.owl#TemporalRegion>)
+
+# Class: <http://www.sensocomune.org/ontologies/SensoComune.owl#TheoreticEntity> (<http://www.sensocomune.org/ontologies/SensoComune.owl#TheoreticEntity>)
+
+SubClassOf(<http://www.sensocomune.org/ontologies/SensoComune.owl#TheoreticEntity> <http://www.sensocomune.org/ontologies/SensoComune.owl#SocialEntity>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <newIndividual:number57904299> (<newIndividual:number57904299>)
+
+NegativeDataPropertyAssertion(<newDataProp:-1580666106> <newIndividual:number57904299> "someText2")
+
+
+SubClassOf(ObjectIntersectionOf(<http://www.absoluteiri.edu/RELAPPROXC116> <http://www.sensocomune.org/ontologies/SensoComune.owl#Entity>) <http://www.sensocomune.org/ontologies/SensoComune.owl#Collection>)
+SubClassOf(ObjectIntersectionOf(<http://www.absoluteiri.edu/RELAPPROXC127> <http://www.sensocomune.org/ontologies/SensoComune.owl#AbstractEntity> <http://www.sensocomune.org/ontologies/SensoComune.owl#Collection>) <http://www.sensocomune.org/ontologies/SensoComune.owl#Set>)
+SubClassOf(ObjectIntersectionOf(<http://www.absoluteiri.edu/RELAPPROXC129> <http://www.sensocomune.org/ontologies/SensoComune.owl#Collection> <http://www.sensocomune.org/ontologies/SensoComune.owl#Continuant>) <http://www.sensocomune.org/ontologies/SensoComune.owl#Group>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.absoluteiri.edu/RELAPPROXR31> <http://www.absoluteiri.edu/RELAPPROXC91>) <http://www.absoluteiri.edu/RELAPPROXC113>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.absoluteiri.edu/RELAPPROXR32> <http://www.absoluteiri.edu/RELAPPROXC57>) <http://www.absoluteiri.edu/RELAPPROXC132>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.absoluteiri.edu/RELAPPROXR33> <http://www.absoluteiri.edu/RELAPPROXC87>) <http://www.absoluteiri.edu/RELAPPROXC104>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#abstractPart> owl:Thing) <http://www.sensocomune.org/ontologies/SensoComune.owl#AbstractEntity>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#abstractPartOf> owl:Thing) <http://www.sensocomune.org/ontologies/SensoComune.owl#AbstractEntity>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#agent> <http://www.sensocomune.org/ontologies/SensoComune.owl#Continuant>) <http://www.sensocomune.org/ontologies/SensoComune.owl#Action>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#agent> owl:Thing) <http://www.sensocomune.org/ontologies/SensoComune.owl#Action>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#agentOf> <http://www.sensocomune.org/ontologies/SensoComune.owl#Process>) <http://www.sensocomune.org/ontologies/SensoComune.owl#Agent>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#agentOf> owl:Thing) <http://www.sensocomune.org/ontologies/SensoComune.owl#Continuant>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#characterizedBy> owl:Thing) <http://www.sensocomune.org/ontologies/SensoComune.owl#Entity>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#characterizes> <http://www.absoluteiri.edu/RELAPPROXC71>) <http://www.absoluteiri.edu/RELAPPROXC122>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#characterizes> <http://www.absoluteiri.edu/RELAPPROXC77>) <http://www.absoluteiri.edu/RELAPPROXC115>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#characterizes> <http://www.absoluteiri.edu/RELAPPROXC99>) <http://www.absoluteiri.edu/RELAPPROXC126>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#characterizes> owl:Thing) <http://www.sensocomune.org/ontologies/SensoComune.owl#Characterization>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#classMapping> owl:Thing) <http://www.sensocomune.org/ontologies/SensoComune.owl#Characterization>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#concretePart> owl:Thing) <http://www.sensocomune.org/ontologies/SensoComune.owl#ConcreteEntity>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#concretePartOf> owl:Thing) <http://www.sensocomune.org/ontologies/SensoComune.owl#ConcreteEntity>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#constituent> owl:Thing) <http://www.sensocomune.org/ontologies/SensoComune.owl#Continuant>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#constituentOf> owl:Thing) <http://www.sensocomune.org/ontologies/SensoComune.owl#Continuant>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#dependent> owl:Thing) <http://www.sensocomune.org/ontologies/SensoComune.owl#Entity>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#dependentOn> owl:Thing) <http://www.sensocomune.org/ontologies/SensoComune.owl#Entity>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#entails> owl:Thing) <http://www.sensocomune.org/ontologies/SensoComune.owl#Characterization>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#inherentIn> <http://www.absoluteiri.edu/RELAPPROXC47>) <http://www.absoluteiri.edu/RELAPPROXC118>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#inherentIn> owl:Thing) <http://www.sensocomune.org/ontologies/SensoComune.owl#Quale>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#involvedIn> owl:Thing) <http://www.sensocomune.org/ontologies/SensoComune.owl#Continuant>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#involves> <http://www.absoluteiri.edu/RELAPPROXC17>) <http://www.absoluteiri.edu/RELAPPROXC111>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#involves> owl:Thing) <http://www.sensocomune.org/ontologies/SensoComune.owl#Occurrent>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#location> <http://www.sensocomune.org/ontologies/SensoComune.owl#SpatialRegionRELAPPROXQ2>) <http://www.absoluteiri.edu/RELAPPROXC106>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#location> <http://www.sensocomune.org/ontologies/SensoComune.owl#TemporalRegionRELAPPROXQ2>) <http://www.absoluteiri.edu/RELAPPROXC101>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#location> owl:Thing) <http://www.sensocomune.org/ontologies/SensoComune.owl#ConcreteEntity>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#member> <http://www.absoluteiri.edu/RELAPPROXC21>) <http://www.absoluteiri.edu/RELAPPROXC128>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#member> <http://www.absoluteiri.edu/RELAPPROXC47>) <http://www.absoluteiri.edu/RELAPPROXC130>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#member> <http://www.absoluteiri.edu/RELAPPROXC77>) <http://www.absoluteiri.edu/RELAPPROXC109>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#member> <http://www.absoluteiri.edu/RELAPPROXC9>) <http://www.absoluteiri.edu/RELAPPROXC120>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#member> <http://www.sensocomune.org/ontologies/SensoComune.owl#Entity>) <http://www.absoluteiri.edu/RELAPPROXC116>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#member> owl:Thing) <http://www.sensocomune.org/ontologies/SensoComune.owl#Collection>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#memberOf> owl:Thing) <http://www.sensocomune.org/ontologies/SensoComune.owl#Entity>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#part> owl:Thing) <http://www.sensocomune.org/ontologies/SensoComune.owl#Entity>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#phase> owl:Thing) <http://www.sensocomune.org/ontologies/SensoComune.owl#Occurrent>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#phaseOf> <http://www.sensocomune.org/ontologies/SensoComune.owl#Occurrent>) <http://www.sensocomune.org/ontologies/SensoComune.owl#Phase>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#phaseOf> owl:Thing) <http://www.sensocomune.org/ontologies/SensoComune.owl#Process>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.sensocomune.org/ontologies/SensoComune.owl#uriMapping> <http://www.absoluteiri.edu/RELAPPROXC124>) owl:Nothing)
+SubClassOf(ObjectHasValue(<http://www.sensocomune.org/ontologies/SensoComune.owl#dataMapping> <newIndividual:number57904299>) <http://www.sensocomune.org/ontologies/SensoComune.owl#Feature>)
+SubClassOf(ObjectHasValue(<http://www.sensocomune.org/ontologies/SensoComune.owl#location> <newIndividual:number57904299>) <http://www.sensocomune.org/ontologies/SensoComune.owl#Artifact>)
+SubClassOf(DataSomeValuesFrom(<newDataProp:-1852100598> DataOneOf("someText2")) <http://www.sensocomune.org/ontologies/SensoComune.owl#Entity>)
+
+SubObjectPropertyOf(ObjectPropertyChain(<http://www.sensocomune.org/ontologies/SensoComune.owl#part> <http://www.sensocomune.org/ontologies/SensoComune.owl#part>) <http://www.sensocomune.org/ontologies/SensoComune.owl#part>)
+)

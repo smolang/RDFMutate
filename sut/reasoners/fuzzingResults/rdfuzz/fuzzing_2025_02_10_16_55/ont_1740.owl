@@ -1,0 +1,593 @@
+Prefix(:=<urn:unnamed:ontology#ont290590246020466>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:unnamed:ontology#ont290590246020466>
+
+Declaration(Class(<http://dbpedia.org/ontology/BritishRoyalty>))
+Declaration(Class(<http://dbpedia.org/ontology/Reptile>))
+Declaration(Class(<http://dbpedia.org/ontology/Legislature>))
+Declaration(Class(<http://dbpedia.org/ontology/Software>))
+Declaration(Class(<http://dbpedia.org/ontology/MusicalArtist>))
+Declaration(Class(<http://dbpedia.org/ontology/EthnicGroup>))
+Declaration(Class(<http://dbpedia.org/ontology/Stadium>))
+Declaration(Class(<http://dbpedia.org/ontology/City>))
+Declaration(Class(<http://dbpedia.org/ontology/Colour>))
+Declaration(Class(<http://dbpedia.org/ontology/TelevisionShow>))
+Declaration(Class(<http://dbpedia.org/ontology/MilitaryUnit>))
+Declaration(Class(<http://dbpedia.org/ontology/Bone>))
+Declaration(Class(<http://dbpedia.org/ontology/Protein>))
+Declaration(Class(<http://dbpedia.org/ontology/Ginkgo>))
+Declaration(Class(<http://dbpedia.org/ontology/Muscle>))
+Declaration(Class(<http://dbpedia.org/ontology/Language>))
+Declaration(Class(<http://dbpedia.org/ontology/Bacteria>))
+Declaration(Class(<http://dbpedia.org/ontology/Mountain>))
+Declaration(Class(<http://dbpedia.org/ontology/WorldHeritageSite>))
+Declaration(Class(<http://dbpedia.org/ontology/ProtectedArea>))
+Declaration(Class(<http://dbpedia.org/ontology/HistoricPlace>))
+Declaration(Class(<http://dbpedia.org/ontology/Moss>))
+Declaration(Class(<http://dbpedia.org/ontology/Mammal>))
+Declaration(Class(<http://dbpedia.org/ontology/River>))
+Declaration(Class(<http://dbpedia.org/ontology/Lake>))
+Declaration(Class(<http://dbpedia.org/ontology/Mollusca>))
+Declaration(Class(<http://dbpedia.org/ontology/Amphibian>))
+Declaration(Class(<http://dbpedia.org/ontology/Writer>))
+Declaration(Class(<http://dbpedia.org/ontology/Website>))
+Declaration(Class(<http://dbpedia.org/ontology/Currency>))
+Declaration(Class(<http://dbpedia.org/ontology/Fern>))
+Declaration(Class(<http://dbpedia.org/ontology/Sport>))
+Declaration(Class(<http://dbpedia.org/ontology/Drug>))
+Declaration(Class(<http://dbpedia.org/ontology/Broadcast>))
+Declaration(Class(<http://dbpedia.org/ontology/Disease>))
+Declaration(Class(<http://dbpedia.org/ontology/Arachnid>))
+Declaration(Class(<http://dbpedia.org/ontology/Embryology>))
+Declaration(Class(<http://dbpedia.org/ontology/Fungus>))
+Declaration(Class(<http://dbpedia.org/ontology/University>))
+Declaration(Class(<http://dbpedia.org/ontology/MountainRange>))
+Declaration(Class(<http://dbpedia.org/ontology/Island>))
+Declaration(Class(<http://dbpedia.org/ontology/Planet>))
+Declaration(Class(<http://dbpedia.org/ontology/Band>))
+Declaration(Class(<http://dbpedia.org/ontology/MilitaryConflict>))
+Declaration(Class(<http://dbpedia.org/ontology/Newspaper>))
+Declaration(Class(<http://dbpedia.org/ontology/ComicsCharacter>))
+Declaration(Class(<http://dbpedia.org/ontology/Museum>))
+Declaration(Class(<http://dbpedia.org/ontology/Ship>))
+Declaration(Class(<http://dbpedia.org/ontology/Bird>))
+Declaration(Class(<http://dbpedia.org/ontology/Canal>))
+Declaration(Class(<http://dbpedia.org/ontology/Town>))
+Declaration(Class(<http://dbpedia.org/ontology/Fish>))
+Declaration(Class(<http://dbpedia.org/ontology/Book>))
+Declaration(Class(<http://dbpedia.org/ontology/ChemicalCompound>))
+Declaration(Class(<http://dbpedia.org/ontology/Non-ProfitOrganisation>))
+Declaration(Class(<http://dbpedia.org/ontology/Actor>))
+Declaration(Class(<http://dbpedia.org/ontology/Company>))
+Declaration(Class(<http://dbpedia.org/ontology/Airport>))
+Declaration(Class(<http://dbpedia.org/ontology/FloweringPlant>))
+Declaration(Class(<http://dbpedia.org/ontology/Village>))
+Declaration(Class(<http://dbpedia.org/ontology/Insect>))
+Declaration(Class(<http://dbpedia.org/ontology/BasketballPlayer>))
+Declaration(Class(<http://dbpedia.org/ontology/BasketballLeague>))
+Declaration(Class(<http://dbpedia.org/ontology/ComicsCreator>))
+Declaration(Class(<http://dbpedia.org/ontology/Crustacean>))
+Declaration(Class(<http://dbpedia.org/ontology/Continent>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToUniversity>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToLegislature>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMilitaryConflict>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToContinent>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToColour>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToGinkgo>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToShip>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToEmbryology>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToAmphibian>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Planet>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToChemicalCompound>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToHistoricPlace>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToDrug>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Event>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Protein>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBand>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToComicsCharacter>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToDisease>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMammal>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBird>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Drug>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToFloweringPlant>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Organisation>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Work>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Language>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToAirport>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBasketballLeague>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToCurrency>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Activity>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToRiver>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Website>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToProtein>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBone>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToEthnicGroup>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToTown>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToLanguage>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToComicsCreator>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMoss>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToTelevisionShow>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToActor>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToFern>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToFish>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToPhilosopher>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMountainRange>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Species>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToStadium>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToSport>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Currency>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToIsland>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBacteria>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToSoftware>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToReptile>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMilitaryUnit>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMountain>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBroadcast>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Person>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/AnatomicalStructure>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/MeanOfTransportation>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToFungus>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Disease>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMusicalArtist>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Place>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBritishRoyalty>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToCanal>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/EthnicGroup>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToVillage>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMollusca>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToWriter>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMuscle>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToNon-ProfitOrganisation>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/ChemicalCompound>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBasketballPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToWorldHeritageSite>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToCity>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToNewspaper>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Colour>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToArachnid>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMuseum>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToWebsite>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToLake>))
+Declaration(ObjectProperty(<newObjectProp:643975301>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToInsect>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToPlanet>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBook>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToCompany>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToProtectedArea>))
+Declaration(NamedIndividual(<newIndividual:number653973512>))
+Declaration(NamedIndividual(<newIndividual:number216577367>))
+Declaration(NamedIndividual(<newIndividual:number323649441>))
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToActor> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToActor>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToActor> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToActor> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToActor> <http://dbpedia.org/ontology/Actor>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToAirport> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToAirport>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToAirport> <http://dbpedia.org/ontology/Place>)
+ReflexiveObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToAirport>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToAirport> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToAirport> <http://dbpedia.org/ontology/Airport>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToAmphibian> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToAmphibian>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToAmphibian> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToAmphibian> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToAmphibian> <http://dbpedia.org/ontology/Amphibian>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToArachnid> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToArachnid>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToArachnid> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToArachnid> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToArachnid> <http://dbpedia.org/ontology/Arachnid>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBacteria> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBacteria>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBacteria> <http://dbpedia.org/ontology/Species>)
+TransitiveObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBacteria>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBacteria> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBacteria> <http://dbpedia.org/ontology/Bacteria>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBand> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBand>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBand> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBand> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBand> <http://dbpedia.org/ontology/Band>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBasketballLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBasketballLeague>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBasketballLeague> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBasketballLeague> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBasketballLeague> <http://dbpedia.org/ontology/BasketballLeague>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBasketballLeague> <http://dbpedia.org/ontology/Ginkgo>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBasketballPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBasketballPlayer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBasketballPlayer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBasketballPlayer> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBasketballPlayer> <http://dbpedia.org/ontology/BasketballPlayer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBird> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBird>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBird> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBird> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBird> <http://dbpedia.org/ontology/Bird>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBone> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBone>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBone> <http://dbpedia.org/ontology/AnatomicalStructure>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBone> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBone> <http://dbpedia.org/ontology/Bone>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBook> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBook>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBook> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBook> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBook> <http://dbpedia.org/ontology/Book>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBritishRoyalty> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBritishRoyalty>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBritishRoyalty> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBritishRoyalty> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBritishRoyalty> <http://dbpedia.org/ontology/BritishRoyalty>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBroadcast> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBroadcast>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBroadcast> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBroadcast> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToBroadcast> <http://dbpedia.org/ontology/Broadcast>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToCanal> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToCanal>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToCanal> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToCanal> <http://dbpedia.org/ontology/Arachnid>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToCanal> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToCanal> <http://dbpedia.org/ontology/Canal>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToChemicalCompound> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToChemicalCompound>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToChemicalCompound> <http://dbpedia.org/ontology/ChemicalCompound>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToChemicalCompound> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToChemicalCompound> <http://dbpedia.org/ontology/ChemicalCompound>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToCity> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToCity>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToCity> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToCity> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToCity> <http://dbpedia.org/ontology/City>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToColour> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToColour>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToColour> <http://dbpedia.org/ontology/Colour>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToColour> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToColour> <http://dbpedia.org/ontology/Colour>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToComicsCharacter> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToComicsCharacter>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToComicsCharacter> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToComicsCharacter> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToComicsCharacter> <http://dbpedia.org/ontology/ComicsCharacter>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToComicsCreator> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToComicsCreator>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToComicsCreator> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToComicsCreator> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToComicsCreator> <http://dbpedia.org/ontology/ComicsCreator>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToCompany> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToCompany>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToCompany> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToCompany> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToCompany> <http://dbpedia.org/ontology/Company>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToContinent> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToContinent>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToContinent> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToContinent> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToContinent> <http://dbpedia.org/ontology/Continent>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToCurrency> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToCurrency>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToCurrency> <http://dbpedia.org/ontology/Currency>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToCurrency> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToCurrency> <http://dbpedia.org/ontology/Currency>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToDisease> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToDisease>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToDisease> <http://dbpedia.org/ontology/Disease>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToDisease> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToDisease> <http://dbpedia.org/ontology/Disease>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToDrug> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToDrug>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToDrug> <http://dbpedia.org/ontology/Drug>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToDrug> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToDrug> <http://dbpedia.org/ontology/Drug>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToEmbryology> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToEmbryology>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToEmbryology> <http://dbpedia.org/ontology/AnatomicalStructure>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToEmbryology> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToEmbryology> <http://dbpedia.org/ontology/Embryology>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToEthnicGroup> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToEthnicGroup>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToEthnicGroup> <http://dbpedia.org/ontology/EthnicGroup>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToEthnicGroup> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToEthnicGroup> <http://dbpedia.org/ontology/EthnicGroup>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToFern> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToFern>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToFern> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToFern> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToFern> <http://dbpedia.org/ontology/Fern>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToFish> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToFish>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToFish> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToFish> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToFish> <http://dbpedia.org/ontology/Fish>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToFloweringPlant> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToFloweringPlant>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToFloweringPlant> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToFloweringPlant> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToFloweringPlant> <http://dbpedia.org/ontology/FloweringPlant>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToFungus> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToFungus>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToFungus> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToFungus> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToFungus> <http://dbpedia.org/ontology/Fungus>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToGinkgo> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToGinkgo>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToGinkgo> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToGinkgo> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToGinkgo> <http://dbpedia.org/ontology/Ginkgo>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToHistoricPlace> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToHistoricPlace>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToHistoricPlace> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToHistoricPlace> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToHistoricPlace> <http://dbpedia.org/ontology/HistoricPlace>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToInsect> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToInsect>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToInsect> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToInsect> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToInsect> <http://dbpedia.org/ontology/Insect>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToIsland> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToIsland>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToIsland> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToIsland> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToIsland> <http://dbpedia.org/ontology/Island>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToLake> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToLake>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToLake> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToLake> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToLake> <http://dbpedia.org/ontology/Lake>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToLanguage> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToLanguage>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToLanguage> <http://dbpedia.org/ontology/Language>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToLanguage> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToLanguage> <http://dbpedia.org/ontology/Language>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToLegislature> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToLegislature>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToLegislature> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToLegislature> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToLegislature> <http://dbpedia.org/ontology/Legislature>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMammal> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMammal>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMammal> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMammal> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMammal> <http://dbpedia.org/ontology/Mammal>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMilitaryConflict> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMilitaryConflict>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMilitaryConflict> <http://dbpedia.org/ontology/Event>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMilitaryConflict> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMilitaryConflict> <http://dbpedia.org/ontology/MilitaryConflict>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMilitaryUnit> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMilitaryUnit>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMilitaryUnit> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMilitaryUnit> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMilitaryUnit> <http://dbpedia.org/ontology/MilitaryUnit>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMollusca> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMollusca>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMollusca> <http://dbpedia.org/ontology/Species>)
+TransitiveObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMollusca>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMollusca> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMollusca> <http://dbpedia.org/ontology/Mollusca>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMoss> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMoss>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMoss> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMoss> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMoss> <http://dbpedia.org/ontology/Moss>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMountain> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMountain>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMountain> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMountain> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMountain> <http://dbpedia.org/ontology/Mountain>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMountainRange> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMountainRange>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMountainRange> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMountainRange> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMountainRange> <http://dbpedia.org/ontology/MountainRange>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMuscle> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMuscle>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMuscle> <http://dbpedia.org/ontology/AnatomicalStructure>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMuscle> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMuscle> <http://dbpedia.org/ontology/Muscle>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMuseum> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMuseum>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMuseum> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMuseum> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMuseum> <http://dbpedia.org/ontology/Museum>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMusicalArtist> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMusicalArtist>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMusicalArtist> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMusicalArtist> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToMusicalArtist> <http://dbpedia.org/ontology/MusicalArtist>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToNewspaper> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToNewspaper>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToNewspaper> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToNewspaper> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToNewspaper> <http://dbpedia.org/ontology/Newspaper>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToNon-ProfitOrganisation> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToNon-ProfitOrganisation>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToNon-ProfitOrganisation> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToNon-ProfitOrganisation> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToNon-ProfitOrganisation> <http://dbpedia.org/ontology/Non-ProfitOrganisation>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToPhilosopher> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToPhilosopher>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToPhilosopher> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToPhilosopher> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToPhilosopher> owl:Thing)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToPlanet> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToPlanet>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToPlanet> <http://dbpedia.org/ontology/Planet>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToPlanet> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToPlanet> <http://dbpedia.org/ontology/Planet>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToProtectedArea> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToProtectedArea>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToProtectedArea> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToProtectedArea> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToProtectedArea> <http://dbpedia.org/ontology/ProtectedArea>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToProtein> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToProtein>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToProtein> <http://dbpedia.org/ontology/Protein>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToProtein> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToProtein> <http://dbpedia.org/ontology/Protein>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToReptile> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToReptile>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToReptile> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToReptile> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToReptile> <http://dbpedia.org/ontology/Reptile>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToRiver> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToRiver>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToRiver> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToRiver> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToRiver> <http://dbpedia.org/ontology/River>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToShip> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToShip>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToShip> <http://dbpedia.org/ontology/MeanOfTransportation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToShip> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToShip> <http://dbpedia.org/ontology/Ship>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToSoftware> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToSoftware>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToSoftware> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToSoftware> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToSoftware> <http://dbpedia.org/ontology/Software>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToSport> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToSport>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToSport> <http://dbpedia.org/ontology/Activity>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToSport> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToSport> <http://dbpedia.org/ontology/Sport>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToStadium> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToStadium>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToStadium> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToStadium> <http://dbpedia.org/ontology/Stadium>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToTelevisionShow> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToTelevisionShow>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToTelevisionShow> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToTelevisionShow> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToTelevisionShow> <http://dbpedia.org/ontology/TelevisionShow>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToTown> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToTown>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToTown> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToTown> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToTown> <http://dbpedia.org/ontology/Town>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToUniversity> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToUniversity>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToUniversity> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToUniversity> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToUniversity> <http://dbpedia.org/ontology/University>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToVillage> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToVillage>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToVillage> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToVillage> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToVillage> <http://dbpedia.org/ontology/Village>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToWebsite> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToWebsite>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToWebsite> <http://dbpedia.org/ontology/Website>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToWebsite> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToWebsite> <http://dbpedia.org/ontology/Website>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToWorldHeritageSite> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToWorldHeritageSite>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToWorldHeritageSite> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToWorldHeritageSite> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToWorldHeritageSite> <http://dbpedia.org/ontology/WorldHeritageSite>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToWriter> (<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToWriter>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToWriter> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToWriter> <http://dbpedia.org/ontology/Crustacean>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Crustacean.owl#linksToWriter> <http://dbpedia.org/ontology/Writer>)
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://dbpedia.org/ontology/City> (<http://dbpedia.org/ontology/City>)
+
+DisjointClasses(<http://dbpedia.org/ontology/City> <http://dbpedia.org/ontology/Reptile>)
+
+# Class: <http://dbpedia.org/ontology/Company> (<http://dbpedia.org/ontology/Company>)
+
+EquivalentClasses(<http://dbpedia.org/ontology/Company> <http://dbpedia.org/ontology/Museum>)
+
+# Class: <http://dbpedia.org/ontology/Mountain> (<http://dbpedia.org/ontology/Mountain>)
+
+DisjointClasses(<http://dbpedia.org/ontology/Mountain> ObjectIntersectionOf(<http://dbpedia.org/ontology/ChemicalCompound> <http://dbpedia.org/ontology/Language> <http://dbpedia.org/ontology/Muscle> <http://dbpedia.org/ontology/Sport>))
+
+# Class: <http://dbpedia.org/ontology/Writer> (<http://dbpedia.org/ontology/Writer>)
+
+SubClassOf(<http://dbpedia.org/ontology/Writer> ObjectIntersectionOf(<http://dbpedia.org/ontology/ChemicalCompound> <http://dbpedia.org/ontology/Language> <http://dbpedia.org/ontology/Muscle> <http://dbpedia.org/ontology/Sport>))
+
+
+
+)

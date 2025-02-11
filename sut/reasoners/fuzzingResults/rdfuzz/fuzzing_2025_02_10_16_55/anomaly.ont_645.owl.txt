@@ -1,0 +1,9 @@
+Found anomalies while testing file ../testOnt.owl
+
+Anomaly 1: Class hierarchy differentiation between HERMIT and ELK:
+	additional axioms HERMIT: [EquivalentClasses(<http://purl.org/olia/olia.owl#Personal> <http://purl.org/olia/olia.owl#PoliteSecondPersonPronoun> <http://purl.org/olia/olia.owl#Possessive> owl:Nothing), SubClassOf(<http://purl.org/olia/olia.owl#PoliteSecondPersonPronoun> owl:Nothing)]
+	additional axioms ELK: [EquivalentClasses(<http://purl.org/olia/olia.owl#Personal> <http://purl.org/olia/olia.owl#Possessive> owl:Nothing), SubClassOf(<http://purl.org/olia/olia.owl#PoliteSecondPersonPronoun> <http://purl.org/olia/olia.owl#SecondPersonPronoun>)]
+
+Anomaly 2: Class hierarchy differentiation between ELK and OPENLLET:
+	additional axioms ELK: [EquivalentClasses(<http://purl.org/olia/olia.owl#Personal> <http://purl.org/olia/olia.owl#Possessive> owl:Nothing), SubClassOf(<http://purl.org/olia/olia.owl#PoliteSecondPersonPronoun> <http://purl.org/olia/olia.owl#SecondPersonPronoun>)]
+	additional axioms OPENLLET: [EquivalentClasses(<http://purl.org/olia/olia.owl#Personal> <http://purl.org/olia/olia.owl#PoliteSecondPersonPronoun> <http://purl.org/olia/olia.owl#Possessive> owl:Nothing), SubClassOf(<http://purl.org/olia/olia.owl#PoliteSecondPersonPronoun> owl:Nothing)]

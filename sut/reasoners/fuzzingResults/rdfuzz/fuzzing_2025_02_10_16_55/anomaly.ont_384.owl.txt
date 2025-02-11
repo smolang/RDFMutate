@@ -1,0 +1,9 @@
+Found anomalies while testing file ../testOnt.owl
+
+Anomaly 1: Class hierarchy differentiation between HERMIT and ELK:
+	additional axioms HERMIT: [EquivalentClasses(<http://ontology.dumontierlab.com/ArgonAtom> owl:Nothing), SubClassOf(<http://ontology.dumontierlab.com/ArgonAtom> owl:Nothing)]
+	additional axioms ELK: [SubClassOf(<http://ontology.dumontierlab.com/ArgonAtom> <http://ontology.dumontierlab.com/Atom>), SubClassOf(<http://ontology.dumontierlab.com/ArgonAtom> owl:Thing)]
+
+Anomaly 2: Class hierarchy differentiation between ELK and OPENLLET:
+	additional axioms ELK: [SubClassOf(<http://ontology.dumontierlab.com/ArgonAtom> <http://ontology.dumontierlab.com/Atom>), SubClassOf(<http://ontology.dumontierlab.com/ArgonAtom> owl:Thing)]
+	additional axioms OPENLLET: [EquivalentClasses(<http://ontology.dumontierlab.com/ArgonAtom> owl:Nothing), SubClassOf(<http://ontology.dumontierlab.com/ArgonAtom> owl:Nothing)]

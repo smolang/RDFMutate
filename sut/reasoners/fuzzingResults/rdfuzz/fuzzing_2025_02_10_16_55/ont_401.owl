@@ -1,0 +1,529 @@
+Prefix(:=<urn:unnamed:ontology#ont265633115155539>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:unnamed:ontology#ont265633115155539>
+
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Abstract>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC109>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Place>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Organizator>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Deadline>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC110>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Platinum_Supporter>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC115>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC116>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Main_office>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC102>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC103>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Conference>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Person>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Award>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Best_Student_Paper_Supporter>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC45>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Registration_SIGKDD_Member>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Silver_Supporter>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Program_Committee>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#General_Chair>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Deadline_Author_notification>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Author_of_paper>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Webmaster>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC106>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC95>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC107>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC9>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Listener>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Registration_Non-Member>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Fee>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Organizing_Committee>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Exhibitor>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Speaker>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Gold_Supporter>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Best_Research_Paper_Award>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC3>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC114>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Registration_fee>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC113>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Hotel>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Best_Student_Paper_Award>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC100>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC101>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Bronze_Supporter>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#ACM_SIGKDD>))
+Declaration(Class(<newOwlClass:-179992680>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Best_Applications_Paper_Award>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC75>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Registration_Student>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Review>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Best_Paper_Awards_Committee>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC117>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC118>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Organizing_Committee_member>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC105>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC104>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC37>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Deadline_Paper_Submission>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Author>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Invited_Speaker>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC119>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Document>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Paper>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Sponzor>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Author_of_paper_student>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Registration_SIGMOD_Member>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Program_Committee_member>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC25>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Program_Chair>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC121>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC120>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Sponzor_fee>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Deadline_Abstract_Submission>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Conference_hall>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC112>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Committee>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC111>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR35>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR36>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/unnamed.owl#submit>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/unnamed.owl#City_of_conference>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/unnamed.owl#design>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/unnamed.owl#can_stay_in>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR28>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR29>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/unnamed.owl#Name_of_conference>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/unnamed.owl#pay>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/unnamed.owl#designed_by>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/unnamed.owl#hold>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/unnamed.owl#payed_by>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR30>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/unnamed.owl#submit_until>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/unnamed.owl#presentation>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/unnamed.owl#Date>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/unnamed.owl#Name_of_sponsor>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/unnamed.owl#search>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/unnamed.owl#E-mail>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR33>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR34>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR39>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/unnamed.owl#notification_until>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/unnamed.owl#presentationed_by>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/unnamed.owl#Start_of_conference>))
+Declaration(ObjectProperty(<newObjectProp:1350900458>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/unnamed.owl#holded_by>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR40>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR41>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/unnamed.owl#Nation>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/unnamed.owl#searched_by>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/unnamed.owl#Name>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/unnamed.owl#award>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/unnamed.owl#Currency>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/unnamed.owl#Price>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/unnamed.owl#awarded_by>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR32>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR31>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/unnamed.owl#End_of_conference>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR38>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR37>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/unnamed.owl#obtain>))
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR29> (<http://www.absoluteiri.edu/RELAPPROXR29>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR29> <http://www.owl-ontologies.com/unnamed.owl#payed_by>)
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR31> (<http://www.absoluteiri.edu/RELAPPROXR31>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR31> <http://www.owl-ontologies.com/unnamed.owl#search>)
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR32> (<http://www.absoluteiri.edu/RELAPPROXR32>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR32> <http://www.owl-ontologies.com/unnamed.owl#searched_by>)
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR33> (<http://www.absoluteiri.edu/RELAPPROXR33>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR33> <http://www.owl-ontologies.com/unnamed.owl#presentationed_by>)
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR34> (<http://www.absoluteiri.edu/RELAPPROXR34>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR34> <http://www.owl-ontologies.com/unnamed.owl#designed_by>)
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR35> (<http://www.absoluteiri.edu/RELAPPROXR35>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR35> <http://www.owl-ontologies.com/unnamed.owl#design>)
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR36> (<http://www.absoluteiri.edu/RELAPPROXR36>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR36> <http://www.owl-ontologies.com/unnamed.owl#award>)
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR37> (<http://www.absoluteiri.edu/RELAPPROXR37>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR37> <http://www.owl-ontologies.com/unnamed.owl#awarded_by>)
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR38> (<http://www.absoluteiri.edu/RELAPPROXR38>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR38> <http://www.owl-ontologies.com/unnamed.owl#presentation>)
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR39> (<http://www.absoluteiri.edu/RELAPPROXR39>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR39> <http://www.owl-ontologies.com/unnamed.owl#hold>)
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR40> (<http://www.absoluteiri.edu/RELAPPROXR40>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR40> <http://www.owl-ontologies.com/unnamed.owl#holded_by>)
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR41> (<http://www.absoluteiri.edu/RELAPPROXR41>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR41> <http://www.owl-ontologies.com/unnamed.owl#pay>)
+
+# Object Property: <http://www.owl-ontologies.com/unnamed.owl#award> (<http://www.owl-ontologies.com/unnamed.owl#award>)
+
+SubObjectPropertyOf(<http://www.owl-ontologies.com/unnamed.owl#award> <http://www.absoluteiri.edu/RELAPPROXR36>)
+
+# Object Property: <http://www.owl-ontologies.com/unnamed.owl#awarded_by> (<http://www.owl-ontologies.com/unnamed.owl#awarded_by>)
+
+SubObjectPropertyOf(<http://www.owl-ontologies.com/unnamed.owl#awarded_by> <http://www.absoluteiri.edu/RELAPPROXR37>)
+
+# Object Property: <http://www.owl-ontologies.com/unnamed.owl#design> (<http://www.owl-ontologies.com/unnamed.owl#design>)
+
+SubObjectPropertyOf(<http://www.owl-ontologies.com/unnamed.owl#design> <http://www.absoluteiri.edu/RELAPPROXR35>)
+
+# Object Property: <http://www.owl-ontologies.com/unnamed.owl#designed_by> (<http://www.owl-ontologies.com/unnamed.owl#designed_by>)
+
+SubObjectPropertyOf(<http://www.owl-ontologies.com/unnamed.owl#designed_by> <http://www.absoluteiri.edu/RELAPPROXR34>)
+
+# Object Property: <http://www.owl-ontologies.com/unnamed.owl#hold> (<http://www.owl-ontologies.com/unnamed.owl#hold>)
+
+SubObjectPropertyOf(<http://www.owl-ontologies.com/unnamed.owl#hold> <http://www.absoluteiri.edu/RELAPPROXR39>)
+
+# Object Property: <http://www.owl-ontologies.com/unnamed.owl#holded_by> (<http://www.owl-ontologies.com/unnamed.owl#holded_by>)
+
+SubObjectPropertyOf(<http://www.owl-ontologies.com/unnamed.owl#holded_by> <http://www.absoluteiri.edu/RELAPPROXR40>)
+
+# Object Property: <http://www.owl-ontologies.com/unnamed.owl#pay> (<http://www.owl-ontologies.com/unnamed.owl#pay>)
+
+SubObjectPropertyOf(<http://www.owl-ontologies.com/unnamed.owl#pay> <http://www.absoluteiri.edu/RELAPPROXR41>)
+
+# Object Property: <http://www.owl-ontologies.com/unnamed.owl#payed_by> (<http://www.owl-ontologies.com/unnamed.owl#payed_by>)
+
+SubObjectPropertyOf(<http://www.owl-ontologies.com/unnamed.owl#payed_by> <http://www.absoluteiri.edu/RELAPPROXR29>)
+
+# Object Property: <http://www.owl-ontologies.com/unnamed.owl#presentation> (<http://www.owl-ontologies.com/unnamed.owl#presentation>)
+
+SubObjectPropertyOf(<http://www.owl-ontologies.com/unnamed.owl#presentation> <http://www.absoluteiri.edu/RELAPPROXR38>)
+
+# Object Property: <http://www.owl-ontologies.com/unnamed.owl#presentationed_by> (<http://www.owl-ontologies.com/unnamed.owl#presentationed_by>)
+
+SubObjectPropertyOf(<http://www.owl-ontologies.com/unnamed.owl#presentationed_by> <http://www.absoluteiri.edu/RELAPPROXR33>)
+ObjectPropertyDomain(<http://www.owl-ontologies.com/unnamed.owl#presentationed_by> <http://www.absoluteiri.edu/RELAPPROXC115>)
+
+# Object Property: <http://www.owl-ontologies.com/unnamed.owl#search> (<http://www.owl-ontologies.com/unnamed.owl#search>)
+
+SubObjectPropertyOf(<http://www.owl-ontologies.com/unnamed.owl#search> <http://www.absoluteiri.edu/RELAPPROXR31>)
+
+# Object Property: <http://www.owl-ontologies.com/unnamed.owl#searched_by> (<http://www.owl-ontologies.com/unnamed.owl#searched_by>)
+
+SubObjectPropertyOf(<http://www.owl-ontologies.com/unnamed.owl#searched_by> <http://www.absoluteiri.edu/RELAPPROXR32>)
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC100> (<http://www.absoluteiri.edu/RELAPPROXC100>)
+
+EquivalentClasses(<http://www.absoluteiri.edu/RELAPPROXC100> <http://www.absoluteiri.edu/RELAPPROXC95>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC100> <http://www.absoluteiri.edu/RELAPPROXC117>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC100> <http://www.absoluteiri.edu/RELAPPROXC121>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC103> (<http://www.absoluteiri.edu/RELAPPROXC103>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC103> ObjectSomeValuesFrom(<http://www.absoluteiri.edu/RELAPPROXR28> <http://www.absoluteiri.edu/RELAPPROXC3>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC105> (<http://www.absoluteiri.edu/RELAPPROXC105>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC105> ObjectSomeValuesFrom(<http://www.absoluteiri.edu/RELAPPROXR29> <http://www.absoluteiri.edu/RELAPPROXC9>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC107> (<http://www.absoluteiri.edu/RELAPPROXC107>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC107> ObjectSomeValuesFrom(<http://www.absoluteiri.edu/RELAPPROXR30> <http://www.absoluteiri.edu/RELAPPROXC75>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC111> (<http://www.absoluteiri.edu/RELAPPROXC111>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC111> ObjectSomeValuesFrom(<http://www.absoluteiri.edu/RELAPPROXR33> <http://www.absoluteiri.edu/RELAPPROXC95>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC113> (<http://www.absoluteiri.edu/RELAPPROXC113>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC113> ObjectSomeValuesFrom(<http://www.absoluteiri.edu/RELAPPROXR30> <http://www.absoluteiri.edu/RELAPPROXC45>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC115> (<http://www.absoluteiri.edu/RELAPPROXC115>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC115> ObjectSomeValuesFrom(<http://www.absoluteiri.edu/RELAPPROXR29> <http://www.absoluteiri.edu/RELAPPROXC37>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC116> (<http://www.absoluteiri.edu/RELAPPROXC116>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC116> <http://www.absoluteiri.edu/RELAPPROXC101>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC119> (<http://www.absoluteiri.edu/RELAPPROXC119>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC119> ObjectSomeValuesFrom(<http://www.absoluteiri.edu/RELAPPROXR36> <http://www.absoluteiri.edu/RELAPPROXC25>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC120> (<http://www.absoluteiri.edu/RELAPPROXC120>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC120> <http://www.absoluteiri.edu/RELAPPROXC101>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC95> (<http://www.absoluteiri.edu/RELAPPROXC95>)
+
+EquivalentClasses(<http://www.absoluteiri.edu/RELAPPROXC95> <http://www.owl-ontologies.com/unnamed.owl#Conference_hall>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#ACM_SIGKDD> (<http://www.owl-ontologies.com/unnamed.owl#ACM_SIGKDD>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#ACM_SIGKDD> ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#design> <http://www.owl-ontologies.com/unnamed.owl#Deadline>))
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#ACM_SIGKDD> ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#hold> <http://www.owl-ontologies.com/unnamed.owl#Conference>))
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#ACM_SIGKDD> ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#search> <http://www.owl-ontologies.com/unnamed.owl#Sponzor>))
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Abstract> (<http://www.owl-ontologies.com/unnamed.owl#Abstract>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Abstract> <http://www.owl-ontologies.com/unnamed.owl#Document>)
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Abstract> ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#submit_until> <http://www.owl-ontologies.com/unnamed.owl#Deadline_Abstract_Submission>))
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Author> (<http://www.owl-ontologies.com/unnamed.owl#Author>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Author> <http://www.owl-ontologies.com/unnamed.owl#Speaker>)
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Author> ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#notification_until> <http://www.owl-ontologies.com/unnamed.owl#Deadline_Author_notification>))
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Author> ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#submit> <http://www.owl-ontologies.com/unnamed.owl#Paper>))
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Author_of_paper> (<http://www.owl-ontologies.com/unnamed.owl#Author_of_paper>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Author_of_paper> <http://www.owl-ontologies.com/unnamed.owl#Author>)
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Author_of_paper> ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#award> <http://www.owl-ontologies.com/unnamed.owl#Best_Applications_Paper_Award>))
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Author_of_paper> ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#award> <http://www.owl-ontologies.com/unnamed.owl#Best_Research_Paper_Award>))
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Author_of_paper_student> (<http://www.owl-ontologies.com/unnamed.owl#Author_of_paper_student>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Author_of_paper_student> <http://www.owl-ontologies.com/unnamed.owl#Author>)
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Author_of_paper_student> ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#award> <http://www.owl-ontologies.com/unnamed.owl#Best_Student_Paper_Award>))
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Award> (<http://www.owl-ontologies.com/unnamed.owl#Award>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Award> ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#awarded_by> <http://www.owl-ontologies.com/unnamed.owl#Organizator>))
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Best_Applications_Paper_Award> (<http://www.owl-ontologies.com/unnamed.owl#Best_Applications_Paper_Award>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Best_Applications_Paper_Award> <http://www.owl-ontologies.com/unnamed.owl#Award>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Best_Paper_Awards_Committee> (<http://www.owl-ontologies.com/unnamed.owl#Best_Paper_Awards_Committee>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Best_Paper_Awards_Committee> <http://www.owl-ontologies.com/unnamed.owl#Committee>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Best_Research_Paper_Award> (<http://www.owl-ontologies.com/unnamed.owl#Best_Research_Paper_Award>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Best_Research_Paper_Award> <http://www.owl-ontologies.com/unnamed.owl#Award>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Best_Student_Paper_Award> (<http://www.owl-ontologies.com/unnamed.owl#Best_Student_Paper_Award>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Best_Student_Paper_Award> <http://www.owl-ontologies.com/unnamed.owl#Award>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Best_Student_Paper_Supporter> (<http://www.owl-ontologies.com/unnamed.owl#Best_Student_Paper_Supporter>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Best_Student_Paper_Supporter> <http://www.owl-ontologies.com/unnamed.owl#Sponzor>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Bronze_Supporter> (<http://www.owl-ontologies.com/unnamed.owl#Bronze_Supporter>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Bronze_Supporter> <http://www.owl-ontologies.com/unnamed.owl#Sponzor>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Conference_hall> (<http://www.owl-ontologies.com/unnamed.owl#Conference_hall>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Conference_hall> <http://www.owl-ontologies.com/unnamed.owl#Place>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Deadline_Abstract_Submission> (<http://www.owl-ontologies.com/unnamed.owl#Deadline_Abstract_Submission>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Deadline_Abstract_Submission> <http://www.absoluteiri.edu/RELAPPROXC106>)
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Deadline_Abstract_Submission> <http://www.absoluteiri.edu/RELAPPROXC115>)
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Deadline_Abstract_Submission> <http://www.owl-ontologies.com/unnamed.owl#Deadline>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Deadline_Author_notification> (<http://www.owl-ontologies.com/unnamed.owl#Deadline_Author_notification>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Deadline_Author_notification> <http://www.owl-ontologies.com/unnamed.owl#Deadline>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Deadline_Paper_Submission> (<http://www.owl-ontologies.com/unnamed.owl#Deadline_Paper_Submission>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Deadline_Paper_Submission> <http://www.absoluteiri.edu/RELAPPROXC112>)
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Deadline_Paper_Submission> <http://www.owl-ontologies.com/unnamed.owl#Deadline>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Document> (<http://www.owl-ontologies.com/unnamed.owl#Document>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Document> <http://www.absoluteiri.edu/RELAPPROXC110>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Exhibitor> (<http://www.owl-ontologies.com/unnamed.owl#Exhibitor>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Exhibitor> <http://www.owl-ontologies.com/unnamed.owl#Sponzor>)
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Exhibitor> ObjectHasSelf(<http://www.owl-ontologies.com/unnamed.owl#notification_until>))
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#General_Chair> (<http://www.owl-ontologies.com/unnamed.owl#General_Chair>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#General_Chair> <http://www.owl-ontologies.com/unnamed.owl#Organizator>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Gold_Supporter> (<http://www.owl-ontologies.com/unnamed.owl#Gold_Supporter>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Gold_Supporter> <http://www.owl-ontologies.com/unnamed.owl#Sponzor>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Hotel> (<http://www.owl-ontologies.com/unnamed.owl#Hotel>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Hotel> <http://www.owl-ontologies.com/unnamed.owl#Place>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Invited_Speaker> (<http://www.owl-ontologies.com/unnamed.owl#Invited_Speaker>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Invited_Speaker> <http://www.owl-ontologies.com/unnamed.owl#Speaker>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Listener> (<http://www.owl-ontologies.com/unnamed.owl#Listener>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Listener> <http://www.owl-ontologies.com/unnamed.owl#Person>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Main_office> (<http://www.owl-ontologies.com/unnamed.owl#Main_office>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Main_office> <http://www.owl-ontologies.com/unnamed.owl#Place>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Organizator> (<http://www.owl-ontologies.com/unnamed.owl#Organizator>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Organizator> <http://www.absoluteiri.edu/RELAPPROXC118>)
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Organizator> <http://www.owl-ontologies.com/unnamed.owl#Person>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Organizing_Committee> (<http://www.owl-ontologies.com/unnamed.owl#Organizing_Committee>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Organizing_Committee> <http://www.owl-ontologies.com/unnamed.owl#Committee>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Organizing_Committee_member> (<http://www.owl-ontologies.com/unnamed.owl#Organizing_Committee_member>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Organizing_Committee_member> <http://www.owl-ontologies.com/unnamed.owl#Organizator>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Paper> (<http://www.owl-ontologies.com/unnamed.owl#Paper>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Paper> <http://www.absoluteiri.edu/RELAPPROXC102>)
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Paper> <http://www.owl-ontologies.com/unnamed.owl#Document>)
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Paper> ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#submit_until> <http://www.owl-ontologies.com/unnamed.owl#Deadline_Paper_Submission>))
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Person> (<http://www.owl-ontologies.com/unnamed.owl#Person>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Person> ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#can_stay_in> <http://www.owl-ontologies.com/unnamed.owl#Hotel>))
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Person> ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#pay> <http://www.owl-ontologies.com/unnamed.owl#Registration_fee>))
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Platinum_Supporter> (<http://www.owl-ontologies.com/unnamed.owl#Platinum_Supporter>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Platinum_Supporter> <http://www.owl-ontologies.com/unnamed.owl#Sponzor>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Program_Chair> (<http://www.owl-ontologies.com/unnamed.owl#Program_Chair>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Program_Chair> <http://www.owl-ontologies.com/unnamed.owl#Organizator>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Program_Committee> (<http://www.owl-ontologies.com/unnamed.owl#Program_Committee>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Program_Committee> <http://www.owl-ontologies.com/unnamed.owl#Committee>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Program_Committee_member> (<http://www.owl-ontologies.com/unnamed.owl#Program_Committee_member>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Program_Committee_member> <http://www.owl-ontologies.com/unnamed.owl#Organizator>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Registration_Non-Member> (<http://www.owl-ontologies.com/unnamed.owl#Registration_Non-Member>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Registration_Non-Member> <http://www.owl-ontologies.com/unnamed.owl#Registration_fee>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Registration_SIGKDD_Member> (<http://www.owl-ontologies.com/unnamed.owl#Registration_SIGKDD_Member>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Registration_SIGKDD_Member> <http://www.owl-ontologies.com/unnamed.owl#Registration_fee>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Registration_SIGMOD_Member> (<http://www.owl-ontologies.com/unnamed.owl#Registration_SIGMOD_Member>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Registration_SIGMOD_Member> <http://www.owl-ontologies.com/unnamed.owl#Registration_fee>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Registration_fee> (<http://www.owl-ontologies.com/unnamed.owl#Registration_fee>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Registration_fee> <http://www.absoluteiri.edu/RELAPPROXC104>)
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Registration_fee> <http://www.owl-ontologies.com/unnamed.owl#Fee>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Review> (<http://www.owl-ontologies.com/unnamed.owl#Review>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Review> <http://www.owl-ontologies.com/unnamed.owl#Document>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Silver_Supporter> (<http://www.owl-ontologies.com/unnamed.owl#Silver_Supporter>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Silver_Supporter> <http://www.owl-ontologies.com/unnamed.owl#Sponzor>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Speaker> (<http://www.owl-ontologies.com/unnamed.owl#Speaker>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Speaker> <http://www.owl-ontologies.com/unnamed.owl#Person>)
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Speaker> ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#presentation> <http://www.owl-ontologies.com/unnamed.owl#Document>))
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Sponzor> (<http://www.owl-ontologies.com/unnamed.owl#Sponzor>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Sponzor> ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#pay> <http://www.owl-ontologies.com/unnamed.owl#Sponzor_fee>))
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Sponzor_fee> (<http://www.owl-ontologies.com/unnamed.owl#Sponzor_fee>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Sponzor_fee> <http://www.absoluteiri.edu/RELAPPROXC114>)
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Sponzor_fee> <http://www.owl-ontologies.com/unnamed.owl#Fee>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Webmaster> (<http://www.owl-ontologies.com/unnamed.owl#Webmaster>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Webmaster> <http://www.owl-ontologies.com/unnamed.owl#Organizator>)
+
+
+SubClassOf(ObjectSomeValuesFrom(<http://www.absoluteiri.edu/RELAPPROXR28> <http://www.absoluteiri.edu/RELAPPROXC3>) <http://www.absoluteiri.edu/RELAPPROXC103>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.absoluteiri.edu/RELAPPROXR29> <http://www.absoluteiri.edu/RELAPPROXC37>) <http://www.absoluteiri.edu/RELAPPROXC115>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.absoluteiri.edu/RELAPPROXR29> <http://www.absoluteiri.edu/RELAPPROXC9>) <http://www.absoluteiri.edu/RELAPPROXC105>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.absoluteiri.edu/RELAPPROXR30> <http://www.absoluteiri.edu/RELAPPROXC45>) <http://www.absoluteiri.edu/RELAPPROXC113>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.absoluteiri.edu/RELAPPROXR30> <http://www.absoluteiri.edu/RELAPPROXC75>) <http://www.absoluteiri.edu/RELAPPROXC107>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.absoluteiri.edu/RELAPPROXR33> <http://www.absoluteiri.edu/RELAPPROXC95>) <http://www.absoluteiri.edu/RELAPPROXC111>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.absoluteiri.edu/RELAPPROXR36> <http://www.absoluteiri.edu/RELAPPROXC25>) <http://www.absoluteiri.edu/RELAPPROXC119>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#City_of_conference> <http://www.absoluteiri.edu/RELAPPROXC101>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#City_of_conference> owl:Thing) <http://www.owl-ontologies.com/unnamed.owl#Conference>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#Currency> <http://www.absoluteiri.edu/RELAPPROXC101>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#Currency> owl:Thing) <http://www.owl-ontologies.com/unnamed.owl#Registration_fee>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#Date> <http://www.absoluteiri.edu/RELAPPROXC109>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#Date> owl:Thing) <http://www.owl-ontologies.com/unnamed.owl#Deadline>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#E-mail> <http://www.absoluteiri.edu/RELAPPROXC101>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#E-mail> <http://www.absoluteiri.edu/RELAPPROXC112>) <http://www.absoluteiri.edu/RELAPPROXC119>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#E-mail> owl:Thing) <http://www.owl-ontologies.com/unnamed.owl#Person>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#End_of_conference> <http://www.absoluteiri.edu/RELAPPROXC109>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#End_of_conference> owl:Thing) <http://www.owl-ontologies.com/unnamed.owl#Conference>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#Name> <http://www.absoluteiri.edu/RELAPPROXC101>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#Name> owl:Thing) <http://www.owl-ontologies.com/unnamed.owl#Person>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#Name_of_conference> <http://www.absoluteiri.edu/RELAPPROXC101>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#Name_of_conference> owl:Thing) <http://www.owl-ontologies.com/unnamed.owl#Conference>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#Name_of_sponsor> <http://www.absoluteiri.edu/RELAPPROXC101>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#Name_of_sponsor> owl:Thing) <http://www.owl-ontologies.com/unnamed.owl#Sponzor>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#Nation> <http://www.absoluteiri.edu/RELAPPROXC101>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#Nation> owl:Thing) <http://www.owl-ontologies.com/unnamed.owl#Person>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#Price> <http://www.absoluteiri.edu/RELAPPROXC117>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#Price> owl:Thing) <http://www.owl-ontologies.com/unnamed.owl#Registration_fee>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#Start_of_conference> <http://www.absoluteiri.edu/RELAPPROXC109>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#Start_of_conference> owl:Thing) <http://www.owl-ontologies.com/unnamed.owl#Conference>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#awarded_by> <http://www.owl-ontologies.com/unnamed.owl#Organizator>) <http://www.owl-ontologies.com/unnamed.owl#Award>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#awarded_by> owl:Thing) <http://www.owl-ontologies.com/unnamed.owl#Award>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#can_stay_in> owl:Thing) <http://www.owl-ontologies.com/unnamed.owl#Person>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#design> owl:Thing) <http://www.owl-ontologies.com/unnamed.owl#ACM_SIGKDD>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#designed_by> owl:Thing) <http://www.owl-ontologies.com/unnamed.owl#Deadline>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#hold> owl:Thing) <http://www.owl-ontologies.com/unnamed.owl#ACM_SIGKDD>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#holded_by> owl:Thing) <http://www.owl-ontologies.com/unnamed.owl#Conference>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#notification_until> owl:Thing) <http://www.owl-ontologies.com/unnamed.owl#Author>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#obtain> owl:Thing) <http://www.owl-ontologies.com/unnamed.owl#Author>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#pay> <http://www.owl-ontologies.com/unnamed.owl#Registration_fee>) <http://www.owl-ontologies.com/unnamed.owl#Person>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#pay> <http://www.owl-ontologies.com/unnamed.owl#Sponzor_fee>) <http://www.owl-ontologies.com/unnamed.owl#Sponzor>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#pay> owl:Thing) <http://www.owl-ontologies.com/unnamed.owl#Person>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#payed_by> owl:Thing) <http://www.owl-ontologies.com/unnamed.owl#Registration_fee>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#presentation> <http://www.owl-ontologies.com/unnamed.owl#Document>) <http://www.owl-ontologies.com/unnamed.owl#Speaker>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#presentation> owl:Thing) <http://www.owl-ontologies.com/unnamed.owl#Speaker>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#presentationed_by> owl:Thing) <http://www.owl-ontologies.com/unnamed.owl#Document>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#search> owl:Thing) <http://www.owl-ontologies.com/unnamed.owl#ACM_SIGKDD>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#searched_by> owl:Thing) <http://www.owl-ontologies.com/unnamed.owl#Sponzor>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#submit> <http://www.owl-ontologies.com/unnamed.owl#Paper>) <http://www.owl-ontologies.com/unnamed.owl#Author>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#submit> owl:Thing) <http://www.owl-ontologies.com/unnamed.owl#Author>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#submit_until> <http://www.owl-ontologies.com/unnamed.owl#Deadline_Abstract_Submission>) <http://www.owl-ontologies.com/unnamed.owl#Abstract>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#submit_until> <http://www.owl-ontologies.com/unnamed.owl#Deadline_Paper_Submission>) <http://www.owl-ontologies.com/unnamed.owl#Paper>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/unnamed.owl#submit_until> owl:Thing) <http://www.owl-ontologies.com/unnamed.owl#Document>)
+)

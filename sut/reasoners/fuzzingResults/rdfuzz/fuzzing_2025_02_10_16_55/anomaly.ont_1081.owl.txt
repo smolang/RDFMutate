@@ -1,0 +1,9 @@
+Found anomalies while testing file ../testOnt.owl
+
+Anomaly 1: Class hierarchy differentiation between HERMIT and ELK:
+	additional axioms HERMIT: [EquivalentClasses(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/8a0c3f0a-41c0-434e-9119-d0cc03f387d9__v5.0.2__.rdfs#E42_> owl:Nothing), SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/8a0c3f0a-41c0-434e-9119-d0cc03f387d9__v5.0.2__.rdfs#E42_> owl:Nothing)]
+	additional axioms ELK: [SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/8a0c3f0a-41c0-434e-9119-d0cc03f387d9__v5.0.2__.rdfs#E42_> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/8a0c3f0a-41c0-434e-9119-d0cc03f387d9__v5.0.2__.rdfs#E41_>)]
+
+Anomaly 2: Class hierarchy differentiation between ELK and OPENLLET:
+	additional axioms ELK: [SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/8a0c3f0a-41c0-434e-9119-d0cc03f387d9__v5.0.2__.rdfs#E42_> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/8a0c3f0a-41c0-434e-9119-d0cc03f387d9__v5.0.2__.rdfs#E41_>)]
+	additional axioms OPENLLET: [EquivalentClasses(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/8a0c3f0a-41c0-434e-9119-d0cc03f387d9__v5.0.2__.rdfs#E42_> owl:Nothing), SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/8a0c3f0a-41c0-434e-9119-d0cc03f387d9__v5.0.2__.rdfs#E42_> owl:Nothing)]
