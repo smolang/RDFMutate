@@ -335,7 +335,7 @@ class ReasonerMutationTests : StringSpec() {
             ms.addRandom(AddIndividualMutation::class)
             ms.addRandom(AddIndividualMutation::class)
             // todo: add the following to main
-            /*ms.addRandom(AddObjectIntersectionOfMutation::class)
+            ms.addRandom(AddObjectIntersectionOfMutation::class)
             ms.addRandom(AddELObjectOneOfMutation::class)
             ms.addRandom(AddObjectSomeValuesFromMutation::class)
             ms.addRandom(AddObjectHasValueMutation::class)
@@ -344,8 +344,6 @@ class ReasonerMutationTests : StringSpec() {
             ms.addRandom(AddELDataOneOfMutation::class)
             ms.addRandom(AddELSimpleDataSomeValuesFromMutation::class)
             ms.addRandom(AddDataHasValueMutation::class)
-
-             */
             ms.addRandom(AddHasKeyMutation::class)
 
             val m = Mutator(ms, verbose)
