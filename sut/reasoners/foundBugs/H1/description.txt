@@ -1,0 +1,46 @@
+error in reasoners
+
+--> HermiT throws exception when creating reasoners
+
+--> might correspond to how arguments are treated: see bug 31 / H6
+
+
+call:
+OWLOntologyDocumentSource source = new FileDocumentSource(ontFile, new FunctionalSyntaxDocumentFormat());
+OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
+OwlOntology ont = manager.loadOntologyFromOntologyDocument(source);
+
+ReasonerFactory rf = new ReasonerFactory();
+OWLReasoner hermit = rf.createReasoner(ont);
+
+
+
+exception:
+Exception in thread "main" java.lang.NullPointerException: operands cannot be null or empty
+	at org.semanticweb.owlapi.util.OWLAPIPreconditions.checkValidForNAryExpressions(OWLAPIPreconditions.java:120)
+	at uk.ac.manchester.cs.owl.owlapi.OWLNaryBooleanClassExpressionImpl.<init>(OWLNaryBooleanClassExpressionImpl.java:39)
+	at uk.ac.manchester.cs.owl.owlapi.OWLObjectUnionOfImpl.<init>(OWLObjectUnionOfImpl.java:35)
+	at uk.ac.manchester.cs.owl.owlapi.OWLDataFactoryImpl.getOWLObjectUnionOf(OWLDataFactoryImpl.java:650)
+	at org.semanticweb.HermiT.structural.ExpressionManager$DescriptionSimplificationVisitor.visit(ExpressionManager.java:454)
+	at org.semanticweb.HermiT.structural.ExpressionManager$DescriptionSimplificationVisitor.visit(ExpressionManager.java:418)
+	at org.semanticweb.owlapi.model.OWLObjectUnionOf.accept(OWLObjectUnionOf.java:57)
+	at org.semanticweb.HermiT.structural.ExpressionManager.getSimplified(ExpressionManager.java:121)
+	at org.semanticweb.HermiT.structural.OWLNormalization.normalizeInclusions(OWLNormalization.java:234)
+	at org.semanticweb.HermiT.structural.OWLNormalization.processAxioms(OWLNormalization.java:180)
+	at org.semanticweb.HermiT.structural.OWLNormalization.processOntology(OWLNormalization.java:158)
+	at org.semanticweb.HermiT.structural.OWLClausification.preprocessAndClausify(OWLClausification.java:81)
+	at org.semanticweb.HermiT.Reasoner.loadOntology(Reasoner.java:214)
+	at org.semanticweb.HermiT.Reasoner.<init>(Reasoner.java:205)
+	at org.semanticweb.HermiT.Reasoner.<init>(Reasoner.java:179)
+	at org.semanticweb.HermiT.ReasonerFactory.createHermiTOWLReasoner(ReasonerFactory.java:51)
+	at org.semanticweb.HermiT.ReasonerFactory.createReasoner(ReasonerFactory.java:19)
+	at org.semanticweb.HermiT.ReasonerFactory.createReasoner(ReasonerFactory.java:15)
+
+
+mutation of ore_ont_15292.owl
+
+found on 23.01.2025
+
+
+reported:
+not so far

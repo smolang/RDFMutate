@@ -1,0 +1,55 @@
+bug in openllet
+
+--> Openllet throws exception
+
+--> seems to be a concurrency issue: only occurs in some cases (very hard to track down the cause...)
+
+call:
+OWLOntologyDocumentSource source = new FileDocumentSource(ontFile, new FunctionalSyntaxDocumentFormat());
+OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
+OwlOntology ont = manager.loadOntologyFromOntologyDocument(source);
+
+OpenlletReasonerFactory rf = new OpenlletReasonerFactory();
+OWLReasoner openllet = rf.createReasoner(ont);
+
+/// class hierarchy
+InferredSubClassAxiomGenerator subClassGenerator = new InferredSubClassAxiomGenerator();
+InferredEquivalentClassAxiomGenerator equivClassGenerator = new InferredEquivalentClassAxiomGenerator();
+try {
+    if (openllet.isConsistent()) {
+        openllet.precomputeInferences(InferenceType.CLASS_HIERARCHY);
+        Set<OWLSubClassOfAxiom> subClassAxioms = subClassGenerator.createAxioms(manager.getOWLDataFactory(), openllet);
+        Set<OWLEquivalentClassesAxiom> equivClassAxioms = equivClassGenerator.createAxioms(manager.getOWLDataFactory(), openllet);
+    }
+} catch (Exception e) {
+    throw e;
+}
+
+Exception in thread "main" java.util.ConcurrentModificationException
+	at java.base/java.util.HashMap$HashIterator.nextNode(HashMap.java:1597)
+	at java.base/java.util.HashMap$KeyIterator.next(HashMap.java:1620)
+	at openllet.core.el.SimplifiedELClassifier.addSuccessor(SimplifiedELClassifier.java:143)
+	at openllet.core.el.SimplifiedELClassifier.addSuperClass(SimplifiedELClassifier.java:245)
+	at openllet.core.el.SimplifiedELClassifier.processQueue(SimplifiedELClassifier.java:483)
+	at openllet.core.el.SimplifiedELClassifier.lambda$classify$1(SimplifiedELClassifier.java:116)
+	at openllet.core.utils.Timers.execute(Timers.java:118)
+	at openllet.core.el.SimplifiedELClassifier.classify(SimplifiedELClassifier.java:116)
+	at openllet.core.KnowledgeBaseImpl.classify(KnowledgeBaseImpl.java:1919)
+	at openllet.core.KnowledgeBaseImplFullSync.classify(KnowledgeBaseImplFullSync.java:385)
+	at openllet.owlapi.PelletReasoner.precomputeInferences(PelletReasoner.java:1289)
+	at no.uio.psy.rdfuzz.Main.runTests(Main.java:115)
+	at no.uio.psy.rdfuzz.Main.main(Main.java:163)
+
+
+ - Mutation to generate this test case:
+start new test (1001) at Thu Jan 30 06:13:27 PM UTC 2025 
+mutate KG (ontology) ontologies_ore//ore_ont_13578.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+mutation summary:
+numMutations;numDel;numAdd;appliedMutations;affectedSeedNodes;addedAxioms;removedAxioms
+5;4;3;[ReplaceClassWithTopMutation(random), ReplaceClassWithTopMutation(random), AddIndividualMutation(config=class org.smolang.robust.mutant.SingleStatementConfiguration([newIndividual:number672229625, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://www.w3.org/2002/07/owl#NamedIndividual]))];[_:9e22da13-f940-4363-b2db-6f1dff6580b9,[OntObject]_:9adc1773-64ca-4a23-afae-c5956806d872,VHOG_0001305,VHOG_0001415,Class];[[http://www.w3.org/2002/07/owl#Thing, http://www.w3.org/2000/01/rdf-schema#subClassOf, _:9e22da13-f940-4363-b2db-6f1dff6580b9],[[OntObject]http://www.w3.org/2002/07/owl#Thing, http://www.w3.org/2000/01/rdf-schema#subClassOf, [OntObject]_:9adc1773-64ca-4a23-afae-c5956806d872],[newIndividual:number672229625, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://www.w3.org/2002/07/owl#NamedIndividual]];[[[OntObject]http://purl.obolibrary.org/obo/VHOG_0001305, http://www.w3.org/2000/01/rdf-schema#subClassOf, [OntObject]_:9adc1773-64ca-4a23-afae-c5956806d872],[http://purl.obolibrary.org/obo/VHOG_0001415, http://www.w3.org/2000/01/rdf-schema#subClassOf, _:9e22da13-f940-4363-b2db-6f1dff6580b9],[[OntObject]http://purl.obolibrary.org/obo/VHOG_0001305, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, [OntObject]http://www.w3.org/2002/07/owl#Class],[http://purl.obolibrary.org/obo/VHOG_0001415, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://www.w3.org/2002/07/owl#Class]]
+call reasoner oracle
+found anomaly. Saved to fuzzingResults/rdfuzz/fuzzing_2025_01_30_15_40/ont_1001.owl.
+

@@ -1,0 +1,15 @@
+Prefix(:=<http://www.example.org#>)
+
+
+Ontology(
+
+    Declaration(Class(:A))
+    Declaration(Class(:B))
+    Declaration(Class(:C))
+    Declaration(DataProperty(:p))
+
+    SubClassOf(:A :C)
+    SubClassOf(:A DataSomeValuesFrom(:p xsd:normalizedString))
+
+    SubClassOf(DataSomeValuesFrom(:p xsd:string) :B)
+)
