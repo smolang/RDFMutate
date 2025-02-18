@@ -7,18 +7,9 @@ import com.github.ajalt.clikt.parameters.options.option
 import com.github.ajalt.clikt.parameters.options.switch
 import com.github.ajalt.clikt.parameters.types.file
 import com.github.ajalt.clikt.parameters.types.int
-import com.github.owlcs.ontapi.OntManagers
-import com.github.owlcs.ontapi.Ontology
-import com.github.owlcs.ontapi.internal.AxiomTranslator
-import org.apache.jena.ontapi.OntModelFactory
-import org.apache.jena.rdf.model.Model
 import org.apache.jena.riot.Lang
 import org.apache.jena.riot.RDFDataMgr
 import org.apache.jena.shacl.Shapes
-import org.semanticweb.owlapi.formats.FunctionalSyntaxDocumentFormat
-import org.semanticweb.owlapi.model.AxiomType
-import org.semanticweb.owlapi.model.IRI
-import org.semanticweb.owlapi.model.OWLAxiom
 import org.smolang.robust.domainSpecific.geo.GeoScenarioGenerator
 import org.smolang.robust.domainSpecific.geo.GeoTestCaseGenerator
 import org.smolang.robust.domainSpecific.reasoner.OwlEvaluationGraphGenerator
@@ -46,6 +37,7 @@ class Main : CliktCommand() {
     private val owlDocument by option("--owl", help="Set to true, if input is OWL ontology (e.g. in functional syntax). Default = false").flag()
     private val outputFile by option("--out", "-o", help="Give name for mutated KG.").file()
     private val overwriteOutput by option("--overwrite", help="Indicates if output ontology should be replaced, if it already exists. Default = false").flag()
+    private val coverageSamples by option("--coverage-samples", help="number of samples used for coverage evaluation. Default = 100").int()
     private val mainMode by option(help="Options to run specialized modes of this program.").switch(
         "--mutate" to "mutate", "-m" to "mutate",
         "--scen_geo" to "geo", "-sg" to "geo",
@@ -54,6 +46,7 @@ class Main : CliktCommand() {
         "--scen_test" to "test", "-st" to "test",
         "--issre_graph" to "issre", "-ig" to "issre",
         "--el-graph" to "elGraph",
+        "--analyze-minimization" to "minimization"
     ).default("free")
 
     private val elReasonerMutations = listOf(
@@ -152,6 +145,7 @@ class Main : CliktCommand() {
                 // test installation
                 testMiniPipes()
             }
+            "minimization" -> analyzeMinimization()
             else -> testMiniPipes()
         }
 
@@ -456,7 +450,45 @@ class Main : CliktCommand() {
     private fun generateElReasonerGraph() {
         val inputDirectory = File("sut/reasoners/ontologies_ore")
         val outputFile = File("sut/reasoners/evaluation/inputCoverage.csv")
-        OwlEvaluationGraphGenerator().analyzeElInputCoverage(inputDirectory, elReasonerMutations, outputFile)
+        if (coverageSamples != null)
+            OwlEvaluationGraphGenerator(coverageSamples!!).analyzeElInputCoverage(inputDirectory, elReasonerMutations, outputFile)
+        else
+            OwlEvaluationGraphGenerator().analyzeElInputCoverage(inputDirectory, elReasonerMutations, outputFile)
+    }
+
+    // analyze, how well minimization worked
+    private fun analyzeMinimization() {
+
+        val inputFiles = listOf(
+            Pair(
+                File("sut/reasoners/foundBugs/P2/ont_5.owl"),
+                File("sut/reasoners/foundBugs/P2/ont_5.owl.minimal.owl")
+            ),
+            Pair(
+                File("sut/reasoners/foundBugs/P4/ont_1709.owl"),
+                File("sut/reasoners/foundBugs/P4/ont_1709.owl.minimal.owl")
+            ),
+            Pair(
+                File("sut/reasoners/foundBugs/P5/ont_35.owl"),
+                File("sut/reasoners/foundBugs/P5/ont_35.owl.minimal.manual.owl")
+            ),
+            Pair(
+                File("sut/reasoners/foundBugs/H1/ont_107.owl"),
+                File("sut/reasoners/foundBugs/H1/minimal.owl")
+            )
+        )
+
+        for ((original, minimal) in inputFiles) {
+            val originalSize = OwlFileHandler().loadOwlDocument(original).listStatements().toSet().size.toDouble()
+            val minimalSize = OwlFileHandler().loadOwlDocument(minimal).listStatements().toSet().size.toDouble()
+            val reduction = (originalSize - minimalSize) / originalSize
+            println("minimized ${original.path}")
+            println("original size: $originalSize")
+            println("minimized size: $minimalSize")
+            println("triples removed: ${originalSize-minimalSize}")
+            println("reduction: $reduction")
+
+        }
     }
 
 

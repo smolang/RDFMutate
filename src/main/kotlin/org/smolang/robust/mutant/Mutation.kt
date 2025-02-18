@@ -472,7 +472,7 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
             val (randSubject, randObject) = randomPair
             return model.createStatement(randSubject, p, randObject)
         }
-        else
+        else if (verbose)
             println("we could not add a valid relation with property '${p.localName}'")
 
         return null
@@ -710,7 +710,7 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
             // test if axiom exists
             // try 10 times to find an axiom that does not exist, as this often works and it is fast
             var i = 0
-            while (!validAddition(axiomCand) && i < 10) {
+            while (!validAddition(axiomCand) && i < 20) {
                 // find new axiom
                 axiomCand = model.createStatement(domainP.random(randomGenerator), p, rangeP.random(randomGenerator))
                 i += 1
@@ -719,8 +719,9 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
             // test if a non-contained axiom was found
             val axiom =
                 if (!validAddition(axiomCand))
+                    null
                     // use expensive search for a valid axiom in case no valid one was found so far
-                    costlySearchForValidAxiom(p, domainP.toSet(), rangeP.toSet())
+                    //costlySearchForValidAxiom(p, domainP.toSet(), rangeP.toSet())
                 else
                     axiomCand
 

@@ -1,13 +1,13 @@
 #!/bin/bash
 
-# applies one mutation
+# generates issre graph
 
 # build 
 echo "build source code"
 ./gradlew build 
 
 # run mutation (with the arguments provided)
-echo "mutate KG"
+echo "create attempts graph"
 java -jar build/libs/OntoMutate-0.1.jar --issre_graph
 
 
