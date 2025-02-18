@@ -1,0 +1,17 @@
+Prefix(:=<http://example.org#>)
+
+
+Ontology(
+
+Declaration(Class(:A))
+Declaration(Class(:B))
+Declaration(ObjectProperty(:p))
+
+    ReflexiveObjectProperty(:p)
+
+    EquivalentClasses(
+        :B
+        ObjectSomeValuesFrom(:p :A)
+    )
+
+)
