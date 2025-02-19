@@ -17,13 +17,10 @@
 			xmin=0, xmax=100,
 			ymin=0, ymax=64,
 			xtick={0,10,20,30,40,50, 75, 100},
-			%ytick={0, 10, 20, 30, 40, 50, 60, 65},
-			yticklabel={\empty},
-			ytick=\empty,	
-			yticklabels={},
-			extra y ticks={0,16, 32, 48, 64},
-			extra y tick labels={0.0,0.25, 0.5, 0.75, 1.0},
+			ytick={0,16, 32, 48, 64},
+			yticklabels={0.0, 0.25, 0.5, 0.75, 1.0},
 			legend pos=south east,
+			legend cell align={left},
 			ymajorgrids=true,
 			grid style=dashed,
 			domain=0:100
@@ -79,18 +76,9 @@
 			col sep=comma
 			] {inputCoverage.csv};
 			
-  			%\addplot[
-  			%mark=none, 
-  			%black, samples=2,
-  			%line width=1pt,
-  			%dashed
-  			%] {65};
-			
 		
-			
-			
-			
-			\legend{100 cases, 10 cases, 1 case}
+			\legend{100 mutated KGs, 10 mutated KGs, 1 mutated KG}
+
 			
 		\end{axis}
 	\end{tikzpicture}

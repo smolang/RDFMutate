@@ -63,8 +63,8 @@ class OwlEvaluationGraphGenerator(private val sampleSize : Int =100 ) {
                     // load ontology
                     val seedOntology = owlFileHandler.loadOwlDocument(inputFile)
 
-                    // use timout of 10s
-                    res = timedMutation2(seedOntology, mutationOperators, mutCount, 10000)
+                    // use timeout of 10s
+                    res = timedMutation2(seedOntology, mutationOperators, mutCount, 30000)
 
                     //res = timedMutation3(inputFile, mutCount, 5000)
 
@@ -106,7 +106,8 @@ class OwlEvaluationGraphGenerator(private val sampleSize : Int =100 ) {
                     current = m.mutate(current)
                 i += 1
             }
-            result = current
+            if (!Thread.currentThread().isInterrupted)
+                result = current
         }
         var time = 0L
         val increment = 50L
@@ -117,7 +118,10 @@ class OwlEvaluationGraphGenerator(private val sampleSize : Int =100 ) {
         if (t.isAlive) {    // process did not finish in time --> kill it
             t.interrupt()
             Thread.sleep(1000L)
-            t.stop()    // force thread to stop
+            while (t.isAlive) {
+                t.stop()    // force thread to stop
+                Thread.sleep(1000L)
+            }
             return null
         }
         return result

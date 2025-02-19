@@ -2,7 +2,7 @@
 
 # optional argument: max heap size in GB
 
-heapLimit=${1:-8} # no limit: 16GB
+heapLimit=${1:-16} # no limit: 16GB
 limit=-Xmx${heapLimit}G 
 
 echo "evaluating input coverage. This can take several minutes. On our machine (Intel Core i7-1165G7) it took about 45 minutes."
