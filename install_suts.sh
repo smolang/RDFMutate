@@ -86,13 +86,21 @@ sudo usermod -aG docker $USER
 
 sudo newgrp docker << FOO
 
-##########################################################
+# #########################################################
 # get suave docker image
 
 CONTAINER_NAME=suaveContainer
 echo "create container \$CONTAINER_NAME"
 docker run -it -d --shm-size=512m -p 6901:6901 -e VNC_PW=password --security-opt seccomp=unconfined --name \$CONTAINER_NAME ghcr.io/kas-lab/suave:main 
 docker stop \$CONTAINER_NAME
+
+# #########################################################
+# get reasoners oracle
+
+git clone git@github.com:tobiaswjohn/RDFuzz.git
+cd ./RDFuzz
+./createOracleContainer.sh
+cd ..
 
 FOO
 

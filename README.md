@@ -13,6 +13,50 @@ A prototype for mutation of OWL ontology with respect to entailment constraints
 ### Specifying Mutation Operators
 Per default, five domain-independent mutation oprators are used. To add more (existing) mutation operators, their classes need to be added to the list in lines 108–112 in file [Main.kt](src/main/kotlin/org/smolang/robust/Main.kt). To define new mutation operators, one can define them as sub-classes of the class [Mutation](src/main/kotlin/org/smolang/robust/mutant/Mutation.kt) (see e.g. mutation operators targeting the ABox in [MutationAbox](src/main/kotlin/org/smolang/robust/mutant/MutationABox.kt)).
 
-## Evaluation for ISSRE 2024 Publication
- - The reviewed artifact is available on [Zenodo](https://doi.org/10.5281/zenodo.13325715)
- - You can also consult the branch [issre](https://github.com/Edkamb/OntoMutate/tree/issre) to find the data used for the evaluation and detailed explanations how to reproduce our results.
+## Evaluation for ISSRE Publication
+The mutants, masks and results of test runs can be found in the following folders:
+
+| SUT | masks | mutants | test results |
+| ----|-------|---------|----------------|
+| geo | [sut/geo/masks](sut/geo/masks) | [sut/geo/mutatedOnt/ISSRE](sut/geo/mutatedOnt/ISSRE) | [sut/geo/testResults/ISSRE](sut/geo/testResults/ISSRE) |
+| suave | [sut/suave/masks](sut/suave/masks) | [sut/suave/mutatedOnt/ISSRE](sut/suave/mutatedOnt/ISSRE) | [sut/suave/testResults/ISSRE](sut/suave/testResults/ISSRE) |
+
+Each folder for the masks contains a file `mask_development.txt` that explains, how the masks where developed over time and which test cases used which masks.
+
+## Replication of Evaluation for ISSRE Publication
+
+The easiest way to replicate our results is to use the following [VM on Zenodo](https://doi.org/10.5281/zenodo.12699140) where all SUTs are already implemented. If you want to install everything yourself, you can find instructions on how to do so in the next subsection.
+
+ - `generate_graph.sh` generates the graph from the paper. The PDF output is put into a folder `results`. (This script requires a LaTex installation to produce the PDF.) The run time of the script is a few minutes.
+ - `replicate_geo.sh` generates the mutants for the geo system and executes the test runs for all of them. The mutants are saved in folder [sut/geo/mutatedOnt](sut/geo/mutatedOnt) and the results of the test runs in [sut/geo/testResults](sut/geo/testResults). On our machine (Intel Core i7-1165G7) this took about 100 hours.
+ - `replicate_suave.sh` generates the mutants for the suave system and executes the test runs for all of them. On our machine (Intel Core i7-1165G7) this took about 60 hours.
+
+
+### Installation of SUTs
+You can use the script `install_suts.sh` to install all the necessary software. The last part of the script is rebooting, to make the installment permanent
+
+#### SUAVE (docker)
+ - see [website](https://docs.docker.com/engine/install/ubuntu/)
+ - add to groups, e.g. following [this website](https://docs.docker.com/engine/install/linux-postinstall/)
+
+#### Geo Simulator
+- install Java, e.g. using
+
+  - `sudo apt install default-jre`
+
+  - `sudo apt install default-jdk`
+- install [gradle](https://gradle.org/install/)
+- get branch `geosim` from fork of simulator from [github](https://github.com/tobiaswjohn/SemanticObjects) and clone it in some `FOLDER`. I.e. use
+  
+  `git clone -b geosim https://github.com/tobiaswjohn/SemanticObjects`
+- insert the path of the cloned repository, i.e. `FOLDER/SemanticObjects`,  in the [config file](sut/geo/config.txt). (can be relative or absolute path)
+- call `build_geo.sh`
+
+#### Reasoners (oracle)
+- clone repository with reasoner oracle
+
+`git clone git@github.com:tobiaswjohn/RDFuzz.git`
+
+- go to cloned repository and call script to build docker container
+
+`./createOracleContainer.sh`
