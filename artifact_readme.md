@@ -20,7 +20,7 @@ There are three scripts to reproduce our experiments.
  - `generate_attemps_graph.sh` generates the graph from the paper showing the relation between mask development and number of attempts to generate a valid mutant. The PDF output is put into a folder `results`. The run time of the script is a few minutes.
  - `generate_coverage_graph.sh` generates the graph from the paper showing the input feature coverage. The PDF output is put into a folder `results`. The run time of the script is several minutes, i.e., about an hour. See the next bullet point, if this is too much time.
  - `generate_coverage_graph_reduced.sh` is the same as generate_coverage_graph.sh` but with a smaller sample size. The run time of the script is a few minutes.
-- `replicate_geo.sh` generates mutants for the geo system and executes the test runs for all of them. The mutants are saved in folder 'sut/geo/mutatedOnt' and the results of the test runs in 'sut/geo/testResults'. On our machine (Intel Core i7-1165G7) this took about 100 hours.
+- `replicate_geo.sh` generates mutants for the geo system and executes the test runs for all of them. The mutants are saved in folder `sut/geo/mutatedOnt` and the results of the test runs in `sut/geo/testResults`. On our machine (Intel Core i7-1165G7) this took about 100 hours.
 - `replicate_suave.sh` generates mutants for the suave system and executes the test runs for all of them. On our machine (Intel Core i7-1165G7) this took about 60 hours. Note: the SUAVE simulation is unstable if the hardware resources are not sufficient. On our setup (using an i7-1165G7 @ 2.80GHz), we had to provide the VM with 6 cores for the simulations to work correctly.
 
 ### Evaluation Data used for ESE Publication
@@ -45,4 +45,4 @@ As the VM includes our implementation, it can not only be used to replicate our 
 - The script first builds the project, which only needs to be done once after the source code is modified.
 
 ### Specifying Custom Mutation Operators
-Per default, five domain-independent mutation operators are used. To add more (existing) mutation operators, their classes need to be added to the list in lines 108–112 in file 'src/main/kotlin/org/smolang/robust/Main.kt'. To define new mutation operators, one can define them as sub-classes of the class 'src/main/kotlin/org/smolang/robust/mutant/Mutation.kt' (see e.g. mutation operators targeting the ABox in 'src/main/kotlin/org/smolang/robust/mutant/MutationABox.kt').
+Per default, five domain-independent mutation operators are used. To add more (existing) mutation operators, their classes need to be added to the list in lines 108–112 in file `src/main/kotlin/org/smolang/robust/Main.kt`. To define new mutation operators, one can define them as sub-classes of the class `src/main/kotlin/org/smolang/robust/mutant/Mutation.kt` (see e.g. mutation operators targeting the ABox in `src/main/kotlin/org/smolang/robust/mutant/MutationABox.kt`).
