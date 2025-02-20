@@ -13,23 +13,28 @@ A prototype for mutation of OWL ontology with respect to entailment constraints
 ### Specifying Mutation Operators
 Per default, five domain-independent mutation oprators are used. To add more (existing) mutation operators, their classes need to be added to the list in lines 108–112 in file [Main.kt](src/main/kotlin/org/smolang/robust/Main.kt). To define new mutation operators, one can define them as sub-classes of the class [Mutation](src/main/kotlin/org/smolang/robust/mutant/Mutation.kt) (see e.g. mutation operators targeting the ABox in [MutationAbox](src/main/kotlin/org/smolang/robust/mutant/MutationABox.kt)).
 
-## Evaluation for ISSRE Publication
+## Evaluation for ESE Publication
 The mutants, masks and results of test runs can be found in the following folders:
 
-| SUT | masks | mutants | test results |
+| SUT | masks | mutants (or anomalies) | test results (or bug reports) |
 | ----|-------|---------|----------------|
 | geo | [sut/geo/masks](sut/geo/masks) | [sut/geo/mutatedOnt/ISSRE](sut/geo/mutatedOnt/ISSRE) | [sut/geo/testResults/ISSRE](sut/geo/testResults/ISSRE) |
 | suave | [sut/suave/masks](sut/suave/masks) | [sut/suave/mutatedOnt/ISSRE](sut/suave/mutatedOnt/ISSRE) | [sut/suave/testResults/ISSRE](sut/suave/testResults/ISSRE) |
+| reasoners |  | [sut/reasoners/fuzzingResults/rdfuzz/fuzzing_2025_02_10_16_55/anomalies](sut/reasoners/fuzzingResults/rdfuzz/fuzzing_2025_02_10_16_55/anomalies) | [sut/reasoners/foundBugs](sut/reasoners/foundBugs) |
 
-Each folder for the masks contains a file `mask_development.txt` that explains, how the masks where developed over time and which test cases used which masks.
 
-## Replication of Evaluation for ISSRE Publication
+Each folder with masks contains a file `mask_development.txt` that explains, how the masks where developed over time and which test cases used which masks. We did not use masks for the reasoners campaign.
+
+## Replication of Evaluation for ESE Publication
 
 The easiest way to replicate our results is to use the following [VM on Zenodo](https://doi.org/10.5281/zenodo.12699140) where all SUTs are already implemented. If you want to install everything yourself, you can find instructions on how to do so in the next subsection.
 
- - `generate_graph.sh` generates the graph from the paper. The PDF output is put into a folder `results`. (This script requires a LaTex installation to produce the PDF.) The run time of the script is a few minutes.
+ - `generate_attemps_graph.sh` generates the graph from the paper showing the relation between mask development and number of attempts to generate a valid mutant. The PDF output is put into a folder `results`. (This script requires a LaTex installation to produce the PDF.) The run time of the script is a few minutes.
+ - `generate_coverage_graph.sh` generates the graph from the paper showing the input feature coverage. The PDF output is put into a folder `results`. (This script requires a LaTex installation to produce the PDF.) The run time of the script is several minutes, i.e., about an hour. See the next bullet point, if this is too much time.
+ - `generate_coverage_graph_reduced.sh` is the same as generate_coverage_graph.sh` but with a smaller sample size. The run time of the script is a few minutes.
  - `replicate_geo.sh` generates the mutants for the geo system and executes the test runs for all of them. The mutants are saved in folder [sut/geo/mutatedOnt](sut/geo/mutatedOnt) and the results of the test runs in [sut/geo/testResults](sut/geo/testResults). On our machine (Intel Core i7-1165G7) this took about 100 hours.
  - `replicate_suave.sh` generates the mutants for the suave system and executes the test runs for all of them. On our machine (Intel Core i7-1165G7) this took about 60 hours.
+ - 'replicate_reasoners.sh' generates the mutants for the reasoners and executes the test runs for them. The run time is 10h.
 
 
 ### Installation of SUTs
