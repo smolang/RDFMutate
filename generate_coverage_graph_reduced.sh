@@ -2,7 +2,7 @@
 
 # optional argument: max heap size in GB
 
-heapLimit=${1:-8} # no limit: 16GB
+heapLimit=${1:-8} # no limit: 8GB
 limit=-Xmx${heapLimit}G 
 
 echo "evaluating input coverage using reduced sample size (50)"
@@ -18,3 +18,6 @@ java $limit -jar build/libs/OntoMutate-0.1.jar --el-graph --coverage-samples=50
 cd sut/reasoners/evaluation
 pdflatex inputCoverage.tex 
 cd ../../..
+
+mkdir -p results
+cp sut/reasoners/evaluation/inputCoverage.pdf results/inputCoverage.pdf
