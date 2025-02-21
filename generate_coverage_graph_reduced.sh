@@ -5,7 +5,7 @@
 heapLimit=${1:-8} # no limit: 8GB
 limit=-Xmx${heapLimit}G 
 
-echo "evaluating input coverage using reduced sample size (50)"
+echo "evaluating input coverage using reduced (10%) sample size (50 and 10)"
 
 # build 
 echo "build source code"
@@ -13,6 +13,9 @@ echo "build source code"
 
 # heap size: 16GB
 java $limit -jar build/libs/OntoMutate-0.1.jar --el-graph --coverage-samples=50
+
+java $limit -jar build/libs/OntoMutate-0.1.jar --suave-coverage-graph --coverage-samples=10
+
 
 # create plot
 cd sut/reasoners/evaluation

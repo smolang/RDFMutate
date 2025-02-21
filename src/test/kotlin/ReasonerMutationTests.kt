@@ -186,12 +186,17 @@ class ReasonerMutationTests : StringSpec() {
             val AsubB = res.createStatement(a, subClassOf, b)
             val BsubA = res.createStatement(b, subClassOf, a)
 
+            val AsubA = res.createStatement(a, subClassOf, a)
+            val BsubB = res.createStatement(b, subClassOf, b)
+
             var count = 0
             var found = false
 
+
             // check, that there is exactly one subclass axiom
             for (s in res.listStatements()) {
-                if (s == AsubB || s == BsubA)
+                println(s)
+                if (s == AsubB || s == BsubA || s == AsubA || s == BsubB)
                     found = true
                 if (s.predicate == subClassOf)
                     count += 1

@@ -1,31 +1,32 @@
 package org.smolang.robust.domainSpecific.reasoner
-import kotlinx.coroutines.*
 
 import org.apache.jena.rdf.model.Model
+import org.apache.jena.riot.RDFDataMgr
+import org.smolang.robust.domainSpecific.KgAnalyzer
+import org.smolang.robust.domainSpecific.suave.SuaveTestCaseGenerator
 import org.smolang.robust.mutant.Mutation
 import org.smolang.robust.mutant.MutationSequence
 import org.smolang.robust.mutant.Mutator
+import org.smolang.robust.mutant.RobustnessMask
 import org.smolang.robust.randomGenerator
 import java.io.File
 import java.io.FileOutputStream
-import java.lang.reflect.InvocationTargetException
 import java.nio.file.Files
-import java.util.concurrent.TimeUnit
 import kotlin.concurrent.thread
-import kotlin.coroutines.EmptyCoroutineContext
 import kotlin.math.pow
 import kotlin.math.sqrt
 import kotlin.reflect.KClass
 
-// class to produce evaluation graph for EL reasoners
-class OwlEvaluationGraphGenerator(private val sampleSize : Int =100 ) {
-    private val ontologyAnalyzer = OntologyAnalyzer()
+// class to produce coverage graphs
+class CoverageEvaluationGraphGenerator(private val sampleSize : Int =100 ) {
     private val owlFileHandler = OwlFileHandler()
 
     val verbose = false
     // maps numbers of mutation operators to rest
     //private val mutationNumbers = listOf(200)
-    private val mutationNumbers = listOf(0,1,2,3,4,5,6,7,8,9,10,15,20,30,40,50,75,100)
+    private val mutationNumbersEL = listOf(0,1,2,3,4,5,6,7,8,9,10,15,20,30,40,50,75,100)
+    private val mutationNumbersSuave = listOf(0,1,2,3,4,5,6,7,8,9,10,15,20,30,40,50,75,100)
+
 
 
     private fun allOwlFiles(directory: File) : List<File> {
@@ -36,52 +37,50 @@ class OwlEvaluationGraphGenerator(private val sampleSize : Int =100 ) {
             .map { path -> path.toFile() }
     }
 
-    fun analyzeElInputCoverage(inputDirectory: File,
-                                       mutationOperators :  List<KClass<out Mutation>>,
-                                       outputFile: File) = runBlocking{
+    fun analyzeInputCoverage(input: File,
+                             mutationOperators :  List<KClass<out Mutation>>,
+                             outputFile: File,
+                             analyzer: KgAnalyzer) {
 
-        val inputFiles = allOwlFiles(inputDirectory)  // sample
+        // either collect ontologies or just chose file
+        val inputFiles = if (input.isDirectory)
+            allOwlFiles(input)  // sample
+        else
+            setOf(input)
 
         // initialize map with results
         val results : MutableMap<Int, MutableList<Set<Int>>> = mutableMapOf()
-        for (mutCount in mutationNumbers)
+        for (mutCount in mutationNumbersEL)
             results[mutCount] = mutableListOf()
 
-        val totalTests = sampleSize * mutationNumbers.size
+        val totalTests = sampleSize * mutationNumbersEL.size
 
         // iterate over all selected files in directory
 
         var count = 1
-        for (mutCount in mutationNumbers) {
+        for (mutCount in mutationNumbersEL) {
             for (sampleID in 1..sampleSize) {
                 println("Progress: $count/$totalTests")
-
                 var res : Model? = null
                 while (res == null) {
-
                     val inputFile = inputFiles.random(randomGenerator)
                     // load ontology
                     val seedOntology = owlFileHandler.loadOwlDocument(inputFile)
-
-                    // use timeout of 10s
+                    // use timeout of 30s
                     res = timedMutation2(seedOntology, mutationOperators, mutCount, 30000)
-
-                    //res = timedMutation3(inputFile, mutCount, 5000)
-
                 }
 
-
                 // safe result
-                results[mutCount]?.add(ontologyAnalyzer.getOwlFeaturesHashed(res))
+                results[mutCount]?.add(analyzer.getFeaturesHashed(res))
                 count += 1
             }
         }
 
         // compute results based on cumulative coverage of 10 test cases
-        val results10 = cumulativeResult(results, 10)
-        val results100 = cumulativeResult(results, 100)
+        val results10 = cumulativeResult(results, 10, mutationNumbersEL)
+        val results100 = cumulativeResult(results, 100, mutationNumbersEL)
 
-        toCSV(results, results10, results100, outputFile)
+        toCSV(results, results10, results100, outputFile, mutationNumbersEL)
 
     }
 
@@ -127,34 +126,67 @@ class OwlEvaluationGraphGenerator(private val sampleSize : Int =100 ) {
         return result
     }
 
-    private fun timedMutation3(seedOntologyFile: File,
-                               mutCount : Int,
-                               timeout: Long ): Model? {
-        var result: Model? = null
-        val seedOntology = seedOntologyFile.absolutePath
-        val mutantOntology =File("./sut/reasoners/evaluation/temp.owl")
+    fun analyzeSuaveInputCoverage(outputFile: File,
+                                  analyzer: KgAnalyzer) {
 
-        val command = "java -jar ./build/libs/OntoMutate-0.1.jar " +
-                "--el-mutate " +
-                "--seedKG=$seedOntology " +
-                "--num_mut=$mutCount " +
-                "--selection_seed=2 " +
-                "--owl " +
-                "--overwrite " +
-                "--print-summary " +
-                "--out=$mutantOntology "
+        println("generate coverage graph for Suave")
 
-        val mutationProcess = Runtime.getRuntime().exec(command)
-        val finished = mutationProcess.waitFor(timeout, TimeUnit.MILLISECONDS)
-        if (!finished) {
-            if (verbose) println("mutator did not finish in time.")
-            return null
+        // initialize map with results
+        val results : MutableMap<Int, MutableList<Set<Int>>> = mutableMapOf()
+        for (mutCount in mutationNumbersSuave)
+            results[mutCount] = mutableListOf()
+
+        val totalTests = sampleSize * mutationNumbersSuave.size
+
+        // iterate over all selected files in directory
+
+        var count = 1
+        for (mutCount in mutationNumbersSuave) {
+            for (sampleID in 1..sampleSize) {
+                println("Progress: $count/$totalTests")
+                var res : Model? = null
+                while (res == null) {
+                    // generate suave mutation
+                    res = suaveMutation(mutCount)
+                }
+
+                // safe result
+                results[mutCount]?.add(analyzer.getFeaturesHashed(res))
+                count += 1
+            }
         }
 
-        result = owlFileHandler.loadOwlDocument(mutantOntology)
+        // compute results based on cumulative coverage of 10 test cases
+        //val results10 = cumulativeResult(results, 10)
+       // val results100 = cumulativeResult(results, 100)
+        val results10 = cumulativeResult(results, 10, mutationNumbersSuave)
+        val results100 = cumulativeResult(results, 100, mutationNumbersSuave)
 
+        toCSV(results, results10, results100, outputFile, mutationNumbersSuave)
 
-        return result
+    }
+
+    private fun suaveMutation(numMutation : Int) : Model {
+        val mutantName = "tempCoverageAnalysisMutatant"
+
+        val mutantFileName = "$mutantName.0.suave.owl"
+
+        val emptyMask = RobustnessMask(verbose, shacl = null)
+
+        val sg = SuaveTestCaseGenerator(verbose)
+        // generate mutated ontology
+        sg.generateSuaveMutants(
+            numberMutants = 1,
+            numMutation,
+            ratioDomainSpecific = 0.95,
+            useAddQAMutation = true,
+            emptyMask,
+            mutantName,
+            saveMutants = true
+        )
+
+        // load saved ontology
+        return RDFDataMgr.loadDataset("sut/suave/mutatedOnt/$mutantFileName").defaultModel
     }
 
 
@@ -162,7 +194,8 @@ class OwlEvaluationGraphGenerator(private val sampleSize : Int =100 ) {
     private fun toCSV(results : MutableMap<Int, MutableList<Set<Int>>>,
                      results10 : MutableMap<Int, MutableList<Set<Int>>>,
                       results100 : MutableMap<Int, MutableList<Set<Int>>>,
-                      outputFile : File) {
+                      outputFile : File,
+                      mutationNumbers : List<Int>) {
         // output results to csv file
         FileOutputStream(outputFile).use { fos ->
             val writer = fos.bufferedWriter()
@@ -186,7 +219,8 @@ class OwlEvaluationGraphGenerator(private val sampleSize : Int =100 ) {
     // combines result of several mutants. Second argument: how many results to combine
     private fun <T>cumulativeResult(
         results : MutableMap<Int, MutableList<Set<T>>>,
-        countCombine : Int) : MutableMap<Int, MutableList<Set<T>>> {
+        countCombine : Int,
+        mutationNumbers : List<Int>) : MutableMap<Int, MutableList<Set<T>>> {
 
         val resultsCumulated : MutableMap<Int, MutableList<Set<T>>> = mutableMapOf()
         for (mutCount in mutationNumbers) {

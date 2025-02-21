@@ -3,6 +3,8 @@
 \usepackage[dvipsnames]{xcolor}
 \usepackage{pgfplots}
 
+\usetikzlibrary{patterns}
+
 \definecolor{AUVpurple}{HTML}{d726fa}
 \definecolor{PipeBrown}{HTML}{935e21}
 
@@ -13,11 +15,11 @@
 			height=0.5\columnwidth,
 			title={},
 			xlabel={\#mutations},
-			ylabel={avg. \#covered features},
+			ylabel={avg. share of covered features},
 			xmin=0, xmax=100,
-			ymin=0, ymax=64,
-			xtick={0,10,20,30,40,50, 75, 100},
-			ytick={0,16, 32, 48, 64},
+			ymin=0, ymax=93,
+			xtick={0,10,20, 30, 40,50,75,100},
+			ytick={0,23.25, 46.5, 69.75, 93},
 			yticklabels={0.0, 0.25, 0.5, 0.75, 1.0},
 			legend pos=south east,
 			legend cell align={left},
@@ -41,7 +43,7 @@
 			x=numMutations, 
 			y=avg100, 
 			col sep=comma
-			] {inputCoverage.csv};
+			] {inputCoverageSuave.csv};
 			
 			
 			
@@ -59,11 +61,11 @@
 			x=numMutations, 
 			y=avg10, 
 			col sep=comma
-			] {inputCoverage.csv};
+			] {inputCoverageSuave.csv};
 			
 			\addplot[
 			%ybar,
-			color=AUVpurple,
+			color=AUVpurple!80!black!100,
 			%fill=PipeBrown!20,
 			line width=1pt,
 			%bar shift=-4pt,
@@ -74,7 +76,16 @@
 			x=numMutations, 
 			y=avg, 
 			col sep=comma
-			] {inputCoverage.csv};
+			] {inputCoverageSuave.csv};
+			
+			\draw[	% unmutatable features: 45
+				draw=gray,
+				line width=0.5pt,
+				pattern color=gray!50,
+				pattern=north west lines,
+			] (0,0) rectangle (100, 450);
+			
+
 			
 		
 			\legend{100 mutated KGs, 10 mutated KGs, 1 mutated KG}

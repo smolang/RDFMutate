@@ -497,7 +497,126 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
         // TODO: similar check for asymmetric
     }
 
-    private fun computeDomainsObjectProp(p : Property) : Pair<Set<Resource>, Set<RDFNode>> {
+    open fun computeDomainsObjectProp(p : Property) : Pair<Set<Resource>, Set<RDFNode>> {
+        return Pair(allOfType(namedInd), allOfType(namedInd))
+    }
+
+    open fun computeDomainsDataProp(p : Property) : Pair<Set<Resource>, Set<RDFNode>> {
+        return Pair(allOfType(namedInd), allNodes())
+    }
+
+
+
+    open fun computeDomainsProp(p : Property) : Pair<Set<Resource>, Set<RDFNode>> {
+        // build sets for the elements that are in the domain and range of the property
+        val domainP : Set<Resource>
+        val rangeP : Set<RDFNode>
+
+        val Ind = allOfType(namedInd)   // all individuals
+
+        // is property an ObjectProperty?
+
+        if (isOfType(p, objectPropClass)) {
+            val (d, r) = computeDomainsObjectProp(p)
+            domainP = d
+            rangeP = r
+        }
+        else if (isOfType(p, datatypeClass)) {
+            val (d, r) = computeDomainsDataProp(p)
+            domainP = d
+            rangeP = r
+        }
+        // is property type property?
+        else if (p == rdfTypeProp){
+            // let's restrict ourselves to add type relations between individuals and classes
+            domainP = Ind
+            rangeP = allOfType(owlClass)
+        }
+        else if (p == subClassProp){
+            domainP = allOfType(owlClass)
+            rangeP = allOfType(owlClass)
+        }
+        else if (p == domainProp || p == rangeProp){
+            domainP = allOfType(objectPropClass)
+            rangeP = allOfType(owlClass)
+        }
+        else {
+            // other special cases are not considered yet --> add relation between any two nodes
+            domainP = allNodes()
+            rangeP = allNodes()
+        }
+
+        return Pair(domainP, rangeP)
+    }
+
+    override fun createMutation() {
+        // select candidate
+        val prop =
+            if (hasConfig) {
+                when (config) {
+                    is SingleResourceConfiguration -> {
+                        val c = config as SingleResourceConfiguration
+                        c.getResource()
+                    }
+
+                    is SingleStatementConfiguration -> {
+                        val c = config as SingleStatementConfiguration
+                        c.getStatement().predicate
+                    }
+
+                    else -> model.createResource("newPredicate:" + randomGenerator.nextInt())
+                }
+            }
+            else
+                getCandidates().random(randomGenerator)
+
+        val p = model.getProperty(prop.toString())
+
+        val (domainPunsorted, rangePunsorted) = computeDomainsProp(p)
+
+        val domainP = domainPunsorted.toList().sortedBy { it.toString() }
+        val rangeP = rangePunsorted.toList().sortedBy { it.toString() }
+
+
+        // check, if there are candidates to add this relation
+        if (domainP.any() && rangeP.any()) {
+            var axiomCand = model.createStatement(domainP.random(randomGenerator), p, rangeP.random(randomGenerator))
+
+            // test if axiom exists
+            // try 10 times to find an axiom that does not exist, as this often works and it is fast
+            var i = 0
+            while (!validAddition(axiomCand) && i < 20) {
+                // find new axiom
+                axiomCand = model.createStatement(domainP.random(randomGenerator), p, rangeP.random(randomGenerator))
+                i += 1
+            }
+
+            // test if a non-contained axiom was found
+            val axiom =
+                if (!validAddition(axiomCand))
+                    null
+                    // use expensive search for a valid axiom in case no valid one was found so far
+                    //costlySearchForValidAxiom(p, domainP.toSet(), rangeP.toSet())
+                else
+                    axiomCand
+
+
+            // if the selected axiom is not contained in ontology and the addition is valid --> we add it
+            // otherwise: we do not add or delete anything
+            if (axiom != null && validAddition(axiom)) {
+                addSet.add(axiom)
+                // add elements to repair set, s.t. obvious inconsistencies are circumvented
+                setRepairs(p, axiom)
+            }
+        }
+        super.createMutation()
+    }
+}
+
+// more sophisitcated version, i.e. is more careful when adding relations, e.g. takes domain definitions into account
+open class AddRelationMutationSophisticated(model: Model, verbose : Boolean) : AddRelationMutation(model, verbose) {
+
+    override fun computeDomainsObjectProp(p : Property) : Pair<Set<Resource>, Set<RDFNode>> {
         // only select individuals and according to range and domain
         // note: this is very restrictive, as usually, one could infer the class from the relation
         // our setting is more useful in a closed-world scenario
@@ -522,7 +641,7 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
         return Pair(domainP, rangeP)
     }
 
-    private fun computeDomainsDataProp(p : Property) : Pair<Set<Resource>, Set<RDFNode>> {
+    override fun computeDomainsDataProp(p : Property) : Pair<Set<Resource>, Set<RDFNode>> {
         // only select individuals and according to range and domain
         // note: this is very restrictive, as usually, one could infer the class from the relation
         // our setting is more useful in a closed-world scenario
@@ -630,114 +749,7 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
 
         return Pair(domainP, rangeP)
     }
-
-    open fun computeDomainsProp(p : Property) : Pair<Set<Resource>, Set<RDFNode>> {
-        // build sets for the elements that are in the domain and range of the property
-        val domainP : Set<Resource>
-        val rangeP : Set<RDFNode>
-
-        val Ind = allOfType(namedInd)   // all individuals
-
-        // is property an ObjectProperty?
-
-        if (isOfType(p, objectPropClass)) {
-            domainP = allOfType(namedInd)
-            rangeP = allOfType(namedInd)
-        }
-        /*
-        else if (isOfType(p, datatypeProp)) {
-            val (d, r) = computeDomainsDataProp(p)
-            domainP = d
-            rangeP = r
-        }
-        // is property type property?
-        else */
-        else if (p == rdfTypeProp){
-            // let's restrict ourselves to add type relations between individuals and classes
-            domainP = Ind
-            rangeP = allOfType(owlClass)
-        }
-        else if (p == subClassProp){
-            domainP = allOfType(owlClass)
-            rangeP = allOfType(owlClass)
-        }
-        else if (p == domainProp || p == rangeProp){
-            domainP = allOfType(objectPropClass)
-            rangeP = allOfType(owlClass)
-        }
-        else {
-            // other special cases are not considered yet --> add relation between any two nodes
-            domainP = allNodes()
-            rangeP = allNodes()
-        }
-
-        return Pair(domainP, rangeP)
-    }
-
-    override fun createMutation() {
-        // select candidate
-        val prop =
-            if (hasConfig) {
-                when (config) {
-                    is SingleResourceConfiguration -> {
-                        val c = config as SingleResourceConfiguration
-                        c.getResource()
-                    }
-
-                    is SingleStatementConfiguration -> {
-                        val c = config as SingleStatementConfiguration
-                        c.getStatement().predicate
-                    }
-
-                    else -> model.createResource("newPredicate:" + randomGenerator.nextInt())
-                }
-            }
-            else
-                getCandidates().random(randomGenerator)
-
-        val p = model.getProperty(prop.toString())
-
-        val (domainPunsorted, rangePunsorted) = computeDomainsProp(p)
-
-        val domainP = domainPunsorted.toList().sortedBy { it.toString() }
-        val rangeP = rangePunsorted.toList().sortedBy { it.toString() }
-
-
-        // check, if there are candidates to add this relation
-        if (domainP.any() && rangeP.any()) {
-            var axiomCand = model.createStatement(domainP.random(randomGenerator), p, rangeP.random(randomGenerator))
-
-            // test if axiom exists
-            // try 10 times to find an axiom that does not exist, as this often works and it is fast
-            var i = 0
-            while (!validAddition(axiomCand) && i < 20) {
-                // find new axiom
-                axiomCand = model.createStatement(domainP.random(randomGenerator), p, rangeP.random(randomGenerator))
-                i += 1
-            }
-
-            // test if a non-contained axiom was found
-            val axiom =
-                if (!validAddition(axiomCand))
-                    null
-                    // use expensive search for a valid axiom in case no valid one was found so far
-                    //costlySearchForValidAxiom(p, domainP.toSet(), rangeP.toSet())
-                else
-                    axiomCand
-
-
-            // if the selected axiom is not contained in ontology and the addition is valid --> we add it
-            // otherwise: we do not add or delete anything
-            if (axiom != null && validAddition(axiom)) {
-                addSet.add(axiom)
-                // add elements to repair set, s.t. obvious inconsistencies are circumvented
-                setRepairs(p, axiom)
-            }
-        }
-        super.createMutation()
-    }
 }
-
 
 // removes a statement, that uses the defined predicate
 abstract class RemoveStatementByRelationMutation(model: Model, verbose : Boolean) : RemoveStatementMutation(model, verbose) {
@@ -795,6 +807,32 @@ open class ChangeRelationMutation(model: Model, verbose: Boolean) : AddRelationM
     override fun getCandidates() : List<Resource> {
         val cand =  super.getCandidates()
        // return cand
+        return filterMutatableAxiomsResource(cand.toList()).sortedBy { it.toString() }
+    }
+
+    override fun computeDomainsProp(p: Property): Pair<Set<Resource>, Set<RDFNode>> {
+        // use all individuals as domain that already have such an outgoing relation
+        val domainP = model.listResourcesWithProperty(p).toSet()
+        // use (restrictions of ) domain and range from super method
+        val (domainRestricted, rangeP) = super.computeDomainsProp(p)
+        return Pair(domainP.intersect(domainRestricted), rangeP)
+    }
+
+    override fun createMutation() {
+        // create the mutation as usual (i.e. adding a new triple)
+        super.createMutation()
+
+        // find existing relations and remove them
+        turnAdditionsToChanges()
+    }
+}
+
+// similar to adding a relation, but all existing triples with this subject ond predicate are deleted
+open class ChangeRelationMutationSophisticated(model: Model, verbose: Boolean) : AddRelationMutationSophisticated(model, verbose) {
+
+    override fun getCandidates() : List<Resource> {
+        val cand =  super.getCandidates()
+        // return cand
         return filterMutatableAxiomsResource(cand.toList()).sortedBy { it.toString() }
     }
 

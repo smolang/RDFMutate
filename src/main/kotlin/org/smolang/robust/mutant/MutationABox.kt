@@ -147,6 +147,38 @@ open class AddObjectPropertyRelationMutation(model: Model, verbose: Boolean) : A
     }
 }
 
+open class AddObjectPropertyRelationSophisticated(model: Model, verbose: Boolean) : AddRelationMutationSophisticated(model, verbose) {
+    override fun getCandidates() : List<Resource> {
+        val cand = allOfType(objectPropClass)
+        return cand.sortedBy { it.toString() }
+        // we do not filter, when we add stuff, only when we remove
+        //return filterRelevantPrefixesResource(cand.toList()).sortedBy { it.toString() }
+    }
+
+    override fun setConfiguration(config: MutationConfiguration) {
+        val p =
+            when (config) {
+                is SingleResourceConfiguration -> {
+                    config.getResource()
+                }
+
+                is SingleStatementConfiguration -> {
+                    config.getStatement().predicate
+                }
+
+                else -> model.createResource("newObjectProp" + randomGenerator.nextInt())
+            }
+
+        // check that p is really an ObjectProperty, if it exists in the model at all
+        if (model.listResourcesWithProperty(null ).toSet().contains(p.asResource()))
+            if (!isOfType(p.asResource(), objectPropClass)) {
+                println("WARNING: resource $p is not an object property but is used as such in configuration.")
+            }
+
+        super.setConfiguration(config)
+    }
+}
+
 abstract class AddNegativePropertyRelationMutation(model: Model, verbose: Boolean) : Mutation(model, verbose) {
     abstract val typeOfProperty :Resource
     abstract val domain : Set<Resource>
@@ -196,7 +228,23 @@ class RemoveNegativePropertyAssertionMutation(model: Model, verbose: Boolean) : 
     }
 }
 
-open class ChangeObjectPropertyRelationMutation(model: Model, verbose: Boolean) : AddObjectPropertyRelationMutation(model, verbose) {
+open class ChangeObjectPropertyRelationMutation(model: Model, verbose: Boolean) : AddObjectPropertyRelationSophisticated(model, verbose) {
+    override fun getCandidates() : List<Resource> {
+        val cand =  super.getCandidates()
+        return cand
+        //return filterMutatableAxiomsResource(cand.toList()).sortedBy { it.toString() }
+    }
+
+    override fun createMutation() {
+        // create the mutation as usual (i.e. adding a new triple)
+        super.createMutation()
+
+        // find existing relations and remove them
+        turnAdditionsToChanges()
+    }
+}
+
+open class ChangeObjectPropertyRelationMutationSophisticated(model: Model, verbose: Boolean) : AddObjectPropertyRelationSophisticated(model, verbose) {
     override fun getCandidates() : List<Resource> {
         val cand =  super.getCandidates()
         return cand

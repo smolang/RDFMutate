@@ -12,9 +12,11 @@ import org.apache.jena.riot.RDFDataMgr
 import org.apache.jena.shacl.Shapes
 import org.smolang.robust.domainSpecific.geo.GeoScenarioGenerator
 import org.smolang.robust.domainSpecific.geo.GeoTestCaseGenerator
-import org.smolang.robust.domainSpecific.reasoner.OwlEvaluationGraphGenerator
+import org.smolang.robust.domainSpecific.reasoner.CoverageEvaluationGraphGenerator
 import org.smolang.robust.domainSpecific.reasoner.OwlFileHandler
+import org.smolang.robust.domainSpecific.reasoner.OwlOntologyAnalyzer
 import org.smolang.robust.domainSpecific.suave.SuaveEvaluationGraphGenerator
+import org.smolang.robust.domainSpecific.suave.SuaveOntologyAnalyzer
 import org.smolang.robust.domainSpecific.suave.SuaveTestCaseGenerator
 import org.smolang.robust.mutant.*
 import org.smolang.robust.sut.MiniPipeInspection
@@ -37,7 +39,7 @@ class Main : CliktCommand() {
     private val owlDocument by option("--owl", help="Set to true, if input is OWL ontology (e.g. in functional syntax). Default = false").flag()
     private val outputFile by option("--out", "-o", help="Give name for mutated KG.").file()
     private val overwriteOutput by option("--overwrite", help="Indicates if output ontology should be replaced, if it already exists. Default = false").flag()
-    private val coverageSamples by option("--coverage-samples", help="number of samples used for coverage evaluation. Default = 100").int()
+    private val sampleSize by option("--coverage-samples", "--sample-size", help="number of samples used for coverage evaluation. Default = 100").int()
     private val mainMode by option(help="Options to run specialized modes of this program.").switch(
         "--mutate" to "mutate", "-m" to "mutate",
         "--scen_geo" to "geo", "-sg" to "geo",
@@ -46,7 +48,9 @@ class Main : CliktCommand() {
         "--scen_test" to "test", "-st" to "test",
         "--issre_graph" to "issre", "-ig" to "issre",
         "--el-graph" to "elGraph",
-        "--analyze-minimization" to "minimization"
+        "--suave-coverage-graph" to "suaveCoverageGraph",
+        "--analyze-minimization" to "minimization",
+        "--suave-features" to "suaveFeatures"
     ).default("free")
 
     private val elReasonerMutations = listOf(
@@ -139,8 +143,10 @@ class Main : CliktCommand() {
             "elReasoner" -> {
                 elMutation()
             }
-            "issre" -> generateIssreGraph()
-            "elGraph" -> generateElReasonerGraph()
+            "issre" -> generateSuaveAttemptsGraph()
+            "elGraph" -> generateElCoverageGraphs()
+            "suaveCoverageGraph" -> generateSuaveCoverageGraphs()
+            "suaveFeatures" -> listSuaveFeatures()
             "test" -> {
                 // test installation
                 testMiniPipes()
@@ -440,25 +446,40 @@ class Main : CliktCommand() {
     }
 
     // generates graph for ISSRE paper
-    private fun generateIssreGraph() {
-        val numberOfMutants = 100
+    private fun generateSuaveAttemptsGraph() {
+        val numberOfMutants = sampleSize?:100
         val outputFile = File("sut/suave/evaluation/attemptsPerMask.csv")
         SuaveEvaluationGraphGenerator(false).generateGraph(numberOfMutants, outputFile)
     }
 
     // generates graph for journal extension
-    private fun generateElReasonerGraph() {
-        val inputDirectory = File("sut/reasoners/ontologies_ore")
-        val outputFile = File("sut/reasoners/evaluation/inputCoverage.csv")
-        if (coverageSamples != null)
-            OwlEvaluationGraphGenerator(coverageSamples!!).analyzeElInputCoverage(inputDirectory, elReasonerMutations, outputFile)
+    private fun generateElCoverageGraphs() {
+        val coverageGraphGenerator = if (sampleSize != null)
+            CoverageEvaluationGraphGenerator(sampleSize!!)
         else
-            OwlEvaluationGraphGenerator().analyzeElInputCoverage(inputDirectory, elReasonerMutations, outputFile)
+            CoverageEvaluationGraphGenerator()
+
+        // EL coverage graph
+        val inputDirectoryEL = File("sut/reasoners/ontologies_ore")
+        val outputFileEl = File("sut/reasoners/evaluation/inputCoverageEL.csv")
+        val owlAnalyzer = OwlOntologyAnalyzer()
+        coverageGraphGenerator.analyzeInputCoverage(inputDirectoryEL, elReasonerMutations, outputFileEl, owlAnalyzer)
+    }
+    private fun generateSuaveCoverageGraphs() {
+        val coverageGraphGenerator = if (sampleSize != null)
+            CoverageEvaluationGraphGenerator(sampleSize!!)
+        else
+            CoverageEvaluationGraphGenerator()
+
+        // suave coverage graph
+        val outputFileSuave = File("sut/suave/evaluation/inputCoverageSuave.csv")
+        val suaveAnalyzer = SuaveOntologyAnalyzer()
+        coverageGraphGenerator.analyzeSuaveInputCoverage(outputFileSuave,suaveAnalyzer)
+
     }
 
     // analyze, how well minimization worked
     private fun analyzeMinimization() {
-
         val inputFiles = listOf(
             Pair(
                 File("sut/reasoners/foundBugs/P2/ont_5.owl"),
@@ -491,7 +512,23 @@ class Main : CliktCommand() {
         }
     }
 
+    private fun listSuaveFeatures() {
+        val suavePath = "sut/suave/suave_ontologies/suave_original_with_imports.ttl"
+        val suaveWithImports = RDFDataMgr.loadDataset(suavePath).defaultModel
 
+        val features = SuaveOntologyAnalyzer().getFeatures(suaveWithImports)
+
+        println(features)
+        println("number of feauters: ${features.size}")
+
+        val suavePathUnmutated = "sut/suave/suave_ontologies/suave_original_with_imports_unmutatable.owl"
+        val suaveWithImportsUnmutated = RDFDataMgr.loadDataset(suavePathUnmutated).defaultModel
+
+        val featuresUnmutated = SuaveOntologyAnalyzer().getFeatures(suaveWithImportsUnmutated)
+        println("number of feauters unmutatable part: ${featuresUnmutated.size}")
+
+
+    }
 }
 
 

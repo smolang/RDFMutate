@@ -8,7 +8,7 @@ echo "build source code"
 
 # run mutation (with the arguments provided)
 echo "create attempts graph"
-java -jar build/libs/OntoMutate-0.1.jar --issre_graph
+java -jar build/libs/OntoMutate-0.1.jar --issre_graph --sample-size=1
 
 
 cd sut/suave/evaluation

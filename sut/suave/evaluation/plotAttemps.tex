@@ -1,7 +1,7 @@
 % plot of times
 \documentclass{standalone}
 
-\usepackage{xcolor}
+\usepackage[dvipsnames]{xcolor}
 \usepackage{pgfplots}
 
 \definecolor{AUVpurple}{HTML}{d726fa}
@@ -16,15 +16,16 @@
 			xlabel={iteration of mask},
 			ylabel={avg. \#attempts},
 			xmin=-0.5, xmax=7.5,
-			ymin=0, ymax=4,
+			ymin=0, ymax=1000,
 			xtick={0,1,2,3,4,5,6,7},
-			ytick={0, 1, 2, 3, 4},
+			ytick={1, 2, 4,8,16,32, 64},
+			yticklabels={1, 2, 4,8,16,32, 64},
 			legend pos=north west,
 			ymajorgrids=true,
+			ymode=log,
 			grid style=dashed,
 			%ybar=0pt
 			]
-			
 			
 			\addplot[
 			%ybar,
@@ -33,18 +34,50 @@
 			line width=1pt,
 			%bar shift=-4pt,
 			%bar width=5,
-			mark=+
+			mark=o
 			] 
 			table [
 			x=contract, 
-			y=ratioDI, 
+			y=ratioDI5, 
 			col sep=comma
 			] {attemptsPerMask.csv};
 			
 			
 			\addplot[
 			%ybar,
-			color=AUVpurple,
+			color=BrickRed,
+			%fill=AUVpurple,
+			line width=1pt,
+			%bar shift=4pt,
+			%bar width=5,
+			mark=cube
+			] 
+			table [
+			x=contract, 
+			y=ratioDS5, 
+			col sep=comma
+			] {attemptsPerMask.csv};
+			
+			
+			\addplot[
+			%ybar,
+			color=PineGreen,
+			%fill=PipeBrown!20,
+			line width=1pt,
+			%bar shift=-4pt,
+			%bar width=5,
+			mark=+
+			] 
+			table [
+			x=contract, 
+			y=ratioDI2, 
+			col sep=comma
+			] {attemptsPerMask.csv};
+			
+			
+			\addplot[
+			%ybar,
+			color=AUVpurple!80!black!100,
 			%fill=AUVpurple,
 			line width=1pt,
 			%bar shift=4pt,
@@ -53,13 +86,15 @@
 			] 
 			table [
 			x=contract, 
-			y=ratioDS, 
+			y=ratioDS2, 
 			col sep=comma
 			] {attemptsPerMask.csv};
 			
 			
 			
-			\legend{domain-independent, domain-specific}
+			
+			
+			\legend{domain-independent (5 mutations), domain-specific (5 mutations), domain-independent (2 mutations), domain-specific (2 mutations)}
 			
 		\end{axis}
 	\end{tikzpicture}

@@ -15,7 +15,7 @@ const val qaType = "http://metacontrol.org/tomasys#isQAtype"
 const val qaComparisonOperator  = "http://metacontrol.org/tomasys#qa_comparison_operator"
 const val hasValueIRI = "http://metacontrol.org/tomasys#hasValue"
 
-class AddQAEstimationMutation(model: Model, verbose: Boolean) : AddObjectPropertyRelationMutation(model, verbose) {
+class AddQAEstimationMutation(model: Model, verbose: Boolean) : AddObjectPropertyRelationSophisticated(model, verbose) {
     init {
         super.setConfiguration(
             SingleResourceConfiguration(
@@ -45,7 +45,7 @@ class RemoveQAEstimationMutation(model: Model, verbose: Boolean) : RemoveObjectP
     }
 }
 
-class ChangeSolvesFunctionMutation(model: Model, verbose: Boolean) : ChangeObjectPropertyRelationMutation(model, verbose) {
+class ChangeSolvesFunctionMutation(model: Model, verbose: Boolean) : ChangeObjectPropertyRelationMutationSophisticated(model, verbose) {
     init {
         super.setConfiguration(
             SingleResourceConfiguration(
@@ -60,7 +60,7 @@ class ChangeSolvesFunctionMutation(model: Model, verbose: Boolean) : ChangeObjec
     }
 }
 
-class ChangeQualityAttributTypeMutation(model: Model, verbose: Boolean) : ChangeObjectPropertyRelationMutation(model, verbose) {
+class ChangeQualityAttributTypeMutation(model: Model, verbose: Boolean) : ChangeObjectPropertyRelationMutationSophisticated(model, verbose) {
     init {
         super.setConfiguration(
             SingleResourceConfiguration(
@@ -74,7 +74,7 @@ class ChangeQualityAttributTypeMutation(model: Model, verbose: Boolean) : Change
     }
 }
 
-class ChangeHasValueMutation(model: Model, verbose: Boolean) : ChangeRelationMutation(model, verbose) {
+class ChangeHasValueMutation(model: Model, verbose: Boolean) : ChangeRelationMutationSophisticated(model, verbose) {
     init {
         super.setConfiguration(
             SingleResourceConfiguration(
@@ -88,7 +88,7 @@ class ChangeHasValueMutation(model: Model, verbose: Boolean) : ChangeRelationMut
     }
 }
 
-class ChangeQAComparisonOperatorMutation(model: Model, verbose: Boolean) : ChangeRelationMutation(model, verbose) {
+class ChangeQAComparisonOperatorMutation(model: Model, verbose: Boolean) : ChangeRelationMutationSophisticated(model, verbose) {
     init {
         super.setConfiguration(
             SingleResourceConfiguration(
