@@ -5,7 +5,7 @@
 heapLimit=${1:-12} # no limit: 12GB
 limit=-Xmx${heapLimit}G 
 
-echo "evaluating input coverage. This can take several minutes. On our machine (Intel Core i7-1165G7) it took about 2h."
+echo "evaluating input coverage. This can take several minutes. On our machine (Intel Core i7-1165G7) it took about 3h."
 
 # build 
 echo "build source code"
@@ -14,7 +14,8 @@ echo "build source code"
 # TODO: uncomment following line
 #java $limit -jar build/libs/OntoMutate-0.1.jar --el-graph --coverage-samples=500
 
-java $limit -jar build/libs/OntoMutate-0.1.jar --suave-coverage-graph --coverage-samples=5
+java $limit -jar build/libs/OntoMutate-0.1.jar --suave-coverage-graph --coverage-samples=100 # should be 2h for 100 samples
+
 
 
 # create plot

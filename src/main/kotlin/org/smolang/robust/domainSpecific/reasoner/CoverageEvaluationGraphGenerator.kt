@@ -3,6 +3,7 @@ package org.smolang.robust.domainSpecific.reasoner
 import org.apache.jena.rdf.model.Model
 import org.apache.jena.riot.RDFDataMgr
 import org.smolang.robust.domainSpecific.KgAnalyzer
+import org.smolang.robust.domainSpecific.suave.SuaveOntologyAnalyzer
 import org.smolang.robust.domainSpecific.suave.SuaveTestCaseGenerator
 import org.smolang.robust.mutant.Mutation
 import org.smolang.robust.mutant.MutationSequence
@@ -129,6 +130,17 @@ class CoverageEvaluationGraphGenerator(private val sampleSize : Int =100 ) {
     fun analyzeSuaveInputCoverage(outputFile: File,
                                   analyzer: KgAnalyzer) {
 
+        // calculate features that are not saved to mutant due to how suave handles that stuff (but they still count
+        // for the features
+        val mrosPath = "sut/suave/suave_ontologies/mros_no_import.owl"
+        val tomasysPath = "sut/suave/suave_ontologies/tomasys.owl"
+        val mrosModel = RDFDataMgr.loadDataset(mrosPath).defaultModel!!
+        val tomasysModel = RDFDataMgr.loadDataset(tomasysPath).defaultModel!!
+        val featuresMros = SuaveOntologyAnalyzer().getFeaturesHashed(mrosModel)
+        val featuresThomasys = SuaveOntologyAnalyzer().getFeaturesHashed(tomasysModel)
+
+        val externalFeatures = featuresMros.plus(featuresThomasys)
+
         println("generate coverage graph for Suave")
 
         // initialize map with results
@@ -149,9 +161,10 @@ class CoverageEvaluationGraphGenerator(private val sampleSize : Int =100 ) {
                     // generate suave mutation
                     res = suaveMutation(mutCount)
                 }
+                val features = analyzer.getFeaturesHashed(res).plus(externalFeatures)
 
                 // safe result
-                results[mutCount]?.add(analyzer.getFeaturesHashed(res))
+                results[mutCount]?.add(features)
                 count += 1
             }
         }

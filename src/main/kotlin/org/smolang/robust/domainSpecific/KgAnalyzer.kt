@@ -27,6 +27,16 @@ abstract class KgAnalyzer {
         return usedFeatures
     }
 
+    fun getFeatures(statements : List<Statement>): Set<Resource> {
+        val usedFeatures = mutableSetOf<Resource>()
+
+        for (s in statements) {
+            usedFeatures.addAll(getFeatures(s))
+        }
+
+        return usedFeatures
+    }
+
     private fun getFeatures(s: Statement) : Set<Resource> {
         val usedFeatures = mutableSetOf<Resource>()
         if (isFeature(s.subject))

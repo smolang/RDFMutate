@@ -24,7 +24,7 @@ class SuaveEvaluationGraphGenerator(val verbose: Boolean) {
         val listAttemptsDS5 : MutableList<Int> = mutableListOf()
         val ids = listOf(0,1,2,3,4,5,6,7)
         for (id in ids) {
-            println("create mutants for mask with id $id")
+            println("create mutants for mask with id $id of ${ids.size-1}")
             val maskFile = File("sut/suave/masks/mask$id.ttl")
             val shapesGraph = RDFDataMgr.loadGraph(maskFile!!.absolutePath)
 

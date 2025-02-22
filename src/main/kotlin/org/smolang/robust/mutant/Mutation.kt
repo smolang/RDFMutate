@@ -310,7 +310,7 @@ open class Mutation(var model: Model, val verbose : Boolean) {
         return r.toString().startsWith(prefix)
     }
 
-    fun addMutatableAximo(s: Statement) {
+    fun addMutatableAxiom(s: Statement) {
         mutatableAxioms.add(s)
     }
 

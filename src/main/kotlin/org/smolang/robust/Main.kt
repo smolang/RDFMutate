@@ -513,19 +513,35 @@ class Main : CliktCommand() {
     }
 
     private fun listSuaveFeatures() {
-        val suavePath = "sut/suave/suave_ontologies/suave_original_with_imports.ttl"
-        val suaveWithImports = RDFDataMgr.loadDataset(suavePath).defaultModel
+        val suavePathMutatable = "sut/suave/suave_ontologies/suave_mutatable.owl"
+        val suaveMutatable = RDFDataMgr.loadDataset(suavePathMutatable).defaultModel
+        val featuresMutatable = SuaveOntologyAnalyzer().getFeatures(suaveMutatable)
 
-        val features = SuaveOntologyAnalyzer().getFeatures(suaveWithImports)
 
-        println(features)
-        println("number of feauters: ${features.size}")
-
-        val suavePathUnmutated = "sut/suave/suave_ontologies/suave_original_with_imports_unmutatable.owl"
+        val suavePathUnmutated = "sut/suave/suave_ontologies/suave_unmutatable.owl"
         val suaveWithImportsUnmutated = RDFDataMgr.loadDataset(suavePathUnmutated).defaultModel
-
         val featuresUnmutated = SuaveOntologyAnalyzer().getFeatures(suaveWithImportsUnmutated)
-        println("number of feauters unmutatable part: ${featuresUnmutated.size}")
+
+        val mrosPath = "sut/suave/suave_ontologies/mros_no_import.owl"
+        val tomasysPath = "sut/suave/suave_ontologies/tomasys.owl"
+        val mrosModel = RDFDataMgr.loadDataset(mrosPath).defaultModel!!
+        val tomasysModel = RDFDataMgr.loadDataset(tomasysPath).defaultModel!!
+        val featuresMros = SuaveOntologyAnalyzer().getFeatures(mrosModel)
+        val featuresThomasys = SuaveOntologyAnalyzer().getFeatures(tomasysModel)
+
+        // all features that can not be changed by mutation
+        val featuresFixed = featuresUnmutated.plus(featuresMros).plus(featuresThomasys)
+
+        val allFeatures = featuresMutatable.plus(featuresFixed)
+
+
+
+        println("allowed features in suave: $allFeatures")
+        println("number of features: ${allFeatures.size}")
+
+
+        println("number of features unmutatable part: ${featuresFixed.size}")
+
 
 
     }

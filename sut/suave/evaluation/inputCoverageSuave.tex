@@ -7,6 +7,7 @@
 
 \definecolor{AUVpurple}{HTML}{d726fa}
 \definecolor{PipeBrown}{HTML}{935e21}
+\newcommand{\hide}[1]{}
 
 \begin{document}
 	\begin{tikzpicture}
@@ -17,9 +18,9 @@
 			xlabel={\#mutations},
 			ylabel={avg. share of covered features},
 			xmin=0, xmax=100,
-			ymin=0, ymax=93,
+			ymin=0, ymax=88,
 			xtick={0,10,20, 30, 40,50,75,100},
-			ytick={0,23.25, 46.5, 69.75, 93},
+			ytick={0,22, 44, 66, 88},
 			yticklabels={0.0, 0.25, 0.5, 0.75, 1.0},
 			legend pos=south east,
 			legend cell align={left},
@@ -29,7 +30,7 @@
 			%ybar=0pt
 			]
 			
-			
+\hide{		
 			\addplot[
 			%ybar,
 			color=PineGreen,
@@ -37,7 +38,7 @@
 			line width=1pt,
 			%bar shift=-4pt,
 			%bar width=5,
-			mark=o
+			mark=triangle*
 			] 
 			table [
 			x=numMutations, 
@@ -55,7 +56,7 @@
 			line width=1pt,
 			%bar shift=-4pt,
 			%bar width=5,
-			mark=+
+			mark=square*
 			] 
 			table [
 			x=numMutations, 
@@ -63,6 +64,7 @@
 			col sep=comma
 			] {inputCoverageSuave.csv};
 			
+		}
 			\addplot[
 			%ybar,
 			color=AUVpurple!80!black!100,
@@ -78,17 +80,18 @@
 			col sep=comma
 			] {inputCoverageSuave.csv};
 			
-			\draw[	% unmutatable features: 45
+			\draw[	% unmutatable features: 69
 				draw=gray,
 				line width=0.5pt,
 				pattern color=gray!50,
 				pattern=north west lines,
-			] (0,0) rectangle (100, 450);
+			] (0, 0) rectangle (100, 690);
 			
 
 			
 		
-			\legend{100 mutated KGs, 10 mutated KGs, 1 mutated KG}
+			\legend{%100 mutated KGs, 10 mutated KGs, 
+				features mutated KGs}
 
 			
 		\end{axis}
