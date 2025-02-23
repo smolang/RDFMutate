@@ -11,10 +11,9 @@ echo "evaluating input coverage. This can take several minutes. On our machine (
 echo "build source code"
 ./gradlew build 
 
-# TODO: uncomment following line
-#java $limit -jar build/libs/OntoMutate-0.1.jar --el-graph --coverage-samples=500
+java $limit -jar build/libs/OntoMutate-0.1.jar --el-graph --coverage-samples=500
 
-java $limit -jar build/libs/OntoMutate-0.1.jar --suave-coverage-graph --coverage-samples=100 # should be 2h for 100 samples
+java $limit -jar build/libs/OntoMutate-0.1.jar --suave-coverage-graph --coverage-samples=100 # should be about 2h for 100 samples
 
 
 

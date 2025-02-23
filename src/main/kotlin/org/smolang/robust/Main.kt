@@ -539,7 +539,7 @@ class Main : CliktCommand() {
         println("allowed features in suave: $allFeatures")
         println("number of features: ${allFeatures.size}")
 
-
+        println("unmutatable features in suave: $featuresFixed")
         println("number of features unmutatable part: ${featuresFixed.size}")
 
 
