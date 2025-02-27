@@ -17,9 +17,8 @@ You can test the installation by running a test on a system based on the running
 ### Run Experiments
 There are three scripts to reproduce our experiments.
 
- - `generate_attemps_graph.sh` generates the graph from the paper showing the relation between mask development and number of attempts to generate a valid mutant. The PDF output is put into a folder `results`. The run time of the script is a few minutes.
- - `generate_coverage_graph.sh` generates the graph from the paper showing the input feature coverage. The PDF output is put into a folder `results`. The run time of the script is several minutes, i.e., about an hour. See the next bullet point, if this is too much time.
- - `generate_coverage_graph_reduced.sh` is the same as generate_coverage_graph.sh` but with a smaller sample size. The run time of the script is a few minutes.
+- `generate_plot.sh` generates the three plots from the paper: (i) showing the relation between mask development and number of attempts to generate a valid mutant and (ii)  showing the input feature coverage. The PDF output is put into a folder `results`. (This script requires a LaTex installation to produce the PDF.) The run time of the script is several hours.
+- `generate_plot_reduced.sh` is the same as `generate_plot.sh` but with smaller sample sizes. The run time of the script is a few minutes.
 - `replicate_geo.sh` generates mutants for the geo system and executes the test runs for all of them. The mutants are saved in folder `sut/geo/mutatedOnt` and the results of the test runs in `sut/geo/testResults`. On our machine (Intel Core i7-1165G7) this took about 100 hours.
 - `replicate_suave.sh` generates mutants for the suave system and executes the test runs for all of them. On our machine (Intel Core i7-1165G7) this took about 60 hours. Note: the SUAVE simulation is unstable if the hardware resources are not sufficient. On our setup (using an i7-1165G7 @ 2.80GHz), we had to provide the VM with 6 cores for the simulations to work correctly.
 
@@ -46,3 +45,6 @@ As the VM includes our implementation, it can not only be used to replicate our 
 
 ### Specifying Custom Mutation Operators
 Per default, five domain-independent mutation operators are used. To add more (existing) mutation operators, their classes need to be added to the list in lines 108–112 in file `src/main/kotlin/org/smolang/robust/Main.kt`. To define new mutation operators, one can define them as sub-classes of the class `src/main/kotlin/org/smolang/robust/mutant/Mutation.kt` (see e.g. mutation operators targeting the ABox in `src/main/kotlin/org/smolang/robust/mutant/MutationABox.kt`).
+
+## Minimizing Mutant KGs
+- `minizeReasonerKG.sh` minimizes input KGs using the algorithm discussed in the paper. It uses as a program the outcome of running the  OWL-EL reasoners on the KG.
