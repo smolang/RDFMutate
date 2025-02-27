@@ -11,7 +11,7 @@ echo "evaluating input coverage. This can take several minutes."
 
 # build 
 echo "build source code"
-#./gradlew build 
+./gradlew build 
 
 # create coverage plots
 
@@ -19,9 +19,9 @@ echo "evaluating input coverage using reduced sample size (20 and 5)"
 
 
 
-#java $limit -jar build/libs/OntoMutate-0.1.jar --el-graph --coverage-samples=20
+java $limit -jar build/libs/OntoMutate-0.1.jar --el-graph --coverage-samples=20
 
-#java $limit -jar build/libs/OntoMutate-0.1.jar --suave-coverage-graph --coverage-samples=5 
+java $limit -jar build/libs/OntoMutate-0.1.jar --suave-coverage-graph --coverage-samples=5 
 
 cd sut/reasoners/evaluation
 pdflatex inputCoverageEL.tex 
@@ -37,7 +37,7 @@ echo "evaluating attempts per mask. This can take several minutes."
 
 # create mask attempts plot
 echo "create attempts graph"
-#java -jar build/libs/OntoMutate-0.1.jar --issre_graph --sample-size=5
+java -jar build/libs/OntoMutate-0.1.jar --issre_graph --sample-size=5
 
 
 cd sut/suave/evaluation
