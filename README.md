@@ -28,7 +28,7 @@ Each folder with masks contains a file `mask_development.txt` that explains, how
 
 ## Replication of Evaluation for ESE Publication
 
-The easiest way to replicate our results is to use the following [VM on Zenodo](https://doi.org/10.5281/zenodo.12699140) where all SUTs are already implemented. If you want to install everything yourself, you can find instructions on how to do so in the next subsection.
+The easiest way to replicate our results is to use the following [VM on Zenodo](https://doi.org/10.5281/zenodo.14899988) where all SUTs are already implemented. If you want to install everything yourself, you can find instructions on how to do so in the next subsection.
 
 - `generate_plot.sh` generates the three plots from the paper: (i) showing the relation between mask development and number of attempts to generate a valid mutant and (ii)  showing the input feature coverage. The PDF output is put into a folder `results`. (This script requires a LaTex installation to produce the PDF.) The run time of the script is several hours.
 - `generate_plot_reduced.sh` is the same as `generate_plot.sh` but with smaller sample sizes. The run time of the script is a few minutes.
