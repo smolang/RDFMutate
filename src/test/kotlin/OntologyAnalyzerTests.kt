@@ -8,13 +8,13 @@ class OntologyAnalyzerTests : StringSpec() {
     init {
         "test analyzing owl features" {
             val input1 = RDFDataMgr.loadDataset("reasoners/assertion.ttl").defaultModel
-            OntologyAnalyzer().getOwlFeatures(input1).size shouldBe 3
+            OntologyAnalyzer().getOwlFeatures(input1).size shouldBe 4
 
             val input2 = RDFDataMgr.loadDataset("reasoners/siblings.ttl").defaultModel
-            OntologyAnalyzer().getOwlFeatures(input2).size shouldBe 4
+            OntologyAnalyzer().getOwlFeatures(input2).size shouldBe 5
 
             val geo = RDFDataMgr.loadDataset("geo/geo_original.ttl").defaultModel
-            OntologyAnalyzer().getOwlFeatures(geo).size shouldBe 42
+            OntologyAnalyzer().getOwlFeatures(geo).size shouldBe 49
 
         }
     }
