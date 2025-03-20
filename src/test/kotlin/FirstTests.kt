@@ -12,16 +12,15 @@ class FirstTests : StringSpec() {
     init {
         "loading abc ontology and deleting subclass axiom should violate contract" {
 
-            val verbose = false
             val input = RDFDataMgr.loadDataset("abc/abc.ttl").defaultModel
             val shapes = Shapes.parse(RDFDataMgr.loadGraph("abc/mask.ttl"))
-            val contract = RobustnessMask(verbose, shapes)
+            val contract = RobustnessMask(shapes)
 
             // add mutation to remove a random subclass axiom
-            val ms = MutationSequence(verbose)
+            val ms = MutationSequence()
             ms.addRandom(listOf(RemoveSubclassRelationMutation::class))
 
-            val m = Mutator(ms, verbose)
+            val m = Mutator(ms)
             val res = m.mutate(input)
             val valid = m.validate(res, contract)
 
@@ -32,7 +31,6 @@ class FirstTests : StringSpec() {
     init {
         "adding relations to ontology should work" {
 
-            val verbose = false
             val input = RDFDataMgr.loadDataset("relations/relations.ttl").defaultModel
 
             // add mutation to remove a random subclass axiom
@@ -50,7 +48,7 @@ class FirstTests : StringSpec() {
             val configDom = SingleResourceConfiguration(dom)
             val configRan = SingleResourceConfiguration(ran)
 
-            val ms = MutationSequence(verbose)
+            val ms = MutationSequence()
             ms.addWithConfig(AddObjectPropertyRelationMutation::class, configR)
             ms.addWithConfig(AddObjectPropertyRelationMutation::class, configTProp)
             ms.addWithConfig(AddRelationMutation::class, configT)
@@ -58,7 +56,7 @@ class FirstTests : StringSpec() {
             ms.addWithConfig(AddRelationMutation::class, configDom)
             ms.addWithConfig(AddRelationMutation::class, configRan)
 
-            val m = Mutator(ms, verbose)
+            val m = Mutator(ms)
             m.mutate(input)
 
             // at least the added property needs to be contained in the affected nodes
@@ -69,7 +67,6 @@ class FirstTests : StringSpec() {
     init {
         "removing relations to ontology should work" {
 
-            val verbose = false
             val input = RDFDataMgr.loadDataset("relations/relations.ttl").defaultModel
 
 
@@ -81,7 +78,7 @@ class FirstTests : StringSpec() {
             val configS = SingleResourceConfiguration(s)
             val configT = SingleResourceConfiguration(t)
 
-            val ms = MutationSequence(verbose)
+            val ms = MutationSequence()
             //ms.addWithConfig(RemoveIndividualMutation::class, configInd)
 
             for (i in 0..5) {
@@ -91,7 +88,7 @@ class FirstTests : StringSpec() {
             }
 
 
-            val m = Mutator(ms, verbose)
+            val m = Mutator(ms)
             m.mutate(input)
 
             // at least the added property needs to be contained in the affected nodes
@@ -105,10 +102,9 @@ class FirstTests : StringSpec() {
 
     init {
         "deleting nodes / individuals from ontologies" {
-            val verbose = false
             val input = RDFDataMgr.loadDataset("relations/relations.ttl").defaultModel
-            val ms = MutationSequence(verbose)
-            val msBad = MutationSequence(verbose)
+            val ms = MutationSequence()
+            val msBad = MutationSequence()
 
 
 
@@ -119,7 +115,7 @@ class FirstTests : StringSpec() {
 
             // adding non-individual in individual mutation results in violated assertion
             msBad.addWithConfig(RemoveIndividualMutation::class, configB)
-            val mBad = Mutator(msBad, verbose)
+            val mBad = Mutator(msBad)
             assertFailsWith<AssertionError> {
                 mBad.mutate(input)
             }
@@ -131,14 +127,13 @@ class FirstTests : StringSpec() {
             ms.addRandom(RemoveIndividualMutation::class)
 
             // run the mutations
-            val m = Mutator(ms, verbose)
+            val m = Mutator(ms)
             m.mutate(input)
         }
     }
 
     init {
         "adding / changing data relations" {
-            val verbose = false
             val input = RDFDataMgr.loadDataset("src/test/resources/suave/suave_original_with_imports.owl").defaultModel
 
             val qaCritical = input.createResource("http://metacontrol.org/tomasys#qa_critical")
@@ -149,7 +144,7 @@ class FirstTests : StringSpec() {
             val hasValue = input.createResource("http://metacontrol.org/tomasys#hasValue")
 
 
-            val ms = MutationSequence(verbose)
+            val ms = MutationSequence()
 
             for (i in 0..10) {
                 ms.addWithConfig(ChangeRelationMutation::class, configQACritical)
@@ -167,17 +162,16 @@ class FirstTests : StringSpec() {
                 )
             }
 
-            val m = Mutator(ms, verbose)
+            val m = Mutator(ms)
             m.mutate(input)
         }
     }
 
     init {
         "contract can detect inconsistent ontologies" {
-            val verbose = false
             val input = RDFDataMgr.loadDataset("relations/relations.ttl").defaultModel
             val input2 = RDFDataMgr.loadDataset("relations/allDisjoint.ttl").defaultModel
-            val ms = MutationSequence(verbose)
+            val ms = MutationSequence()
 
             val B = input.createResource("http://www.ifi.uio.no/tobiajoh/relations#B")
             val a = input.createResource("http://www.ifi.uio.no/tobiajoh/relations#a")
@@ -191,9 +185,9 @@ class FirstTests : StringSpec() {
             )
 
             // empty contract --> only check for consistency
-            val emptyContract = RobustnessMask(verbose, null)
+            val emptyContract = RobustnessMask(null)
 
-            val m = Mutator(ms, verbose)
+            val m = Mutator(ms)
             val res = m.mutate(input)
 
             emptyContract.validate(input) shouldBe true
@@ -205,10 +199,9 @@ class FirstTests : StringSpec() {
 
     init {
         "domain specific operators for SUAVE" {
-            val verbose = false
             val input = RDFDataMgr.loadDataset("src/test/resources/suave/suave_original_with_imports.owl").defaultModel
 
-            val ms = MutationSequence(verbose)
+            val ms = MutationSequence()
 
             for (i in 0..10) {
                 ms.addRandom(ChangeSolvesFunctionMutation::class)
@@ -220,7 +213,7 @@ class FirstTests : StringSpec() {
                 ms.addRandom(AddNewThrusterMutation::class)
             }
 
-            val m = Mutator(ms, verbose)
+            val m = Mutator(ms)
             m.mutate(input)
         }
     }

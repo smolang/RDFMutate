@@ -18,22 +18,23 @@ import org.semanticweb.owlapi.model.OWLOntologyManager
 import org.semanticweb.owlapi.reasoner.OWLReasoner
 import java.io.ByteArrayInputStream
 import java.io.ByteArrayOutputStream
+import org.smolang.robust.mainLogger
 
 enum class ReasoningBackend {
     HERMIT, OPENLLET, JENA
 }
 
 
-class CustomReasonerFactory(private val verbose: Boolean, private val reasoningBackend: ReasoningBackend) {
+class CustomReasonerFactory(private val reasoningBackend: ReasoningBackend) {
     fun getReasoner(model: Model) : CustomReasoner =
         when(reasoningBackend) {
-            ReasoningBackend.OPENLLET -> CustomOpenlletReasoner(model, verbose)
-            ReasoningBackend.HERMIT -> CustomHermitReasoner(model, verbose)
-            ReasoningBackend.JENA -> CustomJenaApiReasoner(model, verbose)
+            ReasoningBackend.OPENLLET -> CustomOpenlletReasoner(model)
+            ReasoningBackend.HERMIT -> CustomHermitReasoner(model)
+            ReasoningBackend.JENA -> CustomJenaApiReasoner(model)
         }
 }
 
-class CustomJenaApiReasoner(val model: Model, verbose : Boolean) : CustomReasoner(model, verbose) {
+class CustomJenaApiReasoner(val model: Model) : CustomReasoner(model) {
     private val reasoner: Reasoner = ReasonerRegistry.getOWLReasoner()
     private val inf : InfModel = ModelFactory.createInfModel(reasoner, model)
 
@@ -51,8 +52,7 @@ class CustomJenaApiReasoner(val model: Model, verbose : Boolean) : CustomReasone
                 }
             }
         } catch (e : Exception) {
-            if (verbose)
-                println("Exception in validation: $e --> consider as inconsistent")
+            mainLogger.warn("Exception in validation: $e --> consider as inconsistent")
             // validation failed --> play safe and assume ontology is inconsistent
             consistent = false
         }
@@ -70,22 +70,19 @@ class CustomJenaApiReasoner(val model: Model, verbose : Boolean) : CustomReasone
 
 }
 
-class CustomHermitReasoner(jenaModel: Model,
-                           verbose :Boolean) : OwlApiReasoner(jenaModel, verbose) {
+class CustomHermitReasoner(jenaModel: Model) : OwlApiReasoner(jenaModel) {
     override fun initReasoner(): OWLReasoner? {
         return ontology?.let { ReasonerFactory().createReasoner(it) }
     }
 }
 
-class CustomOpenlletReasoner(jenaModel: Model,
-                             verbose : Boolean) : OwlApiReasoner(jenaModel, verbose) {
+class CustomOpenlletReasoner(jenaModel: Model) : OwlApiReasoner(jenaModel) {
     override fun initReasoner(): OpenlletReasoner? {
         return ontology?.let { OpenlletReasonerFactory.getInstance().createReasoner(it) }
     }
 }
 
-abstract class CustomReasoner(private val jenaModel : Model,
-                              val verbose : Boolean) {
+abstract class CustomReasoner(private val jenaModel : Model) {
 
     abstract fun isConsistent() : Boolean
 
@@ -101,8 +98,7 @@ abstract class CustomReasoner(private val jenaModel : Model,
     }
 }
 
-abstract class OwlApiReasoner(jenaModel : Model,
-                              verbose: Boolean) : CustomReasoner(jenaModel, verbose) {
+abstract class OwlApiReasoner(jenaModel : Model) : CustomReasoner(jenaModel) {
 
     private val manager: OWLOntologyManager = OWLManager.createOWLOntologyManager()
     val ontology = owlApiOnt(jenaModel)
@@ -121,7 +117,10 @@ abstract class OwlApiReasoner(jenaModel : Model,
                     //known exeptions
                     false
                 }
-                else -> throw e
+                else -> {
+                    mainLogger.error(e.toString())
+                    throw e
+                }
             }
         }
     }
@@ -170,8 +169,7 @@ abstract class OwlApiReasoner(jenaModel : Model,
                         manager.loadOntologyFromOntologyDocument(inStream)
                     }
                     catch (e : Exception){
-                        if (verbose)
-                            println("reasoner could not read ontolgy because of exception $e")
+                        mainLogger.warn("reasoner could not read ontolgy because of exception $e")
                         null
                     }
             }

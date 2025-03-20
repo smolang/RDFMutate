@@ -4,6 +4,7 @@ import org.smolang.robust.mutant.Mutation
 import org.smolang.robust.mutant.MutationSequence
 import org.smolang.robust.mutant.Mutator
 import org.smolang.robust.randomGenerator
+import org.smolang.robust.mainLogger
 import java.io.File
 import java.io.FileOutputStream
 import java.nio.file.Files
@@ -16,7 +17,6 @@ class OwlEvaluationGraphGenerator() {
     private val ontologyAnalyzer = OntologyAnalyzer()
     private val owlFileHandler = OwlFileHandler()
 
-    val verbose = false
     // maps numbers of mutation operators to rest
     val mutationNumbers = listOf(0,1,2,3,4,5,6,7,8,9,10,20,30,40,50,75,100)
     val sampleSize = 100 // number of ontologies that are considered (might be more than in folder)
@@ -50,15 +50,15 @@ class OwlEvaluationGraphGenerator() {
             val seedOntology = owlFileHandler.loadOwlDocument(inputFile)
 
             for (mutCount in mutationNumbers) {
-                println("Progress: $count/$totalTests")
+                mainLogger.info("Progress of analyzing input coverage: $count/$totalTests")
 
                 // collect as many mutations as necessary
-                val ms = MutationSequence(verbose);
+                val ms = MutationSequence()
                 for (i in 1..mutCount)
                     ms.addRandom(mutationOperators.random(randomGenerator))
 
                 // apply mutations
-                val m = Mutator(ms, verbose)
+                val m = Mutator(ms)
                 val res = m.mutate(seedOntology)
 
                 // safe result
@@ -113,7 +113,7 @@ class OwlEvaluationGraphGenerator() {
                 writer.newLine()
             }
             writer.close()
-            println("write to File $outputFile")
+            mainLogger.info("write data for coverage graph to file $outputFile")
         }
     }
 

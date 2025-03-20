@@ -15,7 +15,7 @@ const val qaType = "http://metacontrol.org/tomasys#isQAtype"
 const val qaComparisonOperator  = "http://metacontrol.org/tomasys#qa_comparison_operator"
 const val hasValueIRI = "http://metacontrol.org/tomasys#hasValue"
 
-class AddQAEstimationMutation(model: Model, verbose: Boolean) : AddObjectPropertyRelationMutation(model, verbose) {
+class AddQAEstimationMutation(model: Model) : AddObjectPropertyRelationMutation(model) {
     init {
         super.setConfiguration(
             SingleResourceConfiguration(
@@ -30,7 +30,7 @@ class AddQAEstimationMutation(model: Model, verbose: Boolean) : AddObjectPropert
     }
 }
 
-class RemoveQAEstimationMutation(model: Model, verbose: Boolean) : RemoveObjectPropertyRelationMutation(model, verbose) {
+class RemoveQAEstimationMutation(model: Model) : RemoveObjectPropertyRelationMutation(model) {
     init {
         super.setConfiguration(
             SingleResourceConfiguration(
@@ -45,7 +45,7 @@ class RemoveQAEstimationMutation(model: Model, verbose: Boolean) : RemoveObjectP
     }
 }
 
-class ChangeSolvesFunctionMutation(model: Model, verbose: Boolean) : ChangeObjectPropertyRelationMutation(model, verbose) {
+class ChangeSolvesFunctionMutation(model: Model) : ChangeObjectPropertyRelationMutation(model) {
     init {
         super.setConfiguration(
             SingleResourceConfiguration(
@@ -60,7 +60,7 @@ class ChangeSolvesFunctionMutation(model: Model, verbose: Boolean) : ChangeObjec
     }
 }
 
-class ChangeQualityAttributTypeMutation(model: Model, verbose: Boolean) : ChangeObjectPropertyRelationMutation(model, verbose) {
+class ChangeQualityAttributTypeMutation(model: Model) : ChangeObjectPropertyRelationMutation(model) {
     init {
         super.setConfiguration(
             SingleResourceConfiguration(
@@ -74,7 +74,7 @@ class ChangeQualityAttributTypeMutation(model: Model, verbose: Boolean) : Change
     }
 }
 
-class ChangeHasValueMutation(model: Model, verbose: Boolean) : ChangeRelationMutation(model, verbose) {
+class ChangeHasValueMutation(model: Model) : ChangeRelationMutation(model) {
     init {
         super.setConfiguration(
             SingleResourceConfiguration(
@@ -88,7 +88,7 @@ class ChangeHasValueMutation(model: Model, verbose: Boolean) : ChangeRelationMut
     }
 }
 
-class ChangeQAComparisonOperatorMutation(model: Model, verbose: Boolean) : ChangeRelationMutation(model, verbose) {
+class ChangeQAComparisonOperatorMutation(model: Model) : ChangeRelationMutation(model) {
     init {
         super.setConfiguration(
             SingleResourceConfiguration(
@@ -102,7 +102,7 @@ class ChangeQAComparisonOperatorMutation(model: Model, verbose: Boolean) : Chang
     }
 }
 
-class AddNewThrusterMutation(model: Model, verbose: Boolean) : Mutation(model, verbose) {
+class AddNewThrusterMutation(model: Model) : Mutation(model) {
     override fun createMutation() {
         var i = 1
         var tempNewThrusterName = suaveIRI + delimiter + "c_thruster_" + i
@@ -117,7 +117,7 @@ class AddNewThrusterMutation(model: Model, verbose: Boolean) : Mutation(model, v
         val componentClass = model.createResource("http://metacontrol.org/tomasys#Component")
         val configAIM = StringAndResourceConfiguration(newThrusterName, componentClass)
 
-        val aim = AddInstanceMutation(model, verbose)
+        val aim = AddInstanceMutation(model)
         aim.setConfiguration(configAIM)
         val tempModel = aim.applyCopy()
 
@@ -130,7 +130,7 @@ class AddNewThrusterMutation(model: Model, verbose: Boolean) : Mutation(model, v
             model.createProperty("http://ros/mros#requiredBy"),
             model.createResource("http://www.metacontrol.org/suave#fd_all_thrusters")
         )
-        val aam = AddStatementMutation(tempModel, verbose)
+        val aam = AddStatementMutation(tempModel)
         aam.setConfiguration(
             SingleStatementConfiguration(requiredAxiom)
         )

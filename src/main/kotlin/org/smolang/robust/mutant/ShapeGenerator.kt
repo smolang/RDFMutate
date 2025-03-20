@@ -50,7 +50,7 @@ class ShapeGenerator() {
 
     fun turnAxiomsToShapes(maskFile : String) {
         // register prefixes
-        shapes.setNsPrefix("sh",prefixShacl);
+        shapes.setNsPrefix("sh",prefixShacl)
         shapes.setNsPrefix("schema", "http://schema.org/")
         shapes.setNsPrefix("owl", "http://www.w3.org/2002/07/owl#")
         shapes.setNsPrefix("rdf", "http://www.w3.org/1999/02/22-rdf-syntax-ns#")
@@ -71,7 +71,6 @@ class ShapeGenerator() {
         val triples = RDFDataMgr.loadDataset(maskFile).defaultModel
         var id = 0
         for (axiom in triples.listStatements()) {
-            //println(axiom)
             val shape = AxiomToShape(axiom, id)
             shape.forEach {shapes.add(it) }
             id += 1
@@ -90,7 +89,7 @@ class ShapeGenerator() {
 
     }
 
-    fun shapesForBlank(axiom: Statement, id: Int) : Set<Statement> {
+    private fun shapesForBlank(axiom: Statement, id: Int) : Set<Statement> {
         val node = axiom.subject
         val setShape : MutableSet<Statement> = mutableSetOf()
         checkOrAddBlankToMap(node)

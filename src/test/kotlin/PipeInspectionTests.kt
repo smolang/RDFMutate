@@ -15,15 +15,14 @@ class PipeInspectionTests : StringSpec()  {
         "add pipe segment should lead to fail" {
 
             // load ontology
-            val verbose = false
             val input = RDFDataMgr.loadDataset("PipeInspection/miniPipes.ttl").defaultModel
 
             // apply mutation
             val segment = input.createResource("http://www.ifi.uio.no/tobiajoh/miniPipes#segment1")
             val configSegment = AddPipeSegmentConfiguration(segment)
-            val msSegment = MutationSequence(verbose)
+            val msSegment = MutationSequence()
             msSegment.addWithConfig(AddPipeSegmentMutation::class, configSegment)
-            val mSegment = Mutator(msSegment, verbose)
+            val mSegment = Mutator(msSegment)
             val resSegment = mSegment.mutate(input)
 
             // run program
@@ -42,14 +41,13 @@ class PipeInspectionTests : StringSpec()  {
                 val k = (i % 100).absoluteValue
                 //println("add: $k new pipe segments")
                 // load ontology
-                val verbose = false
                 val input = RDFDataMgr.loadDataset("PipeInspection/miniPipes.ttl").defaultModel
 
                 // apply mutation
-                val msSegment = MutationSequence(verbose)
+                val msSegment = MutationSequence()
                 for (j in 1..k)
                     msSegment.addRandom(AddPipeSegmentMutation::class)
-                val mSegment = Mutator(msSegment, verbose)
+                val mSegment = Mutator(msSegment)
                 val resSegment = mSegment.mutate(input)
 
                 // run program

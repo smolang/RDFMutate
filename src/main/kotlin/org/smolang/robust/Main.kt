@@ -11,6 +11,7 @@ import org.apache.jena.riot.Lang
 import org.apache.jena.riot.RDFDataMgr
 import org.apache.jena.shacl.Shapes
 import org.slf4j.LoggerFactory
+import org.slf4j.Logger
 import org.smolang.robust.domainSpecific.geo.GeoScenarioGenerator
 import org.smolang.robust.domainSpecific.geo.GeoTestCaseGenerator
 import org.smolang.robust.domainSpecific.reasoner.OwlEvaluationGraphGenerator
@@ -25,13 +26,15 @@ import kotlin.random.Random
 import kotlin.reflect.KClass
 import kotlin.system.exitProcess
 
-
+// logger for this application
+val mainLogger: Logger = LoggerFactory.getLogger("org.smolang.robust.OntoMutate")
+// random number generator
 val randomGenerator = Random(2)
 
 class Main : CliktCommand() {
     private val seed by option("--seedKG" ,"-g", help="KG to mutate, defined by an RDF file").file()
     private val shaclMaskFile by option("--shacl","-s", help="Gives a mask, defined by a set of SHACL shapes").file()
-    private val verbose by option("--verbose","-v", help="Verbose output for debugging. Default = false.").flag()
+    //private val verbose by option("--verbose","-v", help="Verbose output for debugging. Default = false.").flag()
     private val numberMutations by option("--num_mut", "-nm", help="Number of mutation operators to apply. Default = 1").int()
     private val selectionSeed by option("--selection_seed", help="seed for random selector of which mutation to apply. Default = 2").int()
     private val printMutationSummary by option("--print-summary", help="Prints a string summary of the applied mutation. Default = false").flag()
@@ -179,11 +182,6 @@ class Main : CliktCommand() {
     // mutates a seed KG with the mutation operators suitable for EL ontologies
     private fun elMutation() {
         // create selection of mutations that can be applied
-        // logger test
-        val logger = LoggerFactory.getLogger("coolLogger")
-        logger.info("Logger test: Hello World")
-        logger.warn("this is a warning")
-
         singleMutation(elReasonerMutations)
     }
 
@@ -221,9 +219,9 @@ class Main : CliktCommand() {
             exitProcess(-1)
         } else outputFile
 
-        val mask = RobustnessMask(verbose, shapes)
+        //val mask = RobustnessMask(shapes)
 
-        val ms = MutationSequence(verbose)
+        val ms = MutationSequence()
         // use random selection of a mutation. Select mutation operator based on seed for random selector, if provided
         // (use default generator otherwise)
         val generator = selectionSeed?.let { Random(it) } ?: randomGenerator
@@ -236,7 +234,7 @@ class Main : CliktCommand() {
         }
 
         // create mutator and apply mutation
-        val m = Mutator(ms, verbose)
+        val m = Mutator(ms)
         val res = m.mutate(seedKG)
 
         // check if output directory exists and create it, if necessary
@@ -270,9 +268,9 @@ class Main : CliktCommand() {
         println("\nApply mutation to ontology")
         val segment = input.createResource("http://www.ifi.uio.no/tobiajoh/miniPipes#segment1")
         val configSegment = org.smolang.robust.domainSpecific.auv.AddPipeSegmentConfiguration(segment)
-        val msSegment = MutationSequence(verbose)
+        val msSegment = MutationSequence()
         msSegment.addWithConfig(org.smolang.robust.domainSpecific.auv.AddPipeSegmentMutation::class, configSegment)
-        val mSegment = Mutator(msSegment, verbose)
+        val mSegment = Mutator(msSegment)
         val resSegment = mSegment.mutate(input)
 
         val pi2 = MiniPipeInspection()
@@ -304,7 +302,7 @@ class Main : CliktCommand() {
 
         for(i in 0..7){
             val shapes = parseShapes(File(maskFiles[i]))
-            val sg = SuaveTestCaseGenerator(verbose)
+            val sg = SuaveTestCaseGenerator()
 
             // number of mutants differs for each generation
             val numberOfMutants =
@@ -327,7 +325,7 @@ class Main : CliktCommand() {
             // use this specific mutation only for first four generations
             val useAddQAMutation = (i <= 4)
 
-            val mask = RobustnessMask(verbose, shapes)
+            val mask = RobustnessMask(shapes)
 
             // select name based on which mutations are used
             val nameOfMutants =
@@ -359,12 +357,12 @@ class Main : CliktCommand() {
 
         var id = 0
         for (maskFile in maskFiles) {
-            val gg = GeoTestCaseGenerator(verbose)
+            val gg = GeoTestCaseGenerator()
             val numberOfMutants = 100
             val numberOfMutations = 2
 
             val shapes = parseShapes(File(maskFile))
-            val mask = RobustnessMask(verbose, shapes)
+            val mask = RobustnessMask(shapes)
 
             val nameOfMutants = "geoMutant$id"
             val saveMutants = true
@@ -383,7 +381,7 @@ class Main : CliktCommand() {
     // evaluates provided shapes against the suave test runs
     fun evaluateSuaveMask(shapes: Shapes?) {
         // new mask
-        val mask = RobustnessMask(verbose, shapes)
+        val mask = RobustnessMask(shapes)
 
         val relevantSutRuns =  listOf(
             "sut/suave/oracle_mutatedOnt_onlySuave02_2024_03_27_11_52.csv",
@@ -404,7 +402,7 @@ class Main : CliktCommand() {
 
     // evaluates provided shapes against the geo test runs
     fun evaluateGeoMask(shapes: Shapes?) {
-        val mask = RobustnessMask(verbose, shapes)
+        val mask = RobustnessMask(shapes)
 
         val relevantSutRuns = listOf(
             "sut/geo/benchmark_runs/mutations/oracle_mutatedOnt_secondTest_2024_03_26_09_24.csv"
@@ -446,7 +444,7 @@ class Main : CliktCommand() {
     private fun generateIssreGraph() {
         val numberOfMutants = 100
         val outputFile = File("sut/suave/evaluation/attemptsPerMask.csv")
-        SuaveEvaluationGraphGenerator(false).generateGraph(numberOfMutants, outputFile)
+        SuaveEvaluationGraphGenerator().generateGraph(numberOfMutants, outputFile)
     }
 
     // generates graph for journal extension

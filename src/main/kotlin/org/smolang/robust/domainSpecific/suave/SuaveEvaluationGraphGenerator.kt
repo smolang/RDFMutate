@@ -5,8 +5,9 @@ import org.apache.jena.shacl.Shapes
 import org.smolang.robust.mutant.RobustnessMask
 import java.io.File
 import java.io.FileOutputStream
+import org.smolang.robust.mainLogger
 
-class SuaveEvaluationGraphGenerator(val verbose: Boolean) {
+class SuaveEvaluationGraphGenerator() {
 
     // generates data for the graph presented in ISSRE paper
     fun generateGraph(numberOfMutants : Int, outputFile : File) {
@@ -23,15 +24,15 @@ class SuaveEvaluationGraphGenerator(val verbose: Boolean) {
         val listAttemptsDS : MutableList<Int> = mutableListOf()
         val ids = listOf(0,1,2,3,4,5,6,7)
         for (id in ids) {
-            println("create mutants for mask with id $id")
+            mainLogger.info("create mutants for mask with id $id")
             val maskFile = File("sut/suave/masks/mask$id.ttl")
-            val shapesGraph = RDFDataMgr.loadGraph(maskFile!!.absolutePath)
+            val shapesGraph = RDFDataMgr.loadGraph(maskFile.absolutePath)
 
-            val mask = RobustnessMask(verbose, Shapes.parse(shapesGraph))
+            val mask = RobustnessMask(Shapes.parse(shapesGraph))
 
 
             // generate domain-independent mutants
-            val sg = SuaveTestCaseGenerator(false)
+            val sg = SuaveTestCaseGenerator()
             val attemptsDI = sg.generateSuaveMutants(
                 numberOfMutants,
                 numberOfMutations,
@@ -71,7 +72,7 @@ class SuaveEvaluationGraphGenerator(val verbose: Boolean) {
                 writer.newLine()
             }
             writer.close()
-            println("writetoFile $outputFile")
+            mainLogger.info("write data for suave evaluation to File $outputFile")
         }
     }
 }

@@ -5,7 +5,13 @@
         </encoder>
     </appender>
 
-    <root level="error">
+
+    <logger name="org.smolang.robust.OntoMutate" level="info" />
+
+    <root level="warn">
         <appender-ref ref="STDOUT" />
     </root>
+
+
+
 </configuration>

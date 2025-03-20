@@ -9,7 +9,7 @@ import org.apache.jena.rdf.model.Statement
 import org.smolang.robust.randomGenerator
 
 // adds the specified relation between two properties
-abstract class AddRelationByTypesMutation(model: Model, verbose: Boolean) : AddStatementMutation(model, verbose) {
+abstract class AddRelationByTypesMutation(model: Model) : AddStatementMutation(model) {
     abstract val addedRelation : Property
     abstract val sourceType : Resource  // type of potential sources
     abstract val targetType : Resource  // type of potential targets
@@ -36,38 +36,38 @@ abstract class AddRelationByTypesMutation(model: Model, verbose: Boolean) : AddS
 }
 
 // adds the specified relation between two classes
-abstract class AddClassRelationMutation(model: Model, verbose: Boolean) : AddRelationByTypesMutation(model, verbose) {
+abstract class AddClassRelationMutation(model: Model) : AddRelationByTypesMutation(model) {
     override val sourceType = owlClass
     override val targetType = owlClass
 }
 
 // adds relation between object property and class
-abstract class AddObjectPropClassRelationMutation(model: Model, verbose: Boolean) : AddRelationByTypesMutation(model, verbose) {
+abstract class AddObjectPropClassRelationMutation(model: Model) : AddRelationByTypesMutation(model) {
     override val sourceType = objectPropClass
     override val targetType = owlClass
 }
 
 // adds relation between data property and class
-abstract class AddDataPropClassRelationMutation(model: Model, verbose: Boolean) : AddRelationByTypesMutation(model, verbose) {
+abstract class AddDataPropClassRelationMutation(model: Model) : AddRelationByTypesMutation(model) {
     override val sourceType = dataPropClass
     override val targetType = owlClass
 }
 
 // adds relation between two properties
-abstract class AddRelationBetweenObjectPropMutation(model: Model, verbose: Boolean) : AddRelationByTypesMutation(model, verbose) {
+abstract class AddRelationBetweenObjectPropMutation(model: Model) : AddRelationByTypesMutation(model) {
     override val sourceType = objectPropClass
     override val targetType = objectPropClass
 }
 
 // adds relation between two properties
-abstract class AddRelationBetweenDataPropMutation(model: Model, verbose: Boolean) : AddRelationByTypesMutation(model, verbose) {
+abstract class AddRelationBetweenDataPropMutation(model: Model) : AddRelationByTypesMutation(model) {
     override val sourceType = dataPropClass
     override val targetType = dataPropClass
 }
 
 
 // adds the specified property (e.g. transitive) for property
-abstract class AddTypeInformationMutation(model: Model, verbose: Boolean) : AddStatementMutation(model, verbose) {
+abstract class AddTypeInformationMutation(model: Model) : AddStatementMutation(model) {
     abstract val targetObjects : Resource   // types of objects to target, i.e. add the information to
     abstract val additionalType : Resource
 
@@ -91,7 +91,7 @@ abstract class AddTypeInformationMutation(model: Model, verbose: Boolean) : AddS
 }
 
 // adds an objet with the specified type
-abstract class DeclareObjectOfTypeMutation(model: Model, verbose: Boolean) : AddStatementMutation(model, verbose) {
+abstract class DeclareObjectOfTypeMutation(model: Model) : AddStatementMutation(model) {
     abstract val targetType : Resource
     open val prefix = "newObject"
 
@@ -110,7 +110,7 @@ abstract class DeclareObjectOfTypeMutation(model: Model, verbose: Boolean) : Add
 }
 
 // add as subclass axiom where one side of axiom is a complex class expression
-abstract class AddComplexSubClassAxiomMutation(model: Model, verbose: Boolean) : Mutation(model, verbose) {
+abstract class AddComplexSubClassAxiomMutation(model: Model) : Mutation(model) {
     // returns statements representing the complex class expression
     abstract fun getComplexClassExpression(head : Resource) : List<Statement>?
 
@@ -137,78 +137,78 @@ abstract class AddComplexSubClassAxiomMutation(model: Model, verbose: Boolean) :
 }
 
 
-class DeclareClassMutation(model: Model, verbose: Boolean) : DeclareObjectOfTypeMutation(model, verbose) {
+class DeclareClassMutation(model: Model) : DeclareObjectOfTypeMutation(model) {
     override val targetType = owlClass
     override val prefix: String
         get() = "newOwlClass"
 }
 
-class DeclareObjectPropMutation(model: Model, verbose: Boolean) : DeclareObjectOfTypeMutation(model, verbose) {
+class DeclareObjectPropMutation(model: Model) : DeclareObjectOfTypeMutation(model) {
     override val targetType = objectPropClass
     override val prefix: String
         get() = "newObjectProp"
 }
 
-class DeclareDataPropMutation(model: Model, verbose: Boolean) : DeclareObjectOfTypeMutation(model, verbose) {
+class DeclareDataPropMutation(model: Model) : DeclareObjectOfTypeMutation(model) {
     override val targetType = dataPropClass
     override val prefix: String
         get() = "newDataProp"
 }
 
 //removes one (random) subclass axiom       // val m = Mutator
-class RemoveSubclassRelationMutation(model: Model, verbose : Boolean) : RemoveStatementByRelationMutation(model, verbose) {
+class RemoveSubclassRelationMutation(model: Model) : RemoveStatementByRelationMutation(model) {
     override val targetPredicate = subClassProp
 }
 
-class AddSubclassRelationMutation(model: Model, verbose: Boolean) : AddClassRelationMutation(model, verbose) {
+class AddSubclassRelationMutation(model: Model) : AddClassRelationMutation(model) {
     override val addedRelation = subClassProp
 }
 
-class AddEquivalentClassRelationMutation(model: Model, verbose: Boolean) : AddClassRelationMutation(model, verbose) {
+class AddEquivalentClassRelationMutation(model: Model) : AddClassRelationMutation(model) {
     override val addedRelation = equivClassProp
 }
 
 //removes one (random) equivClass axiom       // val m = Mutator
-class RemoveEquivClassRelationMutation(model: Model, verbose : Boolean) : RemoveStatementByRelationMutation(model, verbose) {
+class RemoveEquivClassRelationMutation(model: Model) : RemoveStatementByRelationMutation(model) {
     override val targetPredicate = equivClassProp
 }
 
-class AddDisjointClassRelationMutation(model: Model, verbose: Boolean) : AddClassRelationMutation(model, verbose) {
+class AddDisjointClassRelationMutation(model: Model) : AddClassRelationMutation(model) {
     override val addedRelation = disjointClassProp
 }
 
-class RemoveDisjointClassRelationMutation(model: Model, verbose : Boolean) : RemoveStatementByRelationMutation(model, verbose) {
+class RemoveDisjointClassRelationMutation(model: Model) : RemoveStatementByRelationMutation(model) {
     override val targetPredicate = disjointClassProp
 }
 
-class AddReflexiveObjectPropertyRelationMutation(model: Model, verbose: Boolean) : AddTypeInformationMutation(model, verbose) {
+class AddReflexiveObjectPropertyRelationMutation(model: Model) : AddTypeInformationMutation(model) {
     override val additionalType = reflexiveProp
     override val targetObjects = objectPropClass
 }
 
-class AddTransitiveObjectPropertyRelationMutation(model: Model, verbose: Boolean) : AddTypeInformationMutation(model, verbose) {
+class AddTransitiveObjectPropertyRelationMutation(model: Model) : AddTypeInformationMutation(model) {
     override val additionalType = transitiveProp
     override val targetObjects = objectPropClass
 }
 
-class AddObjectPropDomainMutation(model: Model, verbose: Boolean) : AddObjectPropClassRelationMutation(model, verbose) {
+class AddObjectPropDomainMutation(model: Model) : AddObjectPropClassRelationMutation(model) {
     override val addedRelation = domainProp
 }
 
-class AddDataPropDomainMutation(model: Model, verbose: Boolean) : AddDataPropClassRelationMutation(model, verbose) {
+class AddDataPropDomainMutation(model: Model) : AddDataPropClassRelationMutation(model) {
     override val addedRelation = domainProp
 }
 
-class RemoveDomainRelationMutation(model: Model, verbose : Boolean) : RemoveStatementByRelationMutation(model, verbose) {
+class RemoveDomainRelationMutation(model: Model) : RemoveStatementByRelationMutation(model) {
     override val targetPredicate = domainProp
 }
 
-class AddObjectPropRangeMutation(model: Model, verbose: Boolean) : AddObjectPropClassRelationMutation(model, verbose) {
+class AddObjectPropRangeMutation(model: Model) : AddObjectPropClassRelationMutation(model) {
     override val addedRelation = rangeProp
 }
 
 // add a range to a data property
-class AddDataPropRangeMutation(model: Model, verbose: Boolean) : AddStatementMutation(model, verbose) {
+class AddDataPropRangeMutation(model: Model) : AddStatementMutation(model) {
     override fun createMutation() {
         val sources = allOfType(dataPropClass)
         val targets = allElDataTypes
@@ -230,35 +230,35 @@ class AddDataPropRangeMutation(model: Model, verbose: Boolean) : AddStatementMut
     }
 }
 
-class RemoveRangeRelationMutation(model: Model, verbose : Boolean) : RemoveStatementByRelationMutation(model, verbose) {
+class RemoveRangeRelationMutation(model: Model) : RemoveStatementByRelationMutation(model) {
     override val targetPredicate = rangeProp
 }
 
-class AddSubObjectPropMutation(model: Model, verbose: Boolean): AddRelationBetweenObjectPropMutation(model, verbose) {
+class AddSubObjectPropMutation(model: Model): AddRelationBetweenObjectPropMutation(model) {
     override val addedRelation = subPropertyProp
 }
 
-class AddSubDataPropMutation(model: Model, verbose: Boolean) : AddRelationBetweenDataPropMutation(model, verbose) {
+class AddSubDataPropMutation(model: Model) : AddRelationBetweenDataPropMutation(model) {
     override val addedRelation = subPropertyProp
 }
 
-class RemoveSubPropMutation(model: Model, verbose: Boolean) : RemoveStatementByRelationMutation(model, verbose) {
+class RemoveSubPropMutation(model: Model) : RemoveStatementByRelationMutation(model) {
     override val targetPredicate = subPropertyProp
 }
 
-class AddEquivObjectPropMutation(model: Model, verbose: Boolean): AddRelationBetweenObjectPropMutation(model, verbose) {
+class AddEquivObjectPropMutation(model: Model): AddRelationBetweenObjectPropMutation(model) {
     override val addedRelation = equivPropertyProp
 }
 
-class AddEquivDataPropMutation(model: Model, verbose: Boolean) : AddRelationBetweenDataPropMutation(model, verbose) {
+class AddEquivDataPropMutation(model: Model) : AddRelationBetweenDataPropMutation(model) {
     override val addedRelation = equivPropertyProp
 }
 
-class RemoveEquivPropMutation(model: Model, verbose: Boolean) : RemoveStatementByRelationMutation(model, verbose) {
+class RemoveEquivPropMutation(model: Model) : RemoveStatementByRelationMutation(model) {
     override val targetPredicate = equivPropertyProp
 }
 
-class AddPropertyChainMutation(model: Model, verbose: Boolean) : Mutation(model, verbose) {
+class AddPropertyChainMutation(model: Model) : Mutation(model) {
     val properties =allOfType(objectPropClass)
 
     override fun isApplicable(): Boolean {
@@ -282,7 +282,7 @@ class AddPropertyChainMutation(model: Model, verbose: Boolean) : Mutation(model,
 }
 
 // removes one part of an "AND" in a logical axiom
-class CEUAMutation(model: Model, verbose: Boolean): ReplaceNodeInStatementMutation(model, verbose)   {
+class CEUAMutation(model: Model): ReplaceNodeInStatementMutation(model)   {
     // selects names of nodes that should be removed / replaced by owl:Thing
     override fun getCandidates(): List<DoubleStringAndStatementConfiguration> {
         val queryString = "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n " +
@@ -299,7 +299,6 @@ class CEUAMutation(model: Model, verbose: Boolean): ReplaceNodeInStatementMutati
             val y = r.get("?y")
             val a = r.get("?a")
             val axiom = model.createStatement(a.asResource(),rdfFirst, y)
-            //println("$a $y $axiom")
             ret += DoubleStringAndStatementConfiguration(
                 y.toString(),
                 owlThing.toString(),
@@ -326,7 +325,7 @@ class CEUAMutation(model: Model, verbose: Boolean): ReplaceNodeInStatementMutati
 }
 
 // removes one part of an "OR" in a logical axiom
-class CEUOMutation(model: Model, verbose: Boolean): ReplaceNodeInStatementMutation(model, verbose)   {
+class CEUOMutation(model: Model): ReplaceNodeInStatementMutation(model)   {
 
     // selects names of nodes that should be removed / replaced by owl:Nothing
     override fun getCandidates(): List<DoubleStringAndStatementConfiguration> {
@@ -344,7 +343,6 @@ class CEUOMutation(model: Model, verbose: Boolean): ReplaceNodeInStatementMutati
             val y = r.get("?y")
             val a = r.get("?a")
             val axiom = model.createStatement(a.asResource(),rdfFirst, y)
-            //println("$a $y $axiom")
             ret += DoubleStringAndStatementConfiguration(
                 y.toString(),
                 owlNothing.toString(),
@@ -372,7 +370,7 @@ class CEUOMutation(model: Model, verbose: Boolean): ReplaceNodeInStatementMutati
 }
 
 // replace "AND" by "OR"
-class ACATOMutation(model: Model, verbose: Boolean): ReplaceNodeInStatementMutation(model, verbose) {
+class ACATOMutation(model: Model): ReplaceNodeInStatementMutation(model) {
 
     // selects names of nodes that should be removed / replaced by owl:Thing
     override fun getCandidates(): List<DoubleStringAndStatementConfiguration> {
@@ -387,7 +385,6 @@ class ACATOMutation(model: Model, verbose: Boolean): ReplaceNodeInStatementMutat
             val x = r.get("?x")
             val y = r.get("?y")
             val axiom = model.createStatement(x.asResource(), intersectionProp, y)
-            //println("$a $y $axiom")
             ret += DoubleStringAndStatementConfiguration(
                 intersectionProp.toString(),
                 unionProp.toString(),
@@ -415,7 +412,7 @@ class ACATOMutation(model: Model, verbose: Boolean): ReplaceNodeInStatementMutat
 
 
 // replace "Or" by "And"
-class ACOTAMutation(model: Model, verbose: Boolean): ReplaceNodeInStatementMutation(model, verbose) {
+class ACOTAMutation(model: Model): ReplaceNodeInStatementMutation(model) {
     // selects names of nodes that should be removed / replaced by owl:Thing
     override fun getCandidates(): List<DoubleStringAndStatementConfiguration> {
         val queryString = "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n " +
@@ -429,7 +426,6 @@ class ACOTAMutation(model: Model, verbose: Boolean): ReplaceNodeInStatementMutat
             val x = r.get("?x")
             val y = r.get("?y")
             val axiom = model.createStatement(x.asResource(), unionProp, y)
-            //println("$a $y $axiom")
             ret += DoubleStringAndStatementConfiguration(
                 unionProp.toString(),
                 intersectionProp.toString(),
@@ -457,7 +453,7 @@ class ACOTAMutation(model: Model, verbose: Boolean): ReplaceNodeInStatementMutat
 
 
 // replaces arguments in
-class ToSiblingClassMutation(model: Model, verbose: Boolean): ReplaceNodeInStatementMutation(model, verbose) {
+class ToSiblingClassMutation(model: Model): ReplaceNodeInStatementMutation(model) {
 
     // selects names of classes
     // TODO: also in other parts of logical axioms, e.g. after restrictions
@@ -484,7 +480,6 @@ class ToSiblingClassMutation(model: Model, verbose: Boolean): ReplaceNodeInState
             val cSibling = r.get("?cSibling")
             if (c.toString() != cSibling.toString()) { // check, if entities different
                 val axiom = model.createStatement(a.asResource(), rdfFirst, c)
-                //println("$c $cSibling $axiom")
                 ret += DoubleStringAndStatementConfiguration(
                     c.toString(),
                     cSibling.toString(),
@@ -509,10 +504,8 @@ class ToSiblingClassMutation(model: Model, verbose: Boolean): ReplaceNodeInState
             val restriction = r.get("?r")
             val c = r.get("?c")
             val cSibling = r.get("?cSibling")
-            //println("$c $cSibling $restriction")
             if (c.toString() != cSibling.toString()) { // check, if entities different
                 val axiom = model.createStatement(restriction.asResource(),someValuesFromProp, c)
-                //println("$c $cSibling $axiom")
                 ret += DoubleStringAndStatementConfiguration(
                     c.toString(),
                     cSibling.toString(),
@@ -525,7 +518,7 @@ class ToSiblingClassMutation(model: Model, verbose: Boolean): ReplaceNodeInState
 
 }
 
-class RemoveClassMutation(model: Model, verbose : Boolean) : RemoveNodeMutation(model, verbose) {
+class RemoveClassMutation(model: Model) : RemoveNodeMutation(model) {
     override fun getCandidates(): List<Resource> {
         val l = model.listStatements().toList().toMutableList()
         val candidates = ArrayList<Resource>()
@@ -547,7 +540,7 @@ class RemoveClassMutation(model: Model, verbose : Boolean) : RemoveNodeMutation(
     }
 }
 
-class RemoveObjectPropertyMutation(model: Model, verbose : Boolean) : RemoveNodeMutation(model, verbose) {
+class RemoveObjectPropertyMutation(model: Model) : RemoveNodeMutation(model) {
     override fun getCandidates(): List<Resource> {
         val l = model.listStatements().toList().toMutableList()
         val candidates = ArrayList<Resource>()
@@ -569,7 +562,7 @@ class RemoveObjectPropertyMutation(model: Model, verbose : Boolean) : RemoveNode
     }
 }
 
-class ReplaceClassWithTopMutation(model: Model, verbose: Boolean) : ReplaceNodeWithNode(model, verbose) {
+class ReplaceClassWithTopMutation(model: Model) : ReplaceNodeWithNode(model) {
     override fun createMutation() {
         // select a random class to be replaced
         // ignore classes that share their name with properties
@@ -588,7 +581,7 @@ class ReplaceClassWithTopMutation(model: Model, verbose: Boolean) : ReplaceNodeW
     }
 }
 
-class ReplaceClassWithBottomMutation(model: Model, verbose: Boolean) : ReplaceNodeWithNode(model, verbose) {
+class ReplaceClassWithBottomMutation(model: Model) : ReplaceNodeWithNode(model) {
     override fun createMutation() {
         // select a random class to be replaced
         // ignore classes that share their name with properties
@@ -607,7 +600,7 @@ class ReplaceClassWithBottomMutation(model: Model, verbose: Boolean) : ReplaceNo
     }
 }
 
-class ReplaceClassWithSiblingMutation(model: Model, verbose: Boolean): ReplaceNodeWithNode(model, verbose) {
+class ReplaceClassWithSiblingMutation(model: Model): ReplaceNodeWithNode(model) {
     override fun createMutation() {
         // select sibling classes
         // filter: old class should not also be property (safeguard because replacement might not be careful enough)
@@ -648,7 +641,7 @@ class ReplaceClassWithSiblingMutation(model: Model, verbose: Boolean): ReplaceNo
 
 /// mutations to add complex class axioms
 /// adds subclass axiom with "objectIntersectionOf" expression
-class AddObjectIntersectionOfMutation(model: Model, verbose: Boolean) : AddComplexSubClassAxiomMutation(model, verbose) {
+class AddObjectIntersectionOfMutation(model: Model) : AddComplexSubClassAxiomMutation(model) {
     override fun getComplexClassExpression(head: Resource): List<Statement>? {
         val classes = allOfType(owlClass)
         if (classes.isNotEmpty()) {
@@ -666,7 +659,7 @@ class AddObjectIntersectionOfMutation(model: Model, verbose: Boolean) : AddCompl
 }
 
 /// adds subclass axiom with "objectOneOf" expression; according to EL profile
-class AddELObjectOneOfMutation(model: Model, verbose: Boolean) : AddComplexSubClassAxiomMutation(model, verbose) {
+class AddELObjectOneOfMutation(model: Model) : AddComplexSubClassAxiomMutation(model) {
     override fun getComplexClassExpression(head: Resource): List<Statement>? {
         val individuals = allOfType(namedInd)
         if (individuals.isNotEmpty()) {
@@ -678,7 +671,7 @@ class AddELObjectOneOfMutation(model: Model, verbose: Boolean) : AddComplexSubCl
 }
 
 /// adds subclass axiom with "objectSomeValuesFrom" expression; according to EL profile
-class AddObjectSomeValuesFromMutation(model: Model, verbose: Boolean) : AddComplexSubClassAxiomMutation(model, verbose) {
+class AddObjectSomeValuesFromMutation(model: Model) : AddComplexSubClassAxiomMutation(model) {
     override fun getComplexClassExpression(head: Resource): List<Statement>? {
         val classes = allOfType(owlClass)
         val properties = allOfType(objectPropClass)
@@ -695,7 +688,7 @@ class AddObjectSomeValuesFromMutation(model: Model, verbose: Boolean) : AddCompl
 }
 
 /// adds subclass axiom with "dataIntersectionOf" expression; tailored towards EL profile
-class AddELDataIntersectionOfMutation(model: Model, verbose: Boolean) : AddComplexSubClassAxiomMutation(model, verbose) {
+class AddELDataIntersectionOfMutation(model: Model) : AddComplexSubClassAxiomMutation(model) {
     override fun getComplexClassExpression(head: Resource): List<Statement>? {
         val result = mutableListOf<Statement>()
         val dataProperties = allOfType(dataPropClass)
@@ -726,7 +719,7 @@ class AddELDataIntersectionOfMutation(model: Model, verbose: Boolean) : AddCompl
 }
 
 /// adds subclass axiom with "dataOneOf" expression; tailored towards EL profile
-class AddELDataOneOfMutation(model: Model, verbose: Boolean) : AddComplexSubClassAxiomMutation(model, verbose) {
+class AddELDataOneOfMutation(model: Model) : AddComplexSubClassAxiomMutation(model) {
     override fun getComplexClassExpression(head: Resource): List<Statement>? {
         val result = mutableListOf<Statement>()
         val dataProperties = allOfType(dataPropClass)
@@ -751,7 +744,7 @@ class AddELDataOneOfMutation(model: Model, verbose: Boolean) : AddComplexSubClas
 }
 
 /// adds subclass axiom with "DataSomeValuesFrom" expression with simple data range; tailored towards EL profile
-class AddELSimpleDataSomeValuesFromMutation(model: Model, verbose: Boolean) : AddComplexSubClassAxiomMutation(model, verbose) {
+class AddELSimpleDataSomeValuesFromMutation(model: Model) : AddComplexSubClassAxiomMutation(model) {
     override fun getComplexClassExpression(head: Resource): List<Statement>? {
         val result = mutableListOf<Statement>()
         val dataProperties = allOfType(dataPropClass)
@@ -772,7 +765,7 @@ class AddELSimpleDataSomeValuesFromMutation(model: Model, verbose: Boolean) : Ad
 }
 
 /// adds subclass axiom with "objectHasValue" expression; according to EL profile
-class AddObjectHasValueMutation(model: Model, verbose: Boolean) : AddComplexSubClassAxiomMutation(model, verbose) {
+class AddObjectHasValueMutation(model: Model) : AddComplexSubClassAxiomMutation(model) {
     override fun getComplexClassExpression(head: Resource): List<Statement>? {
         val individuals = allOfType(namedInd)
         val properties = allOfType(objectPropClass)
@@ -789,7 +782,7 @@ class AddObjectHasValueMutation(model: Model, verbose: Boolean) : AddComplexSubC
 }
 
 /// adds subclass axiom with "objectHasValue" expression; according to EL profile
-class AddDataHasValueMutation(model: Model, verbose: Boolean) : AddComplexSubClassAxiomMutation(model, verbose) {
+class AddDataHasValueMutation(model: Model) : AddComplexSubClassAxiomMutation(model) {
     override fun getComplexClassExpression(head: Resource): List<Statement>? {
         val properties = allOfType(dataPropClass)
         if (properties.isNotEmpty()) {
@@ -805,7 +798,7 @@ class AddDataHasValueMutation(model: Model, verbose: Boolean) : AddComplexSubCla
 }
 
 /// adds subclass axiom with "objectHasSelf" expression; according to EL profile
-class AddObjectHasSelfMutation(model: Model, verbose: Boolean) : AddComplexSubClassAxiomMutation(model, verbose) {
+class AddObjectHasSelfMutation(model: Model) : AddComplexSubClassAxiomMutation(model) {
     override fun getComplexClassExpression(head: Resource): List<Statement>? {
         val properties = allOfType(objectPropClass)
         if (properties.isNotEmpty()) {
@@ -821,7 +814,7 @@ class AddObjectHasSelfMutation(model: Model, verbose: Boolean) : AddComplexSubCl
 
 // adds datatype definition
 // note: only considers "dataOneOf" with one element --> only one special case
-class AddDatatypeDefinition(model: Model, verbose: Boolean) : Mutation(model, verbose) {
+class AddDatatypeDefinition(model: Model) : Mutation(model) {
     override fun createMutation() {
         val newDatatype = model.createResource("newDatatype:" + randomGenerator.nextInt())
         val definitionHead = model.createResource()
@@ -837,7 +830,7 @@ class AddDatatypeDefinition(model: Model, verbose: Boolean) : Mutation(model, ve
 
 // adds "hasKey" axiom
 // simplification: only with object properties
-class AddHasKeyMutation(model: Model, verbose: Boolean) : Mutation(model, verbose) {
+class AddHasKeyMutation(model: Model) : Mutation(model) {
     override fun createMutation() {
         val targetClass = allOfType(owlClass).randomOrNull(randomGenerator)
         val objectProps = allOfType(objectPropClass)

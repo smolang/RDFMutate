@@ -5,7 +5,7 @@ import org.smolang.robust.randomGenerator
 import kotlin.reflect.KClass
 
 
-class MutationSequence(private  val verbose: Boolean) {
+class MutationSequence() {
     private val mutations : MutableList<AbstractMutation> = mutableListOf()
 
     private val mutatableAxioms: MutableSet<Statement> = hashSetOf()
@@ -16,7 +16,7 @@ class MutationSequence(private  val verbose: Boolean) {
 
     // adds a random mutation from the provided list of mutations
     fun addRandom(mutOps: List<KClass<out Mutation>>) {
-        val am = AbstractMutation(mutOps.random(randomGenerator), verbose)
+        val am = AbstractMutation(mutOps.random(randomGenerator))
         for (a in mutatableAxioms)
             am.addMutatableAxiom(a)
         mutations.add(am)
@@ -27,7 +27,7 @@ class MutationSequence(private  val verbose: Boolean) {
     }
 
     fun addWithConfig(mutOp: KClass<out Mutation>, config: MutationConfiguration) {
-        val am = AbstractMutation(mutOp, config, verbose)
+        val am = AbstractMutation(mutOp, config)
         for (a in mutatableAxioms)
             am.addMutatableAxiom(a)
         mutations.add(am)

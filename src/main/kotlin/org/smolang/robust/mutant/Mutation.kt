@@ -4,8 +4,9 @@ import org.apache.jena.rdf.model.*
 import org.apache.jena.reasoner.Reasoner
 import org.apache.jena.reasoner.ReasonerRegistry
 import org.smolang.robust.randomGenerator
+import org.smolang.robust.mainLogger
 
-open class Mutation(var model: Model, val verbose : Boolean) {
+open class Mutation(var model: Model) {
     var hasConfig : Boolean = false
     open var config : MutationConfiguration? = null
     private var createdMutation : Boolean = false
@@ -132,7 +133,7 @@ open class Mutation(var model: Model, val verbose : Boolean) {
     val emptyAxiom : Statement = model.createStatement(model.createResource(), emptyProp, model.createResource())
 
     // constructor that creates mutation with configuration
-    constructor(model: Model, config: MutationConfiguration, verbose : Boolean) : this(model, verbose) {
+    constructor(model: Model, config: MutationConfiguration) : this(model) {
         this.setConfiguration(config)
     }
 
@@ -186,9 +187,9 @@ open class Mutation(var model: Model, val verbose : Boolean) {
                 removeSet.remove(axiom)
         }
 
-        if(verbose) println("applying mutation ${toString()}")
-        if(verbose) println("removing: axioms $removeSet")
-        if(verbose) println("adding: axioms $addSet")
+        mainLogger.info("applying mutation ${toString()}")
+        mainLogger.info("removing: axioms $removeSet")
+        mainLogger.info("adding: axioms $addSet")
 
 
         // copy all statements that are not deleteSet
@@ -339,7 +340,7 @@ open class Mutation(var model: Model, val verbose : Boolean) {
 
 }
 
-open class RemoveStatementMutation(model: Model, verbose : Boolean) : Mutation(model, verbose) {
+open class RemoveStatementMutation(model: Model) : Mutation(model) {
 
     open fun getCandidates(): List<Statement> {
         val list = model.listStatements().toList()
@@ -373,7 +374,7 @@ open class RemoveStatementMutation(model: Model, verbose : Boolean) : Mutation(m
     }
 }
 
-open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model, verbose) {
+open class AddRelationMutation(model: Model) : Mutation(model) {
    // relations that should not be randomly selected, as they will lead to problems in the schema
     private val excludeP : List<Property> = listOf(
        //typeProp,
@@ -473,7 +474,7 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
             return model.createStatement(randSubject, p, randObject)
         }
         else
-            println("we could not add a valid relation with property '${p.localName}'")
+            mainLogger.info("we could not add a valid relation with property '${p.localName}'")
 
         return null
     }
@@ -544,8 +545,7 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
         var rangeP : MutableSet<RDFNode> = hashSetOf()
 
         if (ranges.size > 1) {
-            if (verbose)
-                println("can not add data relation. Property ${p.localName} has more than one range provided")
+            mainLogger.warn("can not add data relation. Property ${p.localName} has more than one range provided")
         }
         else {
             val range =
@@ -606,14 +606,13 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
                     oneOfProp
                 ).toSet()
                 if (oneOf.size != 1){
-                    if (verbose)
-                        println("can not add data relation. Property ${p.localName} is marked as 'Datatype' but does" +
+                    mainLogger.warn("can not add data relation. Property ${p.localName} is marked as 'Datatype' but does" +
                                 " not provide one 'oneOf'-relation ")
                 }
                 else {
                     val list = oneOf.single()
                     if (!isOfType(list.asResource(), rdfListClass)){
-                        println("can not add data relation. Property ${p.localName} has not a list as 'oneOf'.")
+                        mainLogger.warn("can not add data relation. Property ${p.localName} has not a list as 'oneOf'.")
                     }
                     else {
                         // collect elements of list
@@ -623,8 +622,7 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
 
             }
             else {
-                if (verbose)
-                    println("the range of datatype property ${p.localName} is not implemented yet. No axiom is added")
+                mainLogger.warn("the range of datatype property ${p.localName} is not implemented yet. No axiom is added")
             }
         }
 
@@ -739,7 +737,7 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
 
 
 // removes a statement, that uses the defined predicate
-abstract class RemoveStatementByRelationMutation(model: Model, verbose : Boolean) : RemoveStatementMutation(model, verbose) {
+abstract class RemoveStatementByRelationMutation(model: Model) : RemoveStatementMutation(model) {
     abstract val targetPredicate : Resource
 
     override fun getCandidates(): List<Statement> {
@@ -763,7 +761,7 @@ abstract class RemoveStatementByRelationMutation(model: Model, verbose : Boolean
 }
 
 // removes a statement, that uses a predicate of the defined Type
-abstract class RemoveStatementByTypeOfRelationMutation(model: Model, verbose : Boolean) : RemoveStatementMutation(model, verbose) {
+abstract class RemoveStatementByTypeOfRelationMutation(model: Model) : RemoveStatementMutation(model) {
     abstract val targetType : Resource
     private val targetPredicates  get() = allOfType(targetType)
 
@@ -789,7 +787,7 @@ abstract class RemoveStatementByTypeOfRelationMutation(model: Model, verbose : B
 }
 
 // similar to adding a relation, but all existing triples with this subject ond predicate are deleted
-open class ChangeRelationMutation(model: Model, verbose: Boolean) : AddRelationMutation(model, verbose) {
+open class ChangeRelationMutation(model: Model) : AddRelationMutation(model) {
 
     override fun getCandidates() : List<Resource> {
         val cand =  super.getCandidates()
@@ -814,7 +812,7 @@ open class ChangeRelationMutation(model: Model, verbose: Boolean) : AddRelationM
     }
 }
 
-open class AddStatementMutation(model: Model, verbose: Boolean) : Mutation(model, verbose) {
+open class AddStatementMutation(model: Model) : Mutation(model) {
     override fun isApplicable(): Boolean {
         return true
     }
@@ -834,7 +832,7 @@ open class AddStatementMutation(model: Model, verbose: Boolean) : Mutation(model
     }
 }
 
-open class RemoveNodeMutation(model: Model, verbose : Boolean) : Mutation(model, verbose) {
+open class RemoveNodeMutation(model: Model) : Mutation(model) {
 
     open fun getCandidates(): List<Resource> {
         val l = model.listStatements().toList().toMutableList()
@@ -881,7 +879,7 @@ open class RemoveNodeMutation(model: Model, verbose : Boolean) : Mutation(model,
     }
 }
 
-open class ReplaceNodeInStatementMutation(model: Model, verbose: Boolean) : Mutation(model, verbose) {
+open class ReplaceNodeInStatementMutation(model: Model) : Mutation(model) {
     override fun isApplicable(): Boolean {
         return hasConfig || getCandidates().isNotEmpty()
     }
@@ -946,7 +944,7 @@ open class ReplaceNodeInStatementMutation(model: Model, verbose: Boolean) : Muta
     }
 }
 
-abstract class ReplaceNodeWithNode(model: Model, verbose: Boolean) : Mutation(model, verbose) {
+abstract class ReplaceNodeWithNode(model: Model) : Mutation(model) {
 
     // default values: anonymous resources
     var oldNode: Resource = model.createResource()

@@ -4,18 +4,18 @@ import org.apache.jena.rdf.model.Model
 import org.apache.jena.riot.RDFDataMgr
 import org.apache.jena.shacl.ShaclValidator
 import org.apache.jena.shacl.Shapes
+import org.smolang.robust.mainLogger
 import java.io.File
 
 
-class RobustnessMask(val verbose: Boolean,
-                     private val shacl: Shapes?
+class RobustnessMask(private val shacl: Shapes?
     ) {
 
     // checks, if the provided model is valid w.r.t. the shacl shapes
     fun validate(model: Model) : Boolean {
 
         // create reasoner with the selected backend
-        val reasonerFactory = CustomReasonerFactory(verbose, ReasoningBackend.OPENLLET)
+        val reasonerFactory = CustomReasonerFactory(ReasoningBackend.OPENLLET)
         val reasoner = reasonerFactory.getReasoner(model)
 
         val consistent = reasoner.isConsistent()
@@ -127,6 +127,7 @@ class RobustnessMask(val verbose: Boolean,
             "fail"   -> OracleOutcome.FAIL
             "undecided" -> OracleOutcome.UNDECIDED
             else -> {
+                mainLogger.warn("Argument $outcome can not be parsed to OracleOutcome. Default to outcome \"pass\".")
                 assert(false) {"Argument $outcome can not be parsed to OracleOutcome."}
                 OracleOutcome.PASS
             }

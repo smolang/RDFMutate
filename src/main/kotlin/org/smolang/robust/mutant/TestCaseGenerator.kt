@@ -7,9 +7,10 @@ import java.io.File
 import java.io.FileOutputStream
 import java.nio.file.Files
 import java.nio.file.Paths
+import org.smolang.robust.mainLogger
 
 
-open class TestCaseGenerator(private val verbose: Boolean) {
+open class TestCaseGenerator() {
     private val mutators : MutableList<Mutator> = mutableListOf()
     val mutants : MutableList<Model> = mutableListOf()
     val mutantFiles: MutableList<String> = mutableListOf()
@@ -25,8 +26,7 @@ open class TestCaseGenerator(private val verbose: Boolean) {
             val m = mutFactory.randomMutator()
             val mutant = m.mutate(seed)
             countTries += 1
-            if (verbose)
-                println("generated mutants: $countGenerated")
+            mainLogger.info("generated mutants: $countGenerated")
             if (mask.validate(mutant)){
                 countGenerated += 1
                 mutators.add(m)
@@ -34,10 +34,9 @@ open class TestCaseGenerator(private val verbose: Boolean) {
                 mutantFiles.add("?")
             }
         }
-        if (verbose) {
-            println("generated: $countGenerated tries: $countTries")
-            println("ratio: " + countTries.toFloat() / countGenerated)
-        }
+        mainLogger.info("generated: $countGenerated tries: $countTries")
+        mainLogger.info("ratio: " + countTries.toFloat() / countGenerated)
+
         return countTries
     }
 
@@ -63,7 +62,6 @@ open class TestCaseGenerator(private val verbose: Boolean) {
             var id = 0
             for (m in mutators) {
                 val path = Paths.get("").toAbsolutePath().toString()
-                val folder = path
                 val mutantFile = mutantFiles[id]
                 val numMut = m.numMutations
                 val numDel = m.globalMutation?.removeSet?.size ?: -1

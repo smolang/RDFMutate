@@ -2,10 +2,9 @@ package org.smolang.robust.domainSpecific.geo
 
 import org.smolang.robust.mutant.*
 import org.apache.jena.riot.RDFDataMgr
-import org.apache.jena.shacl.Shapes
 import org.smolang.robust.randomGenerator
 
-class GeoTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) {
+class GeoTestCaseGenerator() : TestCaseGenerator() {
 
     private val geoOntoPath = "sut/geo/total_mini.ttl"
     fun generateGeoMutants(numberMutants : Int,
@@ -17,7 +16,7 @@ class GeoTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) {
 
         val mutationNumbers = listOf(numberOfMutations)
         for (i in mutationNumbers) {
-            val geoMutator = GeoMutatorFactory(verbose, i)
+            val geoMutator = GeoMutatorFactory(i)
             super.generateMutants(
                 seed,
                 mask,
@@ -32,7 +31,7 @@ class GeoTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) {
     }
 }
 
-class GeoMutatorFactory(verbose: Boolean, private val NumberMutations: Int): MutatorFactory(verbose) {
+class GeoMutatorFactory(private val NumberMutations: Int): MutatorFactory() {
 
     private val domainIndependentMutations = listOf(
         CEUAMutation::class,
@@ -45,12 +44,12 @@ class GeoMutatorFactory(verbose: Boolean, private val NumberMutations: Int): Mut
     )
 
     override fun randomMutator(): Mutator {
-        val ms = MutationSequence(verbose)
+        val ms = MutationSequence()
 
         for (i in 1..NumberMutations)
             ms.addRandom(domainIndependentMutations.random(randomGenerator))
 
-        return Mutator(ms, verbose)
+        return Mutator(ms)
     }
 }
 

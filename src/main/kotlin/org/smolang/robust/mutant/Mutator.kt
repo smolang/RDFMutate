@@ -3,10 +3,10 @@ package org.smolang.robust.mutant
 import org.apache.jena.rdf.model.Model
 import org.apache.jena.rdf.model.Resource
 import org.apache.jena.rdf.model.Statement
-import java.nio.file.Paths
+import org.smolang.robust.mainLogger
 
 
-class Mutator(private val mutSeq: MutationSequence, private val verbose: Boolean) {
+class Mutator(private val mutSeq: MutationSequence) {
     var globalMutation : Mutation? = null
     private var ran = false
 
@@ -16,12 +16,11 @@ class Mutator(private val mutSeq: MutationSequence, private val verbose: Boolean
     fun mutate (seed : Model) : Model {
         ran = true
         appliedMutations = mutableListOf()
-        globalMutation = Mutation(seed, verbose)
+        globalMutation = Mutation(seed)
         var target = seed
         for (i  in 0 until mutSeq.size()) {
             val mutation = mutSeq[i].concreteMutation(target)
-            if (verbose)
-                println("Mutation: $mutation")
+            mainLogger.info("Mutation: $mutation")
             if(mutation.isApplicable()) {
                 target = mutation.applyCopy()
                 globalMutation?.mimicMutation(mutation)
@@ -97,9 +96,9 @@ class Mutator(private val mutSeq: MutationSequence, private val verbose: Boolean
     }
 }
 
-open class MutatorFactory(val verbose: Boolean) {
+open class MutatorFactory() {
 
     open fun randomMutator() : Mutator {
-        return Mutator(MutationSequence(verbose), verbose)
+        return Mutator(MutationSequence())
     }
 }

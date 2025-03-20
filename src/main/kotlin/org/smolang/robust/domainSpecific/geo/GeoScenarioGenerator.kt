@@ -3,7 +3,7 @@ package org.smolang.robust.domainSpecific.geo
 import java.io.File
 import java.io.FileOutputStream
 import java.util.concurrent.TimeUnit
-
+import org.smolang.robust.mainLogger
 
 /**
  * Generates several scenarios using an external tool, then creates a csv files with the test oracle.
@@ -26,7 +26,7 @@ class GeoScenarioGenerator {
 
         dir.walk().forEach {outputFile ->
             if (pattern.matches(outputFile.toString())) {
-                println(outputFile)
+                mainLogger.info("output file for generated geo scenarios: $outputFile")
                 val scenarioName = "${dir.absolutePath}/scenario$i.smol"
                 val scenario = File(scenarioName)
                 scenario.createNewFile()
@@ -35,7 +35,7 @@ class GeoScenarioGenerator {
                 var hasCap = true
                 var depth = 0
 
-                println(scenario.absolutePath)
+                mainLogger.info("use scenario for geo from path ${scenario.absolutePath}")
                 FileOutputStream(scenarioName).use { fos ->
                     val writer = fos.bufferedWriter()
                     writer.write("id;folder;mutantFile;numMutations;numDel;numAdd;appliedMutations;affectedSeedNodes;addedAxioms;removedAxioms")

@@ -4,8 +4,9 @@ import org.apache.jena.query.QueryExecutionFactory
 import org.apache.jena.query.QueryFactory
 import org.apache.jena.rdf.model.*
 import org.smolang.robust.randomGenerator
+import org.smolang.robust.mainLogger
 
-class AddInstanceMutation(model: Model, verbose : Boolean) : Mutation(model, verbose) {
+class AddInstanceMutation(model: Model) : Mutation(model) {
     // returns all classes
     private fun getCandidates(): List<String> {
 
@@ -70,7 +71,7 @@ class AddInstanceMutation(model: Model, verbose : Boolean) : Mutation(model, ver
     }
 }
 
-open class RemoveObjectPropertyRelationMutation(model: Model, verbose : Boolean) : RemoveStatementMutation(model, verbose) {
+open class RemoveObjectPropertyRelationMutation(model: Model) : RemoveStatementMutation(model) {
     override fun getCandidates(): List<Statement> {
         val allProps = allOfType(objectPropClass)
         val candidates : MutableSet<Statement> = hashSetOf()
@@ -94,8 +95,7 @@ open class RemoveObjectPropertyRelationMutation(model: Model, verbose : Boolean)
                     if (cand.any())
                         cand.random(randomGenerator)
                     else {
-                        if (verbose)
-                            println("no relation with this property exists / can be deleted")
+                        mainLogger.info("no relation with this property exists / can be deleted.")
                         emptyAxiom
                     }
                 super.setConfiguration(
@@ -109,7 +109,7 @@ open class RemoveObjectPropertyRelationMutation(model: Model, verbose : Boolean)
     }
 }
 
-open class AddObjectPropertyRelationMutation(model: Model, verbose: Boolean) : AddRelationMutation(model, verbose) {
+open class AddObjectPropertyRelationMutation(model: Model) : AddRelationMutation(model) {
     override fun getCandidates() : List<Resource> {
         val cand = allOfType(objectPropClass)
         return cand.sortedBy { it.toString() }
@@ -140,14 +140,14 @@ open class AddObjectPropertyRelationMutation(model: Model, verbose: Boolean) : A
         // check that p is really an ObjectProperty, if it exists in the model at all
         if (model.listResourcesWithProperty(null ).toSet().contains(p.asResource()))
             if (!isOfType(p.asResource(), objectPropClass)) {
-                println("WARNING: resource $p is not an object property but is used as such in configuration.")
+                mainLogger.warn("Resource $p is not an object property but is used as such in configuration.")
             }
 
         super.setConfiguration(config)
     }
 }
 
-abstract class AddNegativePropertyRelationMutation(model: Model, verbose: Boolean) : Mutation(model, verbose) {
+abstract class AddNegativePropertyRelationMutation(model: Model) : Mutation(model) {
     abstract val typeOfProperty :Resource
     abstract val domain : Set<Resource>
     abstract val range : Set<RDFNode>
@@ -183,20 +183,20 @@ abstract class AddNegativePropertyRelationMutation(model: Model, verbose: Boolea
     }
 }
 
-class AddNegativeObjectPropertyRelationMutation(model: Model, verbose: Boolean) : AddNegativePropertyRelationMutation(model, verbose) {
+class AddNegativeObjectPropertyRelationMutation(model: Model) : AddNegativePropertyRelationMutation(model) {
     override val typeOfProperty = objectPropClass
     override val domain = allOfType(namedInd)
     override val range = allOfType(namedInd)
     override val relationToTarget = targetIndProp
 }
 
-class RemoveNegativePropertyAssertionMutation(model: Model, verbose: Boolean) : RemoveNodeMutation(model, verbose) {
+class RemoveNegativePropertyAssertionMutation(model: Model) : RemoveNodeMutation(model) {
     override fun getCandidates(): List<Resource> {
         return allOfType(negPropAssertion).toList()
     }
 }
 
-open class ChangeObjectPropertyRelationMutation(model: Model, verbose: Boolean) : AddObjectPropertyRelationMutation(model, verbose) {
+open class ChangeObjectPropertyRelationMutation(model: Model) : AddObjectPropertyRelationMutation(model) {
     override fun getCandidates() : List<Resource> {
         val cand =  super.getCandidates()
         return cand
@@ -214,7 +214,7 @@ open class ChangeObjectPropertyRelationMutation(model: Model, verbose: Boolean) 
 
 // adds data property relation
 // does not care about declared ranges or domains of relation
-class BasicAddDataPropertyRelationMutation(model: Model, verbose: Boolean) : AddRelationMutation(model, verbose) {
+class BasicAddDataPropertyRelationMutation(model: Model) : AddRelationMutation(model) {
     override fun getCandidates() : List<Resource> {
         val cand = allOfType(dataPropClass)
         return cand.sortedBy { it.toString() }
@@ -245,18 +245,18 @@ class BasicAddDataPropertyRelationMutation(model: Model, verbose: Boolean) : Add
         // check that p is really an ObjectProperty, if it exists in the model at all
         if (model.listResourcesWithProperty(null ).toSet().contains(p.asResource()))
             if (!isOfType(p.asResource(), dataPropClass)) {
-                println("WARNING: resource $p is not a data property but is used as such in configuration.")
+                mainLogger.warn("Resource $p is not a data property but is used as such in configuration.")
             }
 
         super.setConfiguration(config)
     }
 }
 
-class RemoveDataPropertyRelationMutation(model: Model, verbose : Boolean) : RemoveStatementByTypeOfRelationMutation(model, verbose) {
+class RemoveDataPropertyRelationMutation(model: Model) : RemoveStatementByTypeOfRelationMutation(model) {
     override val targetType = dataPropClass
 }
 
-class AddNegativeDataPropertyRelationMutation(model: Model, verbose: Boolean) : AddNegativePropertyRelationMutation(model, verbose) {
+class AddNegativeDataPropertyRelationMutation(model: Model) : AddNegativePropertyRelationMutation(model) {
     override val typeOfProperty = dataPropClass
     override val domain = allOfType(namedInd)
     override val range = exampleElDataValues
@@ -264,7 +264,7 @@ class AddNegativeDataPropertyRelationMutation(model: Model, verbose: Boolean) : 
 }
 
 // adds new individual to the ontology
-class AddIndividualMutation(model: Model, verbose: Boolean) : AddStatementMutation(model, verbose) {
+class AddIndividualMutation(model: Model) : AddStatementMutation(model) {
     init {
         val individualName = "newIndividual:number"+ randomGenerator.nextInt(0,Int.MAX_VALUE)
         // create new "type" relation for the individual and the selected class
@@ -277,7 +277,7 @@ class AddIndividualMutation(model: Model, verbose: Boolean) : AddStatementMutati
     }
 }
 
-class RemoveIndividualMutation(model: Model, verbose : Boolean) : RemoveNodeMutation(model, verbose) {
+class RemoveIndividualMutation(model: Model) : RemoveNodeMutation(model) {
     override fun getCandidates(): List<Resource> {
         val l = model.listStatements().toList().toMutableList()
         val candidates = ArrayList<Resource>()
@@ -299,7 +299,7 @@ class RemoveIndividualMutation(model: Model, verbose : Boolean) : RemoveNodeMuta
     }
 }
 
-class ChangeDataPropertyMutation(model: Model, verbose: Boolean) : ChangeRelationMutation(model, verbose) {
+class ChangeDataPropertyMutation(model: Model) : ChangeRelationMutation(model) {
     override fun getCandidates() : List<Resource> {
         val cand =  super.getCandidates()
         // only select data properties
@@ -308,7 +308,7 @@ class ChangeDataPropertyMutation(model: Model, verbose: Boolean) : ChangeRelatio
     }
 }
 
-class AddClassAssertionMutation (model: Model, verbose: Boolean) : AddStatementMutation(model, verbose) {
+class AddClassAssertionMutation (model: Model) : AddStatementMutation(model) {
     init {
         // collect all OWL classes and individuals
         val classes = allOfType(owlClass)
@@ -330,7 +330,7 @@ class AddClassAssertionMutation (model: Model, verbose: Boolean) : AddStatementM
     }
 }
 
-class RemoveClassAssertionMutation(model: Model, verbose: Boolean) : RemoveStatementMutation(model, verbose) {
+class RemoveClassAssertionMutation(model: Model) : RemoveStatementMutation(model) {
     override fun getCandidates(): List<Statement> {
         val candidates : MutableList<Statement> = mutableListOf()
 
@@ -360,7 +360,7 @@ class RemoveClassAssertionMutation(model: Model, verbose: Boolean) : RemoveState
     }
 }
 
-open class ChangeDoubleMutation(model: Model, verbose: Boolean): ReplaceNodeInStatementMutation(model, verbose) {
+open class ChangeDoubleMutation(model: Model): ReplaceNodeInStatementMutation(model) {
     override fun getCandidates(): List<DoubleStringAndStatementConfiguration> {
         val queryString = "PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n " +
                 "SELECT DISTINCT * WHERE { " +
@@ -376,7 +376,6 @@ open class ChangeDoubleMutation(model: Model, verbose: Boolean): ReplaceNodeInSt
             val d = r.get("?d")
             val prop = model.getProperty(p.toString())
             val axiom = model.createStatement(x.asResource(), prop, d)
-            //println("$x $prop $d")
 
             // compute new value by multiplying old one
 
@@ -387,7 +386,6 @@ open class ChangeDoubleMutation(model: Model, verbose: Boolean): ReplaceNodeInSt
             if (randomGenerator.nextBoolean()) // inverse
                 factor = 1.0/factor
             val newDouble = d.toString().removeSuffix("^^http://www.w3.org/2001/XMLSchema#double").toDouble() * factor
-            //println(newDouble)
             ret += DoubleStringAndStatementConfiguration(
                 d.toString(),
                 newDouble.toString(),
@@ -402,7 +400,7 @@ open class ChangeDoubleMutation(model: Model, verbose: Boolean): ReplaceNodeInSt
 }
 
 // adds the specified relation between two individuals
-abstract class AddIndividualRelationMutation(model: Model, verbose: Boolean) : AddStatementMutation(model, verbose) {
+abstract class AddIndividualRelationMutation(model: Model) : AddStatementMutation(model) {
     abstract val targetRelation : Property
 
     override fun createMutation() {
@@ -425,19 +423,19 @@ abstract class AddIndividualRelationMutation(model: Model, verbose: Boolean) : A
     }
 }
 
-class AddSameIndividualAssertionMutation(model: Model, verbose: Boolean) : AddIndividualRelationMutation(model, verbose) {
+class AddSameIndividualAssertionMutation(model: Model) : AddIndividualRelationMutation(model) {
     override val targetRelation = sameAsProp
 }
 
-class RemoveSameIndividualAssertionMutation(model: Model, verbose: Boolean) : RemoveStatementByRelationMutation(model, verbose) {
+class RemoveSameIndividualAssertionMutation(model: Model) : RemoveStatementByRelationMutation(model) {
     override val targetPredicate = sameAsProp
 }
 
-class AddDifferentIndividualAssertionMutation(model: Model, verbose: Boolean) : AddIndividualRelationMutation(model, verbose) {
+class AddDifferentIndividualAssertionMutation(model: Model) : AddIndividualRelationMutation(model) {
     override val targetRelation = differentFromProp
 }
 
-class RemoveDifferentIndividualAssertionMutation(model: Model, verbose: Boolean) : RemoveStatementByRelationMutation(model, verbose) {
+class RemoveDifferentIndividualAssertionMutation(model: Model) : RemoveStatementByRelationMutation(model) {
     override val targetPredicate = differentFromProp
 }
 

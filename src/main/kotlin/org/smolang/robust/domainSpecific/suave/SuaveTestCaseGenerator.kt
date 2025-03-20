@@ -10,16 +10,16 @@ import java.io.File
 import java.nio.file.Files
 import java.nio.file.Paths
 
-class SuaveTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) {
+class SuaveTestCaseGenerator() : TestCaseGenerator() {
     // maximal number of mutations to generate a mutant
 
-    private val mrosRulesPath = "sut/suave/suave_ontologies/mros_rules.owl"
-    private val tomasysRulesPath = "sut/suave/suave_ontologies/tomasys_rules.owl"
+    //private val mrosRulesPath = "sut/suave/suave_ontologies/mros_rules.owl"
+    //private val tomasysRulesPath = "sut/suave/suave_ontologies/tomasys_rules.owl"
     //val suaveRulesPath = "sut/suave/suave_ontologies/suave_original_rules.owl"
     // start with loading the rules of the corresponding ontologies
-    val mrosRulesModel = RDFDataMgr.loadDataset(mrosRulesPath).defaultModel!!
+    //val mrosRulesModel = RDFDataMgr.loadDataset(mrosRulesPath).defaultModel!!
     //val mrosModel = ModelFactory.createDefaultModel()
-    val tomasysRulesModel = RDFDataMgr.loadDataset(tomasysRulesPath).defaultModel!!
+    //val tomasysRulesModel = RDFDataMgr.loadDataset(tomasysRulesPath).defaultModel!!
     //val suaveRulesModel = RDFDataMgr.loadDataset(suaveRulesPath).defaultModel
 
     // load ontology without rules, we do not want to mutate them
@@ -65,7 +65,6 @@ class SuaveTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) 
         var tries = 0
         for (i in mutationNumbers) {
             val suaveMutator = SuaveMutatorFactory(
-                verbose,
                 mutatableStatements,
                 i,
                 ratioDomainSpecific,
@@ -135,11 +134,10 @@ class SuaveTestCaseGenerator(val verbose: Boolean) : TestCaseGenerator(verbose) 
 
 
 class SuaveMutatorFactory(
-    verbose: Boolean,
     private val mutatableStatements: List<Statement>,
     private val maxNumberMutations: Int,
     private val ratioDomainSpecific: Double,
-    useAddQAMutation: Boolean) : MutatorFactory(verbose) {
+    useAddQAMutation: Boolean) : MutatorFactory() {
 
     // boolean determines, if "AddQAEstimationMutation" is used
     private val domainSpecificMutations =
@@ -174,7 +172,7 @@ class SuaveMutatorFactory(
     )
     override fun randomMutator() : Mutator {
 
-        val ms = MutationSequence(verbose)
+        val ms = MutationSequence()
         ms.addMutatableAxioms(mutatableStatements)
 
         // determine the number of the applied mutation operators
@@ -195,6 +193,6 @@ class SuaveMutatorFactory(
         // add mutations in random order to mutation sequence
         ms.shuffle()
 
-        return Mutator(ms, verbose)
+        return Mutator(ms)
     }
 }

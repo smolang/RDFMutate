@@ -8,7 +8,7 @@ import org.smolang.robust.randomGenerator
 /**
  * all the domain-dependent mutation operators that are specific for the auv domain
  */
-abstract class AUVMutation(model: Model, verbose: Boolean) : Mutation(model, verbose) {
+abstract class AUVMutation(model: Model) : Mutation(model) {
     val auvURI = "http://www.ifi.uio.no/tobiajoh/miniPipes"
     val delimiter = "#"
     val pipeSegmentClass: Resource = model.createResource(auvURI + delimiter + "PipeSegment")
@@ -23,7 +23,7 @@ class AddPipeSegmentConfiguration(start: Resource) : SingleResourceConfiguration
     AUVConfiguration
 
 
-class AddPipeSegmentMutation(model: Model, verbose: Boolean) : AUVMutation(model, verbose) {
+class AddPipeSegmentMutation(model: Model) : AUVMutation(model) {
     override fun setConfiguration(config: MutationConfiguration) {
         assert(config is AddPipeSegmentConfiguration)
         super.setConfiguration(config)
@@ -65,7 +65,7 @@ class AddPipeSegmentMutation(model: Model, verbose: Boolean) : AUVMutation(model
 
         val configAIM = StringAndResourceConfiguration(nameNewSegment, pipeSegmentClass)
 
-        val aim = AddInstanceMutation(model, verbose)
+        val aim = AddInstanceMutation(model)
         aim.setConfiguration(configAIM)
         val tempModel = aim.applyCopy()
 
@@ -75,7 +75,7 @@ class AddPipeSegmentMutation(model: Model, verbose: Boolean) : AUVMutation(model
             model.createProperty(auvURI + delimiter + "nextTo"),
             model.createResource(nameNewSegment))
         val configAAM = SingleStatementConfiguration(s)
-        val aam = AddStatementMutation(tempModel, verbose)
+        val aam = AddStatementMutation(tempModel)
         aam.setConfiguration(configAAM)
         aam.applyCopy()
 

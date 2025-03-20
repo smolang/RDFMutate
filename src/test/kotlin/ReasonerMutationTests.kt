@@ -6,19 +6,17 @@ import org.apache.jena.riot.Lang
 import org.apache.jena.riot.RDFDataMgr
 import org.smolang.robust.mutant.*
 import java.io.File
-import java.nio.file.Files
 
 class ReasonerMutationTests : StringSpec() {
 
     init {
         "test removing of class assertions" {
-            val verbose = false
             val input = RDFDataMgr.loadDataset("reasoners/assertion.ttl").defaultModel
 
-            val ms = MutationSequence(verbose)
+            val ms = MutationSequence()
             ms.addRandom(RemoveClassAssertionMutation::class)
 
-            val m = Mutator(ms, verbose)
+            val m = Mutator(ms)
             m.mutate(input)
 
             // check, that correct statement got removed
@@ -37,13 +35,13 @@ class ReasonerMutationTests : StringSpec() {
 
     init {
         "test addition of named individual" {
-            val verbose = false
+            
             val input = RDFDataMgr.loadDataset("reasoners/assertion.ttl").defaultModel
 
-            val ms = MutationSequence(verbose)
+            val ms = MutationSequence()
             ms.addRandom(AddIndividualMutation::class)
 
-            val m = Mutator(ms, verbose)
+            val m = Mutator(ms)
             val res = m.mutate(input)
 
             // check number of named individuals
@@ -61,13 +59,13 @@ class ReasonerMutationTests : StringSpec() {
     }
     init {
         "test addition of class assertions" {
-            val verbose = false
+            
             val input = RDFDataMgr.loadDataset("reasoners/assertion.ttl").defaultModel
 
-            val ms = MutationSequence(verbose)
+            val ms = MutationSequence()
             ms.addRandom(AddClassAssertionMutation::class)
 
-            val m = Mutator(ms, verbose)
+            val m = Mutator(ms)
             val res = m.mutate(input)
 
             // check number of named individuals
@@ -91,19 +89,19 @@ class ReasonerMutationTests : StringSpec() {
 
     init {
         "test replacing class with bottom or top" {
-            val verbose = false
+            
             val input = RDFDataMgr.loadDataset("reasoners/siblings.ttl").defaultModel
 
-            val ms = MutationSequence(verbose)
+            val ms = MutationSequence()
             ms.addRandom(ReplaceClassWithTopMutation::class)
 
-            val m = Mutator(ms, verbose)
+            val m = Mutator(ms)
             val res = m.mutate(input)
 
-            val ms2 = MutationSequence(verbose)
+            val ms2 = MutationSequence()
             ms2.addRandom(ReplaceClassWithBottomMutation::class)
 
-            val m2 = Mutator(ms2, verbose)
+            val m2 = Mutator(ms2)
             val res2 = m2.mutate(input)
 
             // check number of named individuals
@@ -132,13 +130,13 @@ class ReasonerMutationTests : StringSpec() {
 
     init {
         "test replacing class with sibling class" {
-            val verbose = false
+            
             val input = RDFDataMgr.loadDataset("reasoners/siblings.ttl").defaultModel
 
-            val ms = MutationSequence(verbose)
+            val ms = MutationSequence()
             ms.addRandom(ReplaceClassWithSiblingMutation::class)
 
-            val m = Mutator(ms, verbose)
+            val m = Mutator(ms)
             val res = m.mutate(input)
 
             // check number of named individuals
@@ -168,13 +166,13 @@ class ReasonerMutationTests : StringSpec() {
 
     init {
         "adding subclass relation" {
-            val verbose = false
+            
             val input = RDFDataMgr.loadDataset("reasoners/assertion.ttl").defaultModel
 
-            val ms = MutationSequence(verbose)
+            val ms = MutationSequence()
             ms.addRandom(AddSubclassRelationMutation::class)
 
-            val m = Mutator(ms, verbose)
+            val m = Mutator(ms)
             val res = m.mutate(input)
 
             // check number of named individuals
@@ -204,14 +202,14 @@ class ReasonerMutationTests : StringSpec() {
 
     init {
         "make property transitive and reflexive" {
-            val verbose = false
+            
             val input = RDFDataMgr.loadDataset("relations/relations.ttl").defaultModel
 
-            val ms = MutationSequence(verbose)
+            val ms = MutationSequence()
             ms.addRandom(AddReflexiveObjectPropertyRelationMutation::class)
             ms.addRandom(AddTransitiveObjectPropertyRelationMutation::class)
 
-            val m = Mutator(ms, verbose)
+            val m = Mutator(ms)
             val res = m.mutate(input)
 
             // check number of named individuals
@@ -238,23 +236,23 @@ class ReasonerMutationTests : StringSpec() {
 
     init {
         "adding and removal of negative property assertion" {
-            val verbose = false
+            
             val input = RDFDataMgr.loadDataset("relations/relations.ttl").defaultModel
 
             // add negative property assertion
-            val ms1 = MutationSequence(verbose)
+            val ms1 = MutationSequence()
             ms1.addRandom(AddNegativeObjectPropertyRelationMutation::class)
 
-            val m1 = Mutator(ms1, verbose)
+            val m1 = Mutator(ms1)
             val res1 = m1.mutate(input)
 
             (input.listStatements().toSet().size + 4) shouldBe res1.listStatements().toSet().size
 
             // remove negative assertion
-            val ms2 = MutationSequence(verbose)
+            val ms2 = MutationSequence()
             ms2.addRandom(RemoveNegativePropertyAssertionMutation::class)
 
-            val m2 = Mutator(ms2, verbose)
+            val m2 = Mutator(ms2)
             val res2 = m2.mutate(res1)
 
             (input.listStatements().toSet().size) shouldBe res2.listStatements().toSet().size
@@ -265,10 +263,10 @@ class ReasonerMutationTests : StringSpec() {
 
     init {
         "adding new class, object property and data property" {
-            val verbose = false
+            
             val input = RDFDataMgr.loadDataset("abc/abc.ttl").defaultModel
 
-            val ms = MutationSequence(verbose)
+            val ms = MutationSequence()
             ms.addRandom(DeclareClassMutation::class)
             ms.addRandom(DeclareObjectPropMutation::class)
             ms.addRandom(DeclareObjectPropMutation::class)
@@ -284,7 +282,7 @@ class ReasonerMutationTests : StringSpec() {
             ms.addRandom(AddPropertyChainMutation::class)
             ms.addRandom(AddDatatypeDefinition::class)
 
-            val m = Mutator(ms, verbose)
+            val m = Mutator(ms)
             val res = m.mutate(input)
 
             // check number of named individuals
@@ -324,10 +322,10 @@ class ReasonerMutationTests : StringSpec() {
 
     init {
         "adding complex class expressions" {
-            val verbose = false
+            
             val input = RDFDataMgr.loadDataset("abc/abc.ttl").defaultModel
 
-            val ms = MutationSequence(verbose)
+            val ms = MutationSequence()
             ms.addRandom(DeclareClassMutation::class)
             ms.addRandom(DeclareObjectPropMutation::class)
             ms.addRandom(DeclareObjectPropMutation::class)
@@ -346,7 +344,7 @@ class ReasonerMutationTests : StringSpec() {
             ms.addRandom(AddDataHasValueMutation::class)
             ms.addRandom(AddHasKeyMutation::class)
 
-            val m = Mutator(ms, verbose)
+            val m = Mutator(ms)
             val res = m.mutate(input)
 
 
