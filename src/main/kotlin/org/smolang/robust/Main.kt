@@ -7,18 +7,10 @@ import com.github.ajalt.clikt.parameters.options.option
 import com.github.ajalt.clikt.parameters.options.switch
 import com.github.ajalt.clikt.parameters.types.file
 import com.github.ajalt.clikt.parameters.types.int
-import com.github.owlcs.ontapi.OntManagers
-import com.github.owlcs.ontapi.Ontology
-import com.github.owlcs.ontapi.internal.AxiomTranslator
-import org.apache.jena.ontapi.OntModelFactory
-import org.apache.jena.rdf.model.Model
 import org.apache.jena.riot.Lang
 import org.apache.jena.riot.RDFDataMgr
 import org.apache.jena.shacl.Shapes
-import org.semanticweb.owlapi.formats.FunctionalSyntaxDocumentFormat
-import org.semanticweb.owlapi.model.AxiomType
-import org.semanticweb.owlapi.model.IRI
-import org.semanticweb.owlapi.model.OWLAxiom
+import org.slf4j.LoggerFactory
 import org.smolang.robust.domainSpecific.geo.GeoScenarioGenerator
 import org.smolang.robust.domainSpecific.geo.GeoTestCaseGenerator
 import org.smolang.robust.domainSpecific.reasoner.OwlEvaluationGraphGenerator
@@ -187,6 +179,11 @@ class Main : CliktCommand() {
     // mutates a seed KG with the mutation operators suitable for EL ontologies
     private fun elMutation() {
         // create selection of mutations that can be applied
+        // logger test
+        val logger = LoggerFactory.getLogger("coolLogger")
+        logger.info("Logger test: Hello World")
+        logger.warn("this is a warning")
+
         singleMutation(elReasonerMutations)
     }
 

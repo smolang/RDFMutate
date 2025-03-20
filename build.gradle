@@ -36,8 +36,14 @@ dependencies {
     implementation 'net.sourceforge.owlapi:owlapi-distribution:5.5.0'
     implementation 'net.sourceforge.owlapi:org.semanticweb.hermit:1.4.5.519'
     implementation 'com.github.galigator.openllet:openllet-owlapi:2.6.5'
-    // https://mvnrepository.com/artifact/org.slf4j/slf4j-nop
-    testImplementation group: 'org.slf4j', name: 'slf4j-nop', version: '2.0.16'
+
+    // https://mvnrepository.com/artifact/org.slf4j/slf4j-jdk14
+    // implementation 'org.slf4j:slf4j-jdk14:2.0.17'
+
+    // https://mvnrepository.com/artifact/ch.qos.logback/logback-classic
+    implementation 'ch.qos.logback:logback-classic:1.5.18'
+
+
     // https://mvnrepository.com/artifact/com.github.owlcs/ontapi
     implementation group: 'com.github.owlcs', name: 'ontapi', version: '4.0.0'
 }
