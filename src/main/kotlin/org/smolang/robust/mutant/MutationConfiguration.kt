@@ -1,5 +1,6 @@
 package org.smolang.robust.mutant
 
+import org.apache.jena.rdf.model.RDFNode
 import org.apache.jena.rdf.model.Resource
 import org.apache.jena.rdf.model.Statement
 
@@ -91,3 +92,8 @@ class DoubleStringAndStatementConfiguration(private val nodeOld: String,
         return r
     }
 }
+
+class RuleMutationConfiguration(val body : List<Statement>,
+                                val head : List<Statement>,
+                                val bodyVariables : Set<RDFNode>,
+                                val headVariables : Set<RDFNode>)

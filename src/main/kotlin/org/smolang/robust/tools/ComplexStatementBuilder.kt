@@ -1,4 +1,4 @@
-package org.smolang.robust.mutant
+package org.smolang.robust.tools
 
 import org.apache.jena.rdf.model.Literal
 import org.apache.jena.rdf.model.Model

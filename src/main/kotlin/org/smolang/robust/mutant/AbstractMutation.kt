@@ -26,14 +26,14 @@ class AbstractMutation(private val mutOp: KClass<out Mutation>) {
         if (hasConfig) {
             val m = mutOp.primaryConstructor?.call(model) ?: Mutation(model)
             for (a in mutatableAxioms)
-                m.addMutatableAximo(a)
+                m.addMutatableAxiom(a)
             config?.let { m.setConfiguration(it) }
             return m
         }
         else {
             val m= mutOp.primaryConstructor?.call(model) ?: Mutation(model)
             for (a in mutatableAxioms)
-                m.addMutatableAximo(a)
+                m.addMutatableAxiom(a)
             return m
         }
 

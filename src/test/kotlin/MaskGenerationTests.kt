@@ -3,7 +3,7 @@ import io.kotlintest.specs.StringSpec
 import org.apache.jena.riot.RDFDataMgr
 import org.apache.jena.shacl.Shapes
 import org.smolang.robust.mutant.RobustnessMask
-import org.smolang.robust.mutant.ShapeGenerator
+import org.smolang.robust.tools.ShapeGenerator
 
 class MaskGenerationTests : StringSpec() {
     init {

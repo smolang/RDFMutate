@@ -5,6 +5,8 @@ import org.apache.jena.riot.RDFDataMgr
 import org.apache.jena.shacl.ShaclValidator
 import org.apache.jena.shacl.Shapes
 import org.smolang.robust.mainLogger
+import org.smolang.robust.tools.CustomReasonerFactory
+import org.smolang.robust.tools.ReasoningBackend
 import java.io.File
 
 

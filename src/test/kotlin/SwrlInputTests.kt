@@ -1,6 +1,6 @@
 import io.kotlintest.specs.StringSpec
 import org.apache.jena.riot.RDFDataMgr
-import org.smolang.robust.mutant.RuleParser
+import org.smolang.robust.tools.RuleParser
 
 class SwrlInputTests : StringSpec() {
 

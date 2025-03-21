@@ -5,6 +5,7 @@ import org.apache.jena.reasoner.Reasoner
 import org.apache.jena.reasoner.ReasonerRegistry
 import org.smolang.robust.randomGenerator
 import org.smolang.robust.mainLogger
+import org.smolang.robust.tools.ComplexStatementBuilder
 
 open class Mutation(var model: Model) {
     var hasConfig : Boolean = false
@@ -311,7 +312,7 @@ open class Mutation(var model: Model) {
         return r.toString().startsWith(prefix)
     }
 
-    fun addMutatableAximo(s: Statement) {
+    fun addMutatableAxiom(s: Statement) {
         mutatableAxioms.add(s)
     }
 

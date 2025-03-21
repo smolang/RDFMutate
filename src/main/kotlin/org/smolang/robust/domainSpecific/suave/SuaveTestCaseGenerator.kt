@@ -6,6 +6,7 @@ import org.apache.jena.rdf.model.Statement
 import org.apache.jena.riot.Lang
 import org.apache.jena.riot.RDFDataMgr
 import org.smolang.robust.randomGenerator
+import org.smolang.robust.tools.TestCaseGenerator
 import java.io.File
 import java.nio.file.Files
 import java.nio.file.Paths

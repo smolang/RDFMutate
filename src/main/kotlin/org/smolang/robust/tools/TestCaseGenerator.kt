@@ -1,4 +1,4 @@
-package org.smolang.robust.mutant
+package org.smolang.robust.tools
 
 import org.apache.jena.rdf.model.Model
 import org.apache.jena.riot.Lang
@@ -8,6 +8,9 @@ import java.io.FileOutputStream
 import java.nio.file.Files
 import java.nio.file.Paths
 import org.smolang.robust.mainLogger
+import org.smolang.robust.mutant.Mutator
+import org.smolang.robust.mutant.MutatorFactory
+import org.smolang.robust.mutant.RobustnessMask
 
 
 open class TestCaseGenerator() {

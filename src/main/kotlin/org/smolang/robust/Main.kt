@@ -20,6 +20,7 @@ import org.smolang.robust.domainSpecific.suave.SuaveEvaluationGraphGenerator
 import org.smolang.robust.domainSpecific.suave.SuaveTestCaseGenerator
 import org.smolang.robust.mutant.*
 import org.smolang.robust.sut.MiniPipeInspection
+import org.smolang.robust.tools.ShapeGenerator
 import java.io.File
 import java.nio.file.Files
 import kotlin.random.Random

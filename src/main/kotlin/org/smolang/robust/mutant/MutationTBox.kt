@@ -7,6 +7,7 @@ import org.apache.jena.rdf.model.Property
 import org.apache.jena.rdf.model.Resource
 import org.apache.jena.rdf.model.Statement
 import org.smolang.robust.randomGenerator
+import org.smolang.robust.tools.ComplexStatementBuilder
 
 // adds the specified relation between two properties
 abstract class AddRelationByTypesMutation(model: Model) : AddStatementMutation(model) {
