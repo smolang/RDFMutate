@@ -8,32 +8,41 @@ import org.apache.jena.vocabulary.RDF
 import org.apache.jena.vocabulary.SWRL
 
 import org.smolang.robust.mainLogger
+import org.smolang.robust.mutant.AbstractMutation
 import org.smolang.robust.mutant.RuleMutation
+import org.smolang.robust.mutant.RuleMutationConfiguration
 
 // a class to parse rules, i.e., SWRL rules, to create mutations
 class RuleParser(val model: Model) {
 
-    fun getAllRuleMutations() {
-        val variables = getVariables()
-        println(variables)
+    fun getAllRuleMutations() : List<AbstractMutation> {
+        val abstractMutations = mutableListOf<AbstractMutation>()
+        val variables = getSwrlVariables()
         val rules = model.listSubjectsWithProperty(RDF.type, SWRL.Imp)
+
+        // add one abstract mutation for each rule
         for (rule in rules) {
-            parseSwrlRule(rule)
+            val config = parseSwrlRule(rule, variables)
+            // check, if a rule with some content was parsed
+            if (config.head.any() || config.body.any())
+                abstractMutations.add(AbstractMutation(RuleMutation::class, config))
         }
+        return abstractMutations
     }
 
-    fun getVariables() : Set<Resource> {
+    // returns all swrl variables in model
+    private fun getSwrlVariables() : Set<Resource> {
         return model.listSubjectsWithProperty(RDF.type, SWRL.Variable).toSet()
     }
 
     // parses a SWRL rule into a rule mutation
     // rootNode: root of the SWRL rule
-    fun parseSwrlRule(rootNode : Resource) : RuleMutation {
+    private fun parseSwrlRule(rootNode : Resource, variables : Set<Resource>) : RuleMutationConfiguration {
         // check type that root is really correct
         if (!hasType(rootNode, SWRL.Imp)) {
             mainLogger.warn("The provided root $rootNode node does not identify a SWRL rule. " +
                     "Fallback: return empty mutation")
-            return  RuleMutation()
+            return  RuleMutationConfiguration()
         }
 
         // get the nodes for the head and the body
@@ -48,15 +57,14 @@ class RuleParser(val model: Model) {
         val headAtoms = parseAtomList(head)
         val bodyAtoms = parseAtomList(body)
 
-        for (atom in headAtoms)
-            println(atom)
+        // get variables of head and body
+        val headVariables = variables.filter { v -> containsResource(headAtoms, v) }.toSet()
+        val bodyVariables = variables.filter { v -> containsResource(bodyAtoms, v) }.toSet()
 
-        for (atom in bodyAtoms)
-            println(atom)
-
-        return RuleMutation()
+        return RuleMutationConfiguration(bodyAtoms, headAtoms, bodyVariables, headVariables)
     }
 
+    // parses the atom list from an RDF file
     private fun parseAtomList(listRoot : Resource) : List<Statement> {
         val result = mutableListOf<Statement>()
 
@@ -79,6 +87,7 @@ class RuleParser(val model: Model) {
         return result
     }
 
+    // parses an SWRL atom
     private fun parseSWRLAtom(atomRoot : Resource) : Statement? {
         val type = model.listObjectsOfProperty(atomRoot, RDF.type).toSet().single()
         return when (type) {
@@ -130,6 +139,21 @@ class RuleParser(val model: Model) {
     // check type declaration of a resource
     private fun hasType(r : Resource, type : Resource) : Boolean {
         return model.listStatements(r, RDF.type, type).hasNext()
+    }
+
+    // checks, if the item is contained in the list of statements
+    private fun containsResource(statements : List<Statement>, item : Resource) : Boolean {
+        for (s in statements)
+            if (containsResource(s, item))
+                return true
+
+        return false
+    }
+
+    // check, if statement contains item
+    private fun containsResource(s : Statement, item : Resource) : Boolean {
+        return s.subject == item || s.predicate == item ||
+                (s.`object`.isResource && s.`object`.asResource() == item)
     }
 
 }

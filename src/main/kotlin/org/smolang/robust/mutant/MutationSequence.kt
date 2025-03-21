@@ -17,9 +17,7 @@ class MutationSequence() {
     // adds a random mutation from the provided list of mutations
     fun addRandom(mutOps: List<KClass<out Mutation>>) {
         val am = AbstractMutation(mutOps.random(randomGenerator))
-        for (a in mutatableAxioms)
-            am.addMutatableAxiom(a)
-        mutations.add(am)
+        addAbstractMutation(am)
     }
 
     fun addRandom(mutOp: KClass<out Mutation>) {
@@ -28,6 +26,10 @@ class MutationSequence() {
 
     fun addWithConfig(mutOp: KClass<out Mutation>, config: MutationConfiguration) {
         val am = AbstractMutation(mutOp, config)
+        addAbstractMutation(am)
+    }
+
+    fun addAbstractMutation(am : AbstractMutation) {
         for (a in mutatableAxioms)
             am.addMutatableAxiom(a)
         mutations.add(am)

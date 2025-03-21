@@ -93,7 +93,13 @@ class DoubleStringAndStatementConfiguration(private val nodeOld: String,
     }
 }
 
-class RuleMutationConfiguration(val body : List<Statement>,
-                                val head : List<Statement>,
-                                val bodyVariables : Set<RDFNode>,
-                                val headVariables : Set<RDFNode>)
+class RuleMutationConfiguration(val body : List<Statement> = listOf(),
+                                val head : List<Statement> = listOf(),
+                                val bodyVariables : Set<Resource> = setOf(),
+                                val headVariables : Set<Resource> = setOf()
+) : MutationConfiguration() {
+
+    val variables : Set<RDFNode> get() = run { bodyVariables.union(headVariables) }
+}
+
+
