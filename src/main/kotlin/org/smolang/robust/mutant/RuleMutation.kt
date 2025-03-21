@@ -4,7 +4,6 @@ import org.apache.jena.query.QueryExecutionFactory
 import org.apache.jena.query.QueryFactory
 import org.apache.jena.rdf.model.Model
 import org.apache.jena.rdf.model.RDFNode
-import org.apache.jena.rdf.model.Resource
 import org.apache.jena.rdf.model.Statement
 import org.smolang.robust.mainLogger
 import org.smolang.robust.randomGenerator

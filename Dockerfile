@@ -22,7 +22,7 @@ RUN ./gradlew build
 
 
 
-# add second stage
+# stage 2: container to run jar
 FROM alpine:3.21
 
 # copy jar
