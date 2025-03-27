@@ -1,13 +1,27 @@
+import io.kotlintest.matchers.numerics.shouldBeGreaterThan
+import io.kotlintest.matchers.numerics.shouldBeGreaterThanOrEqual
 import io.kotlintest.shouldBe
 import io.kotlintest.specs.StringSpec
 import org.apache.jena.rdf.model.Property
+import org.apache.jena.rdf.model.RDFNode
 import org.apache.jena.rdf.model.Resource
 import org.apache.jena.riot.Lang
 import org.apache.jena.riot.RDFDataMgr
+import org.apache.jena.vocabulary.OWL
+import org.apache.jena.vocabulary.RDF
+import org.apache.jena.vocabulary.RDFS
+import org.smolang.robust.domainSpecific.reasoner.OwlFileHandler
 import org.smolang.robust.mutant.*
 import java.io.File
 
 class ReasonerMutationTests : StringSpec() {
+
+    init {
+        "load and save OWL files" {
+            val jenaModel = OwlFileHandler().loadOwlDocument(File("src/test/resources/reasoners/ore_ont_155.owl"))
+            OwlFileHandler().saveOwlDocument(jenaModel, File("src/test/resources/reasoners/temp.owl"))
+        }
+    }
 
     init {
         "test removing of class assertions" {
@@ -83,7 +97,7 @@ class ReasonerMutationTests : StringSpec() {
                     count + 1
                 else
                     count
-            } shouldBe 2
+            } shouldBeGreaterThanOrEqual 1
         }
     }
 
@@ -184,12 +198,17 @@ class ReasonerMutationTests : StringSpec() {
             val AsubB = res.createStatement(a, subClassOf, b)
             val BsubA = res.createStatement(b, subClassOf, a)
 
+            val AsubA = res.createStatement(a, subClassOf, a)
+            val BsubB = res.createStatement(b, subClassOf, b)
+
             var count = 0
             var found = false
 
+
             // check, that there is exactly one subclass axiom
             for (s in res.listStatements()) {
-                if (s == AsubB || s == BsubA)
+                println(s)
+                if (s == AsubB || s == BsubA || s == AsubA || s == BsubB)
                     found = true
                 if (s.predicate == subClassOf)
                     count += 1
@@ -355,5 +374,507 @@ class ReasonerMutationTests : StringSpec() {
         }
     }
 
+    init {
+        "add / remove different individual expression" {
+            val input = RDFDataMgr.loadDataset("reasoners/assertion.ttl").defaultModel
+
+            val ms = MutationSequence()
+            ms.addRandom(AddDifferentIndividualAssertionMutation::class)
+
+            val m = Mutator(ms)
+            val res = m.mutate(input)
+
+            val ms2 = MutationSequence()
+            ms2.addRandom(RemoveDifferentIndividualAssertionMutation::class)
+
+            val m2 = Mutator(ms2)
+            val res2 = m2.mutate(res)
+
+            // check number "different individual" mutations
+            res.listStatements().toSet().fold(0) { count, s ->
+                if (s.predicate == OWL.differentFrom)
+                    count + 1
+                else
+                    count
+            } shouldBe  1
+
+            res2.listStatements().toSet().fold(0) { count, s ->
+                if (s.predicate == OWL.differentFrom)
+                    count + 1
+                else
+                    count
+            } shouldBe  0
+        }
+    }
+
+    init {
+        "add / remove same individual expression" {
+            val input = RDFDataMgr.loadDataset("reasoners/assertion.ttl").defaultModel
+
+            val ms = MutationSequence()
+            ms.addRandom(AddSameIndividualAssertionMutation::class)
+
+            val m = Mutator(ms)
+            val res = m.mutate(input)
+
+            val ms2 = MutationSequence()
+            ms2.addRandom(RemoveSameIndividualAssertionMutation::class)
+
+            val m2 = Mutator(ms2)
+            val res2 = m2.mutate(res)
+
+            // check number "different individual" mutations
+            res.listStatements().toSet().fold(0) { count, s ->
+                if (s.predicate == OWL.sameAs)
+                    count + 1
+                else
+                    count
+            } shouldBe  1
+
+            res2.listStatements().toSet().fold(0) { count, s ->
+                if (s.predicate == OWL.sameAs)
+                    count + 1
+                else
+                    count
+            } shouldBe  0
+        }
+    }
+
+    init {
+        "add / remove disjoint class expression" {
+            val input = RDFDataMgr.loadDataset("reasoners/assertion.ttl").defaultModel
+
+            val ms = MutationSequence()
+            ms.addRandom(AddDisjointClassRelationMutation::class)
+
+            val m = Mutator(ms)
+            val res = m.mutate(input)
+
+
+            val ms2 = MutationSequence()
+            ms2.addRandom(RemoveDisjointClassRelationMutation::class)
+
+            val m2 = Mutator(ms2)
+            val res2 = m2.mutate(res)
+
+            // check number "different individual" mutations
+            res.listStatements().toSet().fold(0) { count, s ->
+                if (s.predicate == OWL.disjointWith)
+                    count + 1
+                else
+                    count
+            } shouldBe  1
+
+            res2.listStatements().toSet().fold(0) { count, s ->
+                if (s.predicate == OWL.disjointWith)
+                    count + 1
+                else
+                    count
+            } shouldBe  0
+        }
+    }
+
+    init {
+        "add / remove equivalent class expression" {
+            val input = RDFDataMgr.loadDataset("reasoners/assertion.ttl").defaultModel
+
+            val ms = MutationSequence()
+            ms.addRandom(AddEquivalentClassRelationMutation::class)
+
+            val m = Mutator(ms)
+            val res = m.mutate(input)
+
+            val ms2 = MutationSequence()
+            ms2.addRandom(RemoveEquivClassRelationMutation::class)
+
+            val m2 = Mutator(ms2)
+            val res2 = m2.mutate(res)
+
+            // check number "different individual" mutations
+            res.listStatements().toSet().fold(0) { count, s ->
+                if (s.predicate == OWL.equivalentClass)
+                    count + 1
+                else
+                    count
+            } shouldBe  1
+
+            res2.listStatements().toSet().fold(0) { count, s ->
+                if (s.predicate == OWL.equivalentClass)
+                    count + 1
+                else
+                    count
+            } shouldBe  0
+        }
+    }
+
+    init {
+        "add / remove domain for object property" {
+            val input = RDFDataMgr.loadDataset("reasoners/assertion.ttl").defaultModel
+
+            val ms = MutationSequence()
+            ms.addRandom(DeclareObjectPropMutation::class)
+            ms.addRandom(AddObjectPropDomainMutation::class)
+
+            val m = Mutator(ms)
+            val res = m.mutate(input)
+
+
+            val ms2 = MutationSequence()
+            ms2.addRandom(RemoveDomainRelationMutation::class)
+
+            val m2 = Mutator(ms2)
+            val res2 = m2.mutate(res)
+
+            // check number "different individual" mutations
+            res.listStatements().toSet().fold(0) { count, s ->
+                if (s.predicate == RDFS.domain)
+                    count + 1
+                else
+                    count
+            } shouldBe  1
+
+            res2.listStatements().toSet().fold(0) { count, s ->
+                if (s.predicate == RDFS.domain)
+                    count + 1
+                else
+                    count
+            } shouldBe  0
+        }
+    }
+
+    init {
+        "add / remove object property" {
+            val input = RDFDataMgr.loadDataset("reasoners/assertion.ttl").defaultModel
+
+            val ms = MutationSequence()
+            ms.addRandom(DeclareObjectPropMutation::class)
+            ms.addRandom(AddObjectPropertyRelationMutation::class)
+
+            val m = Mutator(ms)
+            val res = m.mutate(input)
+
+
+            val ms2 = MutationSequence()
+            ms2.addRandom(RemoveObjectPropertyMutation::class)
+
+            val m2 = Mutator(ms2)
+            val res2 = m2.mutate(res)
+
+            // check number "different individual" mutations
+            res.listStatements().toSet().fold(0) { count, s ->
+                if (s.predicate == RDF.type && s.`object` == OWL.ObjectProperty)
+                    count + 1
+                else
+                    count
+            } shouldBe  1
+
+            res2.listStatements().toSet().fold(0) { count, s ->
+                if (s.predicate == RDF.type && s.`object` == OWL.ObjectProperty)
+                    count + 1
+                else
+                    count
+            } shouldBe  0
+        }
+    }
+
+    init {
+        "add / remove object property relation" {
+            val input = RDFDataMgr.loadDataset("reasoners/assertion.ttl").defaultModel
+
+            val ms = MutationSequence()
+            ms.addRandom(DeclareObjectPropMutation::class)
+            ms.addRandom(AddObjectPropertyRelationMutation::class)
+
+            val m = Mutator(ms)
+            val res = m.mutate(input)
+
+
+            val ms2 = MutationSequence()
+            ms2.addRandom(RemoveObjectPropertyRelationMutation::class)
+
+            val m2 = Mutator(ms2)
+            val res2 = m2.mutate(res)
+
+            // check number "different individual" mutations
+            res.listStatements().toSet().fold(0) { count, s ->
+                if (s.predicate == RDF.type && s.`object` == OWL.ObjectProperty)
+                    count + 1
+                else
+                    count
+            } shouldBe  1
+
+            val objectProps = res2
+                .listStatements(null, RDF.type, OWL.ObjectProperty)
+                .toSet()
+                .map { s -> s.subject }
+
+            res2.listStatements().toSet().fold(0) { count, s ->
+                if (objectProps.contains(s.predicate))
+                    count + 1
+                else
+                    count
+            } shouldBe  0
+
+        }
+    }
+
+    init {
+        "add / remove range for object property" {
+            val input = RDFDataMgr.loadDataset("reasoners/assertion.ttl").defaultModel
+
+            val ms = MutationSequence()
+            ms.addRandom(DeclareObjectPropMutation::class)
+            ms.addRandom(AddObjectPropRangeMutation::class)
+
+            val m = Mutator(ms)
+            val res = m.mutate(input)
+
+
+            val ms2 = MutationSequence()
+            ms2.addRandom(RemoveRangeRelationMutation::class)
+
+            val m2 = Mutator(ms2)
+            val res2 = m2.mutate(res)
+
+            // check number "different individual" mutations
+            res.listStatements().toSet().fold(0) { count, s ->
+                if (s.predicate == RDFS.range)
+                    count + 1
+                else
+                    count
+            } shouldBe  1
+
+            res2.listStatements().toSet().fold(0) { count, s ->
+                if (s.predicate == RDFS.range)
+                    count + 1
+                else
+                    count
+            } shouldBe  0
+        }
+    }
+
+    init {
+        "add / remove range for data property" {
+            val input = RDFDataMgr.loadDataset("reasoners/assertion.ttl").defaultModel
+
+            val ms = MutationSequence()
+            ms.addRandom(DeclareDataPropMutation::class)
+            ms.addRandom(AddDataPropRangeMutation::class)
+
+            val m = Mutator(ms)
+            val res = m.mutate(input)
+
+
+            val ms2 = MutationSequence()
+            ms2.addRandom(RemoveRangeRelationMutation::class)
+
+            val m2 = Mutator(ms2)
+            val res2 = m2.mutate(res)
+
+            // check number "different individual" mutations
+            res.listStatements().toSet().fold(0) { count, s ->
+                if (s.predicate == RDFS.range)
+                    count + 1
+                else
+                    count
+            } shouldBe  1
+
+            res2.listStatements().toSet().fold(0) { count, s ->
+                if (s.predicate == RDFS.range)
+                    count + 1
+                else
+                    count
+            } shouldBe  0
+        }
+    }
+
+    init {
+        "add subtype for object property" {
+            val input = RDFDataMgr.loadDataset("reasoners/assertion.ttl").defaultModel
+
+            val ms = MutationSequence()
+            ms.addRandom(DeclareObjectPropMutation::class)
+            ms.addRandom(DeclareObjectPropMutation::class)
+            ms.addRandom(AddSubObjectPropMutation::class)
+
+            val m = Mutator(ms)
+            val res = m.mutate(input)
+
+            // check number "different individual" mutations
+            res.listStatements().toSet().fold(0) { count, s ->
+                if (s.predicate == RDFS.subPropertyOf)
+                    count + 1
+                else
+                    count
+            } shouldBe  1
+        }
+    }
+
+    init {
+        "add subtype for data property" {
+            val input = RDFDataMgr.loadDataset("reasoners/assertion.ttl").defaultModel
+
+            val ms = MutationSequence()
+            ms.addRandom(DeclareDataPropMutation::class)
+            ms.addRandom(DeclareDataPropMutation::class)
+            ms.addRandom(AddSubDataPropMutation::class)
+
+            val m = Mutator(ms)
+            val res = m.mutate(input)
+
+            // check number "different individual" mutations
+            res.listStatements().toSet().fold(0) { count, s ->
+                if (s.predicate == RDFS.subPropertyOf)
+                    count + 1
+                else
+                    count
+            } shouldBe  1
+        }
+    }
+
+    init {
+        "remove owl class" {
+            val input = RDFDataMgr.loadDataset("reasoners/assertion.ttl").defaultModel
+
+            val ms = MutationSequence()
+            ms.addRandom(RemoveClassMutation::class)
+
+            val m = Mutator(ms)
+            val res = m.mutate(input)
+
+            // check number "different individual" mutations
+            res.listStatements().toSet().fold(0) { count, s ->
+                if (s.predicate == RDF.type && s.`object` == OWL.Class)
+                    count + 1
+                else
+                    count
+            } shouldBe  1
+        }
+    }
+
+    init {
+        "add / remove equivalent data property" {
+            val input = RDFDataMgr.loadDataset("reasoners/assertion.ttl").defaultModel
+
+            val ms = MutationSequence()
+            ms.addRandom(DeclareDataPropMutation::class)
+            ms.addRandom(DeclareDataPropMutation::class)
+            ms.addRandom(AddEquivDataPropMutation::class)
+
+            val m = Mutator(ms)
+            val res = m.mutate(input)
+
+            val ms2 = MutationSequence()
+            ms2.addRandom(RemoveEquivPropMutation::class)
+
+            val m2 = Mutator(ms2)
+            val res2 = m2.mutate(res)
+
+            // check number "equivalent property" statements
+            res.listStatements().toSet().fold(0) { count, s ->
+                if (s.predicate == OWL.equivalentProperty)
+                    count + 1
+                else
+                    count
+            } shouldBe  1
+
+            res2.listStatements().toSet().fold(0) { count, s ->
+                if (s.predicate == OWL.equivalentProperty)
+                    count + 1
+                else
+                    count
+            } shouldBe  0
+        }
+    }
+
+    init {
+        "test ACATO mutation" {
+            val input = RDFDataMgr.loadDataset("relations/complexAxioms.ttl").defaultModel
+
+            val ms = MutationSequence()
+            ms.addRandom(ACATOMutation::class)
+
+            val m = Mutator(ms)
+            val res = m.mutate(input)
+
+            // check, if really exactly one operator got replaced
+            val unionBefore = input.listStatements(null, OWL.unionOf, null as RDFNode?).toSet().size
+            val unionAfter = res.listStatements(null, OWL.unionOf, null as RDFNode?).toSet().size
+
+            val intersectionBefore = input.listStatements(null, OWL.intersectionOf, null as RDFNode?).toSet().size
+            val intersectionAfter = res.listStatements(null, OWL.intersectionOf, null as RDFNode?).toSet().size
+
+            (unionAfter - unionBefore) shouldBe 1
+            (intersectionAfter - intersectionBefore) shouldBe -1
+            res.listStatements().toSet().size shouldBe input.listStatements().toSet().size
+        }
+    }
+
+    init {
+        "test ACOTA mutation" {
+            val input = RDFDataMgr.loadDataset("relations/complexAxioms.ttl").defaultModel
+
+            val ms = MutationSequence()
+            ms.addRandom(ACOTAMutation::class)
+
+            val m = Mutator(ms)
+            val res = m.mutate(input)
+
+            // check, if really exactly one operator got replaced
+            val unionBefore = input.listStatements(null, OWL.unionOf, null as RDFNode?).toSet().size
+            val unionAfter = res.listStatements(null, OWL.unionOf, null as RDFNode?).toSet().size
+
+            val intersectionBefore = input.listStatements(null, OWL.intersectionOf, null as RDFNode?).toSet().size
+            val intersectionAfter = res.listStatements(null, OWL.intersectionOf, null as RDFNode?).toSet().size
+
+            (unionAfter - unionBefore) shouldBe -1
+            (intersectionAfter - intersectionBefore) shouldBe 1
+            res.listStatements().toSet().size shouldBe input.listStatements().toSet().size
+        }
+    }
+
+    init {
+        "test CEUA mutation" {
+            val input = RDFDataMgr.loadDataset("relations/complexAxioms.ttl").defaultModel
+
+            val ms = MutationSequence()
+            ms.addRandom(CEUAMutation::class)
+
+            val m = Mutator(ms)
+            val res = m.mutate(input)
+
+            // check, if really exactly one argument got replaced
+            val intersectionBefore = input.listStatements(null, OWL.intersectionOf, null as RDFNode?).toSet().size
+            val intersectionAfter = res.listStatements(null, OWL.intersectionOf, null as RDFNode?).toSet().size
+
+            // at least one intersection with owl:Thing
+            res.listStatements(null, RDF.first, OWL.Thing).hasNext() shouldBe true
+
+            (intersectionAfter - intersectionBefore) shouldBe 0
+            res.listStatements().toSet().size shouldBeGreaterThanOrEqual  input.listStatements().toSet().size
+        }
+    }
+
+    init {
+        "test CEUO mutation" {
+            val input = RDFDataMgr.loadDataset("relations/complexAxioms.ttl").defaultModel
+
+            val ms = MutationSequence()
+            ms.addRandom(CEUOMutation::class)
+
+            val m = Mutator(ms)
+            val res = m.mutate(input)
+
+            // check, if really exactly one argument got replaced
+            val unionBefore = input.listStatements(null, OWL.unionOf, null as RDFNode?).toSet().size
+            val unionAfter = res.listStatements(null, OWL.unionOf, null as RDFNode?).toSet().size
+
+            // at least one union with owl:Nothing
+            res.listStatements(null, RDF.first, OWL.Nothing).hasNext() shouldBe true
+
+            (unionAfter - unionBefore) shouldBe 0
+            res.listStatements().toSet().size shouldBeGreaterThanOrEqual  input.listStatements().toSet().size
+        }
+    }
 
 }

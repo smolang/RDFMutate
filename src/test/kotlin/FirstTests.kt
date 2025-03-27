@@ -215,6 +215,8 @@ class FirstTests : StringSpec() {
 
             val m = Mutator(ms)
             m.mutate(input)
+
+            m.getStringSummary()
         }
     }
 }

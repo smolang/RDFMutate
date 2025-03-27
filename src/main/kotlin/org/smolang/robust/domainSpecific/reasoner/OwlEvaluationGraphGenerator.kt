@@ -13,13 +13,13 @@ import kotlin.math.sqrt
 import kotlin.reflect.KClass
 
 // class to produce evaluation graph for EL reasoners
-class OwlEvaluationGraphGenerator() {
+class OwlEvaluationGraphGenerator(
+    private val mutationNumbers: List<Int> = listOf(0,1,2,3,4,5,6,7,8,9,10,20,30,40,50,75,100),
+    private val sampleSize: Int = 100 // number of ontologies that are considered (might be more than in folder)
+             ) {
     private val ontologyAnalyzer = OntologyAnalyzer()
     private val owlFileHandler = OwlFileHandler()
 
-    // maps numbers of mutation operators to rest
-    val mutationNumbers = listOf(0,1,2,3,4,5,6,7,8,9,10,20,30,40,50,75,100)
-    val sampleSize = 100 // number of ontologies that are considered (might be more than in folder)
 
     private fun allOwlFiles(directory: File) : List<File> {
         // filter for files that end with ".owl"

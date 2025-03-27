@@ -38,7 +38,7 @@ open class Mutation(var model: Model) {
     val disjointClassProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#disjointWith")
 
     val subPropertyProp : Property = model.createProperty("http://www.w3.org/2000/01/rdf-schema#subPropertyOf")
-    val equivPropertyProp : Property = model.createProperty("http://www.w3.org/2000/01/rdf-schema#equivalentProperty")
+    val equivPropertyProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#equivalentProperty")
     val domainProp : Property = model.createProperty("http://www.w3.org/2000/01/rdf-schema#domain")
     val rangeProp : Property = model.createProperty("http://www.w3.org/2000/01/rdf-schema#range")
     val funcProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#FunctionalProperty")

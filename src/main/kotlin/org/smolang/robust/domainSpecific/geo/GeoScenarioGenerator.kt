@@ -13,7 +13,7 @@ class GeoScenarioGenerator {
 
     // list of files + oracle (does maturation happen)
     private val files : MutableList<Pair<File,Boolean>> = mutableListOf()
-    fun  generateScenarios(count : Int) {
+    fun  generateScenarios(count : Int, saveScenarios: Boolean = true) {
         // generate scenario main blocks
         "python3 generateScenarios.py scenarios $count".runCommand(File("org/smolang/robust/sut/geo"))
 
@@ -70,7 +70,8 @@ class GeoScenarioGenerator {
         }
 
         //TODO: I understand reading csv for oracles is nice, but I would like to run the geo case without this detour
-        writeToCSV("${dir.absolutePath}/scenarios.csv")
+        if (saveScenarios)
+            writeToCSV("${dir.absolutePath}/scenarios.csv")
     }
 
 

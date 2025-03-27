@@ -55,22 +55,6 @@ class StringAndResourceConfiguration(private val string: String, r: Resource) : 
     }
 }
 
-class DoubleResourceConfiguration(private val resource1: Resource,
-                                  private  val resource2: Resource) : MutationConfiguration(){
-
-    override fun toString(): String {
-        val className = super.toString()
-        return "$className(${resource1.localName},${resource2.localName})"
-    }
-    fun getResource1() : Resource {
-       return resource1
-    }
-
-    fun getResource2() : Resource {
-        return  resource2
-    }
-}
-
 class DoubleStringAndStatementConfiguration(private val nodeOld: String,
                                             private val nodeNew: String,
                                             private val r: Statement) : MutationConfiguration() {

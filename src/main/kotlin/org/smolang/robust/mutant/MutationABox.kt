@@ -385,7 +385,12 @@ open class ChangeDoubleMutation(model: Model): ReplaceNodeInStatementMutation(mo
                 factor = -factor
             if (randomGenerator.nextBoolean()) // inverse
                 factor = 1.0/factor
-            val newDouble = d.toString().removeSuffix("^^http://www.w3.org/2001/XMLSchema#double").toDouble() * factor
+            val newDouble = d.toString()
+                .removeSuffix("^^http://www.w3.org/2001/XMLSchema#double")
+                .removeSuffix("^^xsd:double")
+                .removeSuffix("\"")
+                .removePrefix("\"")
+                .toDouble() * factor
             ret += DoubleStringAndStatementConfiguration(
                 d.toString(),
                 newDouble.toString(),
