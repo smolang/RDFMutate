@@ -3,6 +3,8 @@ package org.smolang.robust.mutant
 import org.apache.jena.query.QueryExecutionFactory
 import org.apache.jena.query.QueryFactory
 import org.apache.jena.rdf.model.*
+import org.apache.jena.vocabulary.OWL
+import org.apache.jena.vocabulary.RDF
 import org.smolang.robust.randomGenerator
 import org.smolang.robust.mainLogger
 
@@ -73,7 +75,7 @@ class AddInstanceMutation(model: Model) : Mutation(model) {
 
 open class RemoveObjectPropertyRelationMutation(model: Model) : RemoveStatementMutation(model) {
     override fun getCandidates(): List<Statement> {
-        val allProps = allOfType(objectPropClass)
+        val allProps = allOfType(OWL.ObjectProperty)
         val candidates : MutableSet<Statement> = hashSetOf()
         allProps.forEach {
             candidates.addAll(model.listStatements(
@@ -111,15 +113,15 @@ open class RemoveObjectPropertyRelationMutation(model: Model) : RemoveStatementM
 
 open class AddObjectPropertyRelationMutation(model: Model) : AddRelationMutation(model) {
     override fun getCandidates() : List<Resource> {
-        val cand = allOfType(objectPropClass)
+        val cand = allOfType(OWL.ObjectProperty)
         return cand.sortedBy { it.toString() }
         // we do not filter, when we add stuff, only when we remove
         //return filterRelevantPrefixesResource(cand.toList()).sortedBy { it.toString() }
     }
 
     override fun computeDomainsProp(p : Property) : Pair<Set<Resource>, Set<RDFNode>> {
-        val domain = allOfType(namedInd)
-        val range = allOfType(namedInd)
+        val domain = allOfType(OWL.NamedIndividual)
+        val range = allOfType(OWL.NamedIndividual)
         return Pair(domain, range)
     }
 
@@ -139,7 +141,7 @@ open class AddObjectPropertyRelationMutation(model: Model) : AddRelationMutation
 
         // check that p is really an ObjectProperty, if it exists in the model at all
         if (model.listResourcesWithProperty(null ).toSet().contains(p.asResource()))
-            if (!isOfType(p.asResource(), objectPropClass)) {
+            if (!isOfType(p.asResource(), OWL.ObjectProperty)) {
                 mainLogger.warn("Resource $p is not an object property but is used as such in configuration.")
             }
 
@@ -168,9 +170,9 @@ abstract class AddNegativePropertyRelationMutation(model: Model) : Mutation(mode
 
             val axiomNode = model.createResource()
 
-            val typeAxiom = model.createStatement(axiomNode, rdfTypeProp, negPropAssertion)
-            val sourceAxiom = model.createStatement(axiomNode, sourceIndProp, source)
-            val propAxiom = model.createStatement(axiomNode, assertionPropProp, property)
+            val typeAxiom = model.createStatement(axiomNode, RDF.type, OWL.NegativePropertyAssertion)
+            val sourceAxiom = model.createStatement(axiomNode, OWL.sourceIndividual, source)
+            val propAxiom = model.createStatement(axiomNode, OWL.assertionProperty, property)
             val targetAxiom = model.createStatement(axiomNode, relationToTarget, target)
 
             addSet.add(typeAxiom)
@@ -184,15 +186,15 @@ abstract class AddNegativePropertyRelationMutation(model: Model) : Mutation(mode
 }
 
 class AddNegativeObjectPropertyRelationMutation(model: Model) : AddNegativePropertyRelationMutation(model) {
-    override val typeOfProperty = objectPropClass
-    override val domain = allOfType(namedInd)
-    override val range = allOfType(namedInd)
-    override val relationToTarget = targetIndProp
+    override val typeOfProperty = OWL.ObjectProperty
+    override val domain = allOfType(OWL.NamedIndividual)
+    override val range = allOfType(OWL.NamedIndividual)
+    override val relationToTarget = OWL.targetIndividual
 }
 
 class RemoveNegativePropertyAssertionMutation(model: Model) : RemoveNodeMutation(model) {
     override fun getCandidates(): List<Resource> {
-        return allOfType(negPropAssertion).toList()
+        return allOfType(OWL.NegativePropertyAssertion).toList()
     }
 }
 
@@ -216,12 +218,12 @@ open class ChangeObjectPropertyRelationMutation(model: Model) : AddObjectPropert
 // does not care about declared ranges or domains of relation
 class BasicAddDataPropertyRelationMutation(model: Model) : AddRelationMutation(model) {
     override fun getCandidates() : List<Resource> {
-        val cand = allOfType(dataPropClass)
+        val cand = allOfType(OWL.DatatypeProperty)
         return cand.sortedBy { it.toString() }
     }
 
     override fun computeDomainsProp(p : Property) : Pair<Set<Resource>, Set<RDFNode>> {
-        val domain = allOfType(namedInd)
+        val domain = allOfType(OWL.NamedIndividual)
         // different options for values
         val range = exampleElDataValues
 
@@ -244,7 +246,7 @@ class BasicAddDataPropertyRelationMutation(model: Model) : AddRelationMutation(m
 
         // check that p is really an ObjectProperty, if it exists in the model at all
         if (model.listResourcesWithProperty(null ).toSet().contains(p.asResource()))
-            if (!isOfType(p.asResource(), dataPropClass)) {
+            if (!isOfType(p.asResource(), OWL.DatatypeProperty)) {
                 mainLogger.warn("Resource $p is not a data property but is used as such in configuration.")
             }
 
@@ -253,14 +255,14 @@ class BasicAddDataPropertyRelationMutation(model: Model) : AddRelationMutation(m
 }
 
 class RemoveDataPropertyRelationMutation(model: Model) : RemoveStatementByTypeOfRelationMutation(model) {
-    override val targetType = dataPropClass
+    override val targetType = OWL.DatatypeProperty
 }
 
 class AddNegativeDataPropertyRelationMutation(model: Model) : AddNegativePropertyRelationMutation(model) {
-    override val typeOfProperty = dataPropClass
-    override val domain = allOfType(namedInd)
+    override val typeOfProperty = OWL.DatatypeProperty
+    override val domain = allOfType(OWL.NamedIndividual)
     override val range = exampleElDataValues
-    override val relationToTarget = targetValue
+    override val relationToTarget = OWL.targetValue
 }
 
 // adds new individual to the ontology
@@ -271,7 +273,7 @@ class AddIndividualMutation(model: Model) : AddStatementMutation(model) {
         val s = model.createStatement(
             model.createResource(individualName),
             model.createProperty("http://www.w3.org/1999/02/22-rdf-syntax-ns#","type"),
-            namedInd)
+            OWL.NamedIndividual)
         val config = SingleStatementConfiguration(s)
         super.setConfiguration(config)
     }
@@ -283,7 +285,7 @@ class RemoveIndividualMutation(model: Model) : RemoveNodeMutation(model) {
         val candidates = ArrayList<Resource>()
         for (s in l) {
             // select statements that are not subClass relations
-            if (s.predicate == rdfTypeProp && s.`object` == namedInd) {
+            if (s.predicate == RDF.type && s.`object` == OWL.NamedIndividual) {
                 candidates.add(s.subject)
             }
         }
@@ -294,7 +296,7 @@ class RemoveIndividualMutation(model: Model) : RemoveNodeMutation(model) {
         assert(config is SingleResourceConfiguration)
         // assert that the resource is really an individual
         val ind = (config as SingleResourceConfiguration).getResource()
-        assert(isOfType(ind, namedInd))
+        assert(isOfType(ind, OWL.NamedIndividual))
         super.setConfiguration(config)
     }
 }
@@ -303,7 +305,7 @@ class ChangeDataPropertyMutation(model: Model) : ChangeRelationMutation(model) {
     override fun getCandidates() : List<Resource> {
         val cand =  super.getCandidates()
         // only select data properties
-        val newCand =  cand.filter { isOfInferredType(it, dataPropClass)}
+        val newCand =  cand.filter { isOfInferredType(it, OWL.DatatypeProperty)}
         return newCand
     }
 }
@@ -311,8 +313,8 @@ class ChangeDataPropertyMutation(model: Model) : ChangeRelationMutation(model) {
 class AddClassAssertionMutation (model: Model) : AddStatementMutation(model) {
     init {
         // collect all OWL classes and individuals
-        val classes = allOfType(owlClass)
-        val individuals = allOfType(namedInd)
+        val classes = allOfType(OWL.Class)
+        val individuals = allOfType(OWL.NamedIndividual)
 
         val s =
             if (individuals.isEmpty() || classes.isEmpty())
@@ -320,7 +322,7 @@ class AddClassAssertionMutation (model: Model) : AddStatementMutation(model) {
             else {
                 model.createStatement(
                     individuals.random(randomGenerator),
-                    rdfTypeProp,
+                    RDF.type,
                     classes.random(randomGenerator)
                 )
             }
@@ -345,7 +347,7 @@ class RemoveClassAssertionMutation(model: Model) : RemoveStatementMutation(model
         for(r in res){
             val x = r.get("?x")
             val C = r.get("?C")
-            val statement = model.createStatement(x.asResource(),rdfTypeProp, C)
+            val statement = model.createStatement(x.asResource(),RDF.type, C)
             candidates.add(statement)
         }
 
@@ -355,7 +357,7 @@ class RemoveClassAssertionMutation(model: Model) : RemoveStatementMutation(model
     override fun setConfiguration(config: MutationConfiguration) {
         assert(config is SingleStatementConfiguration)
         val c = config as SingleStatementConfiguration
-        assert(c.getStatement().predicate == rdfTypeProp)
+        assert(c.getStatement().predicate == RDF.type)
         super.setConfiguration(config)
     }
 }
@@ -409,7 +411,7 @@ abstract class AddIndividualRelationMutation(model: Model) : AddStatementMutatio
     abstract val targetRelation : Property
 
     override fun createMutation() {
-        val individuals = allOfType(namedInd)
+        val individuals = allOfType(OWL.NamedIndividual)
 
         if (individuals.isNotEmpty()) {
             val ind1 = individuals.random(randomGenerator)
@@ -429,18 +431,18 @@ abstract class AddIndividualRelationMutation(model: Model) : AddStatementMutatio
 }
 
 class AddSameIndividualAssertionMutation(model: Model) : AddIndividualRelationMutation(model) {
-    override val targetRelation = sameAsProp
+    override val targetRelation = OWL.sameAs
 }
 
 class RemoveSameIndividualAssertionMutation(model: Model) : RemoveStatementByRelationMutation(model) {
-    override val targetPredicate = sameAsProp
+    override val targetPredicate = OWL.sameAs
 }
 
 class AddDifferentIndividualAssertionMutation(model: Model) : AddIndividualRelationMutation(model) {
-    override val targetRelation = differentFromProp
+    override val targetRelation = OWL.differentFrom
 }
 
 class RemoveDifferentIndividualAssertionMutation(model: Model) : RemoveStatementByRelationMutation(model) {
-    override val targetPredicate = differentFromProp
+    override val targetPredicate = OWL.differentFrom
 }
 

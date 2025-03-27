@@ -3,6 +3,7 @@ package org.smolang.robust.domainSpecific.auv
 import org.smolang.robust.mutant.*
 import org.apache.jena.rdf.model.Model
 import org.apache.jena.rdf.model.Resource
+import org.apache.jena.vocabulary.RDF
 import org.smolang.robust.randomGenerator
 
 /**
@@ -32,7 +33,7 @@ class AddPipeSegmentMutation(model: Model) : AUVMutation(model) {
     private fun getCandidates() : List<Resource> {
         var ret = listOf<Resource>()
         for (axiom in model.listStatements())
-            if (axiom.`object`.equals(pipeSegmentClass) && axiom.predicate.equals(rdfTypeProp))
+            if (axiom.`object`.equals(pipeSegmentClass) && axiom.predicate.equals(RDF.type))
                 ret = ret + axiom.subject
         return ret
 

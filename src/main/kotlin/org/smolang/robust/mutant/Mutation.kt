@@ -3,6 +3,10 @@ package org.smolang.robust.mutant
 import org.apache.jena.rdf.model.*
 import org.apache.jena.reasoner.Reasoner
 import org.apache.jena.reasoner.ReasonerRegistry
+import org.apache.jena.vocabulary.OWL
+import org.apache.jena.vocabulary.RDF
+import org.apache.jena.vocabulary.RDFS
+import org.apache.jena.vocabulary.XSD
 import org.smolang.robust.randomGenerator
 import org.smolang.robust.mainLogger
 import org.smolang.robust.tools.ComplexStatementBuilder
@@ -30,62 +34,6 @@ open class Mutation(var model: Model) {
 
     val statementBuilder = ComplexStatementBuilder(model)
 
-
-    // define some properties / resources that are use all the time
-    val rdfTypeProp : Property = model.createProperty("http://www.w3.org/1999/02/22-rdf-syntax-ns#type")
-    val subClassProp : Property = model.createProperty("http://www.w3.org/2000/01/rdf-schema#subClassOf")
-    val equivClassProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#equivalentClass")
-    val disjointClassProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#disjointWith")
-
-    val subPropertyProp : Property = model.createProperty("http://www.w3.org/2000/01/rdf-schema#subPropertyOf")
-    val equivPropertyProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#equivalentProperty")
-    val domainProp : Property = model.createProperty("http://www.w3.org/2000/01/rdf-schema#domain")
-    val rangeProp : Property = model.createProperty("http://www.w3.org/2000/01/rdf-schema#range")
-    val funcProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#FunctionalProperty")
-    val reflexiveProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#ReflexiveProperty")
-    val irreflexiveProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#IrreflexiveProperty")
-    val transitiveProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#TransitiveProperty")
-    val oneOfProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#oneOf")
-
-    val owlThing : Resource = model.createResource("http://www.w3.org/2002/07/owl#Thing")
-    val owlNothing : Resource = model.createResource("http://www.w3.org/2002/07/owl#Nothing")
-
-    val owlClass : Resource = model.createResource("http://www.w3.org/2002/07/owl#Class")
-    val namedInd : Resource = model.createResource("http://www.w3.org/2002/07/owl#NamedIndividual")
-    val objectPropClass : Resource = model.createResource("http://www.w3.org/2002/07/owl#ObjectProperty")
-    val dataPropClass : Resource = model.createResource("http://www.w3.org/2002/07/owl#DatatypeProperty")
-
-    val negPropAssertion : Resource = model.createResource("http://www.w3.org/2002/07/owl#NegativePropertyAssertion")
-    val sourceIndProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#sourceIndividual")
-    val assertionPropProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#assertionProperty")
-    val targetIndProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#targetIndividual")
-    val targetValue : Property = model.createProperty("http://www.w3.org/2002/07/owl#targetValue")
-
-    val hasKey : Property = model.createProperty("http://www.w3.org/2002/07/owl#hasKey")
-
-    val differentFromProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#differentFrom")
-    val sameAsProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#sameAs")
-    val propChainProp : Property = model.createProperty("http://www.w3.org/1999/02/22-rdf-syntax-ns#propertyChainAxiom")
-
-    val xsdBoolean : Resource = model.createResource("http://www.w3.org/2001/XMLSchema#boolean")
-    val xsdDecimal : Resource = model.createResource("http://www.w3.org/2001/XMLSchema#decimal")
-    val xsdDouble : Resource = model.createResource("http://www.w3.org/2001/XMLSchema#double")
-    val xsdString : Resource = model.createResource("http://www.w3.org/2001/XMLSchema#string")
-    val rdfsLiteral : Resource = model.createResource("http://www.w3.org/2000/01/rdf-schema#Literal")
-    val rdfPlainLiteral : Property = model.createProperty("http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral")
-
-
-    val datatypeClass : Resource = model.createResource("http://www.w3.org/2000/01/rdf-schema#Datatype")
-
-    val intersectionProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#intersectionOf")
-    val unionProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#unionOf")
-    val someValuesFromProp : Property = model.createProperty("http://www.w3.org/2002/07/owl#someValuesFrom")
-
-    val rdfListClass : Resource = model.createResource("http://www.w3.org/1999/02/22-rdf-syntax-ns#List")
-    val rdfFirst : Property = model.createProperty("http://www.w3.org/1999/02/22-rdf-syntax-ns#first")
-    val rdfRest : Property = model.createProperty("http://www.w3.org/1999/02/22-rdf-syntax-ns#rest")
-    val rdfNil : Resource = model.createProperty("http://www.w3.org/1999/02/22-rdf-syntax-ns#nil")
-
     private val languageTags = listOf("en", "zh", "hi", "es",  "fr", "de")
 
     // some example data values, used when adding data relation; all in EL profile
@@ -96,26 +44,26 @@ open class Mutation(var model: Model) {
             val literal = "someText${randomGenerator.nextInt(0,10)}"
             setOf(
                 // decimals
-                model.createTypedLiteral(num1, xsdDecimal.toString()),
-                model.createTypedLiteral(num2, xsdDecimal.toString()),
+                model.createTypedLiteral(num1, XSD.decimal.toString()),
+                model.createTypedLiteral(num2, XSD.decimal.toString()),
                 // literals (might have language tag)
                 model.createLiteral(literal),
                 model.createLiteral(literal, languageTags.random(randomGenerator)),
                 // strings
-                model.createTypedLiteral(literal, xsdString.toString())
+                model.createTypedLiteral(literal, XSD.xstring.toString())
             )
         }
     val allElDataTypes get() =
         listOf(
-            rdfPlainLiteral,
+            RDF.PlainLiteral,
             model.createResource("http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"),
-            rdfsLiteral,
+            RDFS.Literal,
             model.createResource("http://www.w3.org/2002/07/owl#real"),
             model.createResource("http://www.w3.org/2002/07/owl#rational"),
-            xsdDecimal,
+            XSD.decimal,
             model.createResource("http://www.w3.org/2001/XMLSchema#integer"),
             model.createResource("http://www.w3.org/2001/XMLSchema#nonNegativeInteger"),
-            xsdString,
+            XSD.xstring,
             model.createResource("http://www.w3.org/2001/XMLSchema#normalizedString"),
             model.createResource("http://www.w3.org/2001/XMLSchema#token"),
             model.createResource("http://www.w3.org/2001/XMLSchema#Name"),
@@ -219,19 +167,19 @@ open class Mutation(var model: Model) {
     }
 
     fun isOfType(i : Resource, t : Resource) : Boolean {
-        return model.listStatements(i, rdfTypeProp, t).hasNext()
+        return model.listStatements(i, RDF.type, t).hasNext()
     }
 
     fun allOfType(t : Resource) : Set<Resource> {
-        return model.listResourcesWithProperty(rdfTypeProp, t).toSet()
+        return model.listResourcesWithProperty(RDF.type, t).toSet()
     }
 
     fun isOfInferredType(i : Resource, t : Resource) : Boolean {
-        return infModel.listStatements(i, rdfTypeProp, t).hasNext()
+        return infModel.listStatements(i, RDF.type, t).hasNext()
     }
 
     fun allOfInferredType(t : Resource) : Set<Resource> {
-        return infModel.listResourcesWithProperty(rdfTypeProp, t).toSet()
+        return infModel.listResourcesWithProperty(RDF.type, t).toSet()
     }
 
     // iterate through the axioms to add and remove existing relations with same subject and predicate
@@ -250,20 +198,20 @@ open class Mutation(var model: Model) {
         // assure that element is really a list
         if (!model.contains(model.createStatement(
             head,
-            rdfTypeProp,
-            rdfListClass
+            RDF.type,
+            RDF.List
         )))
             return listOf()
         else {
             val list : MutableList<RDFNode> = mutableListOf()
             // add all (i.e. one) current element
-            for (element in model.listObjectsOfProperty(head, rdfFirst))
+            for (element in model.listObjectsOfProperty(head, RDF.first))
                 list.add(element)
 
             // check if there is more list to come
 
-            val rest = model.listObjectsOfProperty(head, rdfRest).toSet()
-            if (rest.contains(rdfNil) || rest.isEmpty())
+            val rest = model.listObjectsOfProperty(head, RDF.rest).toSet()
+            if (rest.contains(RDF.nil) || rest.isEmpty())
                 // base case + if rest is empty --> error in schema as end is not correctly marked
                 return list
             else {
@@ -431,7 +379,7 @@ open class AddRelationMutation(model: Model) : Mutation(model) {
         if (model.contains(axiom))
             return false
 
-        if (isOfType(p, irreflexiveProp)) {
+        if (isOfType(p, OWL.IrreflexiveProperty)) {
             // check if the new axiom is not reflexive
             if (axiom.subject == axiom.`object`.asResource())
                 return false
@@ -483,11 +431,11 @@ open class AddRelationMutation(model: Model) : Mutation(model) {
     // adds axioms to the delete set if necessary
     // e.g. if p is functional or asymmetric
     private fun setRepairs(p : Property, axiom : Statement) {
-        if (isOfInferredType(p, funcProp)) {
+        if (isOfInferredType(p, OWL.FunctionalProperty)) {
             // delete outgoing relations, so that relation remains functional
             // i.e. we are quite restrictive here, this makes only sense in the case of a unique name assumption
             // do this for all superProps of the property
-            for (superPropAxiom in infModel.listStatements(p, subPropertyProp, null as RDFNode?)) {
+            for (superPropAxiom in infModel.listStatements(p, RDFS.subPropertyOf, null as RDFNode?)) {
                 val superProp = model.createProperty(superPropAxiom.`object`.toString())
                 model.listStatements(
                     axiom.subject.asResource(), superProp, null as RDFNode?
@@ -504,19 +452,19 @@ open class AddRelationMutation(model: Model) : Mutation(model) {
         // note: this is very restrictive, as usually, one could infer the class from the relation
         // our setting is more useful in a closed-world scenario
 
-        assert(isOfType(p, objectPropClass))
+        assert(isOfType(p, OWL.ObjectProperty))
         // compute domains
 
-        val Ind = allOfType(namedInd)   // all individuals
+        val Ind = allOfType(OWL.NamedIndividual)   // all individuals
 
-        val domains = infModel.listStatements(p, domainProp, null as RDFNode?).toSet()
+        val domains = infModel.listStatements(p, RDFS.domain, null as RDFNode?).toSet()
         var domainP : MutableSet<Resource> = Ind.toMutableSet()
         domains.forEach {
             domainP = domainP.intersect(allOfInferredType(it.`object`.asResource())).toMutableSet()
         }
 
         // compute range
-        val ranges = infModel.listStatements(p, rangeProp, null as RDFNode?).toSet()
+        val ranges = infModel.listStatements(p, RDFS.range, null as RDFNode?).toSet()
         var rangeP : MutableSet<Resource> = Ind.toMutableSet()
         ranges.forEach {
             rangeP = rangeP.intersect(allOfInferredType(it.`object`.asResource())).toMutableSet()
@@ -529,19 +477,19 @@ open class AddRelationMutation(model: Model) : Mutation(model) {
         // note: this is very restrictive, as usually, one could infer the class from the relation
         // our setting is more useful in a closed-world scenario
 
-        assert(isOfType(p, dataPropClass))
+        assert(isOfType(p, OWL.DatatypeProperty))
 
         // compute domains
 
-        val Ind = allOfType(namedInd)   // all individuals
+        val Ind = allOfType(OWL.NamedIndividual)   // all individuals
 
-        val domains = infModel.listStatements(p, domainProp, null as RDFNode?).toSet()
+        val domains = infModel.listStatements(p, RDFS.domain, null as RDFNode?).toSet()
         var domainP : MutableSet<Resource> = Ind.toMutableSet()
         domains.forEach {
             domainP = domainP.intersect(allOfInferredType(it.`object`.asResource())).toMutableSet()
         }
 
-        val ranges = model.listObjectsOfProperty(p, rangeProp).toSet()
+        val ranges = model.listObjectsOfProperty(p, RDFS.range).toSet()
 
         var rangeP : MutableSet<RDFNode> = hashSetOf()
 
@@ -554,19 +502,19 @@ open class AddRelationMutation(model: Model) : Mutation(model) {
                     ranges.single()
                 else {
                     val r = HashSet<RDFNode>()
-                    r.add(xsdBoolean)
-                    r.add(xsdDouble)
-                    r.add(xsdDecimal)
+                    r.add(XSD.xboolean)
+                    r.add(XSD.xdouble)
+                    r.add(XSD.decimal)
                     r.random(randomGenerator)
                 }
 
             // check different classes of data properties, for which we can determine the domain
-            if (range == xsdBoolean) {
-                val trueNode = model.createTypedLiteral("true", xsdBoolean.toString())
-                val falseNode = model.createTypedLiteral("false", xsdBoolean.toString())
+            if (range == XSD.xboolean) {
+                val trueNode = model.createTypedLiteral("true", XSD.xboolean.toString())
+                val falseNode = model.createTypedLiteral("false", XSD.xboolean.toString())
                 rangeP = hashSetOf(trueNode, falseNode)
             }
-            else if (range == xsdDecimal) {
+            else if (range == XSD.decimal) {
                 // compute a random decimal number
 
                 // 50% chance of having a negative number
@@ -580,10 +528,10 @@ open class AddRelationMutation(model: Model) : Mutation(model) {
                 // e.g. probability of having 0 as leading number is 50%
                 val beforeComma = ((1/(-randomGenerator.nextDouble(-1.0, 1.0) + 1.0))).toInt()
                 val data = "$sign$beforeComma.${randomGenerator.nextInt(0,1000)}"
-                rangeP = hashSetOf(model.createTypedLiteral(data, xsdDecimal.toString()))
+                rangeP = hashSetOf(model.createTypedLiteral(data, XSD.decimal.toString()))
 
             }
-            else if (range == xsdDouble) {
+            else if (range == XSD.xdouble) {
                 // compute a random double  number
 
                 // 50% chance of having a negative number
@@ -597,14 +545,14 @@ open class AddRelationMutation(model: Model) : Mutation(model) {
                 // e.g. probability of having 0 as leading number is 50%
                 val beforeComma = ((1/(-randomGenerator.nextDouble(-1.0, 1.0) + 1.0))).toInt()
                 val data = "$sign$beforeComma.${randomGenerator.nextInt(0,1000)}"
-                rangeP = hashSetOf(model.createTypedLiteral(data, xsdDouble.toString()))
+                rangeP = hashSetOf(model.createTypedLiteral(data, XSD.xdouble.toString()))
 
             }
-            else if (isOfType(range.asResource(), datatypeClass)) {
+            else if (isOfType(range.asResource(), RDFS.Datatype)) {
                 // check if it is a list of statements
                 val oneOf = model.listObjectsOfProperty(
                     range.asResource(),
-                    oneOfProp
+                    OWL.oneOf
                 ).toSet()
                 if (oneOf.size != 1){
                     mainLogger.warn("can not add data relation. Property ${p.localName} is marked as 'Datatype' but does" +
@@ -612,7 +560,7 @@ open class AddRelationMutation(model: Model) : Mutation(model) {
                 }
                 else {
                     val list = oneOf.single()
-                    if (!isOfType(list.asResource(), rdfListClass)){
+                    if (!isOfType(list.asResource(), RDF.List)){
                         mainLogger.warn("can not add data relation. Property ${p.localName} has not a list as 'oneOf'.")
                     }
                     else {
@@ -635,13 +583,13 @@ open class AddRelationMutation(model: Model) : Mutation(model) {
         val domainP : Set<Resource>
         val rangeP : Set<RDFNode>
 
-        val Ind = allOfType(namedInd)   // all individuals
+        val Ind = allOfType(OWL.NamedIndividual)   // all individuals
 
         // is property an ObjectProperty?
 
-        if (isOfType(p, objectPropClass)) {
-            domainP = allOfType(namedInd)
-            rangeP = allOfType(namedInd)
+        if (isOfType(p, OWL.ObjectProperty)) {
+            domainP = allOfType(OWL.NamedIndividual)
+            rangeP = allOfType(OWL.NamedIndividual)
         }
         /*
         else if (isOfType(p, datatypeProp)) {
@@ -651,18 +599,18 @@ open class AddRelationMutation(model: Model) : Mutation(model) {
         }
         // is property type property?
         else */
-        else if (p == rdfTypeProp){
+        else if (p == RDF.type){
             // let's restrict ourselves to add type relations between individuals and classes
             domainP = Ind
-            rangeP = allOfType(owlClass)
+            rangeP = allOfType(OWL.Class)
         }
-        else if (p == subClassProp){
-            domainP = allOfType(owlClass)
-            rangeP = allOfType(owlClass)
+        else if (p == RDFS.subClassOf){
+            domainP = allOfType(OWL.Class)
+            rangeP = allOfType(OWL.Class)
         }
-        else if (p == domainProp || p == rangeProp){
-            domainP = allOfType(objectPropClass)
-            rangeP = allOfType(owlClass)
+        else if (p == RDFS.domain || p == RDFS.range){
+            domainP = allOfType(OWL.ObjectProperty)
+            rangeP = allOfType(OWL.Class)
         }
         else {
             // other special cases are not considered yet --> add relation between any two nodes
@@ -931,7 +879,7 @@ open class ReplaceNodeInStatementMutation(model: Model) : Mutation(model) {
         val c = config as DoubleStringAndStatementConfiguration
 
         val oldAxiom = c.getStatement()
-        val newResource = model.createTypedLiteral(c.getNewNode(), xsdDouble.toString())
+        val newResource = model.createTypedLiteral(c.getNewNode(), XSD.xdouble.toString())
 
         val newAxiom = when (c.getOldNode()) {
             oldAxiom.`object`.toString() ->
