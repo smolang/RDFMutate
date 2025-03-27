@@ -49,7 +49,12 @@ class RuleMutation(model : Model) : Mutation(model) {
         val bodyVariablesSparql = ruleConfig.bodyVariables.joinToString(" ") { v -> swrlToSparql[v]?:"" }
 
         // build SPARQL query for body
-        val queryString = "SELECT DISTINCT $bodyVariablesSparql WHERE { "+
+        val queryString = "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n " +
+                "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
+                "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n" +
+                "PREFIX xml: <http://www.w3.org/XML/1998/namespace>\n" +
+                "PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n" +
+                "SELECT DISTINCT $bodyVariablesSparql WHERE { "+
                 ruleConfig.body.mapNotNull { s -> statementToSparqlString(s) }.joinToString(" ") +
                 "}"
 
@@ -74,11 +79,19 @@ class RuleMutation(model : Model) : Mutation(model) {
 
     override fun createMutation() {
         // select one solution from candidates
-        val mapping = getCandidates().random(randomGenerator)
+        val mapping = getCandidates().randomOrNull(randomGenerator)
+
+        // check if mapping is empty (happens, if mutation can not be applied anywhere)
+        if (mapping == null){
+            super.createMutation()
+            return
+        }
 
         // apply mapping to compute remove set and add set
-        for (s in ruleConfig.body)
-            mapping.apply(s, model)?.let { removeSet.add(it) }
+
+        // TODO: decide: should body be deleted, or not?
+        //for (s in ruleConfig.body)
+        //    mapping.apply(s, model)?.let { removeSet.add(it) }
 
         for (s in ruleConfig.head)
             mapping.apply(s, model)?.let { addSet.add(it) }
@@ -102,6 +115,9 @@ class RuleMutation(model : Model) : Mutation(model) {
     }
 
     private fun nodeToSparqlString(n : RDFNode) : String? {
+        if (n.isLiteral)
+            return  n.toString()
+
         if (!n.isResource) {
             mainLogger.warn("Encountered RDFNode $n while parsing of rule to mutation." +
                     "Depending on structure of node, this might not be supported and cause errors later.")

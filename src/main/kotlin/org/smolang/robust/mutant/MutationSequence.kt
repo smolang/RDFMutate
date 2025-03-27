@@ -35,6 +35,11 @@ class MutationSequence() {
         mutations.add(am)
     }
 
+    fun addAllAbstractMutations(list : List<AbstractMutation>) {
+        for (am in list)
+            this.addAbstractMutation(am)
+    }
+
     operator fun get(index: Int) : AbstractMutation {
         return mutations[index]
     }

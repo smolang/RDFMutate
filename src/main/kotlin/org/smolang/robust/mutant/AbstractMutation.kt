@@ -39,4 +39,15 @@ class AbstractMutation(private val mutOp: KClass<out Mutation>) {
 
     }
 
+    override fun toString(): String {
+        if (hasConfig)
+            return "AbstractMutation representing mutation " +
+                    "${mutOp.toString().removePrefix("class org.smolang.robust.mutant.")} " +
+                    "with configuration $config"
+        else
+            return "AbstractMutation representing mutation " +
+                    "${mutOp.toString().removePrefix("class org.smolang.robust.mutant.")} " +
+                    "without configuration"
+    }
+
 }

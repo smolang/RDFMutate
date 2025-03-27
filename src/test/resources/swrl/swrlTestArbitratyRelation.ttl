@@ -90,36 +90,24 @@
 :v rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
 
 [ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
-   rdfs:comment "used to encode mutation"^^xsd:string ;
-   rdfs:label "S1"^^xsd:string ;
+   rdfs:comment ""^^xsd:string ;
+   rdfs:label "specific data value"^^xsd:string ;
    rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
-   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :C ;
-                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.ifi.uio.no/tobiajoh/z>
-                                                     ] ;
-                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :p ;
-                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.ifi.uio.no/tobiajoh/x> ;
-                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.ifi.uio.no/tobiajoh/y>
-                                                                ] ;
-                                                      rdf:rest rdf:nil
-                                                    ]
+   <http://www.w3.org/2003/11/swrl#body> [  rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> rdf:type ;
+                                                        <http://www.w3.org/2003/11/swrl#argument1> :x ;
+                                                        <http://www.w3.org/2003/11/swrl#argument2> :B
+                                                      ] ;
+                                            rdf:rest rdf:nil
+                                                    
                                          ] ;
    <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :C ;
-                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.ifi.uio.no/tobiajoh/z>
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :A ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :x
                                                      ] ;
-                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :p ;
-                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.ifi.uio.no/tobiajoh/y> ;
-                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.ifi.uio.no/tobiajoh/z>
-                                                                ] ;
-                                                      rdf:rest rdf:nil
-                                                    ]
+                                           rdf:rest rdf:nil
                                          ]
  ] .
 

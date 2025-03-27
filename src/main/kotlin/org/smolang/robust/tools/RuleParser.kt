@@ -24,7 +24,7 @@ class RuleParser(val model: Model) {
         for (rule in rules) {
             val config = parseSwrlRule(rule, variables)
             // check, if a rule with some content was parsed
-            if (config.head.any() || config.body.any())
+            if (config != null && (config.head.any() || config.body.any()))
                 abstractMutations.add(AbstractMutation(RuleMutation::class, config))
         }
         return abstractMutations
@@ -37,7 +37,7 @@ class RuleParser(val model: Model) {
 
     // parses a SWRL rule into a rule mutation
     // rootNode: root of the SWRL rule
-    private fun parseSwrlRule(rootNode : Resource, variables : Set<Resource>) : RuleMutationConfiguration {
+    private fun parseSwrlRule(rootNode : Resource, variables : Set<Resource>) : RuleMutationConfiguration? {
         // check type that root is really correct
         if (!hasType(rootNode, SWRL.Imp)) {
             mainLogger.warn("The provided root $rootNode node does not identify a SWRL rule. " +
@@ -54,8 +54,8 @@ class RuleParser(val model: Model) {
         assert(hasType(head, SWRL.AtomList))
         assert(hasType(body, SWRL.AtomList))
 
-        val headAtoms = parseAtomList(head)
-        val bodyAtoms = parseAtomList(body)
+        val headAtoms = parseAtomList(head) ?: return null
+        val bodyAtoms = parseAtomList(body) ?: return null
 
         // get variables of head and body
         val headVariables = variables.filter { v -> containsResource(headAtoms, v) }.toSet()
@@ -65,23 +65,24 @@ class RuleParser(val model: Model) {
     }
 
     // parses the atom list from an RDF file
-    private fun parseAtomList(listRoot : Resource) : List<Statement> {
+    private fun parseAtomList(listRoot : Resource) : List<Statement>? {
         val result = mutableListOf<Statement>()
 
         // parse the first element
         val listHead = model.listObjectsOfProperty(listRoot, RDF.first).toSet().single().asResource()
-        val headStatement = parseSWRLAtom(listHead)
+        val headStatement = parseSWRLAtom(listHead) ?: return null
 
         // only add the elements that could be parsed, i.e. are not null
-        if (headStatement!= null)
-            result.add(headStatement)
+
+        result.add(headStatement)
 
         // check, if there are more elements to parse
         if (!model.listStatements(listRoot, RDF.rest, RDF.nil).hasNext()) {
             val listRest = model.listObjectsOfProperty(listRoot, RDF.rest).toSet().single().asResource()
             // check, if type is correct
             assert(hasType(listRest, SWRL.AtomList))
-            result.addAll(parseAtomList(listRest))
+            val parsedRest = parseAtomList(listRest) ?: return null
+            result.addAll(parsedRest)
         }
 
         return result
@@ -91,8 +92,9 @@ class RuleParser(val model: Model) {
     private fun parseSWRLAtom(atomRoot : Resource) : Statement? {
         val type = model.listObjectsOfProperty(atomRoot, RDF.type).toSet().single()
         return when (type) {
-            SWRL.IndividualPropertyAtom -> parseIndividualPropertyAtom(atomRoot)
+            SWRL.IndividualPropertyAtom -> parsePropertyAtom(atomRoot)
             SWRL.ClassAtom -> parseClassAtom(atomRoot)
+            SWRL.DatavaluedPropertyAtom -> parsePropertyAtom(atomRoot)
             else -> {
                 mainLogger.warn("Atom type of SWRL atom $atomRoot is not supported and can not be parsed.")
                 null
@@ -100,10 +102,10 @@ class RuleParser(val model: Model) {
         }
     }
 
-    private fun parseIndividualPropertyAtom(root : Resource) : Statement? {
-        assert(hasType(root, SWRL.IndividualPropertyAtom))
+    private fun parsePropertyAtom(root : Resource) : Statement? {
+        assert(hasType(root, SWRL.IndividualPropertyAtom) || hasType(root, SWRL.DatavaluedPropertyAtom))
         val subject = model.listObjectsOfProperty(root, SWRL.argument1).toSet().singleOrNull()?.asResource()
-        val SWRLobject = model.listObjectsOfProperty(root, SWRL.argument2).toSet().singleOrNull()?.asResource()
+        val SWRLobject = model.listObjectsOfProperty(root, SWRL.argument2).toSet().singleOrNull()
         val property = model.listObjectsOfProperty(root, SWRL.propertyPredicate).toSet().singleOrNull()
 
         // check, if all elements could be extracted

@@ -20,6 +20,7 @@ import org.smolang.robust.domainSpecific.suave.SuaveEvaluationGraphGenerator
 import org.smolang.robust.domainSpecific.suave.SuaveTestCaseGenerator
 import org.smolang.robust.mutant.*
 import org.smolang.robust.sut.MiniPipeInspection
+import org.smolang.robust.tools.RuleParser
 import org.smolang.robust.tools.ShapeGenerator
 import java.io.File
 import java.nio.file.Files
@@ -50,6 +51,7 @@ class Main : CliktCommand() {
         "--scen_test" to "test", "-st" to "test",
         "--issre_graph" to "issre", "-ig" to "issre",
         "--el-graph" to "elGraph",
+        "--parse-swrl" to "swrl"
     ).default("free")
 
     private val elReasonerMutations = listOf(
@@ -148,6 +150,7 @@ class Main : CliktCommand() {
                 // test installation
                 testMiniPipes()
             }
+            "swrl" -> loadSwrlMutations()
             else -> testMiniPipes()
         }
 
@@ -455,6 +458,28 @@ class Main : CliktCommand() {
         OwlEvaluationGraphGenerator().analyzeElInputCoverage(inputDirectory, elReasonerMutations, outputFile)
     }
 
+    private fun loadSwrlMutations() {
+        val input = RDFDataMgr.loadDataset("examples/swrl/swrlTestComplex.ttl").defaultModel
+
+        val parser = RuleParser(input)
+        val ruleMutations = parser.getAllRuleMutations()
+
+        for (r in ruleMutations)
+            println(r)
+
+        val ms = MutationSequence()
+        ms.addAllAbstractMutations(ruleMutations)
+
+        val m = Mutator(ms)
+        val res = m.mutate(input)
+
+
+        //for (s in res.listStatements())
+        //    println(s)
+
+        OwlFileHandler().saveOwlDocument(res, File("examples/swrl/temp.owl"))
+
+    }
 
 }
 

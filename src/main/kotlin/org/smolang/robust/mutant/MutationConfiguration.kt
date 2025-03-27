@@ -3,6 +3,7 @@ package org.smolang.robust.mutant
 import org.apache.jena.rdf.model.RDFNode
 import org.apache.jena.rdf.model.Resource
 import org.apache.jena.rdf.model.Statement
+import org.smolang.robust.toLocalString
 
 
 abstract class MutationConfiguration {
@@ -84,6 +85,14 @@ class RuleMutationConfiguration(val body : List<Statement> = listOf(),
 ) : MutationConfiguration() {
 
     val variables : Set<RDFNode> get() = run { bodyVariables.union(headVariables) }
+
+    override fun toString(): String {
+        return "RuleMutationConfiguration(" +
+                "(${body.map { s -> s.toLocalString() }.joinToString(",")}) -> " +
+                "(${head.map { s -> s.toLocalString() }.joinToString(",")}))"
+    }
+
+
 }
 
 
