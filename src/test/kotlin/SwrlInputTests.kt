@@ -166,4 +166,31 @@ class SwrlInputTests : StringSpec() {
 
         }
     }
+
+    init {
+        "SWRL rule with negative consequences" {
+            val input = RDFDataMgr.loadDataset("swrl/swrlTestNegatedConsequence.ttl").defaultModel
+
+            val mutation = RuleParser(input).getAllRuleMutations().single()
+
+            // apply mutations
+            val ms = MutationSequence()
+            ms.addAbstractMutation(mutation)
+            val mutator = Mutator(ms)
+            val result = mutator.mutate(input)
+
+
+            val testStatement = input.createStatement(
+                input.getResource("http://www.ifi.uio.no/tobiajoh/swrlTest#a"),
+                RDF.type,
+                input.getResource("http://www.ifi.uio.no/tobiajoh/swrlTest#A")
+            )
+
+            input.contains(testStatement ) shouldBe true
+            result.contains(testStatement ) shouldBe false
+
+            input.listStatements().toSet().size -1 shouldBe result.listStatements().toSet().size
+
+        }
+    }
 }
