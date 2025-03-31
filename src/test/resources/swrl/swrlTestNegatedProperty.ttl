@@ -73,6 +73,7 @@
 :c rdf:type owl:NamedIndividual ,
             :C ,
             :A ;
+   :p :c ;
    :dp "example of literal" .
 
 
@@ -102,12 +103,18 @@
                                                                                                       :v
                                                                                                     )
                                                       ] ;
-                                            rdf:rest rdf:nil
+                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                        rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                    <http://www.w3.org/2003/11/swrl#classPredicate> owl:NamedIndividual ;
+                                                                    <http://www.w3.org/2003/11/swrl#argument1> :x
+                                                                  ] ;
+                                                        rdf:rest rdf:nil
+                                                      ]  
                                                     
                                          ] ;
    <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :B ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :C ;
                                                        <http://www.w3.org/2003/11/swrl#argument1> :x
                                                      ] ;
                                            rdf:rest rdf:nil

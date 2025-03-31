@@ -49,17 +49,26 @@ class RuleMutation(model : Model) : Mutation(model) {
 
         // combine variables
 
-        val bodyVariablesSparql = ruleConfig.bodyVariables.joinToString(" ") { v -> swrlToSparql[v]?:"" }
 
         val positiveBodyAtoms = ruleConfig.body.filterIsInstance<PositiveStatementAtom>()
         val negativeBodyAtoms = ruleConfig.body.filterIsInstance<NegativeStatementAtom>()
 
+        // compute the variables that are selected with query
+        val argumentVariables = ruleConfig.bodyVariables.filter { v ->
+            positiveBodyAtoms.filter { a -> a.containsResource(v) }.any()
+        }
+
+        val bodyVariablesSparql = argumentVariables.joinToString(" ") { v -> swrlToSparql[v]?:"" }
+
+
         // check, if every variable is contained in at least one positive atom and raise warning, if not
-        for (v in ruleConfig.bodyVariables) {
-            if (positiveBodyAtoms.filter { a -> a.containsResource(v) }.isEmpty())
-                mainLogger.warn("Variable $v does not occur in a positive atom. This violates a requirement of how swrl" +
+        for (v in ruleConfig.bodyVariables.minus(argumentVariables)) {
+            //if (positiveBodyAtoms.filter { a -> a.containsResource(v) }.isEmpty())
+            mainLogger.warn("Variable \"${v.localName}\" does not occur in a positive atom. This violates a requirement of how swrl" +
                         " rules for actions should be designed. The behavior of the mutation might not be as expected.")
         }
+
+
 
         // filter selection, fi there are negative atoms
         val filterString =  if (negativeBodyAtoms.any())" FILTER NOT EXISTS {\n" +
@@ -92,7 +101,8 @@ class RuleMutation(model : Model) : Mutation(model) {
             // map from  swrl variable to resource in graph
             val solutionMapping = NodeMap()
             for (variable in ruleConfig.bodyVariables) {
-                solutionMapping[variable] = r.get(swrlToSparql[variable])
+                if (r.contains(swrlToSparql[variable]))
+                    solutionMapping[variable] = r.get(swrlToSparql[variable])
             }
             allSolutions.add(solutionMapping)
         }
