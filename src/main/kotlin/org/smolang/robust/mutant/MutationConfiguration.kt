@@ -4,6 +4,7 @@ import org.apache.jena.rdf.model.RDFNode
 import org.apache.jena.rdf.model.Resource
 import org.apache.jena.rdf.model.Statement
 import org.smolang.robust.toLocalString
+import org.smolang.robust.tools.MutationAtom
 
 
 abstract class MutationConfiguration {
@@ -78,8 +79,8 @@ class DoubleStringAndStatementConfiguration(private val nodeOld: String,
     }
 }
 
-class RuleMutationConfiguration(val body : List<Statement> = listOf(),
-                                val head : List<Statement> = listOf(),
+class RuleMutationConfiguration(val body : List<MutationAtom> = listOf(),
+                                val head : List<MutationAtom> = listOf(),
                                 val bodyVariables : Set<Resource> = setOf(),
                                 val headVariables : Set<Resource> = setOf()
 ) : MutationConfiguration() {

@@ -25,7 +25,7 @@ class OwlFileHandler {
         val axioms: MutableSet<OWLAxiom> = mutableSetOf()
 
         // add all OWLAxioms from Jena Model:
-        // obtaines from https://github.com/owlcs/ont-api/wiki/Examples#-2-ont-api-rdf-model-interface
+        // obtains from https://github.com/owlcs/ont-api/wiki/Examples#-2-ont-api-rdf-model-interface
         AxiomType.AXIOM_TYPES.stream()
             .map { type -> AxiomTranslator.get(type) }
             .forEach { t ->

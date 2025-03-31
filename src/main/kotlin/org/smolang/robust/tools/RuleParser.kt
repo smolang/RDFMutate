@@ -4,6 +4,7 @@ import org.apache.jena.rdf.model.Model
 import org.apache.jena.rdf.model.RDFNode
 import org.apache.jena.rdf.model.Resource
 import org.apache.jena.rdf.model.Statement
+import org.apache.jena.vocabulary.OWL
 import org.apache.jena.vocabulary.RDF
 import org.apache.jena.vocabulary.SWRL
 
@@ -65,8 +66,8 @@ class RuleParser(val model: Model) {
     }
 
     // parses the atom list from an RDF file
-    private fun parseAtomList(listRoot : Resource) : List<Statement>? {
-        val result = mutableListOf<Statement>()
+    private fun parseAtomList(listRoot : Resource) : List<MutationAtom>? {
+        val result = mutableListOf<MutationAtom>()
 
         // parse the first element
         val listHead = model.listObjectsOfProperty(listRoot, RDF.first).toSet().single().asResource()
@@ -89,12 +90,13 @@ class RuleParser(val model: Model) {
     }
 
     // parses an SWRL atom
-    private fun parseSWRLAtom(atomRoot : Resource) : Statement? {
+    private fun parseSWRLAtom(atomRoot : Resource) : MutationAtom? {
         val type = model.listObjectsOfProperty(atomRoot, RDF.type).toSet().single()
         return when (type) {
             SWRL.IndividualPropertyAtom -> parsePropertyAtom(atomRoot)
             SWRL.ClassAtom -> parseClassAtom(atomRoot)
             SWRL.DatavaluedPropertyAtom -> parsePropertyAtom(atomRoot)
+            SWRL.BuiltinAtom -> parseBuiltinAtom(atomRoot)
             else -> {
                 mainLogger.warn("Atom type of SWRL atom $atomRoot is not supported and can not be parsed.")
                 null
@@ -102,7 +104,7 @@ class RuleParser(val model: Model) {
         }
     }
 
-    private fun parsePropertyAtom(root : Resource) : Statement? {
+    private fun parsePropertyAtom(root : Resource) : StatementAtom? {
         assert(hasType(root, SWRL.IndividualPropertyAtom) || hasType(root, SWRL.DatavaluedPropertyAtom))
         val subject = model.listObjectsOfProperty(root, SWRL.argument1).toSet().singleOrNull()?.asResource()
         val SWRLobject = model.listObjectsOfProperty(root, SWRL.argument2).toSet().singleOrNull()
@@ -114,13 +116,15 @@ class RuleParser(val model: Model) {
             return null
         }
 
-        return model.createStatement(
+        val propertyStatement = model.createStatement(
             subject,
             model.getProperty(property.toString()),
             SWRLobject)
+
+        return PositiveStatementAtom(propertyStatement)
     }
 
-    private fun parseClassAtom(root : Resource) : Statement? {
+    private fun parseClassAtom(root : Resource) : StatementAtom? {
         assert(hasType(root, SWRL.ClassAtom))
         val subject = model.listObjectsOfProperty(root, SWRL.argument1).toSet().singleOrNull()?.asResource()
         val SwrlClass = model.listObjectsOfProperty(root, SWRL.classPredicate).toSet().singleOrNull()?.asResource()
@@ -131,11 +135,50 @@ class RuleParser(val model: Model) {
             return null
         }
 
-        return model.createStatement(
+        val classStatement = model.createStatement(
             subject,
             RDF.type,
             SwrlClass
         )
+
+        return PositiveStatementAtom(classStatement)
+    }
+
+    private fun parseBuiltinAtom(root: Resource) : StatementAtom? {
+        assert(hasType(root, SWRL.BuiltinAtom))
+        val type = model.listObjectsOfProperty(root, SWRL.builtin).toSet().single()
+        return when (type){
+            OWL.NegativePropertyAssertion -> parseNegativePropertyAtom(root)
+            else ->{
+                mainLogger.warn("Builtin SWRL atom of type $type is not supported and can not be parsed.")
+                null
+            }
+        }
+
+    }
+
+    private fun parseNegativePropertyAtom(root: Resource) : StatementAtom? {
+        val argumentsHead = model.listObjectsOfProperty(root, SWRL.arguments).toSet().singleOrNull()?.asResource()
+        if (argumentsHead == null) {
+            mainLogger.warn("Builtin SWRL atom that reflects negative property assertion is not correctly structured" +
+                    " and can not be parsed. Not exactly one \"swrl:arguments\" argument.")
+            return null
+        }
+
+        val arguments = ComplexTermParser().allElementsInList(model, argumentsHead)
+        if (arguments.size != 3) {
+            mainLogger.warn("Builtin SWRL atom that reflects negative property assertion is not correctly structured" +
+                    " and can not be parsed. Not the correct number of arguments (${arguments.size} arguments " +
+                    "but 3 required).")
+            return null
+        }
+        val negatedStatement = model.createStatement(
+            arguments[0].asResource(),
+            model.getProperty(arguments[1].toString()),
+            arguments[2]
+        )
+
+        return NegativeStatementAtom(negatedStatement)
     }
 
     // check type declaration of a resource
@@ -144,18 +187,14 @@ class RuleParser(val model: Model) {
     }
 
     // checks, if the item is contained in the list of statements
-    private fun containsResource(statements : List<Statement>, item : Resource) : Boolean {
-        for (s in statements)
-            if (containsResource(s, item))
+    private fun containsResource(atoms : List<MutationAtom>, item : Resource) : Boolean {
+        for (a in atoms)
+            if (a.containsResource(item))
                 return true
 
         return false
     }
 
-    // check, if statement contains item
-    private fun containsResource(s : Statement, item : Resource) : Boolean {
-        return s.subject == item || s.predicate == item ||
-                (s.`object`.isResource && s.`object`.asResource() == item)
-    }
+
 
 }

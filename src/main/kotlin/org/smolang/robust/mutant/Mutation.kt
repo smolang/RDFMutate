@@ -10,6 +10,7 @@ import org.apache.jena.vocabulary.XSD
 import org.smolang.robust.randomGenerator
 import org.smolang.robust.mainLogger
 import org.smolang.robust.tools.ComplexStatementBuilder
+import org.smolang.robust.tools.ComplexTermParser
 
 open class Mutation(var model: Model) {
     var hasConfig : Boolean = false
@@ -193,35 +194,7 @@ open class Mutation(var model: Model) {
         }
     }
 
-    // returns all elements from the linked a list in the ontology that starts in "head"
-    fun allElementsInList(head: Resource) : List<RDFNode> {
-        // assure that element is really a list
-        if (!model.contains(model.createStatement(
-            head,
-            RDF.type,
-            RDF.List
-        )))
-            return listOf()
-        else {
-            val list : MutableList<RDFNode> = mutableListOf()
-            // add all (i.e. one) current element
-            for (element in model.listObjectsOfProperty(head, RDF.first))
-                list.add(element)
 
-            // check if there is more list to come
-
-            val rest = model.listObjectsOfProperty(head, RDF.rest).toSet()
-            if (rest.contains(RDF.nil) || rest.isEmpty())
-                // base case + if rest is empty --> error in schema as end is not correctly marked
-                return list
-            else {
-                // recursive call
-                val restElements = allElementsInList(rest.single().asResource())
-                list.addAll(restElements)
-                return list
-            }
-        }
-    }
 
     override fun toString() : String {
         val className = this.javaClass.toString().removePrefix("class mutant.").removePrefix("class org.smolang.robust.mutant.")
@@ -565,7 +538,7 @@ open class AddRelationMutation(model: Model) : Mutation(model) {
                     }
                     else {
                         // collect elements of list
-                        rangeP = allElementsInList(list.asResource()).toMutableSet()
+                        rangeP = ComplexTermParser().allElementsInList(model, list.asResource()).toMutableSet()
                     }
                 }
 

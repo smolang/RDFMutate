@@ -7,7 +7,10 @@ import org.apache.jena.rdf.model.RDFNode
 import org.apache.jena.rdf.model.Statement
 import org.smolang.robust.mainLogger
 import org.smolang.robust.randomGenerator
+import org.smolang.robust.tools.NegativeStatementAtom
 import org.smolang.robust.tools.NodeMap
+import org.smolang.robust.tools.PositiveStatementAtom
+import org.smolang.robust.tools.StatementAtom
 
 // a mutation represented by a rule, i.e., SWRL rule
 class RuleMutation(model : Model) : Mutation(model) {
@@ -22,7 +25,7 @@ class RuleMutation(model : Model) : Mutation(model) {
 
     */
     // mapping from swrl variables to sparql variables
-    val swrlToSparql = mutableMapOf<RDFNode, String>()
+    private val swrlToSparql = mutableMapOf<RDFNode, String>()
 
 
     private val ruleConfig : RuleMutationConfiguration get() = config as RuleMutationConfiguration
@@ -48,14 +51,34 @@ class RuleMutation(model : Model) : Mutation(model) {
 
         val bodyVariablesSparql = ruleConfig.bodyVariables.joinToString(" ") { v -> swrlToSparql[v]?:"" }
 
+        val positiveBodyAtoms = ruleConfig.body.filterIsInstance<PositiveStatementAtom>()
+        val negativeBodyAtoms = ruleConfig.body.filterIsInstance<NegativeStatementAtom>()
+
+        // check, if every variable is contained in at least one positive atom and raise warning, if not
+        for (v in ruleConfig.bodyVariables) {
+            if (positiveBodyAtoms.filter { a -> a.containsResource(v) }.isEmpty())
+                mainLogger.warn("Variable $v does not occur in a positive atom. This violates a requirement of how swrl" +
+                        " rules for actions should be designed. The behavior of the mutation might not be as expected.")
+        }
+
+        // filter selection, fi there are negative atoms
+        val filterString =  if (negativeBodyAtoms.any())" FILTER NOT EXISTS {\n" +
+                negativeBodyAtoms.mapNotNull { s -> s.toSparqlString(swrlToSparql) }
+                    .joinToString("\n  ", "  ", "\n") +
+                " }\n"
+        else
+            ""
+
         // build SPARQL query for body
         val queryString = "PREFIX owl: <http://www.w3.org/2002/07/owl#>\n " +
                 "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
                 "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n" +
                 "PREFIX xml: <http://www.w3.org/XML/1998/namespace>\n" +
                 "PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n" +
-                "SELECT DISTINCT $bodyVariablesSparql WHERE { "+
-                ruleConfig.body.mapNotNull { s -> statementToSparqlString(s) }.joinToString(" ") +
+                "SELECT DISTINCT $bodyVariablesSparql WHERE {\n "+
+                positiveBodyAtoms.mapNotNull { s -> s.toSparqlString(swrlToSparql) }
+                    .joinToString("\n "," ", "\n") +
+                filterString +
                 "}"
 
         val query = QueryFactory.create(queryString)
@@ -93,44 +116,19 @@ class RuleMutation(model : Model) : Mutation(model) {
         //for (s in ruleConfig.body)
         //    mapping.apply(s, model)?.let { removeSet.add(it) }
 
-        for (s in ruleConfig.head)
-            mapping.apply(s, model)?.let { addSet.add(it) }
+        for (a in ruleConfig.head) {
+            when (a){
+                is PositiveStatementAtom -> mapping.apply(a.statement, model)?.let { addSet.add(it) }
+                is NegativeStatementAtom -> mapping.apply(a.statement, model)?.let { removeSet.add(it) }
+                else -> mainLogger.warn("the type of mutation atom is not supported in the head for atom $a")
+            }
+
+        }
 
         super.createMutation()
     }
 
-    private fun statementToSparqlString(s : Statement) : String? {
-        val sub = nodeToSparqlString(s.subject)
-        val pred = nodeToSparqlString(s.predicate)
-        val obj = nodeToSparqlString(s.`object`)
 
-        // check, if one got valid results
-        if (sub == null || pred == null || obj == null) {
-            mainLogger.error("Could not transform statement $s into SPARQL.")
-            return null
-        }
-
-        return "$sub $pred $obj."
-
-    }
-
-    private fun nodeToSparqlString(n : RDFNode) : String? {
-        if (n.isLiteral)
-            return  n.toString()
-
-        if (!n.isResource) {
-            mainLogger.warn("Encountered RDFNode $n while parsing of rule to mutation." +
-                    "Depending on structure of node, this might not be supported and cause errors later.")
-            return n.toString()
-        }
-
-        // check, if node is variable
-        if (ruleConfig.variables.contains(n.asResource())) {
-            return swrlToSparql.getOrDefault(n.asResource(), null)
-        }
-
-        return "<${n.asResource()}>"
-    }
 
 
 

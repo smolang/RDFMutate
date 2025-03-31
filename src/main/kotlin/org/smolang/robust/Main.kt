@@ -459,7 +459,7 @@ class Main : CliktCommand() {
     }
 
     private fun loadSwrlMutations() {
-        val input = RDFDataMgr.loadDataset("examples/swrl/swrlTestComplex.ttl").defaultModel
+        val input = RDFDataMgr.loadDataset("examples/swrl/swrlTestNegatedClass.ttl").defaultModel
 
         val parser = RuleParser(input)
         val ruleMutations = parser.getAllRuleMutations()
@@ -473,12 +473,11 @@ class Main : CliktCommand() {
         val m = Mutator(ms)
         val res = m.mutate(input)
 
-
         //for (s in res.listStatements())
         //    println(s)
 
-        OwlFileHandler().saveOwlDocument(res, File("examples/swrl/temp.owl"))
-
+        //OwlFileHandler().saveOwlDocument(res, File("examples/swrl/temp.owl"))
+        RDFDataMgr.write(File("examples/swrl/temp.owl").outputStream(), res, Lang.TTL)
     }
 
 }

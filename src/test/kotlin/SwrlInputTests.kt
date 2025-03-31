@@ -120,4 +120,27 @@ class SwrlInputTests : StringSpec() {
             result2.listStatements().toSet().size shouldBe input.listStatements().toSet().size + 1
         }
     }
+
+    init {
+        "SWRL rule with negative class assertion" {
+            val input = RDFDataMgr.loadDataset("swrl/swrlTestNegatedClass.ttl").defaultModel
+
+            val mutation = RuleParser(input).getAllRuleMutations().single()
+
+            // apply mutations
+            val ms = MutationSequence()
+            ms.addAbstractMutation(mutation)
+            val mutator = Mutator(ms)
+            val result = mutator.mutate(input)
+
+            result.contains(
+                input.createStatement(
+                    input.getResource("http://www.ifi.uio.no/tobiajoh/swrlTest#b"),
+                    RDF.type,
+                    input.getResource("http://www.ifi.uio.no/tobiajoh/swrlTest#A")
+                )
+            ) shouldBe true
+
+        }
+    }
 }
