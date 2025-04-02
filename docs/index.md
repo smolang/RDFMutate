@@ -1,8 +1,9 @@
-# Welcome to OntoMutate
+# Welcome to OntoMutate (Draft)
 
-This is the documentation for our project.
+OntoMutate is a tool to generate synthetic knowledge graphs by applying mutation operations to a provided seed knowledge graph. The source code for the project is hosted on [GitHub](https://github.com/Edkamb/OntoMutate). 
 
 
-## Documentation Layout
+## How to Start
 
-Here comes the layout of this documentation
+- You find documentation on the different options on how to set up OntoMutate in [Installation](installation.md).
+- For information about how to use our tool, you should start with the [Basic Usage](basicUsage.md) or our [Tutorial](tutorial.md).
