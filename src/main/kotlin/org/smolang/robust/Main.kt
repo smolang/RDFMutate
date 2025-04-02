@@ -24,7 +24,7 @@ class Main : CliktCommand() {
         "--seedKG" ,"-g", help="Knowledge graph to mutate, defined by an RDF file"
     ).file()
     private val shaclMaskFile by option(
-        "--shacl","-s", help="Gives a mask, defined by a set of SHACL shapes"
+        "--shacl","-s", "--mask", help="Gives a mask, defined by a set of SHACL shapes"
     ).file()
     private val swrlMutationFile by option(
         "--mutations", "--swrl", help = "Mutation operators that are considered."
