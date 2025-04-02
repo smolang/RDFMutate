@@ -1,5 +1,7 @@
 # OntoMutate
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14939790.svg)](https://doi.org/10.5281/zenodo.14939790)
+
 A prototype for mutation of OWL ontology with respect to entailment constraints
 
 ## Requirements
