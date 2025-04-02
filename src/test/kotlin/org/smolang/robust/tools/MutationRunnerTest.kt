@@ -5,9 +5,6 @@ import io.kotlintest.specs.StringSpec
 import org.apache.jena.rdf.model.RDFNode
 import org.apache.jena.riot.RDFDataMgr
 import org.apache.jena.shacl.Shapes
-import org.smolang.robust.mutant.MutationSequence
-import org.smolang.robust.mutant.Mutator
-import org.smolang.robust.mutant.RemoveSubclassRelationMutation
 import org.smolang.robust.mutant.RobustnessMask
 import java.io.File
 
@@ -134,7 +131,6 @@ class MutationRunnerTest : StringSpec() {
 
     init {
         "insufficient arguments (no output file)" {
-            val outputPath = "src/test/resources/swrl/temp.ttl"
             val runner = MutationRunner(
                 seedFile = File("src/test/resources/swrl/swrlTest.ttl"),
                 outputFile = null,

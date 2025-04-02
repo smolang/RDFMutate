@@ -1,6 +1,5 @@
 import io.kotlintest.shouldBe
 import io.kotlintest.specs.StringSpec
-import org.apache.jena.rdf.model.Literal
 import org.apache.jena.rdf.model.RDFNode
 import org.apache.jena.riot.RDFDataMgr
 import org.apache.jena.vocabulary.RDF
