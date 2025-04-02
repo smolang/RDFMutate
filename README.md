@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/github/license/Edkamb/OntoMutate)](https://opensource.org/licenses/Apache-2.0)
 
-A prototype for mutation of OWL ontology with respect to entailment constraints
+A prototype for mutation of OWL ontology with respect to entailment constraints. You can find the complete documentation [online](https://ontomutate.readthedocs.io/en/latest/).
 
 ## Usage using Docker
 - build the docker image using the provided docker file
