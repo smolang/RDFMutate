@@ -7,6 +7,7 @@ import org.apache.jena.shacl.Shapes
 import org.smolang.robust.domainSpecific.reasoner.OwlFileHandler
 import org.smolang.robust.mainLogger
 import org.smolang.robust.mutant.*
+import org.smolang.robust.randomGenerator
 import java.io.File
 import java.nio.file.Files
 import kotlin.random.Random
@@ -77,24 +78,27 @@ open class MutationRunner(
         }
         Files.createDirectories(outputParent.toPath())
 
-        // get mutation sequence
-        val ms = MutationSequence()
+        // get mutations (from file or use default)
+        val mutations = if (mutationFile == null) {
+            mainLogger.info("No mutations are provided as input. Using the default mutation operators.")
+            getDefaultMutations().map { mutationClass -> AbstractMutation(mutationClass) }
+        } else {
+            getMutationOperations(mutationFile) ?: return MutationOutcome.INCORRECT_INPUT
+        }
+
         // use random selection of a mutation. Select mutation operator based on seed for random selector
         val generator = Random(selectionSeed)
 
-        if (mutationFile == null) {
-            mainLogger.info("No mutations are provided as input. Using the default mutation operators.")
+        // try to mutate until a mutation that conforms to mask is found
+        var outcome = MutationOutcome.NOT_VALID
+        while (outcome == MutationOutcome.NOT_VALID) {
+            val ms = MutationSequence()
             for (j in 1..(numberMutations)) {
-                val mutation = getDefaultMutations().random(generator)
-                ms.addRandom(mutation)
+                val mutation = mutations.random(generator)
+                ms.addAbstractMutation(mutation)
             }
-        } else {
-            val mutations = getMutationOperations(mutationFile) ?: return MutationOutcome.INCORRECT_INPUT
-            ms.addAllAbstractMutations(mutations)
+            outcome = singleMutation(seed, outputPath, ms, mask)
         }
-
-        val outcome = singleMutation(seed, outputPath, ms)
-
         return outcome
     }
 
@@ -103,14 +107,20 @@ open class MutationRunner(
     private fun singleMutation(
         seedKG: Model,
         outputPath: File,
-        ms: MutationSequence
+        ms: MutationSequence,
+        mask: RobustnessMask
     ) : MutationOutcome {
 
         // create mutator and apply mutation
         val m = Mutator(ms)
         val res = m.mutate(seedKG)
 
+        // check, if result conforms to mask; if not --> abort
+        if (!mask.validate(res))
+            return MutationOutcome.NOT_VALID
+
         // safe result
+        mainLogger.info("Saving mutated knowledge graph to $outputFile")
         if (isOwlDocument)
             OwlFileHandler().saveOwlDocument(res, outputFile!!)
         else
@@ -170,5 +180,5 @@ open class MutationRunner(
 }
 
 enum class MutationOutcome {
-    INCORRECT_INPUT, SUCCESS, FAIL
+    INCORRECT_INPUT, SUCCESS, FAIL, NOT_VALID
 }

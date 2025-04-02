@@ -18,19 +18,6 @@ class NodeMap {
         mapping[r] = n
     }
 
-    // apply mapping to all nodes (if possible)
-    // the model is for context
-    fun apply(statements : List<Statement>, model: Model) : List<Statement> {
-        val result = mutableListOf<Statement>()
-        for (s in statements){
-            val newS = this.apply(s, model)
-            if (newS == null)
-                mainLogger.error("Could not map statement $s when creating mutation for swrl rule.")
-            else
-                result.add(newS)
-        }
-        return result
-    }
 
     fun apply(s : Statement, model: Model) : Statement? {
         val sub = apply(s.subject)

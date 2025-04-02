@@ -35,6 +35,7 @@ class MutationSequence() {
         mutations.add(am)
     }
 
+    // adds all those mutations to be used in mutation sequence
     fun addAllAbstractMutations(list : List<AbstractMutation>) {
         for (am in list)
             this.addAbstractMutation(am)

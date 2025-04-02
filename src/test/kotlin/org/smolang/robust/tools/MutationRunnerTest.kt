@@ -58,7 +58,7 @@ class MutationRunnerTest : StringSpec() {
                 seedFile = File("src/test/resources/abc/abc.ttl"),
                 outputFile = File(outputPath),
                 maskFile = File("src/test/resources/abc/mask.ttl"),
-                mutationFile = File("src/test/resources/abc/RemoveSubclassRelationMutation.ttl"),
+                mutationFile = File("src/test/resources/abc/AddSubclassRelationMutation.ttl"),
                 numberMutations = 1,
                 overwriteOutput = true,
                 isOwlDocument = false,
@@ -78,7 +78,7 @@ class MutationRunnerTest : StringSpec() {
             val shapes = Shapes.parse(RDFDataMgr.loadGraph("abc/mask.ttl"))
             val mask = RobustnessMask(shapes)
 
-            mask.validate(result) shouldBe false
+            mask.validate(result) shouldBe true
         }
 
     }
