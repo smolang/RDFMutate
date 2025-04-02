@@ -1,6 +1,7 @@
 # OntoMutate
 
 [![License](https://img.shields.io/github/license/Edkamb/OntoMutate)](https://opensource.org/licenses/Apache-2.0)
+[![Documentation Status](https://readthedocs.org/projects/ontomutate/badge/?version=latest)](https://ontomutate.readthedocs.io/en/latest/)
 
 A prototype for mutation of OWL ontology with respect to entailment constraints
 
