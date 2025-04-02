@@ -38,7 +38,7 @@ class SwrlInputTests : StringSpec() {
                 input.getResource("http://www.ifi.uio.no/tobiajoh/swrlTest#b"),
                 input.getProperty("http://www.ifi.uio.no/tobiajoh/swrlTest#p"),
                 input.getResource("http://www.ifi.uio.no/tobiajoh/swrlTest#c")
-            ))
+            )) shouldBe true
 
         }
     }

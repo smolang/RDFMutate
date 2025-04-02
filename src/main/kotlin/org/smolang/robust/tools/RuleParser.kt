@@ -154,7 +154,6 @@ class RuleParser(val model: Model) {
                 null
             }
         }
-
     }
 
     private fun parseNegativePropertyAtom(root: Resource) : StatementAtom? {

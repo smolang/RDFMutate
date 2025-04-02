@@ -117,17 +117,6 @@ class SuaveTestCaseGenerator() : TestCaseGenerator() {
             i += 1
         }
     }
-
-    private  fun containsPrefix (stat: Statement, prefix : String) : Boolean {
-        if (stat.subject.toString().contains(prefix))
-            return true
-        if (stat.predicate.toString().contains(prefix))
-            return true
-        if (stat.`object`.toString().contains(prefix))
-            return true
-
-        return false
-    }
 }
 
 

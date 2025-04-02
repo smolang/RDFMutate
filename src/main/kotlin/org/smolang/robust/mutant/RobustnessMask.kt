@@ -10,7 +10,7 @@ import org.smolang.robust.tools.ReasoningBackend
 import java.io.File
 
 
-class RobustnessMask(private val shacl: Shapes?
+open class RobustnessMask(private val shacl: Shapes?
     ) {
 
     // checks, if the provided model is valid w.r.t. the shacl shapes
