@@ -1,4 +1,4 @@
-package org.smolang.robust.mutant
+package org.smolang.robust.mutant.DefinedMutants
 
 import org.apache.jena.query.QueryExecutionFactory
 import org.apache.jena.query.QueryFactory
@@ -7,6 +7,7 @@ import org.apache.jena.vocabulary.OWL
 import org.apache.jena.vocabulary.RDF
 import org.smolang.robust.randomGenerator
 import org.smolang.robust.mainLogger
+import org.smolang.robust.mutant.*
 
 class AddInstanceMutation(model: Model) : Mutation(model) {
     // returns all classes
@@ -82,7 +83,7 @@ open class RemoveObjectPropertyRelationMutation(model: Model) : RemoveStatementM
                 null as Resource?, model.getProperty(it.toString()), null as RDFNode?
             ).toSet())
         }
-        return filterMutatableAxioms(candidates.toList()).sortedBy { it.toString() }
+        return filterMutableStatements(candidates.toList()).sortedBy { it.toString() }
     }
 
     override fun setConfiguration(config: MutationConfiguration) {
@@ -289,7 +290,7 @@ class RemoveIndividualMutation(model: Model) : RemoveNodeMutation(model) {
                 candidates.add(s.subject)
             }
         }
-        return filterMutatableAxiomsResource(candidates).sortedBy { it.toString() }
+        return filterMutableStatementsResource(candidates).sortedBy { it.toString() }
     }
 
     override fun setConfiguration(config: MutationConfiguration) {
@@ -351,7 +352,7 @@ class RemoveClassAssertionMutation(model: Model) : RemoveStatementMutation(model
             candidates.add(statement)
         }
 
-        return filterMutatableAxioms(candidates.toList()).sortedBy { it.toString() }
+        return filterMutableStatements(candidates.toList()).sortedBy { it.toString() }
     }
 
     override fun setConfiguration(config: MutationConfiguration) {

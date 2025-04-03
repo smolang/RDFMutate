@@ -2,6 +2,7 @@ package org.smolang.robust.domainSpecific.geo
 
 import org.smolang.robust.mutant.*
 import org.apache.jena.riot.RDFDataMgr
+import org.smolang.robust.mutant.DefinedMutants.*
 import org.smolang.robust.randomGenerator
 import org.smolang.robust.tools.TestCaseGenerator
 

@@ -1,4 +1,4 @@
-package org.smolang.robust.sut
+package org.smolang.robust.sut.auv
 
 import org.apache.jena.rdf.model.Model
 import org.apache.jena.rdf.model.ModelFactory

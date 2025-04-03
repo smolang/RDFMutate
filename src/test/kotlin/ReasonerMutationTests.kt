@@ -1,4 +1,3 @@
-import io.kotlintest.matchers.numerics.shouldBeGreaterThan
 import io.kotlintest.matchers.numerics.shouldBeGreaterThanOrEqual
 import io.kotlintest.shouldBe
 import io.kotlintest.specs.StringSpec
@@ -12,6 +11,7 @@ import org.apache.jena.vocabulary.RDF
 import org.apache.jena.vocabulary.RDFS
 import org.smolang.robust.domainSpecific.reasoner.OwlFileHandler
 import org.smolang.robust.mutant.*
+import org.smolang.robust.mutant.DefinedMutants.*
 import java.io.File
 
 class ReasonerMutationTests : StringSpec() {

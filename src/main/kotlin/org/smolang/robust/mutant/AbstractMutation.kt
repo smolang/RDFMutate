@@ -11,29 +11,29 @@ class AbstractMutation(private val mutOp: KClass<out Mutation>) {
     private var hasConfig : Boolean = false
     private var config : MutationConfiguration? = null
 
-    private val mutatableAxioms: MutableSet<Statement> = hashSetOf()
-    fun addMutatableAxiom(s: Statement) {
-        mutatableAxioms.add(s)
+    private val mutatableStatements: MutableSet<Statement> = hashSetOf()
+    fun addMutatableStatement(s: Statement) {
+        mutatableStatements.add(s)
     }
 
     constructor(mutation: KClass<out Mutation>,
-                _config: MutationConfiguration) : this(mutation) {
+                config: MutationConfiguration) : this(mutation) {
         hasConfig = true
-        config = _config
+        this.config = config
     }
 
     fun concreteMutation(model: Model) : Mutation {
         if (hasConfig) {
             val m = mutOp.primaryConstructor?.call(model) ?: Mutation(model)
-            for (a in mutatableAxioms)
-                m.addMutatableAxiom(a)
+            for (a in mutatableStatements)
+                m.addMutableStatements(a)
             config?.let { m.setConfiguration(it) }
             return m
         }
         else {
             val m= mutOp.primaryConstructor?.call(model) ?: Mutation(model)
-            for (a in mutatableAxioms)
-                m.addMutatableAxiom(a)
+            for (a in mutatableStatements)
+                m.addMutableStatements(a)
             return m
         }
 

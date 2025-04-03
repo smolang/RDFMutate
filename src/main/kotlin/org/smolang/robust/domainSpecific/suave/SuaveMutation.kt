@@ -2,6 +2,7 @@ package org.smolang.robust.domainSpecific.suave
 
 import org.smolang.robust.mutant.*
 import org.apache.jena.rdf.model.Model
+import org.smolang.robust.mutant.DefinedMutants.*
 
 /**
  * This file contains the domain specific mutations for the SUAVE experiment

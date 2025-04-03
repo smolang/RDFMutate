@@ -5,6 +5,7 @@ import org.smolang.robust.mutant.*
 import org.apache.jena.rdf.model.Property
 import org.apache.jena.riot.RDFDataMgr
 import org.apache.jena.shacl.Shapes
+import org.smolang.robust.mutant.DefinedMutants.*
 import java.lang.AssertionError
 import kotlin.test.assertFailsWith
 
@@ -178,7 +179,8 @@ class FirstTests : StringSpec() {
             val typeProp : Property = input.createProperty("http://www.w3.org/1999/02/22-rdf-syntax-ns#type")
 
             // add axiom "individual a is of type B"
-            ms.addWithConfig(AddStatementMutation::class,
+            ms.addWithConfig(
+                AddStatementMutation::class,
                 SingleStatementConfiguration(
                     input.createStatement(a, typeProp, B)
                 )

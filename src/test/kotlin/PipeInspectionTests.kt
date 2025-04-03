@@ -6,7 +6,7 @@ import org.smolang.robust.mutant.Mutator
 import org.apache.jena.riot.RDFDataMgr
 import org.smolang.robust.domainSpecific.auv.AddPipeSegmentConfiguration
 import org.smolang.robust.domainSpecific.auv.AddPipeSegmentMutation
-import org.smolang.robust.sut.MiniPipeInspection
+import org.smolang.robust.sut.auv.MiniPipeInspection
 import kotlin.math.absoluteValue
 
 

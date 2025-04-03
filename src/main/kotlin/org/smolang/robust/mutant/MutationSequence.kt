@@ -31,7 +31,7 @@ class MutationSequence() {
 
     fun addAbstractMutation(am : AbstractMutation) {
         for (a in mutatableAxioms)
-            am.addMutatableAxiom(a)
+            am.addMutatableStatement(a)
         mutations.add(am)
     }
 

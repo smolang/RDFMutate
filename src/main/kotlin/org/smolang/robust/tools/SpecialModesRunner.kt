@@ -10,7 +10,8 @@ import org.smolang.robust.domainSpecific.suave.SuaveEvaluationGraphGenerator
 import org.smolang.robust.domainSpecific.suave.SuaveTestCaseGenerator
 import org.smolang.robust.mainLogger
 import org.smolang.robust.mutant.*
-import org.smolang.robust.sut.MiniPipeInspection
+import org.smolang.robust.mutant.DefinedMutants.*
+import org.smolang.robust.sut.auv.MiniPipeInspection
 import java.io.File
 
 // class to run special modes of the tool

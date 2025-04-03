@@ -7,7 +7,7 @@ import org.apache.jena.shacl.Shapes
 import org.smolang.robust.domainSpecific.reasoner.OwlFileHandler
 import org.smolang.robust.mainLogger
 import org.smolang.robust.mutant.*
-import org.smolang.robust.randomGenerator
+import org.smolang.robust.mutant.DefinedMutants.*
 import java.io.File
 import java.nio.file.Files
 import kotlin.random.Random

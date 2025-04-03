@@ -4,6 +4,8 @@ import org.smolang.robust.mutant.*
 import org.apache.jena.rdf.model.Model
 import org.apache.jena.rdf.model.Resource
 import org.apache.jena.vocabulary.RDF
+import org.smolang.robust.mutant.DefinedMutants.AddInstanceMutation
+import org.smolang.robust.mutant.DefinedMutants.AddStatementMutation
 import org.smolang.robust.randomGenerator
 
 /**

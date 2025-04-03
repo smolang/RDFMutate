@@ -4,26 +4,15 @@ import org.apache.jena.query.QueryExecutionFactory
 import org.apache.jena.query.QueryFactory
 import org.apache.jena.rdf.model.Model
 import org.apache.jena.rdf.model.RDFNode
-import org.apache.jena.rdf.model.Statement
 import org.smolang.robust.mainLogger
 import org.smolang.robust.randomGenerator
 import org.smolang.robust.tools.NegativeStatementAtom
 import org.smolang.robust.tools.NodeMap
 import org.smolang.robust.tools.PositiveStatementAtom
-import org.smolang.robust.tools.StatementAtom
 
 // a mutation represented by a rule, i.e., SWRL rule
 class RuleMutation(model : Model) : Mutation(model) {
-    // condition
-   /* val body : List<Statement> get() = config.body
-    // consequence
-    val head : List<Statement> = listOf()
-    // variables in the rule
-    val bodyVariables : Set<RDFNode> = setOf()
-    val headVariables : Set<RDFNode> = setOf()
-    val variables : Set<RDFNode> get() = run { bodyVariables.union(headVariables) }
 
-    */
     // mapping from swrl variables to sparql variables
     private val swrlToSparql = mutableMapOf<RDFNode, String>()
 
