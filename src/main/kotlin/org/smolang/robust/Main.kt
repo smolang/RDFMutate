@@ -9,6 +9,7 @@ import com.github.ajalt.clikt.parameters.types.file
 import com.github.ajalt.clikt.parameters.types.int
 import org.slf4j.LoggerFactory
 import org.slf4j.Logger
+import org.smolang.robust.tools.ConfigParser
 import org.smolang.robust.tools.MutationOutcome
 import org.smolang.robust.tools.MutationRunner
 import org.smolang.robust.tools.SpecialModesRunner
@@ -20,6 +21,9 @@ val mainLogger: Logger = LoggerFactory.getLogger("org.smolang.robust.OntoMutate"
 val randomGenerator = Random(2)
 
 class Main : CliktCommand() {
+    private val configFile by option(
+        "--config", help = "Configuration file using yaml format"
+    ).file()
     private val seedFile by option(
         "--seedKG" ,"-g", help="Knowledge graph to mutate, defined by an RDF file"
     ).file()
@@ -54,7 +58,8 @@ class Main : CliktCommand() {
         "--scen_test" to "test", "-st" to "test",
         "--issre_graph" to "issre", "-ig" to "issre",
         "--el-graph" to "elGraph",
-        "--parse-swrl" to "swrl"
+        "--parse-swrl" to "swrl",
+        "--yaml-test" to "yaml"
     ).default("mutate")
 
 
@@ -81,6 +86,7 @@ class Main : CliktCommand() {
                 SpecialModesRunner().testMiniPipes()
             }
             "swrl" -> SpecialModesRunner().loadSwrlMutations()
+            "yaml" -> ConfigParser(configFile).testYamlInput()
             else -> SpecialModesRunner().testMiniPipes()
         }
 

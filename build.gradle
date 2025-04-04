@@ -1,6 +1,7 @@
 
 plugins {
-    id("org.jetbrains.kotlin.jvm") version "1.9.0"
+    id "org.jetbrains.kotlin.jvm" version "2.1.20"
+    id 'org.jetbrains.kotlin.plugin.serialization' version '2.1.20'
     id 'org.springframework.boot' version '2.7.0'
     id 'com.github.johnrengelman.shadow' version '7.0.0'
 }
@@ -8,7 +9,7 @@ group = 'me.edkam'
 version = '0.1'
 
 wrapper {
-    gradleVersion = '7.6'
+    gradleVersion = '8.13'
 }
 
 repositories {
@@ -42,6 +43,10 @@ dependencies {
 
     // https://mvnrepository.com/artifact/ch.qos.logback/logback-classic
     implementation 'ch.qos.logback:logback-classic:1.5.18'
+
+
+    // https://mvnrepository.com/artifact/com.charleskorn.kaml/kaml-jvm
+    implementation "com.charleskorn.kaml:kaml-jvm:0.74.0"
 
 
     // https://mvnrepository.com/artifact/com.github.owlcs/ontapi

@@ -1,5 +1,7 @@
 package org.smolang.robust.tools
 
+import kotlinx.serialization.SerialName
+import kotlinx.serialization.Serializable
 import openllet.atom.OpenError
 import openllet.owlapi.OpenlletReasoner
 import openllet.owlapi.OpenlletReasonerFactory
@@ -20,8 +22,14 @@ import java.io.ByteArrayInputStream
 import java.io.ByteArrayOutputStream
 import org.smolang.robust.mainLogger
 
+@Serializable
 enum class ReasoningBackend {
-    HERMIT, OPENLLET, JENA
+    @SerialName("hermit")
+    HERMIT,
+    @SerialName("pellet")
+    OPENLLET,
+    @SerialName("jena")
+    JENA
 }
 
 

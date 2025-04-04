@@ -1,0 +1,30 @@
+seedGraph:
+    file: <seed-file-name>
+    type: owl
+    
+outputKG:
+    file: <outputFile>
+    overwrite: true 
+    type: rdf
+    
+number_of_mutations: 5
+
+strategy:
+    name: random
+	
+condition:
+    reasoning:
+        consistency: true
+        reasoner: hermit 
+    masks:
+        - file: <shaclFilePath>
+        - file: <anotherShaclFilePath>
+        
+        
+mutation_operators:
+    - operator: <class name>
+    - operator: <another class name>
+    - resource:
+        file: <sadf>
+        syntax: swrl
+
