@@ -13,7 +13,7 @@ class MutationRunnerTest : StringSpec() {
     init {
         "test default mutation without mask" {
             val outputPath = "src/test/resources/swrl/temp.ttl"
-            val runner = MutationRunner(
+            val runner = MutationRunnerDeprecated(
                 seedFile = File("src/test/resources/swrl/swrlTest.ttl"),
                 outputFile = File(outputPath),
                 maskFile = null,
@@ -54,7 +54,7 @@ class MutationRunnerTest : StringSpec() {
     init {
         "test default mutation with mask" {
             val outputPath = "src/test/resources/abc/temp2.ttl"
-            val runner = MutationRunner(
+            val runner = MutationRunnerDeprecated(
                 seedFile = File("src/test/resources/abc/abc.ttl"),
                 outputFile = File(outputPath),
                 maskFile = File("src/test/resources/abc/mask.ttl"),
@@ -86,7 +86,7 @@ class MutationRunnerTest : StringSpec() {
     init {
         "insufficient arguments (missing seed)" {
             val outputPath = "src/test/resources/swrl/temp.ttl"
-            val runner = MutationRunner(
+            val runner = MutationRunnerDeprecated(
                 seedFile = null,
                 outputFile = File(outputPath),
                 maskFile = null,
@@ -109,7 +109,7 @@ class MutationRunnerTest : StringSpec() {
     init {
         "insufficient arguments (non-existing seed)" {
             val outputPath = "src/test/resources/swrl/temp.ttl"
-            val runner = MutationRunner(
+            val runner = MutationRunnerDeprecated(
                 seedFile = File("file_does_not_exist.ttl"),
                 outputFile = File(outputPath),
                 maskFile = null,
@@ -131,7 +131,7 @@ class MutationRunnerTest : StringSpec() {
 
     init {
         "insufficient arguments (no output file)" {
-            val runner = MutationRunner(
+            val runner = MutationRunnerDeprecated(
                 seedFile = File("src/test/resources/swrl/swrlTest.ttl"),
                 outputFile = null,
                 maskFile = null,
@@ -154,7 +154,7 @@ class MutationRunnerTest : StringSpec() {
     init {
         "insufficient arguments (non-existent output directorz)" {
             val outputPath = "file_with_incorrect_path.ttl"
-            val runner = MutationRunner(
+            val runner = MutationRunnerDeprecated(
                 seedFile = File("src/test/resources/swrl/swrlTest.ttl"),
                 outputFile = File(outputPath),
                 maskFile = null,
@@ -176,7 +176,7 @@ class MutationRunnerTest : StringSpec() {
     init {
         "insufficient arguments (output file can not be overridden)" {
             val outputPath = "src/test/resources/swrl/temp.ttl"
-            val runner = MutationRunner(
+            val runner = MutationRunnerDeprecated(
                 seedFile = File("src/test/resources/swrl/swrlTest.ttl"),
                 outputFile = File(outputPath),
                 maskFile = null,
@@ -199,7 +199,7 @@ class MutationRunnerTest : StringSpec() {
     init {
         "insufficient arguments (mutations file does not exist)" {
             val outputPath = "src/test/resources/swrl/temp.ttl"
-            val runner = MutationRunner(
+            val runner = MutationRunnerDeprecated(
                 seedFile = File("src/test/resources/swrl/swrlTest.ttl"),
                 outputFile = File(outputPath),
                 maskFile = null,
@@ -222,7 +222,7 @@ class MutationRunnerTest : StringSpec() {
     init {
         "insufficient arguments (non-existing mask file)" {
             val outputPath = "src/test/resources/abc/temp2.ttl"
-            val runner = MutationRunner(
+            val runner = MutationRunnerDeprecated(
                 seedFile = File("src/test/resources/abc/abc.ttl"),
                 outputFile = File(outputPath),
                 maskFile = File("file_does_not_exist.ttl"),

@@ -1,69 +1,47 @@
 package org.smolang.robust.tools
 
 import org.apache.jena.rdf.model.Model
-import org.apache.jena.riot.Lang
 import org.apache.jena.riot.RDFDataMgr
-import org.apache.jena.shacl.Shapes
 import org.smolang.robust.domainSpecific.reasoner.OwlFileHandler
 import org.smolang.robust.mainLogger
-import org.smolang.robust.mutant.*
-import org.smolang.robust.mutant.DefinedMutants.*
+import org.smolang.robust.mutant.AbstractMutation
+import org.smolang.robust.mutant.EmptyRobustnessMask
+import org.smolang.robust.mutant.Mutation
+import org.smolang.robust.mutant.RobustnessMask
 import java.io.File
 import java.nio.file.Files
-import kotlin.random.Random
+import kotlin.reflect.KClass
 
-// class to run the main mutation algorithm
-open class MutationRunner(
-    private val seedFile : File?,
-    private val outputFile : File?,
-    private val maskFile: File?,
-    private val mutationFile: File?,
-    private val numberMutations: Int,
-    private val overwriteOutput: Boolean,
-    private val isOwlDocument: Boolean,
-    private val selectionSeed: Int,
-    private val printMutationSummary: Boolean
-) {
+class MutationRunner(private val configFile : File?) {
 
-    // set of default mutations that are used if no other mutations are specified
-    private val defaultMutation = listOf(
-        AddRelationMutation::class,
-        ChangeRelationMutation::class,
-        AddInstanceMutation::class,
-        RemoveStatementMutation::class,
-        RemoveNodeMutation::class,
-    )
+    val config = ConfigParser(configFile).getConfig()
 
-    // create selection of mutations that can be applied
-    open fun getDefaultMutations() = defaultMutation
-
-    // main method to perform mutation
-    // returns, if mutation was successful or not
     fun mutate() : MutationOutcome {
-        // get seed
+        if (config == null) {
+            mainLogger.error("Configuration does not exist. Mutation is not possible.")
+            return MutationOutcome.INCORRECT_INPUT
+        }
+
+        // get seed knowledge graph
+        val seedFile = config.seedGraph.file
         if (seedFile == null) {
             mainLogger.error("You need to provide a seed knowledge graph")
             return MutationOutcome.INCORRECT_INPUT
         }
-
-        val seed = getSeed(seedFile, isOwlDocument) ?: return MutationOutcome.INCORRECT_INPUT
+        val seed = getSeed(File(seedFile), config.seedGraph.type) ?: return MutationOutcome.INCORRECT_INPUT
 
         // get mask
-        val mask: RobustnessMask? =
-            if (maskFile == null)
-                EmptyRobustnessMask()
-            else
-                getMask(maskFile)
+        val mask : RobustnessMask? = EmptyRobustnessMask()
 
         if (mask == null)
             return MutationOutcome.INCORRECT_INPUT
 
-
         // check output
+        val outputFile = File(config.outputKG.file)
         val outputPath: File = if(outputFile == null) {
             mainLogger.error("Please provide an output file to save the mutated knowledge graph to.")
             return MutationOutcome.INCORRECT_INPUT
-        } else if(outputFile.exists() && !overwriteOutput){
+        } else if(outputFile.exists() && !config.outputKG.overwrite){
             mainLogger.error("Output file ${outputFile.path} does already exist. " +
                     "Please choose a different name or set \"--overwrite\" flag.")
             return MutationOutcome.INCORRECT_INPUT
@@ -78,63 +56,71 @@ open class MutationRunner(
         }
         Files.createDirectories(outputParent.toPath())
 
-        // get mutations (from file or use default)
-        val mutations = if (mutationFile == null) {
-            mainLogger.info("No mutations are provided as input. Using the default mutation operators.")
-            getDefaultMutations().map { mutationClass -> AbstractMutation(mutationClass) }
-        } else {
-            getMutationOperations(mutationFile) ?: return MutationOutcome.INCORRECT_INPUT
-        }
-
-        // use random selection of a mutation. Select mutation operator based on seed for random selector
-        val generator = Random(selectionSeed)
-
-        // try to mutate until a mutation that conforms to mask is found
-        var outcome = MutationOutcome.NOT_VALID
-        while (outcome == MutationOutcome.NOT_VALID) {
-            val ms = MutationSequence()
-            for (j in 1..(numberMutations)) {
-                val mutation = mutations.random(generator)
-                ms.addAbstractMutation(mutation)
+        // collect mutations
+        val mutations = mutableListOf<AbstractMutation>()
+        for (mutation in config.mutation_operators) {
+            // only exactly one of the two options is allowed to be set
+            if ((mutation.operator != null) xor  (mutation.resource != null)) {
+                mainLogger.error("Mutation operators do need exactly one argument. Either a class representing the " +
+                        "operator XOR a file that contains mutation operators.")
+                return MutationOutcome.INCORRECT_INPUT
             }
-            outcome = singleMutation(seed, outputPath, ms, mask)
+
+            if (mutation.operator != null) {
+                val mutation = getMutationOperator(mutation.operator)
+                if (mutation != null)
+                    mutations.add(mutation)
+            }
+            else if (mutation.resource != null){
+                val mutationsFromFile = getMutationOperators(File(mutation.resource.file))
+                if (mutationsFromFile != null)
+                    mutations.addAll(mutationsFromFile)
+            }
         }
-        return outcome
+
+        // set up mutation strategy
+
+        // iterate while either mask satisfied or strategy done
+        // call: generate mutant
+
+        // safe outcome KG
     }
 
-    // apply one mutation to the input KG
-    // argument: candidateMutations to apply
-    private fun singleMutation(
-        seedKG: Model,
-        outputPath: File,
-        ms: MutationSequence,
-        mask: RobustnessMask
-    ) : MutationOutcome {
+    private fun getMutationOperator(className: String) : AbstractMutation? {
+        val mutationClass = try {
+            val kotlinClass = Class.forName(className).kotlin
+            if (kotlinClass::class is Mutation) // TODO does this make sense?
+                kotlinClass as KClass<out Mutation>
+            else
+                null
+        }
+        catch (e : ClassNotFoundException){
+            mainLogger.error("Class for mutation operator can not be found. I am going to ignore this mutation " +
+                    "operator. Exception: $e")
+            return null
+        }
 
-        // create mutator and apply mutation
-        val m = Mutator(ms)
-        val res = m.mutate(seedKG)
-
-        // check, if result conforms to mask; if not --> abort
-        if (!mask.validate(res))
-            return MutationOutcome.NOT_VALID
-
-        // safe result
-        mainLogger.info("Saving mutated knowledge graph to $outputFile")
-        if (isOwlDocument)
-            OwlFileHandler().saveOwlDocument(res, outputFile!!)
+        return if (mutationClass!=null)
+            AbstractMutation(mutationClass)
         else
-            RDFDataMgr.write(outputPath.outputStream(), res, Lang.TTL)
+            null
+    }
 
-        // print summary, if required
-        if (printMutationSummary)
-            println("mutation summary:\n" + m.getStringSummary())
-
-        return MutationOutcome.SUCCESS
+    private fun getMutationOperators(fileName: File) : List<AbstractMutation>? {
+        val mutations: List<AbstractMutation>? =
+            if(!fileName.exists()){
+                mainLogger.error("File ${fileName.path} for mutations does not exist")
+                null
+            } else  {
+                val input = RDFDataMgr.loadDataset(fileName.absolutePath).defaultModel
+                val parser = RuleParser(input)
+                parser.getAllRuleMutations()
+            }
+        return mutations
     }
 
     // get seed knowledge graph from file
-    private fun getSeed(inputFile: File, isOwlDocument : Boolean) : Model? {
+    private fun getSeed(inputFile: File, fileType : KgFormatType) : Model? {
 
         if(!inputFile.exists()){
             mainLogger.error("File ${inputFile.path} for seed knowledge graph does not exist")
@@ -142,41 +128,13 @@ open class MutationRunner(
         }
 
         val seedKG =
-            if (isOwlDocument)
-                OwlFileHandler().loadOwlDocument(seedFile!!)
-            else
-                RDFDataMgr.loadDataset(seedFile!!.absolutePath).defaultModel
+            when (fileType) {
+                KgFormatType.RDF -> RDFDataMgr.loadDataset(inputFile.absolutePath).defaultModel
+                KgFormatType.OWL -> OwlFileHandler().loadOwlDocument(inputFile)
+            }
 
         return seedKG
     }
-
-    // get robustness mask from file
-    private fun getMask(inputFile: File) : RobustnessMask?{
-        val mas: RobustnessMask? =
-            if(!inputFile.exists()){
-                mainLogger.error("File ${inputFile.path} for mask does not exist")
-                null
-            } else {
-                val shapesGraph = RDFDataMgr.loadGraph(inputFile.absolutePath)
-                RobustnessMask(Shapes.parse(shapesGraph))
-            }
-        return mas
-    }
-
-    // get mutation operators from file
-    private fun getMutationOperations(inputFile: File) : List<AbstractMutation>?{
-        val mutations: List<AbstractMutation>? =
-            if(!inputFile.exists()){
-                mainLogger.error("File ${inputFile.path} for mutations does not exist")
-                null
-            } else  {
-                val input = RDFDataMgr.loadDataset(inputFile.absolutePath).defaultModel
-                val parser = RuleParser(input)
-                parser.getAllRuleMutations()
-            }
-        return mutations
-    }
-
 }
 
 enum class MutationOutcome {

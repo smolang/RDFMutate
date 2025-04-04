@@ -11,7 +11,7 @@ import org.slf4j.LoggerFactory
 import org.slf4j.Logger
 import org.smolang.robust.tools.ConfigParser
 import org.smolang.robust.tools.MutationOutcome
-import org.smolang.robust.tools.MutationRunner
+import org.smolang.robust.tools.MutationRunnerDeprecated
 import org.smolang.robust.tools.SpecialModesRunner
 import kotlin.random.Random
 
@@ -86,7 +86,7 @@ class Main : CliktCommand() {
                 SpecialModesRunner().testMiniPipes()
             }
             "swrl" -> SpecialModesRunner().loadSwrlMutations()
-            "yaml" -> ConfigParser(configFile).testYamlInput()
+            "yaml" -> ConfigParser(configFile).getConfig()
             else -> SpecialModesRunner().testMiniPipes()
         }
 
@@ -96,7 +96,7 @@ class Main : CliktCommand() {
 
     // standard function to perform the mutation
     private fun defaultMutation() {
-        val runner = MutationRunner(
+        val runner = MutationRunnerDeprecated(
             seedFile,
             outputFile,
             shaclMaskFile,

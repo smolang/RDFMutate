@@ -7,20 +7,28 @@ import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 import java.io.File
 
-class ConfigParser(val configFile: File?) {
+class ConfigParser(private val configFile: File?) {
 
-    fun testYamlInput() {
-        if (configFile == null){
-            mainLogger.warn("Config file not provided.")
-            return
+    fun getConfig() : Config?{
+        if (configFile == null) {
+            mainLogger.error("Configuration file not provided.")
+            return null
         }
 
-        val config = Yaml.default.decodeFromStream<Config>(configFile.inputStream())
+        if (!configFile.exists()) {
+            mainLogger.error("Configuration file does not exist.")
+            return null
+        }
 
-        println(config.seedGraph.file)
-        println(config.seedGraph.type)
-        println(config.number_of_mutations)
-        println(config.strategy.seed)
+        val config = try {
+            Yaml.default.decodeFromStream<Config>(configFile.inputStream())
+        }
+        catch (e : Exception)  {
+            mainLogger.error("Configuration file could not be parsed. Raised exception: $e")
+            null
+        }
+
+        return config
     }
 }
 
@@ -30,14 +38,14 @@ data class Config(
     val outputKG: OutputKG,
     val strategy: Strategy,
     val number_of_mutations: Int,
-    val condition: ConformanceCondition,
+    val condition: ConformanceCondition? = null,
     val mutation_operators: List<MutationOperatorConfiguration>
 )
 
 @Serializable
 data class SeedKG(
     val file: String,
-    val type: KgFormatType
+    val type: KgFormatType = KgFormatType.RDF
 )
 
 @Serializable

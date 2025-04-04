@@ -1,0 +1,19 @@
+seedGraph:
+    file: src/test/resources/swrl/swrlTest.ttl
+    type: rdf
+    
+outputKG:
+    file: src/test/resources/swrl/temp.ttl
+    overwrite: true 
+    type: rdf
+    
+number_of_mutations: 1
+
+strategy:
+    name: random
+      
+mutation_operators:
+    - resource:
+        file: src/test/resources/swrl/swrlTest.ttl
+        syntax: swrl
+

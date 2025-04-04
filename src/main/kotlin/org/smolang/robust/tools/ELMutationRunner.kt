@@ -13,7 +13,7 @@ class ELMutationRunner(
     isOwlDocument: Boolean,
     selectionSeed: Int,
     printMutationSummary: Boolean
-) : MutationRunner(
+) : MutationRunnerDeprecated(
     seedFile,
     outputFile,
     maskFile = null,
