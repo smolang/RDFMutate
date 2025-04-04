@@ -1,6 +1,7 @@
 # OntoMutate
 
 [![License](https://img.shields.io/github/license/Edkamb/OntoMutate)](https://opensource.org/licenses/Apache-2.0)
+[![Static Badge](https://img.shields.io/badge/documentation-GitHub_Wiki-1f883d)](https://github.com/Edkamb/OntoMutate/wiki)
 
 A tool for mutation of RDF knowledge graphs, and in particular OWL ontologies, with respect to constraints. 
 
