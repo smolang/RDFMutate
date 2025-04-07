@@ -28,7 +28,7 @@ class ConfigParser(private val configFile: File?) {
         }
         catch (e : Exception)  {
             mainLogger.error("Configuration file could not be parsed. Raised exception: $e")
-            null
+            return null
         }
 
         return config
@@ -39,11 +39,12 @@ class ConfigParser(private val configFile: File?) {
 data class Config(
     val seed_graph: SeedKG,
     val output_graph: OutputKG,
-    val strategy: Strategy,
+    val strategy: Strategy? = null,
     val number_of_mutations: Int,
     val condition: ConformanceCondition? = null,
     val mutation_operators: List<MutationOperatorConfiguration> = listOf(),
-    val strict_parsing: Boolean = true
+    val strict_parsing: Boolean = true,
+    val print_summary: Boolean = false
 )
 
 @Serializable
@@ -80,13 +81,24 @@ data class ConformanceReasoning(
 
 @Serializable
 data class MaskConfiguration(
-    val file: String? = null
+    val file: String
 )
 
 @Serializable
 data class MutationOperatorConfiguration(
-    val operator: String? = null,
+    val module: OperatorModule? = null,
     val resource: MutationOperatorResource? = null
+)
+
+@Serializable
+data class OperatorModule(
+    val location: String,
+    val operators: List<OperatorName> = listOf()
+)
+
+@Serializable
+data class OperatorName(
+    val className: String
 )
 
 

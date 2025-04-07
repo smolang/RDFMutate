@@ -14,7 +14,7 @@ import java.nio.file.Files
 import kotlin.reflect.KClass
 import kotlin.reflect.full.isSubclassOf
 
-class MutationRunner(private val configFile : File?) {
+class MutationRunner(configFile : File?) {
 
     val config = ConfigParser(configFile).getConfig()
 
@@ -57,16 +57,25 @@ class MutationRunner(private val configFile : File?) {
 
         for (mutation in config.mutation_operators) {
             // only exactly one of the two options is allowed to be set
-            if (!((mutation.operator != null) xor  (mutation.resource != null))) {
+            if (!((mutation.module != null) xor  (mutation.resource != null))) {
                 mainLogger.error("Mutation operators do need exactly one argument. Either a class representing the " +
                         "operator XOR a file that contains mutation operators.")
                 return MutationOutcome.INCORRECT_INPUT
             }
 
-            if (mutation.operator != null) {
-                val extractedMutationOperator = getMutationOperator(mutation.operator)
-                if (extractedMutationOperator != null)
-                    mutations.add(extractedMutationOperator)
+            if (mutation.module != null) {
+                // parse all operators of this module
+                for (operator in mutation.module.operators) {
+                    val extractedMutationOperator = getMutationOperator(mutation.module.location, operator.className)
+                    if (extractedMutationOperator != null)
+                        mutations.add(extractedMutationOperator)
+                    else if (strictParsing) {
+                        // mutations could not be parsed
+                        mainLogger.error("Could not parse mutations with name ${operator.className} in module " +
+                                "${mutation.module.location}.")
+                        return MutationOutcome.INCORRECT_INPUT
+                    }
+                }
             }
             else if (mutation.resource != null){
                 val mutationsFromFile = getMutationOperators(File(mutation.resource.file), mutation.resource.syntax)
@@ -84,49 +93,52 @@ class MutationRunner(private val configFile : File?) {
         }
 
         // get mutation strategy
-        val strategy = getStrategy(mutations, config.number_of_mutations)
+        val strategy = getStrategy(mutations, config.number_of_mutations) ?: return MutationOutcome.INCORRECT_INPUT
 
         // iterate while either mask satisfied or strategy done
         // call: generate mutant
         var foundValid = false
         var mutant : Model? = null
+        var m : Mutator? = null
         while (!foundValid) {
             // check, if strategy can provide a new sequence to try
             if (!strategy.hasNextMutationSequence())
                 return MutationOutcome.FAIL
 
             val mutationSequence = strategy.getNextMutationSequence()
-            val m = Mutator(mutationSequence)
+            m = Mutator(mutationSequence)
             mutant = m.mutate(seedKG)
             foundValid = mask.validate(mutant)
         }
 
         // safe outcome KG
-        assert(mutant != null)
+        assert(mutant != null && m != null)
         mainLogger.info("Saving mutated knowledge graph to $outputFile")
         exportResult(mutant!!, outputFile, config.output_graph.type)
+
+        // print summary, if required
+        if (config.print_summary)
+            println("mutation summary:\n" + m?.getStringSummary())
 
         return  MutationOutcome.SUCCESS
     }
 
-    private fun getMutationOperator(className: String) : AbstractMutation? {
-        val mutationClass : KClass<out Mutation>? = try {
-            val kotlinClass = Class.forName(className).kotlin
+    private fun getMutationOperator(module: String, className: String) : AbstractMutation? {
+        val mutationClass : KClass<out Mutation> = try {
+            val kotlinClass = Class.forName("$module.$className").kotlin
             if (kotlinClass.isSubclassOf(Mutation::class))
                 kotlinClass as KClass<out Mutation>
             else
-                null
+                return null
         }
         catch (e : ClassNotFoundException){
-            mainLogger.error("Class for mutation operator can not be found. I am going to ignore this mutation " +
-                    "operator. Exception: $e")
+            mainLogger.warn("Class for mutation operator $className in module $module can not be found. " +
+                    "I am going to ignore this mutation operator. Exception: $e")
             return null
         }
 
-        return if (mutationClass!=null)
-            AbstractMutation(mutationClass)
-        else
-            null
+        return AbstractMutation(mutationClass)
+
     }
 
     private fun getMutationOperators(fileName: File, type : MutationOperatorFormats) : List<AbstractMutation>? {
@@ -167,7 +179,12 @@ class MutationRunner(private val configFile : File?) {
     }
 
     private fun getStrategy(mutationOperators : List<AbstractMutation>,
-                            numberMutations : Int) : MutationStrategy {
+                            numberMutations : Int) : MutationStrategy? {
+        if (config?.strategy == null && strictParsing){
+            mainLogger.error("Strategy is missing.")
+            return null
+        }
+
         val selectionSeed : Int = config?.strategy?.seed ?: MutationStrategy.DEFAULT_SEED
 
         // check type of strategy
@@ -207,23 +224,17 @@ class MutationRunner(private val configFile : File?) {
         // collect graphs from all files and combine them
         val emptyModel = ModelFactory.createDefaultModel()
         val maskModel = maskFiles.fold(emptyModel) { maskModel : Model?, maskFileName ->
-            if (maskFileName.file == null) {
-                mainLogger.warn("Mask file is missing \"file\" argument.")
-                if (strictParsing) null else maskModel
-            }
-            else { // mask file is provided
-                val maskFile = File(maskFileName.file)
-                if (!maskFile.exists()) {
-                    mainLogger.error("File ${maskFile.path} for mask does not exist")
-                    if (strictParsing) null else maskModel   // don't add anything if file does not exist
-                } else {
-                    try {
-                        val shapesModel = RDFDataMgr.loadModel(maskFile.absolutePath)
-                        maskModel?.add(shapesModel)
-                    } catch (e: Exception) {
-                        mainLogger.error("Could not parse mask shapes in file ${maskFile.path}")
-                        if (strictParsing) null else maskModel
-                    }
+            val maskFile = File(maskFileName.file)
+            if (!maskFile.exists()) {
+                mainLogger.error("File ${maskFile.path} for mask does not exist")
+                if (strictParsing) null else maskModel   // don't add anything if file does not exist
+            } else {
+                try {
+                    val shapesModel = RDFDataMgr.loadModel(maskFile.absolutePath)
+                    maskModel?.add(shapesModel)
+                } catch (e: Exception) {
+                    mainLogger.error("Could not parse mask shapes in file ${maskFile.path}")
+                    if (strictParsing) null else maskModel
                 }
             }
         }

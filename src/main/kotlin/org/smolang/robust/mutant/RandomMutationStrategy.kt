@@ -11,10 +11,11 @@ class RandomMutationStrategy(
     private val generator = Random(selectionSeed)
 
     override fun hasNextMutationSequence(): Boolean {
-        return true
+        return mutationOperators.any()
     }
 
     override fun getNextMutationSequence(): MutationSequence {
+        assert(mutationOperators.any())
         val ms = MutationSequence()
         for (j in 1..(numberMutations)) {
             val mutation = mutationOperators.random(generator)

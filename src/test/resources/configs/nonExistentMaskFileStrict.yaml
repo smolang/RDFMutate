@@ -1,0 +1,34 @@
+seed_graph:
+    file: src/test/resources/geo/geo_original.ttl
+    type: rdf
+    
+output_graph:
+    file: src/test/resources/geo/temp2.ttl
+    overwrite: true 
+    type: rdf
+    
+number_of_mutations: 1
+
+strategy:
+    name: random
+    seed: 42
+      
+mutation_operators:
+    - module:
+        location: org.smolang.robust.mutant.DefinedMutants
+        operators: 
+            - className: CEUAMutation
+            - className: CEUOMutation
+            - className: ChangeDataPropertyMutation  
+            - className: ChangeDoubleMutation 
+            - className: ACATOMutation
+            - className: ACOTAMutation
+            - className: ToSiblingClassMutation
+
+condition:
+    reasoning:
+        consistency: false
+    masks:
+        - file: src/test/resources/geo/file_does_not_exist.ttl
+        - file: src/test/resources/geo/mask_part_2.ttl
+        

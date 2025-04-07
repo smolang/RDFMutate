@@ -1,4 +1,5 @@
 strict_parsing: true
+print_summary: false
 
 seed_graph:
     file: <seed-file-name>
@@ -24,9 +25,14 @@ condition:
         
         
 mutation_operators:
-    - operator: <class name>
-    - operator: <another class name>
+    - module:
+        location: org.smolang.robust.mutant.DefinedMutants
+        operators: 
+            - className: <class name>
+            - className: <another class name>
     - resource:
         file: <sadf>
         syntax: swrl
+        
+
 
