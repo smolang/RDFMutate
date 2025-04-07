@@ -7,6 +7,7 @@ import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 import org.smolang.robust.mutant.MutationStrategy
 import org.smolang.robust.mutant.MutationStrategyName
+import org.smolang.robust.tools.reasoning.ReasoningBackend
 import java.io.File
 
 class ConfigParser(private val configFile: File?) {
@@ -36,12 +37,13 @@ class ConfigParser(private val configFile: File?) {
 
 @Serializable
 data class Config(
-    val seedGraph: SeedKG,
-    val outputKG: OutputKG,
+    val seed_graph: SeedKG,
+    val output_graph: OutputKG,
     val strategy: Strategy,
     val number_of_mutations: Int,
     val condition: ConformanceCondition? = null,
-    val mutation_operators: List<MutationOperatorConfiguration>
+    val mutation_operators: List<MutationOperatorConfiguration> = listOf(),
+    val strict_parsing: Boolean = true
 )
 
 @Serializable
@@ -53,32 +55,32 @@ data class SeedKG(
 @Serializable
 data class OutputKG(
     val file: String,
-    val type: KgFormatType,
-    val overwrite: Boolean
+    val type: KgFormatType = KgFormatType.RDF,
+    val overwrite: Boolean = false
 )
 
 
 @Serializable
 data class Strategy(
-    val name: MutationStrategyName,
-    val seed: Int=MutationStrategy.defaultSeed
+    val name: MutationStrategyName = MutationStrategyName.RANDOM,
+    val seed: Int=MutationStrategy.DEFAULT_SEED
 )
 
 @Serializable
 data class ConformanceCondition(
     val reasoning: ConformanceReasoning,
-    val masks: List<MaskConfiguration>
+    val masks: List<MaskConfiguration> = listOf()
 )
 
 @Serializable
 data class ConformanceReasoning(
-    val consistency: Boolean,
-    val reasoner: ReasoningBackend?
+    val consistency: Boolean = false,
+    val reasoner: ReasoningBackend? = null
 )
 
 @Serializable
 data class MaskConfiguration(
-    val file: String
+    val file: String? = null
 )
 
 @Serializable

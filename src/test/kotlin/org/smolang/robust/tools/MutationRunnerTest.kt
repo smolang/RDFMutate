@@ -152,7 +152,7 @@ class MutationRunnerTest : StringSpec() {
     }
 
     init {
-        "insufficient arguments (non-existent output directorz)" {
+        "insufficient arguments (non-existent output directory)" {
             val outputPath = "file_with_incorrect_path.ttl"
             val runner = MutationRunnerDeprecated(
                 seedFile = File("src/test/resources/swrl/swrlTest.ttl"),

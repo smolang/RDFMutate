@@ -8,7 +8,7 @@ abstract class MutationStrategy() {
 
     // default value that is extracted by parser, if no seed is provided
     companion object {
-        val defaultSeed = 42
+        const val DEFAULT_SEED = 42
     }
 
     // returns true, if the strategy can provide another mutation sequence

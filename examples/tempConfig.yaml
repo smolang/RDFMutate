@@ -1,11 +1,13 @@
-seedGraph:
+strict_parsing: true
+
+seed_graph:
     file: <seed-file-name>
     type: owl
     
-outputKG:
+output_graph:
     file: <outputFile>
     overwrite: true 
-    type: rdf
+    type.: rdf
     
 number_of_mutations: 5
 

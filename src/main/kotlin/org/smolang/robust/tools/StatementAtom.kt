@@ -3,9 +3,7 @@ package org.smolang.robust.tools
 import org.apache.jena.rdf.model.RDFNode
 import org.apache.jena.rdf.model.Resource
 import org.apache.jena.rdf.model.Statement
-import org.smolang.robust.containsResource
 import org.smolang.robust.mainLogger
-import org.smolang.robust.toLocalString
 
 abstract class StatementAtom(val statement: Statement)  : MutationAtom() {
 

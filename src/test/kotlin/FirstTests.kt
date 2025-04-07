@@ -6,6 +6,7 @@ import org.apache.jena.rdf.model.Property
 import org.apache.jena.riot.RDFDataMgr
 import org.apache.jena.shacl.Shapes
 import org.smolang.robust.mutant.DefinedMutants.*
+import org.smolang.robust.tools.reasoning.ReasoningBackend
 import java.lang.AssertionError
 import kotlin.test.assertFailsWith
 
@@ -187,7 +188,7 @@ class FirstTests : StringSpec() {
             )
 
             // empty contract --> only check for consistency
-            val emptyContract = RobustnessMask(null)
+            val emptyContract = RobustnessMask(null, ReasoningBackend.OPENLLET)
 
             val m = Mutator(ms)
             val res = m.mutate(input)

@@ -1,8 +1,8 @@
-seedGraph:
+seed_graph:
     file: src/test/resources/swrl/swrlTest.ttl
     type: rdf
     
-outputKG:
+output_graph:
     file: src/test/resources/swrl/temp.ttl
     overwrite: true 
     type: rdf
@@ -17,3 +17,6 @@ mutation_operators:
         file: src/test/resources/swrl/swrlTest.ttl
         syntax: swrl
 
+condition:
+    reasoning:
+        consistency: false
