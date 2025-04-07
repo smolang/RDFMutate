@@ -5,25 +5,30 @@ import org.apache.jena.riot.RDFDataMgr
 import org.apache.jena.shacl.ShaclValidator
 import org.apache.jena.shacl.Shapes
 import org.smolang.robust.mainLogger
-import org.smolang.robust.tools.CustomReasonerFactory
-import org.smolang.robust.tools.ReasoningBackend
+import org.smolang.robust.tools.reasoning.MaskReasonerFactory
+import org.smolang.robust.tools.reasoning.ReasoningBackend
 import java.io.File
 
-
-open class RobustnessMask(private val shacl: Shapes?
+// default backend: do not do reasoning at all
+open class RobustnessMask(private val shacl: Shapes?,
+    private val reasonerBackend : ReasoningBackend = ReasoningBackend.NONE
     ) {
 
+
     // checks, if the provided model is valid w.r.t. the shacl shapes
+    // and consistent by the provided reasoner
     fun validate(model: Model) : Boolean {
 
         // create reasoner with the selected backend
-        val reasonerFactory = CustomReasonerFactory(ReasoningBackend.OPENLLET)
+        val reasonerFactory = MaskReasonerFactory(reasonerBackend)
         val reasoner = reasonerFactory.getReasoner(model)
 
-        val consistent = reasoner.isConsistent()
-        if(!consistent) return false
+        if (!reasoner.isConsistent()) return false
 
-        return if (shacl != null) ShaclValidator.get().validate(shacl, model.graph).conforms() else true
+        return if (shacl != null)
+            ShaclValidator.get().validate(shacl, model.graph).conforms()
+        else
+            true
     }
 
     // makes a prediction based on the mask

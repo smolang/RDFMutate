@@ -1,76 +1,48 @@
 package org.smolang.robust.tools
 
 import org.apache.jena.rdf.model.Model
+import org.apache.jena.rdf.model.ModelFactory
 import org.apache.jena.riot.Lang
 import org.apache.jena.riot.RDFDataMgr
 import org.apache.jena.shacl.Shapes
 import org.smolang.robust.domainSpecific.reasoner.OwlFileHandler
 import org.smolang.robust.mainLogger
 import org.smolang.robust.mutant.*
-import org.smolang.robust.mutant.DefinedMutants.*
+import org.smolang.robust.tools.reasoning.ReasoningBackend
 import java.io.File
 import java.nio.file.Files
-import kotlin.random.Random
+import kotlin.reflect.KClass
+import kotlin.reflect.full.isSubclassOf
 
-// class to run the main mutation algorithm
-open class MutationRunner(
-    private val seedFile : File?,
-    private val outputFile : File?,
-    private val maskFile: File?,
-    private val mutationFile: File?,
-    private val numberMutations: Int,
-    private val overwriteOutput: Boolean,
-    private val isOwlDocument: Boolean,
-    private val selectionSeed: Int,
-    private val printMutationSummary: Boolean
-) {
+class MutationRunner(configFile : File?) {
 
-    // set of default mutations that are used if no other mutations are specified
-    private val defaultMutation = listOf(
-        AddRelationMutation::class,
-        ChangeRelationMutation::class,
-        AddInstanceMutation::class,
-        RemoveStatementMutation::class,
-        RemoveNodeMutation::class,
-    )
+    val config = ConfigParser(configFile).getConfig()
 
-    // create selection of mutations that can be applied
-    open fun getDefaultMutations() = defaultMutation
+    // if true, errors in parts of config, e.g. parsing of some operators / mask parts leads to overall abort
+    val strictParsing = config?.strict_parsing ?: true
 
-    // main method to perform mutation
-    // returns, if mutation was successful or not
     fun mutate() : MutationOutcome {
-        // get seed
-        if (seedFile == null) {
-            mainLogger.error("You need to provide a seed knowledge graph")
+        if (config == null) {
+            mainLogger.error("Configuration does not exist. Mutation is not possible.")
             return MutationOutcome.INCORRECT_INPUT
         }
 
-        val seed = getSeed(seedFile, isOwlDocument) ?: return MutationOutcome.INCORRECT_INPUT
+        // get seed knowledge graph
+        val seedKG = getSeed(File(config.seed_graph.file), config.seed_graph.type) ?: return MutationOutcome.INCORRECT_INPUT
 
         // get mask
-        val mask: RobustnessMask? =
-            if (maskFile == null)
-                EmptyRobustnessMask()
-            else
-                getMask(maskFile)
+        val mask : RobustnessMask = getMask() ?: return MutationOutcome.INCORRECT_INPUT
 
-        if (mask == null)
-            return MutationOutcome.INCORRECT_INPUT
-
-
-        // check output
-        val outputPath: File = if(outputFile == null) {
-            mainLogger.error("Please provide an output file to save the mutated knowledge graph to.")
-            return MutationOutcome.INCORRECT_INPUT
-        } else if(outputFile.exists() && !overwriteOutput){
+        // check output path
+        val outputFile = File(config.output_graph.file)
+        if(outputFile.exists() && !config.output_graph.overwrite){
             mainLogger.error("Output file ${outputFile.path} does already exist. " +
-                    "Please choose a different name or set \"--overwrite\" flag.")
+                    "Please choose a different name or set \"overwrite\" value to \"true\".")
             return MutationOutcome.INCORRECT_INPUT
-        }  else outputFile
+        }
 
         // check if output directory exists and create it, if necessary
-        val outputParent = outputPath.parentFile
+        val outputParent = outputFile.parentFile
         if (outputParent == null) {
             mainLogger.error("No directory for the output file could be determined. This indicates an error in the " +
                     "path of the specified output file.")
@@ -78,63 +50,119 @@ open class MutationRunner(
         }
         Files.createDirectories(outputParent.toPath())
 
-        // get mutations (from file or use default)
-        val mutations = if (mutationFile == null) {
-            mainLogger.info("No mutations are provided as input. Using the default mutation operators.")
-            getDefaultMutations().map { mutationClass -> AbstractMutation(mutationClass) }
-        } else {
-            getMutationOperations(mutationFile) ?: return MutationOutcome.INCORRECT_INPUT
-        }
+        // collect mutations
+        val mutations = mutableListOf<AbstractMutation>()
+        if (config.mutation_operators.isEmpty())
+            mainLogger.warn("No mutation operators provided.")
 
-        // use random selection of a mutation. Select mutation operator based on seed for random selector
-        val generator = Random(selectionSeed)
-
-        // try to mutate until a mutation that conforms to mask is found
-        var outcome = MutationOutcome.NOT_VALID
-        while (outcome == MutationOutcome.NOT_VALID) {
-            val ms = MutationSequence()
-            for (j in 1..(numberMutations)) {
-                val mutation = mutations.random(generator)
-                ms.addAbstractMutation(mutation)
+        for (mutation in config.mutation_operators) {
+            // only exactly one of the two options is allowed to be set
+            if (!((mutation.module != null) xor  (mutation.resource != null))) {
+                mainLogger.error("Mutation operators do need exactly one argument. Either a class representing the " +
+                        "operator XOR a file that contains mutation operators.")
+                return MutationOutcome.INCORRECT_INPUT
             }
-            outcome = singleMutation(seed, outputPath, ms, mask)
+
+            if (mutation.module != null) {
+                // parse all operators of this module
+                for (operator in mutation.module.operators) {
+                    val extractedMutationOperator = getMutationOperator(mutation.module.location, operator.className)
+                    if (extractedMutationOperator != null)
+                        mutations.add(extractedMutationOperator)
+                    else if (strictParsing) {
+                        // mutations could not be parsed
+                        mainLogger.error("Could not parse mutations with name ${operator.className} in module " +
+                                "${mutation.module.location}.")
+                        return MutationOutcome.INCORRECT_INPUT
+                    }
+                }
+            }
+            else if (mutation.resource != null){
+                val mutationsFromFile = getMutationOperators(File(mutation.resource.file), mutation.resource.syntax)
+
+                if (mutationsFromFile != null) {
+                    mutations.addAll(mutationsFromFile)
+                }
+                else if (strictParsing) {
+                    // mutations could not be parsed
+                    mainLogger.error("Could not parse mutations from file ${mutation.resource.file}")
+                    return MutationOutcome.INCORRECT_INPUT
+                }
+
+            }
         }
-        return outcome
-    }
 
-    // apply one mutation to the input KG
-    // argument: candidateMutations to apply
-    private fun singleMutation(
-        seedKG: Model,
-        outputPath: File,
-        ms: MutationSequence,
-        mask: RobustnessMask
-    ) : MutationOutcome {
+        // get mutation strategy
+        val strategy = getStrategy(mutations, config.number_of_mutations) ?: return MutationOutcome.INCORRECT_INPUT
 
-        // create mutator and apply mutation
-        val m = Mutator(ms)
-        val res = m.mutate(seedKG)
+        // iterate while either mask satisfied or strategy done
+        // call: generate mutant
+        var foundValid = false
+        var mutant : Model? = null
+        var m : Mutator? = null
+        while (!foundValid) {
+            // check, if strategy can provide a new sequence to try
+            if (!strategy.hasNextMutationSequence())
+                return MutationOutcome.FAIL
 
-        // check, if result conforms to mask; if not --> abort
-        if (!mask.validate(res))
-            return MutationOutcome.NOT_VALID
+            val mutationSequence = strategy.getNextMutationSequence()
+            m = Mutator(mutationSequence)
+            mutant = m.mutate(seedKG)
+            foundValid = mask.validate(mutant)
+        }
 
-        // safe result
+        // safe outcome KG
+        assert(mutant != null && m != null)
         mainLogger.info("Saving mutated knowledge graph to $outputFile")
-        if (isOwlDocument)
-            OwlFileHandler().saveOwlDocument(res, outputFile!!)
-        else
-            RDFDataMgr.write(outputPath.outputStream(), res, Lang.TTL)
+        exportResult(mutant!!, outputFile, config.output_graph.type)
 
         // print summary, if required
-        if (printMutationSummary)
-            println("mutation summary:\n" + m.getStringSummary())
+        if (config.print_summary)
+            println("mutation summary:\n" + m?.getStringSummary())
 
-        return MutationOutcome.SUCCESS
+        return  MutationOutcome.SUCCESS
+    }
+
+    private fun getMutationOperator(module: String, className: String) : AbstractMutation? {
+        val mutationClass : KClass<out Mutation> = try {
+            val kotlinClass = Class.forName("$module.$className").kotlin
+            if (kotlinClass.isSubclassOf(Mutation::class))
+                kotlinClass as KClass<out Mutation>
+            else
+                return null
+        }
+        catch (e : ClassNotFoundException){
+            mainLogger.warn("Class for mutation operator $className in module $module can not be found. " +
+                    "I am going to ignore this mutation operator. Exception: $e")
+            return null
+        }
+
+        return AbstractMutation(mutationClass)
+
+    }
+
+    private fun getMutationOperators(fileName: File, type : MutationOperatorFormats) : List<AbstractMutation>? {
+        return when(type) {
+            MutationOperatorFormats.SWRL -> getSwrlMutationOperators(fileName)
+        }
+    }
+
+    // get mutation operators contained in file using swrl rules as encoding
+    private fun getSwrlMutationOperators(fileName: File) : List<AbstractMutation>? {
+        val mutations: List<AbstractMutation>? =
+            if(!fileName.exists()){
+                mainLogger.error("File ${fileName.path} for mutations does not exist")
+                null
+            } else  {
+                val input = RDFDataMgr.loadDataset(fileName.absolutePath).defaultModel
+                val parser = RuleParser(input)
+                parser.getAllRuleMutations()
+            }
+        return mutations
     }
 
     // get seed knowledge graph from file
-    private fun getSeed(inputFile: File, isOwlDocument : Boolean) : Model? {
+    private fun getSeed(inputFile: File, fileType : KgFormatType) : Model? {
 
         if(!inputFile.exists()){
             mainLogger.error("File ${inputFile.path} for seed knowledge graph does not exist")
@@ -142,41 +170,90 @@ open class MutationRunner(
         }
 
         val seedKG =
-            if (isOwlDocument)
-                OwlFileHandler().loadOwlDocument(seedFile!!)
-            else
-                RDFDataMgr.loadDataset(seedFile!!.absolutePath).defaultModel
+            when (fileType) {
+                KgFormatType.RDF -> RDFDataMgr.loadDataset(inputFile.absolutePath).defaultModel
+                KgFormatType.OWL -> OwlFileHandler().loadOwlDocument(inputFile)
+            }
 
         return seedKG
     }
 
-    // get robustness mask from file
-    private fun getMask(inputFile: File) : RobustnessMask?{
-        val mas: RobustnessMask? =
-            if(!inputFile.exists()){
-                mainLogger.error("File ${inputFile.path} for mask does not exist")
-                null
+    private fun getStrategy(mutationOperators : List<AbstractMutation>,
+                            numberMutations : Int) : MutationStrategy? {
+        if (config?.strategy == null && strictParsing){
+            mainLogger.error("Strategy is missing.")
+            return null
+        }
+
+        val selectionSeed : Int = config?.strategy?.seed ?: MutationStrategy.DEFAULT_SEED
+
+        // check type of strategy
+        // default: random strategy
+        return when (config?.strategy?.name) {
+            MutationStrategyName.RANDOM -> RandomMutationStrategy(mutationOperators, numberMutations, selectionSeed)
+            null -> RandomMutationStrategy(mutationOperators, numberMutations, selectionSeed)
+        }
+    }
+
+    private fun getMask() : RobustnessMask? {
+        // compute reasoning backend (if provided in configuration)
+        val reasonerBackend = if (config?.condition == null) {
+            // no condition specified
+
+            if (strictParsing) { // strict parsing --> enforce an argument
+                mainLogger.error("Condition or reasoning value is missing in configuration.")
+                return null
+            }
+
+            ReasoningBackend.NONE
+        } else if (!config.condition.reasoning.consistency) {
+            ReasoningBackend.NONE
+        } else if (config.condition.reasoning.reasoner == null){
+                mainLogger.info("No reasoner backend found. Use default reasoner (Openllet)")
+                ReasoningBackend.OPENLLET
+        }
+        else {
+            config.condition.reasoning.reasoner
+        }
+
+        val maskFiles = config?.condition?.masks
+        // no shape provided --> mask only considers reasoning
+        if (maskFiles.isNullOrEmpty())
+            return EmptyRobustnessMask(reasonerBackend)
+
+        // collect graphs from all files and combine them
+        val emptyModel = ModelFactory.createDefaultModel()
+        val maskModel = maskFiles.fold(emptyModel) { maskModel : Model?, maskFileName ->
+            val maskFile = File(maskFileName.file)
+            if (!maskFile.exists()) {
+                mainLogger.error("File ${maskFile.path} for mask does not exist")
+                if (strictParsing) null else maskModel   // don't add anything if file does not exist
             } else {
-                val shapesGraph = RDFDataMgr.loadGraph(inputFile.absolutePath)
-                RobustnessMask(Shapes.parse(shapesGraph))
+                try {
+                    val shapesModel = RDFDataMgr.loadModel(maskFile.absolutePath)
+                    maskModel?.add(shapesModel)
+                } catch (e: Exception) {
+                    mainLogger.error("Could not parse mask shapes in file ${maskFile.path}")
+                    if (strictParsing) null else maskModel
+                }
             }
-        return mas
+        }
+        // if some error occurred during parsing of the mask files
+        if (maskModel == null)
+            return  null
+
+        // parse shapes and create mask
+        val maskShapes = Shapes.parse(maskModel)
+        return RobustnessMask(maskShapes, reasonerBackend)
     }
 
-    // get mutation operators from file
-    private fun getMutationOperations(inputFile: File) : List<AbstractMutation>?{
-        val mutations: List<AbstractMutation>? =
-            if(!inputFile.exists()){
-                mainLogger.error("File ${inputFile.path} for mutations does not exist")
-                null
-            } else  {
-                val input = RDFDataMgr.loadDataset(inputFile.absolutePath).defaultModel
-                val parser = RuleParser(input)
-                parser.getAllRuleMutations()
-            }
-        return mutations
+    // returns if saving was
+    private fun exportResult(mutant: Model, outputFile: File, fileType: KgFormatType) {
+        when (fileType) {
+            KgFormatType.RDF -> RDFDataMgr.write(outputFile.outputStream(), mutant, Lang.TTL)
+            KgFormatType.OWL -> OwlFileHandler().saveOwlDocument(mutant, outputFile)
+        }
     }
-
 }
 
 enum class MutationOutcome {

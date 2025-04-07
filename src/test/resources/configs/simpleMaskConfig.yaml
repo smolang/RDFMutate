@@ -1,0 +1,31 @@
+seed_graph:
+    file: src/test/resources/abc/abc.ttl
+    type: rdf
+    
+output_graph:
+    file: src/test/resources/abc/temp2.ttl
+    overwrite: true 
+    type: rdf
+    
+number_of_mutations: 1
+
+strategy:
+    name: random
+    seed: 42
+      
+mutation_operators:
+    - resource:
+        file: src/test/resources/abc/AddSubclassRelationMutation.ttl
+        syntax: swrl
+
+condition:
+    reasoning:
+        consistency: true
+        reasoner: hermit
+    masks:
+        - file: src/test/resources/abc/mask.ttl
+        
+        
+        
+        
+        

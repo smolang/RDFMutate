@@ -1,4 +1,4 @@
-package org.smolang.robust
+package org.smolang.robust.tools
 
 import org.apache.jena.rdf.model.Resource
 import org.apache.jena.rdf.model.Statement

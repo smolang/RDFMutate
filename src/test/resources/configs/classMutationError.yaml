@@ -1,0 +1,28 @@
+seed_graph:
+    file: src/test/resources/abc/abc.ttl
+    type: rdf
+    
+output_graph:
+    file: src/test/resources/abc/temp3.ttl
+    overwrite: true 
+    type: rdf
+    
+number_of_mutations: 1
+
+strategy:
+    name: random
+    seed: 42
+      
+mutation_operators:
+ - module:
+    location: org.smolang.robust.mutant.DefinedMutants
+    operators: 
+        - className: MutationAbox
+
+condition:
+    reasoning:
+        consistency: true
+        reasoner: hermit
+    masks:
+        - file: src/test/resources/abc/mask.ttl
+        

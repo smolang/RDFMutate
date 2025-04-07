@@ -1,11 +1,14 @@
-seedGraph:
+strict_parsing: true
+print_summary: false
+
+seed_graph:
     file: <seed-file-name>
     type: owl
     
-outputKG:
+output_graph:
     file: <outputFile>
     overwrite: true 
-    type: rdf
+    type.: rdf
     
 number_of_mutations: 5
 
@@ -22,9 +25,14 @@ condition:
         
         
 mutation_operators:
-    - operator: <class name>
-    - operator: <another class name>
+    - module:
+        location: org.smolang.robust.mutant.DefinedMutants
+        operators: 
+            - className: <class name>
+            - className: <another class name>
     - resource:
         file: <sadf>
         syntax: swrl
+        
+
 

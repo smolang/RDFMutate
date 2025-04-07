@@ -5,65 +5,78 @@ import com.charleskorn.kaml.Yaml
 import com.charleskorn.kaml.decodeFromStream
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
+import org.smolang.robust.mutant.MutationStrategy
+import org.smolang.robust.mutant.MutationStrategyName
+import org.smolang.robust.tools.reasoning.ReasoningBackend
 import java.io.File
 
-class ConfigParser(val configFile: File?) {
+class ConfigParser(private val configFile: File?) {
 
-    fun testYamlInput() {
-        if (configFile == null){
-            mainLogger.warn("Config file not provided.")
-            return
+    fun getConfig() : Config?{
+        if (configFile == null) {
+            mainLogger.error("Configuration file not provided.")
+            return null
         }
 
-        val config = Yaml.default.decodeFromStream<Config>(configFile.inputStream())
+        if (!configFile.exists()) {
+            mainLogger.error("Configuration file does not exist.")
+            return null
+        }
 
-        println(config.seedGraph.file)
-        println(config.seedGraph.type)
-        println(config.number_of_mutations)
-        println(config.strategy.seed)
+        val config = try {
+            Yaml.default.decodeFromStream<Config>(configFile.inputStream())
+        }
+        catch (e : Exception)  {
+            mainLogger.error("Configuration file could not be parsed. Raised exception: $e")
+            return null
+        }
+
+        return config
     }
 }
 
 @Serializable
 data class Config(
-    val seedGraph: SeedKG,
-    val outputKG: OutputKG,
-    val strategy: Strategy,
+    val seed_graph: SeedKG,
+    val output_graph: OutputKG,
+    val strategy: Strategy? = null,
     val number_of_mutations: Int,
-    val condition: ConformanceCondition,
-    val mutation_operators: List<MutationOperatorConfiguration>
+    val condition: ConformanceCondition? = null,
+    val mutation_operators: List<MutationOperatorConfiguration> = listOf(),
+    val strict_parsing: Boolean = true,
+    val print_summary: Boolean = false
 )
 
 @Serializable
 data class SeedKG(
     val file: String,
-    val type: KgFormatType
+    val type: KgFormatType = KgFormatType.RDF
 )
 
 @Serializable
 data class OutputKG(
     val file: String,
-    val type: KgFormatType,
-    val overwrite: Boolean
+    val type: KgFormatType = KgFormatType.RDF,
+    val overwrite: Boolean = false
 )
 
 
 @Serializable
 data class Strategy(
-    val name: MutationStrategy,
-    val seed: Int=42
+    val name: MutationStrategyName = MutationStrategyName.RANDOM,
+    val seed: Int=MutationStrategy.DEFAULT_SEED
 )
 
 @Serializable
 data class ConformanceCondition(
     val reasoning: ConformanceReasoning,
-    val masks: List<MaskConfiguration>
+    val masks: List<MaskConfiguration> = listOf()
 )
 
 @Serializable
 data class ConformanceReasoning(
-    val consistency: Boolean,
-    val reasoner: ReasoningBackend?
+    val consistency: Boolean = false,
+    val reasoner: ReasoningBackend? = null
 )
 
 @Serializable
@@ -73,8 +86,19 @@ data class MaskConfiguration(
 
 @Serializable
 data class MutationOperatorConfiguration(
-    val operator: String? = null,
+    val module: OperatorModule? = null,
     val resource: MutationOperatorResource? = null
+)
+
+@Serializable
+data class OperatorModule(
+    val location: String,
+    val operators: List<OperatorName> = listOf()
+)
+
+@Serializable
+data class OperatorName(
+    val className: String
 )
 
 
@@ -92,11 +116,6 @@ enum class KgFormatType {
     OWL
 }
 
-@Serializable
-enum class MutationStrategy {
-    @SerialName("random")
-    RANDOM
-}
 
 @Serializable
 enum class MutationOperatorFormats {
