@@ -8,10 +8,10 @@ import kotlin.reflect.KClass
 class MutationSequence() {
     private val mutations : MutableList<AbstractMutation> = mutableListOf()
 
-    private val mutatableAxioms: MutableSet<Statement> = hashSetOf()
+    private val mutableAxioms: MutableSet<Statement> = hashSetOf()
 
-    fun addMutatableAxioms(l: List<Statement>) {
-        mutatableAxioms.addAll(l)
+    fun addMutableAxioms(l: List<Statement>) {
+        mutableAxioms.addAll(l)
     }
 
     // adds a random mutation from the provided list of mutations
@@ -30,7 +30,7 @@ class MutationSequence() {
     }
 
     fun addAbstractMutation(am : AbstractMutation) {
-        for (a in mutatableAxioms)
+        for (a in mutableAxioms)
             am.addMutatableStatement(a)
         mutations.add(am)
     }
@@ -49,7 +49,7 @@ class MutationSequence() {
         return mutations.size
     }
 
-    // shuffles the element in the sequence
+    // shuffles the elements in the sequence
     fun shuffle() {
         mutations.shuffle(randomGenerator)
     }

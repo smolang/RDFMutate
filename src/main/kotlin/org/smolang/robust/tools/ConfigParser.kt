@@ -5,6 +5,8 @@ import com.charleskorn.kaml.Yaml
 import com.charleskorn.kaml.decodeFromStream
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
+import org.smolang.robust.mutant.MutationStrategy
+import org.smolang.robust.mutant.MutationStrategyName
 import java.io.File
 
 class ConfigParser(private val configFile: File?) {
@@ -58,8 +60,8 @@ data class OutputKG(
 
 @Serializable
 data class Strategy(
-    val name: MutationStrategy,
-    val seed: Int=42
+    val name: MutationStrategyName,
+    val seed: Int=MutationStrategy.defaultSeed
 )
 
 @Serializable
@@ -100,11 +102,6 @@ enum class KgFormatType {
     OWL
 }
 
-@Serializable
-enum class MutationStrategy {
-    @SerialName("random")
-    RANDOM
-}
 
 @Serializable
 enum class MutationOperatorFormats {

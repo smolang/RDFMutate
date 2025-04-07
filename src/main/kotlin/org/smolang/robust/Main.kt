@@ -9,10 +9,7 @@ import com.github.ajalt.clikt.parameters.types.file
 import com.github.ajalt.clikt.parameters.types.int
 import org.slf4j.LoggerFactory
 import org.slf4j.Logger
-import org.smolang.robust.tools.ConfigParser
-import org.smolang.robust.tools.MutationOutcome
-import org.smolang.robust.tools.MutationRunnerDeprecated
-import org.smolang.robust.tools.SpecialModesRunner
+import org.smolang.robust.tools.*
 import kotlin.random.Random
 
 // logger for this application
@@ -96,17 +93,7 @@ class Main : CliktCommand() {
 
     // standard function to perform the mutation
     private fun defaultMutation() {
-        val runner = MutationRunnerDeprecated(
-            seedFile,
-            outputFile,
-            shaclMaskFile,
-            swrlMutationFile,
-            numberMutations,
-            overwriteOutput,
-            isOwlDocument,
-            selectionSeed,
-            printMutationSummary
-        )
+        val runner = MutationRunner(configFile)
 
         val outcome = runner.mutate()
 

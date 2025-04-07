@@ -164,7 +164,7 @@ class SuaveMutatorFactory(
     override fun randomMutator() : Mutator {
 
         val ms = MutationSequence()
-        ms.addMutatableAxioms(mutatableStatements)
+        ms.addMutableAxioms(mutatableStatements)
 
         // determine the number of the applied mutation operators
         val domSpecMut =
