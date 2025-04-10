@@ -3,8 +3,8 @@
 # applies one mutation
 
 # build 
-echo "build source code"
-./gradlew build 
+#echo "build source code"
+#./gradlew build 
 
 # run mutation (with the arguments provided)
 echo "mutate KG"
