@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="logo/draft.png" height="300">
+  <img src="logo/draft.png" height="200">
 </p>
 
 # RDFmutate
