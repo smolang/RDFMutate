@@ -1,0 +1,14 @@
+strict_parsing: false
+
+seed_graph:
+    file: examples/wiki/minimal/simpleKG.ttl
+    
+output_graph:
+    file: examples/wiki/minimal/outputKG.ttl
+    
+number_of_mutations: 1
+
+mutation_operators:
+    - resource:
+        file: examples/wiki/minimal/addRelation.ttl
+        syntax: swrl

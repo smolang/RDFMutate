@@ -1,0 +1,89 @@
+strict_parsing: false
+
+seed_graph:
+    file: examples/wiki/elMutations/ore_ont_155.owl
+    type: owl
+    
+output_graph:
+    file: examples/wiki/elMutations/mutatedOnt.owl
+    overwrite: true 
+    type: owl
+    
+number_of_mutations: 5
+
+mutation_operators:
+    - module:
+        location: org.smolang.robust.mutant.DefinedMutants
+        operators: 
+            # declaration axioms
+            - className: DeclareClassMutation
+            - className: DeclareObjectPropMutation
+            - className: DeclareDataPropMutation
+            # sub-class axioms
+            - className: AddSubclassRelationMutation
+            - className: RemoveSubclassRelationMutation
+            #equivalent-class axioms
+            - className: AddEquivalentClassRelationMutation
+            - className: RemoveEquivClassRelationMutation
+            #disjoint-class axioms
+            - className: AddDisjointClassRelationMutation
+            - className: RemoveDisjointClassRelationMutation
+            #replace class
+            - className: ReplaceClassWithTopMutation
+            - className: ReplaceClassWithBottomMutation
+            - className: ReplaceClassWithSiblingMutation
+            #add properties of object properties
+            - className: AddReflexiveObjectPropertyRelationMutation
+            - className: AddTransitiveObjectPropertyRelationMutation
+            #domains and ranges of properties
+            - className: AddObjectPropDomainMutation
+            - className: AddDataPropDomainMutation
+            - className: RemoveDomainRelationMutation
+            - className: AddObjectPropRangeMutation
+            - className: AddDataPropRangeMutation
+            - className: RemoveRangeRelationMutation
+            #property hierarchy
+            - className: AddSubObjectPropMutation
+            - className: AddSubDataPropMutation
+            - className: RemoveSubPropMutation
+            - className: AddEquivObjectPropMutation
+            - className: AddEquivDataPropMutation
+            - className: RemoveEquivPropMutation
+            - className: AddPropertyChainMutation
+            #complex class expressions
+            - className: AddObjectIntersectionOfMutation
+            - className: AddELObjectOneOfMutation
+            - className: AddObjectSomeValuesFromMutation
+            - className: AddObjectHasValueMutation
+            - className: AddDataHasValueMutation
+            - className: AddObjectHasSelfMutation
+            - className: AddELDataIntersectionOfMutation
+            - className: AddELDataOneOfMutation
+            - className: AddELSimpleDataSomeValuesFromMutation
+            #misc
+            - className: CEUAMutation
+            - className: AddDatatypeDefinition
+            - className: AddHasKeyMutation::class,
+
+            # -------------Abox-----------------------
+            # individuals
+            - className: AddIndividualMutation   
+            # adds owl named individual
+            - className: RemoveIndividualMutation
+            - className: AddClassAssertionMutation
+            - className: RemoveClassAssertionMutation
+            #relations between individuals
+            - className: AddObjectPropertyRelationMutation
+            - className: RemoveObjectPropertyRelationMutation
+            - className: AddNegativeObjectPropertyRelationMutation
+            - className: RemoveNegativePropertyAssertionMutation # also applies to data properties
+            # equivalence of individuals
+            - className: AddSameIndividualAssertionMutation
+            - className: RemoveSameIndividualAssertionMutation
+            - className: AddDifferentIndividualAssertionMutation
+            - className: RemoveDifferentIndividualAssertionMutation
+            #data properties
+            - className: BasicAddDataPropertyRelationMutation
+            - className: RemoveDataPropertyRelationMutation
+            - className: AddNegativeDataPropertyRelationMutation::class
+        

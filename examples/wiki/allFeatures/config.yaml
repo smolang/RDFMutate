@@ -1,0 +1,36 @@
+strict_parsing: true
+print_summary: true
+
+seed_graph:
+    file: examples/wiki/allFeatures/simpleKG.ttl
+    type: rdf
+    
+output_graph:
+    file: examples/wiki/allFeatures/outputKG.ttl
+    overwrite: true 
+    type: rdf
+    
+number_of_mutations: 10
+
+strategy:
+    name: random
+    seed: 42
+      
+mutation_operators:
+    - module:
+        location: org.smolang.robust.mutant.DefinedMutants
+        operators: 
+            - className: AddSubclassRelationMutation
+            - className: AddObjectPropertyRelationMutation
+    - resource:
+        file: examples/wiki/allFeatures/addRelation.ttl
+        syntax: swrl
+
+condition:
+    reasoning:
+        consistency: true
+        reasoner: hermit
+    masks:
+        - file: examples/wiki/allFeatures/AsubClassOfB.ttl
+        - file: examples/wiki/allFeatures/AsubClassOfC.ttl
+
