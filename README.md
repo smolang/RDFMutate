@@ -1,4 +1,8 @@
-# OntoMutate
+<p align="center">
+  <img src="logo/draft.png" height="300">
+</p>
+
+# RDFmutate
 
 [![License](https://img.shields.io/github/license/Edkamb/OntoMutate)](https://opensource.org/licenses/Apache-2.0)
 [![Static Badge](https://img.shields.io/badge/documentation-GitHub_Wiki-1f883d)](https://github.com/Edkamb/OntoMutate/wiki)
