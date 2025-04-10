@@ -6,39 +6,31 @@ class MainTest: StringSpec() {
     init {
         "minimal, normal mutation" {
             val args = arrayOf(
-                "--seedKG=src/test/resources/swrl/swrlTest.ttl",
-                "--num_mut=1",
-                "--overwrite",
-                "--mutations=src/test/resources/swrl/swrlTest.ttl",
-                "--out=src/test/resources/swrl/temp.ttl"
+                "--config=src/test/resources/configs/simpleSWRLconfig.yaml"
             )
             Main().main(args)
         }
     }
 
     init {
-        "insufficient arguments (missing seed)" {
+        "insufficient arguments (mutation file does not exist)" {
             val args = arrayOf(
-                "--num_mut=1",
-                "--overwrite",
-                "--mutations=src/test/resources/swrl/swrlTest.ttl",
-                "--out=src/test/resources/swrl/temp.ttl"
+                "--config=src/test/resources/configs/noMutationFile.yaml"
             )
             Main().main(args)
         }
     }
 
     init {
-        "EL reasoner mutation" {
+        "system test" {
             val args = arrayOf(
-                "--seedKG=src/test/resources/reasoners/ore_ont_155.owl",
-                "--num_mut=5",
-                "--overwrite",
-                "--owl",
-                "--el-mutate",
-                "--out=src/test/resources/swrl/temp.ttl"
+                "--scen_test"
             )
             Main().main(args)
         }
     }
+
+
+
+
 }

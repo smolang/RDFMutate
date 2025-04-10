@@ -13,9 +13,9 @@ abstract class MaskReasoner(private val jenaModel : Model) {
 class MaskReasonerFactory(private val reasoningBackend: ReasoningBackend) {
     fun getReasoner(model: Model) : MaskReasoner =
         when(reasoningBackend) {
-            ReasoningBackend.OPENLLET -> MaskOpenlletReasoner(model)
-            ReasoningBackend.HERMIT -> MaskHermitReasoner(model)
-            ReasoningBackend.JENA -> MaskJenaApiReasoner(model)
+            ReasoningBackend.OPENLLET -> MaskReasonerOpenllet(model)
+            ReasoningBackend.HERMIT -> MaskReasonerHermit(model)
+            ReasoningBackend.JENA -> MaskReasonerJenaApi(model)
             ReasoningBackend.NONE -> EmptyReasoner()
         }
 }

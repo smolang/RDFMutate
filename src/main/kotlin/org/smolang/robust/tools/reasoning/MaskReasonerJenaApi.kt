@@ -7,7 +7,7 @@ import org.apache.jena.reasoner.Reasoner
 import org.apache.jena.reasoner.ReasonerRegistry
 import org.smolang.robust.mainLogger
 
-class MaskJenaApiReasoner(val model: Model) : MaskReasoner(model) {
+class MaskReasonerJenaApi(val model: Model) : MaskReasoner(model) {
     private val reasoner: Reasoner = ReasonerRegistry.getOWLReasoner()
     private val inf : InfModel = ModelFactory.createInfModel(reasoner, model)
 

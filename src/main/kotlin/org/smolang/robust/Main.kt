@@ -19,47 +19,12 @@ val randomGenerator = Random(2)
 
 class Main : CliktCommand() {
     private val configFile by option(
-        "--config", help = "Configuration file using yaml format"
+        "--config", help = "Configuration file using yaml format."
     ).file()
-    private val seedFile by option(
-        "--seedKG" ,"-g", help="Knowledge graph to mutate, defined by an RDF file"
-    ).file()
-    private val shaclMaskFile by option(
-        "--shacl","-s", "--mask", help="Gives a mask, defined by a set of SHACL shapes"
-    ).file()
-    private val swrlMutationFile by option(
-        "--mutations", "--swrl", help = "Mutation operators that are considered."
-    ).file()
-    private val numberMutations by option(
-        "--num_mut", "-nm", help="Number of mutation operators to apply. Default = 1"
-    ).int().default(1)
-    private val selectionSeed by option(
-        "--selection_seed", help="Seed for random selector of which mutation to apply. Default = 2"
-    ).int().default(2)
-    private val printMutationSummary by option(
-        "--print-summary", help="Prints a string summary of the applied mutation. Default = false"
-    ).flag(default = false)
-    private val isOwlDocument by option(
-        "--owl", help="Set to true, if input is OWL ontology (e.g. in functional syntax). Default = false"
-    ).flag(default = false)
-    private val outputFile by option("--out", "-o", help="Give name for mutated Knowledge graph.").file()
-    private val overwriteOutput by option(
-        "--overwrite",
-        help="Indicates if the output knowledge graph should be replaced, if it already exists. Default = false"
-    ).flag(default = false)
     private val mainMode by option(help="Options to run specialized modes of this program. Default = \"--mutate\"").switch(
         "--mutate" to "mutate", "-m" to "mutate",
-        "--scen_geo" to "geo", "-sg" to "geo",
-        "--el-mutate" to "elReasoner", "-se" to "elReasoner",
-        "--scen_suave" to "suave", "-sv" to "suave",
-        "--scen_test" to "test", "-st" to "test",
-        "--issre_graph" to "issre", "-ig" to "issre",
-        "--el-graph" to "elGraph",
-        "--parse-swrl" to "swrl",
-        "--yaml-test" to "yaml"
+        "--scen_test" to "test", "-st" to "test"
     ).default("mutate")
-
-
 
     override fun run() {
 
@@ -67,23 +32,10 @@ class Main : CliktCommand() {
             "mutate" -> {
                 defaultMutation()
             }
-            "geo" -> {
-                SpecialModesRunner().runGeoGenerator()
-            }
-            "suave" -> {
-                SpecialModesRunner().runSuaveGenerator()
-            }
-            "elReasoner" -> {
-                elMutation()
-            }
-            "issre" -> SpecialModesRunner().generateIssreGraph()
-            "elGraph" -> SpecialModesRunner().generateElReasonerGraph()
             "test" -> {
                 // test installation
                 SpecialModesRunner().testMiniPipes()
             }
-            "swrl" -> SpecialModesRunner().loadSwrlMutations()
-            "yaml" -> ConfigParser(configFile).getConfig()
             else -> SpecialModesRunner().testMiniPipes()
         }
 
@@ -107,18 +59,6 @@ class Main : CliktCommand() {
             mainLogger.info("Mutation was created successfully.")
     }
 
-    // calls special version of mutation tailored towards EL mutations
-    private fun elMutation() {
-        SpecialModesRunner().elMutation(
-            seedFile,
-            outputFile,
-            numberMutations,
-            overwriteOutput,
-            isOwlDocument,
-            selectionSeed,
-            printMutationSummary
-        )
-    }
 }
 
 
