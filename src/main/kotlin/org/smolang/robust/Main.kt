@@ -38,8 +38,6 @@ class Main : CliktCommand() {
             }
             else -> SpecialModesRunner().testMiniPipes()
         }
-
-
     }
 
 
