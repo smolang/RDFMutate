@@ -9,6 +9,7 @@ import org.smolang.robust.domainSpecific.reasoner.OwlFileHandler
 import org.smolang.robust.mainLogger
 import org.smolang.robust.mutant.*
 import org.smolang.robust.tools.reasoning.ReasoningBackend
+import org.smolang.robust.tools.ruleMutations.RuleParser
 import java.io.File
 import java.nio.file.Files
 import kotlin.reflect.KClass

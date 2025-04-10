@@ -1,4 +1,4 @@
-package org.smolang.robust.tools
+package org.smolang.robust.tools.ruleMutations
 
 import org.apache.jena.rdf.model.Model
 import org.apache.jena.rdf.model.RDFNode
@@ -11,6 +11,7 @@ import org.smolang.robust.mainLogger
 import org.smolang.robust.mutant.AbstractMutation
 import org.smolang.robust.mutant.RuleMutation
 import org.smolang.robust.mutant.RuleMutationConfiguration
+import org.smolang.robust.tools.ComplexTermParser
 
 // a class to parse rules, i.e., SWRL rules, to create mutations
 class RuleParser(val model: Model) {

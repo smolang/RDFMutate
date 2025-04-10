@@ -6,7 +6,7 @@ import org.apache.jena.vocabulary.RDF
 import org.apache.jena.vocabulary.XSD
 import org.smolang.robust.mutant.MutationSequence
 import org.smolang.robust.mutant.Mutator
-import org.smolang.robust.tools.RuleParser
+import org.smolang.robust.tools.ruleMutations.RuleParser
 
 class SwrlInputTests : StringSpec() {
 

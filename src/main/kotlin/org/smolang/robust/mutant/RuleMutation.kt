@@ -6,9 +6,9 @@ import org.apache.jena.rdf.model.Model
 import org.apache.jena.rdf.model.RDFNode
 import org.smolang.robust.mainLogger
 import org.smolang.robust.randomGenerator
-import org.smolang.robust.tools.NegativeStatementAtom
+import org.smolang.robust.tools.ruleMutations.NegativeStatementAtom
 import org.smolang.robust.tools.NodeMap
-import org.smolang.robust.tools.PositiveStatementAtom
+import org.smolang.robust.tools.ruleMutations.PositiveStatementAtom
 
 // a mutation represented by a rule, i.e., SWRL rule
 class RuleMutation(model : Model) : Mutation(model) {
@@ -37,8 +37,6 @@ class RuleMutation(model : Model) : Mutation(model) {
         }
 
         // combine variables
-
-
         val positiveBodyAtoms = ruleConfig.body.filterIsInstance<PositiveStatementAtom>()
         val negativeBodyAtoms = ruleConfig.body.filterIsInstance<NegativeStatementAtom>()
 
@@ -49,15 +47,12 @@ class RuleMutation(model : Model) : Mutation(model) {
 
         val bodyVariablesSparql = argumentVariables.joinToString(" ") { v -> swrlToSparql[v]?:"" }
 
-
         // check, if every variable is contained in at least one positive atom and raise warning, if not
         for (v in ruleConfig.bodyVariables.minus(argumentVariables)) {
             //if (positiveBodyAtoms.filter { a -> a.containsResource(v) }.isEmpty())
             mainLogger.warn("Variable \"${v.localName}\" does not occur in a positive atom. This violates a requirement of how swrl" +
                         " rules for actions should be designed. The behavior of the mutation might not be as expected.")
         }
-
-
 
         // filter selection, fi there are negative atoms
         val filterString =  if (negativeBodyAtoms.any())" FILTER NOT EXISTS {\n" +
@@ -115,6 +110,7 @@ class RuleMutation(model : Model) : Mutation(model) {
         //for (s in ruleConfig.body)
         //    mapping.apply(s, model)?.let { removeSet.add(it) }
 
+        // get consequences from rule head
         for (a in ruleConfig.head) {
             when (a){
                 is PositiveStatementAtom -> mapping.apply(a.statement, model)?.let { addSet.add(it) }
@@ -126,10 +122,4 @@ class RuleMutation(model : Model) : Mutation(model) {
 
         super.createMutation()
     }
-
-
-
-
-
-
 }

@@ -1,11 +1,12 @@
-package org.smolang.robust.tools
+package org.smolang.robust.tools.ruleMutations
 
 import org.apache.jena.rdf.model.RDFNode
 import org.apache.jena.rdf.model.Resource
 import org.apache.jena.rdf.model.Statement
 import org.smolang.robust.mainLogger
+import org.smolang.robust.tools.containsResource
 
-abstract class StatementAtom(val statement: Statement)  : MutationAtom() {
+abstract class StatementAtom(val statement: Statement)  : MutationAtom(), SparqlMutationAtom{
 
     override fun toSparqlString(rdf2sparql: Map<RDFNode, String>): String? {
         val sub = nodeToSparqlString(statement.subject, rdf2sparql)
