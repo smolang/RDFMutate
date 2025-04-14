@@ -83,7 +83,8 @@ class EvaluationGraphTests: StringSpec() {
         "generating suave evaluation graph for attempts per mask" {
             val numberOfMutants = 1
             val outputFile = File("src/test/resources/graphs/attemptsPerMaskSuave.csv")
-            SuaveEvaluationGraphGenerator().generateGraph(numberOfMutants, outputFile)
+            val maskIds = listOf(0,1)
+            SuaveEvaluationGraphGenerator().generateGraph(numberOfMutants, outputFile, maskIds)
         }
     }
 

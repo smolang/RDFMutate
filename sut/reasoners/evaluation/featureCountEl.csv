@@ -1,0 +1,22 @@
+rdf:type,xsd:base64Binary ,owl:equivalentClass
+rdf:PlainLiteral ,xsd:anyURI ,owl:disjointWith
+rdf:XMLLiteral ,xsd:dateTime ,owl:AllDisjointClasses
+rdf:first,xsd:dateTimeStamp ,owl:members
+rdf:rest,xsd:boolean,owl:propertyChainAxiom
+rdf:nil,owl:real ,owl:ReflexiveProperty
+rdfs:Literal ,owl:rational ,owl:TransitiveProperty
+rdfs:subClassOf,owl:Thing,owl:hasKey
+rdfs:subPropertyOf,owl:Nothing,owl:sameAs
+rdfs:domain,owl:Ontology,owl:differentFrom
+rdfs:range,owl:imports,owl:AllDifferent
+rdfs:Datatype,owl:namedIndividual,owl:NegativePropertyAssertion
+xsd:decimal ,owl:ObjectProperty,owl:sourceIndividual
+xsd:integer ,owl:DatatypeProperty,owl:assertionProperty
+xsd:nonNegativeInteger ,owl:AnnotationProperty,owl:targetIndividual
+xsd:string ,owl:Class,owl:targetValue
+xsd:normalizedString ,owl:intersectionOf,owl:Annotation
+xsd:token ,owl:oneOf,owl:annotatedSource
+xsd:Name ,owl:Restriction,owl:annotatedProperty
+xsd:NCName ,owl:onProperty,owl:annotatedTarge
+xsd:NMTOKEN ,owl:someValuesFrom,owl:hasValue
+xsd:hexBinary ,,

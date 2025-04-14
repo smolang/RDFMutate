@@ -1,0 +1,60 @@
+bug in openllet
+
+--> Openllet throws exception when building class hierarchy (precompute Inferences)
+
+call:
+OWLOntologyDocumentSource source = new FileDocumentSource(ontFile, new FunctionalSyntaxDocumentFormat());
+OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
+OWLOntology ont = manager.loadOntologyFromOntologyDocument(source);
+
+OpenlletReasonerFactory rf = new OpenlletReasonerFactory();
+OWLReasoner openllet = rf.createReasoner(ont);
+
+/// class hierarchy
+InferredSubClassAxiomGenerator subClassGenerator = new InferredSubClassAxiomGenerator();
+if (openllet.isConsistent()) {
+	openllet.precomputeInferences(InferenceType.CLASS_HIERARCHY);
+	Set<OWLSubClassOfAxiom> subClassAxioms = subClassGenerator.createAxioms(manager.getOWLDataFactory(), openllet);
+}
+
+- Exception:
+Exception in thread "main" java.lang.NullPointerException: Cannot invoke "openllet.core.boxes.abox.Individual.isMerged()" because "node1" is null
+	at openllet.core.rules.RuleAtomAsserter.addEdge(RuleAtomAsserter.java:107)
+	at openllet.core.rules.RuleAtomAsserter.visit(RuleAtomAsserter.java:163)
+	at openllet.core.rules.model.IndividualPropertyAtom.accept(IndividualPropertyAtom.java:35)
+	at openllet.core.rules.RuleAtomAsserter.assertAtom(RuleAtomAsserter.java:68)
+	at openllet.core.tableau.branch.RuleBranch.tryBranch(RuleBranch.java:139)
+	at openllet.core.tableau.branch.Branch.tryNext(Branch.java:130)
+	at openllet.core.rules.ContinuousRulesStrategy.createDisjunctionsFromBinding(ContinuousRulesStrategy.java:363)
+	at openllet.core.rules.ContinuousRulesStrategy.applyRuleBindings(ContinuousRulesStrategy.java:171)
+	at openllet.core.rules.ContinuousRulesStrategy.complete(ContinuousRulesStrategy.java:262)
+	at openllet.core.boxes.abox.ABoxImpl.lambda$isConsistent$12(ABoxImpl.java:1417)
+	at openllet.core.utils.Timers.execute(Timers.java:118)
+	at openllet.core.boxes.abox.ABoxImpl.isConsistent(ABoxImpl.java:1417)
+	at openllet.core.boxes.abox.ABoxImpl.existType(ABoxImpl.java:905)
+	at openllet.core.knowledge.InstancesBase.retrieve(InstancesBase.java:268)
+	at openllet.core.KnowledgeBaseImplFullSync.retrieve(KnowledgeBaseImplFullSync.java:733)
+	at openllet.core.taxonomy.CDOptimizedTaxonomyBuilder.realizeByConcept(CDOptimizedTaxonomyBuilder.java:1353)
+	at openllet.core.taxonomy.CDOptimizedTaxonomyBuilder.realizeByConcept(CDOptimizedTaxonomyBuilder.java:1361)
+	at openllet.core.taxonomy.CDOptimizedTaxonomyBuilder.realizeByConcepts(CDOptimizedTaxonomyBuilder.java:1322)
+	at openllet.core.taxonomy.CDOptimizedTaxonomyBuilder.realize(CDOptimizedTaxonomyBuilder.java:1181)
+	at openllet.core.KnowledgeBaseImpl.realize(KnowledgeBaseImpl.java:1950)
+	at openllet.core.KnowledgeBaseImplFullSync.realize(KnowledgeBaseImplFullSync.java:391)
+	at openllet.owlapi.PelletReasoner.precomputeInferences(PelletReasoner.java:1292)
+
+ - Mutation to generate this test case:
+start new test (1094) at Mon Feb 10 09:52:56 PM UTC 2025 
+mutate KG (ontology) ontologies_ore/ore_ont_3313.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+mutation summary:
+numMutations;numDel;numAdd;appliedMutations;affectedSeedNodes
+30;13;55;[ReplaceClassWithTopMutation(random), AddELSimpleDataSomeValuesFromMutation(random), AddEquivalentClassRelationMutation(config=SingleStatementConfiguration([http://biomanta.sourceforge.net/celltype_instance_edit.owl#neutrophilic_myelocyte_CL_0000580, http://www.w3.org/2002/07/owl#equivalentClass, http://biomanta.sourceforge.net/celltype_instance_edit.owl#ascospore_CL_0000607])), RemoveClassAssertionMutation(random), ReplaceClassWithTopMutation(random), AddReflexiveObjectPropertyRelationMutation(config=SingleStatementConfiguration([http://biomanta.sourceforge.net/celltype_instance_edit.owl#develops_from_develops_from, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://www.w3.org/2002/07/owl#ReflexiveProperty])), AddObjectPropertyRelationMutation(random), AddObjectPropRangeMutation(config=SingleStatementConfiguration([http://biomanta.sourceforge.net/celltype_instance_edit.owl#develops_from_develops_from, http://www.w3.org/2000/01/rdf-schema#range, http://biomanta.sourceforge.net/celltype_instance_edit.owl#memory_T_cell_CL_0000813])), AddELDataIntersectionOfMutation(random), AddHasKeyMutation(random), AddIndividualMutation(config=SingleStatementConfiguration([newIndividual:number1449275909, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://www.w3.org/2002/07/owl#NamedIndividual])), AddObjectPropertyRelationMutation(random), AddObjectHasValueMutation(random), DeclareObjectPropMutation(config=SingleStatementConfiguration([newObjectProp:-855656781, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://www.w3.org/2002/07/owl#ObjectProperty])), AddObjectIntersectionOfMutation(random), AddSubObjectPropMutation(config=SingleStatementConfiguration([newObjectProp:-855656781, http://www.w3.org/2000/01/rdf-schema#subPropertyOf, newObjectProp:-855656781])), AddObjectHasValueMutation(random), CEUAMutation(config=(warmth_sensing_thermoreceptor_cell_CL_0000591,Thing,[_:c53aeb5c-8015-4750-8ff6-adc7cad66d4c, http://www.w3.org/1999/02/22-rdf-syntax-ns#first, http://biomanta.sourceforge.net/celltype_instance_edit.owl#warmth_sensing_thermoreceptor_cell_CL_0000591])), RemoveRangeRelationMutation(random), AddHasKeyMutation(random), AddTransitiveObjectPropertyRelationMutation(config=SingleStatementConfiguration([http://biomanta.sourceforge.net/celltype_instance_edit.owl#develops_from_develops_from, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://www.w3.org/2002/07/owl#TransitiveProperty])), AddEquivDataPropMutation(random), AddHasKeyMutation(random), AddDatatypeDefinition(random)];[myeloid_cell_CL_0000763,primary_sensory_neuron,thrombocyte_CL_0000762,NamedIndividual,develops_from_develops_from,neutrophilic_myelocyte_CL_0000580,ascospore_CL_0000607,eccrine_cell,Class,hyphal_cell_CL_0000286,RELAPPROXI3086,erythrocyte_CL_0000232,erythroblast_CL_0000765,basidiospore_CL_0000615,hatching_gland_cell_CL_0000249,warmth_sensing_thermoreceptor_cell_CL_0000591,proerythroblast_CL_0000547,stem_cell,RELAPPROXI3252,oogonial_cell_CL_0000024,monocyte_CL_0000576,reticulocyte_CL_0000558,secretory_cell_CL_0000151,ObjectProperty,secondary_spermatocyte,RELAPPROXI3490,erythroid_lineage_cell,Restriction,memory_T_cell_CL_0000813,cell_by_histology_CL_0000063,immature_T_cell_CL_0000804,erythroid_lineage_cell_CL_0000764,eccrine_cell_CL_0000434,RELAPPROXI3533,Synonym]
+call reasoner oracle
+found anomaly. Saved to fuzzingResults/rdfuzz/fuzzing_2025_02_10_16_55/ont_1094.owl.
+
+found on 11.02.2025
+
+reported:
+https://github.com/Galigator/openllet/issues/97

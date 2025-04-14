@@ -3,12 +3,15 @@ package org.smolang.robust.mutant
 import org.apache.jena.rdf.model.*
 import org.apache.jena.reasoner.Reasoner
 import org.apache.jena.reasoner.ReasonerRegistry
+import org.apache.jena.vocabulary.OWL
 import org.apache.jena.vocabulary.RDF
 import org.apache.jena.vocabulary.RDFS
 import org.apache.jena.vocabulary.XSD
 import org.smolang.robust.randomGenerator
 import org.smolang.robust.mainLogger
+import org.smolang.robust.mutant.DefinedMutants.AddRelationMutation
 import org.smolang.robust.tools.ComplexStatementBuilder
+import org.smolang.robust.tools.ComplexTermParser
 
 open class Mutation(var model: Model) {
     var hasConfig : Boolean = false
@@ -259,7 +262,6 @@ open class Mutation(var model: Model) {
     }
 
 }
-
 
 
 

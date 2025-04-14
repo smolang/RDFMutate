@@ -16,7 +16,7 @@ const val qaType = "http://metacontrol.org/tomasys#isQAtype"
 const val qaComparisonOperator  = "http://metacontrol.org/tomasys#qa_comparison_operator"
 const val hasValueIRI = "http://metacontrol.org/tomasys#hasValue"
 
-class AddQAEstimationMutation(model: Model) : AddObjectPropertyRelationMutation(model) {
+class AddQAEstimationMutation(model: Model) : AddObjectPropertyRelationSophisticated(model) {
     init {
         super.setConfiguration(
             SingleResourceConfiguration(
@@ -46,7 +46,7 @@ class RemoveQAEstimationMutation(model: Model) : RemoveObjectPropertyRelationMut
     }
 }
 
-class ChangeSolvesFunctionMutation(model: Model) : ChangeObjectPropertyRelationMutation(model) {
+class ChangeSolvesFunctionMutation(model: Model) : ChangeObjectPropertyRelationMutationSophisticated(model) {
     init {
         super.setConfiguration(
             SingleResourceConfiguration(
@@ -61,7 +61,7 @@ class ChangeSolvesFunctionMutation(model: Model) : ChangeObjectPropertyRelationM
     }
 }
 
-class ChangeQualityAttributTypeMutation(model: Model) : ChangeObjectPropertyRelationMutation(model) {
+class ChangeQualityAttributTypeMutation(model: Model) : ChangeObjectPropertyRelationMutationSophisticated(model) {
     init {
         super.setConfiguration(
             SingleResourceConfiguration(
@@ -75,7 +75,7 @@ class ChangeQualityAttributTypeMutation(model: Model) : ChangeObjectPropertyRela
     }
 }
 
-class ChangeHasValueMutation(model: Model) : ChangeRelationMutation(model) {
+class ChangeHasValueMutation(model: Model) : ChangeRelationMutationSophisticated(model) {
     init {
         super.setConfiguration(
             SingleResourceConfiguration(
@@ -89,7 +89,7 @@ class ChangeHasValueMutation(model: Model) : ChangeRelationMutation(model) {
     }
 }
 
-class ChangeQAComparisonOperatorMutation(model: Model) : ChangeRelationMutation(model) {
+class ChangeQAComparisonOperatorMutation(model: Model) : ChangeRelationMutationSophisticated(model) {
     init {
         super.setConfiguration(
             SingleResourceConfiguration(

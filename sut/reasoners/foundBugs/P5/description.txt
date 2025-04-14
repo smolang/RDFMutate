@@ -1,0 +1,41 @@
+bug in openllet
+
+--> Hermit infers SubClassOf(:A :B)
+
+--> Openllet misses this subClass relation; 
+--> (probable) cause: xsd:normalizedString is not seen as subtype of xsd:String (see https://www.w3.org/TR/xmlschema11-2/#dt-derived)
+
+size of test ontology: 3350 axioms
+size of (automatically) minimized ontology: 23 axioms
+
+call:
+OWLOntologyDocumentSource source = new FileDocumentSource(ontFile, new FunctionalSyntaxDocumentFormat());
+OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
+OWLOntology ont = manager.loadOntologyFromOntologyDocument(source);
+
+OpenlletReasonerFactory rf = new OpenlletReasonerFactory();
+OWLReasoner openllet = rf.createReasoner(ont);
+
+/// class hierarchy
+InferredSubClassAxiomGenerator subClassGenerator = new InferredSubClassAxiomGenerator();
+if (openllet.isConsistent()) {
+	openllet.precomputeInferences(InferenceType.CLASS_HIERARCHY);
+	Set<OWLSubClassOfAxiom> subClassAxioms = subClassGenerator.createAxioms(manager.getOWLDataFactory(), openllet);
+}
+
+found on 11.02.2025
+
+- mutation
+start new test (35) at Mon Feb 10 04:59:55 PM UTC 2025 
+mutate KG (ontology) ontologies_ore/ore_ont_11497.owl
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+mutation summary:
+numMutations;numDel;numAdd;appliedMutations;affectedSeedNodes
+30;16;41;[AddDataPropRangeMutation(random), ReplaceClassWithSiblingMutation(random), AddDataPropDomainMutation(random), DeclareDataPropMutation(config=SingleStatementConfiguration([newDataProp:997155665, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://www.w3.org/2002/07/owl#DatatypeProperty])), AddDataPropDomainMutation(config=SingleStatementConfiguration([newDataProp:997155665, http://www.w3.org/2000/01/rdf-schema#domain, http://purl.obolibrary.org/obo/XAO_1000072])), ReplaceClassWithBottomMutation(random), DeclareDataPropMutation(config=SingleStatementConfiguration([newDataProp:115808599, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://www.w3.org/2002/07/owl#DatatypeProperty])), RemoveSubclassRelationMutation(random), AddEquivObjectPropMutation(config=SingleStatementConfiguration([http://purl.obolibrary.org/obo/xao#start_stage, http://www.w3.org/2000/01/rdf-schema#equivalentProperty, http://purl.obolibrary.org/obo/xao#end_stage])), AddELSimpleDataSomeValuesFromMutation(random), AddDatatypeDefinition(random), AddDataHasValueMutation(random), AddObjectPropertyRelationMutation(random), AddELSimpleDataSomeValuesFromMutation(random), DeclareDataPropMutation(config=SingleStatementConfiguration([newDataProp:1213097682, http://www.w3.org/1999/02/22-rdf-syntax-ns#type, http://www.w3.org/2002/07/owl#DatatypeProperty])), AddDatatypeDefinition(random), AddSubDataPropMutation(config=SingleStatementConfiguration([newDataProp:1213097682, http://www.w3.org/2000/01/rdf-schema#subPropertyOf, newDataProp:1213097682])), RemoveDomainRelationMutation(random), ReplaceClassWithTopMutation(random), AddEquivalentClassRelationMutation(config=SingleStatementConfiguration([http://purl.obolibrary.org/obo/XAO_1000020, http://www.w3.org/2002/07/owl#equivalentClass, http://purl.obolibrary.org/obo/XAO_1000031]))];[XAO_1000090,start_stage,end_stage,_:3c309889-a105-4247-9aec-1c20eb1562c8,_:aca32e54-3d57-42e6-9e03-ca48ba054250,XAO_1000044,XAO_1000094,XAO_1000012,_:5e0ca007-5ef7-41a0-90bf-35c1672937ae,Restriction,Class,XAO_1000087,XAO_1000056,XAO_1000072,XAO_1000020,XAO_1000031,XAO_1000080,_:56721528-8407-4791-9ebc-95d99fa54a46,XAO_1000002,_:64b613dc-35b5-49ee-8329-885e6457dc91,_:9ca782d0-e169-4629-9941-726e26cecbc4,XAO_1000007,XAO_1000066,XAO_1000036,XAO_0003000,_:e3b27d2e-9602-4163-b10a-41de83776d0c]
+call reasoner oracle
+found anomaly. Saved to fuzzingResults/rdfuzz/fuzzing_2025_02_10_16_55/ont_35.owl.
+
+reported:
+https://github.com/Galigator/openllet/issues/96
