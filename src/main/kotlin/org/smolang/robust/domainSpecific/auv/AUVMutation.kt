@@ -82,7 +82,7 @@ class AddPipeSegmentMutation(model: Model) : AUVMutation(model) {
         aam.setConfiguration(configAAM)
         aam.applyCopy()
 
-        // mimic the mutations that happend
+        // mimic the mutations that happened
         mimicMutation(aim)
         mimicMutation(aam)
 

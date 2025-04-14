@@ -613,11 +613,15 @@ open class ReplaceNodeInStatementMutation(model: Model) : Mutation(model) {
     }
 }
 
-abstract class ReplaceNodeWithNode(model: Model) : Mutation(model) {
+open class ReplaceNodeWithNode(
+    model: Model,
+    var oldNode: RDFNode = model.createResource(),
+    var newNode: RDFNode = model.createResource()
+) : Mutation(model) {
 
     // default values: anonymous resources
-    var oldNode: Resource = model.createResource()
-    var newNode: Resource = model.createResource()
+    //var oldNode: Resource = model.createResource()
+    //var newNode: Resource = model.createResource()
 
     override fun createMutation() {
         for (s in model.listStatements()) {
@@ -630,13 +634,15 @@ abstract class ReplaceNodeWithNode(model: Model) : Mutation(model) {
                 else
                     s.`object`
 
+            // test, if subject and predicate are resources after replacement
             // test, if something was replaced; if yes --> add to sets accordingly
-            if (s.subject != newSubject || s.predicate.asResource() != newPredicate || s.`object` != newObject) {
+            if (newPredicate.isResource && newSubject.isResource &&
+                (s.subject != newSubject || s.predicate.asResource() != newPredicate || s.`object` != newObject)) {
                 removeSet.add(s)
 
                 addSet.add(model.createStatement(
-                    newSubject,
-                    model.createProperty(newPredicate.uri),
+                    newSubject.asResource(),
+                    model.createProperty(newPredicate.asResource().uri),
                     newObject
                 ))
             }
@@ -646,7 +652,7 @@ abstract class ReplaceNodeWithNode(model: Model) : Mutation(model) {
 
     // replaces the resource if possible
     // returns argument otherwise
-    private fun tryReplace(r: Resource) : Resource {
+    private fun tryReplace(r: Resource) : RDFNode {
         return if (r == oldNode) newNode else r
     }
 }

@@ -214,4 +214,75 @@ class SwrlInputTests : StringSpec() {
 
         }
     }
+
+    init {
+        "SWRL with node deletion" {
+            val seed = RDFDataMgr.loadDataset("PipeInspection/miniPipes.ttl").defaultModel
+            val mutationGraph = RDFDataMgr.loadDataset("PipeInspection/removePipeSegment.ttl").defaultModel
+            val mutation = RuleParser(mutationGraph).getAllRuleMutations().single()
+
+            // apply mutations
+            val ms = MutationSequence()
+            ms.addAbstractMutation(mutation)
+            val mutator = Mutator(ms)
+            val result = mutator.mutate(seed)
+
+            // check, that there is one segment individual
+            result.listStatements(
+                null,
+                RDF.type,
+                result.getResource("http://www.ifi.uio.no/tobiajoh/miniPipes#PipeSegment")
+            ).toSet().size shouldBe 1
+
+        }
+    }
+
+    init {
+        "SWRL with node replacement + empty body" {
+            val seed = RDFDataMgr.loadDataset("PipeInspection/miniPipes.ttl").defaultModel
+            val mutationGraph = RDFDataMgr.loadDataset("PipeInspection/replacePipeSegment2.ttl").defaultModel
+            val mutation = RuleParser(mutationGraph).getAllRuleMutations().single()
+
+            // apply mutations
+            val ms = MutationSequence()
+            ms.addAbstractMutation(mutation)
+            val mutator = Mutator(ms)
+            val result = mutator.mutate(seed)
+
+            // check, that there are two segment individuals
+            result.listStatements(
+                null,
+                RDF.type,
+                result.getResource("http://www.ifi.uio.no/tobiajoh/miniPipes#PipeSegment")
+            ).toSet().size shouldBe 2
+
+            val segment1 = result.getResource("http://www.ifi.uio.no/tobiajoh/miniPipes#segment1")
+            val newSegment = result.getResource("http://www.ifi.uio.no/tobiajoh/miniPipes#newSegment")
+            // check, that for each relation in seed with "segment1"  as subject, there is a relation with newSegment in mutant
+            seed.listStatements(
+                segment1,
+                null,
+                null as RDFNode?
+            ).forEach { statement ->
+                result.listStatements(
+                    newSegment,
+                    statement.predicate,
+                    statement.`object`
+                ).hasNext() shouldBe true
+            }
+
+            // check, that for each relation in seed with "segment1"  as object, there is a relation with newSegment in mutant
+            seed.listStatements(
+                null,
+                null,
+                segment1
+            ).forEach { statement ->
+                result.listStatements(
+                    statement.subject,
+                    statement.predicate,
+                    newSegment
+                ).hasNext() shouldBe true
+            }
+        }
+    }
 }

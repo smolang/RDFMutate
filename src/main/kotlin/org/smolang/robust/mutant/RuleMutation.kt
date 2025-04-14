@@ -4,12 +4,12 @@ import org.apache.jena.query.QueryExecutionFactory
 import org.apache.jena.query.QueryFactory
 import org.apache.jena.rdf.model.Model
 import org.apache.jena.rdf.model.RDFNode
+import org.apache.jena.rdf.model.Statement
 import org.smolang.robust.mainLogger
+import org.smolang.robust.mutant.DefinedMutants.ReplaceNodeWithNode
 import org.smolang.robust.randomGenerator
-import org.smolang.robust.tools.ruleMutations.NegativeStatementAtom
 import org.smolang.robust.tools.NodeMap
-import org.smolang.robust.tools.ruleMutations.FreshNodeAtom
-import org.smolang.robust.tools.ruleMutations.PositiveStatementAtom
+import org.smolang.robust.tools.ruleMutations.*
 
 // a mutation represented by a rule, i.e., SWRL rule
 class RuleMutation(model : Model) : Mutation(model) {
@@ -30,6 +30,7 @@ class RuleMutation(model : Model) : Mutation(model) {
         return hasConfig && (config is RuleMutationConfiguration)
     }
 
+    // get possible mappings of variables to nodes in graph
     private fun getCandidates() : List<NodeMap> {
         // update mapping from rule variables to SPRQL variables
         for (node in ruleConfig.variables) {
@@ -69,6 +70,11 @@ class RuleMutation(model : Model) : Mutation(model) {
 
         val bodyVariablesSparql = argumentVariables.joinToString(" ") { v -> swrlToSparql[v]?:"" }
 
+        // if there are no variables to select with query --> don't build query
+        if (bodyVariablesSparql.isEmpty())
+            return listOf(freshNodeMapping)
+
+
         // check, if every variable is contained in at least one positive atom and raise warning, if not
         for (v in ruleConfig.bodyVariables.minus(argumentVariables.toSet())) {
             // check, if variable occurs in any fresh node declaration
@@ -80,7 +86,7 @@ class RuleMutation(model : Model) : Mutation(model) {
             }
         }
 
-        // filter selection, fi there are negative atoms
+        // filter selection, if there are negative atoms
         val filterString =  if (negativeBodyAtoms.any())" FILTER NOT EXISTS {\n" +
                 negativeBodyAtoms.mapNotNull { s -> s.toSparqlString(swrlToSparql) }
                     .joinToString("\n  ", "  ", "\n") +
@@ -142,11 +148,25 @@ class RuleMutation(model : Model) : Mutation(model) {
             when (a){
                 is PositiveStatementAtom -> mapping.apply(a.statement, model)?.let { addSet.add(it) }
                 is NegativeStatementAtom -> mapping.apply(a.statement, model)?.let { removeSet.add(it) }
+                is DeleteNodeAtom -> allStatementsWithNode(mapping.apply(a.node)).forEach { removeSet.add(it) }
+                is ReplaceNodeAtom -> mimicReplacementMutation(mapping.apply(a.old), mapping.apply(a.new))
                 else -> mainLogger.warn("the type of mutation atom is not supported in the head for atom $a")
             }
-
         }
 
         super.createMutation()
+    }
+
+    private fun mimicReplacementMutation(oldNode: RDFNode, newNode: RDFNode) {
+        val m = ReplaceNodeWithNode(model, oldNode, newNode)
+        m.applyCopy()
+        this.mimicMutation(m)
+    }
+
+    // returns a list with all the statements in the model that contain the node
+    private fun allStatementsWithNode(node: RDFNode): List<Statement> {
+        return model.listStatements().toSet().filter { s ->
+            (s.subject == node || s.predicate == node || s.`object` == node)
+        }
     }
 }

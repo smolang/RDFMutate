@@ -28,7 +28,7 @@ class SuaveTestCaseGenerator() : TestCaseGenerator() {
     private val mutatableSeedPath = "sut/suave/suave_ontologies/suave_mutatable.owl"
     private val unmutatableSeedPath = "sut/suave/suave_ontologies/suave_unmutatable.owl"
     private val mutatableStatements = RDFDataMgr.loadDataset(mutatableSeedPath).defaultModel.listStatements().toList()!!
-    private val unmutatableSuaveStatements = RDFDataMgr.loadDataset(unmutatableSeedPath).defaultModel.listStatements().toList()!!
+    private val unmutableSuaveStatements = RDFDataMgr.loadDataset(unmutatableSeedPath).defaultModel.listStatements().toList()!!
 
 
     private val mrosPath = "sut/suave/suave_ontologies/mros_no_import.owl"
@@ -47,18 +47,18 @@ class SuaveTestCaseGenerator() : TestCaseGenerator() {
                              mask : RobustnessMask,
                              mutantsName : String,
                              saveMutants : Boolean) : Int {
-        val unmutatableStatements = unmutatableSuaveStatements.toMutableList()
+        val unmutableStatements = unmutableSuaveStatements.toMutableList()
 
 
-        // add more statements to unmutatable part
+        // add more statements to unmutable part
         for (s in tomasysModel.listStatements())
-            unmutatableStatements.add(s)
+            unmutableStatements.add(s)
         for (s in mrosModel.listStatements())
-            unmutatableStatements.add(s)
+            unmutableStatements.add(s)
 
         // compute complete seed with all axioms
         val seed = ModelFactory.createDefaultModel()
-        for (s in unmutatableStatements)
+        for (s in unmutableStatements)
             seed.add(s)
         for (s in mutatableStatements)
             seed.add(s)
@@ -104,7 +104,7 @@ class SuaveTestCaseGenerator() : TestCaseGenerator() {
             stats = stats.subtract(tomasysModel.listStatements().toSet())
 
             val suaveOutput = ModelFactory.createDefaultModel()
-            for (s in unmutatableSuaveStatements)
+            for (s in unmutableSuaveStatements)
                 suaveOutput.add(s)
             for (s in stats)
                 suaveOutput.add(s)

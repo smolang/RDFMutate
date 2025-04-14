@@ -6,6 +6,10 @@ import org.smolang.robust.mainLogger
 
 // interface to represent atoms (assertions) that appear in head and body of mutations
 abstract class MutationAtom {
+     companion object {
+          // prefix that is used for special built-ins
+          const val MUTATE_PREFIX = "https://smolang.org/rdfMutate#"
+     }
 
      // a string representation using local names for resources
      abstract fun toLocalString() : String

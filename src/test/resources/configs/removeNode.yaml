@@ -1,0 +1,22 @@
+seed_graph:
+    file: src/test/resources/PipeInspection/miniPipes.ttl
+    type: rdf
+    
+output_graph:
+    file: src/test/resources/PipeInspection/temp.ttl
+    overwrite: true 
+    type: rdf
+    
+number_of_mutations: 1
+
+strategy:
+    name: random
+      
+mutation_operators:
+    - resource:
+        file: src/test/resources/PipeInspection/removePipeSegment.ttl
+        syntax: swrl
+
+condition:
+    reasoning:
+        consistency: false

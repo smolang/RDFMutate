@@ -41,9 +41,8 @@ class RuleParser(val model: Model) {
     private fun parseSwrlRule(rootNode : Resource, variables : Set<Resource>) : RuleMutationConfiguration? {
         // check type that root is really correct
         if (!hasType(rootNode, SWRL.Imp)) {
-            mainLogger.warn("The provided root $rootNode node does not identify a SWRL rule. " +
-                    "Fallback: return empty mutation")
-            return  RuleMutationConfiguration()
+            mainLogger.warn("The provided root $rootNode node does not identify a SWRL rule. ")
+            return null
         }
 
         // get the nodes for the head and the body
@@ -51,34 +50,17 @@ class RuleParser(val model: Model) {
             .toSet().single().`object`.asResource()
         val body = model.listStatements(rootNode, SWRL.body, null as RDFNode?)
             .toSet().single().`object`.asResource()
-        // check correct types
-        assert(hasType(head, SWRL.AtomList))
-        assert(hasType(body, SWRL.AtomList))
 
-        val headAtoms = parseAtomList(head)?.toMutableList() ?: return null
+        // check correct types
+        //assert(hasType(head, SWRL.AtomList))
+        //assert(hasType(body, SWRL.AtomList))
+
+        val headAtoms = parseAtomList(head) ?: return null
         val bodyAtoms = parseAtomList(body) ?: return null
 
-        // check constraints on rules
-        // no fresh variable declaration in head --> remove if they are present
-        val freshNodeHeadAtoms = headAtoms.filterIsInstance<FreshNodeAtom>()
-        if (freshNodeHeadAtoms.any()) {
-            mainLogger.warn("Declaration of fresh variable in head of rule is not allowed. Rule is ignored.")
+        // check constraints on atoms
+        if (!validMutationRule(bodyAtoms, headAtoms))
             return null
-        }
-
-        // fresh nodes in body are not allowed to be used in other body atoms
-        val freshNodeBodyAtoms = bodyAtoms.filterIsInstance<FreshNodeAtom>()
-        freshNodeBodyAtoms.forEach { freshAtom ->
-            val freshVariable = freshAtom.variable
-            bodyAtoms.forEach { bodyAtom ->
-                if (bodyAtom.containsResource(freshVariable) && bodyAtom != freshAtom){
-                    mainLogger.warn("Variables that are new are not allowed to occur in any other atom in body of " +
-                            "rule. Variable name: $freshVariable. Rule is ignored.")
-                    return null
-                }
-            }
-        }
-
 
         // get variables of head and body
         val headVariables = variables.filter { v -> containsResource(headAtoms, v) }.toSet()
@@ -91,6 +73,10 @@ class RuleParser(val model: Model) {
     // returns "null" if any of the atoms can not be parsed correctly
     private fun parseAtomList(listRoot : Resource) : List<MutationAtom>? {
         val result = mutableListOf<MutationAtom>()
+
+        // empty list
+        if (listRoot == RDF.nil)
+            return listOf()
 
         // parse the first element
         val listHead = model.listObjectsOfProperty(listRoot, RDF.first).toSet().single().asResource()
@@ -169,10 +155,19 @@ class RuleParser(val model: Model) {
 
     private fun parseBuiltinAtom(root: Resource) : MutationAtom? {
         assert(hasType(root, SWRL.BuiltinAtom))
-        val type = model.listObjectsOfProperty(root, SWRL.builtin).toSet().single()
+
+        val type = try {
+            model.listObjectsOfProperty(root, SWRL.builtin).toSet().single()
+        } catch (e: Exception) {
+            mainLogger.warn("Builtin for rule mutation can not be parsed because not exactly one ")
+            return null
+        }
+
         return when (type){
             OWL.NegativePropertyAssertion -> parseNegativePropertyAtom(root)
             model.getResource(FreshNodeAtom.BUILTIN_IRI) -> parseFreshNodeAtom(root)
+            model.getResource(DeleteNodeAtom.BUILTIN_IRI) -> parseDeleteNodeAtom(root)
+            model.getResource(ReplaceNodeAtom.BUILTIN_IRI) -> parseReplaceNodeAtom(root)
             else ->{
                 mainLogger.warn("Builtin SWRL atom of type $type is not supported and can not be parsed.")
                 null
@@ -215,7 +210,7 @@ class RuleParser(val model: Model) {
 
         val arguments = ComplexTermParser().allElementsInList(model, argumentsHead)
         if (arguments.size != 1) {
-            mainLogger.warn("Builtin SWRL atom that reflects negative property assertion is not correctly structured" +
+            mainLogger.warn("Builtin SWRL atom that reflects new node declaration is not correctly structured" +
                     " and can not be parsed. Not the correct number of arguments (${arguments.size} arguments " +
                     "provided but 1 required).")
             return null
@@ -225,6 +220,93 @@ class RuleParser(val model: Model) {
 
         return FreshNodeAtom(freshNodeName)
 
+    }
+
+    // parses atom for deleting a node
+    private fun parseDeleteNodeAtom(root: Resource) : DeleteNodeAtom? {
+        val argumentsHead = model.listObjectsOfProperty(root, SWRL.arguments).toSet().singleOrNull()?.asResource()
+        if (argumentsHead == null) {
+            mainLogger.warn("Builtin SWRL atom that reflects deletion of node is not correctly structured" +
+                    " and can not be parsed. Problem: Not exactly one \"swrl:arguments\" argument provided.")
+            return null
+        }
+
+        val arguments = ComplexTermParser().allElementsInList(model, argumentsHead)
+        if (arguments.size != 1) {
+            mainLogger.warn("Builtin SWRL atom that reflects deletion of node is not correctly structured" +
+                    " and can not be parsed. Not the correct number of arguments (${arguments.size} arguments " +
+                    "provided but 1 required).")
+            return null
+        }
+
+        val deleteNode = arguments[0]
+
+        return DeleteNodeAtom(deleteNode)
+
+    }
+
+    // parses atom for deleting a node
+    private fun parseReplaceNodeAtom(root: Resource) : ReplaceNodeAtom? {
+        val argumentsHead = model.listObjectsOfProperty(root, SWRL.arguments).toSet().singleOrNull()?.asResource()
+        if (argumentsHead == null) {
+            mainLogger.warn("Builtin SWRL atom that reflects replacement of node is not correctly structured" +
+                    " and can not be parsed. Problem: Not exactly one \"swrl:arguments\" argument provided.")
+            return null
+        }
+
+        val arguments = ComplexTermParser().allElementsInList(model, argumentsHead)
+        if (arguments.size != 2) {
+            mainLogger.warn("Builtin SWRL atom that reflects replacement of node is not correctly structured" +
+                    " and can not be parsed. Not the correct number of arguments (${arguments.size} arguments " +
+                    "provided but 2 required).")
+            return null
+        }
+
+        val oldNode = arguments[0]
+        val newNode = arguments[1]
+
+        return ReplaceNodeAtom(oldNode, newNode)
+
+    }
+
+
+    // check, if constraints on the atom structure are satisfied
+    private fun validMutationRule(bodyAtoms: List<MutationAtom>, headAtoms: List<MutationAtom>): Boolean{
+        // no fresh variable declaration in head --> remove if they are present
+        val freshNodeHeadAtoms = headAtoms.filterIsInstance<FreshNodeAtom>()
+        if (freshNodeHeadAtoms.any()) {
+            mainLogger.warn("Declaration of fresh variable in head of rule is not allowed. Rule is ignored.")
+            return false
+        }
+
+        // fresh nodes in body are not allowed to be used in other body atoms
+        val freshNodeBodyAtoms = bodyAtoms.filterIsInstance<FreshNodeAtom>()
+        freshNodeBodyAtoms.forEach { freshAtom ->
+            val freshVariable = freshAtom.variable
+            bodyAtoms.forEach { bodyAtom ->
+                if (bodyAtom.containsResource(freshVariable) && bodyAtom != freshAtom){
+                    mainLogger.warn("Variables that are new are not allowed to occur in any other atom in body of " +
+                            "rule. Variable name: $freshVariable. Rule is ignored.")
+                    return false
+                }
+            }
+        }
+
+        // delete atoms and replacement atoms are not allowed to occur in body
+        bodyAtoms.forEach { atom ->
+            if (atom is DeleteNodeAtom) {
+                mainLogger.warn("Atoms that represent deleting of a node are not allowed to occur in body of rule." +
+                        "Mutation operator can not be created. Atom with problem: ${atom.toLocalString()}")
+                return false
+            }
+            if (atom is ReplaceNodeAtom) {
+                mainLogger.warn("Atoms that represent replacement of a node are not allowed to occur in body of rule." +
+                        "Mutation operator can not be created. Atom with problem: ${atom.toLocalString()}")
+                return false
+            }
+        }
+
+        return true
     }
 
     // check type declaration of a resource
