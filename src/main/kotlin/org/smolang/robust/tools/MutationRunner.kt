@@ -155,9 +155,15 @@ class MutationRunner(configFile : File?) {
                 mainLogger.error("File ${fileName.path} for mutations does not exist")
                 null
             } else  {
-                val input = RDFDataMgr.loadDataset(fileName.absolutePath).defaultModel
-                val parser = RuleParser(input)
-                parser.getAllRuleMutations()
+                val input = try {
+                    RDFDataMgr.loadDataset(fileName.absolutePath).defaultModel
+                } catch (e : Exception) {
+                    mainLogger.error("Could not open file $fileName. Following exception occurred: $e")
+                    null
+                }
+                // parse rules, if dataset could be loaded from file
+                val parser = input?.let { RuleParser(it) }
+                parser?.getAllRuleMutations()
             }
         return mutations
     }

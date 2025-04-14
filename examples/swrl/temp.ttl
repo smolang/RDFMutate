@@ -1,0 +1,51 @@
+PREFIX :     <http://www.ifi.uio.no/tobiajoh/miniPipes#>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX pipe: <http://www.ifi.uio.no/tobiajoh/miniPipes#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xml:  <http://www.w3.org/XML/1998/namespace>
+PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
+
+pipe:visited  rdf:type  owl:NamedIndividual , pipe:InspectionStatus .
+
+pipe:segment2  rdf:type  pipe:PipeSegment , owl:NamedIndividual .
+
+<https://smolang.org/rdfMutate#newNode-0>
+        rdf:type  pipe:PipeSegment .
+
+pipe:PipeSegment  rdf:type  owl:Class;
+        rdfs:subClassOf  pipe:Infrastructure .
+
+pipe:auv  rdf:type  owl:NamedIndividual , pipe:Robot;
+        pipe:isAt  pipe:segment1 .
+
+pipe:InspectionStatus
+        rdf:type          owl:Class;
+        owl:disjointWith  pipe:Robot .
+
+pipe:mobyDick  rdf:type  pipe:Whale , owl:NamedIndividual;
+        pipe:nextTo  pipe:segment1 .
+
+pipe:segment1  rdf:type  pipe:PipeSegment , owl:NamedIndividual;
+        pipe:nextTo  <https://smolang.org/rdfMutate#newNode-0> , pipe:segment2 .
+
+pipe:Whale  rdf:type     owl:Class;
+        rdfs:subClassOf  pipe:Animal .
+
+pipe:Animal  rdf:type     owl:Class;
+        owl:disjointWith  pipe:Infrastructure , pipe:InspectionStatus .
+
+pipe:Robot  rdf:type  owl:Class .
+
+<http://www.ifi.uio.no/tobiajoh/miniPipes>
+        rdf:type  owl:Ontology .
+
+pipe:Infrastructure  rdf:type  owl:Class;
+        owl:disjointWith  pipe:InspectionStatus .
+
+pipe:isAt  rdf:type  owl:ObjectProperty .
+
+pipe:hasStatus  rdf:type  owl:ObjectProperty;
+        rdfs:domain  pipe:InspectionStatus .
+
+pipe:nextTo  rdf:type  owl:ObjectProperty , owl:SymmetricProperty .

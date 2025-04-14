@@ -44,5 +44,13 @@ class NodeMap {
         return mapping[r] ?: r
     }
 
+    // adds all mappings from the additional mapping
+    // overwrites value if possible
+    fun addAll(additionalMapping : NodeMap) {
+        additionalMapping.mapping.keys.forEach { newKey ->
+            this[newKey] = additionalMapping[newKey]!!
+        }
+    }
+
 
 }

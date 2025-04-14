@@ -1,0 +1,24 @@
+print_summary: true
+
+seed_graph:
+    file: examples/miniPipes.ttl
+    type: rdf
+    
+output_graph:
+    file: examples/swrl/temp.ttl
+    overwrite: true 
+    type: rdf
+    
+number_of_mutations: 1
+
+strategy:
+    name: random
+      
+mutation_operators:
+    - resource:
+        file: examples/swrl/addPipeSegment.ttl
+        syntax: swrl
+
+condition:
+    reasoning:
+        consistency: false

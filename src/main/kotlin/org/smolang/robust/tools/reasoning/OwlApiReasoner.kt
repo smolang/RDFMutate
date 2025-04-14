@@ -28,7 +28,7 @@ abstract class OwlApiReasoner(jenaModel : Model) : MaskReasoner(jenaModel) {
             // treat ontologies that result in exception of reasoner as inconsistent
             when ( e) {
                 is OpenError, is ClassCastException -> {
-                    //known exeptions
+                    //known exceptions
                     false
                 }
                 else -> {

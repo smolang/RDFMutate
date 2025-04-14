@@ -36,7 +36,7 @@ class PipeInspectionTests : StringSpec()  {
 
     init {
         "count number of added segments" {
-            forAll(1) { i: Int ->
+            forAll(5) { i: Int ->
                 // add up to 99 new segments
                 val k = (i % 100).absoluteValue
                 //println("add: $k new pipe segments")

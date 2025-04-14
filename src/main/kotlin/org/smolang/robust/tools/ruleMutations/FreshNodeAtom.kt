@@ -1,25 +1,27 @@
 package org.smolang.robust.tools.ruleMutations
 
-import org.apache.jena.rdf.model.RDFNode
 import org.apache.jena.rdf.model.Resource
 
 // an atom representing a fresh node that is introduced
-class FreshNodeAtom(val node: RDFNode) : MutationAtom() {
+class FreshNodeAtom(val variable: Resource) : MutationAtom() {
 
    companion object {
-       val IRI = "https://smolang.org/rdfMutate#newNode"
+       // iri that is used in SWRL rules to mark atoms that declare fresh nodes
+       val BUILTIN_IRI = "https://smolang.org/rdfMutate#newNode"
+       // prefix that is used for naming the newly added nodes
+       val NAME_PREFIX = "https://smolang.org/rdfMutate#newNode-"
    }
 
     override fun toLocalString(): String {
-        val nodeName = if (node.isResource) {
-            node.asResource().localName
+        val nodeName = if (variable.isResource) {
+            variable.asResource().localName
         }
         else
-            node.toString()
+            variable.toString()
         return "newNode($nodeName)"
     }
 
     override fun containsResource(r: Resource): Boolean {
-        return (r == node)
+        return (r == variable)
     }
 }

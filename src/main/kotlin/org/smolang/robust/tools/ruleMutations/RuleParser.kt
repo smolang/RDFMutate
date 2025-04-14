@@ -55,8 +55,30 @@ class RuleParser(val model: Model) {
         assert(hasType(head, SWRL.AtomList))
         assert(hasType(body, SWRL.AtomList))
 
-        val headAtoms = parseAtomList(head) ?: return null
+        val headAtoms = parseAtomList(head)?.toMutableList() ?: return null
         val bodyAtoms = parseAtomList(body) ?: return null
+
+        // check constraints on rules
+        // no fresh variable declaration in head --> remove if they are present
+        val freshNodeHeadAtoms = headAtoms.filterIsInstance<FreshNodeAtom>()
+        if (freshNodeHeadAtoms.any()) {
+            mainLogger.warn("Declaration of fresh variable in head of rule is not allowed. Rule is ignored.")
+            return null
+        }
+
+        // fresh nodes in body are not allowed to be used in other body atoms
+        val freshNodeBodyAtoms = bodyAtoms.filterIsInstance<FreshNodeAtom>()
+        freshNodeBodyAtoms.forEach { freshAtom ->
+            val freshVariable = freshAtom.variable
+            bodyAtoms.forEach { bodyAtom ->
+                if (bodyAtom.containsResource(freshVariable) && bodyAtom != freshAtom){
+                    mainLogger.warn("Variables that are new are not allowed to occur in any other atom in body of " +
+                            "rule. Variable name: $freshVariable. Rule is ignored.")
+                    return null
+                }
+            }
+        }
+
 
         // get variables of head and body
         val headVariables = variables.filter { v -> containsResource(headAtoms, v) }.toSet()
@@ -66,6 +88,7 @@ class RuleParser(val model: Model) {
     }
 
     // parses the atom list from an RDF file
+    // returns "null" if any of the atoms can not be parsed correctly
     private fun parseAtomList(listRoot : Resource) : List<MutationAtom>? {
         val result = mutableListOf<MutationAtom>()
 
@@ -144,11 +167,12 @@ class RuleParser(val model: Model) {
         return PositiveStatementAtom(classStatement)
     }
 
-    private fun parseBuiltinAtom(root: Resource) : StatementAtom? {
+    private fun parseBuiltinAtom(root: Resource) : MutationAtom? {
         assert(hasType(root, SWRL.BuiltinAtom))
         val type = model.listObjectsOfProperty(root, SWRL.builtin).toSet().single()
         return when (type){
             OWL.NegativePropertyAssertion -> parseNegativePropertyAtom(root)
+            model.getResource(FreshNodeAtom.BUILTIN_IRI) -> parseFreshNodeAtom(root)
             else ->{
                 mainLogger.warn("Builtin SWRL atom of type $type is not supported and can not be parsed.")
                 null
@@ -168,7 +192,7 @@ class RuleParser(val model: Model) {
         if (arguments.size != 3) {
             mainLogger.warn("Builtin SWRL atom that reflects negative property assertion is not correctly structured" +
                     " and can not be parsed. Not the correct number of arguments (${arguments.size} arguments " +
-                    "but 3 required).")
+                    "provided but 3 required).")
             return null
         }
         val negatedStatement = model.createStatement(
@@ -178,6 +202,29 @@ class RuleParser(val model: Model) {
         )
 
         return NegativeStatementAtom(negatedStatement)
+    }
+
+    // parses atom declaring a fresh node
+    private fun parseFreshNodeAtom(root: Resource) : FreshNodeAtom? {
+        val argumentsHead = model.listObjectsOfProperty(root, SWRL.arguments).toSet().singleOrNull()?.asResource()
+        if (argumentsHead == null) {
+            mainLogger.warn("Builtin SWRL atom that reflects new node declaration is not correctly structured" +
+                    " and can not be parsed. Not exactly one \"swrl:arguments\" argument.")
+            return null
+        }
+
+        val arguments = ComplexTermParser().allElementsInList(model, argumentsHead)
+        if (arguments.size != 1) {
+            mainLogger.warn("Builtin SWRL atom that reflects negative property assertion is not correctly structured" +
+                    " and can not be parsed. Not the correct number of arguments (${arguments.size} arguments " +
+                    "provided but 1 required).")
+            return null
+        }
+
+        val freshNodeName = arguments[0].asResource()
+
+        return FreshNodeAtom(freshNodeName)
+
     }
 
     // check type declaration of a resource

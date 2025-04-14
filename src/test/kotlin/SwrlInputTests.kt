@@ -192,4 +192,26 @@ class SwrlInputTests : StringSpec() {
 
         }
     }
+
+    init {
+        "SWRL with new node declaration" {
+            val seed = RDFDataMgr.loadDataset("PipeInspection/miniPipes.ttl").defaultModel
+            val mutationGraph = RDFDataMgr.loadDataset("PipeInspection/addPipeSegment.ttl").defaultModel
+            val mutation = RuleParser(mutationGraph).getAllRuleMutations().single()
+
+            // apply mutations
+            val ms = MutationSequence()
+            ms.addAbstractMutation(mutation)
+            val mutator = Mutator(ms)
+            val result = mutator.mutate(seed)
+
+            // check, that there is one more segment individual
+            result.listStatements(
+                null,
+                RDF.type,
+                result.getResource("http://www.ifi.uio.no/tobiajoh/miniPipes#PipeSegment")
+            ).toSet().size shouldBe 3
+
+        }
+    }
 }

@@ -8,6 +8,7 @@ import org.smolang.robust.mainLogger
 import org.smolang.robust.randomGenerator
 import org.smolang.robust.tools.ruleMutations.NegativeStatementAtom
 import org.smolang.robust.tools.NodeMap
+import org.smolang.robust.tools.ruleMutations.FreshNodeAtom
 import org.smolang.robust.tools.ruleMutations.PositiveStatementAtom
 
 // a mutation represented by a rule, i.e., SWRL rule
@@ -36,7 +37,28 @@ class RuleMutation(model : Model) : Mutation(model) {
                 swrlToSparql[node] = "?${node.asResource().localName}"
         }
 
-        // combine variables
+        // get values for fresh nodes to mapping
+        val freshNodeAtomsBody = ruleConfig.body.filterIsInstance<FreshNodeAtom>()
+        // mapping for all new nodes; from variable name to generated, fresh IRI
+        val freshNodeMapping = NodeMap()
+        freshNodeAtomsBody.forEach { atom ->
+            // check, if fresh node is really a variable
+            if (ruleConfig.bodyVariables.contains(atom.variable)) {
+                // find new IRI that is not used so far
+                val prefix = FreshNodeAtom.NAME_PREFIX
+                var i = 0
+                var iri = "$prefix$i"
+                while (model.containsResource(model.createResource(iri))) {
+                    i += 1
+                    iri = "$prefix$i"
+                }
+                // the new Node that is created
+                val newNode = model.createResource(iri)
+                freshNodeMapping[atom.variable] = newNode
+            }
+        }
+
+        // extract variables
         val positiveBodyAtoms = ruleConfig.body.filterIsInstance<PositiveStatementAtom>()
         val negativeBodyAtoms = ruleConfig.body.filterIsInstance<NegativeStatementAtom>()
 
@@ -48,10 +70,14 @@ class RuleMutation(model : Model) : Mutation(model) {
         val bodyVariablesSparql = argumentVariables.joinToString(" ") { v -> swrlToSparql[v]?:"" }
 
         // check, if every variable is contained in at least one positive atom and raise warning, if not
-        for (v in ruleConfig.bodyVariables.minus(argumentVariables)) {
-            //if (positiveBodyAtoms.filter { a -> a.containsResource(v) }.isEmpty())
-            mainLogger.warn("Variable \"${v.localName}\" does not occur in a positive atom. This violates a requirement of how swrl" +
-                        " rules for actions should be designed. The behavior of the mutation might not be as expected.")
+        for (v in ruleConfig.bodyVariables.minus(argumentVariables.toSet())) {
+            // check, if variable occurs in any fresh node declaration
+            if (freshNodeAtomsBody.none { a -> a.containsResource(v) }) {
+                mainLogger.warn(
+                    "Variable \"${v.localName}\" does not occur in a positive atom. This violates a requirement of how swrl" +
+                            " rules for actions should be designed. The behavior of the mutation might not be as expected."
+                )
+            }
         }
 
         // filter selection, fi there are negative atoms
@@ -88,6 +114,9 @@ class RuleMutation(model : Model) : Mutation(model) {
                 if (r.contains(swrlToSparql[variable]))
                     solutionMapping[variable] = r.get(swrlToSparql[variable])
             }
+            // add mapping for fresh nodes
+            solutionMapping.addAll(freshNodeMapping)
+
             allSolutions.add(solutionMapping)
         }
 
@@ -104,12 +133,10 @@ class RuleMutation(model : Model) : Mutation(model) {
             return
         }
 
+        // check correct usage of declarations of new nodes:
+        assert(ruleConfig.head.filterIsInstance<FreshNodeAtom>().isEmpty())
+
         // apply mapping to compute remove set and add set
-
-        // TODO: decide: should body be deleted, or not?
-        //for (s in ruleConfig.body)
-        //    mapping.apply(s, model)?.let { removeSet.add(it) }
-
         // get consequences from rule head
         for (a in ruleConfig.head) {
             when (a){
