@@ -1,5 +1,6 @@
 package org.smolang.robust.domainSpecific.reasoner
 
+import org.smolang.robust.domainSpecific.KgAnalyzer
 import org.smolang.robust.mutant.Mutation
 import org.smolang.robust.mutant.MutationSequence
 import org.smolang.robust.mutant.Mutator
@@ -17,7 +18,7 @@ class OwlEvaluationGraphGenerator(
     private val mutationNumbers: List<Int> = listOf(0,1,2,3,4,5,6,7,8,9,10,20,30,40,50,75,100),
     private val sampleSize: Int = 100 // number of ontologies that are considered (might be more than in folder)
              ) {
-    private val ontologyAnalyzer = OntologyAnalyzer()
+    private val ontologyAnalyzer = OwlOntologyAnalyzer()
     private val owlFileHandler = OwlFileHandler()
 
 
@@ -62,7 +63,7 @@ class OwlEvaluationGraphGenerator(
                 val res = m.mutate(seedOntology)
 
                 // safe result
-                results[mutCount]?.add(ontologyAnalyzer.getOwlFeaturesHashed(res))
+                results[mutCount]?.add(ontologyAnalyzer.getFeaturesHashed(res))
                 count += 1
             }
         }

@@ -10,7 +10,10 @@ import org.smolang.robust.mainLogger
 class SuaveEvaluationGraphGenerator() {
 
     // generates data for the graph presented in ISSRE paper
-    fun generateGraph(numberOfMutants : Int, outputFile : File) {
+    fun generateGraph(
+        numberOfMutants : Int,
+        outputFile : File,
+        ids: List<Int> = listOf(0,1,2,3,4,5,6,7)) {
         val nameOfMutants = "temp"
         val saveMutants = false
         val ratioDomainDependent1 = 1.0
@@ -23,7 +26,7 @@ class SuaveEvaluationGraphGenerator() {
         val listAttemptsDS2 : MutableList<Int> = mutableListOf()
         val listAttemptsDI5 : MutableList<Int> = mutableListOf()
         val listAttemptsDS5 : MutableList<Int> = mutableListOf()
-        val ids = listOf(0,1,2,3,4,5,6,7)
+
         for (id in ids) {
             mainLogger.info("create mutants for mask with id $id")
             val maskFile = File("sut/suave/masks/mask$id.ttl")
@@ -33,7 +36,7 @@ class SuaveEvaluationGraphGenerator() {
 
 
             // generate domain-independent mutants
-            val sg = SuaveTestCaseGenerator(false)
+            val sg = SuaveTestCaseGenerator()
             val attemptsDI2 = sg.generateSuaveMutants(
                 numberOfMutants,
                 numberOfMutations=2,
