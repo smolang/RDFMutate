@@ -19,7 +19,7 @@ class ConfigParserTest : StringSpec() {
 
     init {
         "file is not well-formed" {
-            ConfigParser(File("file_does_not_exists.yaml")).getConfig() shouldBe null
+            ConfigParser(File("src/test/resources/configs/wrongSchema.yaml")).getConfig() shouldBe null
         }
     }
 }
