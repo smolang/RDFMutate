@@ -6,6 +6,7 @@ import org.smolang.robust.mutant.RobustnessMask
 import java.io.File
 import java.io.FileOutputStream
 import org.smolang.robust.mainLogger
+import org.smolang.robust.tools.reasoning.ReasoningBackend
 
 class SuaveEvaluationGraphGenerator() {
 
@@ -32,7 +33,7 @@ class SuaveEvaluationGraphGenerator() {
             val maskFile = File("sut/suave/masks/mask$id.ttl")
             val shapesGraph = RDFDataMgr.loadGraph(maskFile.absolutePath)
 
-            val mask = RobustnessMask(Shapes.parse(shapesGraph))
+            val mask = RobustnessMask(Shapes.parse(shapesGraph), ReasoningBackend.OPENLLET)
 
 
             // generate domain-independent mutants
@@ -84,6 +85,10 @@ class SuaveEvaluationGraphGenerator() {
             listAttemptsDS5.add(attemptsDS5)
 
         }
+
+        // create the directory, if it does not exist
+        outputFile.parentFile.mkdirs()
+
 
         // output results to csv file
         FileOutputStream(outputFile).use { fos ->

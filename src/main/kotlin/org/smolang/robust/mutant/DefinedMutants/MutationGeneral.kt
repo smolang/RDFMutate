@@ -45,11 +45,11 @@ open class RemoveStatementMutation(model: Model) : Mutation(model) {
 }
 
 open class AddRelationMutation(model: Model) : Mutation(model) {
-   // relations that should not be randomly selected, as they will lead to problems in the schema
+    // relations that should not be randomly selected, as they will lead to problems in the schema
     private val excludeP : List<Property> = listOf(
-       //typeProp,
-       model.createProperty("http://www.w3.org/1999/02/22-rdf-syntax-ns#first"),
-       model.createProperty("http://www.w3.org/1999/02/22-rdf-syntax-ns#rest")
+        //typeProp,
+        model.createProperty("http://www.w3.org/1999/02/22-rdf-syntax-ns#first"),
+        model.createProperty("http://www.w3.org/1999/02/22-rdf-syntax-ns#rest")
     )
     //val exclude
     private val excludePrefixes : List<String> = listOf(
@@ -168,136 +168,15 @@ open class AddRelationMutation(model: Model) : Mutation(model) {
         // TODO: similar check for asymmetric
     }
 
-    private fun computeDomainsObjectProp(p : Property) : Pair<Set<Resource>, Set<RDFNode>> {
-        // only select individuals and according to range and domain
-        // note: this is very restrictive, as usually, one could infer the class from the relation
-        // our setting is more useful in a closed-world scenario
-
-        assert(isOfType(p, OWL.ObjectProperty))
-        // compute domains
-
-        val Ind = allOfType(OWL.NamedIndividual)   // all individuals
-
-        val domains = infModel.listStatements(p, RDFS.domain, null as RDFNode?).toSet()
-        var domainP : MutableSet<Resource> = Ind.toMutableSet()
-        domains.forEach {
-            domainP = domainP.intersect(allOfInferredType(it.`object`.asResource())).toMutableSet()
-        }
-
-        // compute range
-        val ranges = infModel.listStatements(p, RDFS.range, null as RDFNode?).toSet()
-        var rangeP : MutableSet<Resource> = Ind.toMutableSet()
-        ranges.forEach {
-            rangeP = rangeP.intersect(allOfInferredType(it.`object`.asResource())).toMutableSet()
-        }
-        return Pair(domainP, rangeP)
+    open fun computeDomainsObjectProp(p : Property) : Pair<Set<Resource>, Set<RDFNode>> {
+        return Pair(allOfType(OWL.NamedIndividual), allOfType(OWL.NamedIndividual))
     }
 
-    private fun computeDomainsDataProp(p : Property) : Pair<Set<Resource>, Set<RDFNode>> {
-        // only select individuals and according to range and domain
-        // note: this is very restrictive, as usually, one could infer the class from the relation
-        // our setting is more useful in a closed-world scenario
-
-        assert(isOfType(p, OWL.DatatypeProperty))
-
-        // compute domains
-
-        val Ind = allOfType(OWL.NamedIndividual)   // all individuals
-
-        val domains = infModel.listStatements(p, RDFS.domain, null as RDFNode?).toSet()
-        var domainP : MutableSet<Resource> = Ind.toMutableSet()
-        domains.forEach {
-            domainP = domainP.intersect(allOfInferredType(it.`object`.asResource())).toMutableSet()
-        }
-
-        val ranges = model.listObjectsOfProperty(p, RDFS.range).toSet()
-
-        var rangeP : MutableSet<RDFNode> = hashSetOf()
-
-        if (ranges.size > 1) {
-            mainLogger.warn("can not add data relation. Property ${p.localName} has more than one range provided")
-        }
-        else {
-            val range =
-                if (ranges.size == 1)
-                    ranges.single()
-                else {
-                    val r = HashSet<RDFNode>()
-                    r.add(XSD.xboolean)
-                    r.add(XSD.xdouble)
-                    r.add(XSD.decimal)
-                    r.random(randomGenerator)
-                }
-
-            // check different classes of data properties, for which we can determine the domain
-            if (range == XSD.xboolean) {
-                val trueNode = model.createTypedLiteral("true", XSD.xboolean.toString())
-                val falseNode = model.createTypedLiteral("false", XSD.xboolean.toString())
-                rangeP = hashSetOf(trueNode, falseNode)
-            }
-            else if (range == XSD.decimal) {
-                // compute a random decimal number
-
-                // 50% chance of having a negative number
-                val sign =
-                    if (randomGenerator.nextBoolean())
-                        "-"
-                    else
-                        ""
-
-                // the absolute value favours small numbers --> 1/x distribution
-                // e.g. probability of having 0 as leading number is 50%
-                val beforeComma = ((1/(-randomGenerator.nextDouble(-1.0, 1.0) + 1.0))).toInt()
-                val data = "$sign$beforeComma.${randomGenerator.nextInt(0,1000)}"
-                rangeP = hashSetOf(model.createTypedLiteral(data, XSD.decimal.toString()))
-
-            }
-            else if (range == XSD.xdouble) {
-                // compute a random double  number
-
-                // 50% chance of having a negative number
-                val sign =
-                    if (randomGenerator.nextBoolean())
-                        "-"
-                    else
-                        ""
-
-                // the absolute value favours small numbers --> 1/x distribution
-                // e.g. probability of having 0 as leading number is 50%
-                val beforeComma = ((1/(-randomGenerator.nextDouble(-1.0, 1.0) + 1.0))).toInt()
-                val data = "$sign$beforeComma.${randomGenerator.nextInt(0,1000)}"
-                rangeP = hashSetOf(model.createTypedLiteral(data, XSD.xdouble.toString()))
-
-            }
-            else if (isOfType(range.asResource(), RDFS.Datatype)) {
-                // check if it is a list of statements
-                val oneOf = model.listObjectsOfProperty(
-                    range.asResource(),
-                    OWL.oneOf
-                ).toSet()
-                if (oneOf.size != 1){
-                    mainLogger.warn("can not add data relation. Property ${p.localName} is marked as 'Datatype' but does" +
-                                " not provide one 'oneOf'-relation ")
-                }
-                else {
-                    val list = oneOf.single()
-                    if (!isOfType(list.asResource(), RDF.List)){
-                        mainLogger.warn("can not add data relation. Property ${p.localName} has not a list as 'oneOf'.")
-                    }
-                    else {
-                        // collect elements of list
-                        rangeP = ComplexTermParser().allElementsInList(model, list.asResource()).toMutableSet()
-                    }
-                }
-
-            }
-            else {
-                mainLogger.warn("the range of datatype property ${p.localName} is not implemented yet. No axiom is added")
-            }
-        }
-
-        return Pair(domainP, rangeP)
+    open fun computeDomainsDataProp(p : Property) : Pair<Set<Resource>, Set<RDFNode>> {
+        return Pair(allOfType(OWL.NamedIndividual), allNodes())
     }
+
+
 
     open fun computeDomainsProp(p : Property) : Pair<Set<Resource>, Set<RDFNode>> {
         // build sets for the elements that are in the domain and range of the property
@@ -309,17 +188,16 @@ open class AddRelationMutation(model: Model) : Mutation(model) {
         // is property an ObjectProperty?
 
         if (isOfType(p, OWL.ObjectProperty)) {
-            domainP = allOfType(OWL.NamedIndividual)
-            rangeP = allOfType(OWL.NamedIndividual)
+            val (d, r) = computeDomainsObjectProp(p)
+            domainP = d
+            rangeP = r
         }
-        /*
-        else if (isOfType(p, datatypeProp)) {
+        else if (isOfType(p, OWL.DatatypeProperty)) {
             val (d, r) = computeDomainsDataProp(p)
             domainP = d
             rangeP = r
         }
         // is property type property?
-        else */
         else if (p == RDF.type){
             // let's restrict ourselves to add type relations between individuals and classes
             domainP = Ind
@@ -378,7 +256,7 @@ open class AddRelationMutation(model: Model) : Mutation(model) {
             // test if axiom exists
             // try 10 times to find an axiom that does not exist, as this often works and it is fast
             var i = 0
-            while (!validAddition(axiomCand) && i < 10) {
+            while (!validAddition(axiomCand) && i < 20) {
                 // find new axiom
                 axiomCand = model.createStatement(domainP.random(randomGenerator), p, rangeP.random(randomGenerator))
                 i += 1
@@ -387,8 +265,9 @@ open class AddRelationMutation(model: Model) : Mutation(model) {
             // test if a non-contained axiom was found
             val axiom =
                 if (!validAddition(axiomCand))
-                    // use expensive search for a valid axiom in case no valid one was found so far
-                    costlySearchForValidAxiom(p, domainP.toSet(), rangeP.toSet())
+                    null
+                // use expensive search for a valid axiom in case no valid one was found so far
+                //costlySearchForValidAxiom(p, domainP.toSet(), rangeP.toSet())
                 else
                     axiomCand
 
@@ -661,7 +540,7 @@ open class ReplaceNodeWithNode(
 // more sophisticated version, i.e. is more careful when adding relations, e.g. takes domain definitions into account
 open class AddRelationMutationSophisticated(model: Model) : AddRelationMutation(model) {
 
-    fun computeDomainsObjectProp(p : Property) : Pair<Set<Resource>, Set<RDFNode>> {
+    override fun computeDomainsObjectProp(p : Property) : Pair<Set<Resource>, Set<RDFNode>> {
         // only select individuals and according to range and domain
         // note: this is very restrictive, as usually, one could infer the class from the relation
         // our setting is more useful in a closed-world scenario
@@ -686,7 +565,7 @@ open class AddRelationMutationSophisticated(model: Model) : AddRelationMutation(
         return Pair(domainP, rangeP)
     }
 
-    fun computeDomainsDataProp(p : Property) : Pair<Set<Resource>, Set<RDFNode>> {
+    override fun computeDomainsDataProp(p : Property) : Pair<Set<Resource>, Set<RDFNode>> {
         // only select individuals and according to range and domain
         // note: this is very restrictive, as usually, one could infer the class from the relation
         // our setting is more useful in a closed-world scenario

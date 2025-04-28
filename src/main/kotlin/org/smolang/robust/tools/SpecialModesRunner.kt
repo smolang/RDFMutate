@@ -1,18 +1,20 @@
 package org.smolang.robust.tools
 
-import org.apache.jena.riot.Lang
+import com.github.owlcs.ontapi.OntManagers
+import com.github.owlcs.ontapi.Ontology
+import com.github.owlcs.ontapi.internal.AxiomTranslator
+import org.apache.jena.ontapi.OntModelFactory
 import org.apache.jena.riot.RDFDataMgr
-import org.apache.jena.shacl.Shapes
-import org.smolang.robust.domainSpecific.geo.GeoScenarioGenerator
-import org.smolang.robust.domainSpecific.geo.GeoTestCaseGenerator
-import org.smolang.robust.domainSpecific.reasoner.OwlEvaluationGraphGenerator
-import org.smolang.robust.domainSpecific.suave.SuaveEvaluationGraphGenerator
-import org.smolang.robust.domainSpecific.suave.SuaveTestCaseGenerator
+import org.semanticweb.owlapi.formats.FunctionalSyntaxDocumentFormat
+import org.semanticweb.owlapi.model.AxiomType
+import org.semanticweb.owlapi.model.IRI
+import org.semanticweb.owlapi.model.OWLAxiom
 import org.smolang.robust.mainLogger
 import org.smolang.robust.mutant.*
 import org.smolang.robust.mutant.DefinedMutants.*
 import org.smolang.robust.sut.auv.MiniPipeInspection
 import java.io.File
+
 
 // class to run special modes of the tool
 class SpecialModesRunner {
@@ -83,5 +85,27 @@ class SpecialModesRunner {
         return  outcome
     }
 
+    // generates evaluation graphs
+    fun performanceEvaluation() {
+       /* SuaveEvaluationGraphGenerator().generateGraph(
+            50,
+            File("evaluation/attemptsPerMask.csv"
+            ))
+
+        */
+        val model = RDFDataMgr.loadDataset("examples/ont-api-problem.ttl").defaultModel
+
+        val manager = OntManagers.createManager()
+        val ontology = manager.addOntology(model.graph)
+
+       manager.saveOntology(
+            ontology,
+            FunctionalSyntaxDocumentFormat(),
+            IRI.create(File("examples/ont-api-problem-saved.ttl").toURI())
+        )
+
+
+
+    }
 
 }

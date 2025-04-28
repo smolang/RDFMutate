@@ -71,10 +71,7 @@ open class TestCaseGenerator() {
                 val numAdd = m.globalMutation?.addSet?.size ?: -1
                 val appliedMutations = m.appliedMutations
                 val affectedSeedNodes = m.affectedSeedNodes.joinToString(",", "[", "]") {
-                    if (it.localName != null)
-                        it.localName
-                    else
-                        it.toString()
+                    it.localName ?: it.toString()
                 }
 
                 val addedAxioms = m.addSet.joinToString( ",", "[", "]")

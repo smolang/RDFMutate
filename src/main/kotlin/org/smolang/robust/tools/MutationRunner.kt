@@ -22,6 +22,7 @@ class MutationRunner(configFile : File?) {
     // if true, errors in parts of config, e.g. parsing of some operators / mask parts leads to overall abort
     val strictParsing = config?.strict_parsing ?: true
 
+    // main function to extract information from config file and generate mutants
     fun mutate() : MutationOutcome {
         if (config == null) {
             mainLogger.error("Configuration does not exist. Mutation is not possible.")
@@ -34,16 +35,47 @@ class MutationRunner(configFile : File?) {
         // get mask
         val mask : RobustnessMask = getMask() ?: return MutationOutcome.INCORRECT_INPUT
 
-        // check output path
-        val outputFile = File(config.output_graph.file)
-        if(outputFile.exists() && !config.output_graph.overwrite){
-            mainLogger.error("Output file ${outputFile.path} does already exist. " +
-                    "Please choose a different name or set \"overwrite\" value to \"true\".")
-            return MutationOutcome.INCORRECT_INPUT
+        // extract output files; check output path
+        val outputFiles = mutableListOf<File>()
+        val outputParent = File(config.output_graph.file).parentFile
+        if (config.number_of_mutants == 1) {
+            // only one mutant file provided
+            val outputFile = File(config.output_graph.file)
+            if (outputFile.exists() && !config.output_graph.overwrite) {
+                mainLogger.error(
+                    "Output file ${outputFile.path} does already exist. " +
+                            "Please choose a different name or set \"overwrite\" value to \"true\"."
+                )
+                return MutationOutcome.INCORRECT_INPUT
+            }
+            outputFiles.add(outputFile) // add file name, if everything is valid
+        }
+        else {
+            val filePattern = config.output_graph.file // pattern provided in config file
+            val positionEnding = filePattern.indexOfLast {it == '.'}    // position of the dot indication file type
+            val noType = (positionEnding == -1) // no type information found
+            // remove everything except ending
+            val filePrefix = if (noType) filePattern else filePattern.removeRange(positionEnding, filePattern.length)
+            val fileType = if (noType) "" else filePattern.removeRange(0, positionEnding)
+
+            // generate as many file names as required
+            for (i in 0..config.number_of_mutants-1) {
+                val fileName = "${filePrefix}$i$fileType"
+                val outputFile = File(fileName)
+                // check if output file exists
+                if (outputFile.exists() && !config.output_graph.overwrite) {
+                    mainLogger.error(
+                        "Output file ${outputFile.path} (generated from pattern) does already exist. " +
+                                "Please choose a different name or set \"overwrite\" value to \"true\"."
+                    )
+                    return MutationOutcome.INCORRECT_INPUT
+                }
+                // file name is fine --> add to list
+                outputFiles.add(outputFile)
+            }
         }
 
         // check if output directory exists and create it, if necessary
-        val outputParent = outputFile.parentFile
         if (outputParent == null) {
             mainLogger.error("No directory for the output file could be determined. This indicates an error in the " +
                     "path of the specified output file.")
@@ -96,34 +128,44 @@ class MutationRunner(configFile : File?) {
         // get mutation strategy
         val strategy = getStrategy(mutations, config.number_of_mutations) ?: return MutationOutcome.INCORRECT_INPUT
 
-        // iterate while either mask satisfied or strategy done
-        // call: generate mutant
-        var foundValid = false
-        var mutant : Model? = null
-        var m : Mutator? = null
-        while (!foundValid) {
-            // check, if strategy can provide a new sequence to try
-            if (!strategy.hasNextMutationSequence())
-                return MutationOutcome.FAIL
+        // iterate over all mutants that need to be generated
+        var generatedKGs = 0
+        for (outputFile in outputFiles) {
+            // iterate while either mask satisfied or strategy done
+            // call: generate mutant
+            var foundValid = false
+            var mutant: Model? = null
+            var m: Mutator? = null
+            while (!foundValid) {
+                // check, if strategy can provide a new sequence to try
+                if (!strategy.hasNextMutationSequence()) {
+                    mainLogger.warn("Strategy can not generate enough mutants. Stopped after generating $generatedKGs " +
+                            "mutants. (${outputFiles.size} many mutants requested)")
+                    return MutationOutcome.FAIL
+                }
 
-            val mutationSequence = strategy.getNextMutationSequence()
-            m = Mutator(mutationSequence)
-            mutant = m.mutate(seedKG)
-            foundValid = mask.validate(mutant)
+                val mutationSequence = strategy.getNextMutationSequence()
+                m = Mutator(mutationSequence)
+                mutant = m.mutate(seedKG)
+                foundValid = mask.validate(mutant)
+            }
+
+            // safe outcome KG
+            assert(mutant != null && m != null)
+            mainLogger.info("Saving mutated knowledge graph to $outputFile")
+            exportResult(mutant!!, outputFile, config.output_graph.type)
+
+            generatedKGs += 1   // increase counter
+
+            // print summary, if required
+            if (config.print_summary)
+                println("mutation summary:\n" + m?.getStringSummary())
         }
-
-        // safe outcome KG
-        assert(mutant != null && m != null)
-        mainLogger.info("Saving mutated knowledge graph to $outputFile")
-        exportResult(mutant!!, outputFile, config.output_graph.type)
-
-        // print summary, if required
-        if (config.print_summary)
-            println("mutation summary:\n" + m?.getStringSummary())
 
         return  MutationOutcome.SUCCESS
     }
 
+    // get mutation operator by class namen
     private fun getMutationOperator(module: String, className: String) : AbstractMutation? {
         val mutationClass : KClass<out Mutation> = try {
             val kotlinClass = Class.forName("$module.$className").kotlin
@@ -142,6 +184,7 @@ class MutationRunner(configFile : File?) {
 
     }
 
+    // get mutation operators from file
     private fun getMutationOperators(fileName: File, type : MutationOperatorFormats) : List<AbstractMutation>? {
         return when(type) {
             MutationOperatorFormats.SWRL -> getSwrlMutationOperators(fileName)
@@ -185,6 +228,7 @@ class MutationRunner(configFile : File?) {
         return seedKG
     }
 
+    // get mutation strategy w.r.t. to mutation operators and desired number of mutations
     private fun getStrategy(mutationOperators : List<AbstractMutation>,
                             numberMutations : Int) : MutationStrategy? {
         if (config?.strategy == null && strictParsing){
@@ -202,8 +246,9 @@ class MutationRunner(configFile : File?) {
         }
     }
 
+    // extracts mask
     private fun getMask() : RobustnessMask? {
-        // compute reasoning backend (if provided in configuration)
+        // get reasoning backend (if provided in configuration)
         val reasonerBackend = if (config?.condition == null) {
             // no condition specified
 
@@ -261,6 +306,7 @@ class MutationRunner(configFile : File?) {
             KgFormatType.OWL -> OwlFileHandler().saveOwlDocument(mutant, outputFile)
         }
     }
+
 }
 
 enum class MutationOutcome {

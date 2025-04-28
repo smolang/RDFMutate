@@ -155,8 +155,8 @@ class SuaveMutatorFactory(
 
 
     private val domainIndependentMutations = listOf(
-        AddRelationMutation::class,
-        ChangeRelationMutation::class,
+        AddRelationMutationSophisticated::class,
+        ChangeRelationMutationSophisticated::class,
         AddInstanceMutation::class,
         RemoveStatementMutation::class,
         RemoveNodeMutation::class,

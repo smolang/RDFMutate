@@ -23,7 +23,8 @@ class Main : CliktCommand() {
     ).file()
     private val mainMode by option(help="Options to run specialized modes of this program. Default = \"--mutate\"").switch(
         "--mutate" to "mutate", "-m" to "mutate",
-        "--scen_test" to "test", "-st" to "test"
+        "--scen_test" to "test", "-st" to "test",
+        "--performance-test" to "performance"
     ).default("mutate")
 
     override fun run() {
@@ -35,6 +36,9 @@ class Main : CliktCommand() {
             "test" -> {
                 // test installation
                 SpecialModesRunner().testMiniPipes()
+            }
+            "performance" -> {
+                SpecialModesRunner().performanceEvaluation()
             }
             else -> SpecialModesRunner().testMiniPipes()
         }
@@ -48,13 +52,13 @@ class Main : CliktCommand() {
         val outcome = runner.mutate()
 
         if (outcome == MutationOutcome.FAIL)
-            mainLogger.error("Creating mutation failed. No mutant was created.")
+            mainLogger.error("Creating mutants failed. The requested number of mutants could not be created.")
 
         if (outcome == MutationOutcome.INCORRECT_INPUT)
-            mainLogger.error("Mutation could not be performed because input arguments are incorrect.")
+            mainLogger.error("Mutations could not be performed because elements in configuration file are incorrect.")
 
         if (outcome == MutationOutcome.SUCCESS)
-            mainLogger.info("Mutation was created successfully.")
+            mainLogger.info("Mutants were created successfully.")
     }
 
 }

@@ -41,6 +41,7 @@ data class Config(
     val output_graph: OutputKG,
     val strategy: Strategy? = null,
     val number_of_mutations: Int,
+    val number_of_mutants: Int = 1,
     val condition: ConformanceCondition? = null,
     val mutation_operators: List<MutationOperatorConfiguration> = listOf(),
     val strict_parsing: Boolean = true,

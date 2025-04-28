@@ -249,4 +249,28 @@ class MutationRunnerTest : StringSpec() {
         }
     }
 
+    init {
+        "generate multiple mutants" {
+            val configFile = File("src/test/resources/configs/severalMutants.yaml")
+            val runner = MutationRunner(configFile)
+
+            val outcome = runner.mutate()
+
+            // mutation was successful
+            outcome shouldBe MutationOutcome.SUCCESS
+        }
+    }
+
+    init {
+        "generate multiple mutants; output already exists" {
+            val configFile = File("src/test/resources/configs/severalMutantsOutputExists.yaml")
+            val runner = MutationRunner(configFile)
+
+            val outcome = runner.mutate()
+
+            // mutation was successful
+            outcome shouldBe MutationOutcome.INCORRECT_INPUT
+        }
+    }
+
 }

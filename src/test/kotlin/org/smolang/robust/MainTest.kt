@@ -30,6 +30,15 @@ class MainTest: StringSpec() {
         }
     }
 
+    init {
+        "example from wiki" {
+            val args = arrayOf(
+                "--config=examples/wiki/allFeatures/config.yaml"
+            )
+            Main().main(args)
+        }
+    }
+
 
 
 
