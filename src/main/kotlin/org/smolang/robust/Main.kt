@@ -24,7 +24,8 @@ class Main : CliktCommand() {
     private val mainMode by option(help="Options to run specialized modes of this program. Default = \"--mutate\"").switch(
         "--mutate" to "mutate", "-m" to "mutate",
         "--scen_test" to "test", "-st" to "test",
-        "--performance-test" to "performance"
+        "--performance-test" to "performance",
+        "--performance-test-limited" to "performance-simple"
     ).default("mutate")
 
     override fun run() {
@@ -39,6 +40,9 @@ class Main : CliktCommand() {
             }
             "performance" -> {
                 SpecialModesRunner().performanceEvaluation()
+            }
+            "performance-simple" -> {
+                SpecialModesRunner().performanceEvaluation(restricted = true)
             }
             else -> SpecialModesRunner().testMiniPipes()
         }

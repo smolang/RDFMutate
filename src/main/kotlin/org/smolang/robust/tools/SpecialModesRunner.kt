@@ -1,17 +1,10 @@
 package org.smolang.robust.tools
 
-import com.github.owlcs.ontapi.OntManagers
-import com.github.owlcs.ontapi.Ontology
-import com.github.owlcs.ontapi.internal.AxiomTranslator
-import org.apache.jena.ontapi.OntModelFactory
 import org.apache.jena.riot.RDFDataMgr
-import org.semanticweb.owlapi.formats.FunctionalSyntaxDocumentFormat
-import org.semanticweb.owlapi.model.AxiomType
-import org.semanticweb.owlapi.model.IRI
-import org.semanticweb.owlapi.model.OWLAxiom
+import org.smolang.robust.domainSpecific.reasoner.ElGenerationTimeAnalyzer
+import org.smolang.robust.domainSpecific.suave.SuaveEvaluationGraphGenerator
 import org.smolang.robust.mainLogger
 import org.smolang.robust.mutant.*
-import org.smolang.robust.mutant.DefinedMutants.*
 import org.smolang.robust.sut.auv.MiniPipeInspection
 import java.io.File
 
@@ -86,25 +79,33 @@ class SpecialModesRunner {
     }
 
     // generates evaluation graphs
-    fun performanceEvaluation() {
-       /* SuaveEvaluationGraphGenerator().generateGraph(
-            50,
+    // restricted: only consider subset to be faster
+    fun performanceEvaluation(restricted: Boolean = false) {
+        // suave evaluation
+        val numberOfMutants = if (restricted) 20 else 100
+        SuaveEvaluationGraphGenerator().generateGraph(
+            numberOfMutants,
             File("evaluation/attemptsPerMask.csv"
             ))
 
-        */
-        val model = RDFDataMgr.loadDataset("examples/ont-api-problem.ttl").defaultModel
+        // el reasoner evaluation (time per mutation Ops)
+        val sampleSize = if (restricted) 1 else 10
+        val mutationCounts = (1..100).toList()
+        val input = File("sut/reasoners/ontologies_ore")
+        val output = File("evaluation/timePerMutationCount.csv")
+        val timeout = 10000L // time in ms
+        ElGenerationTimeAnalyzer().timePerMutation(input, output, sampleSize, mutationCounts, timeout)
 
-        val manager = OntManagers.createManager()
-        val ontology = manager.addOntology(model.graph)
-
-       manager.saveOntology(
-            ontology,
-            FunctionalSyntaxDocumentFormat(),
-            IRI.create(File("examples/ont-api-problem-saved.ttl").toURI())
-        )
-
-
+        // el reasoner evaluation (time per seed size)
+        val samplesSeedSize = if (restricted) 100 else 1000
+        val mutationCountsSeedSize = listOf(30)
+        val outputSeedSize = File("evaluation/timePerSeedSize.csv")
+        ElGenerationTimeAnalyzer().timePerMutation(
+            input,
+            outputSeedSize,
+            samplesSeedSize,
+            mutationCountsSeedSize,
+            timeout)
 
     }
 

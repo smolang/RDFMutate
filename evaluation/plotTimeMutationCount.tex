@@ -1,0 +1,58 @@
+\documentclass{standalone}
+
+\usepackage[dvipsnames]{xcolor}
+\usepackage{pgfplots}
+
+\definecolor{AUVpurple}{HTML}{d726fa}
+\definecolor{PipeBrown}{HTML}{935e21}
+
+\begin{document}\begin{tikzpicture}
+	\begin{axis}[
+		width=\columnwidth,
+		height=0.75\columnwidth,
+		title={},
+		xlabel={Number of Applied Mutations},
+		ylabel={Time [ms]},
+		ymode=log,
+		%xmode=log,
+		xmin=0, xmax=100,
+		ymin=1, ymax=100000,
+		xtick={10,20,30,40,50,60,70,80,90, 100},
+		ytick={1,10, 100, 1000, 10000},
+		extra y ticks={100000},
+		extra y tick style={
+			grid=minor,
+			yticklabel={timeout},
+			yticklabel style={yshift=0.7ex, anchor=east}},
+		%extra x ticks={1800},
+		%extra x tick style={
+		%	grid=minor,
+		%	xticklabel={timeout},
+		%	xticklabel style={xshift=0ex, anchor=north west}},
+		legend pos=south east,
+		ymajorgrids=true,
+		%xmajorgrids=true,
+		grid style=dashed,
+		]
+		
+		
+		\addplot[
+		color=MidnightBlue,
+		%line width=0.9pt,
+		mark=*,
+		only marks,
+		opacity=0.4,
+		%densely dashed
+		]
+		table [
+		x=numMutations, 
+		y=computationTime, 
+		col sep=comma
+		] {timePerMutationCount.csv};
+		
+	
+		%\legend{}
+		
+	\end{axis}
+\end{tikzpicture}
+\end{document}

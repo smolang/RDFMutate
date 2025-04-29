@@ -89,7 +89,7 @@ class EvaluationGraphTests: StringSpec() {
     }
 
     init {
-        "generating geo evaluation graph for input coverage" {
+        "generating el evaluation graph for input coverage" {
             val inputDirectory = File("sut/reasoners/ontologies_ore")
             val outputFile = File("src/test/resources/graphs/geoInputCoverage.csv")
             OwlEvaluationGraphGenerator(listOf(1,2),2).analyzeElInputCoverage(inputDirectory, elReasonerMutations, outputFile)
