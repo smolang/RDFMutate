@@ -5,6 +5,7 @@ import org.apache.jena.riot.RDFDataMgr
 import org.apache.jena.shacl.ShaclValidator
 import org.apache.jena.shacl.Shapes
 import org.smolang.robust.mainLogger
+import org.smolang.robust.tools.reasoning.ConsistencyResult
 import org.smolang.robust.tools.reasoning.MaskReasonerFactory
 import org.smolang.robust.tools.reasoning.ReasoningBackend
 import java.io.File
@@ -23,7 +24,7 @@ open class RobustnessMask(private val shacl: Shapes?,
         val reasonerFactory = MaskReasonerFactory(reasonerBackend)
         val reasoner = reasonerFactory.getReasoner(model)
 
-        if (!reasoner.isConsistent()) return false
+        if (reasoner.isConsistent() != ConsistencyResult.CONSISTENT) return false
 
         return if (shacl != null)
             ShaclValidator.get().validate(shacl, model.graph).conforms()

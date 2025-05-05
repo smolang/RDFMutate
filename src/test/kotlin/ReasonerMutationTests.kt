@@ -9,7 +9,7 @@ import org.apache.jena.riot.RDFDataMgr
 import org.apache.jena.vocabulary.OWL
 import org.apache.jena.vocabulary.RDF
 import org.apache.jena.vocabulary.RDFS
-import org.smolang.robust.domainSpecific.reasoner.OwlFileHandler
+import org.smolang.robust.tools.OwlOntologyInterface
 import org.smolang.robust.mutant.*
 import org.smolang.robust.mutant.DefinedMutants.*
 import java.io.File
@@ -18,8 +18,8 @@ class ReasonerMutationTests : StringSpec() {
 
     init {
         "load and save OWL files" {
-            val jenaModel = OwlFileHandler().loadOwlDocument(File("src/test/resources/reasoners/ore_ont_155.owl"))
-            OwlFileHandler().saveOwlDocument(jenaModel, File("src/test/resources/reasoners/temp.owl"))
+            val jenaModel = OwlOntologyInterface().loadOwlDocument(File("src/test/resources/reasoners/ore_ont_155.owl"))
+            OwlOntologyInterface().saveOwlDocument(jenaModel, File("src/test/resources/reasoners/temp.owl"))
         }
     }
 

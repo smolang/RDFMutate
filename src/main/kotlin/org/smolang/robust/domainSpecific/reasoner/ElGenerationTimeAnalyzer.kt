@@ -60,6 +60,7 @@ import org.smolang.robust.mutant.Mutation
 import org.smolang.robust.mutant.MutationSequence
 import org.smolang.robust.mutant.Mutator
 import org.smolang.robust.randomGenerator
+import org.smolang.robust.tools.OwlOntologyInterface
 import java.io.File
 import java.io.FileOutputStream
 import java.nio.file.Files
@@ -68,7 +69,7 @@ import kotlin.reflect.KClass
 
 class ElGenerationTimeAnalyzer {
 
-    private val owlFileHandler = OwlFileHandler()
+    private val owlOntologyInterface = OwlOntologyInterface()
 
     private val elReasonerMutations = listOf(
         // -------------Tbox-----------------------
@@ -171,7 +172,7 @@ class ElGenerationTimeAnalyzer {
                 while (res == null) {
                     val inputFile = inputFiles.random(randomGenerator)
                     // load ontology
-                    val seedOntology = owlFileHandler.loadOwlDocument(inputFile)
+                    val seedOntology = owlOntologyInterface.loadOwlDocument(inputFile)
                     // use timeout of 30s
                     res = timedMutation(seedOntology, elReasonerMutations, mutCount, timeout)
 

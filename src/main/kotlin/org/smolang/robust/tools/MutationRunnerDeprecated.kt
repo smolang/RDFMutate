@@ -4,7 +4,6 @@ import org.apache.jena.rdf.model.Model
 import org.apache.jena.riot.Lang
 import org.apache.jena.riot.RDFDataMgr
 import org.apache.jena.shacl.Shapes
-import org.smolang.robust.domainSpecific.reasoner.OwlFileHandler
 import org.smolang.robust.mainLogger
 import org.smolang.robust.mutant.*
 import org.smolang.robust.mutant.DefinedMutants.*
@@ -124,7 +123,7 @@ open class MutationRunnerDeprecated(
         // safe result
         mainLogger.info("Saving mutated knowledge graph to $outputFile")
         if (isOwlDocument)
-            OwlFileHandler().saveOwlDocument(res, outputFile!!)
+            OwlOntologyInterface().saveOwlDocument(res, outputFile!!)
         else
             RDFDataMgr.write(outputPath.outputStream(), res, Lang.TTL)
 
@@ -145,7 +144,7 @@ open class MutationRunnerDeprecated(
 
         val seedKG =
             if (isOwlDocument)
-                OwlFileHandler().loadOwlDocument(seedFile!!)
+                OwlOntologyInterface().loadOwlDocument(seedFile!!)
             else
                 RDFDataMgr.loadDataset(seedFile!!.absolutePath).defaultModel
 

@@ -5,7 +5,6 @@ import org.apache.jena.rdf.model.ModelFactory
 import org.apache.jena.riot.Lang
 import org.apache.jena.riot.RDFDataMgr
 import org.apache.jena.shacl.Shapes
-import org.smolang.robust.domainSpecific.reasoner.OwlFileHandler
 import org.smolang.robust.mainLogger
 import org.smolang.robust.mutant.*
 import org.smolang.robust.tools.reasoning.ReasoningBackend
@@ -222,7 +221,7 @@ class MutationRunner(configFile : File?) {
         val seedKG =
             when (fileType) {
                 KgFormatType.RDF -> RDFDataMgr.loadDataset(inputFile.absolutePath).defaultModel
-                KgFormatType.OWL -> OwlFileHandler().loadOwlDocument(inputFile)
+                KgFormatType.OWL -> OwlOntologyInterface().loadOwlDocument(inputFile)
             }
 
         return seedKG
@@ -303,7 +302,7 @@ class MutationRunner(configFile : File?) {
     private fun exportResult(mutant: Model, outputFile: File, fileType: KgFormatType) {
         when (fileType) {
             KgFormatType.RDF -> RDFDataMgr.write(outputFile.outputStream(), mutant, Lang.TTL)
-            KgFormatType.OWL -> OwlFileHandler().saveOwlDocument(mutant, outputFile)
+            KgFormatType.OWL -> OwlOntologyInterface().saveOwlDocument(mutant, outputFile)
         }
     }
 

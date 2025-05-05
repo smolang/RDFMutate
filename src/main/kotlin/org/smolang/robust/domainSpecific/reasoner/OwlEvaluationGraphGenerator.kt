@@ -1,11 +1,11 @@
 package org.smolang.robust.domainSpecific.reasoner
 
-import org.smolang.robust.domainSpecific.KgAnalyzer
 import org.smolang.robust.mutant.Mutation
 import org.smolang.robust.mutant.MutationSequence
 import org.smolang.robust.mutant.Mutator
 import org.smolang.robust.randomGenerator
 import org.smolang.robust.mainLogger
+import org.smolang.robust.tools.OwlOntologyInterface
 import java.io.File
 import java.io.FileOutputStream
 import java.nio.file.Files
@@ -19,7 +19,7 @@ class OwlEvaluationGraphGenerator(
     private val sampleSize: Int = 100 // number of ontologies that are considered (might be more than in folder)
              ) {
     private val ontologyAnalyzer = OwlOntologyAnalyzer()
-    private val owlFileHandler = OwlFileHandler()
+    private val owlOntologyInterface = OwlOntologyInterface()
 
 
     private fun allOwlFiles(directory: File) : List<File> {
@@ -48,7 +48,7 @@ class OwlEvaluationGraphGenerator(
         // iterate over all files in directory
         for (inputFile in inputFiles) {
             // load ontology
-            val seedOntology = owlFileHandler.loadOwlDocument(inputFile)
+            val seedOntology = owlOntologyInterface.loadOwlDocument(inputFile)
 
             for (mutCount in mutationNumbers) {
                 mainLogger.info("Progress of analyzing input coverage: $count/$totalTests")

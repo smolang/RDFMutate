@@ -5,7 +5,7 @@ import org.apache.jena.rdf.model.ModelFactory
 
 
 // empty reasoner that is always consistent and does not contain / infer anything
-class EmptyReasoner() : MaskReasoner(ModelFactory.createDefaultModel()){
-    override fun isConsistent() = true
+class EmptyReasoner() : MaskReasoner(){
+    override fun isConsistent() = ConsistencyResult.CONSISTENT
 }
 
