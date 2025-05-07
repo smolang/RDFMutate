@@ -14,6 +14,9 @@ class ElGenerationTimeAnalyzerTest : StringSpec() {
             val mutationCounts = listOf(1,10,100)
             val input = File("src/test/resources/reasoners/ore_ont_155.owl")
             val output = File("src/test/resources/tempOutputs/timeData.csv")
+
+            // create folder if it does not exist
+            output.parentFile.mkdirs()
             if (output.exists())
                 output.delete()     // delete output file to get real result
             val timeout = 10000L // time in ms --> 10s
