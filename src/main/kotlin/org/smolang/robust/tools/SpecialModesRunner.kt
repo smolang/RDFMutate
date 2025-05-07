@@ -82,7 +82,7 @@ class SpecialModesRunner {
     // restricted: only consider subset to be faster
     fun performanceEvaluation(restricted: Boolean = false) {
         // suave evaluation
-        val numberOfMutants = if (restricted) 20 else 100
+        val numberOfMutants = if (restricted) 5 else 100
         SuaveEvaluationGraphGenerator().generateGraph(
             numberOfMutants,
             File("evaluation/attemptsPerMask.csv"
