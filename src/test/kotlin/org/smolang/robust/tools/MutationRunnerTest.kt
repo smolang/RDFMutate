@@ -197,9 +197,12 @@ class MutationRunnerTest : StringSpec() {
     init {
         "multiple sources of mutation operators are combined" {
             val outputPath = "src/test/resources/geo/temp2.ttl"
+            if (File(outputPath).exists())
+                File(outputPath).delete()   // remove file if it does already exist
             val runner = MutationRunner(File("src/test/resources/configs/multipleMaskFiles.yaml"))
 
             val outcome = runner.mutate()
+
 
             // mutation was successful
             outcome shouldBe MutationOutcome.SUCCESS
