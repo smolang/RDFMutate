@@ -1,5 +1,6 @@
 package org.smolang.robust.mutant
 
+import org.apache.jena.datatypes.xsd.impl.XMLLiteralType
 import org.apache.jena.rdf.model.*
 import org.apache.jena.reasoner.Reasoner
 import org.apache.jena.reasoner.ReasonerRegistry
@@ -7,13 +8,14 @@ import org.apache.jena.vocabulary.OWL
 import org.apache.jena.vocabulary.RDF
 import org.apache.jena.vocabulary.RDFS
 import org.apache.jena.vocabulary.XSD
+import org.eclipse.rdf4j.model.vocabulary.XMLSchema
 import org.smolang.robust.randomGenerator
 import org.smolang.robust.mainLogger
 import org.smolang.robust.mutant.DefinedMutants.AddRelationMutation
 import org.smolang.robust.tools.ComplexStatementBuilder
 import org.smolang.robust.tools.ComplexTermParser
 
-open class Mutation(var model: Model) {
+open class Mutation(val model: Model) {
     var hasConfig : Boolean = false
     open var config : MutationConfiguration? = null
     private var createdMutation : Boolean = false
@@ -58,24 +60,24 @@ open class Mutation(var model: Model) {
     val allElDataTypes get() =
         listOf(
             RDF.PlainLiteral,
-            model.createResource("http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"),
+            RDF.xmlLiteral,
             RDFS.Literal,
-            model.createResource("http://www.w3.org/2002/07/owl#real"),
-            model.createResource("http://www.w3.org/2002/07/owl#rational"),
+            OWL.real,
+            OWL.rational,
             XSD.decimal,
-            model.createResource("http://www.w3.org/2001/XMLSchema#integer"),
-            model.createResource("http://www.w3.org/2001/XMLSchema#nonNegativeInteger"),
+            XSD.integer,
+            XSD.nonNegativeInteger,
             XSD.xstring,
-            model.createResource("http://www.w3.org/2001/XMLSchema#normalizedString"),
-            model.createResource("http://www.w3.org/2001/XMLSchema#token"),
-            model.createResource("http://www.w3.org/2001/XMLSchema#Name"),
-            model.createResource("http://www.w3.org/2001/XMLSchema#NCName"),
-            model.createResource("http://www.w3.org/2001/XMLSchema#NMTOKEN"),
-            model.createResource("http://www.w3.org/2001/XMLSchema#hexBinary"),
-            model.createResource("http://www.w3.org/2001/XMLSchema#base64Binary"),
-            model.createResource("http://www.w3.org/2001/XMLSchema#anyURI"),
-            model.createResource("http://www.w3.org/2001/XMLSchema#dateTime"),
-            model.createResource("http://www.w3.org/2001/XMLSchema#dateTimeStamp"),
+            XSD.normalizedString,
+            XSD.token,
+            XSD.Name,
+            XSD.NCName,
+            XSD.NMTOKEN,
+            XSD.hexBinary,
+            XSD.base64Binary,
+            XSD.anyURI,
+            XSD.dateTime,
+            XSD.dateTimeStamp
             )
 
 

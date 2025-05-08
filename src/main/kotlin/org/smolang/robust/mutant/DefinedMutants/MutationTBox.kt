@@ -700,7 +700,7 @@ class AddELDataIntersectionOfMutation(model: Model) : AddComplexSubClassAxiomMut
         if (dataProperties.isNotEmpty()) {
             val dataProperty = dataProperties.random(randomGenerator)
 
-            // randomly: 2–5 classes in intersection
+            // randomly: 2–3 classes in intersection
             val numberOfRanges = randomGenerator.nextInt(2,3)
             val intersectionRanges = mutableListOf<Resource>()
             for (i in 1..numberOfRanges)

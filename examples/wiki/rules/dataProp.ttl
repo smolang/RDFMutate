@@ -1,0 +1,26 @@
+@prefix : <https://smolang.org/swrlTest#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:x rdf:type swrl:Variable .
+:dp rdf:type swrl:Variable .
+
+[ rdf:type swrl:Imp ;
+  swrl:body [ rdf:type swrl:AtomList ;
+              rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                          swrl:propertyPredicate :dp ;
+                          swrl:argument1 :x ;
+                          swrl:argument2 0.5
+                        ] ;
+              rdf:rest rdf:nil
+            ] ;
+  swrl:head [ rdf:type swrl:AtomList ;
+              rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                          swrl:propertyPredicate :dp ;
+                          swrl:argument1 :x ;
+                          swrl:argument2 "a new value"^^xsd:string
+                        ] ;
+              rdf:rest rdf:nil
+            ] ;
+ ] .

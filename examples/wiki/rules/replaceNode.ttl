@@ -1,0 +1,17 @@
+@prefix : <https://smolang.org/swrlTest#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix rdfmutate: <https://smolang.org/rdfMutate#> .
+
+[ rdf:type swrl:Imp ;
+  swrl:body rdf:nil ;
+  swrl:head [ rdf:type swrl:AtomList ;
+              rdf:first [ rdf:type swrl:BuiltinAtom ;
+                            swrl:builtin rdfmutate:replaceWith;
+                            swrl:arguments ( :a
+                                             :b
+                                           )
+                          ] ;
+              rdf:rest rdf:nil
+            ]
+ ] .

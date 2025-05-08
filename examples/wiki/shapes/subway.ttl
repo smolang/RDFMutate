@@ -1,0 +1,15 @@
+@prefix : <https://smolang.org/swrlTest#> .
+@prefix sh:      <http://www.w3.org/ns/shacl#> .
+
+:FinalStation a sh:NodeShape ;
+        sh:property [
+            sh:path :nextStation ;
+            sh:maxCount 1 ;
+        ].
+
+:SubwayAtStart  a sh:NodeShape ;
+                sh:targetClass :SubwayCar ;
+                sh:property [
+                    sh:path :isAt ;
+                    sh:node :FinalStation ; 
+                ].

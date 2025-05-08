@@ -1,0 +1,12 @@
+@prefix : <https://smolang.org/swrlTest#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh:      <http://www.w3.org/ns/shacl#> .
+
+:shape3 a sh:NodeShape ;
+    sh:targetNode :alice ;
+    sh:property    [
+        sh:property sh:path (:atStation)/(:nextStation*)/(^:closestStation);
+        sh:hasValue :aliceHome ;
+        sh:minCount  1;
+    ].
