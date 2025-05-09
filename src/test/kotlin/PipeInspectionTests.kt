@@ -15,7 +15,7 @@ class PipeInspectionTests : StringSpec()  {
         "add pipe segment should lead to fail" {
 
             // load ontology
-            val input = RDFDataMgr.loadDataset("PipeInspection/miniPipes.ttl").defaultModel
+            val input = RDFDataMgr.loadDataset("src/test/resources/PipeInspection/miniPipes.ttl").defaultModel
 
             // apply mutation
             val segment = input.createResource("http://www.ifi.uio.no/tobiajoh/miniPipes#segment1")

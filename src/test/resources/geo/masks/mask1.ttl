@@ -1,0 +1,335 @@
+@prefix UFRGS:   <http://purl.obolibrary.org/obo/bfo.owl#UFRGS:> .
+@prefix geo:     <http://www.semanticweb.org/quy/ontologies/2023/2/untitled-ontology-38#> .
+@prefix mask:    <https://www.ifi.uio.no/tobiajoh/mask#> .
+@prefix obo:     <http://purl.obolibrary.org/obo/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix sh:      <http://www.w3.org/ns/shacl#> .
+@prefix suave:   <http://www.metacontrol.org/suave#> .
+@prefix tomasys: <http://metacontrol.org/tomasys#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+mask:inverseShape34  rdf:type  sh:NodeShape;
+        sh:property    [ sh:path                 [ sh:inversePath  rdf:rest ];
+                         sh:qualifiedMinCount    1;
+                         sh:qualifiedValueShape  [ sh:node  mask:blankShape15 ]
+                       ];
+        sh:targetNode  () .
+
+mask:inverseShape21  rdf:type  sh:NodeShape;
+        sh:property    [ sh:path                 [ sh:inversePath  rdf:type ];
+                         sh:qualifiedMinCount    1;
+                         sh:qualifiedValueShape  [ sh:node  mask:blankShape12 ]
+                       ];
+        sh:targetNode  owl:Class .
+
+mask:blankShape10  rdf:type  sh:NodeShape;
+        sh:property  [ sh:hasValue  UFRGS:GeoReservoirOntology_sedimentary_geological_object;
+                       sh:minCount  1;
+                       sh:path      rdf:first
+                     ];
+        sh:property  [ sh:minCount  1;
+                       sh:node      mask:blankShape11;
+                       sh:path      rdf:rest
+                     ] .
+
+mask:inverseShape27  rdf:type  sh:NodeShape;
+        sh:property    [ sh:path                 [ sh:inversePath  rdf:type ];
+                         sh:qualifiedMinCount    1;
+                         sh:qualifiedValueShape  [ sh:node  mask:blankShape14 ]
+                       ];
+        sh:targetNode  owl:Restriction .
+
+mask:inverseShape14  rdf:type  sh:NodeShape;
+        sh:property    [ sh:path                 [ sh:inversePath  rdf:type ];
+                         sh:qualifiedMinCount    1;
+                         sh:qualifiedValueShape  [ sh:node  mask:blankShape9 ]
+                       ];
+        sh:targetNode  owl:Class .
+
+mask:blankShape2  rdf:type  sh:NodeShape;
+        sh:property  [ sh:hasValue  "60.0"^^xsd:double;
+                       sh:minCount  1;
+                       sh:path      xsd:minInclusive
+                     ] .
+
+mask:blankShape8  rdf:type  sh:NodeShape;
+        sh:property  [ sh:minCount  1;
+                       sh:node      mask:blankShape4;
+                       sh:path      rdf:first
+                     ];
+        sh:property  [ sh:hasValue  ();
+                       sh:minCount  1;
+                       sh:path      rdf:rest
+                     ] .
+
+mask:inverseShape22  rdf:type  sh:NodeShape;
+        sh:property    [ sh:path                 [ sh:inversePath  owl:onProperty ];
+                         sh:qualifiedMinCount    1;
+                         sh:qualifiedValueShape  [ sh:node  mask:blankShape13 ]
+                       ];
+        sh:targetNode  obo:RO_0001015 .
+
+mask:blankShape11  rdf:type  sh:NodeShape;
+        sh:property  [ sh:minCount  1;
+                       sh:node      mask:blankShape14;
+                       sh:path      rdf:first
+                     ];
+        sh:property  [ sh:minCount  1;
+                       sh:node      mask:blankShape15;
+                       sh:path      rdf:rest
+                     ] .
+
+mask:inverseShape7  rdf:type  sh:NodeShape;
+        sh:property    [ sh:path                 [ sh:inversePath  owl:onProperty ];
+                         sh:qualifiedMinCount    1;
+                         sh:qualifiedValueShape  [ sh:node  mask:blankShape6 ]
+                       ];
+        sh:targetNode  obo:RO_0000056 .
+
+mask:inverseShape15  rdf:type  sh:NodeShape;
+        sh:property    [ sh:path                 [ sh:inversePath  rdf:rest ];
+                         sh:qualifiedMinCount    1;
+                         sh:qualifiedValueShape  [ sh:node  mask:blankShape8 ]
+                       ];
+        sh:targetNode  () .
+
+mask:blankShape3  rdf:type  sh:NodeShape;
+        sh:property  [ sh:hasValue  "120.0"^^xsd:double;
+                       sh:minCount  1;
+                       sh:path      xsd:maxInclusive
+                     ] .
+
+mask:blankShape9  rdf:type  sh:NodeShape;
+        sh:property  [ sh:hasValue  owl:Class;
+                       sh:minCount  1;
+                       sh:path      rdf:type
+                     ];
+        sh:property  [ sh:minCount  1;
+                       sh:node      mask:blankShape6;
+                       sh:path      rdfs:subClassOf
+                     ];
+        sh:property  [ sh:minCount  1;
+                       sh:node      mask:blankShape10;
+                       sh:path      owl:intersectionOf
+                     ] .
+
+mask:inverseShape2  rdf:type  sh:NodeShape;
+        sh:property    [ sh:path                 [ sh:inversePath  rdf:rest ];
+                         sh:qualifiedMinCount    1;
+                         sh:qualifiedValueShape  [ sh:node  mask:blankShape1 ]
+                       ];
+        sh:targetNode  () .
+
+mask:inverseShape23  rdf:type  sh:NodeShape;
+        sh:property    [ sh:path                 [ sh:inversePath  rdf:type ];
+                         sh:qualifiedMinCount    1;
+                         sh:qualifiedValueShape  [ sh:node  mask:blankShape13 ]
+                       ];
+        sh:targetNode  owl:Restriction .
+
+mask:blankShape12  rdf:type  sh:NodeShape;
+        sh:property  [ sh:hasValue  owl:Class;
+                       sh:minCount  1;
+                       sh:path      rdf:type
+                     ];
+        sh:property  [ sh:minCount  1;
+                       sh:node      mask:blankShape7;
+                       sh:path      owl:intersectionOf
+                     ] .
+
+mask:inverseShape8  rdf:type  sh:NodeShape;
+        sh:property    [ sh:path                 [ sh:inversePath  rdf:type ];
+                         sh:qualifiedMinCount    1;
+                         sh:qualifiedValueShape  [ sh:node  mask:blankShape6 ]
+                       ];
+        sh:targetNode  owl:Restriction .
+
+mask:blankShape4  rdf:type  sh:NodeShape;
+        sh:property  [ sh:minCount  1;
+                       sh:node      mask:blankShape5;
+                       sh:path      owl:someValuesFrom
+                     ];
+        sh:property  [ sh:hasValue  owl:Restriction;
+                       sh:minCount  1;
+                       sh:path      rdf:type
+                     ];
+        sh:property  [ sh:hasValue  geo:datavalue;
+                       sh:minCount  1;
+                       sh:path      owl:onProperty
+                     ] .
+
+mask:inverseShape31  rdf:type  sh:NodeShape;
+        sh:property    [ sh:path                 [ sh:inversePath  owl:onDatatype ];
+                         sh:qualifiedMinCount    1;
+                         sh:qualifiedValueShape  [ sh:node  mask:blankShape5 ]
+                       ];
+        sh:targetNode  xsd:double .
+
+mask:inverseShape24  rdf:type  sh:NodeShape;
+        sh:property    [ sh:path                 [ sh:inversePath  owl:someValuesFrom ];
+                         sh:qualifiedMinCount    1;
+                         sh:qualifiedValueShape  [ sh:node  mask:blankShape13 ]
+                       ];
+        sh:targetNode  geo:amount_of_organic_matter .
+
+mask:inverseShape11  rdf:type  sh:NodeShape;
+        sh:property    [ sh:path                 [ sh:inversePath  rdf:first ];
+                         sh:qualifiedMinCount    1;
+                         sh:qualifiedValueShape  [ sh:node  mask:blankShape7 ]
+                       ];
+        sh:targetNode  geo:temperature .
+
+mask:blankShape13  rdf:type  sh:NodeShape;
+        sh:property  [ sh:hasValue  geo:amount_of_organic_matter;
+                       sh:minCount  1;
+                       sh:path      owl:someValuesFrom
+                     ];
+        sh:property  [ sh:hasValue  owl:Restriction;
+                       sh:minCount  1;
+                       sh:path      rdf:type
+                     ];
+        sh:property  [ sh:hasValue  obo:RO_0001015;
+                       sh:minCount  1;
+                       sh:path      owl:onProperty
+                     ] .
+
+mask:inverseShape9  rdf:type  sh:NodeShape;
+        sh:property    [ sh:path                 [ sh:inversePath  owl:someValuesFrom ];
+                         sh:qualifiedMinCount    1;
+                         sh:qualifiedValueShape  [ sh:node  mask:blankShape6 ]
+                       ];
+        sh:targetNode  geo:oil_window_maturation_trigger .
+
+mask:blankShape5  rdf:type  sh:NodeShape;
+        sh:property  [ sh:minCount  1;
+                       sh:node      mask:blankShape0;
+                       sh:path      owl:withRestrictions
+                     ];
+        sh:property  [ sh:hasValue  rdfs:Datatype;
+                       sh:minCount  1;
+                       sh:path      rdf:type
+                     ];
+        sh:property  [ sh:hasValue  xsd:double;
+                       sh:minCount  1;
+                       sh:path      owl:onDatatype
+                     ] .
+
+mask:inverseShape32  rdf:type  sh:NodeShape;
+        sh:property    [ sh:path                 [ sh:inversePath  rdf:type ];
+                         sh:qualifiedMinCount    1;
+                         sh:qualifiedValueShape  [ sh:node  mask:blankShape5 ]
+                       ];
+        sh:targetNode  rdfs:Datatype .
+
+mask:inverseShape4  rdf:type  sh:NodeShape;
+        sh:property    [ sh:path                 [ sh:inversePath  owl:onProperty ];
+                         sh:qualifiedMinCount    1;
+                         sh:qualifiedValueShape  [ sh:node  mask:blankShape4 ]
+                       ];
+        sh:targetNode  geo:datavalue .
+
+mask:inverseShape25  rdf:type  sh:NodeShape;
+        sh:property    [ sh:path                 [ sh:inversePath  xsd:maxInclusive ];
+                         sh:qualifiedMinCount    1;
+                         sh:qualifiedValueShape  [ sh:node  mask:blankShape3 ]
+                       ];
+        sh:targetNode  "120.0"^^xsd:double .
+
+mask:blankShape14  rdf:type  sh:NodeShape;
+        sh:property  [ sh:minCount  1;
+                       sh:node      mask:blankShape12;
+                       sh:path      owl:someValuesFrom
+                     ];
+        sh:property  [ sh:hasValue  owl:Restriction;
+                       sh:minCount  1;
+                       sh:path      rdf:type
+                     ];
+        sh:property  [ sh:hasValue  obo:RO_0000086;
+                       sh:minCount  1;
+                       sh:path      owl:onProperty
+                     ] .
+
+mask:blankShape0  rdf:type  sh:NodeShape;
+        sh:property  [ sh:minCount  1;
+                       sh:node      mask:blankShape2;
+                       sh:path      rdf:first
+                     ];
+        sh:property  [ sh:minCount  1;
+                       sh:node      mask:blankShape1;
+                       sh:path      rdf:rest
+                     ] .
+
+mask:inverseShape18  rdf:type  sh:NodeShape;
+        sh:property    [ sh:path                 [ sh:inversePath  rdf:first ];
+                         sh:qualifiedMinCount    1;
+                         sh:qualifiedValueShape  [ sh:node  mask:blankShape10 ]
+                       ];
+        sh:targetNode  UFRGS:GeoReservoirOntology_sedimentary_geological_object .
+
+mask:blankShape6  rdf:type  sh:NodeShape;
+        sh:property  [ sh:hasValue  geo:oil_window_maturation_trigger;
+                       sh:minCount  1;
+                       sh:path      owl:someValuesFrom
+                     ];
+        sh:property  [ sh:hasValue  owl:Restriction;
+                       sh:minCount  1;
+                       sh:path      rdf:type
+                     ];
+        sh:property  [ sh:hasValue  obo:RO_0000056;
+                       sh:minCount  1;
+                       sh:path      owl:onProperty
+                     ] .
+
+mask:inverseShape5  rdf:type  sh:NodeShape;
+        sh:property    [ sh:path                 [ sh:inversePath  rdf:type ];
+                         sh:qualifiedMinCount    1;
+                         sh:qualifiedValueShape  [ sh:node  mask:blankShape4 ]
+                       ];
+        sh:targetNode  owl:Restriction .
+
+mask:inverseShape26  rdf:type  sh:NodeShape;
+        sh:property    [ sh:path                 [ sh:inversePath  owl:onProperty ];
+                         sh:qualifiedMinCount    1;
+                         sh:qualifiedValueShape  [ sh:node  mask:blankShape14 ]
+                       ];
+        sh:targetNode  obo:RO_0000086 .
+
+mask:blankShape15  rdf:type  sh:NodeShape;
+        sh:property  [ sh:minCount  1;
+                       sh:node      mask:blankShape13;
+                       sh:path      rdf:first
+                     ];
+        sh:property  [ sh:hasValue  ();
+                       sh:minCount  1;
+                       sh:path      rdf:rest
+                     ] .
+
+mask:blankShape1  rdf:type  sh:NodeShape;
+        sh:property  [ sh:minCount  1;
+                       sh:node      mask:blankShape3;
+                       sh:path      rdf:first
+                     ];
+        sh:property  [ sh:hasValue  ();
+                       sh:minCount  1;
+                       sh:path      rdf:rest
+                     ] .
+
+mask:inverseShape19  rdf:type  sh:NodeShape;
+        sh:property    [ sh:path                 [ sh:inversePath  xsd:minInclusive ];
+                         sh:qualifiedMinCount    1;
+                         sh:qualifiedValueShape  [ sh:node  mask:blankShape2 ]
+                       ];
+        sh:targetNode  "60.0"^^xsd:double .
+
+mask:blankShape7  rdf:type  sh:NodeShape;
+        sh:property  [ sh:hasValue  geo:temperature;
+                       sh:minCount  1;
+                       sh:path      rdf:first
+                     ];
+        sh:property  [ sh:minCount  1;
+                       sh:node      mask:blankShape8;
+                       sh:path      rdf:rest
+                     ] .

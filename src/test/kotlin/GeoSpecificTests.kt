@@ -19,8 +19,8 @@ class GeoSpecificTests() : StringSpec() {
     init {
         "generate geo test cases" {
             val maskFiles = listOf(
-                "sut/geo/masks/mask0.ttl",
-                "sut/geo/masks/mask1.ttl"
+                "src/test/resources/geo/masks/mask0.ttl",
+                "src/test/resources/geo/masks/mask1.ttl"
             )
 
             var id = 0

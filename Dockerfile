@@ -5,6 +5,7 @@ FROM alpine:3.21 AS build
 # copy source code
 COPY ./src ./OntoMutate/src
 COPY ./build.gradle /OntoMutate/build.gradle
+COPY ./examples/miniPipes.ttl /OntoMutate/examples/miniPipes.ttl
 
 # install java and gradle
 RUN apk add openjdk17 gradle

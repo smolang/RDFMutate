@@ -61,3 +61,13 @@ dependencies {
 kotlin {
     jvmToolchain(17)
 }
+
+tasks.named("test") {
+    // Exclude specific tests only when the build task is called
+    // those tests are domain specific and rely on a lot of files that are in "sut" folder but not in "test" folder
+    if (gradle.startParameter.taskNames.contains("build")) {
+        exclude '**/EvaluationGraphTests*'    // graph generations
+        exclude '**/GeoSpecificTests*'    // exclude geo tests
+        exclude '**/OntologyAnalyzerTests*'    // exclude geo tests
+    }
+}
