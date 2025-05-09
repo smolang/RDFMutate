@@ -5,7 +5,7 @@ import org.smolang.robust.mutant.*
 import org.apache.jena.rdf.model.Property
 import org.apache.jena.riot.RDFDataMgr
 import org.apache.jena.shacl.Shapes
-import org.smolang.robust.mutant.DefinedMutants.*
+import org.smolang.robust.mutant.operators.*
 import org.smolang.robust.tools.reasoning.ReasoningBackend
 import java.lang.AssertionError
 import kotlin.test.assertFailsWith

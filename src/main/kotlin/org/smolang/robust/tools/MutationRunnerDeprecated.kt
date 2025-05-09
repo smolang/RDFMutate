@@ -6,7 +6,7 @@ import org.apache.jena.riot.RDFDataMgr
 import org.apache.jena.shacl.Shapes
 import org.smolang.robust.mainLogger
 import org.smolang.robust.mutant.*
-import org.smolang.robust.mutant.DefinedMutants.*
+import org.smolang.robust.mutant.operators.*
 import org.smolang.robust.tools.ruleMutations.RuleParser
 import java.io.File
 import java.nio.file.Files

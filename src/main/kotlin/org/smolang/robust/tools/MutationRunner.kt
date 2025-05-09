@@ -139,7 +139,7 @@ class MutationRunner(configFile : File?) {
                 // check, if strategy can provide a new sequence to try
                 if (!strategy.hasNextMutationSequence()) {
                     mainLogger.warn("Strategy can not generate enough mutants. Stopped after generating $generatedKGs " +
-                            "mutants. (${outputFiles.size} many mutants requested)")
+                            "mutants. (${outputFiles.size} mutants requested)")
                     return MutationOutcome.FAIL
                 }
 

@@ -6,7 +6,7 @@ import org.apache.jena.rdf.model.Model
 import org.apache.jena.rdf.model.RDFNode
 import org.apache.jena.rdf.model.Statement
 import org.smolang.robust.mainLogger
-import org.smolang.robust.mutant.DefinedMutants.ReplaceNodeWithNode
+import org.smolang.robust.mutant.operators.ReplaceNodeWithNode
 import org.smolang.robust.randomGenerator
 import org.smolang.robust.tools.NodeMap
 import org.smolang.robust.tools.ruleMutations.*

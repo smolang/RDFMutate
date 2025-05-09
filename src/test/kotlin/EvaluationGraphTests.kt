@@ -1,7 +1,7 @@
 import io.kotlintest.specs.StringSpec
 import org.smolang.robust.domainSpecific.reasoner.OwlEvaluationGraphGenerator
 import org.smolang.robust.domainSpecific.suave.SuaveEvaluationGraphGenerator
-import org.smolang.robust.mutant.DefinedMutants.*
+import org.smolang.robust.mutant.operators.*
 import java.io.File
 
 class EvaluationGraphTests: StringSpec() {

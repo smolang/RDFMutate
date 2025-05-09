@@ -11,7 +11,7 @@ import org.apache.jena.vocabulary.RDF
 import org.apache.jena.vocabulary.RDFS
 import org.smolang.robust.tools.OwlOntologyInterface
 import org.smolang.robust.mutant.*
-import org.smolang.robust.mutant.DefinedMutants.*
+import org.smolang.robust.mutant.operators.*
 import java.io.File
 
 class ReasonerMutationTests : StringSpec() {

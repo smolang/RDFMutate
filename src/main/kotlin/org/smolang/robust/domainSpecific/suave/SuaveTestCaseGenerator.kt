@@ -5,7 +5,7 @@ import org.apache.jena.rdf.model.ModelFactory
 import org.apache.jena.rdf.model.Statement
 import org.apache.jena.riot.Lang
 import org.apache.jena.riot.RDFDataMgr
-import org.smolang.robust.mutant.DefinedMutants.*
+import org.smolang.robust.mutant.operators.*
 import org.smolang.robust.randomGenerator
 import org.smolang.robust.tools.TestCaseGenerator
 import java.io.File

@@ -1,4 +1,4 @@
-package org.smolang.robust.mutant.DefinedMutants
+package org.smolang.robust.mutant.operators
 
 import org.apache.jena.rdf.model.*
 import org.apache.jena.vocabulary.OWL

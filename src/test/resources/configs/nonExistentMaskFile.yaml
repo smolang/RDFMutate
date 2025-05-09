@@ -17,7 +17,7 @@ strategy:
       
 mutation_operators:
     - module:
-        location: org.smolang.robust.mutant.DefinedMutants
+        location: org.smolang.robust.mutant.operators
         operators: 
             - className: CEUAMutation
             - className: CEUOMutation

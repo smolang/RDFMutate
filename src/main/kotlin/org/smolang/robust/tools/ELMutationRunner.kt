@@ -1,7 +1,7 @@
 package org.smolang.robust.tools
 
 import org.smolang.robust.mutant.*
-import org.smolang.robust.mutant.DefinedMutants.*
+import org.smolang.robust.mutant.operators.*
 import java.io.File
 import kotlin.reflect.KClass
 
