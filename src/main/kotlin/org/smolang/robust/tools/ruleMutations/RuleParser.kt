@@ -1,8 +1,10 @@
 package org.smolang.robust.tools.ruleMutations
 
 import org.apache.jena.rdf.model.Model
+import org.apache.jena.rdf.model.ModelFactory
 import org.apache.jena.rdf.model.RDFNode
 import org.apache.jena.rdf.model.Resource
+import org.apache.jena.riot.RDFDataMgr
 import org.apache.jena.vocabulary.OWL
 import org.apache.jena.vocabulary.RDF
 import org.apache.jena.vocabulary.SWRL
@@ -12,12 +14,21 @@ import org.smolang.robust.mutant.AbstractMutation
 import org.smolang.robust.mutant.RuleMutation
 import org.smolang.robust.mutant.RuleMutationConfiguration
 import org.smolang.robust.tools.ComplexTermParser
+import org.smolang.robust.tools.MutationFileParser
+import java.io.File
 
 // a class to parse rules, i.e., SWRL rules, to create mutations
-class RuleParser(val model: Model) {
+class RuleParser(val file: File) : MutationFileParser() {
 
-    fun getAllRuleMutations() : List<AbstractMutation> {
+    val parsedModel = loadModel(file)
+    val model = parsedModel.model
+
+    // main method to extract abstract mutations
+    override fun getAllAbstractMutations() : List<AbstractMutation>? {
         val abstractMutations = mutableListOf<AbstractMutation>()
+        if (!parsedModel.successful)  // return null, if file could not be parsed
+            return null
+
         val variables = getSwrlVariables()
         val rules = model.listSubjectsWithProperty(RDF.type, SWRL.Imp)
 
@@ -29,6 +40,23 @@ class RuleParser(val model: Model) {
                 abstractMutations.add(AbstractMutation(RuleMutation::class, config))
         }
         return abstractMutations
+    }
+
+    // loads model from file
+    private fun loadModel(file: File) : RuleParsingResult {
+
+        if(!file.absoluteFile.exists()){
+            mainLogger.error("File ${file.path} for mutations does not exist")
+            return RuleParsingResult(ModelFactory.createDefaultModel(), false)
+        } else  {
+            val input = try {
+                RDFDataMgr.loadDataset(file.absolutePath).defaultModel
+            } catch (e : Exception) {
+                mainLogger.error("Could not open file $file. Following exception occurred: $e")
+                return RuleParsingResult(ModelFactory.createDefaultModel(), false)
+            }
+            return RuleParsingResult(input, true)
+        }
     }
 
     // returns all swrl variables in model
@@ -322,7 +350,9 @@ class RuleParser(val model: Model) {
 
         return false
     }
-
-
-
 }
+
+data class RuleParsingResult(
+    val model : Model,
+    val successful : Boolean // indicates if parsing of file was successful
+)

@@ -164,7 +164,7 @@ class MutationRunner(configFile : File?) {
         return  MutationOutcome.SUCCESS
     }
 
-    // get mutation operator by class namen
+    // get mutation operator by class name
     private fun getMutationOperator(module: String, className: String) : AbstractMutation? {
         val mutationClass : KClass<out Mutation> = try {
             val kotlinClass = Class.forName("$module.$className").kotlin
@@ -184,30 +184,9 @@ class MutationRunner(configFile : File?) {
     }
 
     // get mutation operators from file
-    private fun getMutationOperators(fileName: File, type : MutationOperatorFormats) : List<AbstractMutation>? {
-        return when(type) {
-            MutationOperatorFormats.SWRL -> getSwrlMutationOperators(fileName)
-        }
-    }
-
-    // get mutation operators contained in file using swrl rules as encoding
-    private fun getSwrlMutationOperators(fileName: File) : List<AbstractMutation>? {
-        val mutations: List<AbstractMutation>? =
-            if(!fileName.exists()){
-                mainLogger.error("File ${fileName.path} for mutations does not exist")
-                null
-            } else  {
-                val input = try {
-                    RDFDataMgr.loadDataset(fileName.absolutePath).defaultModel
-                } catch (e : Exception) {
-                    mainLogger.error("Could not open file $fileName. Following exception occurred: $e")
-                    null
-                }
-                // parse rules, if dataset could be loaded from file
-                val parser = input?.let { RuleParser(it) }
-                parser?.getAllRuleMutations()
-            }
-        return mutations
+    private fun getMutationOperators(fileName: File, type : MutationOperatorFormat) : List<AbstractMutation>? {
+        val parser = MutationFileParserFactory(type).getParser(fileName)
+        return parser.getAllAbstractMutations()
     }
 
     // get seed knowledge graph from file

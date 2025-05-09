@@ -172,8 +172,8 @@ open class MutationRunnerDeprecated(
                 null
             } else  {
                 val input = RDFDataMgr.loadDataset(inputFile.absolutePath).defaultModel
-                val parser = RuleParser(input)
-                parser.getAllRuleMutations()
+                val parser = RuleParser(inputFile)
+                parser.getAllAbstractMutations()
             }
         return mutations
     }

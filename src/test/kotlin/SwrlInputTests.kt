@@ -7,17 +7,18 @@ import org.apache.jena.vocabulary.XSD
 import org.smolang.robust.mutant.MutationSequence
 import org.smolang.robust.mutant.Mutator
 import org.smolang.robust.tools.ruleMutations.RuleParser
+import java.io.File
 
 class SwrlInputTests : StringSpec() {
 
     init {
         "test parsing an applying of simple SWRL rule" {
-            val input = RDFDataMgr.loadDataset("swrl/swrlTest.ttl").defaultModel
+            val input = RDFDataMgr.loadDataset("src/test/resources/swrl/swrlTest.ttl").defaultModel
 
-            val parser = RuleParser(input)
-            val ruleMutations = parser.getAllRuleMutations()
+            val parser = RuleParser(File("src/test/resources/swrl/swrlTest.ttl"))
+            val ruleMutations = parser.getAllAbstractMutations()
 
-            ruleMutations.size shouldBe 1
+            ruleMutations!!.size shouldBe 1
 
             val ms = MutationSequence()
             ms.addAbstractMutation(ruleMutations.single())
@@ -44,12 +45,12 @@ class SwrlInputTests : StringSpec() {
 
     init {
         "parse mutation from SWRL rule with general property" {
-            val input = RDFDataMgr.loadDataset("swrl/swrlTestArbitratyRelation.ttl").defaultModel
+            val input = RDFDataMgr.loadDataset("src/test/resources/swrl/swrlTestArbitratyRelation.ttl").defaultModel
 
-            val parser = RuleParser(input)
-            val ruleMutations = parser.getAllRuleMutations()
+            val parser = RuleParser(File("src/test/resources/swrl/swrlTestArbitratyRelation.ttl"))
+            val ruleMutations = parser.getAllAbstractMutations()
 
-            ruleMutations.size shouldBe 1
+            ruleMutations!!.size shouldBe 1
 
             val ms = MutationSequence()
             ms.addAbstractMutation(ruleMutations.single())
@@ -71,26 +72,23 @@ class SwrlInputTests : StringSpec() {
 
     init {
         "test parsing of complex SWRL rules" {
-            val input = RDFDataMgr.loadDataset("swrl/swrlTestComplex.ttl").defaultModel
 
-            val parser = RuleParser(input)
-            val ruleMutations = parser.getAllRuleMutations()
+            val parser = RuleParser(File("src/test/resources/swrl/swrlTestComplex.ttl"))
+            val ruleMutations = parser.getAllAbstractMutations()
 
-            ruleMutations.size shouldBe 3
+            ruleMutations!!.size shouldBe 3
         }
     }
 
     init {
         "test applying rules that refer to data relations" {
-            val input = RDFDataMgr.loadDataset("swrl/swrlTest.ttl").defaultModel
+            val input = RDFDataMgr.loadDataset("src/test/resources/swrl/swrlTest.ttl").defaultModel
 
             // parse the two mutations from swrl rules
-            val ruleFile1 = RDFDataMgr.loadDataset("swrl/swrlTestDp1.ttl").defaultModel
-            val ruleFile2 = RDFDataMgr.loadDataset("swrl/swrlTestDp2.ttl").defaultModel
-            val parser1 = RuleParser(ruleFile1)
-            val parser2 = RuleParser(ruleFile2)
-            val ruleMutation1 = parser1.getAllRuleMutations().single()
-            val ruleMutation2 = parser2.getAllRuleMutations().single()
+            val parser1 = RuleParser(File("src/test/resources/swrl/swrlTestDp1.ttl"))
+            val ruleMutation1 = parser1.getAllAbstractMutations()!!.single()
+            val parser2 = RuleParser(File("src/test/resources/swrl/swrlTestDp2.ttl"))
+            val ruleMutation2 = parser2.getAllAbstractMutations()!!.single()
 
             // apply mutations
             val ms1 = MutationSequence()
@@ -122,9 +120,9 @@ class SwrlInputTests : StringSpec() {
 
     init {
         "SWRL rule with negative class assertion" {
-            val input = RDFDataMgr.loadDataset("swrl/swrlTestNegatedClass.ttl").defaultModel
+            val input = RDFDataMgr.loadDataset("src/test/resources/swrl/swrlTestNegatedClass.ttl").defaultModel
 
-            val mutation = RuleParser(input).getAllRuleMutations().single()
+            val mutation = RuleParser(File("src/test/resources/swrl/swrlTestNegatedClass.ttl")).getAllAbstractMutations()!!.single()
 
             // apply mutations
             val ms = MutationSequence()
@@ -145,9 +143,9 @@ class SwrlInputTests : StringSpec() {
 
     init {
         "SWRL rule with negative property assertion" {
-            val input = RDFDataMgr.loadDataset("swrl/swrlTestNegatedProperty.ttl").defaultModel
+            val input = RDFDataMgr.loadDataset("src/test/resources/swrl/swrlTestNegatedProperty.ttl").defaultModel
 
-            val mutation = RuleParser(input).getAllRuleMutations().single()
+            val mutation = RuleParser(File("src/test/resources/swrl/swrlTestNegatedProperty.ttl")).getAllAbstractMutations()!!.single()
 
             // apply mutations
             val ms = MutationSequence()
@@ -168,9 +166,9 @@ class SwrlInputTests : StringSpec() {
 
     init {
         "SWRL rule with negative consequences" {
-            val input = RDFDataMgr.loadDataset("swrl/swrlTestNegatedConsequence.ttl").defaultModel
+            val input = RDFDataMgr.loadDataset("src/test/resources/swrl/swrlTestNegatedConsequence.ttl").defaultModel
 
-            val mutation = RuleParser(input).getAllRuleMutations().single()
+            val mutation = RuleParser(File("src/test/resources/swrl/swrlTestNegatedConsequence.ttl")).getAllAbstractMutations()!!.single()
 
             // apply mutations
             val ms = MutationSequence()
@@ -195,9 +193,8 @@ class SwrlInputTests : StringSpec() {
 
     init {
         "SWRL with new node declaration" {
-            val seed = RDFDataMgr.loadDataset("PipeInspection/miniPipes.ttl").defaultModel
-            val mutationGraph = RDFDataMgr.loadDataset("PipeInspection/addPipeSegment.ttl").defaultModel
-            val mutation = RuleParser(mutationGraph).getAllRuleMutations().single()
+            val seed = RDFDataMgr.loadDataset("src/test/resources/PipeInspection/miniPipes.ttl").defaultModel
+            val mutation = RuleParser(File("src/test/resources/PipeInspection/addPipeSegment.ttl")).getAllAbstractMutations()!!.single()
 
             // apply mutations
             val ms = MutationSequence()
@@ -217,9 +214,8 @@ class SwrlInputTests : StringSpec() {
 
     init {
         "SWRL with node deletion" {
-            val seed = RDFDataMgr.loadDataset("PipeInspection/miniPipes.ttl").defaultModel
-            val mutationGraph = RDFDataMgr.loadDataset("PipeInspection/removePipeSegment.ttl").defaultModel
-            val mutation = RuleParser(mutationGraph).getAllRuleMutations().single()
+            val seed = RDFDataMgr.loadDataset("src/test/resources/PipeInspection/miniPipes.ttl").defaultModel
+            val mutation = RuleParser(File("src/test/resources/PipeInspection/removePipeSegment.ttl")).getAllAbstractMutations()!!.single()
 
             // apply mutations
             val ms = MutationSequence()
@@ -239,9 +235,8 @@ class SwrlInputTests : StringSpec() {
 
     init {
         "SWRL with node replacement + empty body" {
-            val seed = RDFDataMgr.loadDataset("PipeInspection/miniPipes.ttl").defaultModel
-            val mutationGraph = RDFDataMgr.loadDataset("PipeInspection/replacePipeSegment2.ttl").defaultModel
-            val mutation = RuleParser(mutationGraph).getAllRuleMutations().single()
+            val seed = RDFDataMgr.loadDataset("src/test/resources/PipeInspection/miniPipes.ttl").defaultModel
+            val mutation = RuleParser(File("src/test/resources/PipeInspection/replacePipeSegment2.ttl")).getAllAbstractMutations()!!.single()
 
             // apply mutations
             val ms = MutationSequence()

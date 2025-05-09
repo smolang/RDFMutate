@@ -106,7 +106,7 @@ data class OperatorName(
 @Serializable
 data class MutationOperatorResource(
     val file: String,
-    val syntax: MutationOperatorFormats
+    val syntax: MutationOperatorFormat
 )
 
 @Serializable
@@ -117,10 +117,4 @@ enum class KgFormatType {
     OWL
 }
 
-
-@Serializable
-enum class MutationOperatorFormats {
-    @SerialName("swrl")
-    SWRL
-}
 
