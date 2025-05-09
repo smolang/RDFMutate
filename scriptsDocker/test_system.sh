@@ -7,4 +7,4 @@
 
 # run test (pipe inspection case)
 echo "test test case generator"
-java -jar build/libs/OntoMutate-0.1.jar --scen_test 
+java -jar build/libs/rdfmutate-1.0.jar --scen_test 
