@@ -1,9 +1,0 @@
-Found anomalies while testing file ../testOnt.owl
-
-Anomaly 1: Class hierarchy differentiation between HERMIT and ELK:
-	additional axioms HERMIT: [EquivalentClasses(<http://lsrn.org/EC:2.4.1.21> <http://lsrn.org/EC:6.3.2.18> owl:Nothing), SubClassOf(<http://lsrn.org/EC:2.4.1.21> owl:Nothing), SubClassOf(<http://lsrn.org/EC:6.3.2.18> owl:Nothing)]
-	additional axioms ELK: [SubClassOf(<http://lsrn.org/EC:2.4.1.21> <http://lsrn.org/EC:2.4.1.->), SubClassOf(<http://lsrn.org/EC:6.3.2.18> <http://lsrn.org/EC:6.3.2.->)]
-
-Anomaly 2: Class hierarchy differentiation between ELK and OPENLLET:
-	additional axioms ELK: [SubClassOf(<http://lsrn.org/EC:2.4.1.21> <http://lsrn.org/EC:2.4.1.->), SubClassOf(<http://lsrn.org/EC:6.3.2.18> <http://lsrn.org/EC:6.3.2.->)]
-	additional axioms OPENLLET: [EquivalentClasses(<http://lsrn.org/EC:2.4.1.21> <http://lsrn.org/EC:6.3.2.18> owl:Nothing), SubClassOf(<http://lsrn.org/EC:2.4.1.21> owl:Nothing), SubClassOf(<http://lsrn.org/EC:6.3.2.18> owl:Nothing)]

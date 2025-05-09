@@ -1,9 +1,0 @@
-Found anomalies while testing file ../testOnt.owl
-
-Anomaly 1: Class hierarchy differentiation between HERMIT and ELK:
-	additional axioms HERMIT: [EquivalentClasses(<http://cbmi.med.harvard.edu/asdphenotype#Class_17> <http://cbmi.med.harvard.edu/asdphenotype#Class_328> owl:Nothing), SubClassOf(<http://cbmi.med.harvard.edu/asdphenotype#Class_17> owl:Nothing), SubClassOf(<http://cbmi.med.harvard.edu/asdphenotype#Class_328> owl:Nothing)]
-	additional axioms ELK: [SubClassOf(<http://cbmi.med.harvard.edu/asdphenotype#Class_17> <http://cbmi.med.harvard.edu/asdphenotype#Class_189>), SubClassOf(<http://cbmi.med.harvard.edu/asdphenotype#Class_328> <http://cbmi.med.harvard.edu/asdphenotype#Class_235>)]
-
-Anomaly 2: Class hierarchy differentiation between ELK and OPENLLET:
-	additional axioms ELK: [SubClassOf(<http://cbmi.med.harvard.edu/asdphenotype#Class_17> <http://cbmi.med.harvard.edu/asdphenotype#Class_189>), SubClassOf(<http://cbmi.med.harvard.edu/asdphenotype#Class_328> <http://cbmi.med.harvard.edu/asdphenotype#Class_235>)]
-	additional axioms OPENLLET: [EquivalentClasses(<http://cbmi.med.harvard.edu/asdphenotype#Class_17> <http://cbmi.med.harvard.edu/asdphenotype#Class_328> owl:Nothing), SubClassOf(<http://cbmi.med.harvard.edu/asdphenotype#Class_17> owl:Nothing), SubClassOf(<http://cbmi.med.harvard.edu/asdphenotype#Class_328> owl:Nothing)]

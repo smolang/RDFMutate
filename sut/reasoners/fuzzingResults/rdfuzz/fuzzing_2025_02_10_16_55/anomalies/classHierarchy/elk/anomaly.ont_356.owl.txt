@@ -1,9 +1,0 @@
-Found anomalies while testing file ../testOnt.owl
-
-Anomaly 1: Class hierarchy differentiation between HERMIT and ELK:
-	additional axioms HERMIT: [SubClassOf(<http://dbpedia.org/ontology/Place> <http://dbpedia.org/ontology/Plant>)]
-	additional axioms ELK: [SubClassOf(<http://dbpedia.org/ontology/Place> owl:Thing)]
-
-Anomaly 2: Class hierarchy differentiation between ELK and OPENLLET:
-	additional axioms ELK: [SubClassOf(<http://dbpedia.org/ontology/Place> owl:Thing)]
-	additional axioms OPENLLET: [SubClassOf(<http://dbpedia.org/ontology/Place> <http://dbpedia.org/ontology/Plant>)]

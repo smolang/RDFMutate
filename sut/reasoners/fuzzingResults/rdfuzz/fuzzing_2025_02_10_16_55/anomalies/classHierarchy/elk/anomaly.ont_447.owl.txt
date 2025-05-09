@@ -1,9 +1,0 @@
-Found anomalies while testing file ../testOnt.owl
-
-Anomaly 1: Class hierarchy differentiation between HERMIT and ELK:
-	additional axioms HERMIT: [EquivalentClasses(<http://purl.org/linguistics/gold/ExtinctVariety> <http://purl.org/linguistics/gold/Proadjective> owl:Nothing), SubClassOf(<http://purl.org/linguistics/gold/ExtinctVariety> owl:Nothing), SubClassOf(<http://purl.org/linguistics/gold/Proadjective> owl:Nothing)]
-	additional axioms ELK: [SubClassOf(<http://purl.org/linguistics/gold/ExtinctVariety> <http://purl.org/linguistics/gold/HumanLanguageVariety>), SubClassOf(<http://purl.org/linguistics/gold/Proadjective> <http://purl.org/linguistics/gold/ProForm>)]
-
-Anomaly 2: Class hierarchy differentiation between ELK and OPENLLET:
-	additional axioms ELK: [SubClassOf(<http://purl.org/linguistics/gold/ExtinctVariety> <http://purl.org/linguistics/gold/HumanLanguageVariety>), SubClassOf(<http://purl.org/linguistics/gold/Proadjective> <http://purl.org/linguistics/gold/ProForm>)]
-	additional axioms OPENLLET: [EquivalentClasses(<http://purl.org/linguistics/gold/ExtinctVariety> <http://purl.org/linguistics/gold/Proadjective> owl:Nothing), SubClassOf(<http://purl.org/linguistics/gold/ExtinctVariety> owl:Nothing), SubClassOf(<http://purl.org/linguistics/gold/Proadjective> owl:Nothing)]

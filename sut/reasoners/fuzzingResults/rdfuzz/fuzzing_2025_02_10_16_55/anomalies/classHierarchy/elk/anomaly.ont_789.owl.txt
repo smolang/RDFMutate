@@ -1,9 +1,0 @@
-Found anomalies while testing file ../testOnt.owl
-
-Anomaly 1: Class hierarchy differentiation between HERMIT and ELK:
-	additional axioms HERMIT: [EquivalentClasses(<http://gumo.org/2.0/#Atoms> owl:Nothing), SubClassOf(<http://gumo.org/2.0/#Atoms> owl:Nothing)]
-	additional axioms ELK: [SubClassOf(<http://gumo.org/2.0/#Atoms> <http://gumo.org/2.0/#Labels>)]
-
-Anomaly 2: Class hierarchy differentiation between ELK and OPENLLET:
-	additional axioms ELK: [SubClassOf(<http://gumo.org/2.0/#Atoms> <http://gumo.org/2.0/#Labels>)]
-	additional axioms OPENLLET: [EquivalentClasses(<http://gumo.org/2.0/#Atoms> owl:Nothing), SubClassOf(<http://gumo.org/2.0/#Atoms> owl:Nothing)]

@@ -1,9 +1,0 @@
-Found anomalies while testing file ../testOnt.owl
-
-Anomaly 1: Class hierarchy differentiation between HERMIT and ELK:
-	additional axioms HERMIT: [EquivalentClasses(<http://www.gulfdoctor.net/ontoderm/ontoderm.owl#Sparse> owl:Nothing), SubClassOf(<http://www.gulfdoctor.net/ontoderm/ontoderm.owl#Sparse> owl:Nothing)]
-	additional axioms ELK: [SubClassOf(<http://www.gulfdoctor.net/ontoderm/ontoderm.owl#Sparse> <http://www.gulfdoctor.net/ontoderm/ontoderm.owl#General>)]
-
-Anomaly 2: Class hierarchy differentiation between ELK and OPENLLET:
-	additional axioms ELK: [SubClassOf(<http://www.gulfdoctor.net/ontoderm/ontoderm.owl#Sparse> <http://www.gulfdoctor.net/ontoderm/ontoderm.owl#General>)]
-	additional axioms OPENLLET: [EquivalentClasses(<http://www.gulfdoctor.net/ontoderm/ontoderm.owl#Sparse> owl:Nothing), SubClassOf(<http://www.gulfdoctor.net/ontoderm/ontoderm.owl#Sparse> owl:Nothing)]
