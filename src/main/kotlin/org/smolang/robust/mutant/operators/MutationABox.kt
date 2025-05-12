@@ -3,11 +3,13 @@ package org.smolang.robust.mutant.operators
 import org.apache.jena.query.QueryExecutionFactory
 import org.apache.jena.query.QueryFactory
 import org.apache.jena.rdf.model.*
+import org.apache.jena.riot.RDFDataMgr
 import org.apache.jena.vocabulary.OWL
 import org.apache.jena.vocabulary.RDF
 import org.smolang.robust.randomGenerator
 import org.smolang.robust.mainLogger
 import org.smolang.robust.mutant.*
+import kotlin.random.Random
 
 class AddInstanceMutation(model: Model) : Mutation(model) {
     // returns all classes
@@ -477,5 +479,20 @@ class AddDifferentIndividualAssertionMutation(model: Model) : AddIndividualRelat
 
 class RemoveDifferentIndividualAssertionMutation(model: Model) : RemoveStatementByRelationMutation(model) {
     override val targetPredicate = OWL.differentFrom
+}
+
+class PizzaExampleMutation(model: Model) : Mutation(model) {
+    val topping: Resource = model.getResource(":Topping")
+    val pizza: Resource = model.getResource(":Pizza")
+    val hasTopping: Property = model.getProperty(":hasTopping")
+
+    override fun createMutation() {
+        val toppings = model.listResourcesWithProperty(RDF.type, topping)
+        val topping  = toppings.toSet().random()
+        val newPizza = model.createResource(":newPizza"+ Random.nextInt())
+        addSet.add(model.createStatement(newPizza, RDF.type, pizza))
+        addSet.add(model.createStatement(newPizza, hasTopping, topping))
+        super.createMutation()
+    }
 }
 

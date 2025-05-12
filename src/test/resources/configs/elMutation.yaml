@@ -63,7 +63,7 @@ mutation_operators:
             #misc
             - className: CEUAMutation
             - className: AddDatatypeDefinition
-            - className: AddHasKeyMutation::class,
+            - className: AddHasKeyMutation
 
             # -------------Abox-----------------------
             # individuals
@@ -85,5 +85,5 @@ mutation_operators:
             #data properties
             - className: BasicAddDataPropertyRelationMutation
             - className: RemoveDataPropertyRelationMutation
-            - className: AddNegativeDataPropertyRelationMutation::class
+            - className: AddNegativeDataPropertyRelationMutation
         

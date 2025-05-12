@@ -13,7 +13,7 @@ import org.smolang.robust.tools.*
 import kotlin.random.Random
 
 // logger for this application
-val mainLogger: Logger = LoggerFactory.getLogger("org.smolang.robust.OntoMutate")
+val mainLogger: Logger = LoggerFactory.getLogger("org.smolang.robust.RDFMutate")
 // random number generator
 val randomGenerator = Random(2)
 
