@@ -5,6 +5,9 @@
 # RDFMutate
 [![License](https://img.shields.io/github/license/smolang/RDFMutate)](https://www.gnu.org/licenses/gpl-3.0.en.html)
 [![Static Badge](https://img.shields.io/badge/documentation-GitHub_Wiki-1f883d)](https://github.com/smolang/RDFMutate/wiki)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15394157.svg)](https://doi.org/10.5281/zenodo.15394157)
+
+
 
 RDFMutate is a tool to generate RDF knowledge graphs, and in particular OWL ontologies, using mutations and with respect to constraints. 
 
