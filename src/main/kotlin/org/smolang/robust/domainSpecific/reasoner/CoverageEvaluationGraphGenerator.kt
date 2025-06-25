@@ -190,7 +190,7 @@ class CoverageEvaluationGraphGenerator(private val sampleSize : Int =100 ) {
         val emptyMask = EmptyMask(verbose)
 
         val sg = SuaveTestCaseGenerator(verbose)
-        val rationDomainSpecific = if (baseline) 0.0 else 0.95
+        val rationDomainSpecific = if (baseline) 0.0 else 1.0
         // generate mutated ontology
         sg.generateSuaveMutants(
             numberMutants = 1,

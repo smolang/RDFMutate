@@ -16,9 +16,9 @@ echo "build source code"
 # create coverage plots
 
 
-java $limit -jar build/libs/RDFMutate-0.1.jar --el-graph --coverage-samples=500
+java $limit -jar build/libs/RDFMutate-0.1.jar --el-graph --coverage-samples=500 # should be around 3,5h 
 
-java $limit -jar build/libs/RDFMutate-0.1.jar --suave-coverage-graph --coverage-samples=100 # should be about 2h for 100 samples
+java $limit -jar build/libs/RDFMutate-0.1.jar --suave-coverage-graph --coverage-samples=100 # should be about 4h for 100 samples
 
 cd sut/reasoners/evaluation
 pdflatex inputCoverageEL.tex 

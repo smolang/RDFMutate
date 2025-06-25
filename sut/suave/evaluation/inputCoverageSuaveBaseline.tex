@@ -3,9 +3,13 @@
 \usepackage[dvipsnames]{xcolor}
 \usepackage{pgfplots}
 
+\usetikzlibrary{patterns}
+
+\usepgfplotslibrary{fillbetween}
+
 \definecolor{AUVpurple}{HTML}{d726fa}
 \definecolor{PipeBrown}{HTML}{935e21}
-\usepgfplotslibrary{fillbetween}
+\newcommand{\hide}[1]{}
 
 \begin{document}
 	\begin{tikzpicture}
@@ -16,9 +20,9 @@
 			xlabel={\#mutations},
 			ylabel={avg. share of covered features},
 			xmin=0, xmax=100,
-			ymin=0, ymax=64,
-			xtick={0,10,20,30,40,50, 75, 100},
-			ytick={0,16, 32, 48, 64},
+			ymin=0, ymax=88,
+			xtick={0,10,20, 30, 40,50,75,100},
+			ytick={0,22, 44, 66, 88},
 			yticklabels={0.0, 0.25, 0.5, 0.75, 1.0},
 			legend pos=south east,
 			legend cell align={left},
@@ -28,7 +32,7 @@
 			%ybar=0pt
 			]
 			
-			
+\hide{		
 			\addplot[
 			%ybar,
 			color=PineGreen,
@@ -42,7 +46,7 @@
 			x=numMutations, 
 			y=avg100, 
 			col sep=comma
-			] {inputCoverageEL.csv};
+			] {inputCoverageSuaveBaseline.csv};
 			
 			
 			
@@ -60,11 +64,12 @@
 			x=numMutations, 
 			y=avg10, 
 			col sep=comma
-			] {inputCoverageEL.csv};
+			] {inputCoverageSuaveBaseline.csv};
 			
+		}
 			\addplot[
 			%ybar,
-			color=AUVpurple,
+			color=AUVpurple!80!black!100,
 			%fill=PipeBrown!20,
 			line width=1pt,
 			%bar shift=-4pt,
@@ -75,11 +80,23 @@
 			x=numMutations, 
 			y=avg, 
 			col sep=comma
-			] {inputCoverageEL.csv};
+			] {inputCoverageSuaveBaseline.csv};
+			
+			\draw[	% unmutatable features: 69
+				draw=gray,
+				line width=0.5pt,
+				pattern color=gray!50,
+				pattern=north west lines,
+			] (0, 0) rectangle (100, 690);
+			
+
 			
 		
-			\legend{100 mutated KGs, 10 mutated KGs, 1 mutated KG}
-
+			\legend{%100 mutated KGs, 10 mutated KGs, 
+				features mutated KGs}
+                
+                
+                
             % Median + std
             \addplot[
             name path=upper,
@@ -88,7 +105,8 @@
             x=numMutations,
             y expr=\thisrow{avg} + \thisrow{std}, 
             col sep=comma
-            ] {inputCoverageEL.csv};
+            ] {inputCoverageSuaveBaseline.csv};
+            
             
             
             % Median - std
@@ -99,55 +117,10 @@
             x=numMutations,
             y expr=\thisrow{avg} - \thisrow{std}, 
             col sep=comma
-            ] {inputCoverageEL.csv};
+            ] {inputCoverageSuaveBaseline.csv};
             
             \addplot[fill=AUVpurple!80!black!20] fill between [of=upper and lower];
-            
-             % Median + std 10
-            \addplot[
-            name path=upper10,
-            draw=none
-            ] table [
-            x=numMutations,
-            y expr=\thisrow{avg10} + \thisrow{std10}, 
-            col sep=comma
-            ] {inputCoverageEL.csv};
-            
-            
-            % Median - std 10
-            \addplot[
-            name path=lower10,
-            draw=none
-            ] table [
-            x=numMutations,
-            y expr=\thisrow{avg10} - \thisrow{std10}, 
-            col sep=comma
-            ] {inputCoverageEL.csv};
-            
-            \addplot[fill=PipeBrown!20] fill between [of=upper10 and lower10];
-            
-            % Median + std 100
-            \addplot[
-            name path=upper100,
-            draw=none
-            ] table [
-            x=numMutations,
-            y expr=\thisrow{avg100} + \thisrow{std100}, 
-            col sep=comma
-            ] {inputCoverageEL.csv};
-            
-            
-            % Median - std 100
-            \addplot[
-            name path=lower100,
-            draw=none
-            ] table [
-            x=numMutations,
-            y expr=\thisrow{avg100} - \thisrow{std100}, 
-            col sep=comma
-            ] {inputCoverageEL.csv};
-            
-            \addplot[fill=PineGreen!20] fill between [of=upper100 and lower100];
+
 			
 		\end{axis}
 	\end{tikzpicture}

@@ -3,9 +3,10 @@
 \usepackage[dvipsnames]{xcolor}
 \usepackage{pgfplots}
 
+\usepgfplotslibrary{fillbetween}
+
 \definecolor{AUVpurple}{HTML}{d726fa}
 \definecolor{PipeBrown}{HTML}{935e21}
-\usepgfplotslibrary{fillbetween}
 
 \begin{document}
 	\begin{tikzpicture}
@@ -20,7 +21,7 @@
 			xtick={0,10,20,30,40,50, 75, 100},
 			ytick={0,16, 32, 48, 64},
 			yticklabels={0.0, 0.25, 0.5, 0.75, 1.0},
-			legend pos=south east,
+			legend pos=north east,
 			legend cell align={left},
 			ymajorgrids=true,
 			grid style=dashed,
@@ -42,7 +43,7 @@
 			x=numMutations, 
 			y=avg100, 
 			col sep=comma
-			] {inputCoverageEL.csv};
+			] {inputCoverageELBaseLine.csv};
 			
 			
 			
@@ -60,7 +61,7 @@
 			x=numMutations, 
 			y=avg10, 
 			col sep=comma
-			] {inputCoverageEL.csv};
+			] {inputCoverageELBaseline.csv};
 			
 			\addplot[
 			%ybar,
@@ -75,12 +76,12 @@
 			x=numMutations, 
 			y=avg, 
 			col sep=comma
-			] {inputCoverageEL.csv};
+			] {inputCoverageELBaseline.csv};
 			
 		
 			\legend{100 mutated KGs, 10 mutated KGs, 1 mutated KG}
-
-            % Median + std
+            
+             % Median + std
             \addplot[
             name path=upper,
             draw=none
@@ -88,7 +89,7 @@
             x=numMutations,
             y expr=\thisrow{avg} + \thisrow{std}, 
             col sep=comma
-            ] {inputCoverageEL.csv};
+            ] {inputCoverageELBaseline.csv};
             
             
             % Median - std
@@ -99,11 +100,11 @@
             x=numMutations,
             y expr=\thisrow{avg} - \thisrow{std}, 
             col sep=comma
-            ] {inputCoverageEL.csv};
+            ] {inputCoverageELBaseline.csv};
             
             \addplot[fill=AUVpurple!80!black!20] fill between [of=upper and lower];
             
-             % Median + std 10
+            % Median + std 10
             \addplot[
             name path=upper10,
             draw=none
@@ -111,7 +112,7 @@
             x=numMutations,
             y expr=\thisrow{avg10} + \thisrow{std10}, 
             col sep=comma
-            ] {inputCoverageEL.csv};
+            ] {inputCoverageELBaseline.csv};
             
             
             % Median - std 10
@@ -122,7 +123,7 @@
             x=numMutations,
             y expr=\thisrow{avg10} - \thisrow{std10}, 
             col sep=comma
-            ] {inputCoverageEL.csv};
+            ] {inputCoverageELBaseline.csv};
             
             \addplot[fill=PipeBrown!20] fill between [of=upper10 and lower10];
             
@@ -134,7 +135,7 @@
             x=numMutations,
             y expr=\thisrow{avg100} + \thisrow{std100}, 
             col sep=comma
-            ] {inputCoverageEL.csv};
+            ] {inputCoverageELBaseline.csv};
             
             
             % Median - std 100
@@ -145,9 +146,10 @@
             x=numMutations,
             y expr=\thisrow{avg100} - \thisrow{std100}, 
             col sep=comma
-            ] {inputCoverageEL.csv};
+            ] {inputCoverageELBaseline.csv};
             
             \addplot[fill=PineGreen!20] fill between [of=upper100 and lower100];
+
 			
 		\end{axis}
 	\end{tikzpicture}
