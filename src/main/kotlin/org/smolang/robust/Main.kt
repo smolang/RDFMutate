@@ -127,6 +127,15 @@ class Main : CliktCommand() {
         AddNegativeDataPropertyRelationMutation::class
     )
 
+    // generic mutations that can always be applied
+    private val baselineMutations = listOf(
+        AddRelationMutation::class,
+        ChangeRelationMutation::class,
+        AddInstanceMutation::class,
+        RemoveStatementMutation::class,
+        RemoveNodeMutation::class
+    )
+
 
     override fun run() {
 
@@ -463,7 +472,21 @@ class Main : CliktCommand() {
         val inputDirectoryEL = File("sut/reasoners/ontologies_ore")
         val outputFileEl = File("sut/reasoners/evaluation/inputCoverageEL.csv")
         val owlAnalyzer = OwlOntologyAnalyzer()
-        coverageGraphGenerator.analyzeInputCoverage(inputDirectoryEL, elReasonerMutations, outputFileEl, owlAnalyzer)
+        coverageGraphGenerator.analyzeInputCoverage(
+            inputDirectoryEL,
+            elReasonerMutations,
+            outputFileEl,
+            owlAnalyzer
+        )
+
+        // EL coverage graph for baseline
+        val outputFileElBaseline = File("sut/reasoners/evaluation/inputCoverageELBaseline.csv")
+        coverageGraphGenerator.analyzeInputCoverage(
+            inputDirectoryEL,
+            baselineMutations,
+            outputFileElBaseline,
+            owlAnalyzer
+        )
     }
     private fun generateSuaveCoverageGraphs() {
         val coverageGraphGenerator = if (sampleSize != null)
@@ -474,7 +497,11 @@ class Main : CliktCommand() {
         // suave coverage graph
         val outputFileSuave = File("sut/suave/evaluation/inputCoverageSuave.csv")
         val suaveAnalyzer = SuaveOntologyAnalyzer()
-        coverageGraphGenerator.analyzeSuaveInputCoverage(outputFileSuave,suaveAnalyzer)
+        coverageGraphGenerator.analyzeSuaveInputCoverage(outputFileSuave,suaveAnalyzer, baseline=false)
+
+        // suave coverage graph baseline
+        val outputFileSuaveBaseline = File("sut/suave/evaluation/inputCoverageSuaveBaseline.csv")
+        coverageGraphGenerator.analyzeSuaveInputCoverage(outputFileSuaveBaseline,suaveAnalyzer, baseline=true)
 
     }
 

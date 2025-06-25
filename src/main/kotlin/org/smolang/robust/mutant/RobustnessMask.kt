@@ -7,12 +7,12 @@ import org.apache.jena.shacl.Shapes
 import java.io.File
 
 
-class RobustnessMask(val verbose: Boolean,
+open class RobustnessMask(val verbose: Boolean,
                      private val shacl: Shapes?
     ) {
 
     // checks, if the provided model is valid w.r.t. the shacl shapes
-    fun validate(model: Model) : Boolean {
+    open fun validate(model: Model) : Boolean {
 
         // create reasoner with the selected backend
         val reasonerFactory = CustomReasonerFactory(verbose, ReasoningBackend.OPENLLET)

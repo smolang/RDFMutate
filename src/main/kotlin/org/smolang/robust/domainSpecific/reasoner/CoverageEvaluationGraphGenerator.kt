@@ -5,6 +5,7 @@ import org.apache.jena.riot.RDFDataMgr
 import org.smolang.robust.domainSpecific.KgAnalyzer
 import org.smolang.robust.domainSpecific.suave.SuaveOntologyAnalyzer
 import org.smolang.robust.domainSpecific.suave.SuaveTestCaseGenerator
+import org.smolang.robust.mutant.EmptyMask
 import org.smolang.robust.mutant.Mutation
 import org.smolang.robust.mutant.MutationSequence
 import org.smolang.robust.mutant.Mutator
@@ -128,7 +129,8 @@ class CoverageEvaluationGraphGenerator(private val sampleSize : Int =100 ) {
     }
 
     fun analyzeSuaveInputCoverage(outputFile: File,
-                                  analyzer: KgAnalyzer) {
+                                  analyzer: KgAnalyzer,
+                                  baseline: Boolean) {
 
         // calculate features that are not saved to mutant due to how suave handles that stuff (but they still count
         // for the features
@@ -159,7 +161,7 @@ class CoverageEvaluationGraphGenerator(private val sampleSize : Int =100 ) {
                 var res : Model? = null
                 while (res == null) {
                     // generate suave mutation
-                    res = suaveMutation(mutCount)
+                    res = suaveMutation(mutCount, baseline)
                 }
                 val features = analyzer.getFeaturesHashed(res).plus(externalFeatures)
 
@@ -179,19 +181,21 @@ class CoverageEvaluationGraphGenerator(private val sampleSize : Int =100 ) {
 
     }
 
-    private fun suaveMutation(numMutation : Int) : Model {
+    private fun suaveMutation(numMutation : Int, baseline: Boolean = false) : Model {
         val mutantName = "tempCoverageAnalysisMutatant"
 
         val mutantFileName = "$mutantName.0.suave.owl"
 
-        val emptyMask = RobustnessMask(verbose, shacl = null)
+        //val emptyMask = RobustnessMask(verbose, shacl = null)
+        val emptyMask = EmptyMask(verbose)
 
         val sg = SuaveTestCaseGenerator(verbose)
+        val rationDomainSpecific = if (baseline) 0.0 else 0.95
         // generate mutated ontology
         sg.generateSuaveMutants(
             numberMutants = 1,
             numMutation,
-            ratioDomainSpecific = 0.95,
+            rationDomainSpecific,
             useAddQAMutation = true,
             emptyMask,
             mutantName,

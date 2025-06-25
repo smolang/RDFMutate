@@ -170,7 +170,7 @@ class SuaveMutatorFactory(
         ChangeRelationMutation::class,
         AddInstanceMutation::class,
         RemoveStatementMutation::class,
-        RemoveNodeMutation::class,
+        RemoveNodeMutation::class
     )
     override fun randomMutator() : Mutator {
 

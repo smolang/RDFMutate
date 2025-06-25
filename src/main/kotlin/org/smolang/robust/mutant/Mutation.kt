@@ -2,6 +2,7 @@ package org.smolang.robust.mutant
 
 import org.apache.jena.rdf.model.*
 import org.apache.jena.reasoner.Reasoner
+import org.apache.jena.reasoner.ReasonerException
 import org.apache.jena.reasoner.ReasonerRegistry
 import org.smolang.robust.randomGenerator
 
@@ -225,7 +226,12 @@ open class Mutation(var model: Model, val verbose : Boolean) {
     }
 
     fun isOfInferredType(i : Resource, t : Resource) : Boolean {
-        return infModel.listStatements(i, rdfTypeProp, t).hasNext()
+        return try {
+            infModel.listStatements(i, rdfTypeProp, t).hasNext()
+        } catch (e: ReasonerException) {
+            println("WARNING: exception occurred during inferring type. Graph structure might be broken.")
+            false
+        }
     }
 
     fun allOfInferredType(t : Resource) : Set<Resource> {
@@ -481,6 +487,7 @@ open class AddRelationMutation(model: Model, verbose : Boolean) : Mutation(model
     // adds axioms to the delete set if necessary
     // e.g. if p is functional or asymmetric
     private fun setRepairs(p : Property, axiom : Statement) {
+
         if (isOfInferredType(p, funcProp)) {
             // delete outgoing relations, so that relation remains functional
             // i.e. we are quite restrictive here, this makes only sense in the case of a unique name assumption
