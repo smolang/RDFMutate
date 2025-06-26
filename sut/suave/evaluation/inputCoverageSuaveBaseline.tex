@@ -32,7 +32,6 @@
 			%ybar=0pt
 			]
 			
-\hide{		
 			\addplot[
 			%ybar,
 			color=PineGreen,
@@ -66,7 +65,7 @@
 			col sep=comma
 			] {inputCoverageSuaveBaseline.csv};
 			
-		}
+		
 			\addplot[
 			%ybar,
 			color=AUVpurple!80!black!100,
@@ -92,8 +91,9 @@
 
 			
 		
-			\legend{%100 mutated KGs, 10 mutated KGs, 
-				features mutated KGs}
+			\legend{100 mutated KGs, 
+                10 mutated KGs, 
+                1 mutated KG\phantom{s}}
                 
                 
                 
@@ -121,6 +121,50 @@
             
             \addplot[fill=AUVpurple!80!black!20] fill between [of=upper and lower];
 
+             % Median + std for 10 cases
+            \addplot[
+            name path=upper10,
+            draw=none
+            ] table [
+            x=numMutations,
+            y expr=\thisrow{avg10} + \thisrow{std10}, 
+            col sep=comma
+            ] {inputCoverageSuaveBaseline.csv};
+            
+            % Median - std for 10 cases
+            \addplot[
+            name path=lower10,
+            draw=none
+            ] table [
+            x=numMutations,
+            y expr=\thisrow{avg10} - \thisrow{std10}, 
+            col sep=comma
+            ] {inputCoverageSuaveBaseline.csv};
+            
+            \addplot[fill=PipeBrown!20] fill between [of=upper10 and lower10];
+            
+            
+            % Median + std for 100 cases
+            \addplot[
+            name path=upper100,
+            draw=none
+            ] table [
+            x=numMutations,
+            y expr=\thisrow{avg100} + \thisrow{std100}, 
+            col sep=comma
+            ] {inputCoverageSuaveBaseline.csv};
+            
+            % Median - std for 100 cases
+            \addplot[
+            name path=lower100,
+            draw=none
+            ] table [
+            x=numMutations,
+            y expr=\thisrow{avg100} - \thisrow{std100}, 
+            col sep=comma
+            ] {inputCoverageSuaveBaseline.csv};
+            
+            \addplot[fill=PipeBrown!20] fill between [of=upper100 and lower100];
 			
 		\end{axis}
 	\end{tikzpicture}

@@ -7,7 +7,7 @@
 heapLimit=${1:-12} # no limit: 12GB
 limit=-Xmx${heapLimit}G 
 
-echo "evaluating input coverage. This can take several minutes. On our machine (Intel Core i7-1165G7) it took about 3h."
+echo "evaluating input coverage. This can take several minutes. On our machine (Intel Core i7-1165G7) it took about 5h."
 
 # build 
 echo "build source code"
@@ -18,7 +18,7 @@ echo "build source code"
 
 java $limit -jar build/libs/RDFMutate-0.1.jar --el-graph --coverage-samples=500 # should be around 3,5h 
 
-java $limit -jar build/libs/RDFMutate-0.1.jar --suave-coverage-graph --coverage-samples=100 # should be about 4h for 100 samples
+java $limit -jar build/libs/RDFMutate-0.1.jar --suave-coverage-graph --coverage-samples=100 # should be about 1h for 100 samples
 
 cd sut/reasoners/evaluation
 pdflatex inputCoverageEL.tex 
@@ -36,7 +36,7 @@ echo "evaluating attempts per mask. This can take several minutes. On our machin
 
 # create mask attempts plot
 echo "create attempts graph"
-java -jar build/libs/RDFMutate-0.1.jar --issre_graph --sample-size=100
+java -jar build/libs/RDFMutate-0.1.jar --issre_graph --sample-size=100  # about 1h
 
 
 cd sut/suave/evaluation

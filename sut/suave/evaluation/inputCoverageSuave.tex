@@ -4,6 +4,7 @@
 \usepackage{pgfplots}
 
 \usetikzlibrary{patterns}
+\usepgfplotslibrary{fillbetween}
 
 \definecolor{AUVpurple}{HTML}{d726fa}
 \definecolor{PipeBrown}{HTML}{935e21}
@@ -92,6 +93,30 @@
 		
 			\legend{%100 mutated KGs, 10 mutated KGs, 
 				features mutated KGs}
+                
+                  % Median + std
+                \addplot[
+                name path=upper,
+                draw=none
+                ] table [
+                x=numMutations,
+                y expr=\thisrow{avg} + \thisrow{std}, 
+                col sep=comma
+                ] {inputCoverageSuave.csv};
+                
+                
+                
+            % Median - std
+            \addplot[
+            name path=lower,
+            draw=none
+            ] table [
+            x=numMutations,
+            y expr=\thisrow{avg} - \thisrow{std}, 
+            col sep=comma
+            ] {inputCoverageSuave.csv};
+            
+            \addplot[fill=AUVpurple!80!black!20] fill between [of=upper and lower];
 
 			
 		\end{axis}
