@@ -1,4 +1,4 @@
-# Artifact for ESE journal paper "Mutation-Based Integration Testing of Knowledge Graph Applications"
+# Artifact for EMSE journal paper "Mutation-Based Integration Testing of Knowledge Graph Applications"
 
 ## Artifact Description
 This artifact contains a virtual machine to run our tool for integration testing by mutating Knowledge Graphs. The artifact contains our implementation as well as the test data that we used for our evaluation. The artifact also contains the scripts to reproduce our evaluation and the SUTs necessary to do so.
@@ -22,7 +22,7 @@ There are three scripts to reproduce our experiments.
 - `replicate_geo.sh` generates mutants for the geo system and executes the test runs for all of them. The mutants are saved in folder `sut/geo/mutatedOnt` and the results of the test runs in `sut/geo/testResults`. On our machine (Intel Core i7-1165G7) this took about 100 hours.
 - `replicate_suave.sh` generates mutants for the suave system and executes the test runs for all of them. On our machine (Intel Core i7-1165G7) this took about 60 hours. Note: the SUAVE simulation is unstable if the hardware resources are not sufficient. On our setup (using an i7-1165G7 @ 2.80GHz), we had to provide the VM with 6 cores for the simulations to work correctly.
 
-### Evaluation Data used for ESE Publication
+### Evaluation Data used for EMSE Publication
 The mutants, masks and results of test runs can be found in the following folders:
 
 | SUT | masks | mutants (or anomalies) | test results (or bug reports) |

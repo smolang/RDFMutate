@@ -16,7 +16,7 @@ A prototype for mutation of OWL ontology with respect to entailment constraints
 ### Specifying Mutation Operators
 Per default, five domain-independent mutation oprators are used. To add more (existing) mutation operators, their classes need to be added to the list in lines 108–112 in file [Main.kt](src/main/kotlin/org/smolang/robust/Main.kt). To define new mutation operators, one can define them as sub-classes of the class [Mutation](src/main/kotlin/org/smolang/robust/mutant/Mutation.kt) (see e.g. mutation operators targeting the ABox in [MutationAbox](src/main/kotlin/org/smolang/robust/mutant/MutationABox.kt)).
 
-## Evaluation for ESE Publication
+## Evaluation for EMSE Publication
 The mutants, masks and results of test runs can be found in the following folders:
 
 | SUT | masks | mutants (or anomalies) | test results (or bug reports) |
@@ -28,7 +28,7 @@ The mutants, masks and results of test runs can be found in the following folder
 
 Each folder with masks contains a file `mask_development.txt` that explains, how the masks where developed over time and which test cases used which masks. We did not use masks for the reasoners campaign.
 
-## Replication of Evaluation for ESE Publication
+## Replication of Evaluation for EMSE Publication
 
 The easiest way to replicate our results is to use the following [VM on Zenodo](https://doi.org/10.5281/zenodo.14899988) where all SUTs are already implemented. If you want to install everything yourself, you can find instructions on how to do so in the next subsection.
 
