@@ -3,7 +3,8 @@ package org.smolang.robust.domainSpecific.reasoner
 import com.github.owlcs.ontapi.OntManagers
 import com.github.owlcs.ontapi.Ontology
 import com.github.owlcs.ontapi.internal.AxiomTranslator
-import org.apache.jena.ontapi.OntModelFactory
+import com.github.sszuev.jena.ontapi.OntModelFactory
+//import org.apache.jena.ontapi.OntModelFactory
 import org.apache.jena.rdf.model.Model
 import org.semanticweb.owlapi.formats.FunctionalSyntaxDocumentFormat
 import org.semanticweb.owlapi.model.AxiomType

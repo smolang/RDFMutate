@@ -3,6 +3,7 @@ plugins {
     id("org.jetbrains.kotlin.jvm") version "1.9.0"
     id 'org.springframework.boot' version '2.7.0'
     id 'com.github.johnrengelman.shadow' version '7.0.0'
+    id("scala")
 }
 group = 'me.edkam'
 version = '0.1'
@@ -11,6 +12,7 @@ wrapper {
     gradleVersion = '7.6'
 }
 
+
 repositories {
     mavenCentral()
     maven { url 'https://jitpack.io' }
@@ -18,16 +20,35 @@ repositories {
 test {
     useJUnitPlatform()
 }
+
+/*
+configurations {
+    mainImplementation {
+        // ensures that scala module uses old (but working) jena version
+        exclude group: 'org.apache.jena', module: 'apache-jena-libs'
+    }
+}
+
+ */
+
+
+
+
 dependencies {
     testImplementation("io.kotlintest:kotlintest-runner-junit5:3.4.0")
     implementation("io.kotlintest:kotlintest-runner-junit5:3.4.0")
     testImplementation 'org.jetbrains.kotlin:kotlin-test-junit'
     implementation("com.github.ajalt.clikt:clikt:4.3.0")
+
+    // scala
+    implementation 'org.scala-lang:scala-library:2.13.8'
+
     //implementation 'org.apache.jena:apache-jena-libs:4.10.0'
     //implementation 'org.apache.jena:jena-core:4.10.0'
 
     // https://mvnrepository.com/artifact/org.apache.jena/apache-jena-libs
-    implementation 'org.apache.jena:apache-jena-libs:5.2.0'
+    //implementation 'org.apache.jena:apache-jena-libs:5.2.0'
+    implementation 'org.apache.jena:apache-jena-libs:4.10.0'
 
     // https://mvnrepository.com/artifact/org.apache.jena/jena-core
     //implementation group: 'org.apache.jena', name: 'jena-core', version: '5.2.0'
@@ -39,7 +60,21 @@ dependencies {
     // https://mvnrepository.com/artifact/org.slf4j/slf4j-nop
     testImplementation group: 'org.slf4j', name: 'slf4j-nop', version: '2.0.16'
     // https://mvnrepository.com/artifact/com.github.owlcs/ontapi
-    implementation group: 'com.github.owlcs', name: 'ontapi', version: '4.0.0'
+    //implementation group: 'com.github.owlcs', name: 'ontapi', version: '4.0.0'
+    implementation group: 'com.github.owlcs', name: 'ontapi', version: '3.5.0'
+
+    // https://github.com/propi/rdfrules/tree/master
+    //implementation 'com.github.propi:rdfrules:1.9.0'
+
+    // scala module for rule extractor
+    implementation project(':rules')
+    // rules module --> shadow jar
+    //implementation files('rules/build/libs/rules-all.jar')
+
+    // composite build
+    implementation group: 'org.smolang.robust', name: 'rules', version: '1.0'
+
+
 }
 
 
@@ -48,8 +83,28 @@ dependencies {
 //    kotlinOptions.jvmTarget = '1.8'
 //}
 
-kotlin {
-    jvmToolchain(17)
+sourceSets {
+    main {
+        kotlin {
+            srcDirs = ['src/main/kotlin'] // Path to your Kotlin source files
+        }
+    }
+    test {
+        kotlin {
+            srcDirs = ['src/test/kotlin'] // Path to your Kotlin test files
+        }
+    }
 }
 
 
+
+// scala compilation before kotlin compilation
+/*tasks.compileKotlin {
+    mustRunAfter tasks.compileScala
+}
+
+ */
+
+kotlin {
+    jvmToolchain(17)
+}

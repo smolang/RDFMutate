@@ -19,6 +19,7 @@ import org.smolang.robust.domainSpecific.suave.SuaveEvaluationGraphGenerator
 import org.smolang.robust.domainSpecific.suave.SuaveOntologyAnalyzer
 import org.smolang.robust.domainSpecific.suave.SuaveTestCaseGenerator
 import org.smolang.robust.mutant.*
+import org.smolang.robust.patterns.PatternExtractor
 import org.smolang.robust.sut.MiniPipeInspection
 import java.io.File
 import java.nio.file.Files
@@ -50,7 +51,8 @@ class Main : CliktCommand() {
         "--el-graph" to "elGraph",
         "--suave-coverage-graph" to "suaveCoverageGraph",
         "--analyze-minimization" to "minimization",
-        "--suave-features" to "suaveFeatures"
+        "--suave-features" to "suaveFeatures",
+        "--pattern-extraction" to "patternExtraction"
     ).default("free")
 
     private val elReasonerMutations = listOf(
@@ -161,6 +163,7 @@ class Main : CliktCommand() {
                 testMiniPipes()
             }
             "minimization" -> analyzeMinimization()
+            "patternExtraction" -> extractRules()
             else -> testMiniPipes()
         }
 
@@ -571,6 +574,13 @@ class Main : CliktCommand() {
 
 
 
+    }
+
+    // test rule extraction
+    private fun extractRules() {
+        PatternExtractor().extractRules(File("sut/suave/suave_ontologies/minimal_error_rules.owl"))
+
+        //PatternExtractor().extractRules(File("sut/suave/suave_ontologies/tomasys.owl"))
     }
 }
 
