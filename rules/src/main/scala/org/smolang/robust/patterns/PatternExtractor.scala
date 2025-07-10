@@ -24,8 +24,8 @@ class PatternExtractor(val minRuleMatch: Int,   // how often rule matches comple
         println("extract rules; rule is at least " + minRuleMatch + " times satisfied")
         val rules = mineRules(d)
         val filteredRules = rules
-          .sortByRuleLength(Measure.Support)
           .computeConfidence(minConfidence)(Measure.CwaConfidence, EmptyDebugger)
+          .sortBy(Measure.Support)
 
         println("mined " + filteredRules.size + " rules from graph")
         filteredRules.foreach(println)
