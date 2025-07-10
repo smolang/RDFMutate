@@ -578,9 +578,16 @@ class Main : CliktCommand() {
 
     // test rule extraction
     private fun extractRules() {
-        PatternExtractor().extractRules(File("sut/suave/suave_ontologies/minimal_error_rules.owl"))
+        val patternExtractor = PatternExtractor(10, 20, 0.8)
+
+        patternExtractor.extractRules(File("sut/rml/examples/yarrrml-parser-tests/mapping.rml.ttl"))
+
+        patternExtractor.extractRules(File("sut/rml/examples/era/mappings/ERATV-manufacturers.ttl"))
+
+
 
         //PatternExtractor().extractRules(File("sut/suave/suave_ontologies/tomasys.owl"))
+
     }
 }
 
