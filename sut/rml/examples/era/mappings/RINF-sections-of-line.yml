@@ -1,0 +1,53 @@
+prefixes:
+  xsd: "http://www.w3.org/2001/XMLSchema#"
+  idlab-fn: "http://example.com/idlab/function/"
+  grel: "http://users.ugent.be/~bjdmeest/function/grel.ttl#"
+  rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+  eu-country: "http://publications.europa.eu/resource/authority/country/"
+  era: "http://data.europa.eu/949/"
+  era-sn: "http://data.europa.eu/949/concepts/sol-natures/"
+
+variables:
+  connection:
+    access: &host ${RINF_HOST}
+    type: &typeMSSQL mssql
+    credentials: &credentials
+      username: ${RINF_USER}
+      password: ${RINF_PWD}
+    queryFormulation: &queryFormulation sql2008
+    referenceFormulation: &referenceFormulation csv
+
+mappings:
+  sections-of-line:
+    sources:
+      - access: *host
+        type: *typeMSSQL
+        credentials: *credentials
+        queryFormulation: *queryFormulation
+        referenceFormulation: *referenceFormulation
+        query: SELECT (SectionOfLines.Length * 1000) AS Length, UICLines.UICCode, MemberStates.Code, (SELECT LTRIM(RTRIM(UOPID)) FROM RINF.dbo.OperationalPoints, RINF.dbo.LineNodes WHERE OperationalPointID=OperationalPoints.ID AND LineNodes.ID=LineEdges.LineNodeStartID AND OperationalPoints.VersionID=LineNodes.VersionID) AS FROM_NODE, (SELECT LTRIM(RTRIM(UOPID)) FROM RINF.dbo.OperationalPoints, RINF.dbo.LineNodes WHERE OperationalPointID=OperationalPoints.ID AND LineNodes.ID=LineEdges.LineNodeEndID AND OperationalPoints.VersionID=LineNodes.VersionID) AS TO_NODE, REPLACE(LookupValues.[Value], ' ', '_') AS SolNature, SectionOfLines.IMCode FROM RINF.dbo.LineEdges, RINF.dbo.SectionOfLines, RINF.dbo.UICLines, RINF.dbo.MemberStateVersions, RINF.dbo.MemberStates, RINF.dbo.LookupValues WHERE LineEdges.ID = SectionOfLines.LineEdgeID AND LineEdges.VersionID = SectionOfLines.VersionID AND SectionOfLines.UICLineID = UICLines.ID AND SectionOfLines.VersionID = UICLines.VersionID AND SectionOfLines.VersionID = MemberStateVersions.ID AND SectionOfLines.SOLNature = LookupValues.ID AND MemberStateVersions.MemberStateID = MemberStates.ID
+    s: http://data.europa.eu/949/functionalInfrastructure/sectionsOfLine/$(UICCode)_$(FROM_NODE)_$(TO_NODE)
+    po:
+      - [a, era:SectionOfLine]
+      - [rdfs:label, $(UICCode)_$(FROM_NODE)_$(TO_NODE)]
+      - [era:imCode, $(IMCode)] # 1.1.0.0.0.1
+      - [era:lineNationalId, http://data.europa.eu/949/functionalInfrastructure/nationalLines/$(UICCode)~iri] # 1.1.0.0.0.2
+      - [era:opStart, http://data.europa.eu/949/functionalInfrastructure/operationalPoints/$(FROM_NODE)~iri] # 1.1.0.0.0.3
+      - [era:opEnd, http://data.europa.eu/949/functionalInfrastructure/operationalPoints/$(TO_NODE)~iri] # 1.1.0.0.0.4
+      - [era:length, $(Length), xsd:double] # 1.1.0.0.0.5
+      - [era:solNature, era-sn:$(SolNature)~iri] # 1.1.0.0.0.6
+      - [era:hasAbstraction, http://data.europa.eu/949/topology/netElements/$(UICCode)_$(FROM_NODE)_$(TO_NODE)~iri]
+      - p: era:inCountry
+        o:
+          - mapping: eu-country
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(Code)]
+                - [str2, $(code)]
+    graph: ${NAMED_GRAPH}
+  
+  eu-country:
+    sources:
+      - ["data/countries.csv~csv"]
+    s: $(eu)

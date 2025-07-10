@@ -1,0 +1,176 @@
+prefixes:
+  idlab-fn: "http://example.com/idlab/function/"
+  grel: "http://users.ugent.be/~bjdmeest/function/grel.ttl#"
+  wgs: "http://www.w3.org/2003/01/geo/wgs84_pos#"
+  geosparql: "http://www.opengis.net/ont/geosparql#"
+  eu-country: "http://publications.europa.eu/resource/authority/country/"
+  rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+  xsd: "http://www.w3.org/2001/XMLSchema#"
+  era: "http://data.europa.eu/949/"
+  era-op-types: "http://data.europa.eu/949/concepts/op-types/"
+
+variables:
+  connection: 
+    access: &host ${RINF_HOST}
+    type: &typeMSSQL mssql
+    credentials: &credentials
+      username: ${RINF_USER}
+      password: ${RINF_PWD}
+    queryFormulation: &queryFormulation sql2008 
+    referenceFormulation: &referenceFormulation csv
+
+mappings:
+  operational-point:
+    sources:
+      - access: *host
+        type: *typeMSSQL
+        credentials: *credentials
+        queryFormulation: *queryFormulation
+        referenceFormulation: *referenceFormulation
+        query: SELECT LTRIM(RTRIM(UOPID)) AS UOPID, LTRIM(RTRIM(OperationalPoints.Name)) AS OPName, MemberStates.Code, MemberStates.Name AS country, LookupValues.[Value], LineNodes.Latitude, LineNodes.Longitude, OPTafTAPCodes.[Value] AS TafTapCode FROM RINF.dbo.OperationalPoints, RINF.dbo.MemberStates, RINF.dbo.MemberStateVersions, RINF.dbo.LookupValues, RINF.dbo.LineNodes, RINF.dbo.OPTafTAPCodes WHERE OperationalPoints.ID = LineNodes.OperationalPointID AND OperationalPoints.VersionID = LineNodes.VersionID AND OperationalPoints.Type = LookupValues.ID AND OperationalPoints.VersionID = MemberStateVersions.ID AND MemberStateVersions.MemberStateID = MemberStates.ID AND OperationalPoints.ID = OPTafTAPCodes.OperationalPointID AND OperationalPoints.VersionID = OPTafTAPCodes.VersionID;
+    s: http://data.europa.eu/949/functionalInfrastructure/operationalPoints/$(UOPID)
+    po:
+      - [a, era:OperationalPoint]
+      - [rdfs:label, $(OPName)]
+      - [era:opName, $(OPName)] # 1.2.0.0.0.1
+      - [era:uopid, $(UOPID)] # 1.2.0.0.0.2
+      - p: era:tafTAPCode # 1.2.0.0.0.3
+        o: $(TafTapCode)
+        condition:
+          function: idlab-fn:notEqual
+          parameters:
+            - [grel:valueParameter, $(TafTapCode)]
+            - [grel:valueParameter2, ""]
+      - p: era:opType # 1.2.0.0.0.4
+        o:
+          - mapping: op-type
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(Value)]
+                - [str2, $(label)]
+      - [geosparql:hasGeometry, http://data.europa.eu/949/locations/$(Longitude)/$(Latitude)~iri] # 1.2.0.0.0.5
+      - [wgs:location, http://data.europa.eu/949/locations/$(Longitude)/$(Latitude)~iri] # 1.2.0.0.0.5
+      - [era:hasAbstraction, http://data.europa.eu/949/topology/netElements/$(UOPID)~iri]
+      - p: era:inCountry
+        o:
+          - mapping: eu-country
+            condition:
+              function: equal
+              parameters:
+                - [str1, $(Code)]
+                - [str2, $(code)]
+    graph: ${NAMED_GRAPH}
+  
+  op-line-reference:
+    sources:
+      - access: *host
+        type: *typeMSSQL
+        credentials: *credentials
+        queryFormulation: *queryFormulation
+        referenceFormulation: *referenceFormulation
+        query: SELECT LTRIM(RTRIM(UOPID)) AS UOPID, LineReferences.Kilometer, UICLines.UICCode FROM RINF.dbo.OperationalPoints, RINF.dbo.LineReferences, RINF.dbo.UICLines WHERE OperationalPoints.ID = LineReferences.OperationalPointId AND OperationalPoints.VersionID = LineReferences.VersionID AND LineReferences.UICLineId = UICLines.ID AND LineReferences.VersionID = UICLines.VersionID;
+    s: http://data.europa.eu/949/functionalInfrastructure/operationalPoints/$(UOPID)
+    po:
+      - [era:lineReference, http://data.europa.eu/949/functionalInfrastructure/lineReferences/$(UICCode)_$(Kilometer)~iri] # 1.2.0.0.0.6
+    graph: ${NAMED_GRAPH}
+  
+  line-reference:
+    sources:
+      - access: *host
+        type: *typeMSSQL
+        credentials: *credentials
+        queryFormulation: *queryFormulation
+        referenceFormulation: *referenceFormulation
+        query: SELECT LTRIM(RTRIM(UOPID)) AS UOPID, LineReferences.Kilometer, UICLines.UICCode FROM RINF.dbo.OperationalPoints, RINF.dbo.LineReferences, RINF.dbo.UICLines WHERE OperationalPoints.ID = LineReferences.OperationalPointId AND OperationalPoints.VersionID = LineReferences.VersionID AND LineReferences.UICLineId = UICLines.ID AND LineReferences.VersionID = UICLines.VersionID;
+    s: http://data.europa.eu/949/functionalInfrastructure/lineReferences/$(UICCode)_$(Kilometer)
+    po:
+      - [a, era:LineReference]
+      - [era:lineNationalId, http://data.europa.eu/949/functionalInfrastructure/nationalLines/$(UICCode)~iri]
+      - [era:kilometer, $(Kilometer), xsd:double]
+    graph: ${NAMED_GRAPH}
+  
+  location:
+    sources:
+      - access: *host
+        type: *typeMSSQL
+        credentials: *credentials
+        queryFormulation: *queryFormulation
+        referenceFormulation: *referenceFormulation
+        query: SELECT LineNodes.Latitude, LineNodes.Longitude FROM RINF.dbo.OperationalPoints, RINF.dbo.LineNodes WHERE OperationalPoints.ID = LineNodes.OperationalPointID AND OperationalPoints.VersionID = LineNodes.VersionID;
+    s: http://data.europa.eu/949/locations/$(Longitude)/$(Latitude)
+    po:
+      - [a, wgs:Point]
+      - [a, geosparql:Geometry]
+      - [wgs:lat, $(Latitude), xsd:double]
+      - [wgs:long, $(Longitude), xsd:double]
+      - [geosparql:asWKT, POINT ($(Longitude) $(Latitude)), geosparql:wktLiteral]
+    graph: ${NAMED_GRAPH}
+  
+  op-type:
+    sources:
+      - ["data/op_types.csv~csv"]
+    s: era-op-types:$(type)
+  
+  eu-country:
+    sources:
+      - ["data/countries.csv~csv"]
+    s: $(eu)
+  
+  # ---------------- Generic information --------------
+
+  gauge-changeover: # 1.2.0.0.0.4.1
+    sources:
+      - access: *host
+        type: *typeMSSQL
+        credentials: *credentials
+        queryFormulation: *queryFormulation
+        referenceFormulation: *referenceFormulation
+        query: SELECT LTRIM(RTRIM(OperationalPoints.UOPID)) AS UOPID, OperationalPointParameters.[Value] AS ParameterValue FROM RINF.dbo.OperationalPointParameters, RINF.dbo.Parameters, RINF.dbo.OperationalPoints WHERE OperationalPointParameters.ParameterID = Parameters.ID AND OperationalPointParameters.OperationalPointID = OperationalPoints.ID AND OperationalPointParameters.VersionID = OperationalPoints.VersionID AND Parameters.[Index] IN ('1.2.0.0.0.4.1') AND OperationalPointParameters.[Value] IS NOT NULL
+    s: http://data.europa.eu/949/functionalInfrastructure/operationalPoints/$(UOPID)
+    po:
+      - [era:opTypeGaugeChangeover, $(ParameterValue)]
+
+  # ---------------- Rules and restrictions --------------
+  
+  local-rules: # 1.2.3.1
+    sources:
+      - access: *host
+        type: *typeMSSQL
+        credentials: *credentials
+        queryFormulation: *queryFormulation
+        referenceFormulation: *referenceFormulation
+        query: SELECT LTRIM(RTRIM(OperationalPoints.UOPID)) AS UOPID, LookupValues.[Value] AS ParameterValue FROM RINF.dbo.OperationalPointParameters, RINF.dbo.Parameters, RINF.dbo.OperationalPoints, RINF.dbo.LookupValues WHERE OperationalPointParameters.ParameterID = Parameters.ID AND OperationalPointParameters.OperationalPointID = OperationalPoints.ID AND OperationalPointParameters.VersionID = OperationalPoints.VersionID AND OperationalPointParameters.LookupValueID = LookupValues.ID AND Parameters.[Index] IN ('1.2.3.1') AND OperationalPointParameters.LookupValueID IS NOT NULL
+    s: http://data.europa.eu/949/functionalInfrastructure/operationalPoints/$(UOPID)
+    po:
+      - p: era:localRulesOrRestrictions
+        o:
+          value: "true"
+          datatype: "xsd:boolean"
+        condition:
+          function: idlab-fn:equal
+          parameters:
+            - [grel:valueParameter, $(ParameterValue)]
+            - [grel:valueParameter2, "Y"]
+      - p: era:localRulesOrRestrictions
+        o:
+          value: "false"
+          datatype: "xsd:boolean"
+        condition:
+          function: idlab-fn:equal
+          parameters:
+            - [grel:valueParameter, $(ParameterValue)]
+            - [grel:valueParameter2, "N"]
+    graph: ${NAMED_GRAPH}
+
+  local-rules-doc: # 1.2.3.2
+    sources:
+      - access: *host
+        type: *typeMSSQL
+        credentials: *credentials
+        queryFormulation: *queryFormulation
+        referenceFormulation: *referenceFormulation
+        query: SELECT LTRIM(RTRIM(OperationalPoints.UOPID)) AS UOPID, OperationalPointParameters.[Value] AS ParameterValue FROM RINF.dbo.OperationalPointParameters, RINF.dbo.Parameters, RINF.dbo.OperationalPoints WHERE OperationalPointParameters.ParameterID = Parameters.ID AND OperationalPointParameters.OperationalPointID = OperationalPoints.ID AND OperationalPointParameters.VersionID = OperationalPoints.VersionID AND Parameters.[Index] IN ('1.2.3.2') AND OperationalPointParameters.[Value] IS NOT NULL
+    s: http://data.europa.eu/949/functionalInfrastructure/operationalPoints/$(UOPID)
+    po:
+      - [era:localRulesOrRestrictionsDoc, $(ParameterValue)]
