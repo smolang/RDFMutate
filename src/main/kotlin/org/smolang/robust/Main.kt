@@ -578,15 +578,23 @@ class Main : CliktCommand() {
 
     // test rule extraction
     private fun extractRules() {
-        val patternExtractor = PatternExtractor(10, 20, 0.8)
+        val patternExtractor = PatternExtractor(
+            100,
+            20,
+            0.8,
+            4
+        )
 
-        patternExtractor.extractRules(File("sut/rml/examples/yarrrml-parser-tests/mapping.rml.ttl"))
+        //patternExtractor.extractRules(File("sut/rml/examples/yarrrml-parser-tests/mapping.rml.ttl"))
 
-        patternExtractor.extractRules(File("sut/rml/examples/era/mappings/ERATV-manufacturers.ttl"))
+        //patternExtractor.extractRules(File("sut/rml/examples/era/mappings/ERATV-manufacturers.ttl"))
+
+        //patternExtractor.extractRules(File("sut/rml/examples/reasoners/ore_ont_5485.ttl"))
+
+        patternExtractor.extractRules(File("sut/reasoners/ontologies_ore/ore_ont_412.owl"))
 
 
-
-        //PatternExtractor().extractRules(File("sut/suave/suave_ontologies/tomasys.owl"))
+        //patternExtractor.extractRules(File("sut/suave/suave_ontologies/tomasys.owl"))
 
     }
 }
