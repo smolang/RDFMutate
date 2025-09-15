@@ -19,8 +19,8 @@ import org.smolang.robust.domainSpecific.suave.SuaveEvaluationGraphGenerator
 import org.smolang.robust.domainSpecific.suave.SuaveOntologyAnalyzer
 import org.smolang.robust.domainSpecific.suave.SuaveTestCaseGenerator
 import org.smolang.robust.mutant.*
-import org.smolang.robust.patterns.PatternExtractor
 import org.smolang.robust.sut.MiniPipeInspection
+import org.smolang.robust.tools.OperatorLearner
 import java.io.File
 import java.nio.file.Files
 import kotlin.random.Random
@@ -163,7 +163,7 @@ class Main : CliktCommand() {
                 testMiniPipes()
             }
             "minimization" -> analyzeMinimization()
-            "patternExtraction" -> extractRules()
+            "patternExtraction" -> learnMutationOperators()
             else -> testMiniPipes()
         }
 
@@ -473,8 +473,10 @@ class Main : CliktCommand() {
 
         // EL coverage graph
         val inputDirectoryEL = File("sut/reasoners/ontologies_ore")
-        val outputFileEl = File("sut/reasoners/evaluation/inputCoverageEL.csv")
         val owlAnalyzer = OwlOntologyAnalyzer()
+/*
+
+        val outputFileEl = File("sut/reasoners/evaluation/inputCoverageEL.csv")
         coverageGraphGenerator.analyzeInputCoverage(
             inputDirectoryEL,
             elReasonerMutations,
@@ -490,7 +492,23 @@ class Main : CliktCommand() {
             outputFileElBaseline,
             owlAnalyzer
         )
+
+ */
+
+        // EL coverage graph for learned mutation operators
+        val ruleFile = File("sut/rml/extractedRulesOre.txt")
+        val operatorLearner = OperatorLearner()
+        val learntMutationOperators= operatorLearner.rulesToAbstractMutation(ruleFile)
+
+        val outputFileElLearnt = File("sut/reasoners/evaluation/inputCoverageELLearnt.csv")
+        coverageGraphGenerator.analyzeInputCoverageAM(
+            inputDirectoryEL,
+            learntMutationOperators,
+            outputFileElLearnt,
+            owlAnalyzer
+        )
     }
+
     private fun generateSuaveCoverageGraphs() {
         val coverageGraphGenerator = if (sampleSize != null)
             CoverageEvaluationGraphGenerator(sampleSize!!)
@@ -577,24 +595,36 @@ class Main : CliktCommand() {
     }
 
     // test rule extraction
-    private fun extractRules() {
-        val patternExtractor = PatternExtractor(
-            100,
-            20,
-            0.8,
-            4
-        )
+    private fun learnMutationOperators() {
+        val operatorLearner = OperatorLearner()
+        // extract rules for EL ontologies
+        val outputELFile = File("sut/rml/extractedRulesOre.txt")
+        //operatorLearner.mineELRules(outputELFile)
 
-        //patternExtractor.extractRules(File("sut/rml/examples/yarrrml-parser-tests/mapping.rml.ttl"))
+        // extract rules for Suave KG
+        val outputSuaveFile = File("sut/rml/extractedRulesSuave.txt")
+        //operatorLearner.mineSuaveRules(outputSuaveFile)
 
-        //patternExtractor.extractRules(File("sut/rml/examples/era/mappings/ERATV-manufacturers.ttl"))
+        // transform rules into operators
+        val mutationOperators= operatorLearner.rulesToAbstractMutation(outputELFile)
 
-        //patternExtractor.extractRules(File("sut/rml/examples/reasoners/ore_ont_5485.ttl"))
+        //———————————————————————————————————————————————
+        //            test code
+        //———————————————————————————————————————————————
+        // select one for test purpose...
+        val mutationOperator = mutationOperators[1]
+        println(mutationOperator.config)
+        println(mutationOperators.size)
 
-        patternExtractor.extractRules(File("sut/reasoners/ontologies_ore/ore_ont_412.owl"))
+        val ms = MutationSequence(true)
+        ms.addAbstractMutation(mutationOperator)
+        val m = Mutator(ms, true)
 
+        val input = RDFDataMgr.loadDataset("src/test/resources/reasoners/siblings.ttl").defaultModel
+        val res = m.mutate(input)
+        println(m.globalMutation?.addSet)
+        println(m.globalMutation?.removeSet)
 
-        //patternExtractor.extractRules(File("sut/suave/suave_ontologies/tomasys.owl"))
 
     }
 }

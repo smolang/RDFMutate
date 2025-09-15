@@ -1030,6 +1030,49 @@ abstract class ReplaceNodeWithNode(model: Model, verbose: Boolean) : Mutation(mo
     }
 }
 
+open class ReplaceNodeWithNodeRules(
+    model: Model,
+    var oldNode: RDFNode = model.createResource(),
+    var newNode: RDFNode = model.createResource(),
+    verbose: Boolean
+) : Mutation(model, verbose) {
 
+    // default values: anonymous resources
+    //var oldNode: Resource = model.createResource()
+    //var newNode: Resource = model.createResource()
+
+    override fun createMutation() {
+        for (s in model.listStatements()) {
+            // try to replace nodes
+            val newSubject = tryReplace(s.subject)
+            val newPredicate = tryReplace(s.predicate.asResource())
+            val newObject =
+                if (s.`object`.isResource)
+                    tryReplace(s.`object`.asResource())
+                else
+                    s.`object`
+
+            // test, if subject and predicate are resources after replacement
+            // test, if something was replaced; if yes --> add to sets accordingly
+            if (newPredicate.isResource && newSubject.isResource &&
+                (s.subject != newSubject || s.predicate.asResource() != newPredicate || s.`object` != newObject)) {
+                removeSet.add(s)
+
+                addSet.add(model.createStatement(
+                    newSubject.asResource(),
+                    model.createProperty(newPredicate.asResource().uri),
+                    newObject
+                ))
+            }
+        }
+        super.createMutation()
+    }
+
+    // replaces the resource if possible
+    // returns argument otherwise
+    private fun tryReplace(r: Resource) : RDFNode {
+        return if (r == oldNode) newNode else r
+    }
+}
 
 

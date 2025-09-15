@@ -34,6 +34,9 @@ dependencies {
     implementation 'net.sourceforge.owlapi:owlapi-distribution:5.5.0'
     implementation group: 'com.github.owlcs', name: 'ontapi', version: '3.5.0'
 
+    // https://mvnrepository.com/artifact/org.slf4j/slf4j-nop
+    implementation group: 'org.slf4j', name: 'slf4j-nop', version: '2.0.16'
+
 }
 
 sourceSets {

@@ -1,7 +1,9 @@
 package org.smolang.robust.mutant
 
+import org.apache.jena.rdf.model.RDFNode
 import org.apache.jena.rdf.model.Resource
 import org.apache.jena.rdf.model.Statement
+import org.smolang.robust.tools.ruleMutations.MutationAtom
 
 
 abstract class MutationConfiguration {
@@ -90,4 +92,21 @@ class DoubleStringAndStatementConfiguration(private val nodeOld: String,
     fun getStatement() : Statement {
         return r
     }
+}
+
+class RuleMutationConfiguration(val body : List<MutationAtom> = listOf(),
+                                val head : List<MutationAtom> = listOf(),
+                                val bodyVariables : Set<Resource> = setOf(),
+                                val headVariables : Set<Resource> = setOf()
+) : MutationConfiguration() {
+
+    val variables : Set<RDFNode> get() = run { bodyVariables.union(headVariables) }
+
+    override fun toString(): String {
+        return "RuleMutationConfiguration(" +
+                "(${body.map { s -> s.toLocalString() }.joinToString(",")}) -> " +
+                "(${head.map { s -> s.toLocalString() }.joinToString(",")}))"
+    }
+
+
 }

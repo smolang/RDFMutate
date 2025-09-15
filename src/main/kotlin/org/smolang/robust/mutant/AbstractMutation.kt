@@ -10,7 +10,7 @@ class AbstractMutation(private val mutOp: KClass<out Mutation>,
                        private val verbose: Boolean ) {
 
     private var hasConfig : Boolean = false
-    private var config : MutationConfiguration? = null
+    public var config : MutationConfiguration? = null
 
     private val mutatableAxioms: MutableSet<Statement> = hashSetOf()
     fun addMutatableAxiom(s: Statement) {

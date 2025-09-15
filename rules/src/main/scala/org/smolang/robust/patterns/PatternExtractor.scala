@@ -3,6 +3,7 @@ package org.smolang.robust.patterns
 import com.github.owlcs.ontapi.OntManagers
 import com.github.propi.rdfrules.algorithm.amie.Amie
 import com.github.propi.rdfrules.data._
+import com.github.propi.rdfrules.index.IndexCollections.MutableHashSet
 import com.github.propi.rdfrules.index.{IndexPart, TripleItemIndex}
 import com.github.propi.rdfrules.rule.{Atom, Measure, Threshold}
 import com.github.propi.rdfrules.ruleset.Ruleset
@@ -13,7 +14,10 @@ import org.apache.jena.assembler.RuleSet
 import org.apache.jena.rdf.model.Model
 import org.apache.jena.riot.{Lang, RDFDataMgr}
 
-import java.io.{ByteArrayInputStream, ByteArrayOutputStream, File, FileOutputStream}
+import scala.jdk.CollectionConverters.CollectionHasAsScala
+import java.io.{ByteArrayInputStream, ByteArrayOutputStream, File, FileOutputStream, FileWriter}
+import scala.collection.mutable.ListBuffer
+import scala.reflect.runtime.universe.Try
 
 class PatternExtractor(val minRuleMatch: Int,   // how often rule matches completely
                        val minHeadMatch: Int,   // how often head matches
@@ -21,13 +25,48 @@ class PatternExtractor(val minRuleMatch: Int,   // how often rule matches comple
                        val maxRuleLength: Int   // maximal length of rule (head + body)
                       ) {
 
+    // extract rules from multiple files
+    def extractRules(files: java.util.Set[File]) : Set[String] = {
+        var rules: Set[String] = Set()
+        var i = 0
+        var numberRules: ListBuffer[Int] = ListBuffer() // list of extracted rules per input
+        files.asScala.foreach(file => {
+            println("mining rules in ontology " + i + "/" + files.size() )
+            i += 1
+            val extractedRules=extractRules(file)
+            rules = rules.union(extractedRules)
+            numberRules += extractedRules.size
+        })
+
+        println("mined rules per graph: " + numberRules)
+
+        rules
+    }
+
+    // saves rules to file
+    def saveRulesToFile(rules: Set[String], file: File): Boolean = {
+        // abort if file already exists
+        if (file.exists())
+            return false
+
+        try {
+            val fileWriter = new FileWriter(file)
+            rules.foreach(r => fileWriter.write(r + "\n"))
+            fileWriter.close()
+        } catch {
+            case _: Exception => return false
+        }
+
+        true
+    }
+
     // extracts rules for the graph from a file
-    def extractRules(graphFile: File): Unit = {
+    def extractRules(graphFile: File): Set[String] = {
         val d = readGraphFile(graphFile)
 
         println("mine rules in graph " + graphFile.getName)
-        println("triples in graph: " + d.size)
-        println("extract rules; rule is at least " + minRuleMatch + " times satisfied")
+        //println("triples in graph: " + d.size)
+        //println("extract rules; rule is at least " + minRuleMatch + " times satisfied")
         val rules = mineRules(d)
         val filteredRules = rules
           .computeConfidence(minConfidence)(Measure.CwaConfidence, EmptyDebugger)
@@ -39,8 +78,18 @@ class PatternExtractor(val minRuleMatch: Int,   // how often rule matches comple
         println("mined " + generalRules.size + " rules from graph")
 
         // remove
-        generalRules.foreach(println)
+        //generalRules.foreach(println)
         //filteredRules.foreach(println)
+
+        var result: Set[String] = Set()
+        generalRules.foreach( r => {
+                var s = ""
+                r.body.foreach(b => s += b.toString)
+                result += s + " -> " + r.head.toString()
+            }
+        )
+
+        result
     }
 
 
@@ -49,7 +98,7 @@ class PatternExtractor(val minRuleMatch: Int,   // how often rule matches comple
         val restrictedMiningTask = miningTask
           .addThreshold(Threshold.MinSupport(minRuleMatch))    // rule needs to be satisfied minMatch often
           .addThreshold(Threshold.MinHeadSize(minHeadMatch))          // rule head needs to match at least 50 times
-          .addThreshold(Threshold.MaxRuleLength(3))
+          .addThreshold(Threshold.MaxRuleLength(maxRuleLength))
 
         Debugger() { implicit debugger =>
             val index = d.index(debugger)

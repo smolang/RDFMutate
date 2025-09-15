@@ -33,6 +33,12 @@ class MutationSequence(private  val verbose: Boolean) {
         mutations.add(am)
     }
 
+    fun addAbstractMutation(am : AbstractMutation) {
+        for (a in mutatableAxioms)
+            am.addMutatableAxiom(a)
+        mutations.add(am)
+    }
+
     operator fun get(index: Int) : AbstractMutation {
         return mutations[index]
     }

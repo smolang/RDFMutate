@@ -5,6 +5,7 @@ import org.apache.jena.riot.RDFDataMgr
 import org.smolang.robust.domainSpecific.KgAnalyzer
 import org.smolang.robust.domainSpecific.suave.SuaveOntologyAnalyzer
 import org.smolang.robust.domainSpecific.suave.SuaveTestCaseGenerator
+import org.smolang.robust.mutant.AbstractMutation
 import org.smolang.robust.mutant.EmptyMask
 import org.smolang.robust.mutant.Mutation
 import org.smolang.robust.mutant.MutationSequence
@@ -86,6 +87,53 @@ class CoverageEvaluationGraphGenerator(private val sampleSize : Int =100 ) {
 
     }
 
+    fun analyzeInputCoverageAM(input: File,
+                             mutationOperators :  List<AbstractMutation>,
+                             outputFile: File,
+                             analyzer: KgAnalyzer) {
+
+        // either collect ontologies or just chose file
+        val inputFiles = if (input.isDirectory)
+            allOwlFiles(input)  // sample
+        else
+            setOf(input)
+
+        // initialize map with results
+        val results : MutableMap<Int, MutableList<Set<Int>>> = mutableMapOf()
+        for (mutCount in mutationNumbersEL)
+            results[mutCount] = mutableListOf()
+
+        val totalTests = sampleSize * mutationNumbersEL.size
+
+        // iterate over all selected files in directory
+
+        var count = 1
+        for (mutCount in mutationNumbersEL) {
+            for (sampleID in 1..sampleSize) {
+                println("Progress: $count/$totalTests")
+                var res : Model? = null
+                while (res == null) {
+                    val inputFile = inputFiles.random(randomGenerator)
+                    // load ontology
+                    val seedOntology = owlFileHandler.loadOwlDocument(inputFile)
+                    // use timeout of 30s
+                    res = timedMutation2AM(seedOntology, mutationOperators, mutCount, 30000)
+                }
+
+                // safe result
+                results[mutCount]?.add(analyzer.getFeaturesHashed(res))
+                count += 1
+            }
+        }
+
+        // compute results based on cumulative coverage of 10 test cases
+        val results10 = cumulativeResult(results, 10, mutationNumbersEL)
+        val results100 = cumulativeResult(results, 100, mutationNumbersEL)
+
+        toCSV(results, results10, results100, outputFile, mutationNumbersEL)
+
+    }
+
 
         // return mutant or null
     private fun timedMutation2(seedOntology: Model,
@@ -100,6 +148,46 @@ class CoverageEvaluationGraphGenerator(private val sampleSize : Int =100 ) {
             while (i < mutCount ) {
                 val ms = MutationSequence(verbose)
                 ms.addRandom(mutationOperators.random(randomGenerator))
+
+                // apply mutations
+                val m = Mutator(ms, verbose)
+                if (!Thread.currentThread().isInterrupted)
+                    current = m.mutate(current)
+                i += 1
+            }
+            if (!Thread.currentThread().isInterrupted)
+                result = current
+        }
+        var time = 0L
+        val increment = 50L
+        while (t.isAlive && time < timeout) {
+            Thread.sleep(increment)
+            time += increment
+        }
+        if (t.isAlive) {    // process did not finish in time --> kill it
+            t.interrupt()
+            Thread.sleep(1000L)
+            while (t.isAlive) {
+                t.stop()    // force thread to stop
+                Thread.sleep(1000L)
+            }
+            return null
+        }
+        return result
+    }
+
+    private fun timedMutation2AM(seedOntology: Model,
+                               mutationOperators :  List<AbstractMutation>,
+                               mutCount : Int,
+                               timeout: Long ): Model? {
+        var result : Model? = null
+        val t = thread {
+            // collect as many mutations as necessary
+            var current = seedOntology
+            var i = 0
+            while (i < mutCount ) {
+                val ms = MutationSequence(verbose)
+                ms.addAbstractMutation(mutationOperators.random(randomGenerator))
 
                 // apply mutations
                 val m = Mutator(ms, verbose)
