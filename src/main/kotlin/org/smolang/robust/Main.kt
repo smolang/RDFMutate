@@ -41,10 +41,12 @@ class Main : CliktCommand() {
     private val outputFile by option("--out", "-o", help="Give name for mutated KG.").file()
     private val overwriteOutput by option("--overwrite", help="Indicates if output ontology should be replaced, if it already exists. Default = false").flag()
     private val sampleSize by option("--coverage-samples", "--sample-size", help="number of samples used for coverage evaluation. Default = 100").int()
+    private val rulesFile by option("--rules", help="Contains learnt rules.").file()
     private val mainMode by option(help="Options to run specialized modes of this program.").switch(
         "--mutate" to "mutate", "-m" to "mutate",
         "--scen_geo" to "geo", "-sg" to "geo",
         "--el-mutate" to "elReasoner", "-se" to "elReasoner",
+        "--el-mutate-learn" to "elReasonerLearn",
         "--scen_suave" to "suave", "-sv" to "suave",
         "--scen_test" to "test", "-st" to "test",
         "--issre_graph" to "issre", "-ig" to "issre",
@@ -154,6 +156,9 @@ class Main : CliktCommand() {
             "elReasoner" -> {
                 elMutation()
             }
+            "elReasonerLearn" -> {
+                elLearnedMutation()
+            }
             "issre" -> generateSuaveAttemptsGraph()
             "elGraph" -> generateElCoverageGraphs()
             "suaveCoverageGraph" -> generateSuaveCoverageGraphs()
@@ -201,7 +206,6 @@ class Main : CliktCommand() {
         // create selection of mutations that can be applied
         singleMutation(elReasonerMutations)
     }
-
 
     // apply one mutation to the input KG
     // argument: candidateMutations to apply
@@ -267,6 +271,87 @@ class Main : CliktCommand() {
             println("mutation summary:\n" + m.getStringSummary())
 
     }
+
+    // mutates a seed KG with mutation operators learned from EL ontologies
+    private fun elLearnedMutation() {
+        val operatorLearner = OperatorLearner()
+        //val rulesFile = File("../../sut/rml/extractedRulesOre.txt")
+        if (rulesFile == null) {
+            println("You need to provide a file with the learnt rules.")
+            exitProcess(-1)
+        }
+        val mutationOperators = operatorLearner.rulesToAbstractMutation(rulesFile!!)
+        singleMutationAM(mutationOperators)
+
+    }
+
+    // apply one mutation to the input KG
+    // argument: candidateMutations to apply
+    private fun singleMutationAM(candidateMutations: List<AbstractMutation>) {
+        // get seed, mask and output files
+        if (seed == null){
+            println("You need to provide a seed knowledge graph")
+            exitProcess(-1)
+        } else if(!seed!!.exists()){
+            println("File ${seed!!.path} does not exist")
+            exitProcess(-1)
+        }
+        val seedKG =
+            if (owlDocument)
+                OwlFileHandler().loadOwlDocument(seed!!)
+            else
+                RDFDataMgr.loadDataset(seed!!.absolutePath).defaultModel
+
+        val shapes: Shapes? = if(shaclMaskFile != null && !shaclMaskFile!!.exists()){
+            println("File ${shaclMaskFile!!.path} does not exist")
+            exitProcess(-1)
+        } else if(shaclMaskFile != null) {
+            val shapesGraph = RDFDataMgr.loadGraph(shaclMaskFile!!.absolutePath)
+            Shapes.parse(shapesGraph)
+        } else null
+
+        val outputPath: File? = if(outputFile != null && outputFile!!.exists() && !overwriteOutput){
+            println("Output file ${outputFile!!.path} does already exist. Please choose a different name or set \"--overwrite\" flag.")
+            exitProcess(-1)
+        } else if(outputFile == null) {
+            println("Please provide an output file to save the mutated KG to.")
+            exitProcess(-1)
+        } else outputFile
+
+        val mask = RobustnessMask(verbose, shapes)
+
+        val ms = MutationSequence(verbose)
+        // use random selection of a mutation. Select mutation operator based on seed for random selector, if provided
+        // (use default generator otherwise)
+        val generator = selectionSeed?.let { Random(it) } ?: randomGenerator
+
+        // add mutation operators
+        // if no number of mutations is provided --> apply one
+        for (j in 1..(numberMutations ?: 1)) {
+            val mutation = candidateMutations.random(generator)
+            ms.addAbstractMutation(mutation)
+        }
+
+        // create mutator and apply mutation
+        val m = Mutator(ms, verbose)
+        val res = m.mutate(seedKG)
+
+        // check if output directory exists and create it, if necessary
+        Files.createDirectories(outputPath!!.parentFile.toPath())
+        // safe result
+        if (owlDocument)
+            OwlFileHandler().saveOwlDocument(res, outputFile!!)
+        else
+            RDFDataMgr.write(outputPath.outputStream(), res, Lang.TTL)
+
+        // print summary, if required
+        if (printMutationSummary)
+            println("mutation summary:\n" + m.getStringSummary())
+
+    }
+
+
+
 
 
     private fun testMiniPipes() {
@@ -474,7 +559,6 @@ class Main : CliktCommand() {
         // EL coverage graph
         val inputDirectoryEL = File("sut/reasoners/ontologies_ore")
         val owlAnalyzer = OwlOntologyAnalyzer()
-/*
 
         val outputFileEl = File("sut/reasoners/evaluation/inputCoverageEL.csv")
         coverageGraphGenerator.analyzeInputCoverage(
@@ -492,8 +576,6 @@ class Main : CliktCommand() {
             outputFileElBaseline,
             owlAnalyzer
         )
-
- */
 
         // EL coverage graph for learned mutation operators
         val ruleFile = File("sut/rml/extractedRulesOre.txt")
@@ -599,11 +681,11 @@ class Main : CliktCommand() {
         val operatorLearner = OperatorLearner()
         // extract rules for EL ontologies
         val outputELFile = File("sut/rml/extractedRulesOre.txt")
-        //operatorLearner.mineELRules(outputELFile)
+        operatorLearner.mineELRules(outputELFile)
 
         // extract rules for Suave KG
         val outputSuaveFile = File("sut/rml/extractedRulesSuave.txt")
-        //operatorLearner.mineSuaveRules(outputSuaveFile)
+        operatorLearner.mineSuaveRules(outputSuaveFile)
 
         // transform rules into operators
         val mutationOperators= operatorLearner.rulesToAbstractMutation(outputELFile)
@@ -614,7 +696,7 @@ class Main : CliktCommand() {
         // select one for test purpose...
         val mutationOperator = mutationOperators[1]
         println(mutationOperator.config)
-        println(mutationOperators.size)
+        println("#operators: ${mutationOperators.size}")
 
         val ms = MutationSequence(true)
         ms.addAbstractMutation(mutationOperator)

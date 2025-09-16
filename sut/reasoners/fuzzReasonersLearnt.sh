@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# generates mutants by applying mutations to exisitng ontologies
+# generates mutants by applying learnt mutations to exisitng ontologies
 # ./fuzzReasoners.sh ONTOLOGY-FOLDER TIME-LIMIT[min]
 
 # read arguments
@@ -38,6 +38,8 @@ numberMutations=30   # number of mutation operators that get applied
 
 temp_oracle_output=$outputDirectory/oracle_output_temp.txt
 
+rules_file=../../sut/rml/extractedRulesOre.txt
+
 CONTAINER_NAME=reasonerContainer
 docker start $CONTAINER_NAME
 
@@ -71,7 +73,7 @@ do
             #echo "mutant is saved as $mutantOntology" >> $log
 
 
-            java -jar ../../build/libs/RDFMutate-0.1.jar --el-mutate --seedKG=$ontology --num_mut=$numberMutations --selection_seed=$count --owl --overwrite --print-summary --out=$mutantOntology >> $log 2>&1
+            java -jar ../../build/libs/RDFMutate-0.1.jar --el-mutate-learn --seedKG=$ontology --num_mut=$numberMutations --selection_seed=$count --owl --overwrite --print-summary --out=$mutantOntology --rules=$rules_file>> $log 2>&1
             # get oracle
             echo call reasoner oracle >> $log
             bash reasonerOracle.sh $mutantOntology > $temp_oracle_output

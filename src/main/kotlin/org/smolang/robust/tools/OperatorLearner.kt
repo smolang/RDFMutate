@@ -14,6 +14,7 @@ import org.smolang.robust.patterns.PatternExtractor
 import org.smolang.robust.randomGenerator
 import org.smolang.robust.tools.ruleMutations.FreshNodeAtom
 import org.smolang.robust.tools.ruleMutations.MutationAtom
+import org.smolang.robust.tools.ruleMutations.NegativeStatementAtom
 import org.smolang.robust.tools.ruleMutations.PositiveStatementAtom
 import java.io.File
 import java.nio.file.Files
@@ -97,8 +98,8 @@ class OperatorLearner(val verbose: Boolean =false) {
     fun rulesToAbstractMutation(rulesFile: File): List<AbstractMutation> {
         val mutationOperators: List<AbstractMutation> = rulesFile.useLines { lines ->
             lines.flatMap {line ->
-                println("parse line \"$line\"")
-                loadRule(line)
+                //println("parse line \"$line\"")
+                ruleToAbstractMutations(line)
             }.toList()
         }
         return mutationOperators
@@ -106,7 +107,7 @@ class OperatorLearner(val verbose: Boolean =false) {
 
     // parses one rule into a configuration
     // one rule results in multiple configurations, depending on how many of the body atoms match
-    fun loadRule(rule: String): List<AbstractMutation> {
+    fun ruleToAbstractMutations(rule: String): List<AbstractMutation> {
         val abstractMutations = mutableListOf<AbstractMutation>()
         // extract variables
         //println("Extracting operators from rules \"$rule\"")
@@ -115,6 +116,16 @@ class OperatorLearner(val verbose: Boolean =false) {
 
         // get representation of string as atoms
         val rule = getRule(rule, variables)
+
+        abstractMutations.addAll(getAddingOperators(rule, variables))
+        abstractMutations.addAll(getDeletingOperators(rule, variables))
+
+        return abstractMutations
+    }
+
+    // creates all the operators that only add new triples to graph
+    private fun getAddingOperators(rule: AssociationRule, variables: Map<String, Resource>): List<AbstractMutation> {
+        val abstractMutations = mutableListOf<AbstractMutation>()
 
         // iterate: different body triples are newly added VS searched for in KG
         val newBodyAtomCombinations = subsets(rule.bodyAtoms)
@@ -155,7 +166,46 @@ class OperatorLearner(val verbose: Boolean =false) {
             // build abstract mutation and add to list
             abstractMutations.add(AbstractMutation(RuleMutation::class, config, verbose))
         }
+        return abstractMutations
+    }
 
+    // creates all the operators that only delete triples from the graph
+    private fun getDeletingOperators(rule: AssociationRule, variables: Map<String, Resource>): List<AbstractMutation> {
+        val abstractMutations = mutableListOf<AbstractMutation>()
+
+        // iterate: different body triples are deleted together with the head
+        val deletedBodyAtomCombinations = subsets(rule.bodyAtoms)
+
+        // new body for mutation
+        val mutationBody = rule.bodyAtoms.toMutableList()
+        mutationBody.add(rule.headAtom)
+        val bodyVariables = containedVars(mutationBody, variables)
+
+        deletedBodyAtomCombinations.forEach { deletedBodyAtoms ->
+            // only create mutation operator if set of selected body atoms is not empty
+            val mutationHead = mutableListOf<MutationAtom>()
+            deletedBodyAtoms.forEach { atom ->
+                // add for each selected positive assertion a negative assertion to the head
+                if (atom is PositiveStatementAtom) {
+                    mutationHead.add(NegativeStatementAtom(atom.statement))
+                }
+            }
+            if (!mutationHead.isEmpty() && rule.headAtom is PositiveStatementAtom) {
+                // only if we were able to invalidate the rule body by negating at least one positive statement
+                // can we safely delete the head as well and define this as an abstract mutation
+                mutationHead.add(NegativeStatementAtom(rule.headAtom.statement))
+                val headVariables = containedVars(mutationHead, variables)
+
+                val config = RuleMutationConfiguration(
+                    mutationBody,
+                    mutationHead,
+                    bodyVariables,
+                    headVariables
+                )
+                // add abstract mutation
+                abstractMutations.add(AbstractMutation(RuleMutation::class, config, verbose))
+            }
+        }
         return abstractMutations
     }
 
