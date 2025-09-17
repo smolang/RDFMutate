@@ -34,11 +34,13 @@ sleep 1
 docker cp $ontologyFile $CONTAINER_NAME:/$ontologyFileContainer
 
 echo "minimize ontology"
+# delete old minimal file
+docker exec $CONTAINER_NAME rm ../$minimalOntologyFileContainer
 # minimize ontology
 docker exec $CONTAINER_NAME ./minimize-ontology.sh ../$ontologyFileContainer $timeLimit
 
 # copy result from container
-docker cp $CONTAINER_NAME:/RDFuzz/$minimalOntologyFileContainer $minimalOntologyFile
+docker cp $CONTAINER_NAME:/$minimalOntologyFileContainer $minimalOntologyFile
 
 echo "save minimal ontology to file $minimalOntologyFile"
 
