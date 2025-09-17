@@ -1,0 +1,549 @@
+Prefix(:=<urn:unnamed:ontology#ont19117704213485579>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:unnamed:ontology#ont19117704213485579>
+
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-0>))
+Declaration(Class(<http://dbpedia.org/ontology/Insect>))
+Declaration(Class(<http://dbpedia.org/ontology/Museum>))
+Declaration(Class(<http://dbpedia.org/ontology/Continent>))
+Declaration(Class(<http://dbpedia.org/ontology/ShoppingMall>))
+Declaration(Class(<http://dbpedia.org/ontology/Bird>))
+Declaration(Class(<http://dbpedia.org/ontology/Film>))
+Declaration(Class(<http://dbpedia.org/ontology/Single>))
+Declaration(Class(<http://dbpedia.org/ontology/PrimeMinister>))
+Declaration(Class(<http://dbpedia.org/ontology/ChristianBishop>))
+Declaration(Class(<http://dbpedia.org/ontology/MountainRange>))
+Declaration(Class(<http://dbpedia.org/ontology/Island>))
+Declaration(Class(<http://dbpedia.org/ontology/Airport>))
+Declaration(Class(<http://dbpedia.org/ontology/Canal>))
+Declaration(Class(<http://dbpedia.org/ontology/Legislature>))
+Declaration(Class(<http://dbpedia.org/ontology/Magazine>))
+Declaration(Class(owl:Class))
+Declaration(Class(<http://dbpedia.org/ontology/MilitaryUnit>))
+Declaration(Class(<http://dbpedia.org/ontology/Bridge>))
+Declaration(Class(<http://dbpedia.org/ontology/MilitaryPerson>))
+Declaration(Class(<http://dbpedia.org/ontology/Disease>))
+Declaration(Class(<http://dbpedia.org/ontology/Astronaut>))
+Declaration(Class(<http://dbpedia.org/ontology/Governor>))
+Declaration(Class(<http://dbpedia.org/ontology/Mollusca>))
+Declaration(Class(<http://dbpedia.org/ontology/Writer>))
+Declaration(Class(<http://dbpedia.org/ontology/Ship>))
+Declaration(Class(<http://dbpedia.org/ontology/Station>))
+Declaration(Class(<http://dbpedia.org/ontology/Currency>))
+Declaration(Class(<http://dbpedia.org/ontology/Mountain>))
+Declaration(Class(<http://dbpedia.org/ontology/School>))
+Declaration(Class(<http://dbpedia.org/ontology/Mammal>))
+Declaration(Class(<http://dbpedia.org/ontology/Architect>))
+Declaration(Class(<http://dbpedia.org/ontology/Book>))
+Declaration(Class(<http://dbpedia.org/ontology/VideoGame>))
+Declaration(Class(<http://dbpedia.org/ontology/Award>))
+Declaration(Class(<http://dbpedia.org/ontology/Fish>))
+Declaration(Class(<http://dbpedia.org/ontology/Website>))
+Declaration(Class(<http://dbpedia.org/ontology/SoccerManager>))
+Declaration(Class(<http://dbpedia.org/ontology/EthnicGroup>))
+Declaration(Class(<http://dbpedia.org/ontology/MilitaryConflict>))
+Declaration(Class(<http://dbpedia.org/ontology/TelevisionShow>))
+Declaration(Class(<http://dbpedia.org/ontology/Album>))
+Declaration(Class(<http://dbpedia.org/ontology/Village>))
+Declaration(Class(<http://dbpedia.org/ontology/President>))
+Declaration(Class(<http://dbpedia.org/ontology/ProtectedArea>))
+Declaration(Class(<http://dbpedia.org/ontology/WorldHeritageSite>))
+Declaration(Class(<http://dbpedia.org/ontology/Monarch>))
+Declaration(Class(<http://dbpedia.org/ontology/Actor>))
+Declaration(Class(<http://dbpedia.org/ontology/MusicalArtist>))
+Declaration(Class(<http://dbpedia.org/ontology/OfficeHolder>))
+Declaration(Class(<http://dbpedia.org/ontology/Language>))
+Declaration(Class(<http://dbpedia.org/ontology/HistoricPlace>))
+Declaration(Class(<http://dbpedia.org/ontology/Locomotive>))
+Declaration(Class(<http://dbpedia.org/ontology/Scientist>))
+Declaration(Class(<http://dbpedia.org/ontology/College>))
+Declaration(Class(<http://dbpedia.org/ontology/Newspaper>))
+Declaration(Class(<http://dbpedia.org/ontology/FictionalCharacter>))
+Declaration(Class(<http://dbpedia.org/ontology/FloweringPlant>))
+Declaration(Class(<http://dbpedia.org/ontology/BritishRoyalty>))
+Declaration(Class(<http://dbpedia.org/ontology/Park>))
+Declaration(Class(<http://dbpedia.org/ontology/Olympics>))
+Declaration(Class(<http://dbpedia.org/ontology/Broadcast>))
+Declaration(Class(<http://dbpedia.org/ontology/Senator>))
+Declaration(Class(<http://dbpedia.org/ontology/Town>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-5>))
+Declaration(Class(<http://dbpedia.org/ontology/Planet>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToLanguage>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Person>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToAward>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToBritishRoyalty>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToFish>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToPlanet>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToChristianBishop>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Disease>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Currency>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToEthnicGroup>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToWebsite>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToScientist>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMountainRange>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToActor>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMusicalArtist>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToArchitect>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToVideoGame>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToTelevisionShow>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToBridge>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToHistoricPlace>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToShoppingMall>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Award>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/EthnicGroup>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToWorldHeritageSite>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToDisease>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMilitaryPerson>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMollusca>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToShip>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToGovernor>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToBroadcast>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToSchool>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToWriter>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToNewspaper>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToFictionalCharacter>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToSoccerManager>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMuseum>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToProtectedArea>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToBook>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/MeanOfTransportation>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Organisation>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToSingle>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToContinent>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToOfficeHolder>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToPresident>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToFloweringPlant>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMilitaryConflict>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToFilm>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMonarch>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToVillage>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToInsect>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToPark>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Website>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToAirport>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMagazine>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToCurrency>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToCollege>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToPrimeMinister>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Language>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToBird>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToLegislature>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToSenator>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToOlympics>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToLocomotive>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToTown>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToStation>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Event>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToIsland>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMammal>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Species>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMilitaryUnit>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Planet>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMountain>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToAstronaut>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Place>))
+Declaration(NamedIndividual(owl:Class))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-4>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-1>))
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToActor> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToActor>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToActor> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToActor> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToActor> <http://dbpedia.org/ontology/Actor>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToAirport> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToAirport>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToAirport> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToAirport> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToAirport> <http://dbpedia.org/ontology/Airport>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToArchitect> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToArchitect>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToArchitect> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToArchitect> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToArchitect> <http://dbpedia.org/ontology/Architect>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToAstronaut> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToAstronaut>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToAstronaut> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToAstronaut> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToAstronaut> <http://dbpedia.org/ontology/Astronaut>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToAward> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToAward>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToAward> <http://dbpedia.org/ontology/Award>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToAward> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToAward> <http://dbpedia.org/ontology/Award>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToBird> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToBird>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToBird> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToBird> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToBird> <http://dbpedia.org/ontology/Bird>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToBook> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToBook>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToBook> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToBook> <http://dbpedia.org/ontology/Book>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToBridge> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToBridge>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToBridge> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToBridge> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToBridge> <http://dbpedia.org/ontology/Bridge>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToBritishRoyalty> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToBritishRoyalty>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToBritishRoyalty> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToBritishRoyalty> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToBritishRoyalty> <http://dbpedia.org/ontology/BritishRoyalty>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToBroadcast> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToBroadcast>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToBroadcast> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToBroadcast> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToBroadcast> <http://dbpedia.org/ontology/Broadcast>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToChristianBishop> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToChristianBishop>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToChristianBishop> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToChristianBishop> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToChristianBishop> <http://dbpedia.org/ontology/ChristianBishop>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToCollege> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToCollege>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToCollege> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToCollege> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToCollege> <http://dbpedia.org/ontology/College>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToContinent> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToContinent>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToContinent> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToContinent> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToContinent> <http://dbpedia.org/ontology/Continent>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToCurrency> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToCurrency>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToCurrency> <http://dbpedia.org/ontology/Currency>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToCurrency> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToCurrency> <http://dbpedia.org/ontology/Currency>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToDisease> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToDisease>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToDisease> <http://dbpedia.org/ontology/Disease>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToDisease> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToDisease> <http://dbpedia.org/ontology/Disease>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToEthnicGroup> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToEthnicGroup>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToEthnicGroup> <http://dbpedia.org/ontology/EthnicGroup>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToEthnicGroup> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToEthnicGroup> <http://dbpedia.org/ontology/EthnicGroup>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToFictionalCharacter> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToFictionalCharacter>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToFictionalCharacter> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToFictionalCharacter> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToFictionalCharacter> <http://dbpedia.org/ontology/FictionalCharacter>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToFilm> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToFilm>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToFilm> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToFilm> <http://dbpedia.org/ontology/Film>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToFish> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToFish>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToFish> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToFish> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToFish> <http://dbpedia.org/ontology/Fish>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToFloweringPlant> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToFloweringPlant>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToFloweringPlant> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToFloweringPlant> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToFloweringPlant> <http://dbpedia.org/ontology/FloweringPlant>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToGovernor> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToGovernor>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToGovernor> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToGovernor> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToGovernor> <http://dbpedia.org/ontology/Governor>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToHistoricPlace> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToHistoricPlace>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToHistoricPlace> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToHistoricPlace> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToHistoricPlace> <http://dbpedia.org/ontology/HistoricPlace>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToInsect> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToInsect>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToInsect> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToInsect> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToInsect> <http://dbpedia.org/ontology/Insect>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToIsland> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToIsland>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToIsland> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToIsland> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToIsland> <http://dbpedia.org/ontology/Island>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToLanguage> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToLanguage>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToLanguage> <http://dbpedia.org/ontology/Language>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToLanguage> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToLanguage> <http://dbpedia.org/ontology/Language>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToLegislature> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToLegislature>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToLegislature> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToLegislature> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToLegislature> <http://dbpedia.org/ontology/Legislature>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToLocomotive> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToLocomotive>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToLocomotive> <http://dbpedia.org/ontology/MeanOfTransportation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToLocomotive> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToLocomotive> <http://dbpedia.org/ontology/Locomotive>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMagazine> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMagazine>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMagazine> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMagazine> <http://dbpedia.org/ontology/Magazine>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMammal> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMammal>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMammal> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMammal> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMammal> <http://dbpedia.org/ontology/Mammal>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMilitaryConflict> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMilitaryConflict>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMilitaryConflict> <http://dbpedia.org/ontology/Event>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMilitaryConflict> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMilitaryConflict> <http://dbpedia.org/ontology/MilitaryConflict>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMilitaryPerson> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMilitaryPerson>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMilitaryPerson> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMilitaryPerson> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMilitaryPerson> <http://dbpedia.org/ontology/MilitaryPerson>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMilitaryUnit> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMilitaryUnit>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMilitaryUnit> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMilitaryUnit> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMilitaryUnit> <http://dbpedia.org/ontology/MilitaryUnit>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMollusca> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMollusca>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMollusca> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMollusca> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMollusca> <http://dbpedia.org/ontology/Mollusca>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMonarch> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMonarch>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMonarch> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMonarch> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMonarch> <http://dbpedia.org/ontology/Monarch>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMountain> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMountain>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMountain> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMountain> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMountain> <http://dbpedia.org/ontology/Mountain>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMountainRange> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMountainRange>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMountainRange> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMountainRange> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMountainRange> <http://dbpedia.org/ontology/MountainRange>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMuseum> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMuseum>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMuseum> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMuseum> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMuseum> <http://dbpedia.org/ontology/Museum>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMusicalArtist> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMusicalArtist>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMusicalArtist> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMusicalArtist> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToMusicalArtist> <http://dbpedia.org/ontology/MusicalArtist>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToNewspaper> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToNewspaper>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToNewspaper> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToNewspaper> <http://dbpedia.org/ontology/Newspaper>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToOfficeHolder> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToOfficeHolder>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToOfficeHolder> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToOfficeHolder> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToOfficeHolder> <http://dbpedia.org/ontology/OfficeHolder>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToOlympics> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToOlympics>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToOlympics> <http://dbpedia.org/ontology/Event>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToOlympics> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToOlympics> <http://dbpedia.org/ontology/Olympics>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToPark> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToPark>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToPark> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToPark> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToPark> <http://dbpedia.org/ontology/Park>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToPlanet> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToPlanet>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToPlanet> <http://dbpedia.org/ontology/Planet>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToPlanet> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToPlanet> <http://dbpedia.org/ontology/Planet>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToPresident> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToPresident>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToPresident> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToPresident> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToPresident> <http://dbpedia.org/ontology/President>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToPrimeMinister> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToPrimeMinister>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToPrimeMinister> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToPrimeMinister> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToPrimeMinister> <http://dbpedia.org/ontology/PrimeMinister>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToProtectedArea> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToProtectedArea>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToProtectedArea> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToProtectedArea> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToProtectedArea> <http://dbpedia.org/ontology/ProtectedArea>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToSchool> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToSchool>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToSchool> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToSchool> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToSchool> <http://dbpedia.org/ontology/School>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToScientist> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToScientist>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToScientist> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToScientist> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToScientist> <http://dbpedia.org/ontology/Scientist>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToSenator> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToSenator>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToSenator> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToSenator> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToSenator> <http://dbpedia.org/ontology/Senator>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToShip> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToShip>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToShip> <http://dbpedia.org/ontology/MeanOfTransportation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToShip> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToShip> <http://dbpedia.org/ontology/Ship>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToShoppingMall> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToShoppingMall>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToShoppingMall> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToShoppingMall> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToShoppingMall> <http://dbpedia.org/ontology/ShoppingMall>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToSingle> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToSingle>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToSingle> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToSingle> <http://dbpedia.org/ontology/Single>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToSoccerManager> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToSoccerManager>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToSoccerManager> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToSoccerManager> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToSoccerManager> <http://dbpedia.org/ontology/SoccerManager>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToStation> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToStation>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToStation> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToStation> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToStation> <http://dbpedia.org/ontology/Station>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToTelevisionShow> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToTelevisionShow>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToTelevisionShow> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToTelevisionShow> <http://dbpedia.org/ontology/TelevisionShow>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToTown> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToTown>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToTown> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToTown> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToTown> <http://dbpedia.org/ontology/Town>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToVideoGame> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToVideoGame>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToVideoGame> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToVideoGame> <http://dbpedia.org/ontology/VideoGame>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToVillage> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToVillage>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToVillage> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToVillage> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToVillage> <http://dbpedia.org/ontology/Village>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToWebsite> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToWebsite>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToWebsite> <http://dbpedia.org/ontology/Website>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToWebsite> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToWebsite> <http://dbpedia.org/ontology/Website>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToWorldHeritageSite> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToWorldHeritageSite>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToWorldHeritageSite> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToWorldHeritageSite> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToWorldHeritageSite> <http://dbpedia.org/ontology/WorldHeritageSite>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToWriter> (<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToWriter>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToWriter> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToWriter> <http://dbpedia.org/ontology/Canal>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Canal.owl#linksToWriter> <http://dbpedia.org/ontology/Writer>)
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://dbpedia.org/ontology/School> (<http://dbpedia.org/ontology/School>)
+
+SubClassOf(<http://dbpedia.org/ontology/School> <https://smolang.org/rdfMutate#newNode-0>)
+
+# Class: owl:Class (owl:Class)
+
+SubClassOf(owl:Class <http://dbpedia.org/ontology/School>)
+
+# Class: <https://smolang.org/rdfMutate#newNode-0> (<https://smolang.org/rdfMutate#newNode-0>)
+
+SubClassOf(<https://smolang.org/rdfMutate#newNode-0> <http://dbpedia.org/ontology/School>)
+
+# Class: <https://smolang.org/rdfMutate#newNode-5> (<https://smolang.org/rdfMutate#newNode-5>)
+
+SubClassOf(<https://smolang.org/rdfMutate#newNode-5> <https://smolang.org/rdfMutate#newNode-5>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: owl:Class (owl:Class)
+
+ClassAssertion(<http://dbpedia.org/ontology/School> owl:Class)
+ClassAssertion(owl:Class owl:Class)
+
+
+)

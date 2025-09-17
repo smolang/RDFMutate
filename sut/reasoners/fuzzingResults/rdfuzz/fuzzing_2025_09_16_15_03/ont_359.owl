@@ -1,0 +1,558 @@
+Prefix(:=<urn:unnamed:ontology#ont19090427911255510>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:unnamed:ontology#ont19090427911255510>
+
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-6>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-8>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC194>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-7>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC193>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-3>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC196>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-5>))
+Declaration(Class(<http://dbpedia.org/ontology/NascarDriver>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC197>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToMusicGenre>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToTradeUnion>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToMilitaryUnit>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToSenator>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToActor>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToVillage>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToBaseballPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToDrug>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToOlympics>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToSingle>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Disease>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Currency>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToWebsite>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToAnatomicalStructure>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToBand>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/ChemicalCompound>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToBeverage>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToIceHockeyLeague>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToWrestler>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToTelevisionShow>))
+Declaration(ObjectProperty(<https://smolang.org/rdfMutate#newNode-2>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToGolfPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToIsland>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToMuseum>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToAmericanFootballPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToWorldHeritageSite>))
+Declaration(ObjectProperty(<https://smolang.org/rdfMutate#newNode-0>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToFilm>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToHistoricPlace>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToVideoGame>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Activity>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToWeapon>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToChemicalCompound>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToSong>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToContinent>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToGrandPrix>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/EthnicGroup>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToAirline>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToStadium>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToNewspaper>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToUniversity>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToFormulaOneRacer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToHotel>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToEthnicGroup>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToRecordLabel>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToAmericanFootballTeam>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/AnatomicalStructure>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToAutoRacingLeague>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Beverage>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToWineRegion>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToSkiArea>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToBroadcast>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToPresident>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToMammal>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToHockeyTeam>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToMountainRange>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToBaseballLeague>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToSoccerClub>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToFloweringPlant>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToComicsCharacter>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToDisease>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Drug>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToSaint>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToBasketballLeague>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToHospital>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToCurrency>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/MeanOfTransportation>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToFish>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Device>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToBook>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToRugbyPlayer>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Organisation>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToAircraft>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToSchool>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToJournalist>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToBoxer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToCyclist>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToWriter>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToProtectedArea>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToAmericanFootballLeague>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToSport>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToSoccerPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToNon-ProfitOrganisation>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToCollegeCoach>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Website>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToRoad>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToMusicalArtist>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToOfficeHolder>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToModel>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToBasketballTeam>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToMilitaryPerson>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Event>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToRadioStation>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToAirport>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToLake>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Species>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToAlbum>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToBasketballPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToFilmFestival>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToTelevisionEpisode>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToMilitaryConflict>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToComedian>))
+Declaration(ObjectProperty(<http://www.w3.org/2004/02/skos/core#relatedMatch>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToIceHockeyPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToMagazine>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToGame>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Work>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/MusicGenre>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Place>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Infrastructure>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-0>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToBaseballPlayer>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToRoad>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-5>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-1>))
+Declaration(NamedIndividual(owl:Class))
+Declaration(NamedIndividual(<http://dbpedia.org/property/years>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToVillage>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/birthplace>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToVideoGame>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/before>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/after>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToFormulaOneRacer>))
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://dbpedia.org/ontology/Work> (<http://dbpedia.org/ontology/Work>)
+
+SubObjectPropertyOf(<http://dbpedia.org/ontology/Work> <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToVideoGame>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToAircraft> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToAircraft>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToAircraft> <http://dbpedia.org/ontology/MeanOfTransportation>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToAirline> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToAirline>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToAirline> <http://dbpedia.org/ontology/Organisation>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToAirport> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToAirport>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToAirport> <http://dbpedia.org/ontology/Place>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToAlbum> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToAlbum>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToAlbum> <http://dbpedia.org/ontology/Work>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToAmericanFootballLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToAmericanFootballLeague>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToAmericanFootballLeague> <http://dbpedia.org/ontology/Organisation>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToAmericanFootballTeam> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToAmericanFootballTeam>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToAmericanFootballTeam> <http://dbpedia.org/ontology/Organisation>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToAnatomicalStructure> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToAnatomicalStructure>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToAnatomicalStructure> <http://dbpedia.org/ontology/AnatomicalStructure>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToAutoRacingLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToAutoRacingLeague>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToAutoRacingLeague> <http://dbpedia.org/ontology/Organisation>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToBand> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToBand>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToBand> <http://dbpedia.org/ontology/Organisation>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToBaseballLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToBaseballLeague>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToBaseballLeague> <http://dbpedia.org/ontology/Organisation>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToBasketballLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToBasketballLeague>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToBasketballLeague> <http://dbpedia.org/ontology/Organisation>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToBasketballTeam> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToBasketballTeam>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToBasketballTeam> <http://dbpedia.org/ontology/Organisation>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToBeverage> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToBeverage>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToBeverage> <http://dbpedia.org/ontology/Beverage>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToBook> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToBook>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToBook> <http://dbpedia.org/ontology/Work>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToBroadcast> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToBroadcast>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToBroadcast> <http://dbpedia.org/ontology/Organisation>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToChemicalCompound> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToChemicalCompound>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToChemicalCompound> <http://dbpedia.org/ontology/ChemicalCompound>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToContinent> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToContinent>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToContinent> <http://dbpedia.org/ontology/Place>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToCurrency> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToCurrency>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToCurrency> <http://dbpedia.org/ontology/Currency>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToDisease> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToDisease>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToDisease> <http://dbpedia.org/ontology/Disease>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToDrug> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToDrug>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToDrug> <http://dbpedia.org/ontology/Drug>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToEthnicGroup> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToEthnicGroup>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToEthnicGroup> <http://dbpedia.org/ontology/EthnicGroup>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToFilm> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToFilm>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToFilm> <http://dbpedia.org/ontology/Work>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToFilmFestival> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToFilmFestival>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToFilmFestival> <http://dbpedia.org/ontology/Event>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToFish> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToFish>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToFish> <http://dbpedia.org/ontology/Species>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToFloweringPlant> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToFloweringPlant>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToFloweringPlant> <http://dbpedia.org/ontology/Species>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToGame> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToGame>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToGame> <http://dbpedia.org/ontology/Activity>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToGrandPrix> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToGrandPrix>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToGrandPrix> <http://dbpedia.org/ontology/Event>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToHistoricPlace> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToHistoricPlace>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToHistoricPlace> <http://dbpedia.org/ontology/Place>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToHockeyTeam> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToHockeyTeam>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToHockeyTeam> <http://dbpedia.org/ontology/Organisation>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToHospital> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToHospital>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToHospital> <http://dbpedia.org/ontology/Place>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToHotel> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToHotel>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToHotel> <http://dbpedia.org/ontology/Place>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToIceHockeyLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToIceHockeyLeague>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToIceHockeyLeague> <http://dbpedia.org/ontology/Organisation>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToIsland> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToIsland>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToIsland> <http://dbpedia.org/ontology/Place>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToLake> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToLake>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToLake> <http://dbpedia.org/ontology/Place>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToMagazine> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToMagazine>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToMagazine> <http://dbpedia.org/ontology/Work>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToMammal> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToMammal>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToMammal> <http://dbpedia.org/ontology/Species>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToMilitaryConflict> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToMilitaryConflict>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToMilitaryConflict> <http://dbpedia.org/ontology/Event>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToMilitaryUnit> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToMilitaryUnit>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToMilitaryUnit> <http://dbpedia.org/ontology/Organisation>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToMountainRange> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToMountainRange>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToMountainRange> <http://dbpedia.org/ontology/Place>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToMuseum> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToMuseum>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToMuseum> <http://dbpedia.org/ontology/Place>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToMusicGenre> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToMusicGenre>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToMusicGenre> <http://dbpedia.org/ontology/MusicGenre>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToNewspaper> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToNewspaper>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToNewspaper> <http://dbpedia.org/ontology/Work>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToNon-ProfitOrganisation> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToNon-ProfitOrganisation>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToNon-ProfitOrganisation> <http://dbpedia.org/ontology/Organisation>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToOlympics> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToOlympics>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToOlympics> <http://dbpedia.org/ontology/Event>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToProtectedArea> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToProtectedArea>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToProtectedArea> <http://dbpedia.org/ontology/Place>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToRadioStation> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToRadioStation>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToRadioStation> <http://dbpedia.org/ontology/Organisation>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToRecordLabel> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToRecordLabel>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToRecordLabel> <http://dbpedia.org/ontology/Organisation>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToRoad> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToRoad>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToRoad> <http://dbpedia.org/ontology/Infrastructure>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToSchool> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToSchool>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToSchool> <http://dbpedia.org/ontology/Organisation>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToSingle> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToSingle>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToSingle> <http://dbpedia.org/ontology/Work>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToSkiArea> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToSkiArea>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToSkiArea> <http://dbpedia.org/ontology/Place>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToSoccerClub> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToSoccerClub>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToSoccerClub> <http://dbpedia.org/ontology/Organisation>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToSong> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToSong>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToSong> <http://dbpedia.org/ontology/Work>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToSport> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToSport>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToSport> <http://dbpedia.org/ontology/Activity>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToStadium> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToStadium>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToStadium> <http://dbpedia.org/ontology/Place>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToTelevisionEpisode> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToTelevisionEpisode>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToTelevisionEpisode> <http://dbpedia.org/ontology/Work>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToTelevisionShow> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToTelevisionShow>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToTelevisionShow> <http://dbpedia.org/ontology/Work>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToTradeUnion> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToTradeUnion>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToTradeUnion> <http://dbpedia.org/ontology/Organisation>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToUniversity> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToUniversity>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToUniversity> <http://dbpedia.org/ontology/Organisation>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToVideoGame> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToVideoGame>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToVideoGame> <http://dbpedia.org/ontology/Work>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToVillage> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToVillage>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToVillage> <http://dbpedia.org/ontology/Place>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToWeapon> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToWeapon>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToWeapon> <http://dbpedia.org/ontology/Device>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToWebsite> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToWebsite>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToWebsite> <http://dbpedia.org/ontology/Website>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToWineRegion> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToWineRegion>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToWineRegion> <http://dbpedia.org/ontology/Place>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToWorldHeritageSite> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToWorldHeritageSite>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToWorldHeritageSite> <http://dbpedia.org/ontology/Place>)
+
+# Object Property: <https://smolang.org/rdfMutate#newNode-2> (<https://smolang.org/rdfMutate#newNode-2>)
+
+SubObjectPropertyOf(<https://smolang.org/rdfMutate#newNode-2> <https://smolang.org/rdfMutate#newNode-2>)
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC194> (<http://www.absoluteiri.edu/RELAPPROXC194>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC194> <http://www.absoluteiri.edu/RELAPPROXC193>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC194> <http://www.absoluteiri.edu/RELAPPROXC197>)
+
+# Class: <https://smolang.org/rdfMutate#newNode-6> (<https://smolang.org/rdfMutate#newNode-6>)
+
+SubClassOf(<https://smolang.org/rdfMutate#newNode-6> <https://smolang.org/rdfMutate#newNode-6>)
+
+# Class: <https://smolang.org/rdfMutate#newNode-7> (<https://smolang.org/rdfMutate#newNode-7>)
+
+SubClassOf(<https://smolang.org/rdfMutate#newNode-7> <https://smolang.org/rdfMutate#newNode-7>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToBaseballPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToBaseballPlayer>)
+
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToBaseballPlayer> <http://dbpedia.org/property/after>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToFormulaOneRacer> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToFormulaOneRacer>)
+
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToFormulaOneRacer> <http://dbpedia.org/property/after>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToFormulaOneRacer> <http://dbpedia.org/property/before>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToFormulaOneRacer> <http://dbpedia.org/property/years>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToVideoGame> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToVideoGame>)
+
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToVideoGame> <http://dbpedia.org/property/years>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToVillage> (<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToVillage>)
+
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToVillage> <http://dbpedia.org/property/birthplace>)
+
+# Individual: owl:Class (owl:Class)
+
+ClassAssertion(<http://www.absoluteiri.edu/RELAPPROXC197> owl:Class)
+
+# Individual: <https://smolang.org/rdfMutate#newNode-1> (<https://smolang.org/rdfMutate#newNode-1>)
+
+ClassAssertion(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToBaseballPlayer> owl:Thing) <https://smolang.org/rdfMutate#newNode-1>)
+
+# Individual: <https://smolang.org/rdfMutate#newNode-5> (<https://smolang.org/rdfMutate#newNode-5>)
+
+ClassAssertion(<https://smolang.org/rdfMutate#newNode-5> <https://smolang.org/rdfMutate#newNode-5>)
+
+
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToActor> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToAircraft> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToAirline> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToAirport> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToAlbum> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToAmericanFootballLeague> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToAmericanFootballPlayer> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToAmericanFootballTeam> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToAnatomicalStructure> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToAutoRacingLeague> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToBand> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToBaseballLeague> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToBaseballPlayer> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToBasketballLeague> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToBasketballPlayer> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToBasketballTeam> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToBeverage> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToBook> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToBoxer> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToBroadcast> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToChemicalCompound> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToCollegeCoach> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToComedian> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToComicsCharacter> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToContinent> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToCurrency> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToCyclist> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToDisease> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToDrug> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToEthnicGroup> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToFilm> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToFilmFestival> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToFish> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToFloweringPlant> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToFormulaOneRacer> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToGame> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToGolfPlayer> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToGrandPrix> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToHistoricPlace> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToHockeyTeam> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToHospital> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToHotel> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToIceHockeyLeague> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToIceHockeyPlayer> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToIsland> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToJournalist> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToLake> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToMagazine> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToMammal> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToMilitaryConflict> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToMilitaryPerson> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToMilitaryUnit> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToModel> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToMountainRange> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToMuseum> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToMusicGenre> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToMusicalArtist> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToNewspaper> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToNon-ProfitOrganisation> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToOfficeHolder> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToOlympics> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToPresident> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToProtectedArea> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToRadioStation> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToRecordLabel> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToRoad> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToRugbyPlayer> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToSaint> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToSchool> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToSenator> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToSingle> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToSkiArea> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToSoccerClub> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToSoccerPlayer> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToSong> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToSport> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToStadium> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToTelevisionShow> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToTradeUnion> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToUniversity> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToVideoGame> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToVillage> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToWeapon> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToWebsite> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToWineRegion> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToWorldHeritageSite> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToWrestler> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToWriter> owl:Thing) <http://dbpedia.org/ontology/NascarDriver>)
+)

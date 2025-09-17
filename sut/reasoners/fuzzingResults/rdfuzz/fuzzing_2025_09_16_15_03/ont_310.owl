@@ -1,0 +1,597 @@
+Prefix(:=<urn:unnamed:ontology#ont19090059053255680>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:unnamed:ontology#ont19090059053255680>
+
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-0>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC41>))
+Declaration(Class(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#ReteScientificaCNR>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC62>))
+Declaration(Class(<http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#CentroDiSpesa>))
+Declaration(Class(<http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#Organizzazione>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC17>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC31>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-6>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC47>))
+Declaration(Class(<http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#Agente>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC55>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC5>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC9>))
+Declaration(Class(owl:Class))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC33>))
+Declaration(Class(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Istituto>))
+Declaration(Class(<http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#AttivitàCNR>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC61>))
+Declaration(Class(<http://www.ontologydesignpatterns.org/ont/cnr/localizzazione.owl#Stato>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC19>))
+Declaration(Class(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Biblioteca>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC29>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC25>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-8>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC49>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC13>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC54>))
+Declaration(Class(<http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#StrutturaCNR>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC52RELAPPROXQ2>))
+Declaration(Class(<http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#StrutturaScientifica>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC7>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC39>))
+Declaration(Class(<http://www.ontologydesignpatterns.org/ont/cnr/localizzazione.owl#Città>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC63>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC51>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC27>))
+Declaration(Class(<http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#Istituzione>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC15>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-7>))
+Declaration(Class(<http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#Azienda>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC43>))
+Declaration(Class(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#BancaDati>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC57>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC64>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC21>))
+Declaration(Class(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#ProdottoDellaRicerca>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-4>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC45>))
+Declaration(Class(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Dipartimento>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC3>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC50>))
+Declaration(Class(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#RicercaSpontaneaATemaLibero>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC35>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC59>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-9>))
+Declaration(Class(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Progetto>))
+Declaration(Class(<http://www.ontologydesignpatterns.org/ont/cnr/localizzazione.owl#Luogo>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC11>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-3>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC52>))
+Declaration(Class(<http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#StrutturaGestionale>))
+Declaration(Class(<http://www.ontologydesignpatterns.org/ont/cnr/localizzazione.owl#Indirizzo>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC60>))
+Declaration(Class(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Modulo>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC58>))
+Declaration(Class(<http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#Persona>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR40>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#codice>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR49>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR36>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#responsabileDi>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR39>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ont/cnr/localizzazione.owl#foafProfile>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#haPubblicazioniCon>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR34>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#parteDi>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ont/cnr/localizzazione.owl#email>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#collaboraInProgettoCon>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#haParte>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR48>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#haMembro>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#affiliazionedi>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR46>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ont/cnr/localizzazione.owl#indirizzo>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ont/cnr/localizzazione.owl#città>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#direttoreDi>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ont/cnr/localizzazione.owl#facebookAccount>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR37>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#nome>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR47>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR45>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ont/cnr/localizzazione.owl#telefono>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ont/cnr/localizzazione.owl#civico>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR35>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ont/cnr/localizzazione.owl#cap>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#haPartecipante>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#codiceCDS>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ont/cnr/localizzazione.owl#stato>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR42>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ont/cnr/localizzazione.owl#linkedInAccount>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ont/cnr/localizzazione.owl#skypeAccount>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ont/cnr/localizzazione.owl#fax>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR44>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#partecipaA>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR38>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#responsabile>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#collaboraCon>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR43>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR41>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#haAfferente>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#affiliazione>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#direttore>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#membroDi>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#afferisceA>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR33>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ont/cnr/localizzazione.owl#web>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-6>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-7>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-5>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#haParte>))
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR33> (<http://www.absoluteiri.edu/RELAPPROXR33>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR33> <http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#membroDi>)
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR34> (<http://www.absoluteiri.edu/RELAPPROXR34>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR34> <http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#haMembro>)
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR35> (<http://www.absoluteiri.edu/RELAPPROXR35>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR35> <http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#haParte>)
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR36> (<http://www.absoluteiri.edu/RELAPPROXR36>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR36> <http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#parteDi>)
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR37> (<http://www.absoluteiri.edu/RELAPPROXR37>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR37> <http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#haPubblicazioniCon>)
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR38> (<http://www.absoluteiri.edu/RELAPPROXR38>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR38> <http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#collaboraCon>)
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR39> (<http://www.absoluteiri.edu/RELAPPROXR39>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR39> <http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#affiliazione>)
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR40> (<http://www.absoluteiri.edu/RELAPPROXR40>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR40> <http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#affiliazionedi>)
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR41> (<http://www.absoluteiri.edu/RELAPPROXR41>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR41> <http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#direttoreDi>)
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR42> (<http://www.absoluteiri.edu/RELAPPROXR42>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR42> <http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#direttore>)
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR43> (<http://www.absoluteiri.edu/RELAPPROXR43>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR43> <http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#responsabileDi>)
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR44> (<http://www.absoluteiri.edu/RELAPPROXR44>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR44> <http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#responsabile>)
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR46> (<http://www.absoluteiri.edu/RELAPPROXR46>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR46> <http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#haPartecipante>)
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR47> (<http://www.absoluteiri.edu/RELAPPROXR47>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR47> <http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#partecipaA>)
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR48> (<http://www.absoluteiri.edu/RELAPPROXR48>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR48> <http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#afferisceA>)
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR49> (<http://www.absoluteiri.edu/RELAPPROXR49>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR49> <http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#haAfferente>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#affiliazione> (<http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#affiliazione>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#affiliazione> <http://www.absoluteiri.edu/RELAPPROXR39>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#affiliazionedi> (<http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#affiliazionedi>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#affiliazionedi> <http://www.absoluteiri.edu/RELAPPROXR40>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#collaboraCon> (<http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#collaboraCon>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#collaboraCon> <http://www.absoluteiri.edu/RELAPPROXR38>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#collaboraInProgettoCon> (<http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#collaboraInProgettoCon>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#collaboraInProgettoCon> <http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#collaboraCon>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#haPubblicazioniCon> (<http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#haPubblicazioniCon>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#haPubblicazioniCon> <http://www.absoluteiri.edu/RELAPPROXR37>)
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#haPubblicazioniCon> <http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#collaboraCon>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#direttore> (<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#direttore>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#direttore> <http://www.absoluteiri.edu/RELAPPROXR42>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#direttoreDi> (<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#direttoreDi>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#direttoreDi> <http://www.absoluteiri.edu/RELAPPROXR41>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#responsabile> (<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#responsabile>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#responsabile> <http://www.absoluteiri.edu/RELAPPROXR44>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#responsabileDi> (<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#responsabileDi>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#responsabileDi> <http://www.absoluteiri.edu/RELAPPROXR43>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#codiceCDS> (<http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#codiceCDS>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#codiceCDS> <http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#codice>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#afferisceA> (<http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#afferisceA>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#afferisceA> <http://www.absoluteiri.edu/RELAPPROXR48>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#haAfferente> (<http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#haAfferente>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#haAfferente> <http://www.absoluteiri.edu/RELAPPROXR49>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#haMembro> (<http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#haMembro>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#haMembro> <http://www.absoluteiri.edu/RELAPPROXR34>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#haParte> (<http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#haParte>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#haParte> <http://www.absoluteiri.edu/RELAPPROXR35>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#haPartecipante> (<http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#haPartecipante>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#haPartecipante> <http://www.absoluteiri.edu/RELAPPROXR46>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#membroDi> (<http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#membroDi>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#membroDi> <http://www.absoluteiri.edu/RELAPPROXR33>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#parteDi> (<http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#parteDi>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#parteDi> <http://www.absoluteiri.edu/RELAPPROXR36>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#partecipaA> (<http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#partecipaA>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#partecipaA> <http://www.absoluteiri.edu/RELAPPROXR47>)
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC50> (<http://www.absoluteiri.edu/RELAPPROXC50>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC50> <http://www.absoluteiri.edu/RELAPPROXC62>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC50> <http://www.absoluteiri.edu/RELAPPROXC64>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC52> (<http://www.absoluteiri.edu/RELAPPROXC52>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC52> <http://www.absoluteiri.edu/RELAPPROXC59>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC52RELAPPROXQ2> (<http://www.absoluteiri.edu/RELAPPROXC52RELAPPROXQ2>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC52RELAPPROXQ2> <http://www.absoluteiri.edu/RELAPPROXC52>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC55> (<http://www.absoluteiri.edu/RELAPPROXC55>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC55> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#codice> <http://www.absoluteiri.edu/RELAPPROXC52RELAPPROXQ2>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC58> (<http://www.absoluteiri.edu/RELAPPROXC58>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC58> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#codiceCDS> <http://www.absoluteiri.edu/RELAPPROXC52RELAPPROXQ2>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC60> (<http://www.absoluteiri.edu/RELAPPROXC60>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC60> ObjectSomeValuesFrom(<http://www.absoluteiri.edu/RELAPPROXR45> <http://www.absoluteiri.edu/RELAPPROXC47>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC61> (<http://www.absoluteiri.edu/RELAPPROXC61>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC61> <http://www.absoluteiri.edu/RELAPPROXC51>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC63> (<http://www.absoluteiri.edu/RELAPPROXC63>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC63> <http://www.absoluteiri.edu/RELAPPROXC51>)
+
+# Class: <http://www.ontologydesignpatterns.org/ont/cnr/localizzazione.owl#Città> (<http://www.ontologydesignpatterns.org/ont/cnr/localizzazione.owl#Città>)
+
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/localizzazione.owl#Città> <http://www.absoluteiri.edu/RELAPPROXC13>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/localizzazione.owl#Città> <http://www.absoluteiri.edu/RELAPPROXC25>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/localizzazione.owl#Città> <http://www.ontologydesignpatterns.org/ont/cnr/localizzazione.owl#Luogo>)
+
+# Class: <http://www.ontologydesignpatterns.org/ont/cnr/localizzazione.owl#Indirizzo> (<http://www.ontologydesignpatterns.org/ont/cnr/localizzazione.owl#Indirizzo>)
+
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/localizzazione.owl#Indirizzo> <http://www.absoluteiri.edu/RELAPPROXC25>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/localizzazione.owl#Indirizzo> <http://www.absoluteiri.edu/RELAPPROXC5>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/localizzazione.owl#Indirizzo> <http://www.ontologydesignpatterns.org/ont/cnr/localizzazione.owl#Luogo>)
+
+# Class: <http://www.ontologydesignpatterns.org/ont/cnr/localizzazione.owl#Stato> (<http://www.ontologydesignpatterns.org/ont/cnr/localizzazione.owl#Stato>)
+
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/localizzazione.owl#Stato> <http://www.absoluteiri.edu/RELAPPROXC13>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/localizzazione.owl#Stato> <http://www.absoluteiri.edu/RELAPPROXC5>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/localizzazione.owl#Stato> <http://www.ontologydesignpatterns.org/ont/cnr/localizzazione.owl#Luogo>)
+
+# Class: <http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#Azienda> (<http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#Azienda>)
+
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#Azienda> <http://www.absoluteiri.edu/RELAPPROXC27>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#Azienda> <http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#Organizzazione>)
+
+# Class: <http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#Istituzione> (<http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#Istituzione>)
+
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#Istituzione> <http://www.absoluteiri.edu/RELAPPROXC19>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#Istituzione> <http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#Organizzazione>)
+
+# Class: <http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#Organizzazione> (<http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#Organizzazione>)
+
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#Organizzazione> <http://www.absoluteiri.edu/RELAPPROXC15>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#Organizzazione> <http://www.absoluteiri.edu/RELAPPROXC54>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#Organizzazione> <http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#Agente>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#Organizzazione> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#codice> <http://www.absoluteiri.edu/RELAPPROXC52>))
+
+# Class: <http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#Persona> (<http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#Persona>)
+
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#Persona> <http://www.absoluteiri.edu/RELAPPROXC33>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#Persona> <http://www.absoluteiri.edu/RELAPPROXC35>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#Persona> <http://www.absoluteiri.edu/RELAPPROXC41>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#Persona> <http://www.absoluteiri.edu/RELAPPROXC45>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#Persona> <http://www.absoluteiri.edu/RELAPPROXC54>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#Persona> <http://www.absoluteiri.edu/RELAPPROXC7>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#Persona> <http://www.absoluteiri.edu/RELAPPROXC9>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#Persona> <http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#Agente>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#Persona> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#codice> <http://www.absoluteiri.edu/RELAPPROXC52>))
+
+# Class: <http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#BancaDati> (<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#BancaDati>)
+
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#BancaDati> <http://www.absoluteiri.edu/RELAPPROXC11>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#BancaDati> <http://www.absoluteiri.edu/RELAPPROXC3>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#BancaDati> <http://www.absoluteiri.edu/RELAPPROXC31>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#BancaDati> <http://www.absoluteiri.edu/RELAPPROXC33>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#BancaDati> <http://www.absoluteiri.edu/RELAPPROXC39>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#BancaDati> <http://www.absoluteiri.edu/RELAPPROXC41>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#BancaDati> <http://www.absoluteiri.edu/RELAPPROXC54>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#BancaDati> <http://www.absoluteiri.edu/RELAPPROXC7>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#BancaDati> <http://www.absoluteiri.edu/RELAPPROXC9>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#BancaDati> <http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#ProdottoDellaRicerca>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#BancaDati> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#nome> <http://www.absoluteiri.edu/RELAPPROXC52>))
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#BancaDati> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#codice> <http://www.absoluteiri.edu/RELAPPROXC52>))
+
+# Class: <http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Biblioteca> (<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Biblioteca>)
+
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Biblioteca> <http://www.absoluteiri.edu/RELAPPROXC11>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Biblioteca> <http://www.absoluteiri.edu/RELAPPROXC29>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Biblioteca> <http://www.absoluteiri.edu/RELAPPROXC3>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Biblioteca> <http://www.absoluteiri.edu/RELAPPROXC33>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Biblioteca> <http://www.absoluteiri.edu/RELAPPROXC35>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Biblioteca> <http://www.absoluteiri.edu/RELAPPROXC39>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Biblioteca> <http://www.absoluteiri.edu/RELAPPROXC41>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Biblioteca> <http://www.absoluteiri.edu/RELAPPROXC54>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Biblioteca> <http://www.absoluteiri.edu/RELAPPROXC7>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Biblioteca> <http://www.absoluteiri.edu/RELAPPROXC9>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Biblioteca> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#nome> <http://www.absoluteiri.edu/RELAPPROXC52>))
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Biblioteca> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#codice> <http://www.absoluteiri.edu/RELAPPROXC52>))
+
+# Class: <http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Dipartimento> (<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Dipartimento>)
+
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Dipartimento> <http://www.absoluteiri.edu/RELAPPROXC11>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Dipartimento> <http://www.absoluteiri.edu/RELAPPROXC15>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Dipartimento> <http://www.absoluteiri.edu/RELAPPROXC29>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Dipartimento> <http://www.absoluteiri.edu/RELAPPROXC3>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Dipartimento> <http://www.absoluteiri.edu/RELAPPROXC31>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Dipartimento> <http://www.absoluteiri.edu/RELAPPROXC33>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Dipartimento> <http://www.absoluteiri.edu/RELAPPROXC35>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Dipartimento> <http://www.absoluteiri.edu/RELAPPROXC39>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Dipartimento> <http://www.absoluteiri.edu/RELAPPROXC41>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Dipartimento> <http://www.absoluteiri.edu/RELAPPROXC57>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Dipartimento> <http://www.absoluteiri.edu/RELAPPROXC9>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Dipartimento> <http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#StrutturaScientifica>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Dipartimento> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#nome> <http://www.absoluteiri.edu/RELAPPROXC52>))
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Dipartimento> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#codiceCDS> <http://www.absoluteiri.edu/RELAPPROXC52>))
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Dipartimento> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#haParte> <http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Progetto>))
+
+# Class: <http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Istituto> (<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Istituto>)
+
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Istituto> <http://www.absoluteiri.edu/RELAPPROXC11>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Istituto> <http://www.absoluteiri.edu/RELAPPROXC15>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Istituto> <http://www.absoluteiri.edu/RELAPPROXC29>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Istituto> <http://www.absoluteiri.edu/RELAPPROXC3>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Istituto> <http://www.absoluteiri.edu/RELAPPROXC31>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Istituto> <http://www.absoluteiri.edu/RELAPPROXC33>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Istituto> <http://www.absoluteiri.edu/RELAPPROXC35>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Istituto> <http://www.absoluteiri.edu/RELAPPROXC39>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Istituto> <http://www.absoluteiri.edu/RELAPPROXC57>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Istituto> <http://www.absoluteiri.edu/RELAPPROXC7>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Istituto> <http://www.absoluteiri.edu/RELAPPROXC9>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Istituto> <http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#StrutturaScientifica>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Istituto> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#nome> <http://www.absoluteiri.edu/RELAPPROXC52>))
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Istituto> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#codiceCDS> <http://www.absoluteiri.edu/RELAPPROXC52>))
+
+# Class: <http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Modulo> (<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Modulo>)
+
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Modulo> <http://www.absoluteiri.edu/RELAPPROXC29>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Modulo> <http://www.absoluteiri.edu/RELAPPROXC3>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Modulo> <http://www.absoluteiri.edu/RELAPPROXC31>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Modulo> <http://www.absoluteiri.edu/RELAPPROXC33>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Modulo> <http://www.absoluteiri.edu/RELAPPROXC35>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Modulo> <http://www.absoluteiri.edu/RELAPPROXC39>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Modulo> <http://www.absoluteiri.edu/RELAPPROXC41>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Modulo> <http://www.absoluteiri.edu/RELAPPROXC54>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Modulo> <http://www.absoluteiri.edu/RELAPPROXC7>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Modulo> <http://www.absoluteiri.edu/RELAPPROXC9>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Modulo> <http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#AttivitàCNR>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Modulo> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#nome> <http://www.absoluteiri.edu/RELAPPROXC52>))
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Modulo> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#codice> <http://www.absoluteiri.edu/RELAPPROXC52>))
+
+# Class: <http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#ProdottoDellaRicerca> (<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#ProdottoDellaRicerca>)
+
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#ProdottoDellaRicerca> <http://www.absoluteiri.edu/RELAPPROXC11>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#ProdottoDellaRicerca> <http://www.absoluteiri.edu/RELAPPROXC15>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#ProdottoDellaRicerca> <http://www.absoluteiri.edu/RELAPPROXC3>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#ProdottoDellaRicerca> <http://www.absoluteiri.edu/RELAPPROXC31>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#ProdottoDellaRicerca> <http://www.absoluteiri.edu/RELAPPROXC33>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#ProdottoDellaRicerca> <http://www.absoluteiri.edu/RELAPPROXC39>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#ProdottoDellaRicerca> <http://www.absoluteiri.edu/RELAPPROXC41>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#ProdottoDellaRicerca> <http://www.absoluteiri.edu/RELAPPROXC54>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#ProdottoDellaRicerca> <http://www.absoluteiri.edu/RELAPPROXC7>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#ProdottoDellaRicerca> <http://www.absoluteiri.edu/RELAPPROXC9>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#ProdottoDellaRicerca> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#codice> <http://www.absoluteiri.edu/RELAPPROXC52>))
+
+# Class: <http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Progetto> (<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Progetto>)
+
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Progetto> <http://www.absoluteiri.edu/RELAPPROXC11>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Progetto> <http://www.absoluteiri.edu/RELAPPROXC15>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Progetto> <http://www.absoluteiri.edu/RELAPPROXC29>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Progetto> <http://www.absoluteiri.edu/RELAPPROXC3>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Progetto> <http://www.absoluteiri.edu/RELAPPROXC31>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Progetto> <http://www.absoluteiri.edu/RELAPPROXC35>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Progetto> <http://www.absoluteiri.edu/RELAPPROXC39>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Progetto> <http://www.absoluteiri.edu/RELAPPROXC41>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Progetto> <http://www.absoluteiri.edu/RELAPPROXC57>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Progetto> <http://www.absoluteiri.edu/RELAPPROXC7>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Progetto> <http://www.absoluteiri.edu/RELAPPROXC9>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Progetto> <http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#AttivitàCNR>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Progetto> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#nome> <http://www.absoluteiri.edu/RELAPPROXC52>))
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Progetto> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#codiceCDS> <http://www.absoluteiri.edu/RELAPPROXC52>))
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Progetto> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#parteDi> <http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Dipartimento>))
+
+# Class: <http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#ReteScientificaCNR> (<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#ReteScientificaCNR>)
+
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#ReteScientificaCNR> <http://www.absoluteiri.edu/RELAPPROXC11>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#ReteScientificaCNR> <http://www.absoluteiri.edu/RELAPPROXC15>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#ReteScientificaCNR> <http://www.absoluteiri.edu/RELAPPROXC29>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#ReteScientificaCNR> <http://www.absoluteiri.edu/RELAPPROXC3>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#ReteScientificaCNR> <http://www.absoluteiri.edu/RELAPPROXC31>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#ReteScientificaCNR> <http://www.absoluteiri.edu/RELAPPROXC33>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#ReteScientificaCNR> <http://www.absoluteiri.edu/RELAPPROXC35>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#ReteScientificaCNR> <http://www.absoluteiri.edu/RELAPPROXC39>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#ReteScientificaCNR> <http://www.absoluteiri.edu/RELAPPROXC41>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#ReteScientificaCNR> <http://www.absoluteiri.edu/RELAPPROXC7>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#ReteScientificaCNR> <http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#StrutturaScientifica>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#ReteScientificaCNR> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#haParte> <http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Dipartimento>))
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#ReteScientificaCNR> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#haParte> <http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#Istituto>))
+
+# Class: <http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#RicercaSpontaneaATemaLibero> (<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#RicercaSpontaneaATemaLibero>)
+
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#RicercaSpontaneaATemaLibero> <http://www.absoluteiri.edu/RELAPPROXC11>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#RicercaSpontaneaATemaLibero> <http://www.absoluteiri.edu/RELAPPROXC29>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#RicercaSpontaneaATemaLibero> <http://www.absoluteiri.edu/RELAPPROXC31>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#RicercaSpontaneaATemaLibero> <http://www.absoluteiri.edu/RELAPPROXC33>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#RicercaSpontaneaATemaLibero> <http://www.absoluteiri.edu/RELAPPROXC35>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#RicercaSpontaneaATemaLibero> <http://www.absoluteiri.edu/RELAPPROXC39>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#RicercaSpontaneaATemaLibero> <http://www.absoluteiri.edu/RELAPPROXC41>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#RicercaSpontaneaATemaLibero> <http://www.absoluteiri.edu/RELAPPROXC54>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#RicercaSpontaneaATemaLibero> <http://www.absoluteiri.edu/RELAPPROXC7>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#RicercaSpontaneaATemaLibero> <http://www.absoluteiri.edu/RELAPPROXC9>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#RicercaSpontaneaATemaLibero> <http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#AttivitàCNR>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#RicercaSpontaneaATemaLibero> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#nome> <http://www.absoluteiri.edu/RELAPPROXC52>))
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#RicercaSpontaneaATemaLibero> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#codice> <http://www.absoluteiri.edu/RELAPPROXC52>))
+
+# Class: <http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#AttivitàCNR> (<http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#AttivitàCNR>)
+
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#AttivitàCNR> <http://www.absoluteiri.edu/RELAPPROXC17>)
+
+# Class: <http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#CentroDiSpesa> (<http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#CentroDiSpesa>)
+
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#CentroDiSpesa> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#codiceCDS> <http://www.absoluteiri.edu/RELAPPROXC52>))
+
+# Class: <http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#StrutturaCNR> (<http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#StrutturaCNR>)
+
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#StrutturaCNR> <http://www.absoluteiri.edu/RELAPPROXC49>)
+
+# Class: <http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#StrutturaGestionale> (<http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#StrutturaGestionale>)
+
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#StrutturaGestionale> <http://www.absoluteiri.edu/RELAPPROXC43>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#StrutturaGestionale> <http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#StrutturaCNR>)
+
+# Class: <http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#StrutturaScientifica> (<http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#StrutturaScientifica>)
+
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#StrutturaScientifica> <http://www.absoluteiri.edu/RELAPPROXC21>)
+SubClassOf(<http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#StrutturaScientifica> <http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#StrutturaCNR>)
+
+# Class: <https://smolang.org/rdfMutate#newNode-4> (<https://smolang.org/rdfMutate#newNode-4>)
+
+SubClassOf(<https://smolang.org/rdfMutate#newNode-4> <http://www.absoluteiri.edu/RELAPPROXC57>)
+
+# Class: <https://smolang.org/rdfMutate#newNode-7> (<https://smolang.org/rdfMutate#newNode-7>)
+
+SubClassOf(<https://smolang.org/rdfMutate#newNode-7> <https://smolang.org/rdfMutate#newNode-8>)
+
+# Class: <https://smolang.org/rdfMutate#newNode-8> (<https://smolang.org/rdfMutate#newNode-8>)
+
+SubClassOf(<https://smolang.org/rdfMutate#newNode-8> <https://smolang.org/rdfMutate#newNode-7>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <https://smolang.org/rdfMutate#newNode-6> (<https://smolang.org/rdfMutate#newNode-6>)
+
+ClassAssertion(owl:Class <https://smolang.org/rdfMutate#newNode-6>)
+ClassAssertion(<https://smolang.org/rdfMutate#newNode-6> <https://smolang.org/rdfMutate#newNode-6>)
+
+# Individual: <https://smolang.org/rdfMutate#newNode-7> (<https://smolang.org/rdfMutate#newNode-7>)
+
+ClassAssertion(<http://www.absoluteiri.edu/RELAPPROXC19> <https://smolang.org/rdfMutate#newNode-7>)
+ClassAssertion(owl:Class <https://smolang.org/rdfMutate#newNode-7>)
+
+
+SubClassOf(ObjectSomeValuesFrom(<http://www.absoluteiri.edu/RELAPPROXR45> <http://www.absoluteiri.edu/RELAPPROXC47>) <http://www.absoluteiri.edu/RELAPPROXC60>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/localizzazione.owl#cap> owl:Thing) <http://www.ontologydesignpatterns.org/ont/cnr/localizzazione.owl#Indirizzo>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/localizzazione.owl#città> owl:Thing) <http://www.ontologydesignpatterns.org/ont/cnr/localizzazione.owl#Indirizzo>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/localizzazione.owl#civico> owl:Thing) <http://www.ontologydesignpatterns.org/ont/cnr/localizzazione.owl#Indirizzo>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/localizzazione.owl#email> owl:Thing) owl:Thing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/localizzazione.owl#facebookAccount> owl:Thing) owl:Thing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/localizzazione.owl#fax> owl:Thing) owl:Thing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/localizzazione.owl#foafProfile> owl:Thing) owl:Thing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/localizzazione.owl#indirizzo> owl:Thing) owl:Thing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/localizzazione.owl#linkedInAccount> owl:Thing) owl:Thing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/localizzazione.owl#skypeAccount> owl:Thing) owl:Thing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/localizzazione.owl#stato> owl:Thing) <http://www.ontologydesignpatterns.org/ont/cnr/localizzazione.owl#Indirizzo>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/localizzazione.owl#telefono> owl:Thing) owl:Thing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/localizzazione.owl#telefono> owl:Thing) <https://smolang.org/rdfMutate#newNode-0>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/localizzazione.owl#web> owl:Thing) owl:Thing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#affiliazione> owl:Thing) <http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#Persona>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#affiliazionedi> owl:Thing) <http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#Organizzazione>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#collaboraCon> owl:Thing) <http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#Agente>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#collaboraCon> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#collaboraInProgettoCon> owl:Thing) <http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#Agente>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#haPubblicazioniCon> owl:Thing) <http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#Agente>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#direttore> owl:Thing) owl:Thing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#direttoreDi> owl:Thing) <http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#Persona>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#nome> <http://www.absoluteiri.edu/RELAPPROXC51>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#nome> owl:Thing) owl:Thing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#responsabile> owl:Thing) owl:Thing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/retescientifica.owl#responsabileDi> owl:Thing) <http://www.ontologydesignpatterns.org/ont/cnr/persone.owl#Persona>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#codice> <http://www.absoluteiri.edu/RELAPPROXC51>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#codice> <http://www.absoluteiri.edu/RELAPPROXC52RELAPPROXQ2>) <http://www.absoluteiri.edu/RELAPPROXC55>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#codice> owl:Thing) owl:Thing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#codiceCDS> <http://www.absoluteiri.edu/RELAPPROXC51>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#codiceCDS> <http://www.absoluteiri.edu/RELAPPROXC52>) <http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#CentroDiSpesa>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#codiceCDS> <http://www.absoluteiri.edu/RELAPPROXC52RELAPPROXQ2>) <http://www.absoluteiri.edu/RELAPPROXC58>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#codiceCDS> owl:Thing) <http://www.ontologydesignpatterns.org/ont/cnr/strutturacnr.owl#CentroDiSpesa>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#afferisceA> owl:Thing) owl:Thing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#haAfferente> owl:Thing) owl:Thing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#haMembro> owl:Thing) owl:Thing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#haParte> owl:Thing) owl:Thing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#haPartecipante> owl:Thing) owl:Thing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#membroDi> owl:Thing) owl:Thing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#parteDi> owl:Thing) owl:Thing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#partecipaA> owl:Thing) owl:Thing)
+SubObjectPropertyOf(ObjectPropertyChain(<http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#haParte> <http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#haParte>) <http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#haParte>)
+SubObjectPropertyOf(ObjectPropertyChain(<http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#parteDi>) <http://www.ontologydesignpatterns.org/ont/cnr/suddivisioni.owl#parteDi>)
+)

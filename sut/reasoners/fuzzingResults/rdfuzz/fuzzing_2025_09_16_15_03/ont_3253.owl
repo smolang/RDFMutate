@@ -1,0 +1,1111 @@
+Prefix(:=<urn:unnamed:ontology#ont19116610463407038>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:unnamed:ontology#ont19116610463407038>
+
+Declaration(Class(<http://dbpedia.org/ontology/Museum>))
+Declaration(Class(<http://dbpedia.org/ontology/Cricketer>))
+Declaration(Class(<http://dbpedia.org/ontology/Continent>))
+Declaration(Class(<http://dbpedia.org/ontology/SoftballLeague>))
+Declaration(Class(<http://dbpedia.org/ontology/Aircraft>))
+Declaration(Class(<http://dbpedia.org/ontology/Bird>))
+Declaration(Class(<http://dbpedia.org/ontology/Drug>))
+Declaration(Class(<http://dbpedia.org/ontology/Film>))
+Declaration(Class(<http://dbpedia.org/ontology/AmericanFootballLeague>))
+Declaration(Class(<http://dbpedia.org/ontology/GolfLeague>))
+Declaration(Class(<http://dbpedia.org/ontology/MemberOfParliament>))
+Declaration(Class(<http://dbpedia.org/ontology/ComicsCharacter>))
+Declaration(Class(<http://dbpedia.org/ontology/MountainRange>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-6>))
+Declaration(Class(<http://dbpedia.org/ontology/Island>))
+Declaration(Class(<http://dbpedia.org/ontology/Airport>))
+Declaration(Class(<http://dbpedia.org/ontology/RugbyPlayer>))
+Declaration(Class(<http://dbpedia.org/ontology/Canal>))
+Declaration(Class(<http://dbpedia.org/ontology/GolfPlayer>))
+Declaration(Class(<http://dbpedia.org/ontology/SoccerLeague>))
+Declaration(Class(<http://dbpedia.org/ontology/Legislature>))
+Declaration(Class(<http://dbpedia.org/ontology/Musical>))
+Declaration(Class(<http://dbpedia.org/ontology/Magazine>))
+Declaration(Class(<http://dbpedia.org/ontology/SkiArea>))
+Declaration(Class(<http://dbpedia.org/ontology/MilitaryUnit>))
+Declaration(Class(<http://dbpedia.org/ontology/BasketballPlayer>))
+Declaration(Class(<http://dbpedia.org/ontology/Philosopher>))
+Declaration(Class(<http://dbpedia.org/ontology/MilitaryPerson>))
+Declaration(Class(<http://dbpedia.org/ontology/Artery>))
+Declaration(Class(<http://dbpedia.org/ontology/Disease>))
+Declaration(Class(<http://dbpedia.org/ontology/BaseballLeague>))
+Declaration(Class(<http://dbpedia.org/ontology/Astronaut>))
+Declaration(Class(<http://dbpedia.org/ontology/Governor>))
+Declaration(Class(<http://dbpedia.org/ontology/Writer>))
+Declaration(Class(<http://dbpedia.org/ontology/Reptile>))
+Declaration(Class(<http://dbpedia.org/ontology/Ship>))
+Declaration(Class(<http://dbpedia.org/ontology/TelevisionEpisode>))
+Declaration(Class(<http://dbpedia.org/ontology/Currency>))
+Declaration(Class(<http://dbpedia.org/ontology/BasketballTeam>))
+Declaration(Class(<http://dbpedia.org/ontology/Mountain>))
+Declaration(Class(<http://dbpedia.org/ontology/Stadium>))
+Declaration(Class(<http://dbpedia.org/ontology/Mammal>))
+Declaration(Class(<http://dbpedia.org/ontology/IceHockeyPlayer>))
+Declaration(Class(<http://dbpedia.org/ontology/Boxer>))
+Declaration(Class(<http://dbpedia.org/ontology/NationalCollegiateAthleticAssociationAthlete>))
+Declaration(Class(<http://dbpedia.org/ontology/ComicsCreator>))
+Declaration(Class(<http://dbpedia.org/ontology/RadioStation>))
+Declaration(Class(<http://dbpedia.org/ontology/Book>))
+Declaration(Class(<http://dbpedia.org/ontology/VideoGame>))
+Declaration(Class(<http://dbpedia.org/ontology/Election>))
+Declaration(Class(<http://dbpedia.org/ontology/Hospital>))
+Declaration(Class(<http://dbpedia.org/ontology/River>))
+Declaration(Class(<http://dbpedia.org/ontology/Award>))
+Declaration(Class(<http://dbpedia.org/ontology/Comedian>))
+Declaration(Class(<http://dbpedia.org/ontology/Hotel>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-2>))
+Declaration(Class(owl:ObjectProperty))
+Declaration(Class(<http://dbpedia.org/ontology/Congressman>))
+Declaration(Class(<http://dbpedia.org/ontology/Muscle>))
+Declaration(Class(<http://dbpedia.org/ontology/Mayor>))
+Declaration(Class(<http://dbpedia.org/ontology/Band>))
+Declaration(Class(<http://dbpedia.org/ontology/TennisPlayer>))
+Declaration(Class(<http://dbpedia.org/ontology/Website>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-7>))
+Declaration(Class(<http://dbpedia.org/ontology/LacrosseLeague>))
+Declaration(Class(<http://dbpedia.org/ontology/SoccerManager>))
+Declaration(Class(<http://dbpedia.org/ontology/ChemicalCompound>))
+Declaration(Class(<http://dbpedia.org/ontology/Road>))
+Declaration(Class(<http://dbpedia.org/ontology/EthnicGroup>))
+Declaration(Class(<http://dbpedia.org/ontology/TennisLeague>))
+Declaration(Class(<http://dbpedia.org/ontology/MilitaryConflict>))
+Declaration(Class(<http://dbpedia.org/ontology/Valley>))
+Declaration(Class(<http://dbpedia.org/ontology/TelevisionShow>))
+Declaration(Class(<http://dbpedia.org/ontology/CanadianFootballLeague>))
+Declaration(Class(<http://dbpedia.org/ontology/PokerPlayer>))
+Declaration(Class(<http://dbpedia.org/ontology/Village>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-4>))
+Declaration(Class(<http://dbpedia.org/ontology/Airline>))
+Declaration(Class(<http://dbpedia.org/ontology/BasketballLeague>))
+Declaration(Class(<http://dbpedia.org/ontology/TradeUnion>))
+Declaration(Class(<http://dbpedia.org/ontology/President>))
+Declaration(Class(<http://dbpedia.org/ontology/Automobile>))
+Declaration(Class(<http://dbpedia.org/ontology/Beverage>))
+Declaration(Class(<http://dbpedia.org/ontology/Criminal>))
+Declaration(Class(<http://dbpedia.org/ontology/ProtectedArea>))
+Declaration(Class(<http://dbpedia.org/ontology/Colour>))
+Declaration(Class(<http://dbpedia.org/ontology/WorldHeritageSite>))
+Declaration(Class(<http://dbpedia.org/ontology/Fungus>))
+Declaration(Class(<http://dbpedia.org/ontology/Monarch>))
+Declaration(Class(<http://dbpedia.org/ontology/Actor>))
+Declaration(Class(<http://dbpedia.org/ontology/Journalist>))
+Declaration(Class(<http://dbpedia.org/ontology/MusicalArtist>))
+Declaration(Class(<http://dbpedia.org/ontology/OfficeHolder>))
+Declaration(Class(<http://dbpedia.org/ontology/Non-ProfitOrganisation>))
+Declaration(Class(<http://dbpedia.org/ontology/SoccerClub>))
+Declaration(Class(<http://dbpedia.org/ontology/Language>))
+Declaration(Class(<http://dbpedia.org/ontology/HistoricPlace>))
+Declaration(Class(<http://dbpedia.org/ontology/Lake>))
+Declaration(Class(<http://dbpedia.org/ontology/Wrestler>))
+Declaration(Class(<http://dbpedia.org/ontology/Skyscraper>))
+Declaration(Class(<http://dbpedia.org/ontology/HockeyTeam>))
+Declaration(Class(<http://dbpedia.org/ontology/Scientist>))
+Declaration(Class(<http://dbpedia.org/ontology/SupremeCourtOfTheUnitedStatesCase>))
+Declaration(Class(<http://dbpedia.org/ontology/Newspaper>))
+Declaration(Class(<http://dbpedia.org/ontology/FloweringPlant>))
+Declaration(Class(<http://dbpedia.org/ontology/AmericanFootballTeam>))
+Declaration(Class(<http://dbpedia.org/ontology/OlympicResult>))
+Declaration(Class(<http://dbpedia.org/ontology/Olympics>))
+Declaration(Class(<http://dbpedia.org/ontology/CollegeCoach>))
+Declaration(Class(<http://dbpedia.org/ontology/Broadcast>))
+Declaration(Class(<http://dbpedia.org/ontology/Senator>))
+Declaration(Class(<http://dbpedia.org/ontology/SoccerPlayer>))
+Declaration(Class(<http://dbpedia.org/ontology/Town>))
+Declaration(Class(<http://dbpedia.org/ontology/IceHockeyLeague>))
+Declaration(Class(<http://dbpedia.org/ontology/CanadianFootballTeam>))
+Declaration(Class(<http://dbpedia.org/ontology/Planet>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAmericanFootballLeague>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSoccerManager>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Infrastructure>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToVideoGame>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBaseballLeague>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToOfficeHolder>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Colour>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMilitaryPerson>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Person>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToComedian>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToComicsCreator>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Disease>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSoccerClub>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Currency>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToWebsite>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToChemicalCompound>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/ChemicalCompound>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToNewspaper>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMountain>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMonarch>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSoccerPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBird>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToArtery>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCricketer>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/OlympicResult>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToRoad>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToTelevisionEpisode>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToColour>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCriminal>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToIceHockeyLeague>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMilitaryUnit>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToFungus>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToStadium>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToPokerPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToProtectedArea>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToWorldHeritageSite>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToLegislature>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToNationalCollegiateAthleticAssociationAthlete>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Award>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToJournalist>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAstronaut>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSupremeCourtOfTheUnitedStatesCase>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/EthnicGroup>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSoftballLeague>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToIsland>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToTown>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBeverage>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/AnatomicalStructure>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Beverage>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMuscle>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToVillage>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBoxer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAircraft>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/LegalCase>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToPresident>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMemberOfParliament>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCanadianFootballTeam>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToDrug>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToTennisLeague>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToTennisPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToGovernor>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToElection>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMilitaryConflict>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCanal>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToLanguage>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Drug>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToOlympics>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToRadioStation>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMayor>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/MeanOfTransportation>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToHockeyTeam>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToNon-ProfitOrganisation>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Organisation>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAirline>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToLacrosseLeague>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCurrency>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToShip>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToDisease>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToLake>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToWriter>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMusicalArtist>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToTelevisionShow>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToComicsCharacter>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBroadcast>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSkyscraper>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToEthnicGroup>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToIceHockeyPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToGolfPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBasketballPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToHospital>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Website>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBook>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToGolfLeague>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBasketballLeague>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToOlympicResult>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Language>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMammal>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSkiArea>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAmericanFootballTeam>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToContinent>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToFloweringPlant>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCongressman>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToHotel>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBand>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMountainRange>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAutomobile>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToReptile>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Event>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAward>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToActor>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToTradeUnion>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToRugbyPlayer>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Species>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToPhilosopher>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAirport>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Planet>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToValley>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToRiver>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToScientist>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCanadianFootballLeague>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToWrestler>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSoccerLeague>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMagazine>))
+Declaration(ObjectProperty(<http://www.w3.org/2004/02/skos/core#relatedMatch>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToPlanet>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToFilm>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMuseum>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSenator>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMusical>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Work>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToHistoricPlace>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Place>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBasketballTeam>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/formerTeams>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/before>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCanadianFootballTeam>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToColour>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/unit>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToNationalCollegiateAthleticAssociationAthlete>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAmericanFootballTeam>))
+Declaration(NamedIndividual(owl:ObjectProperty))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-5>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToScientist>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAward>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMilitaryPerson>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/awards>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBasketballTeam>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/title>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToWriter>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/name>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToOfficeHolder>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/after>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBasketballPlayer>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToTown>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/years>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBaseballPlayer>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCongressman>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMuseum>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToActor>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToHistoricPlace>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAirport>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-6>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAstronaut>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBasketballLeague>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToComicsCreator>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSoccerClub>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAmericanFootballLeague>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMilitaryUnit>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/championships>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/teams>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCanadianFootballLeague>))
+Declaration(NamedIndividual(owl:Class))
+Declaration(NamedIndividual(<http://dbpedia.org/property/team>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/coachteams>))
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://dbpedia.org/ontology/Person> (<http://dbpedia.org/ontology/Person>)
+
+SubObjectPropertyOf(<http://dbpedia.org/ontology/Person> <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMilitaryPerson>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToActor> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToActor>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToActor> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToActor> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToActor> <http://dbpedia.org/ontology/Actor>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAircraft> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAircraft>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAircraft> <http://dbpedia.org/ontology/MeanOfTransportation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAircraft> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAircraft> <http://dbpedia.org/ontology/Aircraft>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAirline> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAirline>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAirline> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAirline> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAirline> <http://dbpedia.org/ontology/Airline>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAirport> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAirport>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAirport> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAirport> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAirport> <http://dbpedia.org/ontology/Airport>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAmericanFootballLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAmericanFootballLeague>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAmericanFootballLeague> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAmericanFootballLeague> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAmericanFootballLeague> <http://dbpedia.org/ontology/AmericanFootballLeague>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAmericanFootballTeam> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAmericanFootballTeam>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAmericanFootballTeam> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAmericanFootballTeam> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAmericanFootballTeam> <http://dbpedia.org/ontology/AmericanFootballTeam>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToArtery> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToArtery>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToArtery> <http://dbpedia.org/ontology/AnatomicalStructure>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToArtery> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToArtery> <http://dbpedia.org/ontology/Artery>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAstronaut> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAstronaut>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAstronaut> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAstronaut> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAstronaut> <http://dbpedia.org/ontology/Astronaut>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAutomobile> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAutomobile>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAutomobile> <http://dbpedia.org/ontology/MeanOfTransportation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAutomobile> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAutomobile> <http://dbpedia.org/ontology/Automobile>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAward> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAward>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAward> <http://dbpedia.org/ontology/Award>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAward> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAward> <http://dbpedia.org/ontology/Award>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBand> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBand>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBand> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBand> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBand> <http://dbpedia.org/ontology/Band>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBaseballLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBaseballLeague>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBaseballLeague> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBaseballLeague> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBaseballLeague> <http://dbpedia.org/ontology/BaseballLeague>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBasketballLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBasketballLeague>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBasketballLeague> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBasketballLeague> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBasketballLeague> <http://dbpedia.org/ontology/BasketballLeague>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBasketballPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBasketballPlayer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBasketballPlayer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBasketballPlayer> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBasketballPlayer> <http://dbpedia.org/ontology/BasketballPlayer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBasketballTeam> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBasketballTeam>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBasketballTeam> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBasketballTeam> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBasketballTeam> <http://dbpedia.org/ontology/BasketballTeam>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBeverage> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBeverage>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBeverage> <http://dbpedia.org/ontology/Beverage>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBeverage> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBeverage> <http://dbpedia.org/ontology/Beverage>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBird> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBird>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBird> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBird> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBird> <http://dbpedia.org/ontology/Bird>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBook> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBook>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBook> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBook> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBook> <http://dbpedia.org/ontology/Book>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBoxer> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBoxer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBoxer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBoxer> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBoxer> <http://dbpedia.org/ontology/Boxer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBroadcast> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBroadcast>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBroadcast> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBroadcast> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBroadcast> <http://dbpedia.org/ontology/Broadcast>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCanadianFootballLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCanadianFootballLeague>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCanadianFootballLeague> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCanadianFootballLeague> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCanadianFootballLeague> <http://dbpedia.org/ontology/CanadianFootballLeague>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCanadianFootballTeam> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCanadianFootballTeam>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCanadianFootballTeam> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCanadianFootballTeam> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCanadianFootballTeam> <http://dbpedia.org/ontology/CanadianFootballTeam>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCanal> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCanal>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCanal> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCanal> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCanal> <http://dbpedia.org/ontology/Canal>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToChemicalCompound> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToChemicalCompound>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToChemicalCompound> <http://dbpedia.org/ontology/ChemicalCompound>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToChemicalCompound> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToChemicalCompound> <http://dbpedia.org/ontology/ChemicalCompound>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToColour> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToColour>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToColour> <http://dbpedia.org/ontology/Colour>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToColour> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToColour> <http://dbpedia.org/ontology/Colour>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToComedian> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToComedian>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToComedian> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToComedian> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToComedian> <http://dbpedia.org/ontology/Comedian>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToComicsCharacter> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToComicsCharacter>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToComicsCharacter> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToComicsCharacter> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToComicsCharacter> <http://dbpedia.org/ontology/ComicsCharacter>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToComicsCreator> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToComicsCreator>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToComicsCreator> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToComicsCreator> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToComicsCreator> <http://dbpedia.org/ontology/ComicsCreator>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCongressman> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCongressman>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCongressman> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCongressman> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCongressman> <http://dbpedia.org/ontology/Congressman>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToContinent> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToContinent>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToContinent> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToContinent> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToContinent> <http://dbpedia.org/ontology/Continent>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCricketer> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCricketer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCricketer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCricketer> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCricketer> <http://dbpedia.org/ontology/Cricketer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCriminal> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCriminal>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCriminal> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCriminal> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCriminal> <http://dbpedia.org/ontology/Criminal>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCurrency> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCurrency>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCurrency> <http://dbpedia.org/ontology/Currency>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCurrency> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCurrency> <http://dbpedia.org/ontology/Currency>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToDisease> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToDisease>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToDisease> <http://dbpedia.org/ontology/Disease>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToDisease> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToDisease> <http://dbpedia.org/ontology/Disease>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToDrug> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToDrug>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToDrug> <http://dbpedia.org/ontology/Drug>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToDrug> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToDrug> <http://dbpedia.org/ontology/Drug>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToElection> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToElection>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToElection> <http://dbpedia.org/ontology/Event>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToElection> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToElection> <http://dbpedia.org/ontology/Election>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToEthnicGroup> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToEthnicGroup>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToEthnicGroup> <http://dbpedia.org/ontology/EthnicGroup>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToEthnicGroup> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToEthnicGroup> <http://dbpedia.org/ontology/EthnicGroup>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToFilm> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToFilm>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToFilm> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToFilm> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToFilm> <http://dbpedia.org/ontology/Film>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToFloweringPlant> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToFloweringPlant>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToFloweringPlant> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToFloweringPlant> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToFloweringPlant> <http://dbpedia.org/ontology/FloweringPlant>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToFungus> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToFungus>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToFungus> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToFungus> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToFungus> <http://dbpedia.org/ontology/Fungus>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToGolfLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToGolfLeague>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToGolfLeague> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToGolfLeague> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToGolfLeague> <http://dbpedia.org/ontology/GolfLeague>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToGolfPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToGolfPlayer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToGolfPlayer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToGolfPlayer> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToGolfPlayer> <http://dbpedia.org/ontology/GolfPlayer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToGovernor> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToGovernor>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToGovernor> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToGovernor> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToGovernor> <http://dbpedia.org/ontology/Governor>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToHistoricPlace> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToHistoricPlace>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToHistoricPlace> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToHistoricPlace> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToHistoricPlace> <http://dbpedia.org/ontology/HistoricPlace>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToHockeyTeam> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToHockeyTeam>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToHockeyTeam> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToHockeyTeam> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToHockeyTeam> <http://dbpedia.org/ontology/HockeyTeam>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToHospital> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToHospital>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToHospital> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToHospital> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToHospital> <http://dbpedia.org/ontology/Hospital>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToHotel> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToHotel>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToHotel> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToHotel> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToHotel> <http://dbpedia.org/ontology/Hotel>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToIceHockeyLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToIceHockeyLeague>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToIceHockeyLeague> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToIceHockeyLeague> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToIceHockeyLeague> <http://dbpedia.org/ontology/IceHockeyLeague>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToIceHockeyPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToIceHockeyPlayer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToIceHockeyPlayer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToIceHockeyPlayer> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToIceHockeyPlayer> <http://dbpedia.org/ontology/IceHockeyPlayer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToIsland> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToIsland>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToIsland> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToIsland> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToIsland> <http://dbpedia.org/ontology/Island>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToJournalist> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToJournalist>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToJournalist> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToJournalist> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToJournalist> <http://dbpedia.org/ontology/Journalist>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToLacrosseLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToLacrosseLeague>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToLacrosseLeague> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToLacrosseLeague> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToLacrosseLeague> <http://dbpedia.org/ontology/LacrosseLeague>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToLake> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToLake>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToLake> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToLake> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToLake> <http://dbpedia.org/ontology/Lake>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToLanguage> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToLanguage>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToLanguage> <http://dbpedia.org/ontology/Language>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToLanguage> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToLanguage> <http://dbpedia.org/ontology/Language>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToLegislature> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToLegislature>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToLegislature> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToLegislature> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToLegislature> <http://dbpedia.org/ontology/Legislature>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMagazine> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMagazine>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMagazine> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMagazine> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMagazine> <http://dbpedia.org/ontology/Magazine>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMammal> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMammal>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMammal> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMammal> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMammal> <http://dbpedia.org/ontology/Mammal>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMayor> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMayor>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMayor> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMayor> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMayor> <http://dbpedia.org/ontology/Mayor>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMemberOfParliament> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMemberOfParliament>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMemberOfParliament> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMemberOfParliament> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMemberOfParliament> <http://dbpedia.org/ontology/MemberOfParliament>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMilitaryConflict> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMilitaryConflict>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMilitaryConflict> <http://dbpedia.org/ontology/Event>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMilitaryConflict> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMilitaryConflict> <http://dbpedia.org/ontology/MilitaryConflict>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMilitaryPerson> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMilitaryPerson>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMilitaryPerson> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMilitaryPerson> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMilitaryPerson> <http://dbpedia.org/ontology/MilitaryPerson>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMilitaryUnit> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMilitaryUnit>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMilitaryUnit> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMilitaryUnit> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMilitaryUnit> <http://dbpedia.org/ontology/MilitaryUnit>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMonarch> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMonarch>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMonarch> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMonarch> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMonarch> <http://dbpedia.org/ontology/Monarch>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMountain> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMountain>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMountain> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMountain> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMountain> <http://dbpedia.org/ontology/Mountain>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMountainRange> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMountainRange>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMountainRange> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMountainRange> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMountainRange> <http://dbpedia.org/ontology/MountainRange>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMuscle> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMuscle>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMuscle> <http://dbpedia.org/ontology/AnatomicalStructure>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMuscle> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMuscle> <http://dbpedia.org/ontology/Muscle>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMuseum> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMuseum>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMuseum> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMuseum> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMuseum> <http://dbpedia.org/ontology/Museum>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMusical> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMusical>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMusical> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMusical> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMusical> <http://dbpedia.org/ontology/Musical>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMusicalArtist> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMusicalArtist>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMusicalArtist> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMusicalArtist> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMusicalArtist> <http://dbpedia.org/ontology/MusicalArtist>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToNationalCollegiateAthleticAssociationAthlete> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToNationalCollegiateAthleticAssociationAthlete>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToNationalCollegiateAthleticAssociationAthlete> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToNationalCollegiateAthleticAssociationAthlete> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToNationalCollegiateAthleticAssociationAthlete> <http://dbpedia.org/ontology/NationalCollegiateAthleticAssociationAthlete>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToNewspaper> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToNewspaper>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToNewspaper> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToNewspaper> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToNewspaper> <http://dbpedia.org/ontology/Newspaper>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToNon-ProfitOrganisation> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToNon-ProfitOrganisation>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToNon-ProfitOrganisation> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToNon-ProfitOrganisation> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToNon-ProfitOrganisation> <http://dbpedia.org/ontology/Non-ProfitOrganisation>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToOfficeHolder> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToOfficeHolder>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToOfficeHolder> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToOfficeHolder> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToOfficeHolder> <http://dbpedia.org/ontology/OfficeHolder>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToOlympicResult> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToOlympicResult>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToOlympicResult> <http://dbpedia.org/ontology/OlympicResult>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToOlympicResult> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToOlympicResult> <http://dbpedia.org/ontology/OlympicResult>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToOlympics> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToOlympics>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToOlympics> <http://dbpedia.org/ontology/Event>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToOlympics> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToOlympics> <http://dbpedia.org/ontology/Olympics>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToPhilosopher> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToPhilosopher>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToPhilosopher> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToPhilosopher> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToPhilosopher> <http://dbpedia.org/ontology/Philosopher>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToPlanet> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToPlanet>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToPlanet> <http://dbpedia.org/ontology/Planet>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToPlanet> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToPlanet> <http://dbpedia.org/ontology/Planet>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToPokerPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToPokerPlayer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToPokerPlayer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToPokerPlayer> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToPokerPlayer> <http://dbpedia.org/ontology/PokerPlayer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToPresident> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToPresident>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToPresident> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToPresident> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToPresident> <http://dbpedia.org/ontology/President>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToProtectedArea> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToProtectedArea>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToProtectedArea> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToProtectedArea> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToProtectedArea> <http://dbpedia.org/ontology/ProtectedArea>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToRadioStation> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToRadioStation>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToRadioStation> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToRadioStation> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToRadioStation> <http://dbpedia.org/ontology/RadioStation>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToReptile> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToReptile>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToReptile> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToReptile> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToReptile> <http://dbpedia.org/ontology/Reptile>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToRiver> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToRiver>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToRiver> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToRiver> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToRiver> <http://dbpedia.org/ontology/River>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToRoad> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToRoad>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToRoad> <http://dbpedia.org/ontology/Infrastructure>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToRoad> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToRoad> <http://dbpedia.org/ontology/Road>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToRugbyPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToRugbyPlayer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToRugbyPlayer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToRugbyPlayer> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToRugbyPlayer> <http://dbpedia.org/ontology/RugbyPlayer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToScientist> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToScientist>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToScientist> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToScientist> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToScientist> <http://dbpedia.org/ontology/Scientist>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSenator> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSenator>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSenator> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSenator> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSenator> <http://dbpedia.org/ontology/Senator>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToShip> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToShip>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToShip> <http://dbpedia.org/ontology/MeanOfTransportation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToShip> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToShip> <http://dbpedia.org/ontology/Ship>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSkiArea> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSkiArea>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSkiArea> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSkiArea> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSkiArea> <http://dbpedia.org/ontology/SkiArea>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSkyscraper> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSkyscraper>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSkyscraper> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSkyscraper> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSkyscraper> <http://dbpedia.org/ontology/Skyscraper>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSoccerClub> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSoccerClub>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSoccerClub> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSoccerClub> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSoccerClub> <http://dbpedia.org/ontology/SoccerClub>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSoccerLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSoccerLeague>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSoccerLeague> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSoccerLeague> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSoccerLeague> <http://dbpedia.org/ontology/SoccerLeague>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSoccerManager> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSoccerManager>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSoccerManager> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSoccerManager> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSoccerManager> <http://dbpedia.org/ontology/SoccerManager>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSoccerPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSoccerPlayer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSoccerPlayer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSoccerPlayer> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSoccerPlayer> <http://dbpedia.org/ontology/SoccerPlayer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSoftballLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSoftballLeague>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSoftballLeague> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSoftballLeague> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSoftballLeague> <http://dbpedia.org/ontology/SoftballLeague>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToStadium> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToStadium>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToStadium> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToStadium> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToStadium> <http://dbpedia.org/ontology/Stadium>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSupremeCourtOfTheUnitedStatesCase> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSupremeCourtOfTheUnitedStatesCase>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSupremeCourtOfTheUnitedStatesCase> <http://dbpedia.org/ontology/LegalCase>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSupremeCourtOfTheUnitedStatesCase> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSupremeCourtOfTheUnitedStatesCase> <http://dbpedia.org/ontology/SupremeCourtOfTheUnitedStatesCase>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToTelevisionEpisode> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToTelevisionEpisode>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToTelevisionEpisode> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToTelevisionEpisode> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToTelevisionEpisode> <http://dbpedia.org/ontology/TelevisionEpisode>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToTelevisionShow> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToTelevisionShow>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToTelevisionShow> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToTelevisionShow> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToTelevisionShow> <http://dbpedia.org/ontology/TelevisionShow>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToTennisLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToTennisLeague>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToTennisLeague> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToTennisLeague> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToTennisLeague> <http://dbpedia.org/ontology/TennisLeague>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToTennisPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToTennisPlayer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToTennisPlayer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToTennisPlayer> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToTennisPlayer> <http://dbpedia.org/ontology/TennisPlayer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToTown> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToTown>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToTown> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToTown> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToTown> <http://dbpedia.org/ontology/Town>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToTradeUnion> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToTradeUnion>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToTradeUnion> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToTradeUnion> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToTradeUnion> <http://dbpedia.org/ontology/TradeUnion>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToValley> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToValley>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToValley> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToValley> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToValley> <http://dbpedia.org/ontology/Valley>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToVideoGame> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToVideoGame>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToVideoGame> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToVideoGame> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToVideoGame> <http://dbpedia.org/ontology/VideoGame>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToVillage> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToVillage>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToVillage> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToVillage> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToVillage> <http://dbpedia.org/ontology/Village>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToWebsite> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToWebsite>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToWebsite> <http://dbpedia.org/ontology/Website>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToWebsite> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToWebsite> <http://dbpedia.org/ontology/Website>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToWorldHeritageSite> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToWorldHeritageSite>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToWorldHeritageSite> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToWorldHeritageSite> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToWorldHeritageSite> <http://dbpedia.org/ontology/WorldHeritageSite>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToWrestler> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToWrestler>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToWrestler> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToWrestler> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToWrestler> <http://dbpedia.org/ontology/Wrestler>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToWriter> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToWriter>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToWriter> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToWriter> <http://dbpedia.org/ontology/CollegeCoach>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToWriter> <http://dbpedia.org/ontology/Writer>)
+
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToActor> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToActor>)
+
+ClassAssertion(owl:ObjectProperty <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToActor>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToActor> <http://dbpedia.org/property/years>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAirport> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAirport>)
+
+ClassAssertion(owl:ObjectProperty <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAirport>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAirport> <http://dbpedia.org/property/coachteams>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAmericanFootballLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAmericanFootballLeague>)
+
+ClassAssertion(owl:ObjectProperty <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAmericanFootballLeague>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAmericanFootballLeague> <http://dbpedia.org/property/coachteams>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAmericanFootballLeague> <http://dbpedia.org/property/team>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAmericanFootballTeam> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAmericanFootballTeam>)
+
+ClassAssertion(owl:ObjectProperty <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAmericanFootballTeam>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAmericanFootballTeam> <http://dbpedia.org/property/awards>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAmericanFootballTeam> <http://dbpedia.org/property/coachteams>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAmericanFootballTeam> <http://dbpedia.org/property/team>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAmericanFootballTeam> <http://dbpedia.org/property/teams>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAmericanFootballTeam> <http://dbpedia.org/property/title>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAstronaut> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAstronaut>)
+
+ClassAssertion(owl:ObjectProperty <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAstronaut>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAstronaut> <http://dbpedia.org/property/before>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAward> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAward>)
+
+ClassAssertion(owl:ObjectProperty <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAward>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToAward> <http://dbpedia.org/property/awards>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBaseballPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBaseballPlayer>)
+
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBaseballPlayer> <http://dbpedia.org/property/after>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBaseballPlayer> <http://dbpedia.org/property/before>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBasketballLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBasketballLeague>)
+
+ClassAssertion(owl:ObjectProperty <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBasketballLeague>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBasketballLeague> <http://dbpedia.org/property/championships>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBasketballPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBasketballPlayer>)
+
+ClassAssertion(owl:ObjectProperty <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBasketballPlayer>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBasketballPlayer> <http://dbpedia.org/property/after>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBasketballPlayer> <http://dbpedia.org/property/before>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBasketballTeam> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBasketballTeam>)
+
+ClassAssertion(owl:ObjectProperty <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBasketballTeam>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBasketballTeam> <http://dbpedia.org/property/coachteams>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBasketballTeam> <http://dbpedia.org/property/formerTeams>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToBasketballTeam> <http://dbpedia.org/property/team>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCanadianFootballLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCanadianFootballLeague>)
+
+ClassAssertion(owl:ObjectProperty <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCanadianFootballLeague>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCanadianFootballLeague> <http://dbpedia.org/property/coachteams>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCanadianFootballLeague> <http://dbpedia.org/property/team>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCanadianFootballTeam> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCanadianFootballTeam>)
+
+ClassAssertion(owl:ObjectProperty <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCanadianFootballTeam>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCanadianFootballTeam> <http://dbpedia.org/property/coachteams>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCanadianFootballTeam> <http://dbpedia.org/property/team>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToColour> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToColour>)
+
+ClassAssertion(owl:ObjectProperty <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToColour>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToColour> <http://dbpedia.org/property/coachteams>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToComicsCreator> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToComicsCreator>)
+
+ClassAssertion(owl:ObjectProperty <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToComicsCreator>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCongressman> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCongressman>)
+
+ClassAssertion(owl:ObjectProperty <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCongressman>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToCongressman> <http://dbpedia.org/property/before>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToHistoricPlace> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToHistoricPlace>)
+
+ClassAssertion(owl:ObjectProperty <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToHistoricPlace>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToHistoricPlace> <http://dbpedia.org/property/coachteams>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToHistoricPlace> <http://dbpedia.org/property/name>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMilitaryPerson> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMilitaryPerson>)
+
+ClassAssertion(owl:ObjectProperty <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMilitaryPerson>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMilitaryPerson> <http://dbpedia.org/property/after>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMilitaryUnit> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMilitaryUnit>)
+
+ClassAssertion(owl:ObjectProperty <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMilitaryUnit>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMilitaryUnit> <http://dbpedia.org/property/unit>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMuseum> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMuseum>)
+
+ClassAssertion(owl:ObjectProperty <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMuseum>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToMuseum> <http://dbpedia.org/property/awards>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToNationalCollegiateAthleticAssociationAthlete> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToNationalCollegiateAthleticAssociationAthlete>)
+
+ClassAssertion(owl:ObjectProperty <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToNationalCollegiateAthleticAssociationAthlete>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToNationalCollegiateAthleticAssociationAthlete> <http://dbpedia.org/property/after>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToOfficeHolder> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToOfficeHolder>)
+
+ClassAssertion(owl:ObjectProperty <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToOfficeHolder>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToOfficeHolder> <http://dbpedia.org/property/years>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToScientist> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToScientist>)
+
+ClassAssertion(owl:ObjectProperty <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToScientist>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToScientist> <http://dbpedia.org/property/after>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSoccerClub> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSoccerClub>)
+
+ClassAssertion(owl:ObjectProperty <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSoccerClub>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToSoccerClub> <http://dbpedia.org/property/coachteams>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToTown> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToTown>)
+
+ClassAssertion(owl:ObjectProperty <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToTown>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToTown> <http://dbpedia.org/property/coachteams>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToWriter> (<http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToWriter>)
+
+ClassAssertion(owl:ObjectProperty <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToWriter>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/CollegeCoach.owl#linksToWriter> <http://dbpedia.org/property/after>)
+
+
+)

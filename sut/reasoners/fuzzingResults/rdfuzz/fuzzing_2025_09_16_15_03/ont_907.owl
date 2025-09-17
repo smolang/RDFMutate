@@ -1,0 +1,228 @@
+Prefix(:=<urn:unnamed:ontology#ont19095472236216117>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:unnamed:ontology#ont19095472236216117>
+
+Declaration(Class(<http://www.lexinfo.net/lmf#Condition>))
+Declaration(Class(<http://www.lexinfo.net/lmf#DerivedForm>))
+Declaration(Class(<http://www.w3.org/ns/adms#SemanticAsset>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC157>))
+Declaration(Class(<http://www.lexinfo.net/lmf#Component>))
+Declaration(Class(<http://www.lexinfo.net/lmf#TransferAxisRelation>))
+Declaration(Class(<http://www.lexinfo.net/lmf#Definition>))
+Declaration(Class(<http://www.lexinfo.net/lmf#SemanticPredicate>))
+Declaration(Class(<http://www.lexinfo.net/lmf#SynSemCorrespondence>))
+Declaration(Class(<http://www.lexinfo.net/lmf#GlobalInformation>))
+Declaration(Class(<http://www.lexinfo.net/lmf#Sense>))
+Declaration(Class(<http://www.lexinfo.net/lmf#SourceTest>))
+Declaration(Class(<http://www.lexinfo.net/lmf#Statement>))
+Declaration(Class(<http://www.lexinfo.net/lmf#MWEPattern>))
+Declaration(Class(<http://www.lexinfo.net/lmf#LogicalOperation>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC158>))
+Declaration(Class(<http://www.lexinfo.net/lmf#TargetTest>))
+Declaration(Class(<http://www.lexinfo.net/lmf#MonolingualExternalRef>))
+Declaration(Class(<http://www.lexinfo.net/lmf#Equivalent>))
+Declaration(Class(<http://www.lexinfo.net/lmf#Process>))
+Declaration(Class(<http://www.lexinfo.net/lmf#SynArgMap>))
+Declaration(Class(<http://www.lexinfo.net/lmf#PredicativeRepresentation>))
+Declaration(Class(<http://www.lexinfo.net/lmf#RelatedForm>))
+Declaration(Class(<http://www.lexinfo.net/lmf#Representation>))
+Declaration(Class(<http://www.lexinfo.net/lmf#TransferAxis>))
+Declaration(Class(<http://www.lexinfo.net/lmf#GrammaticalFeatures>))
+Declaration(Class(<http://www.lexinfo.net/lmf#SubcategorizationFrameSet>))
+Declaration(Class(<http://www.lexinfo.net/lmf#SynSemArgMap>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-8>))
+Declaration(Class(<http://www.lexinfo.net/lmf#SubjectField>))
+Declaration(Class(<http://www.lexinfo.net/lmf#Lexicon>))
+Declaration(Class(<http://www.lexinfo.net/lmf#ListOfComponents>))
+Declaration(Class(<http://www.lexinfo.net/lmf#FormRepresentation>))
+Declaration(Class(<http://www.lexinfo.net/lmf#ExampleAxisRelation>))
+Declaration(Class(<http://www.lexinfo.net/lmf#SenseExample>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-2>))
+Declaration(Class(<http://www.lexinfo.net/lmf#Constraint>))
+Declaration(Class(<http://www.lexinfo.net/lmf#AttributeValuation>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-7>))
+Declaration(Class(<http://www.lexinfo.net/lmf#AffixTemplate>))
+Declaration(Class(<http://www.lexinfo.net/lmf#ParadigmPattern>))
+Declaration(Class(<http://www.lexinfo.net/lmf#SenseRelation>))
+Declaration(Class(<http://www.lexinfo.net/lmf#SyntacticBehaviour>))
+Declaration(Class(<http://www.lexinfo.net/lmf#SubcategorizationFrame>))
+Declaration(Class(<http://www.lexinfo.net/lmf#StemRef>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC160>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC159>))
+Declaration(Class(<http://www.lexinfo.net/lmf#MWENode>))
+Declaration(Class(<http://www.lexinfo.net/lmf#Lemma>))
+Declaration(Class(<http://www.lexinfo.net/lmf#SynsetRelation>))
+Declaration(Class(<http://www.lexinfo.net/lmf#MWELex>))
+Declaration(Class(<http://www.lexinfo.net/lmf#SenseAxisRelation>))
+Declaration(Class(<http://www.lexinfo.net/lmf#WordForm>))
+Declaration(Class(<http://www.lexinfo.net/lmf#TransformSet>))
+Declaration(Class(<http://xmlns.com/foaf/0.1/Person>))
+Declaration(Class(<http://www.lexinfo.net/lmf#SenseAxis>))
+Declaration(Class(<http://purl.org/dc/terms/Agent>))
+Declaration(Class(<http://www.lexinfo.net/lmf#LexicalEntry>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC156>))
+Declaration(Class(<http://www.w3.org/ns/adms#SemanticDistribution>))
+Declaration(Class(<http://www.lexinfo.net/lmf#TransformCategory>))
+Declaration(Class(<http://www.lexinfo.net/lmf#SyntacticArgument>))
+Declaration(Class(<http://www.lexinfo.net/lmf#ExampleAxis>))
+Declaration(Class(<http://www.lexinfo.net/lmf#SemanticArgument>))
+Declaration(Class(<http://www.lexinfo.net/lmf#ConstrainSet>))
+Declaration(Class(<http://www.lexinfo.net/lmf#AffixAllomorph>))
+Declaration(Class(<http://www.lexinfo.net/lmf#AffixSlot>))
+Declaration(Class(<http://www.lexinfo.net/lmf#TextRepresentation>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-3>))
+Declaration(Class(owl:NamedIndividual))
+Declaration(Class(<http://www.lexinfo.net/lmf#MultilingualExternalRef>))
+Declaration(Class(<http://www.lexinfo.net/lmf#ReferredRoot>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC155>))
+Declaration(Class(<http://www.lexinfo.net/lmf#Synset>))
+Declaration(Class(<http://www.lexinfo.net/lmf#LexicalResource>))
+Declaration(Class(<http://www.lexinfo.net/lmf#StemOrRoot>))
+Declaration(Class(<http://www.lexinfo.net/lmf#PredicateRelation>))
+Declaration(Class(<http://www.lexinfo.net/lmf#MWEEdge>))
+Declaration(Class(<http://www.lexinfo.net/lmf#Form>))
+Declaration(Class(<http://www.lexinfo.net/lmf#LexemProperty>))
+Declaration(Class(<http://www.lexinfo.net/lmf#Affix>))
+Declaration(ObjectProperty(<http://www.lexinfo.net/lmf#grammaticalPerson>))
+Declaration(ObjectProperty(<http://www.lexinfo.net/lmf#partOfSpeech>))
+Declaration(ObjectProperty(<http://www.lexinfo.net/lmf#order>))
+Declaration(ObjectProperty(<http://www.lexinfo.net/lmf#grammaticalNumber>))
+Declaration(ObjectProperty(<http://www.lexinfo.net/lmf#grammaticalCase>))
+Declaration(ObjectProperty(<http://www.lexinfo.net/lmf#grammaticalGender>))
+Declaration(ObjectProperty(<http://www.lexinfo.net/lmf#grammaticalTense>))
+Declaration(ObjectProperty(<http://www.lexinfo.net/lmf#writtenForm>))
+Declaration(ObjectProperty(<http://www.lexinfo.net/lmf#grammaticalGrade>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-7>))
+Declaration(NamedIndividual(<http://vocab.deri.ie/lmf#ttl>))
+Declaration(NamedIndividual(<http://vocab.deri.ie/lmf>))
+Declaration(NamedIndividual(<http://vocab.deri.ie/lmf#DERI%2C%20NUI%20Galway>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-2>))
+Declaration(NamedIndividual(<http://vocab.deri.ie/lmf#tobwun>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-3>))
+Declaration(NamedIndividual(<http://vocab.deri.ie/lmf#rdf>))
+Declaration(NamedIndividual(owl:Thing))
+
+############################
+#   Classes
+############################
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC155> (<http://www.absoluteiri.edu/RELAPPROXC155>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC155> <http://www.absoluteiri.edu/RELAPPROXC158>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC155> <http://www.absoluteiri.edu/RELAPPROXC160>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC157> (<http://www.absoluteiri.edu/RELAPPROXC157>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC157> <http://www.absoluteiri.edu/RELAPPROXC156>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC159> (<http://www.absoluteiri.edu/RELAPPROXC159>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC159> <http://www.absoluteiri.edu/RELAPPROXC156>)
+
+# Class: <http://www.lexinfo.net/lmf#DerivedForm> (<http://www.lexinfo.net/lmf#DerivedForm>)
+
+SubClassOf(<http://www.lexinfo.net/lmf#DerivedForm> <http://www.lexinfo.net/lmf#RelatedForm>)
+
+# Class: <http://www.lexinfo.net/lmf#FormRepresentation> (<http://www.lexinfo.net/lmf#FormRepresentation>)
+
+SubClassOf(<http://www.lexinfo.net/lmf#FormRepresentation> <http://www.lexinfo.net/lmf#Representation>)
+
+# Class: <http://www.lexinfo.net/lmf#Lemma> (<http://www.lexinfo.net/lmf#Lemma>)
+
+SubClassOf(<http://www.lexinfo.net/lmf#Lemma> <http://www.lexinfo.net/lmf#Form>)
+
+# Class: <http://www.lexinfo.net/lmf#ReferredRoot> (<http://www.lexinfo.net/lmf#ReferredRoot>)
+
+SubClassOf(<http://www.lexinfo.net/lmf#ReferredRoot> <http://www.lexinfo.net/lmf#RelatedForm>)
+
+# Class: <http://www.lexinfo.net/lmf#RelatedForm> (<http://www.lexinfo.net/lmf#RelatedForm>)
+
+SubClassOf(<http://www.lexinfo.net/lmf#RelatedForm> <http://www.lexinfo.net/lmf#Form>)
+
+# Class: <http://www.lexinfo.net/lmf#StemOrRoot> (<http://www.lexinfo.net/lmf#StemOrRoot>)
+
+SubClassOf(<http://www.lexinfo.net/lmf#StemOrRoot> <http://www.lexinfo.net/lmf#Form>)
+
+# Class: <http://www.lexinfo.net/lmf#TextRepresentation> (<http://www.lexinfo.net/lmf#TextRepresentation>)
+
+SubClassOf(<http://www.lexinfo.net/lmf#TextRepresentation> <http://www.lexinfo.net/lmf#Representation>)
+
+# Class: <http://www.lexinfo.net/lmf#WordForm> (<http://www.lexinfo.net/lmf#WordForm>)
+
+SubClassOf(<http://www.lexinfo.net/lmf#WordForm> <http://www.lexinfo.net/lmf#Form>)
+
+# Class: <https://smolang.org/rdfMutate#newNode-2> (<https://smolang.org/rdfMutate#newNode-2>)
+
+SubClassOf(<https://smolang.org/rdfMutate#newNode-2> <https://smolang.org/rdfMutate#newNode-2>)
+
+# Class: <https://smolang.org/rdfMutate#newNode-7> (<https://smolang.org/rdfMutate#newNode-7>)
+
+SubClassOf(<https://smolang.org/rdfMutate#newNode-7> owl:Thing)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://vocab.deri.ie/lmf> (<http://vocab.deri.ie/lmf>)
+
+ClassAssertion(owl:NamedIndividual <http://vocab.deri.ie/lmf>)
+ClassAssertion(<http://www.w3.org/ns/adms#SemanticAsset> <http://vocab.deri.ie/lmf>)
+
+# Individual: <http://vocab.deri.ie/lmf#rdf> (<http://vocab.deri.ie/lmf#rdf>)
+
+ClassAssertion(owl:NamedIndividual <http://vocab.deri.ie/lmf#rdf>)
+ClassAssertion(<http://www.w3.org/ns/adms#SemanticDistribution> <http://vocab.deri.ie/lmf#rdf>)
+
+# Individual: <http://vocab.deri.ie/lmf#tobwun> (<http://vocab.deri.ie/lmf#tobwun>)
+
+ClassAssertion(owl:NamedIndividual <http://vocab.deri.ie/lmf#tobwun>)
+ClassAssertion(<http://xmlns.com/foaf/0.1/Person> <http://vocab.deri.ie/lmf#tobwun>)
+
+# Individual: <http://vocab.deri.ie/lmf#ttl> (<http://vocab.deri.ie/lmf#ttl>)
+
+ClassAssertion(owl:NamedIndividual <http://vocab.deri.ie/lmf#ttl>)
+ClassAssertion(<http://www.w3.org/ns/adms#SemanticDistribution> <http://vocab.deri.ie/lmf#ttl>)
+
+# Individual: <http://vocab.deri.ie/lmf#DERI%2C%20NUI%20Galway> (<http://vocab.deri.ie/lmf#DERI%2C%20NUI%20Galway>)
+
+ClassAssertion(<http://purl.org/dc/terms/Agent> <http://vocab.deri.ie/lmf#DERI%2C%20NUI%20Galway>)
+ClassAssertion(owl:NamedIndividual <http://vocab.deri.ie/lmf#DERI%2C%20NUI%20Galway>)
+
+# Individual: owl:Thing (owl:Thing)
+
+ClassAssertion(owl:NamedIndividual owl:Thing)
+
+# Individual: <https://smolang.org/rdfMutate#newNode-2> (<https://smolang.org/rdfMutate#newNode-2>)
+
+ClassAssertion(owl:NamedIndividual <https://smolang.org/rdfMutate#newNode-2>)
+ClassAssertion(<https://smolang.org/rdfMutate#newNode-2> <https://smolang.org/rdfMutate#newNode-2>)
+
+# Individual: <https://smolang.org/rdfMutate#newNode-3> (<https://smolang.org/rdfMutate#newNode-3>)
+
+ClassAssertion(owl:NamedIndividual <https://smolang.org/rdfMutate#newNode-3>)
+ClassAssertion(<https://smolang.org/rdfMutate#newNode-3> <https://smolang.org/rdfMutate#newNode-3>)
+
+# Individual: <https://smolang.org/rdfMutate#newNode-7> (<https://smolang.org/rdfMutate#newNode-7>)
+
+ClassAssertion(owl:NamedIndividual <https://smolang.org/rdfMutate#newNode-7>)
+ClassAssertion(owl:Thing <https://smolang.org/rdfMutate#newNode-7>)
+ClassAssertion(<https://smolang.org/rdfMutate#newNode-7> <https://smolang.org/rdfMutate#newNode-7>)
+
+
+SubClassOf(ObjectSomeValuesFrom(<http://www.lexinfo.net/lmf#grammaticalCase> owl:Thing) <http://www.lexinfo.net/lmf#Form>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.lexinfo.net/lmf#grammaticalGender> owl:Thing) <http://www.lexinfo.net/lmf#Form>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.lexinfo.net/lmf#grammaticalGender> owl:Thing) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.lexinfo.net/lmf#grammaticalGrade> owl:Thing) <http://www.lexinfo.net/lmf#Form>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.lexinfo.net/lmf#grammaticalNumber> owl:Thing) <http://www.lexinfo.net/lmf#Form>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.lexinfo.net/lmf#grammaticalTense> owl:Thing) <http://www.lexinfo.net/lmf#Form>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.lexinfo.net/lmf#order> owl:Thing) <http://www.lexinfo.net/lmf#Component>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.lexinfo.net/lmf#partOfSpeech> owl:Thing) <http://www.lexinfo.net/lmf#LexicalEntry>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.lexinfo.net/lmf#writtenForm> owl:Thing) <http://www.lexinfo.net/lmf#Form>)
+)

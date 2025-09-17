@@ -1,0 +1,686 @@
+Prefix(:=<urn:unnamed:ontology#ont19106682551976748>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:unnamed:ontology#ont19106682551976748>
+
+Declaration(Class(<http://ontology.dumontierlab.com/IodineAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/NeonAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/YttriumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/CuriumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/PlutoniumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/GadoliniumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/VanadiumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/MendeleviumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/SodiumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/FranciumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/ActiniumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/LutetiumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/KryptonAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/OxygenAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/UnunseptiumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/RubidiumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/StrontiumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/RutherfordiumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/DubniumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/HeliumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/IridiumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/PlatinumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/HolmiumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/NobeliumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/ManganeseAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/UraniumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/ThoriumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/ImplicitValence>))
+Declaration(Class(<http://ontology.dumontierlab.com/UnununiumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/HydrogenAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/ThuliumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/AstatineAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/TechnetiumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/IronAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/TerbiumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/CarbonAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/CaesiumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/CalciumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/UnunquadiumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/CobaltAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/TelluriumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/MagnesiumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/FermiumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/NeodymiumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/Hybridization>))
+Declaration(Class(<http://ontology.dumontierlab.com/ZirconiumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/LawrenciumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/Atom>))
+Declaration(Class(<http://ontology.dumontierlab.com/MeitneriumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/OsmiumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/NiobiumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/ScandiumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/RutheniumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/IndiumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/ErbiumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/GoldAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/UnuntriumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/PromethiumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/FormalCharge>))
+Declaration(Class(<http://ontology.dumontierlab.com/DysprosiumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/PhosphorusAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/MercuryAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/RheniumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/ArsenicAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/XenonAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/UnunpentiumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/GermaniumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/ThalliumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/BariumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/ZincAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/CeriumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/BerylliumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/RadonAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/BromineAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/PalladiumAtom>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-4>))
+Declaration(Class(<http://ontology.dumontierlab.com/CadmiumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/BoronAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/BohriumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/SeaborgiumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/SulfurAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/SilverAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/HafniumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/EuropiumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/RadiumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/PoloniumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/EinsteiniumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/CopperAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/LanthanumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/RhodiumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/UnunoctiumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/AluminiumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/CaliforniumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/TinAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/SeleniumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/MolybdenumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/ChromiumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/UnunhexiumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/ProtactiniumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/BismuthAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/AtomicNumber>))
+Declaration(Class(<http://ontology.dumontierlab.com/HassiumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/ArgonAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/GalliumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/NickelAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/TitaniumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/AtomProperty>))
+Declaration(Class(<http://ontology.dumontierlab.com/ChlorineAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/SamariumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/NeptuniumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/NitrogenAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/SiliconAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/PotassiumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/YtterbiumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/BerkeliumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/FluorineAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/AmericiumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/AntimonyAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/UnunniliumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/LithiumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/PraseodymiumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/UnunbiumAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/TungstenAtom>))
+Declaration(Class(<http://ontology.dumontierlab.com/LeadAtom>))
+Declaration(ObjectProperty(<https://smolang.org/rdfMutate#newNode-2>))
+Declaration(ObjectProperty(<https://smolang.org/rdfMutate#newNode-1>))
+Declaration(ObjectProperty(<http://ontology.dumontierlab.com/hasFormalCharge>))
+Declaration(ObjectProperty(<http://ontology.dumontierlab.com/hasHybridization>))
+Declaration(ObjectProperty(<http://ontology.dumontierlab.com/hasImplicitValence>))
+Declaration(ObjectProperty(<http://ontology.dumontierlab.com/hasAtomicProperty>))
+Declaration(ObjectProperty(<http://ontology.dumontierlab.com/hasAtomicNumber>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-6>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-2>))
+Declaration(NamedIndividual(owl:Class))
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://ontology.dumontierlab.com/hasAtomicNumber> (<http://ontology.dumontierlab.com/hasAtomicNumber>)
+
+SubObjectPropertyOf(<http://ontology.dumontierlab.com/hasAtomicNumber> <http://ontology.dumontierlab.com/hasAtomicProperty>)
+ObjectPropertyDomain(<http://ontology.dumontierlab.com/hasAtomicNumber> <http://ontology.dumontierlab.com/Atom>)
+ObjectPropertyRange(<http://ontology.dumontierlab.com/hasAtomicNumber> <http://ontology.dumontierlab.com/AtomicNumber>)
+
+# Object Property: <http://ontology.dumontierlab.com/hasAtomicProperty> (<http://ontology.dumontierlab.com/hasAtomicProperty>)
+
+SubObjectPropertyOf(<http://ontology.dumontierlab.com/hasAtomicProperty> <http://ontology.dumontierlab.com/hasAtomicNumber>)
+ObjectPropertyDomain(<http://ontology.dumontierlab.com/hasAtomicProperty> <http://ontology.dumontierlab.com/Atom>)
+ObjectPropertyRange(<http://ontology.dumontierlab.com/hasAtomicProperty> <http://ontology.dumontierlab.com/AtomProperty>)
+
+# Object Property: <http://ontology.dumontierlab.com/hasFormalCharge> (<http://ontology.dumontierlab.com/hasFormalCharge>)
+
+SubObjectPropertyOf(<http://ontology.dumontierlab.com/hasFormalCharge> <http://ontology.dumontierlab.com/hasAtomicProperty>)
+ObjectPropertyDomain(<http://ontology.dumontierlab.com/hasFormalCharge> <http://ontology.dumontierlab.com/Atom>)
+ObjectPropertyRange(<http://ontology.dumontierlab.com/hasFormalCharge> <http://ontology.dumontierlab.com/FormalCharge>)
+
+# Object Property: <http://ontology.dumontierlab.com/hasHybridization> (<http://ontology.dumontierlab.com/hasHybridization>)
+
+SubObjectPropertyOf(<http://ontology.dumontierlab.com/hasHybridization> <http://ontology.dumontierlab.com/hasAtomicProperty>)
+ObjectPropertyDomain(<http://ontology.dumontierlab.com/hasHybridization> <http://ontology.dumontierlab.com/Atom>)
+ObjectPropertyRange(<http://ontology.dumontierlab.com/hasHybridization> <http://ontology.dumontierlab.com/Hybridization>)
+
+# Object Property: <http://ontology.dumontierlab.com/hasImplicitValence> (<http://ontology.dumontierlab.com/hasImplicitValence>)
+
+SubObjectPropertyOf(<http://ontology.dumontierlab.com/hasImplicitValence> <http://ontology.dumontierlab.com/hasAtomicProperty>)
+ObjectPropertyDomain(<http://ontology.dumontierlab.com/hasImplicitValence> <http://ontology.dumontierlab.com/Atom>)
+ObjectPropertyRange(<http://ontology.dumontierlab.com/hasImplicitValence> <http://ontology.dumontierlab.com/ImplicitValence>)
+
+# Object Property: <https://smolang.org/rdfMutate#newNode-1> (<https://smolang.org/rdfMutate#newNode-1>)
+
+ObjectPropertyRange(<https://smolang.org/rdfMutate#newNode-1> <http://ontology.dumontierlab.com/NeptuniumAtom>)
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://ontology.dumontierlab.com/ActiniumAtom> (<http://ontology.dumontierlab.com/ActiniumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/ActiniumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/AluminiumAtom> (<http://ontology.dumontierlab.com/AluminiumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/AluminiumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/AmericiumAtom> (<http://ontology.dumontierlab.com/AmericiumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/AmericiumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/AntimonyAtom> (<http://ontology.dumontierlab.com/AntimonyAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/AntimonyAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/ArgonAtom> (<http://ontology.dumontierlab.com/ArgonAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/ArgonAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/ArsenicAtom> (<http://ontology.dumontierlab.com/ArsenicAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/ArsenicAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/AstatineAtom> (<http://ontology.dumontierlab.com/AstatineAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/AstatineAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/AtomicNumber> (<http://ontology.dumontierlab.com/AtomicNumber>)
+
+SubClassOf(<http://ontology.dumontierlab.com/AtomicNumber> <http://ontology.dumontierlab.com/AtomProperty>)
+
+# Class: <http://ontology.dumontierlab.com/BariumAtom> (<http://ontology.dumontierlab.com/BariumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/BariumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/BerkeliumAtom> (<http://ontology.dumontierlab.com/BerkeliumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/BerkeliumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/BerylliumAtom> (<http://ontology.dumontierlab.com/BerylliumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/BerylliumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/BismuthAtom> (<http://ontology.dumontierlab.com/BismuthAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/BismuthAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/BohriumAtom> (<http://ontology.dumontierlab.com/BohriumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/BohriumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/BoronAtom> (<http://ontology.dumontierlab.com/BoronAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/BoronAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/BromineAtom> (<http://ontology.dumontierlab.com/BromineAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/BromineAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/CadmiumAtom> (<http://ontology.dumontierlab.com/CadmiumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/CadmiumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/CaesiumAtom> (<http://ontology.dumontierlab.com/CaesiumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/CaesiumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/CalciumAtom> (<http://ontology.dumontierlab.com/CalciumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/CalciumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/CaliforniumAtom> (<http://ontology.dumontierlab.com/CaliforniumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/CaliforniumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/CarbonAtom> (<http://ontology.dumontierlab.com/CarbonAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/CarbonAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/CeriumAtom> (<http://ontology.dumontierlab.com/CeriumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/CeriumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/ChlorineAtom> (<http://ontology.dumontierlab.com/ChlorineAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/ChlorineAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/ChromiumAtom> (<http://ontology.dumontierlab.com/ChromiumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/ChromiumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/CobaltAtom> (<http://ontology.dumontierlab.com/CobaltAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/CobaltAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/CopperAtom> (<http://ontology.dumontierlab.com/CopperAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/CopperAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/CuriumAtom> (<http://ontology.dumontierlab.com/CuriumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/CuriumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/DubniumAtom> (<http://ontology.dumontierlab.com/DubniumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/DubniumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/DysprosiumAtom> (<http://ontology.dumontierlab.com/DysprosiumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/DysprosiumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/EinsteiniumAtom> (<http://ontology.dumontierlab.com/EinsteiniumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/EinsteiniumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/ErbiumAtom> (<http://ontology.dumontierlab.com/ErbiumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/ErbiumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/EuropiumAtom> (<http://ontology.dumontierlab.com/EuropiumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/EuropiumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/FermiumAtom> (<http://ontology.dumontierlab.com/FermiumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/FermiumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/FluorineAtom> (<http://ontology.dumontierlab.com/FluorineAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/FluorineAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/FormalCharge> (<http://ontology.dumontierlab.com/FormalCharge>)
+
+SubClassOf(<http://ontology.dumontierlab.com/FormalCharge> <http://ontology.dumontierlab.com/AtomProperty>)
+
+# Class: <http://ontology.dumontierlab.com/FranciumAtom> (<http://ontology.dumontierlab.com/FranciumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/FranciumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/GadoliniumAtom> (<http://ontology.dumontierlab.com/GadoliniumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/GadoliniumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/GalliumAtom> (<http://ontology.dumontierlab.com/GalliumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/GalliumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/GermaniumAtom> (<http://ontology.dumontierlab.com/GermaniumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/GermaniumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/GoldAtom> (<http://ontology.dumontierlab.com/GoldAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/GoldAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/HafniumAtom> (<http://ontology.dumontierlab.com/HafniumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/HafniumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/HassiumAtom> (<http://ontology.dumontierlab.com/HassiumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/HassiumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/HeliumAtom> (<http://ontology.dumontierlab.com/HeliumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/HeliumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/HolmiumAtom> (<http://ontology.dumontierlab.com/HolmiumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/HolmiumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/Hybridization> (<http://ontology.dumontierlab.com/Hybridization>)
+
+SubClassOf(<http://ontology.dumontierlab.com/Hybridization> <http://ontology.dumontierlab.com/AtomProperty>)
+
+# Class: <http://ontology.dumontierlab.com/HydrogenAtom> (<http://ontology.dumontierlab.com/HydrogenAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/HydrogenAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/ImplicitValence> (<http://ontology.dumontierlab.com/ImplicitValence>)
+
+SubClassOf(<http://ontology.dumontierlab.com/ImplicitValence> <http://ontology.dumontierlab.com/AtomProperty>)
+
+# Class: <http://ontology.dumontierlab.com/IndiumAtom> (<http://ontology.dumontierlab.com/IndiumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/IndiumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/IodineAtom> (<http://ontology.dumontierlab.com/IodineAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/IodineAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/IridiumAtom> (<http://ontology.dumontierlab.com/IridiumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/IridiumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/IronAtom> (<http://ontology.dumontierlab.com/IronAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/IronAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/KryptonAtom> (<http://ontology.dumontierlab.com/KryptonAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/KryptonAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/LanthanumAtom> (<http://ontology.dumontierlab.com/LanthanumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/LanthanumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/LawrenciumAtom> (<http://ontology.dumontierlab.com/LawrenciumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/LawrenciumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/LeadAtom> (<http://ontology.dumontierlab.com/LeadAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/LeadAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/LithiumAtom> (<http://ontology.dumontierlab.com/LithiumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/LithiumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/LutetiumAtom> (<http://ontology.dumontierlab.com/LutetiumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/LutetiumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/MagnesiumAtom> (<http://ontology.dumontierlab.com/MagnesiumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/MagnesiumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/ManganeseAtom> (<http://ontology.dumontierlab.com/ManganeseAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/ManganeseAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/MeitneriumAtom> (<http://ontology.dumontierlab.com/MeitneriumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/MeitneriumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/MendeleviumAtom> (<http://ontology.dumontierlab.com/MendeleviumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/MendeleviumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/MercuryAtom> (<http://ontology.dumontierlab.com/MercuryAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/MercuryAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/MolybdenumAtom> (<http://ontology.dumontierlab.com/MolybdenumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/MolybdenumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/NeodymiumAtom> (<http://ontology.dumontierlab.com/NeodymiumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/NeodymiumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/NeonAtom> (<http://ontology.dumontierlab.com/NeonAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/NeonAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/NeptuniumAtom> (<http://ontology.dumontierlab.com/NeptuniumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/NeptuniumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/NickelAtom> (<http://ontology.dumontierlab.com/NickelAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/NickelAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/NiobiumAtom> (<http://ontology.dumontierlab.com/NiobiumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/NiobiumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/NitrogenAtom> (<http://ontology.dumontierlab.com/NitrogenAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/NitrogenAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/NobeliumAtom> (<http://ontology.dumontierlab.com/NobeliumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/NobeliumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/OsmiumAtom> (<http://ontology.dumontierlab.com/OsmiumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/OsmiumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/OxygenAtom> (<http://ontology.dumontierlab.com/OxygenAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/OxygenAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/PalladiumAtom> (<http://ontology.dumontierlab.com/PalladiumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/PalladiumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/PhosphorusAtom> (<http://ontology.dumontierlab.com/PhosphorusAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/PhosphorusAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/PlatinumAtom> (<http://ontology.dumontierlab.com/PlatinumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/PlatinumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/PlutoniumAtom> (<http://ontology.dumontierlab.com/PlutoniumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/PlutoniumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/PoloniumAtom> (<http://ontology.dumontierlab.com/PoloniumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/PoloniumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/PotassiumAtom> (<http://ontology.dumontierlab.com/PotassiumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/PotassiumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/PraseodymiumAtom> (<http://ontology.dumontierlab.com/PraseodymiumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/PraseodymiumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/PromethiumAtom> (<http://ontology.dumontierlab.com/PromethiumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/PromethiumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/ProtactiniumAtom> (<http://ontology.dumontierlab.com/ProtactiniumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/ProtactiniumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/RadiumAtom> (<http://ontology.dumontierlab.com/RadiumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/RadiumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/RadonAtom> (<http://ontology.dumontierlab.com/RadonAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/RadonAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/RheniumAtom> (<http://ontology.dumontierlab.com/RheniumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/RheniumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/RhodiumAtom> (<http://ontology.dumontierlab.com/RhodiumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/RhodiumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/RubidiumAtom> (<http://ontology.dumontierlab.com/RubidiumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/RubidiumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/RutheniumAtom> (<http://ontology.dumontierlab.com/RutheniumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/RutheniumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/RutherfordiumAtom> (<http://ontology.dumontierlab.com/RutherfordiumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/RutherfordiumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/SamariumAtom> (<http://ontology.dumontierlab.com/SamariumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/SamariumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/ScandiumAtom> (<http://ontology.dumontierlab.com/ScandiumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/ScandiumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/SeaborgiumAtom> (<http://ontology.dumontierlab.com/SeaborgiumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/SeaborgiumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/SeleniumAtom> (<http://ontology.dumontierlab.com/SeleniumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/SeleniumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/SiliconAtom> (<http://ontology.dumontierlab.com/SiliconAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/SiliconAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/SilverAtom> (<http://ontology.dumontierlab.com/SilverAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/SilverAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/SodiumAtom> (<http://ontology.dumontierlab.com/SodiumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/SodiumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/StrontiumAtom> (<http://ontology.dumontierlab.com/StrontiumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/StrontiumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/SulfurAtom> (<http://ontology.dumontierlab.com/SulfurAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/SulfurAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/TechnetiumAtom> (<http://ontology.dumontierlab.com/TechnetiumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/TechnetiumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/TelluriumAtom> (<http://ontology.dumontierlab.com/TelluriumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/TelluriumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/TerbiumAtom> (<http://ontology.dumontierlab.com/TerbiumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/TerbiumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/ThalliumAtom> (<http://ontology.dumontierlab.com/ThalliumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/ThalliumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/ThoriumAtom> (<http://ontology.dumontierlab.com/ThoriumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/ThoriumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/ThuliumAtom> (<http://ontology.dumontierlab.com/ThuliumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/ThuliumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/TinAtom> (<http://ontology.dumontierlab.com/TinAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/TinAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/TitaniumAtom> (<http://ontology.dumontierlab.com/TitaniumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/TitaniumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/TungstenAtom> (<http://ontology.dumontierlab.com/TungstenAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/TungstenAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/UnunbiumAtom> (<http://ontology.dumontierlab.com/UnunbiumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/UnunbiumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/UnunhexiumAtom> (<http://ontology.dumontierlab.com/UnunhexiumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/UnunhexiumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/UnunniliumAtom> (<http://ontology.dumontierlab.com/UnunniliumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/UnunniliumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/UnunoctiumAtom> (<http://ontology.dumontierlab.com/UnunoctiumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/UnunoctiumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/UnunpentiumAtom> (<http://ontology.dumontierlab.com/UnunpentiumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/UnunpentiumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/UnunquadiumAtom> (<http://ontology.dumontierlab.com/UnunquadiumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/UnunquadiumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/UnunseptiumAtom> (<http://ontology.dumontierlab.com/UnunseptiumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/UnunseptiumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/UnuntriumAtom> (<http://ontology.dumontierlab.com/UnuntriumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/UnuntriumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/UnununiumAtom> (<http://ontology.dumontierlab.com/UnununiumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/UnununiumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/UraniumAtom> (<http://ontology.dumontierlab.com/UraniumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/UraniumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/VanadiumAtom> (<http://ontology.dumontierlab.com/VanadiumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/VanadiumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/XenonAtom> (<http://ontology.dumontierlab.com/XenonAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/XenonAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/YtterbiumAtom> (<http://ontology.dumontierlab.com/YtterbiumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/YtterbiumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/YttriumAtom> (<http://ontology.dumontierlab.com/YttriumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/YttriumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/ZincAtom> (<http://ontology.dumontierlab.com/ZincAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/ZincAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <http://ontology.dumontierlab.com/ZirconiumAtom> (<http://ontology.dumontierlab.com/ZirconiumAtom>)
+
+SubClassOf(<http://ontology.dumontierlab.com/ZirconiumAtom> <http://ontology.dumontierlab.com/Atom>)
+
+# Class: <https://smolang.org/rdfMutate#newNode-4> (<https://smolang.org/rdfMutate#newNode-4>)
+
+SubClassOf(<https://smolang.org/rdfMutate#newNode-4> <https://smolang.org/rdfMutate#newNode-4>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: owl:Class (owl:Class)
+
+ClassAssertion(<http://ontology.dumontierlab.com/CobaltAtom> owl:Class)
+
+
+)

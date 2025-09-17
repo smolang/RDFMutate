@@ -1,0 +1,383 @@
+Prefix(:=<urn:unnamed:ontology#ont19091700295370322>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:unnamed:ontology#ont19091700295370322>
+
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Agent#Bib_publisher>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Agent#Arc_copyright>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Flag#>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Id/Arcident#>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Desc/Refdesc#Pagenos>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Agent/Persname#Dob>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-6>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Id/Bibident#Journame>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Agent/Persname#Surname>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Loc/Place#Bib_wherepub>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC129>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Desc#>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Collid#>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Id#>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Classn/Objtype#>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Loc/Place#Council>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Personid#>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-1>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-8>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Loc/Sitename#>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Id/Bibident#Suffix>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Loc#>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Desc/Arcdesc#Prefix>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Siteid#>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Refid#>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Orgid#>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Agent#>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Loc/Place#>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-2>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC127>))
+Declaration(Class(owl:ObjectProperty))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Agent/Role#>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Bibid#>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Time/Period#>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Loc/Place#Region>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Agent/Persname#Forename>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Loc/Sitename#Linear_name>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Roleid#>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-10>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Classn#>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Classn/Sitetype#>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Desc/Bibdesc#>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Desc/Refdesc#>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Desc/Agentdesc#>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Loc/Sitename#Altname>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Loc/Place#County>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC130>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Desc/Arcdesc#Collname>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Id/Bibident#Title>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Classn/Arctype#>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Arcid#>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC126>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Desc/Arcdesc#>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Agent/Org#>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Agent/Persname#Dod>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Loc/Place#District>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Time/Date#>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Loc/Grid#>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Id/Arcident#Accno>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Loc/Place#Parish>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC128>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Linid#>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Id/Bibident#>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Id/Bibident#Isbn>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Loc/Grid#Linear_ngrdesc>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Agent/Persname#Bib_editor>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Agent/Persname#>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Loc/Grid#Site_mdesc>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Time#>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC131>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Id/Siteident#Nmrsnum>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-5>))
+Declaration(Class(<http://www.ltg.ed.ac.uk/tether/Id/Siteident#>))
+Declaration(ObjectProperty(<http://www.ltg.ed.ac.uk/tether#hasLocation>))
+Declaration(ObjectProperty(<https://smolang.org/rdfMutate#newNode-4>))
+Declaration(ObjectProperty(<https://smolang.org/rdfMutate#newNode-3>))
+Declaration(ObjectProperty(<http://www.ltg.ed.ac.uk/tether#refSite>))
+Declaration(ObjectProperty(<http://www.ltg.ed.ac.uk/tether#roleAgent>))
+Declaration(ObjectProperty(<http://www.ltg.ed.ac.uk/tether#roleArc>))
+Declaration(ObjectProperty(<http://www.ltg.ed.ac.uk/tether#hasPeriod>))
+Declaration(ObjectProperty(<http://www.ltg.ed.ac.uk/tether#hasFlag>))
+Declaration(ObjectProperty(<http://www.ltg.ed.ac.uk/tether#hasId>))
+Declaration(ObjectProperty(<http://www.ltg.ed.ac.uk/tether#siteLin>))
+Declaration(ObjectProperty(<http://www.ltg.ed.ac.uk/tether#arcColl>))
+Declaration(ObjectProperty(<https://smolang.org/rdfMutate#newNode-0>))
+Declaration(ObjectProperty(<http://www.ltg.ed.ac.uk/tether#hasClassn>))
+Declaration(ObjectProperty(<http://www.ltg.ed.ac.uk/tether#siteArc>))
+Declaration(ObjectProperty(<http://www.ltg.ed.ac.uk/tether#bibArc>))
+Declaration(ObjectProperty(<http://www.ltg.ed.ac.uk/tether#hasAgentRole>))
+Declaration(ObjectProperty(<http://www.ltg.ed.ac.uk/tether#refBib>))
+Declaration(ObjectProperty(<http://www.ltg.ed.ac.uk/tether#refLin>))
+Declaration(ObjectProperty(<http://www.ltg.ed.ac.uk/tether#hasAgent>))
+Declaration(ObjectProperty(<http://www.ltg.ed.ac.uk/tether#hasDesc>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-10>))
+Declaration(NamedIndividual(<http://www.ltg.ed.ac.uk/tether#hasAgent>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-1>))
+Declaration(NamedIndividual(<http://www.ltg.ed.ac.uk/tether/Flag#architecture>))
+Declaration(NamedIndividual(<http://www.ltg.ed.ac.uk/tether/Flag#archaeology>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-5>))
+Declaration(NamedIndividual(<http://www.ltg.ed.ac.uk/tether/Flag#both>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-7>))
+Declaration(NamedIndividual(<http://www.ltg.ed.ac.uk/tether/Sitename#antonine+wall>))
+
+############################
+#   Classes
+############################
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC126> (<http://www.absoluteiri.edu/RELAPPROXC126>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC126> <http://www.absoluteiri.edu/RELAPPROXC129>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC128> (<http://www.absoluteiri.edu/RELAPPROXC128>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC128> <http://www.absoluteiri.edu/RELAPPROXC127>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC128> <http://www.absoluteiri.edu/RELAPPROXC131>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC130> (<http://www.absoluteiri.edu/RELAPPROXC130>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC130> <http://www.absoluteiri.edu/RELAPPROXC129>)
+
+# Class: <http://www.ltg.ed.ac.uk/tether/Agent#Arc_copyright> (<http://www.ltg.ed.ac.uk/tether/Agent#Arc_copyright>)
+
+SubClassOf(<http://www.ltg.ed.ac.uk/tether/Agent#Arc_copyright> <http://www.ltg.ed.ac.uk/tether/Agent#>)
+
+# Class: <http://www.ltg.ed.ac.uk/tether/Agent#Bib_publisher> (<http://www.ltg.ed.ac.uk/tether/Agent#Bib_publisher>)
+
+SubClassOf(<http://www.ltg.ed.ac.uk/tether/Agent#Bib_publisher> <http://www.ltg.ed.ac.uk/tether/Agent#>)
+
+# Class: <http://www.ltg.ed.ac.uk/tether/Agent/Org#> (<http://www.ltg.ed.ac.uk/tether/Agent/Org#>)
+
+SubClassOf(<http://www.ltg.ed.ac.uk/tether/Agent/Org#> <http://www.ltg.ed.ac.uk/tether/Agent#>)
+
+# Class: <http://www.ltg.ed.ac.uk/tether/Agent/Persname#> (<http://www.ltg.ed.ac.uk/tether/Agent/Persname#>)
+
+SubClassOf(<http://www.ltg.ed.ac.uk/tether/Agent/Persname#> <http://www.ltg.ed.ac.uk/tether/Agent#>)
+
+# Class: <http://www.ltg.ed.ac.uk/tether/Agent/Persname#Bib_editor> (<http://www.ltg.ed.ac.uk/tether/Agent/Persname#Bib_editor>)
+
+SubClassOf(<http://www.ltg.ed.ac.uk/tether/Agent/Persname#Bib_editor> <http://www.ltg.ed.ac.uk/tether/Agent/Persname#>)
+
+# Class: <http://www.ltg.ed.ac.uk/tether/Agent/Persname#Dob> (<http://www.ltg.ed.ac.uk/tether/Agent/Persname#Dob>)
+
+SubClassOf(<http://www.ltg.ed.ac.uk/tether/Agent/Persname#Dob> <http://www.ltg.ed.ac.uk/tether/Agent/Persname#>)
+
+# Class: <http://www.ltg.ed.ac.uk/tether/Agent/Persname#Dod> (<http://www.ltg.ed.ac.uk/tether/Agent/Persname#Dod>)
+
+SubClassOf(<http://www.ltg.ed.ac.uk/tether/Agent/Persname#Dod> <http://www.ltg.ed.ac.uk/tether/Agent/Persname#>)
+
+# Class: <http://www.ltg.ed.ac.uk/tether/Agent/Persname#Forename> (<http://www.ltg.ed.ac.uk/tether/Agent/Persname#Forename>)
+
+SubClassOf(<http://www.ltg.ed.ac.uk/tether/Agent/Persname#Forename> <http://www.ltg.ed.ac.uk/tether/Agent/Persname#>)
+
+# Class: <http://www.ltg.ed.ac.uk/tether/Agent/Persname#Surname> (<http://www.ltg.ed.ac.uk/tether/Agent/Persname#Surname>)
+
+SubClassOf(<http://www.ltg.ed.ac.uk/tether/Agent/Persname#Surname> <http://www.ltg.ed.ac.uk/tether/Agent/Persname#>)
+
+# Class: <http://www.ltg.ed.ac.uk/tether/Agent/Role#> (<http://www.ltg.ed.ac.uk/tether/Agent/Role#>)
+
+SubClassOf(<http://www.ltg.ed.ac.uk/tether/Agent/Role#> <http://www.ltg.ed.ac.uk/tether/Agent#>)
+
+# Class: <http://www.ltg.ed.ac.uk/tether/Classn/Arctype#> (<http://www.ltg.ed.ac.uk/tether/Classn/Arctype#>)
+
+SubClassOf(<http://www.ltg.ed.ac.uk/tether/Classn/Arctype#> <http://www.ltg.ed.ac.uk/tether/Classn#>)
+
+# Class: <http://www.ltg.ed.ac.uk/tether/Classn/Objtype#> (<http://www.ltg.ed.ac.uk/tether/Classn/Objtype#>)
+
+SubClassOf(<http://www.ltg.ed.ac.uk/tether/Classn/Objtype#> <http://www.ltg.ed.ac.uk/tether/Classn#>)
+
+# Class: <http://www.ltg.ed.ac.uk/tether/Classn/Sitetype#> (<http://www.ltg.ed.ac.uk/tether/Classn/Sitetype#>)
+
+SubClassOf(<http://www.ltg.ed.ac.uk/tether/Classn/Sitetype#> <http://www.ltg.ed.ac.uk/tether/Classn#>)
+
+# Class: <http://www.ltg.ed.ac.uk/tether/Desc/Agentdesc#> (<http://www.ltg.ed.ac.uk/tether/Desc/Agentdesc#>)
+
+SubClassOf(<http://www.ltg.ed.ac.uk/tether/Desc/Agentdesc#> <http://www.ltg.ed.ac.uk/tether/Desc#>)
+
+# Class: <http://www.ltg.ed.ac.uk/tether/Desc/Arcdesc#> (<http://www.ltg.ed.ac.uk/tether/Desc/Arcdesc#>)
+
+SubClassOf(<http://www.ltg.ed.ac.uk/tether/Desc/Arcdesc#> <http://www.ltg.ed.ac.uk/tether/Desc#>)
+
+# Class: <http://www.ltg.ed.ac.uk/tether/Desc/Arcdesc#Collname> (<http://www.ltg.ed.ac.uk/tether/Desc/Arcdesc#Collname>)
+
+SubClassOf(<http://www.ltg.ed.ac.uk/tether/Desc/Arcdesc#Collname> <http://www.ltg.ed.ac.uk/tether/Desc/Arcdesc#>)
+
+# Class: <http://www.ltg.ed.ac.uk/tether/Desc/Arcdesc#Prefix> (<http://www.ltg.ed.ac.uk/tether/Desc/Arcdesc#Prefix>)
+
+SubClassOf(<http://www.ltg.ed.ac.uk/tether/Desc/Arcdesc#Prefix> <http://www.ltg.ed.ac.uk/tether/Desc/Arcdesc#>)
+
+# Class: <http://www.ltg.ed.ac.uk/tether/Desc/Bibdesc#> (<http://www.ltg.ed.ac.uk/tether/Desc/Bibdesc#>)
+
+SubClassOf(<http://www.ltg.ed.ac.uk/tether/Desc/Bibdesc#> <http://www.ltg.ed.ac.uk/tether/Desc#>)
+
+# Class: <http://www.ltg.ed.ac.uk/tether/Desc/Refdesc#> (<http://www.ltg.ed.ac.uk/tether/Desc/Refdesc#>)
+
+SubClassOf(<http://www.ltg.ed.ac.uk/tether/Desc/Refdesc#> <http://www.ltg.ed.ac.uk/tether/Desc#>)
+
+# Class: <http://www.ltg.ed.ac.uk/tether/Desc/Refdesc#Pagenos> (<http://www.ltg.ed.ac.uk/tether/Desc/Refdesc#Pagenos>)
+
+SubClassOf(<http://www.ltg.ed.ac.uk/tether/Desc/Refdesc#Pagenos> <http://www.ltg.ed.ac.uk/tether/Desc/Refdesc#>)
+
+# Class: <http://www.ltg.ed.ac.uk/tether/Id/Arcident#> (<http://www.ltg.ed.ac.uk/tether/Id/Arcident#>)
+
+SubClassOf(<http://www.ltg.ed.ac.uk/tether/Id/Arcident#> <http://www.ltg.ed.ac.uk/tether/Id#>)
+
+# Class: <http://www.ltg.ed.ac.uk/tether/Id/Arcident#Accno> (<http://www.ltg.ed.ac.uk/tether/Id/Arcident#Accno>)
+
+SubClassOf(<http://www.ltg.ed.ac.uk/tether/Id/Arcident#Accno> <http://www.ltg.ed.ac.uk/tether/Id/Arcident#>)
+
+# Class: <http://www.ltg.ed.ac.uk/tether/Id/Bibident#> (<http://www.ltg.ed.ac.uk/tether/Id/Bibident#>)
+
+SubClassOf(<http://www.ltg.ed.ac.uk/tether/Id/Bibident#> <http://www.ltg.ed.ac.uk/tether/Id#>)
+
+# Class: <http://www.ltg.ed.ac.uk/tether/Id/Bibident#Isbn> (<http://www.ltg.ed.ac.uk/tether/Id/Bibident#Isbn>)
+
+SubClassOf(<http://www.ltg.ed.ac.uk/tether/Id/Bibident#Isbn> <http://www.ltg.ed.ac.uk/tether/Id/Bibident#>)
+
+# Class: <http://www.ltg.ed.ac.uk/tether/Id/Bibident#Journame> (<http://www.ltg.ed.ac.uk/tether/Id/Bibident#Journame>)
+
+SubClassOf(<http://www.ltg.ed.ac.uk/tether/Id/Bibident#Journame> <http://www.ltg.ed.ac.uk/tether/Id/Bibident#>)
+
+# Class: <http://www.ltg.ed.ac.uk/tether/Id/Bibident#Suffix> (<http://www.ltg.ed.ac.uk/tether/Id/Bibident#Suffix>)
+
+SubClassOf(<http://www.ltg.ed.ac.uk/tether/Id/Bibident#Suffix> <http://www.ltg.ed.ac.uk/tether/Id/Bibident#>)
+
+# Class: <http://www.ltg.ed.ac.uk/tether/Id/Bibident#Title> (<http://www.ltg.ed.ac.uk/tether/Id/Bibident#Title>)
+
+SubClassOf(<http://www.ltg.ed.ac.uk/tether/Id/Bibident#Title> <http://www.ltg.ed.ac.uk/tether/Id/Bibident#>)
+
+# Class: <http://www.ltg.ed.ac.uk/tether/Id/Siteident#> (<http://www.ltg.ed.ac.uk/tether/Id/Siteident#>)
+
+SubClassOf(<http://www.ltg.ed.ac.uk/tether/Id/Siteident#> <http://www.ltg.ed.ac.uk/tether/Id#>)
+
+# Class: <http://www.ltg.ed.ac.uk/tether/Id/Siteident#Nmrsnum> (<http://www.ltg.ed.ac.uk/tether/Id/Siteident#Nmrsnum>)
+
+SubClassOf(<http://www.ltg.ed.ac.uk/tether/Id/Siteident#Nmrsnum> <http://www.ltg.ed.ac.uk/tether/Id/Siteident#>)
+
+# Class: <http://www.ltg.ed.ac.uk/tether/Loc/Grid#> (<http://www.ltg.ed.ac.uk/tether/Loc/Grid#>)
+
+SubClassOf(<http://www.ltg.ed.ac.uk/tether/Loc/Grid#> <http://www.ltg.ed.ac.uk/tether/Loc#>)
+
+# Class: <http://www.ltg.ed.ac.uk/tether/Loc/Grid#Linear_ngrdesc> (<http://www.ltg.ed.ac.uk/tether/Loc/Grid#Linear_ngrdesc>)
+
+SubClassOf(<http://www.ltg.ed.ac.uk/tether/Loc/Grid#Linear_ngrdesc> <http://www.ltg.ed.ac.uk/tether/Loc/Grid#>)
+
+# Class: <http://www.ltg.ed.ac.uk/tether/Loc/Grid#Site_mdesc> (<http://www.ltg.ed.ac.uk/tether/Loc/Grid#Site_mdesc>)
+
+SubClassOf(<http://www.ltg.ed.ac.uk/tether/Loc/Grid#Site_mdesc> <http://www.ltg.ed.ac.uk/tether/Loc/Grid#>)
+
+# Class: <http://www.ltg.ed.ac.uk/tether/Loc/Place#> (<http://www.ltg.ed.ac.uk/tether/Loc/Place#>)
+
+SubClassOf(<http://www.ltg.ed.ac.uk/tether/Loc/Place#> <http://www.ltg.ed.ac.uk/tether/Loc#>)
+
+# Class: <http://www.ltg.ed.ac.uk/tether/Loc/Place#Bib_wherepub> (<http://www.ltg.ed.ac.uk/tether/Loc/Place#Bib_wherepub>)
+
+SubClassOf(<http://www.ltg.ed.ac.uk/tether/Loc/Place#Bib_wherepub> <http://www.ltg.ed.ac.uk/tether/Loc/Place#>)
+
+# Class: <http://www.ltg.ed.ac.uk/tether/Loc/Place#Council> (<http://www.ltg.ed.ac.uk/tether/Loc/Place#Council>)
+
+SubClassOf(<http://www.ltg.ed.ac.uk/tether/Loc/Place#Council> <http://www.ltg.ed.ac.uk/tether/Loc/Place#>)
+
+# Class: <http://www.ltg.ed.ac.uk/tether/Loc/Place#County> (<http://www.ltg.ed.ac.uk/tether/Loc/Place#County>)
+
+SubClassOf(<http://www.ltg.ed.ac.uk/tether/Loc/Place#County> <http://www.ltg.ed.ac.uk/tether/Loc/Place#>)
+
+# Class: <http://www.ltg.ed.ac.uk/tether/Loc/Place#District> (<http://www.ltg.ed.ac.uk/tether/Loc/Place#District>)
+
+SubClassOf(<http://www.ltg.ed.ac.uk/tether/Loc/Place#District> <http://www.ltg.ed.ac.uk/tether/Loc/Place#>)
+
+# Class: <http://www.ltg.ed.ac.uk/tether/Loc/Place#Parish> (<http://www.ltg.ed.ac.uk/tether/Loc/Place#Parish>)
+
+SubClassOf(<http://www.ltg.ed.ac.uk/tether/Loc/Place#Parish> <http://www.ltg.ed.ac.uk/tether/Loc/Place#>)
+
+# Class: <http://www.ltg.ed.ac.uk/tether/Loc/Place#Region> (<http://www.ltg.ed.ac.uk/tether/Loc/Place#Region>)
+
+SubClassOf(<http://www.ltg.ed.ac.uk/tether/Loc/Place#Region> <http://www.ltg.ed.ac.uk/tether/Loc/Place#>)
+
+# Class: <http://www.ltg.ed.ac.uk/tether/Loc/Sitename#> (<http://www.ltg.ed.ac.uk/tether/Loc/Sitename#>)
+
+SubClassOf(<http://www.ltg.ed.ac.uk/tether/Loc/Sitename#> <http://www.ltg.ed.ac.uk/tether/Loc#>)
+
+# Class: <http://www.ltg.ed.ac.uk/tether/Loc/Sitename#Altname> (<http://www.ltg.ed.ac.uk/tether/Loc/Sitename#Altname>)
+
+SubClassOf(<http://www.ltg.ed.ac.uk/tether/Loc/Sitename#Altname> <http://www.ltg.ed.ac.uk/tether/Loc/Sitename#>)
+
+# Class: <http://www.ltg.ed.ac.uk/tether/Loc/Sitename#Linear_name> (<http://www.ltg.ed.ac.uk/tether/Loc/Sitename#Linear_name>)
+
+SubClassOf(<http://www.ltg.ed.ac.uk/tether/Loc/Sitename#Linear_name> <http://www.ltg.ed.ac.uk/tether/Loc/Sitename#>)
+
+# Class: <http://www.ltg.ed.ac.uk/tether/Time/Date#> (<http://www.ltg.ed.ac.uk/tether/Time/Date#>)
+
+SubClassOf(<http://www.ltg.ed.ac.uk/tether/Time/Date#> <http://www.ltg.ed.ac.uk/tether/Time#>)
+
+# Class: <http://www.ltg.ed.ac.uk/tether/Time/Period#> (<http://www.ltg.ed.ac.uk/tether/Time/Period#>)
+
+SubClassOf(<http://www.ltg.ed.ac.uk/tether/Time/Period#> <http://www.ltg.ed.ac.uk/tether/Time#>)
+
+# Class: <https://smolang.org/rdfMutate#newNode-2> (<https://smolang.org/rdfMutate#newNode-2>)
+
+EquivalentClasses(<https://smolang.org/rdfMutate#newNode-2> ObjectSomeValuesFrom(<http://www.ltg.ed.ac.uk/tether#hasDesc> owl:Thing))
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://www.ltg.ed.ac.uk/tether#hasAgent> (<http://www.ltg.ed.ac.uk/tether#hasAgent>)
+
+ClassAssertion(owl:ObjectProperty <http://www.ltg.ed.ac.uk/tether#hasAgent>)
+ClassAssertion(owl:Thing <http://www.ltg.ed.ac.uk/tether#hasAgent>)
+
+# Individual: <http://www.ltg.ed.ac.uk/tether/Flag#archaeology> (<http://www.ltg.ed.ac.uk/tether/Flag#archaeology>)
+
+ClassAssertion(<http://www.ltg.ed.ac.uk/tether/Flag#> <http://www.ltg.ed.ac.uk/tether/Flag#archaeology>)
+
+# Individual: <http://www.ltg.ed.ac.uk/tether/Flag#architecture> (<http://www.ltg.ed.ac.uk/tether/Flag#architecture>)
+
+ClassAssertion(<http://www.ltg.ed.ac.uk/tether/Flag#> <http://www.ltg.ed.ac.uk/tether/Flag#architecture>)
+
+# Individual: <http://www.ltg.ed.ac.uk/tether/Flag#both> (<http://www.ltg.ed.ac.uk/tether/Flag#both>)
+
+ClassAssertion(<http://www.ltg.ed.ac.uk/tether/Flag#> <http://www.ltg.ed.ac.uk/tether/Flag#both>)
+
+# Individual: <http://www.ltg.ed.ac.uk/tether/Sitename#antonine+wall> (<http://www.ltg.ed.ac.uk/tether/Sitename#antonine+wall>)
+
+ClassAssertion(<http://www.ltg.ed.ac.uk/tether/Loc/Sitename#Linear_name> <http://www.ltg.ed.ac.uk/tether/Sitename#antonine+wall>)
+
+# Individual: <https://smolang.org/rdfMutate#newNode-1> (<https://smolang.org/rdfMutate#newNode-1>)
+
+ClassAssertion(<https://smolang.org/rdfMutate#newNode-1> <https://smolang.org/rdfMutate#newNode-1>)
+
+# Individual: <https://smolang.org/rdfMutate#newNode-10> (<https://smolang.org/rdfMutate#newNode-10>)
+
+ClassAssertion(<https://smolang.org/rdfMutate#newNode-10> <https://smolang.org/rdfMutate#newNode-10>)
+
+
+SubClassOf(ObjectSomeValuesFrom(<http://www.ltg.ed.ac.uk/tether#arcColl> owl:Thing) <http://www.ltg.ed.ac.uk/tether/Arcid#>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ltg.ed.ac.uk/tether#bibArc> owl:Thing) <http://www.ltg.ed.ac.uk/tether/Bibid#>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ltg.ed.ac.uk/tether#hasAgent> owl:Thing) <http://www.ltg.ed.ac.uk/tether/Arcid#>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ltg.ed.ac.uk/tether#hasAgent> owl:Thing) <http://www.ltg.ed.ac.uk/tether/Bibid#>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ltg.ed.ac.uk/tether#hasAgentRole> owl:Thing) <http://www.ltg.ed.ac.uk/tether/Roleid#>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ltg.ed.ac.uk/tether#hasClassn> owl:Thing) <http://www.ltg.ed.ac.uk/tether/Arcid#>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ltg.ed.ac.uk/tether#hasClassn> owl:Thing) <http://www.ltg.ed.ac.uk/tether/Linid#>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ltg.ed.ac.uk/tether#hasClassn> owl:Thing) <http://www.ltg.ed.ac.uk/tether/Siteid#>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ltg.ed.ac.uk/tether#hasDesc> owl:Thing) <http://www.ltg.ed.ac.uk/tether/Arcid#>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ltg.ed.ac.uk/tether#hasDesc> owl:Thing) <http://www.ltg.ed.ac.uk/tether/Bibid#>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ltg.ed.ac.uk/tether#hasDesc> owl:Thing) <http://www.ltg.ed.ac.uk/tether/Collid#>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ltg.ed.ac.uk/tether#hasDesc> owl:Thing) <http://www.ltg.ed.ac.uk/tether/Orgid#>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ltg.ed.ac.uk/tether#hasDesc> owl:Thing) <http://www.ltg.ed.ac.uk/tether/Personid#>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ltg.ed.ac.uk/tether#hasDesc> owl:Thing) <http://www.ltg.ed.ac.uk/tether/Refid#>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ltg.ed.ac.uk/tether#hasDesc> owl:Thing) <http://www.ltg.ed.ac.uk/tether/Siteid#>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ltg.ed.ac.uk/tether#hasFlag> owl:Thing) <http://www.ltg.ed.ac.uk/tether/Arcid#>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ltg.ed.ac.uk/tether#hasFlag> owl:Thing) <http://www.ltg.ed.ac.uk/tether/Siteid#>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ltg.ed.ac.uk/tether#hasId> owl:Thing) <http://www.ltg.ed.ac.uk/tether/Arcid#>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ltg.ed.ac.uk/tether#hasId> owl:Thing) <http://www.ltg.ed.ac.uk/tether/Bibid#>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ltg.ed.ac.uk/tether#hasId> owl:Thing) <http://www.ltg.ed.ac.uk/tether/Orgid#>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ltg.ed.ac.uk/tether#hasId> owl:Thing) <http://www.ltg.ed.ac.uk/tether/Personid#>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ltg.ed.ac.uk/tether#hasId> owl:Thing) <http://www.ltg.ed.ac.uk/tether/Siteid#>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ltg.ed.ac.uk/tether#hasLocation> owl:Thing) <http://www.ltg.ed.ac.uk/tether/Bibid#>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ltg.ed.ac.uk/tether#hasLocation> owl:Thing) <http://www.ltg.ed.ac.uk/tether/Linid#>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ltg.ed.ac.uk/tether#hasLocation> owl:Thing) <http://www.ltg.ed.ac.uk/tether/Siteid#>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ltg.ed.ac.uk/tether#hasPeriod> owl:Thing) <http://www.ltg.ed.ac.uk/tether/Arcid#>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ltg.ed.ac.uk/tether#hasPeriod> owl:Thing) <http://www.ltg.ed.ac.uk/tether/Bibid#>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ltg.ed.ac.uk/tether#hasPeriod> owl:Thing) <http://www.ltg.ed.ac.uk/tether/Classn#>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ltg.ed.ac.uk/tether#hasPeriod> owl:Thing) <http://www.ltg.ed.ac.uk/tether/Personid#>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ltg.ed.ac.uk/tether#hasPeriod> owl:Thing) <http://www.ltg.ed.ac.uk/tether/Siteid#>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ltg.ed.ac.uk/tether#refBib> owl:Thing) <http://www.ltg.ed.ac.uk/tether/Refid#>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ltg.ed.ac.uk/tether#refLin> owl:Thing) <http://www.ltg.ed.ac.uk/tether/Refid#>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ltg.ed.ac.uk/tether#refSite> owl:Thing) <http://www.ltg.ed.ac.uk/tether/Refid#>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ltg.ed.ac.uk/tether#roleAgent> owl:Thing) <http://www.ltg.ed.ac.uk/tether/Roleid#>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ltg.ed.ac.uk/tether#roleArc> owl:Thing) <http://www.ltg.ed.ac.uk/tether/Roleid#>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ltg.ed.ac.uk/tether#siteArc> owl:Thing) <http://www.ltg.ed.ac.uk/tether/Siteid#>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.ltg.ed.ac.uk/tether#siteLin> owl:Thing) <http://www.ltg.ed.ac.uk/tether/Siteid#>)
+)

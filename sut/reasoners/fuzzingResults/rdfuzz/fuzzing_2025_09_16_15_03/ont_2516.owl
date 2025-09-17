@@ -1,0 +1,1730 @@
+Prefix(:=<urn:unnamed:ontology#ont19108991971320977>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:unnamed:ontology#ont19108991971320977>
+
+Declaration(Class(<http://dbpedia.org/ontology/Museum>))
+Declaration(Class(<http://dbpedia.org/ontology/Continent>))
+Declaration(Class(<http://dbpedia.org/ontology/ShoppingMall>))
+Declaration(Class(<http://dbpedia.org/ontology/Aircraft>))
+Declaration(Class(<http://dbpedia.org/ontology/Film>))
+Declaration(Class(<http://dbpedia.org/ontology/Island>))
+Declaration(Class(<http://dbpedia.org/ontology/Airport>))
+Declaration(Class(<http://dbpedia.org/ontology/Legislature>))
+Declaration(Class(<http://dbpedia.org/ontology/MilitaryUnit>))
+Declaration(Class(<http://dbpedia.org/ontology/HistoricBuilding>))
+Declaration(Class(<http://dbpedia.org/ontology/Settlement>))
+Declaration(Class(<http://dbpedia.org/ontology/Bridge>))
+Declaration(Class(<http://dbpedia.org/ontology/MilitaryPerson>))
+Declaration(Class(<http://dbpedia.org/ontology/Disease>))
+Declaration(Class(<http://dbpedia.org/ontology/Writer>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-1>))
+Declaration(Class(<http://dbpedia.org/ontology/Station>))
+Declaration(Class(<http://dbpedia.org/ontology/Currency>))
+Declaration(Class(<http://dbpedia.org/ontology/City>))
+Declaration(Class(<http://dbpedia.org/ontology/Stadium>))
+Declaration(Class(<http://dbpedia.org/ontology/School>))
+Declaration(Class(<http://dbpedia.org/ontology/Architect>))
+Declaration(Class(<http://dbpedia.org/ontology/Book>))
+Declaration(Class(<http://dbpedia.org/ontology/Organisation>))
+Declaration(Class(<http://dbpedia.org/ontology/Hospital>))
+Declaration(Class(<http://dbpedia.org/ontology/River>))
+Declaration(Class(<http://dbpedia.org/ontology/Artist>))
+Declaration(Class(<http://dbpedia.org/ontology/Saint>))
+Declaration(Class(<http://dbpedia.org/ontology/Band>))
+Declaration(Class(<http://dbpedia.org/ontology/Sport>))
+Declaration(Class(<http://dbpedia.org/ontology/University>))
+Declaration(Class(<http://dbpedia.org/ontology/Road>))
+Declaration(Class(<http://dbpedia.org/ontology/EthnicGroup>))
+Declaration(Class(<http://dbpedia.org/ontology/Building>))
+Declaration(Class(<http://dbpedia.org/ontology/MilitaryConflict>))
+Declaration(Class(<http://dbpedia.org/ontology/TelevisionShow>))
+Declaration(Class(<http://dbpedia.org/ontology/Village>))
+Declaration(Class(<http://dbpedia.org/ontology/Airline>))
+Declaration(Class(<http://dbpedia.org/ontology/Country>))
+Declaration(Class(<http://dbpedia.org/property/deathPlace>))
+Declaration(Class(<http://dbpedia.org/ontology/BasketballLeague>))
+Declaration(Class(<http://dbpedia.org/ontology/Person>))
+Declaration(Class(<http://dbpedia.org/ontology/President>))
+Declaration(Class(<http://dbpedia.org/ontology/Company>))
+Declaration(Class(<http://dbpedia.org/ontology/ProtectedArea>))
+Declaration(Class(<http://dbpedia.org/ontology/WorldHeritageSite>))
+Declaration(Class(<http://dbpedia.org/ontology/Actor>))
+Declaration(Class(<http://dbpedia.org/ontology/MusicalArtist>))
+Declaration(Class(<http://dbpedia.org/ontology/OfficeHolder>))
+Declaration(Class(owl:NamedIndividual))
+Declaration(Class(<http://dbpedia.org/ontology/SoccerClub>))
+Declaration(Class(<http://dbpedia.org/ontology/Language>))
+Declaration(Class(<http://dbpedia.org/ontology/HistoricPlace>))
+Declaration(Class(<http://dbpedia.org/ontology/Lake>))
+Declaration(Class(<http://dbpedia.org/ontology/AdministrativeRegion>))
+Declaration(Class(<http://dbpedia.org/ontology/Skyscraper>))
+Declaration(Class(<http://dbpedia.org/ontology/Newspaper>))
+Declaration(Class(<http://dbpedia.org/ontology/BritishRoyalty>))
+Declaration(Class(<http://dbpedia.org/ontology/Olympics>))
+Declaration(Class(<http://dbpedia.org/ontology/Broadcast>))
+Declaration(Class(<http://dbpedia.org/ontology/Town>))
+Declaration(Class(<http://dbpedia.org/ontology/IceHockeyLeague>))
+Declaration(Class(<http://dbpedia.org/ontology/Lighthouse>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToContinent>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToRoad>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToRiver>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMusicalArtist>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCountry>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Disease>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Currency>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSaint>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToLanguage>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToPerson>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToWriter>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToUniversity>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMilitaryConflict>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToVillage>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSoccerClub>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBand>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToLegislature>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOfficeHolder>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToTown>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToDisease>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Activity>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToIceHockeyLeague>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToArchitect>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/EthnicGroup>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToTelevisionShow>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToActor>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBridge>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMilitaryPerson>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBritishRoyalty>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOlympics>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSettlement>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAirport>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToLake>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToFilm>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToEthnicGroup>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSchool>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAdministrativeRegion>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/MeanOfTransportation>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAirline>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOrganisation>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToIsland>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToWorldHeritageSite>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Organisation>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSport>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToProtectedArea>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBasketballLeague>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToLighthouse>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMilitaryUnit>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToStadium>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBook>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMuseum>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCompany>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCurrency>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCity>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Language>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBuilding>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToHospital>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToScientist>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Event>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToHistoricPlace>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToNewspaper>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSkyscraper>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBroadcast>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToHistoricBuilding>))
+Declaration(ObjectProperty(<http://www.w3.org/2004/02/skos/core#relatedMatch>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToShoppingMall>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Work>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAircraft>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToPresident>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Place>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Infrastructure>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/city>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToRiver>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/locationTown>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/cityOfManchesterOperator>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/source>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToStadium>))
+Declaration(NamedIndividual(owl:NamedIndividual))
+Declaration(NamedIndividual(<http://dbpedia.org/property/locationCountry>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/currentTenants>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOlympics>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/pastBishop>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSaint>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/awards>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/operator>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/seatingCapacity>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/destinations>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/client>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMilitaryConflict>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/surname>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/doctoralAdviser>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToArchitect>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToIceHockeyLeague>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/tenants>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/label>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/upstreamSigns>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/downstream>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/doctoralAdvisor>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/residence>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/people>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/institutions>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/club>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBuilding>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/shorter>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/north>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/influences>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/founder>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/region>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/unit>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAirport>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOfficeHolder>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/mainContractors>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCity>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/placeOfDeath>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/designer>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/northwest>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBasketballLeague>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/otherLocations>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBridge>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/org/group>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/languagesSpoken>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/influenced>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToWorldHeritageSite>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/knownFor>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/materials>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToScientist>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/garrison>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/text>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/given>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/otherDesigners>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToPerson>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/fileYnaresSportsArena.jpgLocation>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/nationality>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/address>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/almaMater>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/dedication>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/manager>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/ethnicity>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSettlement>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/title>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/upstream>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/doctoralStudents>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/site>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/state>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToIsland>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToDisease>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/deathPlace>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAirline>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/editor>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/occupants>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/upsub>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAircraft>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToNewspaper>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/downsub>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/carries>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSoccerClub>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/employment>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToWriter>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/locale>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMilitaryPerson>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/battles>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/primeminister>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/before>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBritishRoyalty>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/crosses>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/workPlaces>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/country>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/workplace>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/belalAhmed>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/workplaces>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/bishop>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/birthPlace>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToHistoricBuilding>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/origin>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/cityServed>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBaseballLeague>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/endingAt>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/prizes>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCompany>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/president>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/bridgeSigns>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToLanguage>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/architect>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/workInstitutions>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/next>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/formerTenants>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToHospital>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/formerName>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/mapText>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/notableStudents>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/structuralEngineer>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-4>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToVillage>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/publictransit>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/contractor>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBasketballTeam>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/placeOfBirth>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/location>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToPresident>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/list>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/affiliation>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/controlledby>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/prev>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAdministrativeRegion>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-5>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/bridge>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToEthnicGroup>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/deanery>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOrganisation>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/rockets>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToTelevisionShow>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToTown>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/citizenship>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/taller>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/societies>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToStation>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/fields>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/owner>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/goals>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToActor>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToProtectedArea>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToUniversity>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/after>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/developer>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/academicAdvisors>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/hub>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/numberOfAnchors>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMilitaryUnit>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/parish>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToLegislature>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/birthPlace_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToLake>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMuseum>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/workInstitution>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/downstreamSigns>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCountry>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/ville>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSkyscraper>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSport>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/maint>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSchool>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToRoad>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToHistoricPlace>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/insideBonnieCastleLocation>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMusicalArtist>))
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://dbpedia.org/ontology/Organisation> (<http://dbpedia.org/ontology/Organisation>)
+
+SubObjectPropertyOf(<http://dbpedia.org/ontology/Organisation> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBasketballLeague>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToActor> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToActor>)
+
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToActor> <http://dbpedia.org/ontology/Actor>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAdministrativeRegion> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAdministrativeRegion>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAdministrativeRegion> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAdministrativeRegion> <http://dbpedia.org/ontology/AdministrativeRegion>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAircraft> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAircraft>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAircraft> <http://dbpedia.org/ontology/MeanOfTransportation>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAirline> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAirline>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAirline> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAirline> <http://dbpedia.org/ontology/Airline>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAirport> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAirport>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAirport> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAirport> <http://dbpedia.org/ontology/Airport>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToArchitect> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToArchitect>)
+
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToArchitect> <http://dbpedia.org/ontology/Architect>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBand> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBand>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBand> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBand> <http://dbpedia.org/ontology/Band>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBasketballLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBasketballLeague>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBasketballLeague> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBasketballLeague> <http://dbpedia.org/ontology/BasketballLeague>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBook> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBook>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBook> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBook> <http://dbpedia.org/ontology/Book>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBridge> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBridge>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBridge> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBridge> <http://dbpedia.org/ontology/Bridge>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBritishRoyalty> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBritishRoyalty>)
+
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBritishRoyalty> <http://dbpedia.org/ontology/BritishRoyalty>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBroadcast> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBroadcast>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBroadcast> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBroadcast> <http://dbpedia.org/ontology/Broadcast>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBuilding> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBuilding>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBuilding> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBuilding> <http://dbpedia.org/ontology/Building>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCity> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCity>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCity> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCity> <http://dbpedia.org/ontology/City>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCompany> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCompany>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCompany> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCompany> <http://dbpedia.org/ontology/Company>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToContinent> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToContinent>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToContinent> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToContinent> <http://dbpedia.org/ontology/Continent>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCountry> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCountry>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCountry> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCountry> <http://dbpedia.org/ontology/Country>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCurrency> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCurrency>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCurrency> <http://dbpedia.org/ontology/Currency>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCurrency> <http://dbpedia.org/ontology/Currency>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToDisease> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToDisease>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToDisease> <http://dbpedia.org/ontology/Disease>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToDisease> <http://dbpedia.org/ontology/Disease>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToEthnicGroup> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToEthnicGroup>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToEthnicGroup> <http://dbpedia.org/ontology/EthnicGroup>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToEthnicGroup> <http://dbpedia.org/ontology/EthnicGroup>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToFilm> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToFilm>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToFilm> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToFilm> <http://dbpedia.org/ontology/Film>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToHistoricBuilding> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToHistoricBuilding>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToHistoricBuilding> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToHistoricBuilding> <http://dbpedia.org/ontology/HistoricBuilding>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToHistoricPlace> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToHistoricPlace>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToHistoricPlace> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToHistoricPlace> <http://dbpedia.org/ontology/HistoricPlace>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToHospital> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToHospital>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToHospital> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToHospital> <http://dbpedia.org/ontology/Hospital>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToIceHockeyLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToIceHockeyLeague>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToIceHockeyLeague> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToIceHockeyLeague> <http://dbpedia.org/ontology/IceHockeyLeague>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToIsland> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToIsland>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToIsland> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToIsland> <http://dbpedia.org/ontology/Island>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToLake> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToLake>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToLake> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToLake> <http://dbpedia.org/ontology/Lake>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToLanguage> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToLanguage>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToLanguage> <http://dbpedia.org/ontology/Language>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToLanguage> <http://dbpedia.org/ontology/Language>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToLegislature> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToLegislature>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToLegislature> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToLegislature> <http://dbpedia.org/ontology/Legislature>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToLighthouse> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToLighthouse>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToLighthouse> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToLighthouse> <http://dbpedia.org/ontology/Lighthouse>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMilitaryConflict> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMilitaryConflict>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMilitaryConflict> <http://dbpedia.org/ontology/Event>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMilitaryConflict> <http://dbpedia.org/ontology/MilitaryConflict>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMilitaryPerson> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMilitaryPerson>)
+
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMilitaryPerson> <http://dbpedia.org/ontology/MilitaryPerson>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMilitaryUnit> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMilitaryUnit>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMilitaryUnit> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMilitaryUnit> <http://dbpedia.org/ontology/MilitaryUnit>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMuseum> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMuseum>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMuseum> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMuseum> <http://dbpedia.org/ontology/Museum>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMusicalArtist> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMusicalArtist>)
+
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMusicalArtist> <http://dbpedia.org/ontology/MusicalArtist>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToNewspaper> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToNewspaper>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToNewspaper> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToNewspaper> <http://dbpedia.org/ontology/Newspaper>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOfficeHolder> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOfficeHolder>)
+
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOfficeHolder> <http://dbpedia.org/ontology/OfficeHolder>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOlympics> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOlympics>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOlympics> <http://dbpedia.org/ontology/Event>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOlympics> <http://dbpedia.org/ontology/Olympics>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOrganisation> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOrganisation>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOrganisation> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOrganisation> <http://dbpedia.org/ontology/Organisation>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToPerson> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToPerson>)
+
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToPerson> <http://dbpedia.org/ontology/Person>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToPresident> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToPresident>)
+
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToPresident> <http://dbpedia.org/ontology/President>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToProtectedArea> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToProtectedArea>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToProtectedArea> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToProtectedArea> <http://dbpedia.org/ontology/ProtectedArea>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToRiver> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToRiver>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToRiver> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToRiver> <http://dbpedia.org/ontology/River>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToRoad> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToRoad>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToRoad> <http://dbpedia.org/ontology/Infrastructure>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToRoad> <http://dbpedia.org/ontology/Road>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSaint> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSaint>)
+
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSaint> <http://dbpedia.org/ontology/Saint>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSchool> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSchool>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSchool> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSchool> <http://dbpedia.org/ontology/School>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSettlement> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSettlement>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSettlement> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSettlement> <http://dbpedia.org/ontology/Settlement>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToShoppingMall> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToShoppingMall>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToShoppingMall> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToShoppingMall> <http://dbpedia.org/ontology/ShoppingMall>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSkyscraper> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSkyscraper>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSkyscraper> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSkyscraper> <http://dbpedia.org/ontology/Skyscraper>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSoccerClub> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSoccerClub>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSoccerClub> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSoccerClub> <http://dbpedia.org/ontology/SoccerClub>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSport> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSport>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSport> <http://dbpedia.org/ontology/Activity>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSport> <http://dbpedia.org/ontology/Sport>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToStadium> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToStadium>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToStadium> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToStadium> <http://dbpedia.org/ontology/Stadium>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToTelevisionShow> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToTelevisionShow>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToTelevisionShow> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToTelevisionShow> <http://dbpedia.org/ontology/TelevisionShow>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToTown> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToTown>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToTown> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToTown> <http://dbpedia.org/ontology/Town>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToUniversity> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToUniversity>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToUniversity> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToUniversity> <http://dbpedia.org/ontology/University>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToVillage> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToVillage>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToVillage> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToVillage> <http://dbpedia.org/ontology/Village>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToWorldHeritageSite> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToWorldHeritageSite>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToWorldHeritageSite> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToWorldHeritageSite> <http://dbpedia.org/ontology/WorldHeritageSite>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToWriter> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToWriter>)
+
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToWriter> <http://dbpedia.org/ontology/Writer>)
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://dbpedia.org/ontology/Building> (<http://dbpedia.org/ontology/Building>)
+
+SubClassOf(<http://dbpedia.org/ontology/Building> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAdministrativeRegion> <http://dbpedia.org/ontology/AdministrativeRegion>))
+SubClassOf(<http://dbpedia.org/ontology/Building> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAirline> <http://dbpedia.org/ontology/Airline>))
+SubClassOf(<http://dbpedia.org/ontology/Building> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAirport> <http://dbpedia.org/ontology/Airport>))
+SubClassOf(<http://dbpedia.org/ontology/Building> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToArchitect> <http://dbpedia.org/ontology/Architect>))
+SubClassOf(<http://dbpedia.org/ontology/Building> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBridge> <http://dbpedia.org/ontology/Bridge>))
+SubClassOf(<http://dbpedia.org/ontology/Building> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBritishRoyalty> <http://dbpedia.org/ontology/BritishRoyalty>))
+SubClassOf(<http://dbpedia.org/ontology/Building> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBuilding> <http://dbpedia.org/ontology/Building>))
+SubClassOf(<http://dbpedia.org/ontology/Building> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCity> <http://dbpedia.org/ontology/City>))
+SubClassOf(<http://dbpedia.org/ontology/Building> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCompany> <http://dbpedia.org/ontology/Company>))
+SubClassOf(<http://dbpedia.org/ontology/Building> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCountry> <http://dbpedia.org/ontology/Country>))
+SubClassOf(<http://dbpedia.org/ontology/Building> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCurrency> <http://dbpedia.org/ontology/Currency>))
+SubClassOf(<http://dbpedia.org/ontology/Building> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToHistoricPlace> <http://dbpedia.org/ontology/HistoricPlace>))
+SubClassOf(<http://dbpedia.org/ontology/Building> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToIsland> <http://dbpedia.org/ontology/Island>))
+SubClassOf(<http://dbpedia.org/ontology/Building> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMilitaryConflict> <http://dbpedia.org/ontology/MilitaryConflict>))
+SubClassOf(<http://dbpedia.org/ontology/Building> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMilitaryUnit> <http://dbpedia.org/ontology/MilitaryUnit>))
+SubClassOf(<http://dbpedia.org/ontology/Building> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMuseum> <http://dbpedia.org/ontology/Museum>))
+SubClassOf(<http://dbpedia.org/ontology/Building> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMusicalArtist> <http://dbpedia.org/ontology/MusicalArtist>))
+SubClassOf(<http://dbpedia.org/ontology/Building> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOfficeHolder> <http://dbpedia.org/ontology/OfficeHolder>))
+SubClassOf(<http://dbpedia.org/ontology/Building> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOrganisation> <http://dbpedia.org/ontology/Organisation>))
+SubClassOf(<http://dbpedia.org/ontology/Building> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToPerson> <http://dbpedia.org/ontology/Person>))
+SubClassOf(<http://dbpedia.org/ontology/Building> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToRiver> <http://dbpedia.org/ontology/River>))
+SubClassOf(<http://dbpedia.org/ontology/Building> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToRoad> <http://dbpedia.org/ontology/Road>))
+SubClassOf(<http://dbpedia.org/ontology/Building> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSettlement> <http://dbpedia.org/ontology/Settlement>))
+SubClassOf(<http://dbpedia.org/ontology/Building> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSkyscraper> <http://dbpedia.org/ontology/Skyscraper>))
+SubClassOf(<http://dbpedia.org/ontology/Building> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSoccerClub> <http://dbpedia.org/ontology/SoccerClub>))
+SubClassOf(<http://dbpedia.org/ontology/Building> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSport> <http://dbpedia.org/ontology/Sport>))
+SubClassOf(<http://dbpedia.org/ontology/Building> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToStadium> <http://dbpedia.org/ontology/Stadium>))
+SubClassOf(<http://dbpedia.org/ontology/Building> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToTown> <http://dbpedia.org/ontology/Town>))
+SubClassOf(<http://dbpedia.org/ontology/Building> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToUniversity> <http://dbpedia.org/ontology/University>))
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://dbpedia.org/property/academicAdvisors> (<http://dbpedia.org/property/academicAdvisors>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/academicAdvisors>)
+
+# Individual: <http://dbpedia.org/property/address> (<http://dbpedia.org/property/address>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/address>)
+
+# Individual: <http://dbpedia.org/property/affiliation> (<http://dbpedia.org/property/affiliation>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/affiliation>)
+
+# Individual: <http://dbpedia.org/property/after> (<http://dbpedia.org/property/after>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/after>)
+
+# Individual: <http://dbpedia.org/property/almaMater> (<http://dbpedia.org/property/almaMater>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/almaMater>)
+
+# Individual: <http://dbpedia.org/property/architect> (<http://dbpedia.org/property/architect>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/architect>)
+
+# Individual: <http://dbpedia.org/property/awards> (<http://dbpedia.org/property/awards>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/awards>)
+
+# Individual: <http://dbpedia.org/property/battles> (<http://dbpedia.org/property/battles>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/battles>)
+
+# Individual: <http://dbpedia.org/property/before> (<http://dbpedia.org/property/before>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/before>)
+
+# Individual: <http://dbpedia.org/property/belalAhmed> (<http://dbpedia.org/property/belalAhmed>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/belalAhmed>)
+
+# Individual: <http://dbpedia.org/property/birthPlace> (<http://dbpedia.org/property/birthPlace>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/birthPlace>)
+
+# Individual: <http://dbpedia.org/property/birthPlace_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0> (<http://dbpedia.org/property/birthPlace_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/birthPlace_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0>)
+
+# Individual: <http://dbpedia.org/property/bishop> (<http://dbpedia.org/property/bishop>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/bishop>)
+
+# Individual: <http://dbpedia.org/property/bridge> (<http://dbpedia.org/property/bridge>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/bridge>)
+
+# Individual: <http://dbpedia.org/property/bridgeSigns> (<http://dbpedia.org/property/bridgeSigns>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/bridgeSigns>)
+
+# Individual: <http://dbpedia.org/property/carries> (<http://dbpedia.org/property/carries>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/carries>)
+
+# Individual: <http://dbpedia.org/property/citizenship> (<http://dbpedia.org/property/citizenship>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/citizenship>)
+
+# Individual: <http://dbpedia.org/property/city> (<http://dbpedia.org/property/city>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/city>)
+
+# Individual: <http://dbpedia.org/property/cityOfManchesterOperator> (<http://dbpedia.org/property/cityOfManchesterOperator>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/cityOfManchesterOperator>)
+
+# Individual: <http://dbpedia.org/property/cityServed> (<http://dbpedia.org/property/cityServed>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/cityServed>)
+
+# Individual: <http://dbpedia.org/property/client> (<http://dbpedia.org/property/client>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/client>)
+
+# Individual: <http://dbpedia.org/property/club> (<http://dbpedia.org/property/club>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/club>)
+
+# Individual: <http://dbpedia.org/property/contractor> (<http://dbpedia.org/property/contractor>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/contractor>)
+
+# Individual: <http://dbpedia.org/property/controlledby> (<http://dbpedia.org/property/controlledby>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/controlledby>)
+
+# Individual: <http://dbpedia.org/property/country> (<http://dbpedia.org/property/country>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/country>)
+
+# Individual: <http://dbpedia.org/property/crosses> (<http://dbpedia.org/property/crosses>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/crosses>)
+
+# Individual: <http://dbpedia.org/property/currentTenants> (<http://dbpedia.org/property/currentTenants>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/currentTenants>)
+
+# Individual: <http://dbpedia.org/property/deanery> (<http://dbpedia.org/property/deanery>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/deanery>)
+
+# Individual: <http://dbpedia.org/property/deathPlace> (<http://dbpedia.org/property/deathPlace>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/deathPlace>)
+
+# Individual: <http://dbpedia.org/property/dedication> (<http://dbpedia.org/property/dedication>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/dedication>)
+
+# Individual: <http://dbpedia.org/property/designer> (<http://dbpedia.org/property/designer>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/designer>)
+
+# Individual: <http://dbpedia.org/property/destinations> (<http://dbpedia.org/property/destinations>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/destinations>)
+
+# Individual: <http://dbpedia.org/property/developer> (<http://dbpedia.org/property/developer>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/developer>)
+
+# Individual: <http://dbpedia.org/property/doctoralAdviser> (<http://dbpedia.org/property/doctoralAdviser>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/doctoralAdviser>)
+
+# Individual: <http://dbpedia.org/property/doctoralAdvisor> (<http://dbpedia.org/property/doctoralAdvisor>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/doctoralAdvisor>)
+
+# Individual: <http://dbpedia.org/property/doctoralStudents> (<http://dbpedia.org/property/doctoralStudents>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/doctoralStudents>)
+
+# Individual: <http://dbpedia.org/property/downstream> (<http://dbpedia.org/property/downstream>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/downstream>)
+
+# Individual: <http://dbpedia.org/property/downstreamSigns> (<http://dbpedia.org/property/downstreamSigns>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/downstreamSigns>)
+
+# Individual: <http://dbpedia.org/property/downsub> (<http://dbpedia.org/property/downsub>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/downsub>)
+
+# Individual: <http://dbpedia.org/property/editor> (<http://dbpedia.org/property/editor>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/editor>)
+
+# Individual: <http://dbpedia.org/property/employment> (<http://dbpedia.org/property/employment>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/employment>)
+
+# Individual: <http://dbpedia.org/property/endingAt> (<http://dbpedia.org/property/endingAt>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/endingAt>)
+
+# Individual: <http://dbpedia.org/property/ethnicity> (<http://dbpedia.org/property/ethnicity>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/ethnicity>)
+
+# Individual: <http://dbpedia.org/property/fields> (<http://dbpedia.org/property/fields>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/fields>)
+
+# Individual: <http://dbpedia.org/property/fileYnaresSportsArena.jpgLocation> (<http://dbpedia.org/property/fileYnaresSportsArena.jpgLocation>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/fileYnaresSportsArena.jpgLocation>)
+
+# Individual: <http://dbpedia.org/property/formerName> (<http://dbpedia.org/property/formerName>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/formerName>)
+
+# Individual: <http://dbpedia.org/property/formerTenants> (<http://dbpedia.org/property/formerTenants>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/formerTenants>)
+
+# Individual: <http://dbpedia.org/property/founder> (<http://dbpedia.org/property/founder>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/founder>)
+
+# Individual: <http://dbpedia.org/property/garrison> (<http://dbpedia.org/property/garrison>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/garrison>)
+
+# Individual: <http://dbpedia.org/property/given> (<http://dbpedia.org/property/given>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/given>)
+
+# Individual: <http://dbpedia.org/property/goals> (<http://dbpedia.org/property/goals>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/goals>)
+
+# Individual: <http://dbpedia.org/property/hub> (<http://dbpedia.org/property/hub>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/hub>)
+
+# Individual: <http://dbpedia.org/property/influenced> (<http://dbpedia.org/property/influenced>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/influenced>)
+
+# Individual: <http://dbpedia.org/property/influences> (<http://dbpedia.org/property/influences>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/influences>)
+
+# Individual: <http://dbpedia.org/property/insideBonnieCastleLocation> (<http://dbpedia.org/property/insideBonnieCastleLocation>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/insideBonnieCastleLocation>)
+
+# Individual: <http://dbpedia.org/property/institutions> (<http://dbpedia.org/property/institutions>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/institutions>)
+
+# Individual: <http://dbpedia.org/property/knownFor> (<http://dbpedia.org/property/knownFor>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/knownFor>)
+
+# Individual: <http://dbpedia.org/property/label> (<http://dbpedia.org/property/label>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/label>)
+
+# Individual: <http://dbpedia.org/property/languagesSpoken> (<http://dbpedia.org/property/languagesSpoken>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/languagesSpoken>)
+
+# Individual: <http://dbpedia.org/property/list> (<http://dbpedia.org/property/list>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/list>)
+
+# Individual: <http://dbpedia.org/property/locale> (<http://dbpedia.org/property/locale>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/locale>)
+
+# Individual: <http://dbpedia.org/property/location> (<http://dbpedia.org/property/location>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/location>)
+
+# Individual: <http://dbpedia.org/property/locationCountry> (<http://dbpedia.org/property/locationCountry>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/locationCountry>)
+
+# Individual: <http://dbpedia.org/property/locationTown> (<http://dbpedia.org/property/locationTown>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/locationTown>)
+
+# Individual: <http://dbpedia.org/property/mainContractors> (<http://dbpedia.org/property/mainContractors>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/mainContractors>)
+
+# Individual: <http://dbpedia.org/property/maint> (<http://dbpedia.org/property/maint>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/maint>)
+
+# Individual: <http://dbpedia.org/property/manager> (<http://dbpedia.org/property/manager>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/manager>)
+
+# Individual: <http://dbpedia.org/property/mapText> (<http://dbpedia.org/property/mapText>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/mapText>)
+
+# Individual: <http://dbpedia.org/property/materials> (<http://dbpedia.org/property/materials>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/materials>)
+
+# Individual: <http://dbpedia.org/property/nationality> (<http://dbpedia.org/property/nationality>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/nationality>)
+
+# Individual: <http://dbpedia.org/property/next> (<http://dbpedia.org/property/next>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/next>)
+
+# Individual: <http://dbpedia.org/property/north> (<http://dbpedia.org/property/north>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/north>)
+
+# Individual: <http://dbpedia.org/property/northwest> (<http://dbpedia.org/property/northwest>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/northwest>)
+
+# Individual: <http://dbpedia.org/property/notableStudents> (<http://dbpedia.org/property/notableStudents>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/notableStudents>)
+
+# Individual: <http://dbpedia.org/property/numberOfAnchors> (<http://dbpedia.org/property/numberOfAnchors>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/numberOfAnchors>)
+
+# Individual: <http://dbpedia.org/property/occupants> (<http://dbpedia.org/property/occupants>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/occupants>)
+
+# Individual: <http://dbpedia.org/property/operator> (<http://dbpedia.org/property/operator>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/operator>)
+
+# Individual: <http://dbpedia.org/property/origin> (<http://dbpedia.org/property/origin>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/origin>)
+
+# Individual: <http://dbpedia.org/property/otherDesigners> (<http://dbpedia.org/property/otherDesigners>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/otherDesigners>)
+
+# Individual: <http://dbpedia.org/property/otherLocations> (<http://dbpedia.org/property/otherLocations>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/otherLocations>)
+
+# Individual: <http://dbpedia.org/property/owner> (<http://dbpedia.org/property/owner>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/owner>)
+
+# Individual: <http://dbpedia.org/property/parish> (<http://dbpedia.org/property/parish>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/parish>)
+
+# Individual: <http://dbpedia.org/property/pastBishop> (<http://dbpedia.org/property/pastBishop>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/pastBishop>)
+
+# Individual: <http://dbpedia.org/property/people> (<http://dbpedia.org/property/people>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/people>)
+
+# Individual: <http://dbpedia.org/property/placeOfBirth> (<http://dbpedia.org/property/placeOfBirth>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/placeOfBirth>)
+
+# Individual: <http://dbpedia.org/property/placeOfDeath> (<http://dbpedia.org/property/placeOfDeath>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/placeOfDeath>)
+
+# Individual: <http://dbpedia.org/property/president> (<http://dbpedia.org/property/president>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/president>)
+
+# Individual: <http://dbpedia.org/property/prev> (<http://dbpedia.org/property/prev>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/prev>)
+
+# Individual: <http://dbpedia.org/property/primeminister> (<http://dbpedia.org/property/primeminister>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/primeminister>)
+
+# Individual: <http://dbpedia.org/property/prizes> (<http://dbpedia.org/property/prizes>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/prizes>)
+
+# Individual: <http://dbpedia.org/property/publictransit> (<http://dbpedia.org/property/publictransit>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/publictransit>)
+
+# Individual: <http://dbpedia.org/property/region> (<http://dbpedia.org/property/region>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/region>)
+
+# Individual: <http://dbpedia.org/property/residence> (<http://dbpedia.org/property/residence>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/residence>)
+
+# Individual: <http://dbpedia.org/property/rockets> (<http://dbpedia.org/property/rockets>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/rockets>)
+
+# Individual: <http://dbpedia.org/property/seatingCapacity> (<http://dbpedia.org/property/seatingCapacity>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/seatingCapacity>)
+
+# Individual: <http://dbpedia.org/property/shorter> (<http://dbpedia.org/property/shorter>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/shorter>)
+
+# Individual: <http://dbpedia.org/property/site> (<http://dbpedia.org/property/site>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/site>)
+
+# Individual: <http://dbpedia.org/property/societies> (<http://dbpedia.org/property/societies>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/societies>)
+
+# Individual: <http://dbpedia.org/property/source> (<http://dbpedia.org/property/source>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/source>)
+
+# Individual: <http://dbpedia.org/property/state> (<http://dbpedia.org/property/state>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/state>)
+
+# Individual: <http://dbpedia.org/property/structuralEngineer> (<http://dbpedia.org/property/structuralEngineer>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/structuralEngineer>)
+
+# Individual: <http://dbpedia.org/property/surname> (<http://dbpedia.org/property/surname>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/surname>)
+
+# Individual: <http://dbpedia.org/property/taller> (<http://dbpedia.org/property/taller>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/taller>)
+
+# Individual: <http://dbpedia.org/property/tenants> (<http://dbpedia.org/property/tenants>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/tenants>)
+
+# Individual: <http://dbpedia.org/property/text> (<http://dbpedia.org/property/text>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/text>)
+
+# Individual: <http://dbpedia.org/property/title> (<http://dbpedia.org/property/title>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/title>)
+
+# Individual: <http://dbpedia.org/property/unit> (<http://dbpedia.org/property/unit>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/unit>)
+
+# Individual: <http://dbpedia.org/property/upstream> (<http://dbpedia.org/property/upstream>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/upstream>)
+
+# Individual: <http://dbpedia.org/property/upstreamSigns> (<http://dbpedia.org/property/upstreamSigns>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/upstreamSigns>)
+
+# Individual: <http://dbpedia.org/property/upsub> (<http://dbpedia.org/property/upsub>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/upsub>)
+
+# Individual: <http://dbpedia.org/property/ville> (<http://dbpedia.org/property/ville>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/ville>)
+
+# Individual: <http://dbpedia.org/property/workInstitution> (<http://dbpedia.org/property/workInstitution>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/workInstitution>)
+
+# Individual: <http://dbpedia.org/property/workInstitutions> (<http://dbpedia.org/property/workInstitutions>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/workInstitutions>)
+
+# Individual: <http://dbpedia.org/property/workPlaces> (<http://dbpedia.org/property/workPlaces>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/workPlaces>)
+
+# Individual: <http://dbpedia.org/property/workplace> (<http://dbpedia.org/property/workplace>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/workplace>)
+
+# Individual: <http://dbpedia.org/property/workplaces> (<http://dbpedia.org/property/workplaces>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/workplaces>)
+
+# Individual: <http://dbpedia.org/property/org/group> (<http://dbpedia.org/property/org/group>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/org/group>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToActor> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToActor>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToActor>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToActor> <http://dbpedia.org/property/doctoralStudents>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAdministrativeRegion> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAdministrativeRegion>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAdministrativeRegion>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAdministrativeRegion> <http://dbpedia.org/property/address>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAdministrativeRegion> <http://dbpedia.org/property/after>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAdministrativeRegion> <http://dbpedia.org/property/almaMater>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAdministrativeRegion> <http://dbpedia.org/property/before>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAdministrativeRegion> <http://dbpedia.org/property/birthPlace>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAdministrativeRegion> <http://dbpedia.org/property/birthPlace_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAdministrativeRegion> <http://dbpedia.org/property/cityServed>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAdministrativeRegion> <http://dbpedia.org/property/deathPlace>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAdministrativeRegion> <http://dbpedia.org/property/location>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAdministrativeRegion> <http://dbpedia.org/property/mapText>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAdministrativeRegion> <http://dbpedia.org/property/owner>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAdministrativeRegion> <http://dbpedia.org/property/placeOfDeath>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAdministrativeRegion> <http://dbpedia.org/property/residence>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAdministrativeRegion> <http://dbpedia.org/property/state>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAdministrativeRegion> <http://dbpedia.org/property/workplaces>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAircraft> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAircraft>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAircraft>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAircraft> <http://dbpedia.org/property/rockets>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAirline> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAirline>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAirline>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAirline> <http://dbpedia.org/property/hub>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAirline> <http://dbpedia.org/property/operator>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAirport> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAirport>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAirport>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAirport> <http://dbpedia.org/property/label>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAirport> <http://dbpedia.org/property/location>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToAirport> <http://dbpedia.org/property/site>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToArchitect> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToArchitect>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToArchitect>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToArchitect> <http://dbpedia.org/property/architect>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToArchitect> <http://dbpedia.org/property/designer>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToArchitect> <http://dbpedia.org/property/otherDesigners>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBaseballLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBaseballLeague>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBaseballLeague>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBaseballLeague> <http://dbpedia.org/property/tenants>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBaseballLeague> <http://dbpedia.org/property/title>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBasketballLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBasketballLeague>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBasketballLeague>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBasketballLeague> <http://dbpedia.org/property/tenants>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBasketballLeague> <http://dbpedia.org/property/title>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBasketballTeam> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBasketballTeam>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBasketballTeam>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBasketballTeam> <http://dbpedia.org/property/operator>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBasketballTeam> <http://dbpedia.org/property/tenants>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBridge> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBridge>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBridge>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBridge> <http://dbpedia.org/property/after>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBridge> <http://dbpedia.org/property/before>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBridge> <http://dbpedia.org/property/bridge>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBridge> <http://dbpedia.org/property/downstream>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBridge> <http://dbpedia.org/property/downstreamSigns>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBridge> <http://dbpedia.org/property/upstream>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBridge> <http://dbpedia.org/property/upstreamSigns>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBritishRoyalty> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBritishRoyalty>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBritishRoyalty>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBritishRoyalty> <http://dbpedia.org/property/before>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBritishRoyalty> <http://dbpedia.org/property/client>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBritishRoyalty> <http://dbpedia.org/property/owner>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBritishRoyalty> <http://dbpedia.org/property/people>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBuilding> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBuilding>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBuilding>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBuilding> <http://dbpedia.org/property/affiliation>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBuilding> <http://dbpedia.org/property/after>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBuilding> <http://dbpedia.org/property/almaMater>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBuilding> <http://dbpedia.org/property/before>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBuilding> <http://dbpedia.org/property/bridge>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBuilding> <http://dbpedia.org/property/downstream>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBuilding> <http://dbpedia.org/property/downstreamSigns>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBuilding> <http://dbpedia.org/property/employment>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBuilding> <http://dbpedia.org/property/formerName>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBuilding> <http://dbpedia.org/property/knownFor>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBuilding> <http://dbpedia.org/property/label>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBuilding> <http://dbpedia.org/property/location>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBuilding> <http://dbpedia.org/property/next>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBuilding> <http://dbpedia.org/property/north>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBuilding> <http://dbpedia.org/property/northwest>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBuilding> <http://dbpedia.org/property/operator>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBuilding> <http://dbpedia.org/property/otherLocations>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBuilding> <http://dbpedia.org/property/owner>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBuilding> <http://dbpedia.org/property/prev>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBuilding> <http://dbpedia.org/property/seatingCapacity>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBuilding> <http://dbpedia.org/property/shorter>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBuilding> <http://dbpedia.org/property/site>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBuilding> <http://dbpedia.org/property/taller>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBuilding> <http://dbpedia.org/property/title>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBuilding> <http://dbpedia.org/property/upstream>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBuilding> <http://dbpedia.org/property/upstreamSigns>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBuilding> <http://dbpedia.org/property/workInstitution>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBuilding> <http://dbpedia.org/property/workInstitutions>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBuilding> <http://dbpedia.org/property/workplaces>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToBuilding> <http://dbpedia.org/property/org/group>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCity> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCity>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCity>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCity> <http://dbpedia.org/property/address>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCity> <http://dbpedia.org/property/after>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCity> <http://dbpedia.org/property/almaMater>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCity> <http://dbpedia.org/property/before>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCity> <http://dbpedia.org/property/birthPlace>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCity> <http://dbpedia.org/property/city>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCity> <http://dbpedia.org/property/cityServed>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCity> <http://dbpedia.org/property/deathPlace>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCity> <http://dbpedia.org/property/locale>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCity> <http://dbpedia.org/property/location>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCity> <http://dbpedia.org/property/operator>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCity> <http://dbpedia.org/property/owner>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCity> <http://dbpedia.org/property/placeOfDeath>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCity> <http://dbpedia.org/property/residence>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCity> <http://dbpedia.org/property/workInstitution>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCity> <http://dbpedia.org/property/workInstitutions>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCity> <http://dbpedia.org/property/workplaces>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCompany> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCompany>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCompany>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCompany> <http://dbpedia.org/property/architect>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCompany> <http://dbpedia.org/property/cityOfManchesterOperator>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCompany> <http://dbpedia.org/property/contractor>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCompany> <http://dbpedia.org/property/currentTenants>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCompany> <http://dbpedia.org/property/developer>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCompany> <http://dbpedia.org/property/hub>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCompany> <http://dbpedia.org/property/knownFor>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCompany> <http://dbpedia.org/property/mainContractors>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCompany> <http://dbpedia.org/property/manager>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCompany> <http://dbpedia.org/property/numberOfAnchors>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCompany> <http://dbpedia.org/property/operator>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCompany> <http://dbpedia.org/property/owner>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCompany> <http://dbpedia.org/property/structuralEngineer>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCompany> <http://dbpedia.org/property/tenants>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCompany> <http://dbpedia.org/property/workInstitution>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCompany> <http://dbpedia.org/property/workInstitutions>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCompany> <http://dbpedia.org/property/workplaces>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCompany> <http://dbpedia.org/property/org/group>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCountry> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCountry>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCountry>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCountry> <http://dbpedia.org/property/after>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCountry> <http://dbpedia.org/property/almaMater>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCountry> <http://dbpedia.org/property/before>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCountry> <http://dbpedia.org/property/birthPlace>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCountry> <http://dbpedia.org/property/citizenship>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCountry> <http://dbpedia.org/property/cityServed>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCountry> <http://dbpedia.org/property/country>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCountry> <http://dbpedia.org/property/deathPlace>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCountry> <http://dbpedia.org/property/fileYnaresSportsArena.jpgLocation>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCountry> <http://dbpedia.org/property/locale>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCountry> <http://dbpedia.org/property/location>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCountry> <http://dbpedia.org/property/locationCountry>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCountry> <http://dbpedia.org/property/maint>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCountry> <http://dbpedia.org/property/nationality>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCountry> <http://dbpedia.org/property/residence>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCountry> <http://dbpedia.org/property/workInstitution>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCountry> <http://dbpedia.org/property/workInstitutions>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToCountry> <http://dbpedia.org/property/workplaces>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToDisease> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToDisease>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToDisease>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToDisease> <http://dbpedia.org/property/knownFor>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToEthnicGroup> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToEthnicGroup>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToEthnicGroup>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToEthnicGroup> <http://dbpedia.org/property/ethnicity>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToEthnicGroup> <http://dbpedia.org/property/nationality>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToHistoricBuilding> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToHistoricBuilding>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToHistoricBuilding>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToHistoricBuilding> <http://dbpedia.org/property/before>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToHistoricBuilding> <http://dbpedia.org/property/formerName>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToHistoricBuilding> <http://dbpedia.org/property/title>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToHistoricPlace> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToHistoricPlace>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToHistoricPlace>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToHistoricPlace> <http://dbpedia.org/property/after>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToHistoricPlace> <http://dbpedia.org/property/awards>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToHistoricPlace> <http://dbpedia.org/property/before>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToHistoricPlace> <http://dbpedia.org/property/crosses>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToHistoricPlace> <http://dbpedia.org/property/knownFor>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToHistoricPlace> <http://dbpedia.org/property/prizes>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToHistoricPlace> <http://dbpedia.org/property/societies>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToHistoricPlace> <http://dbpedia.org/property/workInstitution>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToHistoricPlace> <http://dbpedia.org/property/workInstitutions>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToHistoricPlace> <http://dbpedia.org/property/workplaces>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToHospital> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToHospital>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToHospital>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToHospital> <http://dbpedia.org/property/affiliation>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToHospital> <http://dbpedia.org/property/almaMater>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToHospital> <http://dbpedia.org/property/employment>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToHospital> <http://dbpedia.org/property/workInstitution>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToHospital> <http://dbpedia.org/property/workInstitutions>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToHospital> <http://dbpedia.org/property/workplaces>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToHospital> <http://dbpedia.org/property/org/group>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToIceHockeyLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToIceHockeyLeague>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToIceHockeyLeague>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToIceHockeyLeague> <http://dbpedia.org/property/title>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToIsland> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToIsland>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToIsland>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToIsland> <http://dbpedia.org/property/birthPlace>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToIsland> <http://dbpedia.org/property/location>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToLake> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToLake>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToLake>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToLake> <http://dbpedia.org/property/location>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToLanguage> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToLanguage>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToLanguage>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToLanguage> <http://dbpedia.org/property/fields>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToLanguage> <http://dbpedia.org/property/languagesSpoken>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToLegislature> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToLegislature>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToLegislature>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToLegislature> <http://dbpedia.org/property/owner>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToLegislature> <http://dbpedia.org/property/text>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMilitaryConflict> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMilitaryConflict>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMilitaryConflict>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMilitaryConflict> <http://dbpedia.org/property/battles>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMilitaryPerson> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMilitaryPerson>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMilitaryPerson>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMilitaryPerson> <http://dbpedia.org/property/doctoralStudents>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMilitaryUnit> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMilitaryUnit>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMilitaryUnit>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMilitaryUnit> <http://dbpedia.org/property/controlledby>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMilitaryUnit> <http://dbpedia.org/property/garrison>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMilitaryUnit> <http://dbpedia.org/property/knownFor>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMilitaryUnit> <http://dbpedia.org/property/occupants>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMilitaryUnit> <http://dbpedia.org/property/operator>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMilitaryUnit> <http://dbpedia.org/property/owner>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMilitaryUnit> <http://dbpedia.org/property/unit>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMilitaryUnit> <http://dbpedia.org/property/workInstitution>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMilitaryUnit> <http://dbpedia.org/property/workInstitutions>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMilitaryUnit> <http://dbpedia.org/property/workplaces>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMuseum> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMuseum>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMuseum>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMuseum> <http://dbpedia.org/property/knownFor>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMuseum> <http://dbpedia.org/property/workInstitution>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMuseum> <http://dbpedia.org/property/workInstitutions>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMuseum> <http://dbpedia.org/property/workplaces>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMusicalArtist> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMusicalArtist>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMusicalArtist>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToMusicalArtist> <http://dbpedia.org/property/tenants>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToNewspaper> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToNewspaper>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToNewspaper>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToNewspaper> <http://dbpedia.org/property/source>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOfficeHolder> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOfficeHolder>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOfficeHolder>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOfficeHolder> <http://dbpedia.org/property/after>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOfficeHolder> <http://dbpedia.org/property/before>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOfficeHolder> <http://dbpedia.org/property/doctoralStudents>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOfficeHolder> <http://dbpedia.org/property/founder>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOfficeHolder> <http://dbpedia.org/property/influenced>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOfficeHolder> <http://dbpedia.org/property/influences>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOfficeHolder> <http://dbpedia.org/property/notableStudents>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOfficeHolder> <http://dbpedia.org/property/president>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOfficeHolder> <http://dbpedia.org/property/primeminister>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOlympics> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOlympics>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOlympics>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOlympics> <http://dbpedia.org/property/tenants>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOrganisation> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOrganisation>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOrganisation>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOrganisation> <http://dbpedia.org/property/affiliation>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOrganisation> <http://dbpedia.org/property/after>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOrganisation> <http://dbpedia.org/property/almaMater>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOrganisation> <http://dbpedia.org/property/architect>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOrganisation> <http://dbpedia.org/property/awards>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOrganisation> <http://dbpedia.org/property/before>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOrganisation> <http://dbpedia.org/property/belalAhmed>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOrganisation> <http://dbpedia.org/property/cityOfManchesterOperator>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOrganisation> <http://dbpedia.org/property/client>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOrganisation> <http://dbpedia.org/property/club>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOrganisation> <http://dbpedia.org/property/contractor>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOrganisation> <http://dbpedia.org/property/controlledby>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOrganisation> <http://dbpedia.org/property/currentTenants>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOrganisation> <http://dbpedia.org/property/developer>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOrganisation> <http://dbpedia.org/property/employment>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOrganisation> <http://dbpedia.org/property/formerTenants>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOrganisation> <http://dbpedia.org/property/garrison>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOrganisation> <http://dbpedia.org/property/hub>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOrganisation> <http://dbpedia.org/property/institutions>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOrganisation> <http://dbpedia.org/property/knownFor>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOrganisation> <http://dbpedia.org/property/list>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOrganisation> <http://dbpedia.org/property/location>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOrganisation> <http://dbpedia.org/property/mainContractors>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOrganisation> <http://dbpedia.org/property/manager>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOrganisation> <http://dbpedia.org/property/numberOfAnchors>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOrganisation> <http://dbpedia.org/property/occupants>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOrganisation> <http://dbpedia.org/property/operator>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOrganisation> <http://dbpedia.org/property/owner>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOrganisation> <http://dbpedia.org/property/prizes>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOrganisation> <http://dbpedia.org/property/societies>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOrganisation> <http://dbpedia.org/property/structuralEngineer>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOrganisation> <http://dbpedia.org/property/tenants>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOrganisation> <http://dbpedia.org/property/text>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOrganisation> <http://dbpedia.org/property/title>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOrganisation> <http://dbpedia.org/property/unit>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOrganisation> <http://dbpedia.org/property/workInstitution>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOrganisation> <http://dbpedia.org/property/workInstitutions>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOrganisation> <http://dbpedia.org/property/workPlaces>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOrganisation> <http://dbpedia.org/property/workplace>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOrganisation> <http://dbpedia.org/property/workplaces>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToOrganisation> <http://dbpedia.org/property/org/group>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToPerson> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToPerson>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToPerson>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToPerson> <http://dbpedia.org/property/academicAdvisors>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToPerson> <http://dbpedia.org/property/after>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToPerson> <http://dbpedia.org/property/architect>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToPerson> <http://dbpedia.org/property/before>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToPerson> <http://dbpedia.org/property/bishop>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToPerson> <http://dbpedia.org/property/client>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToPerson> <http://dbpedia.org/property/dedication>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToPerson> <http://dbpedia.org/property/designer>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToPerson> <http://dbpedia.org/property/developer>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToPerson> <http://dbpedia.org/property/doctoralAdviser>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToPerson> <http://dbpedia.org/property/doctoralAdvisor>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToPerson> <http://dbpedia.org/property/doctoralStudents>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToPerson> <http://dbpedia.org/property/editor>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToPerson> <http://dbpedia.org/property/founder>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToPerson> <http://dbpedia.org/property/given>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToPerson> <http://dbpedia.org/property/goals>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToPerson> <http://dbpedia.org/property/influenced>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToPerson> <http://dbpedia.org/property/influences>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToPerson> <http://dbpedia.org/property/notableStudents>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToPerson> <http://dbpedia.org/property/otherDesigners>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToPerson> <http://dbpedia.org/property/owner>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToPerson> <http://dbpedia.org/property/pastBishop>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToPerson> <http://dbpedia.org/property/people>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToPerson> <http://dbpedia.org/property/president>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToPerson> <http://dbpedia.org/property/primeminister>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToPerson> <http://dbpedia.org/property/source>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToPerson> <http://dbpedia.org/property/surname>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToPerson> <http://dbpedia.org/property/tenants>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToPerson> <http://dbpedia.org/property/workInstitution>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToPerson> <http://dbpedia.org/property/workplaces>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToPresident> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToPresident>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToPresident>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToPresident> <http://dbpedia.org/property/after>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToProtectedArea> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToProtectedArea>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToProtectedArea>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToProtectedArea> <http://dbpedia.org/property/location>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToRiver> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToRiver>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToRiver>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToRiver> <http://dbpedia.org/property/crosses>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToRoad> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToRoad>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToRoad>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToRoad> <http://dbpedia.org/property/address>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToRoad> <http://dbpedia.org/property/bridgeSigns>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToRoad> <http://dbpedia.org/property/carries>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToRoad> <http://dbpedia.org/property/city>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToRoad> <http://dbpedia.org/property/destinations>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToRoad> <http://dbpedia.org/property/downsub>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToRoad> <http://dbpedia.org/property/location>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToRoad> <http://dbpedia.org/property/upsub>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSaint> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSaint>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSaint>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSaint> <http://dbpedia.org/property/dedication>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSchool> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSchool>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSchool>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSchool> <http://dbpedia.org/property/after>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSchool> <http://dbpedia.org/property/almaMater>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSchool> <http://dbpedia.org/property/operator>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSchool> <http://dbpedia.org/property/tenants>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSchool> <http://dbpedia.org/property/workInstitution>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSchool> <http://dbpedia.org/property/workInstitutions>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSchool> <http://dbpedia.org/property/workplaces>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToScientist> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToScientist>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToScientist>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToScientist> <http://dbpedia.org/property/academicAdvisors>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToScientist> <http://dbpedia.org/property/after>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToScientist> <http://dbpedia.org/property/before>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToScientist> <http://dbpedia.org/property/doctoralAdviser>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToScientist> <http://dbpedia.org/property/doctoralAdvisor>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToScientist> <http://dbpedia.org/property/doctoralStudents>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToScientist> <http://dbpedia.org/property/editor>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToScientist> <http://dbpedia.org/property/given>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToScientist> <http://dbpedia.org/property/influenced>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToScientist> <http://dbpedia.org/property/influences>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToScientist> <http://dbpedia.org/property/notableStudents>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToScientist> <http://dbpedia.org/property/otherDesigners>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToScientist> <http://dbpedia.org/property/surname>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToScientist> <http://dbpedia.org/property/workInstitution>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSettlement> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSettlement>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSettlement>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSettlement> <http://dbpedia.org/property/address>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSettlement> <http://dbpedia.org/property/after>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSettlement> <http://dbpedia.org/property/almaMater>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSettlement> <http://dbpedia.org/property/before>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSettlement> <http://dbpedia.org/property/birthPlace>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSettlement> <http://dbpedia.org/property/city>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSettlement> <http://dbpedia.org/property/cityServed>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSettlement> <http://dbpedia.org/property/deanery>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSettlement> <http://dbpedia.org/property/deathPlace>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSettlement> <http://dbpedia.org/property/designer>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSettlement> <http://dbpedia.org/property/endingAt>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSettlement> <http://dbpedia.org/property/fileYnaresSportsArena.jpgLocation>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSettlement> <http://dbpedia.org/property/insideBonnieCastleLocation>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSettlement> <http://dbpedia.org/property/label>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSettlement> <http://dbpedia.org/property/locale>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSettlement> <http://dbpedia.org/property/location>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSettlement> <http://dbpedia.org/property/locationTown>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSettlement> <http://dbpedia.org/property/materials>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSettlement> <http://dbpedia.org/property/next>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSettlement> <http://dbpedia.org/property/north>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSettlement> <http://dbpedia.org/property/operator>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSettlement> <http://dbpedia.org/property/origin>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSettlement> <http://dbpedia.org/property/owner>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSettlement> <http://dbpedia.org/property/parish>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSettlement> <http://dbpedia.org/property/placeOfBirth>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSettlement> <http://dbpedia.org/property/placeOfDeath>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSettlement> <http://dbpedia.org/property/publictransit>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSettlement> <http://dbpedia.org/property/region>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSettlement> <http://dbpedia.org/property/residence>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSettlement> <http://dbpedia.org/property/ville>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSettlement> <http://dbpedia.org/property/workInstitution>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSettlement> <http://dbpedia.org/property/workInstitutions>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSettlement> <http://dbpedia.org/property/workplaces>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSkyscraper> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSkyscraper>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSkyscraper>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSkyscraper> <http://dbpedia.org/property/after>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSkyscraper> <http://dbpedia.org/property/before>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSkyscraper> <http://dbpedia.org/property/north>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSkyscraper> <http://dbpedia.org/property/northwest>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSkyscraper> <http://dbpedia.org/property/shorter>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSkyscraper> <http://dbpedia.org/property/taller>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSoccerClub> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSoccerClub>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSoccerClub>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSoccerClub> <http://dbpedia.org/property/club>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSoccerClub> <http://dbpedia.org/property/formerTenants>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSoccerClub> <http://dbpedia.org/property/list>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSoccerClub> <http://dbpedia.org/property/operator>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSoccerClub> <http://dbpedia.org/property/owner>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSoccerClub> <http://dbpedia.org/property/tenants>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSport> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSport>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSport>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSport> <http://dbpedia.org/property/tenants>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToSport> <http://dbpedia.org/property/title>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToStadium> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToStadium>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToStadium>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToStadium> <http://dbpedia.org/property/after>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToStadium> <http://dbpedia.org/property/before>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToStadium> <http://dbpedia.org/property/location>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToStadium> <http://dbpedia.org/property/next>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToStadium> <http://dbpedia.org/property/operator>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToStadium> <http://dbpedia.org/property/otherLocations>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToStadium> <http://dbpedia.org/property/owner>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToStadium> <http://dbpedia.org/property/prev>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToStadium> <http://dbpedia.org/property/seatingCapacity>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToStation> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToStation>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToStation>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToStation> <http://dbpedia.org/property/after>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToStation> <http://dbpedia.org/property/before>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToStation> <http://dbpedia.org/property/publictransit>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToTelevisionShow> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToTelevisionShow>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToTelevisionShow>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToTelevisionShow> <http://dbpedia.org/property/tenants>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToTown> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToTown>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToTown>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToTown> <http://dbpedia.org/property/after>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToTown> <http://dbpedia.org/property/before>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToTown> <http://dbpedia.org/property/birthPlace>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToTown> <http://dbpedia.org/property/locale>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToTown> <http://dbpedia.org/property/location>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToTown> <http://dbpedia.org/property/locationTown>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToTown> <http://dbpedia.org/property/residence>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToUniversity> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToUniversity>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToUniversity>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToUniversity> <http://dbpedia.org/property/affiliation>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToUniversity> <http://dbpedia.org/property/almaMater>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToUniversity> <http://dbpedia.org/property/before>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToUniversity> <http://dbpedia.org/property/belalAhmed>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToUniversity> <http://dbpedia.org/property/currentTenants>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToUniversity> <http://dbpedia.org/property/employment>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToUniversity> <http://dbpedia.org/property/institutions>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToUniversity> <http://dbpedia.org/property/location>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToUniversity> <http://dbpedia.org/property/operator>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToUniversity> <http://dbpedia.org/property/owner>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToUniversity> <http://dbpedia.org/property/prizes>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToUniversity> <http://dbpedia.org/property/tenants>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToUniversity> <http://dbpedia.org/property/title>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToUniversity> <http://dbpedia.org/property/workInstitution>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToUniversity> <http://dbpedia.org/property/workInstitutions>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToUniversity> <http://dbpedia.org/property/workPlaces>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToUniversity> <http://dbpedia.org/property/workplace>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToUniversity> <http://dbpedia.org/property/workplaces>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToVillage> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToVillage>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToVillage>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToVillage> <http://dbpedia.org/property/cityServed>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToVillage> <http://dbpedia.org/property/insideBonnieCastleLocation>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToVillage> <http://dbpedia.org/property/location>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToWorldHeritageSite> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToWorldHeritageSite>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToWorldHeritageSite>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToWorldHeritageSite> <http://dbpedia.org/property/after>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToWorldHeritageSite> <http://dbpedia.org/property/before>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToWorldHeritageSite> <http://dbpedia.org/property/workplaces>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToWriter> (<http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToWriter>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToWriter>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToWriter> <http://dbpedia.org/property/doctoralStudents>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToWriter> <http://dbpedia.org/property/influenced>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToWriter> <http://dbpedia.org/property/influences>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Building.owl#linksToWriter> <http://dbpedia.org/property/source>)
+
+# Individual: owl:NamedIndividual (owl:NamedIndividual)
+
+ClassAssertion(owl:NamedIndividual owl:NamedIndividual)
+
+# Individual: <https://smolang.org/rdfMutate#newNode-4> (<https://smolang.org/rdfMutate#newNode-4>)
+
+ClassAssertion(owl:NamedIndividual <https://smolang.org/rdfMutate#newNode-4>)
+ClassAssertion(owl:Thing <https://smolang.org/rdfMutate#newNode-4>)
+
+# Individual: <https://smolang.org/rdfMutate#newNode-5> (<https://smolang.org/rdfMutate#newNode-5>)
+
+ClassAssertion(owl:NamedIndividual <https://smolang.org/rdfMutate#newNode-5>)
+ClassAssertion(owl:Thing <https://smolang.org/rdfMutate#newNode-5>)
+
+
+)

@@ -1,0 +1,1228 @@
+Prefix(:=<urn:unnamed:ontology#ont19106695135064778>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:unnamed:ontology#ont19106695135064778>
+
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007011>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007232>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007236>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007152>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007004>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007212>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007197>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007091>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007185>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007064>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007096>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007161>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007040>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-7>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007176>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007072>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007166>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007123>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007127>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007045>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007049>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007159>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007231>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007235>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007038>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007221>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007225>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007153>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007141>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007157>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007100>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007088>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007104>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007020>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007201>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007216>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007204>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007095>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007189>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007068>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007165>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007170>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007169>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007128>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007112>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007048>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007116>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007044>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007034>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007081>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007220>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007224>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007027>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007142>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007146>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007103>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007021>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007025>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007135>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007229>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007014>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007108>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007205>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007195>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007057>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007171>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007117>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007033>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007037>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007174>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007070>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007026>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007010>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007228>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007151>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007107>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007086>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007003>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007194>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007090>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007184>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007063>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007019>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007199>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007009>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007093>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007160>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007211>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007133>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007175>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007179>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007163>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007122>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007126>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007042>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007234>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007150>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007087>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007140>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007075>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007183>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007062>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007156>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007052>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007008>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007198>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007094>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007188>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007149>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007132>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007200>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007067>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-0>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007164>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007168>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007125>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007219>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007043>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007047>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007115>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007031>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007230>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007111>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007223>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007076>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007102>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007079>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007051>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007145>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007187>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007192>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007024>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007066>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007134>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007138>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007056>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007013>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007017>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007121>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007110>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007114>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007208>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007099>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007032>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007036>))
+Declaration(Class(owl:NamedIndividual))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007119>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007080>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007085>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007193>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007181>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007139>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007055>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007059>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007060>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007018>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007002>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007006>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007209>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007210>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007214>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007130>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007162>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007041>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007084>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007178>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007074>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007089>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007182>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007233>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007061>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007007>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007148>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007213>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007131>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007203>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007124>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007218>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007097>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007030>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007073>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007167>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007046>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007078>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007039>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007154>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007158>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007226>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007222>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007144>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007101>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007105>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007186>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007191>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007147>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007023>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007065>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007137>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007069>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007053>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007120>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007202>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007016>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007217>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007113>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007207>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007098>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007173>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007129>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007035>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007077>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007082>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007227>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007028>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007143>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007106>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007190>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007022>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007180>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007012>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007136>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007054>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007058>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007015>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007109>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007005>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007206>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007196>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007092>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007172>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007118>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007083>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007177>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007071>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GRO_0007029>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/gro-cpd.cereal-plant-development-ontology.1.orig#part_of>))
+Declaration(DataProperty(<https://smolang.org/rdfMutate#newNode-8>))
+Declaration(DataProperty(<https://smolang.org/rdfMutate#newNode-5>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-9>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-6>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/GRO_0007080>))
+
+############################
+#   Data Properties
+############################
+
+# Data Property: <https://smolang.org/rdfMutate#newNode-5> (<https://smolang.org/rdfMutate#newNode-5>)
+
+FunctionalDataProperty(<https://smolang.org/rdfMutate#newNode-5>)
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007000> (<http://purl.obolibrary.org/obo/GRO_0007000>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007000> <http://purl.obolibrary.org/obo/GRO_0007139>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007001> (<http://purl.obolibrary.org/obo/GRO_0007001>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007001> <http://purl.obolibrary.org/obo/GRO_0007040>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007002> (<http://purl.obolibrary.org/obo/GRO_0007002>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007002> <http://purl.obolibrary.org/obo/GRO_0007199>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007003> (<http://purl.obolibrary.org/obo/GRO_0007003>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007003> <http://purl.obolibrary.org/obo/GRO_0007002>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007004> (<http://purl.obolibrary.org/obo/GRO_0007004>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007004> <http://purl.obolibrary.org/obo/GRO_0007001>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007005> (<http://purl.obolibrary.org/obo/GRO_0007005>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007005> <http://purl.obolibrary.org/obo/GRO_0007003>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007006> (<http://purl.obolibrary.org/obo/GRO_0007006>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007006> <http://purl.obolibrary.org/obo/GRO_0007003>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007007> (<http://purl.obolibrary.org/obo/GRO_0007007>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007007> <http://purl.obolibrary.org/obo/GRO_0007002>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007008> (<http://purl.obolibrary.org/obo/GRO_0007008>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007008> <http://purl.obolibrary.org/obo/GRO_0007007>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007009> (<http://purl.obolibrary.org/obo/GRO_0007009>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007009> <http://purl.obolibrary.org/obo/GRO_0007007>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007010> (<http://purl.obolibrary.org/obo/GRO_0007010>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007010> <http://purl.obolibrary.org/obo/GRO_0007007>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007011> (<http://purl.obolibrary.org/obo/GRO_0007011>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007011> <http://purl.obolibrary.org/obo/GRO_0007002>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007012> (<http://purl.obolibrary.org/obo/GRO_0007012>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007012> <http://purl.obolibrary.org/obo/GRO_0007002>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007013> (<http://purl.obolibrary.org/obo/GRO_0007013>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007013> <http://purl.obolibrary.org/obo/GRO_0007012>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007014> (<http://purl.obolibrary.org/obo/GRO_0007014>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007014> <http://purl.obolibrary.org/obo/GRO_0007012>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007015> (<http://purl.obolibrary.org/obo/GRO_0007015>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007015> <http://purl.obolibrary.org/obo/GRO_0007012>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007016> (<http://purl.obolibrary.org/obo/GRO_0007016>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007016> <http://purl.obolibrary.org/obo/GRO_0007012>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007017> (<http://purl.obolibrary.org/obo/GRO_0007017>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007017> <http://purl.obolibrary.org/obo/GRO_0007002>)
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007017> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/gro-cpd.cereal-plant-development-ontology.1.orig#part_of> <http://purl.obolibrary.org/obo/GRO_0007016>))
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007018> (<http://purl.obolibrary.org/obo/GRO_0007018>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007018> <http://purl.obolibrary.org/obo/GRO_0007017>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007019> (<http://purl.obolibrary.org/obo/GRO_0007019>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007019> <http://purl.obolibrary.org/obo/GRO_0007017>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007020> (<http://purl.obolibrary.org/obo/GRO_0007020>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007020> <http://purl.obolibrary.org/obo/GRO_0007002>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007021> (<http://purl.obolibrary.org/obo/GRO_0007021>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007021> <http://purl.obolibrary.org/obo/GRO_0007020>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007022> (<http://purl.obolibrary.org/obo/GRO_0007022>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007022> <http://purl.obolibrary.org/obo/GRO_0007020>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007023> (<http://purl.obolibrary.org/obo/GRO_0007023>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007023> <http://purl.obolibrary.org/obo/GRO_0007020>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007024> (<http://purl.obolibrary.org/obo/GRO_0007024>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007024> <http://purl.obolibrary.org/obo/GRO_0007020>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007025> (<http://purl.obolibrary.org/obo/GRO_0007025>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007025> <http://purl.obolibrary.org/obo/GRO_0007002>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007026> (<http://purl.obolibrary.org/obo/GRO_0007026>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007026> <http://purl.obolibrary.org/obo/GRO_0007025>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007027> (<http://purl.obolibrary.org/obo/GRO_0007027>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007027> <http://purl.obolibrary.org/obo/GRO_0007025>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007028> (<http://purl.obolibrary.org/obo/GRO_0007028>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007028> <http://purl.obolibrary.org/obo/GRO_0007027>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007029> (<http://purl.obolibrary.org/obo/GRO_0007029>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007029> <http://purl.obolibrary.org/obo/GRO_0007002>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007030> (<http://purl.obolibrary.org/obo/GRO_0007030>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007030> <http://purl.obolibrary.org/obo/GRO_0007029>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007031> (<http://purl.obolibrary.org/obo/GRO_0007031>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007031> <http://purl.obolibrary.org/obo/GRO_0007030>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007032> (<http://purl.obolibrary.org/obo/GRO_0007032>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007032> <http://purl.obolibrary.org/obo/GRO_0007030>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007033> (<http://purl.obolibrary.org/obo/GRO_0007033>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007033> <http://purl.obolibrary.org/obo/GRO_0007029>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007034> (<http://purl.obolibrary.org/obo/GRO_0007034>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007034> <http://purl.obolibrary.org/obo/GRO_0007029>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007035> (<http://purl.obolibrary.org/obo/GRO_0007035>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007035> <http://purl.obolibrary.org/obo/GRO_0007029>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007036> (<http://purl.obolibrary.org/obo/GRO_0007036>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007036> <http://purl.obolibrary.org/obo/GRO_0007002>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007037> (<http://purl.obolibrary.org/obo/GRO_0007037>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007037> <http://purl.obolibrary.org/obo/GRO_0007002>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007038> (<http://purl.obolibrary.org/obo/GRO_0007038>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007038> <http://purl.obolibrary.org/obo/GRO_0007037>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007039> (<http://purl.obolibrary.org/obo/GRO_0007039>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007039> <http://purl.obolibrary.org/obo/GRO_0007037>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007040> (<http://purl.obolibrary.org/obo/GRO_0007040>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007040> <http://purl.obolibrary.org/obo/GRO_0007199>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007041> (<http://purl.obolibrary.org/obo/GRO_0007041>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007041> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/gro-cpd.cereal-plant-development-ontology.1.orig#part_of> <http://purl.obolibrary.org/obo/GRO_0007048>))
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007042> (<http://purl.obolibrary.org/obo/GRO_0007042>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007042> <http://purl.obolibrary.org/obo/GRO_0007141>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007043> (<http://purl.obolibrary.org/obo/GRO_0007043>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007043> <http://purl.obolibrary.org/obo/GRO_0007139>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007044> (<http://purl.obolibrary.org/obo/GRO_0007044>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007044> <http://purl.obolibrary.org/obo/GRO_0007140>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007045> (<http://purl.obolibrary.org/obo/GRO_0007045>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007045> <http://purl.obolibrary.org/obo/GRO_0007141>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007046> (<http://purl.obolibrary.org/obo/GRO_0007046>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007046> <http://purl.obolibrary.org/obo/GRO_0007141>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007047> (<http://purl.obolibrary.org/obo/GRO_0007047>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007047> <http://purl.obolibrary.org/obo/GRO_0007139>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007048> (<http://purl.obolibrary.org/obo/GRO_0007048>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007048> <http://purl.obolibrary.org/obo/GRO_0007139>)
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007048> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/gro-cpd.cereal-plant-development-ontology.1.orig#part_of> <http://purl.obolibrary.org/obo/GRO_0007140>))
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007049> (<http://purl.obolibrary.org/obo/GRO_0007049>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007049> <http://purl.obolibrary.org/obo/GRO_0007139>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007051> (<http://purl.obolibrary.org/obo/GRO_0007051>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007051> <http://purl.obolibrary.org/obo/GRO_0007156>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007052> (<http://purl.obolibrary.org/obo/GRO_0007052>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007052> <http://purl.obolibrary.org/obo/GRO_0007051>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007053> (<http://purl.obolibrary.org/obo/GRO_0007053>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007053> <http://purl.obolibrary.org/obo/GRO_0007051>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007054> (<http://purl.obolibrary.org/obo/GRO_0007054>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007054> <http://purl.obolibrary.org/obo/GRO_0007051>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007055> (<http://purl.obolibrary.org/obo/GRO_0007055>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007055> <http://purl.obolibrary.org/obo/GRO_0007051>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007056> (<http://purl.obolibrary.org/obo/GRO_0007056>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007056> <http://purl.obolibrary.org/obo/GRO_0007051>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007057> (<http://purl.obolibrary.org/obo/GRO_0007057>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007057> <http://purl.obolibrary.org/obo/GRO_0007051>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007058> (<http://purl.obolibrary.org/obo/GRO_0007058>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007058> <http://purl.obolibrary.org/obo/GRO_0007156>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007059> (<http://purl.obolibrary.org/obo/GRO_0007059>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007059> <http://purl.obolibrary.org/obo/GRO_0007058>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007060> (<http://purl.obolibrary.org/obo/GRO_0007060>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007060> <http://purl.obolibrary.org/obo/GRO_0007058>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007061> (<http://purl.obolibrary.org/obo/GRO_0007061>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007061> <http://purl.obolibrary.org/obo/GRO_0007058>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007062> (<http://purl.obolibrary.org/obo/GRO_0007062>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007062> <http://purl.obolibrary.org/obo/GRO_0007058>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007063> (<http://purl.obolibrary.org/obo/GRO_0007063>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007063> <http://purl.obolibrary.org/obo/GRO_0007058>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007064> (<http://purl.obolibrary.org/obo/GRO_0007064>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007064> <http://purl.obolibrary.org/obo/GRO_0007058>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007065> (<http://purl.obolibrary.org/obo/GRO_0007065>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007065> <http://purl.obolibrary.org/obo/GRO_0007058>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007066> (<http://purl.obolibrary.org/obo/GRO_0007066>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007066> <http://purl.obolibrary.org/obo/GRO_0007058>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007067> (<http://purl.obolibrary.org/obo/GRO_0007067>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007067> <http://purl.obolibrary.org/obo/GRO_0007058>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007068> (<http://purl.obolibrary.org/obo/GRO_0007068>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007068> <http://purl.obolibrary.org/obo/GRO_0007058>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007069> (<http://purl.obolibrary.org/obo/GRO_0007069>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007069> <http://purl.obolibrary.org/obo/GRO_0007156>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007070> (<http://purl.obolibrary.org/obo/GRO_0007070>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007070> <http://purl.obolibrary.org/obo/GRO_0007069>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007071> (<http://purl.obolibrary.org/obo/GRO_0007071>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007071> <http://purl.obolibrary.org/obo/GRO_0007069>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007072> (<http://purl.obolibrary.org/obo/GRO_0007072>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007072> <http://purl.obolibrary.org/obo/GRO_0007069>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007073> (<http://purl.obolibrary.org/obo/GRO_0007073>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007073> <http://purl.obolibrary.org/obo/GRO_0007069>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007074> (<http://purl.obolibrary.org/obo/GRO_0007074>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007074> <http://purl.obolibrary.org/obo/GRO_0007069>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007075> (<http://purl.obolibrary.org/obo/GRO_0007075>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007075> <http://purl.obolibrary.org/obo/GRO_0007069>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007076> (<http://purl.obolibrary.org/obo/GRO_0007076>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007076> <http://purl.obolibrary.org/obo/GRO_0007069>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007077> (<http://purl.obolibrary.org/obo/GRO_0007077>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007077> <http://purl.obolibrary.org/obo/GRO_0007069>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007078> (<http://purl.obolibrary.org/obo/GRO_0007078>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007078> <http://purl.obolibrary.org/obo/GRO_0007069>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007079> (<http://purl.obolibrary.org/obo/GRO_0007079>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007079> <http://purl.obolibrary.org/obo/GRO_0007069>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007080> (<http://purl.obolibrary.org/obo/GRO_0007080>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007080> <http://purl.obolibrary.org/obo/GRO_0007156>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007081> (<http://purl.obolibrary.org/obo/GRO_0007081>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007081> <http://purl.obolibrary.org/obo/GRO_0007080>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007082> (<http://purl.obolibrary.org/obo/GRO_0007082>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007082> <http://purl.obolibrary.org/obo/GRO_0007080>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007083> (<http://purl.obolibrary.org/obo/GRO_0007083>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007083> <http://purl.obolibrary.org/obo/GRO_0007080>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007084> (<http://purl.obolibrary.org/obo/GRO_0007084>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007084> <http://purl.obolibrary.org/obo/GRO_0007080>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007085> (<http://purl.obolibrary.org/obo/GRO_0007085>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007085> <http://purl.obolibrary.org/obo/GRO_0007080>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007086> (<http://purl.obolibrary.org/obo/GRO_0007086>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007086> <http://purl.obolibrary.org/obo/GRO_0007080>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007087> (<http://purl.obolibrary.org/obo/GRO_0007087>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007087> <http://purl.obolibrary.org/obo/GRO_0007080>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007088> (<http://purl.obolibrary.org/obo/GRO_0007088>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007088> <http://purl.obolibrary.org/obo/GRO_0007080>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007089> (<http://purl.obolibrary.org/obo/GRO_0007089>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007089> <http://purl.obolibrary.org/obo/GRO_0007080>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007090> (<http://purl.obolibrary.org/obo/GRO_0007090>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007090> <http://purl.obolibrary.org/obo/GRO_0007156>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007091> (<http://purl.obolibrary.org/obo/GRO_0007091>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007091> <http://purl.obolibrary.org/obo/GRO_0007090>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007092> (<http://purl.obolibrary.org/obo/GRO_0007092>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007092> <http://purl.obolibrary.org/obo/GRO_0007090>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007093> (<http://purl.obolibrary.org/obo/GRO_0007093>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007093> <http://purl.obolibrary.org/obo/GRO_0007090>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007094> (<http://purl.obolibrary.org/obo/GRO_0007094>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007094> <http://purl.obolibrary.org/obo/GRO_0007090>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007095> (<http://purl.obolibrary.org/obo/GRO_0007095>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007095> <http://purl.obolibrary.org/obo/GRO_0007156>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007096> (<http://purl.obolibrary.org/obo/GRO_0007096>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007096> <http://purl.obolibrary.org/obo/GRO_0007095>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007097> (<http://purl.obolibrary.org/obo/GRO_0007097>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007097> <http://purl.obolibrary.org/obo/GRO_0007095>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007098> (<http://purl.obolibrary.org/obo/GRO_0007098>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007098> <http://purl.obolibrary.org/obo/GRO_0007095>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007099> (<http://purl.obolibrary.org/obo/GRO_0007099>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007099> <http://purl.obolibrary.org/obo/GRO_0007095>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007100> (<http://purl.obolibrary.org/obo/GRO_0007100>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007100> <http://purl.obolibrary.org/obo/GRO_0007095>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007101> (<http://purl.obolibrary.org/obo/GRO_0007101>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007101> <http://purl.obolibrary.org/obo/GRO_0007156>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007102> (<http://purl.obolibrary.org/obo/GRO_0007102>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007102> <http://purl.obolibrary.org/obo/GRO_0007101>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007103> (<http://purl.obolibrary.org/obo/GRO_0007103>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007103> <http://purl.obolibrary.org/obo/GRO_0007101>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007104> (<http://purl.obolibrary.org/obo/GRO_0007104>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007104> <http://purl.obolibrary.org/obo/GRO_0007101>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007105> (<http://purl.obolibrary.org/obo/GRO_0007105>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007105> <http://purl.obolibrary.org/obo/GRO_0007156>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007106> (<http://purl.obolibrary.org/obo/GRO_0007106>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007106> <http://purl.obolibrary.org/obo/GRO_0007105>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007107> (<http://purl.obolibrary.org/obo/GRO_0007107>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007107> <http://purl.obolibrary.org/obo/GRO_0007105>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007108> (<http://purl.obolibrary.org/obo/GRO_0007108>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007108> <http://purl.obolibrary.org/obo/GRO_0007105>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007109> (<http://purl.obolibrary.org/obo/GRO_0007109>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007109> <http://purl.obolibrary.org/obo/GRO_0007105>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007110> (<http://purl.obolibrary.org/obo/GRO_0007110>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007110> <http://purl.obolibrary.org/obo/GRO_0007156>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007111> (<http://purl.obolibrary.org/obo/GRO_0007111>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007111> <http://purl.obolibrary.org/obo/GRO_0007110>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007112> (<http://purl.obolibrary.org/obo/GRO_0007112>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007112> <http://purl.obolibrary.org/obo/GRO_0007110>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007113> (<http://purl.obolibrary.org/obo/GRO_0007113>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007113> <http://purl.obolibrary.org/obo/GRO_0007110>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007114> (<http://purl.obolibrary.org/obo/GRO_0007114>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007114> <http://purl.obolibrary.org/obo/GRO_0007156>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007115> (<http://purl.obolibrary.org/obo/GRO_0007115>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007115> <http://purl.obolibrary.org/obo/GRO_0007114>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007116> (<http://purl.obolibrary.org/obo/GRO_0007116>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007116> <http://purl.obolibrary.org/obo/GRO_0007114>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007117> (<http://purl.obolibrary.org/obo/GRO_0007117>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007117> <http://purl.obolibrary.org/obo/GRO_0007114>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007118> (<http://purl.obolibrary.org/obo/GRO_0007118>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007118> <http://purl.obolibrary.org/obo/GRO_0007114>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007119> (<http://purl.obolibrary.org/obo/GRO_0007119>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007119> <http://purl.obolibrary.org/obo/GRO_0007114>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007120> (<http://purl.obolibrary.org/obo/GRO_0007120>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007120> <http://purl.obolibrary.org/obo/GRO_0007114>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007121> (<http://purl.obolibrary.org/obo/GRO_0007121>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007121> <http://purl.obolibrary.org/obo/GRO_0007114>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007122> (<http://purl.obolibrary.org/obo/GRO_0007122>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007122> <http://purl.obolibrary.org/obo/GRO_0007114>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007123> (<http://purl.obolibrary.org/obo/GRO_0007123>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007123> <http://purl.obolibrary.org/obo/GRO_0007114>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007124> (<http://purl.obolibrary.org/obo/GRO_0007124>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007124> <http://purl.obolibrary.org/obo/GRO_0007199>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007125> (<http://purl.obolibrary.org/obo/GRO_0007125>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007125> <http://purl.obolibrary.org/obo/GRO_0007124>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007126> (<http://purl.obolibrary.org/obo/GRO_0007126>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007126> <http://purl.obolibrary.org/obo/GRO_0007124>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007127> (<http://purl.obolibrary.org/obo/GRO_0007127>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007127> <http://purl.obolibrary.org/obo/GRO_0007124>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007128> (<http://purl.obolibrary.org/obo/GRO_0007128>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007128> <http://purl.obolibrary.org/obo/GRO_0007124>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007129> (<http://purl.obolibrary.org/obo/GRO_0007129>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007129> <http://purl.obolibrary.org/obo/GRO_0007124>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007130> (<http://purl.obolibrary.org/obo/GRO_0007130>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007130> <http://purl.obolibrary.org/obo/GRO_0007124>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007131> (<http://purl.obolibrary.org/obo/GRO_0007131>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007131> <http://purl.obolibrary.org/obo/GRO_0007124>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007132> (<http://purl.obolibrary.org/obo/GRO_0007132>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007132> <http://purl.obolibrary.org/obo/GRO_0007124>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007133> (<http://purl.obolibrary.org/obo/GRO_0007133>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007133> <http://purl.obolibrary.org/obo/GRO_0007132>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007134> (<http://purl.obolibrary.org/obo/GRO_0007134>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007134> <http://purl.obolibrary.org/obo/GRO_0007132>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007135> (<http://purl.obolibrary.org/obo/GRO_0007135>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007135> <http://purl.obolibrary.org/obo/GRO_0007124>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007136> (<http://purl.obolibrary.org/obo/GRO_0007136>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007136> <http://purl.obolibrary.org/obo/GRO_0007040>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007137> (<http://purl.obolibrary.org/obo/GRO_0007137>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007137> <http://purl.obolibrary.org/obo/GRO_0007136>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007138> (<http://purl.obolibrary.org/obo/GRO_0007138>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007138> <http://purl.obolibrary.org/obo/GRO_0007136>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007139> (<http://purl.obolibrary.org/obo/GRO_0007139>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007139> <http://purl.obolibrary.org/obo/GRO_0007001>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007140> (<http://purl.obolibrary.org/obo/GRO_0007140>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007140> <http://purl.obolibrary.org/obo/GRO_0007001>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007141> (<http://purl.obolibrary.org/obo/GRO_0007141>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007141> <http://purl.obolibrary.org/obo/GRO_0007001>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007142> (<http://purl.obolibrary.org/obo/GRO_0007142>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007142> <http://purl.obolibrary.org/obo/GRO_0007047>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007143> (<http://purl.obolibrary.org/obo/GRO_0007143>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007143> <http://purl.obolibrary.org/obo/GRO_0007124>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007144> (<http://purl.obolibrary.org/obo/GRO_0007144>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007144> <http://purl.obolibrary.org/obo/GRO_0007049>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007145> (<http://purl.obolibrary.org/obo/GRO_0007145>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007145> <http://purl.obolibrary.org/obo/GRO_0007139>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007146> (<http://purl.obolibrary.org/obo/GRO_0007146>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007146> <http://purl.obolibrary.org/obo/GRO_0007139>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007147> (<http://purl.obolibrary.org/obo/GRO_0007147>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007147> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/gro-cpd.cereal-plant-development-ontology.1.orig#part_of> <http://purl.obolibrary.org/obo/GRO_0007048>))
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007148> (<http://purl.obolibrary.org/obo/GRO_0007148>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007148> <http://purl.obolibrary.org/obo/GRO_0007140>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007149> (<http://purl.obolibrary.org/obo/GRO_0007149>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007149> <http://purl.obolibrary.org/obo/GRO_0007148>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007150> (<http://purl.obolibrary.org/obo/GRO_0007150>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007150> <http://purl.obolibrary.org/obo/GRO_0007148>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007151> (<http://purl.obolibrary.org/obo/GRO_0007151>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007151> <http://purl.obolibrary.org/obo/GRO_0007044>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007152> (<http://purl.obolibrary.org/obo/GRO_0007152>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007152> <http://purl.obolibrary.org/obo/GRO_0007042>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007153> (<http://purl.obolibrary.org/obo/GRO_0007153>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007153> <http://purl.obolibrary.org/obo/GRO_0007124>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007154> (<http://purl.obolibrary.org/obo/GRO_0007154>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007154> <http://purl.obolibrary.org/obo/GRO_0007042>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007156> (<http://purl.obolibrary.org/obo/GRO_0007156>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007156> <http://purl.obolibrary.org/obo/GRO_0007199>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007157> (<http://purl.obolibrary.org/obo/GRO_0007157>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007157> <http://purl.obolibrary.org/obo/GRO_0007136>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007158> (<http://purl.obolibrary.org/obo/GRO_0007158>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007158> <http://purl.obolibrary.org/obo/GRO_0007136>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007159> (<http://purl.obolibrary.org/obo/GRO_0007159>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007159> <http://purl.obolibrary.org/obo/GRO_0007136>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007160> (<http://purl.obolibrary.org/obo/GRO_0007160>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007160> <http://purl.obolibrary.org/obo/GRO_0007136>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007161> (<http://purl.obolibrary.org/obo/GRO_0007161>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007161> <http://purl.obolibrary.org/obo/GRO_0007138>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007162> (<http://purl.obolibrary.org/obo/GRO_0007162>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007162> <http://purl.obolibrary.org/obo/GRO_0007138>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007163> (<http://purl.obolibrary.org/obo/GRO_0007163>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007163> <http://purl.obolibrary.org/obo/GRO_0007138>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007164> (<http://purl.obolibrary.org/obo/GRO_0007164>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007164> <http://purl.obolibrary.org/obo/GRO_0007138>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007165> (<http://purl.obolibrary.org/obo/GRO_0007165>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007165> <http://purl.obolibrary.org/obo/GRO_0007138>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007166> (<http://purl.obolibrary.org/obo/GRO_0007166>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007166> <http://purl.obolibrary.org/obo/GRO_0007138>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007167> (<http://purl.obolibrary.org/obo/GRO_0007167>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007167> <http://purl.obolibrary.org/obo/GRO_0007138>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007168> (<http://purl.obolibrary.org/obo/GRO_0007168>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007168> <http://purl.obolibrary.org/obo/GRO_0007137>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007169> (<http://purl.obolibrary.org/obo/GRO_0007169>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007169> <http://purl.obolibrary.org/obo/GRO_0007137>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007170> (<http://purl.obolibrary.org/obo/GRO_0007170>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007170> <http://purl.obolibrary.org/obo/GRO_0007137>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007171> (<http://purl.obolibrary.org/obo/GRO_0007171>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007171> <http://purl.obolibrary.org/obo/GRO_0007137>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007172> (<http://purl.obolibrary.org/obo/GRO_0007172>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007172> <http://purl.obolibrary.org/obo/GRO_0007137>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007173> (<http://purl.obolibrary.org/obo/GRO_0007173>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007173> <http://purl.obolibrary.org/obo/GRO_0007137>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007174> (<http://purl.obolibrary.org/obo/GRO_0007174>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007174> <http://purl.obolibrary.org/obo/GRO_0007137>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007175> (<http://purl.obolibrary.org/obo/GRO_0007175>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007175> <http://purl.obolibrary.org/obo/GRO_0007137>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007176> (<http://purl.obolibrary.org/obo/GRO_0007176>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007176> <http://purl.obolibrary.org/obo/GRO_0007137>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007177> (<http://purl.obolibrary.org/obo/GRO_0007177>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007177> <http://purl.obolibrary.org/obo/GRO_0007137>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007178> (<http://purl.obolibrary.org/obo/GRO_0007178>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007178> <http://purl.obolibrary.org/obo/GRO_0007160>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007179> (<http://purl.obolibrary.org/obo/GRO_0007179>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007179> <http://purl.obolibrary.org/obo/GRO_0007160>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007180> (<http://purl.obolibrary.org/obo/GRO_0007180>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007180> <http://purl.obolibrary.org/obo/GRO_0007160>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007181> (<http://purl.obolibrary.org/obo/GRO_0007181>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007181> <http://purl.obolibrary.org/obo/GRO_0007160>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007182> (<http://purl.obolibrary.org/obo/GRO_0007182>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007182> <http://purl.obolibrary.org/obo/GRO_0007160>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007183> (<http://purl.obolibrary.org/obo/GRO_0007183>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007183> <http://purl.obolibrary.org/obo/GRO_0007160>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007184> (<http://purl.obolibrary.org/obo/GRO_0007184>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007184> <http://purl.obolibrary.org/obo/GRO_0007160>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007185> (<http://purl.obolibrary.org/obo/GRO_0007185>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007185> <http://purl.obolibrary.org/obo/GRO_0007160>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007186> (<http://purl.obolibrary.org/obo/GRO_0007186>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007186> <http://purl.obolibrary.org/obo/GRO_0007160>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007187> (<http://purl.obolibrary.org/obo/GRO_0007187>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007187> <http://purl.obolibrary.org/obo/GRO_0007160>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007188> (<http://purl.obolibrary.org/obo/GRO_0007188>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007188> <http://purl.obolibrary.org/obo/GRO_0007160>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007189> (<http://purl.obolibrary.org/obo/GRO_0007189>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007189> <http://purl.obolibrary.org/obo/GRO_0007157>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007190> (<http://purl.obolibrary.org/obo/GRO_0007190>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007190> <http://purl.obolibrary.org/obo/GRO_0007157>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007191> (<http://purl.obolibrary.org/obo/GRO_0007191>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007191> <http://purl.obolibrary.org/obo/GRO_0007000>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007192> (<http://purl.obolibrary.org/obo/GRO_0007192>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007192> <http://purl.obolibrary.org/obo/GRO_0007000>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007193> (<http://purl.obolibrary.org/obo/GRO_0007193>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007193> <http://purl.obolibrary.org/obo/GRO_0007000>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007194> (<http://purl.obolibrary.org/obo/GRO_0007194>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007194> <http://purl.obolibrary.org/obo/GRO_0007003>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007195> (<http://purl.obolibrary.org/obo/GRO_0007195>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007195> <http://purl.obolibrary.org/obo/GRO_0007157>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007196> (<http://purl.obolibrary.org/obo/GRO_0007196>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007196> <http://purl.obolibrary.org/obo/GRO_0007157>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007197> (<http://purl.obolibrary.org/obo/GRO_0007197>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007197> <http://purl.obolibrary.org/obo/GRO_0007157>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007198> (<http://purl.obolibrary.org/obo/GRO_0007198>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007198> <http://purl.obolibrary.org/obo/GRO_0007157>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007200> (<http://purl.obolibrary.org/obo/GRO_0007200>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007200> <http://purl.obolibrary.org/obo/GRO_0007157>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007201> (<http://purl.obolibrary.org/obo/GRO_0007201>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007201> <http://purl.obolibrary.org/obo/GRO_0007157>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007202> (<http://purl.obolibrary.org/obo/GRO_0007202>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007202> <http://purl.obolibrary.org/obo/GRO_0007158>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007203> (<http://purl.obolibrary.org/obo/GRO_0007203>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007203> <http://purl.obolibrary.org/obo/GRO_0007158>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007204> (<http://purl.obolibrary.org/obo/GRO_0007204>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007204> <http://purl.obolibrary.org/obo/GRO_0007158>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007205> (<http://purl.obolibrary.org/obo/GRO_0007205>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007205> <http://purl.obolibrary.org/obo/GRO_0007158>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007206> (<http://purl.obolibrary.org/obo/GRO_0007206>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007206> <http://purl.obolibrary.org/obo/GRO_0007158>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007207> (<http://purl.obolibrary.org/obo/GRO_0007207>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007207> <http://purl.obolibrary.org/obo/GRO_0007158>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007208> (<http://purl.obolibrary.org/obo/GRO_0007208>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007208> <http://purl.obolibrary.org/obo/GRO_0007158>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007209> (<http://purl.obolibrary.org/obo/GRO_0007209>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007209> <http://purl.obolibrary.org/obo/GRO_0007159>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007210> (<http://purl.obolibrary.org/obo/GRO_0007210>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007210> <http://purl.obolibrary.org/obo/GRO_0007159>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007211> (<http://purl.obolibrary.org/obo/GRO_0007211>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007211> <http://purl.obolibrary.org/obo/GRO_0007159>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007212> (<http://purl.obolibrary.org/obo/GRO_0007212>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007212> <http://purl.obolibrary.org/obo/GRO_0007159>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007213> (<http://purl.obolibrary.org/obo/GRO_0007213>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007213> <http://purl.obolibrary.org/obo/GRO_0007159>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007214> (<http://purl.obolibrary.org/obo/GRO_0007214>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007214> <http://purl.obolibrary.org/obo/GRO_0007159>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007216> (<http://purl.obolibrary.org/obo/GRO_0007216>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007216> <http://purl.obolibrary.org/obo/GRO_0007043>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007217> (<http://purl.obolibrary.org/obo/GRO_0007217>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007217> <http://purl.obolibrary.org/obo/GRO_0007212>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007218> (<http://purl.obolibrary.org/obo/GRO_0007218>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007218> <http://purl.obolibrary.org/obo/GRO_0007212>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007219> (<http://purl.obolibrary.org/obo/GRO_0007219>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007219> <http://purl.obolibrary.org/obo/GRO_0007212>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007220> (<http://purl.obolibrary.org/obo/GRO_0007220>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007220> <http://purl.obolibrary.org/obo/GRO_0007212>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007221> (<http://purl.obolibrary.org/obo/GRO_0007221>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007221> <http://purl.obolibrary.org/obo/GRO_0007212>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007222> (<http://purl.obolibrary.org/obo/GRO_0007222>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007222> <http://purl.obolibrary.org/obo/GRO_0007212>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007223> (<http://purl.obolibrary.org/obo/GRO_0007223>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007223> <http://purl.obolibrary.org/obo/GRO_0007212>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007224> (<http://purl.obolibrary.org/obo/GRO_0007224>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007224> <http://purl.obolibrary.org/obo/GRO_0007212>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007225> (<http://purl.obolibrary.org/obo/GRO_0007225>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007225> <http://purl.obolibrary.org/obo/GRO_0007159>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007226> (<http://purl.obolibrary.org/obo/GRO_0007226>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007226> <http://purl.obolibrary.org/obo/GRO_0007225>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007227> (<http://purl.obolibrary.org/obo/GRO_0007227>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007227> <http://purl.obolibrary.org/obo/GRO_0007225>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007228> (<http://purl.obolibrary.org/obo/GRO_0007228>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007228> <http://purl.obolibrary.org/obo/GRO_0007225>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007229> (<http://purl.obolibrary.org/obo/GRO_0007229>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007229> <http://purl.obolibrary.org/obo/GRO_0007225>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007230> (<http://purl.obolibrary.org/obo/GRO_0007230>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007230> <http://purl.obolibrary.org/obo/GRO_0007225>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007231> (<http://purl.obolibrary.org/obo/GRO_0007231>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007231> <http://purl.obolibrary.org/obo/GRO_0007043>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007232> (<http://purl.obolibrary.org/obo/GRO_0007232>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007232> <http://purl.obolibrary.org/obo/GRO_0007231>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007233> (<http://purl.obolibrary.org/obo/GRO_0007233>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007233> <http://purl.obolibrary.org/obo/GRO_0007231>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007234> (<http://purl.obolibrary.org/obo/GRO_0007234>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007234> <http://purl.obolibrary.org/obo/GRO_0007236>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007235> (<http://purl.obolibrary.org/obo/GRO_0007235>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007235> <http://purl.obolibrary.org/obo/GRO_0007236>)
+
+# Class: <http://purl.obolibrary.org/obo/GRO_0007236> (<http://purl.obolibrary.org/obo/GRO_0007236>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GRO_0007236> <http://purl.obolibrary.org/obo/GRO_0007043>)
+
+# Class: <https://smolang.org/rdfMutate#newNode-0> (<https://smolang.org/rdfMutate#newNode-0>)
+
+SubClassOf(<https://smolang.org/rdfMutate#newNode-0> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/gro-cpd.cereal-plant-development-ontology.1.orig#part_of> <http://purl.obolibrary.org/obo/GRO_0007048>))
+
+# Class: <https://smolang.org/rdfMutate#newNode-7> (<https://smolang.org/rdfMutate#newNode-7>)
+
+SubClassOf(<https://smolang.org/rdfMutate#newNode-7> <https://smolang.org/rdfMutate#newNode-7>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://purl.obolibrary.org/obo/GRO_0007080> (<http://purl.obolibrary.org/obo/GRO_0007080>)
+
+ClassAssertion(owl:NamedIndividual <http://purl.obolibrary.org/obo/GRO_0007080>)
+
+# Individual: <https://smolang.org/rdfMutate#newNode-6> (<https://smolang.org/rdfMutate#newNode-6>)
+
+ClassAssertion(owl:NamedIndividual <https://smolang.org/rdfMutate#newNode-6>)
+
+# Individual: <https://smolang.org/rdfMutate#newNode-9> (<https://smolang.org/rdfMutate#newNode-9>)
+
+ClassAssertion(owl:NamedIndividual <https://smolang.org/rdfMutate#newNode-9>)
+
+
+)

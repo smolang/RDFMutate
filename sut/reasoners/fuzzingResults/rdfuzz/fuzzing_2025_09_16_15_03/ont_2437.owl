@@ -1,0 +1,1373 @@
+Prefix(:=<urn:unnamed:ontology#ont19108396484728415>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:unnamed:ontology#ont19108396484728415>
+
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00277>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00633>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00212>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00443>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00263>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00554>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00434>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-5>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00494>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00506>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00665>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00617>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00485>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00405>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00516>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00600>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00145>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00381>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00270>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00453>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00227>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00338>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00311>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00302>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00278>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00634>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00247>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00389>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00362>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00269>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00331>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00480>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00353>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00697>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00670>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00298>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00280>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00220>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00437>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00584>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-6>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00237>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00451>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00321>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00420>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00175>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00668>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00408>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00288>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00601>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00146>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00115>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00454>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00565>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00166>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00305>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00570>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00676>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00204>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00105>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00536>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00700>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00416>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00620>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00527>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00500>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00611>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00156>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00392>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00281>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00255>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00238>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00349>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00322>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00421>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00289>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00258>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00373>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00472>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00544>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00383>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00489>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00411>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00573>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00595>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00123>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00440>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00462>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00679>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00431>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00205>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00106>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-0>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00528>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00662>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00612>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00157>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00256>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00402>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00557>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00126>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00340>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00140>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00357>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00177>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00590>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00224>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00215>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00547>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00519>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00330>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00275>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00631>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00603>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00446>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00266>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00530>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00184>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00124>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00497>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00509>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00432>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-3>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00663>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00483>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00647>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00403>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00394>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00683>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00143>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00314>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00134>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00637>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00216>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00365>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00490>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00300>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00673>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00447>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00267>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00531>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00351>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00187>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00250>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00498>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00368>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00467>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00582>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00551>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00235>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00207>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00614>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00240>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00286>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00457>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00294>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00113>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00195>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00135>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00366>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00703>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00335>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00674>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00202>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00103>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00284>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00414>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00525>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00253>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00154>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00694>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00325>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00629>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00162>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00190>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00475>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00119>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00542>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00297>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00653>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00309>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00198>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00598>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00261>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00478>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00593>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00181>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00562>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00692>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00218>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00492>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00121>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00624>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00138>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00504>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00449>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00232>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00533>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00660>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00644>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00189>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00326>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00400>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00355>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00377>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00346>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00560>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00360>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00213>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00517>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00577>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00397>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00317>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00444>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00264>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00435>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00182>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00495>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00173>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00464>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00507>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00139>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00486>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00406>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00645>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00271>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00228>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00312>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00291>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00192>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00132>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00607>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00635>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00279>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00149>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00363>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00248>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00332>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00243>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00354>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00671>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00299>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00655>))
+Declaration(Class(<http://www.w3.org/2004/02/skos/core#Concept>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00520>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00176>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00465>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00626>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00571>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00371>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00470>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00588>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00687>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00116>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00328>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00455>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00427>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00111>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00511>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00167>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00193>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00460>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00249>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00677>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00701>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00333>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00417>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00501>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00656>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00384>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00555>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00239>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00323>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00422>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00627>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00618>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00160>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00259>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00374>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00473>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00343>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00273>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00117>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00574>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00596>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00168>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00150>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00476>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00107>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00170>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00418>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00502>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00481>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00257>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00158>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00230>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00127>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00558>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00341>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00613>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00438>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00642>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00221>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00141>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00358>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00522>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00178>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00669>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00409>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00604>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00575>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00395>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00185>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00315>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00650>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00306>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00433>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00638>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00171>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00537>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00664>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00648>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00484>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00621>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00404>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00128>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00393>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00585>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00684>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00359>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00260>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00217>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00379>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00301>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00605>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00246>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00268>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00241>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00569>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00210>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00352>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00251>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00499>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00369>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00468>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00441>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00583>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00552>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00463>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00208>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00109>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00649>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00615>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00285>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00586>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00685>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00295>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00114>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00196>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00136>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00425>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00591>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00690>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00225>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00165>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00336>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00548>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00675>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00659>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00276>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00632>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00387>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00415>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00680>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00695>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00469>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00553>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00209>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00666>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00616>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00459>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00543>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00515>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00488>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00380>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00262>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00479>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00452>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00594>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00563>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00693>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00219>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00337>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00493>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00303>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00233>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00388>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00534>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00696>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00188>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00125>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00390>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00436>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00356>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00236>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00130>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00347>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00667>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00450>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00378>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00320>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00361>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00287>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00518>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00398>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00578>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00602>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00318>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00183>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00564>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00174>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00304>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00203>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00104>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00535>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00646>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00254>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00155>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00610>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00391>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00682>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00191>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00348>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00608>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00222>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00579>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00399>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00244>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00545>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00319>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00199>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00382>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00599>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00410>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00367>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00466>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00122>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00339>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00550>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00625>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00206>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00430>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00572>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00678>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00372>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00471>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00529>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00589>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00688>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00661>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00329>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00428>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00112>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00401>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00512>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00293>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00194>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00609>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00223>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00334>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00245>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00214>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00657>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00630>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00274>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00385>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00445>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00265>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00556>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00640>))
+Declaration(Class(owl:Class))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00628>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00496>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00508>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00619>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00161>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00118>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00272>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00429>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00513>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00169>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00229>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00142>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00313>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00477>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00133>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00561>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00636>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00491>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00419>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00364>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00482>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00503>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00448>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00231>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00200>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00101>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00439>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00412>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00523>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00186>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00641>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00234>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00345>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00148>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00576>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00396>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00350>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00456>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00567>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00316>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00540>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00651>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00307>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00581>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00639>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00172>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00538>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00702>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00622>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00129>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00201>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00102>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00524>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00252>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00153>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00324>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00423>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00606>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00474>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00242>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00211>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00568>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00296>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00652>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00151>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00442>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00197>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00308>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00597>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00180>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00539>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00120>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00505>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00623>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00137>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00370>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00159>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00559>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00587>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00686>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00342>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00643>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00681>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00327>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00426>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00110>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00510>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00592>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00691>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00226>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00164>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00310>))
+Declaration(Class(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00549>))
+Declaration(ObjectProperty(<http://www.obofoundry.org/ro/ro.owl#part_of>))
+Declaration(DataProperty(<https://smolang.org/rdfMutate#newNode-4>))
+Declaration(NamedIndividual(owl:Class))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-2>))
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://www.obofoundry.org/ro/ro.owl#part_of> (<http://www.obofoundry.org/ro/ro.owl#part_of>)
+
+ObjectPropertyRange(<http://www.obofoundry.org/ro/ro.owl#part_of> <https://smolang.org/rdfMutate#newNode-6>)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: <https://smolang.org/rdfMutate#newNode-4> (<https://smolang.org/rdfMutate#newNode-4>)
+
+FunctionalDataProperty(<https://smolang.org/rdfMutate#newNode-4>)
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00101> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00101>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00101> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00480>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00102> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00102>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00102> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00126>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00103> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00103>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00103> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00371>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00104> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00104>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00104> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00164>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00105> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00105>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00105> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00154>))
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00105> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00164>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00106> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00106>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00106> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00164>)
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00106> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00164>))
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00106> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00535>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00119> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00119>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00119> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00397>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00122> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00122>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00122> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00346>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00124> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00124>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00124> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00480>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00126> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00126>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00126> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00346>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00136> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00136>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00136> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00537>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00137> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00137>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00137> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00666>)
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00137> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00667>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00138> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00138>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00138> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00377>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00139> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00139>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00139> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00394>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00140> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00140>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00140> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00377>)
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00140> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00351>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00146> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00146>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00146> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00205>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00150> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00150>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00150> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00437>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00151> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00151>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00151> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00437>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00154> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00154>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00154> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00164>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00155> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00155>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00155> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00642>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00156> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00156>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00156> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00303>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00157> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00157>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00157> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00164>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00160> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00160>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00160> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00622>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00164> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00164>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00164> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00437>)
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00164> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00150>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00167> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00167>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00167> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00628>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00168> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00168>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00168> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00164>))
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00168> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00535>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00169> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00169>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00169> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00579>)
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00169> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00535>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00171> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00171>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00171> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00587>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00172> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00172>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00172> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00285>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00173> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00173>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00173> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00645>)
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00173> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00172>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00175> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00175>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00175> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00206>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00177> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00177>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00177> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00223>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00186> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00186>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00186> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00587>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00189> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00189>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00189> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00371>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00219> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00219>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00219> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00480>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00228> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00228>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00228> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00394>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00247> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00247>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00247> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00638>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00251> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00251>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00251> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00538>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00254> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00254>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00254> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00371>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00255> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00255>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00255> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00397>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00256> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00256>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00256> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00254>)
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00256> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00498>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00257> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00257>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00257> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00346>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00258> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00258>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00258> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00480>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00277> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00277>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00277> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00253>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00280> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00280>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00280> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00394>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00285> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00285>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00285> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00255>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00294> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00294>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00294> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00371>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00295> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00295>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00295> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00377>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00296> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00296>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00296> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00255>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00299> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00299>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00299> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00572>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00310> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00310>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00310> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00427>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00312> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00312>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00312> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00305>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00313> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00313>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00313> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00346>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00321> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00321>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00321> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00377>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00333> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00333>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00333> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00571>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00334> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00334>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00334> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00372>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00336> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00336>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00336> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00371>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00337> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00337>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00337> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00394>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00340> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00340>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00340> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00377>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00345> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00345>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00345> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00346>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00356> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00356>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00356> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00638>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00357> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00357>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00357> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00377>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00360> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00360>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00360> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00394>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00369> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00369>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00369> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00691>)
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00369> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00370>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00370> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00370>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00370> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00525>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00374> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00374>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00374> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00377>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00380> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00380>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00380> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00490>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00383> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00383>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00383> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00153>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00385> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00385>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00385> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00480>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00387> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00387>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00387> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00394>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00390> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00390>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00390> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00480>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00392> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00392>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00392> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00480>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00411> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00411>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00411> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00510>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00419> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00419>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00419> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00394>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00422> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00422>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00422> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00397>)
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00422> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00428>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00428> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00428>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00428> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00646>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00429> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00429>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00429> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00437>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00430> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00430>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00430> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00437>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00431> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00431>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00431> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00381>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00434> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00434>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00434> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00372>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00442> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00442>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00442> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00377>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00447> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00447>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00447> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00171>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00449> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00449>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00449> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00154>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00450> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00450>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00450> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00490>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00451> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00451>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00451> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00587>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00453> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00453>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00453> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00346>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00454> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00454>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00454> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00371>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00455> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00455>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00455> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00480>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00457> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00457>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00457> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00683>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00460> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00460>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00460> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00394>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00463> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00463>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00463> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00480>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00464> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00464>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00464> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00371>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00465> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00465>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00465> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00377>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00466> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00466>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00466> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00419>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00475> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00475>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00475> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00394>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00476> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00476>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00476> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00452>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00477> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00477>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00477> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00397>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00478> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00478>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00478> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00519>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00479> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00479>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00479> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00572>)
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00479> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00619>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00482> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00482>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00482> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00377>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00483> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00483>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00483> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00394>)
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00483> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00387>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00484> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00484>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00484> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00394>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00489> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00489>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00489> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00394>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00490> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00490>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00490> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00394>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00492> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00492>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00492> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00359>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00495> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00495>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00495> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00371>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00498> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00498>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00498> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00377>)
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00498> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00191>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00499> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00499>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00499> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00276>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00501> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00501>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00501> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00437>))
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00501> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00463>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00506> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00506>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00506> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00387>)
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00506> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00372>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00507> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00507>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00507> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00255>)
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00507> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00372>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00508> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00508>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00508> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00587>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00509> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00509>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00509> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00394>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00510> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00510>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00510> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00377>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00511> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00511>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00511> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00377>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00513> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00513>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00513> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00502>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00516> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00516>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00516> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00276>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00517> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00517>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00517> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00394>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00520> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00520>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00520> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00377>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00527> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00527>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00527> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00285>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00530> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00530>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00530> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00567>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00533> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00533>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00533> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00394>)
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00533> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00495>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00534> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00534>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00534> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00587>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00536> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00536>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00536> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00535>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00544> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00544>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00544> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00479>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00548> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00548>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00548> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00276>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00554> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00554>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00554> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00373>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00555> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00555>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00555> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00554>))
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00555> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00579>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00557> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00557>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00557> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00525>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00559> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00559>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00559> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00394>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00561> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00561>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00561> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00683>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00563> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00563>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00563> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00562>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00565> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00565>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00565> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00394>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00569> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00569>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00569> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00576>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00571> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00571>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00571> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00394>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00572> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00572>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00572> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00428>)
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00572> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00573>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00573> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00573>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00573> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00150>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00574> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00574>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00574> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00397>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00575> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00575>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00575> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00502>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00576> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00576>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00576> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00587>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00577> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00577>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00577> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00534>))
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00577> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00576>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00584> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00584>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00584> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00581>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00585> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00585>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00585> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00646>)
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00585> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00479>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00587> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00587>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00587> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00670>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00589> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00589>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00589> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00253>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00595> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00595>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00595> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00673>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00598> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00598>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00598> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00109>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00609> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00609>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00609> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00607>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00610> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00610>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00610> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00371>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00611> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00611>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00611> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00452>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00628> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00628>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00628> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00607>)
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00628> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00372>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00632> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00632>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00632> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00296>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00633> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00633>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00633> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00647>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00640> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00640>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00640> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00633>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00642> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00642>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00642> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00489>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00643> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00643>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00643> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00667>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00644> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00644>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00644> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00399>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00645> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00645>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00645> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00648>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00646> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00646>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00646> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00648>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00647> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00647>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00647> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00640>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00648> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00648>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00648> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00394>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00659> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00659>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00659> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00490>)
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00659> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00645>))
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00659> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00646>))
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00659> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00648>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00660> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00660>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00660> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00587>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00661> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00661>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00661> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00667>)
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00661> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00587>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00665> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00665>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00665> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00667>)
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00665> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00171>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00666> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00666>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00666> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00517>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00667> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00667>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00667> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00451>))
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00667> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00587>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00668> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00668>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00668> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00587>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00669> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00669>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00669> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00587>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00674> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00674>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00674> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00377>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00675> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00675>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00675> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00525>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00680> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00680>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00680> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00587>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00681> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00681>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00681> ObjectSomeValuesFrom(<http://www.obofoundry.org/ro/ro.owl#part_of> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00587>))
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00700> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00700>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00700> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00437>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00701> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00701>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00701> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00587>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00702> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00702>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00702> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00691>)
+
+# Class: <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00703> (<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00703>)
+
+SubClassOf(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00703> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00691>)
+
+# Class: <https://smolang.org/rdfMutate#newNode-0> (<https://smolang.org/rdfMutate#newNode-0>)
+
+SubClassOf(<https://smolang.org/rdfMutate#newNode-0> <https://smolang.org/rdfMutate#newNode-0>)
+
+# Class: <https://smolang.org/rdfMutate#newNode-3> (<https://smolang.org/rdfMutate#newNode-3>)
+
+SubClassOf(<https://smolang.org/rdfMutate#newNode-3> <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00207>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: owl:Class (owl:Class)
+
+ClassAssertion(<http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00203> owl:Class)
+ClassAssertion(owl:Class owl:Class)
+ClassAssertion(<https://smolang.org/rdfMutate#newNode-5> owl:Class)
+
+# Individual: <https://smolang.org/rdfMutate#newNode-2> (<https://smolang.org/rdfMutate#newNode-2>)
+
+ClassAssertion(owl:Thing <https://smolang.org/rdfMutate#newNode-2>)
+
+
+)

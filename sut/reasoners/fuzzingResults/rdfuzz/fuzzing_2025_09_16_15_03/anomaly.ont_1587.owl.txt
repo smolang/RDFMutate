@@ -1,0 +1,9 @@
+Found anomalies while testing file ../testOnt.owl
+
+Anomaly 1: Anomaly: not in EL
+ Use of anonymous individual: _:genid2147483648 [ClassAssertion(owl:Thing _:genid2147483648) in OntologyID(OntologyIRI(<urn:unnamed:ontology#ont19101355166286488>) VersionIRI(<null>))]
+ Use of reserved vocabulary for individual IRI: owl:Class [ClassAssertion(<https://smolang.org/rdfMutate#newNode-1> owl:Class) in OntologyID(OntologyIRI(<urn:unnamed:ontology#ont19101355166286488>) VersionIRI(<null>))]
+ Use of reserved vocabulary for individual IRI: owl:Restriction [ClassAssertion(ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/NascarDriver.owl#linksToCollegeCoach> owl:Thing) owl:Restriction) in OntologyID(OntologyIRI(<urn:unnamed:ontology#ont19101355166286488>) VersionIRI(<null>))]
+ Use of reserved vocabulary for individual IRI: owl:NamedIndividual [ClassAssertion(<https://smolang.org/rdfMutate#newNode-1> owl:NamedIndividual) in OntologyID(OntologyIRI(<urn:unnamed:ontology#ont19101355166286488>) VersionIRI(<null>))]
+ Use of reserved vocabulary for class IRI: owl:Restriction [SubClassOf(owl:Restriction <http://dbpedia.org/ontology/NascarDriver>) in OntologyID(OntologyIRI(<urn:unnamed:ontology#ont19101355166286488>) VersionIRI(<null>))]
+

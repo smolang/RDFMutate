@@ -1,0 +1,7 @@
+Found anomalies while testing file ../testOnt.owl
+
+Anomaly 1: Anomaly: not in EL
+ Not enough property expressions; at least two needed [SubObjectPropertyOf(ObjectPropertyChain(<http://grapson.com/semantics#partOf>) <http://grapson.com/semantics#partOf>) in OntologyID(OntologyIRI(<urn:unnamed:ontology#ont19109049682732775>) VersionIRI(<null>))]
+ Use of property in chain causes cycle: <http://grapson.com/semantics#partOf> [SubObjectPropertyOf(ObjectPropertyChain(<http://grapson.com/semantics#partOf>) <http://grapson.com/semantics#partOf>) in OntologyID(OntologyIRI(<urn:unnamed:ontology#ont19109049682732775>) VersionIRI(<null>))]
+ Use of property in chain causes cycle: <http://grapson.com/semantics#partOf> [SubObjectPropertyOf(ObjectPropertyChain(<http://grapson.com/semantics#partOf>) <http://grapson.com/semantics#partOf>) in OntologyID(OntologyIRI(<urn:unnamed:ontology#ont19109049682732775>) VersionIRI(<null>))]
+

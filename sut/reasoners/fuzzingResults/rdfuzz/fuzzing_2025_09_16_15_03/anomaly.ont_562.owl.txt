@@ -1,0 +1,9 @@
+Found anomalies while testing file ../testOnt.owl
+
+Anomaly 1: Class hierarchy differentiation between HERMIT and OPENLLET:
+	additional axioms HERMIT: [SubClassOf(<http://purl.obolibrary.org/obo/FMA_12513> <https://smolang.org/rdfMutate#newNode-9>), SubClassOf(<http://purl.obolibrary.org/obo/FMA_260119> <https://smolang.org/rdfMutate#newNode-9>), SubClassOf(<http://purl.obolibrary.org/obo/FMA_58098> <https://smolang.org/rdfMutate#newNode-9>)]
+	additional axioms OPENLLET: [SubClassOf(<http://purl.obolibrary.org/obo/FMA_12513> <http://purl.obolibrary.org/obo/FMA_24218>), SubClassOf(<http://purl.obolibrary.org/obo/FMA_58098> <http://purl.obolibrary.org/obo/FMA_24218>)]
+
+Anomaly 2: Class hierarchy differentiation between ELK and OPENLLET:
+	additional axioms ELK: [SubClassOf(<http://purl.obolibrary.org/obo/FMA_12513> <https://smolang.org/rdfMutate#newNode-9>), SubClassOf(<http://purl.obolibrary.org/obo/FMA_260119> <https://smolang.org/rdfMutate#newNode-9>), SubClassOf(<http://purl.obolibrary.org/obo/FMA_58098> <https://smolang.org/rdfMutate#newNode-9>)]
+	additional axioms OPENLLET: [SubClassOf(<http://purl.obolibrary.org/obo/FMA_12513> <http://purl.obolibrary.org/obo/FMA_24218>), SubClassOf(<http://purl.obolibrary.org/obo/FMA_58098> <http://purl.obolibrary.org/obo/FMA_24218>)]

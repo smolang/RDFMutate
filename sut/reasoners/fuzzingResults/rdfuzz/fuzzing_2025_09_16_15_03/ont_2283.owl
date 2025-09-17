@@ -1,0 +1,1166 @@
+Prefix(:=<urn:unnamed:ontology#ont19107202840305246>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:unnamed:ontology#ont19107202840305246>
+
+Declaration(Class(<http://dbpedia.org/ontology/Insect>))
+Declaration(Class(<http://dbpedia.org/ontology/Museum>))
+Declaration(Class(<http://dbpedia.org/ontology/Weapon>))
+Declaration(Class(<http://dbpedia.org/ontology/Continent>))
+Declaration(Class(<http://dbpedia.org/ontology/ShoppingMall>))
+Declaration(Class(<http://dbpedia.org/ontology/Cyclist>))
+Declaration(Class(<http://dbpedia.org/ontology/Aircraft>))
+Declaration(Class(<http://dbpedia.org/ontology/Bird>))
+Declaration(Class(<http://dbpedia.org/ontology/Drug>))
+Declaration(Class(<http://dbpedia.org/ontology/Film>))
+Declaration(Class(<http://dbpedia.org/ontology/Single>))
+Declaration(Class(<http://dbpedia.org/ontology/PrimeMinister>))
+Declaration(Class(<http://dbpedia.org/ontology/MemberOfParliament>))
+Declaration(Class(<http://dbpedia.org/ontology/ChristianBishop>))
+Declaration(Class(<http://dbpedia.org/ontology/ComicsCharacter>))
+Declaration(Class(<http://dbpedia.org/ontology/SpaceShuttle>))
+Declaration(Class(<http://dbpedia.org/ontology/Island>))
+Declaration(Class(<http://dbpedia.org/ontology/Judge>))
+Declaration(Class(<http://dbpedia.org/ontology/Restaurant>))
+Declaration(Class(<http://dbpedia.org/ontology/SpaceStation>))
+Declaration(Class(<http://dbpedia.org/ontology/Airport>))
+Declaration(Class(<http://dbpedia.org/ontology/Canal>))
+Declaration(Class(<http://dbpedia.org/ontology/Legislature>))
+Declaration(Class(<http://dbpedia.org/ontology/Magazine>))
+Declaration(Class(<http://dbpedia.org/ontology/SkiArea>))
+Declaration(Class(<http://dbpedia.org/ontology/MilitaryUnit>))
+Declaration(Class(<http://dbpedia.org/ontology/HistoricBuilding>))
+Declaration(Class(<http://dbpedia.org/ontology/BasketballPlayer>))
+Declaration(Class(<http://dbpedia.org/ontology/Philosopher>))
+Declaration(Class(<http://dbpedia.org/ontology/Ginkgo>))
+Declaration(Class(<http://dbpedia.org/ontology/Bridge>))
+Declaration(Class(<http://dbpedia.org/ontology/Artery>))
+Declaration(Class(<http://dbpedia.org/ontology/Disease>))
+Declaration(Class(<http://dbpedia.org/ontology/BaseballLeague>))
+Declaration(Class(<http://dbpedia.org/ontology/MilitaryPerson>))
+Declaration(Class(<http://dbpedia.org/ontology/Astronaut>))
+Declaration(Class(<http://dbpedia.org/ontology/Governor>))
+Declaration(Class(<http://dbpedia.org/ontology/Mollusca>))
+Declaration(Class(<http://dbpedia.org/ontology/Writer>))
+Declaration(Class(<http://dbpedia.org/ontology/Reptile>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-1>))
+Declaration(Class(<http://dbpedia.org/ontology/Ship>))
+Declaration(Class(<http://dbpedia.org/ontology/TelevisionEpisode>))
+Declaration(Class(<http://dbpedia.org/ontology/Station>))
+Declaration(Class(<http://dbpedia.org/ontology/Song>))
+Declaration(Class(<http://dbpedia.org/ontology/Currency>))
+Declaration(Class(<http://dbpedia.org/ontology/City>))
+Declaration(Class(<http://dbpedia.org/ontology/Mountain>))
+Declaration(Class(<http://dbpedia.org/ontology/Stadium>))
+Declaration(Class(<http://dbpedia.org/ontology/School>))
+Declaration(Class(<http://dbpedia.org/ontology/Mammal>))
+Declaration(Class(<http://dbpedia.org/ontology/Architect>))
+Declaration(Class(<http://dbpedia.org/ontology/Game>))
+Declaration(Class(<http://dbpedia.org/ontology/ComicsCreator>))
+Declaration(Class(<http://dbpedia.org/ontology/RadioStation>))
+Declaration(Class(<http://dbpedia.org/ontology/Book>))
+Declaration(Class(<http://dbpedia.org/ontology/MusicGenre>))
+Declaration(Class(<http://dbpedia.org/ontology/VideoGame>))
+Declaration(Class(<http://dbpedia.org/ontology/Fern>))
+Declaration(Class(<http://dbpedia.org/ontology/PowerStation>))
+Declaration(Class(<http://dbpedia.org/ontology/Hospital>))
+Declaration(Class(<http://dbpedia.org/ontology/River>))
+Declaration(Class(<http://dbpedia.org/ontology/Race>))
+Declaration(Class(<http://dbpedia.org/ontology/Award>))
+Declaration(Class(<http://dbpedia.org/ontology/Comedian>))
+Declaration(Class(<http://dbpedia.org/ontology/AmericanFootballPlayer>))
+Declaration(Class(<http://dbpedia.org/ontology/Hotel>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-2>))
+Declaration(Class(<http://dbpedia.org/ontology/ClubMoss>))
+Declaration(Class(<http://dbpedia.org/ontology/LunarCrater>))
+Declaration(Class(<http://dbpedia.org/ontology/Grape>))
+Declaration(Class(owl:ObjectProperty))
+Declaration(Class(<http://dbpedia.org/ontology/Congressman>))
+Declaration(Class(<http://dbpedia.org/ontology/Fish>))
+Declaration(Class(<http://dbpedia.org/ontology/Saint>))
+Declaration(Class(<http://dbpedia.org/ontology/Band>))
+Declaration(Class(<http://dbpedia.org/ontology/Website>))
+Declaration(Class(<http://dbpedia.org/ontology/BaseballPlayer>))
+Declaration(Class(<http://dbpedia.org/ontology/Moss>))
+Declaration(Class(<http://dbpedia.org/ontology/Sport>))
+Declaration(Class(<http://dbpedia.org/ontology/ChemicalCompound>))
+Declaration(Class(<http://dbpedia.org/ontology/University>))
+Declaration(Class(<http://dbpedia.org/ontology/Road>))
+Declaration(Class(<http://dbpedia.org/ontology/EthnicGroup>))
+Declaration(Class(<http://dbpedia.org/ontology/Archaea>))
+Declaration(Class(<http://dbpedia.org/ontology/Amphibian>))
+Declaration(Class(<http://dbpedia.org/ontology/MilitaryConflict>))
+Declaration(Class(<http://dbpedia.org/ontology/Cycad>))
+Declaration(Class(<http://dbpedia.org/ontology/TelevisionShow>))
+Declaration(Class(<http://dbpedia.org/ontology/Valley>))
+Declaration(Class(<http://dbpedia.org/ontology/Album>))
+Declaration(Class(<http://dbpedia.org/ontology/CanadianFootballLeague>))
+Declaration(Class(<http://dbpedia.org/ontology/Village>))
+Declaration(Class(<http://dbpedia.org/ontology/Airline>))
+Declaration(Class(<http://dbpedia.org/ontology/Bacteria>))
+Declaration(Class(<http://dbpedia.org/ontology/Pope>))
+Declaration(Class(<http://dbpedia.org/ontology/Arachnid>))
+Declaration(Class(<http://dbpedia.org/ontology/President>))
+Declaration(Class(<http://dbpedia.org/ontology/Automobile>))
+Declaration(Class(<http://dbpedia.org/ontology/SiteOfSpecialScientificInterest>))
+Declaration(Class(<http://dbpedia.org/ontology/Beverage>))
+Declaration(Class(<http://dbpedia.org/ontology/Criminal>))
+Declaration(Class(<http://dbpedia.org/ontology/FormulaOneRacer>))
+Declaration(Class(<http://dbpedia.org/ontology/Colour>))
+Declaration(Class(<http://dbpedia.org/ontology/WorldHeritageSite>))
+Declaration(Class(<http://dbpedia.org/ontology/Fungus>))
+Declaration(Class(<http://dbpedia.org/ontology/Monarch>))
+Declaration(Class(<http://dbpedia.org/ontology/Actor>))
+Declaration(Class(<http://dbpedia.org/ontology/Journalist>))
+Declaration(Class(<http://dbpedia.org/ontology/MusicalArtist>))
+Declaration(Class(<http://dbpedia.org/ontology/OfficeHolder>))
+Declaration(Class(<http://dbpedia.org/ontology/Non-ProfitOrganisation>))
+Declaration(Class(<http://dbpedia.org/ontology/Language>))
+Declaration(Class(<http://dbpedia.org/ontology/SoccerClub>))
+Declaration(Class(<http://dbpedia.org/ontology/HistoricPlace>))
+Declaration(Class(<http://dbpedia.org/ontology/Rocket>))
+Declaration(Class(<http://dbpedia.org/ontology/Lake>))
+Declaration(Class(<http://dbpedia.org/ontology/Cave>))
+Declaration(Class(<http://dbpedia.org/ontology/Skyscraper>))
+Declaration(Class(<http://dbpedia.org/ontology/Scientist>))
+Declaration(Class(<http://dbpedia.org/ontology/Newspaper>))
+Declaration(Class(<http://dbpedia.org/ontology/Park>))
+Declaration(Class(<http://dbpedia.org/ontology/BritishRoyalty>))
+Declaration(Class(<http://dbpedia.org/ontology/MusicFestival>))
+Declaration(Class(<http://dbpedia.org/ontology/Olympics>))
+Declaration(Class(<http://dbpedia.org/ontology/CollegeCoach>))
+Declaration(Class(<http://dbpedia.org/ontology/SpaceMission>))
+Declaration(Class(<http://dbpedia.org/ontology/WineRegion>))
+Declaration(Class(<http://dbpedia.org/ontology/Broadcast>))
+Declaration(Class(<http://dbpedia.org/ontology/Senator>))
+Declaration(Class(<http://dbpedia.org/ontology/Conifer>))
+Declaration(Class(<http://dbpedia.org/ontology/SoccerPlayer>))
+Declaration(Class(<http://dbpedia.org/ontology/Town>))
+Declaration(Class(<http://dbpedia.org/ontology/Crustacean>))
+Declaration(Class(<http://dbpedia.org/ontology/CanadianFootballTeam>))
+Declaration(Class(<http://dbpedia.org/ontology/Lighthouse>))
+Declaration(Class(<http://dbpedia.org/ontology/Planet>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToArtery>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToFish>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToPhilosopher>))
+Declaration(ObjectProperty(<http://www.w3.org/2004/02/skos/core#relatedMatch>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToHistoricBuilding>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSpaceMission>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToTelevisionEpisode>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Language>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMuseum>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToArchitect>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/MeanOfTransportation>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToPark>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Event>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToOlympics>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSkyscraper>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToIsland>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToLunarCrater>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Planet>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSenator>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToWriter>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToFormulaOneRacer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBacteria>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBritishRoyalty>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSong>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToRace>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToHospital>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSiteOfSpecialScientificInterest>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToComicsCreator>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Device>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCity>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToLighthouse>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAutomobile>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBeverage>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToNewspaper>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBook>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Infrastructure>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToHotel>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToStadium>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBridge>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBroadcast>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToRocket>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToScientist>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBasketballPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCurrency>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMilitaryUnit>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToClubMoss>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToChristianBishop>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAircraft>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCrustacean>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToColour>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToRiver>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCycad>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCanadianFootballTeam>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCanadianFootballLeague>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToDisease>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Organisation>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBaseballPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToEthnicGroup>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToRoad>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMilitaryConflict>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBird>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToPope>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCave>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToLake>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMemberOfParliament>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Colour>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAirline>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAirport>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToWebsite>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Award>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Person>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToChemicalCompound>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToVillage>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToFungus>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToValley>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToGame>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMollusca>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToArachnid>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToPresident>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToJudge>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMusicGenre>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Website>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSoccerClub>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMammal>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToFern>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToShoppingMall>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToGovernor>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAward>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToRadioStation>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToRestaurant>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMoss>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToWeapon>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToPlanet>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToContinent>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCanal>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToReptile>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSpaceStation>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToNon-ProfitOrganisation>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMusicFestival>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCongressman>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAmphibian>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSport>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToUniversity>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Disease>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Beverage>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToArchaea>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCollegeCoach>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/EthnicGroup>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToHistoricPlace>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSpaceShuttle>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/AnatomicalStructure>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Activity>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAmericanFootballPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMagazine>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSaint>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAlbum>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToVideoGame>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToComedian>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToGinkgo>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToLegislature>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCriminal>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Place>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Currency>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToShip>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMusicalArtist>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToPrimeMinister>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMilitaryPerson>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToTelevisionShow>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToLanguage>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMonarch>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Drug>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToWorldHeritageSite>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Species>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/MusicGenre>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToStation>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToOfficeHolder>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToWineRegion>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCyclist>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSchool>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSkiArea>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSingle>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/ChemicalCompound>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToActor>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToComicsCharacter>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Work>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToFilm>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBand>))
+Declaration(ObjectProperty(<https://smolang.org/rdfMutate#newNode-0>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSoccerPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBaseballLeague>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToTown>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToConifer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAstronaut>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToDrug>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToGrape>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToPowerStation>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToJournalist>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToInsect>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToComedian>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-2>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCity>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToTown>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAmphibian>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/location>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToIsland>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToArchitect>))
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToActor> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToActor>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToActor> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToActor> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToActor> <http://dbpedia.org/ontology/Actor>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAircraft> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAircraft>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAircraft> <http://dbpedia.org/ontology/MeanOfTransportation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAircraft> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAircraft> <http://dbpedia.org/ontology/Aircraft>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAirline> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAirline>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAirline> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAirline> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAirline> <http://dbpedia.org/ontology/Airline>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAirport> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAirport>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAirport> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAirport> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAirport> <http://dbpedia.org/ontology/Airport>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAlbum> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAlbum>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAlbum> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAlbum> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAlbum> <http://dbpedia.org/ontology/Album>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAmericanFootballPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAmericanFootballPlayer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAmericanFootballPlayer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAmericanFootballPlayer> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAmericanFootballPlayer> <http://dbpedia.org/ontology/AmericanFootballPlayer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAmphibian> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAmphibian>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAmphibian> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAmphibian> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAmphibian> <http://dbpedia.org/ontology/Amphibian>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToArachnid> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToArachnid>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToArachnid> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToArachnid> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToArachnid> <http://dbpedia.org/ontology/Arachnid>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToArchaea> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToArchaea>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToArchaea> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToArchaea> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToArchaea> <http://dbpedia.org/ontology/Archaea>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToArchitect> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToArchitect>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToArchitect> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToArchitect> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToArchitect> <http://dbpedia.org/ontology/Architect>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToArtery> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToArtery>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToArtery> <http://dbpedia.org/ontology/AnatomicalStructure>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToArtery> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToArtery> <http://dbpedia.org/ontology/Artery>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAstronaut> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAstronaut>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAstronaut> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAstronaut> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAstronaut> <http://dbpedia.org/ontology/Astronaut>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAutomobile> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAutomobile>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAutomobile> <http://dbpedia.org/ontology/MeanOfTransportation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAutomobile> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAutomobile> <http://dbpedia.org/ontology/Automobile>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAward> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAward>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAward> <http://dbpedia.org/ontology/Award>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAward> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAward> <http://dbpedia.org/ontology/Award>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBacteria> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBacteria>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBacteria> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBacteria> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBacteria> <http://dbpedia.org/ontology/Bacteria>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBand> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBand>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBand> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBand> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBand> <http://dbpedia.org/ontology/Band>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBaseballLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBaseballLeague>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBaseballLeague> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBaseballLeague> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBaseballLeague> <http://dbpedia.org/ontology/BaseballLeague>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBaseballPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBaseballPlayer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBaseballPlayer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBaseballPlayer> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBaseballPlayer> <http://dbpedia.org/ontology/BaseballPlayer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBasketballPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBasketballPlayer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBasketballPlayer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBasketballPlayer> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBasketballPlayer> <http://dbpedia.org/ontology/BasketballPlayer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBeverage> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBeverage>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBeverage> <http://dbpedia.org/ontology/Beverage>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBeverage> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBeverage> <http://dbpedia.org/ontology/Beverage>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBird> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBird>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBird> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBird> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBird> <http://dbpedia.org/ontology/Bird>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBook> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBook>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBook> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBook> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBook> <http://dbpedia.org/ontology/Book>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBridge> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBridge>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBridge> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBridge> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBridge> <http://dbpedia.org/ontology/Bridge>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBritishRoyalty> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBritishRoyalty>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBritishRoyalty> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBritishRoyalty> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBritishRoyalty> <http://dbpedia.org/ontology/BritishRoyalty>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBroadcast> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBroadcast>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBroadcast> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBroadcast> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToBroadcast> <http://dbpedia.org/ontology/Broadcast>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCanadianFootballLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCanadianFootballLeague>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCanadianFootballLeague> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCanadianFootballLeague> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCanadianFootballLeague> <http://dbpedia.org/ontology/CanadianFootballLeague>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCanadianFootballTeam> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCanadianFootballTeam>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCanadianFootballTeam> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCanadianFootballTeam> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCanadianFootballTeam> <http://dbpedia.org/ontology/CanadianFootballTeam>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCanal> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCanal>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCanal> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCanal> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCanal> <http://dbpedia.org/ontology/Canal>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCave> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCave>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCave> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCave> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCave> <http://dbpedia.org/ontology/Cave>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToChemicalCompound> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToChemicalCompound>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToChemicalCompound> <http://dbpedia.org/ontology/ChemicalCompound>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToChemicalCompound> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToChemicalCompound> <http://dbpedia.org/ontology/ChemicalCompound>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToChristianBishop> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToChristianBishop>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToChristianBishop> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToChristianBishop> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToChristianBishop> <http://dbpedia.org/ontology/ChristianBishop>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCity> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCity>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCity> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCity> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCity> <http://dbpedia.org/ontology/City>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToClubMoss> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToClubMoss>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToClubMoss> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToClubMoss> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToClubMoss> <http://dbpedia.org/ontology/ClubMoss>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCollegeCoach> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCollegeCoach>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCollegeCoach> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCollegeCoach> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCollegeCoach> <http://dbpedia.org/ontology/CollegeCoach>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToColour> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToColour>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToColour> <http://dbpedia.org/ontology/Colour>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToColour> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToColour> <http://dbpedia.org/ontology/Colour>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToComedian> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToComedian>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToComedian> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToComedian> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToComedian> <http://dbpedia.org/ontology/Comedian>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToComicsCharacter> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToComicsCharacter>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToComicsCharacter> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToComicsCharacter> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToComicsCharacter> <http://dbpedia.org/ontology/ComicsCharacter>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToComicsCreator> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToComicsCreator>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToComicsCreator> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToComicsCreator> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToComicsCreator> <http://dbpedia.org/ontology/ComicsCreator>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCongressman> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCongressman>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCongressman> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCongressman> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCongressman> <http://dbpedia.org/ontology/Congressman>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToConifer> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToConifer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToConifer> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToConifer> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToConifer> <http://dbpedia.org/ontology/Conifer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToContinent> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToContinent>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToContinent> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToContinent> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToContinent> <http://dbpedia.org/ontology/Continent>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCriminal> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCriminal>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCriminal> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCriminal> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCriminal> <http://dbpedia.org/ontology/Criminal>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCrustacean> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCrustacean>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCrustacean> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCrustacean> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCrustacean> <http://dbpedia.org/ontology/Crustacean>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCurrency> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCurrency>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCurrency> <http://dbpedia.org/ontology/Currency>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCurrency> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCurrency> <http://dbpedia.org/ontology/Currency>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCycad> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCycad>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCycad> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCycad> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCycad> <http://dbpedia.org/ontology/Cycad>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCyclist> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCyclist>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCyclist> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCyclist> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCyclist> <http://dbpedia.org/ontology/Cyclist>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToDisease> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToDisease>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToDisease> <http://dbpedia.org/ontology/Disease>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToDisease> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToDisease> <http://dbpedia.org/ontology/Disease>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToDrug> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToDrug>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToDrug> <http://dbpedia.org/ontology/Drug>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToDrug> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToDrug> <http://dbpedia.org/ontology/Drug>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToEthnicGroup> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToEthnicGroup>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToEthnicGroup> <http://dbpedia.org/ontology/EthnicGroup>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToEthnicGroup> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToEthnicGroup> <http://dbpedia.org/ontology/EthnicGroup>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToFern> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToFern>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToFern> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToFern> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToFern> <http://dbpedia.org/ontology/Fern>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToFilm> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToFilm>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToFilm> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToFilm> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToFilm> <http://dbpedia.org/ontology/Film>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToFish> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToFish>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToFish> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToFish> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToFish> <http://dbpedia.org/ontology/Fish>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToFormulaOneRacer> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToFormulaOneRacer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToFormulaOneRacer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToFormulaOneRacer> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToFormulaOneRacer> <http://dbpedia.org/ontology/FormulaOneRacer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToFungus> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToFungus>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToFungus> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToFungus> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToFungus> <http://dbpedia.org/ontology/Fungus>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToGame> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToGame>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToGame> <http://dbpedia.org/ontology/Activity>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToGame> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToGame> <http://dbpedia.org/ontology/Game>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToGinkgo> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToGinkgo>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToGinkgo> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToGinkgo> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToGinkgo> <http://dbpedia.org/ontology/Ginkgo>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToGovernor> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToGovernor>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToGovernor> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToGovernor> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToGovernor> <http://dbpedia.org/ontology/Governor>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToGrape> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToGrape>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToGrape> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToGrape> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToGrape> <http://dbpedia.org/ontology/Grape>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToHistoricBuilding> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToHistoricBuilding>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToHistoricBuilding> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToHistoricBuilding> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToHistoricBuilding> <http://dbpedia.org/ontology/HistoricBuilding>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToHistoricPlace> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToHistoricPlace>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToHistoricPlace> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToHistoricPlace> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToHistoricPlace> <http://dbpedia.org/ontology/HistoricPlace>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToHospital> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToHospital>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToHospital> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToHospital> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToHospital> <http://dbpedia.org/ontology/Hospital>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToHotel> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToHotel>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToHotel> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToHotel> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToHotel> <http://dbpedia.org/ontology/Hotel>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToInsect> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToInsect>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToInsect> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToInsect> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToInsect> <http://dbpedia.org/ontology/Insect>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToIsland> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToIsland>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToIsland> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToIsland> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToIsland> <http://dbpedia.org/ontology/Island>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToJournalist> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToJournalist>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToJournalist> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToJournalist> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToJournalist> <http://dbpedia.org/ontology/Journalist>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToJudge> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToJudge>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToJudge> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToJudge> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToJudge> <http://dbpedia.org/ontology/Judge>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToLake> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToLake>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToLake> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToLake> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToLake> <http://dbpedia.org/ontology/Lake>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToLanguage> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToLanguage>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToLanguage> <http://dbpedia.org/ontology/Language>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToLanguage> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToLanguage> <http://dbpedia.org/ontology/Language>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToLegislature> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToLegislature>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToLegislature> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToLegislature> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToLegislature> <http://dbpedia.org/ontology/Legislature>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToLighthouse> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToLighthouse>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToLighthouse> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToLighthouse> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToLighthouse> <http://dbpedia.org/ontology/Lighthouse>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToLunarCrater> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToLunarCrater>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToLunarCrater> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToLunarCrater> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToLunarCrater> <http://dbpedia.org/ontology/LunarCrater>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMagazine> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMagazine>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMagazine> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMagazine> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMagazine> <http://dbpedia.org/ontology/Magazine>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMammal> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMammal>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMammal> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMammal> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMammal> <http://dbpedia.org/ontology/Mammal>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMemberOfParliament> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMemberOfParliament>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMemberOfParliament> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMemberOfParliament> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMemberOfParliament> <http://dbpedia.org/ontology/MemberOfParliament>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMilitaryConflict> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMilitaryConflict>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMilitaryConflict> <http://dbpedia.org/ontology/Event>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMilitaryConflict> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMilitaryConflict> <http://dbpedia.org/ontology/MilitaryConflict>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMilitaryPerson> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMilitaryPerson>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMilitaryPerson> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMilitaryPerson> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMilitaryPerson> <http://dbpedia.org/ontology/MilitaryPerson>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMilitaryUnit> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMilitaryUnit>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMilitaryUnit> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMilitaryUnit> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMilitaryUnit> <http://dbpedia.org/ontology/MilitaryUnit>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMollusca> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMollusca>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMollusca> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMollusca> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMollusca> <http://dbpedia.org/ontology/Mollusca>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMonarch> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMonarch>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMonarch> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMonarch> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMonarch> <http://dbpedia.org/ontology/Monarch>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMoss> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMoss>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMoss> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMoss> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMoss> <http://dbpedia.org/ontology/Moss>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMuseum> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMuseum>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMuseum> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMuseum> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMuseum> <http://dbpedia.org/ontology/Museum>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMusicFestival> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMusicFestival>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMusicFestival> <http://dbpedia.org/ontology/Event>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMusicFestival> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMusicFestival> <http://dbpedia.org/ontology/MusicFestival>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMusicGenre> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMusicGenre>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMusicGenre> <http://dbpedia.org/ontology/MusicGenre>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMusicGenre> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMusicGenre> <http://dbpedia.org/ontology/MusicGenre>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMusicalArtist> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMusicalArtist>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMusicalArtist> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMusicalArtist> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToMusicalArtist> <http://dbpedia.org/ontology/MusicalArtist>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToNewspaper> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToNewspaper>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToNewspaper> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToNewspaper> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToNewspaper> <http://dbpedia.org/ontology/Newspaper>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToNon-ProfitOrganisation> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToNon-ProfitOrganisation>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToNon-ProfitOrganisation> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToNon-ProfitOrganisation> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToNon-ProfitOrganisation> <http://dbpedia.org/ontology/Non-ProfitOrganisation>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToOfficeHolder> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToOfficeHolder>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToOfficeHolder> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToOfficeHolder> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToOfficeHolder> <http://dbpedia.org/ontology/OfficeHolder>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToOlympics> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToOlympics>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToOlympics> <http://dbpedia.org/ontology/Event>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToOlympics> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToOlympics> <http://dbpedia.org/ontology/Olympics>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToPark> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToPark>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToPark> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToPark> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToPark> <http://dbpedia.org/ontology/Park>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToPhilosopher> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToPhilosopher>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToPhilosopher> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToPhilosopher> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToPhilosopher> <http://dbpedia.org/ontology/Philosopher>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToPlanet> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToPlanet>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToPlanet> <http://dbpedia.org/ontology/Planet>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToPlanet> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToPlanet> <http://dbpedia.org/ontology/Planet>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToPope> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToPope>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToPope> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToPope> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToPope> <http://dbpedia.org/ontology/Pope>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToPowerStation> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToPowerStation>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToPowerStation> <http://dbpedia.org/ontology/Infrastructure>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToPowerStation> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToPowerStation> <http://dbpedia.org/ontology/PowerStation>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToPresident> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToPresident>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToPresident> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToPresident> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToPresident> <http://dbpedia.org/ontology/President>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToPrimeMinister> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToPrimeMinister>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToPrimeMinister> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToPrimeMinister> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToPrimeMinister> <http://dbpedia.org/ontology/PrimeMinister>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToRace> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToRace>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToRace> <http://dbpedia.org/ontology/Event>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToRace> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToRace> <http://dbpedia.org/ontology/Race>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToRadioStation> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToRadioStation>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToRadioStation> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToRadioStation> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToRadioStation> <http://dbpedia.org/ontology/RadioStation>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToReptile> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToReptile>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToReptile> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToReptile> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToReptile> <http://dbpedia.org/ontology/Reptile>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToRestaurant> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToRestaurant>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToRestaurant> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToRestaurant> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToRestaurant> <http://dbpedia.org/ontology/Restaurant>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToRiver> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToRiver>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToRiver> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToRiver> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToRiver> <http://dbpedia.org/ontology/River>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToRoad> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToRoad>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToRoad> <http://dbpedia.org/ontology/Infrastructure>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToRoad> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToRoad> <http://dbpedia.org/ontology/Road>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToRocket> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToRocket>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToRocket> <http://dbpedia.org/ontology/MeanOfTransportation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToRocket> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToRocket> <http://dbpedia.org/ontology/Rocket>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSaint> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSaint>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSaint> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSaint> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSaint> <http://dbpedia.org/ontology/Saint>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSchool> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSchool>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSchool> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSchool> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSchool> <http://dbpedia.org/ontology/School>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToScientist> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToScientist>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToScientist> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToScientist> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToScientist> <http://dbpedia.org/ontology/Scientist>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSenator> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSenator>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSenator> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSenator> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSenator> <http://dbpedia.org/ontology/Senator>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToShip> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToShip>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToShip> <http://dbpedia.org/ontology/MeanOfTransportation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToShip> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToShip> <http://dbpedia.org/ontology/Ship>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToShoppingMall> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToShoppingMall>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToShoppingMall> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToShoppingMall> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToShoppingMall> <http://dbpedia.org/ontology/ShoppingMall>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSingle> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSingle>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSingle> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSingle> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSingle> <http://dbpedia.org/ontology/Single>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSiteOfSpecialScientificInterest> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSiteOfSpecialScientificInterest>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSiteOfSpecialScientificInterest> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSiteOfSpecialScientificInterest> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSiteOfSpecialScientificInterest> <http://dbpedia.org/ontology/SiteOfSpecialScientificInterest>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSkiArea> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSkiArea>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSkiArea> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSkiArea> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSkiArea> <http://dbpedia.org/ontology/SkiArea>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSkyscraper> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSkyscraper>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSkyscraper> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSkyscraper> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSkyscraper> <http://dbpedia.org/ontology/Skyscraper>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSoccerClub> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSoccerClub>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSoccerClub> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSoccerClub> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSoccerClub> <http://dbpedia.org/ontology/SoccerClub>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSoccerPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSoccerPlayer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSoccerPlayer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSoccerPlayer> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSoccerPlayer> <http://dbpedia.org/ontology/SoccerPlayer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSong> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSong>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSong> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSong> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSong> <http://dbpedia.org/ontology/Song>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSpaceMission> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSpaceMission>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSpaceMission> <http://dbpedia.org/ontology/Event>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSpaceMission> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSpaceMission> <http://dbpedia.org/ontology/SpaceMission>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSpaceShuttle> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSpaceShuttle>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSpaceShuttle> <http://dbpedia.org/ontology/MeanOfTransportation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSpaceShuttle> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSpaceShuttle> <http://dbpedia.org/ontology/SpaceShuttle>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSpaceStation> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSpaceStation>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSpaceStation> <http://dbpedia.org/ontology/MeanOfTransportation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSpaceStation> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSpaceStation> <http://dbpedia.org/ontology/SpaceStation>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSport> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSport>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSport> <http://dbpedia.org/ontology/Activity>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSport> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToSport> <http://dbpedia.org/ontology/Sport>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToStadium> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToStadium>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToStadium> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToStadium> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToStadium> <http://dbpedia.org/ontology/Stadium>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToStation> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToStation>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToStation> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToStation> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToStation> <http://dbpedia.org/ontology/Station>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToTelevisionEpisode> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToTelevisionEpisode>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToTelevisionEpisode> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToTelevisionEpisode> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToTelevisionEpisode> <http://dbpedia.org/ontology/TelevisionEpisode>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToTelevisionShow> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToTelevisionShow>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToTelevisionShow> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToTelevisionShow> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToTelevisionShow> <http://dbpedia.org/ontology/TelevisionShow>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToTown> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToTown>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToTown> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToTown> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToTown> <http://dbpedia.org/ontology/Town>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToUniversity> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToUniversity>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToUniversity> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToUniversity> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToUniversity> <http://dbpedia.org/ontology/University>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToValley> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToValley>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToValley> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToValley> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToValley> <http://dbpedia.org/ontology/Valley>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToVideoGame> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToVideoGame>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToVideoGame> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToVideoGame> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToVideoGame> <http://dbpedia.org/ontology/VideoGame>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToVillage> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToVillage>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToVillage> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToVillage> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToVillage> <http://dbpedia.org/ontology/Village>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToWeapon> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToWeapon>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToWeapon> <http://dbpedia.org/ontology/Device>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToWeapon> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToWeapon> <http://dbpedia.org/ontology/Weapon>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToWebsite> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToWebsite>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToWebsite> <http://dbpedia.org/ontology/Website>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToWebsite> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToWebsite> <http://dbpedia.org/ontology/Website>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToWineRegion> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToWineRegion>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToWineRegion> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToWineRegion> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToWineRegion> <http://dbpedia.org/ontology/WineRegion>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToWorldHeritageSite> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToWorldHeritageSite>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToWorldHeritageSite> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToWorldHeritageSite> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToWorldHeritageSite> <http://dbpedia.org/ontology/WorldHeritageSite>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToWriter> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToWriter>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToWriter> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToWriter> <http://dbpedia.org/ontology/Mountain>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToWriter> <http://dbpedia.org/ontology/Writer>)
+
+# Object Property: <https://smolang.org/rdfMutate#newNode-0> (<https://smolang.org/rdfMutate#newNode-0>)
+
+SubObjectPropertyOf(<https://smolang.org/rdfMutate#newNode-0> <https://smolang.org/rdfMutate#newNode-0>)
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://dbpedia.org/ontology/TelevisionEpisode> (<http://dbpedia.org/ontology/TelevisionEpisode>)
+
+DisjointClasses(<http://dbpedia.org/ontology/TelevisionEpisode> <https://smolang.org/rdfMutate#newNode-1>)
+
+# Class: <https://smolang.org/rdfMutate#newNode-2> (<https://smolang.org/rdfMutate#newNode-2>)
+
+SubClassOf(<https://smolang.org/rdfMutate#newNode-2> <https://smolang.org/rdfMutate#newNode-2>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAmphibian> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAmphibian>)
+
+ClassAssertion(owl:ObjectProperty <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToAmphibian>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToArchitect> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToArchitect>)
+
+ClassAssertion(owl:ObjectProperty <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToArchitect>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCity> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCity>)
+
+ClassAssertion(owl:ObjectProperty <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCity>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToCity> <http://dbpedia.org/property/location>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToComedian> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToComedian>)
+
+ClassAssertion(owl:ObjectProperty <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToComedian>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToIsland> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToIsland>)
+
+ClassAssertion(owl:ObjectProperty <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToIsland>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToIsland> <http://dbpedia.org/property/location>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToTown> (<http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToTown>)
+
+ClassAssertion(owl:ObjectProperty <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToTown>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Mountain.owl#linksToTown> <http://dbpedia.org/property/location>)
+
+
+)

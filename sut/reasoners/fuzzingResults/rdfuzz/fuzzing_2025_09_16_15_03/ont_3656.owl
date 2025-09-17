@@ -1,0 +1,2714 @@
+Prefix(:=<urn:unnamed:ontology#ont19119761342592983>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:unnamed:ontology#ont19119761342592983>
+
+Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005266>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005342>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005350>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005312>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005348>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005366>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005330>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005281>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00007005>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00006011>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005336>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005412>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005361>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005294>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC674>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005371>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005282>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005307>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00007011>))
+Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#Synonym>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005317>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005270>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005328>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005277>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005269>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005323>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005287>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005349>))
+Declaration(Class(owl:Class))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005344>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00006012>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005314>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC675>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005301>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005332>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00000054>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005296>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005325>))
+Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#Definition>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005291>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005284>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005360>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005271>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-1>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005319>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-8>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC670>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005306>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005351>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005265>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005289>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005276>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00007001>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005335>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005310>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005297>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00007012>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005356>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005267>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005303>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005321>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005313>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005262>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005367>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005331>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005278>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00007006>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-2>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005337>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005362>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005273>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005324>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005352>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005290>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005283>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005363>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00007002>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005340>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-7>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC671>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005299>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005358>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005345>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005338>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00004886>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005315>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005369>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005333>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00007008>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005302>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005320>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005261>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005326>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005354>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005292>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005341>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005285>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005272>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005311>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005365>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005280>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00007004>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC673>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005370>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005316>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005347>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-9>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005298>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005327>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005308>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005357>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00004450>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005304>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005293>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005286>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00014201>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005268>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005322>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005263>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005368>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005279>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00007007>))
+Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#DbXref>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005343>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005274>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005353>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005300>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv_root#FBdv_root_00000000>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005295>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005364>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00007003>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00007009>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC672>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005309>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005318>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005305>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005264>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005329>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005359>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005346>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005339>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005288>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005275>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00007000>))
+Declaration(Class(<http://purl.org/obo/owl/FBdv#FBdv_00005334>))
+Declaration(ObjectProperty(<https://smolang.org/rdfMutate#newNode-1>))
+Declaration(ObjectProperty(<https://smolang.org/rdfMutate#newNode-6>))
+Declaration(ObjectProperty(<http://purl.org/obo/owl/OBO_REL#preceded_by>))
+Declaration(ObjectProperty(<http://purl.org/obo/owl/OBO_REL#part_of>))
+Declaration(DataProperty(<https://smolang.org/rdfMutate#newNode-0>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI341>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI579>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI370>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI530>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI334>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI413>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI626>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI630>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI434>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI378>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI317>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI457>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI649>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI639>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI558>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI669>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI382>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI506>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI425>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI419>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI338>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI549>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI468>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI562>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI312>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI282>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI442>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI342>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI357>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI497>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI472>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI598>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI390>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI465>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI402>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI350>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI286>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI446>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI613>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI628>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI583>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI658>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI279>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI439>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI450>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI394>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI469>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI408>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI632>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI576>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI551>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI283>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI619>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI443>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI301>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI412>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI516>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI331>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI486>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI580>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI369>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI653>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI536>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-9>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI520>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI490>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI294>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI403>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI591>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI540>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-5>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI636>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI447>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI332>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI584>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI629>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI602>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI428>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI383>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI539>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI298>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI565>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI595>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI302>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI432>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI376>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI487>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI396>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI642>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI380>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI667>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI525>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI417>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI336>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI518>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI473>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI310>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI280>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI340>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI299>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI569>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI522>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI436>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI618>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI573>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI429>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI399>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI566>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI449>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI503>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI609>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-2>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI314>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI329>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI284>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI476>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI359>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI451>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI611>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI581>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI385>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI496>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI526>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI656>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI406>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI500>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI574>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI489>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI543>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI281>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI462>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI410>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI354>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI288>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI491>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI511>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI651>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI534>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI292>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI504>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI555>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI634>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI438>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI578>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI285>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI303>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI627>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI582>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI386>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI440>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI600>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI515>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI407>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI296>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI433>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI544>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI563>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI463>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI478>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI316>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI300>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI593>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI289>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI343>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI320>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI480>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI640>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI363>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI523>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI660>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI356>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI471>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI567>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI360>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI319>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI456>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI616>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI571>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI375>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI601>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI529>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI564>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI422>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI533>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI305>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI501>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI416>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI657>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI641>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI409>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI364>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI524>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI494>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI631>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI550>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI661>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI411>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI330>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI541>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI345>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI460>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI568>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-6>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI293>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI590>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI389>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI585>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI635>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI423>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI393>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI553>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI502>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI306>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI545>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI349>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI603>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI646>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI384>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI323>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI538>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI353>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI513>))
+Declaration(NamedIndividual(<http://purl.org/obo/owl/obo#starts_at_end_of>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI297>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI620>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI650>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI594>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI431>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI542>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI346>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI461>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI400>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI643>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI638>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI557>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI361>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI327>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI624>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI435>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI597>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI617>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI572>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI587>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI647>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI324>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI454>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI398>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI373>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI367>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI527>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI621>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI608>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI664>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI547>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI420>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI371>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI531>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI290>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI335>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI414>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI358>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI475>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI495>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI655>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI362>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI379>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI458>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI625>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI559>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI510>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI505>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI309>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI424>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI339>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI291>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI588>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI606>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI561>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI313>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI387>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI528>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI498>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI610>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI554>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI665>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI633>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI437>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI599>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI548>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI421>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI391>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI304>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI464>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI347>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI441>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI509>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI514>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI484>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI644>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI321>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI351>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI295>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI477>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI592>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI344>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI614>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI481>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI395>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI607>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI577>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI388>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI517>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI325>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI507>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI654>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI622>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI426>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI537>))
+Declaration(NamedIndividual(<http://purl.org/obo/owl/OBO_REL#part_of>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI318>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI348>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI455>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI615>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI430>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI570>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI374>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI645>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI485>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI322>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI365>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI532>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI662>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI415>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI466>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI333>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI470>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI493>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI459>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI589>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI377>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI326>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI508>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI623>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI427>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI397>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI666>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI307>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI418>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI337>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI586>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI444>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI604>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI499>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI659>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI474>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI519>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI311>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI366>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI392>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI552>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI663>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI467>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI521>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI546>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI404>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI352>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI512>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI482>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI448>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI401>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI315>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI637>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI452>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI612>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI556>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI308>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI278>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI445>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI605>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI560>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI575>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI328>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI488>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI648>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI355>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI668>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI381>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI492>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI652>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI596>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI405>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI535>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI479>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI453>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI372>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI368>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI287>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXI483>))
+
+############################
+#   Data Properties
+############################
+
+# Data Property: <https://smolang.org/rdfMutate#newNode-0> (<https://smolang.org/rdfMutate#newNode-0>)
+
+FunctionalDataProperty(<https://smolang.org/rdfMutate#newNode-0>)
+DataPropertyRange(<https://smolang.org/rdfMutate#newNode-0> xsd:string)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00000054> (<http://purl.org/obo/owl/FBdv#FBdv_00000054>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00000054> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005289>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00004450> (<http://purl.org/obo/owl/FBdv#FBdv_00004450>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00004450> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005321>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00004886> (<http://purl.org/obo/owl/FBdv#FBdv_00004886>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00004886> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv_root#FBdv_root_00000000>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005261> (<http://purl.org/obo/owl/FBdv#FBdv_00005261>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005261> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00004886>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005262> (<http://purl.org/obo/owl/FBdv#FBdv_00005262>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005262> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00004886>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005263> (<http://purl.org/obo/owl/FBdv#FBdv_00005263>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005263> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00004886>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005264> (<http://purl.org/obo/owl/FBdv#FBdv_00005264>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005264> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00004886>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005265> (<http://purl.org/obo/owl/FBdv#FBdv_00005265>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005265> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00004886>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005266> (<http://purl.org/obo/owl/FBdv#FBdv_00005266>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005266> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00004886>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005267> (<http://purl.org/obo/owl/FBdv#FBdv_00005267>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005267> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00004886>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005268> (<http://purl.org/obo/owl/FBdv#FBdv_00005268>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005268> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00004886>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005269> (<http://purl.org/obo/owl/FBdv#FBdv_00005269>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005269> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00004886>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005270> (<http://purl.org/obo/owl/FBdv#FBdv_00005270>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005270> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00004886>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005271> (<http://purl.org/obo/owl/FBdv#FBdv_00005271>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005271> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005270>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005272> (<http://purl.org/obo/owl/FBdv#FBdv_00005272>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005272> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005270>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005273> (<http://purl.org/obo/owl/FBdv#FBdv_00005273>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005273> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00004886>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005274> (<http://purl.org/obo/owl/FBdv#FBdv_00005274>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005274> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00004886>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005275> (<http://purl.org/obo/owl/FBdv#FBdv_00005275>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005275> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005274>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005276> (<http://purl.org/obo/owl/FBdv#FBdv_00005276>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005276> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005274>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005277> (<http://purl.org/obo/owl/FBdv#FBdv_00005277>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005277> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005274>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005278> (<http://purl.org/obo/owl/FBdv#FBdv_00005278>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005278> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00004886>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005279> (<http://purl.org/obo/owl/FBdv#FBdv_00005279>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005279> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005278>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005280> (<http://purl.org/obo/owl/FBdv#FBdv_00005280>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005280> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005278>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005281> (<http://purl.org/obo/owl/FBdv#FBdv_00005281>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005281> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005278>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005282> (<http://purl.org/obo/owl/FBdv#FBdv_00005282>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005282> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005278>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005283> (<http://purl.org/obo/owl/FBdv#FBdv_00005283>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005283> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00004886>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005284> (<http://purl.org/obo/owl/FBdv#FBdv_00005284>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005284> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005283>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005285> (<http://purl.org/obo/owl/FBdv#FBdv_00005285>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005285> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005283>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005286> (<http://purl.org/obo/owl/FBdv#FBdv_00005286>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005286> <http://purl.org/obo/owl/FBdv#FBdv_00007012>)
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005286> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv_root#FBdv_root_00000000>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005287> (<http://purl.org/obo/owl/FBdv#FBdv_00005287>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005287> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005286>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005288> (<http://purl.org/obo/owl/FBdv#FBdv_00005288>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005288> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005286>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005289> (<http://purl.org/obo/owl/FBdv#FBdv_00005289>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005289> <http://purl.org/obo/owl/FBdv#FBdv_00007012>)
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005289> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv_root#FBdv_root_00000000>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005290> (<http://purl.org/obo/owl/FBdv#FBdv_00005290>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005290> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005289>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005291> (<http://purl.org/obo/owl/FBdv#FBdv_00005291>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005291> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00000054>))
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005291> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005290>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005292> (<http://purl.org/obo/owl/FBdv#FBdv_00005292>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005292> <http://purl.org/obo/owl/FBdv#FBdv_00007011>)
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005292> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005291>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005293> (<http://purl.org/obo/owl/FBdv#FBdv_00005293>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005293> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00000054>))
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005293> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005290>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005294> (<http://purl.org/obo/owl/FBdv#FBdv_00005294>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005294> <http://purl.org/obo/owl/FBdv#FBdv_00007011>)
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005294> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005293>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005295> (<http://purl.org/obo/owl/FBdv#FBdv_00005295>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005295> <http://purl.org/obo/owl/FBdv#FBdv_00007011>)
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005295> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005293>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005296> (<http://purl.org/obo/owl/FBdv#FBdv_00005296>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005296> <http://purl.org/obo/owl/FBdv#FBdv_00007011>)
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005296> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005293>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005297> (<http://purl.org/obo/owl/FBdv#FBdv_00005297>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005297> <http://purl.org/obo/owl/FBdv#FBdv_00007011>)
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005297> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005293>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005298> (<http://purl.org/obo/owl/FBdv#FBdv_00005298>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005298> <http://purl.org/obo/owl/FBdv#FBdv_00007011>)
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005298> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005293>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005299> (<http://purl.org/obo/owl/FBdv#FBdv_00005299>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005299> <http://purl.org/obo/owl/FBdv#FBdv_00007011>)
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005299> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005293>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005300> (<http://purl.org/obo/owl/FBdv#FBdv_00005300>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005300> <http://purl.org/obo/owl/FBdv#FBdv_00007011>)
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005300> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005293>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005301> (<http://purl.org/obo/owl/FBdv#FBdv_00005301>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005301> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00000054>))
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005301> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005290>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005302> (<http://purl.org/obo/owl/FBdv#FBdv_00005302>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005302> <http://purl.org/obo/owl/FBdv#FBdv_00007011>)
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005302> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005301>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005303> (<http://purl.org/obo/owl/FBdv#FBdv_00005303>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005303> <http://purl.org/obo/owl/FBdv#FBdv_00007011>)
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005303> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005306>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005304> (<http://purl.org/obo/owl/FBdv#FBdv_00005304>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005304> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005289>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005305> (<http://purl.org/obo/owl/FBdv#FBdv_00005305>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005305> <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005306> (<http://purl.org/obo/owl/FBdv#FBdv_00005306>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005306> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00000054>))
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005306> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005304>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005307> (<http://purl.org/obo/owl/FBdv#FBdv_00005307>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005307> <http://purl.org/obo/owl/FBdv#FBdv_00007011>)
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005307> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005306>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005308> (<http://purl.org/obo/owl/FBdv#FBdv_00005308>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005308> <http://purl.org/obo/owl/FBdv#FBdv_00007011>)
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005308> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005306>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005309> (<http://purl.org/obo/owl/FBdv#FBdv_00005309>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005309> <http://purl.org/obo/owl/FBdv#FBdv_00007011>)
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005309> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005306>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005310> (<http://purl.org/obo/owl/FBdv#FBdv_00005310>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005310> <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005311> (<http://purl.org/obo/owl/FBdv#FBdv_00005311>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005311> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005304>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005312> (<http://purl.org/obo/owl/FBdv#FBdv_00005312>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005312> <http://purl.org/obo/owl/FBdv#FBdv_00007011>)
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005312> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005289>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005313> (<http://purl.org/obo/owl/FBdv#FBdv_00005313>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005313> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005312>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005314> (<http://purl.org/obo/owl/FBdv#FBdv_00005314>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005314> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005312>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005315> (<http://purl.org/obo/owl/FBdv#FBdv_00005315>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005315> <http://purl.org/obo/owl/FBdv#FBdv_00007011>)
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005315> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005289>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005316> (<http://purl.org/obo/owl/FBdv#FBdv_00005316>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005316> <http://purl.org/obo/owl/FBdv#FBdv_00007011>)
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005316> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005289>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005317> (<http://purl.org/obo/owl/FBdv#FBdv_00005317>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005317> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005289>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005318> (<http://purl.org/obo/owl/FBdv#FBdv_00005318>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005318> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005317>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005319> (<http://purl.org/obo/owl/FBdv#FBdv_00005319>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005319> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005317>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005320> (<http://purl.org/obo/owl/FBdv#FBdv_00005320>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005320> <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005321> (<http://purl.org/obo/owl/FBdv#FBdv_00005321>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005321> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005289>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005322> (<http://purl.org/obo/owl/FBdv#FBdv_00005322>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005322> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005317>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005323> (<http://purl.org/obo/owl/FBdv#FBdv_00005323>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005323> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00014201>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005324> (<http://purl.org/obo/owl/FBdv#FBdv_00005324>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005324> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00014201>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005325> (<http://purl.org/obo/owl/FBdv#FBdv_00005325>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005325> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00004450>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005326> (<http://purl.org/obo/owl/FBdv#FBdv_00005326>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005326> <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005327> (<http://purl.org/obo/owl/FBdv#FBdv_00005327>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005327> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00004450>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005328> (<http://purl.org/obo/owl/FBdv#FBdv_00005328>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005328> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005331>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005329> (<http://purl.org/obo/owl/FBdv#FBdv_00005329>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005329> <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005330> (<http://purl.org/obo/owl/FBdv#FBdv_00005330>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005330> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005331>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005331> (<http://purl.org/obo/owl/FBdv#FBdv_00005331>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005331> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005289>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005332> (<http://purl.org/obo/owl/FBdv#FBdv_00005332>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005332> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005331>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005333> (<http://purl.org/obo/owl/FBdv#FBdv_00005333>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005333> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005289>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005334> (<http://purl.org/obo/owl/FBdv#FBdv_00005334>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005334> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005333>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005335> (<http://purl.org/obo/owl/FBdv#FBdv_00005335>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005335> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005333>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005336> (<http://purl.org/obo/owl/FBdv#FBdv_00005336>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005336> <http://purl.org/obo/owl/FBdv#FBdv_00007012>)
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005336> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv_root#FBdv_root_00000000>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005337> (<http://purl.org/obo/owl/FBdv#FBdv_00005337>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005337> <http://purl.org/obo/owl/FBdv#FBdv_00007012>)
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005337> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005336>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005338> (<http://purl.org/obo/owl/FBdv#FBdv_00005338>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005338> <http://purl.org/obo/owl/FBdv#FBdv_00007012>)
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005338> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005336>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005339> (<http://purl.org/obo/owl/FBdv#FBdv_00005339>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005339> <http://purl.org/obo/owl/FBdv#FBdv_00007012>)
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005339> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005336>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005340> (<http://purl.org/obo/owl/FBdv#FBdv_00005340>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005340> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005339>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005341> (<http://purl.org/obo/owl/FBdv#FBdv_00005341>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005341> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00007007>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005342> (<http://purl.org/obo/owl/FBdv#FBdv_00005342>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005342> <http://purl.org/obo/owl/FBdv#FBdv_00007012>)
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005342> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00007001>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005343> (<http://purl.org/obo/owl/FBdv#FBdv_00005343>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005343> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005342>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005344> (<http://purl.org/obo/owl/FBdv#FBdv_00005344>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005344> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005342>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005345> (<http://purl.org/obo/owl/FBdv#FBdv_00005345>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005345> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005342>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005346> (<http://purl.org/obo/owl/FBdv#FBdv_00005346>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005346> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005342>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005347> (<http://purl.org/obo/owl/FBdv#FBdv_00005347>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005347> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005346>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005348> (<http://purl.org/obo/owl/FBdv#FBdv_00005348>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005348> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005346>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005349> (<http://purl.org/obo/owl/FBdv#FBdv_00005349>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005349> <http://purl.org/obo/owl/FBdv#FBdv_00007012>)
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005349> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00007001>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005350> (<http://purl.org/obo/owl/FBdv#FBdv_00005350>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005350> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005349>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005351> (<http://purl.org/obo/owl/FBdv#FBdv_00005351>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005351> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005350>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005352> (<http://purl.org/obo/owl/FBdv#FBdv_00005352>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005352> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005350>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005353> (<http://purl.org/obo/owl/FBdv#FBdv_00005353>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005353> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005349>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005354> (<http://purl.org/obo/owl/FBdv#FBdv_00005354>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005354> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005349>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005356> (<http://purl.org/obo/owl/FBdv#FBdv_00005356>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005356> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00006011>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005357> (<http://purl.org/obo/owl/FBdv#FBdv_00005357>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005357> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00006011>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005358> (<http://purl.org/obo/owl/FBdv#FBdv_00005358>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005358> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00006011>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005359> (<http://purl.org/obo/owl/FBdv#FBdv_00005359>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005359> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005358>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005360> (<http://purl.org/obo/owl/FBdv#FBdv_00005360>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005360> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005358>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005361> (<http://purl.org/obo/owl/FBdv#FBdv_00005361>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005361> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00006011>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005362> (<http://purl.org/obo/owl/FBdv#FBdv_00005362>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005362> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005361>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005363> (<http://purl.org/obo/owl/FBdv#FBdv_00005363>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005363> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005361>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005364> (<http://purl.org/obo/owl/FBdv#FBdv_00005364>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005364> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00006011>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005365> (<http://purl.org/obo/owl/FBdv#FBdv_00005365>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005365> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00006011>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005366> (<http://purl.org/obo/owl/FBdv#FBdv_00005366>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005366> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00006011>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005367> (<http://purl.org/obo/owl/FBdv#FBdv_00005367>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005367> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005366>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005368> (<http://purl.org/obo/owl/FBdv#FBdv_00005368>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005368> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005366>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005369> (<http://purl.org/obo/owl/FBdv#FBdv_00005369>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005369> <http://purl.org/obo/owl/FBdv#FBdv_00007012>)
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005369> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv_root#FBdv_root_00000000>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005370> (<http://purl.org/obo/owl/FBdv#FBdv_00005370>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005370> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005369>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005371> (<http://purl.org/obo/owl/FBdv#FBdv_00005371>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005371> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005369>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00005412> (<http://purl.org/obo/owl/FBdv#FBdv_00005412>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00005412> <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00006011> (<http://purl.org/obo/owl/FBdv#FBdv_00006011>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00006011> <http://purl.org/obo/owl/FBdv#FBdv_00007012>)
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00006011> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00007001>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00006012> (<http://purl.org/obo/owl/FBdv#FBdv_00006012>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00006012> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005369>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00007000> (<http://purl.org/obo/owl/FBdv#FBdv_00007000>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00007000> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv_root#FBdv_root_00000000>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00007001> (<http://purl.org/obo/owl/FBdv#FBdv_00007001>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00007001> <http://purl.org/obo/owl/FBdv#FBdv_00007012>)
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00007001> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv_root#FBdv_root_00000000>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00007002> (<http://purl.org/obo/owl/FBdv#FBdv_00007002>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00007002> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005273>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00007003> (<http://purl.org/obo/owl/FBdv#FBdv_00007003>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00007003> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005273>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00007004> (<http://purl.org/obo/owl/FBdv#FBdv_00007004>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00007004> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00007007>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00007005> (<http://purl.org/obo/owl/FBdv#FBdv_00007005>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00007005> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00007007>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00007006> (<http://purl.org/obo/owl/FBdv#FBdv_00007006>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00007006> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005278>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00007007> (<http://purl.org/obo/owl/FBdv#FBdv_00007007>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00007007> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005339>))
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00007009> (<http://purl.org/obo/owl/FBdv#FBdv_00007009>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00007009> <http://purl.org/obo/owl/FBdv#FBdv_00007008>)
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00007011> (<http://purl.org/obo/owl/FBdv#FBdv_00007011>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00007011> <http://purl.org/obo/owl/FBdv#FBdv_00007009>)
+
+# Class: <http://purl.org/obo/owl/FBdv#FBdv_00014201> (<http://purl.org/obo/owl/FBdv#FBdv_00014201>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv#FBdv_00014201> ObjectSomeValuesFrom(<http://purl.org/obo/owl/OBO_REL#part_of> <http://purl.org/obo/owl/FBdv#FBdv_00005321>))
+
+# Class: <http://purl.org/obo/owl/FBdv_root#FBdv_root_00000000> (<http://purl.org/obo/owl/FBdv_root#FBdv_root_00000000>)
+
+SubClassOf(<http://purl.org/obo/owl/FBdv_root#FBdv_root_00000000> <http://purl.org/obo/owl/FBdv#FBdv_00007008>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC670> (<http://www.absoluteiri.edu/RELAPPROXC670>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC670> <http://www.absoluteiri.edu/RELAPPROXC673>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC672> (<http://www.absoluteiri.edu/RELAPPROXC672>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC672> <http://www.absoluteiri.edu/RELAPPROXC671>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC672> <http://www.absoluteiri.edu/RELAPPROXC675>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC674> (<http://www.absoluteiri.edu/RELAPPROXC674>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC674> <http://www.absoluteiri.edu/RELAPPROXC673>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI278> (<http://www.absoluteiri.edu/RELAPPROXI278>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI278>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI279> (<http://www.absoluteiri.edu/RELAPPROXI279>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI279>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI280> (<http://www.absoluteiri.edu/RELAPPROXI280>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI280>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI281> (<http://www.absoluteiri.edu/RELAPPROXI281>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI281>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI282> (<http://www.absoluteiri.edu/RELAPPROXI282>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI282>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI283> (<http://www.absoluteiri.edu/RELAPPROXI283>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI283>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI284> (<http://www.absoluteiri.edu/RELAPPROXI284>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI284>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI285> (<http://www.absoluteiri.edu/RELAPPROXI285>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI285>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI286> (<http://www.absoluteiri.edu/RELAPPROXI286>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI286>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI287> (<http://www.absoluteiri.edu/RELAPPROXI287>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI287>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI288> (<http://www.absoluteiri.edu/RELAPPROXI288>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI288>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI289> (<http://www.absoluteiri.edu/RELAPPROXI289>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI289>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI290> (<http://www.absoluteiri.edu/RELAPPROXI290>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI290>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI291> (<http://www.absoluteiri.edu/RELAPPROXI291>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI291>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI292> (<http://www.absoluteiri.edu/RELAPPROXI292>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI292>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI293> (<http://www.absoluteiri.edu/RELAPPROXI293>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI293>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI294> (<http://www.absoluteiri.edu/RELAPPROXI294>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI294>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI295> (<http://www.absoluteiri.edu/RELAPPROXI295>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI295>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI296> (<http://www.absoluteiri.edu/RELAPPROXI296>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI296>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI297> (<http://www.absoluteiri.edu/RELAPPROXI297>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI297>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI298> (<http://www.absoluteiri.edu/RELAPPROXI298>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI298>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI299> (<http://www.absoluteiri.edu/RELAPPROXI299>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI299>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI300> (<http://www.absoluteiri.edu/RELAPPROXI300>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI300>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI301> (<http://www.absoluteiri.edu/RELAPPROXI301>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI301>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI302> (<http://www.absoluteiri.edu/RELAPPROXI302>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI302>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI303> (<http://www.absoluteiri.edu/RELAPPROXI303>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI303>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI304> (<http://www.absoluteiri.edu/RELAPPROXI304>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI304>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI305> (<http://www.absoluteiri.edu/RELAPPROXI305>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI305>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI306> (<http://www.absoluteiri.edu/RELAPPROXI306>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI306>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI307> (<http://www.absoluteiri.edu/RELAPPROXI307>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI307>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI308> (<http://www.absoluteiri.edu/RELAPPROXI308>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI308>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI309> (<http://www.absoluteiri.edu/RELAPPROXI309>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI309>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI310> (<http://www.absoluteiri.edu/RELAPPROXI310>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI310>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI311> (<http://www.absoluteiri.edu/RELAPPROXI311>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI311>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI312> (<http://www.absoluteiri.edu/RELAPPROXI312>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI312>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI313> (<http://www.absoluteiri.edu/RELAPPROXI313>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI313>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI314> (<http://www.absoluteiri.edu/RELAPPROXI314>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI314>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI315> (<http://www.absoluteiri.edu/RELAPPROXI315>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI315>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI316> (<http://www.absoluteiri.edu/RELAPPROXI316>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI316>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI317> (<http://www.absoluteiri.edu/RELAPPROXI317>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI317>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI318> (<http://www.absoluteiri.edu/RELAPPROXI318>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI318>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI319> (<http://www.absoluteiri.edu/RELAPPROXI319>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI319>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI320> (<http://www.absoluteiri.edu/RELAPPROXI320>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI320>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI321> (<http://www.absoluteiri.edu/RELAPPROXI321>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI321>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI322> (<http://www.absoluteiri.edu/RELAPPROXI322>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI322>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI323> (<http://www.absoluteiri.edu/RELAPPROXI323>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI323>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI324> (<http://www.absoluteiri.edu/RELAPPROXI324>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI324>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI325> (<http://www.absoluteiri.edu/RELAPPROXI325>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI325>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI326> (<http://www.absoluteiri.edu/RELAPPROXI326>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI326>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI327> (<http://www.absoluteiri.edu/RELAPPROXI327>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI327>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI328> (<http://www.absoluteiri.edu/RELAPPROXI328>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI328>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI329> (<http://www.absoluteiri.edu/RELAPPROXI329>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI329>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI330> (<http://www.absoluteiri.edu/RELAPPROXI330>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI330>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI331> (<http://www.absoluteiri.edu/RELAPPROXI331>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI331>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI332> (<http://www.absoluteiri.edu/RELAPPROXI332>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI332>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI333> (<http://www.absoluteiri.edu/RELAPPROXI333>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI333>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI334> (<http://www.absoluteiri.edu/RELAPPROXI334>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI334>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI335> (<http://www.absoluteiri.edu/RELAPPROXI335>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI335>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI336> (<http://www.absoluteiri.edu/RELAPPROXI336>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI336>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI337> (<http://www.absoluteiri.edu/RELAPPROXI337>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI337>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI338> (<http://www.absoluteiri.edu/RELAPPROXI338>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI338>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI339> (<http://www.absoluteiri.edu/RELAPPROXI339>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI339>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI340> (<http://www.absoluteiri.edu/RELAPPROXI340>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI340>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI341> (<http://www.absoluteiri.edu/RELAPPROXI341>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI341>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI342> (<http://www.absoluteiri.edu/RELAPPROXI342>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI342>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI343> (<http://www.absoluteiri.edu/RELAPPROXI343>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI343>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI344> (<http://www.absoluteiri.edu/RELAPPROXI344>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI344>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI345> (<http://www.absoluteiri.edu/RELAPPROXI345>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI345>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI346> (<http://www.absoluteiri.edu/RELAPPROXI346>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI346>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI347> (<http://www.absoluteiri.edu/RELAPPROXI347>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI347>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI348> (<http://www.absoluteiri.edu/RELAPPROXI348>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI348>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI349> (<http://www.absoluteiri.edu/RELAPPROXI349>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI349>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI350> (<http://www.absoluteiri.edu/RELAPPROXI350>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI350>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI351> (<http://www.absoluteiri.edu/RELAPPROXI351>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI351>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI352> (<http://www.absoluteiri.edu/RELAPPROXI352>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI352>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI353> (<http://www.absoluteiri.edu/RELAPPROXI353>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI353>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI354> (<http://www.absoluteiri.edu/RELAPPROXI354>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI354>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI355> (<http://www.absoluteiri.edu/RELAPPROXI355>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI355>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI356> (<http://www.absoluteiri.edu/RELAPPROXI356>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI356>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI357> (<http://www.absoluteiri.edu/RELAPPROXI357>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI357>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI358> (<http://www.absoluteiri.edu/RELAPPROXI358>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI358>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI359> (<http://www.absoluteiri.edu/RELAPPROXI359>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI359>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI360> (<http://www.absoluteiri.edu/RELAPPROXI360>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI360>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI361> (<http://www.absoluteiri.edu/RELAPPROXI361>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI361>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI362> (<http://www.absoluteiri.edu/RELAPPROXI362>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI362>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI363> (<http://www.absoluteiri.edu/RELAPPROXI363>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI363>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI364> (<http://www.absoluteiri.edu/RELAPPROXI364>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI364>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI365> (<http://www.absoluteiri.edu/RELAPPROXI365>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI365>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI366> (<http://www.absoluteiri.edu/RELAPPROXI366>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI366>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI367> (<http://www.absoluteiri.edu/RELAPPROXI367>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI367>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI368> (<http://www.absoluteiri.edu/RELAPPROXI368>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI368>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI369> (<http://www.absoluteiri.edu/RELAPPROXI369>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI369>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI370> (<http://www.absoluteiri.edu/RELAPPROXI370>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI370>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI371> (<http://www.absoluteiri.edu/RELAPPROXI371>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI371>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI372> (<http://www.absoluteiri.edu/RELAPPROXI372>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI372>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI373> (<http://www.absoluteiri.edu/RELAPPROXI373>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI373>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI374> (<http://www.absoluteiri.edu/RELAPPROXI374>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI374>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI375> (<http://www.absoluteiri.edu/RELAPPROXI375>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI375>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI376> (<http://www.absoluteiri.edu/RELAPPROXI376>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI376>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI377> (<http://www.absoluteiri.edu/RELAPPROXI377>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI377>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI378> (<http://www.absoluteiri.edu/RELAPPROXI378>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI378>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI379> (<http://www.absoluteiri.edu/RELAPPROXI379>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI379>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI380> (<http://www.absoluteiri.edu/RELAPPROXI380>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI380>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI381> (<http://www.absoluteiri.edu/RELAPPROXI381>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI381>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI382> (<http://www.absoluteiri.edu/RELAPPROXI382>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI382>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI383> (<http://www.absoluteiri.edu/RELAPPROXI383>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI383>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI384> (<http://www.absoluteiri.edu/RELAPPROXI384>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI384>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI385> (<http://www.absoluteiri.edu/RELAPPROXI385>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI385>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI386> (<http://www.absoluteiri.edu/RELAPPROXI386>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI386>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI387> (<http://www.absoluteiri.edu/RELAPPROXI387>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI387>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI388> (<http://www.absoluteiri.edu/RELAPPROXI388>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI388>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI389> (<http://www.absoluteiri.edu/RELAPPROXI389>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI389>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI390> (<http://www.absoluteiri.edu/RELAPPROXI390>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI390>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI391> (<http://www.absoluteiri.edu/RELAPPROXI391>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI391>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI392> (<http://www.absoluteiri.edu/RELAPPROXI392>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI392>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI393> (<http://www.absoluteiri.edu/RELAPPROXI393>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI393>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI394> (<http://www.absoluteiri.edu/RELAPPROXI394>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI394>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI395> (<http://www.absoluteiri.edu/RELAPPROXI395>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI395>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI396> (<http://www.absoluteiri.edu/RELAPPROXI396>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI396>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI397> (<http://www.absoluteiri.edu/RELAPPROXI397>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI397>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI398> (<http://www.absoluteiri.edu/RELAPPROXI398>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI398>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI399> (<http://www.absoluteiri.edu/RELAPPROXI399>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI399>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI400> (<http://www.absoluteiri.edu/RELAPPROXI400>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI400>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI401> (<http://www.absoluteiri.edu/RELAPPROXI401>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI401>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI402> (<http://www.absoluteiri.edu/RELAPPROXI402>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI402>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI403> (<http://www.absoluteiri.edu/RELAPPROXI403>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI403>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI404> (<http://www.absoluteiri.edu/RELAPPROXI404>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI404>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI405> (<http://www.absoluteiri.edu/RELAPPROXI405>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI405>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI406> (<http://www.absoluteiri.edu/RELAPPROXI406>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI406>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI407> (<http://www.absoluteiri.edu/RELAPPROXI407>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI407>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI408> (<http://www.absoluteiri.edu/RELAPPROXI408>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI408>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI409> (<http://www.absoluteiri.edu/RELAPPROXI409>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI409>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI410> (<http://www.absoluteiri.edu/RELAPPROXI410>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI410>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI411> (<http://www.absoluteiri.edu/RELAPPROXI411>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI411>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI412> (<http://www.absoluteiri.edu/RELAPPROXI412>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI412>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI413> (<http://www.absoluteiri.edu/RELAPPROXI413>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI413>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI414> (<http://www.absoluteiri.edu/RELAPPROXI414>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI414>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI415> (<http://www.absoluteiri.edu/RELAPPROXI415>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI415>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI416> (<http://www.absoluteiri.edu/RELAPPROXI416>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI416>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI417> (<http://www.absoluteiri.edu/RELAPPROXI417>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI417>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI418> (<http://www.absoluteiri.edu/RELAPPROXI418>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI418>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI419> (<http://www.absoluteiri.edu/RELAPPROXI419>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI419>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI420> (<http://www.absoluteiri.edu/RELAPPROXI420>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI420>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI421> (<http://www.absoluteiri.edu/RELAPPROXI421>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI421>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI422> (<http://www.absoluteiri.edu/RELAPPROXI422>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI422>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI423> (<http://www.absoluteiri.edu/RELAPPROXI423>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI423>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI424> (<http://www.absoluteiri.edu/RELAPPROXI424>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI424>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI425> (<http://www.absoluteiri.edu/RELAPPROXI425>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI425>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI426> (<http://www.absoluteiri.edu/RELAPPROXI426>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI426>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI427> (<http://www.absoluteiri.edu/RELAPPROXI427>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI427>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI428> (<http://www.absoluteiri.edu/RELAPPROXI428>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI428>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI429> (<http://www.absoluteiri.edu/RELAPPROXI429>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI429>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI430> (<http://www.absoluteiri.edu/RELAPPROXI430>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI430>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI431> (<http://www.absoluteiri.edu/RELAPPROXI431>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI431>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI432> (<http://www.absoluteiri.edu/RELAPPROXI432>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI432>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI433> (<http://www.absoluteiri.edu/RELAPPROXI433>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI433>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI434> (<http://www.absoluteiri.edu/RELAPPROXI434>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI434>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI435> (<http://www.absoluteiri.edu/RELAPPROXI435>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI435>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI436> (<http://www.absoluteiri.edu/RELAPPROXI436>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI436>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI437> (<http://www.absoluteiri.edu/RELAPPROXI437>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI437>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI438> (<http://www.absoluteiri.edu/RELAPPROXI438>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI438>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI439> (<http://www.absoluteiri.edu/RELAPPROXI439>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI439>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI440> (<http://www.absoluteiri.edu/RELAPPROXI440>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI440>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI441> (<http://www.absoluteiri.edu/RELAPPROXI441>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI441>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI442> (<http://www.absoluteiri.edu/RELAPPROXI442>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI442>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI443> (<http://www.absoluteiri.edu/RELAPPROXI443>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI443>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI444> (<http://www.absoluteiri.edu/RELAPPROXI444>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI444>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI445> (<http://www.absoluteiri.edu/RELAPPROXI445>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI445>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI446> (<http://www.absoluteiri.edu/RELAPPROXI446>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI446>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI447> (<http://www.absoluteiri.edu/RELAPPROXI447>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI447>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI448> (<http://www.absoluteiri.edu/RELAPPROXI448>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI448>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI449> (<http://www.absoluteiri.edu/RELAPPROXI449>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI449>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI450> (<http://www.absoluteiri.edu/RELAPPROXI450>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI450>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI451> (<http://www.absoluteiri.edu/RELAPPROXI451>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI451>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI452> (<http://www.absoluteiri.edu/RELAPPROXI452>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI452>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI453> (<http://www.absoluteiri.edu/RELAPPROXI453>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI453>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI454> (<http://www.absoluteiri.edu/RELAPPROXI454>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI454>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI455> (<http://www.absoluteiri.edu/RELAPPROXI455>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI455>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI456> (<http://www.absoluteiri.edu/RELAPPROXI456>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI456>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI457> (<http://www.absoluteiri.edu/RELAPPROXI457>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI457>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI458> (<http://www.absoluteiri.edu/RELAPPROXI458>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI458>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI459> (<http://www.absoluteiri.edu/RELAPPROXI459>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI459>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI460> (<http://www.absoluteiri.edu/RELAPPROXI460>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI460>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI461> (<http://www.absoluteiri.edu/RELAPPROXI461>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI461>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI462> (<http://www.absoluteiri.edu/RELAPPROXI462>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI462>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI463> (<http://www.absoluteiri.edu/RELAPPROXI463>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI463>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI464> (<http://www.absoluteiri.edu/RELAPPROXI464>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI464>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI465> (<http://www.absoluteiri.edu/RELAPPROXI465>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI465>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI466> (<http://www.absoluteiri.edu/RELAPPROXI466>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI466>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI467> (<http://www.absoluteiri.edu/RELAPPROXI467>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI467>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI468> (<http://www.absoluteiri.edu/RELAPPROXI468>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI468>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI469> (<http://www.absoluteiri.edu/RELAPPROXI469>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI469>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI470> (<http://www.absoluteiri.edu/RELAPPROXI470>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI470>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI471> (<http://www.absoluteiri.edu/RELAPPROXI471>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI471>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI472> (<http://www.absoluteiri.edu/RELAPPROXI472>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI472>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI473> (<http://www.absoluteiri.edu/RELAPPROXI473>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI473>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI474> (<http://www.absoluteiri.edu/RELAPPROXI474>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI474>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI475> (<http://www.absoluteiri.edu/RELAPPROXI475>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI475>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI476> (<http://www.absoluteiri.edu/RELAPPROXI476>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI476>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI477> (<http://www.absoluteiri.edu/RELAPPROXI477>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI477>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI478> (<http://www.absoluteiri.edu/RELAPPROXI478>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI478>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI479> (<http://www.absoluteiri.edu/RELAPPROXI479>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI479>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI480> (<http://www.absoluteiri.edu/RELAPPROXI480>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI480>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI481> (<http://www.absoluteiri.edu/RELAPPROXI481>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI481>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI482> (<http://www.absoluteiri.edu/RELAPPROXI482>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI482>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI483> (<http://www.absoluteiri.edu/RELAPPROXI483>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI483>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI484> (<http://www.absoluteiri.edu/RELAPPROXI484>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI484>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI485> (<http://www.absoluteiri.edu/RELAPPROXI485>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI485>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI486> (<http://www.absoluteiri.edu/RELAPPROXI486>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI486>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI487> (<http://www.absoluteiri.edu/RELAPPROXI487>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI487>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI488> (<http://www.absoluteiri.edu/RELAPPROXI488>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI488>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI489> (<http://www.absoluteiri.edu/RELAPPROXI489>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI489>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI490> (<http://www.absoluteiri.edu/RELAPPROXI490>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI490>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI491> (<http://www.absoluteiri.edu/RELAPPROXI491>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI491>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI492> (<http://www.absoluteiri.edu/RELAPPROXI492>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI492>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI493> (<http://www.absoluteiri.edu/RELAPPROXI493>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI493>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI494> (<http://www.absoluteiri.edu/RELAPPROXI494>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI494>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI495> (<http://www.absoluteiri.edu/RELAPPROXI495>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI495>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI496> (<http://www.absoluteiri.edu/RELAPPROXI496>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI496>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI497> (<http://www.absoluteiri.edu/RELAPPROXI497>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI497>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI498> (<http://www.absoluteiri.edu/RELAPPROXI498>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI498>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI499> (<http://www.absoluteiri.edu/RELAPPROXI499>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI499>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI500> (<http://www.absoluteiri.edu/RELAPPROXI500>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI500>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI501> (<http://www.absoluteiri.edu/RELAPPROXI501>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI501>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI502> (<http://www.absoluteiri.edu/RELAPPROXI502>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI502>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI503> (<http://www.absoluteiri.edu/RELAPPROXI503>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI503>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI504> (<http://www.absoluteiri.edu/RELAPPROXI504>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI504>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI505> (<http://www.absoluteiri.edu/RELAPPROXI505>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI505>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI506> (<http://www.absoluteiri.edu/RELAPPROXI506>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI506>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI507> (<http://www.absoluteiri.edu/RELAPPROXI507>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI507>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI508> (<http://www.absoluteiri.edu/RELAPPROXI508>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI508>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI509> (<http://www.absoluteiri.edu/RELAPPROXI509>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI509>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI510> (<http://www.absoluteiri.edu/RELAPPROXI510>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI510>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI511> (<http://www.absoluteiri.edu/RELAPPROXI511>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI511>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI512> (<http://www.absoluteiri.edu/RELAPPROXI512>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI512>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI513> (<http://www.absoluteiri.edu/RELAPPROXI513>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI513>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI514> (<http://www.absoluteiri.edu/RELAPPROXI514>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI514>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI515> (<http://www.absoluteiri.edu/RELAPPROXI515>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI515>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI516> (<http://www.absoluteiri.edu/RELAPPROXI516>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI516>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI517> (<http://www.absoluteiri.edu/RELAPPROXI517>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI517>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI518> (<http://www.absoluteiri.edu/RELAPPROXI518>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI518>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI519> (<http://www.absoluteiri.edu/RELAPPROXI519>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI519>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI520> (<http://www.absoluteiri.edu/RELAPPROXI520>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI520>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI521> (<http://www.absoluteiri.edu/RELAPPROXI521>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI521>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI522> (<http://www.absoluteiri.edu/RELAPPROXI522>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI522>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI523> (<http://www.absoluteiri.edu/RELAPPROXI523>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI523>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI524> (<http://www.absoluteiri.edu/RELAPPROXI524>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI524>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI525> (<http://www.absoluteiri.edu/RELAPPROXI525>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI525>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI526> (<http://www.absoluteiri.edu/RELAPPROXI526>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI526>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI527> (<http://www.absoluteiri.edu/RELAPPROXI527>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI527>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI528> (<http://www.absoluteiri.edu/RELAPPROXI528>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI528>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI529> (<http://www.absoluteiri.edu/RELAPPROXI529>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI529>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI530> (<http://www.absoluteiri.edu/RELAPPROXI530>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI530>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI531> (<http://www.absoluteiri.edu/RELAPPROXI531>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI531>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI532> (<http://www.absoluteiri.edu/RELAPPROXI532>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI532>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI533> (<http://www.absoluteiri.edu/RELAPPROXI533>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI533>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI534> (<http://www.absoluteiri.edu/RELAPPROXI534>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI534>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI535> (<http://www.absoluteiri.edu/RELAPPROXI535>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI535>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI536> (<http://www.absoluteiri.edu/RELAPPROXI536>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI536>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI537> (<http://www.absoluteiri.edu/RELAPPROXI537>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI537>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI538> (<http://www.absoluteiri.edu/RELAPPROXI538>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI538>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI539> (<http://www.absoluteiri.edu/RELAPPROXI539>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI539>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI540> (<http://www.absoluteiri.edu/RELAPPROXI540>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI540>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI541> (<http://www.absoluteiri.edu/RELAPPROXI541>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI541>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI542> (<http://www.absoluteiri.edu/RELAPPROXI542>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI542>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI543> (<http://www.absoluteiri.edu/RELAPPROXI543>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI543>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI544> (<http://www.absoluteiri.edu/RELAPPROXI544>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI544>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI545> (<http://www.absoluteiri.edu/RELAPPROXI545>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI545>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI546> (<http://www.absoluteiri.edu/RELAPPROXI546>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI546>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI547> (<http://www.absoluteiri.edu/RELAPPROXI547>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI547>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI548> (<http://www.absoluteiri.edu/RELAPPROXI548>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI548>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI549> (<http://www.absoluteiri.edu/RELAPPROXI549>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI549>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI550> (<http://www.absoluteiri.edu/RELAPPROXI550>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI550>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI551> (<http://www.absoluteiri.edu/RELAPPROXI551>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI551>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI552> (<http://www.absoluteiri.edu/RELAPPROXI552>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI552>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI553> (<http://www.absoluteiri.edu/RELAPPROXI553>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI553>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI554> (<http://www.absoluteiri.edu/RELAPPROXI554>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI554>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI555> (<http://www.absoluteiri.edu/RELAPPROXI555>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI555>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI556> (<http://www.absoluteiri.edu/RELAPPROXI556>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI556>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI557> (<http://www.absoluteiri.edu/RELAPPROXI557>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI557>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI558> (<http://www.absoluteiri.edu/RELAPPROXI558>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI558>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI559> (<http://www.absoluteiri.edu/RELAPPROXI559>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI559>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI560> (<http://www.absoluteiri.edu/RELAPPROXI560>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI560>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI561> (<http://www.absoluteiri.edu/RELAPPROXI561>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI561>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI562> (<http://www.absoluteiri.edu/RELAPPROXI562>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI562>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI563> (<http://www.absoluteiri.edu/RELAPPROXI563>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI563>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI564> (<http://www.absoluteiri.edu/RELAPPROXI564>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI564>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI565> (<http://www.absoluteiri.edu/RELAPPROXI565>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI565>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI566> (<http://www.absoluteiri.edu/RELAPPROXI566>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI566>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI567> (<http://www.absoluteiri.edu/RELAPPROXI567>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI567>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI568> (<http://www.absoluteiri.edu/RELAPPROXI568>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI568>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI569> (<http://www.absoluteiri.edu/RELAPPROXI569>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI569>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI570> (<http://www.absoluteiri.edu/RELAPPROXI570>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI570>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI571> (<http://www.absoluteiri.edu/RELAPPROXI571>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI571>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI572> (<http://www.absoluteiri.edu/RELAPPROXI572>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI572>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI573> (<http://www.absoluteiri.edu/RELAPPROXI573>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI573>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI574> (<http://www.absoluteiri.edu/RELAPPROXI574>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI574>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI575> (<http://www.absoluteiri.edu/RELAPPROXI575>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI575>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI576> (<http://www.absoluteiri.edu/RELAPPROXI576>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI576>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI577> (<http://www.absoluteiri.edu/RELAPPROXI577>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI577>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI578> (<http://www.absoluteiri.edu/RELAPPROXI578>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI578>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI579> (<http://www.absoluteiri.edu/RELAPPROXI579>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI579>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI580> (<http://www.absoluteiri.edu/RELAPPROXI580>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI580>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI581> (<http://www.absoluteiri.edu/RELAPPROXI581>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI581>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI582> (<http://www.absoluteiri.edu/RELAPPROXI582>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI582>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI583> (<http://www.absoluteiri.edu/RELAPPROXI583>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI583>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI584> (<http://www.absoluteiri.edu/RELAPPROXI584>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI584>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI585> (<http://www.absoluteiri.edu/RELAPPROXI585>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI585>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI586> (<http://www.absoluteiri.edu/RELAPPROXI586>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI586>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI587> (<http://www.absoluteiri.edu/RELAPPROXI587>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI587>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI588> (<http://www.absoluteiri.edu/RELAPPROXI588>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI588>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI589> (<http://www.absoluteiri.edu/RELAPPROXI589>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI589>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI590> (<http://www.absoluteiri.edu/RELAPPROXI590>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI590>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI591> (<http://www.absoluteiri.edu/RELAPPROXI591>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI591>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI592> (<http://www.absoluteiri.edu/RELAPPROXI592>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI592>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI593> (<http://www.absoluteiri.edu/RELAPPROXI593>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI593>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI594> (<http://www.absoluteiri.edu/RELAPPROXI594>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI594>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI595> (<http://www.absoluteiri.edu/RELAPPROXI595>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI595>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI596> (<http://www.absoluteiri.edu/RELAPPROXI596>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI596>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI597> (<http://www.absoluteiri.edu/RELAPPROXI597>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI597>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI598> (<http://www.absoluteiri.edu/RELAPPROXI598>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI598>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI599> (<http://www.absoluteiri.edu/RELAPPROXI599>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI599>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI600> (<http://www.absoluteiri.edu/RELAPPROXI600>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI600>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI601> (<http://www.absoluteiri.edu/RELAPPROXI601>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI601>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI602> (<http://www.absoluteiri.edu/RELAPPROXI602>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI602>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI603> (<http://www.absoluteiri.edu/RELAPPROXI603>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI603>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI604> (<http://www.absoluteiri.edu/RELAPPROXI604>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI604>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI605> (<http://www.absoluteiri.edu/RELAPPROXI605>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI605>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI606> (<http://www.absoluteiri.edu/RELAPPROXI606>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI606>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI607> (<http://www.absoluteiri.edu/RELAPPROXI607>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI607>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI608> (<http://www.absoluteiri.edu/RELAPPROXI608>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI608>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI609> (<http://www.absoluteiri.edu/RELAPPROXI609>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI609>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI610> (<http://www.absoluteiri.edu/RELAPPROXI610>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI610>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI611> (<http://www.absoluteiri.edu/RELAPPROXI611>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI611>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI612> (<http://www.absoluteiri.edu/RELAPPROXI612>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI612>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI613> (<http://www.absoluteiri.edu/RELAPPROXI613>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI613>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI614> (<http://www.absoluteiri.edu/RELAPPROXI614>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI614>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI615> (<http://www.absoluteiri.edu/RELAPPROXI615>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI615>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI616> (<http://www.absoluteiri.edu/RELAPPROXI616>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI616>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI617> (<http://www.absoluteiri.edu/RELAPPROXI617>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI617>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI618> (<http://www.absoluteiri.edu/RELAPPROXI618>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI618>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI619> (<http://www.absoluteiri.edu/RELAPPROXI619>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI619>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI620> (<http://www.absoluteiri.edu/RELAPPROXI620>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI620>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI621> (<http://www.absoluteiri.edu/RELAPPROXI621>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI621>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI622> (<http://www.absoluteiri.edu/RELAPPROXI622>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI622>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI623> (<http://www.absoluteiri.edu/RELAPPROXI623>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI623>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI624> (<http://www.absoluteiri.edu/RELAPPROXI624>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI624>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI625> (<http://www.absoluteiri.edu/RELAPPROXI625>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI625>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI626> (<http://www.absoluteiri.edu/RELAPPROXI626>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI626>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI627> (<http://www.absoluteiri.edu/RELAPPROXI627>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI627>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI628> (<http://www.absoluteiri.edu/RELAPPROXI628>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI628>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI629> (<http://www.absoluteiri.edu/RELAPPROXI629>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI629>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI630> (<http://www.absoluteiri.edu/RELAPPROXI630>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI630>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI631> (<http://www.absoluteiri.edu/RELAPPROXI631>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI631>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI632> (<http://www.absoluteiri.edu/RELAPPROXI632>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI632>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI633> (<http://www.absoluteiri.edu/RELAPPROXI633>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI633>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI634> (<http://www.absoluteiri.edu/RELAPPROXI634>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI634>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI635> (<http://www.absoluteiri.edu/RELAPPROXI635>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI635>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI636> (<http://www.absoluteiri.edu/RELAPPROXI636>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI636>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI637> (<http://www.absoluteiri.edu/RELAPPROXI637>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI637>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI638> (<http://www.absoluteiri.edu/RELAPPROXI638>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI638>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI639> (<http://www.absoluteiri.edu/RELAPPROXI639>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI639>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI640> (<http://www.absoluteiri.edu/RELAPPROXI640>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI640>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI641> (<http://www.absoluteiri.edu/RELAPPROXI641>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI641>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI642> (<http://www.absoluteiri.edu/RELAPPROXI642>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI642>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI643> (<http://www.absoluteiri.edu/RELAPPROXI643>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI643>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI644> (<http://www.absoluteiri.edu/RELAPPROXI644>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI644>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI645> (<http://www.absoluteiri.edu/RELAPPROXI645>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI645>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI646> (<http://www.absoluteiri.edu/RELAPPROXI646>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI646>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI647> (<http://www.absoluteiri.edu/RELAPPROXI647>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI647>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI648> (<http://www.absoluteiri.edu/RELAPPROXI648>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI648>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI649> (<http://www.absoluteiri.edu/RELAPPROXI649>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI649>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI650> (<http://www.absoluteiri.edu/RELAPPROXI650>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI650>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI651> (<http://www.absoluteiri.edu/RELAPPROXI651>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI651>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI652> (<http://www.absoluteiri.edu/RELAPPROXI652>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI652>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI653> (<http://www.absoluteiri.edu/RELAPPROXI653>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI653>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI654> (<http://www.absoluteiri.edu/RELAPPROXI654>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI654>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI655> (<http://www.absoluteiri.edu/RELAPPROXI655>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI655>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI656> (<http://www.absoluteiri.edu/RELAPPROXI656>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI656>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI657> (<http://www.absoluteiri.edu/RELAPPROXI657>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI657>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI658> (<http://www.absoluteiri.edu/RELAPPROXI658>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI658>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI659> (<http://www.absoluteiri.edu/RELAPPROXI659>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI659>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI660> (<http://www.absoluteiri.edu/RELAPPROXI660>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI660>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI661> (<http://www.absoluteiri.edu/RELAPPROXI661>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI661>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI662> (<http://www.absoluteiri.edu/RELAPPROXI662>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI662>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI663> (<http://www.absoluteiri.edu/RELAPPROXI663>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI663>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI664> (<http://www.absoluteiri.edu/RELAPPROXI664>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI664>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI665> (<http://www.absoluteiri.edu/RELAPPROXI665>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Definition> <http://www.absoluteiri.edu/RELAPPROXI665>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI666> (<http://www.absoluteiri.edu/RELAPPROXI666>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#Synonym> <http://www.absoluteiri.edu/RELAPPROXI666>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI667> (<http://www.absoluteiri.edu/RELAPPROXI667>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI667>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI668> (<http://www.absoluteiri.edu/RELAPPROXI668>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI668>)
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXI669> (<http://www.absoluteiri.edu/RELAPPROXI669>)
+
+ClassAssertion(<http://www.geneontology.org/formats/oboInOwl#DbXref> <http://www.absoluteiri.edu/RELAPPROXI669>)
+
+# Individual: <https://smolang.org/rdfMutate#newNode-2> (<https://smolang.org/rdfMutate#newNode-2>)
+
+ClassAssertion(owl:Class <https://smolang.org/rdfMutate#newNode-2>)
+
+# Individual: <https://smolang.org/rdfMutate#newNode-9> (<https://smolang.org/rdfMutate#newNode-9>)
+
+ClassAssertion(owl:Class <https://smolang.org/rdfMutate#newNode-9>)
+
+
+)

@@ -1,0 +1,1349 @@
+Prefix(:=<urn:unnamed:ontology#ont19096856143819599>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:unnamed:ontology#ont19096856143819599>
+
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC230>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC194>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC185>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ArticleInBook>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-5>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC283>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC274>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Editor>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC245>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#WorkshopPaper>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC231>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC368>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#KnowledgeDiscoveryInDatasets>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC248>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC359>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC332>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#CaseBaseReasoning>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#PSM>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC299>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#PhDStudent>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC61>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC316>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#SoftwareReuse>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC246>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC215>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Guideline>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC330>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#SpecificationLanguage>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#JournalArticle>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC167>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC294>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC266>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#KAMethodologies>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC350>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Employee>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC205>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC307>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Person>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#University>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC256>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC340>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC394>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#PSMevaluation>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC261>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-9>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC218>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-0>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC235>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC346>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC257>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC226>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC341>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC310>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC397>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Department>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC277>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC361>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC197>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#TransformationTool>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC318>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#TechnicalStaff>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#SpecialIssuePublication>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC325>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC272>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC83>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Object>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC229>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC376>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC243>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC212>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC198>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC263>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#EvaluationOfKA>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC357>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#SpecificationMethodology>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#AdministrativeStaff>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC371>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ElicitationTool>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC328>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ReinforcementLearning>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC280>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#KAMethodology>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC391>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Abduction>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC131>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Methodology>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC213>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Verifier>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC264>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC336>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC203>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC305>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC387>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Journal>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC254>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC223>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#TheoreticalFoundations>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC392>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#SpecificationLanguages>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC349>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Book>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC303>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC298>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#DataMining>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC382>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC354>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ExecutableSpecificationLanguages>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC221>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC339>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC291>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC238>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC322>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Organization>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC289>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC373>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC224>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC275>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC195>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#CooperativeKnowledgeAcquisition>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#PSMLibrary>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Article>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC323>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC143>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC314>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC259>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Meeting>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC374>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC365>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC232>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC43>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC249>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC333>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ConferencePaper>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Student>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC384>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC127>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#PSMnotations>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC206>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Enterprise>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC117>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC216>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC331>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC300>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC267>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC59>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC240>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC351>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Lecturer>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC334>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC308>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC385>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#PaperLibrary>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ResearchGroup>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC284>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC395>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#SupportToolsForFormalMethods>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC301>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#AnomalyDetection>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC25>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC268>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC352>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC369>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#NLParser>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC309>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC236>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC109>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC258>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#LearningApprenticeSystems>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC227>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC320>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC200>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC342>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC311>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC287>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC278>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC251>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#SpecialIssueEvent>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC362>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC208>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC319>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC295>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC326>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#AutomatedCodeGenerationFromSpecification>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC377>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC312>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Product>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC279>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC199>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC363>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC290>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ImplementationEnvironment>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC262>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC247>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC219>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#SoftwareApplications>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Institute>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ComputerSupport>))
+Declaration(Class(owl:ObjectProperty))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#V_And_V_Of_MAS>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC281>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Workshop>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC378>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC347>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC115>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC214>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ModelingLanguage>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC265>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC337>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC306>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC388>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Ontologies>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC282>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC393>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC273>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC133>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC239>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC193>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#KAThroughMachineLearning>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC244>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC355>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#DevelopmentProject>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC292>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC177>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#KnowledgeElicitation>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC389>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC358>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC107>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC225>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#InternetTool>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ResearchTopic>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Formalisms>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC276>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC360>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Validation_And_Verification>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC317>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#OntologyLibrary>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC293>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC324>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC204>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#AnomalyRepairAndKnowledgeRevision>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC315>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC95>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Validator>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC375>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC344>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC255>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC366>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Project>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Researcher>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC260>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Ontology>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC217>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC383>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC250>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC222>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC207>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC270>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC345>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC81>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC367>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC69>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC241>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC396>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#AutomatedPSMGeneration>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC196>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#AcademicStaff>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC335>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Activity>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#TechnicalReport>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC386>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC285>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#SpecificationOfControlKnowledge>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Secretary>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC271>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC302>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC228>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-11>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC269>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC139>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC211>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC353>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC233>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#KnowledgeManagement>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC201>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC356>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC9>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-8>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC286>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC252>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC370>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ResearchProject>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC209>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC327>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC101>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#OnlinePublication>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC390>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Conference>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC296>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC380>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#WebMediatedPSMSelection>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC202>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC93>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC313>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Methodologies>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC253>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#KnowledgeBasedRefinement>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC364>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Reuse>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC304>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Sysiphus_III_Experiment>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC297>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#SoftwareProject>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC381>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC220>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC338>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC237>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC379>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC348>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC321>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC343>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC288>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Publication>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC210>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC372>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC329>))
+Declaration(ObjectProperty(<https://smolang.org/rdfMutate#newNode-10>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#onlineVersionOf>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#projectInfo>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#lastPage>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#member>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Publisher>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#publishes>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#products>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#projects>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#events>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#authorOfOntology>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#carriedOutBy>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#name>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#orgCommittee>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#subTopics>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#fax>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#lastName>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#productFAQ>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#headOfGroup>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#journal>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#memberOfPC>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#volume>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#supervises>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#workshop>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#researchInterest>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#secretaryOf>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#phone>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#eventTitle>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#firstPage>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#editor>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#technicalReport>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#mailingLists>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#product>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#address>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#applicationAreas>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#participant>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#worksAtProject>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#bibliographies>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#location>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#abstract>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#cooperatesWith>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#nationalFundingAgencies>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#productName>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#title>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#headOf>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#relatedTopics>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#finances>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#memberOf>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#series>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#keyword>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#studiesAt>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#containsArticle>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#publication>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#affiliation>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#onlineVersion>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#head>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#organizerOrChairOf>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#type>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#supervisor>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#author>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#photo>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#firstName>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#internationalFundingAgencies>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#employs>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#programCommittee>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#financedBy>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#middleInitial>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#describesProject>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#dateOfLastModification>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#number>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#developedBy>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#atEvent>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#productedBy>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#develops>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#researchers>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#year>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#date>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#productPublication>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#carriesOut>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#journals>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#student>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#isAbout>))
+Declaration(ObjectProperty(<https://smolang.org/rdfMutate#newNode-4>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#approaches>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#proceedingsTitle>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#description>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#book>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#email>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#organization>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#researchGroups>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#hasParts>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#conference>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#productMailingList>))
+Declaration(ObjectProperty(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#webpages>))
+Declaration(NamedIndividual(owl:Class))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-8>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-9>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-7>))
+Declaration(NamedIndividual(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#proceedingsTitle>))
+############################
+#   Object Properties
+############################
+
+# Object Property: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#author> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#author>)
+
+ObjectPropertyRange(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#author> <http://www.absoluteiri.edu/RELAPPROXC139>)
+
+# Object Property: <https://smolang.org/rdfMutate#newNode-10> (<https://smolang.org/rdfMutate#newNode-10>)
+
+TransitiveObjectProperty(<https://smolang.org/rdfMutate#newNode-10>)
+
+
+############################
+#   Classes
+############################
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Abduction> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Abduction>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Abduction> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#KAThroughMachineLearning>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#AcademicStaff> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#AcademicStaff>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#AcademicStaff> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Employee>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#AcademicStaff> <http://www.absoluteiri.edu/RELAPPROXC196>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#AcademicStaff> <http://www.absoluteiri.edu/RELAPPROXC272>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#AcademicStaff> <http://www.absoluteiri.edu/RELAPPROXC276>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#AcademicStaff> <http://www.absoluteiri.edu/RELAPPROXC346>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#AcademicStaff> <http://www.absoluteiri.edu/RELAPPROXC364>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#AdministrativeStaff> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#AdministrativeStaff>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#AdministrativeStaff> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Employee>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#AnomalyDetection> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#AnomalyDetection>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#AnomalyDetection> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Validation_And_Verification>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#AnomalyRepairAndKnowledgeRevision> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#AnomalyRepairAndKnowledgeRevision>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#AnomalyRepairAndKnowledgeRevision> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Validation_And_Verification>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Article> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Article>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Article> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Publication>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ArticleInBook> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ArticleInBook>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ArticleInBook> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Article>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ArticleInBook> <http://www.absoluteiri.edu/RELAPPROXC228>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ArticleInBook> <http://www.absoluteiri.edu/RELAPPROXC238>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ArticleInBook> <http://www.absoluteiri.edu/RELAPPROXC256>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#AutomatedCodeGenerationFromSpecification> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#AutomatedCodeGenerationFromSpecification>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#AutomatedCodeGenerationFromSpecification> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#SpecificationLanguages>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Book> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Book>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Book> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Publication>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Book> <http://www.absoluteiri.edu/RELAPPROXC246>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Book> <http://www.absoluteiri.edu/RELAPPROXC254>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Book> <http://www.absoluteiri.edu/RELAPPROXC302>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#CaseBaseReasoning> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#CaseBaseReasoning>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#CaseBaseReasoning> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#KAThroughMachineLearning>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ComputerSupport> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ComputerSupport>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ComputerSupport> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Product>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Conference> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Conference>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Conference> <http://www.absoluteiri.edu/RELAPPROXC252>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Conference> <http://www.absoluteiri.edu/RELAPPROXC270>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ConferencePaper> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ConferencePaper>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ConferencePaper> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Article>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ConferencePaper> <http://www.absoluteiri.edu/RELAPPROXC238>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ConferencePaper> <http://www.absoluteiri.edu/RELAPPROXC256>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ConferencePaper> <http://www.absoluteiri.edu/RELAPPROXC278>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ConferencePaper> <http://www.absoluteiri.edu/RELAPPROXC280>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#CooperativeKnowledgeAcquisition> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#CooperativeKnowledgeAcquisition>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#CooperativeKnowledgeAcquisition> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#KAThroughMachineLearning>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#DataMining> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#DataMining>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#DataMining> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#KAThroughMachineLearning>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Department> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Department>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Department> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Organization>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Department> <http://www.absoluteiri.edu/RELAPPROXC216>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#DevelopmentProject> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#DevelopmentProject>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#DevelopmentProject> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Project>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Editor> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Editor>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Editor> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ComputerSupport>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ElicitationTool> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ElicitationTool>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ElicitationTool> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ComputerSupport>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Employee> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Employee>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Employee> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Person>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Employee> <http://www.absoluteiri.edu/RELAPPROXC304>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Employee> <http://www.absoluteiri.edu/RELAPPROXC314>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Employee> <http://www.absoluteiri.edu/RELAPPROXC358>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Employee> <http://www.absoluteiri.edu/RELAPPROXC360>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Enterprise> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Enterprise>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Enterprise> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Organization>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#EvaluationOfKA> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#EvaluationOfKA>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#EvaluationOfKA> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ResearchTopic>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ExecutableSpecificationLanguages> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ExecutableSpecificationLanguages>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ExecutableSpecificationLanguages> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#SpecificationLanguages>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Formalisms> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Formalisms>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Formalisms> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Validation_And_Verification>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Guideline> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Guideline>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Guideline> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#KAMethodology>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ImplementationEnvironment> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ImplementationEnvironment>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ImplementationEnvironment> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ComputerSupport>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Institute> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Institute>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Institute> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Organization>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Institute> <http://www.absoluteiri.edu/RELAPPROXC244>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#InternetTool> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#InternetTool>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#InternetTool> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ComputerSupport>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Journal> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Journal>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Journal> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Publication>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Journal> <http://www.absoluteiri.edu/RELAPPROXC236>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Journal> <http://www.absoluteiri.edu/RELAPPROXC252>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Journal> <http://www.absoluteiri.edu/RELAPPROXC254>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Journal> <http://www.absoluteiri.edu/RELAPPROXC302>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Journal> <http://www.absoluteiri.edu/RELAPPROXC374>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#JournalArticle> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#JournalArticle>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#JournalArticle> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Article>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#JournalArticle> <http://www.absoluteiri.edu/RELAPPROXC238>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#JournalArticle> <http://www.absoluteiri.edu/RELAPPROXC256>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#JournalArticle> <http://www.absoluteiri.edu/RELAPPROXC298>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#KAMethodologies> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#KAMethodologies>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#KAMethodologies> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ResearchTopic>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#KAMethodology> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#KAMethodology>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#KAMethodology> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Product>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#KAThroughMachineLearning> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#KAThroughMachineLearning>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#KAThroughMachineLearning> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ResearchTopic>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#KnowledgeBasedRefinement> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#KnowledgeBasedRefinement>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#KnowledgeBasedRefinement> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#KAThroughMachineLearning>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#KnowledgeDiscoveryInDatasets> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#KnowledgeDiscoveryInDatasets>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#KnowledgeDiscoveryInDatasets> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#KAThroughMachineLearning>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#KnowledgeElicitation> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#KnowledgeElicitation>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#KnowledgeElicitation> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ResearchTopic>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#KnowledgeManagement> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#KnowledgeManagement>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#KnowledgeManagement> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ResearchTopic>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#LearningApprenticeSystems> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#LearningApprenticeSystems>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#LearningApprenticeSystems> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#KAThroughMachineLearning>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Lecturer> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Lecturer>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Lecturer> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#AcademicStaff>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Meeting> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Meeting>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Meeting> <http://www.absoluteiri.edu/RELAPPROXC200>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Meeting> <http://www.absoluteiri.edu/RELAPPROXC212>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Meeting> <http://www.absoluteiri.edu/RELAPPROXC300>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Methodologies> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Methodologies>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Methodologies> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Ontologies>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Methodology> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Methodology>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Methodology> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Validation_And_Verification>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ModelingLanguage> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ModelingLanguage>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ModelingLanguage> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#KAMethodology>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#NLParser> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#NLParser>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#NLParser> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ComputerSupport>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Object> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Object>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Object> <http://www.absoluteiri.edu/RELAPPROXC376>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#OnlinePublication> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#OnlinePublication>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#OnlinePublication> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Publication>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#OnlinePublication> <http://www.absoluteiri.edu/RELAPPROXC284>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#OnlinePublication> <http://www.absoluteiri.edu/RELAPPROXC380>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Ontologies> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Ontologies>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Ontologies> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Reuse>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Ontology> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Ontology>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Ontology> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#KAMethodology>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#OntologyLibrary> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#OntologyLibrary>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#OntologyLibrary> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ComputerSupport>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Organization> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Organization>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Organization> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Object>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Organization> <http://www.absoluteiri.edu/RELAPPROXC210>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Organization> <http://www.absoluteiri.edu/RELAPPROXC258>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Organization> <http://www.absoluteiri.edu/RELAPPROXC260>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Organization> <http://www.absoluteiri.edu/RELAPPROXC262>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Organization> <http://www.absoluteiri.edu/RELAPPROXC330>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Organization> <http://www.absoluteiri.edu/RELAPPROXC362>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Organization> <http://www.absoluteiri.edu/RELAPPROXC378>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Organization> <http://www.absoluteiri.edu/RELAPPROXC384>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#PSM> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#PSM>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#PSM> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#KAMethodology>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#PSMLibrary> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#PSMLibrary>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#PSMLibrary> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ComputerSupport>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#PaperLibrary> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#PaperLibrary>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#PaperLibrary> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#KAMethodology>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Person> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Person>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Person> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Object>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Person> <http://www.absoluteiri.edu/RELAPPROXC220>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Person> <http://www.absoluteiri.edu/RELAPPROXC258>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Person> <http://www.absoluteiri.edu/RELAPPROXC268>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Person> <http://www.absoluteiri.edu/RELAPPROXC286>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Person> <http://www.absoluteiri.edu/RELAPPROXC296>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Person> <http://www.absoluteiri.edu/RELAPPROXC312>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Person> <http://www.absoluteiri.edu/RELAPPROXC338>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Person> <http://www.absoluteiri.edu/RELAPPROXC366>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Person> <http://www.absoluteiri.edu/RELAPPROXC372>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#PhDStudent> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#PhDStudent>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#PhDStudent> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Researcher>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#PhDStudent> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Student>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#PhDStudent> <http://www.absoluteiri.edu/RELAPPROXC344>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Product> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Product>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Product> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Object>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Product> <http://www.absoluteiri.edu/RELAPPROXC222>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Product> <http://www.absoluteiri.edu/RELAPPROXC230>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Product> <http://www.absoluteiri.edu/RELAPPROXC290>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Product> <http://www.absoluteiri.edu/RELAPPROXC294>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Product> <http://www.absoluteiri.edu/RELAPPROXC318>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Product> <http://www.absoluteiri.edu/RELAPPROXC342>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Project> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Project>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Project> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Object>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Project> <http://www.absoluteiri.edu/RELAPPROXC200>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Project> <http://www.absoluteiri.edu/RELAPPROXC214>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Project> <http://www.absoluteiri.edu/RELAPPROXC224>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Project> <http://www.absoluteiri.edu/RELAPPROXC240>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Project> <http://www.absoluteiri.edu/RELAPPROXC282>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Project> <http://www.absoluteiri.edu/RELAPPROXC288>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Project> <http://www.absoluteiri.edu/RELAPPROXC316>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Project> <http://www.absoluteiri.edu/RELAPPROXC354>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Publication> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Publication>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Publication> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Object>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Publication> <http://www.absoluteiri.edu/RELAPPROXC200>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Publication> <http://www.absoluteiri.edu/RELAPPROXC206>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Publication> <http://www.absoluteiri.edu/RELAPPROXC218>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Publication> <http://www.absoluteiri.edu/RELAPPROXC232>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Publication> <http://www.absoluteiri.edu/RELAPPROXC248>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Publication> <http://www.absoluteiri.edu/RELAPPROXC266>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ReinforcementLearning> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ReinforcementLearning>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ReinforcementLearning> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#KAThroughMachineLearning>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ResearchGroup> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ResearchGroup>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ResearchGroup> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Organization>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ResearchGroup> <http://www.absoluteiri.edu/RELAPPROXC204>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ResearchGroup> <http://www.absoluteiri.edu/RELAPPROXC224>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ResearchProject> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ResearchProject>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ResearchProject> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Project>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ResearchTopic> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ResearchTopic>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ResearchTopic> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Object>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ResearchTopic> <http://www.absoluteiri.edu/RELAPPROXC198>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ResearchTopic> <http://www.absoluteiri.edu/RELAPPROXC208>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ResearchTopic> <http://www.absoluteiri.edu/RELAPPROXC250>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ResearchTopic> <http://www.absoluteiri.edu/RELAPPROXC258>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ResearchTopic> <http://www.absoluteiri.edu/RELAPPROXC292>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ResearchTopic> <http://www.absoluteiri.edu/RELAPPROXC306>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ResearchTopic> <http://www.absoluteiri.edu/RELAPPROXC308>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ResearchTopic> <http://www.absoluteiri.edu/RELAPPROXC310>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ResearchTopic> <http://www.absoluteiri.edu/RELAPPROXC320>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ResearchTopic> <http://www.absoluteiri.edu/RELAPPROXC326>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ResearchTopic> <http://www.absoluteiri.edu/RELAPPROXC328>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ResearchTopic> <http://www.absoluteiri.edu/RELAPPROXC334>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ResearchTopic> <http://www.absoluteiri.edu/RELAPPROXC348>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ResearchTopic> <http://www.absoluteiri.edu/RELAPPROXC356>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ResearchTopic> <http://www.absoluteiri.edu/RELAPPROXC368>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ResearchTopic> <http://www.absoluteiri.edu/RELAPPROXC370>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ResearchTopic> <http://www.absoluteiri.edu/RELAPPROXC382>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ResearchTopic> <http://www.absoluteiri.edu/RELAPPROXC390>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ResearchTopic> <http://www.absoluteiri.edu/RELAPPROXC392>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Researcher> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Researcher>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Researcher> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#AcademicStaff>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Researcher> <http://www.absoluteiri.edu/RELAPPROXC350>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Researcher> <http://www.absoluteiri.edu/RELAPPROXC352>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Researcher> <http://www.absoluteiri.edu/RELAPPROXC388>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Reuse> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Reuse>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Reuse> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ResearchTopic>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Secretary> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Secretary>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Secretary> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#AdministrativeStaff>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Secretary> <http://www.absoluteiri.edu/RELAPPROXC322>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#SoftwareApplications> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#SoftwareApplications>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#SoftwareApplications> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Ontologies>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#SoftwareProject> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#SoftwareProject>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#SoftwareProject> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#DevelopmentProject>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#SoftwareReuse> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#SoftwareReuse>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#SoftwareReuse> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Reuse>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#SpecialIssuePublication> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#SpecialIssuePublication>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#SpecialIssuePublication> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Journal>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#SpecificationLanguage> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#SpecificationLanguage>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#SpecificationLanguage> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#KAMethodology>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#SpecificationLanguages> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#SpecificationLanguages>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#SpecificationLanguages> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ResearchTopic>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#SpecificationMethodology> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#SpecificationMethodology>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#SpecificationMethodology> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#SpecificationLanguages>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#SpecificationOfControlKnowledge> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#SpecificationOfControlKnowledge>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#SpecificationOfControlKnowledge> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#SpecificationLanguages>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Student> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Student>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Student> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Person>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Student> <http://www.absoluteiri.edu/RELAPPROXC332>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#SupportToolsForFormalMethods> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#SupportToolsForFormalMethods>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#SupportToolsForFormalMethods> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#SpecificationLanguages>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#TechnicalReport> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#TechnicalReport>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#TechnicalReport> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Article>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#TechnicalReport> <http://www.absoluteiri.edu/RELAPPROXC252>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#TechnicalReport> <http://www.absoluteiri.edu/RELAPPROXC270>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#TechnicalReport> <http://www.absoluteiri.edu/RELAPPROXC324>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#TechnicalStaff> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#TechnicalStaff>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#TechnicalStaff> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#AdministrativeStaff>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#TheoreticalFoundations> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#TheoreticalFoundations>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#TheoreticalFoundations> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Ontologies>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#TransformationTool> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#TransformationTool>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#TransformationTool> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ComputerSupport>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#University> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#University>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#University> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Organization>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#University> <http://www.absoluteiri.edu/RELAPPROXC226>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#University> <http://www.absoluteiri.edu/RELAPPROXC336>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#V_And_V_Of_MAS> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#V_And_V_Of_MAS>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#V_And_V_Of_MAS> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Validation_And_Verification>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Validation_And_Verification> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Validation_And_Verification>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Validation_And_Verification> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ResearchTopic>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Validator> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Validator>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Validator> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ComputerSupport>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Verifier> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Verifier>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Verifier> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#ComputerSupport>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Workshop> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Workshop>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Workshop> <http://www.absoluteiri.edu/RELAPPROXC252>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Workshop> <http://www.absoluteiri.edu/RELAPPROXC270>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#WorkshopPaper> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#WorkshopPaper>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#WorkshopPaper> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Article>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#WorkshopPaper> <http://www.absoluteiri.edu/RELAPPROXC194>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#WorkshopPaper> <http://www.absoluteiri.edu/RELAPPROXC238>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#WorkshopPaper> <http://www.absoluteiri.edu/RELAPPROXC256>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#WorkshopPaper> <http://www.absoluteiri.edu/RELAPPROXC280>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC195> (<http://www.absoluteiri.edu/RELAPPROXC195>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC195> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#workshop> <http://www.absoluteiri.edu/RELAPPROXC177>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC197> (<http://www.absoluteiri.edu/RELAPPROXC197>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC197> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#editor> <http://www.absoluteiri.edu/RELAPPROXC25>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC199> (<http://www.absoluteiri.edu/RELAPPROXC199>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC199> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#journals> <http://www.absoluteiri.edu/RELAPPROXC93>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC201> (<http://www.absoluteiri.edu/RELAPPROXC201>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC201> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#title> <http://www.absoluteiri.edu/RELAPPROXC203>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC202> (<http://www.absoluteiri.edu/RELAPPROXC202>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC202> <http://www.absoluteiri.edu/RELAPPROXC395>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC202> <http://www.absoluteiri.edu/RELAPPROXC397>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC205> (<http://www.absoluteiri.edu/RELAPPROXC205>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC205> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#member> <http://www.absoluteiri.edu/RELAPPROXC81>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC207> (<http://www.absoluteiri.edu/RELAPPROXC207>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC207> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#abstract> <http://www.absoluteiri.edu/RELAPPROXC203>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC209> (<http://www.absoluteiri.edu/RELAPPROXC209>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC209> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#researchers> <http://www.absoluteiri.edu/RELAPPROXC81>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC211> (<http://www.absoluteiri.edu/RELAPPROXC211>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC211> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#develops> <http://www.absoluteiri.edu/RELAPPROXC83>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC213> (<http://www.absoluteiri.edu/RELAPPROXC213>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC213> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#date> <http://www.absoluteiri.edu/RELAPPROXC203>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC215> (<http://www.absoluteiri.edu/RELAPPROXC215>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC215> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#carriedOutBy> <http://www.absoluteiri.edu/RELAPPROXC95>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC217> (<http://www.absoluteiri.edu/RELAPPROXC217>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC217> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#hasParts> <http://www.absoluteiri.edu/RELAPPROXC107>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC219> (<http://www.absoluteiri.edu/RELAPPROXC219>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC219> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#onlineVersion> <http://www.absoluteiri.edu/RELAPPROXC185>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC221> (<http://www.absoluteiri.edu/RELAPPROXC221>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC221> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#email> <http://www.absoluteiri.edu/RELAPPROXC203>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC223> (<http://www.absoluteiri.edu/RELAPPROXC223>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC223> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#productName> <http://www.absoluteiri.edu/RELAPPROXC203>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC225> (<http://www.absoluteiri.edu/RELAPPROXC225>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC225> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#head> <http://www.absoluteiri.edu/RELAPPROXC109>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC227> (<http://www.absoluteiri.edu/RELAPPROXC227>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC227> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#hasParts> <http://www.absoluteiri.edu/RELAPPROXC143>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC229> (<http://www.absoluteiri.edu/RELAPPROXC229>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC229> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#book> <http://www.absoluteiri.edu/RELAPPROXC61>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC231> (<http://www.absoluteiri.edu/RELAPPROXC231>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC231> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#productedBy> <http://www.absoluteiri.edu/RELAPPROXC43>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC233> (<http://www.absoluteiri.edu/RELAPPROXC233>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC233> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#year> <http://www.absoluteiri.edu/RELAPPROXC235>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC237> (<http://www.absoluteiri.edu/RELAPPROXC237>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC237> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#volume> <http://www.absoluteiri.edu/RELAPPROXC235>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC239> (<http://www.absoluteiri.edu/RELAPPROXC239>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC239> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#lastPage> <http://www.absoluteiri.edu/RELAPPROXC235>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC241> (<http://www.absoluteiri.edu/RELAPPROXC241>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC241> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#isAbout> <http://www.absoluteiri.edu/RELAPPROXC69>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC243> (<http://www.absoluteiri.edu/RELAPPROXC243>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC243> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#programCommittee> <http://www.absoluteiri.edu/RELAPPROXC139>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC245> (<http://www.absoluteiri.edu/RELAPPROXC245>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC245> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#hasParts> <http://www.absoluteiri.edu/RELAPPROXC115>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC247> (<http://www.absoluteiri.edu/RELAPPROXC247>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC247> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#containsArticle> <http://www.absoluteiri.edu/RELAPPROXC127>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC249> (<http://www.absoluteiri.edu/RELAPPROXC249>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC249> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#describesProject> <http://www.absoluteiri.edu/RELAPPROXC43>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC251> (<http://www.absoluteiri.edu/RELAPPROXC251>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC251> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#description> <http://www.absoluteiri.edu/RELAPPROXC203>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC253> (<http://www.absoluteiri.edu/RELAPPROXC253>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC253> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#number> <http://www.absoluteiri.edu/RELAPPROXC235>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC255> (<http://www.absoluteiri.edu/RELAPPROXC255>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC255> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Publisher> <http://www.absoluteiri.edu/RELAPPROXC95>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC257> (<http://www.absoluteiri.edu/RELAPPROXC257>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC257> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#firstPage> <http://www.absoluteiri.edu/RELAPPROXC235>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC259> (<http://www.absoluteiri.edu/RELAPPROXC259>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC259> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#name> <http://www.absoluteiri.edu/RELAPPROXC203>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC261> (<http://www.absoluteiri.edu/RELAPPROXC261>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC261> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#location> <http://www.absoluteiri.edu/RELAPPROXC203>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC263> (<http://www.absoluteiri.edu/RELAPPROXC263>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC263> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#carriesOut> <http://www.absoluteiri.edu/RELAPPROXC43>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC265> (<http://www.absoluteiri.edu/RELAPPROXC265>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC265> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#atEvent> <http://www.absoluteiri.edu/RELAPPROXC167>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC267> (<http://www.absoluteiri.edu/RELAPPROXC267>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC267> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#author> <http://www.absoluteiri.edu/RELAPPROXC139>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC269> (<http://www.absoluteiri.edu/RELAPPROXC269>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC269> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#phone> <http://www.absoluteiri.edu/RELAPPROXC203>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC271> (<http://www.absoluteiri.edu/RELAPPROXC271>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC271> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#series> <http://www.absoluteiri.edu/RELAPPROXC203>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC273> (<http://www.absoluteiri.edu/RELAPPROXC273>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC273> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#publication> <http://www.absoluteiri.edu/RELAPPROXC25>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC275> (<http://www.absoluteiri.edu/RELAPPROXC275>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC275> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#eventTitle> <http://www.absoluteiri.edu/RELAPPROXC203>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC277> (<http://www.absoluteiri.edu/RELAPPROXC277>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC277> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#memberOfPC> <http://www.absoluteiri.edu/RELAPPROXC167>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC279> (<http://www.absoluteiri.edu/RELAPPROXC279>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC279> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#conference> <http://www.absoluteiri.edu/RELAPPROXC117>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC281> (<http://www.absoluteiri.edu/RELAPPROXC281>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC281> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#proceedingsTitle> <http://www.absoluteiri.edu/RELAPPROXC203>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC283> (<http://www.absoluteiri.edu/RELAPPROXC283>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC283> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#financedBy> <http://www.absoluteiri.edu/RELAPPROXC95>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC285> (<http://www.absoluteiri.edu/RELAPPROXC285>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC285> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#onlineVersionOf> <http://www.absoluteiri.edu/RELAPPROXC25>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC287> (<http://www.absoluteiri.edu/RELAPPROXC287>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC287> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#address> <http://www.absoluteiri.edu/RELAPPROXC203>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC289> (<http://www.absoluteiri.edu/RELAPPROXC289>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC289> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#product> <http://www.absoluteiri.edu/RELAPPROXC83>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC291> (<http://www.absoluteiri.edu/RELAPPROXC291>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC291> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#developedBy> <http://www.absoluteiri.edu/RELAPPROXC95>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC293> (<http://www.absoluteiri.edu/RELAPPROXC293>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC293> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#projects> <http://www.absoluteiri.edu/RELAPPROXC43>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC295> (<http://www.absoluteiri.edu/RELAPPROXC295>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC295> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#productPublication> <http://www.absoluteiri.edu/RELAPPROXC25>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC297> (<http://www.absoluteiri.edu/RELAPPROXC297>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC297> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#lastName> <http://www.absoluteiri.edu/RELAPPROXC203>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC299> (<http://www.absoluteiri.edu/RELAPPROXC299>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC299> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#journal> <http://www.absoluteiri.edu/RELAPPROXC93>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC301> (<http://www.absoluteiri.edu/RELAPPROXC301>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC301> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#participant> <http://www.absoluteiri.edu/RELAPPROXC139>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC303> (<http://www.absoluteiri.edu/RELAPPROXC303>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC303> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#editor> <http://www.absoluteiri.edu/RELAPPROXC139>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC305> (<http://www.absoluteiri.edu/RELAPPROXC305>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC305> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#headOfGroup> <http://www.absoluteiri.edu/RELAPPROXC115>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC307> (<http://www.absoluteiri.edu/RELAPPROXC307>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC307> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#events> <http://www.absoluteiri.edu/RELAPPROXC167>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC309> (<http://www.absoluteiri.edu/RELAPPROXC309>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC309> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#mailingLists> <http://www.absoluteiri.edu/RELAPPROXC203>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC311> (<http://www.absoluteiri.edu/RELAPPROXC311>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC311> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#nationalFundingAgencies> <http://www.absoluteiri.edu/RELAPPROXC95>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC313> (<http://www.absoluteiri.edu/RELAPPROXC313>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC313> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#firstName> <http://www.absoluteiri.edu/RELAPPROXC203>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC315> (<http://www.absoluteiri.edu/RELAPPROXC315>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC315> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#headOf> <http://www.absoluteiri.edu/RELAPPROXC43>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC317> (<http://www.absoluteiri.edu/RELAPPROXC317>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC317> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#member> <http://www.absoluteiri.edu/RELAPPROXC109>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC319> (<http://www.absoluteiri.edu/RELAPPROXC319>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC319> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#productFAQ> <http://www.absoluteiri.edu/RELAPPROXC203>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC321> (<http://www.absoluteiri.edu/RELAPPROXC321>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC321> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#internationalFundingAgencies> <http://www.absoluteiri.edu/RELAPPROXC95>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC323> (<http://www.absoluteiri.edu/RELAPPROXC323>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC323> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#secretaryOf> <http://www.absoluteiri.edu/RELAPPROXC115>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC325> (<http://www.absoluteiri.edu/RELAPPROXC325>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC325> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#organization> <http://www.absoluteiri.edu/RELAPPROXC95>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC327> (<http://www.absoluteiri.edu/RELAPPROXC327>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC327> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#webpages> <http://www.absoluteiri.edu/RELAPPROXC203>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC329> (<http://www.absoluteiri.edu/RELAPPROXC329>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC329> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#applicationAreas> <http://www.absoluteiri.edu/RELAPPROXC203>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC331> (<http://www.absoluteiri.edu/RELAPPROXC331>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC331> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#technicalReport> <http://www.absoluteiri.edu/RELAPPROXC133>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC333> (<http://www.absoluteiri.edu/RELAPPROXC333>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC333> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#studiesAt> <http://www.absoluteiri.edu/RELAPPROXC9>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC335> (<http://www.absoluteiri.edu/RELAPPROXC335>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC335> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#products> <http://www.absoluteiri.edu/RELAPPROXC83>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC337> (<http://www.absoluteiri.edu/RELAPPROXC337>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC337> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#student> <http://www.absoluteiri.edu/RELAPPROXC131>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC339> (<http://www.absoluteiri.edu/RELAPPROXC339>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC339> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#photo> <http://www.absoluteiri.edu/RELAPPROXC203>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC341> (<http://www.absoluteiri.edu/RELAPPROXC341>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC341> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#orgCommittee> <http://www.absoluteiri.edu/RELAPPROXC139>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC343> (<http://www.absoluteiri.edu/RELAPPROXC343>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC343> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#productMailingList> <http://www.absoluteiri.edu/RELAPPROXC203>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC345> (<http://www.absoluteiri.edu/RELAPPROXC345>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC345> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#supervisor> <http://www.absoluteiri.edu/RELAPPROXC59>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC347> (<http://www.absoluteiri.edu/RELAPPROXC347>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC347> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#organizerOrChairOf> <http://www.absoluteiri.edu/RELAPPROXC167>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC349> (<http://www.absoluteiri.edu/RELAPPROXC349>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC349> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#relatedTopics> <http://www.absoluteiri.edu/RELAPPROXC69>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC351> (<http://www.absoluteiri.edu/RELAPPROXC351>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC351> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#researchInterest> <http://www.absoluteiri.edu/RELAPPROXC69>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC353> (<http://www.absoluteiri.edu/RELAPPROXC353>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC353> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#memberOf> <http://www.absoluteiri.edu/RELAPPROXC115>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC355> (<http://www.absoluteiri.edu/RELAPPROXC355>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC355> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#projectInfo> <http://www.absoluteiri.edu/RELAPPROXC25>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC357> (<http://www.absoluteiri.edu/RELAPPROXC357>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC357> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#dateOfLastModification> <http://www.absoluteiri.edu/RELAPPROXC203>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC359> (<http://www.absoluteiri.edu/RELAPPROXC359>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC359> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#worksAtProject> <http://www.absoluteiri.edu/RELAPPROXC43>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC361> (<http://www.absoluteiri.edu/RELAPPROXC361>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC361> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#affiliation> <http://www.absoluteiri.edu/RELAPPROXC95>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC363> (<http://www.absoluteiri.edu/RELAPPROXC363>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC363> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#finances> <http://www.absoluteiri.edu/RELAPPROXC43>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC365> (<http://www.absoluteiri.edu/RELAPPROXC365>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC365> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#supervises> <http://www.absoluteiri.edu/RELAPPROXC101>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC367> (<http://www.absoluteiri.edu/RELAPPROXC367>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC367> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#middleInitial> <http://www.absoluteiri.edu/RELAPPROXC203>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC369> (<http://www.absoluteiri.edu/RELAPPROXC369>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC369> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#approaches> <http://www.absoluteiri.edu/RELAPPROXC203>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC371> (<http://www.absoluteiri.edu/RELAPPROXC371>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC371> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#authorOfOntology> <http://www.absoluteiri.edu/RELAPPROXC81>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC373> (<http://www.absoluteiri.edu/RELAPPROXC373>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC373> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#fax> <http://www.absoluteiri.edu/RELAPPROXC203>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC375> (<http://www.absoluteiri.edu/RELAPPROXC375>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC375> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#containsArticle> <http://www.absoluteiri.edu/RELAPPROXC193>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC377> (<http://www.absoluteiri.edu/RELAPPROXC377>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC377> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#keyword> <http://www.absoluteiri.edu/RELAPPROXC203>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC379> (<http://www.absoluteiri.edu/RELAPPROXC379>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC379> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#employs> <http://www.absoluteiri.edu/RELAPPROXC139>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC381> (<http://www.absoluteiri.edu/RELAPPROXC381>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC381> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#type> <http://www.absoluteiri.edu/RELAPPROXC203>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC383> (<http://www.absoluteiri.edu/RELAPPROXC383>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC383> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#researchGroups> <http://www.absoluteiri.edu/RELAPPROXC115>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC385> (<http://www.absoluteiri.edu/RELAPPROXC385>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC385> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#publishes> <http://www.absoluteiri.edu/RELAPPROXC25>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC387> (<http://www.absoluteiri.edu/RELAPPROXC387>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC387> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#hasParts> <http://www.absoluteiri.edu/RELAPPROXC167>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC389> (<http://www.absoluteiri.edu/RELAPPROXC389>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC389> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#cooperatesWith> <http://www.absoluteiri.edu/RELAPPROXC81>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC391> (<http://www.absoluteiri.edu/RELAPPROXC391>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC391> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#subTopics> <http://www.absoluteiri.edu/RELAPPROXC69>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC393> (<http://www.absoluteiri.edu/RELAPPROXC393>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC393> ObjectSomeValuesFrom(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#bibliographies> <http://www.absoluteiri.edu/RELAPPROXC25>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC394> (<http://www.absoluteiri.edu/RELAPPROXC394>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC394> <http://www.absoluteiri.edu/RELAPPROXC203>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC396> (<http://www.absoluteiri.edu/RELAPPROXC396>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC396> <http://www.absoluteiri.edu/RELAPPROXC203>)
+
+# Class: <https://smolang.org/rdfMutate#newNode-0> (<https://smolang.org/rdfMutate#newNode-0>)
+
+SubClassOf(<https://smolang.org/rdfMutate#newNode-0> <https://smolang.org/rdfMutate#newNode-0>)
+
+# Class: <https://smolang.org/rdfMutate#newNode-11> (<https://smolang.org/rdfMutate#newNode-11>)
+
+SubClassOf(<https://smolang.org/rdfMutate#newNode-11> <https://smolang.org/rdfMutate#newNode-5>)
+
+# Class: <https://smolang.org/rdfMutate#newNode-5> (<https://smolang.org/rdfMutate#newNode-5>)
+
+SubClassOf(<https://smolang.org/rdfMutate#newNode-5> owl:Thing)
+SubClassOf(<https://smolang.org/rdfMutate#newNode-5> <https://smolang.org/rdfMutate#newNode-5>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#proceedingsTitle> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#proceedingsTitle>)
+
+ClassAssertion(owl:ObjectProperty <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#proceedingsTitle>)
+
+# Individual: owl:Class (owl:Class)
+
+ClassAssertion(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#Book> owl:Class)
+
+# Individual: <https://smolang.org/rdfMutate#newNode-7> (<https://smolang.org/rdfMutate#newNode-7>)
+
+ClassAssertion(owl:Thing <https://smolang.org/rdfMutate#newNode-7>)
+
+# Individual: <https://smolang.org/rdfMutate#newNode-8> (<https://smolang.org/rdfMutate#newNode-8>)
+
+ClassAssertion(<https://smolang.org/rdfMutate#newNode-8> <https://smolang.org/rdfMutate#newNode-8>)
+
+# Individual: <https://smolang.org/rdfMutate#newNode-9> (<https://smolang.org/rdfMutate#newNode-9>)
+
+ClassAssertion(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/87d0a399-d147-45f0-8680-92eb7f975195_ka.owl#V_And_V_Of_MAS> <https://smolang.org/rdfMutate#newNode-9>)
+
+
+)

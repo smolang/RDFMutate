@@ -1,0 +1,664 @@
+Prefix(:=<urn:unnamed:ontology#ont19107529192093405>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:unnamed:ontology#ont19107529192093405>
+
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Services>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Secretarial_and_office_work>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Security_services>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Statistics>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Language>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Finance_banking_and_insurance>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Method_and_research_technique>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Space_Time_and_Process>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Hair_and_beauty_services>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Humanities>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Veterinary>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Business_and_administration>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Electronics_and_automation>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Mechanics_and_metal_trade>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Care_of_the_elderly_and_of_disabled_adults>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Horticulture>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Therapy_and_rehabilitation>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Mining_and_extraction>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Community_sanitation>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Dentistry>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Medical_diagnostic_and_treatment_technology>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Accounting_and_taxation>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Pharmacy>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-6>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Paper_processing>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Welfare>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Plastic_processing>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Military_and_defence>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Database_and_network_design_and_administration>))
+Declaration(Class(owl:Class))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Music_and_performing_arts>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Information_and_Communication_Technology>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Electricity_and_energy>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Chemistry>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Engineering_and_engineering_trade>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Business_administration_and_law>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Protection_of_persons_and_property>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Sport>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Social_work_and_counselling>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Hygiene_and_occupational_health_services>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Biochemistry>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Philosophy_and_ethics>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Environment>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Travel_tourism_and_leisure>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Personal_services>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Food_processing>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Health_and_welfare>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Transport_services>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Computer_science>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Imaging>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#AgricultureForestryFisheriesVeterinary>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Natural_environment_and_wildlife>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Physics>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Psychology>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Politics_and_civics>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Fine_arts>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Traditional_and_complementary_medicine_and_therapy>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Standard_method_and_research_technique>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Nursing_and_midwifery>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#ISOStandard>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Earth_science>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Crop_and_livestock_production>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Environmental_protection_technology>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Audio-visual_and_media_production>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Process>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Motor_vehicle_ship_and_aircraft>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Journalism_and_reporting>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Building_and_civil_engineering>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-7>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Chemical_engineering_and_process>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Education_narrow>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Standard>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Architecture_and_construction>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Fisheries>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Natural_science_mathematics_and_statistics>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Forestry>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Health>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Law>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Domain_Field>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Medicine>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Library_information_and_archive>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Fashion_interior_and_industrial_design>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-4>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Economics>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Work_skill>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Arts_and_humanities>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Domestic_services>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Mathematics_and_statistics>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#History_and_archaeology>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Arts>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Occupational_health_and_safety>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Marketing_and_advertising>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Engineering_manufacturing_and_construction>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Material_processing>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Training_pre-school_teachers>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Physical_science>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Literature_and_linguistics>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-9>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Time>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Language_acquisition>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Biology>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Teacher_training_without_subject_specialisation>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Social_science_journalism_and_information>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Textile_clothes_footwear_and_leather>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Space>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Social_and_behavioural_science>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Mathematics>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Religion_and_theology>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Management_and_administration>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Sociology_and_culture>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Education_science>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Information_and_Communication_Technology_narrow>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Wholesale_and_retail_sales>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Journalism_and_information>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Handicrafts>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Environmental_science>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Education>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Teacher_training_with_subject_specialisation>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Glass_processing>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Agriculture>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Software_and_application_development_and_analysis>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#ManufacturingAndProcessing>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Biology_broad>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Hotel_restaurant_and_catering>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Child_care_and_youth_services>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Computer_use>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Architecture_and_town_planning>))
+Declaration(Class(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Wood_processing>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-9>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-8>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-4>))
+Declaration(NamedIndividual(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Information_and_Communication_Technology_narrow>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-6>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-1>))
+############################
+#   Classes
+############################
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Accounting_and_taxation> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Accounting_and_taxation>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Accounting_and_taxation> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Business_and_administration>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Agriculture> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Agriculture>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Agriculture> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#AgricultureForestryFisheriesVeterinary>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#AgricultureForestryFisheriesVeterinary> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#AgricultureForestryFisheriesVeterinary>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#AgricultureForestryFisheriesVeterinary> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Domain_Field>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Architecture_and_construction> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Architecture_and_construction>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Architecture_and_construction> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Engineering_manufacturing_and_construction>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Architecture_and_town_planning> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Architecture_and_town_planning>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Architecture_and_town_planning> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Architecture_and_construction>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Arts> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Arts>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Arts> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Arts_and_humanities>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Arts_and_humanities> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Arts_and_humanities>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Arts_and_humanities> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Domain_Field>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Audio-visual_and_media_production> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Audio-visual_and_media_production>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Audio-visual_and_media_production> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Arts>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Biochemistry> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Biochemistry>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Biochemistry> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Biology_broad>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Biology> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Biology>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Biology> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Biology_broad>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Biology_broad> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Biology_broad>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Biology_broad> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Natural_science_mathematics_and_statistics>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Building_and_civil_engineering> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Building_and_civil_engineering>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Building_and_civil_engineering> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Architecture_and_construction>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Business_administration_and_law> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Business_administration_and_law>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Business_administration_and_law> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Domain_Field>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Business_and_administration> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Business_and_administration>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Business_and_administration> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Business_administration_and_law>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Care_of_the_elderly_and_of_disabled_adults> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Care_of_the_elderly_and_of_disabled_adults>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Care_of_the_elderly_and_of_disabled_adults> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Welfare>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Chemical_engineering_and_process> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Chemical_engineering_and_process>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Chemical_engineering_and_process> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Engineering_and_engineering_trade>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Chemistry> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Chemistry>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Chemistry> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Physical_science>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Child_care_and_youth_services> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Child_care_and_youth_services>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Child_care_and_youth_services> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Welfare>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Community_sanitation> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Community_sanitation>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Community_sanitation> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Hygiene_and_occupational_health_services>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Computer_science> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Computer_science>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Computer_science> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Information_and_Communication_Technology>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Computer_use> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Computer_use>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Computer_use> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Information_and_Communication_Technology_narrow>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Crop_and_livestock_production> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Crop_and_livestock_production>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Crop_and_livestock_production> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Agriculture>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Database_and_network_design_and_administration> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Database_and_network_design_and_administration>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Database_and_network_design_and_administration> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Information_and_Communication_Technology_narrow>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Dentistry> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Dentistry>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Dentistry> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Health>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Domestic_services> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Domestic_services>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Domestic_services> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Personal_services>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Earth_science> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Earth_science>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Earth_science> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Physical_science>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Economics> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Economics>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Economics> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Social_and_behavioural_science>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Education> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Education>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Education> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Domain_Field>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Education_narrow> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Education_narrow>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Education_narrow> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Education>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Education_science> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Education_science>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Education_science> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Education_narrow>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Electricity_and_energy> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Electricity_and_energy>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Electricity_and_energy> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Engineering_and_engineering_trade>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Electronics_and_automation> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Electronics_and_automation>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Electronics_and_automation> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Engineering_and_engineering_trade>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Engineering_and_engineering_trade> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Engineering_and_engineering_trade>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Engineering_and_engineering_trade> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Engineering_manufacturing_and_construction>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Engineering_manufacturing_and_construction> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Engineering_manufacturing_and_construction>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Engineering_manufacturing_and_construction> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Domain_Field>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Environment> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Environment>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Environment> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Natural_science_mathematics_and_statistics>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Environmental_protection_technology> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Environmental_protection_technology>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Environmental_protection_technology> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Engineering_and_engineering_trade>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Environmental_science> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Environmental_science>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Environmental_science> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Environment>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Fashion_interior_and_industrial_design> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Fashion_interior_and_industrial_design>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Fashion_interior_and_industrial_design> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Arts>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Finance_banking_and_insurance> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Finance_banking_and_insurance>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Finance_banking_and_insurance> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Business_and_administration>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Fine_arts> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Fine_arts>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Fine_arts> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Arts>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Fisheries> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Fisheries>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Fisheries> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#AgricultureForestryFisheriesVeterinary>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Food_processing> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Food_processing>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Food_processing> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#ManufacturingAndProcessing>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Forestry> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Forestry>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Forestry> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#AgricultureForestryFisheriesVeterinary>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Glass_processing> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Glass_processing>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Glass_processing> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Material_processing>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Hair_and_beauty_services> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Hair_and_beauty_services>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Hair_and_beauty_services> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Personal_services>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Handicrafts> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Handicrafts>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Handicrafts> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Arts>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Health> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Health>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Health> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Health_and_welfare>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Health_and_welfare> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Health_and_welfare>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Health_and_welfare> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Domain_Field>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#History_and_archaeology> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#History_and_archaeology>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#History_and_archaeology> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Humanities>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Horticulture> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Horticulture>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Horticulture> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Agriculture>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Hotel_restaurant_and_catering> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Hotel_restaurant_and_catering>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Hotel_restaurant_and_catering> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Personal_services>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Humanities> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Humanities>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Humanities> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Arts_and_humanities>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Hygiene_and_occupational_health_services> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Hygiene_and_occupational_health_services>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Hygiene_and_occupational_health_services> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Services>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#ISOStandard> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#ISOStandard>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#ISOStandard> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Standard>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Imaging> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Imaging>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Imaging> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Method_and_research_technique>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Information_and_Communication_Technology> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Information_and_Communication_Technology>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Information_and_Communication_Technology> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Domain_Field>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Information_and_Communication_Technology_narrow> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Information_and_Communication_Technology_narrow>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Information_and_Communication_Technology_narrow> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Information_and_Communication_Technology>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Journalism_and_information> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Journalism_and_information>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Journalism_and_information> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Social_science_journalism_and_information>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Journalism_and_reporting> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Journalism_and_reporting>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Journalism_and_reporting> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Journalism_and_information>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Language> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Language>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Language> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Arts_and_humanities>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Language_acquisition> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Language_acquisition>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Language_acquisition> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Language>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Law> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Law>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Law> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Business_administration_and_law>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Library_information_and_archive> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Library_information_and_archive>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Library_information_and_archive> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Journalism_and_information>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Literature_and_linguistics> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Literature_and_linguistics>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Literature_and_linguistics> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Language>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Management_and_administration> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Management_and_administration>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Management_and_administration> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Business_and_administration>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#ManufacturingAndProcessing> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#ManufacturingAndProcessing>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#ManufacturingAndProcessing> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Engineering_manufacturing_and_construction>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Marketing_and_advertising> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Marketing_and_advertising>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Marketing_and_advertising> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Business_and_administration>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Material_processing> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Material_processing>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Material_processing> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#ManufacturingAndProcessing>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Mathematics> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Mathematics>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Mathematics> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Mathematics_and_statistics>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Mathematics_and_statistics> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Mathematics_and_statistics>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Mathematics_and_statistics> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Natural_science_mathematics_and_statistics>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Mechanics_and_metal_trade> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Mechanics_and_metal_trade>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Mechanics_and_metal_trade> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Engineering_and_engineering_trade>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Medical_diagnostic_and_treatment_technology> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Medical_diagnostic_and_treatment_technology>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Medical_diagnostic_and_treatment_technology> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Health>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Medicine> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Medicine>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Medicine> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Health>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Method_and_research_technique> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Method_and_research_technique>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Method_and_research_technique> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Standard_method_and_research_technique>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Military_and_defence> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Military_and_defence>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Military_and_defence> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Security_services>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Mining_and_extraction> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Mining_and_extraction>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Mining_and_extraction> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#ManufacturingAndProcessing>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Motor_vehicle_ship_and_aircraft> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Motor_vehicle_ship_and_aircraft>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Motor_vehicle_ship_and_aircraft> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Engineering_and_engineering_trade>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Music_and_performing_arts> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Music_and_performing_arts>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Music_and_performing_arts> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Arts>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Natural_environment_and_wildlife> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Natural_environment_and_wildlife>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Natural_environment_and_wildlife> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Environment>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Natural_science_mathematics_and_statistics> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Natural_science_mathematics_and_statistics>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Natural_science_mathematics_and_statistics> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Domain_Field>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Nursing_and_midwifery> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Nursing_and_midwifery>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Nursing_and_midwifery> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Health>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Occupational_health_and_safety> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Occupational_health_and_safety>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Occupational_health_and_safety> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Hygiene_and_occupational_health_services>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Paper_processing> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Paper_processing>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Paper_processing> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Material_processing>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Personal_services> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Personal_services>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Personal_services> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Services>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Pharmacy> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Pharmacy>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Pharmacy> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Health>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Philosophy_and_ethics> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Philosophy_and_ethics>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Philosophy_and_ethics> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Humanities>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Physical_science> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Physical_science>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Physical_science> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Natural_science_mathematics_and_statistics>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Physics> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Physics>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Physics> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Physical_science>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Plastic_processing> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Plastic_processing>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Plastic_processing> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Material_processing>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Politics_and_civics> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Politics_and_civics>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Politics_and_civics> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Social_and_behavioural_science>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Process> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Process>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Process> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Space_Time_and_Process>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Protection_of_persons_and_property> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Protection_of_persons_and_property>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Protection_of_persons_and_property> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Security_services>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Psychology> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Psychology>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Psychology> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Social_and_behavioural_science>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Religion_and_theology> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Religion_and_theology>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Religion_and_theology> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Humanities>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Secretarial_and_office_work> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Secretarial_and_office_work>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Secretarial_and_office_work> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Business_and_administration>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Security_services> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Security_services>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Security_services> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Services>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Services> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Services>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Services> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Domain_Field>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Social_and_behavioural_science> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Social_and_behavioural_science>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Social_and_behavioural_science> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Social_science_journalism_and_information>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Social_science_journalism_and_information> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Social_science_journalism_and_information>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Social_science_journalism_and_information> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Domain_Field>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Social_work_and_counselling> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Social_work_and_counselling>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Social_work_and_counselling> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Welfare>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Sociology_and_culture> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Sociology_and_culture>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Sociology_and_culture> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Social_and_behavioural_science>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Software_and_application_development_and_analysis> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Software_and_application_development_and_analysis>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Software_and_application_development_and_analysis> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Information_and_Communication_Technology_narrow>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Space> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Space>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Space> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Space_Time_and_Process>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Space_Time_and_Process> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Space_Time_and_Process>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Space_Time_and_Process> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Domain_Field>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Sport> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Sport>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Sport> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Personal_services>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Standard> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Standard>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Standard> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Standard_method_and_research_technique>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Standard_method_and_research_technique> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Standard_method_and_research_technique>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Standard_method_and_research_technique> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Domain_Field>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Statistics> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Statistics>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Statistics> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Mathematics_and_statistics>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Teacher_training_with_subject_specialisation> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Teacher_training_with_subject_specialisation>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Teacher_training_with_subject_specialisation> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Education_narrow>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Teacher_training_without_subject_specialisation> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Teacher_training_without_subject_specialisation>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Teacher_training_without_subject_specialisation> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Education_narrow>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Textile_clothes_footwear_and_leather> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Textile_clothes_footwear_and_leather>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Textile_clothes_footwear_and_leather> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#ManufacturingAndProcessing>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Therapy_and_rehabilitation> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Therapy_and_rehabilitation>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Therapy_and_rehabilitation> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Health>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Time> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Time>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Time> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Space_Time_and_Process>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Traditional_and_complementary_medicine_and_therapy> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Traditional_and_complementary_medicine_and_therapy>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Traditional_and_complementary_medicine_and_therapy> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Health>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Training_pre-school_teachers> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Training_pre-school_teachers>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Training_pre-school_teachers> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Education_narrow>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Transport_services> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Transport_services>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Transport_services> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Services>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Travel_tourism_and_leisure> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Travel_tourism_and_leisure>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Travel_tourism_and_leisure> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Personal_services>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Veterinary> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Veterinary>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Veterinary> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#AgricultureForestryFisheriesVeterinary>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Welfare> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Welfare>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Welfare> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Health_and_welfare>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Wholesale_and_retail_sales> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Wholesale_and_retail_sales>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Wholesale_and_retail_sales> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Business_and_administration>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Wood_processing> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Wood_processing>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Wood_processing> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Material_processing>)
+
+# Class: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Work_skill> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Work_skill>)
+
+SubClassOf(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Work_skill> <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Business_and_administration>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Information_and_Communication_Technology_narrow> (<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Information_and_Communication_Technology_narrow>)
+
+ClassAssertion(owl:Class <https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Information_and_Communication_Technology_narrow>)
+
+# Individual: <https://smolang.org/rdfMutate#newNode-4> (<https://smolang.org/rdfMutate#newNode-4>)
+
+ClassAssertion(owl:Class <https://smolang.org/rdfMutate#newNode-4>)
+
+# Individual: <https://smolang.org/rdfMutate#newNode-6> (<https://smolang.org/rdfMutate#newNode-6>)
+
+ClassAssertion(owl:Class <https://smolang.org/rdfMutate#newNode-6>)
+
+# Individual: <https://smolang.org/rdfMutate#newNode-8> (<https://smolang.org/rdfMutate#newNode-8>)
+
+ClassAssertion(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Language_acquisition> <https://smolang.org/rdfMutate#newNode-8>)
+
+# Individual: <https://smolang.org/rdfMutate#newNode-9> (<https://smolang.org/rdfMutate#newNode-9>)
+
+ClassAssertion(owl:Class <https://smolang.org/rdfMutate#newNode-9>)
+ClassAssertion(<https://raw.github.com/ontohub/OOR_Ontohub_API/master/Domain_Fields_Core.owl#Travel_tourism_and_leisure> <https://smolang.org/rdfMutate#newNode-9>)
+
+
+)

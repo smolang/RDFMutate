@@ -1,0 +1,931 @@
+Prefix(:=<urn:unnamed:ontology#ont19095678328253460>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:unnamed:ontology#ont19095678328253460>
+
+Declaration(Class(<http://dbpedia.org/ontology/Insect>))
+Declaration(Class(<http://dbpedia.org/ontology/Museum>))
+Declaration(Class(<http://dbpedia.org/ontology/Continent>))
+Declaration(Class(<http://dbpedia.org/ontology/Bone>))
+Declaration(Class(<http://dbpedia.org/ontology/Bird>))
+Declaration(Class(<http://dbpedia.org/ontology/Plant>))
+Declaration(Class(<http://dbpedia.org/ontology/MountainRange>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-6>))
+Declaration(Class(<http://dbpedia.org/ontology/Island>))
+Declaration(Class(<http://dbpedia.org/ontology/Place>))
+Declaration(Class(<http://dbpedia.org/ontology/Settlement>))
+Declaration(Class(<http://dbpedia.org/ontology/Disease>))
+Declaration(Class(<http://dbpedia.org/ontology/Mollusca>))
+Declaration(Class(<http://dbpedia.org/ontology/Reptile>))
+Declaration(Class(<http://dbpedia.org/ontology/City>))
+Declaration(Class(<http://dbpedia.org/ontology/Mammal>))
+Declaration(Class(<http://dbpedia.org/ontology/River>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-2>))
+Declaration(Class(<http://dbpedia.org/ontology/Fish>))
+Declaration(Class(<http://dbpedia.org/ontology/ChemicalCompound>))
+Declaration(Class(<http://dbpedia.org/ontology/University>))
+Declaration(Class(<http://dbpedia.org/ontology/EthnicGroup>))
+Declaration(Class(<http://dbpedia.org/ontology/Amphibian>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-4>))
+Declaration(Class(<http://dbpedia.org/ontology/Country>))
+Declaration(Class(<http://dbpedia.org/ontology/Person>))
+Declaration(Class(<http://dbpedia.org/ontology/Arachnid>))
+Declaration(Class(<http://dbpedia.org/ontology/Company>))
+Declaration(Class(<http://dbpedia.org/ontology/ProtectedArea>))
+Declaration(Class(<http://dbpedia.org/ontology/Colour>))
+Declaration(Class(<http://dbpedia.org/ontology/WorldHeritageSite>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-3>))
+Declaration(Class(owl:NamedIndividual))
+Declaration(Class(<http://dbpedia.org/ontology/Lake>))
+Declaration(Class(<http://dbpedia.org/ontology/Language>))
+Declaration(Class(<http://dbpedia.org/ontology/AdministrativeRegion>))
+Declaration(Class(<http://dbpedia.org/ontology/Scientist>))
+Declaration(Class(<http://dbpedia.org/ontology/FloweringPlant>))
+Declaration(Class(<http://dbpedia.org/ontology/Crustacean>))
+Declaration(Class(<http://dbpedia.org/ontology/AnatomicalStructure>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToMammal>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Colour>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToFloweringPlant>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToContinent>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToUniversity>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToWorldHeritageSite>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Disease>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/ChemicalCompound>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToRiver>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToScientist>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToLake>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToProtectedArea>))
+Declaration(ObjectProperty(<https://smolang.org/rdfMutate#newNode-0>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAmphibian>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCompany>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCity>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToFish>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCountry>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/EthnicGroup>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToMountainRange>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/AnatomicalStructure>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToMollusca>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToChemicalCompound>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToColour>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAnimal>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToEthnicGroup>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Organisation>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToBone>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAdministrativeRegion>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPlace>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToArachnid>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToBird>))
+Declaration(ObjectProperty(<https://smolang.org/rdfMutate#newNode-5>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Language>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToSettlement>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToMuseum>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAnatomicalStructure>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPlant>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToLanguage>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToReptile>))
+Declaration(ObjectProperty(<http://www.w3.org/2004/02/skos/core#relatedMatch>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToIsland>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToInsect>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-3>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/unrankedPhylum>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToMuseum>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/prizes>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/before>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToSettlement>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/fields>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/classis>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/doctoralAdvisor>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/subfamilia>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/given>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/surname>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/doctoralStudents>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/primeminister>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/employment>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/deathPlace>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/residence>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/citizenship>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-5>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/belalAhmed>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/ordo>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/workInstitutions>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/doctoralAdviser>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/subdivision>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/awards>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/almaMater>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/title>))
+Declaration(NamedIndividual(<http://dbpedia.org/ontology/Animal>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/influenced>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToFish>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/after>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToLanguage>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/workPlaces>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/institutions>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/languagesSpoken>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/nationality>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPerson>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToBird>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/typeSpeciesAuthority>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/knownFor>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToProtectedArea>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAmphibian>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToChemicalCompound>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/birthPlace>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToEthnicGroup>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/influences>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/workplaces>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/placeOfDeath>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPlace>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCrustacean>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/ethnicity>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCity>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/societies>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/tribus>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToDisease>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToMollusca>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/president>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAdministrativeRegion>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToReptile>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/placeOfBirth>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/infraclassis>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/editor>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCompany>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/workplace>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/superordo>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/genusAuthority>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/superfamilia>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAnimal>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCountry>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/familia>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/binomialAuthority>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToWorldHeritageSite>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToInsect>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToMammal>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/subclassis>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/subordo>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/species>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/imageCaption>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToUniversity>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToScientist>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/academicAdvisors>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/notableStudents>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToArachnid>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/workInstitution>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToIsland>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/birthPlace_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/phylum>))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAdministrativeRegion> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAdministrativeRegion>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAdministrativeRegion> <http://dbpedia.org/ontology/Scientist>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAdministrativeRegion> <http://dbpedia.org/ontology/AdministrativeRegion>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAmphibian> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAmphibian>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAmphibian> <http://dbpedia.org/ontology/Scientist>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAmphibian> <http://dbpedia.org/ontology/Amphibian>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAnatomicalStructure> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAnatomicalStructure>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAnatomicalStructure> <http://dbpedia.org/ontology/AnatomicalStructure>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAnatomicalStructure> <http://dbpedia.org/ontology/Scientist>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAnatomicalStructure> <http://dbpedia.org/ontology/AnatomicalStructure>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAnimal> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAnimal>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAnimal> <http://dbpedia.org/ontology/Scientist>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToArachnid> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToArachnid>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToArachnid> <http://dbpedia.org/ontology/Scientist>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToArachnid> <http://dbpedia.org/ontology/Arachnid>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToBird> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToBird>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToBird> <http://dbpedia.org/ontology/Scientist>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToBird> <http://dbpedia.org/ontology/Bird>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToBone> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToBone>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToBone> <http://dbpedia.org/ontology/AnatomicalStructure>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToBone> <http://dbpedia.org/ontology/Scientist>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToBone> <http://dbpedia.org/ontology/Bone>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToChemicalCompound> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToChemicalCompound>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToChemicalCompound> <http://dbpedia.org/ontology/ChemicalCompound>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToChemicalCompound> <http://dbpedia.org/ontology/Scientist>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToChemicalCompound> <http://dbpedia.org/ontology/ChemicalCompound>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCity> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCity>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCity> <http://dbpedia.org/ontology/Scientist>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCity> <http://dbpedia.org/ontology/City>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToColour> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToColour>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToColour> <http://dbpedia.org/ontology/Colour>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToColour> <http://dbpedia.org/ontology/Scientist>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToColour> <http://dbpedia.org/ontology/Colour>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCompany> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCompany>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCompany> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCompany> <http://dbpedia.org/ontology/Scientist>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCompany> <http://dbpedia.org/ontology/Company>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToContinent> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToContinent>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToContinent> <http://dbpedia.org/ontology/Scientist>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToContinent> <http://dbpedia.org/ontology/Continent>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCountry> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCountry>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCountry> <http://dbpedia.org/ontology/Scientist>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCountry> <http://dbpedia.org/ontology/Country>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToEthnicGroup> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToEthnicGroup>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToEthnicGroup> <http://dbpedia.org/ontology/EthnicGroup>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToEthnicGroup> <http://dbpedia.org/ontology/Scientist>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToEthnicGroup> <http://dbpedia.org/ontology/EthnicGroup>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToFish> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToFish>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToFish> <http://dbpedia.org/ontology/Scientist>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToFish> <http://dbpedia.org/ontology/Fish>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToFloweringPlant> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToFloweringPlant>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToFloweringPlant> <http://dbpedia.org/ontology/Scientist>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToFloweringPlant> <http://dbpedia.org/ontology/FloweringPlant>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToInsect> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToInsect>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToInsect> <http://dbpedia.org/ontology/Scientist>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToInsect> <http://dbpedia.org/ontology/Insect>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToIsland> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToIsland>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToIsland> <http://dbpedia.org/ontology/Scientist>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToIsland> <http://dbpedia.org/ontology/Island>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToLake> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToLake>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToLake> <http://dbpedia.org/ontology/Scientist>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToLake> <http://dbpedia.org/ontology/Lake>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToLanguage> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToLanguage>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToLanguage> <http://dbpedia.org/ontology/Language>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToLanguage> <http://dbpedia.org/ontology/Scientist>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToLanguage> <http://dbpedia.org/ontology/Language>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToMammal> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToMammal>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToMammal> <http://dbpedia.org/ontology/Scientist>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToMammal> <http://dbpedia.org/ontology/Mammal>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToMollusca> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToMollusca>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToMollusca> <http://dbpedia.org/ontology/Scientist>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToMollusca> <http://dbpedia.org/ontology/Mollusca>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToMountainRange> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToMountainRange>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToMountainRange> <http://dbpedia.org/ontology/Scientist>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToMountainRange> <http://dbpedia.org/ontology/MountainRange>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToMuseum> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToMuseum>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToMuseum> <http://dbpedia.org/ontology/Scientist>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToMuseum> <http://dbpedia.org/ontology/Museum>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPlace> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPlace>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPlace> <http://dbpedia.org/ontology/Scientist>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPlace> <http://dbpedia.org/ontology/Place>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPlant> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPlant>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPlant> <http://dbpedia.org/ontology/Scientist>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPlant> <http://dbpedia.org/ontology/Plant>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToProtectedArea> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToProtectedArea>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToProtectedArea> <http://dbpedia.org/ontology/Scientist>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToProtectedArea> <http://dbpedia.org/ontology/ProtectedArea>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToReptile> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToReptile>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToReptile> <http://dbpedia.org/ontology/Scientist>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToReptile> <http://dbpedia.org/ontology/Reptile>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToRiver> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToRiver>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToRiver> <http://dbpedia.org/ontology/Scientist>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToRiver> <http://dbpedia.org/ontology/River>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToScientist> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToScientist>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToScientist> <http://dbpedia.org/ontology/Scientist>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToScientist> <http://dbpedia.org/ontology/Scientist>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToSettlement> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToSettlement>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToSettlement> <http://dbpedia.org/ontology/Scientist>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToSettlement> <http://dbpedia.org/ontology/Settlement>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToUniversity> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToUniversity>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToUniversity> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToUniversity> <http://dbpedia.org/ontology/Scientist>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToUniversity> <http://dbpedia.org/ontology/University>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToWorldHeritageSite> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToWorldHeritageSite>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToWorldHeritageSite> <http://dbpedia.org/ontology/Scientist>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToWorldHeritageSite> <http://dbpedia.org/ontology/WorldHeritageSite>)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://dbpedia.org/ontology/MountainRange> (<http://dbpedia.org/ontology/MountainRange>)
+
+DisjointClasses(<http://dbpedia.org/ontology/MountainRange> <https://smolang.org/rdfMutate#newNode-2>)
+
+# Class: <http://dbpedia.org/ontology/Scientist> (<http://dbpedia.org/ontology/Scientist>)
+
+SubClassOf(<http://dbpedia.org/ontology/Scientist> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAdministrativeRegion> <http://dbpedia.org/ontology/AdministrativeRegion>))
+SubClassOf(<http://dbpedia.org/ontology/Scientist> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAmphibian> <http://dbpedia.org/ontology/Amphibian>))
+SubClassOf(<http://dbpedia.org/ontology/Scientist> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAnatomicalStructure> <http://dbpedia.org/ontology/AnatomicalStructure>))
+SubClassOf(<http://dbpedia.org/ontology/Scientist> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToArachnid> <http://dbpedia.org/ontology/Arachnid>))
+SubClassOf(<http://dbpedia.org/ontology/Scientist> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToBird> <http://dbpedia.org/ontology/Bird>))
+SubClassOf(<http://dbpedia.org/ontology/Scientist> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCity> <http://dbpedia.org/ontology/City>))
+SubClassOf(<http://dbpedia.org/ontology/Scientist> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToContinent> <http://dbpedia.org/ontology/Continent>))
+SubClassOf(<http://dbpedia.org/ontology/Scientist> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCountry> <http://dbpedia.org/ontology/Country>))
+SubClassOf(<http://dbpedia.org/ontology/Scientist> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToFish> <http://dbpedia.org/ontology/Fish>))
+SubClassOf(<http://dbpedia.org/ontology/Scientist> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToFloweringPlant> <http://dbpedia.org/ontology/FloweringPlant>))
+SubClassOf(<http://dbpedia.org/ontology/Scientist> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToInsect> <http://dbpedia.org/ontology/Insect>))
+SubClassOf(<http://dbpedia.org/ontology/Scientist> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToIsland> <http://dbpedia.org/ontology/Island>))
+SubClassOf(<http://dbpedia.org/ontology/Scientist> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToLanguage> <http://dbpedia.org/ontology/Language>))
+SubClassOf(<http://dbpedia.org/ontology/Scientist> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToMammal> <http://dbpedia.org/ontology/Mammal>))
+SubClassOf(<http://dbpedia.org/ontology/Scientist> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToMollusca> <http://dbpedia.org/ontology/Mollusca>))
+SubClassOf(<http://dbpedia.org/ontology/Scientist> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToMountainRange> <http://dbpedia.org/ontology/MountainRange>))
+SubClassOf(<http://dbpedia.org/ontology/Scientist> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPlant> <http://dbpedia.org/ontology/Plant>))
+SubClassOf(<http://dbpedia.org/ontology/Scientist> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToReptile> <http://dbpedia.org/ontology/Reptile>))
+SubClassOf(<http://dbpedia.org/ontology/Scientist> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToRiver> <http://dbpedia.org/ontology/River>))
+SubClassOf(<http://dbpedia.org/ontology/Scientist> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToScientist> <http://dbpedia.org/ontology/Scientist>))
+SubClassOf(<http://dbpedia.org/ontology/Scientist> ObjectSomeValuesFrom(<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToSettlement> <http://dbpedia.org/ontology/Settlement>))
+
+# Class: owl:Thing (owl:Thing)
+
+DisjointClasses(Annotation(Annotation(rdfs:comment "Generated by the OWL API (version 5.5.0.2023-01-14T12:41:38Z) https://github.com/owlcs/owlapi/ on 2025-09-16T17:18:35.725014488Z") rdfs:comment "DisjointClasses(<https://smolang.org/rdfMutate#newNode-6>) replaced by DisjointClasses(<https://smolang.org/rdfMutate#newNode-6> owl:Thing)") owl:Thing <https://smolang.org/rdfMutate#newNode-6>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://dbpedia.org/ontology/Animal> (<http://dbpedia.org/ontology/Animal>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/ontology/Animal>)
+
+# Individual: <http://dbpedia.org/property/academicAdvisors> (<http://dbpedia.org/property/academicAdvisors>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/academicAdvisors>)
+
+# Individual: <http://dbpedia.org/property/after> (<http://dbpedia.org/property/after>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/after>)
+
+# Individual: <http://dbpedia.org/property/almaMater> (<http://dbpedia.org/property/almaMater>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/almaMater>)
+
+# Individual: <http://dbpedia.org/property/awards> (<http://dbpedia.org/property/awards>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/awards>)
+
+# Individual: <http://dbpedia.org/property/before> (<http://dbpedia.org/property/before>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/before>)
+
+# Individual: <http://dbpedia.org/property/belalAhmed> (<http://dbpedia.org/property/belalAhmed>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/belalAhmed>)
+
+# Individual: <http://dbpedia.org/property/binomialAuthority> (<http://dbpedia.org/property/binomialAuthority>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/binomialAuthority>)
+
+# Individual: <http://dbpedia.org/property/birthPlace> (<http://dbpedia.org/property/birthPlace>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/birthPlace>)
+
+# Individual: <http://dbpedia.org/property/birthPlace_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0> (<http://dbpedia.org/property/birthPlace_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/birthPlace_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0>)
+
+# Individual: <http://dbpedia.org/property/citizenship> (<http://dbpedia.org/property/citizenship>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/citizenship>)
+
+# Individual: <http://dbpedia.org/property/classis> (<http://dbpedia.org/property/classis>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/classis>)
+
+# Individual: <http://dbpedia.org/property/deathPlace> (<http://dbpedia.org/property/deathPlace>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/deathPlace>)
+
+# Individual: <http://dbpedia.org/property/doctoralAdviser> (<http://dbpedia.org/property/doctoralAdviser>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/doctoralAdviser>)
+
+# Individual: <http://dbpedia.org/property/doctoralAdvisor> (<http://dbpedia.org/property/doctoralAdvisor>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/doctoralAdvisor>)
+
+# Individual: <http://dbpedia.org/property/doctoralStudents> (<http://dbpedia.org/property/doctoralStudents>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/doctoralStudents>)
+
+# Individual: <http://dbpedia.org/property/editor> (<http://dbpedia.org/property/editor>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/editor>)
+
+# Individual: <http://dbpedia.org/property/employment> (<http://dbpedia.org/property/employment>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/employment>)
+
+# Individual: <http://dbpedia.org/property/ethnicity> (<http://dbpedia.org/property/ethnicity>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/ethnicity>)
+
+# Individual: <http://dbpedia.org/property/familia> (<http://dbpedia.org/property/familia>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/familia>)
+
+# Individual: <http://dbpedia.org/property/fields> (<http://dbpedia.org/property/fields>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/fields>)
+
+# Individual: <http://dbpedia.org/property/genusAuthority> (<http://dbpedia.org/property/genusAuthority>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/genusAuthority>)
+
+# Individual: <http://dbpedia.org/property/given> (<http://dbpedia.org/property/given>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/given>)
+
+# Individual: <http://dbpedia.org/property/imageCaption> (<http://dbpedia.org/property/imageCaption>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/imageCaption>)
+
+# Individual: <http://dbpedia.org/property/influenced> (<http://dbpedia.org/property/influenced>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/influenced>)
+
+# Individual: <http://dbpedia.org/property/influences> (<http://dbpedia.org/property/influences>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/influences>)
+
+# Individual: <http://dbpedia.org/property/infraclassis> (<http://dbpedia.org/property/infraclassis>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/infraclassis>)
+
+# Individual: <http://dbpedia.org/property/institutions> (<http://dbpedia.org/property/institutions>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/institutions>)
+
+# Individual: <http://dbpedia.org/property/knownFor> (<http://dbpedia.org/property/knownFor>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/knownFor>)
+
+# Individual: <http://dbpedia.org/property/languagesSpoken> (<http://dbpedia.org/property/languagesSpoken>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/languagesSpoken>)
+
+# Individual: <http://dbpedia.org/property/nationality> (<http://dbpedia.org/property/nationality>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/nationality>)
+
+# Individual: <http://dbpedia.org/property/notableStudents> (<http://dbpedia.org/property/notableStudents>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/notableStudents>)
+
+# Individual: <http://dbpedia.org/property/ordo> (<http://dbpedia.org/property/ordo>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/ordo>)
+
+# Individual: <http://dbpedia.org/property/phylum> (<http://dbpedia.org/property/phylum>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/phylum>)
+
+# Individual: <http://dbpedia.org/property/placeOfBirth> (<http://dbpedia.org/property/placeOfBirth>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/placeOfBirth>)
+
+# Individual: <http://dbpedia.org/property/placeOfDeath> (<http://dbpedia.org/property/placeOfDeath>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/placeOfDeath>)
+
+# Individual: <http://dbpedia.org/property/president> (<http://dbpedia.org/property/president>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/president>)
+
+# Individual: <http://dbpedia.org/property/primeminister> (<http://dbpedia.org/property/primeminister>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/primeminister>)
+
+# Individual: <http://dbpedia.org/property/prizes> (<http://dbpedia.org/property/prizes>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/prizes>)
+
+# Individual: <http://dbpedia.org/property/residence> (<http://dbpedia.org/property/residence>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/residence>)
+
+# Individual: <http://dbpedia.org/property/societies> (<http://dbpedia.org/property/societies>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/societies>)
+
+# Individual: <http://dbpedia.org/property/species> (<http://dbpedia.org/property/species>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/species>)
+
+# Individual: <http://dbpedia.org/property/subclassis> (<http://dbpedia.org/property/subclassis>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/subclassis>)
+
+# Individual: <http://dbpedia.org/property/subdivision> (<http://dbpedia.org/property/subdivision>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/subdivision>)
+
+# Individual: <http://dbpedia.org/property/subfamilia> (<http://dbpedia.org/property/subfamilia>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/subfamilia>)
+
+# Individual: <http://dbpedia.org/property/subordo> (<http://dbpedia.org/property/subordo>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/subordo>)
+
+# Individual: <http://dbpedia.org/property/superfamilia> (<http://dbpedia.org/property/superfamilia>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/superfamilia>)
+
+# Individual: <http://dbpedia.org/property/superordo> (<http://dbpedia.org/property/superordo>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/superordo>)
+
+# Individual: <http://dbpedia.org/property/surname> (<http://dbpedia.org/property/surname>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/surname>)
+
+# Individual: <http://dbpedia.org/property/title> (<http://dbpedia.org/property/title>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/title>)
+
+# Individual: <http://dbpedia.org/property/tribus> (<http://dbpedia.org/property/tribus>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/tribus>)
+
+# Individual: <http://dbpedia.org/property/typeSpeciesAuthority> (<http://dbpedia.org/property/typeSpeciesAuthority>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/typeSpeciesAuthority>)
+
+# Individual: <http://dbpedia.org/property/unrankedPhylum> (<http://dbpedia.org/property/unrankedPhylum>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/unrankedPhylum>)
+
+# Individual: <http://dbpedia.org/property/workInstitution> (<http://dbpedia.org/property/workInstitution>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/workInstitution>)
+
+# Individual: <http://dbpedia.org/property/workInstitutions> (<http://dbpedia.org/property/workInstitutions>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/workInstitutions>)
+
+# Individual: <http://dbpedia.org/property/workPlaces> (<http://dbpedia.org/property/workPlaces>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/workPlaces>)
+
+# Individual: <http://dbpedia.org/property/workplace> (<http://dbpedia.org/property/workplace>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/workplace>)
+
+# Individual: <http://dbpedia.org/property/workplaces> (<http://dbpedia.org/property/workplaces>)
+
+ClassAssertion(owl:NamedIndividual <http://dbpedia.org/property/workplaces>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAdministrativeRegion> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAdministrativeRegion>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAdministrativeRegion>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAdministrativeRegion> <http://dbpedia.org/property/almaMater>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAdministrativeRegion> <http://dbpedia.org/property/birthPlace>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAdministrativeRegion> <http://dbpedia.org/property/birthPlace_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAdministrativeRegion> <http://dbpedia.org/property/deathPlace>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAdministrativeRegion> <http://dbpedia.org/property/imageCaption>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAdministrativeRegion> <http://dbpedia.org/property/placeOfDeath>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAdministrativeRegion> <http://dbpedia.org/property/residence>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAdministrativeRegion> <http://dbpedia.org/property/workplaces>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAmphibian> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAmphibian>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAmphibian>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAmphibian> <http://dbpedia.org/property/familia>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAmphibian> <http://dbpedia.org/property/subdivision>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAnimal> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAnimal>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAnimal>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAnimal> <http://dbpedia.org/property/classis>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAnimal> <http://dbpedia.org/property/familia>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAnimal> <http://dbpedia.org/property/imageCaption>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAnimal> <http://dbpedia.org/property/infraclassis>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAnimal> <http://dbpedia.org/property/knownFor>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAnimal> <http://dbpedia.org/property/ordo>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAnimal> <http://dbpedia.org/property/phylum>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAnimal> <http://dbpedia.org/property/species>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAnimal> <http://dbpedia.org/property/subclassis>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAnimal> <http://dbpedia.org/property/subdivision>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAnimal> <http://dbpedia.org/property/subfamilia>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAnimal> <http://dbpedia.org/property/subordo>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAnimal> <http://dbpedia.org/property/superfamilia>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAnimal> <http://dbpedia.org/property/superordo>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAnimal> <http://dbpedia.org/property/tribus>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToAnimal> <http://dbpedia.org/property/unrankedPhylum>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToArachnid> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToArachnid>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToArachnid>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToArachnid> <http://dbpedia.org/property/familia>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToArachnid> <http://dbpedia.org/property/ordo>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToArachnid> <http://dbpedia.org/property/subdivision>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToArachnid> <http://dbpedia.org/property/subordo>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToBird> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToBird>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToBird>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToBird> <http://dbpedia.org/property/classis>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToBird> <http://dbpedia.org/property/familia>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToBird> <http://dbpedia.org/property/imageCaption>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToBird> <http://dbpedia.org/property/subdivision>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToChemicalCompound> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToChemicalCompound>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToChemicalCompound>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToChemicalCompound> <http://dbpedia.org/property/knownFor>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCity> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCity>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCity>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCity> <http://dbpedia.org/property/almaMater>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCity> <http://dbpedia.org/property/birthPlace>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCity> <http://dbpedia.org/property/deathPlace>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCity> <http://dbpedia.org/property/placeOfDeath>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCity> <http://dbpedia.org/property/residence>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCity> <http://dbpedia.org/property/workInstitution>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCity> <http://dbpedia.org/property/workInstitutions>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCity> <http://dbpedia.org/property/workplaces>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCompany> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCompany>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCompany>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCompany> <http://dbpedia.org/property/knownFor>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCompany> <http://dbpedia.org/property/workInstitution>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCompany> <http://dbpedia.org/property/workInstitutions>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCompany> <http://dbpedia.org/property/workplaces>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCountry> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCountry>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCountry>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCountry> <http://dbpedia.org/property/almaMater>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCountry> <http://dbpedia.org/property/birthPlace>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCountry> <http://dbpedia.org/property/citizenship>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCountry> <http://dbpedia.org/property/deathPlace>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCountry> <http://dbpedia.org/property/nationality>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCountry> <http://dbpedia.org/property/residence>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCountry> <http://dbpedia.org/property/workInstitution>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCountry> <http://dbpedia.org/property/workInstitutions>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCountry> <http://dbpedia.org/property/workplaces>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCrustacean> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCrustacean>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCrustacean>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCrustacean> <http://dbpedia.org/property/imageCaption>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToCrustacean> <http://dbpedia.org/property/subdivision>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToDisease> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToDisease>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToDisease>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToDisease> <http://dbpedia.org/property/knownFor>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToEthnicGroup> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToEthnicGroup>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToEthnicGroup>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToEthnicGroup> <http://dbpedia.org/property/ethnicity>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToEthnicGroup> <http://dbpedia.org/property/nationality>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToFish> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToFish>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToFish>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToFish> <http://dbpedia.org/property/classis>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToFish> <http://dbpedia.org/property/familia>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToFish> <http://dbpedia.org/property/imageCaption>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToFish> <http://dbpedia.org/property/infraclassis>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToFish> <http://dbpedia.org/property/ordo>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToFish> <http://dbpedia.org/property/species>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToFish> <http://dbpedia.org/property/subdivision>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToInsect> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToInsect>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToInsect>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToInsect> <http://dbpedia.org/property/familia>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToInsect> <http://dbpedia.org/property/imageCaption>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToInsect> <http://dbpedia.org/property/knownFor>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToInsect> <http://dbpedia.org/property/ordo>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToInsect> <http://dbpedia.org/property/subdivision>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToInsect> <http://dbpedia.org/property/subfamilia>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToInsect> <http://dbpedia.org/property/superfamilia>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToInsect> <http://dbpedia.org/property/superordo>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToIsland> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToIsland>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToIsland>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToIsland> <http://dbpedia.org/property/birthPlace>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToLanguage> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToLanguage>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToLanguage>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToLanguage> <http://dbpedia.org/property/fields>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToLanguage> <http://dbpedia.org/property/languagesSpoken>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToMammal> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToMammal>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToMammal>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToMammal> <http://dbpedia.org/property/familia>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToMammal> <http://dbpedia.org/property/imageCaption>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToMammal> <http://dbpedia.org/property/knownFor>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToMammal> <http://dbpedia.org/property/ordo>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToMammal> <http://dbpedia.org/property/subdivision>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToMammal> <http://dbpedia.org/property/subfamilia>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToMammal> <http://dbpedia.org/property/subordo>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToMammal> <http://dbpedia.org/property/superfamilia>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToMammal> <http://dbpedia.org/property/tribus>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToMollusca> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToMollusca>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToMollusca>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToMollusca> <http://dbpedia.org/property/classis>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToMollusca> <http://dbpedia.org/property/familia>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToMollusca> <http://dbpedia.org/property/imageCaption>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToMollusca> <http://dbpedia.org/property/ordo>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToMollusca> <http://dbpedia.org/property/subdivision>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToMollusca> <http://dbpedia.org/property/subfamilia>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToMollusca> <http://dbpedia.org/property/superfamilia>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToMuseum> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToMuseum>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToMuseum>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToMuseum> <http://dbpedia.org/property/knownFor>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToMuseum> <http://dbpedia.org/property/workInstitution>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToMuseum> <http://dbpedia.org/property/workInstitutions>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToMuseum> <http://dbpedia.org/property/workplaces>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPerson> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPerson>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPerson>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPerson> <http://dbpedia.org/property/academicAdvisors>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPerson> <http://dbpedia.org/property/after>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPerson> <http://dbpedia.org/property/before>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPerson> <http://dbpedia.org/property/binomialAuthority>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPerson> <http://dbpedia.org/property/doctoralAdviser>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPerson> <http://dbpedia.org/property/doctoralAdvisor>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPerson> <http://dbpedia.org/property/doctoralStudents>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPerson> <http://dbpedia.org/property/editor>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPerson> <http://dbpedia.org/property/genusAuthority>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPerson> <http://dbpedia.org/property/given>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPerson> <http://dbpedia.org/property/influenced>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPerson> <http://dbpedia.org/property/influences>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPerson> <http://dbpedia.org/property/notableStudents>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPerson> <http://dbpedia.org/property/president>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPerson> <http://dbpedia.org/property/primeminister>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPerson> <http://dbpedia.org/property/surname>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPerson> <http://dbpedia.org/property/typeSpeciesAuthority>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPerson> <http://dbpedia.org/property/workInstitution>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPerson> <http://dbpedia.org/property/workplaces>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPlace> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPlace>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPlace>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPlace> <http://dbpedia.org/property/almaMater>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPlace> <http://dbpedia.org/property/awards>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPlace> <http://dbpedia.org/property/birthPlace>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPlace> <http://dbpedia.org/property/birthPlace_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0_percent_C2_percent_A0>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPlace> <http://dbpedia.org/property/citizenship>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPlace> <http://dbpedia.org/property/deathPlace>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPlace> <http://dbpedia.org/property/employment>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPlace> <http://dbpedia.org/property/imageCaption>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPlace> <http://dbpedia.org/property/knownFor>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPlace> <http://dbpedia.org/property/nationality>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPlace> <http://dbpedia.org/property/placeOfBirth>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPlace> <http://dbpedia.org/property/placeOfDeath>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPlace> <http://dbpedia.org/property/prizes>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPlace> <http://dbpedia.org/property/residence>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPlace> <http://dbpedia.org/property/societies>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPlace> <http://dbpedia.org/property/workInstitution>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPlace> <http://dbpedia.org/property/workInstitutions>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToPlace> <http://dbpedia.org/property/workplaces>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToProtectedArea> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToProtectedArea>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToProtectedArea>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToProtectedArea> <http://dbpedia.org/property/imageCaption>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToReptile> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToReptile>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToReptile>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToReptile> <http://dbpedia.org/property/familia>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToReptile> <http://dbpedia.org/property/imageCaption>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToReptile> <http://dbpedia.org/property/knownFor>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToReptile> <http://dbpedia.org/property/ordo>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToReptile> <http://dbpedia.org/property/subdivision>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToScientist> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToScientist>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToScientist>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToScientist> <http://dbpedia.org/property/academicAdvisors>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToScientist> <http://dbpedia.org/property/after>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToScientist> <http://dbpedia.org/property/before>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToScientist> <http://dbpedia.org/property/binomialAuthority>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToScientist> <http://dbpedia.org/property/doctoralAdviser>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToScientist> <http://dbpedia.org/property/doctoralAdvisor>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToScientist> <http://dbpedia.org/property/doctoralStudents>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToScientist> <http://dbpedia.org/property/editor>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToScientist> <http://dbpedia.org/property/genusAuthority>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToScientist> <http://dbpedia.org/property/given>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToScientist> <http://dbpedia.org/property/influenced>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToScientist> <http://dbpedia.org/property/influences>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToScientist> <http://dbpedia.org/property/notableStudents>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToScientist> <http://dbpedia.org/property/surname>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToScientist> <http://dbpedia.org/property/typeSpeciesAuthority>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToScientist> <http://dbpedia.org/property/workInstitution>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToSettlement> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToSettlement>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToSettlement>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToSettlement> <http://dbpedia.org/property/almaMater>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToSettlement> <http://dbpedia.org/property/birthPlace>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToSettlement> <http://dbpedia.org/property/deathPlace>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToSettlement> <http://dbpedia.org/property/placeOfBirth>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToSettlement> <http://dbpedia.org/property/placeOfDeath>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToSettlement> <http://dbpedia.org/property/residence>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToSettlement> <http://dbpedia.org/property/workInstitution>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToSettlement> <http://dbpedia.org/property/workInstitutions>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToSettlement> <http://dbpedia.org/property/workplaces>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToUniversity> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToUniversity>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToUniversity>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToUniversity> <http://dbpedia.org/property/almaMater>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToUniversity> <http://dbpedia.org/property/belalAhmed>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToUniversity> <http://dbpedia.org/property/employment>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToUniversity> <http://dbpedia.org/property/institutions>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToUniversity> <http://dbpedia.org/property/prizes>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToUniversity> <http://dbpedia.org/property/title>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToUniversity> <http://dbpedia.org/property/workInstitution>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToUniversity> <http://dbpedia.org/property/workInstitutions>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToUniversity> <http://dbpedia.org/property/workPlaces>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToUniversity> <http://dbpedia.org/property/workplace>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToUniversity> <http://dbpedia.org/property/workplaces>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToWorldHeritageSite> (<http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToWorldHeritageSite>)
+
+ClassAssertion(owl:NamedIndividual <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToWorldHeritageSite>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToWorldHeritageSite> <http://dbpedia.org/property/imageCaption>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Animal.owl#linksToWorldHeritageSite> <http://dbpedia.org/property/workplaces>)
+
+# Individual: <https://smolang.org/rdfMutate#newNode-3> (<https://smolang.org/rdfMutate#newNode-3>)
+
+ClassAssertion(owl:NamedIndividual <https://smolang.org/rdfMutate#newNode-3>)
+ClassAssertion(<https://smolang.org/rdfMutate#newNode-3> <https://smolang.org/rdfMutate#newNode-3>)
+
+# Individual: <https://smolang.org/rdfMutate#newNode-5> (<https://smolang.org/rdfMutate#newNode-5>)
+
+ClassAssertion(owl:NamedIndividual <https://smolang.org/rdfMutate#newNode-5>)
+
+
+)

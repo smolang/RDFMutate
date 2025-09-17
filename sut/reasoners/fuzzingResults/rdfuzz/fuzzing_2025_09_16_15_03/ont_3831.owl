@@ -1,0 +1,851 @@
+Prefix(:=<urn:unnamed:ontology#ont19121710387417547>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:unnamed:ontology#ont19121710387417547>
+
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-0>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao223845603>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao268063700>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1779606731>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao196989303>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1211239798>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1436578787>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao358853874>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao8314803620>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1649728317>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1595237779>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao4531544124>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao732945962>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao107236050>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1693353776>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao128827344>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao967304317>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao941226261>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1057800815>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao-1126011106>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao957949983>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao124571525>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2102170307>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao4985712724>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1802798922>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1189513296>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao4152363223>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao5413665309>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#nifext_1>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao343486489>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1995010823>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1143221302>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao679027665>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao824839913>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1330317521>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1141340175>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao296309608>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao542191739>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2088691397>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1785495506>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1845602529>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao-282380853>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2082026326>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1746802704>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao809320003>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1694199019>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao854959971>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao336034368>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2047438300>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao4092866126>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1960697157>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao4253573122>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao6934064108>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1746643703>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#nifext_3>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao5798413869>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1475145503>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao136816674>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1289583168>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2126482353>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2052625281>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao3710738764>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1179195262>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1706854098>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1062287912>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2045795635>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1562245920>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao675186109>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1152497626>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1863391630>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao6450066368>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#nifext_2>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao548826380>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao9291838256>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2110170574>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao723896903>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#nlx_qual_20090101>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao656094176>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao614188547>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao74391158>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao638749545>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao632949619>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1757774791>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1510923311>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1374293695>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao6363641087>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao783483540>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao-1465673360>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao754373097>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1278200674>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao430240391>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao47950958>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao279801585>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao4459136323>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao812067870>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#nifext_4>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1703115805>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1301290450>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1288413465>))
+Declaration(Class(<http://www.ifomis.org/bfo/1.1/snap#Quality>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1583093969>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao9946511970>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao5221865117>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2077793822>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao542875575>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1959705051>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao349337269>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao271899308>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao969067581>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao301169922>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1643644091>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao819188787>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao-943768255>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao128105491>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao888175480>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao311075036>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1843037539>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2139310701>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1983595164>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao3169628>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1788621392>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao9222381184>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao9271919883>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-5>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1217691568>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao897115057>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1786354232>))
+Declaration(Class(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1277586470>))
+Declaration(ObjectProperty(<https://smolang.org/rdfMutate#newNode-4>))
+Declaration(NamedIndividual(owl:Class))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-1>))
+############################
+#   Object Properties
+############################
+
+# Object Property: <https://smolang.org/rdfMutate#newNode-4> (<https://smolang.org/rdfMutate#newNode-4>)
+
+SubObjectPropertyOf(<https://smolang.org/rdfMutate#newNode-4> <https://smolang.org/rdfMutate#newNode-4>)
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#nifext_1> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#nifext_1>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#nifext_1> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1057800815>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#nifext_2> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#nifext_2>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#nifext_2> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1278200674>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#nifext_3> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#nifext_3>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#nifext_3> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1278200674>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#nifext_4> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#nifext_4>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#nifext_4> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1278200674>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#nlx_qual_20090101> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#nlx_qual_20090101>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#nlx_qual_20090101> <http://www.ifomis.org/bfo/1.1/snap#Quality>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao-1126011106> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao-1126011106>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao-1126011106> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1057800815>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao-1126011106> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1189513296>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao-1126011106> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1436578787>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao-1126011106> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1562245920>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao-1126011106> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1746643703>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao-1126011106> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1843037539>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao-1126011106> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1863391630>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao-1126011106> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1959705051>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao-1126011106> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2088691397>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao-1126011106> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao343486489>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao-1465673360> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao-1465673360>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao-1465673360> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao-1126011106>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao-1465673360> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1595237779>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao-1465673360> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao542875575>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao-1465673360> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao957949983>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao-282380853> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao-282380853>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao-282380853> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao-943768255>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1057800815> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1057800815>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1057800815> <http://www.ifomis.org/bfo/1.1/snap#Quality>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1057800815> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao279801585>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1057800815> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao349337269>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1057800815> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao732945962>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1062287912> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1062287912>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1062287912> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1289583168>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao107236050> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao107236050>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao107236050> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao349337269>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao107236050> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao311075036>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1141340175> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1141340175>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1141340175> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1436578787>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1141340175> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1643644091>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1141340175> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1786354232>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1141340175> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1983595164>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1141340175> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2045795635>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1141340175> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao268063700>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1141340175> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao614188547>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1141340175> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao941226261>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1143221302> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1143221302>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1143221302> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao271899308>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1143221302> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2077793822>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1143221302> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao430240391>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1143221302> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao679027665>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1152497626> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1152497626>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1152497626> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1562245920>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1152497626> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao358853874>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1179195262> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1179195262>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1179195262> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao-943768255>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1189513296> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1189513296>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1189513296> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1057800815>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1189513296> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1436578787>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1189513296> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1562245920>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1189513296> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1746643703>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1189513296> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1843037539>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1189513296> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1863391630>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1189513296> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1959705051>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1189513296> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2088691397>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1189513296> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao343486489>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1211239798> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1211239798>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1211239798> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao-943768255>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1217691568> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1217691568>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1217691568> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao279801585>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1217691568> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao124571525>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1217691568> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao136816674>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1217691568> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1510923311>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1217691568> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1779606731>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1217691568> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1788621392>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1217691568> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao196989303>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1217691568> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2102170307>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1217691568> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2126482353>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1217691568> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao632949619>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1217691568> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao824839913>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1217691568> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao888175480>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao124571525> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao124571525>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao124571525> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao279801585>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao124571525> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao136816674>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao124571525> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1510923311>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao124571525> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1779606731>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao124571525> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1788621392>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao124571525> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao196989303>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao124571525> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2102170307>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao124571525> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2126482353>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao124571525> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao632949619>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao124571525> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao824839913>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao124571525> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao888175480>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1277586470> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1277586470>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1277586470> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao343486489>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1277586470> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao301169922>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1277586470> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao47950958>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1278200674> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1278200674>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1278200674> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1057800815>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao128105491> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao128105491>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao128105491> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1863391630>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao128105491> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1785495506>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao128105491> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao854959971>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao128105491> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao967304317>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao128827344> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao128827344>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao128827344> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1959705051>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1288413465> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1288413465>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1288413465> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1959705051>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1289583168> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1289583168>)
+
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1289583168> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1475145503>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1289583168> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2082026326>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1289583168> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao296309608>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1289583168> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao3169628>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1289583168> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao548826380>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1301290450> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1301290450>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1301290450> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao-943768255>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1330317521> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1330317521>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1330317521> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao-943768255>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao136816674> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao136816674>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao136816674> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao279801585>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao136816674> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1510923311>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao136816674> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1779606731>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao136816674> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1788621392>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao136816674> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao196989303>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao136816674> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2102170307>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao136816674> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2126482353>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao136816674> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao632949619>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao136816674> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao824839913>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao136816674> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao888175480>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1374293695> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1374293695>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1374293695> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao-943768255>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1436578787> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1436578787>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1436578787> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1057800815>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1436578787> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1562245920>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1436578787> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1746643703>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1436578787> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1843037539>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1436578787> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1863391630>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1436578787> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1959705051>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1436578787> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2088691397>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1436578787> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao343486489>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1475145503> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1475145503>)
+
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1475145503> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2082026326>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1475145503> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao296309608>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1475145503> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao3169628>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1475145503> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao548826380>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1510923311> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1510923311>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1510923311> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao279801585>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1510923311> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1779606731>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1510923311> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1788621392>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1510923311> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao196989303>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1510923311> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2102170307>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1510923311> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2126482353>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1510923311> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao632949619>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1510923311> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao824839913>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1510923311> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao888175480>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1562245920> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1562245920>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1562245920> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1057800815>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1562245920> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1746643703>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1562245920> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1843037539>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1562245920> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1863391630>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1562245920> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1959705051>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1562245920> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2088691397>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1562245920> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao343486489>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1583093969> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1583093969>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1583093969> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1746643703>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1583093969> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2047438300>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1595237779> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1595237779>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1595237779> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao-1126011106>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1595237779> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao542875575>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1595237779> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao957949983>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1643644091> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1643644091>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1643644091> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2045795635>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1643644091> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1786354232>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1643644091> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1983595164>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1643644091> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao268063700>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1643644091> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao614188547>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1643644091> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao941226261>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1649728317> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1649728317>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1649728317> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao-943768255>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1693353776> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1693353776>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1693353776> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao-943768255>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1694199019> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1694199019>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1694199019> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao-943768255>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1703115805> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1703115805>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1703115805> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao-943768255>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1706854098> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1706854098>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1706854098> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1959705051>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1746643703> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1746643703>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1746643703> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1057800815>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1746643703> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1843037539>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1746643703> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1863391630>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1746643703> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1959705051>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1746643703> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2088691397>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1746643703> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao343486489>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1746802704> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1746802704>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1746802704> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2088691397>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1757774791> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1757774791>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1757774791> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1189513296>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1757774791> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao809320003>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1779606731> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1779606731>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1779606731> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao279801585>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1779606731> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1788621392>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1779606731> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao196989303>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1779606731> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2102170307>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1779606731> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2126482353>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1779606731> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao632949619>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1779606731> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao824839913>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1779606731> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao888175480>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1785495506> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1785495506>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1785495506> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1863391630>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1785495506> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao854959971>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1785495506> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao967304317>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1786354232> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1786354232>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1786354232> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1436578787>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1786354232> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1983595164>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1786354232> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2045795635>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1786354232> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao268063700>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1786354232> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao614188547>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1786354232> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao941226261>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1788621392> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1788621392>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1788621392> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao279801585>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1788621392> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao196989303>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1788621392> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2102170307>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1788621392> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2126482353>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1788621392> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao632949619>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1788621392> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao824839913>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1788621392> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao888175480>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1802798922> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1802798922>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1802798922> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao-943768255>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1843037539> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1843037539>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1843037539> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1057800815>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1843037539> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1863391630>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1843037539> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1959705051>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1843037539> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2088691397>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1843037539> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao343486489>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1845602529> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1845602529>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1845602529> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao-943768255>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1863391630> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1863391630>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1863391630> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1057800815>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1863391630> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1959705051>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1863391630> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2088691397>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1863391630> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao343486489>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1959705051> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1959705051>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1959705051> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1057800815>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1959705051> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2088691397>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1959705051> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao343486489>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1960697157> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1960697157>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1960697157> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao-943768255>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao196989303> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao196989303>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao196989303> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao279801585>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao196989303> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2102170307>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao196989303> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2126482353>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao196989303> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao632949619>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao196989303> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao824839913>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao196989303> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao888175480>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1983595164> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1983595164>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1983595164> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2045795635>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1983595164> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao268063700>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1983595164> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao614188547>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1983595164> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao941226261>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1995010823> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1995010823>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1995010823> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1843037539>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1995010823> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2110170574>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2045795635> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2045795635>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2045795635> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1436578787>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2045795635> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao268063700>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2045795635> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao614188547>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2045795635> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao941226261>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2047438300> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2047438300>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2047438300> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1746643703>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2052625281> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2052625281>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2052625281> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao-943768255>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2077793822> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2077793822>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2077793822> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao271899308>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2077793822> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao430240391>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2077793822> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao679027665>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2082026326> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2082026326>)
+
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2082026326> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao296309608>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2082026326> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao3169628>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2082026326> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao548826380>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2088691397> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2088691397>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2088691397> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1057800815>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2088691397> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao343486489>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2102170307> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2102170307>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2102170307> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao279801585>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2102170307> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2126482353>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2102170307> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao632949619>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2102170307> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao824839913>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2102170307> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao888175480>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2110170574> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2110170574>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2110170574> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1843037539>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2126482353> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2126482353>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2126482353> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao279801585>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2126482353> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao632949619>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2126482353> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao824839913>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2126482353> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao888175480>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2139310701> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2139310701>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2139310701> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao107236050>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2139310701> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao675186109>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao223845603> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao223845603>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao223845603> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao-943768255>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao268063700> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao268063700>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao268063700> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1436578787>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao268063700> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao614188547>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao268063700> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao941226261>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao271899308> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao271899308>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao271899308> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao732945962>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao279801585> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao279801585>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao279801585> <http://www.ifomis.org/bfo/1.1/snap#Quality>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao279801585> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao349337269>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao279801585> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao732945962>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao296309608> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao296309608>)
+
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao296309608> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao3169628>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao296309608> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao548826380>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao301169922> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao301169922>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao301169922> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao343486489>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao301169922> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao47950958>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao311075036> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao311075036>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao311075036> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao349337269>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao3169628> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao3169628>)
+
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao3169628> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao548826380>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao336034368> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao336034368>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao336034368> <http://www.ifomis.org/bfo/1.1/snap#Quality>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao343486489> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao343486489>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao343486489> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1057800815>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao349337269> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao349337269>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao349337269> <http://www.ifomis.org/bfo/1.1/snap#Quality>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao349337269> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao732945962>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao358853874> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao358853874>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao358853874> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1562245920>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao3710738764> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao3710738764>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao3710738764> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao5798413869>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao4092866126> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao4092866126>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao4092866126> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao5798413869>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao4152363223> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao4152363223>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao4152363223> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao336034368>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao4253573122> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao4253573122>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao4253573122> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao6450066368>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao430240391> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao430240391>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao430240391> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao271899308>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao430240391> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao679027665>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao4459136323> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao4459136323>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao4459136323> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao9946511970>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao4531544124> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao4531544124>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao4531544124> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao336034368>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao47950958> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao47950958>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao47950958> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao343486489>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao4985712724> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao4985712724>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao4985712724> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao5798413869>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao5221865117> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao5221865117>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao5221865117> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao6450066368>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao5413665309> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao5413665309>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao5413665309> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao9222381184>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao542191739> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao542191739>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao542191739> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao-943768255>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao542875575> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao542875575>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao542875575> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao-1126011106>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao542875575> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao957949983>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao5798413869> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao5798413869>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao5798413869> <http://www.ifomis.org/bfo/1.1/snap#Quality>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao614188547> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao614188547>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao614188547> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1436578787>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao614188547> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao941226261>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao632949619> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao632949619>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao632949619> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao279801585>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao632949619> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao824839913>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao632949619> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao888175480>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao6363641087> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao6363641087>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao6363641087> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao9222381184>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao638749545> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao638749545>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao638749545> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1959705051>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao6450066368> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao6450066368>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao6450066368> <http://www.ifomis.org/bfo/1.1/snap#Quality>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao656094176> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao656094176>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao656094176> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao-943768255>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao675186109> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao675186109>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao675186109> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao107236050>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao679027665> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao679027665>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao679027665> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao271899308>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao6934064108> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao6934064108>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao6934064108> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1278200674>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao723896903> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao723896903>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao723896903> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao-943768255>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao732945962> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao732945962>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao732945962> <http://www.ifomis.org/bfo/1.1/snap#Quality>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao74391158> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao74391158>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao74391158> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao-943768255>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao754373097> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao754373097>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao754373097> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1959705051>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao783483540> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao783483540>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao783483540> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao311075036>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao783483540> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao812067870>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao809320003> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao809320003>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao809320003> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1189513296>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao812067870> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao812067870>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao812067870> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao311075036>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao819188787> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao819188787>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao819188787> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao-943768255>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao824839913> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao824839913>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao824839913> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao279801585>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao824839913> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao888175480>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao8314803620> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao8314803620>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao8314803620> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao5798413869>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao854959971> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao854959971>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao854959971> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1863391630>)
+DisjointClasses(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao854959971> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao967304317>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao888175480> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao888175480>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao888175480> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao279801585>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao897115057> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao897115057>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao897115057> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao-943768255>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao9222381184> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao9222381184>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao9222381184> <http://www.ifomis.org/bfo/1.1/snap#Quality>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao9271919883> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao9271919883>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao9271919883> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1278200674>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao9291838256> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao9291838256>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao9291838256> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao5798413869>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao941226261> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao941226261>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao941226261> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1436578787>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao957949983> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao957949983>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao957949983> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao-1126011106>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao967304317> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao967304317>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao967304317> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1863391630>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao969067581> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao969067581>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao969067581> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao-943768255>)
+
+# Class: <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao9946511970> (<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao9946511970>)
+
+SubClassOf(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao9946511970> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1057800815>)
+
+# Class: <https://smolang.org/rdfMutate#newNode-0> (<https://smolang.org/rdfMutate#newNode-0>)
+
+SubClassOf(<https://smolang.org/rdfMutate#newNode-0> <https://smolang.org/rdfMutate#newNode-0>)
+
+# Class: <https://smolang.org/rdfMutate#newNode-5> (<https://smolang.org/rdfMutate#newNode-5>)
+
+SubClassOf(<https://smolang.org/rdfMutate#newNode-5> <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao279801585>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: owl:Class (owl:Class)
+
+ClassAssertion(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao854959971> owl:Class)
+
+# Individual: <https://smolang.org/rdfMutate#newNode-1> (<https://smolang.org/rdfMutate#newNode-1>)
+
+ClassAssertion(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao1057800815> <https://smolang.org/rdfMutate#newNode-1>)
+ClassAssertion(<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Quality.owl#sao2088691397> <https://smolang.org/rdfMutate#newNode-1>)
+
+
+)

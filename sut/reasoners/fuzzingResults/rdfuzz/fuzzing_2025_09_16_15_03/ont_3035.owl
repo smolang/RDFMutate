@@ -1,0 +1,525 @@
+Prefix(:=<urn:unnamed:ontology#ont19114209092280426>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:unnamed:ontology#ont19114209092280426>
+
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-0>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_00120>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_22100>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_22000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_62121>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_43000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#phenotyping_methods>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#DOID_952>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_52230>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_44100>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_44000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_23320>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_42000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_12200>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#MEO_001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#OBI_184>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_11200>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#unit>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_41000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_31200>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#RealizableEntity>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_43200>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_13000>))
+Declaration(Class(owl:Class))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#DOID_1008>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_80000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_11300>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_52400>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_62110>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_40000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_00100>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_31100>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#Quality>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_14220>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_11000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_14200>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#frequency>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_11100>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#OBI_70>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_43400>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_52130>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_52240>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_52140>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_15000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_52220>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_15100>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#sequence>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#CHEBI_23888>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_23300>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#MP_0000001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_52300>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#Object>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#genotyping_methods>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#OBI_181>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#OBI_336>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#observations>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_21000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_61000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_52150>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#OBI_264>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_23100>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_52120>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#ProcessAggregate>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_62120>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_60000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#OBI_338>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_23000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_31000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_50000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_52200>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_14100>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_52100>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_14210>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-9>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_52210>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#OBI_272>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_62000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#OBI_126>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#population>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#Process>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_10000>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-3>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_14000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_11400>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#quality>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#physical_quality>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_43100>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_23200>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_23310>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_90000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_12100>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_24000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_30000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_62100>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_43300>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_51000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#variant>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_12000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#OBI_343>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_52110>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#family_member>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#OBI_12>))
+Declaration(Class(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SO_0000240>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_06201>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#has_part>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_00001>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#participates_in>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_07001>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_06200>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_07002>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_06100>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_06211>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_02101>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_01301>))
+Declaration(ObjectProperty(<https://smolang.org/rdfMutate#newNode-9>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_08200>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#has_unit>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_04100>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_07003>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_06311>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_02111>))
+Declaration(ObjectProperty(<https://smolang.org/rdfMutate#newNode-1>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#has_participant>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#OBI_181>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_02201>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_08100>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_07000>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#has_quality>))
+Declaration(ObjectProperty(<https://smolang.org/rdfMutate#newNode-10>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_05001>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_06310>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_06210>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-9>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-5>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_30000>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-4>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-1>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-3>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-8>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_62100>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-0>))
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_00001> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_00001>)
+
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_00001> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#has_part>)
+
+# Object Property: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_06200> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_06200>)
+
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_06200> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#has_participant>)
+
+# Object Property: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_06201> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_06201>)
+
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_06201> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#participates_in>)
+
+# Object Property: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_06210> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_06210>)
+
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_06210> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_06200>)
+
+# Object Property: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_06211> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_06211>)
+
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_06211> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_06201>)
+
+# Object Property: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_07000> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_07000>)
+
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_07000> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_07003>)
+
+# Object Property: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_07001> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_07001>)
+
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_07001> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_07000>)
+
+# Object Property: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_07002> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_07002>)
+
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_07002> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_07000>)
+
+# Object Property: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_07003> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_07003>)
+
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_07003> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_07000>)
+
+# Object Property: <https://smolang.org/rdfMutate#newNode-1> (<https://smolang.org/rdfMutate#newNode-1>)
+
+SubObjectPropertyOf(<https://smolang.org/rdfMutate#newNode-1> <https://smolang.org/rdfMutate#newNode-1>)
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#DOID_1008> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#DOID_1008>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#DOID_1008> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_23320>)
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#DOID_952> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#DOID_952>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#DOID_952> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_15100>)
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#MEO_001> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#MEO_001>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#MEO_001> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_30000>)
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#MP_0000001> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#MP_0000001>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#MP_0000001> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_15000>)
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#OBI_184> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#OBI_184>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#OBI_184> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#genotyping_methods>)
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#OBI_336> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#OBI_336>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#OBI_336> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_24000>)
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_00100> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_00100>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_00100> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#OBI_12>)
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_00100> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_08100> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_00120>))
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_00100> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_08200> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_60000>))
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_11000> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_11000>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_11000> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_10000>)
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_11100> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_11100>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_11100> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_11000>)
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_11100> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_00001> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_23000>))
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_11200> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_11200>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_11200> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_11000>)
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_11200> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_00001> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_23200>))
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_11300> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_11300>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_11300> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_11000>)
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_11400> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_11400>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_11400> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_11000>)
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_12000> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_12000>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_12000> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_10000>)
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_12000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_01301> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_10000>))
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_12100> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_12100>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_12100> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_12000>)
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_12200> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_12200>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_12200> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_12000>)
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_13000> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_13000>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_13000> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_10000>)
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_14000> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_14000>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_14000> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_10000>)
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_14000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_06311> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_62110>))
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_14100> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_14100>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_14100> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_14000>)
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_14200> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_14200>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_14200> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_14000>)
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_14200> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_00001> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_31000>))
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_14210> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_14210>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_14210> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_14200>)
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_14220> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_14220>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_14220> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_14200>)
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_15000> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_15000>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_15000> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_10000>)
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_15000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_06311> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_62120>))
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_15000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#has_quality> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#quality>))
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_15000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#has_unit> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#unit>))
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_15100> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_15100>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_15100> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#OBI_338>)
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_15100> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_15000>)
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_21000> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_21000>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_21000> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#Quality>)
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_21000> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#physical_quality>)
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_21000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_02111> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_22000>))
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_21000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#has_unit> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#unit>))
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_22100> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_22100>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_22100> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#Quality>)
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_22100> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#frequency>)
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_22100> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_02201> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_22000>))
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_22100> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#has_unit> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#unit>))
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_23000> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_23000>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_23000> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#RealizableEntity>)
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_23000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_05001> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#OBI_343>))
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_23100> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_23100>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_23100> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_23000>)
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_23200> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_23200>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_23200> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_23000>)
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_23300> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_23300>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_23300> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_23000>)
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_23310> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_23310>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_23310> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_23300>)
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_23320> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_23320>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_23320> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_23300>)
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_24000> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_24000>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_24000> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#Object>)
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_30000> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_30000>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_30000> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#variant>)
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_30000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_04100> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_14200>))
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_31100> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_31100>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_31100> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_31000>)
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_31200> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_31200>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_31200> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_31000>)
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_41000> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_41000>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_41000> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_40000>)
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_42000> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_42000>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_42000> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_40000>)
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_43000> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_43000>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_43000> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_42000>)
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_43100> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_43100>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_43100> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_43000>)
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_43200> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_43200>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_43200> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_43000>)
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_43300> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_43300>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_43300> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_43000>)
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_43400> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_43400>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_43400> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_43000>)
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_44000> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_44000>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_44000> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_40000>)
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_44100> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_44100>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_44100> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_44000>)
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_50000> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_50000>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_50000> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#family_member>)
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_51000> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_51000>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_51000> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_50000>)
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_52110> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_52110>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_52110> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_52100>)
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_52120> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_52120>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_52120> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_52100>)
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_52130> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_52130>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_52130> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_52100>)
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_52140> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_52140>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_52140> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_52100>)
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_52150> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_52150>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_52150> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_52100>)
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_52210> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_52210>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_52210> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_52200>)
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_52220> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_52220>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_52220> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_52200>)
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_52230> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_52230>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_52230> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_52200>)
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_52240> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_52240>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_52240> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_52200>)
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_52300> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_52300>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_52300> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#OBI_264>)
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_52300> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_00001> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_51000>))
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_60000> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_60000>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_60000> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#ProcessAggregate>)
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_61000> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_61000>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_61000> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#Process>)
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_62000> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_62000>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_62000> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#OBI_272>)
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_62000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_00001> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_23000>))
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_62000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_00001> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_62100>))
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_62000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_06100> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_60000>))
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_62100> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_62100>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_62100> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#OBI_70>)
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_62100> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_06310> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_10000>))
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_62110> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_62110>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_62110> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_62100>)
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_62120> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_62120>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_62120> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_62100>)
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_62121> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_62121>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_62121> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_62120>)
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SO_0000240> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SO_0000240>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SO_0000240> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_14100>)
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#genotyping_methods> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#genotyping_methods>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#genotyping_methods> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_62110>)
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#observations> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#observations>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#observations> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_62120>)
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#phenotyping_methods> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#phenotyping_methods>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#phenotyping_methods> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_62120>)
+
+# Class: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#sequence> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#sequence>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#sequence> <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#OBI_126>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_30000> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_30000>)
+
+ClassAssertion(owl:Class <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_30000>)
+
+# Individual: <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_62100> (<http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_62100>)
+
+ClassAssertion(owl:Class <http://purl.obolibrary.org/obo/4c831b62-03a2-477e-a50d-796485e67963_sopharm.obo#SOPHARM_62100>)
+
+# Individual: <https://smolang.org/rdfMutate#newNode-0> (<https://smolang.org/rdfMutate#newNode-0>)
+
+ClassAssertion(owl:Class <https://smolang.org/rdfMutate#newNode-0>)
+ClassAssertion(<https://smolang.org/rdfMutate#newNode-0> <https://smolang.org/rdfMutate#newNode-0>)
+
+# Individual: <https://smolang.org/rdfMutate#newNode-3> (<https://smolang.org/rdfMutate#newNode-3>)
+
+ClassAssertion(owl:Class <https://smolang.org/rdfMutate#newNode-3>)
+
+# Individual: <https://smolang.org/rdfMutate#newNode-9> (<https://smolang.org/rdfMutate#newNode-9>)
+
+ClassAssertion(owl:Class <https://smolang.org/rdfMutate#newNode-9>)
+ClassAssertion(<https://smolang.org/rdfMutate#newNode-9> <https://smolang.org/rdfMutate#newNode-9>)
+
+
+)

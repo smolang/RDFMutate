@@ -1,0 +1,702 @@
+Prefix(:=<urn:unnamed:ontology#ont19101043581625194>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:unnamed:ontology#ont19101043581625194>
+
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000062>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000006>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000052>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000088>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000083>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000076>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000017>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000063>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000093>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000040>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000127>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000038>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000008>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000057>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000115>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000003>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000019>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000068>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000103>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000014>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000129>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000089>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000024>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000033>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000124>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000117>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000020>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000104>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000054>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000130>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000041>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000065>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000009>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000095>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000082>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000075>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000090>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000110>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000109>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000070>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000046>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-1>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000034>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000002>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000026>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000022>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000013>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000106>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000047>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000096>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000123>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000043>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000116>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000111>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000053>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000084>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000077>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-2>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000064>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000072>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000039>))
+Declaration(Class(owl:ObjectProperty))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000120>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000027>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000004>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000015>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000091>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000098>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000125>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000036>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000085>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000078>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000105>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000118>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000113>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000055>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000100>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000042>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000050>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000030>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000066>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000061>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000087>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000071>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000029>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000016>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000132>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000092>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000126>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000119>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000007>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000056>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000080>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000107>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000067>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000048>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000044>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000035>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000102>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000128>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000112>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000032>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000059>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000023>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000133>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000073>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000011>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000099>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000060>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000018>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000094>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000121>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000028>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000081>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000051>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000108>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000049>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000058>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000045>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000069>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000010>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000086>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000037>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000079>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000114>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000025>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000074>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000101>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000012>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000021>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-5>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000031>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000131>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMD_0000122>))
+Declaration(ObjectProperty(<https://smolang.org/rdfMutate#newNode-0>))
+Declaration(ObjectProperty(<https://smolang.org/rdfMutate#newNode-3>))
+Declaration(ObjectProperty(<https://smolang.org/rdfMutate#newNode-8>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-4>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-1>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-3>))
+############################
+#   Object Properties
+############################
+
+# Object Property: <https://smolang.org/rdfMutate#newNode-8> (<https://smolang.org/rdfMutate#newNode-8>)
+
+SubObjectPropertyOf(<https://smolang.org/rdfMutate#newNode-8> <https://smolang.org/rdfMutate#newNode-8>)
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000001> (<http://purl.obolibrary.org/obo/OGMD_0000001>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000001> <http://purl.obolibrary.org/obo/OGMD_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000002> (<http://purl.obolibrary.org/obo/OGMD_0000002>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000002> <http://purl.obolibrary.org/obo/OGMD_0000001>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000003> (<http://purl.obolibrary.org/obo/OGMD_0000003>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000003> <http://purl.obolibrary.org/obo/OGMD_0000001>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000004> (<http://purl.obolibrary.org/obo/OGMD_0000004>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000004> <http://purl.obolibrary.org/obo/OGMD_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000006> (<http://purl.obolibrary.org/obo/OGMD_0000006>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000006> <http://purl.obolibrary.org/obo/OGMD_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000007> (<http://purl.obolibrary.org/obo/OGMD_0000007>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000007> <http://purl.obolibrary.org/obo/OGMD_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000009> (<http://purl.obolibrary.org/obo/OGMD_0000009>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000009> <http://purl.obolibrary.org/obo/OGMD_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000010> (<http://purl.obolibrary.org/obo/OGMD_0000010>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000010> <http://purl.obolibrary.org/obo/OGMD_0000001>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000011> (<http://purl.obolibrary.org/obo/OGMD_0000011>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000011> <http://purl.obolibrary.org/obo/OGMD_0000001>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000012> (<http://purl.obolibrary.org/obo/OGMD_0000012>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000012> <http://purl.obolibrary.org/obo/OGMD_0000001>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000013> (<http://purl.obolibrary.org/obo/OGMD_0000013>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000013> <http://purl.obolibrary.org/obo/OGMD_0000002>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000014> (<http://purl.obolibrary.org/obo/OGMD_0000014>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000014> <http://purl.obolibrary.org/obo/OGMD_0000002>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000015> (<http://purl.obolibrary.org/obo/OGMD_0000015>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000015> <http://purl.obolibrary.org/obo/OGMD_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000016> (<http://purl.obolibrary.org/obo/OGMD_0000016>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000016> <http://purl.obolibrary.org/obo/OGMD_0000003>)
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000016> <http://purl.obolibrary.org/obo/OGMD_0000057>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000017> (<http://purl.obolibrary.org/obo/OGMD_0000017>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000017> <http://purl.obolibrary.org/obo/OGMD_0000016>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000018> (<http://purl.obolibrary.org/obo/OGMD_0000018>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000018> <http://purl.obolibrary.org/obo/OGMD_0000016>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000019> (<http://purl.obolibrary.org/obo/OGMD_0000019>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000019> <http://purl.obolibrary.org/obo/OGMD_0000016>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000020> (<http://purl.obolibrary.org/obo/OGMD_0000020>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000020> <http://purl.obolibrary.org/obo/OGMD_0000016>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000021> (<http://purl.obolibrary.org/obo/OGMD_0000021>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000021> <http://purl.obolibrary.org/obo/OGMD_0000016>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000022> (<http://purl.obolibrary.org/obo/OGMD_0000022>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000022> <http://purl.obolibrary.org/obo/OGMD_0000011>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000023> (<http://purl.obolibrary.org/obo/OGMD_0000023>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000023> <http://purl.obolibrary.org/obo/OGMD_0000011>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000024> (<http://purl.obolibrary.org/obo/OGMD_0000024>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000024> <http://purl.obolibrary.org/obo/OGMD_0000011>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000025> (<http://purl.obolibrary.org/obo/OGMD_0000025>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000025> <http://purl.obolibrary.org/obo/OGMD_0000011>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000026> (<http://purl.obolibrary.org/obo/OGMD_0000026>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000026> <http://purl.obolibrary.org/obo/OGMD_0000024>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000027> (<http://purl.obolibrary.org/obo/OGMD_0000027>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000027> <http://purl.obolibrary.org/obo/OGMD_0000012>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000028> (<http://purl.obolibrary.org/obo/OGMD_0000028>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000028> <http://purl.obolibrary.org/obo/OGMD_0000012>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000029> (<http://purl.obolibrary.org/obo/OGMD_0000029>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000029> <http://purl.obolibrary.org/obo/OGMD_0000012>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000030> (<http://purl.obolibrary.org/obo/OGMD_0000030>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000030> <http://purl.obolibrary.org/obo/OGMD_0000012>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000031> (<http://purl.obolibrary.org/obo/OGMD_0000031>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000031> <http://purl.obolibrary.org/obo/OGMD_0000012>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000032> (<http://purl.obolibrary.org/obo/OGMD_0000032>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000032> <http://purl.obolibrary.org/obo/OGMD_0000012>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000033> (<http://purl.obolibrary.org/obo/OGMD_0000033>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000033> <http://purl.obolibrary.org/obo/OGMD_0000012>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000034> (<http://purl.obolibrary.org/obo/OGMD_0000034>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000034> <http://purl.obolibrary.org/obo/OGMD_0000028>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000035> (<http://purl.obolibrary.org/obo/OGMD_0000035>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000035> <http://purl.obolibrary.org/obo/OGMD_0000028>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000036> (<http://purl.obolibrary.org/obo/OGMD_0000036>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000036> <http://purl.obolibrary.org/obo/OGMD_0000028>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000037> (<http://purl.obolibrary.org/obo/OGMD_0000037>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000037> <http://purl.obolibrary.org/obo/OGMD_0000028>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000038> (<http://purl.obolibrary.org/obo/OGMD_0000038>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000038> <http://purl.obolibrary.org/obo/OGMD_0000028>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000039> (<http://purl.obolibrary.org/obo/OGMD_0000039>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000039> <http://purl.obolibrary.org/obo/OGMD_0000028>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000040> (<http://purl.obolibrary.org/obo/OGMD_0000040>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000040> <http://purl.obolibrary.org/obo/OGMD_0000028>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000041> (<http://purl.obolibrary.org/obo/OGMD_0000041>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000041> <http://purl.obolibrary.org/obo/OGMD_0000028>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000042> (<http://purl.obolibrary.org/obo/OGMD_0000042>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000042> <http://purl.obolibrary.org/obo/OGMD_0000028>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000043> (<http://purl.obolibrary.org/obo/OGMD_0000043>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000043> <http://purl.obolibrary.org/obo/OGMD_0000028>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000044> (<http://purl.obolibrary.org/obo/OGMD_0000044>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000044> <http://purl.obolibrary.org/obo/OGMD_0000029>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000045> (<http://purl.obolibrary.org/obo/OGMD_0000045>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000045> <http://purl.obolibrary.org/obo/OGMD_0000029>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000046> (<http://purl.obolibrary.org/obo/OGMD_0000046>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000046> <http://purl.obolibrary.org/obo/OGMD_0000029>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000047> (<http://purl.obolibrary.org/obo/OGMD_0000047>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000047> <http://purl.obolibrary.org/obo/OGMD_0000029>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000048> (<http://purl.obolibrary.org/obo/OGMD_0000048>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000048> <http://purl.obolibrary.org/obo/OGMD_0000029>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000049> (<http://purl.obolibrary.org/obo/OGMD_0000049>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000049> <http://purl.obolibrary.org/obo/OGMD_0000029>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000050> (<http://purl.obolibrary.org/obo/OGMD_0000050>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000050> <http://purl.obolibrary.org/obo/OGMD_0000027>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000051> (<http://purl.obolibrary.org/obo/OGMD_0000051>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000051> <http://purl.obolibrary.org/obo/OGMD_0000027>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000052> (<http://purl.obolibrary.org/obo/OGMD_0000052>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000052> <http://purl.obolibrary.org/obo/OGMD_0000027>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000053> (<http://purl.obolibrary.org/obo/OGMD_0000053>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000053> <http://purl.obolibrary.org/obo/OGMD_0000027>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000054> (<http://purl.obolibrary.org/obo/OGMD_0000054>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000054> <http://purl.obolibrary.org/obo/OGMD_0000027>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000055> (<http://purl.obolibrary.org/obo/OGMD_0000055>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000055> <http://purl.obolibrary.org/obo/OGMD_0000027>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000056> (<http://purl.obolibrary.org/obo/OGMD_0000056>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000056> <http://purl.obolibrary.org/obo/OGMD_0000030>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000057> (<http://purl.obolibrary.org/obo/OGMD_0000057>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000057> <http://purl.obolibrary.org/obo/OGMD_0000030>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000058> (<http://purl.obolibrary.org/obo/OGMD_0000058>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000058> <http://purl.obolibrary.org/obo/OGMD_0000056>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000059> (<http://purl.obolibrary.org/obo/OGMD_0000059>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000059> <http://purl.obolibrary.org/obo/OGMD_0000056>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000060> (<http://purl.obolibrary.org/obo/OGMD_0000060>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000060> <http://purl.obolibrary.org/obo/OGMD_0000056>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000061> (<http://purl.obolibrary.org/obo/OGMD_0000061>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000061> <http://purl.obolibrary.org/obo/OGMD_0000056>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000062> (<http://purl.obolibrary.org/obo/OGMD_0000062>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000062> <http://purl.obolibrary.org/obo/OGMD_0000057>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000063> (<http://purl.obolibrary.org/obo/OGMD_0000063>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000063> <http://purl.obolibrary.org/obo/OGMD_0000031>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000064> (<http://purl.obolibrary.org/obo/OGMD_0000064>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000064> <http://purl.obolibrary.org/obo/OGMD_0000031>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000065> (<http://purl.obolibrary.org/obo/OGMD_0000065>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000065> <http://purl.obolibrary.org/obo/OGMD_0000032>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000066> (<http://purl.obolibrary.org/obo/OGMD_0000066>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000066> <http://purl.obolibrary.org/obo/OGMD_0000032>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000067> (<http://purl.obolibrary.org/obo/OGMD_0000067>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000067> <http://purl.obolibrary.org/obo/OGMD_0000032>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000068> (<http://purl.obolibrary.org/obo/OGMD_0000068>)
+
+EquivalentClasses(<http://purl.obolibrary.org/obo/OGMD_0000068> <https://smolang.org/rdfMutate#newNode-2>)
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000068> <http://purl.obolibrary.org/obo/OGMD_0000032>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000069> (<http://purl.obolibrary.org/obo/OGMD_0000069>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000069> <http://purl.obolibrary.org/obo/OGMD_0000032>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000070> (<http://purl.obolibrary.org/obo/OGMD_0000070>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000070> <http://purl.obolibrary.org/obo/OGMD_0000032>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000071> (<http://purl.obolibrary.org/obo/OGMD_0000071>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000071> <http://purl.obolibrary.org/obo/OGMD_0000032>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000072> (<http://purl.obolibrary.org/obo/OGMD_0000072>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000072> <http://purl.obolibrary.org/obo/OGMD_0000032>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000073> (<http://purl.obolibrary.org/obo/OGMD_0000073>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000073> <http://purl.obolibrary.org/obo/OGMD_0000032>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000074> (<http://purl.obolibrary.org/obo/OGMD_0000074>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000074> <http://purl.obolibrary.org/obo/OGMD_0000032>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000075> (<http://purl.obolibrary.org/obo/OGMD_0000075>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000075> <http://purl.obolibrary.org/obo/OGMD_0000033>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000076> (<http://purl.obolibrary.org/obo/OGMD_0000076>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000076> <http://purl.obolibrary.org/obo/OGMD_0000033>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000077> (<http://purl.obolibrary.org/obo/OGMD_0000077>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000077> <http://purl.obolibrary.org/obo/OGMD_0000033>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000078> (<http://purl.obolibrary.org/obo/OGMD_0000078>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000078> <http://purl.obolibrary.org/obo/OGMD_0000004>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000079> (<http://purl.obolibrary.org/obo/OGMD_0000079>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000079> <http://purl.obolibrary.org/obo/OGMD_0000004>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000080> (<http://purl.obolibrary.org/obo/OGMD_0000080>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000080> <http://purl.obolibrary.org/obo/OGMD_0000004>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000081> (<http://purl.obolibrary.org/obo/OGMD_0000081>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000081> <http://purl.obolibrary.org/obo/OGMD_0000080>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000082> (<http://purl.obolibrary.org/obo/OGMD_0000082>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000082> <http://purl.obolibrary.org/obo/OGMD_0000080>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000083> (<http://purl.obolibrary.org/obo/OGMD_0000083>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000083> <http://purl.obolibrary.org/obo/OGMD_0000080>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000084> (<http://purl.obolibrary.org/obo/OGMD_0000084>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000084> <http://purl.obolibrary.org/obo/OGMD_0000004>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000085> (<http://purl.obolibrary.org/obo/OGMD_0000085>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000085> <http://purl.obolibrary.org/obo/OGMD_0000004>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000086> (<http://purl.obolibrary.org/obo/OGMD_0000086>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000086> <http://purl.obolibrary.org/obo/OGMD_0000004>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000087> (<http://purl.obolibrary.org/obo/OGMD_0000087>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000087> <http://purl.obolibrary.org/obo/OGMD_0000085>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000088> (<http://purl.obolibrary.org/obo/OGMD_0000088>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000088> <http://purl.obolibrary.org/obo/OGMD_0000085>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000089> (<http://purl.obolibrary.org/obo/OGMD_0000089>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000089> <http://purl.obolibrary.org/obo/OGMD_0000085>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000090> (<http://purl.obolibrary.org/obo/OGMD_0000090>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000090> <http://purl.obolibrary.org/obo/OGMD_0000085>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000091> (<http://purl.obolibrary.org/obo/OGMD_0000091>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000091> <http://purl.obolibrary.org/obo/OGMD_0000086>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000092> (<http://purl.obolibrary.org/obo/OGMD_0000092>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000092> <http://purl.obolibrary.org/obo/OGMD_0000086>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000093> (<http://purl.obolibrary.org/obo/OGMD_0000093>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000093> <http://purl.obolibrary.org/obo/OGMD_0000091>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000094> (<http://purl.obolibrary.org/obo/OGMD_0000094>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000094> <http://purl.obolibrary.org/obo/OGMD_0000091>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000095> (<http://purl.obolibrary.org/obo/OGMD_0000095>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000095> <http://purl.obolibrary.org/obo/OGMD_0000091>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000096> (<http://purl.obolibrary.org/obo/OGMD_0000096>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000096> <http://purl.obolibrary.org/obo/OGMD_0000091>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000098> (<http://purl.obolibrary.org/obo/OGMD_0000098>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000098> <http://purl.obolibrary.org/obo/OGMD_0000004>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000099> (<http://purl.obolibrary.org/obo/OGMD_0000099>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000099> <http://purl.obolibrary.org/obo/OGMD_0000004>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000100> (<http://purl.obolibrary.org/obo/OGMD_0000100>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000100> <http://purl.obolibrary.org/obo/OGMD_0000099>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000101> (<http://purl.obolibrary.org/obo/OGMD_0000101>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000101> <http://purl.obolibrary.org/obo/OGMD_0000099>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000102> (<http://purl.obolibrary.org/obo/OGMD_0000102>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000102> <http://purl.obolibrary.org/obo/OGMD_0000100>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000103> (<http://purl.obolibrary.org/obo/OGMD_0000103>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000103> <http://purl.obolibrary.org/obo/OGMD_0000100>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000104> (<http://purl.obolibrary.org/obo/OGMD_0000104>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000104> <http://purl.obolibrary.org/obo/OGMD_0000100>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000105> (<http://purl.obolibrary.org/obo/OGMD_0000105>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000105> <http://purl.obolibrary.org/obo/OGMD_0000100>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000106> (<http://purl.obolibrary.org/obo/OGMD_0000106>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000106> <http://purl.obolibrary.org/obo/OGMD_0000101>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000107> (<http://purl.obolibrary.org/obo/OGMD_0000107>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000107> <http://purl.obolibrary.org/obo/OGMD_0000101>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000108> (<http://purl.obolibrary.org/obo/OGMD_0000108>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000108> <http://purl.obolibrary.org/obo/OGMD_0000101>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000109> (<http://purl.obolibrary.org/obo/OGMD_0000109>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000109> <http://purl.obolibrary.org/obo/OGMD_0000101>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000110> (<http://purl.obolibrary.org/obo/OGMD_0000110>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000110> <http://purl.obolibrary.org/obo/OGMD_0000101>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000111> (<http://purl.obolibrary.org/obo/OGMD_0000111>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000111> <http://purl.obolibrary.org/obo/OGMD_0000101>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000112> (<http://purl.obolibrary.org/obo/OGMD_0000112>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000112> <http://purl.obolibrary.org/obo/OGMD_0000004>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000113> (<http://purl.obolibrary.org/obo/OGMD_0000113>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000113> <http://purl.obolibrary.org/obo/OGMD_0000004>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000114> (<http://purl.obolibrary.org/obo/OGMD_0000114>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000114> <http://purl.obolibrary.org/obo/OGMD_0000113>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000116> (<http://purl.obolibrary.org/obo/OGMD_0000116>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000116> <http://purl.obolibrary.org/obo/OGMD_0000006>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000117> (<http://purl.obolibrary.org/obo/OGMD_0000117>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000117> <http://purl.obolibrary.org/obo/OGMD_0000008>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000118> (<http://purl.obolibrary.org/obo/OGMD_0000118>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000118> <http://purl.obolibrary.org/obo/OGMD_0000008>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000119> (<http://purl.obolibrary.org/obo/OGMD_0000119>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000119> <http://purl.obolibrary.org/obo/OGMD_0000008>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000120> (<http://purl.obolibrary.org/obo/OGMD_0000120>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000120> <http://purl.obolibrary.org/obo/OGMD_0000008>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000121> (<http://purl.obolibrary.org/obo/OGMD_0000121>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000121> <http://purl.obolibrary.org/obo/OGMD_0000008>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000122> (<http://purl.obolibrary.org/obo/OGMD_0000122>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000122> <http://purl.obolibrary.org/obo/OGMD_0000008>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000123> (<http://purl.obolibrary.org/obo/OGMD_0000123>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000123> <http://purl.obolibrary.org/obo/OGMD_0000008>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000124> (<http://purl.obolibrary.org/obo/OGMD_0000124>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000124> <http://purl.obolibrary.org/obo/OGMD_0000008>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000125> (<http://purl.obolibrary.org/obo/OGMD_0000125>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000125> <http://purl.obolibrary.org/obo/OGMD_0000008>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000126> (<http://purl.obolibrary.org/obo/OGMD_0000126>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000126> <http://purl.obolibrary.org/obo/OGMD_0000008>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000127> (<http://purl.obolibrary.org/obo/OGMD_0000127>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000127> <http://purl.obolibrary.org/obo/OGMD_0000008>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000128> (<http://purl.obolibrary.org/obo/OGMD_0000128>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000128> <http://purl.obolibrary.org/obo/OGMD_0000008>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000129> (<http://purl.obolibrary.org/obo/OGMD_0000129>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000129> <http://purl.obolibrary.org/obo/OGMD_0000008>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000130> (<http://purl.obolibrary.org/obo/OGMD_0000130>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000130> <http://purl.obolibrary.org/obo/OGMD_0000008>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000131> (<http://purl.obolibrary.org/obo/OGMD_0000131>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000131> <http://purl.obolibrary.org/obo/OGMD_0000008>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000132> (<http://purl.obolibrary.org/obo/OGMD_0000132>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000132> <http://purl.obolibrary.org/obo/OGMD_0000010>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMD_0000133> (<http://purl.obolibrary.org/obo/OGMD_0000133>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMD_0000133> <http://purl.obolibrary.org/obo/OGMD_0000113>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <https://smolang.org/rdfMutate#newNode-1> (<https://smolang.org/rdfMutate#newNode-1>)
+
+ClassAssertion(<https://smolang.org/rdfMutate#newNode-1> <https://smolang.org/rdfMutate#newNode-1>)
+
+# Individual: <https://smolang.org/rdfMutate#newNode-3> (<https://smolang.org/rdfMutate#newNode-3>)
+
+ClassAssertion(owl:ObjectProperty <https://smolang.org/rdfMutate#newNode-3>)
+
+# Individual: <https://smolang.org/rdfMutate#newNode-4> (<https://smolang.org/rdfMutate#newNode-4>)
+
+ClassAssertion(owl:Thing <https://smolang.org/rdfMutate#newNode-4>)
+
+
+)

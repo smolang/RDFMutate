@@ -1,0 +1,630 @@
+Prefix(:=<urn:unnamed:ontology#ont19096889510974218>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:unnamed:ontology#ont19096889510974218>
+
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ChildDepressionScoreDifference>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HighReductionInChildDepressionScore>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#SatietyMeasure>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#GenotypeMeasure>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HamiltonDepressionScoreDifference>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#PharmacodynamicMeasure>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#GeneExpressionMeasure>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#WeightLoss>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#PulmonaryFunctionMeasure>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ForcedVitalCapacity>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ModerateReductionInHamiltonAnxietyScore>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#LipidProfile>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#DepressionMeasure>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#DrugEfficacy>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#LowMontgomeryAsbergDepressionRating>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HamiltonDepressionMeasure>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#Satiety>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BodyMassIndexDecrease>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ZeroDrugEfficacy>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#DiseaseSusceptibilityOdds>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ExerciseResponse>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HighReductionInMontgomeryAsbergDepressionRating>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#TaxonomicMeasure>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#MetabolicMeasure>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#EventFreeSurvivalTime>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ASAAMeasure>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#DailyBloodPressure>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#DecreasedGeneExpression>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#SimilarRemissionOddsRatio>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#IncreasedGeneExpression>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#MolecularMeasure>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#PlasmaDrugConcentration>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ErythromycinClearanceMeasure>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#TissueMeasure>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ElectrocardiogramQTInterval>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#WeigthGain>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HighHamiltonDepressionScore>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HighDrugEfficacy>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#SatietyDecrease>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#LowReductionInChildDepressionScore>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BodyMassIndexDifference>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HamiltonDepressionScore>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#DrugClearance>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#RemissionOddsRatio>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ForcedExperiatoryVolume>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#WeightMeasure>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ASAAConcentrationDifference>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ModerateRemission>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#SimilarDiseaseSusceptibilityOdds>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#LowRemission>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#AnxietyMeasure>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#CognitiveMeasure>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#24HourBloodPressure>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HighReductionInHamiltonDepressionScore>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#SideEffectRate>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#NormalGeneExpression>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ZeroRemission>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ModerateReductionInMontgomeryAsbergDepressionRating>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#PharmacokineticMeasure>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#MontgomeryAsbergDepressionMeasure>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HighRemission>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BodyMassIndex>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#LowerDiseaseSusceptibilityOdds>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ModerateMontgomeryAsbergDepressionRating>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ChildDepressionMeasure>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BodyMassIndexIncrease>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HigherDiseaseSusceptibiltyOdds>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ChildDepressionScore>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#AirwayResponsivenessUsingMethacholine>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#SideEffectFrequency>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HighReductionInHamiltonAnxietyScore>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BloodPressure>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ReninAngiotensinSystemMeasure>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#LowRemissionOddsRatio>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#DrugEfficacyMeasure>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ModerateHamiltonDepressionScore>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#MontgomeryAsbergDepressionRatingDifference>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#Race>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ModerateReductionInChildDepressionScore>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#CoagulationProfile>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#NeoplasmFrequency>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#DiseaseFrequency>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#Gender>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HamiltonAnxietyScore>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#SatietyFrequency>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#CellCount>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ModerateReductionInHamiltonDepressionScore>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#MontgomeryAsbergDepressionRating>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#PopulationVariation>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ERVisitFrequency>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BoneMineralDensity>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HamiltonAnxietyScoreDifference>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#AsthmaFrequency>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BloodSerumProteinCount>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BiologicalMeasure>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#RemissionFrequency>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ASAAConcentration>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#SatietyIncrease>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#Dose>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#MyocardialInfarctionFrequency>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ASAAConcentrationDecrease>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ClinicalOutcomeMeasure>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#LowReductionInMontgomeryAsbergDepressionRating>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HomocysteineLevel>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#RemissionMeasure>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#GeneExpressionDifference>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#SatietyDifference>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#LowReductionInHamiltonAnxietyScore>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#LowHamiltonDepressionScore>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BodyMassIndexMeasure>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#Weigth>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HighMontgomeryAsbergDepressionRating>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#GeneExpression>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BiophysicalMeasure>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#WeigthDifference>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#LowDrugEfficacy>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HighRemissionOddsRatio>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#PathogenCount>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#QualityOfLife>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ASAAConcentrationIncrease>))
+Declaration(Class(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#LowReductionInHamiltonDepressionScore>))
+Declaration(ObjectProperty(<https://smolang.org/rdfMutate#newNode-0>))
+Declaration(NamedIndividual(owl:Class))
+Declaration(NamedIndividual(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HighRemissionOddsRatio>))
+
+############################
+#   Classes
+############################
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ASAAConcentration> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ASAAConcentration>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ASAAConcentration> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ASAAMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ASAAConcentrationDecrease> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ASAAConcentrationDecrease>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ASAAConcentrationDecrease> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ASAAConcentrationDifference>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ASAAConcentrationDifference> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ASAAConcentrationDifference>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ASAAConcentrationDifference> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ASAAMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ASAAConcentrationIncrease> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ASAAConcentrationIncrease>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ASAAConcentrationIncrease> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ASAAConcentrationDifference>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ASAAMeasure> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ASAAMeasure>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ASAAMeasure> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#MolecularMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#AirwayResponsivenessUsingMethacholine> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#AirwayResponsivenessUsingMethacholine>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#AirwayResponsivenessUsingMethacholine> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#PulmonaryFunctionMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#AnxietyMeasure> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#AnxietyMeasure>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#AnxietyMeasure> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#CognitiveMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#AsthmaFrequency> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#AsthmaFrequency>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#AsthmaFrequency> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#DiseaseFrequency>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BiophysicalMeasure> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BiophysicalMeasure>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BiophysicalMeasure> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BiologicalMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BloodPressure> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BloodPressure>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BloodPressure> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BiophysicalMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BloodSerumProteinCount> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BloodSerumProteinCount>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BloodSerumProteinCount> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#TissueMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BodyMassIndex> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BodyMassIndex>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BodyMassIndex> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BodyMassIndexMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BodyMassIndexDecrease> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BodyMassIndexDecrease>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BodyMassIndexDecrease> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BodyMassIndexDifference>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BodyMassIndexDifference> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BodyMassIndexDifference>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BodyMassIndexDifference> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BodyMassIndexMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BodyMassIndexIncrease> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BodyMassIndexIncrease>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BodyMassIndexIncrease> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BodyMassIndexDifference>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BodyMassIndexMeasure> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BodyMassIndexMeasure>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BodyMassIndexMeasure> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BiophysicalMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BoneMineralDensity> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BoneMineralDensity>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BoneMineralDensity> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#TissueMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#CellCount> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#CellCount>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#CellCount> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#TissueMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ChildDepressionMeasure> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ChildDepressionMeasure>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ChildDepressionMeasure> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#DepressionMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ChildDepressionScore> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ChildDepressionScore>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ChildDepressionScore> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ChildDepressionMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ChildDepressionScoreDifference> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ChildDepressionScoreDifference>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ChildDepressionScoreDifference> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ChildDepressionMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ClinicalOutcomeMeasure> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ClinicalOutcomeMeasure>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ClinicalOutcomeMeasure> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BiologicalMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#CoagulationProfile> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#CoagulationProfile>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#CoagulationProfile> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#TissueMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#CognitiveMeasure> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#CognitiveMeasure>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#CognitiveMeasure> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BiologicalMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#DailyBloodPressure> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#DailyBloodPressure>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#DailyBloodPressure> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BloodPressure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#DecreasedGeneExpression> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#DecreasedGeneExpression>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#DecreasedGeneExpression> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#GeneExpressionDifference>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#DepressionMeasure> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#DepressionMeasure>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#DepressionMeasure> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#CognitiveMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#DiseaseFrequency> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#DiseaseFrequency>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#DiseaseFrequency> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ClinicalOutcomeMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#DiseaseSusceptibilityOdds> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#DiseaseSusceptibilityOdds>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#DiseaseSusceptibilityOdds> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ClinicalOutcomeMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#Dose> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#Dose>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#Dose> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#PharmacokineticMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#DrugClearance> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#DrugClearance>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#DrugClearance> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#PharmacokineticMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#DrugEfficacy> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#DrugEfficacy>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#DrugEfficacy> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#DrugEfficacyMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#DrugEfficacyMeasure> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#DrugEfficacyMeasure>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#DrugEfficacyMeasure> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#PharmacodynamicMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ERVisitFrequency> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ERVisitFrequency>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ERVisitFrequency> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ClinicalOutcomeMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ElectrocardiogramQTInterval> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ElectrocardiogramQTInterval>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ElectrocardiogramQTInterval> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BiophysicalMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ErythromycinClearanceMeasure> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ErythromycinClearanceMeasure>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ErythromycinClearanceMeasure> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#MetabolicMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#EventFreeSurvivalTime> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#EventFreeSurvivalTime>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#EventFreeSurvivalTime> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ClinicalOutcomeMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ExerciseResponse> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ExerciseResponse>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ExerciseResponse> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BiophysicalMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ForcedExperiatoryVolume> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ForcedExperiatoryVolume>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ForcedExperiatoryVolume> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#PulmonaryFunctionMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ForcedVitalCapacity> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ForcedVitalCapacity>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ForcedVitalCapacity> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#PulmonaryFunctionMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#Gender> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#Gender>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#Gender> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#TaxonomicMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#GeneExpression> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#GeneExpression>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#GeneExpression> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#GeneExpressionMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#GeneExpressionDifference> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#GeneExpressionDifference>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#GeneExpressionDifference> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#GeneExpressionMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#GeneExpressionMeasure> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#GeneExpressionMeasure>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#GeneExpressionMeasure> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#MolecularMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#GenotypeMeasure> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#GenotypeMeasure>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#GenotypeMeasure> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BiologicalMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HamiltonAnxietyScore> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HamiltonAnxietyScore>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HamiltonAnxietyScore> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#AnxietyMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HamiltonAnxietyScoreDifference> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HamiltonAnxietyScoreDifference>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HamiltonAnxietyScoreDifference> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#AnxietyMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HamiltonDepressionMeasure> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HamiltonDepressionMeasure>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HamiltonDepressionMeasure> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#DepressionMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HamiltonDepressionScore> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HamiltonDepressionScore>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HamiltonDepressionScore> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HamiltonDepressionMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HamiltonDepressionScoreDifference> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HamiltonDepressionScoreDifference>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HamiltonDepressionScoreDifference> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HamiltonDepressionMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HighDrugEfficacy> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HighDrugEfficacy>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HighDrugEfficacy> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#DrugEfficacy>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HighHamiltonDepressionScore> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HighHamiltonDepressionScore>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HighHamiltonDepressionScore> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HamiltonDepressionScore>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HighMontgomeryAsbergDepressionRating> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HighMontgomeryAsbergDepressionRating>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HighMontgomeryAsbergDepressionRating> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#MontgomeryAsbergDepressionRating>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HighReductionInChildDepressionScore> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HighReductionInChildDepressionScore>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HighReductionInChildDepressionScore> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ChildDepressionScoreDifference>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HighReductionInHamiltonAnxietyScore> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HighReductionInHamiltonAnxietyScore>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HighReductionInHamiltonAnxietyScore> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HamiltonAnxietyScoreDifference>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HighReductionInHamiltonDepressionScore> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HighReductionInHamiltonDepressionScore>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HighReductionInHamiltonDepressionScore> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HamiltonDepressionScoreDifference>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HighReductionInMontgomeryAsbergDepressionRating> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HighReductionInMontgomeryAsbergDepressionRating>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HighReductionInMontgomeryAsbergDepressionRating> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#MontgomeryAsbergDepressionRatingDifference>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HighRemission> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HighRemission>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HighRemission> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#RemissionFrequency>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HighRemissionOddsRatio> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HighRemissionOddsRatio>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HighRemissionOddsRatio> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#RemissionOddsRatio>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HigherDiseaseSusceptibiltyOdds> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HigherDiseaseSusceptibiltyOdds>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HigherDiseaseSusceptibiltyOdds> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#DiseaseSusceptibilityOdds>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HomocysteineLevel> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HomocysteineLevel>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HomocysteineLevel> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#TissueMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#IncreasedGeneExpression> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#IncreasedGeneExpression>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#IncreasedGeneExpression> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#GeneExpressionDifference>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#LipidProfile> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#LipidProfile>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#LipidProfile> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#TissueMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#LowDrugEfficacy> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#LowDrugEfficacy>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#LowDrugEfficacy> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#DrugEfficacy>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#LowHamiltonDepressionScore> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#LowHamiltonDepressionScore>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#LowHamiltonDepressionScore> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HamiltonDepressionScore>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#LowMontgomeryAsbergDepressionRating> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#LowMontgomeryAsbergDepressionRating>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#LowMontgomeryAsbergDepressionRating> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#MontgomeryAsbergDepressionRating>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#LowReductionInChildDepressionScore> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#LowReductionInChildDepressionScore>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#LowReductionInChildDepressionScore> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ChildDepressionScoreDifference>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#LowReductionInHamiltonAnxietyScore> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#LowReductionInHamiltonAnxietyScore>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#LowReductionInHamiltonAnxietyScore> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HamiltonAnxietyScoreDifference>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#LowReductionInHamiltonDepressionScore> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#LowReductionInHamiltonDepressionScore>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#LowReductionInHamiltonDepressionScore> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HamiltonDepressionScoreDifference>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#LowReductionInMontgomeryAsbergDepressionRating> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#LowReductionInMontgomeryAsbergDepressionRating>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#LowReductionInMontgomeryAsbergDepressionRating> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#MontgomeryAsbergDepressionRatingDifference>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#LowRemission> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#LowRemission>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#LowRemission> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#RemissionFrequency>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#LowRemissionOddsRatio> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#LowRemissionOddsRatio>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#LowRemissionOddsRatio> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#RemissionOddsRatio>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#LowerDiseaseSusceptibilityOdds> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#LowerDiseaseSusceptibilityOdds>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#LowerDiseaseSusceptibilityOdds> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#DiseaseSusceptibilityOdds>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#MetabolicMeasure> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#MetabolicMeasure>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#MetabolicMeasure> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BiologicalMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ModerateHamiltonDepressionScore> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ModerateHamiltonDepressionScore>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ModerateHamiltonDepressionScore> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HamiltonDepressionScore>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ModerateMontgomeryAsbergDepressionRating> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ModerateMontgomeryAsbergDepressionRating>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ModerateMontgomeryAsbergDepressionRating> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#MontgomeryAsbergDepressionRating>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ModerateReductionInChildDepressionScore> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ModerateReductionInChildDepressionScore>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ModerateReductionInChildDepressionScore> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ChildDepressionScoreDifference>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ModerateReductionInHamiltonAnxietyScore> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ModerateReductionInHamiltonAnxietyScore>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ModerateReductionInHamiltonAnxietyScore> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HamiltonAnxietyScoreDifference>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ModerateReductionInHamiltonDepressionScore> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ModerateReductionInHamiltonDepressionScore>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ModerateReductionInHamiltonDepressionScore> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HamiltonDepressionScoreDifference>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ModerateReductionInMontgomeryAsbergDepressionRating> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ModerateReductionInMontgomeryAsbergDepressionRating>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ModerateReductionInMontgomeryAsbergDepressionRating> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#MontgomeryAsbergDepressionRatingDifference>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ModerateRemission> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ModerateRemission>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ModerateRemission> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#RemissionFrequency>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#MolecularMeasure> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#MolecularMeasure>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#MolecularMeasure> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BiologicalMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#MontgomeryAsbergDepressionMeasure> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#MontgomeryAsbergDepressionMeasure>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#MontgomeryAsbergDepressionMeasure> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#DepressionMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#MontgomeryAsbergDepressionRating> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#MontgomeryAsbergDepressionRating>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#MontgomeryAsbergDepressionRating> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#MontgomeryAsbergDepressionMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#MontgomeryAsbergDepressionRatingDifference> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#MontgomeryAsbergDepressionRatingDifference>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#MontgomeryAsbergDepressionRatingDifference> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#MontgomeryAsbergDepressionMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#MyocardialInfarctionFrequency> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#MyocardialInfarctionFrequency>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#MyocardialInfarctionFrequency> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#DiseaseFrequency>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#NeoplasmFrequency> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#NeoplasmFrequency>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#NeoplasmFrequency> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#DiseaseFrequency>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#NormalGeneExpression> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#NormalGeneExpression>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#NormalGeneExpression> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#GeneExpressionDifference>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#PathogenCount> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#PathogenCount>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#PathogenCount> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#TissueMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#PharmacodynamicMeasure> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#PharmacodynamicMeasure>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#PharmacodynamicMeasure> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BiologicalMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#PharmacokineticMeasure> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#PharmacokineticMeasure>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#PharmacokineticMeasure> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BiologicalMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#PlasmaDrugConcentration> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#PlasmaDrugConcentration>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#PlasmaDrugConcentration> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#PharmacokineticMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#PopulationVariation> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#PopulationVariation>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#PopulationVariation> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#GenotypeMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#PulmonaryFunctionMeasure> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#PulmonaryFunctionMeasure>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#PulmonaryFunctionMeasure> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BiologicalMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#QualityOfLife> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#QualityOfLife>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#QualityOfLife> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ClinicalOutcomeMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#Race> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#Race>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#Race> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#TaxonomicMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#RemissionFrequency> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#RemissionFrequency>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#RemissionFrequency> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#RemissionMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#RemissionMeasure> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#RemissionMeasure>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#RemissionMeasure> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ClinicalOutcomeMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#RemissionOddsRatio> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#RemissionOddsRatio>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#RemissionOddsRatio> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#RemissionMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ReninAngiotensinSystemMeasure> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ReninAngiotensinSystemMeasure>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ReninAngiotensinSystemMeasure> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#TissueMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#Satiety> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#Satiety>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#Satiety> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#SatietyMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#SatietyDecrease> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#SatietyDecrease>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#SatietyDecrease> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#SatietyDifference>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#SatietyDifference> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#SatietyDifference>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#SatietyDifference> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#SatietyMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#SatietyFrequency> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#SatietyFrequency>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#SatietyFrequency> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#SatietyMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#SatietyIncrease> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#SatietyIncrease>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#SatietyIncrease> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#SatietyDifference>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#SatietyMeasure> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#SatietyMeasure>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#SatietyMeasure> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#CognitiveMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#SideEffectFrequency> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#SideEffectFrequency>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#SideEffectFrequency> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ClinicalOutcomeMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#SideEffectRate> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#SideEffectRate>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#SideEffectRate> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ClinicalOutcomeMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#SimilarDiseaseSusceptibilityOdds> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#SimilarDiseaseSusceptibilityOdds>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#SimilarDiseaseSusceptibilityOdds> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#DiseaseSusceptibilityOdds>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#SimilarRemissionOddsRatio> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#SimilarRemissionOddsRatio>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#SimilarRemissionOddsRatio> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#RemissionOddsRatio>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#TaxonomicMeasure> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#TaxonomicMeasure>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#TaxonomicMeasure> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BiologicalMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#TissueMeasure> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#TissueMeasure>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#TissueMeasure> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BiologicalMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#WeightLoss> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#WeightLoss>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#WeightLoss> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#WeigthDifference>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#WeightMeasure> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#WeightMeasure>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#WeightMeasure> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BiophysicalMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#Weigth> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#Weigth>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#Weigth> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#WeightMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#WeigthDifference> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#WeigthDifference>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#WeigthDifference> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#WeightMeasure>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#WeigthGain> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#WeigthGain>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#WeigthGain> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#WeigthDifference>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ZeroDrugEfficacy> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ZeroDrugEfficacy>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ZeroDrugEfficacy> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#DrugEfficacy>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ZeroRemission> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ZeroRemission>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#ZeroRemission> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#RemissionFrequency>)
+
+# Class: <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#24HourBloodPressure> (<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#24HourBloodPressure>)
+
+SubClassOf(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#24HourBloodPressure> <http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#BloodPressure>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: owl:Class (owl:Class)
+
+ClassAssertion(<http://ontology.dumontierlab.com/biological-measure-primitive-1.0.owl#HighRemissionOddsRatio> owl:Class)
+
+
+)

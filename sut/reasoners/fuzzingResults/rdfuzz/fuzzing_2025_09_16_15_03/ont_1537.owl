@@ -1,0 +1,2012 @@
+Prefix(:=<urn:unnamed:ontology#ont19100990671643723>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:unnamed:ontology#ont19100990671643723>
+
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000374>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000075>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000214>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000405>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000193>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000265>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000008>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-5>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000164>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000059>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000422>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000150>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000070>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000413>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000389>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000358>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000061>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000049>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000442>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000018>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000121>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000148>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000232>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000112>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000331>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000032>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000249>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000194>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000348>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000432>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000399>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-6>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000165>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000131>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000016>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000086>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000185>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000305>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000416>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000315>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000211>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000019>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000091>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000175>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000366>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000033>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000349>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000433>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000108>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000081>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000053>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000180>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000369>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000159>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000132>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000243>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000383>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000043>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000142>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000097>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000316>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000400>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000176>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000367>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000287>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000260>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000027>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000196>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000280>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000116>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000258>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000227>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000138>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000200>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000326>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000222>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000441>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000410>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000167>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000278>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000386>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000377>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000350>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000044>))
+Declaration(Class(owl:Nothing))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000064>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000191>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000295>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000394>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000035>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000162>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-3>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000153>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000425>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000228>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000327>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000411>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000124>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000279>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000378>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000079>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000218>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000409>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000290>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000110>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000170>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000030>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000269>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000127>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000346>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000318>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000238>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000021>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000402>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000430>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000050>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000289>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000397>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000209>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000154>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000308>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000380>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000183>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000446>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000125>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000094>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000313>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000046>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000145>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000173>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000364>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000436>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000239>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000051>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000135>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000189>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000309>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000381>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000273>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000372>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000013>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000140>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000041>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000329>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000095>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000263>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000003>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000102>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000292>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000437>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000391>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000085>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000057>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000225>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000136>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000105>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000247>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000324>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000220>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000276>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000428>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000156>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000375>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000076>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000240>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000062>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000009>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000293>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000392>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000284>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000204>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000024>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000423>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000151>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000303>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000359>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000255>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000443>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000354>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000122>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000113>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000077>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000068>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000299>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000236>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000039>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000166>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000250>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000439>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000087>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000186>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000306>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000270>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000010>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000444>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000092>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000114>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000143>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000215>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000406>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000434>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000054>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000266>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000133>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000384>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000088>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000187>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000271>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000370>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000011>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000071>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000401>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000177>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000149>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000368>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000233>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000261>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000310>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000100>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000197>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000361>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000281>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000055>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000117>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000201>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000223>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000300>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000168>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000103>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000252>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000351>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000045>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000017>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000426>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000074>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000417>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000065>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000296>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000395>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000036>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000198>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000282>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000118>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000229>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000202>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000109>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000082>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000328>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000181>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000022>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000301>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000412>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000169>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000253>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000357>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000379>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000352>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000244>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000321>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000111>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000128>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000066>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000319>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000212>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000403>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000179>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000297>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000396>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000037>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000006>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000028>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000184>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000259>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000447>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000420>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000126>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000210>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000387>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000047>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000146>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000230>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000129>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000213>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000404>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000192>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000052>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000264>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000163>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000274>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000382>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000014>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000414>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000096>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000344>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000060>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000147>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000219>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000231>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000291>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000330>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000248>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000031>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000195>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000347>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000115>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000431>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000137>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000106>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000221>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000398>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000157>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000275>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000429>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000241>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000015>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000415>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000063>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000314>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000005>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000294>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000174>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000365>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000285>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000034>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000393>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000025>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000304>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000107>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000080>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000256>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000355>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000090>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000158>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000242>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000078>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000069>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000042>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000141>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000360>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000098>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000317>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000286>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-1>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000026>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000160>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000257>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000226>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000445>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000356>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000325>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000440>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000385>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000277>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000376>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000144>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000216>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000407>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000099>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000267>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000190>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000089>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-2>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000188>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000161>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000272>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000152>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000424>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000371>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000012>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000072>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000123>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000234>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000311>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000217>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000408>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000171>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000362>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000056>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000268>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000237>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000020>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000345>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000104>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000251>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000288>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000155>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000427>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000307>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000418>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000073>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000093>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000235>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000312>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000199>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000172>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000283>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000119>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000435>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000203>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000023>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000083>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000182>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000302>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000139>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000254>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000134>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000353>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000245>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000322>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000419>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000373>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000067>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000040>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000298>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000178>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000038>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000262>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000029>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000002>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000101>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000438>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000320>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000058>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000390>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000084>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000337>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000421>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000224>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000388>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000246>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000323>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PRIDE_0000120>))
+Declaration(DataProperty(<https://smolang.org/rdfMutate#newNode-0>))
+Declaration(NamedIndividual(owl:Class))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PRIDE_0000363>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-6>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-5>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-4>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/7501c498-0fc3-4963-9e5d-bc6bb921ff3d_pride_cv.obo#part_of>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-3>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PRIDE_0000353>))
+############################
+#   Data Properties
+############################
+
+# Data Property: <https://smolang.org/rdfMutate#newNode-0> (<https://smolang.org/rdfMutate#newNode-0>)
+
+FunctionalDataProperty(<https://smolang.org/rdfMutate#newNode-0>)
+DataPropertyRange(<https://smolang.org/rdfMutate#newNode-0> xsd:string)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000009> (<http://purl.obolibrary.org/obo/PRIDE_0000009>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000009> <http://purl.obolibrary.org/obo/PRIDE_0000008>)
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000009> <http://purl.obolibrary.org/obo/PRIDE_0000049>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000010> (<http://purl.obolibrary.org/obo/PRIDE_0000010>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000010> <http://purl.obolibrary.org/obo/PRIDE_0000009>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000011> (<http://purl.obolibrary.org/obo/PRIDE_0000011>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000011> <http://purl.obolibrary.org/obo/PRIDE_0000009>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000012> (<http://purl.obolibrary.org/obo/PRIDE_0000012>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000012> <http://purl.obolibrary.org/obo/PRIDE_0000008>)
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000012> <http://purl.obolibrary.org/obo/PRIDE_0000049>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000013> (<http://purl.obolibrary.org/obo/PRIDE_0000013>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000013> <http://purl.obolibrary.org/obo/PRIDE_0000008>)
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000013> <http://purl.obolibrary.org/obo/PRIDE_0000049>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000014> (<http://purl.obolibrary.org/obo/PRIDE_0000014>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000014> <http://purl.obolibrary.org/obo/PRIDE_0000013>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000015> (<http://purl.obolibrary.org/obo/PRIDE_0000015>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000015> <http://purl.obolibrary.org/obo/PRIDE_0000013>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000016> (<http://purl.obolibrary.org/obo/PRIDE_0000016>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000016> <http://purl.obolibrary.org/obo/PRIDE_0000013>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000018> (<http://purl.obolibrary.org/obo/PRIDE_0000018>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000018> <http://purl.obolibrary.org/obo/PRIDE_0000017>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000019> (<http://purl.obolibrary.org/obo/PRIDE_0000019>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000019> <http://purl.obolibrary.org/obo/PRIDE_0000001>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000020> (<http://purl.obolibrary.org/obo/PRIDE_0000020>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000020> <http://purl.obolibrary.org/obo/PRIDE_0000001>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000021> (<http://purl.obolibrary.org/obo/PRIDE_0000021>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000021> <http://purl.obolibrary.org/obo/PRIDE_0000001>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000022> (<http://purl.obolibrary.org/obo/PRIDE_0000022>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000022> <http://purl.obolibrary.org/obo/PRIDE_0000001>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000023> (<http://purl.obolibrary.org/obo/PRIDE_0000023>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000023> <http://purl.obolibrary.org/obo/PRIDE_0000001>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000024> (<http://purl.obolibrary.org/obo/PRIDE_0000024>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000024> <http://purl.obolibrary.org/obo/PRIDE_0000001>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000025> (<http://purl.obolibrary.org/obo/PRIDE_0000025>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000025> <http://purl.obolibrary.org/obo/PRIDE_0000001>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000026> (<http://purl.obolibrary.org/obo/PRIDE_0000026>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000026> <http://purl.obolibrary.org/obo/PRIDE_0000001>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000027> (<http://purl.obolibrary.org/obo/PRIDE_0000027>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000027> <http://purl.obolibrary.org/obo/PRIDE_0000001>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000029> (<http://purl.obolibrary.org/obo/PRIDE_0000029>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000029> <http://purl.obolibrary.org/obo/PRIDE_0000028>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000030> (<http://purl.obolibrary.org/obo/PRIDE_0000030>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000030> <http://purl.obolibrary.org/obo/PRIDE_0000028>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000031> (<http://purl.obolibrary.org/obo/PRIDE_0000031>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000031> <http://purl.obolibrary.org/obo/PRIDE_0000028>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000032> (<http://purl.obolibrary.org/obo/PRIDE_0000032>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000032> <http://purl.obolibrary.org/obo/PRIDE_0000028>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000033> (<http://purl.obolibrary.org/obo/PRIDE_0000033>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000033> <http://purl.obolibrary.org/obo/PRIDE_0000028>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000034> (<http://purl.obolibrary.org/obo/PRIDE_0000034>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000034> <http://purl.obolibrary.org/obo/PRIDE_0000028>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000035> (<http://purl.obolibrary.org/obo/PRIDE_0000035>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000035> <http://purl.obolibrary.org/obo/PRIDE_0000028>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000036> (<http://purl.obolibrary.org/obo/PRIDE_0000036>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000036> <http://purl.obolibrary.org/obo/PRIDE_0000028>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000037> (<http://purl.obolibrary.org/obo/PRIDE_0000037>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000037> <http://purl.obolibrary.org/obo/PRIDE_0000001>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000038> (<http://purl.obolibrary.org/obo/PRIDE_0000038>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000038> <http://purl.obolibrary.org/obo/PRIDE_0000028>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000039> (<http://purl.obolibrary.org/obo/PRIDE_0000039>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000039> <http://purl.obolibrary.org/obo/PRIDE_0000001>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000040> (<http://purl.obolibrary.org/obo/PRIDE_0000040>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000040> <http://purl.obolibrary.org/obo/PRIDE_0000006>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000042> (<http://purl.obolibrary.org/obo/PRIDE_0000042>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000042> <http://purl.obolibrary.org/obo/PRIDE_0000028>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000043> (<http://purl.obolibrary.org/obo/PRIDE_0000043>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000043> <http://purl.obolibrary.org/obo/PRIDE_0000028>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000045> (<http://purl.obolibrary.org/obo/PRIDE_0000045>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000045> <http://purl.obolibrary.org/obo/PRIDE_0000044>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000046> (<http://purl.obolibrary.org/obo/PRIDE_0000046>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000046> <http://purl.obolibrary.org/obo/PRIDE_0000044>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000047> (<http://purl.obolibrary.org/obo/PRIDE_0000047>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000047> <http://purl.obolibrary.org/obo/PRIDE_0000044>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000049> (<http://purl.obolibrary.org/obo/PRIDE_0000049>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000049> <http://purl.obolibrary.org/obo/PRIDE_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000050> (<http://purl.obolibrary.org/obo/PRIDE_0000050>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000050> <http://purl.obolibrary.org/obo/PRIDE_0000049>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000051> (<http://purl.obolibrary.org/obo/PRIDE_0000051>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000051> <http://purl.obolibrary.org/obo/PRIDE_0000049>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000052> (<http://purl.obolibrary.org/obo/PRIDE_0000052>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000052> <http://purl.obolibrary.org/obo/PRIDE_0000049>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000053> (<http://purl.obolibrary.org/obo/PRIDE_0000053>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000053> <http://purl.obolibrary.org/obo/PRIDE_0000008>)
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000053> <http://purl.obolibrary.org/obo/PRIDE_0000049>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000054> (<http://purl.obolibrary.org/obo/PRIDE_0000054>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000054> <http://purl.obolibrary.org/obo/PRIDE_0000049>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000055> (<http://purl.obolibrary.org/obo/PRIDE_0000055>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000055> <http://purl.obolibrary.org/obo/PRIDE_0000049>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000056> (<http://purl.obolibrary.org/obo/PRIDE_0000056>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000056> <http://purl.obolibrary.org/obo/PRIDE_0000045>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000057> (<http://purl.obolibrary.org/obo/PRIDE_0000057>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000057> <http://purl.obolibrary.org/obo/PRIDE_0000008>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000058> (<http://purl.obolibrary.org/obo/PRIDE_0000058>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000058> <http://purl.obolibrary.org/obo/PRIDE_0000049>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000059> (<http://purl.obolibrary.org/obo/PRIDE_0000059>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000059> <http://purl.obolibrary.org/obo/PRIDE_0000049>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000060> (<http://purl.obolibrary.org/obo/PRIDE_0000060>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000060> <http://purl.obolibrary.org/obo/PRIDE_0000049>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000061> (<http://purl.obolibrary.org/obo/PRIDE_0000061>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000061> <http://purl.obolibrary.org/obo/PRIDE_0000008>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000062> (<http://purl.obolibrary.org/obo/PRIDE_0000062>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000062> <http://purl.obolibrary.org/obo/PRIDE_0000049>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000065> (<http://purl.obolibrary.org/obo/PRIDE_0000065>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000065> <http://purl.obolibrary.org/obo/PRIDE_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000066> (<http://purl.obolibrary.org/obo/PRIDE_0000066>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000066> <http://purl.obolibrary.org/obo/PRIDE_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000067> (<http://purl.obolibrary.org/obo/PRIDE_0000067>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000067> <http://purl.obolibrary.org/obo/PRIDE_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000068> (<http://purl.obolibrary.org/obo/PRIDE_0000068>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000068> <http://purl.obolibrary.org/obo/PRIDE_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000069> (<http://purl.obolibrary.org/obo/PRIDE_0000069>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000069> <http://purl.obolibrary.org/obo/PRIDE_0000049>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000070> (<http://purl.obolibrary.org/obo/PRIDE_0000070>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000070> <http://purl.obolibrary.org/obo/PRIDE_0000024>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000071> (<http://purl.obolibrary.org/obo/PRIDE_0000071>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000071> <http://purl.obolibrary.org/obo/PRIDE_0000001>)
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000071> <http://purl.obolibrary.org/obo/PRIDE_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000072> (<http://purl.obolibrary.org/obo/PRIDE_0000072>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000072> <http://purl.obolibrary.org/obo/PRIDE_0000071>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000073> (<http://purl.obolibrary.org/obo/PRIDE_0000073>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000073> <http://purl.obolibrary.org/obo/PRIDE_0000071>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000074> (<http://purl.obolibrary.org/obo/PRIDE_0000074>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000074> <http://purl.obolibrary.org/obo/PRIDE_0000071>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000075> (<http://purl.obolibrary.org/obo/PRIDE_0000075>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000075> <http://purl.obolibrary.org/obo/PRIDE_0000071>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000076> (<http://purl.obolibrary.org/obo/PRIDE_0000076>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000076> <http://purl.obolibrary.org/obo/PRIDE_0000075>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000077> (<http://purl.obolibrary.org/obo/PRIDE_0000077>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000077> <http://purl.obolibrary.org/obo/PRIDE_0000075>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000078> (<http://purl.obolibrary.org/obo/PRIDE_0000078>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000078> <http://purl.obolibrary.org/obo/PRIDE_0000071>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000079> (<http://purl.obolibrary.org/obo/PRIDE_0000079>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000079> <http://purl.obolibrary.org/obo/PRIDE_0000071>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000080> (<http://purl.obolibrary.org/obo/PRIDE_0000080>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000080> <http://purl.obolibrary.org/obo/PRIDE_0000079>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000081> (<http://purl.obolibrary.org/obo/PRIDE_0000081>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000081> <http://purl.obolibrary.org/obo/PRIDE_0000079>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000082> (<http://purl.obolibrary.org/obo/PRIDE_0000082>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000082> <http://purl.obolibrary.org/obo/PRIDE_0000071>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000083> (<http://purl.obolibrary.org/obo/PRIDE_0000083>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000083> <http://purl.obolibrary.org/obo/PRIDE_0000082>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000084> (<http://purl.obolibrary.org/obo/PRIDE_0000084>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000084> <http://purl.obolibrary.org/obo/PRIDE_0000082>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000085> (<http://purl.obolibrary.org/obo/PRIDE_0000085>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000085> <http://purl.obolibrary.org/obo/PRIDE_0000082>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000086> (<http://purl.obolibrary.org/obo/PRIDE_0000086>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000086> <http://purl.obolibrary.org/obo/PRIDE_0000082>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000087> (<http://purl.obolibrary.org/obo/PRIDE_0000087>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000087> <http://purl.obolibrary.org/obo/PRIDE_0000071>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000088> (<http://purl.obolibrary.org/obo/PRIDE_0000088>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000088> <http://purl.obolibrary.org/obo/PRIDE_0000087>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000089> (<http://purl.obolibrary.org/obo/PRIDE_0000089>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000089> <http://purl.obolibrary.org/obo/PRIDE_0000087>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000090> (<http://purl.obolibrary.org/obo/PRIDE_0000090>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000090> <http://purl.obolibrary.org/obo/PRIDE_0000087>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000091> (<http://purl.obolibrary.org/obo/PRIDE_0000091>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000091> <http://purl.obolibrary.org/obo/PRIDE_0000049>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000092> (<http://purl.obolibrary.org/obo/PRIDE_0000092>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000092> <http://purl.obolibrary.org/obo/PRIDE_0000049>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000093> (<http://purl.obolibrary.org/obo/PRIDE_0000093>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000093> <http://purl.obolibrary.org/obo/PRIDE_0000092>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000094> (<http://purl.obolibrary.org/obo/PRIDE_0000094>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000094> <http://purl.obolibrary.org/obo/PRIDE_0000092>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000095> (<http://purl.obolibrary.org/obo/PRIDE_0000095>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000095> <http://purl.obolibrary.org/obo/PRIDE_0000049>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000097> (<http://purl.obolibrary.org/obo/PRIDE_0000097>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000097> <http://purl.obolibrary.org/obo/PRIDE_0000006>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000099> (<http://purl.obolibrary.org/obo/PRIDE_0000099>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000099> <http://purl.obolibrary.org/obo/PRIDE_0000049>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000100> (<http://purl.obolibrary.org/obo/PRIDE_0000100>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000100> <http://purl.obolibrary.org/obo/PRIDE_0000008>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000101> (<http://purl.obolibrary.org/obo/PRIDE_0000101>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000101> <http://purl.obolibrary.org/obo/PRIDE_0000044>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000102> (<http://purl.obolibrary.org/obo/PRIDE_0000102>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000102> <http://purl.obolibrary.org/obo/PRIDE_0000044>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000103> (<http://purl.obolibrary.org/obo/PRIDE_0000103>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000103> <http://purl.obolibrary.org/obo/PRIDE_0000005>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000104> (<http://purl.obolibrary.org/obo/PRIDE_0000104>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000104> <http://purl.obolibrary.org/obo/PRIDE_0000005>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000105> (<http://purl.obolibrary.org/obo/PRIDE_0000105>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000105> <http://purl.obolibrary.org/obo/PRIDE_0000005>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000106> (<http://purl.obolibrary.org/obo/PRIDE_0000106>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000106> <http://purl.obolibrary.org/obo/PRIDE_0000005>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000108> (<http://purl.obolibrary.org/obo/PRIDE_0000108>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000108> <http://purl.obolibrary.org/obo/PRIDE_0000107>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000109> (<http://purl.obolibrary.org/obo/PRIDE_0000109>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000109> <http://purl.obolibrary.org/obo/PRIDE_0000107>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000111> (<http://purl.obolibrary.org/obo/PRIDE_0000111>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000111> <http://purl.obolibrary.org/obo/PRIDE_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000112> (<http://purl.obolibrary.org/obo/PRIDE_0000112>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000112> <http://purl.obolibrary.org/obo/PRIDE_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000113> (<http://purl.obolibrary.org/obo/PRIDE_0000113>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000113> <http://purl.obolibrary.org/obo/PRIDE_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000114> (<http://purl.obolibrary.org/obo/PRIDE_0000114>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000114> <http://purl.obolibrary.org/obo/PRIDE_0000329>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000115> (<http://purl.obolibrary.org/obo/PRIDE_0000115>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000115> <http://purl.obolibrary.org/obo/PRIDE_0000329>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000116> (<http://purl.obolibrary.org/obo/PRIDE_0000116>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000116> <http://purl.obolibrary.org/obo/PRIDE_0000329>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000117> (<http://purl.obolibrary.org/obo/PRIDE_0000117>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000117> <http://purl.obolibrary.org/obo/PRIDE_0000329>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000118> (<http://purl.obolibrary.org/obo/PRIDE_0000118>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000118> <http://purl.obolibrary.org/obo/PRIDE_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000119> (<http://purl.obolibrary.org/obo/PRIDE_0000119>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000119> <http://purl.obolibrary.org/obo/PRIDE_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000120> (<http://purl.obolibrary.org/obo/PRIDE_0000120>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000120> <http://purl.obolibrary.org/obo/PRIDE_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000121> (<http://purl.obolibrary.org/obo/PRIDE_0000121>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000121> <http://purl.obolibrary.org/obo/PRIDE_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000122> (<http://purl.obolibrary.org/obo/PRIDE_0000122>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000122> <http://purl.obolibrary.org/obo/PRIDE_0000022>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000131> (<http://purl.obolibrary.org/obo/PRIDE_0000131>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000131> <http://purl.obolibrary.org/obo/PRIDE_0000107>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000132> (<http://purl.obolibrary.org/obo/PRIDE_0000132>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000132> <http://purl.obolibrary.org/obo/PRIDE_0000107>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000133> (<http://purl.obolibrary.org/obo/PRIDE_0000133>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000133> <http://purl.obolibrary.org/obo/PRIDE_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000134> (<http://purl.obolibrary.org/obo/PRIDE_0000134>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000134> <http://purl.obolibrary.org/obo/PRIDE_0000001>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000138> (<http://purl.obolibrary.org/obo/PRIDE_0000138>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000138> <http://purl.obolibrary.org/obo/PRIDE_0000049>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000139> (<http://purl.obolibrary.org/obo/PRIDE_0000139>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000139> <http://purl.obolibrary.org/obo/PRIDE_0000136>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000140> (<http://purl.obolibrary.org/obo/PRIDE_0000140>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000140> <http://purl.obolibrary.org/obo/PRIDE_0000136>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000141> (<http://purl.obolibrary.org/obo/PRIDE_0000141>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000141> <http://purl.obolibrary.org/obo/PRIDE_0000136>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000142> (<http://purl.obolibrary.org/obo/PRIDE_0000142>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000142> <http://purl.obolibrary.org/obo/PRIDE_0000136>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000143> (<http://purl.obolibrary.org/obo/PRIDE_0000143>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000143> <http://purl.obolibrary.org/obo/PRIDE_0000136>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000144> (<http://purl.obolibrary.org/obo/PRIDE_0000144>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000144> <http://purl.obolibrary.org/obo/PRIDE_0000136>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000145> (<http://purl.obolibrary.org/obo/PRIDE_0000145>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000145> <http://purl.obolibrary.org/obo/PRIDE_0000044>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000153> (<http://purl.obolibrary.org/obo/PRIDE_0000153>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000153> <http://purl.obolibrary.org/obo/PRIDE_0000152>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000154> (<http://purl.obolibrary.org/obo/PRIDE_0000154>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000154> <http://purl.obolibrary.org/obo/PRIDE_0000152>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000155> (<http://purl.obolibrary.org/obo/PRIDE_0000155>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000155> <http://purl.obolibrary.org/obo/PRIDE_0000136>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000157> (<http://purl.obolibrary.org/obo/PRIDE_0000157>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000157> <http://purl.obolibrary.org/obo/PRIDE_0000071>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000158> (<http://purl.obolibrary.org/obo/PRIDE_0000158>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000158> <http://purl.obolibrary.org/obo/PRIDE_0000157>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000159> (<http://purl.obolibrary.org/obo/PRIDE_0000159>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000159> <http://purl.obolibrary.org/obo/PRIDE_0000157>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000160> (<http://purl.obolibrary.org/obo/PRIDE_0000160>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000160> <http://purl.obolibrary.org/obo/PRIDE_0000071>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000161> (<http://purl.obolibrary.org/obo/PRIDE_0000161>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000161> <http://purl.obolibrary.org/obo/PRIDE_0000071>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000162> (<http://purl.obolibrary.org/obo/PRIDE_0000162>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000162> <http://purl.obolibrary.org/obo/PRIDE_0000071>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000163> (<http://purl.obolibrary.org/obo/PRIDE_0000163>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000163> <http://purl.obolibrary.org/obo/PRIDE_0000071>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000164> (<http://purl.obolibrary.org/obo/PRIDE_0000164>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000164> <http://purl.obolibrary.org/obo/PRIDE_0000136>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000166> (<http://purl.obolibrary.org/obo/PRIDE_0000166>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000166> <http://purl.obolibrary.org/obo/PRIDE_0000002>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000168> (<http://purl.obolibrary.org/obo/PRIDE_0000168>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000168> <http://purl.obolibrary.org/obo/PRIDE_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000169> (<http://purl.obolibrary.org/obo/PRIDE_0000169>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000169> <http://purl.obolibrary.org/obo/PRIDE_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000170> (<http://purl.obolibrary.org/obo/PRIDE_0000170>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000170> <http://purl.obolibrary.org/obo/PRIDE_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000171> (<http://purl.obolibrary.org/obo/PRIDE_0000171>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000171> <http://purl.obolibrary.org/obo/PRIDE_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000174> (<http://purl.obolibrary.org/obo/PRIDE_0000174>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000174> <http://purl.obolibrary.org/obo/PRIDE_0000008>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000175> (<http://purl.obolibrary.org/obo/PRIDE_0000175>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000175> <http://purl.obolibrary.org/obo/PRIDE_0000006>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000176> (<http://purl.obolibrary.org/obo/PRIDE_0000176>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000176> <http://purl.obolibrary.org/obo/PRIDE_0000049>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000177> (<http://purl.obolibrary.org/obo/PRIDE_0000177>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000177> <http://purl.obolibrary.org/obo/PRIDE_0000049>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000178> (<http://purl.obolibrary.org/obo/PRIDE_0000178>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000178> <http://purl.obolibrary.org/obo/PRIDE_0000001>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000179> (<http://purl.obolibrary.org/obo/PRIDE_0000179>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000179> <http://purl.obolibrary.org/obo/PRIDE_0000047>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000180> (<http://purl.obolibrary.org/obo/PRIDE_0000180>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000180> <http://purl.obolibrary.org/obo/PRIDE_0000047>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000181> (<http://purl.obolibrary.org/obo/PRIDE_0000181>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000181> <http://purl.obolibrary.org/obo/PRIDE_0000047>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000182> (<http://purl.obolibrary.org/obo/PRIDE_0000182>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000182> <http://purl.obolibrary.org/obo/PRIDE_0000047>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000183> (<http://purl.obolibrary.org/obo/PRIDE_0000183>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000183> <http://purl.obolibrary.org/obo/PRIDE_0000047>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000184> (<http://purl.obolibrary.org/obo/PRIDE_0000184>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000184> <http://purl.obolibrary.org/obo/PRIDE_0000046>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000185> (<http://purl.obolibrary.org/obo/PRIDE_0000185>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000185> <http://purl.obolibrary.org/obo/PRIDE_0000049>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000186> (<http://purl.obolibrary.org/obo/PRIDE_0000186>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000186> <http://purl.obolibrary.org/obo/PRIDE_0000049>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000187> (<http://purl.obolibrary.org/obo/PRIDE_0000187>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000187> <http://purl.obolibrary.org/obo/PRIDE_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000188> (<http://purl.obolibrary.org/obo/PRIDE_0000188>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000188> <http://purl.obolibrary.org/obo/PRIDE_0000187>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000189> (<http://purl.obolibrary.org/obo/PRIDE_0000189>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000189> <http://purl.obolibrary.org/obo/PRIDE_0000187>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000190> (<http://purl.obolibrary.org/obo/PRIDE_0000190>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000190> <http://purl.obolibrary.org/obo/PRIDE_0000187>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000191> (<http://purl.obolibrary.org/obo/PRIDE_0000191>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000191> <http://purl.obolibrary.org/obo/PRIDE_0000187>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000192> (<http://purl.obolibrary.org/obo/PRIDE_0000192>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000192> <http://purl.obolibrary.org/obo/PRIDE_0000187>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000193> (<http://purl.obolibrary.org/obo/PRIDE_0000193>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000193> <http://purl.obolibrary.org/obo/PRIDE_0000192>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000194> (<http://purl.obolibrary.org/obo/PRIDE_0000194>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000194> <http://purl.obolibrary.org/obo/PRIDE_0000192>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000195> (<http://purl.obolibrary.org/obo/PRIDE_0000195>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000195> <http://purl.obolibrary.org/obo/PRIDE_0000194>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000196> (<http://purl.obolibrary.org/obo/PRIDE_0000196>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000196> <http://purl.obolibrary.org/obo/PRIDE_0000194>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000197> (<http://purl.obolibrary.org/obo/PRIDE_0000197>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000197> <http://purl.obolibrary.org/obo/PRIDE_0000193>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000198> (<http://purl.obolibrary.org/obo/PRIDE_0000198>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000198> <http://purl.obolibrary.org/obo/PRIDE_0000193>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000199> (<http://purl.obolibrary.org/obo/PRIDE_0000199>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000199> <http://purl.obolibrary.org/obo/PRIDE_0000192>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000200> (<http://purl.obolibrary.org/obo/PRIDE_0000200>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000200> <http://purl.obolibrary.org/obo/PRIDE_0000192>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000201> (<http://purl.obolibrary.org/obo/PRIDE_0000201>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000201> <http://purl.obolibrary.org/obo/PRIDE_0000192>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000202> (<http://purl.obolibrary.org/obo/PRIDE_0000202>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000202> <http://purl.obolibrary.org/obo/PRIDE_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000203> (<http://purl.obolibrary.org/obo/PRIDE_0000203>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000203> <http://purl.obolibrary.org/obo/PRIDE_0000202>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000204> (<http://purl.obolibrary.org/obo/PRIDE_0000204>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000204> <http://purl.obolibrary.org/obo/PRIDE_0000187>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000209> (<http://purl.obolibrary.org/obo/PRIDE_0000209>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000209> <http://purl.obolibrary.org/obo/PRIDE_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000210> (<http://purl.obolibrary.org/obo/PRIDE_0000210>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000210> <http://purl.obolibrary.org/obo/PRIDE_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000211> (<http://purl.obolibrary.org/obo/PRIDE_0000211>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000211> <http://purl.obolibrary.org/obo/PRIDE_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000212> (<http://purl.obolibrary.org/obo/PRIDE_0000212>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000212> <http://purl.obolibrary.org/obo/PRIDE_0000046>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000213> (<http://purl.obolibrary.org/obo/PRIDE_0000213>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000213> <http://purl.obolibrary.org/obo/PRIDE_0000044>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000214> (<http://purl.obolibrary.org/obo/PRIDE_0000214>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000214> <http://purl.obolibrary.org/obo/PRIDE_0000213>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000215> (<http://purl.obolibrary.org/obo/PRIDE_0000215>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000215> <http://purl.obolibrary.org/obo/PRIDE_0000213>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000216> (<http://purl.obolibrary.org/obo/PRIDE_0000216>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000216> <http://purl.obolibrary.org/obo/PRIDE_0000006>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000217> (<http://purl.obolibrary.org/obo/PRIDE_0000217>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000217> <http://purl.obolibrary.org/obo/PRIDE_0000006>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000218> (<http://purl.obolibrary.org/obo/PRIDE_0000218>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000218> <http://purl.obolibrary.org/obo/PRIDE_0000006>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000219> (<http://purl.obolibrary.org/obo/PRIDE_0000219>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000219> <http://purl.obolibrary.org/obo/PRIDE_0000006>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000220> (<http://purl.obolibrary.org/obo/PRIDE_0000220>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000220> <http://purl.obolibrary.org/obo/PRIDE_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000221> (<http://purl.obolibrary.org/obo/PRIDE_0000221>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000221> <http://purl.obolibrary.org/obo/PRIDE_0000202>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000222> (<http://purl.obolibrary.org/obo/PRIDE_0000222>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000222> <http://purl.obolibrary.org/obo/PRIDE_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000223> (<http://purl.obolibrary.org/obo/PRIDE_0000223>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000223> <http://purl.obolibrary.org/obo/PRIDE_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000227> (<http://purl.obolibrary.org/obo/PRIDE_0000227>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000227> <http://purl.obolibrary.org/obo/PRIDE_0000192>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000228> (<http://purl.obolibrary.org/obo/PRIDE_0000228>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000228> <http://purl.obolibrary.org/obo/PRIDE_0000227>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000229> (<http://purl.obolibrary.org/obo/PRIDE_0000229>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000229> <http://purl.obolibrary.org/obo/PRIDE_0000227>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000230> (<http://purl.obolibrary.org/obo/PRIDE_0000230>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000230> <http://purl.obolibrary.org/obo/PRIDE_0000192>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000231> (<http://purl.obolibrary.org/obo/PRIDE_0000231>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000231> <http://purl.obolibrary.org/obo/PRIDE_0000230>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000232> (<http://purl.obolibrary.org/obo/PRIDE_0000232>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000232> <http://purl.obolibrary.org/obo/PRIDE_0000230>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000233> (<http://purl.obolibrary.org/obo/PRIDE_0000233>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000233> <http://purl.obolibrary.org/obo/PRIDE_0000192>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000234> (<http://purl.obolibrary.org/obo/PRIDE_0000234>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000234> <http://purl.obolibrary.org/obo/PRIDE_0000233>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000235> (<http://purl.obolibrary.org/obo/PRIDE_0000235>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000235> <http://purl.obolibrary.org/obo/PRIDE_0000233>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000236> (<http://purl.obolibrary.org/obo/PRIDE_0000236>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000236> <http://purl.obolibrary.org/obo/PRIDE_0000192>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000237> (<http://purl.obolibrary.org/obo/PRIDE_0000237>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000237> <http://purl.obolibrary.org/obo/PRIDE_0000236>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000238> (<http://purl.obolibrary.org/obo/PRIDE_0000238>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000238> <http://purl.obolibrary.org/obo/PRIDE_0000236>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000239> (<http://purl.obolibrary.org/obo/PRIDE_0000239>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000239> <http://purl.obolibrary.org/obo/PRIDE_0000192>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000240> (<http://purl.obolibrary.org/obo/PRIDE_0000240>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000240> <http://purl.obolibrary.org/obo/PRIDE_0000239>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000241> (<http://purl.obolibrary.org/obo/PRIDE_0000241>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000241> <http://purl.obolibrary.org/obo/PRIDE_0000239>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000242> (<http://purl.obolibrary.org/obo/PRIDE_0000242>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000242> <http://purl.obolibrary.org/obo/PRIDE_0000239>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000243> (<http://purl.obolibrary.org/obo/PRIDE_0000243>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000243> <http://purl.obolibrary.org/obo/PRIDE_0000239>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000244> (<http://purl.obolibrary.org/obo/PRIDE_0000244>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000244> <http://purl.obolibrary.org/obo/PRIDE_0000239>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000245> (<http://purl.obolibrary.org/obo/PRIDE_0000245>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000245> <http://purl.obolibrary.org/obo/PRIDE_0000239>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000246> (<http://purl.obolibrary.org/obo/PRIDE_0000246>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000246> <http://purl.obolibrary.org/obo/PRIDE_0000239>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000247> (<http://purl.obolibrary.org/obo/PRIDE_0000247>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000247> <http://purl.obolibrary.org/obo/PRIDE_0000239>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000248> (<http://purl.obolibrary.org/obo/PRIDE_0000248>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000248> <http://purl.obolibrary.org/obo/PRIDE_0000239>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000249> (<http://purl.obolibrary.org/obo/PRIDE_0000249>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000249> <http://purl.obolibrary.org/obo/PRIDE_0000239>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000250> (<http://purl.obolibrary.org/obo/PRIDE_0000250>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000250> <http://purl.obolibrary.org/obo/PRIDE_0000239>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000251> (<http://purl.obolibrary.org/obo/PRIDE_0000251>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000251> <http://purl.obolibrary.org/obo/PRIDE_0000239>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000252> (<http://purl.obolibrary.org/obo/PRIDE_0000252>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000252> <http://purl.obolibrary.org/obo/PRIDE_0000239>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000253> (<http://purl.obolibrary.org/obo/PRIDE_0000253>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000253> <http://purl.obolibrary.org/obo/PRIDE_0000239>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000254> (<http://purl.obolibrary.org/obo/PRIDE_0000254>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000254> <http://purl.obolibrary.org/obo/PRIDE_0000239>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000255> (<http://purl.obolibrary.org/obo/PRIDE_0000255>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000255> <http://purl.obolibrary.org/obo/PRIDE_0000239>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000256> (<http://purl.obolibrary.org/obo/PRIDE_0000256>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000256> <http://purl.obolibrary.org/obo/PRIDE_0000239>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000257> (<http://purl.obolibrary.org/obo/PRIDE_0000257>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000257> <http://purl.obolibrary.org/obo/PRIDE_0000239>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000258> (<http://purl.obolibrary.org/obo/PRIDE_0000258>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000258> <http://purl.obolibrary.org/obo/PRIDE_0000239>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000259> (<http://purl.obolibrary.org/obo/PRIDE_0000259>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000259> <http://purl.obolibrary.org/obo/PRIDE_0000239>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000260> (<http://purl.obolibrary.org/obo/PRIDE_0000260>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000260> <http://purl.obolibrary.org/obo/PRIDE_0000202>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000261> (<http://purl.obolibrary.org/obo/PRIDE_0000261>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000261> <http://purl.obolibrary.org/obo/PRIDE_0000263>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000262> (<http://purl.obolibrary.org/obo/PRIDE_0000262>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000262> <http://purl.obolibrary.org/obo/PRIDE_0000263>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000263> (<http://purl.obolibrary.org/obo/PRIDE_0000263>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000263> <http://purl.obolibrary.org/obo/PRIDE_0000260>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000264> (<http://purl.obolibrary.org/obo/PRIDE_0000264>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000264> <http://purl.obolibrary.org/obo/PRIDE_0000329>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000265> (<http://purl.obolibrary.org/obo/PRIDE_0000265>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000265> <http://purl.obolibrary.org/obo/PRIDE_0000329>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000266> (<http://purl.obolibrary.org/obo/PRIDE_0000266>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000266> <http://purl.obolibrary.org/obo/PRIDE_0000329>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000267> (<http://purl.obolibrary.org/obo/PRIDE_0000267>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000267> <http://purl.obolibrary.org/obo/PRIDE_0000329>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000268> (<http://purl.obolibrary.org/obo/PRIDE_0000268>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000268> <http://purl.obolibrary.org/obo/PRIDE_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000269> (<http://purl.obolibrary.org/obo/PRIDE_0000269>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000269> <http://purl.obolibrary.org/obo/PRIDE_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000270> (<http://purl.obolibrary.org/obo/PRIDE_0000270>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000270> <http://purl.obolibrary.org/obo/PRIDE_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000271> (<http://purl.obolibrary.org/obo/PRIDE_0000271>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000271> <http://purl.obolibrary.org/obo/PRIDE_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000272> (<http://purl.obolibrary.org/obo/PRIDE_0000272>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000272> <http://purl.obolibrary.org/obo/PRIDE_0000006>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000273> (<http://purl.obolibrary.org/obo/PRIDE_0000273>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000273> <http://purl.obolibrary.org/obo/PRIDE_0000044>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000274> (<http://purl.obolibrary.org/obo/PRIDE_0000274>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000274> <http://purl.obolibrary.org/obo/PRIDE_0000044>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000275> (<http://purl.obolibrary.org/obo/PRIDE_0000275>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000275> <http://purl.obolibrary.org/obo/PRIDE_0000044>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000276> (<http://purl.obolibrary.org/obo/PRIDE_0000276>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000276> <http://purl.obolibrary.org/obo/PRIDE_0000044>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000277> (<http://purl.obolibrary.org/obo/PRIDE_0000277>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000277> <http://purl.obolibrary.org/obo/PRIDE_0000002>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000279> (<http://purl.obolibrary.org/obo/PRIDE_0000279>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000279> <http://purl.obolibrary.org/obo/PRIDE_0000278>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000280> (<http://purl.obolibrary.org/obo/PRIDE_0000280>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000280> <http://purl.obolibrary.org/obo/PRIDE_0000230>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000281> (<http://purl.obolibrary.org/obo/PRIDE_0000281>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000281> <http://purl.obolibrary.org/obo/PRIDE_0000230>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000282> (<http://purl.obolibrary.org/obo/PRIDE_0000282>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000282> <http://purl.obolibrary.org/obo/PRIDE_0000002>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000283> (<http://purl.obolibrary.org/obo/PRIDE_0000283>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000283> <http://purl.obolibrary.org/obo/PRIDE_0000002>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000284> (<http://purl.obolibrary.org/obo/PRIDE_0000284>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000284> <http://purl.obolibrary.org/obo/PRIDE_0000049>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000285> (<http://purl.obolibrary.org/obo/PRIDE_0000285>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000285> <http://purl.obolibrary.org/obo/PRIDE_0000337>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000286> (<http://purl.obolibrary.org/obo/PRIDE_0000286>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000286> <http://purl.obolibrary.org/obo/PRIDE_0000337>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000287> (<http://purl.obolibrary.org/obo/PRIDE_0000287>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000287> <http://purl.obolibrary.org/obo/PRIDE_0000337>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000288> (<http://purl.obolibrary.org/obo/PRIDE_0000288>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000288> <http://purl.obolibrary.org/obo/PRIDE_0000337>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000289> (<http://purl.obolibrary.org/obo/PRIDE_0000289>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000289> <http://purl.obolibrary.org/obo/PRIDE_0000337>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000290> (<http://purl.obolibrary.org/obo/PRIDE_0000290>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000290> <http://purl.obolibrary.org/obo/PRIDE_0000337>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000291> (<http://purl.obolibrary.org/obo/PRIDE_0000291>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000291> <http://purl.obolibrary.org/obo/PRIDE_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000292> (<http://purl.obolibrary.org/obo/PRIDE_0000292>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000292> <http://purl.obolibrary.org/obo/PRIDE_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000293> (<http://purl.obolibrary.org/obo/PRIDE_0000293>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000293> <http://purl.obolibrary.org/obo/PRIDE_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000294> (<http://purl.obolibrary.org/obo/PRIDE_0000294>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000294> <http://purl.obolibrary.org/obo/PRIDE_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000295> (<http://purl.obolibrary.org/obo/PRIDE_0000295>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000295> <http://purl.obolibrary.org/obo/PRIDE_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000296> (<http://purl.obolibrary.org/obo/PRIDE_0000296>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000296> <http://purl.obolibrary.org/obo/PRIDE_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000300> (<http://purl.obolibrary.org/obo/PRIDE_0000300>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000300> <http://purl.obolibrary.org/obo/PRIDE_0000107>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000302> (<http://purl.obolibrary.org/obo/PRIDE_0000302>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000302> <http://purl.obolibrary.org/obo/PRIDE_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000304> (<http://purl.obolibrary.org/obo/PRIDE_0000304>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000304> <http://purl.obolibrary.org/obo/PRIDE_0000107>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000305> (<http://purl.obolibrary.org/obo/PRIDE_0000305>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000305> <http://purl.obolibrary.org/obo/PRIDE_0000006>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000306> (<http://purl.obolibrary.org/obo/PRIDE_0000306>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000306> <http://purl.obolibrary.org/obo/PRIDE_0000006>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000307> (<http://purl.obolibrary.org/obo/PRIDE_0000307>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000307> <http://purl.obolibrary.org/obo/PRIDE_0000391>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000308> (<http://purl.obolibrary.org/obo/PRIDE_0000308>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000308> <http://purl.obolibrary.org/obo/PRIDE_0000307>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000309> (<http://purl.obolibrary.org/obo/PRIDE_0000309>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000309> <http://purl.obolibrary.org/obo/PRIDE_0000307>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000310> (<http://purl.obolibrary.org/obo/PRIDE_0000310>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000310> <http://purl.obolibrary.org/obo/PRIDE_0000309>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000311> (<http://purl.obolibrary.org/obo/PRIDE_0000311>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000311> <http://purl.obolibrary.org/obo/PRIDE_0000309>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000312> (<http://purl.obolibrary.org/obo/PRIDE_0000312>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000312> <http://purl.obolibrary.org/obo/PRIDE_0000309>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000313> (<http://purl.obolibrary.org/obo/PRIDE_0000313>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000313> <http://purl.obolibrary.org/obo/PRIDE_0000317>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000314> (<http://purl.obolibrary.org/obo/PRIDE_0000314>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000314> <http://purl.obolibrary.org/obo/PRIDE_0000317>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000315> (<http://purl.obolibrary.org/obo/PRIDE_0000315>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000315> <http://purl.obolibrary.org/obo/PRIDE_0000316>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000316> (<http://purl.obolibrary.org/obo/PRIDE_0000316>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000316> <http://purl.obolibrary.org/obo/PRIDE_0000310>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000317> (<http://purl.obolibrary.org/obo/PRIDE_0000317>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000317> <http://purl.obolibrary.org/obo/PRIDE_0000310>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000318> (<http://purl.obolibrary.org/obo/PRIDE_0000318>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000318> <http://purl.obolibrary.org/obo/PRIDE_0000316>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000319> (<http://purl.obolibrary.org/obo/PRIDE_0000319>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000319> <http://purl.obolibrary.org/obo/PRIDE_0000316>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000320> (<http://purl.obolibrary.org/obo/PRIDE_0000320>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000320> <http://purl.obolibrary.org/obo/PRIDE_0000316>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000321> (<http://purl.obolibrary.org/obo/PRIDE_0000321>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000321> <http://purl.obolibrary.org/obo/PRIDE_0000316>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000322> (<http://purl.obolibrary.org/obo/PRIDE_0000322>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000322> <http://purl.obolibrary.org/obo/PRIDE_0000312>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000323> (<http://purl.obolibrary.org/obo/PRIDE_0000323>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000323> <http://purl.obolibrary.org/obo/PRIDE_0000312>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000324> (<http://purl.obolibrary.org/obo/PRIDE_0000324>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000324> <http://purl.obolibrary.org/obo/PRIDE_0000017>)
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000324> <http://purl.obolibrary.org/obo/PRIDE_0000391>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000325> (<http://purl.obolibrary.org/obo/PRIDE_0000325>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000325> <http://purl.obolibrary.org/obo/PRIDE_0000328>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000326> (<http://purl.obolibrary.org/obo/PRIDE_0000326>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000326> <http://purl.obolibrary.org/obo/PRIDE_0000328>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000327> (<http://purl.obolibrary.org/obo/PRIDE_0000327>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000327> <http://purl.obolibrary.org/obo/PRIDE_0000328>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000328> (<http://purl.obolibrary.org/obo/PRIDE_0000328>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000328> <http://purl.obolibrary.org/obo/PRIDE_0000433>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000329> (<http://purl.obolibrary.org/obo/PRIDE_0000329>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000329> <http://purl.obolibrary.org/obo/PRIDE_0000433>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000330> (<http://purl.obolibrary.org/obo/PRIDE_0000330>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000330> <http://purl.obolibrary.org/obo/PRIDE_0000392>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000331> (<http://purl.obolibrary.org/obo/PRIDE_0000331>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000331> <http://purl.obolibrary.org/obo/PRIDE_0000330>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000337> (<http://purl.obolibrary.org/obo/PRIDE_0000337>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000337> <http://purl.obolibrary.org/obo/PRIDE_0000433>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000344> (<http://purl.obolibrary.org/obo/PRIDE_0000344>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000344> <http://purl.obolibrary.org/obo/PRIDE_0000433>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000345> (<http://purl.obolibrary.org/obo/PRIDE_0000345>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000345> <http://purl.obolibrary.org/obo/PRIDE_0000344>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000346> (<http://purl.obolibrary.org/obo/PRIDE_0000346>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000346> <http://purl.obolibrary.org/obo/PRIDE_0000344>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000347> (<http://purl.obolibrary.org/obo/PRIDE_0000347>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000347> <http://purl.obolibrary.org/obo/PRIDE_0000433>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000348> (<http://purl.obolibrary.org/obo/PRIDE_0000348>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000348> <http://purl.obolibrary.org/obo/PRIDE_0000347>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000349> (<http://purl.obolibrary.org/obo/PRIDE_0000349>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000349> <http://purl.obolibrary.org/obo/PRIDE_0000347>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000350> (<http://purl.obolibrary.org/obo/PRIDE_0000350>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000350> <http://purl.obolibrary.org/obo/PRIDE_0000347>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000351> (<http://purl.obolibrary.org/obo/PRIDE_0000351>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000351> <http://purl.obolibrary.org/obo/PRIDE_0000347>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000352> (<http://purl.obolibrary.org/obo/PRIDE_0000352>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000352> <http://purl.obolibrary.org/obo/PRIDE_0000391>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000353> (<http://purl.obolibrary.org/obo/PRIDE_0000353>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000353> <http://purl.obolibrary.org/obo/PRIDE_0000003>)
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000353> <http://purl.obolibrary.org/obo/PRIDE_0000352>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000354> (<http://purl.obolibrary.org/obo/PRIDE_0000354>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000354> <http://purl.obolibrary.org/obo/PRIDE_0000353>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000355> (<http://purl.obolibrary.org/obo/PRIDE_0000355>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000355> <http://purl.obolibrary.org/obo/PRIDE_0000353>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000356> (<http://purl.obolibrary.org/obo/PRIDE_0000356>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000356> <http://purl.obolibrary.org/obo/PRIDE_0000353>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000357> (<http://purl.obolibrary.org/obo/PRIDE_0000357>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000357> <http://purl.obolibrary.org/obo/PRIDE_0000353>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000358> (<http://purl.obolibrary.org/obo/PRIDE_0000358>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000358> <http://purl.obolibrary.org/obo/PRIDE_0000353>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000359> (<http://purl.obolibrary.org/obo/PRIDE_0000359>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000359> <http://purl.obolibrary.org/obo/PRIDE_0000353>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000360> (<http://purl.obolibrary.org/obo/PRIDE_0000360>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000360> <http://purl.obolibrary.org/obo/PRIDE_0000353>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000361> (<http://purl.obolibrary.org/obo/PRIDE_0000361>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000361> <http://purl.obolibrary.org/obo/PRIDE_0000353>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000362> (<http://purl.obolibrary.org/obo/PRIDE_0000362>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000362> <http://purl.obolibrary.org/obo/PRIDE_0000352>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000364> (<http://purl.obolibrary.org/obo/PRIDE_0000364>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000364> <http://purl.obolibrary.org/obo/PRIDE_0000003>)
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000364> <http://purl.obolibrary.org/obo/PRIDE_0000362>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000365> (<http://purl.obolibrary.org/obo/PRIDE_0000365>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000365> <http://purl.obolibrary.org/obo/PRIDE_0000017>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000366> (<http://purl.obolibrary.org/obo/PRIDE_0000366>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000366> <http://purl.obolibrary.org/obo/PRIDE_0000365>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000367> (<http://purl.obolibrary.org/obo/PRIDE_0000367>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000367> <http://purl.obolibrary.org/obo/PRIDE_0000365>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000368> (<http://purl.obolibrary.org/obo/PRIDE_0000368>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000368> <http://purl.obolibrary.org/obo/PRIDE_0000365>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000369> (<http://purl.obolibrary.org/obo/PRIDE_0000369>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000369> <http://purl.obolibrary.org/obo/PRIDE_0000365>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000370> (<http://purl.obolibrary.org/obo/PRIDE_0000370>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000370> <http://purl.obolibrary.org/obo/PRIDE_0000365>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000371> (<http://purl.obolibrary.org/obo/PRIDE_0000371>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000371> <http://purl.obolibrary.org/obo/PRIDE_0000365>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000372> (<http://purl.obolibrary.org/obo/PRIDE_0000372>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000372> <http://purl.obolibrary.org/obo/PRIDE_0000365>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000373> (<http://purl.obolibrary.org/obo/PRIDE_0000373>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000373> <http://purl.obolibrary.org/obo/PRIDE_0000365>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000374> (<http://purl.obolibrary.org/obo/PRIDE_0000374>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000374> <http://purl.obolibrary.org/obo/PRIDE_0000365>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000375> (<http://purl.obolibrary.org/obo/PRIDE_0000375>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000375> <http://purl.obolibrary.org/obo/PRIDE_0000353>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000376> (<http://purl.obolibrary.org/obo/PRIDE_0000376>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000376> <http://purl.obolibrary.org/obo/PRIDE_0000353>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000377> (<http://purl.obolibrary.org/obo/PRIDE_0000377>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000377> <http://purl.obolibrary.org/obo/PRIDE_0000353>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000378> (<http://purl.obolibrary.org/obo/PRIDE_0000378>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000378> <http://purl.obolibrary.org/obo/PRIDE_0000353>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000379> (<http://purl.obolibrary.org/obo/PRIDE_0000379>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000379> <http://purl.obolibrary.org/obo/PRIDE_0000353>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000380> (<http://purl.obolibrary.org/obo/PRIDE_0000380>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000380> <http://purl.obolibrary.org/obo/PRIDE_0000353>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000381> (<http://purl.obolibrary.org/obo/PRIDE_0000381>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000381> <http://purl.obolibrary.org/obo/PRIDE_0000353>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000382> (<http://purl.obolibrary.org/obo/PRIDE_0000382>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000382> <http://purl.obolibrary.org/obo/PRIDE_0000353>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000383> (<http://purl.obolibrary.org/obo/PRIDE_0000383>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000383> <http://purl.obolibrary.org/obo/PRIDE_0000353>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000384> (<http://purl.obolibrary.org/obo/PRIDE_0000384>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000384> <http://purl.obolibrary.org/obo/PRIDE_0000353>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000385> (<http://purl.obolibrary.org/obo/PRIDE_0000385>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000385> <http://purl.obolibrary.org/obo/PRIDE_0000353>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000386> (<http://purl.obolibrary.org/obo/PRIDE_0000386>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000386> <http://purl.obolibrary.org/obo/PRIDE_0000353>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000387> (<http://purl.obolibrary.org/obo/PRIDE_0000387>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000387> <http://purl.obolibrary.org/obo/PRIDE_0000353>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000388> (<http://purl.obolibrary.org/obo/PRIDE_0000388>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000388> <http://purl.obolibrary.org/obo/PRIDE_0000353>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000389> (<http://purl.obolibrary.org/obo/PRIDE_0000389>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000389> <http://purl.obolibrary.org/obo/PRIDE_0000353>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000390> (<http://purl.obolibrary.org/obo/PRIDE_0000390>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000390> <http://purl.obolibrary.org/obo/PRIDE_0000353>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000392> (<http://purl.obolibrary.org/obo/PRIDE_0000392>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000392> <http://purl.obolibrary.org/obo/PRIDE_0000003>)
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000392> <http://purl.obolibrary.org/obo/PRIDE_0000391>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000393> (<http://purl.obolibrary.org/obo/PRIDE_0000393>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000393> <http://purl.obolibrary.org/obo/PRIDE_0000392>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000394> (<http://purl.obolibrary.org/obo/PRIDE_0000394>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000394> <http://purl.obolibrary.org/obo/PRIDE_0000392>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000395> (<http://purl.obolibrary.org/obo/PRIDE_0000395>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000395> <http://purl.obolibrary.org/obo/PRIDE_0000393>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000396> (<http://purl.obolibrary.org/obo/PRIDE_0000396>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000396> <http://purl.obolibrary.org/obo/PRIDE_0000394>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000397> (<http://purl.obolibrary.org/obo/PRIDE_0000397>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000397> <http://purl.obolibrary.org/obo/PRIDE_0000006>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000398> (<http://purl.obolibrary.org/obo/PRIDE_0000398>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000398> <http://purl.obolibrary.org/obo/PRIDE_0000006>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000399> (<http://purl.obolibrary.org/obo/PRIDE_0000399>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000399> <http://purl.obolibrary.org/obo/PRIDE_0000006>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000400> (<http://purl.obolibrary.org/obo/PRIDE_0000400>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000400> <http://purl.obolibrary.org/obo/PRIDE_0000006>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000401> (<http://purl.obolibrary.org/obo/PRIDE_0000401>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000401> <http://purl.obolibrary.org/obo/PRIDE_0000006>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000402> (<http://purl.obolibrary.org/obo/PRIDE_0000402>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000402> <http://purl.obolibrary.org/obo/PRIDE_0000006>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000403> (<http://purl.obolibrary.org/obo/PRIDE_0000403>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000403> <http://purl.obolibrary.org/obo/PRIDE_0000006>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000404> (<http://purl.obolibrary.org/obo/PRIDE_0000404>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000404> <http://purl.obolibrary.org/obo/PRIDE_0000403>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000405> (<http://purl.obolibrary.org/obo/PRIDE_0000405>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000405> <http://purl.obolibrary.org/obo/PRIDE_0000006>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000406> (<http://purl.obolibrary.org/obo/PRIDE_0000406>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000406> <http://purl.obolibrary.org/obo/PRIDE_0000006>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000407> (<http://purl.obolibrary.org/obo/PRIDE_0000407>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000407> <http://purl.obolibrary.org/obo/PRIDE_0000403>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000408> (<http://purl.obolibrary.org/obo/PRIDE_0000408>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000408> <http://purl.obolibrary.org/obo/PRIDE_0000403>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000409> (<http://purl.obolibrary.org/obo/PRIDE_0000409>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000409> <http://purl.obolibrary.org/obo/PRIDE_0000403>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000410> (<http://purl.obolibrary.org/obo/PRIDE_0000410>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000410> <http://purl.obolibrary.org/obo/PRIDE_0000403>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000411> (<http://purl.obolibrary.org/obo/PRIDE_0000411>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000411> <http://purl.obolibrary.org/obo/PRIDE_0000006>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000412> (<http://purl.obolibrary.org/obo/PRIDE_0000412>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000412> <http://purl.obolibrary.org/obo/PRIDE_0000006>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000413> (<http://purl.obolibrary.org/obo/PRIDE_0000413>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000413> <http://purl.obolibrary.org/obo/PRIDE_0000006>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000414> (<http://purl.obolibrary.org/obo/PRIDE_0000414>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000414> <http://purl.obolibrary.org/obo/PRIDE_0000006>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000415> (<http://purl.obolibrary.org/obo/PRIDE_0000415>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000415> <http://purl.obolibrary.org/obo/PRIDE_0000006>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000416> (<http://purl.obolibrary.org/obo/PRIDE_0000416>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000416> <http://purl.obolibrary.org/obo/PRIDE_0000006>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000417> (<http://purl.obolibrary.org/obo/PRIDE_0000417>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000417> <http://purl.obolibrary.org/obo/PRIDE_0000006>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000419> (<http://purl.obolibrary.org/obo/PRIDE_0000419>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000419> <http://purl.obolibrary.org/obo/PRIDE_0000194>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000420> (<http://purl.obolibrary.org/obo/PRIDE_0000420>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000420> <http://purl.obolibrary.org/obo/PRIDE_0000194>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000421> (<http://purl.obolibrary.org/obo/PRIDE_0000421>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000421> <http://purl.obolibrary.org/obo/PRIDE_0000194>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000422> (<http://purl.obolibrary.org/obo/PRIDE_0000422>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000422> <http://purl.obolibrary.org/obo/PRIDE_0000193>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000423> (<http://purl.obolibrary.org/obo/PRIDE_0000423>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000423> <http://purl.obolibrary.org/obo/PRIDE_0000193>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000424> (<http://purl.obolibrary.org/obo/PRIDE_0000424>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000424> <http://purl.obolibrary.org/obo/PRIDE_0000193>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000425> (<http://purl.obolibrary.org/obo/PRIDE_0000425>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000425> <http://purl.obolibrary.org/obo/PRIDE_0000309>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000426> (<http://purl.obolibrary.org/obo/PRIDE_0000426>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000426> <http://purl.obolibrary.org/obo/PRIDE_0000006>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000427> (<http://purl.obolibrary.org/obo/PRIDE_0000427>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000427> <http://purl.obolibrary.org/obo/PRIDE_0000426>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000428> (<http://purl.obolibrary.org/obo/PRIDE_0000428>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000428> <http://purl.obolibrary.org/obo/PRIDE_0000426>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000429> (<http://purl.obolibrary.org/obo/PRIDE_0000429>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000429> <http://purl.obolibrary.org/obo/PRIDE_0000428>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000430> (<http://purl.obolibrary.org/obo/PRIDE_0000430>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000430> <http://purl.obolibrary.org/obo/PRIDE_0000428>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000431> (<http://purl.obolibrary.org/obo/PRIDE_0000431>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000431> <http://purl.obolibrary.org/obo/PRIDE_0000428>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000432> (<http://purl.obolibrary.org/obo/PRIDE_0000432>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000432> <http://purl.obolibrary.org/obo/PRIDE_0000006>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000433> (<http://purl.obolibrary.org/obo/PRIDE_0000433>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000433> <http://purl.obolibrary.org/obo/PRIDE_0000324>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000434> (<http://purl.obolibrary.org/obo/PRIDE_0000434>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000434> <http://purl.obolibrary.org/obo/PRIDE_0000324>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000435> (<http://purl.obolibrary.org/obo/PRIDE_0000435>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000435> <http://purl.obolibrary.org/obo/PRIDE_0000312>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000436> (<http://purl.obolibrary.org/obo/PRIDE_0000436>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000436> <http://purl.obolibrary.org/obo/PRIDE_0000312>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000437> (<http://purl.obolibrary.org/obo/PRIDE_0000437>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000437> <http://purl.obolibrary.org/obo/PRIDE_0000312>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000438> (<http://purl.obolibrary.org/obo/PRIDE_0000438>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000438> <http://purl.obolibrary.org/obo/PRIDE_0000312>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000439> (<http://purl.obolibrary.org/obo/PRIDE_0000439>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000439> <http://purl.obolibrary.org/obo/PRIDE_0000312>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000440> (<http://purl.obolibrary.org/obo/PRIDE_0000440>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000440> <http://purl.obolibrary.org/obo/PRIDE_0000312>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000441> (<http://purl.obolibrary.org/obo/PRIDE_0000441>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000441> <http://purl.obolibrary.org/obo/PRIDE_0000312>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000442> (<http://purl.obolibrary.org/obo/PRIDE_0000442>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000442> <http://purl.obolibrary.org/obo/PRIDE_0000006>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000443> (<http://purl.obolibrary.org/obo/PRIDE_0000443>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000443> <http://purl.obolibrary.org/obo/PRIDE_0000006>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000444> (<http://purl.obolibrary.org/obo/PRIDE_0000444>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000444> <http://purl.obolibrary.org/obo/PRIDE_0000006>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000445> (<http://purl.obolibrary.org/obo/PRIDE_0000445>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000445> <http://purl.obolibrary.org/obo/PRIDE_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000446> (<http://purl.obolibrary.org/obo/PRIDE_0000446>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000446> <http://purl.obolibrary.org/obo/PRIDE_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/PRIDE_0000447> (<http://purl.obolibrary.org/obo/PRIDE_0000447>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PRIDE_0000447> <http://purl.obolibrary.org/obo/PRIDE_0000428>)
+
+# Class: <https://smolang.org/rdfMutate#newNode-2> (<https://smolang.org/rdfMutate#newNode-2>)
+
+SubClassOf(<https://smolang.org/rdfMutate#newNode-2> <https://smolang.org/rdfMutate#newNode-2>)
+
+# Class: <https://smolang.org/rdfMutate#newNode-3> (<https://smolang.org/rdfMutate#newNode-3>)
+
+SubClassOf(<https://smolang.org/rdfMutate#newNode-3> <https://smolang.org/rdfMutate#newNode-3>)
+
+# Class: <https://smolang.org/rdfMutate#newNode-6> (<https://smolang.org/rdfMutate#newNode-6>)
+
+SubClassOf(<https://smolang.org/rdfMutate#newNode-6> <https://smolang.org/rdfMutate#newNode-6>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: owl:Class (owl:Class)
+
+ClassAssertion(<http://purl.obolibrary.org/obo/PRIDE_0000006> owl:Class)
+
+
+)

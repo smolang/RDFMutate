@@ -1,0 +1,17 @@
+Found anomalies while testing file ../testOnt.owl
+
+Anomaly 1: Anomaly: not in EL
+ Use of reserved vocabulary for class IRI: owl:NamedIndividual [ClassAssertion(owl:NamedIndividual <https://smolang.org/rdfMutate#newNode-4>) in OntologyID(OntologyIRI(<urn:unnamed:ontology#ont19104987600905625>) VersionIRI(<null>))]
+ Use of reserved vocabulary for class IRI: owl:NamedIndividual [ClassAssertion(owl:NamedIndividual <https://smolang.org/rdfMutate#newNode-4>) in OntologyID(OntologyIRI(<urn:unnamed:ontology#ont19104987600905625>) VersionIRI(<null>))]
+ Use of reserved vocabulary for class IRI: owl:NamedIndividual [ClassAssertion(owl:NamedIndividual owl:Class) in OntologyID(OntologyIRI(<urn:unnamed:ontology#ont19104987600905625>) VersionIRI(<null>))]
+ Use of reserved vocabulary for individual IRI: owl:Class [ClassAssertion(owl:NamedIndividual owl:Class) in OntologyID(OntologyIRI(<urn:unnamed:ontology#ont19104987600905625>) VersionIRI(<null>))]
+ Use of reserved vocabulary for class IRI: owl:NamedIndividual [ClassAssertion(owl:NamedIndividual owl:Class) in OntologyID(OntologyIRI(<urn:unnamed:ontology#ont19104987600905625>) VersionIRI(<null>))]
+ Use of reserved vocabulary for class IRI: owl:NamedIndividual [ClassAssertion(owl:NamedIndividual <https://smolang.org/rdfMutate#newNode-1>) in OntologyID(OntologyIRI(<urn:unnamed:ontology#ont19104987600905625>) VersionIRI(<null>))]
+ Use of reserved vocabulary for class IRI: owl:NamedIndividual [ClassAssertion(owl:NamedIndividual <https://smolang.org/rdfMutate#newNode-1>) in OntologyID(OntologyIRI(<urn:unnamed:ontology#ont19104987600905625>) VersionIRI(<null>))]
+ Use of reserved vocabulary for class IRI: owl:NamedIndividual [ClassAssertion(owl:NamedIndividual <http://www.absoluteiri.edu/RELAPPROXC1259>) in OntologyID(OntologyIRI(<urn:unnamed:ontology#ont19104987600905625>) VersionIRI(<null>))]
+ Use of reserved vocabulary for class IRI: owl:NamedIndividual [ClassAssertion(owl:NamedIndividual <http://www.absoluteiri.edu/RELAPPROXC1259>) in OntologyID(OntologyIRI(<urn:unnamed:ontology#ont19104987600905625>) VersionIRI(<null>))]
+ Use of reserved vocabulary for individual IRI: owl:Class [ClassAssertion(<http://purl.obolibrary.org/obo/PORO_0000038> owl:Class) in OntologyID(OntologyIRI(<urn:unnamed:ontology#ont19104987600905625>) VersionIRI(<null>))]
+ Not enough property expressions; at least two needed [SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/RO_0002202>) <http://purl.obolibrary.org/obo/RO_0002202>) in OntologyID(OntologyIRI(<urn:unnamed:ontology#ont19104987600905625>) VersionIRI(<null>))]
+ Use of property in chain causes cycle: <http://purl.obolibrary.org/obo/RO_0002202> [SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/RO_0002202>) <http://purl.obolibrary.org/obo/RO_0002202>) in OntologyID(OntologyIRI(<urn:unnamed:ontology#ont19104987600905625>) VersionIRI(<null>))]
+ Use of property in chain causes cycle: <http://purl.obolibrary.org/obo/RO_0002202> [SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/RO_0002202>) <http://purl.obolibrary.org/obo/RO_0002202>) in OntologyID(OntologyIRI(<urn:unnamed:ontology#ont19104987600905625>) VersionIRI(<null>))]
+

@@ -1,0 +1,1060 @@
+Prefix(:=<urn:unnamed:ontology#ont19118910508208520>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:unnamed:ontology#ont19118910508208520>
+
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Preventive_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Molecular_target_activation>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#CSF_Abeta_42>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Biochemical_marker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Progression_rate_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Physiologic_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Generic_measures>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Type_II_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Companion_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Parkin_gene_mutation>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Contiuous_variable>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Type_I_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Haplotype_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Alzheimer's_disease>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#APOE_mutation>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Qualitative_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Clinical_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Metabolic_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Discrimination>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Regulatory_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Disease_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Binary_variable>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#p97/Melanotransferrin>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_multiple_sclerosis>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Reclassification>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Tissue_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Endocrine_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Fluid_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Predictive_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_neurodegenerative_diseases>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Alpha-synuclein_gene>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Amyotrophic_Lateral_Sclerosis>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Parkinson's_disease>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Categorical_variable>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Known_valid_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Diagnostic_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#NR4A2_gene_mutation>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Loss_of_dopamine_transporter>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Pharmacogenomic_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#PINK1_gene_mutation>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Imaging_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Proximal_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_cancer>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#PET_molecular_imaging>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Non-invasive_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Type_IV_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Calibration>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Therapeutic_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Proteomic_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Efficacy_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Challenge_response>))
+Declaration(Class(owl:Class))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Genotypic_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_normal_pressure_hydrocephalus>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Anatomical_imaging_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Molecular_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Progression-free_sutvival>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Safety_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Time-to-recurrence_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Toxicologic_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_specificity>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Pharmacodynamic_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Inclusion_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Type_VI_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Protein_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_function>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Exclusion_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#CSF_phospho-tau>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Exploratory_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_sensitivity>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Translational_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_disruption_of_blood-brain_barrier>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Transcriptomic_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#UCH-L1_mutation>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Authentic_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Genomic_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Time-to-progression_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_nutritional_exposure>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_disease>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Clinical>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Physiological_measure>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Time_to_event_variable>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Type_0_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_type>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#DJ-1_gene_mutation>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Bridging_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Blood_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Prion_disease>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Urine_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_aging>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_inflammation>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Lewy_bodies>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Structural_imaging_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Molecular_imaging_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Mechanism_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_autism>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Time_to_event_response>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Susceptibility_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#DNA_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_traumatic_brain_injury>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Pathophysiological_measure>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#nominal_variable>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Clinical_rating>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Time-to-treatment_failure>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Genetic_marker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Functional_imaging_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Effect_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Target_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_nutritional_status>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Prognostic_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Novel_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_CNS_infection>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Stroke>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_measurement>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Post-approval_application>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Staging_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Valid_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Type_III_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Dietary_intake_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Beta_APP_gene_mutation>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-3>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Invasive_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Combinatorial_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Response_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#microRNA_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Categorical_response>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Epigenetic_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Ordinal_variable>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Outcome_variables>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#CSF_total_tau>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Clinical_endpoint>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Screening_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Copy_number_variant_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_neural_regeneration>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Event-free_survival>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Failure-free_survival>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Disease-free_survival>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Kinetic_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_exposure>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Histological_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Quantitative_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Drug_discovery_and_development>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Cerebrospinal_fluid_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Ultimate_outcome>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_neural_toxicity>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Graded_response>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Surrogate_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Overall_survival>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Presenillin_gene_mutation>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Epilepsy>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Type_V_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Cellular_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Concentration_of_drug>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Genotype_phenotype_determining_drug_response>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Surrogate_endpoint>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Stratification_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_qualification>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_neurological_disorders>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_AIDS-Dementia_Complex>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Survival_time>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Molecular_target_occupancy>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Monitoring_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Rate_of_response>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Epidemiology_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Huntington_disease>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_acute_kidney_injury>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-2>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Probable_valid_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Metabolite_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Distal_biomarker>))
+Declaration(Class(<http://scai.fraunhofer.de/biomarkerO_CV#Intermediate_endpoint>))
+Declaration(ObjectProperty(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of>))
+Declaration(ObjectProperty(<http://scai.fraunhofer.de/biomarkerO_CV#Has_a>))
+Declaration(ObjectProperty(<http://scai.fraunhofer.de/biomarkerO_CV#has_enabler>))
+Declaration(ObjectProperty(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a>))
+Declaration(ObjectProperty(<http://scai.fraunhofer.de/biomarkerO_CV#part_of>))
+Declaration(ObjectProperty(<http://scai.fraunhofer.de/biomarkerO_CV#has_direct_participant>))
+Declaration(ObjectProperty(<http://scai.fraunhofer.de/biomarkerO_CV#has_function>))
+Declaration(ObjectProperty(<https://smolang.org/rdfMutate#newNode-4>))
+Declaration(DataProperty(<https://smolang.org/rdfMutate#newNode-7>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-0>))
+Declaration(NamedIndividual(<http://scai.fraunhofer.de/biomarkerO_CV#Imaging_biomarker>))
+Declaration(NamedIndividual(<http://scai.fraunhofer.de/biomarkerO_CV#Clinical>))
+############################
+#   Object Properties
+############################
+
+# Object Property: <https://smolang.org/rdfMutate#newNode-4> (<https://smolang.org/rdfMutate#newNode-4>)
+
+SubObjectPropertyOf(<https://smolang.org/rdfMutate#newNode-4> <https://smolang.org/rdfMutate#newNode-4>)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: <https://smolang.org/rdfMutate#newNode-7> (<https://smolang.org/rdfMutate#newNode-7>)
+
+DataPropertyRange(<https://smolang.org/rdfMutate#newNode-7> xsd:string)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#APOE_mutation> (<http://scai.fraunhofer.de/biomarkerO_CV#APOE_mutation>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#APOE_mutation> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Alzheimer's_disease>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#APOE_mutation> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Alzheimer's_disease>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Alpha-synuclein_gene> (<http://scai.fraunhofer.de/biomarkerO_CV#Alpha-synuclein_gene>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Alpha-synuclein_gene> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Parkinson's_disease>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Alpha-synuclein_gene> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Parkinson's_disease>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Anatomical_imaging_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Anatomical_imaging_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Anatomical_imaging_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> owl:Thing))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Anatomical_imaging_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Imaging_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Authentic_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Authentic_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Authentic_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Molecular_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Authentic_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Molecular_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Beta_APP_gene_mutation> (<http://scai.fraunhofer.de/biomarkerO_CV#Beta_APP_gene_mutation>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Beta_APP_gene_mutation> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Alzheimer's_disease>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Beta_APP_gene_mutation> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Alzheimer's_disease>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Binary_variable> (<http://scai.fraunhofer.de/biomarkerO_CV#Binary_variable>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Binary_variable> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Categorical_variable>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Binary_variable> <http://scai.fraunhofer.de/biomarkerO_CV#Categorical_variable>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Biochemical_marker> (<http://scai.fraunhofer.de/biomarkerO_CV#Biochemical_marker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Biochemical_marker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_type>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Biochemical_marker> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_type>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_function> (<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_function>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_function> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#has_enabler> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_function> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_measurement> (<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_measurement>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_measurement> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Clinical>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_measurement> <http://scai.fraunhofer.de/biomarkerO_CV#Clinical>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_AIDS-Dementia_Complex> (<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_AIDS-Dementia_Complex>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_AIDS-Dementia_Complex> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_neurodegenerative_diseases>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_AIDS-Dementia_Complex> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_neurodegenerative_diseases>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Amyotrophic_Lateral_Sclerosis> (<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Amyotrophic_Lateral_Sclerosis>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Amyotrophic_Lateral_Sclerosis> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_neurodegenerative_diseases>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Amyotrophic_Lateral_Sclerosis> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_neurodegenerative_diseases>)
+DisjointClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Amyotrophic_Lateral_Sclerosis> <https://smolang.org/rdfMutate#newNode-3>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_CNS_infection> (<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_CNS_infection>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_CNS_infection> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_neurological_disorders>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_CNS_infection> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_neurological_disorders>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Epilepsy> (<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Epilepsy>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Epilepsy> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_neurological_disorders>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Epilepsy> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_neurological_disorders>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Huntington_disease> (<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Huntington_disease>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Huntington_disease> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_neurodegenerative_diseases>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Huntington_disease> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_neurodegenerative_diseases>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Prion_disease> (<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Prion_disease>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Prion_disease> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_neurodegenerative_diseases>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Prion_disease> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_neurodegenerative_diseases>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Stroke> (<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Stroke>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Stroke> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_neurological_disorders>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Stroke> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_neurological_disorders>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_acute_kidney_injury> (<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_acute_kidney_injury>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_acute_kidney_injury> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_disease>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_acute_kidney_injury> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_disease>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_aging> (<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_aging>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_aging> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_disease>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_aging> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_disease>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_autism> (<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_autism>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_autism> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_neurological_disorders>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_autism> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_neurological_disorders>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_cancer> (<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_cancer>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_cancer> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_disease>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_cancer> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_disease>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_disease> (<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_disease>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_disease> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Clinical_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_disease> <http://scai.fraunhofer.de/biomarkerO_CV#Clinical_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_disruption_of_blood-brain_barrier> (<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_disruption_of_blood-brain_barrier>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_disruption_of_blood-brain_barrier> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_neurological_disorders>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_disruption_of_blood-brain_barrier> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_neurological_disorders>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_exposure> (<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_exposure>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_exposure> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Toxicologic_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_exposure> <http://scai.fraunhofer.de/biomarkerO_CV#Epidemiology_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_inflammation> (<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_inflammation>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_inflammation> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_disease>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_inflammation> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_disease>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_multiple_sclerosis> (<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_multiple_sclerosis>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_multiple_sclerosis> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_neurodegenerative_diseases>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_multiple_sclerosis> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_neurodegenerative_diseases>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_neural_regeneration> (<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_neural_regeneration>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_neural_regeneration> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_neurological_disorders>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_neural_regeneration> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_neurological_disorders>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_neural_toxicity> (<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_neural_toxicity>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_neural_toxicity> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_neurological_disorders>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_neural_toxicity> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_neurological_disorders>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_neurodegenerative_diseases> (<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_neurodegenerative_diseases>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_neurodegenerative_diseases> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_neurological_disorders>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_neurodegenerative_diseases> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_neurological_disorders>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_neurological_disorders> (<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_neurological_disorders>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_neurological_disorders> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_disease>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_neurological_disorders> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_disease>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_normal_pressure_hydrocephalus> (<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_normal_pressure_hydrocephalus>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_normal_pressure_hydrocephalus> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_neurological_disorders>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_normal_pressure_hydrocephalus> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_neurological_disorders>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_nutritional_exposure> (<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_nutritional_exposure>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_nutritional_exposure> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_exposure>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_nutritional_exposure> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_exposure>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_nutritional_status> (<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_nutritional_status>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_nutritional_status> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_nutritional_exposure>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_nutritional_status> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_nutritional_exposure>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_traumatic_brain_injury> (<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_traumatic_brain_injury>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_traumatic_brain_injury> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_neurological_disorders>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_traumatic_brain_injury> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_neurological_disorders>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_qualification> (<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_qualification>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_qualification> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#has_direct_participant> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_qualification> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_sensitivity> (<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_sensitivity>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_sensitivity> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Generic_measures>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_sensitivity> <http://scai.fraunhofer.de/biomarkerO_CV#Generic_measures>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_specificity> (<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_specificity>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_specificity> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Generic_measures>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_specificity> <http://scai.fraunhofer.de/biomarkerO_CV#Generic_measures>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_type> (<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_type>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_type> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_type> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Blood_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Blood_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Blood_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Fluid_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Blood_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Fluid_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Bridging_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Bridging_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Bridging_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Translational_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Bridging_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Translational_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#CSF_Abeta_42> (<http://scai.fraunhofer.de/biomarkerO_CV#CSF_Abeta_42>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#CSF_Abeta_42> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Alzheimer's_disease>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#CSF_Abeta_42> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Alzheimer's_disease>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#CSF_phospho-tau> (<http://scai.fraunhofer.de/biomarkerO_CV#CSF_phospho-tau>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#CSF_phospho-tau> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Alzheimer's_disease>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#CSF_phospho-tau> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Alzheimer's_disease>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#CSF_total_tau> (<http://scai.fraunhofer.de/biomarkerO_CV#CSF_total_tau>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#CSF_total_tau> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Alzheimer's_disease>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#CSF_total_tau> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Alzheimer's_disease>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Calibration> (<http://scai.fraunhofer.de/biomarkerO_CV#Calibration>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Calibration> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Generic_measures>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Calibration> <http://scai.fraunhofer.de/biomarkerO_CV#Generic_measures>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Categorical_response> (<http://scai.fraunhofer.de/biomarkerO_CV#Categorical_response>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Categorical_response> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#part_of> <http://scai.fraunhofer.de/biomarkerO_CV#Response_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Categorical_response> <http://scai.fraunhofer.de/biomarkerO_CV#Response_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Categorical_variable> (<http://scai.fraunhofer.de/biomarkerO_CV#Categorical_variable>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Categorical_variable> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Outcome_variables>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Categorical_variable> <http://scai.fraunhofer.de/biomarkerO_CV#Outcome_variables>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Cellular_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Cellular_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Cellular_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Histological_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Cellular_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Histological_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Cerebrospinal_fluid_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Cerebrospinal_fluid_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Cerebrospinal_fluid_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Fluid_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Cerebrospinal_fluid_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Fluid_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Challenge_response> (<http://scai.fraunhofer.de/biomarkerO_CV#Challenge_response>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Challenge_response> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Graded_response>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Challenge_response> <http://scai.fraunhofer.de/biomarkerO_CV#Graded_response>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Clinical_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Clinical_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Clinical_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#has_function> <http://scai.fraunhofer.de/biomarkerO_CV#Clinical>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Clinical_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Clinical>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Clinical_endpoint> (<http://scai.fraunhofer.de/biomarkerO_CV#Clinical_endpoint>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Clinical_endpoint> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_measurement>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Clinical_endpoint> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_measurement>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Clinical_rating> (<http://scai.fraunhofer.de/biomarkerO_CV#Clinical_rating>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Clinical_rating> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Pharmacodynamic_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Clinical_rating> <http://scai.fraunhofer.de/biomarkerO_CV#Pharmacodynamic_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Combinatorial_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Combinatorial_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Combinatorial_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_type>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Combinatorial_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_type>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Companion_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Companion_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Companion_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Clinical_endpoint>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Companion_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Clinical_endpoint>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Concentration_of_drug> (<http://scai.fraunhofer.de/biomarkerO_CV#Concentration_of_drug>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Concentration_of_drug> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Pharmacodynamic_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Concentration_of_drug> <http://scai.fraunhofer.de/biomarkerO_CV#Pharmacodynamic_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Contiuous_variable> (<http://scai.fraunhofer.de/biomarkerO_CV#Contiuous_variable>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Contiuous_variable> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Outcome_variables>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Contiuous_variable> <http://scai.fraunhofer.de/biomarkerO_CV#Outcome_variables>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Copy_number_variant_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Copy_number_variant_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Copy_number_variant_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Genetic_marker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Copy_number_variant_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Genetic_marker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#DJ-1_gene_mutation> (<http://scai.fraunhofer.de/biomarkerO_CV#DJ-1_gene_mutation>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#DJ-1_gene_mutation> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Parkinson's_disease>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#DJ-1_gene_mutation> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Parkinson's_disease>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#DNA_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#DNA_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#DNA_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Genetic_marker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#DNA_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Genetic_marker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Diagnostic_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Diagnostic_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Diagnostic_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Disease_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Diagnostic_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Disease_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Dietary_intake_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Dietary_intake_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Dietary_intake_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_nutritional_exposure>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Dietary_intake_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_nutritional_exposure>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Discrimination> (<http://scai.fraunhofer.de/biomarkerO_CV#Discrimination>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Discrimination> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Generic_measures>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Discrimination> <http://scai.fraunhofer.de/biomarkerO_CV#Generic_measures>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Disease-free_survival> (<http://scai.fraunhofer.de/biomarkerO_CV#Disease-free_survival>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Disease-free_survival> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Time_to_event_variable>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Disease-free_survival> <http://scai.fraunhofer.de/biomarkerO_CV#Time_to_event_variable>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Disease_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Disease_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Disease_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Has_a> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_function>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Disease_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_function>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Distal_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Distal_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Distal_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Pharmacodynamic_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Distal_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Pharmacodynamic_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Effect_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Effect_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Effect_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_exposure>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Effect_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Epidemiology_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Efficacy_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Efficacy_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Efficacy_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Predictive_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Efficacy_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Predictive_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Endocrine_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Endocrine_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Endocrine_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_exposure>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Endocrine_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_exposure>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Epidemiology_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Epidemiology_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Epidemiology_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#has_function> <http://scai.fraunhofer.de/biomarkerO_CV#Clinical>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Epidemiology_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Clinical>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Epigenetic_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Epigenetic_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Epigenetic_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Genetic_marker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Epigenetic_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Genetic_marker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Event-free_survival> (<http://scai.fraunhofer.de/biomarkerO_CV#Event-free_survival>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Event-free_survival> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Time_to_event_variable>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Event-free_survival> <http://scai.fraunhofer.de/biomarkerO_CV#Time_to_event_variable>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Exclusion_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Exclusion_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Exclusion_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Screening_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Exclusion_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Screening_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Exploratory_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Exploratory_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Exploratory_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#has_function> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_qualification>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Exploratory_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_qualification>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Failure-free_survival> (<http://scai.fraunhofer.de/biomarkerO_CV#Failure-free_survival>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Failure-free_survival> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Time_to_event_variable>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Failure-free_survival> <http://scai.fraunhofer.de/biomarkerO_CV#Time_to_event_variable>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Fluid_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Fluid_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Fluid_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Molecular_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Fluid_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Molecular_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Functional_imaging_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Functional_imaging_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Functional_imaging_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Imaging_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Functional_imaging_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Imaging_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Generic_measures> (<http://scai.fraunhofer.de/biomarkerO_CV#Generic_measures>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Generic_measures> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_measurement>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Generic_measures> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_measurement>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Genetic_marker> (<http://scai.fraunhofer.de/biomarkerO_CV#Genetic_marker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Genetic_marker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Molecular_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Genetic_marker> <http://scai.fraunhofer.de/biomarkerO_CV#Molecular_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Genomic_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Genomic_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Genomic_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Molecular_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Genomic_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Molecular_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Genotype_phenotype_determining_drug_response> (<http://scai.fraunhofer.de/biomarkerO_CV#Genotype_phenotype_determining_drug_response>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Genotype_phenotype_determining_drug_response> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Pharmacodynamic_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Genotype_phenotype_determining_drug_response> <http://scai.fraunhofer.de/biomarkerO_CV#Pharmacodynamic_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Genotypic_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Genotypic_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Genotypic_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Genetic_marker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Genotypic_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Genetic_marker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Graded_response> (<http://scai.fraunhofer.de/biomarkerO_CV#Graded_response>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Graded_response> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#part_of> <http://scai.fraunhofer.de/biomarkerO_CV#Response_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Graded_response> <http://scai.fraunhofer.de/biomarkerO_CV#Response_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Haplotype_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Haplotype_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Haplotype_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Genetic_marker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Haplotype_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Genetic_marker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Histological_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Histological_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Histological_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Clinical_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Histological_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Clinical_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Imaging_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Imaging_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Imaging_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_type>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Imaging_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_type>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Inclusion_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Inclusion_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Inclusion_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Screening_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Inclusion_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Screening_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Intermediate_endpoint> (<http://scai.fraunhofer.de/biomarkerO_CV#Intermediate_endpoint>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Intermediate_endpoint> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Clinical_endpoint>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Intermediate_endpoint> <http://scai.fraunhofer.de/biomarkerO_CV#Clinical_endpoint>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Invasive_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Invasive_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Invasive_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Monitoring_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Invasive_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Monitoring_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Kinetic_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Kinetic_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Kinetic_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Predictive_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Kinetic_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Predictive_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Known_valid_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Known_valid_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Known_valid_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Valid_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Known_valid_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Valid_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Lewy_bodies> (<http://scai.fraunhofer.de/biomarkerO_CV#Lewy_bodies>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Lewy_bodies> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Parkinson's_disease>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Lewy_bodies> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Parkinson's_disease>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Loss_of_dopamine_transporter> (<http://scai.fraunhofer.de/biomarkerO_CV#Loss_of_dopamine_transporter>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Loss_of_dopamine_transporter> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Parkinson's_disease>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Loss_of_dopamine_transporter> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Parkinson's_disease>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Mechanism_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Mechanism_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Mechanism_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Therapeutic_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Mechanism_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Therapeutic_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Metabolic_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Metabolic_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Metabolic_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Molecular_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Metabolic_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Molecular_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Metabolite_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Metabolite_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Metabolite_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Metabolic_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Metabolite_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Metabolic_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Molecular_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Molecular_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Molecular_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_type>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Molecular_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_type>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Molecular_imaging_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Molecular_imaging_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Molecular_imaging_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Imaging_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Molecular_imaging_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Imaging_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Molecular_target_activation> (<http://scai.fraunhofer.de/biomarkerO_CV#Molecular_target_activation>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Molecular_target_activation> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Pharmacodynamic_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Molecular_target_activation> <http://scai.fraunhofer.de/biomarkerO_CV#Pharmacodynamic_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Molecular_target_occupancy> (<http://scai.fraunhofer.de/biomarkerO_CV#Molecular_target_occupancy>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Molecular_target_occupancy> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Pharmacodynamic_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Molecular_target_occupancy> <http://scai.fraunhofer.de/biomarkerO_CV#Pharmacodynamic_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Monitoring_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Monitoring_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Monitoring_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#has_function> <http://scai.fraunhofer.de/biomarkerO_CV#Clinical>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Monitoring_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Clinical>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#NR4A2_gene_mutation> (<http://scai.fraunhofer.de/biomarkerO_CV#NR4A2_gene_mutation>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#NR4A2_gene_mutation> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Parkinson's_disease>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#NR4A2_gene_mutation> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Parkinson's_disease>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Non-invasive_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Non-invasive_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Non-invasive_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Monitoring_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Non-invasive_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Monitoring_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Novel_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Novel_biomarker>)
+
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Novel_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Exploratory_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Ordinal_variable> (<http://scai.fraunhofer.de/biomarkerO_CV#Ordinal_variable>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Ordinal_variable> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Categorical_variable>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Ordinal_variable> <http://scai.fraunhofer.de/biomarkerO_CV#Categorical_variable>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Outcome_variables> (<http://scai.fraunhofer.de/biomarkerO_CV#Outcome_variables>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Outcome_variables> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_measurement>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Outcome_variables> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_measurement>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Overall_survival> (<http://scai.fraunhofer.de/biomarkerO_CV#Overall_survival>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Overall_survival> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Time_to_event_variable>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Overall_survival> <http://scai.fraunhofer.de/biomarkerO_CV#Time_to_event_variable>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#PET_molecular_imaging> (<http://scai.fraunhofer.de/biomarkerO_CV#PET_molecular_imaging>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#PET_molecular_imaging> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Alzheimer's_disease>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#PET_molecular_imaging> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Alzheimer's_disease>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#PINK1_gene_mutation> (<http://scai.fraunhofer.de/biomarkerO_CV#PINK1_gene_mutation>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#PINK1_gene_mutation> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Parkinson's_disease>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#PINK1_gene_mutation> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Parkinson's_disease>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Parkin_gene_mutation> (<http://scai.fraunhofer.de/biomarkerO_CV#Parkin_gene_mutation>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Parkin_gene_mutation> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Parkinson's_disease>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Parkin_gene_mutation> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Parkinson's_disease>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Pathophysiological_measure> (<http://scai.fraunhofer.de/biomarkerO_CV#Pathophysiological_measure>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Pathophysiological_measure> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Pharmacodynamic_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Pathophysiological_measure> <http://scai.fraunhofer.de/biomarkerO_CV#Pharmacodynamic_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Pharmacodynamic_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Pharmacodynamic_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Pharmacodynamic_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Has_a> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_function>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Pharmacodynamic_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_function>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Pharmacogenomic_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Pharmacogenomic_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Pharmacogenomic_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Molecular_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Pharmacogenomic_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Molecular_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Physiologic_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Physiologic_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Physiologic_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_type>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Physiologic_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_type>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Physiological_measure> (<http://scai.fraunhofer.de/biomarkerO_CV#Physiological_measure>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Physiological_measure> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Pharmacodynamic_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Physiological_measure> <http://scai.fraunhofer.de/biomarkerO_CV#Pharmacodynamic_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Predictive_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Predictive_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Predictive_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Disease_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Predictive_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Disease_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Presenillin_gene_mutation> (<http://scai.fraunhofer.de/biomarkerO_CV#Presenillin_gene_mutation>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Presenillin_gene_mutation> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Alzheimer's_disease>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Presenillin_gene_mutation> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Alzheimer's_disease>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Preventive_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Preventive_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Preventive_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Disease_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Preventive_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Disease_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Probable_valid_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Probable_valid_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Probable_valid_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Valid_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Probable_valid_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Valid_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Prognostic_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Prognostic_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Prognostic_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Disease_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Prognostic_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Disease_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Progression-free_sutvival> (<http://scai.fraunhofer.de/biomarkerO_CV#Progression-free_sutvival>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Progression-free_sutvival> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Time_to_event_variable>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Progression-free_sutvival> <http://scai.fraunhofer.de/biomarkerO_CV#Time_to_event_variable>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Progression_rate_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Progression_rate_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Progression_rate_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Prognostic_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Progression_rate_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Prognostic_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Protein_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Protein_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Protein_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Proteomic_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Protein_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Proteomic_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Proteomic_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Proteomic_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Proteomic_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Molecular_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Proteomic_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Molecular_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Proximal_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Proximal_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Proximal_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Pharmacodynamic_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Proximal_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Pharmacodynamic_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Qualitative_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Qualitative_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Qualitative_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Clinical_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Qualitative_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Clinical_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Quantitative_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Quantitative_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Quantitative_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Clinical_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Quantitative_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Clinical_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Rate_of_response> (<http://scai.fraunhofer.de/biomarkerO_CV#Rate_of_response>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Rate_of_response> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#part_of> <http://scai.fraunhofer.de/biomarkerO_CV#Response_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Rate_of_response> <http://scai.fraunhofer.de/biomarkerO_CV#Response_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Reclassification> (<http://scai.fraunhofer.de/biomarkerO_CV#Reclassification>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Reclassification> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Generic_measures>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Reclassification> <http://scai.fraunhofer.de/biomarkerO_CV#Generic_measures>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Regulatory_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Regulatory_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Regulatory_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Clinical_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Regulatory_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Clinical_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Response_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Response_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Response_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Therapeutic_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Response_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Therapeutic_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Safety_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Safety_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Safety_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Toxicologic_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Safety_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Toxicologic_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Screening_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Screening_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Screening_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Diagnostic_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Screening_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Diagnostic_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Staging_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Staging_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Staging_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Prognostic_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Staging_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Prognostic_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Stratification_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Stratification_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Stratification_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Disease_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Stratification_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Disease_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Structural_imaging_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Structural_imaging_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Structural_imaging_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Anatomical_imaging_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Structural_imaging_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Anatomical_imaging_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Surrogate_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Surrogate_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Surrogate_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#has_function> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_qualification>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Surrogate_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_qualification>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Surrogate_endpoint> (<http://scai.fraunhofer.de/biomarkerO_CV#Surrogate_endpoint>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Surrogate_endpoint> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Clinical_endpoint>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Surrogate_endpoint> <http://scai.fraunhofer.de/biomarkerO_CV#Clinical_endpoint>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Survival_time> (<http://scai.fraunhofer.de/biomarkerO_CV#Survival_time>)
+
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Survival_time> <http://scai.fraunhofer.de/biomarkerO_CV#Time_to_event_variable>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Susceptibility_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Susceptibility_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Susceptibility_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_exposure>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Susceptibility_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Epidemiology_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Target_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Target_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Target_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Has_a> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_function>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Target_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_function>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Therapeutic_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Therapeutic_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Therapeutic_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#has_function> <http://scai.fraunhofer.de/biomarkerO_CV#Clinical>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Therapeutic_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Clinical>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Time-to-progression_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Time-to-progression_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Time-to-progression_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Time_to_event_variable>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Time-to-progression_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Time_to_event_variable>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Time-to-recurrence_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Time-to-recurrence_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Time-to-recurrence_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Time_to_event_variable>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Time-to-recurrence_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Time_to_event_variable>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Time-to-treatment_failure> (<http://scai.fraunhofer.de/biomarkerO_CV#Time-to-treatment_failure>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Time-to-treatment_failure> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Time_to_event_variable>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Time-to-treatment_failure> <http://scai.fraunhofer.de/biomarkerO_CV#Time_to_event_variable>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Time_to_event_response> (<http://scai.fraunhofer.de/biomarkerO_CV#Time_to_event_response>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Time_to_event_response> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#part_of> <http://scai.fraunhofer.de/biomarkerO_CV#Response_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Time_to_event_response> <http://scai.fraunhofer.de/biomarkerO_CV#Response_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Time_to_event_variable> (<http://scai.fraunhofer.de/biomarkerO_CV#Time_to_event_variable>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Time_to_event_variable> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Outcome_variables>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Time_to_event_variable> <http://scai.fraunhofer.de/biomarkerO_CV#Outcome_variables>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Tissue_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Tissue_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Tissue_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Histological_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Tissue_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Histological_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Toxicologic_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Toxicologic_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Toxicologic_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#has_function> <http://scai.fraunhofer.de/biomarkerO_CV#Clinical>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Toxicologic_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Clinical>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Transcriptomic_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Transcriptomic_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Transcriptomic_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Genomic_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Transcriptomic_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Genomic_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Translational_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Translational_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Translational_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Has_a> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_function>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Translational_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_function>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Type_0_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Type_0_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Type_0_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Mechanism_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Type_0_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Mechanism_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Type_III_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Type_III_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Type_III_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Mechanism_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Type_III_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Mechanism_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Type_II_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Type_II_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Type_II_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Mechanism_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Type_II_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Mechanism_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Type_IV_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Type_IV_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Type_IV_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Mechanism_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Type_IV_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Mechanism_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Type_I_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Type_I_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Type_I_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Mechanism_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Type_I_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Mechanism_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Type_VI_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Type_VI_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Type_VI_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Mechanism_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Type_VI_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Mechanism_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Type_V_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Type_V_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Type_V_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Mechanism_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Type_V_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Mechanism_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#UCH-L1_mutation> (<http://scai.fraunhofer.de/biomarkerO_CV#UCH-L1_mutation>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#UCH-L1_mutation> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Parkinson's_disease>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#UCH-L1_mutation> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Parkinson's_disease>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Ultimate_outcome> (<http://scai.fraunhofer.de/biomarkerO_CV#Ultimate_outcome>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Ultimate_outcome> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Clinical_endpoint>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Ultimate_outcome> <http://scai.fraunhofer.de/biomarkerO_CV#Clinical_endpoint>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Urine_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Urine_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Urine_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Fluid_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Urine_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Fluid_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Valid_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Valid_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Valid_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#has_function> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_qualification>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Valid_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_qualification>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#microRNA_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#microRNA_biomarker>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#microRNA_biomarker> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Genomic_biomarker>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#microRNA_biomarker> <http://scai.fraunhofer.de/biomarkerO_CV#Genomic_biomarker>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#nominal_variable> (<http://scai.fraunhofer.de/biomarkerO_CV#nominal_variable>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#nominal_variable> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Categorical_variable>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#nominal_variable> <http://scai.fraunhofer.de/biomarkerO_CV#Categorical_variable>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Alzheimer's_disease> (<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Alzheimer's_disease>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Alzheimer's_disease> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_neurodegenerative_diseases>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Alzheimer's_disease> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_neurodegenerative_diseases>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Parkinson's_disease> (<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Parkinson's_disease>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Parkinson's_disease> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#instance_of> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_neurodegenerative_diseases>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Parkinson's_disease> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_neurodegenerative_diseases>)
+
+# Class: <http://scai.fraunhofer.de/biomarkerO_CV#p97/Melanotransferrin> (<http://scai.fraunhofer.de/biomarkerO_CV#p97/Melanotransferrin>)
+
+EquivalentClasses(<http://scai.fraunhofer.de/biomarkerO_CV#p97/Melanotransferrin> ObjectSomeValuesFrom(<http://scai.fraunhofer.de/biomarkerO_CV#Is_a> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Alzheimer's_disease>))
+SubClassOf(<http://scai.fraunhofer.de/biomarkerO_CV#p97/Melanotransferrin> <http://scai.fraunhofer.de/biomarkerO_CV#Biomarker_of_Alzheimer's_disease>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://scai.fraunhofer.de/biomarkerO_CV#Clinical> (<http://scai.fraunhofer.de/biomarkerO_CV#Clinical>)
+
+ClassAssertion(owl:Class <http://scai.fraunhofer.de/biomarkerO_CV#Clinical>)
+
+# Individual: <http://scai.fraunhofer.de/biomarkerO_CV#Imaging_biomarker> (<http://scai.fraunhofer.de/biomarkerO_CV#Imaging_biomarker>)
+
+ClassAssertion(owl:Class <http://scai.fraunhofer.de/biomarkerO_CV#Imaging_biomarker>)
+
+# Individual: <https://smolang.org/rdfMutate#newNode-0> (<https://smolang.org/rdfMutate#newNode-0>)
+
+ClassAssertion(<http://scai.fraunhofer.de/biomarkerO_CV#Pharmacogenomic_biomarker> <https://smolang.org/rdfMutate#newNode-0>)
+
+
+)

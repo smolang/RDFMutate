@@ -1,0 +1,1115 @@
+Prefix(:=<urn:unnamed:ontology#ont19106471449657526>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:unnamed:ontology#ont19106471449657526>
+
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Bedding>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ProtocolParameterType>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#AuditAndSecurityPackage>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Compound>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#WarningType>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MGEDCoreOntology>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#IndividualChromosomalAbnormality>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioSourceProvider>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#SeqFeatureBasis>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ReplicateDescription>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Water>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#FeatureShape>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Genotype>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MGEDOntology>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Parameter>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#OrganismDatabase>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DiseaseLocation>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Protocol>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#URI>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Fiducial>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Media>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#PhysicalBioSequenceType>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#QuantityUnitOther>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Transformation>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DeprecatedTerms>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Measurement>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ZoneDefect>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MeasurementPackage>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DefectType>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Ecotype>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#TechnologyType>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#SurfaceType>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BarrierFacility>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Biometrics>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#TimeUnit>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#EnvironmentalStress>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#EpidemiologicalDesign>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#FactorValueDependency>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#FamilyHistory>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioAssayDataPackage>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Nutrients>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#GeneticModification>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DiseaseState>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ConcentrationUnit>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#PathogenTests>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Person>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BibliographicReference>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Treatment>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Action>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#EnvironmentalFactorCategory>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#HistologyDatabase>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#OperatorVariation>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Reporter>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#HigherLevelAnalysisPackage>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DiseaseStateDatabase>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#FailType>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#OrganismStatus>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#TheoreticalBioSequenceType>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Hardware>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ProtocolPackage>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Atmosphere>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterial>))
+Declaration(Class(owl:Class))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ClinicalFinding>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#TimeUnitOther>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#RadiationUnit>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#FiducialType>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#PerturbationalDesign>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#FactorValue>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Age>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#CellTypeDatabase>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Sex>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ExperimentDesignType>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#GrowthCondition>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioAssayDataCluster>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ClinicalTest>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#QuantitationTypePackage>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DesignElementGroup>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#LabelCompound>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#PhysicalArrayDesign>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#InitialTimePoint>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioAssayData>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Software>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MethodologicalFactorCategory>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ChromosomalAberrationDatabase>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#PolymerType>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DeliveryMethod>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#TargetedCellType>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#NodeValue>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MassUnit>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BiologicalProperty>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#QuantityUnit>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#GeneticMaterial>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ArrayGroup>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#TargetedCellTypeDatabase>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DerivedBioAssay>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ArrayPackage>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ExperimentalFactor>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MethodologicalDesign>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#NodeValueType>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DistanceUnitOther>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#IndividualGeneticCharacteristics>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DesignElementGroupType>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DistanceUnit>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Haplotype>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMolecularAnnotation>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DesignElement>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioSample>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Humidity>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#EnvironmentalHistory>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#FamilyRelationship>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MGEDExtendedOntology>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ClinicalHistory>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterialCharacteristics>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Ploidy>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#LabeledExtract>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#PreservationType>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ExperimentDesign>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#QuantitationType>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-4>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#FeatureDefect>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ArrayDesignPackage>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DesignElementPackage>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#GeographicLocationDatabase>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MaterialType>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#QualityControlDescription>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#OrganismPart>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#CellLineDatabase>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#PhysicalBioAssay>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#VolumeUnit>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#PublicationType>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#LightUnit>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#OtherUnit>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#SoftwareVariation>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterialPackage>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BiologicalFactorCategory>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Histology>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioSampleType>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#CompoundDatabase>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#HardwareVariation>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-3>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#TumorGrading>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ImageFormat>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Individual>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ExperimentPackage>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ClinicalTreatment>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DerivedBioAssayType>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Unit>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioSource>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#SequenceOntologyBioSequenceType>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#StrainOrLineDatabase>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#GeographicLocation>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioAssayPackage>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#CellLine>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#NormalizationDescriptionType>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Organization>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioAssay>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DataType>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Experiment>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Temperature>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Database>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ExperimentalFactorCategory>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioSourceType>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#StrandType>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#QualityControlDescriptionType>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Node>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#HardwareType>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Allele>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ProtocolType>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#StrainOrLine>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#TemperatureUnit>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Preservation>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ChromosomalAberration>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Roles>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioSequenceType>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterialCharacteristicCategory>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Light>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ChromosomalAberrationClassification>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#FactorValueSet>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#OntologyEntry>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Phenotype>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Cultivar>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MassUnitOther>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ComplexAction>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ClinicalTestType>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Organism>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#SubstrateType>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#FeatureGroup>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#FamilyMember>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Host>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DiseaseStaging>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#OrganismPartDatabase>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#AtomicAction>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#VolumeUnitOther>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#CellType>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#SoftwareType>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#PopulationDensity>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ReplicateDescriptionType>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Contact>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioSequencePackage>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#SequenceOntologyDatabase>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ConcentrationUnitOther>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#LaboratoryTestDatabase>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#SomaticModification>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Generations>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DevelopmentalStageDatabase>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-2>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioSequence>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DevelopmentalStage>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#User>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ControlType>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#NormalizationDescription>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ProtocolVariation>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#HistoryFactor>))
+Declaration(Class(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Scale>))
+Declaration(DataProperty(<https://smolang.org/rdfMutate#newNode-0>))
+Declaration(NamedIndividual(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ExperimentDesignType>))
+Declaration(NamedIndividual(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterial>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-2>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-1>))
+############################
+#   Data Properties
+############################
+
+# Data Property: <https://smolang.org/rdfMutate#newNode-0> (<https://smolang.org/rdfMutate#newNode-0>)
+
+FunctionalDataProperty(<https://smolang.org/rdfMutate#newNode-0>)
+DataPropertyRange(<https://smolang.org/rdfMutate#newNode-0> xsd:string)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Action> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Action>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Action> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterialPackage>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Action> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BiologicalFactorCategory>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Age> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Age>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Age> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterialCharacteristics>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Allele> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Allele>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Allele> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#IndividualGeneticCharacteristics>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ArrayDesignPackage> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ArrayDesignPackage>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ArrayDesignPackage> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MGEDCoreOntology>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ArrayGroup> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ArrayGroup>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ArrayGroup> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ArrayPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ArrayPackage> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ArrayPackage>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ArrayPackage> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MGEDCoreOntology>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Atmosphere> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Atmosphere>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Atmosphere> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#GrowthCondition>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#AtomicAction> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#AtomicAction>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#AtomicAction> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Action>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#AuditAndSecurityPackage> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#AuditAndSecurityPackage>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#AuditAndSecurityPackage> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MGEDCoreOntology>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BarrierFacility> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BarrierFacility>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BarrierFacility> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#GrowthCondition>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Bedding> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Bedding>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Bedding> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#EnvironmentalHistory>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioAssay> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioAssay>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioAssay> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioAssayPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioAssayData> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioAssayData>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioAssayData> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioAssayDataPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioAssayDataCluster> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioAssayDataCluster>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioAssayDataCluster> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#HigherLevelAnalysisPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioAssayDataPackage> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioAssayDataPackage>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioAssayDataPackage> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MGEDExtendedOntology>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioAssayPackage> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioAssayPackage>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioAssayPackage> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MGEDCoreOntology>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterial> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterial>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterial> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterialPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterialCharacteristicCategory> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterialCharacteristicCategory>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterialCharacteristicCategory> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BiologicalFactorCategory>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterialCharacteristics> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterialCharacteristics>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterialCharacteristics> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterialPackage>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterialCharacteristics> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BiologicalFactorCategory>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterialPackage> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterialPackage>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterialPackage> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MGEDCoreOntology>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMolecularAnnotation> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMolecularAnnotation>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMolecularAnnotation> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ExperimentDesignType>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioSample> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioSample>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioSample> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterial>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioSampleType> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioSampleType>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioSampleType> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterialPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioSequence> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioSequence>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioSequence> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioSequencePackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioSequencePackage> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioSequencePackage>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioSequencePackage> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MGEDCoreOntology>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioSequenceType> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioSequenceType>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioSequenceType> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioSequencePackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioSource> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioSource>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioSource> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterial>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioSourceProvider> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioSourceProvider>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioSourceProvider> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterialCharacteristics>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioSourceType> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioSourceType>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioSourceType> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterialCharacteristics>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BiologicalFactorCategory> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BiologicalFactorCategory>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BiologicalFactorCategory> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ExperimentalFactorCategory>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BiologicalProperty> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BiologicalProperty>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BiologicalProperty> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ExperimentDesignType>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Biometrics> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Biometrics>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Biometrics> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterialCharacteristics>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#CellLine> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#CellLine>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#CellLine> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterialCharacteristics>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#CellLine> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#OntologyEntry>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#CellLineDatabase> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#CellLineDatabase>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#CellLineDatabase> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Database>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#CellType> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#CellType>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#CellType> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterialCharacteristics>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#CellType> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#OntologyEntry>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#CellTypeDatabase> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#CellTypeDatabase>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#CellTypeDatabase> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Database>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ChromosomalAberration> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ChromosomalAberration>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ChromosomalAberration> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#IndividualGeneticCharacteristics>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ChromosomalAberration> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#OntologyEntry>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ChromosomalAberrationClassification> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ChromosomalAberrationClassification>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ChromosomalAberrationClassification> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterialCharacteristics>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ChromosomalAberrationDatabase> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ChromosomalAberrationDatabase>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ChromosomalAberrationDatabase> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Database>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ClinicalFinding> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ClinicalFinding>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ClinicalFinding> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#OntologyEntry>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ClinicalHistory> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ClinicalHistory>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ClinicalHistory> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#EnvironmentalHistory>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ClinicalTest> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ClinicalTest>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ClinicalTest> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterialCharacteristics>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ClinicalTestType> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ClinicalTestType>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ClinicalTestType> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterialCharacteristics>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ClinicalTreatment> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ClinicalTreatment>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ClinicalTreatment> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterialCharacteristics>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ClinicalTreatment> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#OntologyEntry>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ComplexAction> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ComplexAction>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ComplexAction> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Action>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Compound> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Compound>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Compound> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BiologicalFactorCategory>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Compound> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#OntologyEntry>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#CompoundDatabase> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#CompoundDatabase>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#CompoundDatabase> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Database>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ConcentrationUnit> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ConcentrationUnit>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ConcentrationUnit> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Unit>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ConcentrationUnitOther> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ConcentrationUnitOther>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ConcentrationUnitOther> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ConcentrationUnit>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Contact> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Contact>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Contact> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#AuditAndSecurityPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ControlType> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ControlType>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ControlType> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DesignElementPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Cultivar> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Cultivar>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Cultivar> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#StrainOrLine>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DataType> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DataType>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DataType> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MGEDOntology>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DefectType> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DefectType>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DefectType> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ArrayPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DeliveryMethod> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DeliveryMethod>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DeliveryMethod> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MGEDExtendedOntology>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DeprecatedTerms> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DeprecatedTerms>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DeprecatedTerms> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MGEDOntology>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DerivedBioAssay> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DerivedBioAssay>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DerivedBioAssay> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioAssay>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DerivedBioAssayType> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DerivedBioAssayType>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DerivedBioAssayType> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioAssayPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DesignElement> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DesignElement>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DesignElement> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DesignElementPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DesignElementGroup> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DesignElementGroup>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DesignElementGroup> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ArrayDesignPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DesignElementGroupType> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DesignElementGroupType>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DesignElementGroupType> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ArrayDesignPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DesignElementPackage> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DesignElementPackage>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DesignElementPackage> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MGEDCoreOntology>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DevelopmentalStage> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DevelopmentalStage>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DevelopmentalStage> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterialCharacteristics>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DevelopmentalStage> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#OntologyEntry>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DevelopmentalStageDatabase> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DevelopmentalStageDatabase>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DevelopmentalStageDatabase> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Database>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DiseaseLocation> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DiseaseLocation>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DiseaseLocation> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#OrganismPart>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DiseaseStaging> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DiseaseStaging>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DiseaseStaging> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterialCharacteristics>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DiseaseStaging> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#OntologyEntry>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DiseaseState> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DiseaseState>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DiseaseState> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterialCharacteristics>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DiseaseState> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#OntologyEntry>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DiseaseStateDatabase> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DiseaseStateDatabase>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DiseaseStateDatabase> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Database>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DistanceUnit> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DistanceUnit>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DistanceUnit> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Unit>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DistanceUnitOther> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DistanceUnitOther>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DistanceUnitOther> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DistanceUnit>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Ecotype> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Ecotype>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Ecotype> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#StrainOrLine>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#EnvironmentalFactorCategory> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#EnvironmentalFactorCategory>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#EnvironmentalFactorCategory> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ExperimentalFactorCategory>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#EnvironmentalHistory> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#EnvironmentalHistory>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#EnvironmentalHistory> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterialCharacteristics>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#EnvironmentalStress> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#EnvironmentalStress>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#EnvironmentalStress> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MGEDExtendedOntology>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#EpidemiologicalDesign> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#EpidemiologicalDesign>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#EpidemiologicalDesign> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ExperimentDesignType>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Experiment> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Experiment>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Experiment> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ExperimentPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ExperimentDesign> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ExperimentDesign>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ExperimentDesign> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ExperimentPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ExperimentDesignType> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ExperimentDesignType>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ExperimentDesignType> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ExperimentPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ExperimentPackage> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ExperimentPackage>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ExperimentPackage> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MGEDCoreOntology>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ExperimentalFactor> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ExperimentalFactor>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ExperimentalFactor> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ExperimentPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ExperimentalFactorCategory> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ExperimentalFactorCategory>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ExperimentalFactorCategory> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ExperimentPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#FactorValue> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#FactorValue>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#FactorValue> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ExperimentPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#FactorValueDependency> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#FactorValueDependency>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#FactorValueDependency> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ExperimentPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#FactorValueSet> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#FactorValueSet>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#FactorValueSet> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ExperimentPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#FailType> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#FailType>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#FailType> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DesignElementPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#FamilyHistory> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#FamilyHistory>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#FamilyHistory> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#EnvironmentalHistory>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#FamilyMember> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#FamilyMember>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#FamilyMember> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterialPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#FamilyRelationship> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#FamilyRelationship>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#FamilyRelationship> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterialPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#FeatureDefect> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#FeatureDefect>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#FeatureDefect> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ArrayPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#FeatureGroup> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#FeatureGroup>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#FeatureGroup> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ArrayDesignPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#FeatureShape> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#FeatureShape>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#FeatureShape> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ArrayDesignPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Fiducial> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Fiducial>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Fiducial> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ArrayPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#FiducialType> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#FiducialType>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#FiducialType> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ArrayPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Generations> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Generations>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Generations> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#EnvironmentalHistory>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#GeneticMaterial> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#GeneticMaterial>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#GeneticMaterial> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MGEDExtendedOntology>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#GeneticModification> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#GeneticModification>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#GeneticModification> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterialCharacteristics>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Genotype> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Genotype>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Genotype> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#IndividualGeneticCharacteristics>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#GeographicLocation> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#GeographicLocation>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#GeographicLocation> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#EnvironmentalHistory>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#GeographicLocation> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#OntologyEntry>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#GeographicLocationDatabase> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#GeographicLocationDatabase>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#GeographicLocationDatabase> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Database>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#GrowthCondition> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#GrowthCondition>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#GrowthCondition> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#EnvironmentalHistory>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Haplotype> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Haplotype>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Haplotype> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#IndividualGeneticCharacteristics>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Hardware> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Hardware>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Hardware> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ProtocolPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#HardwareType> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#HardwareType>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#HardwareType> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ProtocolPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#HardwareVariation> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#HardwareVariation>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#HardwareVariation> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MethodologicalFactorCategory>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#HigherLevelAnalysisPackage> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#HigherLevelAnalysisPackage>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#HigherLevelAnalysisPackage> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MGEDCoreOntology>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Histology> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Histology>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Histology> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterialCharacteristics>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#HistologyDatabase> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#HistologyDatabase>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#HistologyDatabase> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Database>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#HistoryFactor> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#HistoryFactor>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#HistoryFactor> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MGEDExtendedOntology>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Host> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Host>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Host> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#EnvironmentalHistory>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Humidity> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Humidity>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Humidity> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#GrowthCondition>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ImageFormat> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ImageFormat>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ImageFormat> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioAssayPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Individual> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Individual>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Individual> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterialCharacteristics>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#IndividualChromosomalAbnormality> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#IndividualChromosomalAbnormality>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#IndividualChromosomalAbnormality> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#IndividualGeneticCharacteristics>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#IndividualGeneticCharacteristics> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#IndividualGeneticCharacteristics>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#IndividualGeneticCharacteristics> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterialCharacteristics>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#InitialTimePoint> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#InitialTimePoint>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#InitialTimePoint> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterialPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#LabelCompound> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#LabelCompound>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#LabelCompound> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Compound>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#LabeledExtract> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#LabeledExtract>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#LabeledExtract> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterial>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#LaboratoryTestDatabase> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#LaboratoryTestDatabase>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#LaboratoryTestDatabase> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Database>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Light> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Light>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Light> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#GrowthCondition>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#LightUnit> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#LightUnit>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#LightUnit> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#OtherUnit>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MGEDCoreOntology> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MGEDCoreOntology>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MGEDCoreOntology> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MGEDOntology>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MGEDExtendedOntology> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MGEDExtendedOntology>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MGEDExtendedOntology> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MGEDOntology>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MassUnit> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MassUnit>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MassUnit> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Unit>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MassUnitOther> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MassUnitOther>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MassUnitOther> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MassUnit>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MaterialType> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MaterialType>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MaterialType> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterialPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Measurement> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Measurement>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Measurement> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MeasurementPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MeasurementPackage> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MeasurementPackage>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MeasurementPackage> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MGEDCoreOntology>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Media> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Media>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Media> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#GrowthCondition>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MethodologicalDesign> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MethodologicalDesign>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MethodologicalDesign> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ExperimentDesignType>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MethodologicalFactorCategory> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MethodologicalFactorCategory>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MethodologicalFactorCategory> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ExperimentalFactorCategory>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Node> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Node>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Node> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#HigherLevelAnalysisPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#NodeValue> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#NodeValue>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#NodeValue> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#HigherLevelAnalysisPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#NodeValueType> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#NodeValueType>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#NodeValueType> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#HigherLevelAnalysisPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#NormalizationDescription> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#NormalizationDescription>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#NormalizationDescription> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ExperimentPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#NormalizationDescriptionType> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#NormalizationDescriptionType>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#NormalizationDescriptionType> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ExperimentPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Nutrients> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Nutrients>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Nutrients> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#GrowthCondition>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#OperatorVariation> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#OperatorVariation>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#OperatorVariation> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MethodologicalFactorCategory>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Organism> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Organism>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Organism> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterialCharacteristics>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Organism> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#OntologyEntry>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#OrganismDatabase> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#OrganismDatabase>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#OrganismDatabase> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Database>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#OrganismPart> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#OrganismPart>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#OrganismPart> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterialCharacteristics>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#OrganismPart> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#OntologyEntry>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#OrganismPartDatabase> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#OrganismPartDatabase>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#OrganismPartDatabase> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Database>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#OrganismStatus> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#OrganismStatus>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#OrganismStatus> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterialCharacteristics>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Organization> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Organization>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Organization> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Contact>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#OtherUnit> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#OtherUnit>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#OtherUnit> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Unit>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Parameter> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Parameter>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Parameter> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ProtocolPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#PathogenTests> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#PathogenTests>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#PathogenTests> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#EnvironmentalHistory>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Person> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Person>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Person> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Contact>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#PerturbationalDesign> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#PerturbationalDesign>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#PerturbationalDesign> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ExperimentDesignType>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Phenotype> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Phenotype>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Phenotype> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterialCharacteristics>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Phenotype> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#OntologyEntry>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#PhysicalArrayDesign> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#PhysicalArrayDesign>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#PhysicalArrayDesign> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ArrayDesignPackage>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#PhysicalArrayDesign> <https://smolang.org/rdfMutate#newNode-4>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#PhysicalBioAssay> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#PhysicalBioAssay>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#PhysicalBioAssay> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioAssay>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#PhysicalBioSequenceType> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#PhysicalBioSequenceType>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#PhysicalBioSequenceType> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioSequenceType>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Ploidy> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Ploidy>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Ploidy> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#IndividualGeneticCharacteristics>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#PolymerType> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#PolymerType>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#PolymerType> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioSequencePackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#PopulationDensity> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#PopulationDensity>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#PopulationDensity> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#GrowthCondition>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Preservation> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Preservation>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Preservation> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MGEDExtendedOntology>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#PreservationType> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#PreservationType>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#PreservationType> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MGEDExtendedOntology>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Protocol> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Protocol>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Protocol> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ProtocolPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ProtocolPackage> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ProtocolPackage>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ProtocolPackage> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MGEDCoreOntology>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ProtocolParameterType> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ProtocolParameterType>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ProtocolParameterType> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MGEDExtendedOntology>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ProtocolType> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ProtocolType>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ProtocolType> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MethodologicalFactorCategory>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ProtocolType> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ProtocolPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ProtocolVariation> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ProtocolVariation>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ProtocolVariation> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MGEDExtendedOntology>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#QualityControlDescription> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#QualityControlDescription>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#QualityControlDescription> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ExperimentPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#QualityControlDescriptionType> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#QualityControlDescriptionType>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#QualityControlDescriptionType> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ExperimentPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#QuantitationType> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#QuantitationType>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#QuantitationType> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#QuantitationTypePackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#QuantitationTypePackage> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#QuantitationTypePackage>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#QuantitationTypePackage> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MGEDCoreOntology>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#QuantityUnit> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#QuantityUnit>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#QuantityUnit> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Unit>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#QuantityUnitOther> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#QuantityUnitOther>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#QuantityUnitOther> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#QuantityUnit>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#RadiationUnit> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#RadiationUnit>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#RadiationUnit> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#OtherUnit>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ReplicateDescription> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ReplicateDescription>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ReplicateDescription> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ExperimentPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ReplicateDescriptionType> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ReplicateDescriptionType>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ReplicateDescriptionType> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ExperimentPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Reporter> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Reporter>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Reporter> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DesignElement>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Roles> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Roles>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Roles> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#AuditAndSecurityPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Scale> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Scale>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Scale> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MGEDOntology>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#SeqFeatureBasis> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#SeqFeatureBasis>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#SeqFeatureBasis> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioSequencePackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#SequenceOntologyBioSequenceType> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#SequenceOntologyBioSequenceType>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#SequenceOntologyBioSequenceType> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#OntologyEntry>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#SequenceOntologyBioSequenceType> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#PhysicalBioSequenceType>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#SequenceOntologyBioSequenceType> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#TheoreticalBioSequenceType>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#SequenceOntologyDatabase> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#SequenceOntologyDatabase>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#SequenceOntologyDatabase> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Database>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Sex> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Sex>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Sex> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterialCharacteristics>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Software> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Software>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Software> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ProtocolPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#SoftwareType> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#SoftwareType>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#SoftwareType> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ProtocolPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#SoftwareVariation> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#SoftwareVariation>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#SoftwareVariation> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MethodologicalFactorCategory>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#SomaticModification> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#SomaticModification>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#SomaticModification> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MGEDExtendedOntology>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#StrainOrLine> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#StrainOrLine>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#StrainOrLine> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterialCharacteristics>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#StrainOrLine> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#OntologyEntry>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#StrainOrLineDatabase> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#StrainOrLineDatabase>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#StrainOrLineDatabase> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Database>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#StrandType> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#StrandType>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#StrandType> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MGEDExtendedOntology>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#SubstrateType> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#SubstrateType>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#SubstrateType> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ArrayPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#SurfaceType> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#SurfaceType>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#SurfaceType> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ArrayDesignPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#TargetedCellType> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#TargetedCellType>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#TargetedCellType> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterialCharacteristics>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#TargetedCellType> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#OntologyEntry>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#TargetedCellTypeDatabase> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#TargetedCellTypeDatabase>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#TargetedCellTypeDatabase> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Database>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#TechnologyType> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#TechnologyType>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#TechnologyType> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ArrayDesignPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Temperature> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Temperature>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Temperature> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#GrowthCondition>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#TemperatureUnit> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#TemperatureUnit>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#TemperatureUnit> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Unit>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#TheoreticalBioSequenceType> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#TheoreticalBioSequenceType>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#TheoreticalBioSequenceType> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioSequenceType>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#TimeUnit> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#TimeUnit>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#TimeUnit> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Unit>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#TimeUnitOther> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#TimeUnitOther>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#TimeUnitOther> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#TimeUnit>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Transformation> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Transformation>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Transformation> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioAssayDataPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Treatment> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Treatment>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Treatment> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterialPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#TumorGrading> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#TumorGrading>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#TumorGrading> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterialCharacteristics>)
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#TumorGrading> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#OntologyEntry>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#URI> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#URI>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#URI> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MGEDOntology>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Unit> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Unit>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Unit> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MeasurementPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#User> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#User>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#User> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#MGEDExtendedOntology>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#VolumeUnit> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#VolumeUnit>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#VolumeUnit> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Unit>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#VolumeUnitOther> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#VolumeUnitOther>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#VolumeUnitOther> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#VolumeUnit>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#WarningType> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#WarningType>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#WarningType> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#DesignElementPackage>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Water> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Water>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#Water> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#GrowthCondition>)
+
+# Class: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ZoneDefect> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ZoneDefect>)
+
+SubClassOf(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ZoneDefect> <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ArrayPackage>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterial> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterial>)
+
+ClassAssertion(owl:Class <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterial>)
+ClassAssertion(owl:Thing <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#BioMaterial>)
+
+# Individual: <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ExperimentDesignType> (<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ExperimentDesignType>)
+
+ClassAssertion(owl:Class <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ExperimentDesignType>)
+ClassAssertion(owl:Thing <file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#ExperimentDesignType>)
+
+# Individual: <https://smolang.org/rdfMutate#newNode-1> (<https://smolang.org/rdfMutate#newNode-1>)
+
+ClassAssertion(<file:/media/owl/Seagate%20Expansion%20Drive/mowlcorp_rep/mowlcorp_2014.10.07_orig/files/4cc694e0-4438-4338-b44e-76a73ac4dcec_dontology.rdfs#EnvironmentalHistory> <https://smolang.org/rdfMutate#newNode-1>)
+
+# Individual: <https://smolang.org/rdfMutate#newNode-2> (<https://smolang.org/rdfMutate#newNode-2>)
+
+ClassAssertion(owl:Class <https://smolang.org/rdfMutate#newNode-2>)
+
+
+)

@@ -1,0 +1,985 @@
+Prefix(:=<urn:unnamed:ontology#ont19109260079746975>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:unnamed:ontology#ont19109260079746975>
+
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-0>))
+Declaration(Class(<http://dbpedia.org/ontology/Insect>))
+Declaration(Class(<http://dbpedia.org/ontology/Museum>))
+Declaration(Class(<http://dbpedia.org/ontology/Cricketer>))
+Declaration(Class(<http://dbpedia.org/ontology/Continent>))
+Declaration(Class(<http://dbpedia.org/ontology/Bone>))
+Declaration(Class(<http://dbpedia.org/ontology/Cyclist>))
+Declaration(Class(<http://dbpedia.org/ontology/Aircraft>))
+Declaration(Class(<http://dbpedia.org/ontology/Bird>))
+Declaration(Class(<http://dbpedia.org/ontology/Drug>))
+Declaration(Class(<http://dbpedia.org/ontology/Film>))
+Declaration(Class(<http://dbpedia.org/ontology/Single>))
+Declaration(Class(<http://dbpedia.org/ontology/PrimeMinister>))
+Declaration(Class(<http://dbpedia.org/ontology/MemberOfParliament>))
+Declaration(Class(<http://dbpedia.org/ontology/ChristianBishop>))
+Declaration(Class(<http://dbpedia.org/ontology/Plant>))
+Declaration(Class(<http://dbpedia.org/ontology/MountainRange>))
+Declaration(Class(<http://dbpedia.org/ontology/Island>))
+Declaration(Class(<http://dbpedia.org/ontology/Airport>))
+Declaration(Class(<http://dbpedia.org/ontology/RugbyPlayer>))
+Declaration(Class(<http://dbpedia.org/ontology/Canal>))
+Declaration(Class(<http://dbpedia.org/ontology/GolfPlayer>))
+Declaration(Class(<http://dbpedia.org/ontology/SoccerLeague>))
+Declaration(Class(<http://dbpedia.org/ontology/Musical>))
+Declaration(Class(<http://dbpedia.org/ontology/Magazine>))
+Declaration(Class(owl:Class))
+Declaration(Class(<http://dbpedia.org/ontology/MilitaryUnit>))
+Declaration(Class(<http://dbpedia.org/ontology/HistoricBuilding>))
+Declaration(Class(<http://dbpedia.org/ontology/BasketballPlayer>))
+Declaration(Class(<http://dbpedia.org/ontology/CricketLeague>))
+Declaration(Class(<http://dbpedia.org/ontology/Philosopher>))
+Declaration(Class(<http://dbpedia.org/ontology/Bridge>))
+Declaration(Class(<http://dbpedia.org/ontology/MilitaryPerson>))
+Declaration(Class(<http://dbpedia.org/ontology/Disease>))
+Declaration(Class(<http://dbpedia.org/ontology/BaseballLeague>))
+Declaration(Class(<http://dbpedia.org/ontology/Governor>))
+Declaration(Class(<http://dbpedia.org/ontology/Writer>))
+Declaration(Class(<http://dbpedia.org/ontology/Ship>))
+Declaration(Class(<http://dbpedia.org/ontology/Song>))
+Declaration(Class(<http://dbpedia.org/ontology/Currency>))
+Declaration(Class(<http://dbpedia.org/ontology/Mountain>))
+Declaration(Class(<http://dbpedia.org/ontology/Stadium>))
+Declaration(Class(<http://dbpedia.org/ontology/Mammal>))
+Declaration(Class(<http://dbpedia.org/ontology/Boxer>))
+Declaration(Class(<http://dbpedia.org/ontology/Game>))
+Declaration(Class(<http://dbpedia.org/ontology/RadioStation>))
+Declaration(Class(<http://dbpedia.org/ontology/Book>))
+Declaration(Class(<http://dbpedia.org/ontology/RecordLabel>))
+Declaration(Class(<http://dbpedia.org/ontology/MusicGenre>))
+Declaration(Class(<http://dbpedia.org/ontology/VideoGame>))
+Declaration(Class(<http://dbpedia.org/ontology/Hospital>))
+Declaration(Class(<http://dbpedia.org/ontology/Election>))
+Declaration(Class(<http://dbpedia.org/ontology/River>))
+Declaration(Class(<http://dbpedia.org/ontology/Award>))
+Declaration(Class(<http://dbpedia.org/ontology/Comedian>))
+Declaration(Class(<http://dbpedia.org/ontology/AmericanFootballPlayer>))
+Declaration(Class(<http://dbpedia.org/ontology/Congressman>))
+Declaration(Class(<http://dbpedia.org/ontology/Muscle>))
+Declaration(Class(<http://dbpedia.org/ontology/Saint>))
+Declaration(Class(<http://dbpedia.org/ontology/Band>))
+Declaration(Class(<http://dbpedia.org/ontology/TennisPlayer>))
+Declaration(Class(<http://dbpedia.org/ontology/BaseballPlayer>))
+Declaration(Class(<http://dbpedia.org/ontology/RugbyLeague>))
+Declaration(Class(<http://dbpedia.org/ontology/SoccerManager>))
+Declaration(Class(<http://dbpedia.org/ontology/ChemicalCompound>))
+Declaration(Class(<http://dbpedia.org/ontology/University>))
+Declaration(Class(<http://dbpedia.org/ontology/TennisLeague>))
+Declaration(Class(<http://dbpedia.org/ontology/MilitaryConflict>))
+Declaration(Class(<http://dbpedia.org/ontology/TelevisionShow>))
+Declaration(Class(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToCriminal>))
+Declaration(Class(<http://dbpedia.org/ontology/Album>))
+Declaration(Class(<http://dbpedia.org/ontology/Village>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-4>))
+Declaration(Class(<http://dbpedia.org/ontology/Airline>))
+Declaration(Class(<http://dbpedia.org/ontology/BasketballLeague>))
+Declaration(Class(<http://dbpedia.org/ontology/TradeUnion>))
+Declaration(Class(<http://dbpedia.org/ontology/BadmintonPlayer>))
+Declaration(Class(<http://dbpedia.org/ontology/President>))
+Declaration(Class(<http://dbpedia.org/ontology/Automobile>))
+Declaration(Class(<http://dbpedia.org/ontology/ProtectedArea>))
+Declaration(Class(<http://dbpedia.org/ontology/Beverage>))
+Declaration(Class(<http://dbpedia.org/ontology/Criminal>))
+Declaration(Class(<http://dbpedia.org/ontology/FormulaOneRacer>))
+Declaration(Class(<http://dbpedia.org/ontology/WorldHeritageSite>))
+Declaration(Class(<http://dbpedia.org/ontology/Monarch>))
+Declaration(Class(<http://dbpedia.org/ontology/Actor>))
+Declaration(Class(<http://dbpedia.org/ontology/Journalist>))
+Declaration(Class(<http://dbpedia.org/ontology/MusicalArtist>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-3>))
+Declaration(Class(<http://dbpedia.org/ontology/OfficeHolder>))
+Declaration(Class(<http://dbpedia.org/ontology/Non-ProfitOrganisation>))
+Declaration(Class(<http://dbpedia.org/ontology/SoccerClub>))
+Declaration(Class(<http://dbpedia.org/ontology/Language>))
+Declaration(Class(<http://dbpedia.org/ontology/HistoricPlace>))
+Declaration(Class(<http://dbpedia.org/ontology/Lake>))
+Declaration(Class(<http://dbpedia.org/ontology/FigureSkater>))
+Declaration(Class(<http://dbpedia.org/ontology/Species>))
+Declaration(Class(<http://dbpedia.org/ontology/Wrestler>))
+Declaration(Class(<http://dbpedia.org/ontology/Scientist>))
+Declaration(Class(<http://dbpedia.org/ontology/College>))
+Declaration(Class(<http://dbpedia.org/ontology/Newspaper>))
+Declaration(Class(<http://dbpedia.org/ontology/Park>))
+Declaration(Class(<http://dbpedia.org/ontology/BritishRoyalty>))
+Declaration(Class(<http://dbpedia.org/ontology/FictionalCharacter>))
+Declaration(Class(<http://dbpedia.org/ontology/OlympicResult>))
+Declaration(Class(<http://dbpedia.org/ontology/Chancellor>))
+Declaration(Class(<http://dbpedia.org/ontology/Olympics>))
+Declaration(Class(<http://dbpedia.org/ontology/Broadcast>))
+Declaration(Class(<http://dbpedia.org/ontology/Senator>))
+Declaration(Class(<http://dbpedia.org/ontology/SoccerPlayer>))
+Declaration(Class(<http://dbpedia.org/ontology/Town>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToDisease>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMusical>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBridge>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSenator>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToNon-ProfitOrganisation>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToFictionalCharacter>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToAutomobile>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToPresident>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Person>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToRiver>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToVideoGame>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToTennisLeague>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Disease>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToDrug>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToActor>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Currency>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMilitaryUnit>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToPlant>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/ChemicalCompound>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToOlympicResult>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToAirline>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToGolfPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToScientist>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToAward>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBasketballPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToRugbyLeague>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/OlympicResult>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSoccerManager>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMuseum>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToInsect>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Activity>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToCongressman>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMemberOfParliament>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToHospital>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBand>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Award>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToComedian>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToStadium>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToAirport>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBroadcast>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/AnatomicalStructure>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToCurrency>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Beverage>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToTown>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMusicGenre>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSoccerClub>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToFigureSkater>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToHistoricBuilding>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToIsland>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToOfficeHolder>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToRecordLabel>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSong>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSingle>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToCricketLeague>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToAircraft>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBaseballPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBeverage>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToUniversity>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToJournalist>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Drug>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToWriter>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMilitaryConflict>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/MeanOfTransportation>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBook>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToPrimeMinister>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToProtectedArea>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMonarch>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSoccerLeague>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToLanguage>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Organisation>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToRadioStation>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSaint>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToContinent>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSpecies>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToWorldHeritageSite>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToCyclist>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToChemicalCompound>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToFilm>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToElection>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToTennisPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToVillage>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBone>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBird>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBritishRoyalty>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToShip>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMusicalArtist>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToRugbyPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToCollege>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBadmintonPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToTradeUnion>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToGovernor>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBasketballLeague>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToAlbum>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBoxer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToChancellor>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToCriminal>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToPhilosopher>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToGame>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Language>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToAmericanFootballPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMagazine>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToFormulaOneRacer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToChristianBishop>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToWrestler>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMountain>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToOlympics>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSoccerPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBaseballLeague>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToHistoricPlace>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Species>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToNewspaper>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMammal>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToCanal>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToTelevisionShow>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMilitaryPerson>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMountainRange>))
+Declaration(ObjectProperty(<http://www.w3.org/2004/02/skos/core#relatedMatch>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToPark>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMuscle>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Work>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/MusicGenre>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToLake>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Place>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToComedian>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-0>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/managerclubs>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSoccerClub>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSoccerPlayer>))
+Declaration(NamedIndividual(owl:ObjectProperty))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToOfficeHolder>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-4>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToChancellor>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToRugbyPlayer>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/years>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToFigureSkater>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMilitaryPerson>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/clubs>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToGolfPlayer>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/before>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToActor>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/after>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToGovernor>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBoxer>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-7>))
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToActor> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToActor>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToActor> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToActor> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToActor> <http://dbpedia.org/ontology/Actor>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToAircraft> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToAircraft>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToAircraft> <http://dbpedia.org/ontology/MeanOfTransportation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToAircraft> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToAircraft> <http://dbpedia.org/ontology/Aircraft>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToAirline> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToAirline>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToAirline> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToAirline> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToAirline> <http://dbpedia.org/ontology/Airline>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToAirport> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToAirport>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToAirport> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToAirport> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToAirport> <http://dbpedia.org/ontology/Airport>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToAlbum> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToAlbum>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToAlbum> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToAlbum> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToAlbum> <http://dbpedia.org/ontology/Album>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToAmericanFootballPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToAmericanFootballPlayer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToAmericanFootballPlayer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToAmericanFootballPlayer> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToAmericanFootballPlayer> <http://dbpedia.org/ontology/AmericanFootballPlayer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToAutomobile> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToAutomobile>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToAutomobile> <http://dbpedia.org/ontology/MeanOfTransportation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToAutomobile> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToAutomobile> <http://dbpedia.org/ontology/Automobile>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToAward> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToAward>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToAward> <http://dbpedia.org/ontology/Award>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToAward> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToAward> <http://dbpedia.org/ontology/Award>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBadmintonPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBadmintonPlayer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBadmintonPlayer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBadmintonPlayer> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBadmintonPlayer> <http://dbpedia.org/ontology/BadmintonPlayer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBand> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBand>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBand> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBand> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBand> <http://dbpedia.org/ontology/Band>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBaseballLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBaseballLeague>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBaseballLeague> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBaseballLeague> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBaseballLeague> <http://dbpedia.org/ontology/BaseballLeague>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBaseballPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBaseballPlayer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBaseballPlayer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBaseballPlayer> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBaseballPlayer> <http://dbpedia.org/ontology/BaseballPlayer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBasketballLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBasketballLeague>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBasketballLeague> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBasketballLeague> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBasketballLeague> <http://dbpedia.org/ontology/BasketballLeague>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBasketballPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBasketballPlayer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBasketballPlayer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBasketballPlayer> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBasketballPlayer> <http://dbpedia.org/ontology/BasketballPlayer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBeverage> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBeverage>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBeverage> <http://dbpedia.org/ontology/Beverage>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBeverage> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBeverage> <http://dbpedia.org/ontology/Beverage>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBird> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBird>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBird> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBird> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBird> <http://dbpedia.org/ontology/Bird>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBone> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBone>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBone> <http://dbpedia.org/ontology/AnatomicalStructure>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBone> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBone> <http://dbpedia.org/ontology/Bone>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBook> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBook>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBook> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBook> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBook> <http://dbpedia.org/ontology/Book>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBoxer> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBoxer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBoxer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBoxer> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBoxer> <http://dbpedia.org/ontology/Boxer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBridge> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBridge>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBridge> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBridge> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBridge> <http://dbpedia.org/ontology/Bridge>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBritishRoyalty> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBritishRoyalty>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBritishRoyalty> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBritishRoyalty> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBritishRoyalty> <http://dbpedia.org/ontology/BritishRoyalty>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBroadcast> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBroadcast>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBroadcast> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBroadcast> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBroadcast> <http://dbpedia.org/ontology/Broadcast>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToCanal> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToCanal>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToCanal> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToCanal> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToCanal> <http://dbpedia.org/ontology/Canal>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToChancellor> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToChancellor>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToChancellor> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToChancellor> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToChancellor> <http://dbpedia.org/ontology/Chancellor>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToChemicalCompound> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToChemicalCompound>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToChemicalCompound> <http://dbpedia.org/ontology/ChemicalCompound>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToChemicalCompound> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToChemicalCompound> <http://dbpedia.org/ontology/ChemicalCompound>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToChristianBishop> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToChristianBishop>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToChristianBishop> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToChristianBishop> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToChristianBishop> <http://dbpedia.org/ontology/ChristianBishop>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToCollege> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToCollege>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToCollege> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToCollege> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToCollege> <http://dbpedia.org/ontology/College>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToComedian> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToComedian>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToComedian> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToComedian> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToComedian> <http://dbpedia.org/ontology/Comedian>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToCongressman> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToCongressman>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToCongressman> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToCongressman> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToCongressman> <http://dbpedia.org/ontology/Congressman>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToContinent> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToContinent>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToContinent> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToContinent> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToContinent> <http://dbpedia.org/ontology/Continent>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToCricketLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToCricketLeague>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToCricketLeague> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToCricketLeague> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToCricketLeague> <http://dbpedia.org/ontology/CricketLeague>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToCriminal> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToCriminal>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToCriminal> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToCriminal> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToCriminal> <http://dbpedia.org/ontology/Criminal>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToCurrency> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToCurrency>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToCurrency> <http://dbpedia.org/ontology/Currency>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToCurrency> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToCurrency> <http://dbpedia.org/ontology/Currency>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToCyclist> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToCyclist>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToCyclist> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToCyclist> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToCyclist> <http://dbpedia.org/ontology/Cyclist>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToDisease> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToDisease>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToDisease> <http://dbpedia.org/ontology/Disease>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToDisease> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToDisease> <http://dbpedia.org/ontology/Disease>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToDrug> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToDrug>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToDrug> <http://dbpedia.org/ontology/Drug>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToDrug> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToDrug> <http://dbpedia.org/ontology/Drug>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToElection> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToElection>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToElection> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToElection> <http://dbpedia.org/ontology/Election>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToFictionalCharacter> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToFictionalCharacter>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToFictionalCharacter> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToFictionalCharacter> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToFictionalCharacter> <http://dbpedia.org/ontology/FictionalCharacter>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToFigureSkater> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToFigureSkater>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToFigureSkater> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToFigureSkater> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToFigureSkater> <http://dbpedia.org/ontology/FigureSkater>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToFilm> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToFilm>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToFilm> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToFilm> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToFilm> <http://dbpedia.org/ontology/Film>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToFormulaOneRacer> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToFormulaOneRacer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToFormulaOneRacer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToFormulaOneRacer> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToFormulaOneRacer> <http://dbpedia.org/ontology/FormulaOneRacer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToGame> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToGame>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToGame> <http://dbpedia.org/ontology/Activity>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToGame> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToGame> <http://dbpedia.org/ontology/Game>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToGolfPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToGolfPlayer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToGolfPlayer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToGolfPlayer> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToGolfPlayer> <http://dbpedia.org/ontology/GolfPlayer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToGovernor> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToGovernor>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToGovernor> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToGovernor> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToGovernor> <http://dbpedia.org/ontology/Governor>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToHistoricBuilding> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToHistoricBuilding>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToHistoricBuilding> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToHistoricBuilding> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToHistoricBuilding> <http://dbpedia.org/ontology/HistoricBuilding>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToHistoricPlace> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToHistoricPlace>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToHistoricPlace> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToHistoricPlace> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToHistoricPlace> <http://dbpedia.org/ontology/HistoricPlace>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToHospital> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToHospital>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToHospital> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToHospital> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToHospital> <http://dbpedia.org/ontology/Hospital>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToInsect> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToInsect>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToInsect> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToInsect> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToInsect> <http://dbpedia.org/ontology/Insect>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToIsland> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToIsland>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToIsland> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToIsland> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToIsland> <http://dbpedia.org/ontology/Island>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToJournalist> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToJournalist>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToJournalist> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToJournalist> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToJournalist> <http://dbpedia.org/ontology/Journalist>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToLake> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToLake>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToLake> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToLake> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToLake> <http://dbpedia.org/ontology/Lake>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToLanguage> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToLanguage>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToLanguage> <http://dbpedia.org/ontology/Language>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToLanguage> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToLanguage> <http://dbpedia.org/ontology/Language>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMagazine> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMagazine>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMagazine> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMagazine> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMagazine> <http://dbpedia.org/ontology/Magazine>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMammal> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMammal>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMammal> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMammal> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMammal> <http://dbpedia.org/ontology/Mammal>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMemberOfParliament> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMemberOfParliament>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMemberOfParliament> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMemberOfParliament> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMemberOfParliament> <http://dbpedia.org/ontology/MemberOfParliament>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMilitaryConflict> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMilitaryConflict>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMilitaryConflict> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMilitaryConflict> <http://dbpedia.org/ontology/MilitaryConflict>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMilitaryPerson> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMilitaryPerson>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMilitaryPerson> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMilitaryPerson> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMilitaryPerson> <http://dbpedia.org/ontology/MilitaryPerson>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMilitaryUnit> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMilitaryUnit>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMilitaryUnit> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMilitaryUnit> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMilitaryUnit> <http://dbpedia.org/ontology/MilitaryUnit>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMonarch> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMonarch>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMonarch> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMonarch> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMonarch> <http://dbpedia.org/ontology/Monarch>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMountain> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMountain>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMountain> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMountain> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMountain> <http://dbpedia.org/ontology/Mountain>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMountainRange> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMountainRange>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMountainRange> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMountainRange> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMountainRange> <http://dbpedia.org/ontology/MountainRange>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMuscle> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMuscle>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMuscle> <http://dbpedia.org/ontology/AnatomicalStructure>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMuscle> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMuscle> <http://dbpedia.org/ontology/Muscle>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMuseum> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMuseum>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMuseum> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMuseum> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMuseum> <http://dbpedia.org/ontology/Museum>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMusicGenre> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMusicGenre>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMusicGenre> <http://dbpedia.org/ontology/MusicGenre>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMusicGenre> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMusicGenre> <http://dbpedia.org/ontology/MusicGenre>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMusical> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMusical>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMusical> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMusical> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMusical> <http://dbpedia.org/ontology/Musical>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMusicalArtist> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMusicalArtist>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMusicalArtist> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMusicalArtist> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMusicalArtist> <http://dbpedia.org/ontology/MusicalArtist>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToNewspaper> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToNewspaper>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToNewspaper> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToNewspaper> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToNewspaper> <http://dbpedia.org/ontology/Newspaper>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToNon-ProfitOrganisation> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToNon-ProfitOrganisation>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToNon-ProfitOrganisation> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToNon-ProfitOrganisation> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToNon-ProfitOrganisation> <http://dbpedia.org/ontology/Non-ProfitOrganisation>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToOfficeHolder> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToOfficeHolder>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToOfficeHolder> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToOfficeHolder> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToOfficeHolder> <http://dbpedia.org/ontology/OfficeHolder>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToOlympicResult> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToOlympicResult>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToOlympicResult> <http://dbpedia.org/ontology/OlympicResult>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToOlympicResult> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToOlympicResult> <http://dbpedia.org/ontology/OlympicResult>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToOlympics> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToOlympics>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToOlympics> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToOlympics> <http://dbpedia.org/ontology/Olympics>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToPark> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToPark>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToPark> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToPark> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToPark> <http://dbpedia.org/ontology/Park>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToPhilosopher> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToPhilosopher>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToPhilosopher> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToPhilosopher> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToPhilosopher> <http://dbpedia.org/ontology/Philosopher>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToPlant> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToPlant>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToPlant> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToPlant> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToPlant> <http://dbpedia.org/ontology/Plant>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToPresident> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToPresident>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToPresident> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToPresident> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToPresident> <http://dbpedia.org/ontology/President>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToPrimeMinister> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToPrimeMinister>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToPrimeMinister> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToPrimeMinister> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToPrimeMinister> <http://dbpedia.org/ontology/PrimeMinister>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToProtectedArea> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToProtectedArea>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToProtectedArea> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToProtectedArea> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToProtectedArea> <http://dbpedia.org/ontology/ProtectedArea>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToRadioStation> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToRadioStation>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToRadioStation> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToRadioStation> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToRadioStation> <http://dbpedia.org/ontology/RadioStation>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToRecordLabel> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToRecordLabel>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToRecordLabel> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToRecordLabel> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToRecordLabel> <http://dbpedia.org/ontology/RecordLabel>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToRiver> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToRiver>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToRiver> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToRiver> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToRiver> <http://dbpedia.org/ontology/River>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToRugbyLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToRugbyLeague>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToRugbyLeague> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToRugbyLeague> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToRugbyLeague> <http://dbpedia.org/ontology/RugbyLeague>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToRugbyPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToRugbyPlayer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToRugbyPlayer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToRugbyPlayer> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToRugbyPlayer> <http://dbpedia.org/ontology/RugbyPlayer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSaint> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSaint>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSaint> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSaint> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSaint> <http://dbpedia.org/ontology/Saint>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToScientist> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToScientist>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToScientist> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToScientist> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToScientist> <http://dbpedia.org/ontology/Scientist>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSenator> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSenator>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSenator> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSenator> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSenator> <http://dbpedia.org/ontology/Senator>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToShip> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToShip>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToShip> <http://dbpedia.org/ontology/MeanOfTransportation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToShip> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToShip> <http://dbpedia.org/ontology/Ship>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSingle> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSingle>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSingle> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSingle> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSingle> <http://dbpedia.org/ontology/Single>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSoccerClub> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSoccerClub>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSoccerClub> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSoccerClub> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSoccerClub> <http://dbpedia.org/ontology/SoccerClub>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSoccerLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSoccerLeague>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSoccerLeague> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSoccerLeague> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSoccerLeague> <http://dbpedia.org/ontology/SoccerLeague>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSoccerManager> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSoccerManager>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSoccerManager> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSoccerManager> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSoccerManager> <http://dbpedia.org/ontology/SoccerManager>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSoccerPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSoccerPlayer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSoccerPlayer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSoccerPlayer> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSoccerPlayer> <http://dbpedia.org/ontology/SoccerPlayer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSong> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSong>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSong> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSong> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSong> <http://dbpedia.org/ontology/Song>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSpecies> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSpecies>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSpecies> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSpecies> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSpecies> <http://dbpedia.org/ontology/Species>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToStadium> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToStadium>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToStadium> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToStadium> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToStadium> <http://dbpedia.org/ontology/Stadium>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToTelevisionShow> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToTelevisionShow>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToTelevisionShow> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToTelevisionShow> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToTelevisionShow> <http://dbpedia.org/ontology/TelevisionShow>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToTennisLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToTennisLeague>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToTennisLeague> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToTennisLeague> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToTennisLeague> <http://dbpedia.org/ontology/TennisLeague>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToTennisPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToTennisPlayer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToTennisPlayer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToTennisPlayer> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToTennisPlayer> <http://dbpedia.org/ontology/TennisPlayer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToTown> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToTown>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToTown> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToTown> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToTown> <http://dbpedia.org/ontology/Town>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToTradeUnion> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToTradeUnion>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToTradeUnion> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToTradeUnion> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToTradeUnion> <http://dbpedia.org/ontology/TradeUnion>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToUniversity> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToUniversity>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToUniversity> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToUniversity> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToUniversity> <http://dbpedia.org/ontology/University>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToVideoGame> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToVideoGame>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToVideoGame> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToVideoGame> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToVideoGame> <http://dbpedia.org/ontology/VideoGame>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToVillage> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToVillage>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToVillage> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToVillage> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToVillage> <http://dbpedia.org/ontology/Village>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToWorldHeritageSite> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToWorldHeritageSite>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToWorldHeritageSite> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToWorldHeritageSite> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToWorldHeritageSite> <http://dbpedia.org/ontology/WorldHeritageSite>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToWrestler> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToWrestler>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToWrestler> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToWrestler> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToWrestler> <http://dbpedia.org/ontology/Wrestler>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToWriter> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToWriter>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToWriter> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToWriter> <http://dbpedia.org/ontology/Cricketer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToWriter> <http://dbpedia.org/ontology/Writer>)
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://dbpedia.org/ontology/AmericanFootballPlayer> (<http://dbpedia.org/ontology/AmericanFootballPlayer>)
+
+SubClassOf(<http://dbpedia.org/ontology/AmericanFootballPlayer> <https://smolang.org/rdfMutate#newNode-3>)
+
+# Class: owl:Class (owl:Class)
+
+SubClassOf(owl:Class <https://smolang.org/rdfMutate#newNode-3>)
+
+# Class: <https://smolang.org/rdfMutate#newNode-4> (<https://smolang.org/rdfMutate#newNode-4>)
+
+SubClassOf(<https://smolang.org/rdfMutate#newNode-4> <https://smolang.org/rdfMutate#newNode-4>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToActor> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToActor>)
+
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToActor> <http://dbpedia.org/property/after>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBoxer> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBoxer>)
+
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBoxer> <http://dbpedia.org/property/after>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToBoxer> <http://dbpedia.org/property/before>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToChancellor> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToChancellor>)
+
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToChancellor> <http://dbpedia.org/property/after>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToComedian> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToComedian>)
+
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToComedian> <http://dbpedia.org/property/after>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToFigureSkater> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToFigureSkater>)
+
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToFigureSkater> <http://dbpedia.org/property/after>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToGolfPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToGolfPlayer>)
+
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToGolfPlayer> <http://dbpedia.org/property/after>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToGovernor> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToGovernor>)
+
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToGovernor> <http://dbpedia.org/property/before>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMilitaryPerson> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMilitaryPerson>)
+
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToMilitaryPerson> <http://dbpedia.org/property/after>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToOfficeHolder> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToOfficeHolder>)
+
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToOfficeHolder> <http://dbpedia.org/property/after>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToOfficeHolder> <http://dbpedia.org/property/before>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToRugbyPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToRugbyPlayer>)
+
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToRugbyPlayer> <http://dbpedia.org/property/after>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToRugbyPlayer> <http://dbpedia.org/property/before>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSoccerClub> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSoccerClub>)
+
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSoccerClub> <http://dbpedia.org/property/clubs>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSoccerClub> <http://dbpedia.org/property/managerclubs>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSoccerPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSoccerPlayer>)
+
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSoccerPlayer> <http://dbpedia.org/property/after>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Cricketer.owl#linksToSoccerPlayer> <http://dbpedia.org/property/before>)
+
+# Individual: <https://smolang.org/rdfMutate#newNode-0> (<https://smolang.org/rdfMutate#newNode-0>)
+
+ClassAssertion(owl:Class <https://smolang.org/rdfMutate#newNode-0>)
+
+# Individual: <https://smolang.org/rdfMutate#newNode-4> (<https://smolang.org/rdfMutate#newNode-4>)
+
+ClassAssertion(owl:Class <https://smolang.org/rdfMutate#newNode-4>)
+
+# Individual: <https://smolang.org/rdfMutate#newNode-7> (<https://smolang.org/rdfMutate#newNode-7>)
+
+ClassAssertion(<http://dbpedia.org/ontology/ProtectedArea> <https://smolang.org/rdfMutate#newNode-7>)
+
+
+)

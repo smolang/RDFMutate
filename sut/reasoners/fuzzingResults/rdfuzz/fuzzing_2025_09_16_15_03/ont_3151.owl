@@ -1,0 +1,934 @@
+Prefix(:=<urn:unnamed:ontology#ont19115124782213573>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:unnamed:ontology#ont19115124782213573>
+
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002333>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002375>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002379>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002363>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002242>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002095>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002287>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002275>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002348>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002406>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002251>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002345>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002387>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002392>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002335>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002266>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002256>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002332>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002364>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002299>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002368>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002243>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002247>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002231>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002317>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002276>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002301>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002347>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002279>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002393>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002381>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002324>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002260>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002255>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002259>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002203>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002321>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002290>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002232>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002236>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002209>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002239>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002285>))
+Declaration(Class(owl:Class))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002382>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002261>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002355>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002404>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002329>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002330>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002208>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002362>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002297>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002241>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002094>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002284>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002378>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002274>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002289>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002354>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002358>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002405>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002344>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002250>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002386>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002391>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002265>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002269>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002253>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002331>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002298>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002334>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002338>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002273>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002367>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002300>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002304>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002246>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002319>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002278>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002343>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002390>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002380>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002254>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002258>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002320>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002396>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002339>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002323>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002327>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002166>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002206>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002373>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002238>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002303>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002235>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002277>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002282>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002211>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002352>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-4>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002400>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002397>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002385>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002328>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002264>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002207>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002296>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002372>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002283>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002377>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002271>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002353>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002357>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002341>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002408>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002295>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002389>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002268>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002361>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002337>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002240>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002376>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002272>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002366>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002245>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002249>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002342>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002346>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002288>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002349>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002395>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002336>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002322>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002257>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002326>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002365>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002369>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002302>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002370>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002292>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002244>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002248>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002234>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002281>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002318>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002210>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002351>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002403>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002394>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002384>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002325>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002263>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002204>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002399>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002293>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002371>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002291>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002233>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002237>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002374>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002270>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002350>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002340>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-2>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002286>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002402>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002359>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002383>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002262>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002356>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002407>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002398>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002252>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002294>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002388>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002267>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002360>))
+Declaration(Class(<http://www.bioassayontology.org/bao#BAO_0002280>))
+Declaration(NamedIndividual(<http://www.bioassayontology.org/bao#BAO_0002255>))
+Declaration(NamedIndividual(<http://www.bioassayontology.org/bao#BAO_0002247>))
+Declaration(NamedIndividual(<http://www.bioassayontology.org/bao#BAO_0002246>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-1>))
+Declaration(NamedIndividual(<http://www.bioassayontology.org/bao#BAO_0002256>))
+Declaration(NamedIndividual(<http://www.bioassayontology.org/bao#BAO_0002095>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-5>))
+############################
+#   Classes
+############################
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002095> (<http://www.bioassayontology.org/bao#BAO_0002095>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002095> <http://www.bioassayontology.org/bao#BAO_0002094>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002166> (<http://www.bioassayontology.org/bao#BAO_0002166>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002166> <http://www.bioassayontology.org/bao#BAO_0002095>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002203> (<http://www.bioassayontology.org/bao#BAO_0002203>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002203> <http://www.bioassayontology.org/bao#BAO_0002166>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002204> (<http://www.bioassayontology.org/bao#BAO_0002204>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002204> <http://www.bioassayontology.org/bao#BAO_0002166>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002206> (<http://www.bioassayontology.org/bao#BAO_0002206>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002206> <http://www.bioassayontology.org/bao#BAO_0002095>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002207> (<http://www.bioassayontology.org/bao#BAO_0002207>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002207> <http://www.bioassayontology.org/bao#BAO_0002206>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002208> (<http://www.bioassayontology.org/bao#BAO_0002208>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002208> <http://www.bioassayontology.org/bao#BAO_0002206>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002209> (<http://www.bioassayontology.org/bao#BAO_0002209>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002209> <http://www.bioassayontology.org/bao#BAO_0002206>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002210> (<http://www.bioassayontology.org/bao#BAO_0002210>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002210> <http://www.bioassayontology.org/bao#BAO_0002206>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002211> (<http://www.bioassayontology.org/bao#BAO_0002211>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002211> <http://www.bioassayontology.org/bao#BAO_0002206>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002231> (<http://www.bioassayontology.org/bao#BAO_0002231>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002231> <http://www.bioassayontology.org/bao#BAO_0002095>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002232> (<http://www.bioassayontology.org/bao#BAO_0002232>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002232> <http://www.bioassayontology.org/bao#BAO_0002231>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002233> (<http://www.bioassayontology.org/bao#BAO_0002233>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002233> <http://www.bioassayontology.org/bao#BAO_0002232>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002234> (<http://www.bioassayontology.org/bao#BAO_0002234>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002234> <http://www.bioassayontology.org/bao#BAO_0002233>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002235> (<http://www.bioassayontology.org/bao#BAO_0002235>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002235> <http://www.bioassayontology.org/bao#BAO_0002233>)
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002235> <http://www.bioassayontology.org/bao#BAO_0002245>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002236> (<http://www.bioassayontology.org/bao#BAO_0002236>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002236> <http://www.bioassayontology.org/bao#BAO_0002232>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002237> (<http://www.bioassayontology.org/bao#BAO_0002237>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002237> <http://www.bioassayontology.org/bao#BAO_0002236>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002238> (<http://www.bioassayontology.org/bao#BAO_0002238>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002238> <http://www.bioassayontology.org/bao#BAO_0002236>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002239> (<http://www.bioassayontology.org/bao#BAO_0002239>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002239> <http://www.bioassayontology.org/bao#BAO_0002232>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002240> (<http://www.bioassayontology.org/bao#BAO_0002240>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002240> <http://www.bioassayontology.org/bao#BAO_0002239>)
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002240> <http://www.bioassayontology.org/bao#BAO_0002245>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002241> (<http://www.bioassayontology.org/bao#BAO_0002241>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002241> <http://www.bioassayontology.org/bao#BAO_0002240>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002242> (<http://www.bioassayontology.org/bao#BAO_0002242>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002242> <http://www.bioassayontology.org/bao#BAO_0002240>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002243> (<http://www.bioassayontology.org/bao#BAO_0002243>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002243> <http://www.bioassayontology.org/bao#BAO_0002239>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002244> (<http://www.bioassayontology.org/bao#BAO_0002244>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002244> <http://www.bioassayontology.org/bao#BAO_0002231>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002245> (<http://www.bioassayontology.org/bao#BAO_0002245>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002245> <http://www.bioassayontology.org/bao#BAO_0002244>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002246> (<http://www.bioassayontology.org/bao#BAO_0002246>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002246> <http://www.bioassayontology.org/bao#BAO_0002244>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002247> (<http://www.bioassayontology.org/bao#BAO_0002247>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002247> <http://www.bioassayontology.org/bao#BAO_0002246>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002248> (<http://www.bioassayontology.org/bao#BAO_0002248>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002248> <http://www.bioassayontology.org/bao#BAO_0002094>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002249> (<http://www.bioassayontology.org/bao#BAO_0002249>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002249> <http://www.bioassayontology.org/bao#BAO_0002248>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002250> (<http://www.bioassayontology.org/bao#BAO_0002250>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002250> <http://www.bioassayontology.org/bao#BAO_0002249>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002251> (<http://www.bioassayontology.org/bao#BAO_0002251>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002251> <http://www.bioassayontology.org/bao#BAO_0002249>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002252> (<http://www.bioassayontology.org/bao#BAO_0002252>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002252> <http://www.bioassayontology.org/bao#BAO_0002251>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002253> (<http://www.bioassayontology.org/bao#BAO_0002253>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002253> <http://www.bioassayontology.org/bao#BAO_0002251>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002254> (<http://www.bioassayontology.org/bao#BAO_0002254>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002254> <http://www.bioassayontology.org/bao#BAO_0002249>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002255> (<http://www.bioassayontology.org/bao#BAO_0002255>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002255> <http://www.bioassayontology.org/bao#BAO_0002248>)
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002255> owl:Class)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002256> (<http://www.bioassayontology.org/bao#BAO_0002256>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002256> <http://www.bioassayontology.org/bao#BAO_0002255>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002257> (<http://www.bioassayontology.org/bao#BAO_0002257>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002257> <http://www.bioassayontology.org/bao#BAO_0002248>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002258> (<http://www.bioassayontology.org/bao#BAO_0002258>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002258> <http://www.bioassayontology.org/bao#BAO_0002248>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002259> (<http://www.bioassayontology.org/bao#BAO_0002259>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002259> <http://www.bioassayontology.org/bao#BAO_0002258>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002260> (<http://www.bioassayontology.org/bao#BAO_0002260>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002260> <http://www.bioassayontology.org/bao#BAO_0002258>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002261> (<http://www.bioassayontology.org/bao#BAO_0002261>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002261> <http://www.bioassayontology.org/bao#BAO_0002260>)
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002261> <http://www.bioassayontology.org/bao#BAO_0002371>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002262> (<http://www.bioassayontology.org/bao#BAO_0002262>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002262> <http://www.bioassayontology.org/bao#BAO_0002261>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002263> (<http://www.bioassayontology.org/bao#BAO_0002263>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002263> <http://www.bioassayontology.org/bao#BAO_0002261>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002264> (<http://www.bioassayontology.org/bao#BAO_0002264>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002264> <http://www.bioassayontology.org/bao#BAO_0002260>)
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002264> <http://www.bioassayontology.org/bao#BAO_0002371>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002265> (<http://www.bioassayontology.org/bao#BAO_0002265>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002265> <http://www.bioassayontology.org/bao#BAO_0002264>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002266> (<http://www.bioassayontology.org/bao#BAO_0002266>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002266> <http://www.bioassayontology.org/bao#BAO_0002265>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002267> (<http://www.bioassayontology.org/bao#BAO_0002267>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002267> <http://www.bioassayontology.org/bao#BAO_0002264>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002268> (<http://www.bioassayontology.org/bao#BAO_0002268>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002268> <http://www.bioassayontology.org/bao#BAO_0002258>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002269> (<http://www.bioassayontology.org/bao#BAO_0002269>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002269> <http://www.bioassayontology.org/bao#BAO_0002248>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002270> (<http://www.bioassayontology.org/bao#BAO_0002270>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002270> <http://www.bioassayontology.org/bao#BAO_0002269>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002271> (<http://www.bioassayontology.org/bao#BAO_0002271>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002271> <http://www.bioassayontology.org/bao#BAO_0002270>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002272> (<http://www.bioassayontology.org/bao#BAO_0002272>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002272> <http://www.bioassayontology.org/bao#BAO_0002269>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002273> (<http://www.bioassayontology.org/bao#BAO_0002273>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002273> <http://www.bioassayontology.org/bao#BAO_0002272>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002274> (<http://www.bioassayontology.org/bao#BAO_0002274>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002274> <http://www.bioassayontology.org/bao#BAO_0002272>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002275> (<http://www.bioassayontology.org/bao#BAO_0002275>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002275> <http://www.bioassayontology.org/bao#BAO_0002272>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002276> (<http://www.bioassayontology.org/bao#BAO_0002276>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002276> <http://www.bioassayontology.org/bao#BAO_0002272>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002277> (<http://www.bioassayontology.org/bao#BAO_0002277>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002277> <http://www.bioassayontology.org/bao#BAO_0002272>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002278> (<http://www.bioassayontology.org/bao#BAO_0002278>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002278> <http://www.bioassayontology.org/bao#BAO_0002269>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002279> (<http://www.bioassayontology.org/bao#BAO_0002279>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002279> <http://www.bioassayontology.org/bao#BAO_0002278>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002280> (<http://www.bioassayontology.org/bao#BAO_0002280>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002280> <http://www.bioassayontology.org/bao#BAO_0002269>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002281> (<http://www.bioassayontology.org/bao#BAO_0002281>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002281> <http://www.bioassayontology.org/bao#BAO_0002280>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002282> (<http://www.bioassayontology.org/bao#BAO_0002282>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002282> <http://www.bioassayontology.org/bao#BAO_0002094>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002283> (<http://www.bioassayontology.org/bao#BAO_0002283>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002283> <http://www.bioassayontology.org/bao#BAO_0002282>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002284> (<http://www.bioassayontology.org/bao#BAO_0002284>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002284> <http://www.bioassayontology.org/bao#BAO_0002283>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002285> (<http://www.bioassayontology.org/bao#BAO_0002285>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002285> <http://www.bioassayontology.org/bao#BAO_0002284>)
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002285> <http://www.bioassayontology.org/bao#BAO_0002398>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002286> (<http://www.bioassayontology.org/bao#BAO_0002286>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002286> <http://www.bioassayontology.org/bao#BAO_0002284>)
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002286> <http://www.bioassayontology.org/bao#BAO_0002398>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002287> (<http://www.bioassayontology.org/bao#BAO_0002287>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002287> <http://www.bioassayontology.org/bao#BAO_0002284>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002288> (<http://www.bioassayontology.org/bao#BAO_0002288>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002288> <http://www.bioassayontology.org/bao#BAO_0002283>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002289> (<http://www.bioassayontology.org/bao#BAO_0002289>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002289> <http://www.bioassayontology.org/bao#BAO_0002283>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002290> (<http://www.bioassayontology.org/bao#BAO_0002290>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002290> <http://www.bioassayontology.org/bao#BAO_0002289>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002291> (<http://www.bioassayontology.org/bao#BAO_0002291>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002291> <http://www.bioassayontology.org/bao#BAO_0002289>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002292> (<http://www.bioassayontology.org/bao#BAO_0002292>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002292> <http://www.bioassayontology.org/bao#BAO_0002289>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002293> (<http://www.bioassayontology.org/bao#BAO_0002293>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002293> <http://www.bioassayontology.org/bao#BAO_0002282>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002294> (<http://www.bioassayontology.org/bao#BAO_0002294>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002294> <http://www.bioassayontology.org/bao#BAO_0002293>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002295> (<http://www.bioassayontology.org/bao#BAO_0002295>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002295> <http://www.bioassayontology.org/bao#BAO_0002293>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002296> (<http://www.bioassayontology.org/bao#BAO_0002296>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002296> <http://www.bioassayontology.org/bao#BAO_0002282>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002297> (<http://www.bioassayontology.org/bao#BAO_0002297>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002297> <http://www.bioassayontology.org/bao#BAO_0002296>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002298> (<http://www.bioassayontology.org/bao#BAO_0002298>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002298> <http://www.bioassayontology.org/bao#BAO_0002297>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002299> (<http://www.bioassayontology.org/bao#BAO_0002299>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002299> <http://www.bioassayontology.org/bao#BAO_0002297>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002300> (<http://www.bioassayontology.org/bao#BAO_0002300>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002300> <http://www.bioassayontology.org/bao#BAO_0002297>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002301> (<http://www.bioassayontology.org/bao#BAO_0002301>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002301> <http://www.bioassayontology.org/bao#BAO_0002282>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002302> (<http://www.bioassayontology.org/bao#BAO_0002302>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002302> <http://www.bioassayontology.org/bao#BAO_0002301>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002303> (<http://www.bioassayontology.org/bao#BAO_0002303>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002303> <http://www.bioassayontology.org/bao#BAO_0002282>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002304> (<http://www.bioassayontology.org/bao#BAO_0002304>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002304> <http://www.bioassayontology.org/bao#BAO_0002303>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002317> (<http://www.bioassayontology.org/bao#BAO_0002317>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002317> <http://www.bioassayontology.org/bao#BAO_0002094>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002318> (<http://www.bioassayontology.org/bao#BAO_0002318>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002318> <http://www.bioassayontology.org/bao#BAO_0002317>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002319> (<http://www.bioassayontology.org/bao#BAO_0002319>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002319> <http://www.bioassayontology.org/bao#BAO_0002318>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002320> (<http://www.bioassayontology.org/bao#BAO_0002320>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002320> <http://www.bioassayontology.org/bao#BAO_0002319>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002321> (<http://www.bioassayontology.org/bao#BAO_0002321>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002321> <http://www.bioassayontology.org/bao#BAO_0002319>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002322> (<http://www.bioassayontology.org/bao#BAO_0002322>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002322> <http://www.bioassayontology.org/bao#BAO_0002318>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002323> (<http://www.bioassayontology.org/bao#BAO_0002323>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002323> <http://www.bioassayontology.org/bao#BAO_0002322>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002324> (<http://www.bioassayontology.org/bao#BAO_0002324>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002324> <http://www.bioassayontology.org/bao#BAO_0002322>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002325> (<http://www.bioassayontology.org/bao#BAO_0002325>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002325> <http://www.bioassayontology.org/bao#BAO_0002322>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002326> (<http://www.bioassayontology.org/bao#BAO_0002326>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002326> <http://www.bioassayontology.org/bao#BAO_0002317>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002327> (<http://www.bioassayontology.org/bao#BAO_0002327>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002327> <http://www.bioassayontology.org/bao#BAO_0002326>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002328> (<http://www.bioassayontology.org/bao#BAO_0002328>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002328> <http://www.bioassayontology.org/bao#BAO_0002327>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002329> (<http://www.bioassayontology.org/bao#BAO_0002329>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002329> <http://www.bioassayontology.org/bao#BAO_0002326>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002330> (<http://www.bioassayontology.org/bao#BAO_0002330>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002330> <http://www.bioassayontology.org/bao#BAO_0002329>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002331> (<http://www.bioassayontology.org/bao#BAO_0002331>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002331> <http://www.bioassayontology.org/bao#BAO_0002329>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002332> (<http://www.bioassayontology.org/bao#BAO_0002332>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002332> <http://www.bioassayontology.org/bao#BAO_0002329>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002333> (<http://www.bioassayontology.org/bao#BAO_0002333>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002333> <http://www.bioassayontology.org/bao#BAO_0002329>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002334> (<http://www.bioassayontology.org/bao#BAO_0002334>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002334> <http://www.bioassayontology.org/bao#BAO_0002329>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002335> (<http://www.bioassayontology.org/bao#BAO_0002335>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002335> <http://www.bioassayontology.org/bao#BAO_0002094>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002336> (<http://www.bioassayontology.org/bao#BAO_0002336>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002336> <http://www.bioassayontology.org/bao#BAO_0002335>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002337> (<http://www.bioassayontology.org/bao#BAO_0002337>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002337> <http://www.bioassayontology.org/bao#BAO_0002336>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002338> (<http://www.bioassayontology.org/bao#BAO_0002338>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002338> <http://www.bioassayontology.org/bao#BAO_0002336>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002339> (<http://www.bioassayontology.org/bao#BAO_0002339>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002339> <http://www.bioassayontology.org/bao#BAO_0002336>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002340> (<http://www.bioassayontology.org/bao#BAO_0002340>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002340> <http://www.bioassayontology.org/bao#BAO_0002336>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002341> (<http://www.bioassayontology.org/bao#BAO_0002341>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002341> <http://www.bioassayontology.org/bao#BAO_0002335>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002342> (<http://www.bioassayontology.org/bao#BAO_0002342>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002342> <http://www.bioassayontology.org/bao#BAO_0002341>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002343> (<http://www.bioassayontology.org/bao#BAO_0002343>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002343> <http://www.bioassayontology.org/bao#BAO_0002341>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002344> (<http://www.bioassayontology.org/bao#BAO_0002344>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002344> <http://www.bioassayontology.org/bao#BAO_0002341>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002345> (<http://www.bioassayontology.org/bao#BAO_0002345>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002345> <http://www.bioassayontology.org/bao#BAO_0002341>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002346> (<http://www.bioassayontology.org/bao#BAO_0002346>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002346> <http://www.bioassayontology.org/bao#BAO_0002341>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002347> (<http://www.bioassayontology.org/bao#BAO_0002347>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002347> <http://www.bioassayontology.org/bao#BAO_0002094>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002348> (<http://www.bioassayontology.org/bao#BAO_0002348>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002348> <http://www.bioassayontology.org/bao#BAO_0002347>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002349> (<http://www.bioassayontology.org/bao#BAO_0002349>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002349> <http://www.bioassayontology.org/bao#BAO_0002348>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002350> (<http://www.bioassayontology.org/bao#BAO_0002350>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002350> <http://www.bioassayontology.org/bao#BAO_0002349>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002351> (<http://www.bioassayontology.org/bao#BAO_0002351>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002351> <http://www.bioassayontology.org/bao#BAO_0002350>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002352> (<http://www.bioassayontology.org/bao#BAO_0002352>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002352> <http://www.bioassayontology.org/bao#BAO_0002351>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002353> (<http://www.bioassayontology.org/bao#BAO_0002353>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002353> <http://www.bioassayontology.org/bao#BAO_0002348>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002354> (<http://www.bioassayontology.org/bao#BAO_0002354>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002354> <http://www.bioassayontology.org/bao#BAO_0002353>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002355> (<http://www.bioassayontology.org/bao#BAO_0002355>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002355> <http://www.bioassayontology.org/bao#BAO_0002354>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002356> (<http://www.bioassayontology.org/bao#BAO_0002356>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002356> <http://www.bioassayontology.org/bao#BAO_0002354>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002357> (<http://www.bioassayontology.org/bao#BAO_0002357>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002357> <http://www.bioassayontology.org/bao#BAO_0002354>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002358> (<http://www.bioassayontology.org/bao#BAO_0002358>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002358> <http://www.bioassayontology.org/bao#BAO_0002354>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002359> (<http://www.bioassayontology.org/bao#BAO_0002359>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002359> <http://www.bioassayontology.org/bao#BAO_0002353>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002360> (<http://www.bioassayontology.org/bao#BAO_0002360>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002360> <http://www.bioassayontology.org/bao#BAO_0002359>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002361> (<http://www.bioassayontology.org/bao#BAO_0002361>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002361> <http://www.bioassayontology.org/bao#BAO_0002353>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002362> (<http://www.bioassayontology.org/bao#BAO_0002362>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002362> <http://www.bioassayontology.org/bao#BAO_0002361>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002363> (<http://www.bioassayontology.org/bao#BAO_0002363>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002363> <http://www.bioassayontology.org/bao#BAO_0002347>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002364> (<http://www.bioassayontology.org/bao#BAO_0002364>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002364> <http://www.bioassayontology.org/bao#BAO_0002094>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002365> (<http://www.bioassayontology.org/bao#BAO_0002365>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002365> <http://www.bioassayontology.org/bao#BAO_0002364>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002366> (<http://www.bioassayontology.org/bao#BAO_0002366>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002366> <http://www.bioassayontology.org/bao#BAO_0002365>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002367> (<http://www.bioassayontology.org/bao#BAO_0002367>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002367> <http://www.bioassayontology.org/bao#BAO_0002366>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002368> (<http://www.bioassayontology.org/bao#BAO_0002368>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002368> <http://www.bioassayontology.org/bao#BAO_0002366>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002369> (<http://www.bioassayontology.org/bao#BAO_0002369>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002369> <http://www.bioassayontology.org/bao#BAO_0002366>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002370> (<http://www.bioassayontology.org/bao#BAO_0002370>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002370> <http://www.bioassayontology.org/bao#BAO_0002366>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002371> (<http://www.bioassayontology.org/bao#BAO_0002371>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002371> <http://www.bioassayontology.org/bao#BAO_0002365>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002372> (<http://www.bioassayontology.org/bao#BAO_0002372>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002372> <http://www.bioassayontology.org/bao#BAO_0002364>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002373> (<http://www.bioassayontology.org/bao#BAO_0002373>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002373> <http://www.bioassayontology.org/bao#BAO_0002372>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002374> (<http://www.bioassayontology.org/bao#BAO_0002374>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002374> <http://www.bioassayontology.org/bao#BAO_0002373>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002375> (<http://www.bioassayontology.org/bao#BAO_0002375>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002375> <http://www.bioassayontology.org/bao#BAO_0002374>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002376> (<http://www.bioassayontology.org/bao#BAO_0002376>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002376> <http://www.bioassayontology.org/bao#BAO_0002375>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002377> (<http://www.bioassayontology.org/bao#BAO_0002377>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002377> <http://www.bioassayontology.org/bao#BAO_0002374>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002378> (<http://www.bioassayontology.org/bao#BAO_0002378>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002378> <http://www.bioassayontology.org/bao#BAO_0002377>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002379> (<http://www.bioassayontology.org/bao#BAO_0002379>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002379> <http://www.bioassayontology.org/bao#BAO_0002374>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002380> (<http://www.bioassayontology.org/bao#BAO_0002380>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002380> <http://www.bioassayontology.org/bao#BAO_0002379>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002381> (<http://www.bioassayontology.org/bao#BAO_0002381>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002381> <http://www.bioassayontology.org/bao#BAO_0002379>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002382> (<http://www.bioassayontology.org/bao#BAO_0002382>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002382> <http://www.bioassayontology.org/bao#BAO_0002379>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002383> (<http://www.bioassayontology.org/bao#BAO_0002383>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002383> <http://www.bioassayontology.org/bao#BAO_0002374>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002384> (<http://www.bioassayontology.org/bao#BAO_0002384>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002384> <http://www.bioassayontology.org/bao#BAO_0002383>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002385> (<http://www.bioassayontology.org/bao#BAO_0002385>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002385> <http://www.bioassayontology.org/bao#BAO_0002383>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002386> (<http://www.bioassayontology.org/bao#BAO_0002386>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002386> <http://www.bioassayontology.org/bao#BAO_0002383>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002387> (<http://www.bioassayontology.org/bao#BAO_0002387>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002387> <http://www.bioassayontology.org/bao#BAO_0002374>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002388> (<http://www.bioassayontology.org/bao#BAO_0002388>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002388> <http://www.bioassayontology.org/bao#BAO_0002387>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002389> (<http://www.bioassayontology.org/bao#BAO_0002389>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002389> <http://www.bioassayontology.org/bao#BAO_0002387>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002390> (<http://www.bioassayontology.org/bao#BAO_0002390>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002390> <http://www.bioassayontology.org/bao#BAO_0002387>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002391> (<http://www.bioassayontology.org/bao#BAO_0002391>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002391> <http://www.bioassayontology.org/bao#BAO_0002374>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002392> (<http://www.bioassayontology.org/bao#BAO_0002392>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002392> <http://www.bioassayontology.org/bao#BAO_0002391>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002393> (<http://www.bioassayontology.org/bao#BAO_0002393>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002393> <http://www.bioassayontology.org/bao#BAO_0002373>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002394> (<http://www.bioassayontology.org/bao#BAO_0002394>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002394> <http://www.bioassayontology.org/bao#BAO_0002393>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002395> (<http://www.bioassayontology.org/bao#BAO_0002395>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002395> <http://www.bioassayontology.org/bao#BAO_0002394>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002396> (<http://www.bioassayontology.org/bao#BAO_0002396>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002396> <http://www.bioassayontology.org/bao#BAO_0002394>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002397> (<http://www.bioassayontology.org/bao#BAO_0002397>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002397> <http://www.bioassayontology.org/bao#BAO_0002394>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002398> (<http://www.bioassayontology.org/bao#BAO_0002398>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002398> <http://www.bioassayontology.org/bao#BAO_0002393>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002399> (<http://www.bioassayontology.org/bao#BAO_0002399>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002399> <http://www.bioassayontology.org/bao#BAO_0002288>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002400> (<http://www.bioassayontology.org/bao#BAO_0002400>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002400> <http://www.bioassayontology.org/bao#BAO_0002288>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002402> (<http://www.bioassayontology.org/bao#BAO_0002402>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002402> <http://www.bioassayontology.org/bao#BAO_0002393>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002403> (<http://www.bioassayontology.org/bao#BAO_0002403>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002403> <http://www.bioassayontology.org/bao#BAO_0002402>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002404> (<http://www.bioassayontology.org/bao#BAO_0002404>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002404> <http://www.bioassayontology.org/bao#BAO_0002402>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002405> (<http://www.bioassayontology.org/bao#BAO_0002405>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002405> <http://www.bioassayontology.org/bao#BAO_0002372>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002406> (<http://www.bioassayontology.org/bao#BAO_0002406>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002406> <http://www.bioassayontology.org/bao#BAO_0002405>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002407> (<http://www.bioassayontology.org/bao#BAO_0002407>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002407> <http://www.bioassayontology.org/bao#BAO_0002405>)
+
+# Class: <http://www.bioassayontology.org/bao#BAO_0002408> (<http://www.bioassayontology.org/bao#BAO_0002408>)
+
+SubClassOf(<http://www.bioassayontology.org/bao#BAO_0002408> <http://www.bioassayontology.org/bao#BAO_0002405>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://www.bioassayontology.org/bao#BAO_0002095> (<http://www.bioassayontology.org/bao#BAO_0002095>)
+
+ClassAssertion(owl:Class <http://www.bioassayontology.org/bao#BAO_0002095>)
+
+# Individual: <http://www.bioassayontology.org/bao#BAO_0002246> (<http://www.bioassayontology.org/bao#BAO_0002246>)
+
+ClassAssertion(owl:Class <http://www.bioassayontology.org/bao#BAO_0002246>)
+
+# Individual: <http://www.bioassayontology.org/bao#BAO_0002247> (<http://www.bioassayontology.org/bao#BAO_0002247>)
+
+ClassAssertion(owl:Class <http://www.bioassayontology.org/bao#BAO_0002247>)
+
+# Individual: <http://www.bioassayontology.org/bao#BAO_0002255> (<http://www.bioassayontology.org/bao#BAO_0002255>)
+
+ClassAssertion(owl:Class <http://www.bioassayontology.org/bao#BAO_0002255>)
+
+# Individual: <http://www.bioassayontology.org/bao#BAO_0002256> (<http://www.bioassayontology.org/bao#BAO_0002256>)
+
+ClassAssertion(owl:Class <http://www.bioassayontology.org/bao#BAO_0002256>)
+
+
+)

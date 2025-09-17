@@ -1,0 +1,13 @@
+Found anomalies while testing file ../testOnt.owl
+
+Anomaly 1: Anomaly: not in EL
+ Use of reserved vocabulary for class IRI: owl:Class [ClassAssertion(owl:Class <http://cbo.biocomplexity.indiana.edu/svn/cbo/trunk/CBO_1_0.owl#CellGrowth>) in OntologyID(OntologyIRI(<urn:unnamed:ontology#ont19096661572108437>) VersionIRI(<null>))]
+ Use of reserved vocabulary for class IRI: owl:Class [ClassAssertion(owl:Class <http://cbo.biocomplexity.indiana.edu/svn/cbo/trunk/CBO_1_0.owl#CellGrowth>) in OntologyID(OntologyIRI(<urn:unnamed:ontology#ont19096661572108437>) VersionIRI(<null>))]
+ Use of reserved vocabulary for class IRI: owl:Class [ClassAssertion(owl:Class <https://smolang.org/rdfMutate#newNode-4>) in OntologyID(OntologyIRI(<urn:unnamed:ontology#ont19096661572108437>) VersionIRI(<null>))]
+ Use of reserved vocabulary for class IRI: owl:Class [ClassAssertion(owl:Class <https://smolang.org/rdfMutate#newNode-4>) in OntologyID(OntologyIRI(<urn:unnamed:ontology#ont19096661572108437>) VersionIRI(<null>))]
+ Use of reserved vocabulary for class IRI: owl:Class [ClassAssertion(owl:Class <https://smolang.org/rdfMutate#newNode-1>) in OntologyID(OntologyIRI(<urn:unnamed:ontology#ont19096661572108437>) VersionIRI(<null>))]
+ Use of reserved vocabulary for class IRI: owl:Class [ClassAssertion(owl:Class <https://smolang.org/rdfMutate#newNode-1>) in OntologyID(OntologyIRI(<urn:unnamed:ontology#ont19096661572108437>) VersionIRI(<null>))]
+ Not enough property expressions; at least two needed [SubObjectPropertyOf(ObjectPropertyChain(<http://purl.org/obo/owlapi/relationship#OBO_REL_is_a>) <http://purl.org/obo/owlapi/relationship#OBO_REL_is_a>) in OntologyID(OntologyIRI(<urn:unnamed:ontology#ont19096661572108437>) VersionIRI(<null>))]
+ Use of property in chain causes cycle: <http://purl.org/obo/owlapi/relationship#OBO_REL_is_a> [SubObjectPropertyOf(ObjectPropertyChain(<http://purl.org/obo/owlapi/relationship#OBO_REL_is_a>) <http://purl.org/obo/owlapi/relationship#OBO_REL_is_a>) in OntologyID(OntologyIRI(<urn:unnamed:ontology#ont19096661572108437>) VersionIRI(<null>))]
+ Use of property in chain causes cycle: <http://purl.org/obo/owlapi/relationship#OBO_REL_is_a> [SubObjectPropertyOf(ObjectPropertyChain(<http://purl.org/obo/owlapi/relationship#OBO_REL_is_a>) <http://purl.org/obo/owlapi/relationship#OBO_REL_is_a>) in OntologyID(OntologyIRI(<urn:unnamed:ontology#ont19096661572108437>) VersionIRI(<null>))]
+

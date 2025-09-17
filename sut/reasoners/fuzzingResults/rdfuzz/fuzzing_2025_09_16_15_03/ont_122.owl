@@ -1,0 +1,956 @@
+Prefix(:=<urn:unnamed:ontology#ont19088501859980530>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:unnamed:ontology#ont19088501859980530>
+
+Declaration(Class(<http://semanticscience.org/GMP>))
+Declaration(Class(<http://semanticscience.org/WatsonSugarFace>))
+Declaration(Class(<http://semanticscience.org/ParallelBasePair>))
+Declaration(Class(<http://semanticscience.org/C8Face>))
+Declaration(Class(<http://semanticscience.org/Biomolecule>))
+Declaration(Class(<http://semanticscience.org/RNA>))
+Declaration(Class(<http://semanticscience.org/Object>))
+Declaration(Class(<http://semanticscience.org/Aldopentose>))
+Declaration(Class(<http://semanticscience.org/Uridine>))
+Declaration(Class(<http://semanticscience.org/HoogsteenHoogsteenBasePair>))
+Declaration(Class(<http://semanticscience.org/SyntheticAptamer>))
+Declaration(Class(<http://semanticscience.org/Monosaccharide>))
+Declaration(Class(<http://semanticscience.org/NucleicAcidOrComponent>))
+Declaration(Class(<http://semanticscience.org/WatsonFace>))
+Declaration(Class(<http://semanticscience.org/HoogsteenWatsonFace>))
+Declaration(Class(<http://semanticscience.org/Guanosine>))
+Declaration(Class(<http://semanticscience.org/CMP>))
+Declaration(Class(<http://semanticscience.org/WatsonHoogsteenFace>))
+Declaration(Class(<http://semanticscience.org/Carbohydrate>))
+Declaration(Class(<http://semanticscience.org/Process>))
+Declaration(Class(<http://semanticscience.org/AUBasePair>))
+Declaration(Class(<http://semanticscience.org/NucleicAcid>))
+Declaration(Class(<http://semanticscience.org/ExoRole>))
+Declaration(Class(<http://semanticscience.org/Protein>))
+Declaration(Class(<http://semanticscience.org/Ribonucleoside>))
+Declaration(Class(<http://semanticscience.org/shRNA>))
+Declaration(Class(<http://semanticscience.org/RolePlayer>))
+Declaration(Class(<http://semanticscience.org/StructureDetermination>))
+Declaration(Class(<http://semanticscience.org/Furanose>))
+Declaration(Class(<http://semanticscience.org/Interaction>))
+Declaration(Class(<http://semanticscience.org/Aldohexose>))
+Declaration(Class(<http://semanticscience.org/C2pExoRole>))
+Declaration(Class(<http://semanticscience.org/Peptide>))
+Declaration(Class(<http://semanticscience.org/tRNA>))
+Declaration(Class(<http://semanticscience.org/Tetrose>))
+Declaration(Class(<http://semanticscience.org/UUBasePair>))
+Declaration(Class(<http://semanticscience.org/tmRNA>))
+Declaration(Class(<http://semanticscience.org/HoogsteenFace>))
+Declaration(Class(<http://semanticscience.org/NucleotideInteraction>))
+Declaration(Class(<http://semanticscience.org/NucleotideTriPhosphate>))
+Declaration(Class(<http://semanticscience.org/ssDNA>))
+Declaration(Class(owl:Class))
+Declaration(Class(<http://semanticscience.org/GCBasePair>))
+Declaration(Class(<http://semanticscience.org/SingleStrandedNucleicAcid>))
+Declaration(Class(<http://semanticscience.org/Mature-mRNA>))
+Declaration(Class(<http://semanticscience.org/rRNA>))
+Declaration(Class(<http://semanticscience.org/NonAdjacentStacking>))
+Declaration(Class(<http://semanticscience.org/BifurcatedSugarFace>))
+Declaration(Class(<http://semanticscience.org/BifurcatedFace>))
+Declaration(Class(<http://semanticscience.org/WatsonWatsonBasePair>))
+Declaration(Class(<http://semanticscience.org/Ketopentose>))
+Declaration(Class(<http://semanticscience.org/CUBasePair>))
+Declaration(Class(<http://semanticscience.org/TransBasePair>))
+Declaration(Class(<http://semanticscience.org/Ribonucleotide>))
+Declaration(Class(<http://semanticscience.org/Uracil>))
+Declaration(Class(<http://semanticscience.org/O4pEndoRole>))
+Declaration(Class(<http://semanticscience.org/OutwardStacking>))
+Declaration(Class(<http://semanticscience.org/Polysaccharide>))
+Declaration(Class(<http://semanticscience.org/dCMP>))
+Declaration(Class(<http://semanticscience.org/EndoRole>))
+Declaration(Class(<http://semanticscience.org/NucleotideInteractionRole>))
+Declaration(Class(<http://semanticscience.org/miRNA>))
+Declaration(Class(<http://semanticscience.org/RelativelyOrientedBasePair>))
+Declaration(Class(<http://semanticscience.org/GABasePair>))
+Declaration(Class(<http://semanticscience.org/Conformation>))
+Declaration(Class(<http://semanticscience.org/Chemical>))
+Declaration(Class(<http://semanticscience.org/FacingAwayRole>))
+Declaration(Class(<http://semanticscience.org/SugarFace>))
+Declaration(Class(<http://semanticscience.org/Adenosine>))
+Declaration(Class(<http://semanticscience.org/NucleotideStackingRole>))
+Declaration(Class(<http://semanticscience.org/GUBasePair>))
+Declaration(Class(<http://semanticscience.org/ssRNA>))
+Declaration(Class(<http://semanticscience.org/C4pExoRole>))
+Declaration(Class(<http://semanticscience.org/siRNA>))
+Declaration(Class(<http://semanticscience.org/HoogsteenSugarBasePair>))
+Declaration(Class(<http://semanticscience.org/PeptideAptamer>))
+Declaration(Class(<http://semanticscience.org/NitrogenousBase>))
+Declaration(Class(<http://semanticscience.org/SynConformation>))
+Declaration(Class(<http://semanticscience.org/EdgeInteraction>))
+Declaration(Class(<http://semanticscience.org/NucleotideDiPhosphate>))
+Declaration(Class(<http://semanticscience.org/GGBasePair>))
+Declaration(Class(<http://semanticscience.org/GlycosylBondOrientedBasePair>))
+Declaration(Class(<http://semanticscience.org/O2pFace>))
+Declaration(Class(<http://semanticscience.org/C4pEndoRole>))
+Declaration(Class(<http://semanticscience.org/AntiConformation>))
+Declaration(Class(<http://semanticscience.org/FuranoseConformation>))
+Declaration(Class(<http://semanticscience.org/NaturalAptamer>))
+Declaration(Class(<http://semanticscience.org/ProteinOrComponent>))
+Declaration(Class(<http://semanticscience.org/WatsonSugarBasePair>))
+Declaration(Class(<http://semanticscience.org/BaseNormalOrientedStacking>))
+Declaration(Class(<http://semanticscience.org/SugarSugarFace>))
+Declaration(Class(<http://semanticscience.org/Heptose>))
+Declaration(Class(<http://semanticscience.org/scRNA>))
+Declaration(Class(<http://semanticscience.org/Role>))
+Declaration(Class(<http://semanticscience.org/Pre-mRNA>))
+Declaration(Class(<http://semanticscience.org/C3pEndoRole>))
+Declaration(Class(<http://semanticscience.org/InwardStacking>))
+Declaration(Class(<http://semanticscience.org/WatsonWatsonFace>))
+Declaration(Class(<http://semanticscience.org/Ribose>))
+Declaration(Class(<http://semanticscience.org/UpwardStacking>))
+Declaration(Class(<http://semanticscience.org/SugarWatsonFace>))
+Declaration(Class(<http://semanticscience.org/Hexose>))
+Declaration(Class(<http://semanticscience.org/TwistConformation>))
+Declaration(Class(<http://semanticscience.org/Inosine>))
+Declaration(Class(<http://semanticscience.org/CTP>))
+Declaration(Class(<http://semanticscience.org/dAMP>))
+Declaration(Class(<http://semanticscience.org/NucleotideMonoPhosphate>))
+Declaration(Class(<http://semanticscience.org/Purine>))
+Declaration(Class(<http://semanticscience.org/Deoxyribonucleoside>))
+Declaration(Class(<http://semanticscience.org/FaceInteraction>))
+Declaration(Class(<http://semanticscience.org/NucleotideBasePair>))
+Declaration(Class(<http://semanticscience.org/Pentose>))
+Declaration(Class(<http://semanticscience.org/Polynucleotide>))
+Declaration(Class(<http://semanticscience.org/BaseConformation>))
+Declaration(Class(<http://semanticscience.org/BifurcatedHoogsteenFace>))
+Declaration(Class(<http://semanticscience.org/FacingTowardsRole>))
+Declaration(Class(<http://semanticscience.org/HoogsteenHoogsteenFace>))
+Declaration(Class(<http://semanticscience.org/O4pExoRole>))
+Declaration(Class(<http://semanticscience.org/PhosphateComponent>))
+Declaration(Class(<http://semanticscience.org/dsRNA>))
+Declaration(Class(<http://semanticscience.org/PurineNucleoside>))
+Declaration(Class(<http://semanticscience.org/Cytosine>))
+Declaration(Class(<http://semanticscience.org/CCBasePair>))
+Declaration(Class(<http://semanticscience.org/Pyrimidine>))
+Declaration(Class(<http://semanticscience.org/UMP>))
+Declaration(Class(<http://semanticscience.org/Cytidine>))
+Declaration(Class(<http://semanticscience.org/DownwardStacking>))
+Declaration(Class(<http://semanticscience.org/AntiparallelBasePair>))
+Declaration(Class(<http://semanticscience.org/Pseudouridine>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-3>))
+Declaration(Class(<http://semanticscience.org/C3pExoRole>))
+Declaration(Class(<http://semanticscience.org/C2pEndoRole>))
+Declaration(Class(<http://semanticscience.org/CanonicalBasePair>))
+Declaration(Class(<http://semanticscience.org/gRNA>))
+Declaration(Class(<http://semanticscience.org/NucleotideEdge>))
+Declaration(Class(<http://semanticscience.org/UTP>))
+Declaration(Class(<http://semanticscience.org/AMP>))
+Declaration(Class(<http://semanticscience.org/mRNA>))
+Declaration(Class(<http://semanticscience.org/Lipid>))
+Declaration(Class(<http://semanticscience.org/Triose>))
+Declaration(Class(<http://semanticscience.org/sgRNA>))
+Declaration(Class(<http://semanticscience.org/HoogsteenEdge>))
+Declaration(Class(<http://semanticscience.org/Quality>))
+Declaration(Class(<http://semanticscience.org/Aptamer>))
+Declaration(Class(<http://semanticscience.org/CisBasePair>))
+Declaration(Class(<http://semanticscience.org/NucleotideBaseStacking>))
+Declaration(Class(<http://semanticscience.org/Phosphate>))
+Declaration(Class(<http://semanticscience.org/Nucleoside>))
+Declaration(Class(<http://semanticscience.org/BaseNormalOrientedBasePair>))
+Declaration(Class(<http://semanticscience.org/AtomOrientationInPlaneRole>))
+Declaration(Class(<http://semanticscience.org/AABasePair>))
+Declaration(Class(<http://semanticscience.org/Thymine>))
+Declaration(Class(<http://semanticscience.org/AdjacentStacking>))
+Declaration(Class(<http://semanticscience.org/Deoxyribose>))
+Declaration(Class(<http://semanticscience.org/Ketohexose>))
+Declaration(Class(<http://semanticscience.org/Deoxythymidine>))
+Declaration(Class(<http://semanticscience.org/Molecule>))
+Declaration(Class(<http://semanticscience.org/GTP>))
+Declaration(Class(<http://semanticscience.org/Nucleotide>))
+Declaration(Class(<http://semanticscience.org/NonCanonicalBasePair>))
+Declaration(Class(<http://semanticscience.org/Adenine>))
+Declaration(Class(<http://semanticscience.org/ATP>))
+Declaration(Class(<http://semanticscience.org/TTBasePair>))
+Declaration(Class(<http://semanticscience.org/CABasePair>))
+Declaration(Class(<http://semanticscience.org/snoRNA>))
+Declaration(Class(<http://semanticscience.org/Glucose>))
+Declaration(Class(<http://semanticscience.org/C1pExoRole>))
+Declaration(Class(<http://semanticscience.org/DNA>))
+Declaration(Class(<http://semanticscience.org/AminoAcid>))
+Declaration(Class(<http://semanticscience.org/SugarSugarBasePair>))
+Declaration(Class(<http://semanticscience.org/dsDNA>))
+Declaration(Class(<http://semanticscience.org/WatsonHoogsteenBasePair>))
+Declaration(Class(<http://semanticscience.org/NucleotideFace>))
+Declaration(Class(<http://semanticscience.org/WatsonEdge>))
+Declaration(Class(<http://semanticscience.org/ATBasePair>))
+Declaration(Class(<http://semanticscience.org/Receptor>))
+Declaration(Class(<http://semanticscience.org/Pyranose>))
+Declaration(Class(<http://semanticscience.org/snRNA>))
+Declaration(Class(<http://semanticscience.org/EnvelopeConformation>))
+Declaration(Class(<http://semanticscience.org/C1pEndoRole>))
+Declaration(Class(<http://semanticscience.org/SugarEdge>))
+Declaration(Class(<http://semanticscience.org/PyrimidineNucleoside>))
+Declaration(Class(<http://semanticscience.org/DoubleStrandedNucleicAcid>))
+Declaration(Class(<http://semanticscience.org/Deoxyribonucleotide>))
+Declaration(Class(<http://semanticscience.org/TMP>))
+Declaration(Class(<http://semanticscience.org/NucleicAcidAptamer>))
+Declaration(Class(<http://semanticscience.org/Interactor>))
+Declaration(Class(<http://semanticscience.org/dGMP>))
+Declaration(Class(<http://semanticscience.org/Ligand>))
+Declaration(ObjectProperty(<http://semanticscience.org/hasProperPart>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-3>))
+Declaration(NamedIndividual(<http://semanticscience.org/BaseNormalOrientedStacking>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-4>))
+
+############################
+#   Classes
+############################
+
+# Class: <http://semanticscience.org/AABasePair> (<http://semanticscience.org/AABasePair>)
+
+SubClassOf(<http://semanticscience.org/AABasePair> <http://semanticscience.org/NucleotideBasePair>)
+
+# Class: <http://semanticscience.org/AMP> (<http://semanticscience.org/AMP>)
+
+SubClassOf(<http://semanticscience.org/AMP> <http://semanticscience.org/Ribonucleotide>)
+
+# Class: <http://semanticscience.org/ATBasePair> (<http://semanticscience.org/ATBasePair>)
+
+SubClassOf(<http://semanticscience.org/ATBasePair> <http://semanticscience.org/NucleotideBasePair>)
+
+# Class: <http://semanticscience.org/ATP> (<http://semanticscience.org/ATP>)
+
+SubClassOf(<http://semanticscience.org/ATP> <http://semanticscience.org/Ribonucleotide>)
+
+# Class: <http://semanticscience.org/AUBasePair> (<http://semanticscience.org/AUBasePair>)
+
+SubClassOf(<http://semanticscience.org/AUBasePair> <http://semanticscience.org/NucleotideBasePair>)
+
+# Class: <http://semanticscience.org/Adenine> (<http://semanticscience.org/Adenine>)
+
+SubClassOf(<http://semanticscience.org/Adenine> <http://semanticscience.org/Purine>)
+
+# Class: <http://semanticscience.org/Adenosine> (<http://semanticscience.org/Adenosine>)
+
+SubClassOf(<http://semanticscience.org/Adenosine> <http://semanticscience.org/PurineNucleoside>)
+
+# Class: <http://semanticscience.org/AdjacentStacking> (<http://semanticscience.org/AdjacentStacking>)
+
+SubClassOf(<http://semanticscience.org/AdjacentStacking> <http://semanticscience.org/NucleotideBaseStacking>)
+
+# Class: <http://semanticscience.org/Aldohexose> (<http://semanticscience.org/Aldohexose>)
+
+SubClassOf(<http://semanticscience.org/Aldohexose> <http://semanticscience.org/Hexose>)
+
+# Class: <http://semanticscience.org/Aldopentose> (<http://semanticscience.org/Aldopentose>)
+
+SubClassOf(<http://semanticscience.org/Aldopentose> <http://semanticscience.org/Pentose>)
+
+# Class: <http://semanticscience.org/AminoAcid> (<http://semanticscience.org/AminoAcid>)
+
+SubClassOf(<http://semanticscience.org/AminoAcid> <http://semanticscience.org/ProteinOrComponent>)
+
+# Class: <http://semanticscience.org/AntiConformation> (<http://semanticscience.org/AntiConformation>)
+
+SubClassOf(<http://semanticscience.org/AntiConformation> <http://semanticscience.org/BaseConformation>)
+
+# Class: <http://semanticscience.org/AntiparallelBasePair> (<http://semanticscience.org/AntiparallelBasePair>)
+
+SubClassOf(<http://semanticscience.org/AntiparallelBasePair> <http://semanticscience.org/BaseNormalOrientedBasePair>)
+
+# Class: <http://semanticscience.org/Aptamer> (<http://semanticscience.org/Aptamer>)
+
+SubClassOf(<http://semanticscience.org/Aptamer> <http://semanticscience.org/Interactor>)
+
+# Class: <http://semanticscience.org/AtomOrientationInPlaneRole> (<http://semanticscience.org/AtomOrientationInPlaneRole>)
+
+SubClassOf(<http://semanticscience.org/AtomOrientationInPlaneRole> <http://semanticscience.org/Role>)
+
+# Class: <http://semanticscience.org/BaseConformation> (<http://semanticscience.org/BaseConformation>)
+
+SubClassOf(<http://semanticscience.org/BaseConformation> <http://semanticscience.org/Conformation>)
+
+# Class: <http://semanticscience.org/BaseNormalOrientedBasePair> (<http://semanticscience.org/BaseNormalOrientedBasePair>)
+
+SubClassOf(<http://semanticscience.org/BaseNormalOrientedBasePair> <http://semanticscience.org/RelativelyOrientedBasePair>)
+
+# Class: <http://semanticscience.org/BaseNormalOrientedStacking> (<http://semanticscience.org/BaseNormalOrientedStacking>)
+
+SubClassOf(<http://semanticscience.org/BaseNormalOrientedStacking> <http://semanticscience.org/NucleotideBaseStacking>)
+
+# Class: <http://semanticscience.org/BifurcatedFace> (<http://semanticscience.org/BifurcatedFace>)
+
+SubClassOf(<http://semanticscience.org/BifurcatedFace> <http://semanticscience.org/NucleotideFace>)
+
+# Class: <http://semanticscience.org/BifurcatedHoogsteenFace> (<http://semanticscience.org/BifurcatedHoogsteenFace>)
+
+SubClassOf(<http://semanticscience.org/BifurcatedHoogsteenFace> <http://semanticscience.org/BifurcatedFace>)
+
+# Class: <http://semanticscience.org/BifurcatedSugarFace> (<http://semanticscience.org/BifurcatedSugarFace>)
+
+SubClassOf(<http://semanticscience.org/BifurcatedSugarFace> <http://semanticscience.org/BifurcatedFace>)
+
+# Class: <http://semanticscience.org/Biomolecule> (<http://semanticscience.org/Biomolecule>)
+
+SubClassOf(<http://semanticscience.org/Biomolecule> <http://semanticscience.org/RolePlayer>)
+
+# Class: <http://semanticscience.org/C1pEndoRole> (<http://semanticscience.org/C1pEndoRole>)
+
+SubClassOf(<http://semanticscience.org/C1pEndoRole> <http://semanticscience.org/EndoRole>)
+
+# Class: <http://semanticscience.org/C1pExoRole> (<http://semanticscience.org/C1pExoRole>)
+
+SubClassOf(<http://semanticscience.org/C1pExoRole> <http://semanticscience.org/ExoRole>)
+
+# Class: <http://semanticscience.org/C2pEndoRole> (<http://semanticscience.org/C2pEndoRole>)
+
+SubClassOf(<http://semanticscience.org/C2pEndoRole> <http://semanticscience.org/EndoRole>)
+
+# Class: <http://semanticscience.org/C2pExoRole> (<http://semanticscience.org/C2pExoRole>)
+
+SubClassOf(<http://semanticscience.org/C2pExoRole> <http://semanticscience.org/ExoRole>)
+
+# Class: <http://semanticscience.org/C3pEndoRole> (<http://semanticscience.org/C3pEndoRole>)
+
+SubClassOf(<http://semanticscience.org/C3pEndoRole> <http://semanticscience.org/EndoRole>)
+
+# Class: <http://semanticscience.org/C3pExoRole> (<http://semanticscience.org/C3pExoRole>)
+
+SubClassOf(<http://semanticscience.org/C3pExoRole> <http://semanticscience.org/ExoRole>)
+
+# Class: <http://semanticscience.org/C4pEndoRole> (<http://semanticscience.org/C4pEndoRole>)
+
+SubClassOf(<http://semanticscience.org/C4pEndoRole> <http://semanticscience.org/EndoRole>)
+
+# Class: <http://semanticscience.org/C4pExoRole> (<http://semanticscience.org/C4pExoRole>)
+
+SubClassOf(<http://semanticscience.org/C4pExoRole> <http://semanticscience.org/ExoRole>)
+
+# Class: <http://semanticscience.org/C8Face> (<http://semanticscience.org/C8Face>)
+
+SubClassOf(<http://semanticscience.org/C8Face> <http://semanticscience.org/NucleotideFace>)
+
+# Class: <http://semanticscience.org/CABasePair> (<http://semanticscience.org/CABasePair>)
+
+SubClassOf(<http://semanticscience.org/CABasePair> <http://semanticscience.org/NucleotideBasePair>)
+
+# Class: <http://semanticscience.org/CCBasePair> (<http://semanticscience.org/CCBasePair>)
+
+SubClassOf(<http://semanticscience.org/CCBasePair> <http://semanticscience.org/NucleotideBasePair>)
+
+# Class: <http://semanticscience.org/CMP> (<http://semanticscience.org/CMP>)
+
+SubClassOf(<http://semanticscience.org/CMP> <http://semanticscience.org/Ribonucleotide>)
+
+# Class: <http://semanticscience.org/CTP> (<http://semanticscience.org/CTP>)
+
+SubClassOf(<http://semanticscience.org/CTP> <http://semanticscience.org/Ribonucleotide>)
+
+# Class: <http://semanticscience.org/CUBasePair> (<http://semanticscience.org/CUBasePair>)
+
+SubClassOf(<http://semanticscience.org/CUBasePair> <http://semanticscience.org/NucleotideBasePair>)
+
+# Class: <http://semanticscience.org/CanonicalBasePair> (<http://semanticscience.org/CanonicalBasePair>)
+
+SubClassOf(<http://semanticscience.org/CanonicalBasePair> <http://semanticscience.org/NucleotideBasePair>)
+
+# Class: <http://semanticscience.org/Carbohydrate> (<http://semanticscience.org/Carbohydrate>)
+
+SubClassOf(<http://semanticscience.org/Carbohydrate> <http://semanticscience.org/Molecule>)
+
+# Class: <http://semanticscience.org/Chemical> (<http://semanticscience.org/Chemical>)
+
+SubClassOf(<http://semanticscience.org/Chemical> <http://semanticscience.org/Object>)
+
+# Class: <http://semanticscience.org/CisBasePair> (<http://semanticscience.org/CisBasePair>)
+
+SubClassOf(<http://semanticscience.org/CisBasePair> <http://semanticscience.org/GlycosylBondOrientedBasePair>)
+
+# Class: <http://semanticscience.org/Conformation> (<http://semanticscience.org/Conformation>)
+
+SubClassOf(<http://semanticscience.org/Conformation> <http://semanticscience.org/Quality>)
+
+# Class: <http://semanticscience.org/Cytidine> (<http://semanticscience.org/Cytidine>)
+
+SubClassOf(<http://semanticscience.org/Cytidine> <http://semanticscience.org/PyrimidineNucleoside>)
+
+# Class: <http://semanticscience.org/Cytosine> (<http://semanticscience.org/Cytosine>)
+
+SubClassOf(<http://semanticscience.org/Cytosine> <http://semanticscience.org/Pyrimidine>)
+
+# Class: <http://semanticscience.org/DNA> (<http://semanticscience.org/DNA>)
+
+SubClassOf(<http://semanticscience.org/DNA> <http://semanticscience.org/NucleicAcid>)
+
+# Class: <http://semanticscience.org/Deoxyribonucleoside> (<http://semanticscience.org/Deoxyribonucleoside>)
+
+SubClassOf(<http://semanticscience.org/Deoxyribonucleoside> <http://semanticscience.org/Nucleoside>)
+
+# Class: <http://semanticscience.org/Deoxyribonucleotide> (<http://semanticscience.org/Deoxyribonucleotide>)
+
+SubClassOf(<http://semanticscience.org/Deoxyribonucleotide> <http://semanticscience.org/Nucleotide>)
+
+# Class: <http://semanticscience.org/Deoxyribose> (<http://semanticscience.org/Deoxyribose>)
+
+SubClassOf(<http://semanticscience.org/Deoxyribose> <http://semanticscience.org/Furanose>)
+
+# Class: <http://semanticscience.org/Deoxythymidine> (<http://semanticscience.org/Deoxythymidine>)
+
+SubClassOf(<http://semanticscience.org/Deoxythymidine> <http://semanticscience.org/PyrimidineNucleoside>)
+
+# Class: <http://semanticscience.org/DoubleStrandedNucleicAcid> (<http://semanticscience.org/DoubleStrandedNucleicAcid>)
+
+SubClassOf(<http://semanticscience.org/DoubleStrandedNucleicAcid> <http://semanticscience.org/NucleicAcid>)
+
+# Class: <http://semanticscience.org/DownwardStacking> (<http://semanticscience.org/DownwardStacking>)
+
+SubClassOf(<http://semanticscience.org/DownwardStacking> <http://semanticscience.org/BaseNormalOrientedStacking>)
+
+# Class: <http://semanticscience.org/EdgeInteraction> (<http://semanticscience.org/EdgeInteraction>)
+
+SubClassOf(<http://semanticscience.org/EdgeInteraction> <http://semanticscience.org/NucleotideBasePair>)
+
+# Class: <http://semanticscience.org/EndoRole> (<http://semanticscience.org/EndoRole>)
+
+SubClassOf(<http://semanticscience.org/EndoRole> <http://semanticscience.org/AtomOrientationInPlaneRole>)
+
+# Class: <http://semanticscience.org/EnvelopeConformation> (<http://semanticscience.org/EnvelopeConformation>)
+
+SubClassOf(<http://semanticscience.org/EnvelopeConformation> <http://semanticscience.org/FuranoseConformation>)
+
+# Class: <http://semanticscience.org/ExoRole> (<http://semanticscience.org/ExoRole>)
+
+SubClassOf(<http://semanticscience.org/ExoRole> <http://semanticscience.org/AtomOrientationInPlaneRole>)
+
+# Class: <http://semanticscience.org/FaceInteraction> (<http://semanticscience.org/FaceInteraction>)
+
+SubClassOf(<http://semanticscience.org/FaceInteraction> <http://semanticscience.org/NucleotideBasePair>)
+
+# Class: <http://semanticscience.org/FacingAwayRole> (<http://semanticscience.org/FacingAwayRole>)
+
+SubClassOf(<http://semanticscience.org/FacingAwayRole> <http://semanticscience.org/NucleotideStackingRole>)
+
+# Class: <http://semanticscience.org/FacingTowardsRole> (<http://semanticscience.org/FacingTowardsRole>)
+
+SubClassOf(<http://semanticscience.org/FacingTowardsRole> <http://semanticscience.org/NucleotideStackingRole>)
+
+# Class: <http://semanticscience.org/Furanose> (<http://semanticscience.org/Furanose>)
+
+SubClassOf(<http://semanticscience.org/Furanose> <http://semanticscience.org/Aldopentose>)
+
+# Class: <http://semanticscience.org/FuranoseConformation> (<http://semanticscience.org/FuranoseConformation>)
+
+SubClassOf(<http://semanticscience.org/FuranoseConformation> <http://semanticscience.org/Conformation>)
+
+# Class: <http://semanticscience.org/GABasePair> (<http://semanticscience.org/GABasePair>)
+
+SubClassOf(<http://semanticscience.org/GABasePair> <http://semanticscience.org/NucleotideBasePair>)
+
+# Class: <http://semanticscience.org/GCBasePair> (<http://semanticscience.org/GCBasePair>)
+
+SubClassOf(<http://semanticscience.org/GCBasePair> <http://semanticscience.org/NucleotideBasePair>)
+
+# Class: <http://semanticscience.org/GGBasePair> (<http://semanticscience.org/GGBasePair>)
+
+SubClassOf(<http://semanticscience.org/GGBasePair> <http://semanticscience.org/NucleotideBasePair>)
+
+# Class: <http://semanticscience.org/GMP> (<http://semanticscience.org/GMP>)
+
+SubClassOf(<http://semanticscience.org/GMP> <http://semanticscience.org/Ribonucleotide>)
+
+# Class: <http://semanticscience.org/GTP> (<http://semanticscience.org/GTP>)
+
+SubClassOf(<http://semanticscience.org/GTP> <http://semanticscience.org/Ribonucleotide>)
+
+# Class: <http://semanticscience.org/GUBasePair> (<http://semanticscience.org/GUBasePair>)
+
+SubClassOf(<http://semanticscience.org/GUBasePair> <http://semanticscience.org/NucleotideBasePair>)
+
+# Class: <http://semanticscience.org/Glucose> (<http://semanticscience.org/Glucose>)
+
+SubClassOf(<http://semanticscience.org/Glucose> <http://semanticscience.org/Pyranose>)
+
+# Class: <http://semanticscience.org/GlycosylBondOrientedBasePair> (<http://semanticscience.org/GlycosylBondOrientedBasePair>)
+
+SubClassOf(<http://semanticscience.org/GlycosylBondOrientedBasePair> <http://semanticscience.org/RelativelyOrientedBasePair>)
+
+# Class: <http://semanticscience.org/Guanosine> (<http://semanticscience.org/Guanosine>)
+
+SubClassOf(<http://semanticscience.org/Guanosine> <http://semanticscience.org/PurineNucleoside>)
+
+# Class: <http://semanticscience.org/Heptose> (<http://semanticscience.org/Heptose>)
+
+SubClassOf(<http://semanticscience.org/Heptose> <http://semanticscience.org/Monosaccharide>)
+
+# Class: <http://semanticscience.org/Hexose> (<http://semanticscience.org/Hexose>)
+
+SubClassOf(<http://semanticscience.org/Hexose> <http://semanticscience.org/Monosaccharide>)
+
+# Class: <http://semanticscience.org/HoogsteenEdge> (<http://semanticscience.org/HoogsteenEdge>)
+
+SubClassOf(<http://semanticscience.org/HoogsteenEdge> <http://semanticscience.org/NucleotideEdge>)
+
+# Class: <http://semanticscience.org/HoogsteenFace> (<http://semanticscience.org/HoogsteenFace>)
+
+SubClassOf(<http://semanticscience.org/HoogsteenFace> <http://semanticscience.org/NucleotideFace>)
+
+# Class: <http://semanticscience.org/HoogsteenHoogsteenBasePair> (<http://semanticscience.org/HoogsteenHoogsteenBasePair>)
+
+SubClassOf(<http://semanticscience.org/HoogsteenHoogsteenBasePair> <http://semanticscience.org/EdgeInteraction>)
+
+# Class: <http://semanticscience.org/HoogsteenHoogsteenFace> (<http://semanticscience.org/HoogsteenHoogsteenFace>)
+
+SubClassOf(<http://semanticscience.org/HoogsteenHoogsteenFace> <http://semanticscience.org/NucleotideFace>)
+
+# Class: <http://semanticscience.org/HoogsteenSugarBasePair> (<http://semanticscience.org/HoogsteenSugarBasePair>)
+
+SubClassOf(<http://semanticscience.org/HoogsteenSugarBasePair> <http://semanticscience.org/EdgeInteraction>)
+
+# Class: <http://semanticscience.org/HoogsteenWatsonFace> (<http://semanticscience.org/HoogsteenWatsonFace>)
+
+SubClassOf(<http://semanticscience.org/HoogsteenWatsonFace> <http://semanticscience.org/NucleotideFace>)
+
+# Class: <http://semanticscience.org/Inosine> (<http://semanticscience.org/Inosine>)
+
+SubClassOf(<http://semanticscience.org/Inosine> <http://semanticscience.org/Purine>)
+
+# Class: <http://semanticscience.org/Interaction> (<http://semanticscience.org/Interaction>)
+
+SubClassOf(<http://semanticscience.org/Interaction> <http://semanticscience.org/Process>)
+
+# Class: <http://semanticscience.org/Interactor> (<http://semanticscience.org/Interactor>)
+
+SubClassOf(<http://semanticscience.org/Interactor> <http://semanticscience.org/RolePlayer>)
+
+# Class: <http://semanticscience.org/InwardStacking> (<http://semanticscience.org/InwardStacking>)
+
+SubClassOf(<http://semanticscience.org/InwardStacking> <http://semanticscience.org/BaseNormalOrientedStacking>)
+
+# Class: <http://semanticscience.org/Ketohexose> (<http://semanticscience.org/Ketohexose>)
+
+SubClassOf(<http://semanticscience.org/Ketohexose> <http://semanticscience.org/Hexose>)
+
+# Class: <http://semanticscience.org/Ketopentose> (<http://semanticscience.org/Ketopentose>)
+
+SubClassOf(<http://semanticscience.org/Ketopentose> <http://semanticscience.org/Pentose>)
+
+# Class: <http://semanticscience.org/Ligand> (<http://semanticscience.org/Ligand>)
+
+SubClassOf(<http://semanticscience.org/Ligand> <http://semanticscience.org/Interactor>)
+
+# Class: <http://semanticscience.org/Lipid> (<http://semanticscience.org/Lipid>)
+
+SubClassOf(<http://semanticscience.org/Lipid> <http://semanticscience.org/Molecule>)
+
+# Class: <http://semanticscience.org/Mature-mRNA> (<http://semanticscience.org/Mature-mRNA>)
+
+SubClassOf(<http://semanticscience.org/Mature-mRNA> <http://semanticscience.org/mRNA>)
+
+# Class: <http://semanticscience.org/Molecule> (<http://semanticscience.org/Molecule>)
+
+SubClassOf(<http://semanticscience.org/Molecule> <http://semanticscience.org/Chemical>)
+
+# Class: <http://semanticscience.org/Monosaccharide> (<http://semanticscience.org/Monosaccharide>)
+
+SubClassOf(<http://semanticscience.org/Monosaccharide> <http://semanticscience.org/Carbohydrate>)
+
+# Class: <http://semanticscience.org/NaturalAptamer> (<http://semanticscience.org/NaturalAptamer>)
+
+SubClassOf(<http://semanticscience.org/NaturalAptamer> <http://semanticscience.org/Aptamer>)
+
+# Class: <http://semanticscience.org/NitrogenousBase> (<http://semanticscience.org/NitrogenousBase>)
+
+SubClassOf(<http://semanticscience.org/NitrogenousBase> <http://semanticscience.org/NucleicAcidOrComponent>)
+
+# Class: <http://semanticscience.org/NonAdjacentStacking> (<http://semanticscience.org/NonAdjacentStacking>)
+
+SubClassOf(<http://semanticscience.org/NonAdjacentStacking> <http://semanticscience.org/NucleotideBaseStacking>)
+
+# Class: <http://semanticscience.org/NonCanonicalBasePair> (<http://semanticscience.org/NonCanonicalBasePair>)
+
+SubClassOf(<http://semanticscience.org/NonCanonicalBasePair> <http://semanticscience.org/NucleotideBasePair>)
+
+# Class: <http://semanticscience.org/NucleicAcid> (<http://semanticscience.org/NucleicAcid>)
+
+SubClassOf(<http://semanticscience.org/NucleicAcid> <http://semanticscience.org/NucleicAcidOrComponent>)
+
+# Class: <http://semanticscience.org/NucleicAcidAptamer> (<http://semanticscience.org/NucleicAcidAptamer>)
+
+SubClassOf(<http://semanticscience.org/NucleicAcidAptamer> <http://semanticscience.org/Aptamer>)
+
+# Class: <http://semanticscience.org/NucleicAcidOrComponent> (<http://semanticscience.org/NucleicAcidOrComponent>)
+
+SubClassOf(<http://semanticscience.org/NucleicAcidOrComponent> <http://semanticscience.org/Molecule>)
+
+# Class: <http://semanticscience.org/Nucleoside> (<http://semanticscience.org/Nucleoside>)
+
+SubClassOf(<http://semanticscience.org/Nucleoside> <http://semanticscience.org/NucleicAcidOrComponent>)
+
+# Class: <http://semanticscience.org/Nucleotide> (<http://semanticscience.org/Nucleotide>)
+
+SubClassOf(<http://semanticscience.org/Nucleotide> <http://semanticscience.org/NucleicAcidOrComponent>)
+
+# Class: <http://semanticscience.org/NucleotideBasePair> (<http://semanticscience.org/NucleotideBasePair>)
+
+SubClassOf(<http://semanticscience.org/NucleotideBasePair> <http://semanticscience.org/NucleotideInteraction>)
+
+# Class: <http://semanticscience.org/NucleotideBaseStacking> (<http://semanticscience.org/NucleotideBaseStacking>)
+
+SubClassOf(<http://semanticscience.org/NucleotideBaseStacking> <http://semanticscience.org/NucleotideInteraction>)
+
+# Class: <http://semanticscience.org/NucleotideDiPhosphate> (<http://semanticscience.org/NucleotideDiPhosphate>)
+
+SubClassOf(<http://semanticscience.org/NucleotideDiPhosphate> <http://semanticscience.org/Nucleotide>)
+
+# Class: <http://semanticscience.org/NucleotideEdge> (<http://semanticscience.org/NucleotideEdge>)
+
+SubClassOf(<http://semanticscience.org/NucleotideEdge> <http://semanticscience.org/Quality>)
+
+# Class: <http://semanticscience.org/NucleotideFace> (<http://semanticscience.org/NucleotideFace>)
+
+SubClassOf(<http://semanticscience.org/NucleotideFace> <http://semanticscience.org/Quality>)
+
+# Class: <http://semanticscience.org/NucleotideInteraction> (<http://semanticscience.org/NucleotideInteraction>)
+
+SubClassOf(<http://semanticscience.org/NucleotideInteraction> <http://semanticscience.org/Interaction>)
+
+# Class: <http://semanticscience.org/NucleotideInteractionRole> (<http://semanticscience.org/NucleotideInteractionRole>)
+
+SubClassOf(<http://semanticscience.org/NucleotideInteractionRole> <http://semanticscience.org/Role>)
+
+# Class: <http://semanticscience.org/NucleotideMonoPhosphate> (<http://semanticscience.org/NucleotideMonoPhosphate>)
+
+SubClassOf(<http://semanticscience.org/NucleotideMonoPhosphate> <http://semanticscience.org/Nucleotide>)
+
+# Class: <http://semanticscience.org/NucleotideStackingRole> (<http://semanticscience.org/NucleotideStackingRole>)
+
+SubClassOf(<http://semanticscience.org/NucleotideStackingRole> <http://semanticscience.org/NucleotideInteractionRole>)
+
+# Class: <http://semanticscience.org/NucleotideTriPhosphate> (<http://semanticscience.org/NucleotideTriPhosphate>)
+
+SubClassOf(<http://semanticscience.org/NucleotideTriPhosphate> <http://semanticscience.org/Nucleotide>)
+
+# Class: <http://semanticscience.org/O2pFace> (<http://semanticscience.org/O2pFace>)
+
+SubClassOf(<http://semanticscience.org/O2pFace> <http://semanticscience.org/NucleotideFace>)
+
+# Class: <http://semanticscience.org/O4pEndoRole> (<http://semanticscience.org/O4pEndoRole>)
+
+SubClassOf(<http://semanticscience.org/O4pEndoRole> <http://semanticscience.org/EndoRole>)
+
+# Class: <http://semanticscience.org/O4pExoRole> (<http://semanticscience.org/O4pExoRole>)
+
+SubClassOf(<http://semanticscience.org/O4pExoRole> <http://semanticscience.org/ExoRole>)
+
+# Class: <http://semanticscience.org/OutwardStacking> (<http://semanticscience.org/OutwardStacking>)
+
+SubClassOf(<http://semanticscience.org/OutwardStacking> <http://semanticscience.org/BaseNormalOrientedStacking>)
+
+# Class: <http://semanticscience.org/ParallelBasePair> (<http://semanticscience.org/ParallelBasePair>)
+
+SubClassOf(<http://semanticscience.org/ParallelBasePair> <http://semanticscience.org/BaseNormalOrientedBasePair>)
+
+# Class: <http://semanticscience.org/Pentose> (<http://semanticscience.org/Pentose>)
+
+SubClassOf(<http://semanticscience.org/Pentose> <http://semanticscience.org/Monosaccharide>)
+
+# Class: <http://semanticscience.org/Peptide> (<http://semanticscience.org/Peptide>)
+
+SubClassOf(<http://semanticscience.org/Peptide> <http://semanticscience.org/Protein>)
+
+# Class: <http://semanticscience.org/PeptideAptamer> (<http://semanticscience.org/PeptideAptamer>)
+
+SubClassOf(<http://semanticscience.org/PeptideAptamer> <http://semanticscience.org/Peptide>)
+
+# Class: <http://semanticscience.org/Phosphate> (<http://semanticscience.org/Phosphate>)
+
+SubClassOf(<http://semanticscience.org/Phosphate> <http://semanticscience.org/PhosphateComponent>)
+
+# Class: <http://semanticscience.org/PhosphateComponent> (<http://semanticscience.org/PhosphateComponent>)
+
+SubClassOf(<http://semanticscience.org/PhosphateComponent> <http://semanticscience.org/Molecule>)
+
+# Class: <http://semanticscience.org/Polynucleotide> (<http://semanticscience.org/Polynucleotide>)
+
+SubClassOf(<http://semanticscience.org/Polynucleotide> <http://semanticscience.org/NucleicAcid>)
+
+# Class: <http://semanticscience.org/Polysaccharide> (<http://semanticscience.org/Polysaccharide>)
+
+SubClassOf(<http://semanticscience.org/Polysaccharide> <http://semanticscience.org/Carbohydrate>)
+
+# Class: <http://semanticscience.org/Pre-mRNA> (<http://semanticscience.org/Pre-mRNA>)
+
+SubClassOf(<http://semanticscience.org/Pre-mRNA> <http://semanticscience.org/mRNA>)
+
+# Class: <http://semanticscience.org/Protein> (<http://semanticscience.org/Protein>)
+
+SubClassOf(<http://semanticscience.org/Protein> <http://semanticscience.org/ProteinOrComponent>)
+
+# Class: <http://semanticscience.org/ProteinOrComponent> (<http://semanticscience.org/ProteinOrComponent>)
+
+SubClassOf(<http://semanticscience.org/ProteinOrComponent> <http://semanticscience.org/Molecule>)
+
+# Class: <http://semanticscience.org/Pseudouridine> (<http://semanticscience.org/Pseudouridine>)
+
+SubClassOf(<http://semanticscience.org/Pseudouridine> <http://semanticscience.org/Pyrimidine>)
+
+# Class: <http://semanticscience.org/Purine> (<http://semanticscience.org/Purine>)
+
+SubClassOf(<http://semanticscience.org/Purine> <http://semanticscience.org/NitrogenousBase>)
+
+# Class: <http://semanticscience.org/PurineNucleoside> (<http://semanticscience.org/PurineNucleoside>)
+
+SubClassOf(<http://semanticscience.org/PurineNucleoside> <http://semanticscience.org/Nucleoside>)
+
+# Class: <http://semanticscience.org/Pyranose> (<http://semanticscience.org/Pyranose>)
+
+SubClassOf(<http://semanticscience.org/Pyranose> <http://semanticscience.org/Aldohexose>)
+
+# Class: <http://semanticscience.org/Pyrimidine> (<http://semanticscience.org/Pyrimidine>)
+
+SubClassOf(<http://semanticscience.org/Pyrimidine> <http://semanticscience.org/NitrogenousBase>)
+
+# Class: <http://semanticscience.org/PyrimidineNucleoside> (<http://semanticscience.org/PyrimidineNucleoside>)
+
+SubClassOf(<http://semanticscience.org/PyrimidineNucleoside> <http://semanticscience.org/Nucleoside>)
+
+# Class: <http://semanticscience.org/RNA> (<http://semanticscience.org/RNA>)
+
+SubClassOf(<http://semanticscience.org/RNA> <http://semanticscience.org/NucleicAcid>)
+
+# Class: <http://semanticscience.org/Receptor> (<http://semanticscience.org/Receptor>)
+
+SubClassOf(<http://semanticscience.org/Receptor> <http://semanticscience.org/Interactor>)
+
+# Class: <http://semanticscience.org/RelativelyOrientedBasePair> (<http://semanticscience.org/RelativelyOrientedBasePair>)
+
+SubClassOf(<http://semanticscience.org/RelativelyOrientedBasePair> <http://semanticscience.org/NucleotideBasePair>)
+
+# Class: <http://semanticscience.org/Ribonucleoside> (<http://semanticscience.org/Ribonucleoside>)
+
+SubClassOf(<http://semanticscience.org/Ribonucleoside> <http://semanticscience.org/Nucleoside>)
+
+# Class: <http://semanticscience.org/Ribonucleotide> (<http://semanticscience.org/Ribonucleotide>)
+
+SubClassOf(<http://semanticscience.org/Ribonucleotide> <http://semanticscience.org/Nucleotide>)
+
+# Class: <http://semanticscience.org/Ribose> (<http://semanticscience.org/Ribose>)
+
+SubClassOf(<http://semanticscience.org/Ribose> <http://semanticscience.org/Furanose>)
+
+# Class: <http://semanticscience.org/RolePlayer> (<http://semanticscience.org/RolePlayer>)
+
+SubClassOf(<http://semanticscience.org/RolePlayer> <http://semanticscience.org/Object>)
+
+# Class: <http://semanticscience.org/SingleStrandedNucleicAcid> (<http://semanticscience.org/SingleStrandedNucleicAcid>)
+
+SubClassOf(<http://semanticscience.org/SingleStrandedNucleicAcid> <http://semanticscience.org/NucleicAcid>)
+
+# Class: <http://semanticscience.org/StructureDetermination> (<http://semanticscience.org/StructureDetermination>)
+
+SubClassOf(<http://semanticscience.org/StructureDetermination> <http://semanticscience.org/Process>)
+
+# Class: <http://semanticscience.org/SugarEdge> (<http://semanticscience.org/SugarEdge>)
+
+SubClassOf(<http://semanticscience.org/SugarEdge> <http://semanticscience.org/NucleotideEdge>)
+
+# Class: <http://semanticscience.org/SugarFace> (<http://semanticscience.org/SugarFace>)
+
+SubClassOf(<http://semanticscience.org/SugarFace> <http://semanticscience.org/NucleotideFace>)
+
+# Class: <http://semanticscience.org/SugarSugarBasePair> (<http://semanticscience.org/SugarSugarBasePair>)
+
+SubClassOf(<http://semanticscience.org/SugarSugarBasePair> <http://semanticscience.org/EdgeInteraction>)
+
+# Class: <http://semanticscience.org/SugarSugarFace> (<http://semanticscience.org/SugarSugarFace>)
+
+SubClassOf(<http://semanticscience.org/SugarSugarFace> <http://semanticscience.org/NucleotideFace>)
+
+# Class: <http://semanticscience.org/SugarWatsonFace> (<http://semanticscience.org/SugarWatsonFace>)
+
+SubClassOf(<http://semanticscience.org/SugarWatsonFace> <http://semanticscience.org/NucleotideFace>)
+
+# Class: <http://semanticscience.org/SynConformation> (<http://semanticscience.org/SynConformation>)
+
+SubClassOf(<http://semanticscience.org/SynConformation> <http://semanticscience.org/BaseConformation>)
+
+# Class: <http://semanticscience.org/SyntheticAptamer> (<http://semanticscience.org/SyntheticAptamer>)
+
+SubClassOf(<http://semanticscience.org/SyntheticAptamer> <http://semanticscience.org/Aptamer>)
+
+# Class: <http://semanticscience.org/TMP> (<http://semanticscience.org/TMP>)
+
+SubClassOf(<http://semanticscience.org/TMP> <http://semanticscience.org/Deoxyribonucleotide>)
+
+# Class: <http://semanticscience.org/TTBasePair> (<http://semanticscience.org/TTBasePair>)
+
+SubClassOf(<http://semanticscience.org/TTBasePair> <http://semanticscience.org/NucleotideBasePair>)
+
+# Class: <http://semanticscience.org/Tetrose> (<http://semanticscience.org/Tetrose>)
+
+SubClassOf(<http://semanticscience.org/Tetrose> <http://semanticscience.org/Monosaccharide>)
+
+# Class: <http://semanticscience.org/Thymine> (<http://semanticscience.org/Thymine>)
+
+SubClassOf(<http://semanticscience.org/Thymine> <http://semanticscience.org/Pyrimidine>)
+
+# Class: <http://semanticscience.org/TransBasePair> (<http://semanticscience.org/TransBasePair>)
+
+SubClassOf(<http://semanticscience.org/TransBasePair> <http://semanticscience.org/GlycosylBondOrientedBasePair>)
+
+# Class: <http://semanticscience.org/Triose> (<http://semanticscience.org/Triose>)
+
+SubClassOf(<http://semanticscience.org/Triose> <http://semanticscience.org/Monosaccharide>)
+
+# Class: <http://semanticscience.org/TwistConformation> (<http://semanticscience.org/TwistConformation>)
+
+SubClassOf(<http://semanticscience.org/TwistConformation> <http://semanticscience.org/FuranoseConformation>)
+
+# Class: <http://semanticscience.org/UMP> (<http://semanticscience.org/UMP>)
+
+SubClassOf(<http://semanticscience.org/UMP> <http://semanticscience.org/Ribonucleotide>)
+
+# Class: <http://semanticscience.org/UTP> (<http://semanticscience.org/UTP>)
+
+SubClassOf(<http://semanticscience.org/UTP> <http://semanticscience.org/Ribonucleotide>)
+
+# Class: <http://semanticscience.org/UUBasePair> (<http://semanticscience.org/UUBasePair>)
+
+SubClassOf(<http://semanticscience.org/UUBasePair> <http://semanticscience.org/NucleotideBasePair>)
+
+# Class: <http://semanticscience.org/UpwardStacking> (<http://semanticscience.org/UpwardStacking>)
+
+SubClassOf(<http://semanticscience.org/UpwardStacking> <http://semanticscience.org/BaseNormalOrientedStacking>)
+
+# Class: <http://semanticscience.org/Uracil> (<http://semanticscience.org/Uracil>)
+
+SubClassOf(<http://semanticscience.org/Uracil> <http://semanticscience.org/Pyrimidine>)
+
+# Class: <http://semanticscience.org/Uridine> (<http://semanticscience.org/Uridine>)
+
+SubClassOf(<http://semanticscience.org/Uridine> <http://semanticscience.org/PyrimidineNucleoside>)
+
+# Class: <http://semanticscience.org/WatsonEdge> (<http://semanticscience.org/WatsonEdge>)
+
+SubClassOf(<http://semanticscience.org/WatsonEdge> <http://semanticscience.org/NucleotideEdge>)
+
+# Class: <http://semanticscience.org/WatsonFace> (<http://semanticscience.org/WatsonFace>)
+
+SubClassOf(<http://semanticscience.org/WatsonFace> <http://semanticscience.org/NucleotideFace>)
+
+# Class: <http://semanticscience.org/WatsonHoogsteenBasePair> (<http://semanticscience.org/WatsonHoogsteenBasePair>)
+
+SubClassOf(<http://semanticscience.org/WatsonHoogsteenBasePair> <http://semanticscience.org/EdgeInteraction>)
+
+# Class: <http://semanticscience.org/WatsonHoogsteenFace> (<http://semanticscience.org/WatsonHoogsteenFace>)
+
+SubClassOf(<http://semanticscience.org/WatsonHoogsteenFace> <http://semanticscience.org/NucleotideFace>)
+
+# Class: <http://semanticscience.org/WatsonSugarBasePair> (<http://semanticscience.org/WatsonSugarBasePair>)
+
+SubClassOf(<http://semanticscience.org/WatsonSugarBasePair> <http://semanticscience.org/EdgeInteraction>)
+
+# Class: <http://semanticscience.org/WatsonSugarFace> (<http://semanticscience.org/WatsonSugarFace>)
+
+SubClassOf(<http://semanticscience.org/WatsonSugarFace> <http://semanticscience.org/NucleotideFace>)
+
+# Class: <http://semanticscience.org/WatsonWatsonBasePair> (<http://semanticscience.org/WatsonWatsonBasePair>)
+
+SubClassOf(<http://semanticscience.org/WatsonWatsonBasePair> <http://semanticscience.org/EdgeInteraction>)
+
+# Class: <http://semanticscience.org/WatsonWatsonFace> (<http://semanticscience.org/WatsonWatsonFace>)
+
+SubClassOf(<http://semanticscience.org/WatsonWatsonFace> <http://semanticscience.org/NucleotideFace>)
+
+# Class: <http://semanticscience.org/dAMP> (<http://semanticscience.org/dAMP>)
+
+SubClassOf(<http://semanticscience.org/dAMP> <http://semanticscience.org/Deoxyribonucleotide>)
+
+# Class: <http://semanticscience.org/dCMP> (<http://semanticscience.org/dCMP>)
+
+SubClassOf(<http://semanticscience.org/dCMP> <http://semanticscience.org/Deoxyribonucleotide>)
+
+# Class: <http://semanticscience.org/dGMP> (<http://semanticscience.org/dGMP>)
+
+SubClassOf(<http://semanticscience.org/dGMP> <http://semanticscience.org/Deoxyribonucleotide>)
+
+# Class: <http://semanticscience.org/dsDNA> (<http://semanticscience.org/dsDNA>)
+
+SubClassOf(<http://semanticscience.org/dsDNA> <http://semanticscience.org/DoubleStrandedNucleicAcid>)
+
+# Class: <http://semanticscience.org/dsRNA> (<http://semanticscience.org/dsRNA>)
+
+SubClassOf(<http://semanticscience.org/dsRNA> <http://semanticscience.org/DoubleStrandedNucleicAcid>)
+
+# Class: <http://semanticscience.org/gRNA> (<http://semanticscience.org/gRNA>)
+
+SubClassOf(<http://semanticscience.org/gRNA> <http://semanticscience.org/RNA>)
+
+# Class: <http://semanticscience.org/mRNA> (<http://semanticscience.org/mRNA>)
+
+SubClassOf(<http://semanticscience.org/mRNA> <http://semanticscience.org/RNA>)
+
+# Class: <http://semanticscience.org/miRNA> (<http://semanticscience.org/miRNA>)
+
+SubClassOf(<http://semanticscience.org/miRNA> <http://semanticscience.org/RNA>)
+
+# Class: <http://semanticscience.org/rRNA> (<http://semanticscience.org/rRNA>)
+
+SubClassOf(<http://semanticscience.org/rRNA> <http://semanticscience.org/RNA>)
+
+# Class: <http://semanticscience.org/scRNA> (<http://semanticscience.org/scRNA>)
+
+SubClassOf(<http://semanticscience.org/scRNA> <http://semanticscience.org/RNA>)
+
+# Class: <http://semanticscience.org/sgRNA> (<http://semanticscience.org/sgRNA>)
+
+SubClassOf(<http://semanticscience.org/sgRNA> <http://semanticscience.org/RNA>)
+
+# Class: <http://semanticscience.org/shRNA> (<http://semanticscience.org/shRNA>)
+
+SubClassOf(<http://semanticscience.org/shRNA> <http://semanticscience.org/RNA>)
+
+# Class: <http://semanticscience.org/siRNA> (<http://semanticscience.org/siRNA>)
+
+SubClassOf(<http://semanticscience.org/siRNA> <http://semanticscience.org/RNA>)
+
+# Class: <http://semanticscience.org/snRNA> (<http://semanticscience.org/snRNA>)
+
+SubClassOf(<http://semanticscience.org/snRNA> <http://semanticscience.org/RNA>)
+
+# Class: <http://semanticscience.org/snoRNA> (<http://semanticscience.org/snoRNA>)
+
+SubClassOf(<http://semanticscience.org/snoRNA> <http://semanticscience.org/RNA>)
+
+# Class: <http://semanticscience.org/ssDNA> (<http://semanticscience.org/ssDNA>)
+
+SubClassOf(<http://semanticscience.org/ssDNA> <http://semanticscience.org/SingleStrandedNucleicAcid>)
+
+# Class: <http://semanticscience.org/ssRNA> (<http://semanticscience.org/ssRNA>)
+
+SubClassOf(<http://semanticscience.org/ssRNA> <http://semanticscience.org/SingleStrandedNucleicAcid>)
+
+# Class: <http://semanticscience.org/tRNA> (<http://semanticscience.org/tRNA>)
+
+SubClassOf(<http://semanticscience.org/tRNA> <http://semanticscience.org/RNA>)
+
+# Class: <http://semanticscience.org/tmRNA> (<http://semanticscience.org/tmRNA>)
+
+SubClassOf(<http://semanticscience.org/tmRNA> <http://semanticscience.org/RNA>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://semanticscience.org/BaseNormalOrientedStacking> (<http://semanticscience.org/BaseNormalOrientedStacking>)
+
+ClassAssertion(owl:Class <http://semanticscience.org/BaseNormalOrientedStacking>)
+
+# Individual: <https://smolang.org/rdfMutate#newNode-3> (<https://smolang.org/rdfMutate#newNode-3>)
+
+ClassAssertion(<http://semanticscience.org/BifurcatedSugarFace> <https://smolang.org/rdfMutate#newNode-3>)
+ClassAssertion(owl:Class <https://smolang.org/rdfMutate#newNode-3>)
+
+
+)

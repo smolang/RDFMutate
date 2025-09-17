@@ -1,0 +1,730 @@
+Prefix(:=<urn:unnamed:ontology#ont19112712852053717>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:unnamed:ontology#ont19112712852053717>
+
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-0>))
+Declaration(Class(<http://dbpedia.org/ontology/Insect>))
+Declaration(Class(<http://dbpedia.org/ontology/Museum>))
+Declaration(Class(<http://dbpedia.org/ontology/Cricketer>))
+Declaration(Class(<http://dbpedia.org/ontology/Weapon>))
+Declaration(Class(<http://dbpedia.org/ontology/NascarDriver>))
+Declaration(Class(<http://dbpedia.org/ontology/ShoppingMall>))
+Declaration(Class(<http://dbpedia.org/ontology/Cyclist>))
+Declaration(Class(<http://dbpedia.org/ontology/Aircraft>))
+Declaration(Class(<http://dbpedia.org/ontology/Drug>))
+Declaration(Class(<http://dbpedia.org/ontology/AmericanFootballLeague>))
+Declaration(Class(<http://dbpedia.org/ontology/MemberOfParliament>))
+Declaration(Class(<http://dbpedia.org/ontology/ComicsCharacter>))
+Declaration(Class(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToHistoricPlace>))
+Declaration(Class(<http://dbpedia.org/ontology/SpaceStation>))
+Declaration(Class(<http://dbpedia.org/ontology/MixedMartialArtsEvent>))
+Declaration(Class(<http://dbpedia.org/ontology/GolfPlayer>))
+Declaration(Class(<http://dbpedia.org/ontology/SoccerLeague>))
+Declaration(Class(owl:Class))
+Declaration(Class(<http://dbpedia.org/ontology/MilitaryUnit>))
+Declaration(Class(<http://dbpedia.org/ontology/HistoricBuilding>))
+Declaration(Class(<http://dbpedia.org/ontology/MilitaryPerson>))
+Declaration(Class(<http://dbpedia.org/ontology/Bridge>))
+Declaration(Class(<http://dbpedia.org/ontology/Convention>))
+Declaration(Class(<http://dbpedia.org/ontology/BaseballLeague>))
+Declaration(Class(<http://dbpedia.org/ontology/Astronaut>))
+Declaration(Class(<http://dbpedia.org/ontology/Governor>))
+Declaration(Class(<http://dbpedia.org/ontology/Reptile>))
+Declaration(Class(<http://dbpedia.org/ontology/Ship>))
+Declaration(Class(<http://dbpedia.org/ontology/Song>))
+Declaration(Class(<http://dbpedia.org/ontology/Currency>))
+Declaration(Class(<http://dbpedia.org/ontology/Mountain>))
+Declaration(Class(<http://dbpedia.org/ontology/Stadium>))
+Declaration(Class(<http://dbpedia.org/ontology/School>))
+Declaration(Class(<http://dbpedia.org/ontology/Mammal>))
+Declaration(Class(<http://dbpedia.org/ontology/Boxer>))
+Declaration(Class(<http://dbpedia.org/ontology/Architect>))
+Declaration(Class(<http://dbpedia.org/ontology/Game>))
+Declaration(Class(<http://dbpedia.org/ontology/ComicsCreator>))
+Declaration(Class(<http://dbpedia.org/ontology/Hospital>))
+Declaration(Class(<http://dbpedia.org/ontology/AmericanFootballPlayer>))
+Declaration(Class(<http://dbpedia.org/ontology/Hotel>))
+Declaration(Class(<http://dbpedia.org/ontology/Congressman>))
+Declaration(Class(<http://dbpedia.org/ontology/Fish>))
+Declaration(Class(<http://dbpedia.org/ontology/TennisPlayer>))
+Declaration(Class(<http://dbpedia.org/ontology/Sport>))
+Declaration(Class(<http://dbpedia.org/ontology/RugbyLeague>))
+Declaration(Class(<http://dbpedia.org/ontology/LacrosseLeague>))
+Declaration(Class(<http://dbpedia.org/ontology/ChemicalCompound>))
+Declaration(Class(<http://dbpedia.org/ontology/Road>))
+Declaration(Class(<http://dbpedia.org/ontology/AdultActor>))
+Declaration(Class(<http://dbpedia.org/ontology/Village>))
+Declaration(Class(<http://dbpedia.org/ontology/Airline>))
+Declaration(Class(<http://dbpedia.org/ontology/BasketballLeague>))
+Declaration(Class(<http://dbpedia.org/ontology/Pope>))
+Declaration(Class(<http://dbpedia.org/ontology/TradeUnion>))
+Declaration(Class(<http://dbpedia.org/ontology/Arachnid>))
+Declaration(Class(<http://dbpedia.org/ontology/BadmintonPlayer>))
+Declaration(Class(<http://dbpedia.org/ontology/Beverage>))
+Declaration(Class(<http://dbpedia.org/ontology/Criminal>))
+Declaration(Class(<http://dbpedia.org/ontology/ProtectedArea>))
+Declaration(Class(<http://dbpedia.org/ontology/WrestlingEvent>))
+Declaration(Class(<http://dbpedia.org/ontology/Colour>))
+Declaration(Class(<http://dbpedia.org/ontology/WorldHeritageSite>))
+Declaration(Class(<http://dbpedia.org/ontology/Monarch>))
+Declaration(Class(<http://dbpedia.org/ontology/Journalist>))
+Declaration(Class(<http://dbpedia.org/ontology/Model>))
+Declaration(Class(<http://dbpedia.org/ontology/Non-ProfitOrganisation>))
+Declaration(Class(<http://dbpedia.org/ontology/Lake>))
+Declaration(Class(<http://dbpedia.org/ontology/Rocket>))
+Declaration(Class(<http://dbpedia.org/ontology/HistoricPlace>))
+Declaration(Class(<http://dbpedia.org/ontology/Species>))
+Declaration(Class(<http://dbpedia.org/ontology/Wrestler>))
+Declaration(Class(<http://dbpedia.org/ontology/FilmFestival>))
+Declaration(Class(<http://dbpedia.org/ontology/College>))
+Declaration(Class(<http://dbpedia.org/ontology/HockeyTeam>))
+Declaration(Class(<http://dbpedia.org/ontology/Park>))
+Declaration(Class(<http://dbpedia.org/ontology/MusicFestival>))
+Declaration(Class(<http://dbpedia.org/ontology/AmericanFootballTeam>))
+Declaration(Class(<http://dbpedia.org/ontology/Chancellor>))
+Declaration(Class(<http://dbpedia.org/ontology/CollegeCoach>))
+Declaration(Class(<http://dbpedia.org/ontology/SpaceMission>))
+Declaration(Class(<http://dbpedia.org/ontology/Conifer>))
+Declaration(Class(<http://dbpedia.org/ontology/IceHockeyLeague>))
+Declaration(Class(<http://dbpedia.org/ontology/AnatomicalStructure>))
+Declaration(Class(<http://dbpedia.org/ontology/Crustacean>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToMonarch>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToSpaceMission>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToBeverage>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToMemberOfParliament>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToLacrosseLeague>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToHockeyTeam>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToCricketer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToFish>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToAdultActor>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToBasketballLeague>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Colour>))
+Declaration(ObjectProperty(<https://smolang.org/rdfMutate#newNode-3>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Person>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToMixedMartialArtsEvent>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToBridge>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToNascarDriver>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToColour>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Currency>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToConifer>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/ChemicalCompound>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToComicsCreator>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToWrestler>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToVillage>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToWrestlingEvent>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToMilitaryUnit>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToShoppingMall>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToCongressman>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToPark>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToAmericanFootballLeague>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToAstronaut>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Activity>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToRoad>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToShip>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToRugbyLeague>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToBaseballLeague>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToLake>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToWorldHeritageSite>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToMuseum>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToProtectedArea>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToIceHockeyLeague>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToPope>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToSpecies>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/AnatomicalStructure>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Beverage>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToGame>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToMilitaryPerson>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToConvention>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToChancellor>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToJournalist>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToAmericanFootballTeam>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToRocket>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToCrustacean>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToHospital>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToArchitect>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToCyclist>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToAnatomicalStructure>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Drug>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToMountain>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToMammal>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToArachnid>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/MeanOfTransportation>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToGovernor>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Device>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToReptile>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToTradeUnion>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Organisation>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToInsect>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToNon-ProfitOrganisation>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToSport>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToCurrency>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToSoccerLeague>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToAirline>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToChemicalCompound>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToBadmintonPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToDrug>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToWeapon>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToMusicFestival>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToComicsCharacter>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToFilmFestival>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToHistoricPlace>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToSchool>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToBaseballPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToBoxer>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Event>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Species>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToGolfPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToAmericanFootballPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToCriminal>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToCollegeCoach>))
+Declaration(ObjectProperty(<http://www.w3.org/2004/02/skos/core#relatedMatch>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToTennisPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToCollege>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToAircraft>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToHotel>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToModel>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToSpaceStation>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToHistoricBuilding>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToStadium>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Place>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Infrastructure>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-0>))
+Declaration(NamedIndividual(owl:Class))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-2>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/producer>))
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToAdultActor> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToAdultActor>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToAdultActor> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToAdultActor> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToAdultActor> <http://dbpedia.org/ontology/AdultActor>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToAircraft> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToAircraft>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToAircraft> <http://dbpedia.org/ontology/MeanOfTransportation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToAircraft> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToAircraft> <http://dbpedia.org/ontology/Aircraft>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToAirline> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToAirline>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToAirline> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToAirline> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToAirline> <http://dbpedia.org/ontology/Airline>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToAmericanFootballLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToAmericanFootballLeague>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToAmericanFootballLeague> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToAmericanFootballLeague> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToAmericanFootballLeague> <http://dbpedia.org/ontology/AmericanFootballLeague>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToAmericanFootballPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToAmericanFootballPlayer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToAmericanFootballPlayer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToAmericanFootballPlayer> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToAmericanFootballPlayer> <http://dbpedia.org/ontology/AmericanFootballPlayer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToAmericanFootballTeam> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToAmericanFootballTeam>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToAmericanFootballTeam> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToAmericanFootballTeam> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToAmericanFootballTeam> <http://dbpedia.org/ontology/AmericanFootballTeam>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToAnatomicalStructure> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToAnatomicalStructure>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToAnatomicalStructure> <http://dbpedia.org/ontology/AnatomicalStructure>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToAnatomicalStructure> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToAnatomicalStructure> <http://dbpedia.org/ontology/AnatomicalStructure>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToArachnid> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToArachnid>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToArachnid> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToArachnid> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToArachnid> <http://dbpedia.org/ontology/Arachnid>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToArchitect> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToArchitect>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToArchitect> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToArchitect> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToArchitect> <http://dbpedia.org/ontology/Architect>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToAstronaut> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToAstronaut>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToAstronaut> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToAstronaut> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToAstronaut> <http://dbpedia.org/ontology/Astronaut>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToBadmintonPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToBadmintonPlayer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToBadmintonPlayer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToBadmintonPlayer> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToBadmintonPlayer> <http://dbpedia.org/ontology/BadmintonPlayer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToBaseballLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToBaseballLeague>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToBaseballLeague> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToBaseballLeague> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToBaseballLeague> <http://dbpedia.org/ontology/BaseballLeague>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToBaseballPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToBaseballPlayer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToBaseballPlayer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToBaseballPlayer> <http://dbpedia.org/ontology/Song>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToBasketballLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToBasketballLeague>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToBasketballLeague> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToBasketballLeague> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToBasketballLeague> <http://dbpedia.org/ontology/BasketballLeague>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToBeverage> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToBeverage>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToBeverage> <http://dbpedia.org/ontology/Beverage>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToBeverage> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToBeverage> <http://dbpedia.org/ontology/Beverage>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToBoxer> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToBoxer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToBoxer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToBoxer> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToBoxer> <http://dbpedia.org/ontology/Boxer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToBridge> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToBridge>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToBridge> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToBridge> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToBridge> <http://dbpedia.org/ontology/Bridge>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToChancellor> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToChancellor>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToChancellor> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToChancellor> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToChancellor> <http://dbpedia.org/ontology/Chancellor>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToChemicalCompound> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToChemicalCompound>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToChemicalCompound> <http://dbpedia.org/ontology/ChemicalCompound>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToChemicalCompound> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToChemicalCompound> <http://dbpedia.org/ontology/ChemicalCompound>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToCollege> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToCollege>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToCollege> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToCollege> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToCollege> <http://dbpedia.org/ontology/College>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToCollegeCoach> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToCollegeCoach>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToCollegeCoach> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToCollegeCoach> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToCollegeCoach> <http://dbpedia.org/ontology/CollegeCoach>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToColour> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToColour>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToColour> <http://dbpedia.org/ontology/Colour>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToColour> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToColour> <http://dbpedia.org/ontology/Colour>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToComicsCharacter> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToComicsCharacter>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToComicsCharacter> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToComicsCharacter> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToComicsCharacter> <http://dbpedia.org/ontology/ComicsCharacter>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToComicsCreator> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToComicsCreator>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToComicsCreator> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToComicsCreator> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToComicsCreator> <http://dbpedia.org/ontology/ComicsCreator>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToCongressman> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToCongressman>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToCongressman> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToCongressman> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToCongressman> <http://dbpedia.org/ontology/Congressman>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToConifer> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToConifer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToConifer> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToConifer> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToConifer> <http://dbpedia.org/ontology/Conifer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToConvention> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToConvention>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToConvention> <http://dbpedia.org/ontology/Event>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToConvention> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToConvention> <http://dbpedia.org/ontology/Convention>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToCricketer> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToCricketer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToCricketer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToCricketer> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToCricketer> <http://dbpedia.org/ontology/Cricketer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToCriminal> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToCriminal>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToCriminal> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToCriminal> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToCriminal> <http://dbpedia.org/ontology/Criminal>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToCrustacean> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToCrustacean>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToCrustacean> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToCrustacean> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToCrustacean> <http://dbpedia.org/ontology/Crustacean>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToCurrency> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToCurrency>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToCurrency> <http://dbpedia.org/ontology/Currency>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToCurrency> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToCurrency> <http://dbpedia.org/ontology/Currency>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToCyclist> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToCyclist>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToCyclist> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToCyclist> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToCyclist> <http://dbpedia.org/ontology/Cyclist>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToDrug> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToDrug>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToDrug> <http://dbpedia.org/ontology/Drug>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToDrug> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToDrug> <http://dbpedia.org/ontology/Drug>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToFilmFestival> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToFilmFestival>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToFilmFestival> <http://dbpedia.org/ontology/Event>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToFilmFestival> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToFilmFestival> <http://dbpedia.org/ontology/FilmFestival>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToFish> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToFish>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToFish> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToFish> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToFish> <http://dbpedia.org/ontology/Fish>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToGame> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToGame>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToGame> <http://dbpedia.org/ontology/Activity>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToGame> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToGame> <http://dbpedia.org/ontology/Game>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToGolfPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToGolfPlayer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToGolfPlayer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToGolfPlayer> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToGolfPlayer> <http://dbpedia.org/ontology/GolfPlayer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToGovernor> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToGovernor>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToGovernor> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToGovernor> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToGovernor> <http://dbpedia.org/ontology/Governor>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToHistoricBuilding> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToHistoricBuilding>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToHistoricBuilding> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToHistoricBuilding> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToHistoricBuilding> <http://dbpedia.org/ontology/HistoricBuilding>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToHistoricPlace> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToHistoricPlace>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToHistoricPlace> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToHistoricPlace> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToHistoricPlace> <http://dbpedia.org/ontology/HistoricPlace>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToHockeyTeam> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToHockeyTeam>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToHockeyTeam> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToHockeyTeam> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToHockeyTeam> <http://dbpedia.org/ontology/HockeyTeam>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToHospital> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToHospital>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToHospital> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToHospital> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToHospital> <http://dbpedia.org/ontology/Hospital>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToHotel> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToHotel>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToHotel> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToHotel> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToHotel> <http://dbpedia.org/ontology/Hotel>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToIceHockeyLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToIceHockeyLeague>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToIceHockeyLeague> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToIceHockeyLeague> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToIceHockeyLeague> <http://dbpedia.org/ontology/IceHockeyLeague>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToInsect> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToInsect>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToInsect> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToInsect> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToInsect> <http://dbpedia.org/ontology/Insect>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToJournalist> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToJournalist>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToJournalist> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToJournalist> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToJournalist> <http://dbpedia.org/ontology/Journalist>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToLacrosseLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToLacrosseLeague>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToLacrosseLeague> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToLacrosseLeague> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToLacrosseLeague> <http://dbpedia.org/ontology/LacrosseLeague>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToLake> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToLake>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToLake> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToLake> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToLake> <http://dbpedia.org/ontology/Lake>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToMammal> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToMammal>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToMammal> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToMammal> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToMammal> <http://dbpedia.org/ontology/Mammal>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToMemberOfParliament> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToMemberOfParliament>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToMemberOfParliament> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToMemberOfParliament> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToMemberOfParliament> <http://dbpedia.org/ontology/MemberOfParliament>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToMilitaryPerson> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToMilitaryPerson>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToMilitaryPerson> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToMilitaryPerson> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToMilitaryPerson> <http://dbpedia.org/ontology/MilitaryPerson>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToMilitaryUnit> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToMilitaryUnit>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToMilitaryUnit> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToMilitaryUnit> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToMilitaryUnit> <http://dbpedia.org/ontology/MilitaryUnit>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToMixedMartialArtsEvent> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToMixedMartialArtsEvent>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToMixedMartialArtsEvent> <http://dbpedia.org/ontology/Event>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToMixedMartialArtsEvent> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToMixedMartialArtsEvent> <http://dbpedia.org/ontology/MixedMartialArtsEvent>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToModel> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToModel>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToModel> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToModel> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToModel> <http://dbpedia.org/ontology/Model>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToMonarch> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToMonarch>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToMonarch> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToMonarch> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToMonarch> <http://dbpedia.org/ontology/Monarch>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToMountain> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToMountain>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToMountain> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToMountain> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToMountain> <http://dbpedia.org/ontology/Mountain>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToMuseum> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToMuseum>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToMuseum> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToMuseum> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToMuseum> <http://dbpedia.org/ontology/Museum>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToMusicFestival> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToMusicFestival>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToMusicFestival> <http://dbpedia.org/ontology/Event>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToMusicFestival> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToMusicFestival> <http://dbpedia.org/ontology/MusicFestival>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToNascarDriver> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToNascarDriver>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToNascarDriver> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToNascarDriver> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToNascarDriver> <http://dbpedia.org/ontology/NascarDriver>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToNon-ProfitOrganisation> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToNon-ProfitOrganisation>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToNon-ProfitOrganisation> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToNon-ProfitOrganisation> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToNon-ProfitOrganisation> <http://dbpedia.org/ontology/Non-ProfitOrganisation>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToPark> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToPark>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToPark> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToPark> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToPark> <http://dbpedia.org/ontology/Park>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToPope> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToPope>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToPope> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToPope> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToPope> <http://dbpedia.org/ontology/Pope>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToProtectedArea> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToProtectedArea>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToProtectedArea> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToProtectedArea> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToProtectedArea> <http://dbpedia.org/ontology/ProtectedArea>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToReptile> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToReptile>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToReptile> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToReptile> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToReptile> <http://dbpedia.org/ontology/Reptile>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToRoad> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToRoad>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToRoad> <http://dbpedia.org/ontology/Infrastructure>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToRoad> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToRoad> <http://dbpedia.org/ontology/Road>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToRocket> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToRocket>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToRocket> <http://dbpedia.org/ontology/MeanOfTransportation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToRocket> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToRocket> <http://dbpedia.org/ontology/Rocket>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToRugbyLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToRugbyLeague>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToRugbyLeague> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToRugbyLeague> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToRugbyLeague> <http://dbpedia.org/ontology/RugbyLeague>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToSchool> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToSchool>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToSchool> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToSchool> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToSchool> <http://dbpedia.org/ontology/School>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToShip> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToShip>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToShip> <http://dbpedia.org/ontology/MeanOfTransportation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToShip> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToShip> <http://dbpedia.org/ontology/Ship>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToShoppingMall> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToShoppingMall>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToShoppingMall> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToShoppingMall> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToShoppingMall> <http://dbpedia.org/ontology/ShoppingMall>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToSoccerLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToSoccerLeague>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToSoccerLeague> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToSoccerLeague> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToSoccerLeague> <http://dbpedia.org/ontology/SoccerLeague>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToSpaceMission> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToSpaceMission>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToSpaceMission> <http://dbpedia.org/ontology/Event>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToSpaceMission> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToSpaceMission> <http://dbpedia.org/ontology/SpaceMission>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToSpaceStation> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToSpaceStation>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToSpaceStation> <http://dbpedia.org/ontology/MeanOfTransportation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToSpaceStation> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToSpaceStation> <http://dbpedia.org/ontology/SpaceStation>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToSpecies> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToSpecies>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToSpecies> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToSpecies> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToSpecies> <http://dbpedia.org/ontology/Species>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToSport> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToSport>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToSport> <http://dbpedia.org/ontology/Activity>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToSport> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToSport> <http://dbpedia.org/ontology/Sport>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToStadium> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToStadium>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToStadium> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToStadium> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToStadium> <http://dbpedia.org/ontology/Stadium>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToTennisPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToTennisPlayer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToTennisPlayer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToTennisPlayer> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToTennisPlayer> <http://dbpedia.org/ontology/TennisPlayer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToTradeUnion> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToTradeUnion>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToTradeUnion> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToTradeUnion> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToTradeUnion> <http://dbpedia.org/ontology/TradeUnion>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToVillage> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToVillage>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToVillage> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToVillage> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToVillage> <http://dbpedia.org/ontology/Village>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToWeapon> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToWeapon>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToWeapon> <http://dbpedia.org/ontology/Device>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToWeapon> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToWeapon> <http://dbpedia.org/ontology/Weapon>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToWorldHeritageSite> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToWorldHeritageSite>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToWorldHeritageSite> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToWorldHeritageSite> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToWorldHeritageSite> <http://dbpedia.org/ontology/WorldHeritageSite>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToWrestler> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToWrestler>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToWrestler> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToWrestler> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToWrestler> <http://dbpedia.org/ontology/Wrestler>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToWrestlingEvent> (<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToWrestlingEvent>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToWrestlingEvent> <http://dbpedia.org/ontology/Event>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToWrestlingEvent> <http://dbpedia.org/ontology/Song>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Song.owl#linksToWrestlingEvent> <http://dbpedia.org/ontology/WrestlingEvent>)
+
+# Object Property: <https://smolang.org/rdfMutate#newNode-3> (<https://smolang.org/rdfMutate#newNode-3>)
+
+SubObjectPropertyOf(<https://smolang.org/rdfMutate#newNode-3> <https://smolang.org/rdfMutate#newNode-3>)
+
+
+############################
+#   Classes
+############################
+
+# Class: <https://smolang.org/rdfMutate#newNode-0> (<https://smolang.org/rdfMutate#newNode-0>)
+
+SubClassOf(<https://smolang.org/rdfMutate#newNode-0> <https://smolang.org/rdfMutate#newNode-0>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: owl:Class (owl:Class)
+
+ClassAssertion(owl:Class owl:Class)
+
+# Individual: <https://smolang.org/rdfMutate#newNode-0> (<https://smolang.org/rdfMutate#newNode-0>)
+
+ClassAssertion(owl:Class <https://smolang.org/rdfMutate#newNode-0>)
+ClassAssertion(<https://smolang.org/rdfMutate#newNode-0> <https://smolang.org/rdfMutate#newNode-0>)
+
+
+)

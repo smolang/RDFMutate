@@ -1,0 +1,455 @@
+Prefix(:=<urn:unnamed:ontology#ont19096460674498753>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:unnamed:ontology#ont19096460674498753>
+
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-0>))
+Declaration(Class(<http://purl.org/net/nknouf/ns/bibtex#Proceedings>))
+Declaration(Class(<http://purl.org/net/nknouf/ns/bibtex#Inbook>))
+Declaration(Class(<http://knowledgeweb.semanticweb.org/semanticportal/OWL/Documentation_Ontology.owl#Article_in_Journal>))
+Declaration(Class(<http://swrc.ontoware.org/ontology#Publication>))
+Declaration(Class(<http://knowledgeweb.semanticweb.org/semanticportal/OWL/Documentation_Ontology.owl#Article_in_Book>))
+Declaration(Class(<http://www.aktors.org/ontology/portal#Publishing-House>))
+Declaration(Class(<http://knowledgeweb.semanticweb.org/semanticportal/OWL/Organization_Ontology.owl#University>))
+Declaration(Class(<http://sw-portal.deri.org/ontologies/swportal#PhDThesis>))
+Declaration(Class(<http://www.aktors.org/ontology/portal#Book>))
+Declaration(Class(<http://swrc.ontoware.org/ontology#Thesis>))
+Declaration(Class(<http://knowledgeweb.semanticweb.org/semanticportal/OWL/Documentation_Ontology.owl#Master_Thesis>))
+Declaration(Class(<http://sw-portal.deri.org/ontologies/swportal#Inproceedings>))
+Declaration(Class(<http://lsdis.cs.uga.edu/projects/semdis/opus#Doctoral_Dissertation>))
+Declaration(Class(<http://www.aktors.org/ontology/portal#Journal>))
+Declaration(Class(<http://purl.org/net/nknouf/ns/bibtex#Book>))
+Declaration(Class(<http://www.aktors.org/ontology/portal#University>))
+Declaration(Class(<http://www.aktors.org/ontology/portal#Publication>))
+Declaration(Class(owl:Class))
+Declaration(Class(<http://lsdis.cs.uga.edu/projects/semdis/opus#Book_Chapter>))
+Declaration(Class(<http://swrc.ontoware.org/ontology#Proceedings>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-1>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-8>))
+Declaration(Class(<http://www.marcont.org/ontology/marcont.owl#Book>))
+Declaration(Class(<http://lsdis.cs.uga.edu/projects/semdis/opus#School>))
+Declaration(Class(<http://sw-portal.deri.org/ontologies/swportal#Proceedings>))
+Declaration(Class(<http://knowledgeweb.semanticweb.org/semanticportal/OWL/Documentation_Ontology.owl#Publication>))
+Declaration(Class(<http://lsdis.cs.uga.edu/projects/semdis/opus#Edited_Publication>))
+Declaration(Class(<http://lsdis.cs.uga.edu/projects/semdis/opus#Masters_Thesis>))
+Declaration(Class(<http://lsdis.cs.uga.edu/projects/semdis/opus#Proceedings>))
+Declaration(Class(<http://purl.org/net/nknouf/ns/bibtex#Article>))
+Declaration(Class(<http://sw-portal.deri.org/ontologies/swportal#Journal>))
+Declaration(Class(<http://xmlns.com/foaf/0.1/Organization>))
+Declaration(Class(<http://sw-portal.deri.org/ontologies/swportal#Publication>))
+Declaration(Class(<http://lsdis.cs.uga.edu/projects/semdis/opus#Article>))
+Declaration(Class(<http://sw-portal.deri.org/ontologies/swportal#Article>))
+Declaration(Class(<http://sw-portal.deri.org/ontologies/swportal#MasterThesis>))
+Declaration(Class(<http://swrc.ontoware.org/ontology#Book>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-12>))
+Declaration(Class(<http://swrc.ontoware.org/ontology#University>))
+Declaration(Class(<http://swrc.ontoware.org/ontology#MasterThesis>))
+Declaration(Class(<http://swrc.ontoware.org/ontology#PhDThesis>))
+Declaration(Class(<http://knowledgeweb.semanticweb.org/semanticportal/OWL/Documentation_Ontology.owl#Book>))
+Declaration(Class(<http://lsdis.cs.uga.edu/projects/semdis/opus#Webpage>))
+Declaration(Class(<http://lsdis.cs.uga.edu/projects/semdis/opus#Publishing_Organization>))
+Declaration(Class(<http://xmlns.com/foaf/0.1/Person>))
+Declaration(Class(<http://lsdis.cs.uga.edu/projects/semdis/opus#Article_in_Proceedings>))
+Declaration(Class(<http://lsdis.cs.uga.edu/projects/semdis/opus#Serial_Publication>))
+Declaration(Class(<http://lsdis.cs.uga.edu/projects/semdis/opus#Edited_Book>))
+Declaration(Class(<http://lsdis.cs.uga.edu/projects/semdis/opus#Series>))
+Declaration(Class(<http://purl.org/net/nknouf/ns/bibtex#Mastersthesis>))
+Declaration(Class(<http://lsdis.cs.uga.edu/projects/semdis/opus#Book>))
+Declaration(Class(<http://purl.org/net/nknouf/ns/bibtex#Inproceedings>))
+Declaration(Class(<http://lsdis.cs.uga.edu/projects/semdis/opus#University>))
+Declaration(Class(<http://knowledgeweb.semanticweb.org/semanticportal/OWL/Documentation_Ontology.owl#PhD_Thesis>))
+Declaration(Class(<http://knowledgeweb.semanticweb.org/semanticportal/OWL/Documentation_Ontology.owl#Thesis>))
+Declaration(Class(<http://sw-portal.deri.org/ontologies/swportal#University>))
+Declaration(Class(<http://www.aktors.org/ontology/portal#Edited-Book>))
+Declaration(Class(<http://lsdis.cs.uga.edu/projects/semdis/opus#Journal>))
+Declaration(Class(<http://xmlns.com/foaf/0.1/Document>))
+Declaration(Class(<http://purl.org/net/nknouf/ns/bibtex#Phdthesis>))
+Declaration(Class(<http://lsdis.cs.uga.edu/projects/semdis/opus#Publication>))
+Declaration(ObjectProperty(<http://lsdis.cs.uga.edu/projects/semdis/opus#coauthor>))
+Declaration(ObjectProperty(<http://lsdis.cs.uga.edu/projects/semdis/opus#editor>))
+Declaration(ObjectProperty(<http://lsdis.cs.uga.edu/projects/semdis/opus#at_university>))
+Declaration(ObjectProperty(<http://lsdis.cs.uga.edu/projects/semdis/opus#cites>))
+Declaration(ObjectProperty(<http://lsdis.cs.uga.edu/projects/semdis/opus#author>))
+Declaration(ObjectProperty(<http://www.aktors.org/ontology/portal#has-affiliation>))
+Declaration(ObjectProperty(<http://swrc.ontoware.org/ontology#affiliation>))
+Declaration(ObjectProperty(<https://smolang.org/rdfMutate#newNode-11>))
+Declaration(ObjectProperty(<https://smolang.org/rdfMutate#newNode-9>))
+Declaration(ObjectProperty(<https://smolang.org/rdfMutate#newNode-5>))
+Declaration(ObjectProperty(<http://swrc.ontoware.org/ontology#cite>))
+Declaration(ObjectProperty(<http://lsdis.cs.uga.edu/projects/semdis/opus#coeditor>))
+Declaration(ObjectProperty(<http://sw-portal.deri.org/ontologies/swportal#containedInProceedings>))
+Declaration(ObjectProperty(<http://lsdis.cs.uga.edu/projects/semdis/opus#isIncludedIn>))
+Declaration(ObjectProperty(<http://lsdis.cs.uga.edu/projects/semdis/opus#at_organization>))
+Declaration(ObjectProperty(<http://lsdis.cs.uga.edu/projects/semdis/opus#sameAffiliation>))
+Declaration(ObjectProperty(<http://lsdis.cs.uga.edu/projects/semdis/opus#affiliation>))
+Declaration(ObjectProperty(<http://lsdis.cs.uga.edu/projects/semdis/opus#chapter_of>))
+Declaration(ObjectProperty(<http://lsdis.cs.uga.edu/projects/semdis/opus#in_series>))
+Declaration(DataProperty(<http://lsdis.cs.uga.edu/projects/semdis/opus#volume>))
+Declaration(DataProperty(<http://lsdis.cs.uga.edu/projects/semdis/opus#chapter>))
+Declaration(DataProperty(<http://swrc.ontoware.org/ontology#volume>))
+Declaration(DataProperty(<http://lsdis.cs.uga.edu/projects/semdis/opus#gMonth>))
+Declaration(DataProperty(<http://lsdis.cs.uga.edu/projects/semdis/opus#isbn>))
+Declaration(DataProperty(<http://lsdis.cs.uga.edu/projects/semdis/opus#book_title>))
+Declaration(DataProperty(<http://lsdis.cs.uga.edu/projects/semdis/opus#year>))
+Declaration(DataProperty(<http://purl.org/net/nknouf/ns/bibtex#hasISBN>))
+Declaration(DataProperty(<http://www.aktors.org/ontology/portal#has-page-numbers>))
+Declaration(DataProperty(<http://lsdis.cs.uga.edu/projects/semdis/opus#eepresentation>))
+Declaration(DataProperty(<http://swrc.ontoware.org/ontology#year>))
+Declaration(DataProperty(<http://swrc.ontoware.org/ontology#booktitle>))
+Declaration(DataProperty(<http://purl.org/net/nknouf/ns/bibtex#hasNumber>))
+Declaration(DataProperty(<http://lsdis.cs.uga.edu/projects/semdis/opus#ee>))
+Declaration(DataProperty(<http://lsdis.cs.uga.edu/projects/semdis/opus#cdrom>))
+Declaration(DataProperty(<http://lsdis.cs.uga.edu/projects/semdis/opus#month>))
+Declaration(DataProperty(<http://lsdis.cs.uga.edu/projects/semdis/opus#last_modified_date>))
+Declaration(DataProperty(<http://purl.org/net/nknouf/ns/bibtex#hasJournal>))
+Declaration(DataProperty(<http://swrc.ontoware.org/ontology#month>))
+Declaration(DataProperty(<http://purl.org/net/nknouf/ns/bibtex#hasPages>))
+Declaration(DataProperty(<http://lsdis.cs.uga.edu/projects/semdis/opus#abstract>))
+Declaration(DataProperty(<http://swrc.ontoware.org/ontology#isbn>))
+Declaration(DataProperty(<http://purl.org/net/nknouf/ns/bibtex#hasBooktitle>))
+Declaration(DataProperty(<http://swrc.ontoware.org/ontology#chapter>))
+Declaration(DataProperty(<http://lsdis.cs.uga.edu/projects/semdis/opus#pages>))
+Declaration(DataProperty(<http://lsdis.cs.uga.edu/projects/semdis/opus#journal_name>))
+Declaration(DataProperty(<http://lsdis.cs.uga.edu/projects/semdis/opus#number>))
+Declaration(DataProperty(<http://purl.org/net/nknouf/ns/bibtex#hasMonth>))
+Declaration(DataProperty(<http://knowledgeweb.semanticweb.org/semanticportal/OWL/Documentation_Ontology.owl#Chapter>))
+Declaration(DataProperty(<http://swrc.ontoware.org/ontology#pages>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-14>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-6>))
+Declaration(NamedIndividual(<http://lsdis.cs.uga.edu/projects/semdis/opus#Book>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-0>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-2>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-8>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-9>))
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://lsdis.cs.uga.edu/projects/semdis/opus#affiliation> (<http://lsdis.cs.uga.edu/projects/semdis/opus#affiliation>)
+
+EquivalentObjectProperties(<http://lsdis.cs.uga.edu/projects/semdis/opus#affiliation> <http://swrc.ontoware.org/ontology#affiliation>)
+EquivalentObjectProperties(<http://lsdis.cs.uga.edu/projects/semdis/opus#affiliation> <http://www.aktors.org/ontology/portal#has-affiliation>)
+ObjectPropertyDomain(<http://lsdis.cs.uga.edu/projects/semdis/opus#affiliation> <http://xmlns.com/foaf/0.1/Person>)
+ObjectPropertyRange(<http://lsdis.cs.uga.edu/projects/semdis/opus#affiliation> <http://xmlns.com/foaf/0.1/Organization>)
+
+# Object Property: <http://lsdis.cs.uga.edu/projects/semdis/opus#at_organization> (<http://lsdis.cs.uga.edu/projects/semdis/opus#at_organization>)
+
+ObjectPropertyDomain(<http://lsdis.cs.uga.edu/projects/semdis/opus#at_organization> <http://lsdis.cs.uga.edu/projects/semdis/opus#Publication>)
+ObjectPropertyRange(<http://lsdis.cs.uga.edu/projects/semdis/opus#at_organization> <http://xmlns.com/foaf/0.1/Organization>)
+
+# Object Property: <http://lsdis.cs.uga.edu/projects/semdis/opus#at_university> (<http://lsdis.cs.uga.edu/projects/semdis/opus#at_university>)
+
+ObjectPropertyDomain(<http://lsdis.cs.uga.edu/projects/semdis/opus#at_university> <http://lsdis.cs.uga.edu/projects/semdis/opus#Publication>)
+ObjectPropertyRange(<http://lsdis.cs.uga.edu/projects/semdis/opus#at_university> <http://lsdis.cs.uga.edu/projects/semdis/opus#University>)
+
+# Object Property: <http://lsdis.cs.uga.edu/projects/semdis/opus#author> (<http://lsdis.cs.uga.edu/projects/semdis/opus#author>)
+
+ObjectPropertyDomain(<http://lsdis.cs.uga.edu/projects/semdis/opus#author> <http://lsdis.cs.uga.edu/projects/semdis/opus#Publication>)
+
+# Object Property: <http://lsdis.cs.uga.edu/projects/semdis/opus#chapter_of> (<http://lsdis.cs.uga.edu/projects/semdis/opus#chapter_of>)
+
+ObjectPropertyDomain(<http://lsdis.cs.uga.edu/projects/semdis/opus#chapter_of> <http://lsdis.cs.uga.edu/projects/semdis/opus#Book_Chapter>)
+ObjectPropertyRange(<http://lsdis.cs.uga.edu/projects/semdis/opus#chapter_of> <http://lsdis.cs.uga.edu/projects/semdis/opus#Edited_Book>)
+
+# Object Property: <http://lsdis.cs.uga.edu/projects/semdis/opus#cites> (<http://lsdis.cs.uga.edu/projects/semdis/opus#cites>)
+
+EquivalentObjectProperties(<http://lsdis.cs.uga.edu/projects/semdis/opus#cites> <http://swrc.ontoware.org/ontology#cite>)
+ObjectPropertyDomain(<http://lsdis.cs.uga.edu/projects/semdis/opus#cites> <http://lsdis.cs.uga.edu/projects/semdis/opus#Publication>)
+
+# Object Property: <http://lsdis.cs.uga.edu/projects/semdis/opus#coauthor> (<http://lsdis.cs.uga.edu/projects/semdis/opus#coauthor>)
+
+ObjectPropertyDomain(<http://lsdis.cs.uga.edu/projects/semdis/opus#coauthor> <http://xmlns.com/foaf/0.1/Person>)
+ObjectPropertyRange(<http://lsdis.cs.uga.edu/projects/semdis/opus#coauthor> <http://xmlns.com/foaf/0.1/Person>)
+
+# Object Property: <http://lsdis.cs.uga.edu/projects/semdis/opus#coeditor> (<http://lsdis.cs.uga.edu/projects/semdis/opus#coeditor>)
+
+ObjectPropertyDomain(<http://lsdis.cs.uga.edu/projects/semdis/opus#coeditor> <http://xmlns.com/foaf/0.1/Person>)
+ObjectPropertyRange(<http://lsdis.cs.uga.edu/projects/semdis/opus#coeditor> <http://xmlns.com/foaf/0.1/Person>)
+
+# Object Property: <http://lsdis.cs.uga.edu/projects/semdis/opus#editor> (<http://lsdis.cs.uga.edu/projects/semdis/opus#editor>)
+
+ObjectPropertyDomain(<http://lsdis.cs.uga.edu/projects/semdis/opus#editor> <http://lsdis.cs.uga.edu/projects/semdis/opus#Edited_Publication>)
+
+# Object Property: <http://lsdis.cs.uga.edu/projects/semdis/opus#in_series> (<http://lsdis.cs.uga.edu/projects/semdis/opus#in_series>)
+
+SubObjectPropertyOf(<http://lsdis.cs.uga.edu/projects/semdis/opus#in_series> <https://smolang.org/rdfMutate#newNode-5>)
+ObjectPropertyDomain(<http://lsdis.cs.uga.edu/projects/semdis/opus#in_series> <http://lsdis.cs.uga.edu/projects/semdis/opus#Publication>)
+ObjectPropertyRange(<http://lsdis.cs.uga.edu/projects/semdis/opus#in_series> <http://lsdis.cs.uga.edu/projects/semdis/opus#Series>)
+
+# Object Property: <http://lsdis.cs.uga.edu/projects/semdis/opus#isIncludedIn> (<http://lsdis.cs.uga.edu/projects/semdis/opus#isIncludedIn>)
+
+EquivalentObjectProperties(<http://lsdis.cs.uga.edu/projects/semdis/opus#isIncludedIn> <http://sw-portal.deri.org/ontologies/swportal#containedInProceedings>)
+ObjectPropertyDomain(<http://lsdis.cs.uga.edu/projects/semdis/opus#isIncludedIn> <http://lsdis.cs.uga.edu/projects/semdis/opus#Article_in_Proceedings>)
+ObjectPropertyRange(<http://lsdis.cs.uga.edu/projects/semdis/opus#isIncludedIn> <http://lsdis.cs.uga.edu/projects/semdis/opus#Proceedings>)
+
+# Object Property: <http://lsdis.cs.uga.edu/projects/semdis/opus#sameAffiliation> (<http://lsdis.cs.uga.edu/projects/semdis/opus#sameAffiliation>)
+
+ObjectPropertyDomain(<http://lsdis.cs.uga.edu/projects/semdis/opus#sameAffiliation> <http://xmlns.com/foaf/0.1/Person>)
+ObjectPropertyRange(<http://lsdis.cs.uga.edu/projects/semdis/opus#sameAffiliation> <http://xmlns.com/foaf/0.1/Person>)
+
+# Object Property: <https://smolang.org/rdfMutate#newNode-9> (<https://smolang.org/rdfMutate#newNode-9>)
+
+SubObjectPropertyOf(<https://smolang.org/rdfMutate#newNode-9> <http://lsdis.cs.uga.edu/projects/semdis/opus#affiliation>)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: <http://knowledgeweb.semanticweb.org/semanticportal/OWL/Documentation_Ontology.owl#Chapter> (<http://knowledgeweb.semanticweb.org/semanticportal/OWL/Documentation_Ontology.owl#Chapter>)
+
+EquivalentDataProperties(<http://knowledgeweb.semanticweb.org/semanticportal/OWL/Documentation_Ontology.owl#Chapter> <http://lsdis.cs.uga.edu/projects/semdis/opus#chapter>)
+
+# Data Property: <http://lsdis.cs.uga.edu/projects/semdis/opus#abstract> (<http://lsdis.cs.uga.edu/projects/semdis/opus#abstract>)
+
+DataPropertyDomain(<http://lsdis.cs.uga.edu/projects/semdis/opus#abstract> <http://xmlns.com/foaf/0.1/Document>)
+DataPropertyRange(<http://lsdis.cs.uga.edu/projects/semdis/opus#abstract> xsd:string)
+
+# Data Property: <http://lsdis.cs.uga.edu/projects/semdis/opus#book_title> (<http://lsdis.cs.uga.edu/projects/semdis/opus#book_title>)
+
+EquivalentDataProperties(<http://lsdis.cs.uga.edu/projects/semdis/opus#book_title> <http://purl.org/net/nknouf/ns/bibtex#hasBooktitle>)
+EquivalentDataProperties(<http://lsdis.cs.uga.edu/projects/semdis/opus#book_title> <http://swrc.ontoware.org/ontology#booktitle>)
+DataPropertyDomain(<http://lsdis.cs.uga.edu/projects/semdis/opus#book_title> <http://lsdis.cs.uga.edu/projects/semdis/opus#Publication>)
+DataPropertyRange(<http://lsdis.cs.uga.edu/projects/semdis/opus#book_title> xsd:string)
+
+# Data Property: <http://lsdis.cs.uga.edu/projects/semdis/opus#cdrom> (<http://lsdis.cs.uga.edu/projects/semdis/opus#cdrom>)
+
+DataPropertyDomain(<http://lsdis.cs.uga.edu/projects/semdis/opus#cdrom> <http://lsdis.cs.uga.edu/projects/semdis/opus#Publication>)
+DataPropertyRange(<http://lsdis.cs.uga.edu/projects/semdis/opus#cdrom> xsd:string)
+
+# Data Property: <http://lsdis.cs.uga.edu/projects/semdis/opus#chapter> (<http://lsdis.cs.uga.edu/projects/semdis/opus#chapter>)
+
+EquivalentDataProperties(<http://lsdis.cs.uga.edu/projects/semdis/opus#chapter> <http://swrc.ontoware.org/ontology#chapter>)
+DataPropertyDomain(<http://lsdis.cs.uga.edu/projects/semdis/opus#chapter> <http://lsdis.cs.uga.edu/projects/semdis/opus#Book_Chapter>)
+DataPropertyRange(<http://lsdis.cs.uga.edu/projects/semdis/opus#chapter> xsd:string)
+
+# Data Property: <http://lsdis.cs.uga.edu/projects/semdis/opus#ee> (<http://lsdis.cs.uga.edu/projects/semdis/opus#ee>)
+
+DataPropertyDomain(<http://lsdis.cs.uga.edu/projects/semdis/opus#ee> <http://lsdis.cs.uga.edu/projects/semdis/opus#Publication>)
+DataPropertyRange(<http://lsdis.cs.uga.edu/projects/semdis/opus#ee> xsd:string)
+
+# Data Property: <http://lsdis.cs.uga.edu/projects/semdis/opus#eepresentation> (<http://lsdis.cs.uga.edu/projects/semdis/opus#eepresentation>)
+
+DataPropertyDomain(<http://lsdis.cs.uga.edu/projects/semdis/opus#eepresentation> <http://lsdis.cs.uga.edu/projects/semdis/opus#Publication>)
+DataPropertyRange(<http://lsdis.cs.uga.edu/projects/semdis/opus#eepresentation> xsd:string)
+
+# Data Property: <http://lsdis.cs.uga.edu/projects/semdis/opus#gMonth> (<http://lsdis.cs.uga.edu/projects/semdis/opus#gMonth>)
+
+DataPropertyDomain(<http://lsdis.cs.uga.edu/projects/semdis/opus#gMonth> <http://xmlns.com/foaf/0.1/Document>)
+
+# Data Property: <http://lsdis.cs.uga.edu/projects/semdis/opus#isbn> (<http://lsdis.cs.uga.edu/projects/semdis/opus#isbn>)
+
+EquivalentDataProperties(<http://lsdis.cs.uga.edu/projects/semdis/opus#isbn> <http://purl.org/net/nknouf/ns/bibtex#hasISBN>)
+EquivalentDataProperties(<http://lsdis.cs.uga.edu/projects/semdis/opus#isbn> <http://swrc.ontoware.org/ontology#isbn>)
+DataPropertyDomain(<http://lsdis.cs.uga.edu/projects/semdis/opus#isbn> <http://lsdis.cs.uga.edu/projects/semdis/opus#Publication>)
+DataPropertyRange(<http://lsdis.cs.uga.edu/projects/semdis/opus#isbn> xsd:string)
+
+# Data Property: <http://lsdis.cs.uga.edu/projects/semdis/opus#journal_name> (<http://lsdis.cs.uga.edu/projects/semdis/opus#journal_name>)
+
+EquivalentDataProperties(<http://lsdis.cs.uga.edu/projects/semdis/opus#journal_name> <http://purl.org/net/nknouf/ns/bibtex#hasJournal>)
+DataPropertyDomain(<http://lsdis.cs.uga.edu/projects/semdis/opus#journal_name> <http://lsdis.cs.uga.edu/projects/semdis/opus#Journal>)
+DataPropertyRange(<http://lsdis.cs.uga.edu/projects/semdis/opus#journal_name> xsd:string)
+
+# Data Property: <http://lsdis.cs.uga.edu/projects/semdis/opus#last_modified_date> (<http://lsdis.cs.uga.edu/projects/semdis/opus#last_modified_date>)
+
+DataPropertyDomain(<http://lsdis.cs.uga.edu/projects/semdis/opus#last_modified_date> <http://xmlns.com/foaf/0.1/Document>)
+DataPropertyRange(<http://lsdis.cs.uga.edu/projects/semdis/opus#last_modified_date> xsd:string)
+
+# Data Property: <http://lsdis.cs.uga.edu/projects/semdis/opus#month> (<http://lsdis.cs.uga.edu/projects/semdis/opus#month>)
+
+EquivalentDataProperties(<http://lsdis.cs.uga.edu/projects/semdis/opus#month> <http://purl.org/net/nknouf/ns/bibtex#hasMonth>)
+EquivalentDataProperties(<http://lsdis.cs.uga.edu/projects/semdis/opus#month> <http://swrc.ontoware.org/ontology#month>)
+DataPropertyDomain(<http://lsdis.cs.uga.edu/projects/semdis/opus#month> <http://xmlns.com/foaf/0.1/Document>)
+DataPropertyRange(<http://lsdis.cs.uga.edu/projects/semdis/opus#month> xsd:string)
+
+# Data Property: <http://lsdis.cs.uga.edu/projects/semdis/opus#number> (<http://lsdis.cs.uga.edu/projects/semdis/opus#number>)
+
+EquivalentDataProperties(<http://lsdis.cs.uga.edu/projects/semdis/opus#number> <http://purl.org/net/nknouf/ns/bibtex#hasNumber>)
+DataPropertyDomain(<http://lsdis.cs.uga.edu/projects/semdis/opus#number> <http://lsdis.cs.uga.edu/projects/semdis/opus#Publication>)
+DataPropertyRange(<http://lsdis.cs.uga.edu/projects/semdis/opus#number> xsd:string)
+
+# Data Property: <http://lsdis.cs.uga.edu/projects/semdis/opus#pages> (<http://lsdis.cs.uga.edu/projects/semdis/opus#pages>)
+
+EquivalentDataProperties(<http://lsdis.cs.uga.edu/projects/semdis/opus#pages> <http://purl.org/net/nknouf/ns/bibtex#hasPages>)
+EquivalentDataProperties(<http://lsdis.cs.uga.edu/projects/semdis/opus#pages> <http://swrc.ontoware.org/ontology#pages>)
+EquivalentDataProperties(<http://lsdis.cs.uga.edu/projects/semdis/opus#pages> <http://www.aktors.org/ontology/portal#has-page-numbers>)
+DataPropertyDomain(<http://lsdis.cs.uga.edu/projects/semdis/opus#pages> <http://lsdis.cs.uga.edu/projects/semdis/opus#Publication>)
+DataPropertyRange(<http://lsdis.cs.uga.edu/projects/semdis/opus#pages> xsd:string)
+
+# Data Property: <http://lsdis.cs.uga.edu/projects/semdis/opus#volume> (<http://lsdis.cs.uga.edu/projects/semdis/opus#volume>)
+
+EquivalentDataProperties(<http://lsdis.cs.uga.edu/projects/semdis/opus#volume> <http://swrc.ontoware.org/ontology#volume>)
+DataPropertyDomain(<http://lsdis.cs.uga.edu/projects/semdis/opus#volume> <http://lsdis.cs.uga.edu/projects/semdis/opus#Publication>)
+DataPropertyRange(<http://lsdis.cs.uga.edu/projects/semdis/opus#volume> xsd:string)
+
+# Data Property: <http://lsdis.cs.uga.edu/projects/semdis/opus#year> (<http://lsdis.cs.uga.edu/projects/semdis/opus#year>)
+
+EquivalentDataProperties(<http://lsdis.cs.uga.edu/projects/semdis/opus#year> <http://swrc.ontoware.org/ontology#year>)
+DataPropertyDomain(<http://lsdis.cs.uga.edu/projects/semdis/opus#year> <http://xmlns.com/foaf/0.1/Document>)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://knowledgeweb.semanticweb.org/semanticportal/OWL/Documentation_Ontology.owl#Article_in_Book> (<http://knowledgeweb.semanticweb.org/semanticportal/OWL/Documentation_Ontology.owl#Article_in_Book>)
+
+EquivalentClasses(<http://knowledgeweb.semanticweb.org/semanticportal/OWL/Documentation_Ontology.owl#Article_in_Book> <http://lsdis.cs.uga.edu/projects/semdis/opus#Book_Chapter>)
+
+# Class: <http://knowledgeweb.semanticweb.org/semanticportal/OWL/Documentation_Ontology.owl#Article_in_Journal> (<http://knowledgeweb.semanticweb.org/semanticportal/OWL/Documentation_Ontology.owl#Article_in_Journal>)
+
+EquivalentClasses(<http://knowledgeweb.semanticweb.org/semanticportal/OWL/Documentation_Ontology.owl#Article_in_Journal> <http://lsdis.cs.uga.edu/projects/semdis/opus#Article>)
+
+# Class: <http://knowledgeweb.semanticweb.org/semanticportal/OWL/Documentation_Ontology.owl#Book> (<http://knowledgeweb.semanticweb.org/semanticportal/OWL/Documentation_Ontology.owl#Book>)
+
+EquivalentClasses(<http://knowledgeweb.semanticweb.org/semanticportal/OWL/Documentation_Ontology.owl#Book> <http://lsdis.cs.uga.edu/projects/semdis/opus#Book>)
+
+# Class: <http://knowledgeweb.semanticweb.org/semanticportal/OWL/Documentation_Ontology.owl#Master_Thesis> (<http://knowledgeweb.semanticweb.org/semanticportal/OWL/Documentation_Ontology.owl#Master_Thesis>)
+
+EquivalentClasses(<http://knowledgeweb.semanticweb.org/semanticportal/OWL/Documentation_Ontology.owl#Master_Thesis> <http://lsdis.cs.uga.edu/projects/semdis/opus#Masters_Thesis>)
+
+# Class: <http://knowledgeweb.semanticweb.org/semanticportal/OWL/Documentation_Ontology.owl#PhD_Thesis> (<http://knowledgeweb.semanticweb.org/semanticportal/OWL/Documentation_Ontology.owl#PhD_Thesis>)
+
+EquivalentClasses(<http://knowledgeweb.semanticweb.org/semanticportal/OWL/Documentation_Ontology.owl#PhD_Thesis> <http://lsdis.cs.uga.edu/projects/semdis/opus#Doctoral_Dissertation>)
+
+# Class: <http://knowledgeweb.semanticweb.org/semanticportal/OWL/Documentation_Ontology.owl#Publication> (<http://knowledgeweb.semanticweb.org/semanticportal/OWL/Documentation_Ontology.owl#Publication>)
+
+EquivalentClasses(<http://knowledgeweb.semanticweb.org/semanticportal/OWL/Documentation_Ontology.owl#Publication> <http://lsdis.cs.uga.edu/projects/semdis/opus#Publication>)
+
+# Class: <http://knowledgeweb.semanticweb.org/semanticportal/OWL/Organization_Ontology.owl#University> (<http://knowledgeweb.semanticweb.org/semanticportal/OWL/Organization_Ontology.owl#University>)
+
+EquivalentClasses(<http://knowledgeweb.semanticweb.org/semanticportal/OWL/Organization_Ontology.owl#University> <http://lsdis.cs.uga.edu/projects/semdis/opus#University>)
+
+# Class: <http://lsdis.cs.uga.edu/projects/semdis/opus#Article> (<http://lsdis.cs.uga.edu/projects/semdis/opus#Article>)
+
+EquivalentClasses(<http://lsdis.cs.uga.edu/projects/semdis/opus#Article> <http://purl.org/net/nknouf/ns/bibtex#Article>)
+EquivalentClasses(<http://lsdis.cs.uga.edu/projects/semdis/opus#Article> <http://sw-portal.deri.org/ontologies/swportal#Article>)
+SubClassOf(<http://lsdis.cs.uga.edu/projects/semdis/opus#Article> <http://lsdis.cs.uga.edu/projects/semdis/opus#Publication>)
+
+# Class: <http://lsdis.cs.uga.edu/projects/semdis/opus#Article_in_Proceedings> (<http://lsdis.cs.uga.edu/projects/semdis/opus#Article_in_Proceedings>)
+
+EquivalentClasses(<http://lsdis.cs.uga.edu/projects/semdis/opus#Article_in_Proceedings> <http://purl.org/net/nknouf/ns/bibtex#Inproceedings>)
+EquivalentClasses(<http://lsdis.cs.uga.edu/projects/semdis/opus#Article_in_Proceedings> <http://sw-portal.deri.org/ontologies/swportal#Inproceedings>)
+SubClassOf(<http://lsdis.cs.uga.edu/projects/semdis/opus#Article_in_Proceedings> <http://lsdis.cs.uga.edu/projects/semdis/opus#Publication>)
+
+# Class: <http://lsdis.cs.uga.edu/projects/semdis/opus#Book> (<http://lsdis.cs.uga.edu/projects/semdis/opus#Book>)
+
+EquivalentClasses(<http://lsdis.cs.uga.edu/projects/semdis/opus#Book> <http://purl.org/net/nknouf/ns/bibtex#Book>)
+EquivalentClasses(<http://lsdis.cs.uga.edu/projects/semdis/opus#Book> <http://swrc.ontoware.org/ontology#Book>)
+EquivalentClasses(<http://lsdis.cs.uga.edu/projects/semdis/opus#Book> <http://www.aktors.org/ontology/portal#Book>)
+EquivalentClasses(<http://lsdis.cs.uga.edu/projects/semdis/opus#Book> <http://www.marcont.org/ontology/marcont.owl#Book>)
+SubClassOf(<http://lsdis.cs.uga.edu/projects/semdis/opus#Book> <http://lsdis.cs.uga.edu/projects/semdis/opus#Publication>)
+
+# Class: <http://lsdis.cs.uga.edu/projects/semdis/opus#Book_Chapter> (<http://lsdis.cs.uga.edu/projects/semdis/opus#Book_Chapter>)
+
+EquivalentClasses(<http://lsdis.cs.uga.edu/projects/semdis/opus#Book_Chapter> <http://purl.org/net/nknouf/ns/bibtex#Inbook>)
+SubClassOf(<http://lsdis.cs.uga.edu/projects/semdis/opus#Book_Chapter> <http://lsdis.cs.uga.edu/projects/semdis/opus#Publication>)
+
+# Class: <http://lsdis.cs.uga.edu/projects/semdis/opus#Doctoral_Dissertation> (<http://lsdis.cs.uga.edu/projects/semdis/opus#Doctoral_Dissertation>)
+
+EquivalentClasses(<http://lsdis.cs.uga.edu/projects/semdis/opus#Doctoral_Dissertation> <http://purl.org/net/nknouf/ns/bibtex#Phdthesis>)
+EquivalentClasses(<http://lsdis.cs.uga.edu/projects/semdis/opus#Doctoral_Dissertation> <http://sw-portal.deri.org/ontologies/swportal#PhDThesis>)
+EquivalentClasses(<http://lsdis.cs.uga.edu/projects/semdis/opus#Doctoral_Dissertation> <http://swrc.ontoware.org/ontology#PhDThesis>)
+
+# Class: <http://lsdis.cs.uga.edu/projects/semdis/opus#Edited_Book> (<http://lsdis.cs.uga.edu/projects/semdis/opus#Edited_Book>)
+
+EquivalentClasses(<http://lsdis.cs.uga.edu/projects/semdis/opus#Edited_Book> <http://www.aktors.org/ontology/portal#Edited-Book>)
+SubClassOf(<http://lsdis.cs.uga.edu/projects/semdis/opus#Edited_Book> <http://lsdis.cs.uga.edu/projects/semdis/opus#Book>)
+SubClassOf(<http://lsdis.cs.uga.edu/projects/semdis/opus#Edited_Book> <http://lsdis.cs.uga.edu/projects/semdis/opus#Edited_Publication>)
+
+# Class: <http://lsdis.cs.uga.edu/projects/semdis/opus#Edited_Publication> (<http://lsdis.cs.uga.edu/projects/semdis/opus#Edited_Publication>)
+
+SubClassOf(<http://lsdis.cs.uga.edu/projects/semdis/opus#Edited_Publication> <http://lsdis.cs.uga.edu/projects/semdis/opus#Publication>)
+
+# Class: <http://lsdis.cs.uga.edu/projects/semdis/opus#Journal> (<http://lsdis.cs.uga.edu/projects/semdis/opus#Journal>)
+
+EquivalentClasses(<http://lsdis.cs.uga.edu/projects/semdis/opus#Journal> <http://sw-portal.deri.org/ontologies/swportal#Journal>)
+EquivalentClasses(<http://lsdis.cs.uga.edu/projects/semdis/opus#Journal> <http://www.aktors.org/ontology/portal#Journal>)
+SubClassOf(<http://lsdis.cs.uga.edu/projects/semdis/opus#Journal> <http://lsdis.cs.uga.edu/projects/semdis/opus#Serial_Publication>)
+
+# Class: <http://lsdis.cs.uga.edu/projects/semdis/opus#Masters_Thesis> (<http://lsdis.cs.uga.edu/projects/semdis/opus#Masters_Thesis>)
+
+EquivalentClasses(<http://lsdis.cs.uga.edu/projects/semdis/opus#Masters_Thesis> <http://purl.org/net/nknouf/ns/bibtex#Mastersthesis>)
+EquivalentClasses(<http://lsdis.cs.uga.edu/projects/semdis/opus#Masters_Thesis> <http://sw-portal.deri.org/ontologies/swportal#MasterThesis>)
+EquivalentClasses(<http://lsdis.cs.uga.edu/projects/semdis/opus#Masters_Thesis> <http://swrc.ontoware.org/ontology#MasterThesis>)
+
+# Class: <http://lsdis.cs.uga.edu/projects/semdis/opus#Proceedings> (<http://lsdis.cs.uga.edu/projects/semdis/opus#Proceedings>)
+
+EquivalentClasses(<http://lsdis.cs.uga.edu/projects/semdis/opus#Proceedings> <http://purl.org/net/nknouf/ns/bibtex#Proceedings>)
+EquivalentClasses(<http://lsdis.cs.uga.edu/projects/semdis/opus#Proceedings> <http://sw-portal.deri.org/ontologies/swportal#Proceedings>)
+EquivalentClasses(<http://lsdis.cs.uga.edu/projects/semdis/opus#Proceedings> <http://swrc.ontoware.org/ontology#Proceedings>)
+SubClassOf(<http://lsdis.cs.uga.edu/projects/semdis/opus#Proceedings> <http://lsdis.cs.uga.edu/projects/semdis/opus#Publication>)
+
+# Class: <http://lsdis.cs.uga.edu/projects/semdis/opus#Publication> (<http://lsdis.cs.uga.edu/projects/semdis/opus#Publication>)
+
+EquivalentClasses(<http://lsdis.cs.uga.edu/projects/semdis/opus#Publication> <http://sw-portal.deri.org/ontologies/swportal#Publication>)
+EquivalentClasses(<http://lsdis.cs.uga.edu/projects/semdis/opus#Publication> <http://swrc.ontoware.org/ontology#Publication>)
+EquivalentClasses(<http://lsdis.cs.uga.edu/projects/semdis/opus#Publication> <http://www.aktors.org/ontology/portal#Publication>)
+SubClassOf(<http://lsdis.cs.uga.edu/projects/semdis/opus#Publication> <http://xmlns.com/foaf/0.1/Document>)
+
+# Class: <http://lsdis.cs.uga.edu/projects/semdis/opus#Publishing_Organization> (<http://lsdis.cs.uga.edu/projects/semdis/opus#Publishing_Organization>)
+
+EquivalentClasses(<http://lsdis.cs.uga.edu/projects/semdis/opus#Publishing_Organization> <http://www.aktors.org/ontology/portal#Publishing-House>)
+SubClassOf(<http://lsdis.cs.uga.edu/projects/semdis/opus#Publishing_Organization> <http://xmlns.com/foaf/0.1/Organization>)
+
+# Class: <http://lsdis.cs.uga.edu/projects/semdis/opus#School> (<http://lsdis.cs.uga.edu/projects/semdis/opus#School>)
+
+SubClassOf(<http://lsdis.cs.uga.edu/projects/semdis/opus#School> <http://xmlns.com/foaf/0.1/Organization>)
+
+# Class: <http://lsdis.cs.uga.edu/projects/semdis/opus#Serial_Publication> (<http://lsdis.cs.uga.edu/projects/semdis/opus#Serial_Publication>)
+
+SubClassOf(<http://lsdis.cs.uga.edu/projects/semdis/opus#Serial_Publication> <http://lsdis.cs.uga.edu/projects/semdis/opus#Publication>)
+
+# Class: <http://lsdis.cs.uga.edu/projects/semdis/opus#University> (<http://lsdis.cs.uga.edu/projects/semdis/opus#University>)
+
+EquivalentClasses(<http://lsdis.cs.uga.edu/projects/semdis/opus#University> <http://sw-portal.deri.org/ontologies/swportal#University>)
+EquivalentClasses(<http://lsdis.cs.uga.edu/projects/semdis/opus#University> <http://swrc.ontoware.org/ontology#University>)
+EquivalentClasses(<http://lsdis.cs.uga.edu/projects/semdis/opus#University> <http://www.aktors.org/ontology/portal#University>)
+SubClassOf(<http://lsdis.cs.uga.edu/projects/semdis/opus#University> <http://lsdis.cs.uga.edu/projects/semdis/opus#School>)
+
+# Class: <http://lsdis.cs.uga.edu/projects/semdis/opus#Webpage> (<http://lsdis.cs.uga.edu/projects/semdis/opus#Webpage>)
+
+SubClassOf(<http://lsdis.cs.uga.edu/projects/semdis/opus#Webpage> <http://xmlns.com/foaf/0.1/Document>)
+
+# Class: <https://smolang.org/rdfMutate#newNode-12> (<https://smolang.org/rdfMutate#newNode-12>)
+
+SubClassOf(<https://smolang.org/rdfMutate#newNode-12> <https://smolang.org/rdfMutate#newNode-12>)
+
+# Class: <https://smolang.org/rdfMutate#newNode-8> (<https://smolang.org/rdfMutate#newNode-8>)
+
+SubClassOf(<https://smolang.org/rdfMutate#newNode-8> <https://smolang.org/rdfMutate#newNode-8>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://lsdis.cs.uga.edu/projects/semdis/opus#Book> (<http://lsdis.cs.uga.edu/projects/semdis/opus#Book>)
+
+ClassAssertion(owl:Class <http://lsdis.cs.uga.edu/projects/semdis/opus#Book>)
+
+# Individual: <https://smolang.org/rdfMutate#newNode-0> (<https://smolang.org/rdfMutate#newNode-0>)
+
+ClassAssertion(owl:Class <https://smolang.org/rdfMutate#newNode-0>)
+
+# Individual: <https://smolang.org/rdfMutate#newNode-14> (<https://smolang.org/rdfMutate#newNode-14>)
+
+ClassAssertion(<http://lsdis.cs.uga.edu/projects/semdis/opus#Journal> <https://smolang.org/rdfMutate#newNode-14>)
+ClassAssertion(<http://lsdis.cs.uga.edu/projects/semdis/opus#Serial_Publication> <https://smolang.org/rdfMutate#newNode-14>)
+
+# Individual: <https://smolang.org/rdfMutate#newNode-6> (<https://smolang.org/rdfMutate#newNode-6>)
+
+ClassAssertion(<http://lsdis.cs.uga.edu/projects/semdis/opus#Serial_Publication> <https://smolang.org/rdfMutate#newNode-6>)
+
+# Individual: <https://smolang.org/rdfMutate#newNode-8> (<https://smolang.org/rdfMutate#newNode-8>)
+
+ClassAssertion(owl:Class <https://smolang.org/rdfMutate#newNode-8>)
+
+
+)

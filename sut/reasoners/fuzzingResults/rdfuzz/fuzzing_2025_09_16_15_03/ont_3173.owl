@@ -1,0 +1,1861 @@
+Prefix(:=<urn:unnamed:ontology#ont19115400500599900>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:unnamed:ontology#ont19115400500599900>
+
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#genus>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9615>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#subkingdoom>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_42069>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_91481>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208195>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208524>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#forma>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4513>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#infraorder>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7787>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-7>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_46244>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5140>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_57486>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_288556>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4910>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9984>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4895>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#class>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10090>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208196>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#subspecies>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_28985>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7091>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#kingdom>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10140>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_35531>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_452467>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#infraclass>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3562>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_63221>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_300021>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#family>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9606>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#subphylum>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_116058>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4097>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_112250>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_210727>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4930>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9825>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_237561>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_13149>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_8355>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5782>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10116>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_6237>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_142052>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#phylum>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7237>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_198035>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_175565>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_6421>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#order>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_468558>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9534>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3705>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7224>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_112251>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_462210>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_93934>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_375579>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10029>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#species>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_8842>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#tribe>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_309914>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#variety>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3853>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208194>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_344680>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_51351>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_93385>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_142051>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4512>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_77009>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_307796>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7786>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_44689>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4085>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_80274>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3888>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4754>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_330879>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10028>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_386281>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#subclass>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_352472>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_310261>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7090>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#suborder>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_32358>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#subtribe>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10088>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_334824>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_333344>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5476>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9605>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4753>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-0>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_392815>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_51234>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9913>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_405000>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_2759>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_41122>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5911>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_30608>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9822>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_443947>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_462209>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_309913>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9031>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_334823>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5085>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10036>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3053>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5475>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_175564>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3561>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5890>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_6239>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_230741>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-4>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_30077>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_191506>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_41121>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#species_subgroup>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9823>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_288554>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10035>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_8053>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_40364>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#subgenus>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_51350>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_257612>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_142053>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_320797>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208526>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#no_rank>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3887>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#superorder>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_451804>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_291050>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_294748>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_284812>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_100936>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_8846>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_310260>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_179238>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_262014>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9986>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_41870>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_454605>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#species_group>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208198>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3858>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3846>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#superphylum>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_112509>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_30075>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3702>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#superclass>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_415978>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_46245>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5141>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9612>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5052>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4896>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9030>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208197>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10091>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3847>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3052>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_367110>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#superkingdom>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_366501>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10141>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_464025>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7955>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_46456>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_145471>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_452468>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10114>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_285006>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7788>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-1>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3701>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_6420>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_459427>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_400035>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_466209>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_6397>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_284590>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9090>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_39442>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10092>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_32351>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7954>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_8048>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208525>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_47742>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_6398>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9903>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#rank>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_312017>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7227>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_267281>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4932>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#subfamily>))
+Declaration(Class(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_101841>))
+Declaration(ObjectProperty(<https://smolang.org/rdfMutate#newNode-5>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3888_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_39442_ind>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-2>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_46245_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_51234_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5141_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_6421_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3847_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7237_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_subkingdoom>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_375578_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_41122_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_344680_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_400035_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_subgenus>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5085_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_6398_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_44689_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#ncbi_rank>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_101841_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_291050_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_386281_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4513_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7091_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_46244_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_51350_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10116_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_310261_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3702_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_237561_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5476_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_100936_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_300021_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_112251_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10029_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9823_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_species>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4932_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_77009_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7955_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7787_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_142053_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_466209_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_order>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_145471_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_tribe>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_family>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_257612_ind>))
+Declaration(NamedIndividual(owl:Class))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_superclass>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5911_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208194_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_452468_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7227_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_334824_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_subclass>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9615_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_subphylum>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9031_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_6239_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_41121_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_112250_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208526_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_93934_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208195_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_parvorder>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7788_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_infraorder>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3858_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4097_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208197_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_57486_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_451804_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_320797_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_230741_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_462210_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_subtribe>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_phylum>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_366501_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_41870_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_genus>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_subspecies>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10090_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_superfamily>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_439823_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_variety>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_species_subgroup>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_330879_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_35531_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_462209_ind>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-7>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3711_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_179238_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_subfamily>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_species_group>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_142051_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_284590_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_267281_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_51351_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_294748_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_452467_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4896_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208196_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_310260_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_309913_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_42069_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_8846_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_80274_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_307796_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208524_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_288556_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_415978_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_454605_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_46456_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_175564_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_375579_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_443947_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9534_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_333344_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4754_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10036_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_116058_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_464025_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_superkingdom>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_288554_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_28985_ind>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-5>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3562_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208198_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_superorder>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10091_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10141_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_8355_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_93385_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_47742_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9825_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_198035_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_112509_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_8053_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3053_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_91481_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9606_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_309914_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_285006_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_no_rank>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_312017_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10092_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7224_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_468558_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_forma>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_63221_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_210727_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_30077_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_367110_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_class>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_suborder>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_459427_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_kingdom>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4930>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_30608_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_405000_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_175565_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_284812_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_142052_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_infraclass>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9986_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9913_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_191506_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_352472_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_334823_ind>))
+Declaration(NamedIndividual(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208525_ind>))
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#class> (<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#class>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#class> <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#superclass>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#forma> (<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#forma>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#forma> <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#variety>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#genus> (<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#genus>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#genus> <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#subtribe>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#infraclass> (<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#infraclass>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#infraclass> <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#subclass>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#infraorder> (<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#infraorder>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#infraorder> <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#suborder>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#kingdom> (<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#kingdom>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#kingdom> <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#superkingdom>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#no_rank> (<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#no_rank>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#no_rank> <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#rank>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#order> (<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#order>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#order> <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#superorder>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#phylum> (<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#phylum>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#phylum> <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#superphylum>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#species> (<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#species>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#species> <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#subgenus>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#species_group> (<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#species_group>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#species_group> <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#species>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#species_subgroup> (<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#species_subgroup>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#species_subgroup> <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#species_group>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#subclass> (<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#subclass>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#subclass> <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#class>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#subfamily> (<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#subfamily>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#subfamily> <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#family>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#subgenus> (<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#subgenus>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#subgenus> <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#genus>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#subkingdoom> (<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#subkingdoom>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#subkingdoom> <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#kingdom>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#suborder> (<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#suborder>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#suborder> <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#order>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#subphylum> (<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#subphylum>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#subphylum> <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#phylum>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#subspecies> (<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#subspecies>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#subspecies> <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#species>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#subtribe> (<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#subtribe>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#subtribe> <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#tribe>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#superclass> (<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#superclass>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#superclass> <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#subphylum>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#superkingdom> (<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#superkingdom>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#superkingdom> <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#rank>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#superorder> (<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#superorder>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#superorder> <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#infraclass>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#superphylum> (<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#superphylum>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#superphylum> <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#subkingdoom>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#tribe> (<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#tribe>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#tribe> <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#subfamily>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#variety> (<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#variety>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#variety> <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#subspecies>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10028> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10028>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10028> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_2759>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10029> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10029>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10029> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10028>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10035> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10035>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10035> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_2759>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10036> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10036>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10036> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10035>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10088> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10088>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10088> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_2759>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10090> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10090>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10090> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10088>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10091> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10091>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10091> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10090>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10092> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10092>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10092> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10090>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_100936> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_100936>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_100936> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9534>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10114> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10114>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10114> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_2759>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10116> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10116>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10116> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10114>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10140> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10140>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10140> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_2759>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10141> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10141>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10141> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10140>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_101841> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_101841>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_101841> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9534>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_112250> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_112250>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_112250> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4754>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_112251> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_112251>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_112251> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4754>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_112509> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_112509>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_112509> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4513>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_116058> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_116058>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_116058> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10090>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_13149> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_13149>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_13149> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_2759>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_142051> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_142051>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_142051> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4754>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_142052> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_142052>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_142052> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4754>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_142053> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_142053>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_142053> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4754>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_175564> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_175564>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_175564> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5911>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_175565> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_175565>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_175565> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5911>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_179238> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_179238>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_179238> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10090>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_191506> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_191506>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_191506> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_112509>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_198035> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_198035>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_198035> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3888>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208194> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208194>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208194> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3888>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208195> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208195>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208195> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208194>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208196> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208196>)
+
+EquivalentClasses(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208196> <https://smolang.org/rdfMutate#newNode-1>)
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208196> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208194>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208197> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208197>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208197> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208194>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208198> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208198>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208198> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208194>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208524> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208524>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208524> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9031>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208525> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208525>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208525> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9031>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208526> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208526>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208526> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9031>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_210727> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_210727>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_210727> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10090>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_230741> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_230741>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_230741> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9986>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_237561> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_237561>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_237561> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5476>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_257612> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_257612>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_257612> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208194>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_262014> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_262014>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_262014> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_2759>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_284590> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_284590>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_284590> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_28985>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_284812> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_284812>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_284812> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4896>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_285006> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_285006>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_285006> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4932>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_288554> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_288554>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_288554> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_8355>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_288556> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_288556>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_288556> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_8355>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_28985> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_28985>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_28985> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4910>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_291050> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_291050>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_291050> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9823>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_294748> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_294748>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_294748> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5476>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_300021> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_300021>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_300021> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5476>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_30075> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_30075>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_30075> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_2759>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_30077> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_30077>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_30077> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_30075>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3052> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3052>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3052> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_2759>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3053> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3053>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3053> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3052>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_30608> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_30608>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_30608> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_13149>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_307796> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_307796>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_307796> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4932>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_309913> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_309913>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_309913> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9823>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_309914> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_309914>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_309914> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9823>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_310260> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_310260>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_310260> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9823>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_310261> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_310261>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_310261> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9823>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_312017> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_312017>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_312017> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5911>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_320797> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_320797>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_320797> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_93385>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_32351> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_32351>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_32351> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_2759>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_32358> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_32358>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_32358> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_2759>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_330879> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_330879>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_330879> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5085>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_334823> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_334823>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_334823> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3888>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_334824> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_334824>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_334824> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3888>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_344680> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_344680>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_344680> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_333344>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_352472> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_352472>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_352472> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_44689>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_35531> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_35531>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_35531> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10090>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3561> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3561>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3561> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_2759>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3562> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3562>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3562> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3561>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_366501> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_366501>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_366501> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_44689>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_367110> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_367110>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_367110> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5141>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3701> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3701>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3701> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_2759>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3702> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3702>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3702> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3701>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3705> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3705>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3705> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_2759>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_375579> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_375579>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_375579> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9823>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3846> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3846>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3846> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_2759>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3847> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3847>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3847> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3846>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3853> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3853>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3853> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_2759>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3858> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3858>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3858> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3853>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_386281> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_386281>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_386281> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_93385>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3887> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3887>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3887> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_2759>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3888> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3888>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3888> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3887>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_392815> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_392815>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_392815> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_2759>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_39442> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_39442>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_39442> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10090>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_400035> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_400035>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_400035> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9031>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_40364> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_40364>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_40364> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_2759>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_405000> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_405000>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_405000> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9031>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4085> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4085>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4085> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_2759>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4097> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4097>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4097> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4085>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_41121> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_41121>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_41121> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5085>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_41122> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_41122>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_41122> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5085>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_415978> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_415978>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_415978> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9823>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_41870> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_41870>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_41870> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4932>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_42069> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_42069>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_42069> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4754>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_443947> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_443947>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_443947> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_8355>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_44689> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_44689>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_44689> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5782>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4512> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4512>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4512> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_2759>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4513> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4513>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4513> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4512>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_451804> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_451804>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_451804> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5085>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_452467> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_452467>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_452467> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5911>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_452468> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_452468>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_452468> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5911>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_454605> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_454605>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_454605> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_8355>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_459427> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_459427>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_459427> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4932>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_462209> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_462209>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_462209> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4932>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_462210> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_462210>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_462210> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4932>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_46244> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_46244>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_46244> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7237>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_46245> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_46245>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_46245> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7237>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_464025> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_464025>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_464025> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4932>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_46456> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_46456>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_46456> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10090>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_466209> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_466209>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_466209> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4932>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_468558> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_468558>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_468558> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4932>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4753> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4753>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4753> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_2759>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4754> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4754>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4754> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4753>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_47742> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_47742>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_47742> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3888>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4895> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4895>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4895> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_2759>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4896> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4896>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4896> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4895>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4910> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4910>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4910> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_2759>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4930> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4930>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4930> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_2759>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4932> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4932>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4932> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4930>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5052> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5052>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5052> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_2759>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5085> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5085>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5085> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5052>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_51234> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_51234>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_51234> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_47742>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5140> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5140>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5140> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_2759>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5141> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5141>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5141> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5140>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5475> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5475>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5475> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_2759>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5476> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5476>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5476> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5475>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_57486> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_57486>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_57486> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10090>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5782> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5782>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5782> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_2759>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5890> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5890>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5890> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_2759>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5911> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5911>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5911> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5890>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_6237> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_6237>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_6237> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_2759>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_6239> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_6239>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_6239> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_6237>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_63221> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_63221>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_63221> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9606>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_6397> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_6397>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_6397> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_2759>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_6398> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_6398>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_6398> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_6397>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_6420> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_6420>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_6420> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_2759>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_6421> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_6421>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_6421> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_6420>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7090> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7090>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7090> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_2759>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7091> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7091>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7091> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7090>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7224> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7224>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7224> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_40364>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7227> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7227>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7227> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_32351>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7237> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7237>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7237> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_32358>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_77009> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_77009>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_77009> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4513>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7786> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7786>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7786> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_2759>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7787> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7787>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7787> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7786>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7788> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7788>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7788> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7786>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7954> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7954>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7954> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_2759>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7955> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7955>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7955> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7954>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_80274> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_80274>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_80274> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10090>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_8048> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_8048>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_8048> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_2759>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_8053> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_8053>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_8053> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_8048>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_8355> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_8355>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_8355> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_262014>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_8842> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_8842>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_8842> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_2759>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_8846> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_8846>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_8846> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_8842>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9030> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9030>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9030> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_2759>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9031> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9031>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9031> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9030>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9090> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9090>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9090> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_2759>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_91481> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_91481>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_91481> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5085>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_93934> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_93934>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_93934> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9090>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9534> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9534>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9534> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_392815>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9605> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9605>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9605> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_2759>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9606> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9606>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9606> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9605>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9612> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9612>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9612> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_2759>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9615> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9615>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9615> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9612>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9822> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9822>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9822> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_2759>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9823> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9823>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9823> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9822>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9825> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9825>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9825> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9823>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9903> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9903>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9903> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_2759>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9913> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9913>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9913> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9903>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9984> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9984>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9984> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_2759>)
+
+# Class: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9986> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9986>)
+
+SubClassOf(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9986> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9984>)
+
+# Class: owl:Thing (owl:Thing)
+
+DisjointClasses(Annotation(Annotation(rdfs:comment "Generated by the OWL API (version 5.5.0.2023-01-14T12:41:38Z) https://github.com/owlcs/owlapi/ on 2025-09-16T22:47:17.912221535Z") rdfs:comment "DisjointClasses(<https://smolang.org/rdfMutate#newNode-4>) replaced by DisjointClasses(<https://smolang.org/rdfMutate#newNode-4> owl:Thing)") owl:Thing <https://smolang.org/rdfMutate#newNode-4>)
+
+# Class: <https://smolang.org/rdfMutate#newNode-0> (<https://smolang.org/rdfMutate#newNode-0>)
+
+SubClassOf(<https://smolang.org/rdfMutate#newNode-0> <https://smolang.org/rdfMutate#newNode-0>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_class> (<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_class>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#class> <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_class>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_family> (<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_family>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#family> <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_family>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_forma> (<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_forma>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#forma> <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_forma>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_genus> (<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_genus>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#genus> <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_genus>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_infraclass> (<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_infraclass>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#infraclass> <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_infraclass>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_infraorder> (<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_infraorder>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#infraorder> <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_infraorder>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_kingdom> (<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_kingdom>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#kingdom> <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_kingdom>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_no_rank> (<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_no_rank>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#no_rank> <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_no_rank>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_order> (<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_order>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#order> <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_order>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_phylum> (<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_phylum>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#phylum> <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_phylum>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_species> (<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_species>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#species> <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_species>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_species_group> (<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_species_group>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#species_group> <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_species_group>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_species_subgroup> (<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_species_subgroup>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#species_subgroup> <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_species_subgroup>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_subclass> (<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_subclass>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#subclass> <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_subclass>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_subfamily> (<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_subfamily>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#subfamily> <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_subfamily>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_subgenus> (<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_subgenus>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#subgenus> <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_subgenus>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_subkingdoom> (<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_subkingdoom>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#subkingdoom> <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_subkingdoom>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_suborder> (<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_suborder>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#suborder> <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_suborder>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_subphylum> (<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_subphylum>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#subphylum> <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_subphylum>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_subspecies> (<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_subspecies>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#subspecies> <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_subspecies>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_subtribe> (<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_subtribe>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#subtribe> <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_subtribe>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_superclass> (<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_superclass>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#superclass> <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_superclass>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_superkingdom> (<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_superkingdom>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#superkingdom> <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_superkingdom>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_superorder> (<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_superorder>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#superorder> <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_superorder>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_tribe> (<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_tribe>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#tribe> <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_tribe>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_variety> (<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_variety>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#variety> <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#NCBI_variety>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#ncbi_rank> (<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#ncbi_rank>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#rank> <http://biomanta.sourceforge.net/2007/10/ncbi_rank.owl#ncbi_rank>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10029_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10029_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10029> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10029_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10036_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10036_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10036> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10036_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10090_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10090_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10090> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10090_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10091_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10091_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10091> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10091_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10092_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10092_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10092> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10092_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_100936_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_100936_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_100936> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_100936_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10116_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10116_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10116> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10116_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10141_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10141_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10141> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_10141_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_101841_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_101841_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_101841> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_101841_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_112250_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_112250_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_112250> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_112250_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_112251_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_112251_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_112251> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_112251_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_112509_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_112509_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_112509> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_112509_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_116058_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_116058_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_116058> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_116058_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_142051_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_142051_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_142051> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_142051_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_142052_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_142052_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_142052> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_142052_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_142053_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_142053_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_142053> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_142053_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_145471_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_145471_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_145471> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_145471_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_175564_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_175564_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_175564> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_175564_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_175565_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_175565_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_175565> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_175565_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_179238_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_179238_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_179238> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_179238_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_191506_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_191506_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_191506> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_191506_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_198035_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_198035_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_198035> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_198035_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208194_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208194_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208194> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208194_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208195_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208195_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208195> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208195_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208196_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208196_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208196> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208196_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208197_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208197_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208197> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208197_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208198_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208198_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208198> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208198_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208524_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208524_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208524> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208524_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208525_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208525_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208525> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208525_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208526_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208526_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208526> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_208526_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_210727_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_210727_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_210727> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_210727_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_230741_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_230741_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_230741> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_230741_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_237561_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_237561_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_237561> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_237561_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_257612_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_257612_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_257612> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_257612_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_267281_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_267281_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_267281> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_267281_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_284590_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_284590_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_284590> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_284590_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_284812_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_284812_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_284812> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_284812_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_285006_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_285006_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_285006> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_285006_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_288554_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_288554_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_288554> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_288554_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_288556_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_288556_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_288556> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_288556_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_28985_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_28985_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_28985> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_28985_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_291050_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_291050_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_291050> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_291050_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_294748_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_294748_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_294748> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_294748_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_300021_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_300021_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_300021> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_300021_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_30077_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_30077_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_30077> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_30077_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3053_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3053_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3053> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3053_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_30608_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_30608_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_30608> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_30608_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_307796_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_307796_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_307796> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_307796_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_309913_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_309913_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_309913> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_309913_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_309914_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_309914_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_309914> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_309914_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_310260_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_310260_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_310260> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_310260_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_310261_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_310261_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_310261> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_310261_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_312017_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_312017_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_312017> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_312017_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_320797_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_320797_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_320797> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_320797_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_330879_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_330879_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_330879> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_330879_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_333344_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_333344_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_333344> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_333344_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_334823_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_334823_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_334823> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_334823_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_334824_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_334824_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_334824> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_334824_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_344680_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_344680_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_344680> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_344680_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_352472_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_352472_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_352472> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_352472_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_35531_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_35531_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_35531> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_35531_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3562_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3562_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3562> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3562_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_366501_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_366501_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_366501> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_366501_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_367110_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_367110_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_367110> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_367110_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3702_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3702_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3702> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3702_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_375579_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_375579_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_375579> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_375579_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3847_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3847_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3847> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3847_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3858_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3858_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3858> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3858_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_386281_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_386281_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_386281> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_386281_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3888_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3888_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3888> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_3888_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_39442_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_39442_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_39442> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_39442_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_400035_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_400035_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_400035> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_400035_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_405000_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_405000_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_405000> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_405000_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4097_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4097_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4097> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4097_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_41121_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_41121_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_41121> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_41121_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_41122_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_41122_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_41122> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_41122_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_415978_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_415978_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_415978> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_415978_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_41870_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_41870_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_41870> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_41870_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_42069_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_42069_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_42069> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_42069_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_443947_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_443947_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_443947> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_443947_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_44689_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_44689_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_44689> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_44689_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4513_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4513_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4513> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4513_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_451804_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_451804_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_451804> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_451804_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_452467_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_452467_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_452467> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_452467_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_452468_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_452468_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_452468> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_452468_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_454605_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_454605_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_454605> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_454605_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_459427_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_459427_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_459427> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_459427_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_462209_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_462209_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_462209> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_462209_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_462210_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_462210_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_462210> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_462210_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_46244_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_46244_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_46244> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_46244_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_46245_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_46245_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_46245> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_46245_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_464025_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_464025_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_464025> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_464025_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_46456_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_46456_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_46456> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_46456_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_466209_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_466209_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_466209> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_466209_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_468558_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_468558_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_468558> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_468558_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4754_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4754_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4754> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4754_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_47742_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_47742_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_47742> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_47742_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4896_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4896_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4896> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4896_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4932_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4932_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4932> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4932_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5085_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5085_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5085> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5085_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_51234_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_51234_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_51234> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_51234_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_51350_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_51350_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_51350> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_51350_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_51351_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_51351_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_51351> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_51351_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5141_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5141_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5141> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5141_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5476_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5476_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5476> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5476_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_57486_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_57486_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_57486> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_57486_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5911_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5911_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5911> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_5911_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_6239_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_6239_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_6239> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_6239_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_63221_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_63221_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_63221> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_63221_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_6398_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_6398_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_6398> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_6398_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_6421_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_6421_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_6421> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_6421_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7091_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7091_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7091> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7091_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7224_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7224_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7224> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7224_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7227_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7227_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7227> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7227_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7237_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7237_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7237> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7237_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_77009_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_77009_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_77009> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_77009_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7787_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7787_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7787> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7787_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7788_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7788_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7788> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7788_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7955_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7955_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7955> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_7955_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_80274_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_80274_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_80274> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_80274_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_8053_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_8053_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_8053> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_8053_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_8355_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_8355_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_8355> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_8355_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_8846_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_8846_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_8846> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_8846_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9031_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9031_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9031> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9031_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_91481_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_91481_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_91481> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_91481_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_93385_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_93385_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_93385> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_93385_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_93934_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_93934_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_93934> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_93934_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9534_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9534_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9534> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9534_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9606_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9606_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9606> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9606_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9615_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9615_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9615> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9615_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9823_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9823_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9823> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9823_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9825_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9825_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9825> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9825_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9913_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9913_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9913> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9913_ind>)
+
+# Individual: <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9986_ind> (<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9986_ind>)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9986> <http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_9986_ind>)
+
+# Individual: owl:Class (owl:Class)
+
+ClassAssertion(<http://biomanta.sourceforge.net/2007/10/ncbi_taxo.owl#ncbi_taxo_4930> owl:Class)
+
+
+)

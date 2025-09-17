@@ -1,0 +1,1179 @@
+Prefix(:=<urn:unnamed:ontology#ont19099052356770793>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:unnamed:ontology#ont19099052356770793>
+
+Declaration(Class(<http://tap.stanford.edu/data/AttributeValueType>))
+Declaration(Class(<http://tap.stanford.edu/data/TitlePropertyType>))
+Declaration(Class(<http://tap.stanford.edu/data/TaxonomicPropertyType>))
+Declaration(Class(<http://tap.stanford.edu/data/MediaObject>))
+Declaration(Class(<http://tap.stanford.edu/data/QuantityType>))
+Declaration(Class(<http://tap.stanford.edu/data/Sport>))
+Declaration(Class(<http://tap.stanford.edu/data/Class>))
+Declaration(Class(<http://tap.stanford.edu/data/Service>))
+Declaration(Class(<http://tap.stanford.edu/data/Material>))
+Declaration(Class(<http://tap.stanford.edu/data/Genre>))
+Declaration(Class(<http://tap.stanford.edu/data/Array>))
+Declaration(Class(<http://tap.stanford.edu/data/HumanName>))
+Declaration(Class(<http://tap.stanford.edu/data/SpatialDirection>))
+Declaration(Class(<http://tap.stanford.edu/data/TimeQuantity>))
+Declaration(Class(<http://tap.stanford.edu/data/Literal>))
+Declaration(Class(<http://tap.stanford.edu/data/Activity>))
+Declaration(Class(<http://tap.stanford.edu/data/EventType>))
+Declaration(Class(<http://tap.stanford.edu/data/StateOfMatter>))
+Declaration(Class(<http://tap.stanford.edu/data/WebPage>))
+Declaration(Class(<http://tap.stanford.edu/data/TimeOfDay>))
+Declaration(Class(<http://tap.stanford.edu/data/Person>))
+Declaration(Class(<http://tap.stanford.edu/data/Auction>))
+Declaration(Class(<http://tap.stanford.edu/data/ProductType>))
+Declaration(Class(<http://tap.stanford.edu/data/CommunicationMedium>))
+Declaration(Class(<http://tap.stanford.edu/data/Project>))
+Declaration(Class(<http://tap.stanford.edu/data/FoodActivity>))
+Declaration(Class(<http://tap.stanford.edu/data/Convention>))
+Declaration(Class(<http://tap.stanford.edu/data/SportsEvent>))
+Declaration(Class(<http://tap.stanford.edu/data/MediaObjectType>))
+Declaration(Class(<http://tap.stanford.edu/data/ReflexivePropertyType>))
+Declaration(Class(<http://tap.stanford.edu/data/Quantity>))
+Declaration(Class(<http://tap.stanford.edu/data/Animal>))
+Declaration(Class(owl:ObjectProperty))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-7>))
+Declaration(Class(<http://tap.stanford.edu/data/Country>))
+Declaration(Class(<http://tap.stanford.edu/data/WebSite>))
+Declaration(Class(<http://tap.stanford.edu/data/ZipCode>))
+Declaration(Class(<http://tap.stanford.edu/data/ConflictEvent>))
+Declaration(Class(<http://tap.stanford.edu/data/Product>))
+Declaration(Class(<http://tap.stanford.edu/data/Place>))
+Declaration(Class(<http://tap.stanford.edu/data/CyberPlace>))
+Declaration(Class(<http://tap.stanford.edu/data/Date>))
+Declaration(Class(<http://tap.stanford.edu/data/Corporation>))
+Declaration(Class(<http://tap.stanford.edu/data/Concert>))
+Declaration(Class(<http://tap.stanford.edu/data/Award>))
+Declaration(Class(<http://tap.stanford.edu/data/UnitOfMeasure>))
+Declaration(Class(<http://tap.stanford.edu/data/SocioReligiousEvent>))
+Declaration(Class(<http://tap.stanford.edu/data/Plant>))
+Declaration(Class(<http://tap.stanford.edu/data/Bitmap>))
+Declaration(Class(<http://tap.stanford.edu/data/Tool>))
+Declaration(Class(<http://tap.stanford.edu/data/Node>))
+Declaration(Class(<http://tap.stanford.edu/data/GeoAddress>))
+Declaration(Class(<http://tap.stanford.edu/data/PopularCharacter>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-9>))
+Declaration(Class(<http://tap.stanford.edu/data/Gender>))
+Declaration(Class(<http://tap.stanford.edu/data/HistoricEvent>))
+Declaration(Class(<http://tap.stanford.edu/data/EmailAddress>))
+Declaration(Class(<http://tap.stanford.edu/data/ActivityType>))
+Declaration(Class(<http://tap.stanford.edu/data/Travel>))
+Declaration(Class(<http://tap.stanford.edu/data/TransitivePropertyType>))
+Declaration(Class(<http://tap.stanford.edu/data/Number>))
+Declaration(Class(<http://tap.stanford.edu/data/Tangible>))
+Declaration(Class(<http://tap.stanford.edu/data/FieldOfStudy>))
+Declaration(Class(<http://tap.stanford.edu/data/Food>))
+Declaration(Class(<http://tap.stanford.edu/data/Cuisine>))
+Declaration(Class(<http://tap.stanford.edu/data/activity>))
+Declaration(Class(<http://tap.stanford.edu/data/MoneyQuantity>))
+Declaration(Class(<http://tap.stanford.edu/data/Broadcast>))
+Declaration(Class(<http://tap.stanford.edu/data/Agent>))
+Declaration(Class(<http://tap.stanford.edu/data/BiologicalEvent>))
+Declaration(Class(<http://tap.stanford.edu/data/PreparedFood>))
+Declaration(Class(<http://tap.stanford.edu/data/String>))
+Declaration(Class(<http://tap.stanford.edu/data/Integer>))
+Declaration(Class(<http://tap.stanford.edu/data/Organization>))
+Declaration(Class(<http://tap.stanford.edu/data/UniformResourceLocator>))
+Declaration(Class(<http://tap.stanford.edu/data/BeliefSystem>))
+Declaration(Class(<http://tap.stanford.edu/data/ProfessionalType>))
+Declaration(Class(<http://tap.stanford.edu/data/BodyPart>))
+Declaration(Class(<http://tap.stanford.edu/data/Account>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/versionNumber>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/accessoryOf>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/worksFor>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/subGenreOf>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/duration>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/subPropertyOf>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/imageURL>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/ownsBrand>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/hasComponent>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/arg3Type>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/sortPriority>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/dmozMap>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/hasDateOfBirth>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/subOrganization>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/price>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/placeLetterCode>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/hasIngredient>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/hasFoodAccessory>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/longFormName>))
+Declaration(ObjectProperty(<https://smolang.org/rdfMutate#newNode-0>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/amazonMap>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/subClassOf>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/manufacturerModelName>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/startingDate>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/subEvent>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/singular>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/hasAddress>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/usedInActivity>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/hasDish>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/isCopyOf>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/hasAuthor>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/creationIncludesEvent>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/about>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/publishDate>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/relevantBrand>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/representsPlace>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/hasZipCode>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/hasParticipant>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/numberOfBids>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/hasLongitude>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/hasLastName>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/hasResidence>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/auctionItem>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/animalProduces>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/plays>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/quantityMeasuredIn>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/producesFood>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/manufacturerSuggestedRetailPrice>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/hasCitizenship>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/hasSocialSecurityNumber>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/activityOfEvent>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/hasHomePage>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/hasFirstName>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/hasDirector>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/locatedIn>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/madeOfMaterial>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/endingDate>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/notes>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/awardWinner>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/instanceOf>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/hasLatitude>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/hasStateOfMatter>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/occurrenceDate>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/hasPhysicalPart>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/title>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/hasMember>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/description>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/highestBid>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/hasTeamCode>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/range>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/domain>))
+Declaration(ObjectProperty(<https://smolang.org/rdfMutate#newNode-7>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/manufacturerOf>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/plural>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/hasEmailAddress>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/bioEventBodyPart>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/biography>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/servesCuisine>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/ebayMap>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/chiefExecutive>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/subBrand>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/hasGender>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/memberOf>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/performedBy>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/eventUsesTool>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/hasPublisher>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/occurrenceTimeOfDay>))
+Declaration(ObjectProperty(<https://smolang.org/rdfMutate#newNode-6>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/relevantSecondaryBrand>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/projectPrincipal>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/inOffice>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/hasManufacturer>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/hasProducer>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/homePage>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/toolUsedToMake>))
+Declaration(ObjectProperty(<http://tap.stanford.edu/data/looksmartMap>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/range>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/animalProduces>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/subGenreOf>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/arg3Type>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/plays>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/accessoryOf>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/auctionItem>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/madeOfMaterial>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/ownsBrand>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/subClassOf>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/imageURL>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/description>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/bioEventBodyPart>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/inOffice>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/plural>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/occurrenceTimeOfDay>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/propertyTypeCardinality>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/homePage>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/representsPlace>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/amazonMap>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/duration>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-1>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/longFormName>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/PropertyType>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/projectPrincipal>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/hasGender>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/numberOfBids>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/biography>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/domain>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/subOrganization>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/chiefExecutive>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/activityOfEvent>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/title>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/hasAddress>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/producesFood>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/hasCitizenship>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/hasLastName>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/eventUsesTool>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/hasComponent>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/singular>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/notes>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/hasManufacturer>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/performedBy>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/usedInActivity>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/quantityMeasuredIn>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/hasMember>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/servesCuisine>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/hasLatitude>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/hasResidence>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/ebayMap>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/hasStateOfMatter>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/hasDish>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/hasFoodAccessory>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/hasDirector>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/looksmartMap>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/manufacturerOf>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/sortPriority>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/manufacturerModelName>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/isCopyOf>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/hasCapitalCity>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/memberOf>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/relevantSecondaryBrand>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/toolUsedToMake>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/hasAuthor>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/Travel>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/hasPublisher>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/processorType>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/relevantBrand>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/Auction>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/publishDate>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/subEvent>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/awardWinner>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/hasPhysicalPart>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/dmozMap>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/hasSocialSecurityNumber>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/about>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/hasDateOfBirth>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/price>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/creationIncludesEvent>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/locatedIn>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/hasTeamCode>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/instanceOf>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/versionNumber>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-8>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/hasProducer>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/hasEmailAddress>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/hasIngredient>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/occurrenceDate>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/highestBid>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/subBrand>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/StateOfMatter>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/Gender>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/hasHomePage>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-2>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/endingDate>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/manufacturerSuggestedRetailPrice>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/subPropertyOf>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/hasZipCode>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/worksFor>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/hasFirstName>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/hasLongitude>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/hasParticipant>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/startingDate>))
+Declaration(NamedIndividual(<http://tap.stanford.edu/data/placeLetterCode>))
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://tap.stanford.edu/data/about> (<http://tap.stanford.edu/data/about>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/about> <http://tap.stanford.edu/data/Node>)
+
+# Object Property: <http://tap.stanford.edu/data/accessoryOf> (<http://tap.stanford.edu/data/accessoryOf>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/accessoryOf> <http://tap.stanford.edu/data/Product>)
+ObjectPropertyRange(<http://tap.stanford.edu/data/accessoryOf> <http://tap.stanford.edu/data/ProductType>)
+
+# Object Property: <http://tap.stanford.edu/data/activityOfEvent> (<http://tap.stanford.edu/data/activityOfEvent>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/activityOfEvent> <http://tap.stanford.edu/data/ActivityType>)
+
+# Object Property: <http://tap.stanford.edu/data/amazonMap> (<http://tap.stanford.edu/data/amazonMap>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/amazonMap> <http://tap.stanford.edu/data/String>)
+
+# Object Property: <http://tap.stanford.edu/data/animalProduces> (<http://tap.stanford.edu/data/animalProduces>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/animalProduces> <http://tap.stanford.edu/data/Tangible>)
+
+# Object Property: <http://tap.stanford.edu/data/arg3Type> (<http://tap.stanford.edu/data/arg3Type>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/arg3Type> <http://tap.stanford.edu/data/Class>)
+
+# Object Property: <http://tap.stanford.edu/data/auctionItem> (<http://tap.stanford.edu/data/auctionItem>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/auctionItem> <http://tap.stanford.edu/data/MediaObject>)
+ObjectPropertyRange(<http://tap.stanford.edu/data/auctionItem> <http://tap.stanford.edu/data/Product>)
+ObjectPropertyRange(<http://tap.stanford.edu/data/auctionItem> <http://tap.stanford.edu/data/ProductType>)
+
+# Object Property: <http://tap.stanford.edu/data/awardWinner> (<http://tap.stanford.edu/data/awardWinner>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/awardWinner> <http://tap.stanford.edu/data/Person>)
+
+# Object Property: <http://tap.stanford.edu/data/bioEventBodyPart> (<http://tap.stanford.edu/data/bioEventBodyPart>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/bioEventBodyPart> <http://tap.stanford.edu/data/BodyPart>)
+ObjectPropertyRange(<http://tap.stanford.edu/data/bioEventBodyPart> <http://tap.stanford.edu/data/Class>)
+
+# Object Property: <http://tap.stanford.edu/data/biography> (<http://tap.stanford.edu/data/biography>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/biography> <http://tap.stanford.edu/data/String>)
+
+# Object Property: <http://tap.stanford.edu/data/chiefExecutive> (<http://tap.stanford.edu/data/chiefExecutive>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/chiefExecutive> <http://tap.stanford.edu/data/Person>)
+
+# Object Property: <http://tap.stanford.edu/data/description> (<http://tap.stanford.edu/data/description>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/description> <http://tap.stanford.edu/data/String>)
+
+# Object Property: <http://tap.stanford.edu/data/dmozMap> (<http://tap.stanford.edu/data/dmozMap>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/dmozMap> <http://tap.stanford.edu/data/String>)
+
+# Object Property: <http://tap.stanford.edu/data/domain> (<http://tap.stanford.edu/data/domain>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/domain> <http://tap.stanford.edu/data/Class>)
+
+# Object Property: <http://tap.stanford.edu/data/duration> (<http://tap.stanford.edu/data/duration>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/duration> <http://tap.stanford.edu/data/TimeQuantity>)
+
+# Object Property: <http://tap.stanford.edu/data/ebayMap> (<http://tap.stanford.edu/data/ebayMap>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/ebayMap> <http://tap.stanford.edu/data/String>)
+
+# Object Property: <http://tap.stanford.edu/data/endingDate> (<http://tap.stanford.edu/data/endingDate>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/endingDate> <http://tap.stanford.edu/data/Date>)
+
+# Object Property: <http://tap.stanford.edu/data/eventUsesTool> (<http://tap.stanford.edu/data/eventUsesTool>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/eventUsesTool> <http://tap.stanford.edu/data/Class>)
+ObjectPropertyRange(<http://tap.stanford.edu/data/eventUsesTool> <http://tap.stanford.edu/data/Tool>)
+
+# Object Property: <http://tap.stanford.edu/data/hasAddress> (<http://tap.stanford.edu/data/hasAddress>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/hasAddress> <http://tap.stanford.edu/data/GeoAddress>)
+
+# Object Property: <http://tap.stanford.edu/data/hasAuthor> (<http://tap.stanford.edu/data/hasAuthor>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/hasAuthor> <http://tap.stanford.edu/data/Agent>)
+
+# Object Property: <http://tap.stanford.edu/data/hasCitizenship> (<http://tap.stanford.edu/data/hasCitizenship>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/hasCitizenship> <http://tap.stanford.edu/data/Country>)
+ObjectPropertyRange(<http://tap.stanford.edu/data/hasCitizenship> <https://smolang.org/rdfMutate#newNode-9>)
+
+# Object Property: <http://tap.stanford.edu/data/hasComponent> (<http://tap.stanford.edu/data/hasComponent>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/hasComponent> <http://tap.stanford.edu/data/Product>)
+ObjectPropertyRange(<http://tap.stanford.edu/data/hasComponent> <http://tap.stanford.edu/data/ProductType>)
+
+# Object Property: <http://tap.stanford.edu/data/hasDateOfBirth> (<http://tap.stanford.edu/data/hasDateOfBirth>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/hasDateOfBirth> <http://tap.stanford.edu/data/Date>)
+
+# Object Property: <http://tap.stanford.edu/data/hasDirector> (<http://tap.stanford.edu/data/hasDirector>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/hasDirector> <http://tap.stanford.edu/data/Person>)
+
+# Object Property: <http://tap.stanford.edu/data/hasDish> (<http://tap.stanford.edu/data/hasDish>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/hasDish> <http://tap.stanford.edu/data/Class>)
+ObjectPropertyRange(<http://tap.stanford.edu/data/hasDish> <http://tap.stanford.edu/data/PreparedFood>)
+
+# Object Property: <http://tap.stanford.edu/data/hasEmailAddress> (<http://tap.stanford.edu/data/hasEmailAddress>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/hasEmailAddress> <http://tap.stanford.edu/data/EmailAddress>)
+
+# Object Property: <http://tap.stanford.edu/data/hasFirstName> (<http://tap.stanford.edu/data/hasFirstName>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/hasFirstName> <http://tap.stanford.edu/data/HumanName>)
+
+# Object Property: <http://tap.stanford.edu/data/hasFoodAccessory> (<http://tap.stanford.edu/data/hasFoodAccessory>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/hasFoodAccessory> <http://tap.stanford.edu/data/Class>)
+ObjectPropertyRange(<http://tap.stanford.edu/data/hasFoodAccessory> <http://tap.stanford.edu/data/Food>)
+
+# Object Property: <http://tap.stanford.edu/data/hasGender> (<http://tap.stanford.edu/data/hasGender>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/hasGender> <http://tap.stanford.edu/data/Gender>)
+
+# Object Property: <http://tap.stanford.edu/data/hasHomePage> (<http://tap.stanford.edu/data/hasHomePage>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/hasHomePage> <http://tap.stanford.edu/data/WebSite>)
+
+# Object Property: <http://tap.stanford.edu/data/hasIngredient> (<http://tap.stanford.edu/data/hasIngredient>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/hasIngredient> <http://tap.stanford.edu/data/Class>)
+ObjectPropertyRange(<http://tap.stanford.edu/data/hasIngredient> <http://tap.stanford.edu/data/Food>)
+
+# Object Property: <http://tap.stanford.edu/data/hasLastName> (<http://tap.stanford.edu/data/hasLastName>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/hasLastName> <http://tap.stanford.edu/data/HumanName>)
+
+# Object Property: <http://tap.stanford.edu/data/hasLatitude> (<http://tap.stanford.edu/data/hasLatitude>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/hasLatitude> <http://tap.stanford.edu/data/String>)
+
+# Object Property: <http://tap.stanford.edu/data/hasLongitude> (<http://tap.stanford.edu/data/hasLongitude>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/hasLongitude> <http://tap.stanford.edu/data/String>)
+
+# Object Property: <http://tap.stanford.edu/data/hasManufacturer> (<http://tap.stanford.edu/data/hasManufacturer>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/hasManufacturer> <http://tap.stanford.edu/data/Agent>)
+ObjectPropertyRange(<http://tap.stanford.edu/data/hasManufacturer> <http://tap.stanford.edu/data/Corporation>)
+
+# Object Property: <http://tap.stanford.edu/data/hasMember> (<http://tap.stanford.edu/data/hasMember>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/hasMember> <http://tap.stanford.edu/data/Person>)
+
+# Object Property: <http://tap.stanford.edu/data/hasParticipant> (<http://tap.stanford.edu/data/hasParticipant>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/hasParticipant> <http://tap.stanford.edu/data/Agent>)
+
+# Object Property: <http://tap.stanford.edu/data/hasPhysicalPart> (<http://tap.stanford.edu/data/hasPhysicalPart>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/hasPhysicalPart> <http://tap.stanford.edu/data/Class>)
+ObjectPropertyRange(<http://tap.stanford.edu/data/hasPhysicalPart> <http://tap.stanford.edu/data/Tangible>)
+
+# Object Property: <http://tap.stanford.edu/data/hasProducer> (<http://tap.stanford.edu/data/hasProducer>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/hasProducer> <http://tap.stanford.edu/data/Person>)
+
+# Object Property: <http://tap.stanford.edu/data/hasPublisher> (<http://tap.stanford.edu/data/hasPublisher>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/hasPublisher> <http://tap.stanford.edu/data/Agent>)
+
+# Object Property: <http://tap.stanford.edu/data/hasResidence> (<http://tap.stanford.edu/data/hasResidence>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/hasResidence> <http://tap.stanford.edu/data/Place>)
+
+# Object Property: <http://tap.stanford.edu/data/hasSocialSecurityNumber> (<http://tap.stanford.edu/data/hasSocialSecurityNumber>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/hasSocialSecurityNumber> <http://tap.stanford.edu/data/Integer>)
+
+# Object Property: <http://tap.stanford.edu/data/hasStateOfMatter> (<http://tap.stanford.edu/data/hasStateOfMatter>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/hasStateOfMatter> <http://tap.stanford.edu/data/StateOfMatter>)
+
+# Object Property: <http://tap.stanford.edu/data/hasTeamCode> (<http://tap.stanford.edu/data/hasTeamCode>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/hasTeamCode> <http://tap.stanford.edu/data/String>)
+
+# Object Property: <http://tap.stanford.edu/data/hasZipCode> (<http://tap.stanford.edu/data/hasZipCode>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/hasZipCode> <http://tap.stanford.edu/data/ZipCode>)
+
+# Object Property: <http://tap.stanford.edu/data/highestBid> (<http://tap.stanford.edu/data/highestBid>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/highestBid> <http://tap.stanford.edu/data/MoneyQuantity>)
+
+# Object Property: <http://tap.stanford.edu/data/homePage> (<http://tap.stanford.edu/data/homePage>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/homePage> <http://tap.stanford.edu/data/WebPage>)
+
+# Object Property: <http://tap.stanford.edu/data/imageURL> (<http://tap.stanford.edu/data/imageURL>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/imageURL> <http://tap.stanford.edu/data/UniformResourceLocator>)
+
+# Object Property: <http://tap.stanford.edu/data/inOffice> (<http://tap.stanford.edu/data/inOffice>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/inOffice> <http://tap.stanford.edu/data/Class>)
+
+# Object Property: <http://tap.stanford.edu/data/instanceOf> (<http://tap.stanford.edu/data/instanceOf>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/instanceOf> <http://tap.stanford.edu/data/Class>)
+
+# Object Property: <http://tap.stanford.edu/data/isCopyOf> (<http://tap.stanford.edu/data/isCopyOf>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/isCopyOf> <http://tap.stanford.edu/data/MediaObject>)
+
+# Object Property: <http://tap.stanford.edu/data/locatedIn> (<http://tap.stanford.edu/data/locatedIn>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/locatedIn> <http://tap.stanford.edu/data/Place>)
+
+# Object Property: <http://tap.stanford.edu/data/longFormName> (<http://tap.stanford.edu/data/longFormName>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/longFormName> <http://tap.stanford.edu/data/String>)
+
+# Object Property: <http://tap.stanford.edu/data/looksmartMap> (<http://tap.stanford.edu/data/looksmartMap>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/looksmartMap> <http://tap.stanford.edu/data/String>)
+
+# Object Property: <http://tap.stanford.edu/data/madeOfMaterial> (<http://tap.stanford.edu/data/madeOfMaterial>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/madeOfMaterial> <http://tap.stanford.edu/data/Material>)
+
+# Object Property: <http://tap.stanford.edu/data/manufacturerModelName> (<http://tap.stanford.edu/data/manufacturerModelName>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/manufacturerModelName> <http://tap.stanford.edu/data/String>)
+
+# Object Property: <http://tap.stanford.edu/data/manufacturerOf> (<http://tap.stanford.edu/data/manufacturerOf>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/manufacturerOf> <http://tap.stanford.edu/data/Product>)
+
+# Object Property: <http://tap.stanford.edu/data/manufacturerSuggestedRetailPrice> (<http://tap.stanford.edu/data/manufacturerSuggestedRetailPrice>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/manufacturerSuggestedRetailPrice> <http://tap.stanford.edu/data/MoneyQuantity>)
+
+# Object Property: <http://tap.stanford.edu/data/memberOf> (<http://tap.stanford.edu/data/memberOf>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/memberOf> <http://tap.stanford.edu/data/Agent>)
+
+# Object Property: <http://tap.stanford.edu/data/notes> (<http://tap.stanford.edu/data/notes>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/notes> <http://tap.stanford.edu/data/String>)
+
+# Object Property: <http://tap.stanford.edu/data/numberOfBids> (<http://tap.stanford.edu/data/numberOfBids>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/numberOfBids> <http://tap.stanford.edu/data/Integer>)
+
+# Object Property: <http://tap.stanford.edu/data/occurrenceDate> (<http://tap.stanford.edu/data/occurrenceDate>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/occurrenceDate> <http://tap.stanford.edu/data/Date>)
+
+# Object Property: <http://tap.stanford.edu/data/occurrenceTimeOfDay> (<http://tap.stanford.edu/data/occurrenceTimeOfDay>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/occurrenceTimeOfDay> <http://tap.stanford.edu/data/TimeOfDay>)
+
+# Object Property: <http://tap.stanford.edu/data/performedBy> (<http://tap.stanford.edu/data/performedBy>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/performedBy> <http://tap.stanford.edu/data/Agent>)
+
+# Object Property: <http://tap.stanford.edu/data/placeLetterCode> (<http://tap.stanford.edu/data/placeLetterCode>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/placeLetterCode> <http://tap.stanford.edu/data/String>)
+
+# Object Property: <http://tap.stanford.edu/data/plays> (<http://tap.stanford.edu/data/plays>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/plays> <http://tap.stanford.edu/data/ActivityType>)
+
+# Object Property: <http://tap.stanford.edu/data/plural> (<http://tap.stanford.edu/data/plural>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/plural> <http://tap.stanford.edu/data/String>)
+
+# Object Property: <http://tap.stanford.edu/data/price> (<http://tap.stanford.edu/data/price>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/price> <http://tap.stanford.edu/data/MoneyQuantity>)
+
+# Object Property: <http://tap.stanford.edu/data/producesFood> (<http://tap.stanford.edu/data/producesFood>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/producesFood> <http://tap.stanford.edu/data/Food>)
+
+# Object Property: <http://tap.stanford.edu/data/projectPrincipal> (<http://tap.stanford.edu/data/projectPrincipal>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/projectPrincipal> <http://tap.stanford.edu/data/Agent>)
+
+# Object Property: <http://tap.stanford.edu/data/publishDate> (<http://tap.stanford.edu/data/publishDate>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/publishDate> <http://tap.stanford.edu/data/Date>)
+
+# Object Property: <http://tap.stanford.edu/data/quantityMeasuredIn> (<http://tap.stanford.edu/data/quantityMeasuredIn>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/quantityMeasuredIn> <http://tap.stanford.edu/data/UnitOfMeasure>)
+
+# Object Property: <http://tap.stanford.edu/data/range> (<http://tap.stanford.edu/data/range>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/range> <http://tap.stanford.edu/data/Class>)
+
+# Object Property: <http://tap.stanford.edu/data/representsPlace> (<http://tap.stanford.edu/data/representsPlace>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/representsPlace> <http://tap.stanford.edu/data/Place>)
+
+# Object Property: <http://tap.stanford.edu/data/servesCuisine> (<http://tap.stanford.edu/data/servesCuisine>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/servesCuisine> <http://tap.stanford.edu/data/Cuisine>)
+
+# Object Property: <http://tap.stanford.edu/data/singular> (<http://tap.stanford.edu/data/singular>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/singular> <http://tap.stanford.edu/data/String>)
+
+# Object Property: <http://tap.stanford.edu/data/sortPriority> (<http://tap.stanford.edu/data/sortPriority>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/sortPriority> <http://tap.stanford.edu/data/Integer>)
+
+# Object Property: <http://tap.stanford.edu/data/startingDate> (<http://tap.stanford.edu/data/startingDate>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/startingDate> <http://tap.stanford.edu/data/Date>)
+
+# Object Property: <http://tap.stanford.edu/data/subClassOf> (<http://tap.stanford.edu/data/subClassOf>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/subClassOf> <http://tap.stanford.edu/data/Class>)
+
+# Object Property: <http://tap.stanford.edu/data/subGenreOf> (<http://tap.stanford.edu/data/subGenreOf>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/subGenreOf> <http://tap.stanford.edu/data/Genre>)
+
+# Object Property: <http://tap.stanford.edu/data/subOrganization> (<http://tap.stanford.edu/data/subOrganization>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/subOrganization> <http://tap.stanford.edu/data/Organization>)
+
+# Object Property: <http://tap.stanford.edu/data/title> (<http://tap.stanford.edu/data/title>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/title> <http://tap.stanford.edu/data/String>)
+
+# Object Property: <http://tap.stanford.edu/data/toolUsedToMake> (<http://tap.stanford.edu/data/toolUsedToMake>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/toolUsedToMake> <http://tap.stanford.edu/data/Product>)
+
+# Object Property: <http://tap.stanford.edu/data/usedInActivity> (<http://tap.stanford.edu/data/usedInActivity>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/usedInActivity> <http://tap.stanford.edu/data/Activity>)
+ObjectPropertyRange(<http://tap.stanford.edu/data/usedInActivity> <http://tap.stanford.edu/data/ActivityType>)
+
+# Object Property: <http://tap.stanford.edu/data/versionNumber> (<http://tap.stanford.edu/data/versionNumber>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/versionNumber> <http://tap.stanford.edu/data/String>)
+
+# Object Property: <http://tap.stanford.edu/data/worksFor> (<http://tap.stanford.edu/data/worksFor>)
+
+ObjectPropertyRange(<http://tap.stanford.edu/data/worksFor> <http://tap.stanford.edu/data/Agent>)
+
+# Object Property: <https://smolang.org/rdfMutate#newNode-0> (<https://smolang.org/rdfMutate#newNode-0>)
+
+ObjectPropertyRange(<https://smolang.org/rdfMutate#newNode-0> <http://tap.stanford.edu/data/Organization>)
+
+# Object Property: <https://smolang.org/rdfMutate#newNode-7> (<https://smolang.org/rdfMutate#newNode-7>)
+
+ObjectPropertyRange(<https://smolang.org/rdfMutate#newNode-7> <https://smolang.org/rdfMutate#newNode-7>)
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://tap.stanford.edu/data/Activity> (<http://tap.stanford.edu/data/Activity>)
+
+SubClassOf(<http://tap.stanford.edu/data/Activity> <http://tap.stanford.edu/data/Node>)
+
+# Class: <http://tap.stanford.edu/data/ActivityType> (<http://tap.stanford.edu/data/ActivityType>)
+
+SubClassOf(<http://tap.stanford.edu/data/ActivityType> <http://tap.stanford.edu/data/Class>)
+
+# Class: <http://tap.stanford.edu/data/Agent> (<http://tap.stanford.edu/data/Agent>)
+
+SubClassOf(<http://tap.stanford.edu/data/Agent> <http://tap.stanford.edu/data/Node>)
+
+# Class: <http://tap.stanford.edu/data/Animal> (<http://tap.stanford.edu/data/Animal>)
+
+SubClassOf(<http://tap.stanford.edu/data/Animal> <http://tap.stanford.edu/data/Tangible>)
+
+# Class: <http://tap.stanford.edu/data/Array> (<http://tap.stanford.edu/data/Array>)
+
+SubClassOf(<http://tap.stanford.edu/data/Array> <http://tap.stanford.edu/data/Literal>)
+
+# Class: <http://tap.stanford.edu/data/AttributeValueType> (<http://tap.stanford.edu/data/AttributeValueType>)
+
+SubClassOf(<http://tap.stanford.edu/data/AttributeValueType> <http://tap.stanford.edu/data/Class>)
+
+# Class: <http://tap.stanford.edu/data/Bitmap> (<http://tap.stanford.edu/data/Bitmap>)
+
+SubClassOf(<http://tap.stanford.edu/data/Bitmap> <http://tap.stanford.edu/data/Literal>)
+
+# Class: <http://tap.stanford.edu/data/BodyPart> (<http://tap.stanford.edu/data/BodyPart>)
+
+SubClassOf(<http://tap.stanford.edu/data/BodyPart> <http://tap.stanford.edu/data/Tangible>)
+
+# Class: <http://tap.stanford.edu/data/Class> (<http://tap.stanford.edu/data/Class>)
+
+SubClassOf(<http://tap.stanford.edu/data/Class> <http://tap.stanford.edu/data/Node>)
+
+# Class: <http://tap.stanford.edu/data/EventType> (<http://tap.stanford.edu/data/EventType>)
+
+SubClassOf(<http://tap.stanford.edu/data/EventType> <http://tap.stanford.edu/data/Class>)
+
+# Class: <http://tap.stanford.edu/data/FoodActivity> (<http://tap.stanford.edu/data/FoodActivity>)
+
+SubClassOf(<http://tap.stanford.edu/data/FoodActivity> <http://tap.stanford.edu/data/activity>)
+
+# Class: <http://tap.stanford.edu/data/Literal> (<http://tap.stanford.edu/data/Literal>)
+
+SubClassOf(<http://tap.stanford.edu/data/Literal> <http://tap.stanford.edu/data/Node>)
+
+# Class: <http://tap.stanford.edu/data/Material> (<http://tap.stanford.edu/data/Material>)
+
+SubClassOf(<http://tap.stanford.edu/data/Material> <http://tap.stanford.edu/data/Tangible>)
+
+# Class: <http://tap.stanford.edu/data/MediaObjectType> (<http://tap.stanford.edu/data/MediaObjectType>)
+
+SubClassOf(<http://tap.stanford.edu/data/MediaObjectType> <http://tap.stanford.edu/data/Class>)
+
+# Class: <http://tap.stanford.edu/data/Number> (<http://tap.stanford.edu/data/Number>)
+
+SubClassOf(<http://tap.stanford.edu/data/Number> <http://tap.stanford.edu/data/Literal>)
+
+# Class: <http://tap.stanford.edu/data/Organization> (<http://tap.stanford.edu/data/Organization>)
+
+SubClassOf(<http://tap.stanford.edu/data/Organization> <http://tap.stanford.edu/data/Agent>)
+
+# Class: <http://tap.stanford.edu/data/Person> (<http://tap.stanford.edu/data/Person>)
+
+SubClassOf(<http://tap.stanford.edu/data/Person> <http://tap.stanford.edu/data/Agent>)
+
+# Class: <http://tap.stanford.edu/data/Place> (<http://tap.stanford.edu/data/Place>)
+
+SubClassOf(<http://tap.stanford.edu/data/Place> <http://tap.stanford.edu/data/Tangible>)
+
+# Class: <http://tap.stanford.edu/data/Plant> (<http://tap.stanford.edu/data/Plant>)
+
+SubClassOf(<http://tap.stanford.edu/data/Plant> <http://tap.stanford.edu/data/Tangible>)
+
+# Class: <http://tap.stanford.edu/data/PopularCharacter> (<http://tap.stanford.edu/data/PopularCharacter>)
+
+SubClassOf(<http://tap.stanford.edu/data/PopularCharacter> <http://tap.stanford.edu/data/Agent>)
+
+# Class: <http://tap.stanford.edu/data/Product> (<http://tap.stanford.edu/data/Product>)
+
+SubClassOf(<http://tap.stanford.edu/data/Product> <http://tap.stanford.edu/data/Tangible>)
+
+# Class: <http://tap.stanford.edu/data/ProductType> (<http://tap.stanford.edu/data/ProductType>)
+
+SubClassOf(<http://tap.stanford.edu/data/ProductType> <http://tap.stanford.edu/data/Class>)
+
+# Class: <http://tap.stanford.edu/data/ProfessionalType> (<http://tap.stanford.edu/data/ProfessionalType>)
+
+SubClassOf(<http://tap.stanford.edu/data/ProfessionalType> <http://tap.stanford.edu/data/Class>)
+
+# Class: <http://tap.stanford.edu/data/QuantityType> (<http://tap.stanford.edu/data/QuantityType>)
+
+SubClassOf(<http://tap.stanford.edu/data/QuantityType> <http://tap.stanford.edu/data/Class>)
+
+# Class: <http://tap.stanford.edu/data/Service> (<http://tap.stanford.edu/data/Service>)
+
+SubClassOf(<http://tap.stanford.edu/data/Service> <http://tap.stanford.edu/data/Activity>)
+
+# Class: <http://tap.stanford.edu/data/Sport> (<http://tap.stanford.edu/data/Sport>)
+
+SubClassOf(<http://tap.stanford.edu/data/Sport> <http://tap.stanford.edu/data/Activity>)
+
+# Class: <http://tap.stanford.edu/data/String> (<http://tap.stanford.edu/data/String>)
+
+SubClassOf(<http://tap.stanford.edu/data/String> <http://tap.stanford.edu/data/Literal>)
+
+# Class: <http://tap.stanford.edu/data/Tangible> (<http://tap.stanford.edu/data/Tangible>)
+
+SubClassOf(<http://tap.stanford.edu/data/Tangible> <http://tap.stanford.edu/data/Node>)
+
+# Class: <http://tap.stanford.edu/data/Travel> (<http://tap.stanford.edu/data/Travel>)
+
+SubClassOf(<http://tap.stanford.edu/data/Travel> <http://tap.stanford.edu/data/Activity>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://tap.stanford.edu/data/Auction> (<http://tap.stanford.edu/data/Auction>)
+
+ClassAssertion(<http://tap.stanford.edu/data/EventType> <http://tap.stanford.edu/data/Auction>)
+
+# Individual: <http://tap.stanford.edu/data/Gender> (<http://tap.stanford.edu/data/Gender>)
+
+ClassAssertion(<http://tap.stanford.edu/data/AttributeValueType> <http://tap.stanford.edu/data/Gender>)
+
+# Individual: <http://tap.stanford.edu/data/Travel> (<http://tap.stanford.edu/data/Travel>)
+
+ClassAssertion(<http://tap.stanford.edu/data/ActivityType> <http://tap.stanford.edu/data/Travel>)
+
+# Individual: <http://tap.stanford.edu/data/about> (<http://tap.stanford.edu/data/about>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/about>)
+
+# Individual: <http://tap.stanford.edu/data/accessoryOf> (<http://tap.stanford.edu/data/accessoryOf>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/accessoryOf>)
+
+# Individual: <http://tap.stanford.edu/data/activityOfEvent> (<http://tap.stanford.edu/data/activityOfEvent>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/activityOfEvent>)
+
+# Individual: <http://tap.stanford.edu/data/amazonMap> (<http://tap.stanford.edu/data/amazonMap>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/amazonMap>)
+
+# Individual: <http://tap.stanford.edu/data/animalProduces> (<http://tap.stanford.edu/data/animalProduces>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/animalProduces>)
+
+# Individual: <http://tap.stanford.edu/data/arg3Type> (<http://tap.stanford.edu/data/arg3Type>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/arg3Type>)
+
+# Individual: <http://tap.stanford.edu/data/auctionItem> (<http://tap.stanford.edu/data/auctionItem>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/auctionItem>)
+
+# Individual: <http://tap.stanford.edu/data/awardWinner> (<http://tap.stanford.edu/data/awardWinner>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/awardWinner>)
+
+# Individual: <http://tap.stanford.edu/data/bioEventBodyPart> (<http://tap.stanford.edu/data/bioEventBodyPart>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/bioEventBodyPart>)
+
+# Individual: <http://tap.stanford.edu/data/biography> (<http://tap.stanford.edu/data/biography>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/biography>)
+
+# Individual: <http://tap.stanford.edu/data/chiefExecutive> (<http://tap.stanford.edu/data/chiefExecutive>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/chiefExecutive>)
+
+# Individual: <http://tap.stanford.edu/data/creationIncludesEvent> (<http://tap.stanford.edu/data/creationIncludesEvent>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/creationIncludesEvent>)
+
+# Individual: <http://tap.stanford.edu/data/description> (<http://tap.stanford.edu/data/description>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/description>)
+
+# Individual: <http://tap.stanford.edu/data/dmozMap> (<http://tap.stanford.edu/data/dmozMap>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/dmozMap>)
+
+# Individual: <http://tap.stanford.edu/data/domain> (<http://tap.stanford.edu/data/domain>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/domain>)
+
+# Individual: <http://tap.stanford.edu/data/duration> (<http://tap.stanford.edu/data/duration>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/duration>)
+
+# Individual: <http://tap.stanford.edu/data/ebayMap> (<http://tap.stanford.edu/data/ebayMap>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/ebayMap>)
+
+# Individual: <http://tap.stanford.edu/data/endingDate> (<http://tap.stanford.edu/data/endingDate>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/endingDate>)
+
+# Individual: <http://tap.stanford.edu/data/eventUsesTool> (<http://tap.stanford.edu/data/eventUsesTool>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/eventUsesTool>)
+
+# Individual: <http://tap.stanford.edu/data/hasAddress> (<http://tap.stanford.edu/data/hasAddress>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/hasAddress>)
+ClassAssertion(owl:Thing <http://tap.stanford.edu/data/hasAddress>)
+
+# Individual: <http://tap.stanford.edu/data/hasAuthor> (<http://tap.stanford.edu/data/hasAuthor>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/hasAuthor>)
+
+# Individual: <http://tap.stanford.edu/data/hasCitizenship> (<http://tap.stanford.edu/data/hasCitizenship>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/hasCitizenship>)
+
+# Individual: <http://tap.stanford.edu/data/hasComponent> (<http://tap.stanford.edu/data/hasComponent>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/hasComponent>)
+
+# Individual: <http://tap.stanford.edu/data/hasDateOfBirth> (<http://tap.stanford.edu/data/hasDateOfBirth>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/hasDateOfBirth>)
+
+# Individual: <http://tap.stanford.edu/data/hasDirector> (<http://tap.stanford.edu/data/hasDirector>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/hasDirector>)
+
+# Individual: <http://tap.stanford.edu/data/hasDish> (<http://tap.stanford.edu/data/hasDish>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/hasDish>)
+
+# Individual: <http://tap.stanford.edu/data/hasEmailAddress> (<http://tap.stanford.edu/data/hasEmailAddress>)
+
+ClassAssertion(<http://tap.stanford.edu/data/TitlePropertyType> <http://tap.stanford.edu/data/hasEmailAddress>)
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/hasEmailAddress>)
+
+# Individual: <http://tap.stanford.edu/data/hasFirstName> (<http://tap.stanford.edu/data/hasFirstName>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/hasFirstName>)
+
+# Individual: <http://tap.stanford.edu/data/hasFoodAccessory> (<http://tap.stanford.edu/data/hasFoodAccessory>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/hasFoodAccessory>)
+
+# Individual: <http://tap.stanford.edu/data/hasGender> (<http://tap.stanford.edu/data/hasGender>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/hasGender>)
+
+# Individual: <http://tap.stanford.edu/data/hasHomePage> (<http://tap.stanford.edu/data/hasHomePage>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/hasHomePage>)
+
+# Individual: <http://tap.stanford.edu/data/hasIngredient> (<http://tap.stanford.edu/data/hasIngredient>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/hasIngredient>)
+
+# Individual: <http://tap.stanford.edu/data/hasLastName> (<http://tap.stanford.edu/data/hasLastName>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/hasLastName>)
+
+# Individual: <http://tap.stanford.edu/data/hasLatitude> (<http://tap.stanford.edu/data/hasLatitude>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/hasLatitude>)
+
+# Individual: <http://tap.stanford.edu/data/hasLongitude> (<http://tap.stanford.edu/data/hasLongitude>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/hasLongitude>)
+
+# Individual: <http://tap.stanford.edu/data/hasManufacturer> (<http://tap.stanford.edu/data/hasManufacturer>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/hasManufacturer>)
+
+# Individual: <http://tap.stanford.edu/data/hasMember> (<http://tap.stanford.edu/data/hasMember>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/hasMember>)
+
+# Individual: <http://tap.stanford.edu/data/hasParticipant> (<http://tap.stanford.edu/data/hasParticipant>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/hasParticipant>)
+
+# Individual: <http://tap.stanford.edu/data/hasPhysicalPart> (<http://tap.stanford.edu/data/hasPhysicalPart>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/hasPhysicalPart>)
+
+# Individual: <http://tap.stanford.edu/data/hasProducer> (<http://tap.stanford.edu/data/hasProducer>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/hasProducer>)
+
+# Individual: <http://tap.stanford.edu/data/hasPublisher> (<http://tap.stanford.edu/data/hasPublisher>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/hasPublisher>)
+
+# Individual: <http://tap.stanford.edu/data/hasResidence> (<http://tap.stanford.edu/data/hasResidence>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/hasResidence>)
+
+# Individual: <http://tap.stanford.edu/data/hasSocialSecurityNumber> (<http://tap.stanford.edu/data/hasSocialSecurityNumber>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/hasSocialSecurityNumber>)
+
+# Individual: <http://tap.stanford.edu/data/hasStateOfMatter> (<http://tap.stanford.edu/data/hasStateOfMatter>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/hasStateOfMatter>)
+
+# Individual: <http://tap.stanford.edu/data/hasTeamCode> (<http://tap.stanford.edu/data/hasTeamCode>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/hasTeamCode>)
+
+# Individual: <http://tap.stanford.edu/data/hasZipCode> (<http://tap.stanford.edu/data/hasZipCode>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/hasZipCode>)
+
+# Individual: <http://tap.stanford.edu/data/highestBid> (<http://tap.stanford.edu/data/highestBid>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/highestBid>)
+
+# Individual: <http://tap.stanford.edu/data/homePage> (<http://tap.stanford.edu/data/homePage>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/homePage>)
+
+# Individual: <http://tap.stanford.edu/data/imageURL> (<http://tap.stanford.edu/data/imageURL>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/imageURL>)
+
+# Individual: <http://tap.stanford.edu/data/inOffice> (<http://tap.stanford.edu/data/inOffice>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/inOffice>)
+
+# Individual: <http://tap.stanford.edu/data/instanceOf> (<http://tap.stanford.edu/data/instanceOf>)
+
+ClassAssertion(<http://tap.stanford.edu/data/TaxonomicPropertyType> <http://tap.stanford.edu/data/instanceOf>)
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/instanceOf>)
+
+# Individual: <http://tap.stanford.edu/data/isCopyOf> (<http://tap.stanford.edu/data/isCopyOf>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/isCopyOf>)
+
+# Individual: <http://tap.stanford.edu/data/locatedIn> (<http://tap.stanford.edu/data/locatedIn>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/locatedIn>)
+
+# Individual: <http://tap.stanford.edu/data/longFormName> (<http://tap.stanford.edu/data/longFormName>)
+
+ClassAssertion(<http://tap.stanford.edu/data/TitlePropertyType> <http://tap.stanford.edu/data/longFormName>)
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/longFormName>)
+
+# Individual: <http://tap.stanford.edu/data/looksmartMap> (<http://tap.stanford.edu/data/looksmartMap>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/looksmartMap>)
+
+# Individual: <http://tap.stanford.edu/data/madeOfMaterial> (<http://tap.stanford.edu/data/madeOfMaterial>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/madeOfMaterial>)
+
+# Individual: <http://tap.stanford.edu/data/manufacturerModelName> (<http://tap.stanford.edu/data/manufacturerModelName>)
+
+ClassAssertion(<http://tap.stanford.edu/data/TitlePropertyType> <http://tap.stanford.edu/data/manufacturerModelName>)
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/manufacturerModelName>)
+
+# Individual: <http://tap.stanford.edu/data/manufacturerOf> (<http://tap.stanford.edu/data/manufacturerOf>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/manufacturerOf>)
+
+# Individual: <http://tap.stanford.edu/data/manufacturerSuggestedRetailPrice> (<http://tap.stanford.edu/data/manufacturerSuggestedRetailPrice>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/manufacturerSuggestedRetailPrice>)
+
+# Individual: <http://tap.stanford.edu/data/memberOf> (<http://tap.stanford.edu/data/memberOf>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/memberOf>)
+
+# Individual: <http://tap.stanford.edu/data/notes> (<http://tap.stanford.edu/data/notes>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/notes>)
+
+# Individual: <http://tap.stanford.edu/data/numberOfBids> (<http://tap.stanford.edu/data/numberOfBids>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/numberOfBids>)
+
+# Individual: <http://tap.stanford.edu/data/occurrenceDate> (<http://tap.stanford.edu/data/occurrenceDate>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/occurrenceDate>)
+
+# Individual: <http://tap.stanford.edu/data/occurrenceTimeOfDay> (<http://tap.stanford.edu/data/occurrenceTimeOfDay>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/occurrenceTimeOfDay>)
+
+# Individual: <http://tap.stanford.edu/data/ownsBrand> (<http://tap.stanford.edu/data/ownsBrand>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/ownsBrand>)
+
+# Individual: <http://tap.stanford.edu/data/performedBy> (<http://tap.stanford.edu/data/performedBy>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/performedBy>)
+
+# Individual: <http://tap.stanford.edu/data/placeLetterCode> (<http://tap.stanford.edu/data/placeLetterCode>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/placeLetterCode>)
+
+# Individual: <http://tap.stanford.edu/data/plays> (<http://tap.stanford.edu/data/plays>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/plays>)
+
+# Individual: <http://tap.stanford.edu/data/plural> (<http://tap.stanford.edu/data/plural>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/plural>)
+
+# Individual: <http://tap.stanford.edu/data/price> (<http://tap.stanford.edu/data/price>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/price>)
+
+# Individual: <http://tap.stanford.edu/data/producesFood> (<http://tap.stanford.edu/data/producesFood>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/producesFood>)
+
+# Individual: <http://tap.stanford.edu/data/projectPrincipal> (<http://tap.stanford.edu/data/projectPrincipal>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/projectPrincipal>)
+
+# Individual: <http://tap.stanford.edu/data/publishDate> (<http://tap.stanford.edu/data/publishDate>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/publishDate>)
+
+# Individual: <http://tap.stanford.edu/data/quantityMeasuredIn> (<http://tap.stanford.edu/data/quantityMeasuredIn>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/quantityMeasuredIn>)
+
+# Individual: <http://tap.stanford.edu/data/range> (<http://tap.stanford.edu/data/range>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/range>)
+
+# Individual: <http://tap.stanford.edu/data/relevantBrand> (<http://tap.stanford.edu/data/relevantBrand>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/relevantBrand>)
+
+# Individual: <http://tap.stanford.edu/data/relevantSecondaryBrand> (<http://tap.stanford.edu/data/relevantSecondaryBrand>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/relevantSecondaryBrand>)
+
+# Individual: <http://tap.stanford.edu/data/representsPlace> (<http://tap.stanford.edu/data/representsPlace>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/representsPlace>)
+
+# Individual: <http://tap.stanford.edu/data/servesCuisine> (<http://tap.stanford.edu/data/servesCuisine>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/servesCuisine>)
+
+# Individual: <http://tap.stanford.edu/data/singular> (<http://tap.stanford.edu/data/singular>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/singular>)
+
+# Individual: <http://tap.stanford.edu/data/sortPriority> (<http://tap.stanford.edu/data/sortPriority>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/sortPriority>)
+
+# Individual: <http://tap.stanford.edu/data/startingDate> (<http://tap.stanford.edu/data/startingDate>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/startingDate>)
+
+# Individual: <http://tap.stanford.edu/data/subBrand> (<http://tap.stanford.edu/data/subBrand>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/subBrand>)
+
+# Individual: <http://tap.stanford.edu/data/subClassOf> (<http://tap.stanford.edu/data/subClassOf>)
+
+ClassAssertion(<http://tap.stanford.edu/data/TaxonomicPropertyType> <http://tap.stanford.edu/data/subClassOf>)
+ClassAssertion(<http://tap.stanford.edu/data/TransitivePropertyType> <http://tap.stanford.edu/data/subClassOf>)
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/subClassOf>)
+
+# Individual: <http://tap.stanford.edu/data/subEvent> (<http://tap.stanford.edu/data/subEvent>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/subEvent>)
+
+# Individual: <http://tap.stanford.edu/data/subGenreOf> (<http://tap.stanford.edu/data/subGenreOf>)
+
+ClassAssertion(<http://tap.stanford.edu/data/TaxonomicPropertyType> <http://tap.stanford.edu/data/subGenreOf>)
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/subGenreOf>)
+
+# Individual: <http://tap.stanford.edu/data/subOrganization> (<http://tap.stanford.edu/data/subOrganization>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/subOrganization>)
+
+# Individual: <http://tap.stanford.edu/data/subPropertyOf> (<http://tap.stanford.edu/data/subPropertyOf>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/subPropertyOf>)
+
+# Individual: <http://tap.stanford.edu/data/title> (<http://tap.stanford.edu/data/title>)
+
+ClassAssertion(<http://tap.stanford.edu/data/TitlePropertyType> <http://tap.stanford.edu/data/title>)
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/title>)
+
+# Individual: <http://tap.stanford.edu/data/toolUsedToMake> (<http://tap.stanford.edu/data/toolUsedToMake>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/toolUsedToMake>)
+
+# Individual: <http://tap.stanford.edu/data/usedInActivity> (<http://tap.stanford.edu/data/usedInActivity>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/usedInActivity>)
+
+# Individual: <http://tap.stanford.edu/data/versionNumber> (<http://tap.stanford.edu/data/versionNumber>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/versionNumber>)
+
+# Individual: <http://tap.stanford.edu/data/worksFor> (<http://tap.stanford.edu/data/worksFor>)
+
+ClassAssertion(owl:ObjectProperty <http://tap.stanford.edu/data/worksFor>)
+
+
+)

@@ -1,0 +1,787 @@
+Prefix(:=<urn:unnamed:ontology#ont19090323355978463>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:unnamed:ontology#ont19090323355978463>
+
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-0>))
+Declaration(Class(<http://www.opentox.org/api/1.1#ClassValueStatistics>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC41>))
+Declaration(Class(<http://www.opentox.org/api/1.1#StringFeature>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC100>))
+Declaration(Class(<http://www.opentox.org/api/1.1#Task>))
+Declaration(Class(<http://www.opentox.org/api/1.1#NumericModel>))
+Declaration(Class(<http://www.opentox.org/api/1.1#MolecularFormula>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC157>))
+Declaration(Class(<http://www.opentox.org/api/1.1#Crossvalidation>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC121>))
+Declaration(Class(<http://www.opentox.org/api/1.1#YScrambling>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC79>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC152>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC145>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC96>))
+Declaration(Class(<http://www.opentox.org/api/1.1#Numeric>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC31>))
+Declaration(Class(<http://www.opentox.org/api/1.1#CrossValidationInfo>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC55>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC5>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC118>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC137>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC9>))
+Declaration(Class(<http://www.opentox.org/api/1.1#ValidationInfo>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC158>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC129>))
+Declaration(Class(owl:Class))
+Declaration(Class(<http://www.opentox.org/api/1.1#ConfusionMatrixCell>))
+Declaration(Class(<http://www.opentox.org/api/1.1#Compound>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC170>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC123>))
+Declaration(Class(<http://www.opentox.org/api/1.1#Validation>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC110>))
+Declaration(Class(<http://www.opentox.org/api/1.1#String>))
+Declaration(Class(<http://www.opentox.org/api/1.1#FeatureValue>))
+Declaration(Class(<http://www.opentox.org/api/1.1#Parameter>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC138>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC102>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC151>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC144>))
+Declaration(Class(<http://www.opentox.org/api/1.1#ConfusionMatrix>))
+Declaration(Class(<http://www.opentox.org/api/1.1#ChemicalName>))
+Declaration(Class(<http://www.opentox.org/api/1.1#Conformer>))
+Declaration(Class(<http://www.opentox.org/api/1.1#DataType>))
+Declaration(Class(<http://www.opentox.org/api/1.1#FeatureValueNumeric>))
+Declaration(Class(<http://www.opentox.org/api/1.1#FeatureValueString>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC107>))
+Declaration(Class(<http://www.opentox.org/api/1.1#ClassificationStatistics>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC75>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC99>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC116>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC112>))
+Declaration(Class(<http://www.opentox.org/api/1.1#NumericDataset>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC122>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC127>))
+Declaration(Class(<http://www.opentox.org/api/1.1#DataEntryNumeric>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC153>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC146>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC27>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC133>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC141>))
+Declaration(Class(<http://www.opentox.org/api/1.1#RegressionStatistics>))
+Declaration(Class(<http://www.opentox.org/api/1.1#SMILES>))
+Declaration(Class(<http://www.opentox.org/api/1.1#NumericAlgorithm>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC154>))
+Declaration(Class(<http://www.opentox.org/api/1.1#Algorithm>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC109>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC43>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC119>))
+Declaration(Class(<http://www.opentox.org/api/1.1#Model>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC130>))
+Declaration(Class(<http://www.opentox.org/api/1.1#Feature>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC160>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC159>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC147>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC171>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC124>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC45>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC111>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC93>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC139>))
+Declaration(Class(<http://www.opentox.org/api/1.1#Tuple>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC126>))
+Declaration(Class(<http://www.opentox.org/api/1.1#DataEntry>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC156>))
+Declaration(Class(<http://www.opentox.org/api/1.1#FeatureValueNominal>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC140>))
+Declaration(Class(<http://www.opentox.org/api/1.1#Nominal>))
+Declaration(Class(<http://www.opentox.org/api/1.1#EmptyDataset>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC161>))
+Declaration(Class(<http://www.opentox.org/api/1.1#Report>))
+Declaration(Class(<http://www.opentox.org/api/1.1#Identifier>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC35>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC108>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC125>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC149>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC136>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC117>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC87>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC113>))
+Declaration(Class(<http://www.opentox.org/api/1.1#InChI>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC95>))
+Declaration(Class(<http://www.opentox.org/api/1.1#CASRN>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC101>))
+Declaration(Class(<http://www.opentox.org/api/1.1#NominalFeature>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC128>))
+Declaration(Class(<http://www.opentox.org/api/1.1#FeatureValuePair>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC168>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC155>))
+Declaration(Class(<http://www.opentox.org/api/1.1#Dataset>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC37>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC150>))
+Declaration(Class(<http://www.opentox.org/api/1.1#OpentoxResource>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC120>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC65>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC53>))
+Declaration(Class(<http://www.opentox.org/api/1.1#IUPACName>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC106>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC148>))
+Declaration(Class(<http://www.opentox.org/api/1.1#NumericFeature>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-5>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#trainingDataset>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#numTrueNegatives>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#confusionMatrix>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#truePositiveRate>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#yScramblingInfo>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#hasValidationInfo>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#randomSeed>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#numWithoutClass>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#percentCorrect>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#validationTestDataset>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#confusionMatrixActual>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#classValueStatistics>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#percentUnpredicted>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#independentVariables>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#confusionMatrixPredicted>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#predictedFeature>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#values>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#rootMeanSquaredError>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#validation>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#confusionMatrixValue>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#yScramblingSeed>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#value>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#precision>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#percentIncorrect>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#hasSource>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#percentWithoutClass>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#crossvalidationDataset>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#validationCrossvalidation>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#predictedVariables>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#numFalseNegatives>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#hasInput>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#falsePositiveRate>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#hasStatus>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#paramValue>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#complexValue>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#yScramblingEnabled>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#feature>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#meanAbsolutError>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#crossValidationInfo>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#numInstances>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#has3Dstructure>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#unscrambledDatasetURI>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#fold>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#validationPredictionDataset>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#classificationStatistics>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#areaUnderROC>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#acceptValue>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#fMeasure>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#confusionMatrixEntry>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#recall>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#stratified>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#validationTrainingDataset>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#numCorrect>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#parameters>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#numUnpredicted>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#falseNegativeRate>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#realRuntime>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#numFalsePositives>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#conformer>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#algorithm>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#classValue>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#validationReport>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#paramScope>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#numIncorrect>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#trueNegativeRate>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#resultURI>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#crossvalidationAlgorithm>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#numTruePositives>))
+Declaration(ObjectProperty(<https://smolang.org/rdfMutate#newNode-4>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#regressionStatistics>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#report>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#validationModel>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#hasOutput>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#rSquare>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#percentageCompleted>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#compound>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#dataEntry>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#model>))
+Declaration(ObjectProperty(<http://www.opentox.org/api/1.1#numFolds>))
+Declaration(NamedIndividual(owl:Class))
+Declaration(NamedIndividual(<http://www.opentox.org/api/1.1#trainingDataset>))
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://www.opentox.org/api/1.1#algorithm> (<http://www.opentox.org/api/1.1#algorithm>)
+
+SubObjectPropertyOf(<http://www.opentox.org/api/1.1#algorithm> <http://www.opentox.org/api/1.1#model>)
+
+# Object Property: <http://www.opentox.org/api/1.1#classValue> (<http://www.opentox.org/api/1.1#classValue>)
+
+SubObjectPropertyOf(<http://www.opentox.org/api/1.1#classValue> <http://www.opentox.org/api/1.1#classValueStatistics>)
+
+# Object Property: <http://www.opentox.org/api/1.1#confusionMatrixActual> (<http://www.opentox.org/api/1.1#confusionMatrixActual>)
+
+SubObjectPropertyOf(<http://www.opentox.org/api/1.1#confusionMatrixActual> <http://www.opentox.org/api/1.1#confusionMatrixEntry>)
+
+# Object Property: <http://www.opentox.org/api/1.1#confusionMatrixEntry> (<http://www.opentox.org/api/1.1#confusionMatrixEntry>)
+
+SubObjectPropertyOf(<http://www.opentox.org/api/1.1#confusionMatrixEntry> <http://www.opentox.org/api/1.1#confusionMatrix>)
+
+# Object Property: <http://www.opentox.org/api/1.1#confusionMatrixPredicted> (<http://www.opentox.org/api/1.1#confusionMatrixPredicted>)
+
+SubObjectPropertyOf(<http://www.opentox.org/api/1.1#confusionMatrixPredicted> <http://www.opentox.org/api/1.1#confusionMatrixEntry>)
+
+# Object Property: <http://www.opentox.org/api/1.1#fold> (<http://www.opentox.org/api/1.1#fold>)
+
+SubObjectPropertyOf(<http://www.opentox.org/api/1.1#fold> <http://www.opentox.org/api/1.1#crossValidationInfo>)
+
+# Object Property: <http://www.opentox.org/api/1.1#hasValidationInfo> (<http://www.opentox.org/api/1.1#hasValidationInfo>)
+
+SubObjectPropertyOf(<http://www.opentox.org/api/1.1#hasValidationInfo> <http://www.opentox.org/api/1.1#validation>)
+
+# Object Property: <http://www.opentox.org/api/1.1#independentVariables> (<http://www.opentox.org/api/1.1#independentVariables>)
+
+SubObjectPropertyOf(<http://www.opentox.org/api/1.1#independentVariables> <http://www.opentox.org/api/1.1#model>)
+
+# Object Property: <http://www.opentox.org/api/1.1#meanAbsolutError> (<http://www.opentox.org/api/1.1#meanAbsolutError>)
+
+SubObjectPropertyOf(<http://www.opentox.org/api/1.1#meanAbsolutError> <http://www.opentox.org/api/1.1#regressionStatistics>)
+
+# Object Property: <http://www.opentox.org/api/1.1#numCorrect> (<http://www.opentox.org/api/1.1#numCorrect>)
+
+SubObjectPropertyOf(<http://www.opentox.org/api/1.1#numCorrect> <http://www.opentox.org/api/1.1#classificationStatistics>)
+
+# Object Property: <http://www.opentox.org/api/1.1#numIncorrect> (<http://www.opentox.org/api/1.1#numIncorrect>)
+
+SubObjectPropertyOf(<http://www.opentox.org/api/1.1#numIncorrect> <http://www.opentox.org/api/1.1#classificationStatistics>)
+
+# Object Property: <http://www.opentox.org/api/1.1#parameters> (<http://www.opentox.org/api/1.1#parameters>)
+
+SubObjectPropertyOf(<http://www.opentox.org/api/1.1#parameters> <http://www.opentox.org/api/1.1#model>)
+
+# Object Property: <http://www.opentox.org/api/1.1#percentCorrect> (<http://www.opentox.org/api/1.1#percentCorrect>)
+
+SubObjectPropertyOf(<http://www.opentox.org/api/1.1#percentCorrect> <http://www.opentox.org/api/1.1#classificationStatistics>)
+
+# Object Property: <http://www.opentox.org/api/1.1#percentIncorrect> (<http://www.opentox.org/api/1.1#percentIncorrect>)
+
+SubObjectPropertyOf(<http://www.opentox.org/api/1.1#percentIncorrect> <http://www.opentox.org/api/1.1#classificationStatistics>)
+
+# Object Property: <http://www.opentox.org/api/1.1#percentageCompleted> (<http://www.opentox.org/api/1.1#percentageCompleted>)
+
+SubObjectPropertyOf(<http://www.opentox.org/api/1.1#percentageCompleted> <http://www.opentox.org/api/1.1#classificationStatistics>)
+
+# Object Property: <http://www.opentox.org/api/1.1#predictedFeature> (<http://www.opentox.org/api/1.1#predictedFeature>)
+
+SubObjectPropertyOf(<http://www.opentox.org/api/1.1#predictedFeature> <http://www.opentox.org/api/1.1#validation>)
+
+# Object Property: <http://www.opentox.org/api/1.1#predictedVariables> (<http://www.opentox.org/api/1.1#predictedVariables>)
+
+SubObjectPropertyOf(<http://www.opentox.org/api/1.1#predictedVariables> <http://www.opentox.org/api/1.1#model>)
+
+# Object Property: <http://www.opentox.org/api/1.1#rSquare> (<http://www.opentox.org/api/1.1#rSquare>)
+
+SubObjectPropertyOf(<http://www.opentox.org/api/1.1#rSquare> <http://www.opentox.org/api/1.1#regressionStatistics>)
+
+# Object Property: <http://www.opentox.org/api/1.1#rootMeanSquaredError> (<http://www.opentox.org/api/1.1#rootMeanSquaredError>)
+
+SubObjectPropertyOf(<http://www.opentox.org/api/1.1#rootMeanSquaredError> <http://www.opentox.org/api/1.1#regressionStatistics>)
+
+# Object Property: <http://www.opentox.org/api/1.1#trainingDataset> (<http://www.opentox.org/api/1.1#trainingDataset>)
+
+SubObjectPropertyOf(<http://www.opentox.org/api/1.1#trainingDataset> <http://www.opentox.org/api/1.1#model>)
+
+# Object Property: <http://www.opentox.org/api/1.1#unscrambledDatasetURI> (<http://www.opentox.org/api/1.1#unscrambledDatasetURI>)
+
+SubObjectPropertyOf(<http://www.opentox.org/api/1.1#unscrambledDatasetURI> <http://www.opentox.org/api/1.1#validation>)
+
+# Object Property: <http://www.opentox.org/api/1.1#validationModel> (<http://www.opentox.org/api/1.1#validationModel>)
+
+SubObjectPropertyOf(<http://www.opentox.org/api/1.1#validationModel> <http://www.opentox.org/api/1.1#validation>)
+
+# Object Property: <http://www.opentox.org/api/1.1#validationPredictionDataset> (<http://www.opentox.org/api/1.1#validationPredictionDataset>)
+
+SubObjectPropertyOf(<http://www.opentox.org/api/1.1#validationPredictionDataset> <http://www.opentox.org/api/1.1#validation>)
+
+# Object Property: <http://www.opentox.org/api/1.1#validationReport> (<http://www.opentox.org/api/1.1#validationReport>)
+
+SubObjectPropertyOf(<http://www.opentox.org/api/1.1#validationReport> <http://www.opentox.org/api/1.1#report>)
+
+# Object Property: <http://www.opentox.org/api/1.1#validationTestDataset> (<http://www.opentox.org/api/1.1#validationTestDataset>)
+
+SubObjectPropertyOf(<http://www.opentox.org/api/1.1#validationTestDataset> <http://www.opentox.org/api/1.1#validation>)
+
+# Object Property: <http://www.opentox.org/api/1.1#validationTrainingDataset> (<http://www.opentox.org/api/1.1#validationTrainingDataset>)
+
+SubObjectPropertyOf(<http://www.opentox.org/api/1.1#validationTrainingDataset> <http://www.opentox.org/api/1.1#validation>)
+
+# Object Property: <http://www.opentox.org/api/1.1#yScramblingEnabled> (<http://www.opentox.org/api/1.1#yScramblingEnabled>)
+
+SubObjectPropertyOf(<http://www.opentox.org/api/1.1#yScramblingEnabled> <http://www.opentox.org/api/1.1#yScramblingInfo>)
+
+# Object Property: <http://www.opentox.org/api/1.1#yScramblingSeed> (<http://www.opentox.org/api/1.1#yScramblingSeed>)
+
+SubObjectPropertyOf(<http://www.opentox.org/api/1.1#yScramblingSeed> <http://www.opentox.org/api/1.1#yScramblingInfo>)
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC100> (<http://www.absoluteiri.edu/RELAPPROXC100>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC100> <http://www.opentox.org/api/1.1#Dataset>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC100> ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#dataEntry> owl:Thing))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC101> (<http://www.absoluteiri.edu/RELAPPROXC101>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC101> <http://www.absoluteiri.edu/RELAPPROXC111>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC101> <http://www.absoluteiri.edu/RELAPPROXC96>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC109> (<http://www.absoluteiri.edu/RELAPPROXC109>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC109> <http://www.absoluteiri.edu/RELAPPROXC79>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC109> <http://www.absoluteiri.edu/RELAPPROXC9>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC110> (<http://www.absoluteiri.edu/RELAPPROXC110>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC110> <http://www.absoluteiri.edu/RELAPPROXC102>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC113> (<http://www.absoluteiri.edu/RELAPPROXC113>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC113> <http://www.absoluteiri.edu/RELAPPROXC5>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC113> <http://www.absoluteiri.edu/RELAPPROXC9>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC117> (<http://www.absoluteiri.edu/RELAPPROXC117>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC117> ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#feature> <http://www.absoluteiri.edu/RELAPPROXC45>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC119> (<http://www.absoluteiri.edu/RELAPPROXC119>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC119> ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#feature> <http://www.absoluteiri.edu/RELAPPROXC55>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC123> (<http://www.absoluteiri.edu/RELAPPROXC123>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC123> ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#feature> <http://www.absoluteiri.edu/RELAPPROXC35>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC125> (<http://www.absoluteiri.edu/RELAPPROXC125>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC125> ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#hasOutput> <http://www.absoluteiri.edu/RELAPPROXC65>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC127> (<http://www.absoluteiri.edu/RELAPPROXC127>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC127> ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#values> <http://www.absoluteiri.edu/RELAPPROXC37>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC129> (<http://www.absoluteiri.edu/RELAPPROXC129>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC129> ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#complexValue> <http://www.absoluteiri.edu/RELAPPROXC31>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC136> (<http://www.absoluteiri.edu/RELAPPROXC136>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC136> <http://www.absoluteiri.edu/RELAPPROXC130>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC137> (<http://www.absoluteiri.edu/RELAPPROXC137>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC137> ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#value> <http://www.absoluteiri.edu/RELAPPROXC133>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC138> (<http://www.absoluteiri.edu/RELAPPROXC138>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC138> <http://www.absoluteiri.edu/RELAPPROXC130>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC139> (<http://www.absoluteiri.edu/RELAPPROXC139>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC139> ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#value> <http://www.absoluteiri.edu/RELAPPROXC111>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC141> (<http://www.absoluteiri.edu/RELAPPROXC141>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC141> ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#hasOutput> <http://www.absoluteiri.edu/RELAPPROXC5>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC147> (<http://www.absoluteiri.edu/RELAPPROXC147>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC147> ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#algorithm> <http://www.absoluteiri.edu/RELAPPROXC87>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC149> (<http://www.absoluteiri.edu/RELAPPROXC149>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC149> ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#dataEntry> <http://www.absoluteiri.edu/RELAPPROXC43>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC157> (<http://www.absoluteiri.edu/RELAPPROXC157>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC157> ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#value> <http://www.absoluteiri.edu/RELAPPROXC102>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC168> (<http://www.absoluteiri.edu/RELAPPROXC168>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC168> <http://www.absoluteiri.edu/RELAPPROXC5>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC168> <http://www.absoluteiri.edu/RELAPPROXC79>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC168> <http://www.absoluteiri.edu/RELAPPROXC9>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC171> (<http://www.absoluteiri.edu/RELAPPROXC171>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC171> ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#trainingDataset> <http://www.absoluteiri.edu/RELAPPROXC65>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC95> (<http://www.absoluteiri.edu/RELAPPROXC95>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC95> <http://www.absoluteiri.edu/RELAPPROXC102>)
+
+# Class: <http://www.opentox.org/api/1.1#Algorithm> (<http://www.opentox.org/api/1.1#Algorithm>)
+
+SubClassOf(<http://www.opentox.org/api/1.1#Algorithm> <http://www.absoluteiri.edu/RELAPPROXC108>)
+SubClassOf(<http://www.opentox.org/api/1.1#Algorithm> <http://www.absoluteiri.edu/RELAPPROXC27>)
+SubClassOf(<http://www.opentox.org/api/1.1#Algorithm> <http://www.absoluteiri.edu/RELAPPROXC41>)
+SubClassOf(<http://www.opentox.org/api/1.1#Algorithm> <http://www.absoluteiri.edu/RELAPPROXC5>)
+SubClassOf(<http://www.opentox.org/api/1.1#Algorithm> <http://www.absoluteiri.edu/RELAPPROXC53>)
+SubClassOf(<http://www.opentox.org/api/1.1#Algorithm> <http://www.absoluteiri.edu/RELAPPROXC75>)
+SubClassOf(<http://www.opentox.org/api/1.1#Algorithm> <http://www.absoluteiri.edu/RELAPPROXC9>)
+SubClassOf(<http://www.opentox.org/api/1.1#Algorithm> <http://www.opentox.org/api/1.1#OpentoxResource>)
+
+# Class: <http://www.opentox.org/api/1.1#CASRN> (<http://www.opentox.org/api/1.1#CASRN>)
+
+SubClassOf(<http://www.opentox.org/api/1.1#CASRN> <http://www.opentox.org/api/1.1#Identifier>)
+
+# Class: <http://www.opentox.org/api/1.1#ChemicalName> (<http://www.opentox.org/api/1.1#ChemicalName>)
+
+SubClassOf(<http://www.opentox.org/api/1.1#ChemicalName> <http://www.opentox.org/api/1.1#Identifier>)
+
+# Class: <http://www.opentox.org/api/1.1#ClassValueStatistics> (<http://www.opentox.org/api/1.1#ClassValueStatistics>)
+
+SubClassOf(<http://www.opentox.org/api/1.1#ClassValueStatistics> <http://www.opentox.org/api/1.1#ClassificationStatistics>)
+
+# Class: <http://www.opentox.org/api/1.1#ClassificationStatistics> (<http://www.opentox.org/api/1.1#ClassificationStatistics>)
+
+SubClassOf(<http://www.opentox.org/api/1.1#ClassificationStatistics> <http://www.opentox.org/api/1.1#ValidationInfo>)
+
+# Class: <http://www.opentox.org/api/1.1#Compound> (<http://www.opentox.org/api/1.1#Compound>)
+
+SubClassOf(<http://www.opentox.org/api/1.1#Compound> <http://www.absoluteiri.edu/RELAPPROXC41>)
+SubClassOf(<http://www.opentox.org/api/1.1#Compound> <http://www.absoluteiri.edu/RELAPPROXC5>)
+SubClassOf(<http://www.opentox.org/api/1.1#Compound> <http://www.absoluteiri.edu/RELAPPROXC53>)
+SubClassOf(<http://www.opentox.org/api/1.1#Compound> <http://www.absoluteiri.edu/RELAPPROXC75>)
+SubClassOf(<http://www.opentox.org/api/1.1#Compound> <http://www.absoluteiri.edu/RELAPPROXC79>)
+SubClassOf(<http://www.opentox.org/api/1.1#Compound> <http://www.absoluteiri.edu/RELAPPROXC9>)
+SubClassOf(<http://www.opentox.org/api/1.1#Compound> <http://www.opentox.org/api/1.1#OpentoxResource>)
+
+# Class: <http://www.opentox.org/api/1.1#Conformer> (<http://www.opentox.org/api/1.1#Conformer>)
+
+SubClassOf(<http://www.opentox.org/api/1.1#Conformer> <http://www.opentox.org/api/1.1#Compound>)
+
+# Class: <http://www.opentox.org/api/1.1#ConfusionMatrix> (<http://www.opentox.org/api/1.1#ConfusionMatrix>)
+
+SubClassOf(<http://www.opentox.org/api/1.1#ConfusionMatrix> <http://www.opentox.org/api/1.1#ClassificationStatistics>)
+
+# Class: <http://www.opentox.org/api/1.1#ConfusionMatrixCell> (<http://www.opentox.org/api/1.1#ConfusionMatrixCell>)
+
+SubClassOf(<http://www.opentox.org/api/1.1#ConfusionMatrixCell> <http://www.opentox.org/api/1.1#ConfusionMatrix>)
+
+# Class: <http://www.opentox.org/api/1.1#CrossValidationInfo> (<http://www.opentox.org/api/1.1#CrossValidationInfo>)
+
+SubClassOf(<http://www.opentox.org/api/1.1#CrossValidationInfo> <http://www.opentox.org/api/1.1#ValidationInfo>)
+
+# Class: <http://www.opentox.org/api/1.1#Crossvalidation> (<http://www.opentox.org/api/1.1#Crossvalidation>)
+
+SubClassOf(<http://www.opentox.org/api/1.1#Crossvalidation> <http://www.opentox.org/api/1.1#OpentoxResource>)
+
+# Class: <http://www.opentox.org/api/1.1#DataEntry> (<http://www.opentox.org/api/1.1#DataEntry>)
+
+SubClassOf(<http://www.opentox.org/api/1.1#DataEntry> <http://www.absoluteiri.edu/RELAPPROXC27>)
+SubClassOf(<http://www.opentox.org/api/1.1#DataEntry> <http://www.absoluteiri.edu/RELAPPROXC5>)
+SubClassOf(<http://www.opentox.org/api/1.1#DataEntry> <http://www.absoluteiri.edu/RELAPPROXC53>)
+SubClassOf(<http://www.opentox.org/api/1.1#DataEntry> <http://www.absoluteiri.edu/RELAPPROXC75>)
+SubClassOf(<http://www.opentox.org/api/1.1#DataEntry> <http://www.absoluteiri.edu/RELAPPROXC79>)
+SubClassOf(<http://www.opentox.org/api/1.1#DataEntry> <http://www.absoluteiri.edu/RELAPPROXC9>)
+SubClassOf(<http://www.opentox.org/api/1.1#DataEntry> <http://www.opentox.org/api/1.1#OpentoxResource>)
+
+# Class: <http://www.opentox.org/api/1.1#DataEntryNumeric> (<http://www.opentox.org/api/1.1#DataEntryNumeric>)
+
+SubClassOf(<http://www.opentox.org/api/1.1#DataEntryNumeric> <http://www.absoluteiri.edu/RELAPPROXC126>)
+SubClassOf(<http://www.opentox.org/api/1.1#DataEntryNumeric> <http://www.opentox.org/api/1.1#DataEntry>)
+
+# Class: <http://www.opentox.org/api/1.1#DataType> (<http://www.opentox.org/api/1.1#DataType>)
+
+SubClassOf(<http://www.opentox.org/api/1.1#DataType> <http://www.opentox.org/api/1.1#OpentoxResource>)
+
+# Class: <http://www.opentox.org/api/1.1#Dataset> (<http://www.opentox.org/api/1.1#Dataset>)
+
+SubClassOf(<http://www.opentox.org/api/1.1#Dataset> <http://www.absoluteiri.edu/RELAPPROXC112>)
+SubClassOf(<http://www.opentox.org/api/1.1#Dataset> <http://www.absoluteiri.edu/RELAPPROXC27>)
+SubClassOf(<http://www.opentox.org/api/1.1#Dataset> <http://www.absoluteiri.edu/RELAPPROXC41>)
+SubClassOf(<http://www.opentox.org/api/1.1#Dataset> <http://www.absoluteiri.edu/RELAPPROXC53>)
+SubClassOf(<http://www.opentox.org/api/1.1#Dataset> <http://www.absoluteiri.edu/RELAPPROXC75>)
+SubClassOf(<http://www.opentox.org/api/1.1#Dataset> <http://www.absoluteiri.edu/RELAPPROXC79>)
+SubClassOf(<http://www.opentox.org/api/1.1#Dataset> <http://www.absoluteiri.edu/RELAPPROXC9>)
+SubClassOf(<http://www.opentox.org/api/1.1#Dataset> <http://www.opentox.org/api/1.1#OpentoxResource>)
+
+# Class: <http://www.opentox.org/api/1.1#EmptyDataset> (<http://www.opentox.org/api/1.1#EmptyDataset>)
+
+SubClassOf(<http://www.opentox.org/api/1.1#EmptyDataset> <http://www.absoluteiri.edu/RELAPPROXC99>)
+SubClassOf(<http://www.opentox.org/api/1.1#EmptyDataset> <http://www.opentox.org/api/1.1#Dataset>)
+
+# Class: <http://www.opentox.org/api/1.1#Feature> (<http://www.opentox.org/api/1.1#Feature>)
+
+SubClassOf(<http://www.opentox.org/api/1.1#Feature> <http://www.absoluteiri.edu/RELAPPROXC27>)
+SubClassOf(<http://www.opentox.org/api/1.1#Feature> <http://www.absoluteiri.edu/RELAPPROXC41>)
+SubClassOf(<http://www.opentox.org/api/1.1#Feature> <http://www.absoluteiri.edu/RELAPPROXC5>)
+SubClassOf(<http://www.opentox.org/api/1.1#Feature> <http://www.absoluteiri.edu/RELAPPROXC53>)
+SubClassOf(<http://www.opentox.org/api/1.1#Feature> <http://www.absoluteiri.edu/RELAPPROXC75>)
+SubClassOf(<http://www.opentox.org/api/1.1#Feature> <http://www.absoluteiri.edu/RELAPPROXC79>)
+SubClassOf(<http://www.opentox.org/api/1.1#Feature> <http://www.absoluteiri.edu/RELAPPROXC9>)
+SubClassOf(<http://www.opentox.org/api/1.1#Feature> <http://www.opentox.org/api/1.1#OpentoxResource>)
+
+# Class: <http://www.opentox.org/api/1.1#FeatureValue> (<http://www.opentox.org/api/1.1#FeatureValue>)
+
+SubClassOf(<http://www.opentox.org/api/1.1#FeatureValue> <http://www.absoluteiri.edu/RELAPPROXC93>)
+SubClassOf(<http://www.opentox.org/api/1.1#FeatureValue> <http://www.opentox.org/api/1.1#FeatureValuePair>)
+
+# Class: <http://www.opentox.org/api/1.1#FeatureValueNominal> (<http://www.opentox.org/api/1.1#FeatureValueNominal>)
+
+SubClassOf(<http://www.opentox.org/api/1.1#FeatureValueNominal> <http://www.absoluteiri.edu/RELAPPROXC122>)
+SubClassOf(<http://www.opentox.org/api/1.1#FeatureValueNominal> <http://www.opentox.org/api/1.1#FeatureValueString>)
+
+# Class: <http://www.opentox.org/api/1.1#FeatureValueNumeric> (<http://www.opentox.org/api/1.1#FeatureValueNumeric>)
+
+SubClassOf(<http://www.opentox.org/api/1.1#FeatureValueNumeric> <http://www.absoluteiri.edu/RELAPPROXC118>)
+SubClassOf(<http://www.opentox.org/api/1.1#FeatureValueNumeric> <http://www.absoluteiri.edu/RELAPPROXC130>)
+SubClassOf(<http://www.opentox.org/api/1.1#FeatureValueNumeric> <http://www.opentox.org/api/1.1#FeatureValue>)
+
+# Class: <http://www.opentox.org/api/1.1#FeatureValuePair> (<http://www.opentox.org/api/1.1#FeatureValuePair>)
+
+SubClassOf(<http://www.opentox.org/api/1.1#FeatureValuePair> <http://www.absoluteiri.edu/RELAPPROXC27>)
+SubClassOf(<http://www.opentox.org/api/1.1#FeatureValuePair> <http://www.absoluteiri.edu/RELAPPROXC41>)
+SubClassOf(<http://www.opentox.org/api/1.1#FeatureValuePair> <http://www.absoluteiri.edu/RELAPPROXC5>)
+SubClassOf(<http://www.opentox.org/api/1.1#FeatureValuePair> <http://www.absoluteiri.edu/RELAPPROXC75>)
+SubClassOf(<http://www.opentox.org/api/1.1#FeatureValuePair> <http://www.absoluteiri.edu/RELAPPROXC79>)
+SubClassOf(<http://www.opentox.org/api/1.1#FeatureValuePair> <http://www.absoluteiri.edu/RELAPPROXC9>)
+SubClassOf(<http://www.opentox.org/api/1.1#FeatureValuePair> <http://www.opentox.org/api/1.1#OpentoxResource>)
+
+# Class: <http://www.opentox.org/api/1.1#FeatureValueString> (<http://www.opentox.org/api/1.1#FeatureValueString>)
+
+SubClassOf(<http://www.opentox.org/api/1.1#FeatureValueString> <http://www.absoluteiri.edu/RELAPPROXC116>)
+SubClassOf(<http://www.opentox.org/api/1.1#FeatureValueString> <http://www.absoluteiri.edu/RELAPPROXC156>)
+SubClassOf(<http://www.opentox.org/api/1.1#FeatureValueString> <http://www.opentox.org/api/1.1#FeatureValue>)
+
+# Class: <http://www.opentox.org/api/1.1#IUPACName> (<http://www.opentox.org/api/1.1#IUPACName>)
+
+SubClassOf(<http://www.opentox.org/api/1.1#IUPACName> <http://www.opentox.org/api/1.1#ChemicalName>)
+
+# Class: <http://www.opentox.org/api/1.1#Identifier> (<http://www.opentox.org/api/1.1#Identifier>)
+
+SubClassOf(<http://www.opentox.org/api/1.1#Identifier> <http://www.opentox.org/api/1.1#StringFeature>)
+
+# Class: <http://www.opentox.org/api/1.1#InChI> (<http://www.opentox.org/api/1.1#InChI>)
+
+SubClassOf(<http://www.opentox.org/api/1.1#InChI> <http://www.opentox.org/api/1.1#Identifier>)
+
+# Class: <http://www.opentox.org/api/1.1#Model> (<http://www.opentox.org/api/1.1#Model>)
+
+SubClassOf(<http://www.opentox.org/api/1.1#Model> <http://www.absoluteiri.edu/RELAPPROXC108>)
+SubClassOf(<http://www.opentox.org/api/1.1#Model> <http://www.absoluteiri.edu/RELAPPROXC112>)
+SubClassOf(<http://www.opentox.org/api/1.1#Model> <http://www.absoluteiri.edu/RELAPPROXC140>)
+SubClassOf(<http://www.opentox.org/api/1.1#Model> <http://www.absoluteiri.edu/RELAPPROXC27>)
+SubClassOf(<http://www.opentox.org/api/1.1#Model> <http://www.absoluteiri.edu/RELAPPROXC41>)
+SubClassOf(<http://www.opentox.org/api/1.1#Model> <http://www.absoluteiri.edu/RELAPPROXC5>)
+SubClassOf(<http://www.opentox.org/api/1.1#Model> <http://www.absoluteiri.edu/RELAPPROXC53>)
+SubClassOf(<http://www.opentox.org/api/1.1#Model> <http://www.absoluteiri.edu/RELAPPROXC75>)
+SubClassOf(<http://www.opentox.org/api/1.1#Model> <http://www.absoluteiri.edu/RELAPPROXC79>)
+SubClassOf(<http://www.opentox.org/api/1.1#Model> <http://www.opentox.org/api/1.1#OpentoxResource>)
+
+# Class: <http://www.opentox.org/api/1.1#MolecularFormula> (<http://www.opentox.org/api/1.1#MolecularFormula>)
+
+SubClassOf(<http://www.opentox.org/api/1.1#MolecularFormula> <http://www.opentox.org/api/1.1#Identifier>)
+
+# Class: <http://www.opentox.org/api/1.1#Nominal> (<http://www.opentox.org/api/1.1#Nominal>)
+
+SubClassOf(<http://www.opentox.org/api/1.1#Nominal> <http://www.opentox.org/api/1.1#DataType>)
+
+# Class: <http://www.opentox.org/api/1.1#NominalFeature> (<http://www.opentox.org/api/1.1#NominalFeature>)
+
+SubClassOf(<http://www.opentox.org/api/1.1#NominalFeature> <http://www.opentox.org/api/1.1#Feature>)
+SubClassOf(<http://www.opentox.org/api/1.1#NominalFeature> <http://www.opentox.org/api/1.1#Nominal>)
+
+# Class: <http://www.opentox.org/api/1.1#Numeric> (<http://www.opentox.org/api/1.1#Numeric>)
+
+SubClassOf(<http://www.opentox.org/api/1.1#Numeric> <http://www.opentox.org/api/1.1#DataType>)
+
+# Class: <http://www.opentox.org/api/1.1#NumericAlgorithm> (<http://www.opentox.org/api/1.1#NumericAlgorithm>)
+
+SubClassOf(<http://www.opentox.org/api/1.1#NumericAlgorithm> <http://www.opentox.org/api/1.1#Algorithm>)
+
+# Class: <http://www.opentox.org/api/1.1#NumericDataset> (<http://www.opentox.org/api/1.1#NumericDataset>)
+
+SubClassOf(<http://www.opentox.org/api/1.1#NumericDataset> <http://www.absoluteiri.edu/RELAPPROXC148>)
+SubClassOf(<http://www.opentox.org/api/1.1#NumericDataset> <http://www.opentox.org/api/1.1#Dataset>)
+
+# Class: <http://www.opentox.org/api/1.1#NumericFeature> (<http://www.opentox.org/api/1.1#NumericFeature>)
+
+SubClassOf(<http://www.opentox.org/api/1.1#NumericFeature> <http://www.opentox.org/api/1.1#Feature>)
+SubClassOf(<http://www.opentox.org/api/1.1#NumericFeature> <http://www.opentox.org/api/1.1#Numeric>)
+
+# Class: <http://www.opentox.org/api/1.1#NumericModel> (<http://www.opentox.org/api/1.1#NumericModel>)
+
+SubClassOf(<http://www.opentox.org/api/1.1#NumericModel> <http://www.absoluteiri.edu/RELAPPROXC124>)
+SubClassOf(<http://www.opentox.org/api/1.1#NumericModel> <http://www.absoluteiri.edu/RELAPPROXC146>)
+SubClassOf(<http://www.opentox.org/api/1.1#NumericModel> <http://www.absoluteiri.edu/RELAPPROXC170>)
+SubClassOf(<http://www.opentox.org/api/1.1#NumericModel> <http://www.opentox.org/api/1.1#Model>)
+
+# Class: <http://www.opentox.org/api/1.1#Parameter> (<http://www.opentox.org/api/1.1#Parameter>)
+
+SubClassOf(<http://www.opentox.org/api/1.1#Parameter> <http://www.absoluteiri.edu/RELAPPROXC27>)
+SubClassOf(<http://www.opentox.org/api/1.1#Parameter> <http://www.absoluteiri.edu/RELAPPROXC41>)
+SubClassOf(<http://www.opentox.org/api/1.1#Parameter> <http://www.absoluteiri.edu/RELAPPROXC5>)
+SubClassOf(<http://www.opentox.org/api/1.1#Parameter> <http://www.absoluteiri.edu/RELAPPROXC53>)
+SubClassOf(<http://www.opentox.org/api/1.1#Parameter> <http://www.absoluteiri.edu/RELAPPROXC79>)
+SubClassOf(<http://www.opentox.org/api/1.1#Parameter> <http://www.absoluteiri.edu/RELAPPROXC9>)
+SubClassOf(<http://www.opentox.org/api/1.1#Parameter> <http://www.opentox.org/api/1.1#OpentoxResource>)
+
+# Class: <http://www.opentox.org/api/1.1#RegressionStatistics> (<http://www.opentox.org/api/1.1#RegressionStatistics>)
+
+SubClassOf(<http://www.opentox.org/api/1.1#RegressionStatistics> <http://www.opentox.org/api/1.1#ValidationInfo>)
+
+# Class: <http://www.opentox.org/api/1.1#Report> (<http://www.opentox.org/api/1.1#Report>)
+
+SubClassOf(<http://www.opentox.org/api/1.1#Report> <http://www.opentox.org/api/1.1#OpentoxResource>)
+
+# Class: <http://www.opentox.org/api/1.1#SMILES> (<http://www.opentox.org/api/1.1#SMILES>)
+
+SubClassOf(<http://www.opentox.org/api/1.1#SMILES> <http://www.opentox.org/api/1.1#Identifier>)
+
+# Class: <http://www.opentox.org/api/1.1#String> (<http://www.opentox.org/api/1.1#String>)
+
+SubClassOf(<http://www.opentox.org/api/1.1#String> <http://www.opentox.org/api/1.1#DataType>)
+
+# Class: <http://www.opentox.org/api/1.1#StringFeature> (<http://www.opentox.org/api/1.1#StringFeature>)
+
+SubClassOf(<http://www.opentox.org/api/1.1#StringFeature> <http://www.opentox.org/api/1.1#Feature>)
+SubClassOf(<http://www.opentox.org/api/1.1#StringFeature> <http://www.opentox.org/api/1.1#String>)
+
+# Class: <http://www.opentox.org/api/1.1#Task> (<http://www.opentox.org/api/1.1#Task>)
+
+SubClassOf(<http://www.opentox.org/api/1.1#Task> <http://www.opentox.org/api/1.1#OpentoxResource>)
+
+# Class: <http://www.opentox.org/api/1.1#Tuple> (<http://www.opentox.org/api/1.1#Tuple>)
+
+SubClassOf(<http://www.opentox.org/api/1.1#Tuple> <http://www.absoluteiri.edu/RELAPPROXC128>)
+SubClassOf(<http://www.opentox.org/api/1.1#Tuple> <http://www.absoluteiri.edu/RELAPPROXC31>)
+SubClassOf(<http://www.opentox.org/api/1.1#Tuple> <http://www.opentox.org/api/1.1#FeatureValuePair>)
+
+# Class: <http://www.opentox.org/api/1.1#Validation> (<http://www.opentox.org/api/1.1#Validation>)
+
+SubClassOf(<http://www.opentox.org/api/1.1#Validation> <http://www.opentox.org/api/1.1#OpentoxResource>)
+
+# Class: <http://www.opentox.org/api/1.1#ValidationInfo> (<http://www.opentox.org/api/1.1#ValidationInfo>)
+
+SubClassOf(<http://www.opentox.org/api/1.1#ValidationInfo> <http://www.opentox.org/api/1.1#Validation>)
+
+# Class: <http://www.opentox.org/api/1.1#YScrambling> (<http://www.opentox.org/api/1.1#YScrambling>)
+
+SubClassOf(<http://www.opentox.org/api/1.1#YScrambling> <http://www.opentox.org/api/1.1#ValidationInfo>)
+
+# Class: owl:Thing (owl:Thing)
+
+SubClassOf(owl:Thing <http://www.absoluteiri.edu/RELAPPROXC106>)
+SubClassOf(owl:Thing <http://www.absoluteiri.edu/RELAPPROXC120>)
+SubClassOf(owl:Thing <http://www.absoluteiri.edu/RELAPPROXC144>)
+SubClassOf(owl:Thing <http://www.absoluteiri.edu/RELAPPROXC150>)
+SubClassOf(owl:Thing <http://www.absoluteiri.edu/RELAPPROXC152>)
+SubClassOf(owl:Thing <http://www.absoluteiri.edu/RELAPPROXC154>)
+SubClassOf(owl:Thing <http://www.absoluteiri.edu/RELAPPROXC158>)
+SubClassOf(owl:Thing <http://www.absoluteiri.edu/RELAPPROXC160>)
+
+# Class: <https://smolang.org/rdfMutate#newNode-0> (<https://smolang.org/rdfMutate#newNode-0>)
+
+SubClassOf(<https://smolang.org/rdfMutate#newNode-0> <https://smolang.org/rdfMutate#newNode-0>)
+
+# Class: <https://smolang.org/rdfMutate#newNode-5> (<https://smolang.org/rdfMutate#newNode-5>)
+
+SubClassOf(<https://smolang.org/rdfMutate#newNode-5> <https://smolang.org/rdfMutate#newNode-5>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: owl:Class (owl:Class)
+
+ClassAssertion(<http://www.absoluteiri.edu/RELAPPROXC147> owl:Class)
+ClassAssertion(owl:Class owl:Class)
+
+
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#acceptValue> owl:Thing) <http://www.opentox.org/api/1.1#Nominal>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#algorithm> owl:Thing) <http://www.opentox.org/api/1.1#Model>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#areaUnderROC> owl:Thing) <http://www.opentox.org/api/1.1#ClassValueStatistics>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#classValue> owl:Thing) <http://www.opentox.org/api/1.1#ClassValueStatistics>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#classValueStatistics> owl:Thing) <http://www.opentox.org/api/1.1#ClassificationStatistics>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#classificationStatistics> owl:Thing) <http://www.opentox.org/api/1.1#ClassificationStatistics>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#complexValue> owl:Thing) <http://www.opentox.org/api/1.1#Tuple>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#compound> owl:Thing) <http://www.opentox.org/api/1.1#DataEntry>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#conformer> owl:Thing) <http://www.opentox.org/api/1.1#Compound>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#confusionMatrix> owl:Thing) <http://www.opentox.org/api/1.1#ClassificationStatistics>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#confusionMatrixActual> owl:Thing) <http://www.opentox.org/api/1.1#ConfusionMatrixCell>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#confusionMatrixEntry> owl:Thing) <http://www.opentox.org/api/1.1#ConfusionMatrix>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#confusionMatrixPredicted> owl:Thing) <http://www.opentox.org/api/1.1#ConfusionMatrixCell>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#confusionMatrixValue> owl:Thing) <http://www.opentox.org/api/1.1#ConfusionMatrixCell>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#crossValidationInfo> owl:Thing) <http://www.opentox.org/api/1.1#CrossValidationInfo>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#crossvalidationAlgorithm> owl:Thing) <http://www.opentox.org/api/1.1#Crossvalidation>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#crossvalidationDataset> owl:Thing) <http://www.opentox.org/api/1.1#Crossvalidation>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#dataEntry> owl:Thing) <http://www.absoluteiri.edu/RELAPPROXC100>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#fMeasure> owl:Thing) <http://www.opentox.org/api/1.1#ClassValueStatistics>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#falseNegativeRate> owl:Thing) <http://www.opentox.org/api/1.1#ClassValueStatistics>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#falsePositiveRate> owl:Thing) <http://www.opentox.org/api/1.1#ClassValueStatistics>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#feature> owl:Thing) <http://www.opentox.org/api/1.1#FeatureValuePair>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#fold> owl:Thing) <http://www.opentox.org/api/1.1#CrossValidationInfo>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#has3Dstructure> owl:Thing) <http://www.opentox.org/api/1.1#Compound>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#hasInput> owl:Thing) <http://www.absoluteiri.edu/RELAPPROXC108>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#hasOutput> owl:Thing) <http://www.absoluteiri.edu/RELAPPROXC108>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#hasSource> owl:Thing) <http://www.opentox.org/api/1.1#Feature>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#hasStatus> owl:Thing) <http://www.opentox.org/api/1.1#Task>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#hasValidationInfo> owl:Thing) <http://www.opentox.org/api/1.1#Validation>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#independentVariables> owl:Thing) <http://www.opentox.org/api/1.1#Model>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#model> owl:Thing) <http://www.opentox.org/api/1.1#Model>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#numCorrect> owl:Thing) <http://www.opentox.org/api/1.1#ClassificationStatistics>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#numFalseNegatives> owl:Thing) <http://www.opentox.org/api/1.1#ClassValueStatistics>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#numFalsePositives> owl:Thing) <http://www.opentox.org/api/1.1#ClassValueStatistics>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#numFolds> owl:Thing) <http://www.opentox.org/api/1.1#Crossvalidation>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#numIncorrect> owl:Thing) <http://www.opentox.org/api/1.1#ClassificationStatistics>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#numInstances> owl:Thing) <http://www.opentox.org/api/1.1#Validation>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#numTrueNegatives> owl:Thing) <http://www.opentox.org/api/1.1#ClassValueStatistics>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#numTruePositives> owl:Thing) <http://www.opentox.org/api/1.1#ClassValueStatistics>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#numUnpredicted> owl:Thing) <http://www.opentox.org/api/1.1#Validation>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#numWithoutClass> owl:Thing) <http://www.opentox.org/api/1.1#Validation>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#paramScope> owl:Thing) <http://www.opentox.org/api/1.1#Parameter>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#paramValue> owl:Thing) <http://www.opentox.org/api/1.1#Parameter>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#parameters> owl:Thing) <http://www.absoluteiri.edu/RELAPPROXC108>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#percentCorrect> owl:Thing) <http://www.opentox.org/api/1.1#ClassificationStatistics>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#percentIncorrect> owl:Thing) <http://www.opentox.org/api/1.1#ClassificationStatistics>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#percentUnpredicted> owl:Thing) <http://www.opentox.org/api/1.1#Validation>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#percentWithoutClass> owl:Thing) <http://www.opentox.org/api/1.1#Validation>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#percentageCompleted> owl:Thing) <http://www.opentox.org/api/1.1#Task>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#precision> owl:Thing) <http://www.opentox.org/api/1.1#ClassValueStatistics>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#predictedFeature> owl:Thing) <http://www.opentox.org/api/1.1#Validation>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#predictedVariables> owl:Thing) <http://www.opentox.org/api/1.1#Model>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#rSquare> owl:Thing) <http://www.opentox.org/api/1.1#RegressionStatistics>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#randomSeed> owl:Thing) <http://www.opentox.org/api/1.1#Crossvalidation>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#realRuntime> owl:Thing) <http://www.opentox.org/api/1.1#Crossvalidation>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#realRuntime> owl:Thing) <http://www.opentox.org/api/1.1#Validation>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#recall> owl:Thing) <http://www.opentox.org/api/1.1#ClassValueStatistics>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#regressionStatistics> owl:Thing) <http://www.opentox.org/api/1.1#RegressionStatistics>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#report> owl:Thing) <http://www.opentox.org/api/1.1#Report>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#resultURI> owl:Thing) <http://www.opentox.org/api/1.1#Task>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#stratified> owl:Thing) <http://www.opentox.org/api/1.1#Crossvalidation>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#trainingDataset> owl:Thing) <http://www.opentox.org/api/1.1#Model>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#trueNegativeRate> owl:Thing) <http://www.opentox.org/api/1.1#ClassValueStatistics>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#truePositiveRate> owl:Thing) <http://www.opentox.org/api/1.1#ClassValueStatistics>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#unscrambledDatasetURI> owl:Thing) <http://www.opentox.org/api/1.1#YScrambling>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#validation> owl:Thing) <http://www.opentox.org/api/1.1#Validation>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#validationCrossvalidation> owl:Thing) <http://www.opentox.org/api/1.1#CrossValidationInfo>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#validationModel> owl:Thing) <http://www.opentox.org/api/1.1#Validation>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#validationPredictionDataset> owl:Thing) <http://www.opentox.org/api/1.1#Validation>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#validationReport> owl:Thing) <http://www.opentox.org/api/1.1#Report>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#validationTestDataset> owl:Thing) <http://www.opentox.org/api/1.1#Validation>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#validationTrainingDataset> owl:Thing) <http://www.opentox.org/api/1.1#Validation>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#value> owl:Thing) <http://www.opentox.org/api/1.1#FeatureValue>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#values> owl:Thing) <http://www.opentox.org/api/1.1#DataEntry>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#yScramblingEnabled> owl:Thing) <http://www.opentox.org/api/1.1#YScrambling>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#yScramblingInfo> owl:Thing) <http://www.opentox.org/api/1.1#YScrambling>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opentox.org/api/1.1#yScramblingSeed> owl:Thing) <http://www.opentox.org/api/1.1#YScrambling>)
+)

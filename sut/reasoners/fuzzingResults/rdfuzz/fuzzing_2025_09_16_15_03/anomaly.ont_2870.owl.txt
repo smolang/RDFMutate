@@ -1,0 +1,11 @@
+Found anomalies while testing file ../testOnt.owl
+
+Anomaly 1: Anomaly: not in EL
+ Not enough property expressions; at least two needed [SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/OBO_REL_part_of>) <http://purl.obolibrary.org/obo/OBO_REL_part_of>) in OntologyID(OntologyIRI(<urn:unnamed:ontology#ont19112369263107995>) VersionIRI(<null>))]
+ Use of property in chain causes cycle: <http://purl.obolibrary.org/obo/OBO_REL_part_of> [SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/OBO_REL_part_of>) <http://purl.obolibrary.org/obo/OBO_REL_part_of>) in OntologyID(OntologyIRI(<urn:unnamed:ontology#ont19112369263107995>) VersionIRI(<null>))]
+ Use of property in chain causes cycle: <http://purl.obolibrary.org/obo/OBO_REL_part_of> [SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/OBO_REL_part_of>) <http://purl.obolibrary.org/obo/OBO_REL_part_of>) in OntologyID(OntologyIRI(<urn:unnamed:ontology#ont19112369263107995>) VersionIRI(<null>))]
+ Use of reserved vocabulary for class IRI: owl:Class [ClassAssertion(owl:Class <http://purl.obolibrary.org/obo/MOD_01471>) in OntologyID(OntologyIRI(<urn:unnamed:ontology#ont19112369263107995>) VersionIRI(<null>))]
+ Use of reserved vocabulary for class IRI: owl:Class [ClassAssertion(owl:Class <http://purl.obolibrary.org/obo/MOD_01471>) in OntologyID(OntologyIRI(<urn:unnamed:ontology#ont19112369263107995>) VersionIRI(<null>))]
+ Use of reserved vocabulary for class IRI: owl:Class [ClassAssertion(owl:Class <https://smolang.org/rdfMutate#newNode-6>) in OntologyID(OntologyIRI(<urn:unnamed:ontology#ont19112369263107995>) VersionIRI(<null>))]
+ Use of reserved vocabulary for class IRI: owl:Class [ClassAssertion(owl:Class <https://smolang.org/rdfMutate#newNode-6>) in OntologyID(OntologyIRI(<urn:unnamed:ontology#ont19112369263107995>) VersionIRI(<null>))]
+

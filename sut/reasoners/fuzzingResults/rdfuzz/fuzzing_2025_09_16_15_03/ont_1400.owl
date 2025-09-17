@@ -1,0 +1,1154 @@
+Prefix(:=<urn:unnamed:ontology#ont19099306951802052>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:unnamed:ontology#ont19099306951802052>
+
+Declaration(Class(<http://dbpedia.org/ontology/Insect>))
+Declaration(Class(<http://dbpedia.org/ontology/Museum>))
+Declaration(Class(<http://dbpedia.org/ontology/Cricketer>))
+Declaration(Class(<http://dbpedia.org/ontology/Weapon>))
+Declaration(Class(<http://dbpedia.org/ontology/Continent>))
+Declaration(Class(<http://dbpedia.org/ontology/NascarDriver>))
+Declaration(Class(<http://dbpedia.org/ontology/Bone>))
+Declaration(Class(<http://dbpedia.org/ontology/Aircraft>))
+Declaration(Class(<http://dbpedia.org/ontology/Drug>))
+Declaration(Class(<http://dbpedia.org/ontology/Film>))
+Declaration(Class(<http://dbpedia.org/ontology/Single>))
+Declaration(Class(<http://dbpedia.org/ontology/PrimeMinister>))
+Declaration(Class(<http://dbpedia.org/ontology/MemberOfParliament>))
+Declaration(Class(<http://dbpedia.org/ontology/ChristianBishop>))
+Declaration(Class(<http://dbpedia.org/ontology/MountainRange>))
+Declaration(Class(<http://dbpedia.org/ontology/SpaceShuttle>))
+Declaration(Class(<http://dbpedia.org/ontology/ComicsCharacter>))
+Declaration(Class(<http://dbpedia.org/ontology/Island>))
+Declaration(Class(<http://dbpedia.org/ontology/Judge>))
+Declaration(Class(<http://dbpedia.org/ontology/SpaceStation>))
+Declaration(Class(<http://dbpedia.org/ontology/Airport>))
+Declaration(Class(<http://dbpedia.org/ontology/Canal>))
+Declaration(Class(<http://dbpedia.org/ontology/GolfPlayer>))
+Declaration(Class(<http://dbpedia.org/ontology/SoccerLeague>))
+Declaration(Class(<http://dbpedia.org/ontology/Legislature>))
+Declaration(Class(<http://dbpedia.org/ontology/Musical>))
+Declaration(Class(<http://dbpedia.org/ontology/Magazine>))
+Declaration(Class(<http://dbpedia.org/ontology/SkiArea>))
+Declaration(Class(<http://dbpedia.org/ontology/MilitaryUnit>))
+Declaration(Class(<http://dbpedia.org/ontology/HistoricBuilding>))
+Declaration(Class(<http://dbpedia.org/ontology/BasketballPlayer>))
+Declaration(Class(<http://dbpedia.org/ontology/Philosopher>))
+Declaration(Class(<http://dbpedia.org/ontology/Bridge>))
+Declaration(Class(<http://dbpedia.org/ontology/Convention>))
+Declaration(Class(<http://dbpedia.org/ontology/Disease>))
+Declaration(Class(<http://dbpedia.org/ontology/BaseballLeague>))
+Declaration(Class(<http://dbpedia.org/ontology/MilitaryPerson>))
+Declaration(Class(<http://dbpedia.org/ontology/Governor>))
+Declaration(Class(<http://dbpedia.org/ontology/Mollusca>))
+Declaration(Class(<http://dbpedia.org/ontology/Writer>))
+Declaration(Class(<http://dbpedia.org/ontology/Reptile>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-1>))
+Declaration(Class(<http://dbpedia.org/ontology/Ship>))
+Declaration(Class(<http://dbpedia.org/ontology/TelevisionEpisode>))
+Declaration(Class(<http://dbpedia.org/ontology/Station>))
+Declaration(Class(<http://dbpedia.org/ontology/Song>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-8>))
+Declaration(Class(<http://dbpedia.org/ontology/Currency>))
+Declaration(Class(<http://dbpedia.org/ontology/BasketballTeam>))
+Declaration(Class(<http://dbpedia.org/ontology/Mountain>))
+Declaration(Class(<http://dbpedia.org/ontology/Stadium>))
+Declaration(Class(<http://dbpedia.org/ontology/School>))
+Declaration(Class(<http://dbpedia.org/ontology/Mammal>))
+Declaration(Class(<http://dbpedia.org/ontology/Boxer>))
+Declaration(Class(<http://dbpedia.org/ontology/Architect>))
+Declaration(Class(<http://dbpedia.org/ontology/Game>))
+Declaration(Class(<http://dbpedia.org/ontology/ComicsCreator>))
+Declaration(Class(<http://dbpedia.org/ontology/IceHockeyPlayer>))
+Declaration(Class(<http://dbpedia.org/ontology/RadioStation>))
+Declaration(Class(<http://dbpedia.org/ontology/Book>))
+Declaration(Class(<http://dbpedia.org/ontology/VideoGame>))
+Declaration(Class(<http://dbpedia.org/ontology/MusicGenre>))
+Declaration(Class(<http://dbpedia.org/ontology/RecordLabel>))
+Declaration(Class(<http://dbpedia.org/ontology/PowerStation>))
+Declaration(Class(<http://dbpedia.org/ontology/Fern>))
+Declaration(Class(<http://dbpedia.org/ontology/Election>))
+Declaration(Class(<http://dbpedia.org/ontology/River>))
+Declaration(Class(<http://dbpedia.org/ontology/Award>))
+Declaration(Class(<http://dbpedia.org/ontology/Comedian>))
+Declaration(Class(<http://dbpedia.org/ontology/AmericanFootballPlayer>))
+Declaration(Class(<http://dbpedia.org/ontology/ClubMoss>))
+Declaration(Class(<http://dbpedia.org/ontology/Grape>))
+Declaration(Class(owl:ObjectProperty))
+Declaration(Class(<http://dbpedia.org/ontology/Congressman>))
+Declaration(Class(<http://dbpedia.org/ontology/Fish>))
+Declaration(Class(<http://dbpedia.org/ontology/Saint>))
+Declaration(Class(<http://dbpedia.org/ontology/Band>))
+Declaration(Class(<http://dbpedia.org/ontology/TennisPlayer>))
+Declaration(Class(<http://dbpedia.org/ontology/Website>))
+Declaration(Class(<http://dbpedia.org/ontology/BaseballPlayer>))
+Declaration(Class(<http://dbpedia.org/ontology/Moss>))
+Declaration(Class(<http://dbpedia.org/ontology/Sport>))
+Declaration(Class(<http://dbpedia.org/ontology/RugbyLeague>))
+Declaration(Class(<http://dbpedia.org/ontology/LacrosseLeague>))
+Declaration(Class(<http://dbpedia.org/ontology/ChemicalCompound>))
+Declaration(Class(<http://dbpedia.org/ontology/SoccerManager>))
+Declaration(Class(<http://dbpedia.org/ontology/Road>))
+Declaration(Class(<http://dbpedia.org/ontology/University>))
+Declaration(Class(<http://dbpedia.org/ontology/Amphibian>))
+Declaration(Class(<http://dbpedia.org/ontology/MilitaryConflict>))
+Declaration(Class(<http://dbpedia.org/ontology/TelevisionShow>))
+Declaration(Class(<http://dbpedia.org/ontology/Cycad>))
+Declaration(Class(<http://dbpedia.org/ontology/Album>))
+Declaration(Class(<http://dbpedia.org/ontology/AdultActor>))
+Declaration(Class(<http://dbpedia.org/ontology/Village>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-4>))
+Declaration(Class(<http://dbpedia.org/ontology/Airline>))
+Declaration(Class(<http://dbpedia.org/ontology/Pope>))
+Declaration(Class(<http://dbpedia.org/ontology/TradeUnion>))
+Declaration(Class(<http://dbpedia.org/ontology/Arachnid>))
+Declaration(Class(<http://dbpedia.org/ontology/President>))
+Declaration(Class(<http://dbpedia.org/ontology/Automobile>))
+Declaration(Class(<http://dbpedia.org/ontology/SiteOfSpecialScientificInterest>))
+Declaration(Class(<http://dbpedia.org/ontology/ProtectedArea>))
+Declaration(Class(<http://dbpedia.org/ontology/Criminal>))
+Declaration(Class(<http://dbpedia.org/ontology/Beverage>))
+Declaration(Class(<http://dbpedia.org/ontology/FormulaOneRacer>))
+Declaration(Class(<http://dbpedia.org/ontology/Colour>))
+Declaration(Class(<http://dbpedia.org/ontology/WorldHeritageSite>))
+Declaration(Class(<http://dbpedia.org/ontology/Fungus>))
+Declaration(Class(<http://dbpedia.org/ontology/Monarch>))
+Declaration(Class(<http://dbpedia.org/ontology/Journalist>))
+Declaration(Class(<http://dbpedia.org/ontology/MusicalArtist>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-3>))
+Declaration(Class(<http://dbpedia.org/ontology/OfficeHolder>))
+Declaration(Class(<http://dbpedia.org/ontology/Model>))
+Declaration(Class(<http://dbpedia.org/ontology/Non-ProfitOrganisation>))
+Declaration(Class(<http://dbpedia.org/ontology/SoccerClub>))
+Declaration(Class(<http://dbpedia.org/ontology/Rocket>))
+Declaration(Class(<http://dbpedia.org/ontology/HistoricPlace>))
+Declaration(Class(<http://dbpedia.org/ontology/Lake>))
+Declaration(Class(<http://dbpedia.org/ontology/FigureSkater>))
+Declaration(Class(<http://dbpedia.org/ontology/Cave>))
+Declaration(Class(<http://dbpedia.org/ontology/Locomotive>))
+Declaration(Class(<http://dbpedia.org/ontology/Wrestler>))
+Declaration(Class(<http://dbpedia.org/ontology/FilmFestival>))
+Declaration(Class(<http://dbpedia.org/ontology/Scientist>))
+Declaration(Class(<http://dbpedia.org/ontology/Skyscraper>))
+Declaration(Class(<http://dbpedia.org/ontology/HockeyTeam>))
+Declaration(Class(<http://dbpedia.org/ontology/SupremeCourtOfTheUnitedStatesCase>))
+Declaration(Class(<http://dbpedia.org/ontology/Newspaper>))
+Declaration(Class(<http://dbpedia.org/ontology/Park>))
+Declaration(Class(<http://dbpedia.org/ontology/BritishRoyalty>))
+Declaration(Class(<http://dbpedia.org/ontology/AmericanFootballTeam>))
+Declaration(Class(<http://dbpedia.org/ontology/Olympics>))
+Declaration(Class(<http://dbpedia.org/ontology/CollegeCoach>))
+Declaration(Class(<http://dbpedia.org/ontology/SpaceMission>))
+Declaration(Class(<http://dbpedia.org/ontology/WineRegion>))
+Declaration(Class(<http://dbpedia.org/ontology/Senator>))
+Declaration(Class(<http://dbpedia.org/ontology/Broadcast>))
+Declaration(Class(<http://dbpedia.org/ontology/Conifer>))
+Declaration(Class(<http://dbpedia.org/ontology/Town>))
+Declaration(Class(<http://dbpedia.org/ontology/SoccerPlayer>))
+Declaration(Class(<http://dbpedia.org/ontology/Crustacean>))
+Declaration(Class(<http://dbpedia.org/ontology/IceHockeyLeague>))
+Declaration(Class(<http://dbpedia.org/ontology/Lighthouse>))
+Declaration(Class(<http://dbpedia.org/ontology/Planet>))
+Declaration(ObjectProperty(<http://www.w3.org/2004/02/skos/core#relatedMatch>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMilitaryPerson>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/MeanOfTransportation>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMilitaryUnit>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Event>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToTradeUnion>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToRecordLabel>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBaseballPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSpaceStation>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Planet>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSkyscraper>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToWorldHeritageSite>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToCongressman>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMemberOfParliament>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToContinent>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToStadium>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToConifer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAirline>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSingle>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/LegalCase>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSaint>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToWebsite>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToRoad>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Device>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToCave>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToElection>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToPowerStation>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToCycad>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToReptile>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToArachnid>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToWrestler>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToUniversity>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBridge>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSkiArea>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToPark>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToComicsCharacter>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMusicGenre>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAircraft>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSong>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Infrastructure>))
+Declaration(ObjectProperty(<https://smolang.org/rdfMutate#newNode-2>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToStation>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMonarch>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMilitaryConflict>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToInsect>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToModel>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToTown>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBand>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAward>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBone>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToScientist>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToNewspaper>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToRugbyLeague>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToProtectedArea>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSupremeCourtOfTheUnitedStatesCase>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Organisation>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToLocomotive>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBoxer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMoss>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToOlympics>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToFigureSkater>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAmphibian>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToFungus>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSenator>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Colour>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToIceHockeyPlayer>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Award>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBeverage>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToGame>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToFish>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToLighthouse>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToTelevisionShow>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToPhilosopher>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSpaceMission>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAmericanFootballPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToLacrosseLeague>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToCurrency>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToWineRegion>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToRadioStation>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToFormulaOneRacer>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Website>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToWeapon>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBritishRoyalty>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToGovernor>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMagazine>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToPope>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToIceHockeyLeague>))
+Declaration(ObjectProperty(<https://smolang.org/rdfMutate#newNode-5>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBasketballTeam>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToClubMoss>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToLegislature>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToChemicalCompound>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToWriter>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToCricketer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMollusca>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToTelevisionEpisode>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMuseum>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToArchitect>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToCanal>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToGrape>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMusical>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToFern>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSoccerClub>))
+Declaration(ObjectProperty(<https://smolang.org/rdfMutate#newNode-6>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToHockeyTeam>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToVillage>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAutomobile>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBroadcast>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Disease>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToCrustacean>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Beverage>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToNascarDriver>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToRocket>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToComedian>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/AnatomicalStructure>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Activity>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBook>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSoccerLeague>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToChristianBishop>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSoccerManager>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToComicsCreator>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToVideoGame>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Currency>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMountain>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToFilm>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToJudge>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToOfficeHolder>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToConvention>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToNon-ProfitOrganisation>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSchool>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAirport>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSport>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMusicalArtist>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToPrimeMinister>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Drug>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAmericanFootballTeam>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Species>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAlbum>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/MusicGenre>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBasketballPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSiteOfSpecialScientificInterest>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToPresident>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToHistoricBuilding>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToFilmFestival>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToRiver>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToHistoricPlace>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToPlanet>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToShip>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToCollegeCoach>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToJournalist>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/ChemicalCompound>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSoccerPlayer>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Work>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToDisease>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMammal>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMountainRange>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAdultActor>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToCriminal>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToColour>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBaseballLeague>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToDrug>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToTennisPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSpaceShuttle>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToGolfPlayer>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/highestMount>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMountain>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-7>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMilitaryPerson>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/country2AdminDivisions>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToTown>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/location>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToLake>))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAdultActor> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAdultActor>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAdultActor> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAdultActor> <http://dbpedia.org/ontology/AdultActor>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAircraft> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAircraft>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAircraft> <http://dbpedia.org/ontology/MeanOfTransportation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAircraft> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAircraft> <http://dbpedia.org/ontology/Aircraft>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAirline> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAirline>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAirline> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAirline> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAirline> <http://dbpedia.org/ontology/Airline>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAirport> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAirport>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAirport> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAirport> <http://dbpedia.org/ontology/Airport>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAlbum> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAlbum>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAlbum> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAlbum> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAlbum> <http://dbpedia.org/ontology/Album>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAmericanFootballPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAmericanFootballPlayer>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAmericanFootballPlayer> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAmericanFootballPlayer> <http://dbpedia.org/ontology/AmericanFootballPlayer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAmericanFootballTeam> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAmericanFootballTeam>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAmericanFootballTeam> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAmericanFootballTeam> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAmericanFootballTeam> <http://dbpedia.org/ontology/AmericanFootballTeam>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAmphibian> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAmphibian>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAmphibian> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAmphibian> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAmphibian> <http://dbpedia.org/ontology/Amphibian>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToArachnid> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToArachnid>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToArachnid> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToArachnid> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToArachnid> <http://dbpedia.org/ontology/Arachnid>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToArchitect> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToArchitect>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToArchitect> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToArchitect> <http://dbpedia.org/ontology/Architect>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAutomobile> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAutomobile>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAutomobile> <http://dbpedia.org/ontology/MeanOfTransportation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAutomobile> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAutomobile> <http://dbpedia.org/ontology/Automobile>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAward> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAward>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAward> <http://dbpedia.org/ontology/Award>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAward> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToAward> <http://dbpedia.org/ontology/Award>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBand> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBand>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBand> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBand> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBand> <http://dbpedia.org/ontology/Band>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBaseballLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBaseballLeague>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBaseballLeague> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBaseballLeague> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBaseballLeague> <http://dbpedia.org/ontology/BaseballLeague>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBaseballPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBaseballPlayer>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBaseballPlayer> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBaseballPlayer> <http://dbpedia.org/ontology/BaseballPlayer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBasketballPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBasketballPlayer>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBasketballPlayer> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBasketballPlayer> <http://dbpedia.org/ontology/BasketballPlayer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBasketballTeam> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBasketballTeam>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBasketballTeam> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBasketballTeam> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBasketballTeam> <http://dbpedia.org/ontology/BasketballTeam>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBeverage> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBeverage>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBeverage> <http://dbpedia.org/ontology/Beverage>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBeverage> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBeverage> <http://dbpedia.org/ontology/Beverage>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBone> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBone>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBone> <http://dbpedia.org/ontology/AnatomicalStructure>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBone> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBone> <http://dbpedia.org/ontology/Bone>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBook> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBook>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBook> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBook> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBook> <http://dbpedia.org/ontology/Book>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBoxer> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBoxer>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBoxer> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBoxer> <http://dbpedia.org/ontology/Boxer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBridge> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBridge>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBridge> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBridge> <http://dbpedia.org/ontology/Bridge>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBritishRoyalty> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBritishRoyalty>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBritishRoyalty> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBritishRoyalty> <http://dbpedia.org/ontology/BritishRoyalty>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBroadcast> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBroadcast>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBroadcast> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBroadcast> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToBroadcast> <http://dbpedia.org/ontology/Broadcast>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToCanal> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToCanal>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToCanal> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToCanal> <http://dbpedia.org/ontology/Canal>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToCave> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToCave>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToCave> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToCave> <http://dbpedia.org/ontology/Cave>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToChemicalCompound> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToChemicalCompound>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToChemicalCompound> <http://dbpedia.org/ontology/ChemicalCompound>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToChemicalCompound> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToChemicalCompound> <http://dbpedia.org/ontology/ChemicalCompound>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToChristianBishop> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToChristianBishop>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToChristianBishop> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToChristianBishop> <http://dbpedia.org/ontology/ChristianBishop>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToClubMoss> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToClubMoss>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToClubMoss> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToClubMoss> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToClubMoss> <http://dbpedia.org/ontology/ClubMoss>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToCollegeCoach> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToCollegeCoach>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToCollegeCoach> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToCollegeCoach> <http://dbpedia.org/ontology/CollegeCoach>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToColour> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToColour>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToColour> <http://dbpedia.org/ontology/Colour>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToColour> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToColour> <http://dbpedia.org/ontology/Colour>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToComedian> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToComedian>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToComedian> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToComedian> <http://dbpedia.org/ontology/Comedian>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToComicsCharacter> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToComicsCharacter>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToComicsCharacter> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToComicsCharacter> <http://dbpedia.org/ontology/ComicsCharacter>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToComicsCreator> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToComicsCreator>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToComicsCreator> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToComicsCreator> <http://dbpedia.org/ontology/ComicsCreator>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToCongressman> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToCongressman>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToCongressman> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToCongressman> <http://dbpedia.org/ontology/Congressman>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToConifer> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToConifer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToConifer> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToConifer> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToConifer> <http://dbpedia.org/ontology/Conifer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToContinent> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToContinent>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToContinent> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToContinent> <http://dbpedia.org/ontology/Continent>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToConvention> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToConvention>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToConvention> <http://dbpedia.org/ontology/Event>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToConvention> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToConvention> <http://dbpedia.org/ontology/Convention>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToCricketer> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToCricketer>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToCricketer> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToCricketer> <http://dbpedia.org/ontology/Cricketer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToCriminal> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToCriminal>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToCriminal> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToCriminal> <http://dbpedia.org/ontology/Criminal>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToCrustacean> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToCrustacean>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToCrustacean> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToCrustacean> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToCrustacean> <http://dbpedia.org/ontology/Crustacean>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToCurrency> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToCurrency>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToCurrency> <http://dbpedia.org/ontology/Currency>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToCurrency> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToCurrency> <http://dbpedia.org/ontology/Currency>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToCycad> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToCycad>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToCycad> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToCycad> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToCycad> <http://dbpedia.org/ontology/Cycad>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToDisease> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToDisease>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToDisease> <http://dbpedia.org/ontology/Disease>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToDisease> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToDisease> <http://dbpedia.org/ontology/Disease>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToDrug> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToDrug>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToDrug> <http://dbpedia.org/ontology/Drug>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToDrug> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToDrug> <http://dbpedia.org/ontology/Drug>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToElection> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToElection>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToElection> <http://dbpedia.org/ontology/Event>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToElection> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToElection> <http://dbpedia.org/ontology/Election>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToFern> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToFern>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToFern> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToFern> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToFern> <http://dbpedia.org/ontology/Fern>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToFigureSkater> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToFigureSkater>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToFigureSkater> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToFigureSkater> <http://dbpedia.org/ontology/FigureSkater>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToFilm> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToFilm>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToFilm> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToFilm> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToFilm> <http://dbpedia.org/ontology/Film>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToFilmFestival> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToFilmFestival>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToFilmFestival> <http://dbpedia.org/ontology/Event>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToFilmFestival> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToFilmFestival> <http://dbpedia.org/ontology/FilmFestival>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToFish> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToFish>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToFish> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToFish> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToFish> <http://dbpedia.org/ontology/Fish>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToFormulaOneRacer> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToFormulaOneRacer>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToFormulaOneRacer> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToFormulaOneRacer> <http://dbpedia.org/ontology/FormulaOneRacer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToFungus> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToFungus>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToFungus> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToFungus> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToFungus> <http://dbpedia.org/ontology/Fungus>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToGame> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToGame>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToGame> <http://dbpedia.org/ontology/Activity>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToGame> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToGame> <http://dbpedia.org/ontology/Game>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToGolfPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToGolfPlayer>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToGolfPlayer> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToGolfPlayer> <http://dbpedia.org/ontology/GolfPlayer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToGovernor> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToGovernor>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToGovernor> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToGovernor> <http://dbpedia.org/ontology/Governor>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToGrape> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToGrape>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToGrape> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToGrape> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToGrape> <http://dbpedia.org/ontology/Grape>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToHistoricBuilding> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToHistoricBuilding>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToHistoricBuilding> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToHistoricBuilding> <http://dbpedia.org/ontology/HistoricBuilding>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToHistoricPlace> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToHistoricPlace>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToHistoricPlace> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToHistoricPlace> <http://dbpedia.org/ontology/HistoricPlace>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToHockeyTeam> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToHockeyTeam>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToHockeyTeam> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToHockeyTeam> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToHockeyTeam> <http://dbpedia.org/ontology/HockeyTeam>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToIceHockeyLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToIceHockeyLeague>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToIceHockeyLeague> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToIceHockeyLeague> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToIceHockeyLeague> <http://dbpedia.org/ontology/IceHockeyLeague>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToIceHockeyPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToIceHockeyPlayer>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToIceHockeyPlayer> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToIceHockeyPlayer> <http://dbpedia.org/ontology/IceHockeyPlayer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToInsect> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToInsect>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToInsect> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToInsect> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToInsect> <http://dbpedia.org/ontology/Insect>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToJournalist> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToJournalist>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToJournalist> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToJournalist> <http://dbpedia.org/ontology/Journalist>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToJudge> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToJudge>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToJudge> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToJudge> <http://dbpedia.org/ontology/Judge>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToLacrosseLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToLacrosseLeague>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToLacrosseLeague> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToLacrosseLeague> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToLacrosseLeague> <http://dbpedia.org/ontology/LacrosseLeague>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToLegislature> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToLegislature>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToLegislature> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToLegislature> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToLegislature> <http://dbpedia.org/ontology/Legislature>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToLighthouse> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToLighthouse>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToLighthouse> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToLighthouse> <http://dbpedia.org/ontology/Lighthouse>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToLocomotive> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToLocomotive>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToLocomotive> <http://dbpedia.org/ontology/MeanOfTransportation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToLocomotive> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToLocomotive> <http://dbpedia.org/ontology/Locomotive>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMagazine> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMagazine>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMagazine> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMagazine> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMagazine> <http://dbpedia.org/ontology/Magazine>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMammal> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMammal>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMammal> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMammal> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMammal> <http://dbpedia.org/ontology/Mammal>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMemberOfParliament> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMemberOfParliament>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMemberOfParliament> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMemberOfParliament> <http://dbpedia.org/ontology/MemberOfParliament>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMilitaryConflict> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMilitaryConflict>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMilitaryConflict> <http://dbpedia.org/ontology/Event>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMilitaryConflict> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMilitaryConflict> <http://dbpedia.org/ontology/MilitaryConflict>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMilitaryPerson> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMilitaryPerson>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMilitaryPerson> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMilitaryPerson> <http://dbpedia.org/ontology/MilitaryPerson>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMilitaryUnit> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMilitaryUnit>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMilitaryUnit> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMilitaryUnit> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMilitaryUnit> <http://dbpedia.org/ontology/MilitaryUnit>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToModel> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToModel>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToModel> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToModel> <http://dbpedia.org/ontology/Model>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMollusca> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMollusca>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMollusca> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMollusca> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMollusca> <http://dbpedia.org/ontology/Mollusca>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMonarch> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMonarch>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMonarch> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMonarch> <http://dbpedia.org/ontology/Monarch>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMoss> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMoss>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMoss> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMoss> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMoss> <http://dbpedia.org/ontology/Moss>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMountain> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMountain>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMountain> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMountain> <http://dbpedia.org/ontology/Mountain>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMountainRange> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMountainRange>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMountainRange> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMountainRange> <http://dbpedia.org/ontology/MountainRange>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMuseum> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMuseum>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMuseum> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMuseum> <http://dbpedia.org/ontology/Museum>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMusicGenre> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMusicGenre>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMusicGenre> <http://dbpedia.org/ontology/MusicGenre>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMusicGenre> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMusicGenre> <http://dbpedia.org/ontology/MusicGenre>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMusical> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMusical>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMusical> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMusical> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMusical> <http://dbpedia.org/ontology/Musical>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMusicalArtist> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMusicalArtist>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMusicalArtist> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMusicalArtist> <http://dbpedia.org/ontology/MusicalArtist>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToNascarDriver> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToNascarDriver>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToNascarDriver> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToNascarDriver> <http://dbpedia.org/ontology/NascarDriver>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToNewspaper> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToNewspaper>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToNewspaper> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToNewspaper> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToNewspaper> <http://dbpedia.org/ontology/Newspaper>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToNon-ProfitOrganisation> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToNon-ProfitOrganisation>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToNon-ProfitOrganisation> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToNon-ProfitOrganisation> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToNon-ProfitOrganisation> <http://dbpedia.org/ontology/Non-ProfitOrganisation>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToOfficeHolder> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToOfficeHolder>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToOfficeHolder> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToOfficeHolder> <http://dbpedia.org/ontology/OfficeHolder>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToOlympics> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToOlympics>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToOlympics> <http://dbpedia.org/ontology/Event>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToOlympics> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToOlympics> <http://dbpedia.org/ontology/Olympics>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToPark> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToPark>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToPark> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToPark> <http://dbpedia.org/ontology/Park>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToPhilosopher> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToPhilosopher>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToPhilosopher> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToPhilosopher> <http://dbpedia.org/ontology/Philosopher>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToPlanet> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToPlanet>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToPlanet> <http://dbpedia.org/ontology/Planet>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToPlanet> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToPlanet> <http://dbpedia.org/ontology/Planet>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToPope> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToPope>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToPope> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToPope> <http://dbpedia.org/ontology/Pope>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToPowerStation> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToPowerStation>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToPowerStation> <http://dbpedia.org/ontology/Infrastructure>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToPowerStation> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToPowerStation> <http://dbpedia.org/ontology/PowerStation>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToPresident> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToPresident>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToPresident> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToPresident> <http://dbpedia.org/ontology/President>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToPrimeMinister> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToPrimeMinister>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToPrimeMinister> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToPrimeMinister> <http://dbpedia.org/ontology/PrimeMinister>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToProtectedArea> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToProtectedArea>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToProtectedArea> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToProtectedArea> <http://dbpedia.org/ontology/ProtectedArea>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToRadioStation> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToRadioStation>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToRadioStation> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToRadioStation> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToRadioStation> <http://dbpedia.org/ontology/RadioStation>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToRecordLabel> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToRecordLabel>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToRecordLabel> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToRecordLabel> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToRecordLabel> <http://dbpedia.org/ontology/RecordLabel>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToReptile> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToReptile>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToReptile> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToReptile> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToReptile> <http://dbpedia.org/ontology/Reptile>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToRiver> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToRiver>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToRiver> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToRiver> <http://dbpedia.org/ontology/River>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToRoad> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToRoad>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToRoad> <http://dbpedia.org/ontology/Infrastructure>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToRoad> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToRoad> <http://dbpedia.org/ontology/Road>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToRocket> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToRocket>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToRocket> <http://dbpedia.org/ontology/MeanOfTransportation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToRocket> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToRocket> <http://dbpedia.org/ontology/Rocket>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToRugbyLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToRugbyLeague>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToRugbyLeague> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToRugbyLeague> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToRugbyLeague> <http://dbpedia.org/ontology/RugbyLeague>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSaint> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSaint>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSaint> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSaint> <http://dbpedia.org/ontology/Saint>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSchool> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSchool>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSchool> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSchool> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSchool> <http://dbpedia.org/ontology/School>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToScientist> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToScientist>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToScientist> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToScientist> <http://dbpedia.org/ontology/Scientist>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSenator> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSenator>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSenator> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSenator> <http://dbpedia.org/ontology/Senator>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToShip> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToShip>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToShip> <http://dbpedia.org/ontology/MeanOfTransportation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToShip> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToShip> <http://dbpedia.org/ontology/Ship>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSingle> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSingle>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSingle> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSingle> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSingle> <http://dbpedia.org/ontology/Single>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSiteOfSpecialScientificInterest> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSiteOfSpecialScientificInterest>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSiteOfSpecialScientificInterest> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSiteOfSpecialScientificInterest> <http://dbpedia.org/ontology/SiteOfSpecialScientificInterest>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSkiArea> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSkiArea>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSkiArea> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSkiArea> <http://dbpedia.org/ontology/SkiArea>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSkyscraper> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSkyscraper>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSkyscraper> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSkyscraper> <http://dbpedia.org/ontology/Skyscraper>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSoccerClub> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSoccerClub>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSoccerClub> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSoccerClub> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSoccerClub> <http://dbpedia.org/ontology/SoccerClub>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSoccerLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSoccerLeague>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSoccerLeague> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSoccerLeague> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSoccerLeague> <http://dbpedia.org/ontology/SoccerLeague>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSoccerManager> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSoccerManager>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSoccerManager> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSoccerManager> <http://dbpedia.org/ontology/SoccerManager>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSoccerPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSoccerPlayer>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSoccerPlayer> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSoccerPlayer> <http://dbpedia.org/ontology/SoccerPlayer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSong> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSong>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSong> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSong> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSong> <http://dbpedia.org/ontology/Song>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSpaceMission> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSpaceMission>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSpaceMission> <http://dbpedia.org/ontology/Event>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSpaceMission> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSpaceMission> <http://dbpedia.org/ontology/SpaceMission>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSpaceShuttle> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSpaceShuttle>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSpaceShuttle> <http://dbpedia.org/ontology/MeanOfTransportation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSpaceShuttle> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSpaceShuttle> <http://dbpedia.org/ontology/SpaceShuttle>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSpaceStation> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSpaceStation>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSpaceStation> <http://dbpedia.org/ontology/MeanOfTransportation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSpaceStation> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSpaceStation> <http://dbpedia.org/ontology/SpaceStation>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSport> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSport>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSport> <http://dbpedia.org/ontology/Activity>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSport> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSport> <http://dbpedia.org/ontology/Sport>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToStadium> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToStadium>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToStadium> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToStadium> <http://dbpedia.org/ontology/Stadium>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToStation> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToStation>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToStation> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToStation> <http://dbpedia.org/ontology/Station>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSupremeCourtOfTheUnitedStatesCase> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSupremeCourtOfTheUnitedStatesCase>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSupremeCourtOfTheUnitedStatesCase> <http://dbpedia.org/ontology/LegalCase>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSupremeCourtOfTheUnitedStatesCase> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToSupremeCourtOfTheUnitedStatesCase> <http://dbpedia.org/ontology/SupremeCourtOfTheUnitedStatesCase>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToTelevisionEpisode> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToTelevisionEpisode>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToTelevisionEpisode> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToTelevisionEpisode> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToTelevisionEpisode> <http://dbpedia.org/ontology/TelevisionEpisode>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToTelevisionShow> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToTelevisionShow>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToTelevisionShow> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToTelevisionShow> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToTelevisionShow> <http://dbpedia.org/ontology/TelevisionShow>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToTennisPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToTennisPlayer>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToTennisPlayer> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToTennisPlayer> <http://dbpedia.org/ontology/TennisPlayer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToTown> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToTown>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToTown> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToTown> <http://dbpedia.org/ontology/Town>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToTradeUnion> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToTradeUnion>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToTradeUnion> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToTradeUnion> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToTradeUnion> <http://dbpedia.org/ontology/TradeUnion>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToUniversity> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToUniversity>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToUniversity> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToUniversity> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToUniversity> <http://dbpedia.org/ontology/University>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToVideoGame> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToVideoGame>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToVideoGame> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToVideoGame> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToVideoGame> <http://dbpedia.org/ontology/VideoGame>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToVillage> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToVillage>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToVillage> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToVillage> <http://dbpedia.org/ontology/Village>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToWeapon> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToWeapon>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToWeapon> <http://dbpedia.org/ontology/Device>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToWeapon> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToWeapon> <http://dbpedia.org/ontology/Weapon>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToWebsite> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToWebsite>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToWebsite> <http://dbpedia.org/ontology/Website>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToWebsite> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToWebsite> <http://dbpedia.org/ontology/Website>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToWineRegion> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToWineRegion>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToWineRegion> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToWineRegion> <http://dbpedia.org/ontology/WineRegion>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToWorldHeritageSite> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToWorldHeritageSite>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToWorldHeritageSite> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToWorldHeritageSite> <http://dbpedia.org/ontology/WorldHeritageSite>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToWrestler> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToWrestler>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToWrestler> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToWrestler> <http://dbpedia.org/ontology/Wrestler>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToWriter> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToWriter>)
+
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToWriter> <http://dbpedia.org/ontology/Island>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToWriter> <http://dbpedia.org/ontology/Writer>)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: owl:Thing (owl:Thing)
+
+DisjointClasses(Annotation(Annotation(rdfs:comment "Generated by the OWL API (version 5.5.0.2023-01-14T12:41:38Z) https://github.com/owlcs/owlapi/ on 2025-09-16T18:19:04.289856940Z") rdfs:comment "DisjointClasses(<https://smolang.org/rdfMutate#newNode-8>) replaced by DisjointClasses(<https://smolang.org/rdfMutate#newNode-8> owl:Thing)") owl:Thing <https://smolang.org/rdfMutate#newNode-8>)
+
+# Class: <https://smolang.org/rdfMutate#newNode-3> (<https://smolang.org/rdfMutate#newNode-3>)
+
+SubClassOf(<https://smolang.org/rdfMutate#newNode-3> owl:Thing)
+SubClassOf(<https://smolang.org/rdfMutate#newNode-3> <https://smolang.org/rdfMutate#newNode-3>)
+
+# Class: <https://smolang.org/rdfMutate#newNode-4> (<https://smolang.org/rdfMutate#newNode-4>)
+
+SubClassOf(<https://smolang.org/rdfMutate#newNode-4> <https://smolang.org/rdfMutate#newNode-4>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToLake> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToLake>)
+
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToLake> <http://dbpedia.org/property/location>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMilitaryPerson> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMilitaryPerson>)
+
+ClassAssertion(owl:ObjectProperty <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMilitaryPerson>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMountain> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMountain>)
+
+ClassAssertion(owl:ObjectProperty <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMountain>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToMountain> <http://dbpedia.org/property/highestMount>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToTown> (<http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToTown>)
+
+ClassAssertion(owl:ObjectProperty <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToTown>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Island.owl#linksToTown> <http://dbpedia.org/property/country2AdminDivisions>)
+
+
+)

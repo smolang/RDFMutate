@@ -1,0 +1,448 @@
+Prefix(:=<urn:unnamed:ontology#ont19089569829578115>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:unnamed:ontology#ont19089569829578115>
+
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Conference_Center>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#User>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Area_tour_Guide>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Videoconference_Facilities>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Travel_Doc_Assistance>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC152>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC145>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC132>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Restaurant_Catering>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-6>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#TFLECapability>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Bar>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC137>))
+Declaration(Class(owl:Class))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#Profile>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#Interface>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#ServiceProfile>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Public_Park>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC138>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Campsites>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC134>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/ZefiroRequest.owl#ExampleCapability>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Travel_Agents>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Meeting_Room>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC144>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC151>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-8>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Vehicle_Campsite>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#DynamicReqBlock>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Tour_Arrangement>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Preference.owl#Preference>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#MIDASEntity>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Interpreter>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#Identification>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#Device>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-2>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Hotel_Motel_Inn>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Eating_Establishment>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Delivered_Meal>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC153>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC146>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Travel_Agency>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC133>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC141>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Fast_food>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Request.owl#Request_Profile>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC154>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Hotel>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Carryout_Meal>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Visa_AuxDoc_Service>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Travel_Facilitation>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC147>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-4>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#UserProfile>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC139>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC135>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#Service>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#TFLEItem>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#Client>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Lodge_Resort>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Restaurant>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Chartering>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#Capability>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Banquet_Facilities>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Guides_Interpreters>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC142>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Party_Tent>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC149>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC136>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Preference.owl#ValuePreference>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#DynamicBlock>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Preference.owl#PriorityPreference>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Meeting_Facilities>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#Requirement>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Cottage_Rental>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Camping_Wilderness>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Bed_Breakfast>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Catering>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC150>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Carryout_Takeaway>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#CapabilityItem>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC131>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#DynamicCapBlock>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Hotel_Meeting_Facilities>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC148>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Onstreet_Vendor>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Passport_Service>))
+Declaration(Class(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Banquet_Catering>))
+Declaration(ObjectProperty(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#has_cap_item>))
+Declaration(ObjectProperty(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#interf_type>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR23>))
+Declaration(ObjectProperty(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#profile_dyn_req>))
+Declaration(ObjectProperty(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#profile_dyn_cap>))
+Declaration(ObjectProperty(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#profile_cap>))
+Declaration(ObjectProperty(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#profile_req>))
+Declaration(ObjectProperty(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#conditions>))
+Declaration(ObjectProperty(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#cond_requirement>))
+Declaration(ObjectProperty(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Preference.owl#alt_value>))
+Declaration(ObjectProperty(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#profile_id>))
+Declaration(ObjectProperty(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#profile_binding>))
+Declaration(ObjectProperty(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#requires>))
+Declaration(ObjectProperty(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#profile_ground>))
+Declaration(ObjectProperty(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Preference.owl#relaxation>))
+Declaration(ObjectProperty(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#link>))
+Declaration(ObjectProperty(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#type>))
+Declaration(ObjectProperty(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Preference.owl#optimal_value>))
+Declaration(ObjectProperty(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#hasProfile>))
+Declaration(ObjectProperty(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#name>))
+Declaration(ObjectProperty(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#location>))
+Declaration(ObjectProperty(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#profile_state>))
+Declaration(ObjectProperty(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#req_strength>))
+Declaration(ObjectProperty(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#cond_capability>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-4>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-6>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-8>))
+Declaration(NamedIndividual(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Carryout_Takeaway>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-0>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-3>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXC142>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-1>))
+
+############################
+#   Classes
+############################
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC133> (<http://www.absoluteiri.edu/RELAPPROXC133>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC133> <http://www.absoluteiri.edu/RELAPPROXC152>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC133> <http://www.absoluteiri.edu/RELAPPROXC154>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC151> (<http://www.absoluteiri.edu/RELAPPROXC151>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC151> <http://www.absoluteiri.edu/RELAPPROXC134>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC153> (<http://www.absoluteiri.edu/RELAPPROXC153>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC153> <http://www.absoluteiri.edu/RELAPPROXC134>)
+
+# Class: <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Preference.owl#PriorityPreference> (<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Preference.owl#PriorityPreference>)
+
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Preference.owl#PriorityPreference> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Preference.owl#Preference>)
+
+# Class: <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Preference.owl#ValuePreference> (<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Preference.owl#ValuePreference>)
+
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Preference.owl#ValuePreference> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Preference.owl#Preference>)
+
+# Class: <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#Client> (<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#Client>)
+
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#Client> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#MIDASEntity>)
+
+# Class: <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#Device> (<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#Device>)
+
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#Device> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#MIDASEntity>)
+
+# Class: <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#DynamicCapBlock> (<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#DynamicCapBlock>)
+
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#DynamicCapBlock> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#DynamicBlock>)
+
+# Class: <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#DynamicReqBlock> (<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#DynamicReqBlock>)
+
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#DynamicReqBlock> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#DynamicBlock>)
+
+# Class: <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#Service> (<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#Service>)
+
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#Service> <http://www.absoluteiri.edu/RELAPPROXC131>)
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#Service> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#MIDASEntity>)
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#Service> ObjectSomeValuesFrom(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#hasProfile> owl:Thing))
+
+# Class: <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#ServiceProfile> (<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#ServiceProfile>)
+
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#ServiceProfile> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#Profile>)
+
+# Class: <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#User> (<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#User>)
+
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#User> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#Client>)
+
+# Class: <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#UserProfile> (<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#UserProfile>)
+
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#UserProfile> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#Profile>)
+
+# Class: <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Request.owl#Request_Profile> (<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Request.owl#Request_Profile>)
+
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Request.owl#Request_Profile> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#Profile>)
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Request.owl#Request_Profile> ObjectSomeValuesFrom(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#profile_cap> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/ZefiroRequest.owl#ExampleCapability>))
+
+# Class: <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Area_tour_Guide> (<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Area_tour_Guide>)
+
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Area_tour_Guide> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Guides_Interpreters>)
+
+# Class: <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Banquet_Catering> (<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Banquet_Catering>)
+
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Banquet_Catering> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Restaurant_Catering>)
+
+# Class: <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Banquet_Facilities> (<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Banquet_Facilities>)
+
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Banquet_Facilities> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Banquet_Catering>)
+
+# Class: <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Bar> (<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Bar>)
+
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Bar> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Eating_Establishment>)
+
+# Class: <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Bed_Breakfast> (<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Bed_Breakfast>)
+
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Bed_Breakfast> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Hotel_Motel_Inn>)
+
+# Class: <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Camping_Wilderness> (<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Camping_Wilderness>)
+
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Camping_Wilderness> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Hotel_Meeting_Facilities>)
+
+# Class: <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Campsites> (<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Campsites>)
+
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Campsites> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Camping_Wilderness>)
+
+# Class: <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Carryout_Meal> (<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Carryout_Meal>)
+
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Carryout_Meal> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Carryout_Takeaway>)
+
+# Class: <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Carryout_Takeaway> (<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Carryout_Takeaway>)
+
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Carryout_Takeaway> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Restaurant_Catering>)
+
+# Class: <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Catering> (<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Catering>)
+
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Catering> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Banquet_Catering>)
+
+# Class: <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Chartering> (<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Chartering>)
+
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Chartering> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Travel_Agents>)
+
+# Class: <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Conference_Center> (<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Conference_Center>)
+
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Conference_Center> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Meeting_Facilities>)
+
+# Class: <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Cottage_Rental> (<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Cottage_Rental>)
+
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Cottage_Rental> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Hotel_Motel_Inn>)
+
+# Class: <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Delivered_Meal> (<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Delivered_Meal>)
+
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Delivered_Meal> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Carryout_Takeaway>)
+
+# Class: <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Eating_Establishment> (<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Eating_Establishment>)
+
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Eating_Establishment> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Restaurant_Catering>)
+
+# Class: <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Fast_food> (<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Fast_food>)
+
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Fast_food> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Eating_Establishment>)
+
+# Class: <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Guides_Interpreters> (<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Guides_Interpreters>)
+
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Guides_Interpreters> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Travel_Facilitation>)
+
+# Class: <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Hotel> (<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Hotel>)
+
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Hotel> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Hotel_Motel_Inn>)
+
+# Class: <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Hotel_Meeting_Facilities> (<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Hotel_Meeting_Facilities>)
+
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Hotel_Meeting_Facilities> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#TFLEItem>)
+
+# Class: <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Hotel_Motel_Inn> (<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Hotel_Motel_Inn>)
+
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Hotel_Motel_Inn> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Hotel_Meeting_Facilities>)
+
+# Class: <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Interpreter> (<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Interpreter>)
+
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Interpreter> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Guides_Interpreters>)
+
+# Class: <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Lodge_Resort> (<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Lodge_Resort>)
+
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Lodge_Resort> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Hotel_Motel_Inn>)
+
+# Class: <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Meeting_Facilities> (<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Meeting_Facilities>)
+
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Meeting_Facilities> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Hotel_Meeting_Facilities>)
+
+# Class: <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Meeting_Room> (<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Meeting_Room>)
+
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Meeting_Room> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Meeting_Facilities>)
+
+# Class: <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Onstreet_Vendor> (<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Onstreet_Vendor>)
+
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Onstreet_Vendor> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Eating_Establishment>)
+
+# Class: <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Party_Tent> (<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Party_Tent>)
+
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Party_Tent> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Banquet_Catering>)
+
+# Class: <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Passport_Service> (<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Passport_Service>)
+
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Passport_Service> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Travel_Doc_Assistance>)
+
+# Class: <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Public_Park> (<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Public_Park>)
+
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Public_Park> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Camping_Wilderness>)
+
+# Class: <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Restaurant> (<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Restaurant>)
+
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Restaurant> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Eating_Establishment>)
+
+# Class: <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Restaurant_Catering> (<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Restaurant_Catering>)
+
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Restaurant_Catering> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#TFLEItem>)
+
+# Class: <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#TFLECapability> (<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#TFLECapability>)
+
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#TFLECapability> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#Capability>)
+
+# Class: <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#TFLEItem> (<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#TFLEItem>)
+
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#TFLEItem> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#CapabilityItem>)
+
+# Class: <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Tour_Arrangement> (<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Tour_Arrangement>)
+
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Tour_Arrangement> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Travel_Agents>)
+
+# Class: <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Travel_Agency> (<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Travel_Agency>)
+
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Travel_Agency> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Travel_Agents>)
+
+# Class: <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Travel_Agents> (<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Travel_Agents>)
+
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Travel_Agents> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Travel_Facilitation>)
+
+# Class: <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Travel_Doc_Assistance> (<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Travel_Doc_Assistance>)
+
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Travel_Doc_Assistance> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Travel_Facilitation>)
+
+# Class: <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Travel_Facilitation> (<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Travel_Facilitation>)
+
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Travel_Facilitation> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#TFLEItem>)
+
+# Class: <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Vehicle_Campsite> (<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Vehicle_Campsite>)
+
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Vehicle_Campsite> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Camping_Wilderness>)
+
+# Class: <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Videoconference_Facilities> (<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Videoconference_Facilities>)
+
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Videoconference_Facilities> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Meeting_Facilities>)
+
+# Class: <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Visa_AuxDoc_Service> (<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Visa_AuxDoc_Service>)
+
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Visa_AuxDoc_Service> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Travel_Doc_Assistance>)
+
+# Class: <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/ZefiroRequest.owl#ExampleCapability> (<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/ZefiroRequest.owl#ExampleCapability>)
+
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/ZefiroRequest.owl#ExampleCapability> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#TFLECapability>)
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/ZefiroRequest.owl#ExampleCapability> ObjectSomeValuesFrom(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#has_cap_item> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Banquet_Catering>))
+SubClassOf(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/ZefiroRequest.owl#ExampleCapability> ObjectSomeValuesFrom(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#has_cap_item> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Hotel_Meeting_Facilities>))
+
+# Class: owl:Thing (owl:Thing)
+
+SubClassOf(owl:Thing <http://www.absoluteiri.edu/RELAPPROXC131>)
+SubClassOf(owl:Thing <http://www.absoluteiri.edu/RELAPPROXC145>)
+
+# Class: <https://smolang.org/rdfMutate#newNode-2> (<https://smolang.org/rdfMutate#newNode-2>)
+
+SubClassOf(<https://smolang.org/rdfMutate#newNode-2> <https://smolang.org/rdfMutate#newNode-2>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXC142> (<http://www.absoluteiri.edu/RELAPPROXC142>)
+
+ClassAssertion(owl:Class <http://www.absoluteiri.edu/RELAPPROXC142>)
+ClassAssertion(owl:Thing <http://www.absoluteiri.edu/RELAPPROXC142>)
+
+# Individual: <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Carryout_Takeaway> (<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Carryout_Takeaway>)
+
+ClassAssertion(owl:Class <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Carryout_Takeaway>)
+ClassAssertion(owl:Thing <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Carryout_Takeaway>)
+
+# Individual: <https://smolang.org/rdfMutate#newNode-0> (<https://smolang.org/rdfMutate#newNode-0>)
+
+ClassAssertion(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#Profile> <https://smolang.org/rdfMutate#newNode-0>)
+ClassAssertion(ObjectSomeValuesFrom(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#profile_dyn_req> owl:Thing) <https://smolang.org/rdfMutate#newNode-0>)
+
+# Individual: <https://smolang.org/rdfMutate#newNode-3> (<https://smolang.org/rdfMutate#newNode-3>)
+
+ClassAssertion(<http://www.absoluteiri.edu/RELAPPROXC142> <https://smolang.org/rdfMutate#newNode-3>)
+ClassAssertion(ObjectSomeValuesFrom(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#profile_cap> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/ZefiroRequest.owl#ExampleCapability>) <https://smolang.org/rdfMutate#newNode-3>)
+
+# Individual: <https://smolang.org/rdfMutate#newNode-4> (<https://smolang.org/rdfMutate#newNode-4>)
+
+ClassAssertion(<http://www.absoluteiri.edu/RELAPPROXC142> <https://smolang.org/rdfMutate#newNode-4>)
+ClassAssertion(owl:Class <https://smolang.org/rdfMutate#newNode-4>)
+
+# Individual: <https://smolang.org/rdfMutate#newNode-6> (<https://smolang.org/rdfMutate#newNode-6>)
+
+ClassAssertion(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Visa_AuxDoc_Service> <https://smolang.org/rdfMutate#newNode-6>)
+ClassAssertion(owl:Class <https://smolang.org/rdfMutate#newNode-6>)
+
+# Individual: <https://smolang.org/rdfMutate#newNode-8> (<https://smolang.org/rdfMutate#newNode-8>)
+
+ClassAssertion(owl:Class <https://smolang.org/rdfMutate#newNode-8>)
+ClassAssertion(<https://smolang.org/rdfMutate#newNode-8> <https://smolang.org/rdfMutate#newNode-8>)
+
+
+SubClassOf(ObjectIntersectionOf(<http://www.absoluteiri.edu/RELAPPROXC135> <http://www.absoluteiri.edu/RELAPPROXC136>) <http://www.absoluteiri.edu/RELAPPROXC137>)
+SubClassOf(ObjectIntersectionOf(<http://www.absoluteiri.edu/RELAPPROXC138> <http://www.absoluteiri.edu/RELAPPROXC139> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#TFLECapability>) <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/ZefiroRequest.owl#ExampleCapability>)
+SubClassOf(ObjectIntersectionOf(<http://www.absoluteiri.edu/RELAPPROXC142> owl:Thing) <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Request.owl#Request_Profile>)
+SubClassOf(ObjectIntersectionOf(<http://www.absoluteiri.edu/RELAPPROXC147> <http://www.absoluteiri.edu/RELAPPROXC148> <http://www.absoluteiri.edu/RELAPPROXC149>) <http://www.absoluteiri.edu/RELAPPROXC150>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Preference.owl#alt_value> owl:Thing) <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Preference.owl#ValuePreference>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Preference.owl#optimal_value> owl:Thing) <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Preference.owl#ValuePreference>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Preference.owl#relaxation> <http://www.absoluteiri.edu/RELAPPROXC150>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Preference.owl#relaxation> owl:Thing) <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Preference.owl#ValuePreference>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#cond_capability> owl:Thing) <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#DynamicCapBlock>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#cond_requirement> owl:Thing) <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#DynamicReqBlock>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#conditions> owl:Thing) <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#DynamicBlock>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#hasProfile> owl:Thing) <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#MIDASEntity>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#has_cap_item> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Banquet_Catering>) <http://www.absoluteiri.edu/RELAPPROXC139>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#has_cap_item> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/TFLEOntology.owl#Hotel_Meeting_Facilities>) <http://www.absoluteiri.edu/RELAPPROXC138>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#has_cap_item> owl:Thing) <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#Capability>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#interf_type> <http://www.absoluteiri.edu/RELAPPROXC134>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#interf_type> owl:Thing) <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#Interface>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#link> <http://www.absoluteiri.edu/RELAPPROXC144>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#link> owl:Thing) <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#Interface>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#location> owl:Thing) <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#Identification>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#name> <http://www.absoluteiri.edu/RELAPPROXC134>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#name> owl:Thing) <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#Identification>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#profile_binding> owl:Thing) <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#Profile>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#profile_cap> <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/ZefiroRequest.owl#ExampleCapability>) <http://www.absoluteiri.edu/RELAPPROXC142>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#profile_cap> owl:Thing) <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#Profile>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#profile_dyn_cap> owl:Thing) <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#Profile>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#profile_dyn_req> owl:Thing) <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#Profile>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#profile_ground> owl:Thing) <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#Profile>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#profile_id> owl:Thing) <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#Profile>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#profile_req> owl:Thing) <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#Profile>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#profile_state> owl:Thing) <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#Profile>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#req_strength> <http://www.absoluteiri.edu/RELAPPROXC141>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#req_strength> owl:Thing) <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#Requirement>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#requires> owl:Thing) <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#Requirement>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#type> <http://www.absoluteiri.edu/RELAPPROXC137>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#type> owl:Thing) <http://www.lia.deis.unibo.it/research/MIDAS/Ontologies/MIDAS_Profile.owl#Capability>)
+)

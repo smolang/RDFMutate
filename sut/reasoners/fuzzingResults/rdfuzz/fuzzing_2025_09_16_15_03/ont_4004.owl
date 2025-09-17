@@ -1,0 +1,114 @@
+Prefix(:=<urn:unnamed:ontology#ont19123145642810391>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:unnamed:ontology#ont19123145642810391>
+
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC29>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC19>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-2>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-8>))
+Declaration(Class(owl:Restriction))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC18>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-3>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC26>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-5>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC28>))
+Declaration(Class(<http://rs.tdwg.org/ontology/Base#BaseThing>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC27>))
+Declaration(ObjectProperty(<http://rs.tdwg.org/ontology/voc/OccurrenceRecord#locality>))
+Declaration(ObjectProperty(<http://rs.tdwg.org/ontology/voc/OccurrenceRecord#wktFootprint>))
+Declaration(ObjectProperty(<http://rs.tdwg.org/ontology/voc/OccurrenceRecord#validDistributionFlag>))
+Declaration(ObjectProperty(<http://rs.tdwg.org/ontology/voc/OccurrenceRecord#earliestDateCollected>))
+Declaration(ObjectProperty(<http://rs.tdwg.org/ontology/voc/OccurrenceRecord#decimalLatitude>))
+Declaration(ObjectProperty(<http://rs.tdwg.org/ontology/voc/OccurrenceRecord#ofOccurrenceRecord>))
+Declaration(ObjectProperty(<http://rs.tdwg.org/ontology/voc/OccurrenceRecord#island>))
+Declaration(ObjectProperty(<http://rs.tdwg.org/ontology/voc/OccurrenceRecord#identifiedToString>))
+Declaration(ObjectProperty(<http://rs.tdwg.org/ontology/voc/OccurrenceRecord#confidence>))
+Declaration(ObjectProperty(<http://rs.tdwg.org/ontology/voc/OccurrenceRecord#georeferenceProtocol>))
+Declaration(ObjectProperty(<http://rs.tdwg.org/ontology/voc/OccurrenceRecord#islandGroup>))
+Declaration(ObjectProperty(<http://rs.tdwg.org/ontology/voc/OccurrenceRecord#coordinateUncertaintyInMeters>))
+Declaration(ObjectProperty(<http://rs.tdwg.org/ontology/voc/OccurrenceRecord#taxon>))
+Declaration(ObjectProperty(<http://rs.tdwg.org/ontology/voc/OccurrenceRecord#continent>))
+Declaration(ObjectProperty(<http://rs.tdwg.org/ontology/voc/OccurrenceRecord#higherGeography>))
+Declaration(ObjectProperty(<http://rs.tdwg.org/ontology/voc/OccurrenceRecord#geodeticDatum>))
+Declaration(ObjectProperty(<http://rs.tdwg.org/ontology/voc/OccurrenceRecord#maximumDepthInMeters>))
+Declaration(ObjectProperty(<http://rs.tdwg.org/ontology/voc/OccurrenceRecord#voucherString>))
+Declaration(ObjectProperty(<http://rs.tdwg.org/ontology/voc/OccurrenceRecord#expert>))
+Declaration(ObjectProperty(<http://rs.tdwg.org/ontology/voc/OccurrenceRecord#georeferenceSources>))
+Declaration(ObjectProperty(<http://rs.tdwg.org/ontology/voc/OccurrenceRecord#county>))
+Declaration(ObjectProperty(<http://rs.tdwg.org/ontology/voc/OccurrenceRecord#georeferenceRemarks>))
+Declaration(ObjectProperty(<http://rs.tdwg.org/ontology/voc/OccurrenceRecord#verbatimDet>))
+Declaration(ObjectProperty(<http://rs.tdwg.org/ontology/voc/OccurrenceRecord#identifiedTo>))
+Declaration(ObjectProperty(<http://rs.tdwg.org/ontology/voc/OccurrenceRecord#value>))
+Declaration(ObjectProperty(<http://rs.tdwg.org/ontology/voc/OccurrenceRecord#hasVoucher>))
+Declaration(ObjectProperty(<http://rs.tdwg.org/ontology/voc/OccurrenceRecord#expertName>))
+Declaration(ObjectProperty(<http://rs.tdwg.org/ontology/voc/OccurrenceRecord#valueConfidence>))
+Declaration(ObjectProperty(<http://rs.tdwg.org/ontology/voc/OccurrenceRecord#date>))
+Declaration(ObjectProperty(<http://rs.tdwg.org/ontology/voc/OccurrenceRecord#dayOfYear>))
+Declaration(ObjectProperty(<http://rs.tdwg.org/ontology/voc/OccurrenceRecord#minimumDepthInMeters>))
+Declaration(ObjectProperty(<http://rs.tdwg.org/ontology/voc/OccurrenceRecord#procedureDescriptor>))
+Declaration(ObjectProperty(<http://rs.tdwg.org/ontology/voc/OccurrenceRecord#maximumElevationInMeters>))
+Declaration(ObjectProperty(<http://rs.tdwg.org/ontology/voc/OccurrenceRecord#footprintSpatialFit>))
+Declaration(ObjectProperty(<http://rs.tdwg.org/ontology/voc/OccurrenceRecord#derivedFrom>))
+Declaration(ObjectProperty(<http://rs.tdwg.org/ontology/voc/OccurrenceRecord#pointRadiusSpatialFit>))
+Declaration(ObjectProperty(<http://rs.tdwg.org/ontology/voc/OccurrenceRecord#country>))
+Declaration(ObjectProperty(<http://rs.tdwg.org/ontology/voc/OccurrenceRecord#location>))
+Declaration(ObjectProperty(<http://rs.tdwg.org/ontology/voc/OccurrenceRecord#procedure>))
+Declaration(ObjectProperty(<http://rs.tdwg.org/ontology/voc/OccurrenceRecord#minimumElevationInMeters>))
+Declaration(ObjectProperty(<http://rs.tdwg.org/ontology/voc/OccurrenceRecord#taxonName>))
+Declaration(ObjectProperty(<http://rs.tdwg.org/ontology/voc/OccurrenceRecord#method>))
+Declaration(ObjectProperty(<http://rs.tdwg.org/ontology/voc/OccurrenceRecord#occurrence>))
+Declaration(ObjectProperty(<http://rs.tdwg.org/ontology/voc/OccurrenceRecord#georeferenceVerificationStatus>))
+Declaration(ObjectProperty(<http://rs.tdwg.org/ontology/voc/OccurrenceRecord#latestDateCollected>))
+Declaration(ObjectProperty(<http://rs.tdwg.org/ontology/voc/OccurrenceRecord#methodDescriptor>))
+Declaration(ObjectProperty(<http://rs.tdwg.org/ontology/voc/OccurrenceRecord#stateProvince>))
+Declaration(ObjectProperty(<http://rs.tdwg.org/ontology/voc/OccurrenceRecord#decimalLongitude>))
+Declaration(ObjectProperty(<http://rs.tdwg.org/ontology/voc/OccurrenceRecord#waterBody>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-9>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-3>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-4>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-1>))
+Declaration(NamedIndividual(<http://rs.tdwg.org/ontology/voc/OccurrenceRecord#islandGroup>))
+
+############################
+#   Classes
+############################
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC18> (<http://www.absoluteiri.edu/RELAPPROXC18>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC18> <http://www.absoluteiri.edu/RELAPPROXC27>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC18> <http://www.absoluteiri.edu/RELAPPROXC29>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC26> (<http://www.absoluteiri.edu/RELAPPROXC26>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC26> <http://www.absoluteiri.edu/RELAPPROXC19>)
+
+# Class: <https://smolang.org/rdfMutate#newNode-3> (<https://smolang.org/rdfMutate#newNode-3>)
+
+SubClassOf(<https://smolang.org/rdfMutate#newNode-3> <https://smolang.org/rdfMutate#newNode-3>)
+
+# Class: <https://smolang.org/rdfMutate#newNode-5> (<https://smolang.org/rdfMutate#newNode-5>)
+
+SubClassOf(<https://smolang.org/rdfMutate#newNode-5> <https://smolang.org/rdfMutate#newNode-5>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <https://smolang.org/rdfMutate#newNode-3> (<https://smolang.org/rdfMutate#newNode-3>)
+
+ClassAssertion(<https://smolang.org/rdfMutate#newNode-3> <https://smolang.org/rdfMutate#newNode-3>)
+
+# Individual: <https://smolang.org/rdfMutate#newNode-9> (<https://smolang.org/rdfMutate#newNode-9>)
+
+ClassAssertion(ObjectSomeValuesFrom(<http://rs.tdwg.org/ontology/voc/OccurrenceRecord#decimalLongitude> owl:Thing) <https://smolang.org/rdfMutate#newNode-9>)
+
+
+ClassAssertion(owl:Thing _:4f40dcae-6044-4874-891c-10da0c0e1569)
+)

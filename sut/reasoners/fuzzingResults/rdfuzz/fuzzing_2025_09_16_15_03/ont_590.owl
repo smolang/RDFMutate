@@ -1,0 +1,263 @@
+Prefix(:=<urn:unnamed:ontology#ont19092271933352194>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:unnamed:ontology#ont19092271933352194>
+
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC41>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC26>))
+Declaration(Class(<http://a.com/ontology#Location>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC36>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC31>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC47>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC42>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC33>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC44>))
+Declaration(Class(<http://a.com/ontology#Name>))
+Declaration(Class(<http://a.com/ontology#Department>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC38>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC29>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-1>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC25>))
+Declaration(Class(<http://a.com/ontology#Dependent>))
+Declaration(Class(<http://a.com/ontology#WorksOn>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC32>))
+Declaration(Class(<http://a.com/ontology#ReifiedRelationshipClass>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC39>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-2>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC27>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-7>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-10>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC43>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC34>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC21>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-4>))
+Declaration(Class(<http://a.com/ontology#Project>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC45>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC40>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC35>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC46>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC23>))
+Declaration(Class(<http://a.com/ontology#Employee>))
+Declaration(Class(<http://a.com/ontology#Manages>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC28>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC37>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC24>))
+Declaration(Class(owl:Restriction))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC30>))
+Declaration(ObjectProperty(<http://a.com/ontology#lname>))
+Declaration(ObjectProperty(<https://smolang.org/rdfMutate#newNode-3>))
+Declaration(ObjectProperty(<http://a.com/ontology#project>))
+Declaration(ObjectProperty(<http://a.com/ontology#plocation>))
+Declaration(ObjectProperty(<http://a.com/ontology#dnumber>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR36>))
+Declaration(ObjectProperty(<http://a.com/ontology#depBdate>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR39>))
+Declaration(ObjectProperty(<http://a.com/ontology#worksFor>))
+Declaration(ObjectProperty(<https://smolang.org/rdfMutate#newNode-10>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR34>))
+Declaration(ObjectProperty(<https://smolang.org/rdfMutate#newNode-0>))
+Declaration(ObjectProperty(<http://a.com/ontology#startDate>))
+Declaration(ObjectProperty(<http://a.com/ontology#controls>))
+Declaration(ObjectProperty(<http://a.com/ontology#worker>))
+Declaration(ObjectProperty(<http://a.com/ontology#toDepartment>))
+Declaration(ObjectProperty(<http://a.com/ontology#numberOfEmployees>))
+Declaration(ObjectProperty(<http://a.com/ontology#address>))
+Declaration(ObjectProperty(<http://a.com/ontology#ename>))
+Declaration(ObjectProperty(<http://a.com/ontology#minit>))
+Declaration(ObjectProperty(<http://a.com/ontology#locationName>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR37>))
+Declaration(ObjectProperty(<http://a.com/ontology#dependentsOf>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR35>))
+Declaration(ObjectProperty(<http://a.com/ontology#bdate>))
+Declaration(ObjectProperty(<http://a.com/ontology#hours>))
+Declaration(ObjectProperty(<http://a.com/ontology#salary>))
+Declaration(ObjectProperty(<http://a.com/ontology#depRelationship>))
+Declaration(ObjectProperty(<http://a.com/ontology#pnumber>))
+Declaration(ObjectProperty(<http://a.com/ontology#dependentName>))
+Declaration(ObjectProperty(<http://a.com/ontology#pname>))
+Declaration(ObjectProperty(<http://a.com/ontology#ssn>))
+Declaration(ObjectProperty(<http://a.com/ontology#managedBy>))
+Declaration(ObjectProperty(<http://a.com/ontology#depSex>))
+Declaration(ObjectProperty(<http://a.com/ontology#sex>))
+Declaration(ObjectProperty(<http://www.absoluteiri.edu/RELAPPROXR38>))
+Declaration(ObjectProperty(<http://a.com/ontology#hasManager>))
+Declaration(ObjectProperty(<http://a.com/ontology#fname>))
+Declaration(ObjectProperty(<https://smolang.org/rdfMutate#newNode-4>))
+Declaration(ObjectProperty(<http://a.com/ontology#departmentManaged>))
+Declaration(ObjectProperty(<http://a.com/ontology#dname>))
+Declaration(ObjectProperty(<http://a.com/ontology#supervision>))
+Declaration(ObjectProperty(<http://a.com/ontology#locations>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-4>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-9>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-10>))
+Declaration(NamedIndividual(owl:Restriction))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-5>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-7>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-11>))
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://a.com/ontology#controls> (<http://a.com/ontology#controls>)
+
+SubObjectPropertyOf(<http://a.com/ontology#controls> <http://www.absoluteiri.edu/RELAPPROXR39>)
+
+# Object Property: <http://a.com/ontology#departmentManaged> (<http://a.com/ontology#departmentManaged>)
+
+SubObjectPropertyOf(<http://a.com/ontology#departmentManaged> <http://www.absoluteiri.edu/RELAPPROXR34>)
+
+# Object Property: <http://a.com/ontology#hasManager> (<http://a.com/ontology#hasManager>)
+
+SubObjectPropertyOf(<http://a.com/ontology#hasManager> <http://www.absoluteiri.edu/RELAPPROXR37>)
+
+# Object Property: <http://a.com/ontology#managedBy> (<http://a.com/ontology#managedBy>)
+
+SubObjectPropertyOf(<http://a.com/ontology#managedBy> <http://www.absoluteiri.edu/RELAPPROXR35>)
+
+# Object Property: <http://a.com/ontology#toDepartment> (<http://a.com/ontology#toDepartment>)
+
+SubObjectPropertyOf(<http://a.com/ontology#toDepartment> <http://www.absoluteiri.edu/RELAPPROXR38>)
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR34> (<http://www.absoluteiri.edu/RELAPPROXR34>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR34> <http://a.com/ontology#departmentManaged>)
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR35> (<http://www.absoluteiri.edu/RELAPPROXR35>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR35> <http://a.com/ontology#managedBy>)
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR37> (<http://www.absoluteiri.edu/RELAPPROXR37>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR37> <http://a.com/ontology#hasManager>)
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR38> (<http://www.absoluteiri.edu/RELAPPROXR38>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR38> <http://a.com/ontology#toDepartment>)
+
+# Object Property: <http://www.absoluteiri.edu/RELAPPROXR39> (<http://www.absoluteiri.edu/RELAPPROXR39>)
+
+SubObjectPropertyOf(<http://www.absoluteiri.edu/RELAPPROXR39> <http://a.com/ontology#controls>)
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://a.com/ontology#Manages> (<http://a.com/ontology#Manages>)
+
+SubClassOf(<http://a.com/ontology#Manages> <http://a.com/ontology#ReifiedRelationshipClass>)
+
+# Class: <http://a.com/ontology#WorksOn> (<http://a.com/ontology#WorksOn>)
+
+SubClassOf(<http://a.com/ontology#WorksOn> <http://a.com/ontology#ReifiedRelationshipClass>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC29> (<http://www.absoluteiri.edu/RELAPPROXC29>)
+
+DisjointClasses(<http://www.absoluteiri.edu/RELAPPROXC29> <https://smolang.org/rdfMutate#newNode-2>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC45> (<http://www.absoluteiri.edu/RELAPPROXC45>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC45> <http://www.absoluteiri.edu/RELAPPROXC21>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC47> (<http://www.absoluteiri.edu/RELAPPROXC47>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC47> <http://www.absoluteiri.edu/RELAPPROXC21>)
+
+# Class: owl:Thing (owl:Thing)
+
+SubClassOf(owl:Thing <http://www.absoluteiri.edu/RELAPPROXC23>)
+SubClassOf(owl:Thing <http://www.absoluteiri.edu/RELAPPROXC25>)
+SubClassOf(owl:Thing <http://www.absoluteiri.edu/RELAPPROXC27>)
+SubClassOf(owl:Thing <http://www.absoluteiri.edu/RELAPPROXC29>)
+SubClassOf(owl:Thing <http://www.absoluteiri.edu/RELAPPROXC31>)
+SubClassOf(owl:Thing <http://www.absoluteiri.edu/RELAPPROXC33>)
+SubClassOf(owl:Thing <http://www.absoluteiri.edu/RELAPPROXC35>)
+SubClassOf(owl:Thing <http://www.absoluteiri.edu/RELAPPROXC37>)
+SubClassOf(owl:Thing <http://www.absoluteiri.edu/RELAPPROXC39>)
+SubClassOf(owl:Thing <http://www.absoluteiri.edu/RELAPPROXC41>)
+SubClassOf(owl:Thing <http://www.absoluteiri.edu/RELAPPROXC43>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <https://smolang.org/rdfMutate#newNode-10> (<https://smolang.org/rdfMutate#newNode-10>)
+
+ClassAssertion(<https://smolang.org/rdfMutate#newNode-10> <https://smolang.org/rdfMutate#newNode-10>)
+
+# Individual: <https://smolang.org/rdfMutate#newNode-4> (<https://smolang.org/rdfMutate#newNode-4>)
+
+ClassAssertion(<https://smolang.org/rdfMutate#newNode-4> <https://smolang.org/rdfMutate#newNode-4>)
+
+# Individual: <https://smolang.org/rdfMutate#newNode-7> (<https://smolang.org/rdfMutate#newNode-7>)
+
+ClassAssertion(<https://smolang.org/rdfMutate#newNode-7> <https://smolang.org/rdfMutate#newNode-7>)
+
+# Individual: <https://smolang.org/rdfMutate#newNode-9> (<https://smolang.org/rdfMutate#newNode-9>)
+
+ClassAssertion(ObjectSomeValuesFrom(<http://a.com/ontology#depBdate> owl:Thing) <https://smolang.org/rdfMutate#newNode-9>)
+
+
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#address> <http://www.absoluteiri.edu/RELAPPROXC21>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#address> owl:Thing) <http://a.com/ontology#Employee>)
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#bdate> <http://www.absoluteiri.edu/RELAPPROXC21>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#bdate> owl:Thing) <http://a.com/ontology#Employee>)
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#controls> owl:Thing) <http://a.com/ontology#Department>)
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#depBdate> <http://www.absoluteiri.edu/RELAPPROXC21>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#depBdate> owl:Thing) <http://a.com/ontology#Dependent>)
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#depRelationship> <http://www.absoluteiri.edu/RELAPPROXC21>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#depRelationship> owl:Thing) <http://a.com/ontology#Dependent>)
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#depSex> <http://www.absoluteiri.edu/RELAPPROXC21>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#depSex> owl:Thing) <http://a.com/ontology#Dependent>)
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#departmentManaged> owl:Thing) <http://a.com/ontology#Manages>)
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#dependentName> <http://www.absoluteiri.edu/RELAPPROXC21>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#dependentName> owl:Thing) <http://a.com/ontology#Dependent>)
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#dependentsOf> owl:Thing) <http://a.com/ontology#Dependent>)
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#dname> <http://www.absoluteiri.edu/RELAPPROXC21>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#dname> owl:Thing) <http://a.com/ontology#Department>)
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#dnumber> <http://www.absoluteiri.edu/RELAPPROXC21>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#dnumber> owl:Thing) <http://a.com/ontology#Department>)
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#ename> owl:Thing) <http://a.com/ontology#Employee>)
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#fname> <http://www.absoluteiri.edu/RELAPPROXC21>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#fname> owl:Thing) <http://a.com/ontology#Name>)
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#hasManager> owl:Thing) <http://a.com/ontology#Manages>)
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#hours> <http://www.absoluteiri.edu/RELAPPROXC21>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#hours> owl:Thing) <http://a.com/ontology#WorksOn>)
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#lname> <http://www.absoluteiri.edu/RELAPPROXC21>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#lname> owl:Thing) <http://a.com/ontology#Name>)
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#locationName> <http://www.absoluteiri.edu/RELAPPROXC21>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#locationName> owl:Thing) <http://a.com/ontology#Location>)
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#locations> owl:Thing) <http://a.com/ontology#Department>)
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#managedBy> owl:Thing) <http://a.com/ontology#Department>)
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#minit> <http://www.absoluteiri.edu/RELAPPROXC21>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#minit> owl:Thing) <http://a.com/ontology#Name>)
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#numberOfEmployees> <http://www.absoluteiri.edu/RELAPPROXC21>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#numberOfEmployees> owl:Thing) <http://a.com/ontology#Department>)
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#plocation> <http://www.absoluteiri.edu/RELAPPROXC21>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#plocation> owl:Thing) <http://a.com/ontology#Project>)
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#pname> <http://www.absoluteiri.edu/RELAPPROXC21>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#pname> owl:Thing) <http://a.com/ontology#Project>)
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#pnumber> <http://www.absoluteiri.edu/RELAPPROXC21>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#pnumber> owl:Thing) <http://a.com/ontology#Project>)
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#project> owl:Thing) <http://a.com/ontology#WorksOn>)
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#salary> <http://www.absoluteiri.edu/RELAPPROXC21>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#salary> <http://www.absoluteiri.edu/RELAPPROXC21>) owl:Restriction)
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#salary> owl:Thing) <http://a.com/ontology#Employee>)
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#sex> <http://www.absoluteiri.edu/RELAPPROXC21>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#sex> owl:Thing) <http://a.com/ontology#Employee>)
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#ssn> <http://www.absoluteiri.edu/RELAPPROXC21>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#ssn> owl:Thing) <http://a.com/ontology#Employee>)
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#startDate> <http://www.absoluteiri.edu/RELAPPROXC21>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#startDate> owl:Thing) <http://a.com/ontology#Manages>)
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#supervision> owl:Thing) <http://a.com/ontology#Employee>)
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#toDepartment> owl:Thing) <http://a.com/ontology#Project>)
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#worker> owl:Thing) <http://a.com/ontology#WorksOn>)
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#worker> owl:Thing) owl:Restriction)
+SubClassOf(ObjectSomeValuesFrom(<http://a.com/ontology#worksFor> owl:Thing) <http://a.com/ontology#Employee>)
+)

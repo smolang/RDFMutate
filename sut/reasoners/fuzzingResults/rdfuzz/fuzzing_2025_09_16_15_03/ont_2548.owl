@@ -1,0 +1,278 @@
+Prefix(:=<urn:unnamed:ontology#ont19109224269710230>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:unnamed:ontology#ont19109224269710230>
+
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-0>))
+Declaration(Class(<http://www.w3.org/2005/Incubator/geo/XGR-geo/W3C_XGR_Geo_files/geo_2007.owl#LineString>))
+Declaration(Class(<http://www.w3.org/2005/Incubator/geo/XGR-geo/W3C_XGR_Geo_files/geo_2007.owl#Envelope>))
+Declaration(Class(<http://www.opengis.net/gml/Point>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC67>))
+Declaration(Class(<http://www.w3.org/2005/Incubator/geo/XGR-geo/W3C_XGR_Geo_files/geo_2007.owl#_Feature>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC47>))
+Declaration(Class(<http://purl.org/mets/onts/2010/12/gml.owl#LinearRing>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC68>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC47RELAPPROXQ2>))
+Declaration(Class(<http://www.opengis.net/gml/Envelope>))
+Declaration(Class(<http://purl.org/mets/onts/2010/12/gml.owl#_Feature>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC44>))
+Declaration(Class(<http://www.w3.org/2005/Incubator/geo/XGR-geo/W3C_XGR_Geo_files/geo_2007.owl#Point>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC61>))
+Declaration(Class(<http://purl.org/mets/onts/2010/12/gml.owl#Envelope>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC49>))
+Declaration(Class(<http://www.w3.org/2005/Incubator/geo/XGR-geo/W3C_XGR_Geo_files/geo_2007.owl#_Geometry>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC56>))
+Declaration(Class(owl:ObjectProperty))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC69>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC64>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC57>))
+Declaration(Class(<http://www.w3.org/2005/Incubator/geo/XGR-geo/W3C_XGR_Geo_files/geo_2007.owl#LinearRing>))
+Declaration(Class(<http://www.w3.org/2005/Incubator/geo/XGR-geo/W3C_XGR_Geo_files/geo_2007.owl#Polygon>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC45>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC70>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC50>))
+Declaration(Class(<http://purl.org/mets/onts/2010/12/gml.owl#_Geometry>))
+Declaration(Class(<http://www.opengis.net/gml/LinearRing>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC66>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC59>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC71>))
+Declaration(Class(<http://purl.org/mets/onts/2010/12/gml.owl#Polygon>))
+Declaration(Class(<http://www.opengis.net/gml/LineString>))
+Declaration(Class(owl:NamedIndividual))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC60>))
+Declaration(Class(<http://purl.org/mets/onts/2010/12/gml.owl#LineString>))
+Declaration(Class(owl:Restriction))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC65>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC58>))
+Declaration(Class(<http://purl.org/mets/onts/2010/12/gml.owl#Point>))
+Declaration(Class(<http://www.opengis.net/gml/Polygon>))
+Declaration(ObjectProperty(<http://www.opengis.net/gml/pos>))
+Declaration(ObjectProperty(<http://www.georss.org/georss/floor>))
+Declaration(ObjectProperty(<https://smolang.org/rdfMutate#newNode-4>))
+Declaration(ObjectProperty(<http://purl.org/mets/onts/2010/12/gml.owl#polygon>))
+Declaration(ObjectProperty(<http://www.georss.org/georss/line>))
+Declaration(ObjectProperty(<http://purl.org/mets/onts/2010/12/gml.owl#srsName>))
+Declaration(ObjectProperty(<http://purl.org/mets/onts/2010/12/gml.owl#box>))
+Declaration(ObjectProperty(<http://purl.org/mets/onts/2010/12/gml.owl#floor>))
+Declaration(ObjectProperty(<http://purl.org/mets/onts/2010/12/gml.owl#lat>))
+Declaration(ObjectProperty(<http://purl.org/mets/onts/2010/12/gml.owl#point>))
+Declaration(ObjectProperty(<http://www.georss.org/georss/box>))
+Declaration(ObjectProperty(<http://www.opengis.net/gml/featurename>))
+Declaration(ObjectProperty(<http://www.georss.org/georss/radius>))
+Declaration(ObjectProperty(<http://www.georss.org/georss/where>))
+Declaration(ObjectProperty(<http://www.opengis.net/gml/relationshiptag>))
+Declaration(ObjectProperty(<http://purl.org/mets/onts/2010/12/gml.owl#exterior>))
+Declaration(ObjectProperty(<http://purl.org/mets/onts/2010/12/gml.owl#where>))
+Declaration(ObjectProperty(<https://smolang.org/rdfMutate#newNode-1>))
+Declaration(ObjectProperty(<http://www.georss.org/georss/elev>))
+Declaration(ObjectProperty(<http://purl.org/mets/onts/2010/12/gml.owl#srsDimension>))
+Declaration(ObjectProperty(<http://purl.org/mets/onts/2010/12/gml.owl#uomLabels>))
+Declaration(ObjectProperty(<http://www.opengis.net/gml/featuretypetag>))
+Declaration(ObjectProperty(<http://www.opengis.net/gml/exterior>))
+Declaration(ObjectProperty(<http://purl.org/mets/onts/2010/12/gml.owl#posList>))
+Declaration(ObjectProperty(<http://purl.org/mets/onts/2010/12/gml.owl#featuretypetag>))
+Declaration(ObjectProperty(<http://www.w3.org/2003/01/geo/wgs84_pos#long>))
+Declaration(ObjectProperty(<http://www.opengis.net/gml/posList>))
+Declaration(ObjectProperty(<http://purl.org/mets/onts/2010/12/gml.owl#radius>))
+Declaration(ObjectProperty(<http://purl.org/mets/onts/2010/12/gml.owl#line>))
+Declaration(ObjectProperty(<http://purl.org/mets/onts/2010/12/gml.owl#elev>))
+Declaration(ObjectProperty(<http://purl.org/mets/onts/2010/12/gml.owl#featurename>))
+Declaration(ObjectProperty(<http://purl.org/mets/onts/2010/12/gml.owl#pos>))
+Declaration(ObjectProperty(<http://www.georss.org/georss/polygon>))
+Declaration(ObjectProperty(<http://www.georss.org/georss/point>))
+Declaration(ObjectProperty(<http://www.w3.org/2003/01/geo/wgs84_pos#lat>))
+Declaration(ObjectProperty(<http://purl.org/mets/onts/2010/12/gml.owl#relationshiptag>))
+Declaration(ObjectProperty(<http://purl.org/mets/onts/2010/12/gml.owl#long>))
+Declaration(ObjectProperty(<https://smolang.org/rdfMutate#newNode-2>))
+Declaration(NamedIndividual(<http://purl.org/mets/onts/2010/12/gml.owl#long>))
+Declaration(NamedIndividual(owl:Class))
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://purl.org/mets/onts/2010/12/gml.owl#lat> (<http://purl.org/mets/onts/2010/12/gml.owl#lat>)
+
+SubObjectPropertyOf(<http://purl.org/mets/onts/2010/12/gml.owl#lat> <http://www.w3.org/2003/01/geo/wgs84_pos#lat>)
+
+# Object Property: <http://purl.org/mets/onts/2010/12/gml.owl#long> (<http://purl.org/mets/onts/2010/12/gml.owl#long>)
+
+SubObjectPropertyOf(<http://purl.org/mets/onts/2010/12/gml.owl#long> <http://www.w3.org/2003/01/geo/wgs84_pos#long>)
+
+# Object Property: <http://www.w3.org/2003/01/geo/wgs84_pos#lat> (<http://www.w3.org/2003/01/geo/wgs84_pos#lat>)
+
+SubObjectPropertyOf(<http://www.w3.org/2003/01/geo/wgs84_pos#lat> <http://purl.org/mets/onts/2010/12/gml.owl#lat>)
+
+# Object Property: <http://www.w3.org/2003/01/geo/wgs84_pos#long> (<http://www.w3.org/2003/01/geo/wgs84_pos#long>)
+
+SubObjectPropertyOf(<http://www.w3.org/2003/01/geo/wgs84_pos#long> <http://purl.org/mets/onts/2010/12/gml.owl#long>)
+
+# Object Property: <https://smolang.org/rdfMutate#newNode-2> (<https://smolang.org/rdfMutate#newNode-2>)
+
+SubObjectPropertyOf(<https://smolang.org/rdfMutate#newNode-2> <https://smolang.org/rdfMutate#newNode-2>)
+
+# Object Property: <https://smolang.org/rdfMutate#newNode-4> (<https://smolang.org/rdfMutate#newNode-4>)
+
+TransitiveObjectProperty(<https://smolang.org/rdfMutate#newNode-4>)
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.org/mets/onts/2010/12/gml.owl#Envelope> (<http://purl.org/mets/onts/2010/12/gml.owl#Envelope>)
+
+SubClassOf(<http://purl.org/mets/onts/2010/12/gml.owl#Envelope> <http://purl.org/mets/onts/2010/12/gml.owl#_Geometry>)
+SubClassOf(<http://purl.org/mets/onts/2010/12/gml.owl#Envelope> <http://www.w3.org/2005/Incubator/geo/XGR-geo/W3C_XGR_Geo_files/geo_2007.owl#Envelope>)
+
+# Class: <http://purl.org/mets/onts/2010/12/gml.owl#LineString> (<http://purl.org/mets/onts/2010/12/gml.owl#LineString>)
+
+SubClassOf(<http://purl.org/mets/onts/2010/12/gml.owl#LineString> <http://www.absoluteiri.edu/RELAPPROXC66>)
+SubClassOf(<http://purl.org/mets/onts/2010/12/gml.owl#LineString> <http://www.w3.org/2005/Incubator/geo/XGR-geo/W3C_XGR_Geo_files/geo_2007.owl#LineString>)
+SubClassOf(<http://purl.org/mets/onts/2010/12/gml.owl#LineString> ObjectSomeValuesFrom(<http://purl.org/mets/onts/2010/12/gml.owl#posList> <http://www.absoluteiri.edu/RELAPPROXC47>))
+
+# Class: <http://purl.org/mets/onts/2010/12/gml.owl#LinearRing> (<http://purl.org/mets/onts/2010/12/gml.owl#LinearRing>)
+
+SubClassOf(<http://purl.org/mets/onts/2010/12/gml.owl#LinearRing> <http://www.absoluteiri.edu/RELAPPROXC66>)
+SubClassOf(<http://purl.org/mets/onts/2010/12/gml.owl#LinearRing> <http://www.w3.org/2005/Incubator/geo/XGR-geo/W3C_XGR_Geo_files/geo_2007.owl#LinearRing>)
+SubClassOf(<http://purl.org/mets/onts/2010/12/gml.owl#LinearRing> ObjectSomeValuesFrom(<http://purl.org/mets/onts/2010/12/gml.owl#posList> <http://www.absoluteiri.edu/RELAPPROXC47>))
+
+# Class: <http://purl.org/mets/onts/2010/12/gml.owl#Point> (<http://purl.org/mets/onts/2010/12/gml.owl#Point>)
+
+SubClassOf(<http://purl.org/mets/onts/2010/12/gml.owl#Point> <http://purl.org/mets/onts/2010/12/gml.owl#_Geometry>)
+SubClassOf(<http://purl.org/mets/onts/2010/12/gml.owl#Point> <http://www.absoluteiri.edu/RELAPPROXC58>)
+SubClassOf(<http://purl.org/mets/onts/2010/12/gml.owl#Point> <http://www.w3.org/2005/Incubator/geo/XGR-geo/W3C_XGR_Geo_files/geo_2007.owl#Point>)
+SubClassOf(<http://purl.org/mets/onts/2010/12/gml.owl#Point> ObjectSomeValuesFrom(<http://purl.org/mets/onts/2010/12/gml.owl#pos> <http://www.absoluteiri.edu/RELAPPROXC47>))
+
+# Class: <http://purl.org/mets/onts/2010/12/gml.owl#Polygon> (<http://purl.org/mets/onts/2010/12/gml.owl#Polygon>)
+
+SubClassOf(<http://purl.org/mets/onts/2010/12/gml.owl#Polygon> <http://purl.org/mets/onts/2010/12/gml.owl#_Geometry>)
+SubClassOf(<http://purl.org/mets/onts/2010/12/gml.owl#Polygon> <http://www.w3.org/2005/Incubator/geo/XGR-geo/W3C_XGR_Geo_files/geo_2007.owl#Polygon>)
+
+# Class: <http://purl.org/mets/onts/2010/12/gml.owl#_Feature> (<http://purl.org/mets/onts/2010/12/gml.owl#_Feature>)
+
+SubClassOf(<http://purl.org/mets/onts/2010/12/gml.owl#_Feature> <http://www.w3.org/2005/Incubator/geo/XGR-geo/W3C_XGR_Geo_files/geo_2007.owl#_Feature>)
+
+# Class: <http://purl.org/mets/onts/2010/12/gml.owl#_Geometry> (<http://purl.org/mets/onts/2010/12/gml.owl#_Geometry>)
+
+SubClassOf(<http://purl.org/mets/onts/2010/12/gml.owl#_Geometry> <http://www.w3.org/2005/Incubator/geo/XGR-geo/W3C_XGR_Geo_files/geo_2007.owl#_Geometry>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC44> (<http://www.absoluteiri.edu/RELAPPROXC44>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC44> <http://www.absoluteiri.edu/RELAPPROXC57>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC44> <http://www.absoluteiri.edu/RELAPPROXC71>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC47RELAPPROXQ2> (<http://www.absoluteiri.edu/RELAPPROXC47RELAPPROXQ2>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC47RELAPPROXQ2> <http://www.absoluteiri.edu/RELAPPROXC47>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC50> (<http://www.absoluteiri.edu/RELAPPROXC50>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC50> ObjectSomeValuesFrom(<http://www.opengis.net/gml/posList> <http://www.absoluteiri.edu/RELAPPROXC47RELAPPROXQ2>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC56> (<http://www.absoluteiri.edu/RELAPPROXC56>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC56> <http://www.absoluteiri.edu/RELAPPROXC45>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC59> (<http://www.absoluteiri.edu/RELAPPROXC59>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC59> ObjectSomeValuesFrom(<http://purl.org/mets/onts/2010/12/gml.owl#pos> <http://www.absoluteiri.edu/RELAPPROXC47RELAPPROXQ2>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC61> (<http://www.absoluteiri.edu/RELAPPROXC61>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC61> ObjectSomeValuesFrom(<http://www.opengis.net/gml/pos> <http://www.absoluteiri.edu/RELAPPROXC47RELAPPROXQ2>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC67> (<http://www.absoluteiri.edu/RELAPPROXC67>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC67> ObjectSomeValuesFrom(<http://purl.org/mets/onts/2010/12/gml.owl#posList> <http://www.absoluteiri.edu/RELAPPROXC47RELAPPROXQ2>))
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC70> (<http://www.absoluteiri.edu/RELAPPROXC70>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC70> <http://www.absoluteiri.edu/RELAPPROXC45>)
+
+# Class: <http://www.opengis.net/gml/LineString> (<http://www.opengis.net/gml/LineString>)
+
+SubClassOf(<http://www.opengis.net/gml/LineString> <http://www.absoluteiri.edu/RELAPPROXC49>)
+SubClassOf(<http://www.opengis.net/gml/LineString> ObjectSomeValuesFrom(<http://www.opengis.net/gml/posList> <http://www.absoluteiri.edu/RELAPPROXC47>))
+
+# Class: <http://www.opengis.net/gml/LinearRing> (<http://www.opengis.net/gml/LinearRing>)
+
+SubClassOf(<http://www.opengis.net/gml/LinearRing> <http://www.absoluteiri.edu/RELAPPROXC49>)
+SubClassOf(<http://www.opengis.net/gml/LinearRing> ObjectSomeValuesFrom(<http://www.opengis.net/gml/posList> <http://www.absoluteiri.edu/RELAPPROXC47>))
+
+# Class: <http://www.opengis.net/gml/Point> (<http://www.opengis.net/gml/Point>)
+
+SubClassOf(<http://www.opengis.net/gml/Point> <http://www.absoluteiri.edu/RELAPPROXC60>)
+SubClassOf(<http://www.opengis.net/gml/Point> ObjectSomeValuesFrom(<http://www.opengis.net/gml/pos> <http://www.absoluteiri.edu/RELAPPROXC47>))
+
+# Class: owl:Thing (owl:Thing)
+
+SubClassOf(owl:Thing <http://www.absoluteiri.edu/RELAPPROXC64>)
+SubClassOf(owl:Thing <http://www.absoluteiri.edu/RELAPPROXC68>)
+
+# Class: <http://www.w3.org/2005/Incubator/geo/XGR-geo/W3C_XGR_Geo_files/geo_2007.owl#Envelope> (<http://www.w3.org/2005/Incubator/geo/XGR-geo/W3C_XGR_Geo_files/geo_2007.owl#Envelope>)
+
+SubClassOf(<http://www.w3.org/2005/Incubator/geo/XGR-geo/W3C_XGR_Geo_files/geo_2007.owl#Envelope> <http://purl.org/mets/onts/2010/12/gml.owl#Envelope>)
+
+# Class: <http://www.w3.org/2005/Incubator/geo/XGR-geo/W3C_XGR_Geo_files/geo_2007.owl#LineString> (<http://www.w3.org/2005/Incubator/geo/XGR-geo/W3C_XGR_Geo_files/geo_2007.owl#LineString>)
+
+SubClassOf(<http://www.w3.org/2005/Incubator/geo/XGR-geo/W3C_XGR_Geo_files/geo_2007.owl#LineString> <http://purl.org/mets/onts/2010/12/gml.owl#LineString>)
+
+# Class: <http://www.w3.org/2005/Incubator/geo/XGR-geo/W3C_XGR_Geo_files/geo_2007.owl#LinearRing> (<http://www.w3.org/2005/Incubator/geo/XGR-geo/W3C_XGR_Geo_files/geo_2007.owl#LinearRing>)
+
+SubClassOf(<http://www.w3.org/2005/Incubator/geo/XGR-geo/W3C_XGR_Geo_files/geo_2007.owl#LinearRing> <http://purl.org/mets/onts/2010/12/gml.owl#LinearRing>)
+
+# Class: <http://www.w3.org/2005/Incubator/geo/XGR-geo/W3C_XGR_Geo_files/geo_2007.owl#Point> (<http://www.w3.org/2005/Incubator/geo/XGR-geo/W3C_XGR_Geo_files/geo_2007.owl#Point>)
+
+SubClassOf(<http://www.w3.org/2005/Incubator/geo/XGR-geo/W3C_XGR_Geo_files/geo_2007.owl#Point> <http://purl.org/mets/onts/2010/12/gml.owl#Point>)
+
+# Class: <http://www.w3.org/2005/Incubator/geo/XGR-geo/W3C_XGR_Geo_files/geo_2007.owl#Polygon> (<http://www.w3.org/2005/Incubator/geo/XGR-geo/W3C_XGR_Geo_files/geo_2007.owl#Polygon>)
+
+SubClassOf(<http://www.w3.org/2005/Incubator/geo/XGR-geo/W3C_XGR_Geo_files/geo_2007.owl#Polygon> <http://purl.org/mets/onts/2010/12/gml.owl#Polygon>)
+
+# Class: <http://www.w3.org/2005/Incubator/geo/XGR-geo/W3C_XGR_Geo_files/geo_2007.owl#_Feature> (<http://www.w3.org/2005/Incubator/geo/XGR-geo/W3C_XGR_Geo_files/geo_2007.owl#_Feature>)
+
+SubClassOf(<http://www.w3.org/2005/Incubator/geo/XGR-geo/W3C_XGR_Geo_files/geo_2007.owl#_Feature> <http://purl.org/mets/onts/2010/12/gml.owl#_Feature>)
+
+# Class: <http://www.w3.org/2005/Incubator/geo/XGR-geo/W3C_XGR_Geo_files/geo_2007.owl#_Geometry> (<http://www.w3.org/2005/Incubator/geo/XGR-geo/W3C_XGR_Geo_files/geo_2007.owl#_Geometry>)
+
+SubClassOf(<http://www.w3.org/2005/Incubator/geo/XGR-geo/W3C_XGR_Geo_files/geo_2007.owl#_Geometry> <http://purl.org/mets/onts/2010/12/gml.owl#_Geometry>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://purl.org/mets/onts/2010/12/gml.owl#long> (<http://purl.org/mets/onts/2010/12/gml.owl#long>)
+
+ClassAssertion(owl:NamedIndividual <http://purl.org/mets/onts/2010/12/gml.owl#long>)
+ClassAssertion(owl:ObjectProperty <http://purl.org/mets/onts/2010/12/gml.owl#long>)
+
+# Individual: owl:Class (owl:Class)
+
+ClassAssertion(owl:NamedIndividual owl:Class)
+
+
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/mets/onts/2010/12/gml.owl#box> owl:Thing) <http://purl.org/mets/onts/2010/12/gml.owl#_Feature>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/mets/onts/2010/12/gml.owl#elev> owl:Thing) <http://purl.org/mets/onts/2010/12/gml.owl#_Feature>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/mets/onts/2010/12/gml.owl#exterior> owl:Thing) <http://purl.org/mets/onts/2010/12/gml.owl#Polygon>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/mets/onts/2010/12/gml.owl#featurename> owl:Thing) <http://purl.org/mets/onts/2010/12/gml.owl#_Feature>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/mets/onts/2010/12/gml.owl#featuretypetag> owl:Thing) <http://purl.org/mets/onts/2010/12/gml.owl#_Feature>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/mets/onts/2010/12/gml.owl#floor> owl:Thing) <http://purl.org/mets/onts/2010/12/gml.owl#_Feature>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/mets/onts/2010/12/gml.owl#lat> owl:Thing) <http://purl.org/mets/onts/2010/12/gml.owl#_Feature>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/mets/onts/2010/12/gml.owl#line> owl:Thing) <http://purl.org/mets/onts/2010/12/gml.owl#_Feature>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/mets/onts/2010/12/gml.owl#long> owl:Thing) <http://purl.org/mets/onts/2010/12/gml.owl#_Feature>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/mets/onts/2010/12/gml.owl#point> owl:Thing) <http://purl.org/mets/onts/2010/12/gml.owl#_Feature>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/mets/onts/2010/12/gml.owl#polygon> owl:Thing) <http://purl.org/mets/onts/2010/12/gml.owl#_Feature>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/mets/onts/2010/12/gml.owl#radius> owl:Thing) <http://purl.org/mets/onts/2010/12/gml.owl#_Feature>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/mets/onts/2010/12/gml.owl#relationshiptag> owl:Thing) <http://purl.org/mets/onts/2010/12/gml.owl#_Feature>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/mets/onts/2010/12/gml.owl#srsDimension> owl:Thing) <http://purl.org/mets/onts/2010/12/gml.owl#_Geometry>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/mets/onts/2010/12/gml.owl#srsName> owl:Thing) <http://purl.org/mets/onts/2010/12/gml.owl#_Geometry>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/mets/onts/2010/12/gml.owl#uomLabels> owl:Thing) <http://purl.org/mets/onts/2010/12/gml.owl#_Geometry>)
+SubClassOf(ObjectSomeValuesFrom(<http://purl.org/mets/onts/2010/12/gml.owl#where> owl:Thing) <http://purl.org/mets/onts/2010/12/gml.owl#_Feature>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.opengis.net/gml/exterior> owl:Thing) <http://www.opengis.net/gml/Polygon>)
+)

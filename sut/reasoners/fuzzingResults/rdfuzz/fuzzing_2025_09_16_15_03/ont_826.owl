@@ -1,0 +1,350 @@
+Prefix(:=<urn:unnamed:ontology#ont19094854056542089>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:unnamed:ontology#ont19094854056542089>
+
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC94>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC62>))
+Declaration(Class(<http://www.owl-ontologies.com/Ontology1324330201.owl#Requirement>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC72>))
+Declaration(Class(<http://www.owl-ontologies.com/Ontology1324330201.owl#TransferFunction>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC79>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC96>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC91>))
+Declaration(Class(<http://www.owl-ontologies.com/Ontology1324330201.owl#CoreProductModel>))
+Declaration(Class(<http://www.owl-ontologies.com/Ontology1324330201.owl#Material>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC67>))
+Declaration(Class(<http://www.owl-ontologies.com/Ontology1324330201.owl#CoreEntity>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC68>))
+Declaration(Class(<http://www.owl-ontologies.com/Ontology1324330201.owl#subArtifacts>))
+Declaration(Class(owl:Thing))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC83>))
+Declaration(Class(owl:Class))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC97>))
+Declaration(Class(<http://www.owl-ontologies.com/Ontology1324330201.owl#Artifact_Process_Information>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC74>))
+Declaration(Class(<http://www.owl-ontologies.com/Ontology1324330201.owl#CommonCoreRelationship>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC85>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-1>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC80>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC90>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC75>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC99>))
+Declaration(Class(<http://www.owl-ontologies.com/Ontology1324330201.owl#EntityAssociation>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC86>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC63>))
+Declaration(Class(<http://www.owl-ontologies.com/Ontology1324330201.owl#Information>))
+Declaration(Class(<http://www.owl-ontologies.com/Ontology1324330201.owl#Specification>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC92>))
+Declaration(Class(<http://www.owl-ontologies.com/Ontology1324330201.owl#Behavior>))
+Declaration(Class(<http://www.owl-ontologies.com/Ontology1324330201.owl#Trace>))
+Declaration(Class(<http://www.owl-ontologies.com/Ontology1324330201.owl#Properties>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC69>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC77>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC64>))
+Declaration(Class(<http://www.owl-ontologies.com/Ontology1324330201.owl#Port>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC88>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-4>))
+Declaration(Class(<http://www.owl-ontologies.com/Ontology1324330201.owl#Function>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC98>))
+Declaration(Class(<http://www.owl-ontologies.com/Ontology1324330201.owl#Geometry>))
+Declaration(Class(<http://www.owl-ontologies.com/Ontology1324330201.owl#CoreProperty>))
+Declaration(Class(<http://www.owl-ontologies.com/Ontology1324330201.owl#Flow>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC93>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC70>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC81>))
+Declaration(Class(<http://www.owl-ontologies.com/Ontology1324330201.owl#CommonCoreObject>))
+Declaration(Class(<http://www.owl-ontologies.com/Ontology1324330201.owl#Documentation>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC76>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC71>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC87>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC95>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-3>))
+Declaration(Class(<http://www.owl-ontologies.com/Ontology1324330201.owl#Constraint>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC82>))
+Declaration(Class(<http://www.owl-ontologies.com/Ontology1324330201.owl#Form>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC73>))
+Declaration(Class(<http://www.owl-ontologies.com/Ontology1324330201.owl#Usage>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC84>))
+Declaration(Class(<http://www.owl-ontologies.com/Ontology1324330201.owl#Feature>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC78>))
+Declaration(Class(<http://www.owl-ontologies.com/Ontology1324330201.owl#Artifact>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC65>))
+Declaration(Class(<http://www.owl-ontologies.com/Ontology1324330201.owl#Rationale>))
+Declaration(Class(<http://www.absoluteiri.edu/RELAPPROXC89>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-5>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_Source_of>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_Form_of_Artifact>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_Feature_of_Function>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_associated_entity>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_Artifact_of_Form>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/Ontology1324330201.owl#is_contianed_in>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/Ontology1324330201.owl#Satisfies>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/Ontology1324330201.owl#isSubArtifactOf>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_Function_of_Artifact>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_Material>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_Input_Flow>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_Feature_of_Form>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_constrained_property>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_Requirement>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_entity_association>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_Behavior>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_Form_of_Feature>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/Ontology1324330201.owl#is_featureOfArtifact>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_Rationale>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_Output_Flow>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/Ontology1324330201.owl#is_decomposed_into_>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_property>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/Ontology1324330201.owl#ObjectProperty_38>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/Ontology1324330201.owl#Output_Flow>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_CC_relationship>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_associated_CCO>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/Ontology1324330201.owl#is_Source_of>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_subArtifacts>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_Feature>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/Ontology1324330201.owl#is_Value_Pair_Representation_of>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_Geometry>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/Ontology1324330201.owl#is_Destination_of>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_Artifact_of_Function>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/Ontology1324330201.owl#Specifies>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_information>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_Destination_of>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_Artifact_of_Behavior>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/Ontology1324330201.owl#is_geometry_Of_Form>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_Product_Development_Process_Parameters>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_Function_of_Feature>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/Ontology1324330201.owl#Input_Flow>))
+Declaration(ObjectProperty(<https://smolang.org/rdfMutate#newNode-6>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_requiredProperty>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/Ontology1324330201.owl#is_decomposed_into>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/Ontology1324330201.owl#is_Description_of>))
+Declaration(ObjectProperty(<http://www.owl-ontologies.com/Ontology1324330201.owl#is_Documentation_of>))
+Declaration(NamedIndividual(owl:Class))
+Declaration(NamedIndividual(<http://www.owl-ontologies.com/Ontology1324330201.owl#Information_Documentation>))
+Declaration(NamedIndividual(<http://www.owl-ontologies.com/Ontology1324330201.owl#Information_Properties>))
+Declaration(NamedIndividual(<http://www.owl-ontologies.com/Ontology1324330201.owl#subArtifacts_Process_Information>))
+Declaration(NamedIndividual(<http://www.owl-ontologies.com/Ontology1324330201.owl#Artifact_Process_Information>))
+Declaration(NamedIndividual(<http://www.absoluteiri.edu/RELAPPROXC70>))
+
+############################
+#   Classes
+############################
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC94> (<http://www.absoluteiri.edu/RELAPPROXC94>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC94> <http://www.absoluteiri.edu/RELAPPROXC97>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC96> (<http://www.absoluteiri.edu/RELAPPROXC96>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC96> <http://www.absoluteiri.edu/RELAPPROXC95>)
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC96> <http://www.absoluteiri.edu/RELAPPROXC99>)
+
+# Class: <http://www.absoluteiri.edu/RELAPPROXC98> (<http://www.absoluteiri.edu/RELAPPROXC98>)
+
+SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC98> <http://www.absoluteiri.edu/RELAPPROXC97>)
+
+# Class: <http://www.owl-ontologies.com/Ontology1324330201.owl#Artifact> (<http://www.owl-ontologies.com/Ontology1324330201.owl#Artifact>)
+
+SubClassOf(<http://www.owl-ontologies.com/Ontology1324330201.owl#Artifact> <http://www.owl-ontologies.com/Ontology1324330201.owl#CoreEntity>)
+
+# Class: <http://www.owl-ontologies.com/Ontology1324330201.owl#Artifact_Process_Information> (<http://www.owl-ontologies.com/Ontology1324330201.owl#Artifact_Process_Information>)
+
+SubClassOf(<http://www.owl-ontologies.com/Ontology1324330201.owl#Artifact_Process_Information> <http://www.owl-ontologies.com/Ontology1324330201.owl#Artifact>)
+
+# Class: <http://www.owl-ontologies.com/Ontology1324330201.owl#Behavior> (<http://www.owl-ontologies.com/Ontology1324330201.owl#Behavior>)
+
+SubClassOf(<http://www.owl-ontologies.com/Ontology1324330201.owl#Behavior> <http://www.owl-ontologies.com/Ontology1324330201.owl#CommonCoreObject>)
+
+# Class: <http://www.owl-ontologies.com/Ontology1324330201.owl#CommonCoreObject> (<http://www.owl-ontologies.com/Ontology1324330201.owl#CommonCoreObject>)
+
+SubClassOf(<http://www.owl-ontologies.com/Ontology1324330201.owl#CommonCoreObject> <http://www.owl-ontologies.com/Ontology1324330201.owl#CoreProductModel>)
+
+# Class: <http://www.owl-ontologies.com/Ontology1324330201.owl#CommonCoreRelationship> (<http://www.owl-ontologies.com/Ontology1324330201.owl#CommonCoreRelationship>)
+
+SubClassOf(<http://www.owl-ontologies.com/Ontology1324330201.owl#CommonCoreRelationship> <http://www.owl-ontologies.com/Ontology1324330201.owl#CoreProductModel>)
+
+# Class: <http://www.owl-ontologies.com/Ontology1324330201.owl#Constraint> (<http://www.owl-ontologies.com/Ontology1324330201.owl#Constraint>)
+
+SubClassOf(<http://www.owl-ontologies.com/Ontology1324330201.owl#Constraint> <http://www.owl-ontologies.com/Ontology1324330201.owl#CommonCoreRelationship>)
+
+# Class: <http://www.owl-ontologies.com/Ontology1324330201.owl#CoreEntity> (<http://www.owl-ontologies.com/Ontology1324330201.owl#CoreEntity>)
+
+SubClassOf(<http://www.owl-ontologies.com/Ontology1324330201.owl#CoreEntity> <http://www.owl-ontologies.com/Ontology1324330201.owl#CommonCoreObject>)
+
+# Class: <http://www.owl-ontologies.com/Ontology1324330201.owl#CoreProperty> (<http://www.owl-ontologies.com/Ontology1324330201.owl#CoreProperty>)
+
+SubClassOf(<http://www.owl-ontologies.com/Ontology1324330201.owl#CoreProperty> <http://www.owl-ontologies.com/Ontology1324330201.owl#CommonCoreObject>)
+
+# Class: <http://www.owl-ontologies.com/Ontology1324330201.owl#Documentation> (<http://www.owl-ontologies.com/Ontology1324330201.owl#Documentation>)
+
+SubClassOf(<http://www.owl-ontologies.com/Ontology1324330201.owl#Documentation> <http://www.owl-ontologies.com/Ontology1324330201.owl#Information>)
+
+# Class: <http://www.owl-ontologies.com/Ontology1324330201.owl#EntityAssociation> (<http://www.owl-ontologies.com/Ontology1324330201.owl#EntityAssociation>)
+
+SubClassOf(<http://www.owl-ontologies.com/Ontology1324330201.owl#EntityAssociation> <http://www.owl-ontologies.com/Ontology1324330201.owl#CommonCoreRelationship>)
+
+# Class: <http://www.owl-ontologies.com/Ontology1324330201.owl#Feature> (<http://www.owl-ontologies.com/Ontology1324330201.owl#Feature>)
+
+SubClassOf(<http://www.owl-ontologies.com/Ontology1324330201.owl#Feature> <http://www.owl-ontologies.com/Ontology1324330201.owl#CoreEntity>)
+
+# Class: <http://www.owl-ontologies.com/Ontology1324330201.owl#Flow> (<http://www.owl-ontologies.com/Ontology1324330201.owl#Flow>)
+
+SubClassOf(<http://www.owl-ontologies.com/Ontology1324330201.owl#Flow> <http://www.owl-ontologies.com/Ontology1324330201.owl#CoreProperty>)
+
+# Class: <http://www.owl-ontologies.com/Ontology1324330201.owl#Form> (<http://www.owl-ontologies.com/Ontology1324330201.owl#Form>)
+
+SubClassOf(<http://www.owl-ontologies.com/Ontology1324330201.owl#Form> <http://www.owl-ontologies.com/Ontology1324330201.owl#CoreProperty>)
+
+# Class: <http://www.owl-ontologies.com/Ontology1324330201.owl#Function> (<http://www.owl-ontologies.com/Ontology1324330201.owl#Function>)
+
+SubClassOf(<http://www.owl-ontologies.com/Ontology1324330201.owl#Function> <http://www.owl-ontologies.com/Ontology1324330201.owl#CoreProperty>)
+
+# Class: <http://www.owl-ontologies.com/Ontology1324330201.owl#Geometry> (<http://www.owl-ontologies.com/Ontology1324330201.owl#Geometry>)
+
+SubClassOf(<http://www.owl-ontologies.com/Ontology1324330201.owl#Geometry> <http://www.owl-ontologies.com/Ontology1324330201.owl#CoreProperty>)
+
+# Class: <http://www.owl-ontologies.com/Ontology1324330201.owl#Information> (<http://www.owl-ontologies.com/Ontology1324330201.owl#Information>)
+
+SubClassOf(<http://www.owl-ontologies.com/Ontology1324330201.owl#Information> <http://www.owl-ontologies.com/Ontology1324330201.owl#CoreProductModel>)
+
+# Class: <http://www.owl-ontologies.com/Ontology1324330201.owl#Material> (<http://www.owl-ontologies.com/Ontology1324330201.owl#Material>)
+
+SubClassOf(<http://www.owl-ontologies.com/Ontology1324330201.owl#Material> <http://www.owl-ontologies.com/Ontology1324330201.owl#CoreProperty>)
+
+# Class: <http://www.owl-ontologies.com/Ontology1324330201.owl#Port> (<http://www.owl-ontologies.com/Ontology1324330201.owl#Port>)
+
+SubClassOf(<http://www.owl-ontologies.com/Ontology1324330201.owl#Port> <http://www.owl-ontologies.com/Ontology1324330201.owl#Feature>)
+
+# Class: <http://www.owl-ontologies.com/Ontology1324330201.owl#Properties> (<http://www.owl-ontologies.com/Ontology1324330201.owl#Properties>)
+
+SubClassOf(<http://www.owl-ontologies.com/Ontology1324330201.owl#Properties> <http://www.owl-ontologies.com/Ontology1324330201.owl#Information>)
+
+# Class: <http://www.owl-ontologies.com/Ontology1324330201.owl#Rationale> (<http://www.owl-ontologies.com/Ontology1324330201.owl#Rationale>)
+
+SubClassOf(<http://www.owl-ontologies.com/Ontology1324330201.owl#Rationale> <http://www.owl-ontologies.com/Ontology1324330201.owl#CoreProperty>)
+
+# Class: <http://www.owl-ontologies.com/Ontology1324330201.owl#Requirement> (<http://www.owl-ontologies.com/Ontology1324330201.owl#Requirement>)
+
+SubClassOf(<http://www.owl-ontologies.com/Ontology1324330201.owl#Requirement> <http://www.owl-ontologies.com/Ontology1324330201.owl#CommonCoreObject>)
+
+# Class: <http://www.owl-ontologies.com/Ontology1324330201.owl#Specification> (<http://www.owl-ontologies.com/Ontology1324330201.owl#Specification>)
+
+SubClassOf(<http://www.owl-ontologies.com/Ontology1324330201.owl#Specification> <http://www.owl-ontologies.com/Ontology1324330201.owl#CommonCoreObject>)
+
+# Class: <http://www.owl-ontologies.com/Ontology1324330201.owl#Trace> (<http://www.owl-ontologies.com/Ontology1324330201.owl#Trace>)
+
+SubClassOf(<http://www.owl-ontologies.com/Ontology1324330201.owl#Trace> <http://www.owl-ontologies.com/Ontology1324330201.owl#CommonCoreRelationship>)
+
+# Class: <http://www.owl-ontologies.com/Ontology1324330201.owl#TransferFunction> (<http://www.owl-ontologies.com/Ontology1324330201.owl#TransferFunction>)
+
+SubClassOf(<http://www.owl-ontologies.com/Ontology1324330201.owl#TransferFunction> <http://www.owl-ontologies.com/Ontology1324330201.owl#Function>)
+
+# Class: <http://www.owl-ontologies.com/Ontology1324330201.owl#Usage> (<http://www.owl-ontologies.com/Ontology1324330201.owl#Usage>)
+
+SubClassOf(<http://www.owl-ontologies.com/Ontology1324330201.owl#Usage> <http://www.owl-ontologies.com/Ontology1324330201.owl#CommonCoreRelationship>)
+
+# Class: <http://www.owl-ontologies.com/Ontology1324330201.owl#subArtifacts> (<http://www.owl-ontologies.com/Ontology1324330201.owl#subArtifacts>)
+
+SubClassOf(<http://www.owl-ontologies.com/Ontology1324330201.owl#subArtifacts> <http://www.owl-ontologies.com/Ontology1324330201.owl#Artifact>)
+
+# Class: owl:Thing (owl:Thing)
+
+SubClassOf(owl:Thing <http://www.absoluteiri.edu/RELAPPROXC62>)
+SubClassOf(owl:Thing <http://www.absoluteiri.edu/RELAPPROXC64>)
+SubClassOf(owl:Thing <http://www.absoluteiri.edu/RELAPPROXC68>)
+SubClassOf(owl:Thing <http://www.absoluteiri.edu/RELAPPROXC70>)
+SubClassOf(owl:Thing <http://www.absoluteiri.edu/RELAPPROXC72>)
+SubClassOf(owl:Thing <http://www.absoluteiri.edu/RELAPPROXC74>)
+SubClassOf(owl:Thing <http://www.absoluteiri.edu/RELAPPROXC76>)
+SubClassOf(owl:Thing <http://www.absoluteiri.edu/RELAPPROXC78>)
+SubClassOf(owl:Thing <http://www.absoluteiri.edu/RELAPPROXC80>)
+SubClassOf(owl:Thing <http://www.absoluteiri.edu/RELAPPROXC82>)
+SubClassOf(owl:Thing <http://www.absoluteiri.edu/RELAPPROXC84>)
+SubClassOf(owl:Thing <http://www.absoluteiri.edu/RELAPPROXC86>)
+SubClassOf(owl:Thing <http://www.absoluteiri.edu/RELAPPROXC88>)
+SubClassOf(owl:Thing <http://www.absoluteiri.edu/RELAPPROXC90>)
+SubClassOf(owl:Thing <http://www.absoluteiri.edu/RELAPPROXC92>)
+
+# Class: <https://smolang.org/rdfMutate#newNode-1> (<https://smolang.org/rdfMutate#newNode-1>)
+
+SubClassOf(<https://smolang.org/rdfMutate#newNode-1> <http://www.absoluteiri.edu/RELAPPROXC89>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://www.absoluteiri.edu/RELAPPROXC70> (<http://www.absoluteiri.edu/RELAPPROXC70>)
+
+ClassAssertion(owl:Class <http://www.absoluteiri.edu/RELAPPROXC70>)
+
+# Individual: <http://www.owl-ontologies.com/Ontology1324330201.owl#Artifact_Process_Information> (<http://www.owl-ontologies.com/Ontology1324330201.owl#Artifact_Process_Information>)
+
+ClassAssertion(<http://www.owl-ontologies.com/Ontology1324330201.owl#Artifact> <http://www.owl-ontologies.com/Ontology1324330201.owl#Artifact_Process_Information>)
+ClassAssertion(owl:Class <http://www.owl-ontologies.com/Ontology1324330201.owl#Artifact_Process_Information>)
+
+# Individual: <http://www.owl-ontologies.com/Ontology1324330201.owl#Information_Documentation> (<http://www.owl-ontologies.com/Ontology1324330201.owl#Information_Documentation>)
+
+ClassAssertion(<http://www.owl-ontologies.com/Ontology1324330201.owl#Documentation> <http://www.owl-ontologies.com/Ontology1324330201.owl#Information_Documentation>)
+
+# Individual: <http://www.owl-ontologies.com/Ontology1324330201.owl#Information_Properties> (<http://www.owl-ontologies.com/Ontology1324330201.owl#Information_Properties>)
+
+ClassAssertion(<http://www.owl-ontologies.com/Ontology1324330201.owl#Properties> <http://www.owl-ontologies.com/Ontology1324330201.owl#Information_Properties>)
+
+# Individual: <http://www.owl-ontologies.com/Ontology1324330201.owl#subArtifacts_Process_Information> (<http://www.owl-ontologies.com/Ontology1324330201.owl#subArtifacts_Process_Information>)
+
+ClassAssertion(<http://www.owl-ontologies.com/Ontology1324330201.owl#subArtifacts> <http://www.owl-ontologies.com/Ontology1324330201.owl#subArtifacts_Process_Information>)
+
+# Individual: owl:Class (owl:Class)
+
+ClassAssertion(<http://www.absoluteiri.edu/RELAPPROXC70> owl:Class)
+ClassAssertion(owl:Class owl:Class)
+
+
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/Ontology1324330201.owl#Input_Flow> owl:Thing) <http://www.owl-ontologies.com/Ontology1324330201.owl#TransferFunction>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/Ontology1324330201.owl#Output_Flow> owl:Thing) <http://www.owl-ontologies.com/Ontology1324330201.owl#TransferFunction>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/Ontology1324330201.owl#Satisfies> owl:Thing) <http://www.owl-ontologies.com/Ontology1324330201.owl#Artifact>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/Ontology1324330201.owl#Specifies> owl:Thing) <http://www.owl-ontologies.com/Ontology1324330201.owl#Specification>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_Artifact_of_Behavior> owl:Thing) <http://www.owl-ontologies.com/Ontology1324330201.owl#Behavior>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_Artifact_of_Form> owl:Thing) <http://www.owl-ontologies.com/Ontology1324330201.owl#Form>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_Artifact_of_Function> owl:Thing) <http://www.owl-ontologies.com/Ontology1324330201.owl#Function>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_Behavior> owl:Thing) <http://www.owl-ontologies.com/Ontology1324330201.owl#Artifact>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_CC_relationship> owl:Thing) <http://www.owl-ontologies.com/Ontology1324330201.owl#CommonCoreObject>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_Destination_of> owl:Thing) <http://www.owl-ontologies.com/Ontology1324330201.owl#Flow>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_Feature> owl:Thing) <http://www.owl-ontologies.com/Ontology1324330201.owl#Artifact>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_Feature_of_Form> owl:Thing) <http://www.owl-ontologies.com/Ontology1324330201.owl#Form>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_Feature_of_Function> owl:Thing) <http://www.owl-ontologies.com/Ontology1324330201.owl#Function>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_Form_of_Artifact> owl:Thing) <http://www.owl-ontologies.com/Ontology1324330201.owl#Artifact>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_Form_of_Feature> owl:Thing) <http://www.owl-ontologies.com/Ontology1324330201.owl#Feature>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_Function_of_Feature> owl:Thing) <http://www.owl-ontologies.com/Ontology1324330201.owl#Feature>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_Geometry> owl:Thing) <http://www.owl-ontologies.com/Ontology1324330201.owl#Form>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_Material> owl:Thing) <http://www.owl-ontologies.com/Ontology1324330201.owl#Form>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_Output_Flow> owl:Thing) <http://www.owl-ontologies.com/Ontology1324330201.owl#Artifact>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_Product_Development_Process_Parameters> owl:Thing) <http://www.owl-ontologies.com/Ontology1324330201.owl#Artifact>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_Rationale> owl:Thing) <http://www.owl-ontologies.com/Ontology1324330201.owl#Rationale>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_Requirement> owl:Thing) <http://www.owl-ontologies.com/Ontology1324330201.owl#CoreProperty>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_Source_of> owl:Thing) <http://www.owl-ontologies.com/Ontology1324330201.owl#Flow>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_associated_CCO> owl:Thing) <http://www.owl-ontologies.com/Ontology1324330201.owl#CommonCoreRelationship>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_associated_entity> owl:Thing) <http://www.owl-ontologies.com/Ontology1324330201.owl#EntityAssociation>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_constrained_property> owl:Thing) <http://www.owl-ontologies.com/Ontology1324330201.owl#CoreProperty>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_entity_association> owl:Thing) <http://www.owl-ontologies.com/Ontology1324330201.owl#CoreEntity>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_information> <http://www.absoluteiri.edu/RELAPPROXC67>) owl:Nothing)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_information> owl:Thing) <http://www.owl-ontologies.com/Ontology1324330201.owl#Artifact>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_property> owl:Thing) <http://www.owl-ontologies.com/Ontology1324330201.owl#Constraint>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_requiredProperty> owl:Thing) <http://www.owl-ontologies.com/Ontology1324330201.owl#Requirement>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/Ontology1324330201.owl#has_subArtifacts> owl:Thing) <http://www.owl-ontologies.com/Ontology1324330201.owl#Artifact>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/Ontology1324330201.owl#isSubArtifactOf> owl:Thing) <http://www.owl-ontologies.com/Ontology1324330201.owl#subArtifacts>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/Ontology1324330201.owl#is_Destination_of> owl:Thing) <http://www.owl-ontologies.com/Ontology1324330201.owl#Flow>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/Ontology1324330201.owl#is_Documentation_of> owl:Thing) <http://www.owl-ontologies.com/Ontology1324330201.owl#Documentation>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/Ontology1324330201.owl#is_Source_of> owl:Thing) <http://www.owl-ontologies.com/Ontology1324330201.owl#Flow>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/Ontology1324330201.owl#is_Value_Pair_Representation_of> owl:Thing) <http://www.owl-ontologies.com/Ontology1324330201.owl#Properties>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/Ontology1324330201.owl#is_contianed_in> owl:Thing) <http://www.owl-ontologies.com/Ontology1324330201.owl#Requirement>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/Ontology1324330201.owl#is_decomposed_into_> owl:Thing) <http://www.owl-ontologies.com/Ontology1324330201.owl#Specification>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/Ontology1324330201.owl#is_featureOfArtifact> owl:Thing) <http://www.owl-ontologies.com/Ontology1324330201.owl#Feature>)
+SubClassOf(ObjectSomeValuesFrom(<http://www.owl-ontologies.com/Ontology1324330201.owl#is_geometry_Of_Form> owl:Thing) <http://www.owl-ontologies.com/Ontology1324330201.owl#Geometry>)
+)

@@ -1,0 +1,365 @@
+Prefix(:=<urn:unnamed:ontology#ont19110521972666772>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:unnamed:ontology#ont19110521972666772>
+
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#GibiBit_Per_Second>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#KiloByte>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#MilliSecond>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Watt>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#MebiByte>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#Environment>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#MebiBit_Per_Second>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#GibiByte>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#MebiByte_Per_Second>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Year>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#Lighting>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#KiloBit>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#KiloGram>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#GigaBit_Per_Second>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#WeatherStation>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#EnvironmentalCondition>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#WeatherReport>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#KiloByte_Per_Second>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Percent>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Bit>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#MegaByte_Per_Second>))
+Declaration(Class(owl:Class))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#IPAddress>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#KibiByte>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Integer>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Meters_Per_Second>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Date>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Degree>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#Noise>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#KiloBit_Per_Second>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Celsius>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#MebiBit>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-1>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#TimeZone>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Boolean>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Lumen>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Hour>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#DateTime>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Kelvin>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#WindSpeed>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#SkyConditions>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Literal>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Cycles_Per_Second>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#GigaByte>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#String>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-2>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#NanoSecond>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Horse_Power>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#WindDirection>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#KibiByte_Per_Second>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#KibiBit_Per_Second>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Knots>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Mile>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Pixel>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#MilliWatt>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Time>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Gram>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#KiloMeter>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Day>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Minute>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#ColourDepth>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#GigaByte_Per_Second>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Pound>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#Temperature>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#URI>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Meter>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Pascal>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Number>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Bag>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Joules>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Byte>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Calories>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Bits_Per_Second>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#GigaBit>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Ounce>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Fahrenheit>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#KiloWatt>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#Pressure>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#MegaByte>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Kilometers_Per_Hour>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#GibiBit>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Time.owl#Time>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Dimension>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#KibiBit>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Feet>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#MilliWattHour>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#MegaBit_Per_Second>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Decibel>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#MegaBit>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Second>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#GibiByte_Per_Second>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#HectoPascal>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#Humidity>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Bytes_Per_Second>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Miles_Per_Hour>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#URL>))
+Declaration(Class(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Hertz>))
+Declaration(ObjectProperty(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Minute>))
+Declaration(ObjectProperty(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#hasWeatherStation>))
+Declaration(ObjectProperty(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Time.owl#hasTime>))
+Declaration(ObjectProperty(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#hasTimeStamp>))
+Declaration(ObjectProperty(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#hasEnvironmentalCondition>))
+Declaration(ObjectProperty(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#hasWeatherConditions>))
+Declaration(ObjectProperty(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#hasWeatherReport>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-2>))
+Declaration(NamedIndividual(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Month>))
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#hasEnvironmentalCondition> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#hasEnvironmentalCondition>)
+
+ObjectPropertyDomain(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#hasEnvironmentalCondition> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#Environment>)
+ObjectPropertyRange(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#hasEnvironmentalCondition> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#EnvironmentalCondition>)
+
+# Object Property: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#hasTimeStamp> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#hasTimeStamp>)
+
+ObjectPropertyDomain(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#hasTimeStamp> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#WeatherReport>)
+ObjectPropertyRange(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#hasTimeStamp> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Time.owl#Time>)
+
+# Object Property: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#hasWeatherConditions> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#hasWeatherConditions>)
+
+ObjectPropertyDomain(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#hasWeatherConditions> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#WeatherReport>)
+ObjectPropertyRange(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#hasWeatherConditions> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#EnvironmentalCondition>)
+
+# Object Property: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#hasWeatherReport> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#hasWeatherReport>)
+
+ObjectPropertyDomain(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#hasWeatherReport> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#WeatherStation>)
+ObjectPropertyRange(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#hasWeatherReport> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#WeatherReport>)
+ObjectPropertyRange(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#hasWeatherReport> <https://smolang.org/rdfMutate#newNode-1>)
+
+# Object Property: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#hasWeatherStation> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#hasWeatherStation>)
+
+ObjectPropertyRange(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#hasWeatherStation> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#WeatherStation>)
+
+# Object Property: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Time.owl#hasTime> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Time.owl#hasTime>)
+
+ObjectPropertyRange(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Time.owl#hasTime> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Time.owl#Time>)
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#Humidity> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#Humidity>)
+
+SubClassOf(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#Humidity> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#EnvironmentalCondition>)
+
+# Class: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#Lighting> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#Lighting>)
+
+SubClassOf(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#Lighting> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#EnvironmentalCondition>)
+
+# Class: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#Noise> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#Noise>)
+
+SubClassOf(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#Noise> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#EnvironmentalCondition>)
+
+# Class: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#Pressure> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#Pressure>)
+
+SubClassOf(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#Pressure> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#EnvironmentalCondition>)
+
+# Class: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#SkyConditions> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#SkyConditions>)
+
+SubClassOf(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#SkyConditions> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#EnvironmentalCondition>)
+
+# Class: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#Temperature> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#Temperature>)
+
+SubClassOf(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#Temperature> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#EnvironmentalCondition>)
+
+# Class: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#WindDirection> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#WindDirection>)
+
+SubClassOf(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#WindDirection> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#EnvironmentalCondition>)
+
+# Class: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#WindSpeed> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#WindSpeed>)
+
+SubClassOf(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#WindSpeed> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Environment.owl#EnvironmentalCondition>)
+
+# Class: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Bag> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Bag>)
+
+SubClassOf(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Bag> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#String>)
+
+# Class: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Bit> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Bit>)
+
+SubClassOf(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Bit> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Integer>)
+
+# Class: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Bits_Per_Second> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Bits_Per_Second>)
+
+SubClassOf(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Bits_Per_Second> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Integer>)
+
+# Class: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Byte> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Byte>)
+
+SubClassOf(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Byte> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Integer>)
+
+# Class: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Bytes_Per_Second> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Bytes_Per_Second>)
+
+SubClassOf(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Bytes_Per_Second> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Integer>)
+
+# Class: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#ColourDepth> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#ColourDepth>)
+
+SubClassOf(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#ColourDepth> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Integer>)
+
+# Class: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Cycles_Per_Second> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Cycles_Per_Second>)
+
+SubClassOf(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Cycles_Per_Second> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Integer>)
+
+# Class: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Date> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Date>)
+
+SubClassOf(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Date> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#String>)
+
+# Class: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#DateTime> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#DateTime>)
+
+SubClassOf(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#DateTime> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#String>)
+
+# Class: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Day> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Day>)
+
+SubClassOf(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Day> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Integer>)
+
+# Class: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Dimension> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Dimension>)
+
+SubClassOf(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Dimension> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#String>)
+
+# Class: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#GibiBit> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#GibiBit>)
+
+SubClassOf(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#GibiBit> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Integer>)
+
+# Class: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#GibiBit_Per_Second> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#GibiBit_Per_Second>)
+
+SubClassOf(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#GibiBit_Per_Second> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Integer>)
+
+# Class: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#GibiByte> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#GibiByte>)
+
+SubClassOf(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#GibiByte> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Integer>)
+
+# Class: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#GibiByte_Per_Second> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#GibiByte_Per_Second>)
+
+SubClassOf(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#GibiByte_Per_Second> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Integer>)
+
+# Class: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#GigaBit> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#GigaBit>)
+
+SubClassOf(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#GigaBit> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Integer>)
+
+# Class: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#GigaBit_Per_Second> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#GigaBit_Per_Second>)
+
+SubClassOf(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#GigaBit_Per_Second> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Integer>)
+
+# Class: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#GigaByte> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#GigaByte>)
+
+SubClassOf(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#GigaByte> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Integer>)
+
+# Class: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#GigaByte_Per_Second> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#GigaByte_Per_Second>)
+
+SubClassOf(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#GigaByte_Per_Second> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Integer>)
+
+# Class: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Hertz> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Hertz>)
+
+SubClassOf(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Hertz> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Integer>)
+
+# Class: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#IPAddress> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#IPAddress>)
+
+SubClassOf(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#IPAddress> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#String>)
+
+# Class: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#KibiBit> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#KibiBit>)
+
+SubClassOf(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#KibiBit> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Integer>)
+
+# Class: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#KibiBit_Per_Second> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#KibiBit_Per_Second>)
+
+SubClassOf(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#KibiBit_Per_Second> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Integer>)
+
+# Class: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#KibiByte> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#KibiByte>)
+
+SubClassOf(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#KibiByte> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Integer>)
+
+# Class: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#KibiByte_Per_Second> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#KibiByte_Per_Second>)
+
+SubClassOf(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#KibiByte_Per_Second> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Integer>)
+
+# Class: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#KiloBit> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#KiloBit>)
+
+SubClassOf(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#KiloBit> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Integer>)
+
+# Class: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#KiloBit_Per_Second> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#KiloBit_Per_Second>)
+
+SubClassOf(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#KiloBit_Per_Second> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Integer>)
+
+# Class: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#KiloByte> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#KiloByte>)
+
+SubClassOf(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#KiloByte> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Integer>)
+
+# Class: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#KiloByte_Per_Second> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#KiloByte_Per_Second>)
+
+SubClassOf(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#KiloByte_Per_Second> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Integer>)
+
+# Class: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#MebiBit> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#MebiBit>)
+
+SubClassOf(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#MebiBit> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Integer>)
+
+# Class: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#MebiBit_Per_Second> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#MebiBit_Per_Second>)
+
+SubClassOf(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#MebiBit_Per_Second> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Integer>)
+
+# Class: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#MebiByte> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#MebiByte>)
+
+SubClassOf(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#MebiByte> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Integer>)
+
+# Class: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#MebiByte_Per_Second> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#MebiByte_Per_Second>)
+
+SubClassOf(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#MebiByte_Per_Second> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Integer>)
+
+# Class: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#MegaBit> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#MegaBit>)
+
+SubClassOf(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#MegaBit> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Integer>)
+
+# Class: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#MegaBit_Per_Second> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#MegaBit_Per_Second>)
+
+SubClassOf(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#MegaBit_Per_Second> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Integer>)
+
+# Class: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#MegaByte> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#MegaByte>)
+
+SubClassOf(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#MegaByte> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Integer>)
+
+# Class: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#MegaByte_Per_Second> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#MegaByte_Per_Second>)
+
+SubClassOf(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#MegaByte_Per_Second> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Integer>)
+
+# Class: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Pixel> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Pixel>)
+
+SubClassOf(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Pixel> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Integer>)
+
+# Class: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Time> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Time>)
+
+SubClassOf(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Time> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#String>)
+
+# Class: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#TimeZone> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#TimeZone>)
+
+SubClassOf(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#TimeZone> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#String>)
+
+# Class: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#URL> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#URL>)
+
+SubClassOf(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#URL> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#URI>)
+
+# Class: <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Year> (<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Year>)
+
+SubClassOf(<http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Year> <http://www.cs.kuleuven.be/~davy/ontologies/2008/01/Units.owl#Integer>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <https://smolang.org/rdfMutate#newNode-2> (<https://smolang.org/rdfMutate#newNode-2>)
+
+ClassAssertion(owl:Class <https://smolang.org/rdfMutate#newNode-2>)
+
+
+)

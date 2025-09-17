@@ -1,0 +1,1150 @@
+Prefix(:=<urn:unnamed:ontology#ont19105917141586158>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:unnamed:ontology#ont19105917141586158>
+
+Declaration(Class(<http://dbpedia.org/ontology/Insect>))
+Declaration(Class(<http://dbpedia.org/ontology/Museum>))
+Declaration(Class(<http://dbpedia.org/ontology/Cricketer>))
+Declaration(Class(<http://dbpedia.org/ontology/Weapon>))
+Declaration(Class(<http://dbpedia.org/ontology/Continent>))
+Declaration(Class(<http://dbpedia.org/ontology/NascarDriver>))
+Declaration(Class(<http://dbpedia.org/ontology/Bone>))
+Declaration(Class(<http://dbpedia.org/ontology/ShoppingMall>))
+Declaration(Class(<http://dbpedia.org/ontology/Aircraft>))
+Declaration(Class(<http://dbpedia.org/ontology/Cyclist>))
+Declaration(Class(<http://dbpedia.org/ontology/Bird>))
+Declaration(Class(<http://dbpedia.org/ontology/Drug>))
+Declaration(Class(<http://dbpedia.org/ontology/Film>))
+Declaration(Class(<http://dbpedia.org/ontology/AmericanFootballLeague>))
+Declaration(Class(<http://dbpedia.org/ontology/Single>))
+Declaration(Class(<http://dbpedia.org/ontology/PrimeMinister>))
+Declaration(Class(<http://dbpedia.org/ontology/GolfLeague>))
+Declaration(Class(<http://dbpedia.org/ontology/MemberOfParliament>))
+Declaration(Class(<http://dbpedia.org/ontology/MountainRange>))
+Declaration(Class(<http://dbpedia.org/ontology/Island>))
+Declaration(Class(<http://dbpedia.org/ontology/RugbyPlayer>))
+Declaration(Class(<http://dbpedia.org/ontology/Airport>))
+Declaration(Class(<http://dbpedia.org/ontology/MixedMartialArtsEvent>))
+Declaration(Class(<http://dbpedia.org/ontology/GolfPlayer>))
+Declaration(Class(<http://dbpedia.org/ontology/SoccerLeague>))
+Declaration(Class(<http://dbpedia.org/ontology/Vein>))
+Declaration(Class(<http://dbpedia.org/ontology/Legislature>))
+Declaration(Class(<http://dbpedia.org/ontology/Musical>))
+Declaration(Class(<http://dbpedia.org/ontology/Magazine>))
+Declaration(Class(<http://dbpedia.org/ontology/MilitaryUnit>))
+Declaration(Class(<http://dbpedia.org/ontology/HistoricBuilding>))
+Declaration(Class(<http://dbpedia.org/ontology/BasketballPlayer>))
+Declaration(Class(<http://dbpedia.org/ontology/Philosopher>))
+Declaration(Class(<http://dbpedia.org/ontology/MilitaryPerson>))
+Declaration(Class(<http://dbpedia.org/ontology/Disease>))
+Declaration(Class(<http://dbpedia.org/ontology/BaseballLeague>))
+Declaration(Class(<http://dbpedia.org/ontology/Governor>))
+Declaration(Class(<http://dbpedia.org/ontology/Writer>))
+Declaration(Class(<http://dbpedia.org/ontology/Ship>))
+Declaration(Class(<http://dbpedia.org/ontology/TelevisionEpisode>))
+Declaration(Class(<http://dbpedia.org/ontology/Song>))
+Declaration(Class(<http://dbpedia.org/ontology/Currency>))
+Declaration(Class(<http://dbpedia.org/ontology/BasketballTeam>))
+Declaration(Class(<http://dbpedia.org/ontology/Mountain>))
+Declaration(Class(<http://dbpedia.org/ontology/School>))
+Declaration(Class(<http://dbpedia.org/ontology/Mammal>))
+Declaration(Class(<http://dbpedia.org/ontology/IceHockeyPlayer>))
+Declaration(Class(<http://dbpedia.org/ontology/Boxer>))
+Declaration(Class(<http://dbpedia.org/ontology/Game>))
+Declaration(Class(<http://dbpedia.org/ontology/ComicsCreator>))
+Declaration(Class(<http://dbpedia.org/ontology/RadioStation>))
+Declaration(Class(<http://dbpedia.org/ontology/Book>))
+Declaration(Class(<http://dbpedia.org/ontology/VideoGame>))
+Declaration(Class(<http://dbpedia.org/ontology/RecordLabel>))
+Declaration(Class(<http://dbpedia.org/ontology/MusicGenre>))
+Declaration(Class(<http://dbpedia.org/ontology/Election>))
+Declaration(Class(<http://dbpedia.org/ontology/Hospital>))
+Declaration(Class(<http://dbpedia.org/ontology/River>))
+Declaration(Class(<http://dbpedia.org/ontology/Award>))
+Declaration(Class(<http://dbpedia.org/ontology/Comedian>))
+Declaration(Class(<http://dbpedia.org/ontology/AmericanFootballPlayer>))
+Declaration(Class(<http://dbpedia.org/ontology/Hotel>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-2>))
+Declaration(Class(<http://dbpedia.org/ontology/Protein>))
+Declaration(Class(<http://dbpedia.org/ontology/Congressman>))
+Declaration(Class(<http://dbpedia.org/ontology/Saint>))
+Declaration(Class(<http://dbpedia.org/ontology/Muscle>))
+Declaration(Class(<http://dbpedia.org/ontology/Band>))
+Declaration(Class(<http://dbpedia.org/ontology/TennisPlayer>))
+Declaration(Class(<http://dbpedia.org/ontology/Website>))
+Declaration(Class(<http://dbpedia.org/ontology/BaseballPlayer>))
+Declaration(Class(<http://dbpedia.org/ontology/Sport>))
+Declaration(Class(<http://dbpedia.org/ontology/ChemicalCompound>))
+Declaration(Class(<http://dbpedia.org/ontology/SoccerManager>))
+Declaration(Class(<http://dbpedia.org/ontology/Road>))
+Declaration(Class(<http://dbpedia.org/ontology/University>))
+Declaration(Class(<http://dbpedia.org/ontology/MilitaryConflict>))
+Declaration(Class(<http://dbpedia.org/ontology/TelevisionShow>))
+Declaration(Class(<http://dbpedia.org/ontology/Album>))
+Declaration(Class(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSoccerManager>))
+Declaration(Class(<http://dbpedia.org/ontology/AdultActor>))
+Declaration(Class(<http://dbpedia.org/ontology/Village>))
+Declaration(Class(<http://dbpedia.org/ontology/PokerPlayer>))
+Declaration(Class(<http://dbpedia.org/ontology/Airline>))
+Declaration(Class(<http://dbpedia.org/ontology/BasketballLeague>))
+Declaration(Class(<http://dbpedia.org/ontology/Brain>))
+Declaration(Class(<http://dbpedia.org/ontology/Pope>))
+Declaration(Class(<http://dbpedia.org/ontology/TradeUnion>))
+Declaration(Class(<http://dbpedia.org/ontology/President>))
+Declaration(Class(<http://dbpedia.org/ontology/Automobile>))
+Declaration(Class(<http://dbpedia.org/ontology/ProtectedArea>))
+Declaration(Class(<http://dbpedia.org/ontology/Criminal>))
+Declaration(Class(<http://dbpedia.org/ontology/Beverage>))
+Declaration(Class(<http://dbpedia.org/ontology/FormulaOneRacer>))
+Declaration(Class(<http://dbpedia.org/ontology/WrestlingEvent>))
+Declaration(Class(<http://dbpedia.org/ontology/WorldHeritageSite>))
+Declaration(Class(<http://dbpedia.org/ontology/Journalist>))
+Declaration(Class(<http://dbpedia.org/ontology/MusicalArtist>))
+Declaration(Class(<http://dbpedia.org/ontology/OfficeHolder>))
+Declaration(Class(<http://dbpedia.org/ontology/Non-ProfitOrganisation>))
+Declaration(Class(<http://dbpedia.org/ontology/Lake>))
+Declaration(Class(<http://dbpedia.org/ontology/SoccerClub>))
+Declaration(Class(<http://dbpedia.org/ontology/HistoricPlace>))
+Declaration(Class(<http://dbpedia.org/ontology/Language>))
+Declaration(Class(<http://dbpedia.org/ontology/FigureSkater>))
+Declaration(Class(<http://dbpedia.org/ontology/Species>))
+Declaration(Class(<http://dbpedia.org/ontology/Wrestler>))
+Declaration(Class(<http://dbpedia.org/ontology/FilmFestival>))
+Declaration(Class(<http://dbpedia.org/ontology/Scientist>))
+Declaration(Class(<http://dbpedia.org/ontology/Skyscraper>))
+Declaration(Class(<http://dbpedia.org/ontology/HockeyTeam>))
+Declaration(Class(<http://dbpedia.org/ontology/SupremeCourtOfTheUnitedStatesCase>))
+Declaration(Class(<http://dbpedia.org/ontology/Newspaper>))
+Declaration(Class(<http://dbpedia.org/ontology/BritishRoyalty>))
+Declaration(Class(<http://dbpedia.org/ontology/FictionalCharacter>))
+Declaration(Class(<http://dbpedia.org/ontology/AmericanFootballTeam>))
+Declaration(Class(<http://dbpedia.org/ontology/FloweringPlant>))
+Declaration(Class(<http://dbpedia.org/ontology/OlympicResult>))
+Declaration(Class(<http://dbpedia.org/ontology/Chancellor>))
+Declaration(Class(<http://dbpedia.org/ontology/Olympics>))
+Declaration(Class(<http://dbpedia.org/ontology/CollegeCoach>))
+Declaration(Class(<http://dbpedia.org/ontology/WineRegion>))
+Declaration(Class(<http://dbpedia.org/ontology/GaelicGamesPlayer>))
+Declaration(Class(<http://dbpedia.org/ontology/Senator>))
+Declaration(Class(<http://dbpedia.org/ontology/Broadcast>))
+Declaration(Class(<http://dbpedia.org/ontology/Town>))
+Declaration(Class(<http://dbpedia.org/ontology/SoccerPlayer>))
+Declaration(Class(<http://dbpedia.org/ontology/IceHockeyLeague>))
+Declaration(Class(<http://dbpedia.org/ontology/CanadianFootballTeam>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBroadcast>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToFigureSkater>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToGolfPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToRugbyPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToWorldHeritageSite>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToChancellor>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToCricketer>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Colour>))
+Declaration(ObjectProperty(<https://smolang.org/rdfMutate#newNode-3>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSenator>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Person>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMusical>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToWrestler>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAmericanFootballTeam>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToVillage>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBand>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToShip>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBeverage>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSingle>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAmericanFootballLeague>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToTradeUnion>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToContinent>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Currency>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToCurrency>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Disease>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToHistoricPlace>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/ChemicalCompound>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSoccerManager>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToFictionalCharacter>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSkyscraper>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToCriminal>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMountainRange>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToGovernor>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToPokerPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToOfficeHolder>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToProtein>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBasketballLeague>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToGame>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToFloweringPlant>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToRoad>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToPhilosopher>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToVein>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAlbum>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/OlympicResult>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMammal>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToIsland>))
+Declaration(ObjectProperty(<https://smolang.org/rdfMutate#newNode-0>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToGolfLeague>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAdultActor>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSaint>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToCyclist>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMusicGenre>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Activity>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToElection>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToNascarDriver>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToLake>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Award>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToJournalist>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMemberOfParliament>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToWebsite>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSpecies>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToOlympics>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMilitaryConflict>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToScientist>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/AnatomicalStructure>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToNon-ProfitOrganisation>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Beverage>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToChemicalCompound>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToLanguage>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToProtectedArea>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToPope>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/LegalCase>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToWeapon>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Protein>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAward>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMountain>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAirline>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAmericanFootballPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToRecordLabel>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMuscle>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBird>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToTennisPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMilitaryPerson>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToNewspaper>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSoccerClub>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToTown>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToIceHockeyPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToDrug>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBritishRoyalty>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSong>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToFilm>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToTelevisionShow>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Drug>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAutomobile>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToLegislature>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBasketballTeam>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMixedMartialArtsEvent>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/MeanOfTransportation>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBasketballPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToRadioStation>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToUniversity>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Device>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToHistoricBuilding>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAirport>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToVideoGame>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Organisation>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToFormulaOneRacer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToIceHockeyLeague>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToInsect>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToRiver>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMuseum>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToPrimeMinister>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSoccerPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToHospital>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMagazine>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSchool>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSport>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToWriter>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToCongressman>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Website>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBrain>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToDisease>))
+Declaration(ObjectProperty(<https://smolang.org/rdfMutate#newNode-5>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAircraft>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSoccerLeague>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToCollegeCoach>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMilitaryUnit>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBaseballLeague>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Language>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToFilmFestival>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToHockeyTeam>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToTelevisionEpisode>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBone>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMusicalArtist>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBook>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToWineRegion>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Event>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToHotel>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Species>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToPresident>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToComedian>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBaseballPlayer>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSupremeCourtOfTheUnitedStatesCase>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToCanadianFootballTeam>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToGaelicGamesPlayer>))
+Declaration(ObjectProperty(<http://www.w3.org/2004/02/skos/core#relatedMatch>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToShoppingMall>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToWrestlingEvent>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Work>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/MusicGenre>))
+Declaration(ObjectProperty(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToComicsCreator>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Place>))
+Declaration(ObjectProperty(<http://dbpedia.org/ontology/Infrastructure>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMusicalArtist>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSoccerPlayer>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToRugbyPlayer>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBaseballPlayer>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToOlympics>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAward>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/associatedActs>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToCricketer>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-1>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToTennisPlayer>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToRecordLabel>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToFormulaOneRacer>))
+Declaration(NamedIndividual(owl:Class))
+Declaration(NamedIndividual(<http://dbpedia.org/property/years>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/title>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToGolfPlayer>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/label>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBritishRoyalty>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToFictionalCharacter>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/before>))
+Declaration(NamedIndividual(<http://dbpedia.org/property/after>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSoccerManager>))
+Declaration(NamedIndividual(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMagazine>))
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://dbpedia.org/ontology/Organisation> (<http://dbpedia.org/ontology/Organisation>)
+
+SubObjectPropertyOf(<http://dbpedia.org/ontology/Organisation> <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBasketballLeague>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAdultActor> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAdultActor>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAdultActor> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAdultActor> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAdultActor> <http://dbpedia.org/ontology/AdultActor>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAircraft> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAircraft>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAircraft> <http://dbpedia.org/ontology/MeanOfTransportation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAircraft> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAircraft> <http://dbpedia.org/ontology/Aircraft>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAirline> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAirline>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAirline> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAirline> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAirline> <http://dbpedia.org/ontology/Airline>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAirport> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAirport>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAirport> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAirport> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAirport> <http://dbpedia.org/ontology/Airport>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAlbum> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAlbum>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAlbum> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAlbum> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAlbum> <http://dbpedia.org/ontology/Album>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAmericanFootballLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAmericanFootballLeague>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAmericanFootballLeague> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAmericanFootballLeague> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAmericanFootballLeague> <http://dbpedia.org/ontology/AmericanFootballLeague>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAmericanFootballPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAmericanFootballPlayer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAmericanFootballPlayer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAmericanFootballPlayer> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAmericanFootballPlayer> <http://dbpedia.org/ontology/AmericanFootballPlayer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAmericanFootballTeam> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAmericanFootballTeam>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAmericanFootballTeam> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAmericanFootballTeam> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAmericanFootballTeam> <http://dbpedia.org/ontology/AmericanFootballTeam>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAutomobile> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAutomobile>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAutomobile> <http://dbpedia.org/ontology/MeanOfTransportation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAutomobile> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAutomobile> <http://dbpedia.org/ontology/Automobile>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAward> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAward>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAward> <http://dbpedia.org/ontology/Award>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAward> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAward> <http://dbpedia.org/ontology/Award>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBand> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBand>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBand> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBand> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBand> <http://dbpedia.org/ontology/Band>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBaseballLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBaseballLeague>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBaseballLeague> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBaseballLeague> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBaseballLeague> <http://dbpedia.org/ontology/BaseballLeague>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBaseballPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBaseballPlayer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBaseballPlayer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBaseballPlayer> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBaseballPlayer> <http://dbpedia.org/ontology/BaseballPlayer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBasketballLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBasketballLeague>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBasketballLeague> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBasketballLeague> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBasketballLeague> <http://dbpedia.org/ontology/BasketballLeague>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBasketballPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBasketballPlayer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBasketballPlayer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBasketballPlayer> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBasketballPlayer> <http://dbpedia.org/ontology/BasketballPlayer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBasketballTeam> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBasketballTeam>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBasketballTeam> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBasketballTeam> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBasketballTeam> <http://dbpedia.org/ontology/BasketballTeam>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBeverage> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBeverage>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBeverage> <http://dbpedia.org/ontology/Beverage>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBeverage> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBeverage> <http://dbpedia.org/ontology/Beverage>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBird> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBird>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBird> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBird> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBird> <http://dbpedia.org/ontology/Bird>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBone> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBone>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBone> <http://dbpedia.org/ontology/AnatomicalStructure>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBone> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBone> <http://dbpedia.org/ontology/Bone>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBook> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBook>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBook> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBook> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBook> <http://dbpedia.org/ontology/Book>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBrain> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBrain>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBrain> <http://dbpedia.org/ontology/AnatomicalStructure>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBrain> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBrain> <http://dbpedia.org/ontology/Brain>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBritishRoyalty> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBritishRoyalty>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBritishRoyalty> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBritishRoyalty> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBritishRoyalty> <http://dbpedia.org/ontology/BritishRoyalty>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBroadcast> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBroadcast>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBroadcast> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBroadcast> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBroadcast> <http://dbpedia.org/ontology/Broadcast>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToCanadianFootballTeam> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToCanadianFootballTeam>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToCanadianFootballTeam> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToCanadianFootballTeam> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToCanadianFootballTeam> <http://dbpedia.org/ontology/CanadianFootballTeam>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToChancellor> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToChancellor>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToChancellor> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToChancellor> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToChancellor> <http://dbpedia.org/ontology/Chancellor>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToChemicalCompound> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToChemicalCompound>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToChemicalCompound> <http://dbpedia.org/ontology/ChemicalCompound>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToChemicalCompound> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToChemicalCompound> <http://dbpedia.org/ontology/ChemicalCompound>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToCollegeCoach> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToCollegeCoach>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToCollegeCoach> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToCollegeCoach> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToCollegeCoach> <http://dbpedia.org/ontology/CollegeCoach>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToComedian> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToComedian>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToComedian> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToComedian> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToComedian> <http://dbpedia.org/ontology/Comedian>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToComicsCreator> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToComicsCreator>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToComicsCreator> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToComicsCreator> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToComicsCreator> <http://dbpedia.org/ontology/ComicsCreator>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToCongressman> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToCongressman>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToCongressman> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToCongressman> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToCongressman> <http://dbpedia.org/ontology/Congressman>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToContinent> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToContinent>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToContinent> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToContinent> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToContinent> <http://dbpedia.org/ontology/Continent>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToCricketer> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToCricketer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToCricketer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToCricketer> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToCricketer> <http://dbpedia.org/ontology/Cricketer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToCriminal> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToCriminal>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToCriminal> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToCriminal> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToCriminal> <http://dbpedia.org/ontology/Criminal>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToCurrency> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToCurrency>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToCurrency> <http://dbpedia.org/ontology/Currency>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToCurrency> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToCurrency> <http://dbpedia.org/ontology/Currency>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToCyclist> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToCyclist>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToCyclist> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToCyclist> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToCyclist> <http://dbpedia.org/ontology/Cyclist>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToDisease> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToDisease>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToDisease> <http://dbpedia.org/ontology/Disease>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToDisease> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToDisease> <http://dbpedia.org/ontology/Disease>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToDrug> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToDrug>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToDrug> <http://dbpedia.org/ontology/Drug>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToDrug> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToDrug> <http://dbpedia.org/ontology/Drug>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToElection> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToElection>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToElection> <http://dbpedia.org/ontology/Event>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToElection> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToElection> <http://dbpedia.org/ontology/Election>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToFictionalCharacter> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToFictionalCharacter>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToFictionalCharacter> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToFictionalCharacter> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToFictionalCharacter> <http://dbpedia.org/ontology/FictionalCharacter>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToFigureSkater> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToFigureSkater>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToFigureSkater> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToFigureSkater> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToFigureSkater> <http://dbpedia.org/ontology/FigureSkater>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToFilm> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToFilm>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToFilm> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToFilm> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToFilm> <http://dbpedia.org/ontology/Film>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToFilmFestival> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToFilmFestival>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToFilmFestival> <http://dbpedia.org/ontology/Event>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToFilmFestival> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToFilmFestival> <http://dbpedia.org/ontology/FilmFestival>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToFloweringPlant> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToFloweringPlant>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToFloweringPlant> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToFloweringPlant> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToFloweringPlant> <http://dbpedia.org/ontology/FloweringPlant>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToFormulaOneRacer> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToFormulaOneRacer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToFormulaOneRacer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToFormulaOneRacer> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToFormulaOneRacer> <http://dbpedia.org/ontology/FormulaOneRacer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToGaelicGamesPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToGaelicGamesPlayer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToGaelicGamesPlayer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToGaelicGamesPlayer> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToGaelicGamesPlayer> <http://dbpedia.org/ontology/GaelicGamesPlayer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToGame> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToGame>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToGame> <http://dbpedia.org/ontology/Activity>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToGame> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToGame> <http://dbpedia.org/ontology/Game>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToGolfLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToGolfLeague>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToGolfLeague> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToGolfLeague> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToGolfLeague> <http://dbpedia.org/ontology/GolfLeague>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToGolfPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToGolfPlayer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToGolfPlayer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToGolfPlayer> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToGolfPlayer> <http://dbpedia.org/ontology/GolfPlayer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToGovernor> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToGovernor>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToGovernor> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToGovernor> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToGovernor> <http://dbpedia.org/ontology/Governor>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToHistoricBuilding> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToHistoricBuilding>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToHistoricBuilding> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToHistoricBuilding> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToHistoricBuilding> <http://dbpedia.org/ontology/HistoricBuilding>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToHistoricPlace> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToHistoricPlace>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToHistoricPlace> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToHistoricPlace> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToHistoricPlace> <http://dbpedia.org/ontology/HistoricPlace>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToHockeyTeam> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToHockeyTeam>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToHockeyTeam> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToHockeyTeam> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToHockeyTeam> <http://dbpedia.org/ontology/HockeyTeam>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToHospital> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToHospital>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToHospital> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToHospital> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToHospital> <http://dbpedia.org/ontology/Hospital>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToHotel> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToHotel>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToHotel> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToHotel> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToHotel> <http://dbpedia.org/ontology/Hotel>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToIceHockeyLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToIceHockeyLeague>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToIceHockeyLeague> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToIceHockeyLeague> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToIceHockeyLeague> <http://dbpedia.org/ontology/IceHockeyLeague>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToIceHockeyPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToIceHockeyPlayer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToIceHockeyPlayer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToIceHockeyPlayer> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToIceHockeyPlayer> <http://dbpedia.org/ontology/IceHockeyPlayer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToInsect> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToInsect>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToInsect> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToInsect> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToInsect> <http://dbpedia.org/ontology/Insect>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToIsland> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToIsland>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToIsland> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToIsland> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToIsland> <http://dbpedia.org/ontology/Island>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToJournalist> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToJournalist>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToJournalist> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToJournalist> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToJournalist> <http://dbpedia.org/ontology/Journalist>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToLake> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToLake>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToLake> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToLake> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToLake> <http://dbpedia.org/ontology/Lake>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToLanguage> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToLanguage>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToLanguage> <http://dbpedia.org/ontology/Language>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToLanguage> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToLanguage> <http://dbpedia.org/ontology/Language>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToLegislature> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToLegislature>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToLegislature> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToLegislature> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToLegislature> <http://dbpedia.org/ontology/Legislature>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMagazine> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMagazine>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMagazine> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMagazine> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMagazine> <http://dbpedia.org/ontology/Magazine>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMammal> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMammal>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMammal> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMammal> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMammal> <http://dbpedia.org/ontology/Mammal>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMemberOfParliament> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMemberOfParliament>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMemberOfParliament> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMemberOfParliament> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMemberOfParliament> <http://dbpedia.org/ontology/MemberOfParliament>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMilitaryConflict> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMilitaryConflict>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMilitaryConflict> <http://dbpedia.org/ontology/Event>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMilitaryConflict> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMilitaryConflict> <http://dbpedia.org/ontology/MilitaryConflict>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMilitaryPerson> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMilitaryPerson>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMilitaryPerson> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMilitaryPerson> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMilitaryPerson> <http://dbpedia.org/ontology/MilitaryPerson>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMilitaryUnit> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMilitaryUnit>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMilitaryUnit> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMilitaryUnit> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMilitaryUnit> <http://dbpedia.org/ontology/MilitaryUnit>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMixedMartialArtsEvent> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMixedMartialArtsEvent>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMixedMartialArtsEvent> <http://dbpedia.org/ontology/Event>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMixedMartialArtsEvent> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMixedMartialArtsEvent> <http://dbpedia.org/ontology/MixedMartialArtsEvent>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMountain> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMountain>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMountain> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMountain> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMountain> <http://dbpedia.org/ontology/Mountain>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMountainRange> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMountainRange>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMountainRange> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMountainRange> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMountainRange> <http://dbpedia.org/ontology/MountainRange>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMuscle> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMuscle>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMuscle> <http://dbpedia.org/ontology/AnatomicalStructure>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMuscle> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMuscle> <http://dbpedia.org/ontology/Muscle>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMuseum> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMuseum>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMuseum> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMuseum> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMuseum> <http://dbpedia.org/ontology/Museum>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMusicGenre> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMusicGenre>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMusicGenre> <http://dbpedia.org/ontology/MusicGenre>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMusicGenre> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMusicGenre> <http://dbpedia.org/ontology/MusicGenre>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMusical> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMusical>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMusical> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMusical> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMusical> <http://dbpedia.org/ontology/Musical>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMusicalArtist> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMusicalArtist>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMusicalArtist> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMusicalArtist> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMusicalArtist> <http://dbpedia.org/ontology/MusicalArtist>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToNascarDriver> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToNascarDriver>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToNascarDriver> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToNascarDriver> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToNascarDriver> <http://dbpedia.org/ontology/NascarDriver>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToNewspaper> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToNewspaper>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToNewspaper> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToNewspaper> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToNewspaper> <http://dbpedia.org/ontology/Newspaper>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToNon-ProfitOrganisation> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToNon-ProfitOrganisation>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToNon-ProfitOrganisation> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToNon-ProfitOrganisation> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToNon-ProfitOrganisation> <http://dbpedia.org/ontology/Non-ProfitOrganisation>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToOfficeHolder> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToOfficeHolder>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToOfficeHolder> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToOfficeHolder> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToOfficeHolder> <http://dbpedia.org/ontology/OfficeHolder>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToOlympics> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToOlympics>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToOlympics> <http://dbpedia.org/ontology/Event>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToOlympics> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToOlympics> <http://dbpedia.org/ontology/Olympics>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToPhilosopher> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToPhilosopher>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToPhilosopher> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToPhilosopher> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToPhilosopher> <http://dbpedia.org/ontology/Philosopher>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToPokerPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToPokerPlayer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToPokerPlayer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToPokerPlayer> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToPokerPlayer> <http://dbpedia.org/ontology/PokerPlayer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToPope> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToPope>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToPope> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToPope> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToPope> <http://dbpedia.org/ontology/Pope>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToPresident> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToPresident>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToPresident> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToPresident> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToPresident> <http://dbpedia.org/ontology/President>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToPrimeMinister> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToPrimeMinister>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToPrimeMinister> <http://dbpedia.org/ontology/Person>)
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToPrimeMinister> <https://smolang.org/rdfMutate#newNode-5>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToPrimeMinister> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToPrimeMinister> <http://dbpedia.org/ontology/PrimeMinister>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToProtectedArea> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToProtectedArea>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToProtectedArea> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToProtectedArea> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToProtectedArea> <http://dbpedia.org/ontology/ProtectedArea>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToProtein> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToProtein>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToProtein> <http://dbpedia.org/ontology/Protein>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToProtein> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToProtein> <http://dbpedia.org/ontology/Protein>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToRadioStation> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToRadioStation>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToRadioStation> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToRadioStation> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToRadioStation> <http://dbpedia.org/ontology/RadioStation>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToRecordLabel> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToRecordLabel>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToRecordLabel> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToRecordLabel> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToRecordLabel> <http://dbpedia.org/ontology/RecordLabel>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToRiver> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToRiver>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToRiver> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToRiver> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToRiver> <http://dbpedia.org/ontology/River>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToRoad> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToRoad>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToRoad> <http://dbpedia.org/ontology/Infrastructure>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToRoad> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToRoad> <http://dbpedia.org/ontology/Road>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToRugbyPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToRugbyPlayer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToRugbyPlayer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToRugbyPlayer> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToRugbyPlayer> <http://dbpedia.org/ontology/RugbyPlayer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSaint> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSaint>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSaint> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSaint> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSaint> <http://dbpedia.org/ontology/Saint>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSchool> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSchool>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSchool> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSchool> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSchool> <http://dbpedia.org/ontology/School>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToScientist> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToScientist>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToScientist> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToScientist> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToScientist> <http://dbpedia.org/ontology/Scientist>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSenator> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSenator>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSenator> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSenator> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSenator> <http://dbpedia.org/ontology/Senator>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToShip> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToShip>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToShip> <http://dbpedia.org/ontology/MeanOfTransportation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToShip> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToShip> <http://dbpedia.org/ontology/Ship>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToShoppingMall> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToShoppingMall>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToShoppingMall> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToShoppingMall> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToShoppingMall> <http://dbpedia.org/ontology/ShoppingMall>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSingle> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSingle>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSingle> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSingle> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSingle> <http://dbpedia.org/ontology/Single>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSkyscraper> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSkyscraper>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSkyscraper> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSkyscraper> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSkyscraper> <http://dbpedia.org/ontology/Skyscraper>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSoccerClub> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSoccerClub>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSoccerClub> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSoccerClub> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSoccerClub> <http://dbpedia.org/ontology/SoccerClub>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSoccerLeague> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSoccerLeague>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSoccerLeague> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSoccerLeague> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSoccerLeague> <http://dbpedia.org/ontology/SoccerLeague>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSoccerManager> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSoccerManager>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSoccerManager> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSoccerManager> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSoccerManager> <http://dbpedia.org/ontology/SoccerManager>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSoccerPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSoccerPlayer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSoccerPlayer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSoccerPlayer> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSoccerPlayer> <http://dbpedia.org/ontology/SoccerPlayer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSong> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSong>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSong> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSong> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSong> <http://dbpedia.org/ontology/Song>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSpecies> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSpecies>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSpecies> <http://dbpedia.org/ontology/Species>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSpecies> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSpecies> <http://dbpedia.org/ontology/Species>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSport> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSport>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSport> <http://dbpedia.org/ontology/Activity>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSport> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSport> <http://dbpedia.org/ontology/Sport>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSupremeCourtOfTheUnitedStatesCase> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSupremeCourtOfTheUnitedStatesCase>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSupremeCourtOfTheUnitedStatesCase> <http://dbpedia.org/ontology/LegalCase>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSupremeCourtOfTheUnitedStatesCase> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSupremeCourtOfTheUnitedStatesCase> <http://dbpedia.org/ontology/SupremeCourtOfTheUnitedStatesCase>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToTelevisionEpisode> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToTelevisionEpisode>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToTelevisionEpisode> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToTelevisionEpisode> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToTelevisionEpisode> <http://dbpedia.org/ontology/TelevisionEpisode>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToTelevisionShow> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToTelevisionShow>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToTelevisionShow> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToTelevisionShow> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToTelevisionShow> <http://dbpedia.org/ontology/TelevisionShow>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToTennisPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToTennisPlayer>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToTennisPlayer> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToTennisPlayer> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToTennisPlayer> <http://dbpedia.org/ontology/TennisPlayer>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToTown> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToTown>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToTown> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToTown> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToTown> <http://dbpedia.org/ontology/Town>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToTradeUnion> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToTradeUnion>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToTradeUnion> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToTradeUnion> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToTradeUnion> <http://dbpedia.org/ontology/TradeUnion>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToUniversity> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToUniversity>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToUniversity> <http://dbpedia.org/ontology/Organisation>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToUniversity> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToUniversity> <http://dbpedia.org/ontology/University>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToVein> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToVein>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToVein> <http://dbpedia.org/ontology/AnatomicalStructure>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToVein> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToVein> <http://dbpedia.org/ontology/Vein>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToVideoGame> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToVideoGame>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToVideoGame> <http://dbpedia.org/ontology/Work>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToVideoGame> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToVideoGame> <http://dbpedia.org/ontology/VideoGame>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToVillage> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToVillage>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToVillage> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToVillage> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToVillage> <http://dbpedia.org/ontology/Village>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToWeapon> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToWeapon>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToWeapon> <http://dbpedia.org/ontology/Device>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToWeapon> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToWeapon> <http://dbpedia.org/ontology/Weapon>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToWebsite> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToWebsite>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToWebsite> <http://dbpedia.org/ontology/Website>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToWebsite> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToWebsite> <http://dbpedia.org/ontology/Website>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToWineRegion> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToWineRegion>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToWineRegion> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToWineRegion> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToWineRegion> <http://dbpedia.org/ontology/WineRegion>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToWorldHeritageSite> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToWorldHeritageSite>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToWorldHeritageSite> <http://dbpedia.org/ontology/Place>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToWorldHeritageSite> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToWorldHeritageSite> <http://dbpedia.org/ontology/WorldHeritageSite>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToWrestler> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToWrestler>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToWrestler> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToWrestler> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToWrestler> <http://dbpedia.org/ontology/Wrestler>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToWrestlingEvent> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToWrestlingEvent>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToWrestlingEvent> <http://dbpedia.org/ontology/Event>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToWrestlingEvent> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToWrestlingEvent> <http://dbpedia.org/ontology/WrestlingEvent>)
+
+# Object Property: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToWriter> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToWriter>)
+
+SubObjectPropertyOf(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToWriter> <http://dbpedia.org/ontology/Person>)
+ObjectPropertyDomain(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToWriter> <http://dbpedia.org/ontology/Boxer>)
+ObjectPropertyRange(<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToWriter> <http://dbpedia.org/ontology/Writer>)
+
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAward> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAward>)
+
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToAward> <http://dbpedia.org/property/title>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBaseballPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBaseballPlayer>)
+
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBaseballPlayer> <http://dbpedia.org/property/after>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBaseballPlayer> <http://dbpedia.org/property/before>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBritishRoyalty> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBritishRoyalty>)
+
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToBritishRoyalty> <http://dbpedia.org/property/after>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToCricketer> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToCricketer>)
+
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToCricketer> <http://dbpedia.org/property/after>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToCricketer> <http://dbpedia.org/property/before>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToFictionalCharacter> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToFictionalCharacter>)
+
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToFictionalCharacter> <http://dbpedia.org/property/before>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToFormulaOneRacer> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToFormulaOneRacer>)
+
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToFormulaOneRacer> <http://dbpedia.org/property/after>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToGolfPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToGolfPlayer>)
+
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToGolfPlayer> <http://dbpedia.org/property/after>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMagazine> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMagazine>)
+
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMagazine> <http://dbpedia.org/property/title>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMusicalArtist> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMusicalArtist>)
+
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToMusicalArtist> <http://dbpedia.org/property/associatedActs>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToOlympics> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToOlympics>)
+
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToOlympics> <http://dbpedia.org/property/years>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToRecordLabel> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToRecordLabel>)
+
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToRecordLabel> <http://dbpedia.org/property/label>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToRugbyPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToRugbyPlayer>)
+
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToRugbyPlayer> <http://dbpedia.org/property/after>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSoccerManager> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSoccerManager>)
+
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSoccerManager> <http://dbpedia.org/property/before>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSoccerPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSoccerPlayer>)
+
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSoccerPlayer> <http://dbpedia.org/property/after>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToSoccerPlayer> <http://dbpedia.org/property/before>)
+
+# Individual: <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToTennisPlayer> (<http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToTennisPlayer>)
+
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToTennisPlayer> <http://dbpedia.org/property/after>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#relatedMatch> <http://www.ontologydesignpatterns.org/ekp/owl/Boxer.owl#linksToTennisPlayer> <http://dbpedia.org/property/before>)
+
+# Individual: owl:Class (owl:Class)
+
+ClassAssertion(<http://dbpedia.org/ontology/AmericanFootballLeague> owl:Class)
+
+
+)

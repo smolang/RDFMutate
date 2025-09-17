@@ -1,0 +1,7 @@
+Found anomalies while testing file ../testOnt.owl
+
+Anomaly 1: Anomaly: not in EL
+ Not enough property expressions; at least two needed [SubObjectPropertyOf(ObjectPropertyChain(<http://purl.org/obo/owl/OBO_REL#part_of>) <http://purl.org/obo/owl/OBO_REL#part_of>) in OntologyID(OntologyIRI(<urn:unnamed:ontology#ont19095465674146010>) VersionIRI(<null>))]
+ Use of property in chain causes cycle: <http://purl.org/obo/owl/OBO_REL#part_of> [SubObjectPropertyOf(ObjectPropertyChain(<http://purl.org/obo/owl/OBO_REL#part_of>) <http://purl.org/obo/owl/OBO_REL#part_of>) in OntologyID(OntologyIRI(<urn:unnamed:ontology#ont19095465674146010>) VersionIRI(<null>))]
+ Use of property in chain causes cycle: <http://purl.org/obo/owl/OBO_REL#part_of> [SubObjectPropertyOf(ObjectPropertyChain(<http://purl.org/obo/owl/OBO_REL#part_of>) <http://purl.org/obo/owl/OBO_REL#part_of>) in OntologyID(OntologyIRI(<urn:unnamed:ontology#ont19095465674146010>) VersionIRI(<null>))]
+

@@ -1,0 +1,7 @@
+Found anomalies while testing file ../testOnt.owl
+
+Anomaly 1: Anomaly: not in EL
+ Not enough property expressions; at least two needed [SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/13f18767-78c8-4d48-9852-07f58ac44fd4_goslim_pir.obo#has_part>) <http://purl.obolibrary.org/obo/13f18767-78c8-4d48-9852-07f58ac44fd4_goslim_pir.obo#has_part>) in OntologyID(OntologyIRI(<urn:unnamed:ontology#ont19119440880207000>) VersionIRI(<null>))]
+ Use of property in chain causes cycle: <http://purl.obolibrary.org/obo/13f18767-78c8-4d48-9852-07f58ac44fd4_goslim_pir.obo#has_part> [SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/13f18767-78c8-4d48-9852-07f58ac44fd4_goslim_pir.obo#has_part>) <http://purl.obolibrary.org/obo/13f18767-78c8-4d48-9852-07f58ac44fd4_goslim_pir.obo#has_part>) in OntologyID(OntologyIRI(<urn:unnamed:ontology#ont19119440880207000>) VersionIRI(<null>))]
+ Use of property in chain causes cycle: <http://purl.obolibrary.org/obo/13f18767-78c8-4d48-9852-07f58ac44fd4_goslim_pir.obo#has_part> [SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/13f18767-78c8-4d48-9852-07f58ac44fd4_goslim_pir.obo#has_part>) <http://purl.obolibrary.org/obo/13f18767-78c8-4d48-9852-07f58ac44fd4_goslim_pir.obo#has_part>) in OntologyID(OntologyIRI(<urn:unnamed:ontology#ont19119440880207000>) VersionIRI(<null>))]
+

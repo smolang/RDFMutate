@@ -1,0 +1,363 @@
+Prefix(:=<urn:unnamed:ontology#ont19103997418002448>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<urn:unnamed:ontology#ont19103997418002448>
+
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#GeneticLinkageMap>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#PhysicalMap>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Paralogy>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#RiboNucleicAcid>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Mitosis>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Chromosome>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Ploidy>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#QuantitativeTraitLoci>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Homology>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#NucleicAcid>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#ArtificialChromosome>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Centromere>))
+Declaration(Class(owl:Class))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Orthology>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#GenomeSurveySequence>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Meiosis>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Map>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Marker>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#NaturalChromosome>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#InSituHybridization>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#BacterialArtificialChromosome>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#CellDivisionProcess>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Trait>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#ChromosomeStructuralElement>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Species>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Synteny>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#YeastArtificialChromosome>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#FluorescenceInSituHybridization>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-5>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Allele>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Gene>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#RadtionHybridMap>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#ExpressedSequenceTag>))
+Declaration(Class(<https://smolang.org/rdfMutate#newNode-1>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#DeoxyriboNucleicAcid>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#Telomere>))
+Declaration(Class(<http://www.owl-ontologies.com/unnamed.owl#LinkageGroup>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-4>))
+Declaration(NamedIndividual(<http://www.owl-ontologies.com/unnamed.owl#ChromosomeStructuralElement>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-5>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-0>))
+Declaration(NamedIndividual(<http://www.owl-ontologies.com/unnamed.owl#PhysicalMap>))
+Declaration(NamedIndividual(<http://www.owl-ontologies.com/unnamed.owl#Ploidy>))
+Declaration(NamedIndividual(<https://smolang.org/rdfMutate#newNode-6>))
+############################
+#   Classes
+############################
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Allele> (<http://www.owl-ontologies.com/unnamed.owl#Allele>)
+
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Allele> <http://www.owl-ontologies.com/unnamed.owl#CellDivisionProcess>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Allele> <http://www.owl-ontologies.com/unnamed.owl#Chromosome>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Allele> <http://www.owl-ontologies.com/unnamed.owl#ExpressedSequenceTag>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Allele> <http://www.owl-ontologies.com/unnamed.owl#Gene>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Allele> <http://www.owl-ontologies.com/unnamed.owl#GeneticLinkageMap>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Allele> <http://www.owl-ontologies.com/unnamed.owl#GenomeSurveySequence>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Allele> <http://www.owl-ontologies.com/unnamed.owl#Homology>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Allele> <http://www.owl-ontologies.com/unnamed.owl#InSituHybridization>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Allele> <http://www.owl-ontologies.com/unnamed.owl#LinkageGroup>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Allele> <http://www.owl-ontologies.com/unnamed.owl#Map>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Allele> <http://www.owl-ontologies.com/unnamed.owl#Marker>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Allele> <http://www.owl-ontologies.com/unnamed.owl#NucleicAcid>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Allele> <http://www.owl-ontologies.com/unnamed.owl#Ploidy>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Allele> <http://www.owl-ontologies.com/unnamed.owl#QuantitativeTraitLoci>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Allele> <http://www.owl-ontologies.com/unnamed.owl#RadtionHybridMap>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Allele> <http://www.owl-ontologies.com/unnamed.owl#Species>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Allele> <http://www.owl-ontologies.com/unnamed.owl#Synteny>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Allele> <http://www.owl-ontologies.com/unnamed.owl#Trait>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#ArtificialChromosome> (<http://www.owl-ontologies.com/unnamed.owl#ArtificialChromosome>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#ArtificialChromosome> <http://www.owl-ontologies.com/unnamed.owl#Chromosome>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#BacterialArtificialChromosome> (<http://www.owl-ontologies.com/unnamed.owl#BacterialArtificialChromosome>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#BacterialArtificialChromosome> <http://www.owl-ontologies.com/unnamed.owl#ArtificialChromosome>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#CellDivisionProcess> (<http://www.owl-ontologies.com/unnamed.owl#CellDivisionProcess>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#CellDivisionProcess> owl:Class)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#CellDivisionProcess> <http://www.owl-ontologies.com/unnamed.owl#Chromosome>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#CellDivisionProcess> <http://www.owl-ontologies.com/unnamed.owl#ExpressedSequenceTag>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#CellDivisionProcess> <http://www.owl-ontologies.com/unnamed.owl#Gene>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#CellDivisionProcess> <http://www.owl-ontologies.com/unnamed.owl#GeneticLinkageMap>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#CellDivisionProcess> <http://www.owl-ontologies.com/unnamed.owl#GenomeSurveySequence>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#CellDivisionProcess> <http://www.owl-ontologies.com/unnamed.owl#Homology>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#CellDivisionProcess> <http://www.owl-ontologies.com/unnamed.owl#InSituHybridization>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#CellDivisionProcess> <http://www.owl-ontologies.com/unnamed.owl#LinkageGroup>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#CellDivisionProcess> <http://www.owl-ontologies.com/unnamed.owl#Map>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#CellDivisionProcess> <http://www.owl-ontologies.com/unnamed.owl#Marker>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#CellDivisionProcess> <http://www.owl-ontologies.com/unnamed.owl#NucleicAcid>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#CellDivisionProcess> <http://www.owl-ontologies.com/unnamed.owl#Ploidy>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#CellDivisionProcess> <http://www.owl-ontologies.com/unnamed.owl#QuantitativeTraitLoci>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#CellDivisionProcess> <http://www.owl-ontologies.com/unnamed.owl#Species>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#CellDivisionProcess> <http://www.owl-ontologies.com/unnamed.owl#Synteny>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#CellDivisionProcess> <http://www.owl-ontologies.com/unnamed.owl#Trait>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Centromere> (<http://www.owl-ontologies.com/unnamed.owl#Centromere>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Centromere> <http://www.owl-ontologies.com/unnamed.owl#ChromosomeStructuralElement>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Chromosome> (<http://www.owl-ontologies.com/unnamed.owl#Chromosome>)
+
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Chromosome> <http://www.owl-ontologies.com/unnamed.owl#ExpressedSequenceTag>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Chromosome> <http://www.owl-ontologies.com/unnamed.owl#Gene>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Chromosome> <http://www.owl-ontologies.com/unnamed.owl#GeneticLinkageMap>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Chromosome> <http://www.owl-ontologies.com/unnamed.owl#GenomeSurveySequence>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Chromosome> <http://www.owl-ontologies.com/unnamed.owl#Homology>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Chromosome> <http://www.owl-ontologies.com/unnamed.owl#InSituHybridization>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Chromosome> <http://www.owl-ontologies.com/unnamed.owl#LinkageGroup>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Chromosome> <http://www.owl-ontologies.com/unnamed.owl#Map>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Chromosome> <http://www.owl-ontologies.com/unnamed.owl#Marker>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Chromosome> <http://www.owl-ontologies.com/unnamed.owl#NucleicAcid>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Chromosome> <http://www.owl-ontologies.com/unnamed.owl#Ploidy>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Chromosome> <http://www.owl-ontologies.com/unnamed.owl#QuantitativeTraitLoci>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Chromosome> <http://www.owl-ontologies.com/unnamed.owl#RadtionHybridMap>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Chromosome> <http://www.owl-ontologies.com/unnamed.owl#Species>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Chromosome> <http://www.owl-ontologies.com/unnamed.owl#Synteny>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Chromosome> <http://www.owl-ontologies.com/unnamed.owl#Trait>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#ChromosomeStructuralElement> (<http://www.owl-ontologies.com/unnamed.owl#ChromosomeStructuralElement>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#ChromosomeStructuralElement> owl:Class)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#DeoxyriboNucleicAcid> (<http://www.owl-ontologies.com/unnamed.owl#DeoxyriboNucleicAcid>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#DeoxyriboNucleicAcid> <http://www.owl-ontologies.com/unnamed.owl#NucleicAcid>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#DeoxyriboNucleicAcid> <http://www.owl-ontologies.com/unnamed.owl#RiboNucleicAcid>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#ExpressedSequenceTag> (<http://www.owl-ontologies.com/unnamed.owl#ExpressedSequenceTag>)
+
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#ExpressedSequenceTag> <http://www.owl-ontologies.com/unnamed.owl#Gene>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#ExpressedSequenceTag> <http://www.owl-ontologies.com/unnamed.owl#GeneticLinkageMap>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#ExpressedSequenceTag> <http://www.owl-ontologies.com/unnamed.owl#GenomeSurveySequence>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#ExpressedSequenceTag> <http://www.owl-ontologies.com/unnamed.owl#Homology>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#ExpressedSequenceTag> <http://www.owl-ontologies.com/unnamed.owl#InSituHybridization>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#ExpressedSequenceTag> <http://www.owl-ontologies.com/unnamed.owl#LinkageGroup>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#ExpressedSequenceTag> <http://www.owl-ontologies.com/unnamed.owl#Map>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#ExpressedSequenceTag> <http://www.owl-ontologies.com/unnamed.owl#Marker>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#ExpressedSequenceTag> <http://www.owl-ontologies.com/unnamed.owl#NucleicAcid>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#ExpressedSequenceTag> <http://www.owl-ontologies.com/unnamed.owl#Ploidy>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#ExpressedSequenceTag> <http://www.owl-ontologies.com/unnamed.owl#QuantitativeTraitLoci>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#ExpressedSequenceTag> <http://www.owl-ontologies.com/unnamed.owl#RadtionHybridMap>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#ExpressedSequenceTag> <http://www.owl-ontologies.com/unnamed.owl#Species>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#ExpressedSequenceTag> <http://www.owl-ontologies.com/unnamed.owl#Synteny>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#ExpressedSequenceTag> <http://www.owl-ontologies.com/unnamed.owl#Trait>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#FluorescenceInSituHybridization> (<http://www.owl-ontologies.com/unnamed.owl#FluorescenceInSituHybridization>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#FluorescenceInSituHybridization> <http://www.owl-ontologies.com/unnamed.owl#InSituHybridization>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Gene> (<http://www.owl-ontologies.com/unnamed.owl#Gene>)
+
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Gene> <http://www.owl-ontologies.com/unnamed.owl#GeneticLinkageMap>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Gene> <http://www.owl-ontologies.com/unnamed.owl#GenomeSurveySequence>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Gene> <http://www.owl-ontologies.com/unnamed.owl#Homology>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Gene> <http://www.owl-ontologies.com/unnamed.owl#InSituHybridization>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Gene> <http://www.owl-ontologies.com/unnamed.owl#LinkageGroup>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Gene> <http://www.owl-ontologies.com/unnamed.owl#Map>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Gene> <http://www.owl-ontologies.com/unnamed.owl#Marker>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Gene> <http://www.owl-ontologies.com/unnamed.owl#NucleicAcid>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Gene> <http://www.owl-ontologies.com/unnamed.owl#Ploidy>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Gene> <http://www.owl-ontologies.com/unnamed.owl#QuantitativeTraitLoci>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Gene> <http://www.owl-ontologies.com/unnamed.owl#RadtionHybridMap>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Gene> <http://www.owl-ontologies.com/unnamed.owl#Species>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Gene> <http://www.owl-ontologies.com/unnamed.owl#Synteny>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Gene> <http://www.owl-ontologies.com/unnamed.owl#Trait>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#GeneticLinkageMap> (<http://www.owl-ontologies.com/unnamed.owl#GeneticLinkageMap>)
+
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#GeneticLinkageMap> <http://www.owl-ontologies.com/unnamed.owl#GenomeSurveySequence>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#GeneticLinkageMap> <http://www.owl-ontologies.com/unnamed.owl#Homology>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#GeneticLinkageMap> <http://www.owl-ontologies.com/unnamed.owl#InSituHybridization>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#GeneticLinkageMap> <http://www.owl-ontologies.com/unnamed.owl#LinkageGroup>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#GeneticLinkageMap> <http://www.owl-ontologies.com/unnamed.owl#Map>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#GeneticLinkageMap> <http://www.owl-ontologies.com/unnamed.owl#Marker>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#GeneticLinkageMap> <http://www.owl-ontologies.com/unnamed.owl#NucleicAcid>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#GeneticLinkageMap> <http://www.owl-ontologies.com/unnamed.owl#Ploidy>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#GeneticLinkageMap> <http://www.owl-ontologies.com/unnamed.owl#QuantitativeTraitLoci>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#GeneticLinkageMap> <http://www.owl-ontologies.com/unnamed.owl#RadtionHybridMap>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#GeneticLinkageMap> <http://www.owl-ontologies.com/unnamed.owl#Species>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#GeneticLinkageMap> <http://www.owl-ontologies.com/unnamed.owl#Synteny>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#GeneticLinkageMap> <http://www.owl-ontologies.com/unnamed.owl#Trait>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#GenomeSurveySequence> (<http://www.owl-ontologies.com/unnamed.owl#GenomeSurveySequence>)
+
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#GenomeSurveySequence> <http://www.owl-ontologies.com/unnamed.owl#Homology>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#GenomeSurveySequence> <http://www.owl-ontologies.com/unnamed.owl#LinkageGroup>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#GenomeSurveySequence> <http://www.owl-ontologies.com/unnamed.owl#Map>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#GenomeSurveySequence> <http://www.owl-ontologies.com/unnamed.owl#Marker>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#GenomeSurveySequence> <http://www.owl-ontologies.com/unnamed.owl#NucleicAcid>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#GenomeSurveySequence> <http://www.owl-ontologies.com/unnamed.owl#Ploidy>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#GenomeSurveySequence> <http://www.owl-ontologies.com/unnamed.owl#Species>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#GenomeSurveySequence> <http://www.owl-ontologies.com/unnamed.owl#Synteny>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#GenomeSurveySequence> <http://www.owl-ontologies.com/unnamed.owl#Trait>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Homology> (<http://www.owl-ontologies.com/unnamed.owl#Homology>)
+
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Homology> <http://www.owl-ontologies.com/unnamed.owl#InSituHybridization>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Homology> <http://www.owl-ontologies.com/unnamed.owl#LinkageGroup>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Homology> <http://www.owl-ontologies.com/unnamed.owl#Map>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Homology> <http://www.owl-ontologies.com/unnamed.owl#Marker>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Homology> <http://www.owl-ontologies.com/unnamed.owl#NucleicAcid>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Homology> <http://www.owl-ontologies.com/unnamed.owl#Ploidy>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Homology> <http://www.owl-ontologies.com/unnamed.owl#QuantitativeTraitLoci>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Homology> <http://www.owl-ontologies.com/unnamed.owl#RadtionHybridMap>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Homology> <http://www.owl-ontologies.com/unnamed.owl#Species>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Homology> <http://www.owl-ontologies.com/unnamed.owl#Synteny>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Homology> <http://www.owl-ontologies.com/unnamed.owl#Trait>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#InSituHybridization> (<http://www.owl-ontologies.com/unnamed.owl#InSituHybridization>)
+
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#InSituHybridization> <http://www.owl-ontologies.com/unnamed.owl#LinkageGroup>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#InSituHybridization> <http://www.owl-ontologies.com/unnamed.owl#Map>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#InSituHybridization> <http://www.owl-ontologies.com/unnamed.owl#Marker>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#InSituHybridization> <http://www.owl-ontologies.com/unnamed.owl#NucleicAcid>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#InSituHybridization> <http://www.owl-ontologies.com/unnamed.owl#Ploidy>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#InSituHybridization> <http://www.owl-ontologies.com/unnamed.owl#QuantitativeTraitLoci>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#InSituHybridization> <http://www.owl-ontologies.com/unnamed.owl#Species>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#InSituHybridization> <http://www.owl-ontologies.com/unnamed.owl#Synteny>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#InSituHybridization> <http://www.owl-ontologies.com/unnamed.owl#Trait>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#LinkageGroup> (<http://www.owl-ontologies.com/unnamed.owl#LinkageGroup>)
+
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#LinkageGroup> <http://www.owl-ontologies.com/unnamed.owl#Map>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#LinkageGroup> <http://www.owl-ontologies.com/unnamed.owl#Marker>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#LinkageGroup> <http://www.owl-ontologies.com/unnamed.owl#NucleicAcid>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#LinkageGroup> <http://www.owl-ontologies.com/unnamed.owl#Ploidy>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#LinkageGroup> <http://www.owl-ontologies.com/unnamed.owl#QuantitativeTraitLoci>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#LinkageGroup> <http://www.owl-ontologies.com/unnamed.owl#RadtionHybridMap>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#LinkageGroup> <http://www.owl-ontologies.com/unnamed.owl#Species>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#LinkageGroup> <http://www.owl-ontologies.com/unnamed.owl#Synteny>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#LinkageGroup> <http://www.owl-ontologies.com/unnamed.owl#Trait>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Map> (<http://www.owl-ontologies.com/unnamed.owl#Map>)
+
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Map> <http://www.owl-ontologies.com/unnamed.owl#Marker>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Map> <http://www.owl-ontologies.com/unnamed.owl#NucleicAcid>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Map> <http://www.owl-ontologies.com/unnamed.owl#Ploidy>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Map> <http://www.owl-ontologies.com/unnamed.owl#QuantitativeTraitLoci>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Map> <http://www.owl-ontologies.com/unnamed.owl#Species>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Map> <http://www.owl-ontologies.com/unnamed.owl#Synteny>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Map> <http://www.owl-ontologies.com/unnamed.owl#Trait>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Marker> (<http://www.owl-ontologies.com/unnamed.owl#Marker>)
+
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Marker> <http://www.owl-ontologies.com/unnamed.owl#NucleicAcid>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Marker> <http://www.owl-ontologies.com/unnamed.owl#Ploidy>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Marker> <http://www.owl-ontologies.com/unnamed.owl#QuantitativeTraitLoci>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Marker> <http://www.owl-ontologies.com/unnamed.owl#RadtionHybridMap>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Marker> <http://www.owl-ontologies.com/unnamed.owl#Species>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Marker> <http://www.owl-ontologies.com/unnamed.owl#Synteny>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Marker> <http://www.owl-ontologies.com/unnamed.owl#Trait>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Meiosis> (<http://www.owl-ontologies.com/unnamed.owl#Meiosis>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Meiosis> <http://www.owl-ontologies.com/unnamed.owl#CellDivisionProcess>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Meiosis> <http://www.owl-ontologies.com/unnamed.owl#Mitosis>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Mitosis> (<http://www.owl-ontologies.com/unnamed.owl#Mitosis>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Mitosis> <http://www.owl-ontologies.com/unnamed.owl#CellDivisionProcess>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#NaturalChromosome> (<http://www.owl-ontologies.com/unnamed.owl#NaturalChromosome>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#NaturalChromosome> <http://www.owl-ontologies.com/unnamed.owl#Chromosome>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#NucleicAcid> (<http://www.owl-ontologies.com/unnamed.owl#NucleicAcid>)
+
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#NucleicAcid> <http://www.owl-ontologies.com/unnamed.owl#Ploidy>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#NucleicAcid> <http://www.owl-ontologies.com/unnamed.owl#QuantitativeTraitLoci>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#NucleicAcid> <http://www.owl-ontologies.com/unnamed.owl#Species>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#NucleicAcid> <http://www.owl-ontologies.com/unnamed.owl#Synteny>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#NucleicAcid> <http://www.owl-ontologies.com/unnamed.owl#Trait>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Orthology> (<http://www.owl-ontologies.com/unnamed.owl#Orthology>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Orthology> <http://www.owl-ontologies.com/unnamed.owl#Homology>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Paralogy> (<http://www.owl-ontologies.com/unnamed.owl#Paralogy>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Paralogy> <http://www.owl-ontologies.com/unnamed.owl#Homology>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#PhysicalMap> (<http://www.owl-ontologies.com/unnamed.owl#PhysicalMap>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#PhysicalMap> <http://www.owl-ontologies.com/unnamed.owl#Map>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Ploidy> (<http://www.owl-ontologies.com/unnamed.owl#Ploidy>)
+
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Ploidy> <http://www.owl-ontologies.com/unnamed.owl#QuantitativeTraitLoci>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Ploidy> <http://www.owl-ontologies.com/unnamed.owl#Species>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Ploidy> <http://www.owl-ontologies.com/unnamed.owl#Synteny>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Ploidy> <http://www.owl-ontologies.com/unnamed.owl#Trait>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#QuantitativeTraitLoci> (<http://www.owl-ontologies.com/unnamed.owl#QuantitativeTraitLoci>)
+
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#QuantitativeTraitLoci> <http://www.owl-ontologies.com/unnamed.owl#Species>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#QuantitativeTraitLoci> <http://www.owl-ontologies.com/unnamed.owl#Synteny>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#QuantitativeTraitLoci> <http://www.owl-ontologies.com/unnamed.owl#Trait>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#RadtionHybridMap> (<http://www.owl-ontologies.com/unnamed.owl#RadtionHybridMap>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#RadtionHybridMap> <http://www.owl-ontologies.com/unnamed.owl#Map>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#RadtionHybridMap> <http://www.owl-ontologies.com/unnamed.owl#Species>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#RiboNucleicAcid> (<http://www.owl-ontologies.com/unnamed.owl#RiboNucleicAcid>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#RiboNucleicAcid> <http://www.owl-ontologies.com/unnamed.owl#NucleicAcid>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Species> (<http://www.owl-ontologies.com/unnamed.owl#Species>)
+
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Species> <http://www.owl-ontologies.com/unnamed.owl#Synteny>)
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Species> <http://www.owl-ontologies.com/unnamed.owl#Trait>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Synteny> (<http://www.owl-ontologies.com/unnamed.owl#Synteny>)
+
+DisjointClasses(<http://www.owl-ontologies.com/unnamed.owl#Synteny> <http://www.owl-ontologies.com/unnamed.owl#Trait>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#Telomere> (<http://www.owl-ontologies.com/unnamed.owl#Telomere>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#Telomere> <http://www.owl-ontologies.com/unnamed.owl#ChromosomeStructuralElement>)
+
+# Class: <http://www.owl-ontologies.com/unnamed.owl#YeastArtificialChromosome> (<http://www.owl-ontologies.com/unnamed.owl#YeastArtificialChromosome>)
+
+SubClassOf(<http://www.owl-ontologies.com/unnamed.owl#YeastArtificialChromosome> <http://www.owl-ontologies.com/unnamed.owl#ArtificialChromosome>)
+
+# Class: <https://smolang.org/rdfMutate#newNode-5> (<https://smolang.org/rdfMutate#newNode-5>)
+
+SubClassOf(<https://smolang.org/rdfMutate#newNode-5> <https://smolang.org/rdfMutate#newNode-5>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://www.owl-ontologies.com/unnamed.owl#ChromosomeStructuralElement> (<http://www.owl-ontologies.com/unnamed.owl#ChromosomeStructuralElement>)
+
+ClassAssertion(owl:Class <http://www.owl-ontologies.com/unnamed.owl#ChromosomeStructuralElement>)
+
+# Individual: <http://www.owl-ontologies.com/unnamed.owl#PhysicalMap> (<http://www.owl-ontologies.com/unnamed.owl#PhysicalMap>)
+
+ClassAssertion(owl:Class <http://www.owl-ontologies.com/unnamed.owl#PhysicalMap>)
+
+# Individual: <http://www.owl-ontologies.com/unnamed.owl#Ploidy> (<http://www.owl-ontologies.com/unnamed.owl#Ploidy>)
+
+ClassAssertion(owl:Class <http://www.owl-ontologies.com/unnamed.owl#Ploidy>)
+
+# Individual: <https://smolang.org/rdfMutate#newNode-5> (<https://smolang.org/rdfMutate#newNode-5>)
+
+ClassAssertion(owl:Class <https://smolang.org/rdfMutate#newNode-5>)
+
+
+)
