@@ -1,0 +1,57 @@
+bug in openllet
+
+--> Openllet throughs exception
+
+size of test ontology: 1736 axioms
+size of (automatically) minimized ontology: 45 axioms
+
+
+call:
+OWLOntologyDocumentSource source = new FileDocumentSource(ontFile, new FunctionalSyntaxDocumentFormat());
+OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
+OWLOntology ont = manager.loadOntologyFromOntologyDocument(source);
+
+OpenlletReasonerFactory rf = new OpenlletReasonerFactory();
+OWLReasoner openllet = rf.createReasoner(ont);
+
+/// class hierarchy
+InferredSubClassAxiomGenerator subClassGenerator = new InferredSubClassAxiomGenerator();
+if (openllet.isConsistent()) {
+	openllet.precomputeInferences(InferenceType.CLASS_HIERARCHY);
+	Set<OWLSubClassOfAxiom> subClassAxioms = subClassGenerator.createAxioms(manager.getOWLDataFactory(), openllet);
+}
+
+
+
+exception: 
+Exception in thread "main" openllet.core.exceptions.InternalReasonerException: Caching inconsistent results for FunAnd([FunNot(http://www.absoluteiri.edu/RELAPPROXC1252),FunAll(http://purl.obolibrary.org/obo/BFO_0000050,FunNot(http://purl.obolibrary.org/obo/CARO_0000000)),FunNot(http://purl.obolibrary.org/obo/CARO_0000000),FunAll(http://purl.obolibrary.org/obo/BFO_0000050,FunNot(http://www.absoluteiri.edu/RELAPPROXC1252)),FunNot(http://purl.obolibrary.org/obo/PORO_0000150),http://purl.obolibrary.org/obo/PORO_0000002,FunAll(http://purl.obolibrary.org/obo/BFO_0000050,FunNot(http://purl.obolibrary.org/obo/PORO_0000150))])
+	at openllet.core.tableau.cache.AbstractConceptCache.putSat(AbstractConceptCache.java:81)
+	at openllet.core.tableau.completion.EmptySRIQStrategy.addCacheSat(EmptySRIQStrategy.java:211)
+	at openllet.core.tableau.completion.EmptySRIQStrategy.complete(EmptySRIQStrategy.java:189)
+	at openllet.core.boxes.abox.ABoxImpl.lambda$isConsistent$12(ABoxImpl.java:1417)
+	at openllet.core.utils.Timers.execute(Timers.java:118)
+	at openllet.core.boxes.abox.ABoxImpl.isConsistent(ABoxImpl.java:1417)
+	at openllet.core.boxes.abox.ABoxImpl.isSatisfiable(ABoxImpl.java:621)
+	at openllet.core.taxonomy.CDOptimizedTaxonomyBuilder.checkSatisfiability(CDOptimizedTaxonomyBuilder.java:757)
+	at openllet.core.taxonomy.CDOptimizedTaxonomyBuilder.classify(CDOptimizedTaxonomyBuilder.java:804)
+	at openllet.core.taxonomy.CDOptimizedTaxonomyBuilder.classify(CDOptimizedTaxonomyBuilder.java:266)
+	at openllet.core.taxonomy.CDOptimizedTaxonomyBuilder.classify(CDOptimizedTaxonomyBuilder.java:211)
+	at openllet.core.KnowledgeBaseImpl.classify(KnowledgeBaseImpl.java:1919)
+	at openllet.core.KnowledgeBaseImplFullSync.classify(KnowledgeBaseImplFullSync.java:385)
+	at openllet.owlapi.PelletReasoner.precomputeInferences(PelletReasoner.java:1289)
+
+
+
+ - Mutation to generate this test case (learned mutation operators):
+start new test (788) at Tue Sep 16 04:59:54 PM UTC 2025 
+mutate KG (ontology) ontologies_ore/ore_ont_3349.owl
+mutation summary:
+numMutations;numDel;numAdd;appliedMutations;affectedSeedNodes
+30;9;24;[RuleMutation(config=RuleMutationConfiguration(([variablea, subClassOf, variableb]) -> ([variablea, type, Class],[variableb, type, Class]))), RuleMutation(config=RuleMutationConfiguration(([variableb, type, NamedIndividual],[variablea, type, variableb],[variablea, type, NamedIndividual]) -> (not[variableb, type, NamedIndividual],not[variablea, type, NamedIndividual]))), RuleMutation(config=RuleMutationConfiguration(([variablea, type, NamedIndividual],[variableb, type, variablea],[variablea, type, variableb]) -> (not[variableb, type, variablea],not[variablea, type, NamedIndividual],not[variablea, type, variableb]))), RuleMutation(config=RuleMutationConfiguration(([variableb, subClassOf, variablea],[variablea, subClassOf, variableb],[variablea, type, Class]) -> (not[variablea, subClassOf, variableb],not[variableb, subClassOf, variablea],not[variablea, type, Class]))), RuleMutation(config=RuleMutationConfiguration(([variableb, subPropertyOf, variablea]) -> ([variablea, type, ObjectProperty],[variablea, subPropertyOf, variableb]))), RuleMutation(config=RuleMutationConfiguration((newNode(variablea),newNode(variableb)) -> ([variablea, type, Class],[variableb, type, Class],[variablea, subClassOf, variableb]))), RuleMutation(config=RuleMutationConfiguration(([variableb, rest, nil],newNode(variablea)) -> ([variablea, type, Class],[variablea, oneOf, variableb]))), RuleMutation(config=RuleMutationConfiguration(([variableb, type, NamedIndividual],[variableb, type, variablea]) -> ([variablea, type, NamedIndividual]))), RuleMutation(config=RuleMutationConfiguration(([variableb, type, Class],newNode(variablea)) -> ([variablea, type, Restriction],[variableb, equivalentClass, variablea]))), RuleMutation(config=RuleMutationConfiguration(([variablec, subClassOf, variableb],[variablec, type, variablea],[variablea, subClassOf, variableb]) -> (not[variablec, subClassOf, variableb],not[variablea, subClassOf, variableb]))), RuleMutation(config=RuleMutationConfiguration(([variableb, type, NamedIndividual],newNode(variablea)) -> ([variablea, type, Class],[variablea, type, variableb]))), RuleMutation(config=RuleMutationConfiguration(([variableb, type, NamedIndividual],[variablea, subClassOf, variableb],[variablea, type, NamedIndividual]) -> (not[variablea, subClassOf, variableb],not[variableb, type, NamedIndividual],not[variablea, type, NamedIndividual]))), RuleMutation(config=RuleMutationConfiguration(([variableb, rest, nil],newNode(variablea)) -> ([variablea, type, Class],[variablea, oneOf, variableb]))), RuleMutation(config=RuleMutationConfiguration(([variablea, range, string]) -> ([variablea, type, FunctionalProperty]))), RuleMutation(config=RuleMutationConfiguration(([variableb, type, Class],newNode(variablea)) -> ([variablea, type, NamedIndividual],[variablea, type, variableb]))), RuleMutation(config=RuleMutationConfiguration(([variablea, subClassOf, variableb],[variablea, type, variableb],[variablea, type, NamedIndividual]) -> (not[variablea, subClassOf, variableb],not[variablea, type, NamedIndividual]))), RuleMutation(config=RuleMutationConfiguration((newNode(variablea),newNode(variableb)) -> ([variablea, type, Class],[variableb, type, Restriction],[variablea, equivalentClass, variableb]))), RuleMutation(config=RuleMutationConfiguration((newNode(variableb),newNode(variablea),newNode(variablec)) -> ([variablea, disjointWith, variableb],[variablec, disjointWith, variableb],[variablea, disjointWith, variablec]))), RuleMutation(config=RuleMutationConfiguration(([variableb, subClassOf, variablea],[variablea, subClassOf, variableb],[variablea, type, Class]) -> (not[variableb, subClassOf, variablea],not[variablea, type, Class]))), RuleMutation(config=RuleMutationConfiguration(([variableb, rest, nil],[variableb, first, variablea]) -> ([variablea, type, Class]))), RuleMutation(config=RuleMutationConfiguration(([variableb, type, Restriction],[variableb, someValuesFrom, variablea],[variablea, type, Class]) -> (not[variableb, someValuesFrom, variablea],not[variableb, type, Restriction],not[variablea, type, Class]))), RuleMutation(config=RuleMutationConfiguration(([variableb, type, Class],[variableb, equivalentClass, variablea],[variablea, type, Restriction]) -> (not[variableb, equivalentClass, variablea],not[variablea, type, Restriction]))), RuleMutation(config=RuleMutationConfiguration(([variableb, type, Class],[variablea, disjointWith, variableb]) -> ([variablea, type, Class]))), RuleMutation(config=RuleMutationConfiguration(([variablea, type, NamedIndividual],[variablea, type, Class]) -> (not[variablea, type, NamedIndividual],not[variablea, type, Class]))), RuleMutation(config=RuleMutationConfiguration(([variablec, type, variableb],[variablec, disjointWith, variablea],[variablea, type, variableb]) -> (not[variablec, type, variableb],not[variablea, type, variableb]))), RuleMutation(config=RuleMutationConfiguration(([variableb, type, Class],newNode(variablea)) -> ([variablea, type, Restriction],[variablea, someValuesFrom, variableb]))), RuleMutation(config=RuleMutationConfiguration(([variableb, type, NamedIndividual],[variablea, type, variableb],[variablea, type, Class]) -> (not[variablea, type, variableb],not[variableb, type, NamedIndividual],not[variablea, type, Class]))), RuleMutation(config=RuleMutationConfiguration(([variablec, type, variableb],[variablea, subPropertyOf, variablec],[variablea, type, variableb]) -> (not[variablea, subPropertyOf, variablec],not[variablea, type, variableb]))), RuleMutation(config=RuleMutationConfiguration(([variablea, type, ObjectProperty]) -> ([variablea, type, NamedIndividual]))), RuleMutation(config=RuleMutationConfiguration((newNode(variablea)) -> ([variablea, range, string],[variablea, type, DatatypeProperty])))];[topObjectProperty,ObjectProperty,Class,PORO_0000245,PORO_0000278,PORO_0000098,Restriction,PORO_0000939,echinates,3281d4ee-477a-4833-948f-584f27278bb0,RELAPPROXC1259,12c0fa20-64e2-4525-a12d-7c41b0a5c2c6,RELAPPROXC1204,PORO_0000041,8cdfa481-2d1f-42ee-8683-5da0e274a2b5,PORO_0000513]
+call reasoner oracle
+found anomaly. Saved to fuzzingResults/rdfuzz/fuzzing_2025_09_16_15_03/ont_788.owl.
+
+found on 17.09.2025
+
+reported:
+https://github.com/Galigator/openllet/issues/105
