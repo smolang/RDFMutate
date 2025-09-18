@@ -5,8 +5,8 @@ bug in openllet
 --> Openllet misses this subClass relation; 
 --> (probable) cause: xsd:normalizedString is not seen as subtype of xsd:String (see https://www.w3.org/TR/xmlschema11-2/#dt-derived)
 
-size of test ontology: 3350 axioms
-size of (automatically) minimized ontology: 23 axioms
+size of test ontology: 392 axioms
+size of (automatically) minimized ontology: 7 axioms
 
 call:
 OWLOntologyDocumentSource source = new FileDocumentSource(ontFile, new FunctionalSyntaxDocumentFormat());
