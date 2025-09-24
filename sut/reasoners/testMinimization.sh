@@ -38,8 +38,7 @@ echo "build source code"
 echo "build source code"  >> $log
 
 cd ../../
-#TODO: remove comment
-#./gradlew build 
+./gradlew build 
 cd sut/reasoners
 
 

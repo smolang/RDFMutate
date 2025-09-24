@@ -53,6 +53,7 @@ class Main : CliktCommand() {
         "--el-graph" to "elGraph",
         "--suave-coverage-graph" to "suaveCoverageGraph",
         "--analyze-minimization" to "minimization",
+        "--analyzeKG" to "analyzeKG",
         "--suave-features" to "suaveFeatures",
         "--pattern-extraction" to "patternExtraction"
     ).default("free")
@@ -163,6 +164,7 @@ class Main : CliktCommand() {
             "elGraph" -> generateElCoverageGraphs()
             "suaveCoverageGraph" -> generateSuaveCoverageGraphs()
             "suaveFeatures" -> listSuaveFeatures()
+            "analyzeKG" -> analyzeKG()
             "test" -> {
                 // test installation
                 testMiniPipes()
@@ -350,7 +352,23 @@ class Main : CliktCommand() {
 
     }
 
+    // analyzes the KG from the input
+    private fun analyzeKG() {
+        if (seed == null){
+            println("You need to provide a seed knowledge graph")
+            exitProcess(-1)
+        } else if(!seed!!.exists()){
+            println("File ${seed!!.path} does not exist")
+            exitProcess(-1)
+        }
+        val seedKG =
+            if (owlDocument)
+                OwlFileHandler().loadOwlDocument(seed!!)
+            else
+                RDFDataMgr.loadDataset(seed!!.absolutePath).defaultModel
 
+        println("triples: ${seedKG.listStatements().toSet().size}")
+    }
 
 
 
