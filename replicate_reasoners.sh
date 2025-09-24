@@ -14,7 +14,7 @@ echo "build source code"
 
 
 echo "start fuzzing reasoners"
-echo "WARNING: this might take a severe amout of time, i.e. 10h."
+echo "WARNING: this might take a severe amout of time, i.e. 20h."
 
 
 
@@ -22,5 +22,7 @@ cd sut/reasoners
 
 # preform fuzzing
 ./fuzzReasoners.sh ontologies_ore $timeLimit
+./fuzzReasonersLearnt.sh ontologies_ore $timeLimit
+
 
 cd $currentFolder

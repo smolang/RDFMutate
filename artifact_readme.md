@@ -15,12 +15,13 @@ You can test the installation by running a test on a system based on the running
 
 ## Reproducibility Instructions
 ### Run Experiments
-There are three scripts to reproduce our experiments.
+There are four scripts to reproduce our experiments.
 
 - `generate_plot.sh` generates the three plots from the paper: (i) showing the relation between mask development and number of attempts to generate a valid mutant and (ii)  showing the input feature coverage. The PDF output is put into a folder `results`. (This script requires a LaTex installation to produce the PDF.) The run time of the script is several hours.
 - `generate_plot_reduced.sh` is the same as `generate_plot.sh` but with smaller sample sizes. The run time of the script is a few minutes.
 - `replicate_geo.sh` generates mutants for the geo system and executes the test runs for all of them. The mutants are saved in folder `sut/geo/mutatedOnt` and the results of the test runs in `sut/geo/testResults`. On our machine (Intel Core i7-1165G7) this took about 100 hours.
 - `replicate_suave.sh` generates mutants for the suave system and executes the test runs for all of them. On our machine (Intel Core i7-1165G7) this took about 60 hours. Note: the SUAVE simulation is unstable if the hardware resources are not sufficient. On our setup (using an i7-1165G7 @ 2.80GHz), we had to provide the VM with 6 cores for the simulations to work correctly.
+- `replicate_reasoners.sh` generates mutants for the EL reasoners and executes the test runs for all of them. This takes 20 hours.
 
 ### Evaluation Data used for EMSE Publication
 The mutants, masks and results of test runs can be found in the following folders:
