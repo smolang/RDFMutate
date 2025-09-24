@@ -20,7 +20,7 @@ mkdir -p $outputDirectory
 log=$outputDirectory/testMinimizer.log
 outputCSV=$outputDirectory/overview.csv
 
-echo "kg,timeout,triplesInput,triplesMinimal" > $outputCSV
+echo "kg,noPossible,timeout,triplesInput,triplesMinimal,time(s)" > $outputCSV
 
 
 CONTAINER_NAME=reasonerContainer
@@ -70,7 +70,10 @@ for file in $inputDirectory/* ; do
        if [[ $file == "$inputDirectory"/*.owl && $file != "$inputDirectory"/*.minimal.owl ]]; then
             echo call ../../minimizeReasonerKGs.sh $file $timeLimitSeconds
             echo call ../../minimizeReasonerKGs.sh $file $timeLimitSeconds >> $log
+
+            SECONDS=0   # variable to stop time
             ../../minimizeReasonerKGs.sh $file $timeLimitSeconds >> $log 2>&1
+            duration=$SECONDS
 
             # count triples of old and minimal KG
             minimalFile="$file.minimal.owl"
@@ -87,12 +90,26 @@ for file in $inputDirectory/* ; do
             else 
                 timeout=1
             fi
-            echo "$file,$timeout,$triplesOld,$triplesNew" >> $outputCSV
+            echo "$file,0,$timeout,$triplesOld,$triplesNew,$duration" >> $outputCSV
             
 
        fi
     fi 
 done
+
+# add stuff that is not minimizable
+for file in $inputDirectory/nonMinimizable/* ; do 
+    if [ -f "$file" ]; then 
+       # minimiza all files that are not already minimal
+       if [[ $file == *.owl && $file != *.minimal.owl ]]; then
+            triplesOld=-1
+            triplesOld=$(java -jar ../../build/libs/RDFMutate-0.1.jar --analyzeKG --seedKG=$file --owl) #>> $log #2>&1
+            triplesOld=${triplesOld#"triples: "}
+            echo "$file,1,0,$triplesOld,-1,-1" >> $outputCSV
+       fi
+    fi
+done
+
 
 echo "finished minimizations"
 
