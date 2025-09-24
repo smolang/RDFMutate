@@ -14,7 +14,7 @@ minimalOntologyFileContainer="$ontologyFileContainer.minimal.owl"
 
 CONTAINER_NAME=reasonerContainer
 
-timeLimit=600   # time limit = 10min
+timeLimit=${2:-600}   # time limit default = 10min
 
 
 running=1
