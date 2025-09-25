@@ -36,7 +36,7 @@ The easiest way to replicate our results is to use the following [VM on Zenodo](
 - `generate_plot_reduced.sh` is the same as `generate_plot.sh` but with smaller sample sizes. The run time of the script is a few minutes.
 - `replicate_geo.sh` generates the mutants for the geo system and executes the test runs for all of them. The mutants are saved in folder [sut/geo/mutatedOnt](sut/geo/mutatedOnt) and the results of the test runs in [sut/geo/testResults](sut/geo/testResults). On our machine (Intel Core i7-1165G7) this took about 100 hours.
 - `replicate_suave.sh` generates the mutants for the suave system and executes the test runs for all of them. On our machine (Intel Core i7-1165G7) this took about 60 hours.
-- `replicate_reasoners.sh`generates the mutants for the reasoners and executes the test runs for them. The run time is 10h.
+- `replicate_reasoners.sh`generates the mutants for the reasoners and executes the test runs for them. The run time is 20h.
 
 ### Installation of SUTs
 You can use the script `install_suts.sh` to install all the necessary software. The last part of the script is rebooting, to make the installment permanent
