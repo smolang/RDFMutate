@@ -12,7 +12,7 @@ echo "build source code"
 
 # run mutation (with the arguments provided)
 echo "generating mutants. This might take a few (<5) minutes."
-java -jar build/libs/OntoMutate-0.1.jar --scen_suave
+java -jar build/libs/RDFMutate-0.1.jar --scen_suave
 
 
 echo "start test runs of system"
