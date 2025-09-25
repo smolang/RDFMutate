@@ -3,7 +3,7 @@
 ## Artifact Description
 This artifact contains a virtual machine to run our tool for integration testing by mutating Knowledge Graphs. The artifact contains our implementation as well as the test data that we used for our evaluation. The artifact also contains the scripts to reproduce our evaluation and the SUTs necessary to do so.
 
-All file paths in this document are relative to the directory of our tool on the VM, i.e. `~/Desktop/OntoMutate`, where you can also find a copy of this README.
+All file paths in this document are relative to the directory of our tool on the VM, i.e. `~/Desktop/RDFMutate`, where you can also find a copy of this README.
 
 ## Environment Setup
 We provide a virtual machine in the `.ova` format. The user name of the VM is "kgtester" and the password is also "kgtester". We ran our VM with 16GB or RAM, which is sufficient to reproduce the results.
