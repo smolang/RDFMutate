@@ -15,6 +15,7 @@ minimalOntologyFileContainer="$ontologyFileContainer.minimal.owl"
 CONTAINER_NAME=reasonerContainer
 
 timeLimit=${2:-600}   # time limit default = 10min
+memLimit=${3:-8} # no limit: 8GB
 
 
 running=1
@@ -37,7 +38,7 @@ echo "minimize ontology"
 # delete old minimal file
 docker exec $CONTAINER_NAME rm ../$minimalOntologyFileContainer
 # minimize ontology
-docker exec $CONTAINER_NAME ./minimize-ontology.sh ../$ontologyFileContainer $timeLimit
+docker exec $CONTAINER_NAME ./minimize-ontology.sh ../$ontologyFileContainer $timeLimit $memLimit
 
 # copy result from container
 docker cp $CONTAINER_NAME:/$minimalOntologyFileContainer $minimalOntologyFile

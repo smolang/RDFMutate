@@ -5,6 +5,8 @@
 # read arguments
 inputDirectory=$1  # e.g. testInputsToMinimize
 timeLimit=${2:-1}   # timeLimit per minimization; default: 1 minutes
+memLimit=${3:-8} # no limit: 8GB
+
 
 
 # time limit in second
@@ -68,11 +70,11 @@ for file in $inputDirectory/* ; do
     if [ -f "$file" ]; then 
        # minimiza all files that are not already minimal
        if [[ $file == "$inputDirectory"/*.owl && $file != "$inputDirectory"/*.minimal.owl ]]; then
-            echo call ../../minimizeReasonerKGs.sh $file $timeLimitSeconds
-            echo call ../../minimizeReasonerKGs.sh $file $timeLimitSeconds >> $log
+            echo call ../../minimizeReasonerKGs.sh $file $timeLimitSeconds $memLimit
+            echo call ../../minimizeReasonerKGs.sh $file $timeLimitSeconds $memLimit >> $log
 
             SECONDS=0   # variable to stop time
-            ../../minimizeReasonerKGs.sh $file $timeLimitSeconds >> $log 2>&1
+            ../../minimizeReasonerKGs.sh $file $timeLimitSeconds $memLimit >> $log 2>&1
             duration=$SECONDS
 
             # count triples of old and minimal KG
