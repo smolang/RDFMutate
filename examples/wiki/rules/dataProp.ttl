@@ -4,7 +4,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 :x rdf:type swrl:Variable .
-:dp rdf:type swrl:Variable .
+:dp rdf:type owl:DatatypeProperty .
 
 [ rdf:type swrl:Imp ;
   swrl:body [ rdf:type swrl:AtomList ;
