@@ -7,7 +7,7 @@ import org.apache.jena.shacl.Shapes
 import org.smolang.robust.mainLogger
 import org.smolang.robust.mutant.*
 import org.smolang.robust.mutant.operators.*
-import org.smolang.robust.tools.ruleMutations.RuleParser
+import org.smolang.robust.tools.ruleMutations.SWRLRuleParser
 import java.io.File
 import java.nio.file.Files
 import kotlin.random.Random
@@ -172,7 +172,7 @@ open class MutationRunnerDeprecated(
                 null
             } else  {
                 val input = RDFDataMgr.loadDataset(inputFile.absolutePath).defaultModel
-                val parser = RuleParser(inputFile)
+                val parser = SWRLRuleParser(inputFile)
                 parser.getAllAbstractMutations()
             }
         return mutations

@@ -3,7 +3,8 @@ package org.smolang.robust.tools
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 import org.smolang.robust.mutant.AbstractMutation
-import org.smolang.robust.tools.ruleMutations.RuleParser
+import org.smolang.robust.tools.ruleMutations.AssociationRuleParser
+import org.smolang.robust.tools.ruleMutations.SWRLRuleParser
 import java.io.File
 
 // abstract class for parsers of files for mutation operators
@@ -15,12 +16,14 @@ abstract class MutationFileParser {
 class MutationFileParserFactory(val format: MutationOperatorFormat){
     fun getParser(file: File) : MutationFileParser =
         when(format) {
-            MutationOperatorFormat.SWRL -> RuleParser(file)
+            MutationOperatorFormat.SWRL -> SWRLRuleParser(file)
+            MutationOperatorFormat.ASSOCIATION_RULE -> AssociationRuleParser(file)
         }
 }
 
 @Serializable
 enum class MutationOperatorFormat {
     @SerialName("swrl")
-    SWRL
+    SWRL,
+    ASSOCIATION_RULE
 }

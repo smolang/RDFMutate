@@ -5,8 +5,11 @@ import org.smolang.robust.domainSpecific.reasoner.ElGenerationTimeAnalyzer
 import org.smolang.robust.domainSpecific.suave.SuaveEvaluationGraphGenerator
 import org.smolang.robust.mainLogger
 import org.smolang.robust.mutant.*
+import org.smolang.robust.patterns.PatternExtractor
 import org.smolang.robust.sut.auv.MiniPipeInspection
+import org.smolang.robust.tools.extraction.AssociationRuleExtractor
 import java.io.File
+import java.nio.file.Files
 
 
 // class to run special modes of the tool
@@ -109,4 +112,31 @@ class SpecialModesRunner {
 
     }
 
+    // tests rule extraction
+    fun testRuleExtraction() {
+        // pattern extractor for ORE ontologies
+        val orePatternExtractor = PatternExtractor(
+            50,
+            20,
+            0.8,
+            3
+        )
+        val associationRuleExtractor = AssociationRuleExtractor()
+        val outputELFile = File("sut/rml/extractedRulesOre.txt")
+        // get all files from folder
+        val directory = File("sut/reasoners/ontologies_ore")
+        // filter for files that end with ".owl"
+        val filesInDirectory = Files.walk(directory.toPath())
+            .filter { path -> path.toString().endsWith(".owl") }
+            .toList()
+            .map { path -> path.toFile() }
+            .toSet()
+
+        val rules = associationRuleExtractor.mineRules(
+            orePatternExtractor,
+            filesInDirectory
+        )
+
+        associationRuleExtractor.saveRulesToFile(rules, outputELFile)
+    }
 }

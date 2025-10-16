@@ -1,0 +1,58 @@
+import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
+
+plugins {
+    id 'scala'
+    id 'com.github.johnrengelman.shadow' version '8.1.1' // 7.0.0
+}
+
+group = 'org.smolang.robust'
+version = '1.0'
+
+
+repositories {
+    mavenCentral()
+    maven { url = 'https://jitpack.io' }
+}
+
+/*
+configurations {
+    subImplementation {
+        // ensure that working jena version is used
+        exclude group: 'org.apache.jena', module: 'apache-jena-libs'
+    }
+}
+ */
+
+
+dependencies {
+    implementation 'org.scala-lang:scala-library:2.13.8'
+    // https://github.com/propi/rdfrules/tree/master
+    implementation 'com.github.propi:rdfrules:1.9.0'
+
+    //implementation 'org.apache.jena:apache-jena-libs:3.4.0'
+    implementation 'net.sourceforge.owlapi:owlapi-distribution:5.5.0'
+    implementation group: 'com.github.owlcs', name: 'ontapi', version: '3.5.0'
+
+    // https://mvnrepository.com/artifact/org.slf4j/slf4j-nop
+    implementation group: 'org.slf4j', name: 'slf4j-nop', version: '2.0.16'
+
+}
+
+sourceSets {
+    main {
+        scala {
+            srcDirs = ['src/main/scala']
+        }
+    }
+    test {
+        scala {
+            srcDirs = ['src/test/scala']
+        }
+    }
+}
+
+// to ensure that old (but working) version of jena is used, i.e., put in shadow jar
+shadowJar {
+    // rename apache jena dependencies
+    relocate 'org.apache.jena', 'rules.org.apache.jena'
+}

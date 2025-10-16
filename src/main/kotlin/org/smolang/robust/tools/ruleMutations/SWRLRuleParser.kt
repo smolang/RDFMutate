@@ -18,7 +18,7 @@ import org.smolang.robust.tools.MutationFileParser
 import java.io.File
 
 // a class to parse rules, i.e., SWRL rules, to create mutations
-class RuleParser(val file: File) : MutationFileParser() {
+class SWRLRuleParser(val file: File) : MutationFileParser() {
 
     val parsedModel = loadModel(file)
     val model = parsedModel.model

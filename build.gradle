@@ -4,6 +4,7 @@ plugins {
     id 'org.jetbrains.kotlin.plugin.serialization' version '2.1.20'
     id 'org.springframework.boot' version '2.7.0'
     id 'com.github.johnrengelman.shadow' version '8.1.1' // 7.0.0
+    id("scala")
 }
 group = 'me.edkam'
 version = '1.0'
@@ -26,6 +27,9 @@ dependencies {
     implementation("com.github.ajalt.clikt:clikt:4.3.0")
     //implementation 'org.apache.jena:apache-jena-libs:4.10.0'
     //implementation 'org.apache.jena:jena-core:4.10.0'
+
+    // scala
+    implementation 'org.scala-lang:scala-library:2.13.8'
 
     // https://mvnrepository.com/artifact/org.apache.jena/apache-jena-libs
     implementation 'org.apache.jena:apache-jena-libs:5.4.0'
@@ -55,11 +59,28 @@ dependencies {
     // https://mvnrepository.com/artifact/com.github.owlcs/ontapi
     implementation group: 'com.github.owlcs', name: 'ontapi', version: '4.1.0'
 
+    // scala module for rule extractor
+    implementation project(':rules')
+    // composite build
+    implementation group: 'org.smolang.robust', name: 'rules', version: '1.0'
 
 }
 
 kotlin {
     jvmToolchain(17)
+}
+
+sourceSets {
+    main {
+        kotlin {
+            srcDirs = ['src/main/kotlin'] // Path to your Kotlin source files
+        }
+    }
+    test {
+        kotlin {
+            srcDirs = ['src/test/kotlin'] // Path to your Kotlin test files
+        }
+    }
 }
 
 tasks.named("test") {
@@ -82,7 +103,7 @@ shadowJar {
     manifest {
         attributes["Main-Class"] = "org.smolang.robust.MainKt"
     }
-
+    zip64 = true
 }
 
 // Ensure shadowJar is part of the build task
