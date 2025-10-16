@@ -94,7 +94,7 @@ open class MutationRunnerDeprecated(
         var outcome = MutationOutcome.NOT_VALID
         while (outcome == MutationOutcome.NOT_VALID) {
             val ms = MutationSequence()
-            for (j in 1..(numberMutations)) {
+            (1..(numberMutations)).forEach { j ->
                 val mutation = mutations.random(generator)
                 ms.addAbstractMutation(mutation)
             }
@@ -171,7 +171,6 @@ open class MutationRunnerDeprecated(
                 mainLogger.error("File ${inputFile.path} for mutations does not exist")
                 null
             } else  {
-                val input = RDFDataMgr.loadDataset(inputFile.absolutePath).defaultModel
                 val parser = SWRLRuleParser(inputFile)
                 parser.getAllAbstractMutations()
             }

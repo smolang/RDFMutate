@@ -5,7 +5,7 @@ import org.smolang.robust.tools.ruleMutations.MutationAtomFactory
 
 // factory to create association rules
 // optional argument: a mapping from prefixes to long IRIs
-class AssociationRuleFactory(val prefixMap: Map<String, String> = mapOf()) {
+class AssociationRuleFactory(prefixMap: Map<String, String> = mapOf()) {
     val atomFactory = MutationAtomFactory(prefixMap)
 
     // produces association rule from mined string representation

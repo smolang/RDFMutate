@@ -1,18 +1,10 @@
 package org.smolang.robust.tools.extraction
 
-import org.apache.jena.rdf.model.Resource
 import org.apache.jena.vocabulary.OWL
 import org.apache.jena.vocabulary.RDF
 import org.apache.jena.vocabulary.RDFS
 import org.apache.jena.vocabulary.XSD
-import org.smolang.robust.mutant.AbstractMutation
-import org.smolang.robust.mutant.RuleMutation
-import org.smolang.robust.mutant.RuleMutationConfiguration
 import org.smolang.robust.patterns.PatternExtractor
-import org.smolang.robust.tools.ruleMutations.FreshNodeAtom
-import org.smolang.robust.tools.ruleMutations.MutationAtom
-import org.smolang.robust.tools.ruleMutations.NegativeStatementAtom
-import org.smolang.robust.tools.ruleMutations.PositiveStatementAtom
 import java.io.File
 import java.io.FileWriter
 import kotlin.time.measureTime

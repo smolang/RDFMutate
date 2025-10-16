@@ -186,7 +186,7 @@ class SWRLRuleParser(val file: File) : MutationFileParser() {
 
         val type = try {
             model.listObjectsOfProperty(root, SWRL.builtin).toSet().single()
-        } catch (e: Exception) {
+        } catch (_: Exception) {
             mainLogger.warn("Builtin for rule mutation can not be parsed because not exactly one ")
             return null
         }
