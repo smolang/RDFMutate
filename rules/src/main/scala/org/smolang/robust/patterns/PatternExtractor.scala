@@ -3,21 +3,18 @@ package org.smolang.robust.patterns
 import com.github.owlcs.ontapi.OntManagers
 import com.github.propi.rdfrules.algorithm.amie.Amie
 import com.github.propi.rdfrules.data._
-import com.github.propi.rdfrules.index.IndexCollections.MutableHashSet
-import com.github.propi.rdfrules.index.{IndexPart, TripleItemIndex}
+import com.github.propi.rdfrules.index.TripleItemIndex
 import com.github.propi.rdfrules.rule.{Atom, Measure, Threshold}
 import com.github.propi.rdfrules.ruleset.Ruleset
 import com.github.propi.rdfrules.utils.Debugger
 import com.github.propi.rdfrules.utils.Debugger.EmptyDebugger
-import com.github.sszuev.jena.ontapi.model.OntModel
-import org.apache.jena.assembler.RuleSet
+import com.github.sszuev.jena.ontapi.OntSpecification
 import org.apache.jena.rdf.model.Model
 import org.apache.jena.riot.{Lang, RDFDataMgr}
 
 import scala.jdk.CollectionConverters.CollectionHasAsScala
-import java.io.{ByteArrayInputStream, ByteArrayOutputStream, File, FileOutputStream, FileWriter}
+import java.io.{File, FileOutputStream}
 import scala.collection.mutable.ListBuffer
-import scala.reflect.runtime.universe.Try
 
 class PatternExtractor(val minRuleMatch: Int,   // how often rule matches completely
                        val minHeadMatch: Int,   // how often head matches

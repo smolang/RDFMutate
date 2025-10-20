@@ -25,7 +25,8 @@ class Main : CliktCommand() {
         "--mutate" to "mutate", "-m" to "mutate",
         "--scen_test" to "test", "-st" to "test",
         "--performance-test" to "performance",
-        "--performance-test-limited" to "performance-simple"
+        "--performance-test-limited" to "performance-simple",
+        "--operator-extraction" to "operator-extraction"
     ).default("mutate")
 
     override fun run() {
@@ -43,6 +44,9 @@ class Main : CliktCommand() {
             }
             "performance-simple" -> {
                 SpecialModesRunner().performanceEvaluation(restricted = true)
+            }
+            "operator-extraction" -> {
+                SpecialModesRunner().testRuleExtraction()
             }
             else -> SpecialModesRunner().testMiniPipes()
         }

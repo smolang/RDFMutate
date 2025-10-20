@@ -4,7 +4,8 @@ import org.apache.jena.vocabulary.OWL
 import org.apache.jena.vocabulary.RDF
 import org.apache.jena.vocabulary.RDFS
 import org.apache.jena.vocabulary.XSD
-import org.smolang.robust.patterns.PatternExtractor
+import org.smolang.robust.mainLogger
+//import org.smolang.robust.patterns.PatternExtractor
 import java.io.File
 import java.io.FileWriter
 import kotlin.time.measureTime
@@ -12,8 +13,8 @@ import kotlin.time.measureTime
 class AssociationRuleExtractor {
     // local map of common prefixes
     val prefixMap: Map<String, String> = mapOf(
-        "rdf:" to RDF.getURI(),
-        "rdfs:" to RDFS.getURI(),
+        "rdf:" to RDF.uri,
+        "rdfs:" to RDFS.uri,
         "owl:" to OWL.getURI(),
         "xsd:" to XSD.getURI(),
         "swrl:" to "http://www.w3.org/2003/11/swrl#",
@@ -24,15 +25,22 @@ class AssociationRuleExtractor {
         "tomasys:" to "http://metacontrol.org/tomasys#"
     )
 
+
     fun mineRules(
-        ruleExtractor: PatternExtractor,
+        ruleExtractor: ExtractorBridge,
         inputFiles: Set<File>
-    ) : Set<AssociationRule> {
+    ) : Set<AssociationRule>? {
         val extractedRules: MutableSet<AssociationRule> = mutableSetOf()
         val miningTime = measureTime {
             // TODO: extract prefix map from input files
             val associationRuleFactory = AssociationRuleFactory(prefixMap)
-            ruleExtractor.extractRules(inputFiles).foreach { s ->
+            val rules = ruleExtractor.extractRules(inputFiles)
+            if (rules == null) {
+                mainLogger.error("Could not extract rules from knowledge graphs.")
+                return null
+            }
+
+            rules.forEach { s ->
                 val variables = AssociationRule.getVariables(s) // extract variables from mined rule
                 // add association rule representing mined string rule
                 extractedRules.add(

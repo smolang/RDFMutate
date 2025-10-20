@@ -1,12 +1,15 @@
 import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
 
+
 plugins {
     id 'scala'
+    //id 'java-library'
+    id 'maven-publish'
     id 'com.github.johnrengelman.shadow' version '8.1.1' // 7.0.0
 }
 
 group = 'org.smolang.robust'
-version = '1.0'
+version = '1.0.10'
 
 
 repositories {
@@ -59,8 +62,45 @@ sourceSets {
 
  */
 
-// to ensure that old (but working) version of jena is used, i.e., put in shadow jar
+// to ensure that old (but working) version of ontapi is used, i.e., put in shadow jar
 shadowJar {
-    // rename apache jena dependencies
-    relocate 'org.apache.jena', 'rules.org.apache.jena'
+    archiveClassifier.set('all') // produces e.g. rules-1.0-all.jar
+    //from sourceSets.main.output
+    //configurations.runtimeClasspath.each { File file ->
+    //    from project.zipTree(file)
+    //}
+    mergeServiceFiles()
+    /*
+    // Relocate ontapi to avoid conflicts
+    relocate 'com.github.owlcs.ontapi', 'shaded.rules.owlcs.ontapi'
+    //relocate 'org.apache.jena.ontapi', 'shaded.rules.jena.ontapi'
+    relocate 'com.github.sszuev.jena.ontapi', 'shaded.rules.sszuev.ontapi'
+    // relocate jena to avoid conflicts
+    relocate ('org.apache.jena', 'shaded.rules.jena') {
+        exclude("org.apache.jena.ontapi.OntSpecification")
+    }
+
+     */
+
 }
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            artifact tasks.shadowJar
+            groupId = 'org.smolang'
+            artifactId = 'rules'
+            version = '1.0.10' // or use project.version
+        }
+    }
+    repositories {
+        mavenLocal()
+    }
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+

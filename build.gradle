@@ -15,6 +15,7 @@ wrapper {
 
 repositories {
     mavenCentral()
+    mavenLocal()
     maven { url = 'https://jitpack.io' }
 }
 test {
@@ -60,17 +61,35 @@ dependencies {
     implementation group: 'com.github.owlcs', name: 'ontapi', version: '4.1.0'
 
     // scala module for rule extractor
-    implementation project(':rules')
+    //implementation project(':rules')
     // composite build
-    implementation group: 'org.smolang.robust', name: 'rules', version: '1.0'
+    //implementation group: 'org.smolang.robust', name: 'rules', version: '1.0'
+    //implementation files('rules/build/libs/rules-1.0.0-all.jar')
+    //implementation 'org.smolang.robust:rules:1.0-all' // <- shaded classifier
+    /*implementation('org.smolang:rules:1.0.9') {
+        //exclude group: 'com.github.owlcs', module: 'ontapi' // Exclude the Scala version
+        //exclude group: 'org.apache.jena', module: 'ontapi'
+        //exclude group: 'com.github.sszuev', module: 'ontapi'
+        //exclude group: 'org.apache', module: 'jena' // Exclude the Scala version
+
+        exclude group: 'org.apache.jena'
+        exclude group: 'com.github.owlcs'
+        exclude group: 'com.github.sszuev'
+    }
+
+     */
+
+    //implementation 'com.example:testlib:1.0.0' // Your local JAR
+    //implementation 'com.example:tempNew:1.0.4' // Your local JAR
+    //implementation 'org.smolang:scalaTest:1.0.6' // Your local JAR
 
 }
 
 kotlin {
     jvmToolchain(17)
 }
-
-/*sourceSets {
+/*
+sourceSets {
     main {
         kotlin {
             srcDirs = ['src/main/kotlin'] // Path to your Kotlin source files
@@ -82,8 +101,9 @@ kotlin {
         }
     }
 }
-
  */
+
+
 
 tasks.named("test") {
     // Exclude specific tests only when the build task is called
@@ -112,3 +132,10 @@ shadowJar {
 build {
     dependsOn shadowJar
 }
+
+gradle.projectsEvaluated {
+    tasks.named('build') {
+        dependsOn project(':rules').tasks.named('shadowJar')
+    }
+}
+
