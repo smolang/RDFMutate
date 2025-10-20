@@ -94,7 +94,7 @@ open class MutationRunnerDeprecated(
         var outcome = MutationOutcome.NOT_VALID
         while (outcome == MutationOutcome.NOT_VALID) {
             val ms = MutationSequence()
-            (1..(numberMutations)).forEach { j ->
+            (1..(numberMutations)).forEach { _ ->
                 val mutation = mutations.random(generator)
                 ms.addAbstractMutation(mutation)
             }

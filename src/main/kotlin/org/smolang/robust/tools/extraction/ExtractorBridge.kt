@@ -2,7 +2,6 @@ package org.smolang.robust.tools.extraction
 
 import org.smolang.robust.mainLogger
 import java.io.File
-import java.io.IOException
 import java.util.concurrent.TimeUnit
 
 // connects the main project to the subproject written in Scala
