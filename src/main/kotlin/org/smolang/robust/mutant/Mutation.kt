@@ -3,6 +3,8 @@ package org.smolang.robust.mutant
 import org.apache.jena.rdf.model.*
 import org.apache.jena.reasoner.Reasoner
 import org.apache.jena.reasoner.ReasonerRegistry
+import org.apache.jena.update.UpdateAction
+import org.apache.jena.update.UpdateRequest
 import org.apache.jena.vocabulary.OWL
 import org.apache.jena.vocabulary.RDF
 import org.apache.jena.vocabulary.RDFS
@@ -19,6 +21,7 @@ open class Mutation(val model: Model) {
     // set of axioms to add or delete in this mutation
     var addSet : MutableSet<Statement> = hashSetOf()
     var removeSet : MutableSet<Statement> = hashSetOf()
+    var updateRequestList : MutableList<UpdateRequest> = mutableListOf()    // order is important for updates
 
     // some objects to work with the inferred model
     private val reasoner: Reasoner = ReasonerRegistry.getOWLReasoner()
@@ -109,6 +112,7 @@ open class Mutation(val model: Model) {
         assert(m.createdMutation)
         m.addSet.forEach { addSet.add(it) }
         m.removeSet.forEach { removeSet.add(it) }
+        m.updateRequestList.forEach { updateRequestList.add(it) }
     }
 
     open fun setConfiguration(config : MutationConfiguration) {
@@ -125,6 +129,42 @@ open class Mutation(val model: Model) {
     // creates a new model
     private fun addDeleteAxioms() : Model {
         val m = ModelFactory.createDefaultModel()
+        // register prefixes from old model into new one
+        m.setNsPrefixes(model.nsPrefixMap)
+
+        // user needs to use either update list OR add- and remove-set
+        if (updateRequestList.isNotEmpty() &&
+            (addSet.isNotEmpty() || removeSet.isNotEmpty())) {
+            mainLogger.error("Mutation has both, updateRequests and elements in addSet / removeSet. " +
+                    "This is not allowed. No mutation is performed")
+            // copy all statements
+            model.listStatements().forEach { m.add(it)}
+            return m
+        }
+
+        mainLogger.info("applying mutation ${toString()}")
+
+
+        // use update list for mutation
+        if (updateRequestList.isNotEmpty()) {
+            // copy all statements
+            model.listStatements().forEach { m.add(it)}
+
+
+            // apply updates
+            updateRequestList.forEach { update ->
+                mainLogger.info("use update: update $update")
+                try {
+                    UpdateAction.execute(update, m)
+                } catch (e: Exception) {
+                    mainLogger.error("Executing update failed. Raised exception: $e")
+                    mainLogger.warn("This update is ignored.")
+                }
+            }
+            return m
+        }
+
+        // use add and delete set for mutation
 
         // clean the sets from empty axioms
         for (axiom in addSet) {
@@ -136,10 +176,8 @@ open class Mutation(val model: Model) {
                 removeSet.remove(axiom)
         }
 
-        mainLogger.info("applying mutation ${toString()}")
         mainLogger.info("removing: axioms $removeSet")
         mainLogger.info("adding: axioms $addSet")
-
 
         // copy all statements that are not deleteSet
         model.listStatements().forEach {
@@ -148,8 +186,7 @@ open class Mutation(val model: Model) {
         addSet.forEach {
             m.add(it)
         }
-        // register prefixes from old model into new one
-        m.setNsPrefixes(model.nsPrefixMap)
+
         return m
     }
 
