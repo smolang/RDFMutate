@@ -1,17 +1,8 @@
 package org.smolang.robust.tools.extraction
 
-import org.apache.jena.riot.RDFDataMgr
-import org.apache.jena.vocabulary.OWL
-import org.apache.jena.vocabulary.RDF
-import org.apache.jena.vocabulary.RDFS
-import org.apache.jena.vocabulary.XSD
-import org.eclipse.rdf4j.model.ModelFactory
 import org.smolang.robust.mainLogger
-import org.smolang.robust.tools.OwlOntologyInterface
 import org.smolang.robust.tools.getJenaModel
-//import org.smolang.robust.patterns.PatternExtractor
 import java.io.File
-import java.io.FileWriter
 import kotlin.time.measureTime
 
 // orchestrates the extraction of association rules from ontology files
@@ -28,7 +19,7 @@ class AssociationRuleExtractor {
             // extract prefix map from files
             val prefixMap: MutableMap<String, String> = mutableMapOf()
             mainLogger.info("Extracting prefixes from ontology files as part of rule extraction process.")
-            val prefixMaps = inputFiles.map { ontologyFile ->
+            inputFiles.forEach { ontologyFile ->
                 // load file (load owl f
                 val model = ontologyFile.getJenaModel()
                 model.nsPrefixMap.forEach { (prefix, iri) ->

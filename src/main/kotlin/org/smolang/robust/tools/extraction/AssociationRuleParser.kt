@@ -1,14 +1,7 @@
 package org.smolang.robust.tools.extraction
 
-import org.apache.jena.rdf.model.Resource
 import org.smolang.robust.mutant.AbstractMutation
-import org.smolang.robust.mutant.RuleMutation
-import org.smolang.robust.mutant.RuleMutationConfiguration
 import org.smolang.robust.tools.MutationFileParser
-import org.smolang.robust.tools.ruleMutations.FreshNodeAtom
-import org.smolang.robust.tools.ruleMutations.MutationAtom
-import org.smolang.robust.tools.ruleMutations.NegativeStatementAtom
-import org.smolang.robust.tools.ruleMutations.PositiveStatementAtom
 import java.io.File
 import kotlin.sequences.flatMap
 

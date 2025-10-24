@@ -2,20 +2,13 @@ package org.smolang.robust.tools
 
 //import org.smolang.robust.patterns.PatternExtractor
 import org.apache.jena.riot.RDFDataMgr
-import org.apache.jena.vocabulary.OWL
-import org.apache.jena.vocabulary.RDF
-import org.apache.jena.vocabulary.RDFS
-import org.apache.jena.vocabulary.XSD
 import org.smolang.robust.domainSpecific.reasoner.ElGenerationTimeAnalyzer
 import org.smolang.robust.domainSpecific.suave.SuaveEvaluationGraphGenerator
 import org.smolang.robust.mainLogger
 import org.smolang.robust.mutant.*
 import org.smolang.robust.sut.auv.MiniPipeInspection
 import org.smolang.robust.tools.extraction.AssociationRuleExtractor
-import org.smolang.robust.tools.extraction.AssociationRuleFactory
 import org.smolang.robust.tools.extraction.ExtractorBridge
-import org.smolang.robust.tools.extraction.ExtractorStatus
-import org.smolang.robust.tools.extraction.AssociationRuleParser
 import java.io.File
 
 
