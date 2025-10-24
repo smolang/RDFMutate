@@ -60,28 +60,6 @@ dependencies {
     // https://mvnrepository.com/artifact/com.github.owlcs/ontapi
     implementation group: 'com.github.owlcs', name: 'ontapi', version: '4.1.0'
 
-    // scala module for rule extractor
-    //implementation project(':rules')
-    // composite build
-    //implementation group: 'org.smolang.robust', name: 'rules', version: '1.0'
-    //implementation files('rules/build/libs/rules-1.0.0-all.jar')
-    //implementation 'org.smolang.robust:rules:1.0-all' // <- shaded classifier
-    /*implementation('org.smolang:rules:1.0.9') {
-        //exclude group: 'com.github.owlcs', module: 'ontapi' // Exclude the Scala version
-        //exclude group: 'org.apache.jena', module: 'ontapi'
-        //exclude group: 'com.github.sszuev', module: 'ontapi'
-        //exclude group: 'org.apache', module: 'jena' // Exclude the Scala version
-
-        exclude group: 'org.apache.jena'
-        exclude group: 'com.github.owlcs'
-        exclude group: 'com.github.sszuev'
-    }
-
-     */
-
-    //implementation 'com.example:testlib:1.0.0' // Your local JAR
-    //implementation 'com.example:tempNew:1.0.4' // Your local JAR
-    //implementation 'org.smolang:scalaTest:1.0.6' // Your local JAR
 
 }
 
