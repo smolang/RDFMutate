@@ -2,12 +2,20 @@ package org.smolang.robust.tools
 
 //import org.smolang.robust.patterns.PatternExtractor
 import org.apache.jena.riot.RDFDataMgr
+import org.apache.jena.vocabulary.OWL
+import org.apache.jena.vocabulary.RDF
+import org.apache.jena.vocabulary.RDFS
+import org.apache.jena.vocabulary.XSD
 import org.smolang.robust.domainSpecific.reasoner.ElGenerationTimeAnalyzer
 import org.smolang.robust.domainSpecific.suave.SuaveEvaluationGraphGenerator
 import org.smolang.robust.mainLogger
 import org.smolang.robust.mutant.*
 import org.smolang.robust.sut.auv.MiniPipeInspection
+import org.smolang.robust.tools.extraction.AssociationRuleExtractor
+import org.smolang.robust.tools.extraction.AssociationRuleFactory
 import org.smolang.robust.tools.extraction.ExtractorBridge
+import org.smolang.robust.tools.extraction.ExtractorStatus
+import org.smolang.robust.tools.extraction.AssociationRuleParser
 import java.io.File
 
 
@@ -113,20 +121,22 @@ class SpecialModesRunner {
 
     // tests rule extraction
     fun testRuleExtraction() {
-        //val ontologyFiles = setOf(File("src/test/resources/ruleExtraction/ore_ont_155.owl"))
-        val ontologyFiles: Set<File> = setOf()
+        val ontologyFiles = setOf(File("src/test/resources/ruleExtraction/ore_ont_155.owl"))
         val minRuleMatch = 50
         val minHeadMatch = 20
         val minConfidence = 0.8
         val maxRuleLength = 3
-        val rules = ExtractorBridge(
+
+        val extractorBridge = ExtractorBridge(
             minRuleMatch,
             minHeadMatch,
             minConfidence,
             maxRuleLength)
-            .extractRules(ontologyFiles)
 
-        println("r:$rules")
+        val rules = AssociationRuleExtractor().mineRules(extractorBridge, ontologyFiles)
+
+        val operators = rules?.flatMap { it.getAbstractMutations() }
+
 
     }
 }

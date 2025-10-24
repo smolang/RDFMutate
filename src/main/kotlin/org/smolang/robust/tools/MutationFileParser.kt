@@ -3,7 +3,7 @@ package org.smolang.robust.tools
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 import org.smolang.robust.mutant.AbstractMutation
-import org.smolang.robust.tools.ruleMutations.AssociationRuleParser
+import org.smolang.robust.tools.extraction.AssociationRuleParser
 import org.smolang.robust.tools.ruleMutations.SWRLRuleParser
 import java.io.File
 

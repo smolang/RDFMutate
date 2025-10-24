@@ -1,72 +1,65 @@
 package org.smolang.robust.tools.extraction
 
+import org.apache.jena.riot.RDFDataMgr
 import org.apache.jena.vocabulary.OWL
 import org.apache.jena.vocabulary.RDF
 import org.apache.jena.vocabulary.RDFS
 import org.apache.jena.vocabulary.XSD
+import org.eclipse.rdf4j.model.ModelFactory
 import org.smolang.robust.mainLogger
+import org.smolang.robust.tools.OwlOntologyInterface
+import org.smolang.robust.tools.getJenaModel
 //import org.smolang.robust.patterns.PatternExtractor
 import java.io.File
 import java.io.FileWriter
 import kotlin.time.measureTime
 
+// orchestrates the extraction of association rules from ontology files
 class AssociationRuleExtractor {
-    // local map of common prefixes
-    val prefixMap: Map<String, String> = mapOf(
-        "rdf:" to RDF.uri,
-        "rdfs:" to RDFS.uri,
-        "owl:" to OWL.getURI(),
-        "xsd:" to XSD.getURI(),
-        "swrl:" to "http://www.w3.org/2003/11/swrl#",
-        "swrla:" to "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#",
-        "swrlb:" to "http://www.w3.org/2003/11/swrlb#",
-        "mros:" to "http://ros/mros#",
-        "suave:" to "http://www.metacontrol.org/suave#",
-        "tomasys:" to "http://metacontrol.org/tomasys#"
-    )
 
-
+    // extracts association rules from ontology files using an extractor bridge
     fun mineRules(
-        ruleExtractor: ExtractorBridge,
+        extractorBridge: ExtractorBridge,
         inputFiles: Set<File>
     ) : Set<AssociationRule>? {
         val extractedRules: MutableSet<AssociationRule> = mutableSetOf()
         val miningTime = measureTime {
-            // TODO: extract prefix map from input files
+
+            // extract prefix map from files
+            val prefixMap: MutableMap<String, String> = mutableMapOf()
+            mainLogger.info("Extracting prefixes from ontology files as part of rule extraction process.")
+            val prefixMaps = inputFiles.map { ontologyFile ->
+                // load file (load owl f
+                val model = ontologyFile.getJenaModel()
+                model.nsPrefixMap.forEach { (prefix, iri) ->
+                    if (prefixMap.containsKey(prefix) && prefixMap[prefix] != iri)
+                        mainLogger.warn("The imported ontology files define prefix $prefix differently." +
+                                "The IRI ${prefixMap[prefix]} will be used.")
+                    else // we set new mapping
+                        prefixMap[prefix] = iri
+                }
+            }
+            mainLogger.info("Extracting prefixes from files completed. Found ${prefixMap.keys.size} prefix declarations.")
+
             val associationRuleFactory = AssociationRuleFactory(prefixMap)
-            val rules = ruleExtractor.extractRules(inputFiles)
-            if (rules == null) {
+            val rules = extractorBridge.extractRules(inputFiles)
+
+            if (extractorBridge.status != ExtractorStatus.SUCCESS || rules == null) {
                 mainLogger.error("Could not extract rules from knowledge graphs.")
                 return null
             }
 
             rules.forEach { s ->
-                val variables = AssociationRule.getVariables(s) // extract variables from mined rule
                 // add association rule representing mined string rule
                 extractedRules.add(
-                    associationRuleFactory.getAssociationRule(s, variables)
+                    associationRuleFactory.getAssociationRule(s)
                 )
             }
-            println("mined ${extractedRules.size} rules in total")
+            mainLogger.info("mined ${extractedRules.size} rules in total")
         }
 
-        println("mining rules took ${miningTime.inWholeSeconds}s ")
+        mainLogger.info("mining rules took ${miningTime.inWholeSeconds}s ")
         return extractedRules
-    }
-
-    // saves rules to file
-    // TODO: replace prefixes with long IRIs; to read them later
-    fun saveRulesToFile(rules: Set<AssociationRule>, file: File): Boolean {
-        if (file.exists()) return false
-
-        return try {
-            FileWriter(file).use { fileWriter ->
-                rules.forEach { r -> fileWriter.write("${r.minedString}\n") }
-            }
-            true
-        } catch (_: Exception) {
-            false
-        }
     }
 }
 

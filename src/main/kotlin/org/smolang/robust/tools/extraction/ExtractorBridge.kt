@@ -27,7 +27,7 @@ class ExtractorBridge(
                 .start()
 
             proc.waitFor(timeout, TimeUnit.SECONDS)
-            println(proc.exitValue())
+            mainLogger.info("Command finished with exit value ${proc.exitValue()}")
 
             val errorMessage =proc.errorStream.bufferedReader().readText()
             val output = proc.inputStream.bufferedReader().readText()
@@ -38,7 +38,7 @@ class ExtractorBridge(
             }
             if (errorMessage.isNotBlank()) {
                 status == ExtractorStatus.ERROR
-                println("error: $errorMessage")
+                mainLogger.error("Command produced following error: $errorMessage")
                 return null
             }
 
@@ -64,7 +64,7 @@ class ExtractorBridge(
                 "$minRuleMatch $minHeadMatch $minConfidence $maxRuleLength ${ontologyFiles.joinToString(" ")}"
 
         val workingDir = File("./").absoluteFile
-        println("running command: $command")
+        mainLogger.info("running command: $command")
         val result = command.runCommand(workingDir, 60)
 
         if (status != ExtractorStatus.SUCCESS) {

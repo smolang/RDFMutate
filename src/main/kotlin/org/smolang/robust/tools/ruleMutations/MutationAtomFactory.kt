@@ -3,6 +3,7 @@ package org.smolang.robust.tools.ruleMutations
 import org.apache.jena.rdf.model.RDFNode
 import org.apache.jena.rdf.model.Resource
 import org.apache.jena.rdf.model.ResourceFactory
+import org.smolang.robust.mainLogger
 import kotlin.plus
 
 class MutationAtomFactory(val prefixMap: Map<String, String> = mapOf()) {
@@ -29,13 +30,13 @@ class MutationAtomFactory(val prefixMap: Map<String, String> = mapOf()) {
 
         if (s.indexOfFirst { c -> c == ':' } > -1) {
             // handle prefix
-            val p = s.substringBefore(':') + ":"
+            val p = s.substringBefore(':')
             val rest = s.substringAfter(':')
             if (prefixMap.containsKey(p)) {
                 return ResourceFactory.createResource(prefixMap[p] + rest)
             }
             else
-                println("WARNING: can not find prefix $p in prefix map")
+                mainLogger.warn("Can not find prefix $p in prefix map")
         }
         return ResourceFactory.createResource(s)
     }
