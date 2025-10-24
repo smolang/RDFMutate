@@ -8,6 +8,8 @@ import org.apache.jena.shacl.Shapes
 import org.smolang.robust.mutant.RobustnessMask
 import java.io.File
 
+// don't raise deprecation warning as these are the tests linked to the deprecated class
+@Suppress("DEPRECATION")
 class DeprecatedMutationRunnerTest : StringSpec() {
 
     init {

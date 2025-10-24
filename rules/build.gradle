@@ -104,3 +104,7 @@ java {
     }
 }
 
+// Ensure shadowJar is part of the build task
+build {
+    dependsOn shadowJar
+}
