@@ -10,9 +10,9 @@ import org.smolang.robust.mutant.MutationStrategyName
 import org.smolang.robust.tools.reasoning.ReasoningBackend
 import java.io.File
 
-class ConfigParser(private val configFile: File?) {
+class MutationConfigParser(private val configFile: File?) {
 
-    fun getConfig() : Config?{
+    fun getConfig() : MutationConfig?{
         if (configFile == null) {
             mainLogger.error("Configuration file not provided.")
             return null
@@ -23,20 +23,20 @@ class ConfigParser(private val configFile: File?) {
             return null
         }
 
-        val config = try {
-            Yaml.default.decodeFromStream<Config>(configFile.inputStream())
+        val mutationConfig = try {
+            Yaml.default.decodeFromStream<MutationConfig>(configFile.inputStream())
         }
         catch (e : Exception)  {
             mainLogger.error("Configuration file could not be parsed. Raised exception: $e")
             return null
         }
 
-        return config
+        return mutationConfig
     }
 }
 
 @Serializable
-data class Config(
+data class MutationConfig(
     val seed_graph: SeedKG,
     val output_graph: OutputKG,
     val strategy: Strategy? = null,

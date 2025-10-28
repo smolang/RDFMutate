@@ -10,7 +10,7 @@ import java.nio.file.Files
 
 class MutationRunner(configFile : File?) {
 
-    val config = ConfigParser(configFile).getConfig()
+    val config = MutationConfigParser(configFile).getConfig()
 
     // if true, errors in parts of config, e.g. errors in parsing of some operators / mask parts leads to overall abort
     val strictParsing = config?.strict_parsing ?: true

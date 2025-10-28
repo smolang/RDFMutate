@@ -8,6 +8,8 @@ import com.github.ajalt.clikt.parameters.types.file
 import org.slf4j.LoggerFactory
 import org.slf4j.Logger
 import org.smolang.robust.tools.*
+import org.smolang.robust.tools.extraction.ExtractionOutcome
+import org.smolang.robust.tools.extraction.ExtractionRunner
 import kotlin.random.Random
 
 // logger for this application
@@ -44,7 +46,7 @@ class Main : CliktCommand() {
                 SpecialModesRunner().performanceEvaluation(restricted = true)
             }
             "operator-extraction" -> {
-                SpecialModesRunner().testRuleExtraction()
+                defaultExtraction()
             }
             else -> SpecialModesRunner().testMiniPipes()
         }
@@ -66,6 +68,25 @@ class Main : CliktCommand() {
         if (outcome == MutationOutcome.SUCCESS)
             mainLogger.info("Mutants were created successfully.")
     }
+
+    // standard function to perform the extraction of operators
+    private fun defaultExtraction() {
+        val runner = ExtractionRunner(configFile)
+
+        val outcome = runner.extract()
+
+        if (outcome == ExtractionOutcome.FAIL)
+            mainLogger.error("Extracting operators failed.")
+
+        if (outcome == ExtractionOutcome.INCORRECT_INPUT)
+            mainLogger.error("Extraction of operators could not be performed " +
+                    "because elements in configuration file are incorrect.")
+
+        if (outcome == ExtractionOutcome.SUCCESS)
+            mainLogger.info("Operators were extracted successfully.")
+    }
+
+
 
 }
 

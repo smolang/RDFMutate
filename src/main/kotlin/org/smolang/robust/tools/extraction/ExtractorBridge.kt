@@ -9,7 +9,8 @@ class ExtractorBridge(
     val minRuleMatch: Int,   // how often rule matches completely
     val minHeadMatch: Int,   // how often head matches
     val minConfidence: Double,    // ratio how often rule matches when body matches
-    val maxRuleLength: Int   // maximal length of rule (head + body)
+    val maxRuleLength: Int,   // maximal length of rule (head + body)
+    val jarLocation: String = "rules/build/libs/rules-1.0.10-all.jar"   // location of the JAR to extract operators
 ) {
     var status = ExtractorStatus.WAITING
 
@@ -60,7 +61,7 @@ class ExtractorBridge(
         }
         mainLogger.info("Calling sub-module to extract rules from following knowledge graph files: ${ontologyFiles.joinToString { "," }}")
         // command to call JAR of sub-project
-        val command = "java -cp rules/build/libs/rules-1.0.10-all.jar org.smolang.robust.patterns.StartClass " +
+        val command = "java -cp $jarLocation org.smolang.robust.patterns.StartClass " +
                 "$minRuleMatch $minHeadMatch $minConfidence $maxRuleLength ${ontologyFiles.joinToString(" ")}"
 
         val workingDir = File("./").absoluteFile

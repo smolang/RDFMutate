@@ -21,20 +21,20 @@ import kotlin.reflect.full.isSubclassOf
 class ConfigInterpreter {
     companion object {
         // extracts the setup how to run the mutation
-        fun interpretConfig(config: Config, strictParsing: Boolean): MutationSetup? {
+        fun interpretConfig(mutationConfig: MutationConfig, strictParsing: Boolean): MutationSetup? {
             val seedKG = getSeed(
-                File(config.seed_graph.file),
-                config.seed_graph.type
+                File(mutationConfig.seed_graph.file),
+                mutationConfig.seed_graph.type
             ) ?: return null
-            val mask = getMask(config, strictParsing) ?: return null
-            val outputFiles = getOutputFiles(config) ?: return null
-            val outputParent = File(config.output_graph.file).parentFile
-            val mutationOperators = getMutationOperators(config, strictParsing) ?: return null
+            val mask = getMask(mutationConfig, strictParsing) ?: return null
+            val outputFiles = getOutputFiles(mutationConfig) ?: return null
+            val outputParent = File(mutationConfig.output_graph.file).parentFile
+            val mutationOperators = getMutationOperators(mutationConfig, strictParsing) ?: return null
             val strategy = getStrategy(
-                config,
+                mutationConfig,
                 strictParsing,
                 mutationOperators,
-                config.number_of_mutations) ?: return null
+                mutationConfig.number_of_mutations) ?: return null
 
 
             return MutationSetup(
@@ -65,9 +65,9 @@ class ConfigInterpreter {
         }
 
         // extracts mask
-        private fun getMask(config: Config, strictParsing: Boolean): RobustnessMask? {
+        private fun getMask(mutationConfig: MutationConfig, strictParsing: Boolean): RobustnessMask? {
             // get reasoning backend (if provided in configuration)
-            val reasonerBackend = if (config.condition == null) {
+            val reasonerBackend = if (mutationConfig.condition == null) {
                 // no condition specified
 
                 if (strictParsing) { // strict parsing --> enforce an argument
@@ -76,16 +76,16 @@ class ConfigInterpreter {
                 }
 
                 ReasoningBackend.NONE
-            } else if (!config.condition.reasoning.consistency) {
+            } else if (!mutationConfig.condition.reasoning.consistency) {
                 ReasoningBackend.NONE
-            } else if (config.condition.reasoning.reasoner == null) {
+            } else if (mutationConfig.condition.reasoning.reasoner == null) {
                 mainLogger.info("No reasoner backend found. Use default reasoner (Openllet)")
                 ReasoningBackend.OPENLLET
             } else {
-                config.condition.reasoning.reasoner
+                mutationConfig.condition.reasoning.reasoner
             }
 
-            val maskFiles = config.condition?.masks
+            val maskFiles = mutationConfig.condition?.masks
             // no shape provided --> mask only considers reasoning
             if (maskFiles.isNullOrEmpty())
                 return EmptyRobustnessMask(reasonerBackend)
@@ -117,11 +117,11 @@ class ConfigInterpreter {
         }
 
         // extracts list of output files
-        private fun getOutputFiles(config: Config): List<File>? {
-            if (config.number_of_mutants == 1) {
+        private fun getOutputFiles(mutationConfig: MutationConfig): List<File>? {
+            if (mutationConfig.number_of_mutants == 1) {
                 // only one mutant file provided
-                val outputFile = File(config.output_graph.file)
-                if (outputFile.exists() && !config.output_graph.overwrite) {
+                val outputFile = File(mutationConfig.output_graph.file)
+                if (outputFile.exists() && !mutationConfig.output_graph.overwrite) {
                     mainLogger.error(
                         "Output file ${outputFile.path} does already exist. " +
                                 "Please choose a different name or set \"overwrite\" value to \"true\"."
@@ -132,7 +132,7 @@ class ConfigInterpreter {
             }
             else {
                 val outputFiles = mutableListOf<File>()
-                val filePattern = config.output_graph.file // pattern provided in config file
+                val filePattern = mutationConfig.output_graph.file // pattern provided in config file
                 val positionEnding = filePattern.indexOfLast {it == '.'}    // position of the dot indication file type
                 val noType = (positionEnding == -1) // no type information found
                 // remove everything except ending
@@ -140,11 +140,11 @@ class ConfigInterpreter {
                 val fileType = if (noType) "" else filePattern.removeRange(0, positionEnding)
 
                 // generate as many file names as required
-                for (i in 0..<config.number_of_mutants) {
+                for (i in 0..<mutationConfig.number_of_mutants) {
                     val fileName = "${filePrefix}$i$fileType"
                     val outputFile = File(fileName)
                     // check if output file exists
-                    if (outputFile.exists() && !config.output_graph.overwrite) {
+                    if (outputFile.exists() && !mutationConfig.output_graph.overwrite) {
                         mainLogger.error(
                             "Output file ${outputFile.path} (generated from pattern) does already exist. " +
                                     "Please choose a different name or set \"overwrite\" value to \"true\"."
@@ -159,12 +159,12 @@ class ConfigInterpreter {
         }
 
         // extracts mutation operators
-        private fun getMutationOperators(config: Config, strictParsing: Boolean): List<AbstractMutation>? {
+        private fun getMutationOperators(mutationConfig: MutationConfig, strictParsing: Boolean): List<AbstractMutation>? {
             val mutations = mutableListOf<AbstractMutation>()
-            if (config.mutation_operators.isEmpty())
+            if (mutationConfig.mutation_operators.isEmpty())
                 mainLogger.warn("No mutation operators provided.")
 
-            for (mutation in config.mutation_operators) {
+            for (mutation in mutationConfig.mutation_operators) {
                 // only exactly one of the two options is allowed to be set
                 if (!((mutation.module != null) xor  (mutation.resource != null))) {
                     mainLogger.error("Mutation operators do need exactly one argument. Either a class representing the " +
@@ -229,20 +229,20 @@ class ConfigInterpreter {
         }
 
         // get mutation strategy w.r.t. to mutation operators and desired number of mutations
-        private fun getStrategy(config: Config,
+        private fun getStrategy(mutationConfig: MutationConfig,
                                 strictParsing: Boolean,
                                 mutationOperators : List<AbstractMutation>,
                                 numberMutations : Int) : MutationStrategy? {
-            if (config.strategy == null && strictParsing){
+            if (mutationConfig.strategy == null && strictParsing){
                 mainLogger.error("Strategy is missing.")
                 return null
             }
 
-            val selectionSeed : Int = config.strategy?.seed ?: MutationStrategy.DEFAULT_SEED
+            val selectionSeed : Int = mutationConfig.strategy?.seed ?: MutationStrategy.DEFAULT_SEED
 
             // check type of strategy
             // default: random strategy
-            return when (config.strategy?.name) {
+            return when (mutationConfig.strategy?.name) {
                 MutationStrategyName.RANDOM -> RandomMutationStrategy(mutationOperators, numberMutations, selectionSeed)
                 null -> RandomMutationStrategy(mutationOperators, numberMutations, selectionSeed)
             }

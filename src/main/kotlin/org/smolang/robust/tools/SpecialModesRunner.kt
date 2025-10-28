@@ -113,8 +113,9 @@ class SpecialModesRunner {
     }
 
     // tests rule extraction
-    fun testRuleExtraction() {
-        val ontologyFiles = setOf(File("src/test/resources/ruleExtraction/ore_ont_155.owl"))
+    fun testRuleExtraction(configFile: File?) {
+
+        /*val ontologyFiles = setOf(File("src/test/resources/ruleExtraction/ore_ont_155.owl"))
         val minRuleMatch = 50
         val minHeadMatch = 20
         val minConfidence = 0.8
@@ -139,5 +140,7 @@ class SpecialModesRunner {
                 }
             }
         }
+
+         */
     }
 }

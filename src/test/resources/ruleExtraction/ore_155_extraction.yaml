@@ -1,0 +1,15 @@
+jar_location: rules/build/libs/rules-1.0.10-all.jar
+
+kg_files:
+  - src/test/resources/ruleExtraction/ore_ont_155.owl
+
+output:
+  file: src/test/resources/ruleExtraction/temp.tt
+  type: rdf
+  overwrite: true
+
+parameters:
+  min_rule_match: 50
+  min_head_match: 20
+  min_confidence: 0.8
+  max_rule_length: 3
