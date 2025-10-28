@@ -7,8 +7,6 @@ import org.smolang.robust.domainSpecific.suave.SuaveEvaluationGraphGenerator
 import org.smolang.robust.mainLogger
 import org.smolang.robust.mutant.*
 import org.smolang.robust.sut.auv.MiniPipeInspection
-import org.smolang.robust.tools.extraction.AssociationRuleExtractor
-import org.smolang.robust.tools.extraction.ExtractorBridge
 import java.io.File
 
 
@@ -112,35 +110,4 @@ class SpecialModesRunner {
 
     }
 
-    // tests rule extraction
-    fun testRuleExtraction(configFile: File?) {
-
-        /*val ontologyFiles = setOf(File("src/test/resources/ruleExtraction/ore_ont_155.owl"))
-        val minRuleMatch = 50
-        val minHeadMatch = 20
-        val minConfidence = 0.8
-        val maxRuleLength = 3
-
-        val extractorBridge = ExtractorBridge(
-            minRuleMatch,
-            minHeadMatch,
-            minConfidence,
-            maxRuleLength)
-
-        val rules = AssociationRuleExtractor().mineRules(extractorBridge, ontologyFiles)
-
-        val operators = rules?.flatMap { it.getAbstractMutations() }
-        operators?.forEach { operator ->
-            if (operator.hasConfig) {
-                val config = operator.config
-                if (config != null) {
-                    if (config is RuleMutationConfiguration) {
-                        config.toString()
-                    }
-                }
-            }
-        }
-
-         */
-    }
 }
