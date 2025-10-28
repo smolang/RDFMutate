@@ -6,8 +6,10 @@ import org.apache.jena.rdf.model.Statement
 import org.smolang.robust.mainLogger
 import org.smolang.robust.tools.containsResource
 
-abstract class StatementAtom(val statement: Statement)  : MutationAtom(), SparqlMutationAtom{
-
+abstract class StatementAtom(
+    val statement: Statement,
+    val isDataValueProp: Boolean = false
+    )  : MutationAtom(), SparqlMutationAtom{
     override fun toSparqlString(rdf2sparql: Map<RDFNode, String>): String? {
         val sub = nodeToSparqlString(statement.subject, rdf2sparql)
         val pred = nodeToSparqlString(statement.predicate, rdf2sparql)

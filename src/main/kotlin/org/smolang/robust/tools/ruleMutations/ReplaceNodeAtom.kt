@@ -1,7 +1,10 @@
 package org.smolang.robust.tools.ruleMutations
 
+import com.github.owlcs.ontapi.DataFactory
 import org.apache.jena.rdf.model.RDFNode
 import org.apache.jena.rdf.model.Resource
+import org.semanticweb.owlapi.model.IRI
+import org.semanticweb.owlapi.model.SWRLAtom
 
 // an atom that represents that "old" is replaced everywhere in the graph by "new"
 class ReplaceNodeAtom(val old: RDFNode, val new: RDFNode) : MutationAtom() {
@@ -27,5 +30,18 @@ class ReplaceNodeAtom(val old: RDFNode, val new: RDFNode) : MutationAtom() {
 
     override fun containsResource(r: Resource): Boolean {
         return (r == old || r == new)
+    }
+
+    override fun asSWRLAtom(
+        dataFactory: DataFactory,
+        variables: Set<RDFNode>
+    ): SWRLAtom? {
+        return dataFactory.getSWRLBuiltInAtom(
+            IRI.create(BUILTIN_IRI),
+            listOf(
+                asSWRLDArgument(old, variables, dataFactory),
+                asSWRLDArgument(new, variables, dataFactory)
+            )
+        )
     }
 }

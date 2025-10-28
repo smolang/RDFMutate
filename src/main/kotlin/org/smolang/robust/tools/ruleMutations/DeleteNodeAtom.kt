@@ -1,7 +1,10 @@
 package org.smolang.robust.tools.ruleMutations
 
+import com.github.owlcs.ontapi.DataFactory
 import org.apache.jena.rdf.model.RDFNode
 import org.apache.jena.rdf.model.Resource
+import org.semanticweb.owlapi.model.IRI
+import org.semanticweb.owlapi.model.SWRLAtom
 
 // an atom that represents a node that will be deleted from the graph,
 // i.e. all triples where it occurs are deleted
@@ -23,5 +26,13 @@ class DeleteNodeAtom(val node: RDFNode) : MutationAtom() {
 
     override fun containsResource(r: Resource): Boolean {
         return (r == node)
+    }
+
+    override fun asSWRLAtom(dataFactory: DataFactory, variables: Set<RDFNode>): SWRLAtom {
+        return dataFactory.getSWRLBuiltInAtom(
+            IRI.create(BUILTIN_IRI),
+            listOf(
+                asSWRLDArgument(node, variables, dataFactory),            )
+        )
     }
 }

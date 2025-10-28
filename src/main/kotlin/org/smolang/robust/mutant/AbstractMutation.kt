@@ -8,8 +8,8 @@ import kotlin.reflect.full.primaryConstructor
 // stores the information for one mutation but the information about the model is lacking
 class AbstractMutation(private val mutOp: KClass<out Mutation>) {
 
-    private var hasConfig : Boolean = false
-    private var config : MutationConfiguration? = null
+    var hasConfig : Boolean = false
+    var config : MutationConfiguration? = null
 
     private val mutatableStatements: MutableSet<Statement> = hashSetOf()
     fun addMutatableStatement(s: Statement) {

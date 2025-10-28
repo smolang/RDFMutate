@@ -106,8 +106,9 @@ class RuleMutation(model : Model) : Mutation(model) {
                 filterString +
                 "}"
 
-        val query = QueryFactory.create(queryString)
+        //mainLogger.info("Run SPARQL query: $queryString")
 
+        val query = QueryFactory.create(queryString)
         // candidate solutions
         val res = QueryExecutionFactory.create(query, model).execSelect()
 

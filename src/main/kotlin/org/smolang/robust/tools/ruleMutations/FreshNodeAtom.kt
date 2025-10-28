@@ -1,6 +1,10 @@
 package org.smolang.robust.tools.ruleMutations
 
+import com.github.owlcs.ontapi.DataFactory
+import org.apache.jena.rdf.model.RDFNode
 import org.apache.jena.rdf.model.Resource
+import org.semanticweb.owlapi.model.IRI
+import org.semanticweb.owlapi.model.SWRLAtom
 
 // an atom representing a fresh node that is introduced
 class FreshNodeAtom(val variable: Resource) : MutationAtom() {
@@ -18,5 +22,14 @@ class FreshNodeAtom(val variable: Resource) : MutationAtom() {
 
     override fun containsResource(r: Resource): Boolean {
         return (r == variable)
+    }
+
+    override fun asSWRLAtom(dataFactory: DataFactory, variables: Set<RDFNode>): SWRLAtom {
+        return dataFactory.getSWRLBuiltInAtom(
+            IRI.create(BUILTIN_IRI),
+            listOf(
+                asSWRLDArgument(variable, variables, dataFactory),
+            )
+        )
     }
 }

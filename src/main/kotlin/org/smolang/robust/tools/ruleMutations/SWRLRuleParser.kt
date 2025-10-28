@@ -143,6 +143,7 @@ class SWRLRuleParser(val file: File) : MutationFileParser() {
 
     private fun parsePropertyAtom(root : Resource) : StatementAtom? {
         assert(hasType(root, SWRL.IndividualPropertyAtom) || hasType(root, SWRL.DatavaluedPropertyAtom))
+
         val subject = model.listObjectsOfProperty(root, SWRL.argument1).toSet().singleOrNull()?.asResource()
         val SWRLobject = model.listObjectsOfProperty(root, SWRL.argument2).toSet().singleOrNull()
         val property = model.listObjectsOfProperty(root, SWRL.propertyPredicate).toSet().singleOrNull()
@@ -158,7 +159,8 @@ class SWRLRuleParser(val file: File) : MutationFileParser() {
             model.getProperty(property.toString()),
             SWRLobject)
 
-        return PositiveStatementAtom(propertyStatement)
+        val isDataProp = hasType(root, SWRL.DatavaluedPropertyAtom)
+        return PositiveStatementAtom(propertyStatement, isDataProp)
     }
 
     private fun parseClassAtom(root : Resource) : StatementAtom? {
@@ -192,7 +194,7 @@ class SWRLRuleParser(val file: File) : MutationFileParser() {
         }
 
         return when (type){
-            OWL.NegativePropertyAssertion -> parseNegativePropertyAtom(root)
+            model.getResource(NegativeStatementAtom.BUILTIN_IRI) -> parseNegativePropertyAtom(root)
             model.getResource(FreshNodeAtom.BUILTIN_IRI) -> parseFreshNodeAtom(root)
             model.getResource(DeleteNodeAtom.BUILTIN_IRI) -> parseDeleteNodeAtom(root)
             model.getResource(ReplaceNodeAtom.BUILTIN_IRI) -> parseReplaceNodeAtom(root)
@@ -218,10 +220,13 @@ class SWRLRuleParser(val file: File) : MutationFileParser() {
                     "provided but 3 required).")
             return null
         }
+
+
         val negatedStatement = model.createStatement(
             arguments[0].asResource(),
             model.getProperty(arguments[1].toString()),
-            arguments[2]
+            resourceOrNode(arguments[2])         // check if last argument is resource or not
+
         )
 
         return NegativeStatementAtom(negatedStatement)
@@ -290,8 +295,8 @@ class SWRLRuleParser(val file: File) : MutationFileParser() {
             return null
         }
 
-        val oldNode = arguments[0]
-        val newNode = arguments[1]
+        val oldNode = resourceOrNode(arguments[0])
+        val newNode = resourceOrNode(arguments[1])
 
         return ReplaceNodeAtom(oldNode, newNode)
 
@@ -349,6 +354,20 @@ class SWRLRuleParser(val file: File) : MutationFileParser() {
                 return true
 
         return false
+    }
+
+    // checks, if node could represent resource. If yes: return resource
+    private fun resourceOrNode(node: RDFNode): RDFNode {
+        if (isIRI(node.toString())) {
+            mainLogger.warn("IRI as node detected. Node is cast to resource. Node: ${node}")
+            return model.createResource(node.toString())
+        }
+        else
+            return node
+    }
+    // checks, if string is IRI (limited capability)
+    private fun isIRI(s: String): Boolean {
+        return s.startsWith("http://") || s.startsWith("https://")
     }
 }
 

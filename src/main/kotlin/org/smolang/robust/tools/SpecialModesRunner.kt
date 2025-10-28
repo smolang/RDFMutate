@@ -2,6 +2,7 @@ package org.smolang.robust.tools
 
 //import org.smolang.robust.patterns.PatternExtractor
 import org.apache.jena.riot.RDFDataMgr
+import org.obolibrary.oboformat.parser.XrefExpander
 import org.smolang.robust.domainSpecific.reasoner.ElGenerationTimeAnalyzer
 import org.smolang.robust.domainSpecific.suave.SuaveEvaluationGraphGenerator
 import org.smolang.robust.mainLogger
@@ -129,7 +130,15 @@ class SpecialModesRunner {
         val rules = AssociationRuleExtractor().mineRules(extractorBridge, ontologyFiles)
 
         val operators = rules?.flatMap { it.getAbstractMutations() }
-
-
+        operators?.forEach { operator ->
+            if (operator.hasConfig) {
+                val config = operator.config
+                if (config != null) {
+                    if (config is RuleMutationConfiguration) {
+                        config.toString()
+                    }
+                }
+            }
+        }
     }
 }
