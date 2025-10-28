@@ -5,7 +5,6 @@ import org.apache.jena.rdf.model.RDFNode
 import org.apache.jena.rdf.model.Statement
 import org.apache.jena.vocabulary.OWL
 import org.semanticweb.owlapi.model.IRI
-import org.semanticweb.owlapi.model.SWRLArgument
 import org.semanticweb.owlapi.model.SWRLAtom
 import org.smolang.robust.tools.toLocalString
 

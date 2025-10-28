@@ -16,7 +16,6 @@ import org.smolang.robust.mutant.Mutator
 import org.smolang.robust.mutant.RuleMutationConfiguration
 import org.smolang.robust.tools.extraction.AssociationRuleFactory
 import java.io.File
-import kotlin.math.exp
 
 
 class MutationAtomTest : StringSpec() {
@@ -84,7 +83,7 @@ class MutationAtomTest : StringSpec() {
             val parser = SWRLRuleParser(File("src/test/resources/swrl/swrlTest.ttl"))
             val ruleMutations = exportAndLoad(parser.getAllAbstractMutations()!!)
 
-            ruleMutations!!.size shouldBe 1
+            ruleMutations.size shouldBe 1
 
             val ms = MutationSequence()
             ms.addAbstractMutation(ruleMutations.single())
@@ -116,7 +115,7 @@ class MutationAtomTest : StringSpec() {
             val parser = SWRLRuleParser(File("src/test/resources/swrl/swrlTestArbitratyRelation.ttl"))
             val ruleMutations = exportAndLoad(parser.getAllAbstractMutations()!!)
 
-            ruleMutations!!.size shouldBe 1
+            ruleMutations.size shouldBe 1
 
             val ms = MutationSequence()
             ms.addAbstractMutation(ruleMutations.single())
@@ -142,7 +141,7 @@ class MutationAtomTest : StringSpec() {
             val parser = SWRLRuleParser(File("src/test/resources/swrl/swrlTestComplex.ttl"))
             val ruleMutations = exportAndLoad(parser.getAllAbstractMutations()!!)
 
-            ruleMutations!!.size shouldBe 3
+            ruleMutations.size shouldBe 3
         }
     }
 

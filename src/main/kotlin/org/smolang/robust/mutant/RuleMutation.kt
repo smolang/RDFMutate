@@ -65,7 +65,7 @@ class RuleMutation(model : Model) : Mutation(model) {
 
         // compute the variables that are selected with query
         val argumentVariables = ruleConfig.bodyVariables.filter { v ->
-            positiveBodyAtoms.filter { a -> a.containsResource(v) }.any()
+            positiveBodyAtoms.any { a -> a.containsResource(v) }
         }
 
         val bodyVariablesSparql = argumentVariables.joinToString(" ") { v -> swrlToSparql[v]?:"" }

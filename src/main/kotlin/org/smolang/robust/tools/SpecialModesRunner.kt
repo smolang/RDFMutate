@@ -2,7 +2,6 @@ package org.smolang.robust.tools
 
 //import org.smolang.robust.patterns.PatternExtractor
 import org.apache.jena.riot.RDFDataMgr
-import org.obolibrary.oboformat.parser.XrefExpander
 import org.smolang.robust.domainSpecific.reasoner.ElGenerationTimeAnalyzer
 import org.smolang.robust.domainSpecific.suave.SuaveEvaluationGraphGenerator
 import org.smolang.robust.mainLogger

@@ -3,12 +3,9 @@ package org.smolang.robust.tools.ruleMutations
 import com.github.owlcs.ontapi.DataFactory
 import org.apache.jena.rdf.model.RDFNode
 import org.apache.jena.rdf.model.Statement
-import org.semanticweb.owlapi.model.IRI
 import org.semanticweb.owlapi.model.SWRLAtom
 import org.smolang.robust.mainLogger
-import org.smolang.robust.tools.ruleMutations.NegativeStatementAtom.Companion.BUILTIN_IRI
 import org.smolang.robust.tools.toLocalString
-import scala.annotation.switch
 
 class PositiveStatementAtom(statement: Statement, isDataValueProp: Boolean= false) : StatementAtom(statement, isDataValueProp) {
     override fun toLocalString(): String {
