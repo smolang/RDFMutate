@@ -56,7 +56,8 @@ class ExtractionRunner(configFile : File?) {
 
         val rules = AssociationRuleExtractor().mineRules(
             extractorBridge,
-            kg_files
+            kg_files,
+            parameters.timeout
         )
 
         val operators = rules?.flatMap { it.getAbstractMutations() }

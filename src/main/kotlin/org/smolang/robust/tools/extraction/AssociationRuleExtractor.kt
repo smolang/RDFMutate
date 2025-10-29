@@ -11,7 +11,8 @@ class AssociationRuleExtractor {
     // extracts association rules from ontology files using an extractor bridge
     fun mineRules(
         extractorBridge: ExtractorBridge,
-        inputFiles: Set<File>
+        inputFiles: Set<File>,
+        timeout: Long= 3600 // timeout in s
     ) : Set<AssociationRule>? {
         val extractedRules: MutableSet<AssociationRule> = mutableSetOf()
         val miningTime = measureTime {
@@ -33,7 +34,7 @@ class AssociationRuleExtractor {
             mainLogger.info("Extracting prefixes from files completed. Found ${prefixMap.keys.size} prefix declarations.")
 
             val associationRuleFactory = AssociationRuleFactory(prefixMap)
-            val rules = extractorBridge.extractRules(inputFiles)
+            val rules = extractorBridge.extractRules(inputFiles, timeout)
 
             if (extractorBridge.status != ExtractorStatus.SUCCESS || rules == null) {
                 mainLogger.error("Could not extract rules from knowledge graphs.")

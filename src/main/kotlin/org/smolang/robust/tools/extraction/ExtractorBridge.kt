@@ -54,6 +54,7 @@ class ExtractorBridge(
 
     fun extractRules(
         ontologyFiles: Set<File>,   // set of file to learn from
+        timeout: Long = 3600 // timeout in s (default: 1h)
     ) : Set<String>? {
         if (ontologyFiles.isEmpty()) {
             mainLogger.warn("No knowledge graphs provided to learn operators from. Empty set of operators is created.")
@@ -66,7 +67,7 @@ class ExtractorBridge(
 
         val workingDir = File("./").absoluteFile
         mainLogger.info("running command: $command")
-        val result = command.runCommand(workingDir, 60)
+        val result = command.runCommand(workingDir, timeout)
 
         if (status != ExtractorStatus.SUCCESS) {
             mainLogger.warn("Could not extract rules from knowledge graphs. Status of extraction is $status")

@@ -44,5 +44,6 @@ data class ExtractionParameters(
     val min_rule_match: Int,
     val min_head_match: Int,
     val min_confidence: Double,
-    val max_rule_length: Int
+    val max_rule_length: Int,
+    val timeout: Long = 3600
 )
