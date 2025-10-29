@@ -9,7 +9,7 @@ plugins {
 }
 
 group = 'org.smolang.robust'
-version = '1.0.10'
+version = '1.0'
 
 
 repositories {
@@ -90,7 +90,7 @@ publishing {
             artifact tasks.shadowJar
             groupId = 'org.smolang'
             artifactId = 'rules'
-            version = '1.0.10' // or use project.version
+            version = '1.0' // or use project.version
         }
     }
     repositories {

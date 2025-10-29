@@ -10,7 +10,7 @@ class ExtractorBridge(
     val minHeadMatch: Int,   // how often head matches
     val minConfidence: Double,    // ratio how often rule matches when body matches
     val maxRuleLength: Int,   // maximal length of rule (head + body)
-    val jarLocation: String = "rules/build/libs/rules-1.0.10-all.jar"   // location of the JAR to extract operators
+    val jarLocation: String = "rules/build/libs/rules-1.0-all.jar"   // location of the JAR to extract operators
 ) {
     var status = ExtractorStatus.WAITING
 
