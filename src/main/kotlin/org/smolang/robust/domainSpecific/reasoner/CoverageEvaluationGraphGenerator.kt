@@ -319,6 +319,36 @@ class CoverageEvaluationGraphGenerator(private val sampleSize : Int =100 ) {
             writer.close()
             println("write to File $outputFile")
         }
+
+        // second file with raw output
+        val rawOutputFile= File(outputFile.absolutePath + ".rawdata.csv")
+        // output results to csv file
+        FileOutputStream(rawOutputFile).use { fos ->
+            val writer = fos.bufferedWriter()
+            writer.write("id,numMutations,sampleSize,numFeatures")
+            writer.newLine()
+            var id = 0  // id for the data point
+            for (mutCount in mutationNumbers) {
+                for (features in results[mutCount]!!) {
+                    writer.write("$id,$mutCount,1,${features.size}")
+                    writer.newLine()
+                    id += 1
+                }
+                for (features in results10[mutCount]!!) {
+                    writer.write("$id,$mutCount,10,${features.size}")
+                    writer.newLine()
+                    id += 1
+                }
+                for (features in results100[mutCount]!!) {
+                    writer.write("$id,$mutCount,100,${features.size}")
+                    writer.newLine()
+                    id += 1
+                }
+            }
+
+            writer.close()
+            println("write to File $rawOutputFile")
+        }
     }
 
     // combines result of several mutants. Second argument: how many results to combine

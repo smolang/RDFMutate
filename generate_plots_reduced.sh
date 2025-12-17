@@ -25,6 +25,7 @@ java $limit -jar build/libs/RDFMutate-0.1.jar --suave-coverage-graph --coverage-
 
 cd sut/reasoners/evaluation
 pdflatex inputCoverageEL.tex 
+pdflatex inputCoverageElLearnt.tex 
 pdflatex inputCoverageELBaseline.tex 
 cd ../../..
 
@@ -50,6 +51,7 @@ cd ../../..
 mkdir -p results
 cp sut/suave/evaluation/plotAttemps.pdf results/maskEvaluation.pdf
 cp sut/reasoners/evaluation/inputCoverageEl.pdf results/inputCoverageEl.pdf
+cp sut/reasoners/evaluation/inputCoverageElLearnt.pdf results/inputCoverageElLearnt.pdf
 cp sut/reasoners/evaluation/inputCoverageElBaseline.pdf results/inputCoverageElBaseline.pdf
 cp sut/suave/evaluation/inputCoverageSuave.pdf results/inputCoverageSuave.pdf
 cp sut/suave/evaluation/inputCoverageSuaveBaseline.pdf results/inputCoverageSuaveBaseline.pdf
