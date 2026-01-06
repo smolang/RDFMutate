@@ -13,9 +13,7 @@ echo "evaluating input coverage. This can take several minutes. On our machine (
 echo "build source code"
 ./gradlew build 
 
-# create coverage plots
-
-
+# create coverage plots + t tests
 java $limit -jar build/libs/RDFMutate-0.1.jar --el-graph --coverage-samples=500 # should be around 3,5h 
 
 java $limit -jar build/libs/RDFMutate-0.1.jar --suave-coverage-graph --coverage-samples=100 # should be about 1h for 100 samples
@@ -24,11 +22,13 @@ cd sut/reasoners/evaluation
 pdflatex inputCoverageEL.tex 
 pdflatex inputCoverageELLearnt.tex 
 pdflatex inputCoverageELBaseline.tex 
+R -f welchTestsReasoners.r
 cd ../../..
 
 cd sut/suave/evaluation
 pdflatex inputCoverageSuave.tex 
 pdflatex inputCoverageSuaveBaseline.tex 
+R -f tTestsSuave.r
 cd ../../..
 
 
@@ -53,3 +53,8 @@ cp sut/reasoners/evaluation/inputCoverageElBaseline.pdf results/inputCoverageElB
 cp sut/suave/evaluation/inputCoverageSuave.pdf results/inputCoverageSuave.pdf
 cp sut/suave/evaluation/inputCoverageSuaveBaseline.pdf results/inputCoverageSuaveBaseline.pdf
 
+cp sut/suave/evaluation/t_test_results_inputCoverageSuave.csv results/t_test_results_inputCoverageSuave.csv
+cp sut/suave/evaluation/t_test_results_inputCoverageSuaveBaseline.csv results/t_test_results_inputCoverageSuaveBaseline.csv
+cp sut/reasoners/evaluation/welch_test_results_inputCoverageEL.csv results/welch_test_results_inputCoverageEL.csv
+cp sut/reasoners/evaluation/welch_test_results_inputCoverageELLearnt.csv results/welch_test_results_inputCoverageELLearnt.csv
+cp sut/reasoners/evaluation/welch_test_results_inputCoverageELBaseline.csv results/welch_test_results_inputCoverageELBaseline.csv

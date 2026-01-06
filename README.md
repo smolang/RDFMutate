@@ -32,7 +32,7 @@ Each folder with masks contains a file `mask_development.txt` that explains, how
 
 The easiest way to replicate our results is to use the following [VM on Zenodo](https://doi.org/10.5281/zenodo.14899988) where all SUTs are already implemented. If you want to install everything yourself, you can find instructions on how to do so in the next subsection.
 
-- `generate_plot.sh` generates the three plots from the paper: (i) showing the relation between mask development and number of attempts to generate a valid mutant and (ii)  showing the input feature coverage. The PDF output is put into a folder `results`. (This script requires a LaTex installation to produce the PDF.) The run time of the script is several hours.
+- `generate_plot.sh` generates the three plots from the paper: (i) showing the relation between mask development and number of attempts to generate a valid mutant and (ii)  showing the input feature coverage. The PDF output is put into a folder `results`. (This script requires a LaTex installation to produce the PDF.) The script also runs some t-tests using R and the results of the tests are also in the folder `results`. The run time of the script is several hours.
 - `generate_plot_reduced.sh` is the same as `generate_plot.sh` but with smaller sample sizes. The run time of the script is a few minutes.
 - `replicate_geo.sh` generates the mutants for the geo system and executes the test runs for all of them. The mutants are saved in folder [sut/geo/mutatedOnt](sut/geo/mutatedOnt) and the results of the test runs in [sut/geo/testResults](sut/geo/testResults). On our machine (Intel Core i7-1165G7) this took about 100 hours.
 - `replicate_suave.sh` generates the mutants for the suave system and executes the test runs for all of them. On our machine (Intel Core i7-1165G7) this took about 60 hours.
@@ -66,3 +66,15 @@ You can use the script `install_suts.sh` to install all the necessary software. 
 - go to cloned repository and call script to build docker container
 
 `./createOracleContainer.sh`
+
+#### R and necessary packages
+- install R
+
+`
+sudo apt install r-base
+`
+
+- install required packages
+`
+R -f r-dependencies.r
+`
