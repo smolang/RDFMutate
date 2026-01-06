@@ -10,9 +10,9 @@ runTTests <- function(data, name, result_frame) {
     # select only the two columns that are relevant
     data_filtered <- filter(data, numMutations == mutation_count)
     # perform one-sample, one-sided t-test
-    
+    mean_feature_coverage <- 1
     test_result <- tryCatch({
-      t.test(data_filtered$numFeatures,mu=1,alternative = "less")
+      t.test(data_filtered$numFeatures,mu=mean_feature_coverage,alternative = "two.sided")
     }, error = function(e) {
       # error occurred in T-test
       NA
@@ -27,8 +27,8 @@ runTTests <- function(data, name, result_frame) {
     else {
       # Extract p-value and confidence interval
       p_value <- test_result$p.value
-      ci_lower <- test_result$conf.int[1]
-      ci_upper <- test_result$conf.int[2]
+      ci_lower <- test_result$conf.int[1] - mean_feature_coverage # save difference to mean
+      ci_upper <- test_result$conf.int[2] - mean_feature_coverage
     }
     
     
