@@ -25,3 +25,6 @@ Detailed information how to run RDFMutate and how to specify the configuration f
 
 ## Performance Evaluations
 Informations about the ways we evaluated the performance of RDFMutate, the produced data and instructions to replicate the evaluations can be found on the corresponding [wiki page](https://github.com/smolang/RDFMutate/wiki/Performance-Evaluations).
+
+## Citation
+You can find information how to cite RDFMutate on the [about page in the wiki](https://github.com/smolang/RDFMutate/wiki/About).
